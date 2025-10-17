@@ -1,0 +1,606 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 30/06/2024 | 01/01/2024 |\n|---|---|---|---|---|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 5,539,110,658,856 | 5,537,285,855,129 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.01. | 576,705,167,856 | 1,112,379,542,714 |\n| 1. Tiền | 111 | | 268,896,562,856 | 317,879,542,714 |\n| 2. Các khoản tương đương tiền | 112 | | 307,808,605,000 | 794,500,000,000 |\n| II. Các khoản đầu tư tài chính ngắn hạn | 120 | V.02. | 915,271,773,972 | 663,675,624,494 |\n| 1. Chứng khoán kinh doanh | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | 915,271,773,972 | 663,675,624,494 |\n| III. Các khoản phải thu ngắn hạn | 130 | | 2,631,571,290,027 | 2,151,311,894,741 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | V.03.a | 1,755,577,741,649 | 1,285,570,982,375 |\n| 2. Trả trước cho người bán | 132 | | 837,996,507,600 | 820,124,422,378 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |\n| 6. Các khoản phải thu khác | 136 | V.03.b | 94,842,139,118 | 102,461,588,328 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | V.03.e | 56,845,098,340 | 56,845,098,340 |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho | 140 | | 1,377,108,465,674 | 1,571,797,393,210 |\n| 1. Hàng tồn kho | 141 | V.04. | 1,377,415,586,569 | 1,572,104,514,105 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | (307,120,895) | (307,120,895) |\n| V. Tài sản ngắn hạn khác | 150 | | 38,453,961,327 | 38,121,399,970 |\n| 1. Chi phí trả trước ngắn hạn | 151 | V.09.a | 2,148,973,381 | 2,106,032,705 |\n| 2. Thuế GTGT được khấu trừ | 152 | | 36,304,987,946 | 36,015,367,265 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | | - | - |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn của công ty tại ngày 30/06/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã cổ phiếu của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh Tiền và các khoản tương đương tiền giữa 30/06/2024 và 01/01/2024, cho biết sự thay đổi?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng các khoản đầu tư tài chính ngắn hạn trên tổng tài sản ngắn hạn là bao nhiêu phần trăm tại 30/06/2024?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sơ bộ tình hình thanh khoản của công ty dựa trên cơ cấu tài sản ngắn hạn được trình bày.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm hàng tồn kho đến dòng tiền hoạt động kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa trên số liệu, công ty có phải đối mặt với rủi ro phải thu khó đòi ngắn hạn đáng kể không?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 30/06/2024 | 01/01/2024 |\n|---|---|---|---|---|\n| B. TÀI SẢN DÀI HẠN | 200 | | 2,746,542,470,151 | 2,740,162,407,014 |\n| I. Các khoản phải thu dài hạn | 210 | | 534,142,979,835 | 461,442,979,835 |\n| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | V.03.d | 529,900,000,000 | 457,200,000,000 |\n| 6. Phải thu dài hạn khác | 216 | V.03.c | 4,242,979,835 | 4,242,979,835 |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |\n| II. Tài sản cố định | 220 | | 860,848,775,161 | 909,002,530,259 |\n| 1. Tài sản cố định hữu hình | 221 | V.06. | 620,022,992,143 | 655,079,812,067 |\n| - Nguyên giá | 222 | | 1,352,959,038,194 | 1,352,257,228,958 |\n| - Giá trị hao mòn lũy kế | 223 | | (732,936,046,051) | (697,177,416,891) |\n| 2. Tài sản cố định thuê tài chính | 224 | V.07. | 96,351,049,869 | 107,653,295,457 |\n| - Nguyên giá | 225 | | 159,697,752,367 | 159,697,752,367 |\n| - Giá trị hao mòn lũy kế | 226 | | (63,346,702,498) | (52,044,456,910) |\n| 3. Tài sản cố định vô hình | 227 | V.08.a. | 144,474,733,149 | 146,269,422,735 |\n| - Nguyên giá | 228 | | 174,725,981,651 | 174,725,981,651 |\n| - Giá trị hao mòn lũy kế | 229 | | (30,251,248,502) | (28,456,558,916) |\n| III. Bất động sản đầu tư | 230 | V.08.b. | 248,448,422,339 | 252,801,450,233 |\n| - Nguyên giá | 231 | | 323,234,235,576 | 323,234,235,576 |\n| - Giá trị hao mòn lũy kế | 232 | | (74,785,813,237) | (70,432,785,343) |\n| IV. Tài sản dở dang dài hạn | 240 | V.05. | 578,636,459,689 | 574,952,932,200 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | | 578,636,459,689 | 574,952,932,200 |\n| V. Đầu tư tài chính dài hạn | 250 | V.02. | 248,827,581,111 | 248,827,581,111 |\n| 1. Đầu tư vào công ty con | 251 | | - | - |\n| 2. Đầu tư vào công ty liên kết, liên doanh | 252 | | - | - |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | | 245,517,581,111 | 245,517,581,111 |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | - | - |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | 3,310,000,000 | 3,310,000,000 |\n| VI. Tài sản dài hạn khác | 260 | | 275,638,252,016 | 293,134,933,376 |\n| 1. Chi phí trả trước dài hạn | 261 | V.09.b | 8,754,335,007 | 9,570,771,554 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | | - | - |\n| 3. Thiết bị, vật tư phụ tùng thay thế dài hạn | 263 | | - | - |\n| 4. Tài sản dài hạn khác | 268 | | - | - |\n| 5. Lợi thế thương mại | 269 | V.09.c | 266,883,917,009 | 283,564,161,822 |\n| TỔNG CỘNG TÀI SẢN | 270 | | 8,285,653,129,007 | 8,277,448,262,143 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của công ty tại ngày 30/06/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của Tài sản cố định hữu hình tại 30/06/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh các khoản phải thu về cho vay dài hạn giữa 30/06/2024 và 01/01/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tài sản cố định trên tổng tài sản dài hạn đã thay đổi như thế nào so với đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản cố định và tài sản dở dang dài hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm giá trị hao mòn lũy kế của tài sản cố định hữu hình đến báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự thay đổi lợi thế thương mại đến kết quả kinh doanh trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 30/06/2024 | 01/01/2024 |\n|---|---|---|---|---|\n| A. NỢ PHẢI TRẢ | 300 | | 4,831,139,839,764 | 4,855,891,649,068 |\n| I. Nợ ngắn hạn | 310 | | 4,559,157,053,804 | 4,530,157,213,272 |\n| 1. Phải trả người bán ngắn hạn | 311 | V.12.a | 228,385,423,782 | 216,486,725,129 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | | 108,884,112,773 | 108,568,775,730 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V.11. | 11,827,195,175 | 35,947,977,860 |\n| 4. Phải trả người lao động | 314 | | 24,225,171,599 | 22,628,950,610 |\n| 5. Chi phí phải trả ngắn hạn | 315 | | 8,130,366,483 | 1,340,020,397 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9. Phải trả ngắn hạn khác | 319 | V.12.b | 28,735,835,002 | 35,199,713,551 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | V.10. | 4,129,468,925,113 | 4,090,462,799,775 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | | - | 2,022,226,343 |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | | 19,500,023,877 | 17,500,023,877 |\n| 13. Quỹ bình ổn giá | 323 | | - | - |\n| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |\n| II. Nợ dài hạn | 330 | | 271,982,785,960 | 325,734,435,796 |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7. Phải trả dài hạn khác | 337 | | - | - |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | V.10. | 271,982,785,960 | 325,734,435,796 |\n| 9. Trái phiếu chuyển đổi | 339 | | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |\n| B. VỐN CHỦ SỞ HỮU | 400 | | 3,454,513,289,243 | 3,421,556,613,075 |\n| I. Vốn chủ sở hữu | 410 | V.13. | 3,444,249,904,143 | 3,411,293,227,975 |\n| 1. Vốn góp của chủ sở hữu | 411 | | 2,276,446,080,000 | 2,276,446,080,000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 2,276,446,080,000 | 2,276,446,080,000 |\n| - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | | 17,060,700,000 | 17,060,700,000 |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | | 196,813,460,000 | 196,813,460,000 |\n| 5. Cổ phiếu quỹ | 415 | | - | - |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 8. Quỹ đầu tư phát triển | 418 | | 76,041,218,670 | 67,644,983,670 |\n| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | 11,111,132,031 | 10,714,897,031 |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | - | - |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | | 675,537,319,515 | 657,853,134,910 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 646,664,429,910 | 600,087,187,791 |\n| - LNST chưa phân phối kỳ này | 421b | | 28,872,889,605 | 57,765,947,119 |\n| 12. Nguồn vốn đầu tư xây dựng cơ bản | 422 | | - | - |\n| 13. Lợi ích cổ đông không kiểm soát | 429 | | 180,128,861,896 | 174,045,075,333 |\n| II. Nguồn kinh phí và quỹ khác | 430 | | 10,263,385,100 | 10,263,385,100 |\n| 1. Nguồn kinh phí | 431 | | 10,263,385,100 | 10,263,385,100 |\n| 2. Nguồn kinh phí đã hình thành TSCĐ | 432 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 8,285,653,129,007 | 8,277,448,262,143 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả của công ty tại 30/06/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn góp của chủ sở hữu tại 30/06/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tính tỷ lệ Nợ ngắn hạn trên tổng Nợ phải trả tại ngày 30/06/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối kỳ này là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá cơ cấu nợ và vốn chủ sở hữu của công ty, liệu có dấu hiệu rủi ro tài chính nào không?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính hệ số thanh toán hiện thời (Current Ratio) dựa trên Nợ ngắn hạn và Tài sản ngắn hạn (từ chunk 1).",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi lớn trong khoản 'Vay và nợ thuê tài chính ngắn hạn' đối với khả năng thanh toán của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Quý II Năm nay | Quý II Năm trước | Lũy kế từ đầu năm đến cuối kỳ Năm nay | Lũy kế từ đầu năm đến cuối kỳ Năm trước |\n|---|---|---|---|---|---|---|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | V.14. | 1,934,859,722,560 | 1,826,748,047,853 | 3,565,740,312,249 | 3,590,708,133,239 |\n| 2. Các khoản giảm trừ doanh thu | 02 | V.15. | 184,552,665 | 1,030,931,100 | 1,937,423,846 | - |\n| 3. Doanh thu thuần bán hàng và cung cấp dịch vụ | 10 | | 1,934,859,722,560 | 1,826,563,495,188 | 3,564,709,381,149 | 3,588,770,709,393 |\n| 4. Giá vốn hàng bán | 11 | V.16. | 1,780,565,543,855 | 1,671,524,630,693 | 3,291,018,431,782 | 3,289,613,361,046 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 154,294,178,705 | 155,038,864,495 | 273,690,949,367 | 299,157,348,347 |\n| 6. Doanh thu hoạt động tài chính | 21 | V.17. | 44,988,792,136 | 41,664,844,558 | 70,777,371,664 | 69,557,002,258 |\n| 7. Chi phí tài chính | 22 | V.18. | 104,606,122,139 | 109,191,123,559 | 171,888,339,095 | 203,111,213,871 |\n| Trong đó: Chi phí lãi vay | 23 | | 83,478,546,969 | 101,178,652,147 | 146,737,651,602 | 185,899,191,030 |\n| 8. Phần LN hoặc lỗ trong Cty LD, LK | 24 | | - | - | - | - |\n| 9. Chi phí bán hàng | 25 | V.19. | 46,878,561,772 | 32,994,619,181 | 85,522,964,175 | 68,338,668,622 |\n| 10. Chi phí quản lý doanh nghiệp | 26 | V.20. | 21,068,044,422 | 22,384,748,809 | 41,331,151,586 | 44,951,949,221 |\n| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 26,730,242,508 | 32,133,217,504 | 45,725,866,175 | 52,312,518,891 |\n| 12. Thu nhập khác | 31 | V.21. | 2,909,338,529 | 5,331,962,027 | 5,302,674,009 | 7,568,374,827 |\n| 13. Chi phí khác | 32 | V.22. | 2,259,602,763 | 5,942,051,524 | 4,318,644,477 | 7,900,996,050 |\n| 14. Lợi nhuận khác | 40 | | 649,735,766 | (610,089,497) | 984,029,532 | (332,621,223) |\n| 15. Tổng lợi nhuận kế toán trước thuế | 50 | | 27,379,978,274 | 31,523,128,007 | 46,709,895,707 | 51,979,897,668 |\n| 16. Chi phí thuế TNDN hiện hành | 51 | V.23. | 8,981,183,091 | 4,727,841,386 | 11,753,219,539 | 7,676,330,691 |\n| 17. Chi phí thuế TNDN hoãn lại | 52 | | - | - | - | - |\n| 18. Lợi nhuận sau thuế TNDN | 60 | | 18,398,795,183 | 26,795,286,621 | 34,956,676,168 | 44,303,566,977 |\n| 18.1 Lợi nhuận sau thuế của công ty mẹ | 61 | | 15,212,368,752 | 22,010,143,458 | 28,872,889,605 | 36,542,726,601 |\n| 18.2 Lợi nhuận sau thuế của cổ đông không kiểm soát | 62 | | 3,186,426,431 | 4,785,143,163 | 6,083,786,563 | 7,760,840,376 |\n| 19. Lãi cơ bản trên cổ phiếu | 70 | | 67 | 97 | 127 | 161 |\n| 20. Lãi suy giảm trên cổ phiếu | 71 | | 67 | 97 | 127 | 161 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần bán hàng và cung cấp dịch vụ lũy kế đến cuối Quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế của công ty mẹ trong Quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp Quý II năm nay với Quý II năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ suất lợi nhuận trước thuế (trên doanh thu thuần) lũy kế đến cuối Quý II/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động kinh doanh chính của công ty trong Quý II/2024 so với năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân có thể dẫn đến sự sụt giảm lợi nhuận sau thuế trong Quý II năm nay so với năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của xu hướng chi phí bán hàng và chi phí quản lý doanh nghiệp đến lợi nhuận trong các quý tiếp theo.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất (Theo phương pháp gián tiếp)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Lũy kế từ đầu năm đến cuối quý này Quý II năm 2024 | Lũy kế từ đầu năm đến cuối quý này Quý II năm 2023 |\n|---|---|---|---|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | |\n| 1. Lợi nhuận trước thuế | 01 | 46,709,895,707 | 51,979,897,668 |\n| 2. Điều chỉnh cho các khoản | | | |\n| - Khấu hao TSCĐ và BĐS ĐT | 02 | 70,534,291,587 | 75,361,899,869 |\n| - Các khoản dự phòng | 03 | - | - |\n| - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | 5,459,406,909 | 4,396,503,329 |\n| - Lãi, lỗ từ hoạt động đầu tư | 05 | 51,950,866,427 | 50,701,282,749 |\n| - Chi phí lãi vay | 06 | 146,737,651,602 | 185,899,191,030 |\n| - Các khoản điều chỉnh khác | 07 | - | - |\n| 3. Lợi nhuận kinh doanh trước thay đổi vốn lưu động | 08 | 217,490,379,378 | 258,143,202,489 |\n| - Tăng, giảm các khoản phải thu | 09 | (478,677,313,594) | (304,513,244,755) |\n| - Tăng, giảm hàng tồn kho | 10 | 194,688,927,536 | 26,235,754,924 |\n| - Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế thu nhập phải nộp | 11 | 152,146,769 | 85,973,439,548 |\n| - Tăng, giảm chi phí trả trước | 12 | (773,495,871) | (242,435,464) |\n| - Tăng, giảm chứng khoán kinh doanh | 13 | - | - |\n| - Tiền lãi vay đã trả | 14 | (151,024,654,422) | (180,322,951,428) |\n| - Thuế thu nhập doanh nghiệp đã nộp | 15 | (20,898,304,601) | (31,122,608,964) |\n| - Tiền thu khác từ hoạt động kinh doanh | 16 | - | - |\n| - Tiền chi khác từ hoạt động kinh doanh | 17 | (8,500,000) | - |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 237,495,323,063 | 239,235,627,844 |\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | |\n| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các TS dài hạn khác | 21 | (4,505,561,647) | (1,814,692,970) |\n| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác | 22 | 125,270,908 | 5,067,500,000 |\n| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | (933,270,000,000) | (1,507,270,000,000) |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | 609,372,880,967 | 728,980,220,493 |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | (245,161,370,000) | - |\n| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | - | - |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 53,986,105,402 | 52,449,447,846 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | (274,291,304,370) | (967,748,894,631) |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | - | - |\n| 2. Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | 32 | - | - |\n| 3. Tiền thu từ đi vay | 33 | 3,218,769,699,731 | 4,355,899,968,336 |\n| 4. Tiền chi trả nợ gốc vay | 34 | (3,227,625,133,210) | (4,018,601,469,340) |\n| 5. Tiền chi trả nợ thuê tài chính | 35 | (15,001,437,714) | (25,617,837,714) |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | (30,125,640) | (8,251,017,266) |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | (23,886,996,833) | 303,429,644,016 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | (535,673,624,266) | (425,083,622,771) |\n| Tiền và tương đương tiền đầu kỳ | 60 | 1,112,379,542,714 | 640,790,543,399 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | 750,592 | 74,138,556 |\n| Tiền và tương đương tiền cuối kỳ | 70 | 576,705,167,856 | 215,781,059,184 |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế đến cuối Quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền cuối kỳ của công ty là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lưu chuyển tiền thuần từ hoạt động đầu tư Quý II năm nay với Quý II năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản nào đóng góp lớn nhất vào lưu chuyển tiền thuần từ hoạt động tài chính trong Quý II/2024?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tự tài trợ của công ty dựa trên dòng tiền từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và hệ quả của lưu chuyển tiền thuần trong kỳ âm.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược đầu tư và tài chính của công ty dựa trên lưu chuyển tiền tệ từ các hoạt động này.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Đặc điểm hoạt động và Chính sách kế toán\nLoại nội dung: Text\nI. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP\nHình thức sở hữu vốn\nCông ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I là một doanh nghiệp cổ phần được thành lập theo Giấy phép Đăng ký kinh doanh do Sở Kế hoạch và Đầu tư Tp. Hồ Chí Minh cấp ngày 15 tháng 7 năm 2003. Đăng ký thay đổi lần thứ hai ngày 28 tháng 10 năm 2004, Đăng ký thay đổi lần thứ ba ngày 15 tháng 2 năm 2007, Đăng ký thay đổi lần thứ tư ngày 28 tháng 8 năm 2007, Đăng ký thay đổi lần thứ năm ngày 26 tháng 02 năm 2008, Đăng ký kinh doanh lần thứ tám ngày 18 tháng 12 năm 2009, Đăng ký kinh doanh lần thứ mười chín ngày 25 tháng 11 năm 2019 và Giấy chứng nhận đăng ký doanh nghiệp thay đổi lần thứ 20 số 0303141296 do Sở Kế hoạch và Đầu tư tỉnh Đồng Tháp cấp ngày 15 tháng 05 năm 2023.\nTổng vốn điều lệ đăng ký theo Giấy chứng nhận Đăng ký kinh doanh thay đổi lần thứ hai mươi do Sở Kế hoạch và Đầu tư tỉnh Đồng Tháp cấp ngày 15 tháng 05 năm 2023 là 2.276.446.080.000 VNĐ (Hai ngàn, hai trăm bảy mươi sáu tỷ, bốn trăm bốn mươi sáu triệu, không trăm tám mươi ngàn đồng).\nTrụ sở chính: Quốc lộ 80, Cụm Công nghiệp Vàm Cống, ấp An Thạnh, xã Bình Thành, huyện Lấp Vò, tỉnh Đồng Tháp.\nLĩnh vực kinh doanh\nChế biến thủy hải sản (Mã 1020). Mua bán thủy hải sản (Mã 4632). Kinh doanh khách sạn (Mã 5510). Mua bán vật liệu xây dựng (Mã 4663). Mua bán hàng trang trí nội thất (Mã 4649). Nuôi trồng thủy sản (Mã 0322). Sản xuất và chế biến thức ăn thủy sản (Mã 1080). Kinh doanh bất động sản không bao gồm kinh doanh dịch vụ bất động sản kinh doanh nhà (Mã 6810). Sản xuất nước đóng chai (Mã 1104). Sản xuất bao bì giấy nhựa (Mã 1702, 2220). Sản xuất và đóng hộp dầu, mỡ động thực vật (Mã 1040). Khai thác đá, cát, sỏi, đất sét (Mã 0810). Kho bãi và lưu giữ hàng hóa (Mã 5210). Bốc xếp hàng hóa cảng biển (Mã 5224). Vận tải hàng hóa đường bộ bằng ô tô chuyên dụng, đường thủy nội địa bằng phương tiện cơ giới (Mã 4933, 5022). Kinh doanh thuốc thú y thủy sản (Mã 4669). Xây dựng công trình dân dụng, công nghiệp, giao thông (Mã 4101, 4102, 4293, 4212). Bán buôn máy móc thiết bị và phụ tùng máy khác (Mã 4659). Sản xuất điện (Mã 3511).\nCấu trúc doanh nghiệp\n- Tổng số các Công ty con: 02 Công ty\n- Số lượng các Công ty con được hợp nhất: 02 Công ty\n- Số lượng các Công ty con không được hợp nhất: 0 Công ty\n- Danh sách các Công ty con được hợp nhất:\n| Tên Công ty con | Địa chỉ | Tỷ lệ lợi ích | Tỷ lệ biểu quyết |\n|---|---|---|---|\n| Công ty Cổ Phần Đầu Tư Du Lịch và Phát Triển Thủy Sản | QL80, Bình Thành, Lấp Vò, Đồng Tháp. | 79.25 | 79.25 |\n| Công ty Cổ Phần Đầu Tư Vĩnh An Đắk Nông | Số 1, Tiểu khu 834, Cụm Ba Tầng, X. Ea Pô, H. Cư Jút, Đắk Nông | 97.50 | 97.50 |\n\nII. CHẾ ĐỘ VÀ CHÍNH SÁCH KẾ TOÁN ÁP DỤNG TẠI CÔNG TY\nNiên độ kế toán, đơn vị tiền tệ sử dụng trong kế toán\nNiên độ kế toán\nNiên độ kế toán của Công ty mẹ và các Công ty con bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.\nĐơn vị tiền tệ sử dụng trong kế toán\nĐơn vị tiền tệ sử dụng trong ghi chép kế toán là đồng Việt Nam (VND).\n\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\nChế độ kế toán áp dụng\nHình thức kế toán áp dụng\nCông ty áp dụng hình thức kế toán trên máy vi tính.\nTuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán\nCông ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các báo cáo tài chính hợp nhất được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện chuẩn mực và Chế độ kế toán hiện hành đang áp dụng.",
+    "questions": [
+      {
+        "question": "Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I có trụ sở chính ở đâu?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Tổng vốn điều lệ đăng ký của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu các lĩnh vực kinh doanh chính của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty có bao nhiêu công ty con được hợp nhất và tên của chúng là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tuân thủ các chuẩn mực kế toán của công ty dựa trên thuyết minh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các lĩnh vực kinh doanh đa dạng đến cấu trúc doanh nghiệp và quản trị rủi ro.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích tầm quan trọng của việc áp dụng Chuẩn mực kế toán Việt Nam trong việc lập báo cáo tài chính hợp nhất.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Chính sách kế toán áp dụng (Tiền, Đầu tư tài chính, Phải thu, Hàng tồn kho)\nLoại nội dung: Text\nIV. CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\nNguyên tắc ghi nhận các khoản tiền và các khoản tương đương tiền\nCác khoản được xác định là tiền bao gồm tiền mặt tại quỹ của doanh nghiệp, tiền gửi ngân hàng không kỳ hạn và tiền đang chuyển... hiện có của doanh nghiệp tại ngày lập Báo cáo tài chính hợp nhất.\nNguyên tắc xác định các khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi không quá 3 tháng kể từ ngày đầu tư, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có rủi ro trong việc chuyển đổi thành tiền tại thời điểm báo cáo.\nKhi phát sinh các giao dịch bằng ngoại tệ, bên Nợ các tài khoản tiền áp dụng tỷ giá giao dịch thực tế và bên Có các tài khoản tiền áp dụng tỷ giá ghi sổ bình quân gia quyền. Chênh lệch tỷ giá thực tế phát sinh trong kỳ được hạch toán vào doanh thu hoặc chi phí tài chính trong năm tài chính.\nChênh lệch tỷ giá do đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ tại thời điểm lập báo cáo tài chính được hạch toán theo tỷ giá mua ngoại tệ của ngân hàng thương mại nơi doanh nghiệp thường xuyên có giao dịch do doanh nghiệp tự lựa chọn tại thời điểm lập Báo cáo tài chính hợp nhất và được hạch toán bù trừ chênh lệch tăng, giảm, số còn lại được kết chuyển vào doanh thu hoặc chi phí tài chính trong năm tài chính và không chia cổ tức trên chênh lệch tỷ giá do đánh giá lại số dư cuối kỳ này.\nNguyên tắc ghi nhận các khoản đầu tư tài chính\nChứng khoán kinh doanh được ghi sổ kế toán theo giá gốc, bao gồm Giá mua cộng các chi phí mua nếu có như chi phí môi giới, giao dịch, cung cấp thông tin, thuế, lệ phí và phí ngân hàng. Giá gốc của chứng khoán kinh doanh được xác định theo giá trị hợp lý của các khoản thanh toán tại thời điểm giao dịch phát sinh.\nCác khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm các khoản tiền gửi ngân hàng có kỳ hạn bao gồm cả các loại tín phiếu, kỳ phiếu, trái phiếu, cổ phiếu ưu đãi bên phát hành bắt buộc phải mua lại tại thời điểm nhất định trong tương lai và các khoản cho vay nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ và các khoản đầu tư nắm giữ đến ngày đáo hạn khác.\nGiá trị ghi sổ của các khoản đầu tư vào công cụ vốn của đơn vị khác không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư được xác định theo giá gốc nếu là đầu tư bằng tiền hoặc đánh giá lại nếu là đầu tư bằng tài sản phi tiền tệ.\nCổ tức nhận bằng cổ phiếu chỉ thực hiện ghi nhận số lượng cổ phiếu được nhận, không ghi nhận tăng giá trị khoản đầu tư và doanh thu hoạt động tài chính.\nDự phòng giảm giá các khoản đầu tư tài chính được lập vào thời điểm cuối kỳ như sau:\n- Dự phòng đầu tư chứng khoán kinh doanh căn cứ trích lập dự phòng là số chênh lệch giữa giá gốc của các khoản đầu tư được hạch toán trên sổ kế toán lớn hơn giá trị thị trường của chúng tại thời điểm lập dự phòng.\n- Đối với khoản đầu tư mà nhà đầu tư nắm giữ lâu dài không phân loại là chứng khoán kinh doanh và không có ảnh hưởng đáng kể đối với bên được đầu tư, việc lập dự phòng được thực hiện như sau:\n- Đối với khoản đầu tư vào cổ phiếu niêm yết hoặc giá trị hợp lý khoản đầu tư được xác định tin cậy, việc lập dự phòng dựa trên giá trị thị trường của cổ phiếu tương tự như dự phòng giảm giá chứng khoán kinh doanh.\n- Đối với khoản đầu tư không xác định được giá trị hợp lý tại thời điểm báo cáo, việc lập dự phòng được thực hiện căn cứ vào khoản lỗ của bên được đầu tư dự phòng tổn thất đầu tư vào đơn vị khác.\nNguyên tắc kế toán các khoản phải thu\nCác khoản phải thu khách hàng, khoản trả trước cho người bán, phải thu nội bộ và các khoản phải thu khác tại thời điểm báo cáo, nếu:\n- Có thời hạn thu hồi hoặc thanh toán dưới 1 năm được phân loại là tài sản ngắn hạn.\n- Có thời hạn thu hồi hoặc thanh toán trên 1 năm được phân loại là tài sản dài hạn.\nĐối với các giao dịch bằng ngoại tệ phát sinh trong kỳ, tỷ giá ghi nhận là tỷ giá mua của ngân hàng thương mại nơi Công ty chỉ định khách hàng thanh toán tại thời điểm giao dịch phát sinh.\nTại thời điểm lập Báo cáo tài chính hợp nhất, các khoản phải thu có gốc ngoại tệ được đánh giá lại số dư theo tỷ giá thực tế là tỷ giá mua ngoại tệ của ngân hàng thương mại nơi doanh nghiệp chỉ định khách hàng thanh toán tại thời điểm lập Báo cáo tài chính hợp nhất. Trường hợp doanh nghiệp có nhiều khoản phải thu và giao dịch tại nhiều ngân hàng thì được chủ động lựa chọn tỷ giá mua của một trong những ngân hàng thương mại nơi doanh nghiệp thường xuyên có giao dịch, khoản chênh lệch tỷ giá được hạch toán bù trừ sau đó hạch toán vào doanh thu hoặc chi phí tài chính hợp nhất (khoản mục tiền trả trước cho khách hàng không đánh giá lại số dư).\nLập dự phòng phải thu khó đòi\nCác khoản nợ phải thu được xem xét trích lập dự phòng rủi ro theo tuổi nợ quá hạn của khoản nợ hoặc theo dự kiến tổn thất có thể xảy ra trong trường hợp khoản nợ chưa đến hạn thanh toán nhưng tổ chức kinh tế lâm vào tình trạng phá sản hoặc đang làm thủ tục giải thể, mất tích, bỏ trốn.\nNguyên tắc ghi nhận hàng tồn kho\nHàng tồn kho được tính theo giá gốc. Trường hợp giá trị thuần có thể thực hiện được thấp hơn giá gốc thì phải tính theo giá trị thuần có thể thực hiện được. Giá gốc hàng tồn kho bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\nGiá trị hàng tồn kho được xác định theo phương pháp bình quân gia quyền.\nHàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên.\nDự phòng giảm giá hàng tồn kho được lập vào thời điểm cuối năm là số chênh lệch giữa giá gốc của hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được của chúng.",
+    "questions": [
+      {
+        "question": "Công ty phân loại các khoản đầu tư ngắn hạn có thời hạn thu hồi không quá bao nhiêu tháng là tương đương tiền?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Theo nguyên tắc kế toán của công ty, khi nào một khoản nợ phải thu được xem xét trích lập dự phòng rủi ro?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xử lý chênh lệch tỷ giá hối đoái đối với các khoản mục tiền tệ có gốc ngoại tệ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích các yếu tố cấu thành giá gốc hàng tồn kho theo chính sách kế toán của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ thận trọng trong chính sách lập dự phòng giảm giá các khoản đầu tư tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của chính sách ghi nhận hàng tồn kho theo giá trị thuần có thể thực hiện được đến lợi nhuận của công ty khi giá thị trường giảm.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Chính sách kế toán áp dụng (TSCĐ, Đầu tư dài hạn, Lợi thế thương mại, Chi phí đi vay)\nLoại nội dung: Text\nNguyên tắc ghi nhận và khấu hao tài sản cố định (TSCĐ), thuê tài chính, bất động sản đầu tư\nTài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo giá gốc. Trong quá trình sử dụng, tài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại.\nTài sản cố định thuê tài chính được ghi nhận nguyên giá theo giá trị hợp lý hoặc giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu (không bao gồm thuế GTGT và các chi phí trực tiếp phát sinh ban đầu liên quan đến TSCĐ thuê tài chính). Trong quá trình sử dụng, tài sản cố định thuê tài chính được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại.\nKhấu hao được trích theo phương pháp đường thẳng, tỷ lệ khấu hao phù hợp với Thông tư 45/2013/TT-BTC ngày 25/04/2013 của Bộ Tài Chính ban hành chế độ quản lý, sử dụng và trích khấu hao tài sản cố định. Cụ thể như sau:\n- Nhà cửa, vật kiến trúc: 10-50 năm\n- Máy móc, thiết bị: 03 - 20 năm\n- Phương tiện vận tải: 06 - 30 năm\n- Thiết bị dụng cụ quản lý: 03-10 năm\n- Quyền sử dụng đất vô thời hạn: Không tính khấu hao\nTSCĐ thuê tài chính được trích khấu hao như TSCĐ của Công ty. Đối với TSCĐ thuê tài chính không chắc chắn sẽ được mua lại thì sẽ được tính trích khấu hao theo thời hạn thuê (khi thời hạn thuê ngắn hơn thời gian sử dụng hữu ích của nó).\nBất động sản đầu tư được ghi nhận theo giá gốc. Trong quá trình nắm giữ chờ tăng giá, hoặc cho thuê hoạt động, bất động sản đầu tư được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại.\nBất động sản đầu tư được trích khấu hao như TSCĐ khác của Công ty, trừ trường hợp BĐS đầu tư chờ tăng giá thì không trích khấu hao mà xác định giá trị tổn thất do giảm giá trị.\nNguyên tắc ghi nhận các khoản đầu tư tài chính dài hạn\nNguyên tắc ghi nhận các khoản đầu tư vào công ty liên doanh, liên kết\nBáo cáo tài chính hợp nhất của Công ty phản ánh khoản vốn góp theo phương pháp vốn chủ sở hữu. Theo phương pháp này, các khoản góp vốn góp vào Công ty liên doanh, liên kết được ghi nhận theo giá gốc trong Báo cáo tài chính riêng của Công ty mẹ, sau đó được điều chỉnh theo những thay đổi của phần sở hữu của bên góp vốn liên doanh trong tài sản thuần của Công ty liên doanh, liên kết khi lập Báo cáo tài chính hợp nhất.\nCác báo cáo tài chính của công ty liên kết được lập cùng kỳ với các báo cáo tài chính hợp nhất của Công ty mẹ và sử dụng chính sách kế toán nhất quán. Các điều chỉnh hợp nhất thích hợp đã được ghi nhận để đảm bảo các chính sách kế toán được áp dụng nhất quán với Công ty mẹ trong trường hợp cần thiết.\nNguyên tắc ghi nhận các khoản đầu tư khác\nCác khoản đầu tư khác được thể hiện theo nguyên giá, bao gồm giá mua cộng các chi phí mua phát sinh liên quan.\nPhương pháp lập dự phòng giảm giá các khoản đầu tư\nDự phòng giảm giá các khoản đầu tư được lập khi Công ty cho rằng việc giảm giá này không mang tính tạm thời.\nLợi thế thương mại\nLợi thế thương mại là khoản chênh lệch giữa giá trị hợp nhất kinh doanh lớn hơn phần sở hữu của bên mua trong giá trị hợp lý thuần của tài sản, nợ phải trả có thể xác định được và các khoản nợ tiềm tàng (nếu có) của bên bị mua. Lợi thế thương mại được phân bổ dần vào chi phí sản xuất kinh doanh theo phương pháp đường thẳng, thời gian phân bổ không quá 10 năm.\nNguyên tắc ghi nhận và vốn hóa các khoản chi phí đi vay\nChi phí đi vay được ghi nhận vào chi phí sản xuất, kinh doanh trong kỳ khi phát sinh, trừ chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó (được vốn hóa khi có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 'Chi phí đi vay').\nChi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó được vốn hóa, bao gồm các khoản lãi tiền vay, phân bổ các khoản chiết khấu hoặc phụ trội khi phát hành trái phiếu, các khoản chi phí phụ phát sinh liên quan tới quá trình làm thủ tục vay.",
+    "questions": [
+      {
+        "question": "Theo chính sách của công ty, thời gian khấu hao của máy móc, thiết bị là bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty ghi nhận lợi thế thương mại và phân bổ trong thời gian tối đa bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt trong việc trích khấu hao giữa TSCĐ thuê tài chính chắc chắn mua lại và không chắc chắn mua lại.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí đi vay được vốn hóa khi nào và bao gồm những khoản mục nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích ảnh hưởng của chính sách không tính khấu hao quyền sử dụng đất vô thời hạn đối với giá trị tài sản ròng của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ ảnh hưởng của chính sách ghi nhận các khoản đầu tư vào công ty liên doanh, liên kết đến báo cáo tài chính hợp nhất.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn từ chính sách lập dự phòng giảm giá các khoản đầu tư chỉ khi việc giảm giá không mang tính tạm thời.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Chính sách kế toán áp dụng (Chi phí trả trước/phải trả, Vốn CSH, Doanh thu, Chi phí tài chính, Thuế TNDN, BCTC Hợp nhất)\nLoại nội dung: Text\nNguyên tắc ghi nhận và phân bổ chi phí trả trước\nCác khoản chi phí thực tế chưa phát sinh nhưng được trích trước vào chi phí sản xuất, kinh doanh trong kỳ để đảm bảo khi chi phí phát sinh thực tế không gây đột biến cho chi phí sản xuất kinh doanh trên cơ sở đảm bảo nguyên tắc phù hợp giữa doanh thu và chi phí. Khi các chi phí đó phát sinh, nếu có chênh lệch với số đã trích, kế toán tiến hành ghi bổ sung hoặc ghi giảm chi phí tương ứng với phần chênh lệch.\nNguyên tắc ghi nhận chi phí phải trả\nCác khoản chi phí thực tế chưa phát sinh nhưng được trích trước vào chi phí sản xuất, kinh doanh trong kỳ để đảm bảo khi chi phí phát sinh thực tế không gây đột biến cho chi phí sản xuất kinh doanh trên cơ sở đảm bảo nguyên tắc phù hợp giữa doanh thu và chi phí. Khi các chi phí đó phát sinh, nếu có chênh lệch với số đã trích, kế toán tiến hành ghi bổ sung hoặc ghi giảm chi phí tương ứng với phần chênh lệch.\nNguyên tắc ghi nhận các khoản phải trả\nBao gồm các khoản phải trả người bán, người mua trả tiền trước, phải trả nội bộ, phải trả khác, khoản vay tại thời điểm báo cáo, nếu:\n- Có thời hạn thanh toán dưới 1 năm được phân loại là nợ ngắn hạn.\n- Có thời hạn thanh toán trên 1 năm được phân loại là nợ dài hạn.\nĐối với các giao dịch bằng ngoại tệ phát sinh trong kỳ, tỷ giá ghi nhận là tỷ giá bán của ngân hàng thương mại nơi Công ty dự kiến giao dịch tại thời điểm phát sinh giao dịch.\nTại thời điểm lập Báo cáo tài chính hợp nhất, các khoản phải trả có gốc ngoại tệ được đánh giá lại số dư theo tỷ giá thực tế là tỷ giá bán ngoại tệ của ngân hàng thương mại nơi doanh nghiệp thường xuyên có giao dịch tại thời điểm lập Báo cáo tài chính hợp nhất, khoản chênh lệch tỷ giá được hạch toán bù trừ sau đó hạch toán vào doanh thu hoặc chi phí tài chính hợp nhất (khoản mục tiền người mua trả tiền trước không đánh giá lại số dư).\nNguyên tắc và phương pháp ghi nhận các khoản dự phòng phải trả\nGiá trị được ghi nhận của một khoản dự phòng phải trả là giá trị được ước tính hợp lý nhất về khoản tiền sẽ phải chi để thanh toán nghĩa vụ nợ hiện tại tại ngày kết thúc kỳ kế toán năm hoặc tại ngày kết thúc kỳ kế toán giữa niên độ.\nChỉ những khoản chi phí liên quan đến khoản dự phòng phải trả đã lập ban đầu mới được bù đắp bằng khoản dự phòng phải trả đó.\nKhoản chênh lệch giữa số dự phòng phải trả đã lập ở kỳ kế toán trước chưa sử dụng hết lớn hơn số dự phòng phải trả lập ở kỳ báo cáo được hoàn nhập (ghi giảm chi phí sản xuất, kinh doanh trong kỳ, trừ khoản chênh lệch lớn hơn của khoản dự phòng phải trả về bảo hành công trình xây lắp được hoàn nhập vào thu nhập khác trong kỳ).\nNguyên tắc ghi nhận vốn chủ sở hữu\nVốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.\nThặng dư vốn cổ phần được ghi nhận theo số chênh lệch lớn hơn hoặc nhỏ hơn giữa giá thực tế phát hành và mệnh giá cổ phiếu khi phát hành cổ phiếu lần đầu, phát hành bổ sung hoặc tái phát hành cổ phiếu quỹ.\nCổ phiếu quỹ là cổ phiếu do Công ty phát hành và sau đó mua lại. Cổ phiếu quỹ được ghi nhận theo giá trị thực tế và trình bày trên Bảng cân đối kế toán là một khoản ghi giảm vốn chủ sở hữu.\nLợi nhuận sau thuế chưa phân phối là số lợi nhuận từ các hoạt động của doanh nghiệp sau khi trừ các khoản điều chỉnh do áp dụng hồi tố thay đổi chính sách kế toán và điều chỉnh hồi tố sai sót trọng yếu của các năm trước.\nNguyên tắc và phương pháp ghi nhận doanh thu\nDoanh thu bán hàng\nDoanh thu bán hàng được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua.\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n- Doanh thu được xác định tương đối chắc chắn.\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.\nDoanh thu cung cấp dịch vụ\nDoanh thu cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp việc cung cấp dịch vụ liên quan đến nhiều kỳ thì doanh thu được ghi nhận trong kỳ theo kết quả phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán.\n- Doanh thu được xác định tương đối chắc chắn.\n- Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n- Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán.\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\nPhần công việc cung cấp dịch vụ đã hoàn thành được xác định theo phương pháp đánh giá công việc hoàn thành.\nDoanh thu hoạt động tài chính\nDoanh thu phát sinh từ tiền lãi, tiền bản quyền, cổ tức, lợi nhuận được chia và các khoản doanh thu hoạt động tài chính khác được ghi nhận khi thỏa mãn đồng thời hai (2) điều kiện sau:\n- Có khả năng thu được lợi ích kinh tế từ giao dịch đó.\n- Doanh thu được xác định tương đối chắc chắn.\nCổ tức, lợi nhuận được chia được ghi nhận khi Công ty được quyền nhận cổ tức hoặc được quyền nhận lợi nhuận từ việc góp vốn.\nNguyên tắc và phương pháp ghi nhận chi phí tài chính\nCác khoản chi phí được ghi nhận vào chi phí tài chính gồm:\n- Chi phí hoặc các khoản lỗ liên quan đến các hoạt động đầu tư tài chính.\n- Chi phí cho vay và đi vay vốn.\n- Các khoản lỗ do thay đổi tỷ giá hối đoái của các nghiệp vụ phát sinh liên quan đến ngoại tệ.\n- Dự phòng giảm giá đầu tư chứng khoán.\nCác khoản trên được ghi nhận theo tổng số phát sinh trong kỳ, không bù trừ với doanh thu hoạt động tài chính.\nNguyên tắc và phương pháp ghi nhận chi phí thuế thu nhập doanh nghiệp hiện hành.\nThuế thu nhập hiện hành là khoản thuế được tính dựa trên thu nhập tính thuế. Thu nhập tính thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán, các chi phí không được trừ cũng như điều chỉnh các khoản thu nhập không phải chịu thuế và các khoản lỗ được chuyển.\nNguyên tắc và phương pháp ghi nhận chi phí thuế thu nhập doanh nghiệp hoãn lại.\nThuế thu nhập hoãn lại là khoản thuế thu nhập doanh nghiệp sẽ phải nộp hoặc sẽ được hoàn lại do chênh lệch tạm thời giữa giá trị ghi sổ của tài sản và nợ phải trả cho mục đích Báo cáo tài chính và các giá trị dùng cho mục đích thuế. Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế. Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ này.\nGiá trị ghi sổ của tài sản thuế thu nhập doanh nghiệp hoãn lại được xem xét lại vào ngày kết thúc năm tài chính và sẽ được ghi giảm đến mức đảm bảo chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng. Các tài sản thuế thu nhập doanh nghiệp hoãn lại chưa được ghi nhận trước đây được xem xét lại vào ngày kết thúc năm tài chính và được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế để có thể sử dụng các tài sản thuế thu nhập hoãn lại chưa ghi nhận này.\nTài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho năm tài sản được thu hồi hay nợ phải trả được thanh toán dựa trên các mức thuế suất có hiệu lực tại ngày kết thúc năm tài chính. Thuế thu nhập hoãn lại được ghi nhận trong Báo cáo kết quả hoạt động kinh doanh trừ khi liên quan đến các khoản mục được ghi thẳng vào vốn chủ sở hữu khi đó thuế thu nhập doanh nghiệp sẽ được ghi thẳng vào vốn chủ sở hữu.\nNguyên tắc và phương pháp lập báo cáo tài chính hợp nhất\nBáo cáo tài chính hợp nhất bao gồm báo cáo tài chính của Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I và các Công ty con tại ngày 30 tháng 06 năm 2024.\nCác công ty con được hợp nhất toàn bộ kể từ ngày mua, là ngày Công ty mẹ thực sự nắm quyền kiểm soát công ty con, tiếp tục được hợp nhất cho đến ngày Công ty mẹ thực sự chấm dứt quyền kiểm soát đối với công ty con.\nGiao dịch hợp nhất qua nhiều giai đoạn, trước khi thực hiện việc loại trừ khoản đầu tư của công ty mẹ và công ty con, kế toán phải thực hiện một số điều chỉnh đối với giá phí khoản đầu tư của công ty mẹ trên Báo cáo tài chính hợp nhất như sau:\nTrường hợp trước ngày công ty mẹ đạt được quyền kiểm soát, công ty mẹ không có ảnh hưởng đáng kể với công ty con và khoản đầu tư được trình bày theo phương pháp giá gốc: Khi đạt được quyền kiểm soát đối với công ty con, trên Báo cáo tài chính hợp nhất công ty mẹ phải đánh giá lại giá trị khoản đầu tư trước đây theo giá trị hợp lý tại ngày kiểm soát công ty con. Phần chênh lệch giữa giá đánh giá lại và giá gốc khoản đầu tư được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh hợp nhất.\nTrường hợp trước ngày công ty mẹ đạt được quyền kiểm soát, công ty con là công ty liên kết của công ty mẹ và đã được trình bày theo phương pháp vốn chủ sở hữu: Khi đạt được quyền kiểm soát, trên Báo cáo tài chính hợp nhất công ty mẹ phải đánh giá lại giá trị khoản đầu tư theo giá trị hợp lý. Phần chênh lệch giữa giá đánh giá lại và giá trị khoản đầu tư theo phương pháp vốn chủ sở hữu được ghi nhận vào báo cáo kết quả hoạt động kinh doanh hợp nhất. Phần chênh lệch giữa giá trị khoản đầu tư theo phương pháp vốn chủ sở hữu và giá gốc khoản đầu tư được ghi nhận trực tiếp vào các chỉ tiêu thuộc phần vốn chủ sở hữu của Bảng cân đối kế toán hợp nhất.\nCác báo cáo tài chính của công ty mẹ và các công ty con sử dụng để hợp nhất được lập cho cùng một kỳ kế toán, và được áp dụng các chính sách kế toán một cách thống nhất.\nLợi ích của cổ đông thiểu số là phần lợi ích trong lãi, lỗ, và trong tài sản thuần của công ty con không được nắm giữ bởi Công ty mẹ và được trình riêng biệt trên báo cáo kết quả kinh doanh hợp nhất và được trình bày riêng biệt với phần vốn chủ sở hữu của cổ đông của công ty mẹ trong phần vốn chủ sở hữu trên bảng cân đối kế toán hợp nhất.\nLoại trừ giao dịch nội bộ: số dư các tài khoản trên bảng cân đối kế toán giữa các đơn vị trong cùng Công ty mẹ, các khoản thu nhập, chi phí, các khoản lãi lỗ nội bộ chưa thực hiện phát sinh từ các giao dịch này được loại trừ hoàn toàn.",
+    "questions": [
+      {
+        "question": "Công ty phân loại nợ phải trả có thời hạn thanh toán dưới 1 năm là loại nợ gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản chi phí tài chính gồm những gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các điều kiện để doanh thu bán hàng được ghi nhận theo chính sách của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty ghi nhận và xử lý khoản chênh lệch tỷ giá đối với các khoản phải trả có gốc ngoại tệ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên tắc và ý nghĩa của việc lập dự phòng phải trả trong báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của chính sách ghi nhận lợi ích của cổ đông thiểu số đến tổng vốn chủ sở hữu trên báo cáo hợp nhất.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.01, V.02, V.03.a, V.03.b)\nLoại nội dung: Bảng và Text\nĐơn vị tính: VNĐ\nV.01. TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| 1. TIỀN | 268,896,562,856 | 317,879,542,714 |\n| - Tiền mặt | 1,754,278,151 | 1,783,792,635 |\n| - Tiền gửi ngân hàng không kỳ hạn | 267,142,284,705 | 316,095,750,079 |\n| 2. Các khoản tương đương tiền | 307,808,605,000 | 794,500,000,000 |\n| Cộng | 576,705,167,856 | 1,112,379,542,714 |\n\nV.02. CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| a. Chứng khoán kinh doanh | - | - |\n| b. Đầu tư nắm giữ đến ngày đáo hạn | 918,581,773,972 | 666,985,624,494 |\n| - Tiền gửi ngắn hạn | 915,271,773,972 | 663,675,624,494 |\n| - Trái phiếu | 3,310,000,000 | 3,310,000,000 |\n| c. Đầu tư góp vốn vào đơn vị khác | 245,517,581,111 | 245,517,581,111 |\n| - Đầu tư vào đơn vị khác | 245,517,581,111 | 245,517,581,111 |\n| - Cty CP Điện Mặt Trời Europlast Long An | 245,517,581,111 | 245,517,581,111 |\n| Cộng | 1,164,099,355,083 | 912,503,205,605 |\n\nV.03.a PHẢI THU KHÁCH HÀNG\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| Công ty TNHH MTV Kiểm Định Đầu Tư Toàn cầu | 89,114,719,817 | 105,954,719,817 |\n| Công ty CP Dầu Cá Châu A | 387,204,231,364 | 241,914,818,941 |\n| Công ty Cổ Phần Xuất Khẩu Thủy Hải Sản Sạch | 47,629,594,620 | 101,185,453,660 |\n| Đối tượng khác | 1,231,629,195,848 | 836,515,989,957 |\n| Cộng | 1,755,577,741,649 | 1,285,570,982,375 |\n\nV.03.b PHẢI THU NGẮN HẠN KHÁC\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Phải thu khác | 29,119,126,526 | 34,845,118,758 |\n| - Cục Thuế tỉnh Đồng Tháp (Cty đang làm hồ sơ hoàn thuế của khoản phải thu này) | 16,265,382,177 | 18,465,382,177 |\n| - Công ty CT Tài Chính TNHH MTV NHTMCP Công Thương VN | 2,746,321,223 | 3,540,447,677 |\n| - Lãi dự thu | 7,026,844,070 | 9,715,036,348 |\n| - Đối tượng khác | 3,080,579,056 | 3,124,252,556 |\n| - Tạm ứng | 61,892,312,592 | 63,785,769,570 |\n| - Các khoản ký quỹ, ký cược ngắn hạn | 3,830,700,000 | 3,830,700,000 |\n| Cộng | 94,842,139,118 | 102,461,588,328 |",
+    "questions": [
+      {
+        "question": "Tổng Tiền và các khoản tương đương tiền tại 30/06/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty CP Dầu Cá Châu A nợ công ty bao nhiêu tại ngày 30/06/2024?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng các khoản phải thu ngắn hạn khác giữa hai kỳ báo cáo.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục đầu tư tài chính dài hạn 'Đầu tư góp vốn vào đơn vị khác' có giá trị bao nhiêu và đã thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro tín dụng của các khoản phải thu khách hàng dựa trên sự biến động giữa hai kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm mạnh trong 'Các khoản tương đương tiền' đến thanh khoản ngắn hạn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của khoản 'Phải thu khác' tăng lên đến tình hình tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.03.c, V.03.d, V.03.e, V.04, V.05)\nLoại nội dung: Bảng\nĐơn vị tính: VNĐ\nV.03.c PHẢI THU DÀI HẠN KHÁC\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Phải thu khác | 4,242,979,835 | 4,242,979,835 |\n| - Các khoản ký quỹ, ký cược dài hạn | 4,242,979,835 | 4,242,979,835 |\n| Cộng | 4,242,979,835 | 4,242,979,835 |\n\nV.03.d PHẢI THU VỀ CHO VAY\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Ngắn hạn | - | - |\n| - Dài hạn | 529,900,000,000 | 457,200,000,000 |\n| - Công ty Cổ Phần Tập Đoàn Sao Mai | 529,900,000,000 | 457,200,000,000 |\n| Cộng | 529,900,000,000 | 457,200,000,000 |\n\nV.03.e NỢ XẤU\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Phải thu khách hàng | 56,845,098,340 | 56,845,098,340 |\n| Cộng | 56,845,098,340 | 56,845,098,340 |\n\nV.04. HÀNG TỒN KHO\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| Nguyên liệu, vật liệu | 9,457,520,716 | 10,586,655,519 |\n| Công cụ, dụng cụ | 663,713,914 | 641,893,377 |\n| Chi phí sản xuất, kinh doanh dở dang | 24,999,746,311 | 24,384,056,811 |\n| Thành phẩm | 845,370,982,601 | 1,050,662,821,889 |\n| Hàng hóa | 494,226,492,605 | 479,973,190,785 |\n| Hàng gửi đi bán | 2,697,130,422 | 5,855,895,724 |\n| Cộng hàng tồn kho | 1,377,415,586,569 | 1,572,104,514,105 |\n\nV.05. TÀI SẢN DỞ DANG DÀI HẠN\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| Mua sắm TSCĐ | 14,833,740,170 | 14,778,209,810 |\n| - Kho lạnh 04 | 14,321,499,813 | 14,321,499,813 |\n| - Khác | 512,240,357 | 456,709,997 |\n| Xây dựng cơ bản dở dang | 563,802,719,519 | 560,174,722,390 |\n| - Kho lạnh 04 | 144,247,959,021 | 142,935,148,514 |\n| - Khu đô thị Bình Long | 401,317,925,000 | 401,317,925,000 |\n| - Chi phí bồi hoàn đất huyện Cư Jút | 3,713,038,187 | 3,701,429,867 |\n| - Máy ly tâm | 4,452,987,885 | 4,452,987,885 |\n| - Công trình khác | 10,070,809,426 | 7,767,231,124 |\n| Cộng | 578,636,459,689 | 574,952,932,200 |",
+    "questions": [
+      {
+        "question": "Tổng giá trị hàng tồn kho tại 30/06/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị phải thu dài hạn về cho vay từ Công ty Cổ Phần Tập Đoàn Sao Mai là bao nhiêu tại 30/06/2024?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Thành phẩm tại 30/06/2024 với 01/01/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự biến động của Tài sản dở dang dài hạn, tập trung vào các hạng mục chính.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro liên quan đến nợ xấu của công ty dựa trên thuyết minh V.03.e.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm giá trị hàng tồn kho đến tình hình tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tiềm năng hoàn thành các dự án xây dựng cơ bản dở dang và tác động đến tài sản dài hạn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.06 Tăng, giảm Tài sản cố định hữu hình)\nLoại nội dung: Bảng\nĐơn vị tính: VNĐ\nV.06. TĂNG, GIẢM TÀI SẢN CỐ ĐỊNH HỮU HÌNH\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc, thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị quản lý | TSCĐ khác | Cộng |\n|---|---|---|---|---|---|---|\n| Nguyên giá | | | | | | |\n| Số dư đầu kỳ | 533,206,548,612 | 767,791,356,625 | 32,726,990,698 | 3,728,990,600 | 14,803,342,423 | 1,352,257,228,958 |\n| Số tăng trong kỳ | 532,200,600 | 698,770,000 | - | 116,293,182 | - | 1,347,263,782 |\n| - Mua trong kỳ | 532,200,600 | 698,770,000 | - | 116,293,182 | - | 1,347,263,782 |\n| - Đầu tư XDCB hoàn thành | - | - | - | - | - | - |\n| - Mua lại TSCĐ thuê tài chính | - | - | - | - | - | - |\n| - Tăng khác | - | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | 645,454,546 | - | - | 645,454,546 |\n| - Thanh lý, nhượng bán | - | - | 645,454,546 | - | - | 645,454,546 |\n| - Giảm khác | - | - | - | - | - | - |\n| Số dư cuối kỳ | 533,206,548,612 | 768,323,557,225 | 32,081,536,152 | 4,427,760,600 | 14,919,635,605 | 1,352,959,038,194 |\n| Giá trị hao mòn lũy kế | | | | | | |\n| Số dư đầu kỳ | 165,289,841,678 | 490,194,049,792 | 30,940,597,211 | 2,071,166,252 | 8,681,761,958 | 697,177,416,891 |\n| Số tăng trong kỳ | 12,503,954,308 | 22,896,462,603 | 410,652,440 | 239,635,896 | 353,378,459 | 36,404,083,706 |\n| - Khấu hao trong kỳ | 12,503,954,308 | 22,896,462,603 | 410,652,440 | 239,635,896 | 353,378,459 | 36,404,083,706 |\n| - Mua lại TSCĐ thuê tài chính | - | - | - | - | - | - |\n| - Tăng khác | - | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | 645,454,546 | - | - | 645,454,546 |\n| - Thanh lý, nhượng bán | - | - | 645,454,546 | - | - | 645,454,546 |\n| - Giảm khác | - | - | - | - | - | - |\n| Số dư cuối kỳ | 177,793,795,986 | 513,090,512,395 | 30,705,795,105 | 2,310,802,148 | 9,035,140,417 | 732,936,046,051 |\n| Giá trị còn lại | | | | | | |\n| Tại ngày đầu kỳ | 367,916,706,934 | 277,597,306,833 | 1,786,393,487 | 1,657,824,348 | 6,121,580,465 | 655,079,812,067 |\n| Tại ngày cuối kỳ | 355,412,752,626 | 255,233,044,830 | 1,375,741,047 | 2,116,958,452 | 5,884,495,188 | 620,022,992,143 |",
+    "questions": [
+      {
+        "question": "Tổng nguyên giá TSCĐ hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị hao mòn lũy kế của Máy móc, thiết bị cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị còn lại của Nhà cửa, vật kiến trúc giữa đầu kỳ và cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Mức tăng khấu hao trong kỳ chủ yếu đến từ loại TSCĐ hữu hình nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư mới và thanh lý tài sản cố định hữu hình trong kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi trong nguyên giá và giá trị hao mòn lũy kế đến hiệu quả sử dụng tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của xu hướng giảm giá trị còn lại của TSCĐ hữu hình đến khả năng tái đầu tư của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.07, V.08.a, V.08.b)\nLoại nội dung: Bảng\nĐơn vị tính: VNĐ\nV.07. TĂNG, GIẢM TÀI SẢN CỐ ĐỊNH THUÊ TÀI CHÍNH\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc, thiết bị | Phương tiện vận tải | TSCĐ khác | Cộng |\n|---|---|---|---|---|---|\n| Nguyên giá | | | | | |\n| Số dư đầu kỳ | 11,070,071,709 | 131,531,783,646 | 17,095,897,012 | - | 159,697,752,367 |\n| Số tăng trong kỳ | - | - | - | - | - |\n| - Thuê tài chính trong kỳ | - | - | - | - | - |\n| - Mua lại TSCĐ thuê tài chính | - | - | - | - | - |\n| - Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - | - |\n| - Trả lại TSCĐ thuê tài chính | - | - | - | - | - |\n| - Giảm khác | - | - | - | - | - |\n| Số dư cuối kỳ | 11,070,071,709 | 131,531,783,646 | 17,095,897,012 | - | 159,697,752,367 |\n| Giá trị hao mòn lũy kế | | | | | |\n| Số dư đầu kỳ | 4,969,795,311 | 40,282,000,061 | 6,792,661,538 | - | 52,044,456,910 |\n| Số tăng trong kỳ | 1,296,468,348 | 8,762,622,127 | 1,243,155,113 | - | 11,302,245,588 |\n| - Khấu hao trong kỳ | 1,296,468,348 | 8,762,622,127 | 1,243,155,113 | - | 11,302,245,588 |\n| - Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - | - |\n| - Trả lại TSCĐ thuê tài chính | - | - | - | - | - |\n| - Thanh lý, nhượng bán | - | - | - | - | - |\n| - Giảm khác | - | - | - | - | - |\n| Số dư cuối kỳ | 6,266,263,659 | 49,044,622,188 | 8,035,816,651 | - | 63,346,702,498 |\n| Giá trị còn lại | | | | | |\n| Tại ngày đầu kỳ | 6,100,276,398 | 91,249,783,585 | 10,303,235,474 | - | 107,653,295,457 |\n| Tại ngày cuối kỳ | 4,803,808,050 | 82,487,161,458 | 9,060,080,361 | - | 96,351,049,869 |\n\nV.08.a. TĂNG, GIẢM TÀI SẢN CỐ ĐỊNH VÔ HÌNH\n| Chỉ tiêu | Bản quyền, bằng sáng chế | Phần mềm vi tính | Quyền sử dụng đất | TSCĐ vô hình khác | Cộng |\n|---|---|---|---|---|---|\n| Nguyên giá | | | | | |\n| Số dư đầu kỳ | - | 785,000,000 | 173,940,981,651 | - | 174,725,981,651 |\n| Số tăng trong kỳ | - | - | - | - | - |\n| - Mua trong kỳ | - | - | - | - | - |\n| - Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - | - |\n| - Thanh lý, nhượng bán | - | - | - | - | - |\n| - Giảm khác | - | - | - | - | - |\n| Số dư cuối kỳ | - | 785,000,000 | 173,940,981,651 | - | 174,725,981,651 |\n| Giá trị hao mòn lũy kế | | | | | |\n| Số dư đầu kỳ | - | 785,000,000 | 27,671,558,916 | - | 28,456,558,916 |\n| Số tăng trong kỳ | - | - | 1,794,689,586 | - | 1,794,689,586 |\n| - Khấu hao trong kỳ | - | - | 1,794,689,586 | - | 1,794,689,586 |\n| - Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - | - |\n| - Thanh lý, nhượng bán | - | - | - | - | - |\n| - Giảm khác | - | - | - | - | - |\n| Số dư cuối kỳ | - | 785,000,000 | 29,466,248,502 | - | 30,251,248,502 |\n| Giá trị còn lại | | | | | |\n| Tại ngày đầu kỳ | - | - | 146,269,422,735 | - | 146,269,422,735 |\n| Tại ngày cuối kỳ | - | - | 144,474,733,149 | - | 144,474,733,149 |\n\nV.08.b. TĂNG, GIẢM TÀI SẢN BẤT ĐỘNG SẢN ĐẦU TƯ\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc thiết bị | Phương tiện vận tải | Quyền sử dụng đất | Cộng |\n|---|---|---|---|---|---|\n| Nguyên giá | | | | | |\n| Số dư đầu kỳ | 173,409,054,479 | 149,825,181,097 | - | - | 323,234,235,576 |\n| Số tăng trong kỳ | - | - | - | - | - |\n| - Mua trong kỳ | - | - | - | - | - |\n| - Mua lại TSCĐ thuê tài chính | - | - | - | - | - |\n| - Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - | - |\n| - Thanh lý, nhượng bán | - | - | - | - | - |\n| - Giảm khác | - | - | - | - | - |\n| Số dư cuối kỳ | 173,409,054,479 | 149,825,181,097 | - | - | 323,234,235,576 |\n| Giá trị hao mòn lũy kế | | | | | |\n| Số dư đầu kỳ | 66,905,472,913 | 3,527,312,430 | - | - | 70,432,785,343 |\n| Số tăng trong kỳ | 4,156,921,968 | 196,105,926 | - | - | 4,353,027,894 |\n| - Khấu hao trong kỳ | 4,156,921,968 | 196,105,926 | - | - | 4,353,027,894 |\n| - Mua lại TSCĐ thuê tài chính | - | - | - | - | - |\n| - Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - | - |\n| - Thanh lý, nhượng bán | - | - | - | - | - |\n| - Giảm khác | - | - | - | - | - |\n| Số dư cuối kỳ | 71,062,394,881 | 3,723,418,356 | - | - | 74,785,813,237 |\n| Giá trị còn lại | | | | | |\n| Tại ngày đầu kỳ | 106,503,581,566 | 146,297,868,667 | - | - | 252,801,450,233 |\n| Tại ngày cuối kỳ | 102,346,659,598 | 146,101,762,741 | - | - | 248,448,422,339 |",
+    "questions": [
+      {
+        "question": "Giá trị còn lại của Tài sản cố định thuê tài chính tại ngày 30/06/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng nguyên giá Bất động sản đầu tư cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị còn lại của Tài sản cố định vô hình giữa đầu kỳ và cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Có sự tăng hoặc giảm nào đáng kể trong nguyên giá của Tài sản cố định thuê tài chính trong kỳ không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý và sử dụng các loại tài sản dài hạn (hữu hình, vô hình, thuê tài chính, BĐS đầu tư) của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản khấu hao trong kỳ đối với lợi nhuận của công ty và đề xuất cải thiện.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro liên quan đến bất động sản đầu tư nếu không có sự tăng giá trị đáng kể.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.09, V.10, V.11, V.12.a, V.12.b)\nLoại nội dung: Bảng\nĐơn vị tính: VNĐ\nV.09. CHI PHÍ TRẢ TRƯỚC\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| a. Ngắn hạn | 2,148,973,381 | 2,106,032,705 |\n| - Công cụ, dụng cụ xuất dùng | 673,716,855 | 573,397,115 |\n| - Các khoản khác | 1,475,256,526 | 1,532,635,590 |\n| Cộng | 2,148,973,381 | 2,106,032,705 |\n| b. Dài hạn | 8,754,335,007 | 9,570,771,554 |\n| - Công cụ dụng cụ xuất dùng | 2,674,224,923 | 2,981,237,454 |\n| - Các khoản khác | 6,080,110,084 | 6,589,534,100 |\n| Cộng | 8,754,335,007 | 9,570,771,554 |\n| c. Lợi thế thương mại | 266,883,917,009 | 283,564,161,822 |\n| - Giá trị LTTM phát sinh từ việc mua Công ty con | 266,883,917,009 | 283,564,161,822 |\n| Cộng | 266,883,917,009 | 283,564,161,822 |\n\nV.10. VAY VÀ NỢ THUÊ TÀI CHÍNH\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| a. Vay ngắn hạn | 4,129,468,925,113 | 4,090,462,799,775 |\n| b. Vay dài hạn | 235,688,522,000 | 274,817,522,000 |\n| c. Các khoản nợ thuê tài chính | 36,294,263,960 | 50,916,913,796 |\n| Cộng | 4,401,451,711,073 | 4,416,197,235,571 |\n\nV.11. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Thuế thu nhập doanh nghiệp | 11,096,501,621 | 35,071,487,522 |\n| - Thuế giá trị gia tăng | 29,731,093 | 135,464,930 |\n| - Thuế thu nhập cá nhân | 526,530,461 | 566,257,408 |\n| - Thuế tài nguyên | 174,432,000 | 174,768,000 |\n| Cộng | 11,827,195,175 | 35,947,977,860 |\n\nV.12.a PHẢI TRẢ NGƯỜI BÁN\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| Công ty TNHH MTV Tiếp Vận và Thương Mại Ocean Ship | 16,746,071,031 | 9,178,810,509 |\n| Công ty Cổ Phần Bao Bì Bình Đức | 5,430,473,388 | 5,076,815,400 |\n| Công ty CP Xuất Khẩu Thủy Hải Sản Sạch | 10,080,300,089 | 11,006,530,179 |\n| Công ty TNHH MTV KDDT Toàn cầu | 46,213,547,000 | - |\n| Phải trả cho các đối tượng khác | 95,200,849,274 | 145,011,022,041 |\n| Cộng | 228,385,423,782 | 216,486,725,129 |\n\nV.12.b PHẢI TRẢ KHÁC\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| a. Ngắn hạn | | |\n| - Kinh phí công đoàn | 919,689,231 | 1,220,605,231 |\n| - Bảo hiểm y tế | 204,522,250 | 208,845,250 |\n| - Nhận ký quỹ, ký cược ngắn hạn | 6,212,221,960 | 6,212,221,960 |\n| - Cổ tức, lợi nhuận phải trả | 1,069,057,700 | 1,100,681,000 |\n| - Các khoản phải trả, phải nộp khác | 20,330,343,861 | 26,457,360,110 |\n| - Công ty CP Tập đoàn Sao Mai | 7,326,889,000 | 7,076,889,000 |\n| - Phải trả khác | 13,003,454,861 | 19,380,471,110 |\n| Cộng | 28,735,835,002 | 35,199,713,551 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước ngắn hạn của công ty tại 30/06/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay và nợ thuê tài chính ngắn hạn tại 30/06/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng số thuế và các khoản phải nộp Nhà nước giữa hai kỳ báo cáo.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Mức độ giảm của lợi thế thương mại trong kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản phải trả người bán và ý nghĩa của nó đối với dòng tiền của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi trong cấu trúc nợ (ngắn hạn so với dài hạn) đến rủi ro tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự gia tăng các khoản phải trả ngắn hạn khác đến khả năng quản lý vốn lưu động của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.13 Vốn chủ sở hữu)\nLoại nội dung: Bảng và Text\nĐơn vị tính: VNĐ\nV.13.1. Bảng đối chiếu biến động của vốn chủ sở hữu\n| Chỉ tiêu | Vốn góp của CSH | Vốn khác của CSH | Thặng dư vốn cổ phần | Cổ phiếu quỹ | Các quỹ thuộc vốn chủ sở hữu | Lợi nhuận chưa phân phối | Lợi ích cổ đông không kiểm soát |\n|---|---|---|---|---|---|---|---|\n| Số dư đầu năm trước | 2,276,446,080,000 | 196,813,460,000 | 17,060,700,000 | - | 72,577,293,393 | 621,485,064,349 | 171,773,974,329 |\n| Tăng vốn trong năm trước | - | - | - | - | - | - | - |\n| Lãi trong năm trước | - | - | - | - | - | 57,765,947,119 | 15,588,228,146 |\n| Tăng do trích từ lợi nhuận | - | - | - | - | 16,497,484,339 | - | - |\n| Trả cổ tức bằng cổ phiếu | - | - | - | - | - | - | - |\n| Trích quỹ từ lợi nhuận | - | - | - | - | - | - | - |\n| Tăng khác | - | 178,332,232 | - | - | - | - | 52,384,642 |\n| Giảm do thoái vốn từ công ty con | - | - | - | - | - | - | (13,350,383,282) |\n| Giảm khác | - | - | - | - | 78,724,451 | - | 19,128,502 |\n| Số dư cuối năm trước | 2,276,446,080,000 | 196,813,460,000 | 17,060,700,000 | - | 89,074,777,732 | 657,853,134,910 | 174,045,075,333 |\n| Tăng vốn trong kỳ này | - | - | - | - | - | - | - |\n| Lãi trong kỳ này | - | - | - | - | - | 28,872,889,605 | 6,083,786,563 |\n| Lợi ích cổ đông không kiểm soát | - | - | - | - | - | - | - |\n| Trích quỹ từ lợi nhuận | - | - | - | - | - | (11,188,705,000) | - |\n| Tăng do trích quỹ từ lợi nhuận | - | - | - | - | 9,188,705,000 | - | - |\n| Chia cổ tức | - | - | - | - | - | - | - |\n| Tăng khác | - | - | - | - | - | - | - |\n| Giảm khác | - | - | - | - | - | - | - |\n| Số dư cuối kỳ này | 2,276,446,080,000 | 196,813,460,000 | 17,060,700,000 | - | 98,263,482,732 | 675,537,319,515 | 180,128,861,896 |\n\nV.13.2. Chi tiết vốn góp của chủ sở hữu\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Vốn góp của các cổ đông | 2,276,446,080,000 | 2,276,446,080,000 |\n\nV.13.3. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận\n| Chỉ tiêu | Kỳ này | Năm trước |\n|---|---|---|\n| - Vốn đầu tư của chủ sở hữu | | |\n| - Vốn góp đầu kỳ | 2,276,446,080,000 | 2,276,446,080,000 |\n| - Vốn góp tăng trong kỳ | - | - |\n| - Vốn góp giảm trong kỳ | - | - |\n| - Vốn góp cuối kỳ | 2,276,446,080,000 | 2,276,446,080,000 |\n| - Cổ tức, lợi nhuận đã chia | - | - |\n\nV.13.4. Cổ phiếu\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Số lượng cổ phiếu đăng ký phát hành | 227,644,608 | 227,644,608 |\n| - Số lượng cổ phiếu đã bán ra công chúng | 227,644,608 | 227,644,608 |\n| - Cổ phiếu phổ thông | 227,644,608 | 227,644,608 |\n| - Số lượng cổ phiếu đang lưu hành | 227,644,608 | 227,644,608 |\n| - Cổ phiếu phổ thông | 227,644,608 | 227,644,608 |\n| Mệnh giá cổ phiếu đang lưu hành: 10.000đ/CP\n\nV.13.5. Các quỹ của công ty\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|---|---|---|\n| - Quỹ đầu tư phát triển | 76,041,218,670 | 67,644,983,670 |",
+    "questions": [
+      {
+        "question": "Vốn góp của chủ sở hữu cuối kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mệnh giá cổ phiếu đang lưu hành của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận chưa phân phối cuối kỳ này với cuối năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu đang lưu hành của công ty tại 30/06/2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tăng trưởng của Quỹ đầu tư phát triển trong kỳ này.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của lợi nhuận sau thuế chưa phân phối giảm đến khả năng chi trả cổ tức trong tương lai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự biến động vốn chủ sở hữu đến niềm tin của nhà đầu tư và giá cổ phiếu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.14, V.15, V.16, V.17, V.18, V.19)\nLoại nội dung: Bảng\nĐơn vị tính: VNĐ\nV.14. TỔNG DOANH THU BÁN HÀNG VÀ CUNG CẤP DỊCH VỤ\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| Doanh thu bán hàng hóa, thành phẩm cá tra | 1,329,562,958,869 | 1,449,209,064,388 |\n| Doanh thu bán bột cá, mỡ cá | 1,448,391,860,732 | 1,341,938,132,770 |\n| Doanh thu bán hàng hóa, thức ăn chăn nuôi | 763,399,728,000 | 762,788,895,000 |\n| Doanh thu cung cấp dịch vụ | 24,385,764,648 | 36,772,041,081 |\n| Cộng | 3,565,740,312,249 | 3,590,708,133,239 |\n\nV.15. CÁC KHOẢN GIẢM TRỪ DOANH THU\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| Giảm giá hàng bán | 70,830,000 | 184,552,665 |\n| Hàng bán bị trả lại | 960,101,100 | 1,752,871,181 |\n| Cộng | 1,030,931,100 | 1,937,423,846 |\n\nV.16. GIÁ VỐN HÀNG BÁN\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| Giá vốn của hàng hóa, thành phẩm đã bán | 1,203,484,137,250 | 1,262,478,760,820 |\n| Giá vốn bột cá, mỡ cá | 1,403,075,235,747 | 1,278,898,331,161 |\n| Giá vốn của hàng hóa, thức ăn chăn nuôi | 658,528,564,702 | 722,427,120,409 |\n| Giá vốn của dịch vụ đã cung cấp | 25,930,494,083 | 25,809,148,656 |\n| Cộng | 3,291,018,431,782 | 3,289,613,361,046 |\n\nV.17. DOANH THU HOẠT ĐỘNG TÀI CHÍNH\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Lãi tiền gửi, tiền cho vay | 51,950,866,427 | 49,172,070,913 |\n| - Lãi chênh lệch tỷ giá | 18,184,333,570 | 18,631,531,921 |\n| - Lãi từ thanh toán trước | 642,171,667 | 1,753,399,424 |\n| Cộng | 70,777,371,664 | 69,557,002,258 |\n\nV.18. CHI PHÍ TÀI CHÍNH\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Lãi tiền vay | 146,737,651,602 | 185,899,191,030 |\n| - Lỗ chênh lệch tỷ giá | 23,287,989,096 | 16,038,584,305 |\n| - Chi phí tài chính khác | 1,862,698,397 | 1,173,438,536 |\n| Cộng | 171,888,339,095 | 203,111,213,871 |\n\nV.19. CHI PHÍ BÁN HÀNG\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Chi phí nhân viên bán hàng | 3,855,564,110 | 3,792,432,390 |\n| - Chi phí dịch vụ mua ngoài | 10,954,219,099 | 11,767,821,652 |\n| - Chi phí vận chuyển hàng hóa | 49,476,781,257 | 35,398,481,252 |\n| - Chi phí bằng tiền khác | 21,236,399,709 | 17,379,933,328 |\n| Cộng | 85,522,964,175 | 68,338,668,622 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu bán hàng và cung cấp dịch vụ sáu tháng đầu năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí lãi tiền vay trong sáu tháng đầu năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu bán bột cá, mỡ cá giữa hai kỳ sáu tháng đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ lệ các khoản giảm trừ doanh thu trên tổng doanh thu bán hàng và cung cấp dịch vụ trong sáu tháng đầu năm 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cơ cấu doanh thu của công ty giữa hai kỳ báo cáo.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân sự biến động lớn trong chi phí vận chuyển hàng hóa và tác động của nó đến chi phí bán hàng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của lãi chênh lệch tỷ giá và lỗ chênh lệch tỷ giá đến kết quả tài chính tổng thể của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung (V.20, V.21, V.22, V.23, V.24, V.25)\nLoại nội dung: Bảng và Text\nĐơn vị tính: VNĐ\nV.20. CHI PHÍ QUẢN LÝ DOANH NGHIỆP\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Chi phí nhân viên quản lý | 12,385,138,343 | 13,970,568,327 |\n| - Chi phí khấu hao TSCĐ | 3,950,355,924 | 1,931,054,159 |\n| - Chi phí dịch vụ mua ngoài | 3,488,015,094 | 3,946,906,874 |\n| - Lợi thế thương mại | 16,680,244,813 | 16,680,244,814 |\n| - Các khoản chi phí QLDN khác | 6,827,397,412 | 8,423,175,047 |\n| Cộng | 41,331,151,586 | 44,951,949,221 |\n\nV.21. THU NHẬP KHÁC\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Thu nhập từ cho thuê tài sản | 4,370,086,907 | 4,434,995,998 |\n| - Thu nhập từ thanh lý, nhượng bán TSCĐ | 27,350,908 | 1,529,211,836 |\n| - Các khoản khác | 905,236,194 | 1,604,166,993 |\n| Cộng | 5,302,674,009 | 7,568,374,827 |\n\nV.22. CHI PHÍ KHÁC\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Chi phí cho thuê tài sản | 2,392,948,685 | 2,392,948,683 |\n| - Các khoản bị phạt | 598,829,294 | 1,990,609,892 |\n| - Các khoản khác | 1,326,866,498 | 3,517,437,475 |\n| Cộng | 4,318,644,477 | 7,900,996,050 |\n\nV.23. CHI PHÍ THUẾ THU NHẬP DOANH NGHIỆP HIỆN HÀNH\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Chi phí thuế thu nhập doanh nghiệp tính trên thu nhập chịu thuế năm hiện hành | 9,149,562,087 | 7,117,481,170 |\n| - Điều chỉnh chi phí thuế thu nhập doanh nghiệp của các năm trước vào chi phí thuế thu nhập hiện hành năm nay | 2,603,657,452 | 558,849,521 |\n| Cộng | 11,753,219,539 | 7,676,330,691 |\n\nV.24. CHI PHÍ SẢN XUẤT THEO YẾU TỐ\n| Chỉ tiêu | Sáu tháng đầu năm 2024 | Sáu tháng đầu năm 2023 |\n|---|---|---|\n| - Chi phí nguyên liệu, vật liệu | 982,907,095,811 | 1,278,230,026,686 |\n| - Chi phí nhân công | 156,309,017,216 | 171,744,701,100 |\n| - Chi phí khấu hao tài sản cố định | 53,854,046,774 | 58,738,414,190 |\n| - Chi phí dịch vụ mua ngoài | 106,378,836,133 | 86,219,398,000 |\n| - Chi phí bằng tiền khác | 60,676,546,361 | 68,032,734,000 |\n| Cộng | 1,360,125,542,295 | 1,662,965,275,378 |\n\nV.25. THÔNG TIN VỀ CÁC BÊN LIÊN QUAN\nCác bên liên quan\n| Các bên liên quan | Mối quan hệ |\n|---|---|\n| Công ty CP Tập Đoàn Sao Mai | Công ty mẹ |\n| Công ty CP ĐT Du Lịch và Phát Triển Thủy Sản | Công ty con |\n| Công ty CP Đầu Tư Vĩnh An Đắk Nông | Công ty con |\n| Công ty CP Điện Mặt Trời Europlast Long An | Công ty góp vốn |\n\nSố liệu so sánh\nSố liệu so sánh là số liệu của Báo cáo tài chính hợp nhất cho năm tài chính 2023 kết thúc ngày 31/12/2023 đã được kiểm toán và Báo cáo tài chính hợp nhất cho quý 2 năm tài chính 2023 kết thúc ngày 30/06/2023.\nĐồng Tháp, ngày 29 tháng 07 năm 2024\nNgười lập biểu\nVũ Thị Lệ Nguyễn Đức Phương",
+    "questions": [
+      {
+        "question": "Tổng chi phí quản lý doanh nghiệp trong sáu tháng đầu năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tên công ty mẹ của I.D.I là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh tổng thu nhập khác giữa sáu tháng đầu năm 2024 và 2023.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí nguyên liệu, vật liệu chiếm tỷ lệ bao nhiêu phần trăm trong tổng chi phí sản xuất theo yếu tố sáu tháng đầu năm 2024?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý chi phí hoạt động của công ty dựa trên sự thay đổi của chi phí quản lý doanh nghiệp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự điều chỉnh chi phí thuế thu nhập doanh nghiệp của các năm trước đến chi phí thuế hiện hành năm nay.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro về chi phí sản xuất nếu chi phí nguyên liệu, vật liệu tiếp tục giảm trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I\nMã cổ phiếu: IDI\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Kết thúc ngày 30/06/2024, phát hành tháng 07/2024\nÝ kiến kiểm toán: Không có\n\nSection: Giải trình Báo cáo tài chính hợp nhất Quý II năm 2024\nLoại nội dung: Text\nCỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nSố 297/2024/CV-IDI\nĐồng Tháp, ngày 29 tháng 7 năm 2024\nVv: giải trình BCTC hợp nhất Quý II năm 2024\nKính gửi: Ủy ban Chứng khoán Nhà Nước.\nSở Giao dịch Chứng khoán Tp. Hồ Chí Minh\nCông ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia IDI (Công ty, mã CK IDI) giải trình về biến động kết quả kinh doanh trên báo cáo tài chính Quý II năm 2024 như sau:\n\nI. Giải trình chênh lệch kết quả kinh doanh giữa Báo cáo tài chính hợp nhất Quý II năm 2024 và Báo cáo tài chính hợp nhất Quý II năm 2023\nĐơn vị tính: VNĐ\n| Khoản mục | BCTC hợp nhất Quý II/2024 | BCTC hợp nhất Quý II/2023 | Chênh lệch |\n|---|---|---|---|\n| Lợi nhuận sau thuế thu nhập doanh nghiệp | 18,398,795,183 | 26,795,286,621 | (8,396,491,438) |\n\nNguyên nhân chủ yếu do các chỉ tiêu sau:\n- Chi phí bán hàng tăng 42,08% tương đương tăng 13,88 tỷ đồng. Do chi phí cước tàu tăng cao so với cùng kỳ năm trước.\n\nTrên đây là giải trình của Công ty về BCTC hợp nhất Quý II năm 2024.\nTrân trọng kính chào.\nNơi nhận:\n- Như trên\n- Lưu VT, KT.",
+    "questions": [
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp của công ty trong Quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp đã thay đổi bao nhiêu so với Quý II/2023?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên nhân chủ yếu nào dẫn đến sự chênh lệch kết quả kinh doanh giữa hai kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí bán hàng đã tăng bao nhiêu phần trăm và tương đương bao nhiêu tiền trong Quý II/2024 so với cùng kỳ năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ ảnh hưởng của chi phí cước tàu tăng cao đến lợi nhuận của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích liệu sự sụt giảm lợi nhuận có phải là xu hướng đáng lo ngại hay chỉ là biến động ngắn hạn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo các biện pháp công ty có thể thực hiện để kiểm soát chi phí bán hàng và cải thiện lợi nhuận trong các quý tiếp theo.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

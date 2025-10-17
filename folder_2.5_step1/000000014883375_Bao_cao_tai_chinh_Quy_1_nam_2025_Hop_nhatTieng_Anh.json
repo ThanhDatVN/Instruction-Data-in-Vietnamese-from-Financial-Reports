@@ -1,0 +1,752 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------------------|:-------|:------------|:-------------|:-----------|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 417.148.707.616 | 467.118.256.408 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.01 | 11.363.706.607 | 36.265.176.272 |\n| 1. Tiền | 111 | | 11.363.706.607 | 36.265.176.272 |\n| 2. Các khoản tương đương tiền | 112 | | - | - |\n| II. Các khoản đầu tư tài chính ngắn hạn | 120 | V.02 | 2.676.827.417 | - |\n| 1. Chứng khoán kinh doanh | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | 2.676.827.417 | - |\n| III. Các khoản phải thu ngắn hạn | 130 | | 301.002.307.567 | 324.946.933.535 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | | 342.650.620.709 | 370.180.516.681 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | | 16.274.571.536 | 14.570.937.493 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |\n| 6. Phải thu ngắn hạn khác | 136 | V.03 | 5.991.131.246 | 54.113.869.797 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | | (113.914.015.924) | (113.918.390.436) |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho | 140 | | 104.309.366.093 | 102.342.499.062 |\n| 1. Hàng tồn kho | 141 | V.04 | 153.976.551.152 | 152.753.348.793 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | (49.667.185.059) | (50.410.849.731) |\n| V. Tài sản ngắn hạn khác | 150 | | 473.327.349 | 886.820.122 |\n| 1. Chi phí trả trước ngắn hạn | 151 | | 413.486.751 | 860.549.307 |\n| 2. Thuế GTGT được khấu trừ | 152 | | 22.283.002 | 8.691.962 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | V.05 | 37.557.596 | 17.578.853 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền và các khoản tương đương tiền đầu quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải thu ngắn hạn của khách hàng giữa cuối kỳ và đầu kỳ. Thay đổi bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng hàng tồn kho trên tổng tài sản ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản đầu tư tài chính ngắn hạn từ đầu kỳ đến cuối kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán hệ số thanh toán hiện thời (Current Ratio) cuối kỳ dựa trên thông tin tài sản ngắn hạn từ bảng cân đối này và nợ ngắn hạn từ phần sau của báo cáo.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn khi dự phòng phải thu ngắn hạn khó đòi giảm nhẹ trong khi tổng phải thu ngắn hạn cũng giảm.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng chuyển đổi tài sản ngắn hạn thành tiền mặt trong thời gian tới dựa trên cơ cấu tài sản hiện tại.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu kỳ |\n|:------------------------------------------|:-------|:------------|:-------------|:-----------|\n| B. TÀI SẢN DÀI HẠN | 200 | | 563.391.155.583 | 573.751.565.960 |\n| I. Các khoản phải thu dài hạn | 210 | | 45.000.000 | 132.000.000 |\n| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | V.06 | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | | - | - |\n| 6. Phải thu dài hạn khác | 216 | V.07 | 45.000.000 | 132.000.000 |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |\n| II. Tài sản cố định | 220 | | 551.038.053.811 | 560.940.327.089 |\n| 1. Tài sản cố định hữu hình | 221 | V.08 | 549.740.604.424 | 559.511.629.403 |\n| - Nguyên giá | 222 | | 1.167.087.040.172 | 1.167.079.280.431 |\n| - Giá trị hao mòn lũy kế | 223 | | (617.346.435.748) | (607.567.651.028) |\n| 2. Tài sản cố định thuê tài chính | 224 | V.09 | - | - |\n| - Nguyên giá | 225 | | - | - |\n| - Giá trị hao mòn lũy kế | 226 | | - | - |\n| 3. Tài sản cố định vô hình | 227 | V.10 | 1.297.449.387 | 1.428.697.686 |\n| - Nguyên giá | 228 | | 21.042.915.041 | 21.042.915.041 |\n| - Giá trị hao mòn lũy kế | 229 | | (19.745.465.654) | (19.614.217.355) |\n| III. Bất động sản đầu tư | 230 | V.12 | - | - |\n| - Nguyên giá | 231 | | - | - |\n| - Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | | 328.855.800 | 328.855.800 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang dài hạn | 242 | | 328.855.800 | 328.855.800 |\n| V. Đầu tư tài chính dài hạn | 250 | | 0 | 0 |\n| 1. Đầu tư vào công ty con | 251 | | 0 | 0 |\n| 2. Đầu tư vào công ty liên kết, liên doanh | 252 | | - | - |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | V.13 | - | - |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | 0 | 0 |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | - | - |\n| VI. Tài sản dài hạn khác | 260 | | 11.979.245.972 | 12.350.383.071 |\n| 1. Chi phí trả trước dài hạn | 261 | V.14 | 3.495.465.359 | 3.866.602.458 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | V.21 | - | - |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | 8.483.780.613 | 8.483.780.613 |\n| 4. Tài sản dài hạn khác | 268 | | - | - |\n| 5. Lợi thế thương mại | 269 | | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | | 980.539.863.199 | 1.040.869.822.368 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn cuối quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng tài sản dài hạn cuối kỳ với đầu kỳ, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tài sản cố định hữu hình trên tổng tài sản dài hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả trong việc quản lý và sử dụng tài sản dài hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ khấu hao lũy kế trên nguyên giá của tài sản cố định hữu hình cuối kỳ và đầu kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có đầu tư tài chính dài hạn đến chiến lược phát triển dài hạn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu các khoản phải thu dài hạn tiếp tục giảm mạnh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------------------|:-------|:------------|:-------------|:-----------|\n| C. NỢ PHẢI TRẢ | 300 | | 555.481.819.080 | 646.384.603.282 |\n| I. Nợ ngắn hạn | 310 | | 473.312.863.940 | 534.579.992.978 |\n| 1. Phải trả người bán ngắn hạn | 311 | | 51.964.728.075 | 61.279.155.328 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | | 93.875.327.442 | 84.352.531.545 |\n| 3. Thuế và các khoản phải nộp nhà nước | 313 | V.16 | 23.169.508.076 | 32.893.821.038 |\n| 4. Phải trả người lao động | 314 | | 17.052.652.360 | 56.634.549.212 |\n| 5. Chi phí phải trả ngắn hạn | 315 | V.17 | 12.981.010.012 | 14.148.844.089 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9. Phải trả ngắn hạn khác | 319 | V.18 | 89.854.350.009 | 94.363.582.295 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | | 166.763.345.709 | 166.008.267.214 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | | 17.651.942.257 | 24.899.242.257 |\n| 13. Quỹ bình ổn | 323 | | - | - |\n| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |\n| II. Nợ dài hạn | 330 | | 82.168.955.140 | 111.804.610.304 |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | | - | - |\n| 4. Vốn kinh doanh ở đơn vị trực thuộc | 334 | | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7. Phải trả dài hạn khác | 337 | | - | - |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | | 82.168.955.140 | 111.804.610.304 |\n| 9. Trái phiếu chuyển đổi | 339 | | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | V.21 | - | - |\n| 12. Dự phòng nợ phải trả dài hạn | 342 | | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | | 425.058.044.119 | 394.485.219.086 |\n| I. Vốn chủ sở hữu | 410 | V.22 | 424.952.794.119 | 394.379.969.086 |\n| 1. Vốn đầu tư của chủ sở hữu | 411 | | 266.913.190.000 | 266.913.190.000 |\n| - Vốn đầu tư của chủ sở hữu | 411a | | 0 | 0 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411b | | 266.913.190.000 | 266.913.190.000 |\n| - Cổ phiếu ưu đãi | 411c | | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | | - | - |\n| 3. Quyền chọn trái phiếu chuyển đổi | 413 | | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | | - | - |\n| 5. Cổ phiếu quỹ | 415 | | - | - |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 8. Quỹ đầu tư phát triển | 418 | | 40.979.933.988 | 40.979.933.988 |\n| 9. Quỹ dự phòng tài chính | 419 | | - | - |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | 500.000.000 | 500.000.000 |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | | 116.559.670.131 | 85.986.845.098 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 85.986.845.098 | 59.236.343.001 |\n| - LNST chưa phân phối kỳ này | 421b | | 30.572.825.033 | 145.223.188.099 |\n| 12. Nguồn vốn đầu tư xây dựng cơ bản | 422 | | - | - |\n| 13. Lợi ích cổ đông không kiểm soát | 429 | | - | - |\n| II. Nguồn kinh phí và quỹ khác | 430 | | 105.250.000 | 105.250.000 |\n| 1. Nguồn kinh phí | 431 | V.23 | 105.250.000 | 105.250.000 |\n| 2. Tài sản cố định hình thành từ nguồn kinh phí và quỹ khác | 432 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 980.539.863.199 | 1.040.869.822.368 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ ngắn hạn cuối kỳ với đầu kỳ, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ lợi nhuận sau thuế chưa phân phối trên tổng vốn chủ sở hữu cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc vào nợ vay của công ty dựa trên cơ cấu nợ và vốn chủ sở hữu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối kỳ của công ty.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính nếu công ty có lợi nhuận sau thuế chưa phân phối kỳ này thấp hơn so với kỳ trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng tự chủ tài chính và khả năng mở rộng kinh doanh của công ty dựa trên vốn chủ sở hữu hiện có.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả kinh doanh\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Quý báo cáo (Năm nay) | Quý báo cáo (Năm trước) | Lũy kế từ đầu năm đến cuối quý (Năm nay) | Lũy kế từ đầu năm đến cuối quý (Năm trước) |\n|:----------------------------------------------------------|:-------|:------------|:----------------------|:------------------------|:-----------------------------------------|:------------------------------------------|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | VI.25 | 112.587.356.541 | 78.078.905.397 | 112.587.356.541 | 78.078.905.397 |\n| 2. Các khoản giảm trừ doanh thu | 02 | | - | - | - | - |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | 112.587.356.541 | 78.078.905.397 | 112.587.356.541 | 78.078.905.397 |\n| 4. Giá vốn hàng bán | 11 | VI.27 | 64.565.392.433 | 47.630.315.588 | 64.565.392.433 | 47.630.315.588 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 48.021.964.108 | 30.448.589.809 | 48.021.964.108 | 30.448.589.809 |\n| 6. Doanh thu hoạt động tài chính | 21 | VI.26 | 265.345.180 | 244.229.436 | 265.345.180 | 244.229.436 |\n| 7. Chi phí tài chính | 22 | VI.28 | 3.291.669.754 | 7.646.411.319 | 3.291.669.754 | 7.646.411.319 |\n| Trong đó: Chi phí lãi vay | 23 | | 3.283.152.647 | 7.641.431.319 | 3.283.152.647 | 7.641.431.319 |\n| 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết | 24 | | - | - | - | - |\n| 9. Chi phí bán hàng | 25 | | 30.555.555 | 30.555.555 | 30.555.555 | 30.555.555 |\n| 10. Chi phí quản lý doanh nghiệp | 26 | | 6.513.332.971 | 4.445.971.417 | 6.513.332.971 | 4.445.971.417 |\n| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 38.482.306.563 | 18.569.880.954 | 38.482.306.563 | 18.569.880.954 |\n| 12. Thu nhập khác | 31 | | 22.727.273 | 1 | 22.727.273 | 1 |\n| 13. Chi phí khác | 32 | | 173.828.041 | 407.956.332 | 173.828.041 | 407.956.332 |\n| 14. Lợi nhuận khác | 40 | | 151.100.768 | (407.956.331) | 151.100.768 | (407.956.331) |\n| 15. Tổng lợi nhuận kế toán trước thuế | 50 | | 38.331.205.795 | 18.161.924.623 | 38.331.205.795 | 18.161.924.623 |\n| 16. Chi phí thuế TNDN hiện hành | 51 | VI.40 | 7.758.380.762 | 3.694.297.874 | 7.758.380.762 | 3.694.297.874 |\n| 17. Chi phí thuế TNDN hoãn lại | 52 | VI.40 | - | - | - | - |\n| 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 30.572.825.033 | 14.467.626.749 | 30.572.825.033 | 14.467.626.749 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế đến cuối quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp từ bán hàng và cung cấp dịch vụ quý này với quý trước. Thay đổi bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ chi phí tài chính trên doanh thu thuần quý này là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả hoạt động kinh doanh của công ty dựa trên lợi nhuận thuần từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận ròng (Net Profit Margin) lũy kế đến cuối quý này.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích các yếu tố chính đã đóng góp vào sự tăng trưởng doanh thu so với cùng kỳ năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của chi phí lãi vay đến lợi nhuận ròng trong các quý tiếp theo nếu lãi suất thị trường thay đổi.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ (Phương pháp gián tiếp)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Năm nay | Năm trước |\n|:------------------------------------------------------------------------------------------------------------------------------------------|:-------|:-------------|:-----------|\n| I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | | |\n| 1. Lợi nhuận trước thuế | 01 | 38.331.205.795 | 18.161.924.623 |\n| 2. Điều chỉnh cho | | | |\n| Khấu hao tài sản cố định | 02 | 9.956.169.702 | 9.810.215.357 |\n| Các khoản dự phòng | 03 | 748.039.184 | 511.000.000 |\n| Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | - | - |\n| Lãi, lỗ từ hoạt động đầu tư | 05 | 16.382.049 | 2.085.038 |\n| Chi phí lãi vay | 06 | 3.283.152.647 | 7.641.431.319 |\n| Các khoản điều chỉnh khác | 07 | - | - |\n| 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 08 | 50.806.106.911 | 35.100.486.261 |\n| Tăng (giảm) các khoản phải thu | 09 | (25.740.511.836) | 75.763.862.359 |\n| Tăng (giảm) hàng tồn kho | 10 | (1.223.201.360) | 3.703.166.134 |\n| Tăng (giảm) các khoản phải trả (ngoại trừ lãi vay phải trả, thuế thu nhập doanh nghiệp phải trả) | 11 | 54.212.972.600 | (44.483.372.117) |\n| Tăng (giảm) chi phí trả trước | 12 | 818.199.655 | 96.100.930 |\n| Tăng (giảm) chứng khoán kinh doanh | 13 | - | - |\n| Tiền lãi vay đã trả | 14 | (894.428.839) | (5.310.775.548) |\n| Thuế thu nhập doanh nghiệp đã nộp | 15 | (10.649.547.263) | (10.292.657.072) |\n| Tiền thu khác từ hoạt động kinh doanh | 16 | 131.096.670 | 1.937.967.511 |\n| Tiền chi khác từ hoạt động kinh doanh | 17 | (8.482.991.680) | (698.925.453) |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 2.032.773.330 | 48.409.520.737 |\n| II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | | |\n| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các TSDH khác | 21 | (42.045.455) | - |\n| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các TSDH khác | 22 | - | - |\n| 3. Tiền chi cho vay, đầu tư công cụ nợ của đơn vị khác | 23 | - | - |\n| 4. Tiền thu hồi cho vay, bán lại công cụ nợ của đơn vị khác | 24 | - | - |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | - | - |\n| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | - | - |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 16.382.049 | 1.636.174 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | (25.663.406) | 1.636.174 |\n| III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | - | - |\n| 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp | 32 | - | - |\n| 3. Tiền thu từ đi vay | 33 | 10.647.944.677 | 1.105.212.270 |\n| 4. Tiền trả nợ gốc vay | 34 | (37.502.551.394) | (49.593.193.019) |\n| 5. Tiền trả nợ thuê tài chính | 35 | - | - |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | (53.972.872) | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | (26.908.579.589) | (48.487.980.749) |\n| Lưu chuyển tiền thuần trong kỳ | 50 | (24.901.469.665) | 76.823.838 |\n| Tiền và các khoản tương đương tiền đầu kỳ | 60 | 36.265.176.272 | 23.817.007.718 |\n| Ảnh hưởng của chênh lệch tỷ giá hối đoái quy đổi ngoại tệ | 61 | - | - |\n| Tiền và các khoản tương đương tiền cuối kỳ | 70 | 11.363.706.607 | 23.740.183.880 |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động kinh doanh năm nay với năm trước. Thay đổi bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tiền chi để mua sắm, xây dựng TSCĐ trên tổng lưu chuyển tiền thuần từ hoạt động đầu tư năm nay là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tạo tiền từ các hoạt động cốt lõi của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán chỉ số dòng tiền tự do (Free Cash Flow) cho kỳ hiện tại dựa trên dữ liệu báo cáo lưu chuyển tiền tệ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản tiền chi trả nợ gốc vay đến dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ bền vững tài chính của công ty dựa trên dòng tiền từ các hoạt động chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính\nLoại nội dung: Text\nI. Thông tin chung về Công ty\n1. Hình thức sở hữu\nCông ty Cổ phần Tư vấn Xây dựng Điện 1, tên viết tắt là PECC1 (sau đây gọi là Công ty) là Công ty Cổ phần được thành lập và hoạt động theo Giấy chứng nhận đăng ký kinh doanh số 0103021734 do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp ngày 02 tháng 01 năm 2008, đăng ký thay đổi lần thứ 14 theo Giấy chứng nhận đăng ký doanh nghiệp số 0100100953 vào ngày 19 tháng 03 năm 2025.\nCông ty Cổ phần Tư vấn Xây dựng Điện 1 có địa chỉ tại số 66 phố Lương Ngọc Quyến, phường Văn Quán, quận Hà Đông, Hà Nội. Vốn điều lệ của Công ty là 266.913.190.000 VND chia thành 26.691.319 cổ phần với mệnh giá 10.000 đồng/cổ phần. Trong đó, Tập đoàn Điện lực Việt Nam nắm giữ 14.504.227 cổ phần tương đương 145.042.270.000 VND, chiếm 54,34% vốn điều lệ; các cổ đông khác nắm giữ 12.187.092 cổ phần tương đương 121.870.920.000 VND, chiếm 45,66% vốn điều lệ.\n2. Lĩnh vực kinh doanh\n3. Hoạt động kinh doanh\nCác hoạt động kinh doanh chính của Công ty theo Giấy chứng nhận đăng ký kinh doanh bao gồm:\n- Điều tra, thiết kế các dự án điện.\n- Chế tạo và thử nghiệm cột điện thép.\n- Xây dựng, cải tạo các dự án thủy điện quy mô nhỏ.\n- Xây dựng lưới điện từ 35 KV trở xuống.\n- Nghiên cứu và lập dự án đầu tư.\n- Thiết kế các dự án điện ở tất cả các giai đoạn.\n- Điều tra xây dựng, khảo sát môi trường, thử nghiệm địa chất, thử nghiệm vật liệu xây dựng, v.v., phục vụ cho mục đích thiết kế.\n- Xem xét các dự án thiết kế kỹ thuật điện không do Công ty thiết kế.\n- Đóng vai trò là nhà thầu EPC cho việc điều tra, thiết kế và quản lý các dự án điện trong phạm vi của EVN.\n- Chuẩn bị hồ sơ vật liệu và thiết bị phục vụ đấu thầu các dự án điện, xác minh chất lượng xây dựng các dự án điện trong phạm vi của EVN.\n- Cung cấp dịch vụ tư vấn đấu thầu và dịch vụ tư vấn hợp đồng kinh tế cho các dự án điện.\n- Tư vấn về dịch vụ và xây dựng các dự án nguồn điện, lưới điện và các dự án công nghiệp và dân dụng khác bao gồm điều tra, khảo sát, lập dự án đầu tư, quy hoạch xây dựng, điều tra, thiết kế và dự toán, chuẩn bị hồ sơ và dịch vụ đấu thầu cho thiết kế, mua sắm thiết bị, xây dựng và lắp đặt, giám sát thi công, hợp đồng quản lý xây dựng.\n- Thử nghiệm và chế tạo tất cả các loại cột điện.\n- Xây dựng và cải tạo các nhà máy thủy điện quy mô nhỏ.\n- Cung cấp dịch vụ tư vấn, thiết kế các dự án viễn thông.\n- Đầu tư xây dựng dự án thủy điện.\n- Sản xuất và kinh doanh điện.\n- Khai thác và lọc nước phục vụ cho công nghiệp và sinh hoạt.\n- Dịch vụ điều tra và lập bản đồ địa hình, địa chính.\n- Xây dựng và lắp đặt các dự án lưới điện có điện áp lên đến 110KV.\n- Thiết kế và chế tạo thiết bị cơ điện.\n- Xác minh các công trình dân dụng và dịch vụ thử nghiệm, kiểm tra cường độ cơ học của bê tông và kết cấu.\n4. Chu kỳ sản xuất kinh doanh thông thường\n5. Đặc điểm hoạt động của Công ty trong năm tài chính ảnh hưởng đến báo cáo tài chính\n6. Cơ cấu tổ chức của Công ty\n- Danh sách các công ty con:\n  - Công ty TNHH Điều tra, Thiết kế và Xây dựng Điện 1\n  - Công ty TNHH Điều tra, Thiết kế và Xây dựng Điện 2\n  - Công ty TNHH Tư vấn Điện 3 Đà Nẵng\n  - Công ty TNHH Điều tra, Thiết kế và Xây dựng Điện 4\n- Danh sách các công ty liên doanh, liên kết: Không có\n- Danh sách các đơn vị phụ thuộc không có tư cách pháp nhân hạch toán phụ thuộc: Không có\n7. Tuyên bố về khả năng so sánh của thông tin trên Báo cáo tài chính: Không có thông tin\n\nII. Kỳ kế toán và đơn vị tiền tệ sử dụng trong kế toán\n1. Kỳ kế toán năm bắt đầu từ ngày 01 tháng 01 năm 2024 và kết thúc vào ngày 31 tháng 12 năm 2024.\n2. Công ty duy trì sổ sách kế toán bằng Đồng Việt Nam (VND). Trong trường hợp có sự thay đổi về đơn vị tiền tệ kế toán so với năm trước, không có thông tin giải thích lý do và tác động của sự thay đổi.\n\nIII. Chuẩn mực và Chế độ kế toán áp dụng\n1. Chế độ kế toán áp dụng\nCông ty áp dụng các Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 và các thông tư hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập và trình bày báo cáo tài chính hợp nhất giữa niên độ.\n2. Tuyên bố về việc tuân thủ các Chuẩn mực kế toán và Chế độ kế toán\nHội đồng quản trị đảm bảo rằng Công ty đã tuân thủ các yêu cầu của Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 cũng như các thông tư hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.",
+    "questions": [
+      {
+        "question": "Tên viết tắt của Công ty Cổ phần Tư vấn Xây dựng Điện 1 là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Vốn điều lệ của Công ty là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tỷ lệ vốn điều lệ do Tập đoàn Điện lực Việt Nam nắm giữ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu ít nhất ba lĩnh vực hoạt động kinh doanh chính của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ chi phối của Tập đoàn Điện lực Việt Nam đối với Công ty dựa trên tỷ lệ sở hữu vốn điều lệ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của các hoạt động tư vấn, thiết kế, và xây dựng điện đối với doanh thu của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của việc công ty mở rộng các hoạt động kinh doanh mới đến cơ cấu doanh thu và lợi nhuận trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Nguyên tắc kế toán áp dụng)\nLoại nội dung: Text\nIV. Các nguyên tắc kế toán áp dụng\n1. Nguyên tắc chuyển đổi Báo cáo tài chính lập bằng ngoại tệ sang Đồng Việt Nam: Trong trường hợp đơn vị tiền tệ kế toán khác với Đồng Việt Nam, không có thông tin về tác động nếu có do việc chuyển đổi Báo cáo tài chính từ ngoại tệ sang Đồng Việt Nam.\n2. Các loại tỷ giá hối đoái áp dụng trong kế toán: Không có thông tin.\n3. Nguyên tắc xác định lãi thực tế (lãi suất hiệu lực) dùng để chiết khấu dòng tiền: Không có thông tin.\n4. Nguyên tắc ghi nhận tiền và các khoản tương đương tiền: Tiền bao gồm tiền mặt, tiền gửi ngân hàng không kỳ hạn.\n5. Nguyên tắc kế toán đầu tư tài chính\nĐầu tư vào công ty con ban đầu được ghi nhận trên sổ sách kế toán theo giá gốc. Sau ghi nhận ban đầu, giá trị các khoản đầu tư này được xác định theo giá gốc trừ đi dự phòng giảm giá trị các khoản đầu tư.\nDự phòng giảm giá trị các khoản đầu tư vào công ty con được lập vào cuối năm dựa trên Báo cáo tài chính của công ty con tại thời điểm lập dự phòng. Dự phòng giảm giá trị các khoản đầu tư được lập khi công ty được đầu tư bị lỗ.\na. Chứng khoán kinh doanh\nb. Các khoản đầu tư nắm giữ đến ngày đáo hạn\nc. Các khoản cho vay\nd. Đầu tư vào công ty con, liên doanh, liên kết\nd. Đầu tư vào công cụ vốn của đơn vị khác\ne. Phương pháp kế toán các giao dịch khác liên quan đến đầu tư tài chính\n6. Nguyên tắc kế toán các khoản phải thu\nCác khoản phải thu được theo dõi chi tiết theo từng đối tượng, từng khoản mục phải thu, nguyên tệ và các yếu tố khác theo nhu cầu quản lý của Công ty.\nDự phòng phải thu khó đòi được trích lập cho các khoản mục sau: Các khoản phải thu quá hạn ghi nhận trong hợp đồng kinh tế, hợp đồng cho vay, cam kết hợp đồng hoặc cam kết nợ và các khoản phải thu chưa quá hạn nhưng có khả năng không thu hồi được. Đặc biệt, dự phòng cho các khoản phải thu quá hạn được dựa trên thời gian quá hạn thanh toán và ước tính các khoản lỗ có thể xảy ra.\n7. Nguyên tắc ghi nhận hàng tồn kho\n- Nguyên tắc ghi nhận hàng tồn kho: Hàng tồn kho được ghi nhận ban đầu theo giá gốc, bao gồm chi phí mua, chi phí chế biến và các chi phí trực tiếp khác phát sinh để đưa hàng tồn kho về địa điểm và trạng thái hiện tại tại thời điểm ghi nhận ban đầu. Sau ghi nhận ban đầu, tại thời điểm lập Báo cáo tài chính, nếu giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc, hàng tồn kho được ghi nhận theo giá trị thuần có thể thực hiện được.\n- Phương pháp tính giá hàng tồn kho: Không có thông tin.\n- Phương pháp kế toán hàng tồn kho: Không có thông tin.\n- Phương pháp lập dự phòng giảm giá hàng tồn kho: Không có thông tin.\n8. Nguyên tắc ghi nhận và khấu hao tài sản cố định, tài sản cố định thuê tài chính, bất động sản đầu tư: Không có thông tin.\n9. Nguyên tắc kế toán hợp đồng hợp tác kinh doanh: Không có thông tin.\n10. Nguyên tắc kế toán thuế TNDN hoãn lại: Không có thông tin.\n11. Nguyên tắc kế toán chi phí trả trước\nChi phí phát sinh liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán được ghi nhận là chi phí trả trước để phân bổ dần vào kết quả hoạt động sản xuất kinh doanh của các kỳ kế toán tiếp theo.\nViệc tính toán và phân bổ chi phí trả trước dài hạn vào chi phí sản xuất kinh doanh trong từng kỳ kế toán dựa trên bản chất và mức độ của từng loại chi phí để lựa chọn phương pháp và tiêu chí phân bổ hợp lý. Chi phí trả trước được phân bổ dần vào chi phí sản xuất kinh doanh theo phương pháp đường thẳng.\n12. Nguyên tắc kế toán nợ phải trả\nCác khoản nợ phải trả được theo dõi theo kỳ hạn thanh toán, đối tượng phải trả, nguyên tệ phải trả và các yếu tố khác theo nhu cầu quản lý của Công ty.\n13. Nguyên tắc ghi nhận các khoản vay và nợ thuê tài chính\nCác khoản vay và nợ thuê tài chính được theo dõi chi tiết theo từng đối tượng cho vay, từng hợp đồng vay và kỳ hạn trả nợ của các khoản vay và nợ thuê tài chính. Trong trường hợp các khoản vay và nợ phải trả bằng ngoại tệ, việc theo dõi chi tiết được thực hiện theo nguyên tệ.\n14. Nguyên tắc ghi nhận và vốn hóa chi phí đi vay\nChi phí đi vay được ghi nhận là chi phí sản xuất kinh doanh trong kỳ khi phát sinh, ngoại trừ chi phí đi vay trực tiếp liên quan đến đầu tư xây dựng hoặc sản xuất tài sản dở dang, được ghi nhận vào giá trị của tài sản đó khi đáp ứng đầy đủ các điều kiện quy định tại Chuẩn mực kế toán Việt Nam số 16 Chi phí đi vay. Ngoài ra, đối với các khoản vay riêng biệt để xây dựng tài sản cố định, bất động sản đầu tư, lãi được vốn hóa ngay cả khi thời gian xây dựng dưới 12 tháng.\n15. Nguyên tắc ghi nhận chi phí phải trả\nCác khoản phải trả về hàng hóa và dịch vụ đã nhận từ người bán hoặc đã cung cấp cho người mua trong kỳ báo cáo nhưng chưa thực tế thanh toán và các khoản phải trả khác như tiền lương nghỉ phép, chi phí trong thời gian ngừng sản xuất theo mùa, chi phí lãi vay phải trả, v.v. được ghi nhận vào chi phí sản xuất kinh doanh của kỳ báo cáo.",
+    "questions": [
+      {
+        "question": "Tiền và các khoản tương đương tiền được ghi nhận theo nguyên tắc nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản phải thu khó đòi được trích lập dựa trên cơ sở nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích nguyên tắc ghi nhận ban đầu và sau ghi nhận ban đầu của hàng tồn kho.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh nguyên tắc ghi nhận chi phí đi vay thông thường với chi phí đi vay liên quan đến tài sản dở dang.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc theo dõi chi tiết các khoản phải thu và nợ phải trả đối với quản lý rủi ro tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các phương pháp xác định và ghi nhận dự phòng phải thu khó đòi đến báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ linh hoạt của công ty trong việc điều chỉnh chính sách kế toán đối với chi phí trả trước dài hạn để tối ưu hóa lợi nhuận.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Nguyên tắc kế toán áp dụng - tiếp theo)\nLoại nội dung: Text\n15. Nguyên tắc ghi nhận chi phí phải trả (tiếp theo)\nViệc ghi nhận chi phí phải trả vào chi phí sản xuất kinh doanh trong kỳ được thực hiện theo nguyên tắc phù hợp giữa doanh thu và chi phí phát sinh trong kỳ. Chi phí phải trả sẽ được đối chiếu với chi phí thực tế phát sinh. Chênh lệch giữa số tiền trả trước và chi phí thực tế sẽ được điều chỉnh.\n16. Nguyên tắc và phương pháp ghi nhận dự phòng phải trả: Không có thông tin.\n17. Nguyên tắc ghi nhận doanh thu chưa thực hiện: Không có thông tin.\n18. Nguyên tắc ghi nhận trái phiếu chuyển đổi: Không có thông tin.\n19. Nguyên tắc ghi nhận vốn chủ sở hữu\n- Nguyên tắc ghi nhận vốn chủ sở hữu, thặng dư vốn cổ phần, quyền chọn trái phiếu chuyển đổi, các khoản vốn chủ sở hữu khác: Không có thông tin.\n- Nguyên tắc ghi nhận chênh lệch đánh giá lại tài sản: Không có thông tin.\n- Nguyên tắc ghi nhận chênh lệch tỷ giá hối đoái: Không có thông tin.\n- Nguyên tắc ghi nhận lợi nhuận chưa phân phối: Không có thông tin.\n20. Nguyên tắc và phương pháp ghi nhận doanh thu\n- Doanh thu bán hàng: Không có thông tin.\n- Doanh thu cung cấp dịch vụ: Không có thông tin.\n- Doanh thu hoạt động tài chính: Không có thông tin.\n- Doanh thu hợp đồng xây dựng: Không có thông tin.\n- Các khoản doanh thu khác: Không có thông tin.\n21. Nguyên tắc kế toán các khoản giảm trừ doanh thu: Không có thông tin.\n22. Nguyên tắc kế toán giá vốn hàng bán: Không có thông tin.\n23. Nguyên tắc kế toán chi phí tài chính: Không có thông tin.\n24. Nguyên tắc kế toán chi phí bán hàng, chi phí quản lý doanh nghiệp: Không có thông tin.\n25. Nguyên tắc và phương pháp ghi nhận chi phí thuế TNDN hiện hành và chi phí thuế TNDN hoãn lại: Không có thông tin.\n26. Các nguyên tắc và phương pháp kế toán khác: Không có thông tin.\n\nV. Các chính sách kế toán áp dụng trong trường hợp doanh nghiệp không đáp ứng giả định hoạt động liên tục: Không có thông tin.",
+    "questions": [
+      {
+        "question": "Việc ghi nhận chi phí phải trả vào chi phí sản xuất kinh doanh trong kỳ được thực hiện theo nguyên tắc nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Có thông tin nào về nguyên tắc ghi nhận vốn chủ sở hữu trong báo cáo này không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích cách xử lý chênh lệch giữa số tiền trả trước và chi phí thực tế phát sinh.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu những nguyên tắc kế toán mà báo cáo này không cung cấp thông tin chi tiết.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc có đầy đủ các nguyên tắc ghi nhận doanh thu và chi phí trong báo cáo tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro khi một báo cáo tài chính không cung cấp đầy đủ các nguyên tắc kế toán liên quan đến các khoản dự phòng và doanh thu chưa thực hiện.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc thiếu thông tin về nguyên tắc kế toán đến khả năng đánh giá chính xác tình hình tài chính của công ty bởi nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán)\nLoại nội dung: Cả hai\nVI. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán\nĐơn vị: VND\n\n01. Tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:----------------------------|:-------------|:-----------|\n| Tiền mặt | 1.029.569.456 | 331.094.750 |\n| Tiền gửi ngân hàng | 10.334.137.151 | 35.934.081.522 |\n| Tiền đang chuyển | - | - |\n| Các khoản tương đương tiền | - | - |\n| Tổng cộng | 11.363.706.607 | 36.265.176.272 |\n\n02. Các khoản đầu tư tài chính\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Giá trị hợp lý (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá gốc (Số đầu kỳ) | Giá trị hợp lý (Số đầu kỳ) | Dự phòng (Số đầu kỳ) |\n|:----------------------------------------------|:-------------------|:-----------------------|:---------------------|:-------------------|:-----------------------|:---------------------|\n| a. Chứng khoán kinh doanh | 0 | 0 | - | - | - | - |\n| Tổng giá trị cổ phiếu | 0 | 0 | - | - | - | - |\n| Tổng giá trị trái phiếu | 0 | 0 | - | - | - | - |\n| Các khoản đầu tư khác | 0 | 0 | - | - | - | - |\n| Lý do thay đổi từng loại chứng khoán, trái phiếu: Không có thông tin.\n| - Về số lượng: Không có thông tin.\n| - Về giá trị: Không có thông tin.\n\n| Chỉ tiêu | Giá trị ghi sổ (Số cuối kỳ) | Giá gốc (Số cuối kỳ) | Giá trị ghi sổ (Số đầu kỳ) | Giá gốc (Số đầu kỳ) |\n|:----------------------------------|:--------------------------|:-------------------|:-------------------------|:-------------------|\n| b. Các khoản đầu tư nắm giữ đến ngày đáo hạn | 2.676.827.417 | 2.676.827.417 | - | - |\n| b1. Ngắn hạn | 2.676.827.417 | 2.676.827.417 | - | - |\n| Tiền gửi có kỳ hạn | 2.676.827.417 | 2.676.827.417 | - | - |\n| Trái phiếu | - | - | - | - |\n| Các khoản đầu tư khác | - | - | - | - |\n| b2. Dài hạn | - | - | - | - |\n| Tiền gửi có kỳ hạn | - | - | - | - |\n| Trái phiếu | - | - | - | - |\n| Các khoản đầu tư khác | - | - | - | - |\n\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị hợp lý (Số cuối kỳ) | Giá gốc (Số đầu kỳ) | Dự phòng (Số đầu kỳ) | Giá trị hợp lý (Số đầu kỳ) |\n|:------------------------------------------|:-------------------|:---------------------|:-----------------------|:-------------------|:---------------------|:-----------------------|\n| c. Đầu tư vốn vào đơn vị khác | | | | | | |\n| Đầu tư vào công ty con | - | - | - | - | - | - |\n| Đầu tư vào công ty liên doanh và liên kết | 0 | 0 | - | - | - | - |\n| Đầu tư vốn vào đơn vị khác | 0 | 0 | - | - | - | - |\n\n- Tóm tắt hoạt động của các công ty con, liên doanh và liên kết trong kỳ: Không có thông tin.\n- Các giao dịch trọng yếu giữa doanh nghiệp và các công ty con, liên doanh và liên kết trong kỳ kế toán: Không có thông tin.\n- Nếu không thể xác định giá trị hợp lý, giải thích lý do: Không có thông tin.\n\n03. Các khoản phải thu thương mại\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:----------------------------|:-------------|:-----------|\n| a. Phải thu ngắn hạn từ khách hàng | 342.650.620.709 | 370.180.516.681 |\n| b. Phải thu dài hạn từ khách hàng | - | - |\n| c. Phải thu thương mại từ các bên liên quan | - | - |\n\n04. Các khoản phải thu khác\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị (Số đầu kỳ) | Dự phòng (Số đầu kỳ) |\n|:-----------------------------------------------|:-------------------|:---------------------|:-------------------|:---------------------|\n| a. Ngắn hạn | 5.991.131.246 | - | 54.113.869.797 | - |\n| Phải thu từ cổ phần hóa | - | - | - | - |\n| Phải thu lãi, cổ tức | - | - | - | - |\n| Phải thu từ người lao động | 513.131.367 | - | 58.363.000 | - |\n| Tiền ký quỹ, ký cược nhận | 13.091.839.229 | - | 19.314.325.960 | - |\n| Cho vay | 4.660.642 | - | 3.673.660.642 | - |\n| Dịch vụ thanh toán | 65.492.946 | - | 43.397.366 | - |\n| Các khoản phải thu khác | 38.309.007.062 | - | 31.024.122.829 | - |\n| b. Dài hạn | 45.000.000 | - | 132.000.000 | - |\n| Phải thu từ cổ phần hóa | - | - | - | - |\n| Phải thu lãi, cổ tức | - | - | - | - |\n| Phải thu từ người lao động | - | - | - | - |\n| Tiền ký quỹ, ký cược nhận | 45.000.000 | - | 132.000.000 | - |\n| Cho vay | - | - | - | - |\n| Dịch vụ thanh toán | - | - | - | - |\n| Các khoản phải thu khác | - | - | - | - |\n| Tổng cộng | 56.036.131.246 | - | 54.245.869.797 | - |",
+    "questions": [
+      {
+        "question": "Tổng tiền gửi ngân hàng cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị phải thu ngắn hạn từ khách hàng cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh các khoản đầu tư nắm giữ đến ngày đáo hạn ngắn hạn cuối kỳ và đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tiền mặt trên tổng tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng thanh toán ngắn hạn của công ty dựa trên số liệu tiền và các khoản phải thu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ dự phòng phải thu khó đòi trên tổng các khoản phải thu khác (ngắn hạn và dài hạn) cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro tín dụng đối với các khoản phải thu khác của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của sự biến động lãi suất đến các khoản đầu tư nắm giữ đến ngày đáo hạn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n05. Tài sản thiếu chờ xử lý\n| Chỉ tiêu | Số lượng (Số cuối kỳ) | Giá trị (Số cuối kỳ) | Số lượng (Số đầu kỳ) | Giá trị (Số đầu kỳ) |\n|:--------------------------------|:---------------------|:-------------------|:---------------------|:-------------------|\n| a. Tiền mặt | - | - | - | - |\n| b. Hàng tồn kho | - | - | - | - |\n| c. Tài sản cố định | - | - | - | - |\n| d. Tài sản khác | | | | |\n| Phải thu từ người lao động | - | - | - | - |\n| Tiền ký quỹ, ký cược nhận | - | - | - | - |\n| Cho vay | - | - | - | - |\n| Dịch vụ thanh toán | - | - | - | - |\n| Các tài sản khác | - | - | - | - |\n| Tổng cộng | - | - | - | - |\n\n06. Nợ xấu (NPL)\n| Chỉ tiêu | Đối tượng (Số cuối kỳ) | Giá trị có thể thu hồi (Số cuối kỳ) | Đối tượng (Số đầu kỳ) | Giá trị có thể thu hồi (Số đầu kỳ) |\n|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|:-----------------------------------|:----------------------|:-----------------------------------|\n| Tổng giá trị các khoản phải thu, các khoản cho vay quá hạn hoặc các khoản cho vay chưa quá hạn nhưng có khả năng không thu hồi được, trình bày chi tiết về thời gian quá hạn và giá trị các khoản phải thu, các khoản cho vay theo từng đối tượng nợ nếu khoản phải thu của từng đối tượng chiếm từ 10% trở lên của tổng nợ quá hạn | - | - | - | - |\n| Thông tin về tiền phạt, lãi chậm trả phải thu, v.v., phát sinh từ các khoản nợ quá hạn nhưng chưa được ghi nhận là doanh thu | - | - | - | - |\n| Khả năng thu hồi các khoản phải thu quá hạn | - | - | - | - |\n| Tổng cộng | - | - | - | - |\n\n07. Hàng tồn kho\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá gốc (Số đầu kỳ) | Dự phòng (Số đầu kỳ) |\n|:------------------------------------------------|:-------------------|:---------------------|:-------------------|:---------------------|\n| Hàng mua đang đi đường | - | - | - | - |\n| Nguyên liệu, vật liệu | 2.526.294.846 | - | 2.529.894.846 | - |\n| Công cụ, dụng cụ | - | - | - | - |\n| Chi phí sản xuất kinh doanh dở dang | 151.203.707.849 | - | 149.976.905.490 | - |\n| Thành phẩm | - | - | - | - |\n| Hàng hóa | 246.548.457 | - | 246.548.457 | - |\n| Hàng hóa gửi bán | - | - | - | - |\n| Hàng gửi kho ngoại quan | - | - | - | - |\n| Tổng cộng | 153.976.551.152 | 49.667.185.059 | 152.753.348.793 | 50.410.849.731 |\n\n- Giá trị hàng tồn kho bị ứ đọng, kém phẩm chất, hư hỏng không thể tiêu thụ được tại thời điểm cuối kỳ: Không có thông tin.\n- Nguyên nhân và biện pháp xử lý hàng tồn kho bị ứ đọng, kém phẩm chất, hư hỏng: Không có thông tin.\n- Giá trị hàng tồn kho dùng làm vật thế chấp, cầm cố để bảo đảm cho các khoản phải trả tại thời điểm cuối kỳ: Không có thông tin.\n- Lý do trích lập bổ sung hoặc hoàn nhập dự phòng giảm giá hàng tồn kho: Không có thông tin.",
+    "questions": [
+      {
+        "question": "Tổng giá trị hàng tồn kho cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị nguyên liệu, vật liệu đầu kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Có khoản mục nợ xấu nào được báo cáo trong kỳ này không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí sản xuất kinh doanh dở dang cuối kỳ và đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình quản lý hàng tồn kho của công ty dựa trên dự phòng giảm giá hàng tồn kho.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có thông tin chi tiết về hàng tồn kho bị ứ đọng đến việc đánh giá rủi ro hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro tài chính nếu công ty không có chính sách rõ ràng về tài sản thiếu chờ xử lý.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n08. Tài sản dở dang dài hạn\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Giá trị có thể thu hồi (Số cuối kỳ) | Giá gốc (Số đầu kỳ) | Giá trị có thể thu hồi (Số đầu kỳ) |\n|:------------------------------------|:-------------------|:-----------------------------|:-------------------|:-----------------------------|\n| a. Chi phí sản xuất, kinh doanh dở dang dài hạn | - | - | - | - |\n| Tổng cộng | - | - | - | - |\n| b. Chi phí xây dựng cơ bản dở dang | | | | |\n| Mua sắm | - | - | - | - |\n| Xây dựng | 328.855.800 | - | 328.855.800 | - |\n| Sửa chữa | - | - | - | - |\n| Tổng cộng | 328.855.800 | - | 328.855.800 | - |\n\n09. Tăng (giảm) tài sản cố định hữu hình\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc, thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Tài sản cố định hữu hình khác | Tổng cộng |\n|:----------------------------------|:-----------------------|:-------------------|:-------------------------------|:-------------------------|:------------------------------|:-------------|\n| Nguyên giá | | | | | | |\n| Số dư đầu kỳ | 794.236.624.771 | 282.794.288.361 | 59.151.458.337 | 9.089.093.553 | 21.807.815.409 | 1.167.079.280.431 |\n| Mua sắm trong kỳ | - | 42.045.455 | - | - | - | 42.045.455 |\n| Đầu tư xây dựng cơ bản hoàn thành | - | - | - | - | - | - |\n| Tăng khác | - | - | - | - | - | - |\n| Chuyển sang bất động sản đầu tư | - | - | - | - | - | - |\n| Thanh lý, nhượng bán | - | 34.285.714 | - | - | - | 34.285.714 |\n| Giảm khác | - | - | - | - | - | - |\n| Số dư cuối kỳ | 794.236.624.771 | 282.760.002.647 | 59.151.458.337 | 9.131.139.008 | 21.807.815.409 | 1.167.087.040.172 |\n| Hao mòn lũy kế | | | | | | |\n| Số dư đầu kỳ | 323.823.661.376 | 210.901.135 | 293.580.299.038 | 8.401.312.979 | 6.411.637.481 | 607.567.651.028 |\n| Khấu hao trong năm | 7.174.325.421 | 2.309.901.668 | 133.911.360 | 81.581.017 | 113.350.968 | 9.813.070.434 |\n| Tăng khác | - | - | - | - | - | - |\n| Chuyển sang tài sản đầu tư | - | - | - | - | - | - |\n| Thanh lý, nhượng bán | - | 34.285.714 | - | - | - | 34.285.714 |\n| Giảm khác | - | - | - | - | - | - |\n| Số dư cuối kỳ | 330.997.986.797 | 213.176.751.247 | 58.163.815.259 | 8.482.893.996 | 6.524.988.449 | 617.346.435.748 |\n| Giá trị còn lại của tài sản cố định hữu hình | | | | | | |\n| Vào ngày đầu kỳ | 470.412.963.395 | 71.893.153.068 | 1.121.554.438 | 687.780.574 | 15.396.177.928 | 559.511.629.403 |\n| Vào ngày cuối kỳ | 463.238.637.974 | 69.583.251.400 | 987.643.078 | 648.245.012 | 15.282.826.960 | 549.740.604.424 |\n\n- Giá trị còn lại tại cuối năm của TSCĐ hữu hình dùng làm vật thế chấp, cầm cố cho các khoản vay: Không có thông tin.\n- Nguyên giá của TSCĐ tại cuối năm đã khấu hao hết nhưng vẫn đang sử dụng: Không có thông tin.\n- Nguyên giá của TSCĐ tại cuối năm chờ thanh lý: Không có thông tin.\n- Cam kết mua, bán TSCĐ hữu hình có giá trị lớn trong tương lai: Không có thông tin.\n- Các thay đổi khác về TSCĐ hữu hình: Không có thông tin.",
+    "questions": [
+      {
+        "question": "Tổng giá trị tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định hữu hình vào ngày cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí xây dựng cơ bản dở dang cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khấu hao trong năm của nhà cửa, vật kiến trúc với máy móc, thiết bị. Loại nào có khấu hao lớn hơn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình tăng giảm tài sản cố định hữu hình của công ty trong kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ khấu hao lũy kế trên nguyên giá của tài sản cố định hữu hình cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc thanh lý, nhượng bán tài sản cố định đến cơ cấu tài sản và dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của chi phí xây dựng cơ bản dở dang đến báo cáo tài chính trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n10. Tăng (giảm) tài sản cố định vô hình\n| Chỉ tiêu | Quyền sử dụng đất | Bản quyền | Thương hiệu | Phần mềm máy tính và nhượng quyền | Tài sản cố định vô hình khác | Tổng cộng |\n|:------------------------------------|:-------------------|:-----------|:-------------|:---------------------------------|:----------------------------|:-------------|\n| Nguyên giá | | | | | | |\n| Số dư đầu kỳ | 1.443.177.942 | - | - | 17.441.135.579 | 2.158.601.520 | 21.042.915.041 |\n| Mua sắm trong năm | - | - | - | - | - | - |\n| Tạo ra từ nội bộ doanh nghiệp | - | - | - | - | - | - |\n| Tăng do hợp nhất kinh doanh | - | - | - | - | - | - |\n| Tăng khác | - | - | - | - | - | - |\n| Thanh lý, nhượng bán tài sản | - | - | - | - | - | - |\n| Giảm khác | - | - | - | - | - | - |\n| Số dư cuối kỳ | 1.443.177.942 | - | - | 17.441.135.579 | 2.158.601.520 | 21.042.915.041 |\n| Hao mòn lũy kế | | | | | | |\n| Số dư đầu kỳ | 1.071.147.000 | - | - | 17.288.441.152 | 1.254.629.203 | 19.614.217.355 |\n| Khấu hao trong năm | 23.040.324 | - | - | 108.207.975 | 131.248.299 | 262.496.598 |\n| Tăng khác | - | - | - | - | - | - |\n| Thanh lý, nhượng bán tài sản | - | - | - | - | - | - |\n| Giảm khác | - | - | - | - | - | - |\n| Số dư cuối kỳ | 1.094.187.324 | - | - | 17.396.649.127 | 1.385.877.502 | 19.876.713.953 |\n| Giá trị còn lại của tài sản cố định vô hình | | | | | | |\n| Vào ngày đầu kỳ | 372.030.942 | - | - | 152.694.427 | 903.972.317 | 1.428.697.686 |\n| Vào ngày cuối kỳ | 348.990.618 | - | - | 44.486.452 | 772.724.018 | 1.166.201.088 |\n\n- Nguyên giá của tài sản cố định vô hình đã khấu hao hết nhưng vẫn đang sử dụng: Không có thông tin.\n\n11. Tăng (giảm) tài sản cố định thuê tài chính\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc, thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Tài sản cố định hữu hình khác | Tài sản cố định vô hình | Tổng cộng |\n|:-----------------------------|:-----------------------|:-------------------|:-------------------------------|:-------------------------|:------------------------------|:-------------------------|:-------------|\n| Nguyên giá | | | | | | | |\n| Số dư đầu kỳ | - | - | - | - | - | - | - |\n| Thuê tài chính trong năm | - | - | - | - | - | - | - |\n| Tăng khác | - | - | - | - | - | - | - |\n| Mua lại tài sản thuê tài chính | - | - | - | - | - | - | - |\n| Trả lại tài sản thuê tài chính | - | - | - | - | - | - | - |\n| Giảm khác | - | - | - | - | - | - | - |\n| Số dư cuối kỳ | - | - | - | - | - | - | - |\n| Hao mòn lũy kế | | | | | | | |\n| Số dư đầu kỳ | - | - | - | - | - | - | - |\n| Khấu hao trong năm | - | - | - | - | - | - | - |\n| Tăng khác | - | - | - | - | - | - | - |\n| Mua lại tài sản thuê tài chính | - | - | - | - | - | - | - |\n| Trả lại tài sản thuê tài chính | - | - | - | - | - | - | - |\n| Giảm khác | - | - | - | - | - | - | - |\n| Số dư cuối kỳ | - | - | - | - | - | - | - |\n| Giá trị còn lại của tài sản cố định thuê tài chính | | | | | | | |\n| Vào ngày đầu kỳ | - | - | - | - | - | - | - |\n| Vào ngày cuối kỳ | - | - | - | - | - | - | - |\n\n12. Tăng (giảm) bất động sản đầu tư\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------------|:-------------|:-----------|\n| a. Bất động sản đầu tư cho thuê | | |\n| Nguyên giá | | |\n| Quyền sử dụng đất | - | - |\n| Nhà | - | - |\n| Nhà và quyền sử dụng đất | - | - |\n| Cơ sở hạ tầng | - | - |\n| Hao mòn lũy kế | | |\n| Quyền sử dụng đất | - | - |\n| Nhà | - | - |\n| Nhà và quyền sử dụng đất | - | - |\n| Cơ sở hạ tầng | - | - |\n| Giá trị còn lại | | |\n| Quyền sử dụng đất | - | - |\n| Nhà | - | - |\n| Nhà và quyền sử dụng đất | - | - |\n| Cơ sở hạ tầng | - | - |\n| b. Bất động sản đầu tư nắm giữ chờ tăng giá | | |\n| Nguyên giá | | |\n| Quyền sử dụng đất | - | - |\n| Nhà | - | - |\n| Nhà và quyền sử dụng đất | - | - |\n| Cơ sở hạ tầng | - | - |\n| Tổn thất do giảm giá | | |\n| Quyền sử dụng đất | - | - |\n| Nhà | - | - |\n| Nhà và quyền sử dụng đất | - | - |\n| Cơ sở hạ tầng | - | - |\n| Giá trị còn lại | | |\n| Quyền sử dụng đất | - | - |\n| Nhà | - | - |\n| Nhà và quyền sử dụng đất | - | - |\n| Cơ sở hạ tầng | - | - |\n\n- Giá trị còn lại tại cuối kỳ của bất động sản đầu tư dùng làm vật thế chấp, cầm cố để bảo đảm cho các khoản vay: Không có thông tin.\n- Nguyên giá của bất động sản đầu tư đã khấu hao hết nhưng đang cho thuê hoặc nắm giữ chờ tăng giá: Không có thông tin.\n- Giải thích dữ liệu và các giải thích khác: Không có thông tin.",
+    "questions": [
+      {
+        "question": "Tổng nguyên giá tài sản cố định vô hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của phần mềm máy tính và nhượng quyền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Có bất kỳ khoản tài sản cố định thuê tài chính nào được ghi nhận trong báo cáo này không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khấu hao trong năm của quyền sử dụng đất với phần mềm máy tính và nhượng quyền.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình đầu tư vào tài sản cố định vô hình của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có bất động sản đầu tư đến chiến lược kinh doanh và khả năng tạo ra thu nhập thụ động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu giá trị còn lại của tài sản cố định vô hình tiếp tục giảm mạnh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n13. Chi phí trả trước\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------------------|:-------------|:-----------|\n| a. Ngắn hạn | 413.486.751 | 860.549.307 |\n| Chi phí trả trước về thuê hoạt động TSCĐ | - | - |\n| Công cụ, dụng cụ | 113.157.290 | 113.157.290 |\n| Chi phí đi vay | - | - |\n| Các khoản mục khác được liệt kê chi tiết nếu giá trị cao | 300.329.461 | 747.392.017 |\n| b. Dài hạn | 3.495.465.359 | 3.866.602.458 |\n| Chi phí thành lập doanh nghiệp | - | - |\n| Chi phí bảo hiểm | - | - |\n| Các khoản mục khác được liệt kê chi tiết nếu giá trị cao | 3.495.465.359 | 3.866.602.458 |\n| Tổng cộng | 3.908.952.110 | 4.727.151.765 |\n\n14. Các tài sản khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:------------|:-------------|:-----------|\n| a. Ngắn hạn | - | - |\n| b. Dài hạn | - | - |\n| Tổng cộng | - | - |\n\n15. Các khoản đi vay và nợ thuê tài chính\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Số tiền tăng trong kỳ | Số tiền giảm trong kỳ | Giá trị (Số đầu kỳ) |\n|:----------------------------------------------------------|:-------------------|:---------------------|:-------------------|:-------------------|\n| a. Khoản vay ngắn hạn | 166.763.345.709 | 10.647.944.677 | 9.892.866.182 | 166.008.267.214 |\n| b. Khoản vay dài hạn (chi tiết theo kỳ hạn) | 82.168.955.140 | 0 | 29.635.655.164 | 111.804.610.304 |\n| Tổng cộng | 248.932.300.849 | 10.647.944.677 | 39.528.521.346 | 277.812.877.518 |\n\n| Chỉ tiêu | Tổng nợ thuê tài chính (Năm nay) | Nợ gốc phải trả (Năm nay) | Lãi phải trả (Năm nay) | Tổng nợ thuê tài chính (Năm trước) | Nợ gốc phải trả (Năm trước) | Lãi phải trả (Năm trước) |\n|:------------------------------|:---------------------------|:----------------------|:--------------------|:----------------------------|:----------------------|:--------------------|\n| c. Các khoản nợ thuê tài chính | | | | | | |\n| 1 năm trở xuống | - | - | - | - | - | - |\n| Trên 1 năm đến 5 năm | - | - | - | - | - | - |\n| Trên 5 năm | - | - | - | - | - | - |\n\n| Chỉ tiêu | Nợ gốc (Số cuối kỳ) | Lãi (Số cuối kỳ) | Nợ gốc (Số đầu kỳ) | Lãi (Số đầu kỳ) |\n|:-----------------------------------------------|:-------------------|:-----------------|:-------------------|:-----------------|\n| d. Các khoản đi vay và nợ thuê tài chính quá hạn chưa trả | | | | |\n| Các khoản đi vay | - | - | - | - |\n| Các khoản nợ thuê tài chính | - | - | - | - |\n| Tổng cộng | - | - | - | - |\n\n- Lý do chưa thanh toán: Không có thông tin.\n- Thuyết minh chi tiết về các khoản đi vay và nợ thuê tài chính với các bên liên quan: Không có thông tin.",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí trả trước ngắn hạn cuối kỳ với đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tăng/giảm của khoản vay dài hạn trong kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình quản lý nợ vay của công ty và khả năng thanh toán các khoản nợ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán tỷ lệ chi phí trả trước dài hạn trên tổng tài sản dài hạn của công ty.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính liên quan đến các khoản vay và nợ thuê tài chính dài hạn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ minh bạch của công ty trong việc công bố thông tin về các khoản đi vay và nợ thuê tài chính quá hạn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n16. Các khoản phải trả nhà cung cấp\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Tỷ lệ khả năng trả nợ (Số cuối kỳ) | Giá trị (Số đầu kỳ) | Tỷ lệ khả năng trả nợ (Số đầu kỳ) |\n|:----------------------------------|:-------------------|:-----------------------------------|:-------------------|:-----------------------------------|\n| a. Phải trả người bán ngắn hạn | 51.964.728.075 | - | 61.279.155.328 | - |\n| b. Phải trả người bán dài hạn | 0 | - | 0 | - |\n| c. Nợ tồn đọng chưa thanh toán | - | - | - | - |\n| d. Phải trả người bán liên quan | - | - | - | - |\n\n17. Thuế và các khoản phải nộp Nhà nước\n| Chỉ tiêu | Số phải nộp đầu kỳ | Số phát sinh phải nộp trong kỳ | Số đã nộp trong kỳ | Số phải nộp cuối kỳ |\n|:-------------------------------------------|:---------------------|:-------------------------------|:-------------------|:---------------------|\n| a. Các khoản phải nộp | | | | |\n| Thuế giá trị gia tăng | 13.848.617.087 | 7.519.092.669 | 16.695.783.339 | 4.671.926.417 |\n| Thuế tiêu thụ đặc biệt | - | - | - | - |\n| Thuế xuất nhập khẩu | - | - | - | - |\n| Thuế thu nhập doanh nghiệp | 11.286.343.262 | 7.758.380.762 | 10.700.399.212 | 8.344.324.812 |\n| Thuế thu nhập cá nhân | 329.489.136 | 4.004.629.139 | 2.709.725.965 | 1.624.392.310 |\n| Thuế tài nguyên | 2.290.388.591 | 4.720.371.816 | 2.137.506.991 | 4.873.253.416 |\n| Thuế đất, nhà và tiền thuê đất | 35.596.717 | 1.052.120 | 36.648.837 | - |\n| Các loại thuế khác | 11.000.000 | - | - | 11.000.000 |\n| Các khoản phí, lệ phí và các khoản phải nộp khác | 5.103.386.245 | 1.776.907.176 | 3.224.682.300 | 3.655.611.121 |\n| Tổng cộng | 32.893.821.038 | 25.791.433.682 | 35.515.746.644 | 23.169.508.076 |\n| b. Các khoản phải thu | | | | |\n| Thuế giá trị gia tăng | - | - | - | - |\n| Thuế tiêu thụ đặc biệt | - | - | - | - |\n| Thuế xuất nhập khẩu | - | - | - | - |\n| Thuế thu nhập doanh nghiệp | 17.578.853 | 19.978.743 | - | 37.557.596 |\n| Thuế thu nhập cá nhân | - | - | - | - |\n| Thuế tài nguyên | - | - | - | - |\n| Thuế đất, nhà và tiền thuê đất | - | - | - | - |\n| Các loại thuế khác | - | - | - | - |\n| Các khoản phí, lệ phí và các khoản phải thu khác | - | - | - | - |\n| Tổng cộng | 17.578.853 | 19.978.743 | - | 37.557.596 |",
+    "questions": [
+      {
+        "question": "Tổng phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số phải nộp thuế thu nhập doanh nghiệp cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh số phải nộp thuế giá trị gia tăng cuối kỳ với số đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ thuế thu nhập cá nhân phải nộp trên tổng các khoản phải nộp cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình nghĩa vụ thuế của công ty và khả năng tuân thủ các quy định về thuế.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi lớn trong khoản phải nộp thuế tài nguyên đến dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu công ty có các khoản nợ tồn đọng chưa thanh toán với nhà cung cấp.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n18. Chi phí phải trả\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:----------------------------------------------------|:-------------|:-----------|\n| a. Ngắn hạn | 12.981.010.012 | 14.148.844.089 |\n| Trích chi phí lương nghỉ phép | - | - |\n| Chi phí trong thời gian ngừng hoạt động | - | - |\n| Chi phí phải trả của giá vốn hàng bán tạm tính, bất động sản | - | - |\n| Các chi phí phải trả khác | 5 | - |\n| b. Dài hạn | - | - |\n| Lãi vay | - | - |\n| Các khoản mục khác chi tiết theo từng khoản mục | - | - |\n| Tổng cộng | 12.981.010.012 | 14.148.844.089 |\n\n19. Các khoản phải trả khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------------------|:-------------|:-----------|\n| a. Ngắn hạn | 89.854.350.009 | 94.363.582.295 |\n| Thặng dư tài sản chờ xử lý | - | - |\n| Phí công đoàn | 1.059.989.628 | 1.117.442.637 |\n| Bảo hiểm xã hội | 140.050.094 | 88.383.219 |\n| Bảo hiểm y tế | 3.800.700 | 10.685.789 |\n| Bảo hiểm thất nghiệp | 228.433 | 8.180.433 |\n| Phải trả cổ phần hóa | - | - |\n| Nhận ký quỹ, ký cược ngắn hạn | - | - |\n| Cổ tức, lợi nhuận phải trả | 2.759.006.843 | 2.812.979.715 |\n| Các khoản phải trả, phải thu khác | 85.894.694.311 | 90.325.910.502 |\n| b. Dài hạn | | |\n| Nhận ký quỹ, ký cược dài hạn | - | - |\n| Các khoản phải trả, phải thu khác | - | - |\n| Tổng cộng | 89.854.350.009 | 94.363.582.295 |\n\n20. Doanh thu chưa thực hiện\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:----------------------------------------------|:-------------|:-----------|\n| a. Ngắn hạn | - | - |\n| Doanh thu nhận trước | - | - |\n| Doanh thu từ các chương trình khách hàng truyền thống | - | - |\n| Các doanh thu chưa thực hiện khác | - | - |\n| Tổng cộng | - | - |\n| b. Dài hạn | - | - |\n| Doanh thu nhận trước | - | - |\n| Doanh thu từ các chương trình khách hàng truyền thống | - | - |\n| Các doanh thu chưa thực hiện khác | - | - |\n\n- Lý do không thể thực hiện hợp đồng với khách hàng (chi tiết từng khoản mục, lý do không thể thực hiện): Không có thông tin.",
+    "questions": [
+      {
+        "question": "Tổng chi phí phải trả ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số cổ tức, lợi nhuận phải trả cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng các khoản phải trả khác ngắn hạn cuối kỳ và đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ phí công đoàn trên tổng các khoản phải trả khác ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình quản lý chi phí phải trả và các khoản nợ khác của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có doanh thu chưa thực hiện đến dòng tiền của công ty trong tương lai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu công ty không có các khoản chi phí phải trả dài hạn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n21. Trái phiếu phát hành\n21.1. Trái phiếu thông thường\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Lãi suất (Số cuối kỳ) | Kỳ hạn (Số cuối kỳ) | Giá trị (Số đầu kỳ) | Lãi suất (Số đầu kỳ) | Kỳ hạn (Số đầu kỳ) |\n|:---------------------------------|:-------------------|:--------------------|:-------------------|:-------------------|:--------------------|:-------------------|\n| a. Trái phiếu đã phát hành | - | - | - | - | - | - |\n| Loại trái phiếu phát hành theo mệnh giá | - | - | - | - | - | - |\n| Loại trái phiếu phát hành có chiết khấu | - | - | - | - | - | - |\n| Loại trái phiếu phát hành có phụ trội | - | - | - | - | - | - |\n| Tổng cộng | - | - | - | - | - | - |\n\n- Ghi chú chi tiết về trái phiếu do các bên liên quan nắm giữ theo loại trái phiếu: Không có thông tin.\n\n21.2. Trái phiếu chuyển đổi: Không có thông tin.\n\n22. Cổ phiếu ưu đãi được phân loại là nợ phải trả: Không có thông tin.\n\n23. Dự phòng phải trả\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------------------------------------------------------------------------|:-------------|:-----------|\n| a. Ngắn hạn | - | - |\n| Dự phòng bảo hành sản phẩm, hàng hóa | - | - |\n| Dự phòng bảo hành công trình xây dựng | - | - |\n| Dự phòng tái cơ cấu | - | - |\n| Dự phòng các khoản phải trả khác (chi phí sửa chữa định kỳ TSCĐ, chi phí phục hồi môi trường, v.v.) | - | - |\n| Tổng cộng | - | - |\n| b. Dài hạn | - | - |\n| Dự phòng bảo hành sản phẩm, hàng hóa | - | - |\n| Dự phòng bảo hành công trình xây dựng | - | - |\n| Dự phòng tái cơ cấu | - | - |\n| Dự phòng các khoản phải trả khác (chi phí sửa chữa định kỳ TSCĐ, chi phí phục hồi môi trường, v.v.) | - | - |\n| Tổng cộng | - | - |\n\n24. Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:---------------------------------------------------------------------------------|:-------------|:-----------|\n| a. Tài sản thuế thu nhập hoãn lại | | |\n| Tỷ suất thuế thu nhập doanh nghiệp dùng để xác định giá trị tài sản thuế TNDN hoãn lại | - | - |\n| Tài sản thuế TNDN hoãn lại liên quan đến các khoản chênh lệch tạm thời được khấu trừ | - | - |\n| Tài sản thuế TNDN hoãn lại liên quan đến các khoản lỗ tính thuế chưa sử dụng | - | - |\n| Tài sản thuế TNDN hoãn lại liên quan đến các ưu đãi thuế chưa sử dụng | - | - |\n| Số tiền được bù trừ vào thuế TNDN hoãn lại phải trả | - | - |\n| b. Thuế thu nhập hoãn lại phải trả | | |\n| Tỷ suất thuế thu nhập doanh nghiệp dùng để xác định thuế TNDN hoãn lại phải trả | - | - |\n| Thuế TNDN hoãn lại phải trả phát sinh từ các khoản chênh lệch tạm thời chịu thuế | - | - |\n| Bù trừ vào tài sản thuế TNDN hoãn lại | - | - |",
+    "questions": [
+      {
+        "question": "Có trái phiếu thông thường nào được công ty phát hành trong kỳ này không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Có khoản dự phòng phải trả ngắn hạn nào được ghi nhận không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty có thông tin về cổ phiếu ưu đãi được phân loại là nợ phải trả không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu các loại tài sản thuế thu nhập hoãn lại được đề cập trong báo cáo.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ minh bạch của công ty về các khoản mục trái phiếu và dự phòng phải trả.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn khi công ty không có các khoản dự phòng cho bảo hành sản phẩm hoặc tái cơ cấu.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có tài sản thuế thu nhập hoãn lại hoặc thuế thu nhập hoãn lại phải trả đến lợi nhuận ròng của công ty trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n25. Vốn chủ sở hữu\nĐơn vị: VND\na. Bảng đối chiếu biến động vốn chủ sở hữu\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Thặng dư vốn cổ phần | Chênh lệch đánh giá lại tài sản | Chênh lệch tỷ giá | Cổ phiếu quỹ | Lợi nhuận sau thuế chưa phân phối | Nguồn vốn đầu tư xây dựng cơ bản | Quỹ khác thuộc vốn chủ sở hữu | Quỹ đầu tư phát triển | Tổng cộng |\n|:--------------------------------------|:---------------------------|:--------------------|:----------------------------|:------------------|:--------------|:-----------------------------------|:----------------------------------|:-------------------------------|:----------------------|:-------------|\n| Số dư đầu kỳ năm trước | 266.913.190.000 | 60.769.146.905 | 500.000.000 | 22.979.933.988 | 3.511.622.708.93 | - | - | - | - | 351.162.270.893 |\n| Tăng vốn trong năm trước | - | - | - | - | - | - | - | - | - | - |\n| Lợi nhuận trong năm trước | - | - | - | - | - | 87.497.357.693 | - | - | - | 87.497.357.693 |\n| Các khoản tăng khác | - | - | - | - | - | - | - | - | - | - |\n| Giảm vốn trong năm trước | - | 62.279.659.500 | - | - | - | - | - | - | - | 62.279.659.500 |\n| Lỗ trong năm trước | - | - | - | - | - | 1.232.412.520 | - | - | - | 1.232.412.520 |\n| Các khoản giảm khác | - | - | - | - | - | - | - | - | - | - |\n| Số dư đầu kỳ năm nay | 266.913.190.000 | - | - | - | - | 85.986.845.098 | - | 500.000.000 | 40.979.933.988 | 394.379.969.086 |\n| Tăng vốn trong năm nay | - | - | - | - | - | - | - | - | - | - |\n| Lợi nhuận trong năm nay | - | - | - | - | - | 30.572.825.033 | - | - | - | 30.572.825.033 |\n| Các khoản tăng khác | - | - | - | - | - | 2.999.529 | - | - | - | 2.999.529 |\n| Giảm vốn trong năm nay | - | - | - | - | - | - | - | - | - | - |\n| Lỗ trong năm nay | - | - | - | - | - | - | - | - | - | - |\n| Các khoản giảm khác | - | - | - | - | - | (2.999.529) | - | - | - | (2.999.529) |\n| Số dư cuối kỳ năm nay | 266.913.190.000 | - | - | - | - | 116.559.670.131 | - | 500.000.000 | 40.979.933.988 | 424.952.794.119 |",
+    "questions": [
+      {
+        "question": "Tổng vốn chủ sở hữu cuối kỳ năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận trong năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh vốn đầu tư của chủ sở hữu giữa đầu kỳ năm trước và cuối kỳ năm nay.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Quỹ đầu tư phát triển cuối kỳ năm nay là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của lợi nhuận sau thuế chưa phân phối từ đầu kỳ năm nay đến cuối kỳ năm nay.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích các yếu tố chính đóng góp vào sự tăng trưởng tổng vốn chủ sở hữu từ đầu kỳ năm trước đến cuối kỳ năm nay.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có thặng dư vốn cổ phần hoặc cổ phiếu quỹ đến cấu trúc vốn và khả năng huy động vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Bảng cân đối kế toán - tiếp theo)\nLoại nội dung: Cả hai\n25. Vốn chủ sở hữu (tiếp theo)\nb. Chi tiết vốn chủ sở hữu\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:-----------------------------------------|:-------------|:-----------|\n| Vốn góp của công ty mẹ (nếu là công ty con) | - | - |\n| Vốn góp của các đơn vị khác | 266.913.190.000 | 266.913.190.000 |\n| Số lượng cổ phiếu quỹ | - | - |\n| Tổng cộng | 266.913.190.000 | 266.913.190.000 |\n\nc. Các giao dịch vốn với chủ sở hữu và phân phối cổ tức, chia lợi nhuận\n| Chỉ tiêu | Năm nay | Năm trước |\n|:-----------------------------------|:-------------|:-----------|\n| Vốn đầu tư của chủ sở hữu | | |\n| Vốn góp đầu năm | 266.913.190.000 | 266.913.190.000 |\n| Vốn góp tăng trong năm | 0 | 0 |\n| Vốn góp giảm trong năm | 0 | 0 |\n| Vốn góp cuối năm | 266.913.190.000 | 266.913.190.000 |\n| Cổ tức, lợi nhuận đã phân phối | - | - |\n\nd. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------------------------|:-------------|:-----------|\n| Số lượng cổ phiếu đăng ký phát hành | - | - |\n| Số lượng cổ phiếu đã bán ra công chúng | - | - |\n| Cổ phiếu phổ thông | - | - |\n| Cổ phiếu ưu đãi được phân loại là vốn chủ sở hữu | - | - |\n| Số lượng cổ phiếu đã mua lại (cổ phiếu quỹ) | - | - |\n| Cổ phiếu phổ thông | - | - |\n| Cổ phiếu ưu đãi được phân loại là vốn chủ sở hữu | - | - |\n| Số lượng cổ phiếu đang lưu hành | 26.691.319 | 26.691.319 |\n| Cổ phiếu phổ thông | 26.691.319 | 26.691.319 |\n| Cổ phiếu ưu đãi được phân loại là vốn chủ sở hữu | - | - |\n| Mệnh giá cổ phiếu đang lưu hành | 10.000 | 10.000 |\n\nd. Cổ tức\n| Chỉ tiêu | Giá trị |\n|:-------------------------------------------------------|:--------|\n| Cổ tức được công bố sau ngày kết thúc kỳ kế toán | - |\n| Cổ tức được công bố trên cổ phiếu phổ thông | - |\n| Cổ tức được công bố trên cổ phiếu ưu đãi | - |\n| Cổ tức của cổ phiếu ưu đãi tích lũy chưa được ghi nhận | - |\n\ne. Các quỹ của Công ty\n| Chỉ tiêu | Số cuối kỳ | Số đầu kỳ |\n|:-------------------------------|:-------------|:-----------|\n| Quỹ đầu tư phát triển | 40.979.933.988 | 40.979.933.988 |\n| Quỹ dự phòng tài chính | - | - |\n| Các quỹ khác thuộc vốn chủ sở hữu | 500.000.000 | 500.000.000 |\n\n26. Chênh lệch đánh giá lại tài sản: Không có thông tin.\n\n27. Chênh lệch tỷ giá hối đoái: Không có thông tin.\n\n28. Nguồn kinh phí\n| Chỉ tiêu | Năm nay | Năm trước |\n|:-----------------------------------------------------------|:-------------|:-----------|\n| Nguồn kinh phí được cấp trong năm | 0 | 0 |\n| Chi phí ngoài hoạt động kinh doanh | 0 | 0 |\n| Nguồn kinh phí còn lại cuối năm | 105.250.000 | 105.250.000 |\n\n29. Các khoản mục ngoài Bảng cân đối kế toán\na. Tài sản thuê hoạt động: Tổng các khoản thanh toán tiền thuê tối thiểu trong tương lai cho các hợp đồng thuê không hủy ngang cho các kỳ sau: Không có thông tin.\n- 1 năm trở xuống: Không có thông tin.\n- Trên 1 năm đến 5 năm: Không có thông tin.\n- Trên 5 năm: Không có thông tin.\nb. Tài sản nhận ký quỹ: Công ty phải giải thích chi tiết về số lượng, loại, quy cách, chất lượng tại thời điểm cuối kỳ: Không có thông tin.\n- Vật tư, hàng hóa nhận giữ hộ, gia công, ký gửi: Không có thông tin.\n- Hàng hóa nhận ký quỹ, ký cược, thế chấp: Không có thông tin.",
+    "questions": [
+      {
+        "question": "Số lượng cổ phiếu đang lưu hành cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Quỹ đầu tư phát triển cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mệnh giá cổ phiếu đang lưu hành của công ty là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh vốn góp đầu năm và cuối năm của chủ sở hữu.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các quỹ thuộc vốn chủ sở hữu từ đầu kỳ đến cuối kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro nếu công ty không có các cam kết về cổ tức cho cổ đông.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có tài sản thuê hoạt động và tài sản nhận ký quỹ đến khả năng mở rộng và quản lý tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Báo cáo kết quả hoạt động kinh doanh)\nLoại nội dung: Cả hai\nVI. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh\nĐơn vị: VND\n1. Tổng doanh thu bán hàng và cung cấp dịch vụ\n| Chỉ tiêu | Năm nay | Năm trước |\n|:---------------------------------------------------------------------------------------------------------------|:-------------|:-----------|\n| a. Doanh thu | | |\n| Doanh thu bán hàng | 111.692.942.632 | 76.264.005.482 |\n| Doanh thu cung cấp dịch vụ | 894.413.909 | 1.814.899.915 |\n| Doanh thu hợp đồng xây dựng | - | - |\n| Doanh thu hợp đồng xây dựng được ghi nhận trong kỳ | - | - |\n| Tổng doanh thu hợp đồng xây dựng lũy kế được ghi nhận đến thời điểm lập Báo cáo tài chính | - | - |\n| Các khoản doanh thu khác | - | - |\n| Tổng cộng | 112.587.356.541 | 78.078.905.397 |\n\n| Chỉ tiêu | Các bên liên quan (Năm nay) | Các bên liên quan (Năm trước) |\n|:---------------------------------------|:-----------------------------|:------------------------------|\n| b. Doanh thu từ các bên liên quan (chi tiết từng đối tượng) | - | - |\n\nc. Trong trường hợp ghi nhận doanh thu từ cho thuê tài sản là tổng số tiền nhận trước, Công ty phải giải thích thêm để so sánh sự khác biệt giữa ghi nhận doanh thu theo phương pháp phân bổ dần trong suốt thời gian thuê: Không có thông tin.\n\n- Khả năng sụt giảm lợi nhuận và dòng tiền trong tương lai: Không có thông tin.\n\n2. Các khoản giảm trừ doanh thu\n| Chỉ tiêu | Năm nay | Năm trước |\n|:------------------------------------|:-------------|:-----------|\n| Trong đó: | | |\n| Chiết khấu thương mại | - | - |\n| Giảm giá hàng bán | - | - |\n| Hàng bán bị trả lại | - | - |\n\n3. Giá vốn hàng bán\n| Chỉ tiêu | Năm nay | Năm trước |\n|:---------------------------------------------|:-------------|:-----------|\n| Giá vốn hàng bán | 63.894.601.745 | 46.197.484.409 |\n| Giá vốn thành phẩm đã bán | 0 | 0 |\n| Giá vốn dịch vụ cung cấp | 670.791.687 | 1.432.831.179 |\n| Dự phòng giảm giá hàng tồn kho | - | 743.664.672 |\n| Các khoản mục giá vốn hàng bán được ghi nhận | 74.450.000 | - |\n| Tổng cộng | 64.565.392.433 | 47.630.315.588 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu bán hàng và cung cấp dịch vụ năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu cung cấp dịch vụ năm trước là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá vốn hàng bán năm nay và năm trước. Thay đổi bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ doanh thu bán hàng trên tổng doanh thu bán hàng và cung cấp dịch vụ năm nay là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cơ cấu doanh thu của công ty giữa doanh thu bán hàng và doanh thu cung cấp dịch vụ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận gộp cho năm nay dựa trên doanh thu thuần và giá vốn hàng bán.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản giảm trừ doanh thu (nếu có) đến doanh thu thuần của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro về doanh thu và lợi nhuận nếu công ty không có các hoạt động kinh doanh với bên liên quan.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Báo cáo kết quả hoạt động kinh doanh - tiếp theo)\nLoại nội dung: Cả hai\n4. Doanh thu từ hoạt động tài chính\n| Chỉ tiêu | Năm nay | Năm trước |\n|:-----------------------------------------------------|:-------------|:-----------|\n| Lãi tiền gửi ngân hàng, lãi cho vay | 16.382.049 | 15.493.701 |\n| Lãi bán các khoản đầu tư | - | - |\n| Cổ tức, lợi nhuận được chia | - | - |\n| Lãi từ chênh lệch tỷ giá | 248.963.131 | 228.735.735 |\n| Lãi bán hàng trả chậm, chiết khấu thanh toán | - | - |\n| Doanh thu từ các hoạt động tài chính khác | - | - |\n| Tổng cộng | 265.345.180 | 244.229.436 |\n\n5. Chi phí tài chính\n| Chỉ tiêu | Năm nay | Năm trước |\n|:-----------------------------------------------------|:-------------|:-----------|\n| Chi phí lãi vay | 3.283.152.647 | 7.641.431.319 |\n| Chiết khấu thanh toán, lãi bán hàng trả chậm | - | - |\n| Lỗ thanh lý các khoản đầu tư tài chính | - | - |\n| Lỗ từ chênh lệch tỷ giá hối đoái | 8.517.107 | 4.980.000 |\n| Dự phòng giảm giá chứng khoán và tổn thất đầu tư | - | - |\n| Chi phí tài chính khác | - | - |\n| Các khoản mục chi phí tài chính được ghi nhận | - | - |\n| Tổng cộng | 3.291.669.754 | 7.646.411.319 |\n\n6. Thu nhập khác\n| Chỉ tiêu | Năm nay | Năm trước |\n|:-----------------------------------------|:-------------|:-----------|\n| Thanh lý, nhượng bán tài sản cố định | 22.727.273 | - |\n| Lãi từ đánh giá lại tài sản | - | - |\n| Tiền phạt thu được | - | - |\n| Giảm thuế | - | - |\n| Các khoản mục khác | - | 1 |\n| Tổng cộng | 22.727.273 | 1 |\n\n7. Chi phí khác\n| Chỉ tiêu | Năm nay | Năm trước |\n|:---------------------------------------------------|:-------------|:-----------|\n| Giá trị còn lại của TSCĐ và chi phí thanh lý, nhượng bán TSCĐ | - | - |\n| Lỗ từ đánh giá lại tài sản | - | - |\n| Các khoản bị phạt | 342.899.248 | - |\n| Các chi phí khác | 173.828.041 | 65.057.084 |\n| Tổng cộng | 173.828.041 | 407.956.332 |\n\n8. Chi phí bán hàng và chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Năm nay | Năm trước |\n|:---------------------------------------------------------------------------------|:-------------|:-----------|\n| a. Chi phí quản lý doanh nghiệp phát sinh trong kỳ | 6.513.332.971 | 4.445.971.417 |\n| Chi tiết các khoản mục chiếm từ 10% trở lên của tổng chi phí quản lý doanh nghiệp | 6.513.332.971 | 4.445.971.417 |\n| Các chi phí quản lý khác | - | - |\n| b. Chi phí bán hàng phát sinh trong kỳ | 30.555.555 | - |\n| Chi tiết các khoản mục chiếm từ 10% trở lên của tổng chi phí bán hàng | 30.555.555 | - |\n| Các chi phí bán hàng khác | - | - |\n| c. Các khoản giảm trừ chi phí bán hàng và chi phí quản lý doanh nghiệp được ghi nhận | | |\n| Hoàn nhập dự phòng bảo hành sản phẩm, hàng hóa | - | - |\n| Hoàn nhập dự phòng tái cơ cấu và các khoản dự phòng khác | - | - |\n| Các khoản giảm trừ ghi nhận khác | - | - |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu từ hoạt động tài chính năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí lãi vay năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu từ lãi tiền gửi ngân hàng, lãi cho vay năm nay và năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí quản lý doanh nghiệp năm nay tăng hay giảm so với năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đóng góp của hoạt động tài chính vào tổng lợi nhuận của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của lỗ từ chênh lệch tỷ giá hối đoái đến chi phí tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự biến động của chi phí bán hàng và quản lý doanh nghiệp đến lợi nhuận ròng của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Xây dựng Điện 1 (PECC1)\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất quý I/2025\nThời gian: Quý I/2025, Phát hành ngày 26/04/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản mục trên Báo cáo kết quả hoạt động kinh doanh và Lưu chuyển tiền tệ - tiếp theo)\nLoại nội dung: Cả hai\n9. Chi phí sản xuất kinh doanh theo yếu tố\n| Chỉ tiêu | Năm nay | Năm trước |\n|:---------------------------------|:-------------|:-----------|\n| Chi phí nguyên vật liệu | 2.550.132.772 | 1.892.740.436 |\n| Chi phí nhân công | 28.923.827.976 | 24.085.144.997 |\n| Chi phí khấu hao tài sản cố định | 9.936.959.358 | 9.864.427.999 |\n| Chi phí dịch vụ mua ngoài | 4.247.492.694 | 3.203.830.498 |\n| Chi phí tiền mặt khác | 26.647.114.963 | 16.752.540.755 |\n| Tổng cộng | 72.305.527.763 | 55.798.684.685 |\n\nLưu ý: Khoản mục Chi phí sản xuất kinh doanh theo yếu tố là các chi phí phát sinh trong kỳ được phản ánh trên Bảng cân đối kế toán và Báo cáo kết quả hoạt động kinh doanh.\n- Đối với các doanh nghiệp sản xuất, việc giải thích chi phí theo yếu tố dựa trên số phát sinh trong các tài khoản sau:\n  - Tài khoản 621: Chi phí nguyên liệu, vật liệu trực tiếp\n  - Tài khoản 622: Chi phí nhân công trực tiếp\n  - Tài khoản 623: Chi phí sử dụng máy thi công\n  - Tài khoản 627: Chi phí sản xuất chung\n  - Tài khoản 641: Chi phí bán hàng\n  - Tài khoản 642: Chi phí quản lý doanh nghiệp\n- Đối với các doanh nghiệp thương mại, việc giải thích chi phí theo yếu tố dựa trên số phát sinh trong các tài khoản sau (trừ giá mua hàng hóa):\n  - Tài khoản 156: Hàng hóa\n  - Tài khoản 632: Giá vốn hàng bán\n  - Tài khoản 641: Chi phí bán hàng\n  - Tài khoản 642: Chi phí quản lý doanh nghiệp\n- Doanh nghiệp có quyền lựa chọn cơ sở khác nhưng phải đảm bảo giải thích đầy đủ chi phí theo yếu tố.\n\n10. Chi phí thuế thu nhập doanh nghiệp hiện hành\n| Chỉ tiêu | Năm nay | Năm trước |\n|:---------------------------------------------------------------------------------------------------------|:-------------|:-----------|\n| Chi phí thuế thu nhập doanh nghiệp được tính trên thu nhập chịu thuế của năm hiện tại | - | - |\n| Điều chỉnh chi phí thuế thu nhập doanh nghiệp của các năm trước vào chi phí thuế thu nhập doanh nghiệp hiện hành của năm nay | - | - |\n| Tổng chi phí thuế thu nhập doanh nghiệp hiện hành | 7.758.380.762 | 3.694.297.874 |\n\n11. Chi phí thuế thu nhập doanh nghiệp hoãn lại\n| Chỉ tiêu | Năm nay | Năm trước |\n|:---------------------------------------------------------------------------------------------------------|:-------------|:-----------|\n| Chi phí thuế thu nhập doanh nghiệp hoãn lại phát sinh từ chênh lệch tạm thời chịu thuế | - | - |\n| Chi phí thuế thu nhập doanh nghiệp hoãn lại phát sinh từ việc hoàn nhập tài sản thuế hoãn lại | - | - |\n| Thu nhập thuế thu nhập doanh nghiệp hoãn lại phát sinh từ chênh lệch tạm thời được khấu trừ | - | - |\n| Thu nhập thuế thu nhập doanh nghiệp hoãn lại phát sinh từ lỗ tính thuế và ưu đãi thuế chưa sử dụng | - | - |\n| Thu nhập thuế thu nhập doanh nghiệp hoãn lại phát sinh từ việc hoàn nhập thuế thu nhập hoãn lại | - | - |\n| Tổng chi phí thuế thu nhập doanh nghiệp hoãn lại | - | - |\n\nVIII. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo lưu chuyển tiền tệ\n1. Các giao dịch không bằng tiền ảnh hưởng đến báo cáo lưu chuyển tiền tệ trong tương lai: Không có thông tin.\n2. Các khoản tiền do doanh nghiệp nắm giữ nhưng không được phép sử dụng: Không có thông tin.\n3. Số tiền đi vay thực tế nhận được trong kỳ: Không có thông tin.\n4. Số tiền trả nợ gốc thực tế trong kỳ: Không có thông tin.\n\nHà Nội, ngày 26 tháng 4 năm 2025\nNgười lập biểu | Kế toán trưởng | Giám đốc\nDoan Thi Thu Dung | Duong Anh Tuan | Nguyen Huu Chinh",
+    "questions": [
+      {
+        "question": "Tổng chi phí sản xuất kinh doanh theo yếu tố năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí nhân công năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí thuế thu nhập doanh nghiệp hiện hành năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí nguyên vật liệu năm nay với năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cơ cấu chi phí sản xuất kinh doanh theo yếu tố giữa hai năm.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc thiếu thông tin về các giao dịch không bằng tiền ảnh hưởng đến báo cáo lưu chuyển tiền tệ trong tương lai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu chi phí tiền mặt khác tiếp tục tăng nhanh trong các kỳ tiếp theo.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

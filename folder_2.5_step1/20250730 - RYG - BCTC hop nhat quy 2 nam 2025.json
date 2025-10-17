@@ -1,0 +1,934 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|---|\n| 100 | A. TÀI SẢN NGẮN HẠN | 1.754.024.962.657 | 1.526.027.552.999 |\n| 110 | I. Tiền và các khoản tương đương tiền | 3 | 5.909.893.474 | 42.242.862.847 |\n| 111 | 1. Tiền | - | 5.909.893.474 | 42.242.862.847 |\n| 120 | II. Đầu tư tài chính ngắn hạn | 4 | 243.121.699.172 | 158.435.580.071 |\n| 123 | 1. Đầu tư nắm giữ đến ngày đáo hạn | - | 243.121.699.172 | 158.435.580.071 |\n| 130 | III. Các khoản phải thu ngắn hạn | - | 780.504.396.439 | 598.536.744.324 |\n| 131 | 1. Phải thu ngắn hạn của khách hàng | 5 | 639.753.582.474 | 479.337.975.915 |\n| 132 | 2. Trả trước cho người bán ngắn hạn | 6 | 81.084.769.673 | 80.307.254.618 |\n| 136 | 3. Phải thu ngắn hạn khác | 7 | 59.666.044.292 | 38.891.513.791 |\n| 140 | IV. Hàng tồn kho | 8 | 688.941.392.345 | 683.944.075.529 |\n| 141 | 1. Hàng tồn kho | - | 688.941.392.345 | 683.944.075.529 |\n| 150 | V. Tài sản ngắn hạn khác | - | 35.547.581.227 | 42.868.290.228 |\n| 151 | 1. Chi phí trả trước ngắn hạn | 13 | 6.378.352.877 | 6.582.012.374 |\n| 152 | 2. Thuế giá trị gia tăng được khấu trừ | - | 29.169.228.350 | 36.286.277.854 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn tại ngày 30/06/2025 của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mục 'Tiền và các khoản tương đương tiền' đã thay đổi như thế nào từ 01/01/2025 đến 30/06/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Hàng tồn kho chiếm tỷ trọng bao nhiêu phần trăm trong tổng tài sản ngắn hạn tại ngày 30/06/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản phải thu ngắn hạn và ảnh hưởng của nó đến thanh khoản của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia có mã cổ phiếu là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Phân tích tác động của sự tăng đáng kể của hàng tồn kho đến rủi ro tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|---|\n| 200 | B. TÀI SẢN DÀI HẠN | 1.050.529.794.596 | 945.184.229.393 |\n| 210 | I. Các khoản phải thu dài hạn | - | 6.274.122.757 | 6.246.856.657 |\n| 216 | 1. Phải thu dài hạn khác | 7 | 6.274.122.757 | 6.246.856.657 |\n| 220 | II. Tài sản cố định | - | 281.472.922.990 | 293.145.285.013 |\n| 221 | 1. Tài sản cố định hữu hình | 10 | 172.538.437.797 | 174.016.757.053 |\n| 222 | Nguyên giá | - | 591.974.364.230 | 577.478.370.323 |\n| 223 | Giá trị hao mòn lũy kế | - | 419.435.926.433 | 403.461.613.270 |\n| 224 | 2. Tài sản cố định thuê tài chính | 11 | 47.141.291.494 | 56.336.070.407 |\n| 225 | Nguyên giá | - | 59.370.836.858 | 67.409.423.358 |\n| 226 | Giá trị hao mòn lũy kế | - | 12.229.545.364 | 11.073.352.951 |\n| 227 | 3. Tài sản cố định vô hình | 12 | 61.793.193.699 | 62.792.457.553 |\n| 228 | Nguyên giá | - | 68.204.471.219 | 68.204.471.219 |\n| 229 | Giá trị hao mòn lũy kế | - | 6.411.277.521 | 5.412.013.666 |\n| 240 | IV. Tài sản dở dang dài hạn | 9 | 603.877.838.661 | 460.417.449.070 |\n| 242 | 1. Chi phí xây dựng cơ bản dở dang | - | 603.877.838.661 | 460.417.449.070 |\n| 250 | V. Đầu tư tài chính dài hạn | 4 | 114.047.246.574 | 131.032.218.869 |\n| 251 | 0. Đầu tư vào công ty con | - | - | - |\n| 252 | 1. Đầu tư vào công ty liên doanh, liên kết | - | 114.047.246.574 | 128.032.218.869 |\n| 255 | 2. Đầu tư nắm giữ đến ngày đáo hạn | - | - | 3.000.000.000 |\n| 260 | VI. Tài sản dài hạn khác | - | 44.857.663.615 | 54.342.419.784 |\n| 261 | 1. Chi phí trả trước dài hạn | 13 | 38.384.380.827 | 47.036.738.493 |\n| 262 | 2. Tài sản thuế thu nhập hoãn lại | 33.a | - | 370.021.161 |\n| 269 | 3. Lợi thế thương mại | 14 | 6.473.282.788 | 6.935.660.130 |\n| 270 | TỔNG CỘNG TÀI SẢN | - | 2.804.554.757.253 | 2.471.211.782.392 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của công ty tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản cố định hữu hình cuối quý là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tài sản dở dang dài hạn đã tăng hay giảm từ đầu năm đến cuối quý 2/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cấu trúc tài sản dài hạn, đặc biệt là tài sản cố định và đầu tư tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Nêu mục đích của việc đầu tư tài chính dài hạn của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm tài sản cố định thuê tài chính đến cấu trúc vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|---|\n| 300 | C. NỢ PHẢI TRẢ | - | 2.057.754.127.316 | 1.723.493.618.126 |\n| 310 | I. Nợ ngắn hạn | - | 1.635.375.903.218 | 1.338.284.164.221 |\n| 311 | 1. Phải trả người bán ngắn hạn | 15 | 364.963.373.254 | 278.615.664.605 |\n| 312 | 2. Người mua trả tiền trước ngắn hạn | 16 | 56.691.946.687 | 68.040.488.517 |\n| 313 | 3. Thuế và các khoản phải nộp Nhà nước | 17 | 21.245.401.073 | 21.122.532.154 |\n| 314 | 4. Phải trả người lao động | - | 13.613.759.796 | 16.602.439.323 |\n| 315 | 5. Chi phí phải trả ngắn hạn | 18 | 16.469.859.834 | 14.450.223.537 |\n| 319 | 6. Phải trả ngắn hạn khác | 19 | 32.717.249.303 | 61.230.124.075 |\n| 320 | 7. Vay và nợ thuê tài chính ngắn hạn | 20 | 1.115.671.115.226 | 864.219.493.965 |\n| 322 | 8. Quỹ khen thưởng, phúc lợi | - | 14.003.198.045 | 14.003.198.045 |\n| 330 | II. Nợ dài hạn | - | 422.378.224.098 | 385.209.453.905 |\n| 331 | 1. Phải trả người bán dài hạn | 15 | - | 48.552.878.934 |\n| 337 | 2. Phải trả dài hạn khác | 19 | 150.000.000 | 150.000.000 |\n| 338 | 3. Vay và nợ thuê tài chính dài hạn | 20 | 408.764.457.245 | 323.254.050.154 |\n| 341 | 4. Thuế thu nhập hoãn lại phải trả | 33.b | 13.463.766.853 | 13.252.524.817 |\n| 400 | D. VỐN CHỦ SỞ HỮU | - | 746.800.629.937 | 747.718.164.266 |\n| 410 | I. Vốn chủ sở hữu | 21 | 746.800.629.937 | 747.718.164.266 |\n| 411 | 1. Vốn góp của chủ sở hữu | - | 450.000.000.000 | 450.000.000.000 |\n| 411a | Cổ phiếu phổ thông có quyền biểu quyết | - | 450.000.000.000 | 450.000.000.000 |\n| 412 | 2. Thặng dư vốn cổ phần | - | 40.010.480.000 | 40.010.480.000 |\n| 418 | 3. Quỹ đầu tư phát triển | - | 57.353.390.932 | 57.353.390.932 |\n| 421 | 4. Lợi nhuận sau thuế chưa phân phối | - | 162.444.165.860 | 163.414.518.842 |\n| 421a | LNST chưa phân phối lũy kế đến cuối năm trước | - | 147.968.319.535 | 95.911.408.995 |\n| 421b | LNST chưa phân phối năm nay | - | 14.475.846.325 | 67.503.109.847 |\n| 429 | 6. Lợi ích cổ đông không kiểm soát | - | 36.992.593.146 | 36.939.774.492 |\n| 440 | TỔNG CỘNG NGUỒN VỐN | - | 2.804.554.757.253 | 2.471.211.782.392 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả của công ty tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu cuối quý là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ ngắn hạn và nợ dài hạn tại ngày 30/06/2025. Nợ nào chiếm tỷ trọng lớn hơn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào nợ vay và nợ thuê tài chính ngắn hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ nợ phải trả trên vốn chủ sở hữu (D/E ratio) tại ngày 30/06/2025 và nhận xét về cơ cấu vốn của công ty.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Q2/2025 VND | Q2/2024 VND | 06T đầu năm 2025 VND | 06T đầu năm 2024 VND |\n|---|---|---|---|---|---|\n| 01 | 1. Doanh thu bán hàng và cung cấp dịch vụ | 23 | 528.975.283.716 | 429.369.522.382 | 1.008.522.591.113 | 808.409.181.077 |\n| 02 | 2. Các khoản giảm trừ doanh thu | 24 | 12.060.317 | - | 12.060.317 | 231 |\n| 10 | 3. Doanh thu thuần bán hàng và cung cấp dịch vụ | - | 528.963.223.399 | 429.369.522.382 | 1.008.510.530.796 | 808.409.180.846 |\n| 11 | 4. Giá vốn hàng bán | 25 | 458.565.211.835 | 353.316.265.498 | 893.910.945.609 | 665.074.265.394 |\n| 20 | 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | - | 70.398.011.564 | 76.053.256.884 | 114.599.585.187 | 143.334.915.452 |\n| 21 | 6. Doanh thu hoạt động tài chính | 26 | 2.608.065.163 | 5.199.027.690 | 6.093.200.842 | 7.412.372.192 |\n| 22 | 7. Chi phí tài chính | 27 | 21.512.087.926 | 16.195.095.483 | 37.761.201.116 | 31.535.499.756 |\n| 23 | Trong đó: Chi phí lãi vay | - | 21.650.961.142 | 12.361.177.626 | 37.018.482.945 | 26.781.802.620 |\n| 24 | 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết | - | 2.515.336.684 | 4.475.052.952 | 2.547.841.897 | 8.719.758.221 |\n| 25 | 9. Chi phí bán hàng | 28 | 24.806.894.910 | 19.178.280.162 | 33.984.807.427 | 37.598.718.871 |\n| 26 | 10. Chi phí quản lý doanh nghiệp | 29 | 15.568.105.396 | 14.980.728.990 | 32.761.090.660 | 30.621.779.238 |\n| 30 | 11. Lợi nhuận thuần từ hoạt động kinh doanh | - | 13.634.325.179 | 35.373.232.891 | 18.733.528.723 | 59.711.048.000 |\n| 31 | 12. Thu nhập khác | 30 | 10.468.198 | 24.200.478.002 | 12.323.091 | 262.823.504 |\n| 32 | 13. Chi phí khác | 31 | 126.849.274 | 21.006.206.492 | 222.043.509 | 3.501.254.074 |\n| 40 | 14. Lợi nhuận khác | - | (116.381.076) | 3.194.271.510 | (209.720.418) | 3.238.430.570 |\n| 50 | 15. Tổng lợi nhuận kế toán trước thuế | - | 13.517.944.103 | 32.178.961.381 | 18.523.808.305 | 56.472.617.430 |\n| 51 | 16. Chi phí thuế thu nhập doanh nghiệp hiện hành | 32 | 2.582.084.673 | 6.208.088.730 | 4.177.371.050 | 11.609.873.160 |\n| 52 | 17. Chi phí thuế thu nhập doanh nghiệp hoãn lại | 33.c | 105.621.018 | 105.621.018 | 211.242.036 | 211.242.036 |\n| 60 | 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | - | 11.041.480.448 | 26.076.493.669 | 14.557.679.291 | 45.073.986.306 |\n| 61 | 19. Lợi nhuận sau thuế của Công ty mẹ | - | 11.041.480.448 | 26.458.233.222 | 14.475.846.325 | 45.063.775.630 |\n| 62 | 20. Lợi nhuận sau thuế của cổ đông không kiểm soát | - | - | 381.733.553 | 81.832.967 | 10.210.676 |\n| 70 | 21. Lãi cơ bản trên cổ phiếu | 34 | - | 0 | - | 0 |\nĐồng Nai, ngày 29 tháng 07 năm 2025",
+    "questions": [
+      {
+        "question": "Doanh thu thuần bán hàng và cung cấp dịch vụ của công ty trong 06T đầu năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Q2/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận sau thuế của Công ty mẹ giữa 06T đầu năm 2025 và 06T đầu năm 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự thay đổi trong chi phí tài chính và chi phí lãi vay giữa Q2/2025 và Q2/2024.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Giải thích tại sao lợi nhuận thuần từ hoạt động kinh doanh lại giảm mạnh từ 06T đầu năm 2024 sang 06T đầu năm 2025.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận gộp (Gross Profit Margin) của công ty trong 06T đầu năm 2025 và 06T đầu năm 2024.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất (Phần I - Lưu chuyển tiền từ hoạt động kinh doanh)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | 06T đầu năm 2025 VND | 06T đầu năm 2024 VND |\n|---|---|---|---|\n| I. | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | |\n| 01 | 1. Lợi nhuận trước thuế | 18.523.808.305 | 56.472.617.430 |\n| 02 | Khấu hao tài sản cố định và bất động sản đầu tư | 18.592.146.773 | 19.260.775.902 |\n| 04 | Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 44.846.830 | 2.945.491.846 |\n| 05 | Lãi, lỗ từ hoạt động đầu tư | 5.848.059.983 | 9.795.744.900 |\n| 06 | Chi phí lãi vay | 37.018.482.945 | 26.781.802.620 |\n| 08 | 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 68.241.531.210 | 89.773.959.206 |\n| 09 | Tăng, giảm các khoản phải thu | 173.751.852.921 | 12.277.652.512 |\n| 10 | Tăng, giảm hàng tồn kho | 50.277.311.927 | 115.126.344.177 |\n| 11 | Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế thu nhập doanh nghiệp phải nộp | 5.997.590.749 | 74.191.424.882 |\n| 12 | Tăng, giảm chi phí trả trước | 8.856.017.163 | 1.210.369.535 |\n| 14 | Tiền lãi vay đã trả | 36.546.817.143 | 26.882.589.608 |\n| 15 | Thuế thu nhập doanh nghiệp đã nộp | 110.312.826 | 21.205.758.029 |\n| 17 | Tiền chi khác cho hoạt động kinh doanh | 6.700.000.000 | - |\n| 20 | Lưu chuyển tiền thuần từ hoạt động kinh doanh | 190.444.744.034 | 10.316.590.703 |",
+    "questions": [
+      {
+        "question": "Lợi nhuận trước thuế của công ty trong 06T đầu năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 06T đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mục 'Tăng, giảm các khoản phải thu' đã tác động như thế nào đến lưu chuyển tiền tệ từ hoạt động kinh doanh trong 06T đầu năm 2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh chi phí lãi vay và tiền lãi vay đã trả trong 06T đầu năm 2025 và 2024. Có sự khác biệt đáng kể nào không?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của hoạt động kinh doanh trong việc tạo ra tiền mặt dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của sự thay đổi lớn trong 'Tăng, giảm hàng tồn kho' giữa hai kỳ.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất (Phần II - Hoạt động đầu tư, Phần III - Hoạt động tài chính và Tổng hợp)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | 06T đầu năm 2025 VND | 06T đầu năm 2024 VND |\n|---|---|---|---|\n| II. | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | |\n| 21 | 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | 6.457.407.407 | 138.348.357.667 |\n| 22 | 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | - | 51.734.338.021 |\n| 23 | 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 243.121.699.172 | 43.733.739.726 |\n| 24 | 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 158.435.580.071 | - |\n| 25 | 4. Tiền chi đầu tư góp vốn vào đơn vị khác | - | - |\n| 27 | 5. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 2.496.714.106 | 727.139.957 |\n| 30 | Lưu chuyển tiền thuần từ hoạt động đầu tư | (88.646.812.402) | 129.620.619.415 |\n| III. | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | |\n| 31 | 0. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | - | - |\n| 33 | 1. Tiền thu từ đi vay | 768.112.367.425 | 625.386.470.922 |\n| 34 | 2. Tiền trả nợ gốc vay | 516.422.779.944 | 480.706.280.833 |\n| 35 | 3. Tiền trả nợ gốc thuê tài chính | - | 14.084.016.283 |\n| 36 | 3. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | - | - |\n| 40 | Lưu chuyển tiền thuần từ hoạt động tài chính | 251.689.587.481 | 130.596.173.806 |\n| 50 | Lưu chuyển tiền thuần trong kỳ | 36.401.968.955 | 9.341.036.312 |\n| 60 | Tiền và tương đương tiền đầu kỳ | 42.242.862.847 | 17.925.609.914 |\n| 61 | Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 68.999.582 | 6.636.743 |\n| 70 | Tiền và tương đương tiền cuối kỳ | 3 | 5.909.893.474 | 8.591.210.345 |\nĐồng Nai, ngày 29 tháng 07 năm 2025",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động đầu tư trong 06T đầu năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền thu từ đi vay trong 06T đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động tài chính giữa 06T đầu năm 2025 và 06T đầu năm 2024. Có sự thay đổi đáng chú ý nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích nguyên nhân khiến lưu chuyển tiền thuần từ hoạt động đầu tư chuyển từ dương sang âm giữa hai kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tình hình thanh khoản của công ty dựa trên lưu chuyển tiền thuần trong kỳ và tiền cuối kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc giảm chi tiền cho vay và tăng thu hồi cho vay đến dòng tiền đầu tư trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Đặc điểm hoạt động của doanh nghiệp)\nLoại nội dung: Text\n1 . ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP\nHình thức sở hữu vốn\nCông ty Cổ phần Sản xuất và Đầu tư Hoàng Gia được thành lập và hoạt động theo Giấy chứng nhận đăng ký doanh nghiệp công ty cổ phần số 3501459505 do Sở Kế hoạch và Đầu tư Tỉnh Đồng Nai cấp lần đầu ngày 20 tháng 01 năm 2010, đăng ký thay đổi lần thứ mười lăm ngày 02 tháng 07 năm 2024.\nTrụ sở chính của Công ty được đặt tại Đường số 8, KCN Nhơn Trạch II - Nhơn Phú, thị trấn Hiệp Phước, huyện Nhơn Trạch, Đồng Nai.\nVốn điều lệ của Công ty theo đăng ký là 450.000.000.000 VND, vốn điều lệ thực góp đến ngày 30 tháng 06 năm 2025 là 450.000.000.000 VND tương đương 45.000.000 cổ phần, mệnh giá một cổ phần là 10.000 VND.\nTổng số nhân viên của Công ty tại ngày 30 tháng 06 năm 2025 là 686 người, tại ngày 30 tháng 06 năm 2024 là 667 người.\nLĩnh vực kinh doanh\nSản xuất gạch ceramic, granite, porcelain và vật liệu xây dựng từ đất sét.\nNgành nghề kinh doanh\nHoạt động kinh doanh chính của Công ty là:\n- Sản xuất máy móc thông dụng khác. Chi tiết: Sản xuất máy móc thiết bị công nghiệp.\n- Sản xuất vật liệu xây dựng từ đất sét. Chi tiết: Sản xuất gạch ceramic, granite.\n- Bán buôn vật liệu, thiết bị lắp đặt khác trong xây dựng.\n- Sản xuất giường, tủ, bàn, ghế. Chi tiết: Sản xuất các sản phẩm từ gỗ, đồ gỗ nội thất, mỹ nghệ...\n- Xây dựng nhà các loại.\n- Xây dựng công trình kỹ thuật dân dụng khác.\nĐặc điểm hoạt động của doanh nghiệp trong năm tài chính có ảnh hưởng đến Báo cáo tài chính hợp nhất\nTrong 06T đầu năm 2025, mặc dù là năm khó khăn về kinh tế, tuy nhiên doanh thu 06T đầu năm 2025 của Công ty tăng 24.75% so với cùng kỳ năm 2024 từ 808 tỷ VND lên 1.008 tỷ VND. Tuy nhiên giá vốn đã tăng 34.4% so với kết quả kinh doanh cùng kỳ năm 2024 từ mức 665 tỷ VND lên mức 893 tỷ VND, mức tăng giá vốn cao hơn mức tăng doanh thu dẫn đến lợi nhuận gộp của Công ty đã giảm 20%. Theo đó, trong 06T đầu năm 2025, thị trường ngành vật liệu xây dựng chưa thay đổi gì so với tình trạng đóng băng từ năm 2024. Nhu cầu giảm, để tiếp tục duy trì mức tăng doanh thu, Công ty đã thực hiện nới rộng các chính sách bán hàng, giảm giá bán và tối ưu hóa các hoạt động thương mại nên quy mô doanh thu của Công ty tiếp tục tăng nhưng lợi nhuận gộp lại giảm.",
+    "questions": [
+      {
+        "question": "Vốn điều lệ thực góp của Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia đến ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lĩnh vực kinh doanh chính của công ty là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu 06T đầu năm 2025 của công ty là bao nhiêu và tăng bao nhiêu phần trăm so với cùng kỳ 2024?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tại sao lợi nhuận gộp của công ty lại giảm 20% mặc dù doanh thu tăng?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tình hình thị trường vật liệu xây dựng và ảnh hưởng của nó đến chiến lược kinh doanh của công ty trong 06T đầu năm 2025.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích mối quan hệ giữa việc nới lỏng chính sách bán hàng, giảm giá và sự sụt giảm lợi nhuận gộp.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Cấu trúc Tập đoàn và Chế độ Kế toán)\nLoại nội dung: Text và Bảng\nCấu trúc Tập đoàn\n- Công ty có công ty con được hợp nhất báo cáo tài chính tại thời điểm 30/06/2025 bao gồm:\n| Tên công ty | Địa chỉ | Tỷ lệ lợi ích | Tỷ lệ quyền biểu quyết | Hoạt động kinh doanh chính |\n|---|---|---|---|---|\n| Công ty Cổ phần Sản xuất và Đầu tư Royal Sintered Stone (đổi tên từ Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Khang) | KCN Nhơn Trạch II - Nhơn Phú, thị trấn Hiệp Phước, huyện Nhơn Trạch, tỉnh Đồng Nai | 88,17% | 88,17% | Sản xuất kinh doanh vật liệu xây dựng, kinh doanh BĐS cho thuê. |\n\n2 . CHẾ ĐỘ VÀ CHÍNH SÁCH KẾ TOÁN ÁP DỤNG TẠI CÔNG TY\n2.1 . Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán\nKỳ kế toán năm của Công ty theo năm dương lịch bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.\nĐơn vị tiền tệ sử dụng trong ghi chép kế toán là đồng Việt Nam (VND).\n2.2 . Chuẩn mực và Chế độ kế toán áp dụng\nChế độ kế toán áp dụng\nCông ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính, Thông tư số 53/2016/TT-BTC ngày 21/03/2016 của Bộ Tài chính về việc sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC và Thông tư số 202/2014/TT-BTC hướng dẫn Phương pháp lập và trình bày báo cáo tài chính hợp nhất.\nTuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán\nCông ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các Báo cáo tài chính được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện Chuẩn mực và Chế độ kế toán doanh nghiệp hiện hành đang áp dụng.",
+    "questions": [
+      {
+        "question": "Tên công ty con được hợp nhất báo cáo tài chính là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Công ty con Royal Sintered Stone hoạt động kinh doanh chính trong lĩnh vực nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Kỳ kế toán năm của công ty bắt đầu và kết thúc vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty áp dụng chế độ kế toán nào và theo thông tư số bao nhiêu của Bộ Tài chính?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ lợi ích và quyền biểu quyết của Công ty mẹ tại Royal Sintered Stone là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tuân thủ các chuẩn mực và chế độ kế toán của công ty dựa trên tuyên bố được nêu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Cơ sở lập BC hợp nhất, Ước tính kế toán, Công cụ tài chính)\nLoại nội dung: Text\n2.3 . Cơ sở lập Báo cáo tài chính hợp nhất\nBáo cáo tài chính hợp nhất của Công ty được lập trên cơ sở hợp nhất Báo cáo tài chính riêng của Công ty và Báo cáo tài chính của các công ty con do Công ty kiểm soát (các công ty con được lập cho năm tài chính kết thúc ngày 31 tháng 12 hàng năm). Việc kiểm soát đạt được khi Công ty có khả năng kiểm soát các chính sách tài chính và hoạt động của các công ty nhận đầu tư nhằm thu được lợi ích từ hoạt động của các công ty này.\nBáo cáo tài chính của các công ty con được áp dụng các chính sách kế toán nhất quán với các chính sách kế toán của Công ty. Trong trường hợp cần thiết, Báo cáo tài chính của các công ty con được điều chỉnh để đảm bảo tính nhất quán trong các chính sách kế toán được áp dụng tại Công ty và các công ty con.\nCác số dư, thu nhập và chi phí chủ yếu, kể cả các khoản lãi hay lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ được loại trừ khi hợp nhất Báo cáo tài chính.\nLợi ích của cổ đông không kiểm soát\nLợi ích của các cổ đông không kiểm soát là phần lợi ích của những chủ sở hữu không nắm quyền kiểm soát trong lãi, hoặc lỗ, và trong tài sản thuần của công ty con.\n2.4 . Ước tính kế toán\nViệc lập báo cáo tài chính hợp nhất tuân thủ theo các Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày Báo cáo tài chính hợp nhất yêu cầu Ban Tổng Giám đốc phải có những ước tính và giả định ảnh hưởng đến số liệu về công nợ, tài sản và việc trình bày các khoản công nợ và tài sản tiềm tàng tại ngày kết thúc năm tài chính cũng như các số liệu về doanh thu và chi phí trong suốt năm tài chính.\nCác ước tính và giả định có ảnh hưởng trọng yếu trong Báo cáo tài chính hợp nhất bao gồm:\n- Dự phòng phải thu khó đòi\n- Dự phòng giảm giá hàng tồn kho\n- Ước tính phân bổ chi phí trả trước\n- Thời gian hữu dụng ước tính của tài sản cố định\n- Ước tính thuế thu nhập doanh nghiệp.\nCác ước tính và giả định thường xuyên được đánh giá dựa trên kinh nghiệm trong quá khứ và các yếu tố khác, bao gồm các giả định trong tương lai có ảnh hưởng trọng yếu tới báo cáo tài chính hợp nhất của Công ty và được Ban Tổng Giám đốc Công ty đánh giá là hợp lý.\n2.5 . Công cụ tài chính\nGhi nhận ban đầu\nTài sản tài chính\nTài sản tài chính của Công ty bao gồm tiền, các khoản phải thu khách hàng và phải thu khác, các khoản cho vay. Tại thời điểm ghi nhận ban đầu, tài sản tài chính được xác định theo giá mua (chi phí phát hành) cộng các chi phí phát sinh khác liên quan trực tiếp đến việc mua, phát hành tài sản tài chính đó.\nNợ phải trả tài chính\nNợ phải trả tài chính của Công ty bao gồm các khoản vay, các khoản phải trả người bán và phải trả khác, chi phí phải trả. Tại thời điểm ghi nhận lần đầu, các khoản nợ phải trả tài chính được xác định theo giá phát hành cộng các chi phí phát sinh liên quan trực tiếp đến việc phát hành nợ phải trả tài chính đó.\nGiá trị sau ghi nhận ban đầu\nTài sản tài chính và nợ phải trả tài chính chưa được đánh giá theo giá trị hợp lý tại ngày kết thúc năm tài chính do Thông tư số 210/2009/TT-BTC và các quy định hiện hành yêu cầu trình bày Báo cáo tài chính và thuyết minh thông tin đối với công cụ tài chính nhưng không đưa ra hướng dẫn tương đương cho việc đánh giá và ghi nhận giá trị hợp lý của các tài sản tài chính và nợ phải trả tài chính.",
+    "questions": [
+      {
+        "question": "Công ty đạt được quyền kiểm soát các công ty con dựa trên tiêu chí nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu hai khoản mục ước tính kế toán có ảnh hưởng trọng yếu đến Báo cáo tài chính hợp nhất.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi ích của cổ đông không kiểm soát được định nghĩa như thế nào trong báo cáo này?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty ghi nhận tài sản tài chính và nợ phải trả tài chính ban đầu theo giá trị nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro tiềm tàng từ việc sử dụng các ước tính và giả định kế toán trong báo cáo tài chính hợp nhất.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích tại sao tài sản tài chính và nợ phải trả tài chính chưa được đánh giá theo giá trị hợp lý trong báo cáo này.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Ngoại tệ, Tiền, Lợi thế thương mại, Đầu tư tài chính)\nLoại nội dung: Text\n2.6 . Các nghiệp vụ bằng ngoại tệ\nCác giao dịch bằng ngoại tệ trong năm tài chính được quy đổi ra đồng Việt Nam theo tỷ giá thực tế tại ngày giao dịch.\nTỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại thời điểm lập Báo cáo tài chính hợp nhất được xác định theo nguyên tắc:\n- Đối với khoản mục phân loại là tài sản: áp dụng tỷ giá mua ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.\n- Đối với tiền gửi ngoại tệ: áp dụng tỷ giá mua của chính ngân hàng nơi Công ty mở tài khoản ngoại tệ.\n- Đối với khoản mục phân loại là nợ phải trả: áp dụng tỷ giá bán ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.\nTất cả các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ tại thời điểm lập Báo cáo tài chính hợp nhất được hạch toán vào kết quả hoạt động kinh doanh của năm tài chính.\n2.7 . Tiền\nTiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng không kỳ hạn.\n2.8 . Lợi thế thương mại\nLợi thế thương mại hoặc lãi từ giao dịch mua rẻ được xác định là chênh lệch giữa giá phí khoản đầu tư và giá trị hợp lý của tài sản thuần có thể xác định được của công ty con tại ngày mua (do công ty mẹ nắm giữ quyền kiểm soát công ty con). Lãi mua rẻ nếu có sẽ được ghi nhận vào báo cáo kết quả hoạt động kinh doanh hợp nhất. Lợi thế thương mại được phân bổ vào chi phí theo phương pháp đường thẳng trong thời gian hữu ích được ước tính là 10 năm. Định kỳ Công ty sẽ đánh giá tổn thất lợi thế thương mại tại công ty con, nếu có bằng chứng cho thấy số lợi thế thương mại bị tổn thất lớn hơn số phân bổ hàng năm thì phân bổ theo số lợi thế thương mại bị tổn thất ngay trong năm phát sinh.\n2.9 . Các khoản đầu tư tài chính\nCác khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm: Các khoản tiền gửi ngân hàng có kỳ hạn, trái phiếu, các khoản cho vay,... được nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ và các khoản đầu tư nắm giữ đến ngày đáo hạn khác.",
+    "questions": [
+      {
+        "question": "Công ty hạch toán chênh lệch tỷ giá phát sinh trong kỳ vào đâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền theo định nghĩa của báo cáo này bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi thế thương mại được phân bổ trong thời gian bao lâu và theo phương pháp nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu nguyên tắc xác định tỷ giá khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ đối với nợ phải trả.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích phương pháp xử lý kế toán khi có tổn thất lợi thế thương mại tại công ty con.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích mục đích của việc nắm giữ các khoản đầu tư đến ngày đáo hạn.",
+        "difficulty": "Medium_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Đầu tư tài chính, Khoản nợ phải thu, Hàng tồn kho)\nLoại nội dung: Text\nCác khoản đầu tư vào các công ty liên kết mua trong năm được bên mua xác định ngày mua, giá phí khoản đầu tư và thực hiện thủ tục kế toán theo đúng quy định của Chuẩn mực kế toán Thông tin tài chính về những khoản vốn góp liên doanh và Kế toán các khoản đầu tư vào công ty liên kết.\nTrong Báo cáo tài chính hợp nhất, các khoản đầu tư vào công ty liên kết được kế toán theo phương pháp vốn chủ sở hữu. Theo phương pháp vốn chủ sở hữu, khoản đầu tư được ghi nhận ban đầu trên Bảng cân đối kế toán hợp nhất theo giá gốc, sau đó được điều chỉnh theo những thay đổi của phần sở hữu của Công ty trong giá trị tài sản thuần của công ty liên kết sau khi mua. Lợi thế thương mại phát sinh từ việc đầu tư vào công ty liên kết được phản ánh trong giá trị còn lại của khoản đầu tư. Công ty không phân bổ lợi thế thương mại này mà hàng năm thực hiện đánh giá xem lợi thế thương mại có bị suy giảm giá trị hay không.\nBáo cáo tài chính của công ty liên kết được lập cùng năm với Báo cáo tài chính hợp nhất của Công ty và sử dụng các chính sách kế toán nhất quán với Công ty. Các điều chỉnh hợp nhất thích hợp đã được ghi nhận để đảm bảo các chính sách kế toán được áp dụng nhất quán với Công ty trong trường hợp cần thiết.\nCác khoản đầu tư vào công cụ vốn của đơn vị khác bao gồm các khoản đầu tư vào công cụ vốn của đơn vị khác không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư. Giá trị ghi sổ ban đầu của các khoản đầu tư này được xác định theo giá gốc. Sau ghi nhận ban đầu, giá trị của các khoản đầu tư này được xác định theo giá gốc trừ đi dự phòng giảm giá khoản đầu tư.\nCổ tức nhận bằng cổ phiếu chỉ ghi nhận số lượng cổ phiếu được nhận, không ghi nhận tăng giá trị khoản đầu tư và doanh thu hoạt động tài chính.\nDự phòng giảm giá các khoản đầu tư được lập vào thời điểm cuối quý đối với các khoản đầu tư nắm giữ đến ngày đáo hạn căn cứ khả năng thu hồi để lập dự phòng phải thu khó đòi theo quy định của pháp luật.\n2.10 . Các khoản nợ phải thu\nCác khoản phải thu được theo dõi chi tiết theo kỳ hạn phải thu, đối tượng phải thu, loại nguyên tệ phải thu, và các yếu tố khác theo nhu cầu quản lý của Công ty. Các khoản phải thu được phân loại là ngắn hạn và dài hạn trên báo cáo tài chính hợp nhất căn cứ kỳ hạn còn lại của các khoản phải thu tại ngày báo cáo.\nDự phòng nợ phải thu khó đòi được trích lập cho các khoản nợ phải thu quá hạn thanh toán ghi trong hợp đồng kinh tế, các khế ước vay nợ, cam kết hợp đồng hoặc cam kết nợ và nợ phải thu chưa đến hạn thanh toán nhưng khó có khả năng thu hồi. Trong đó, việc trích lập dự phòng nợ phải thu quá hạn thanh toán được căn cứ vào thời gian trả nợ gốc theo hợp đồng mua bán ban đầu, không tính đến việc gia hạn nợ giữa các bên và nợ phải thu chưa đến hạn thanh toán nhưng khách nợ đã lâm vào tình trạng phá sản hoặc đang làm thủ tục giải thể, mất tích, bỏ trốn hoặc dự kiến mức tổn thất có thể xảy ra.\n2.11 . Hàng tồn kho\nHàng tồn kho được ghi nhận ban đầu theo giá gốc bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái tại thời điểm ghi nhận ban đầu.",
+    "questions": [
+      {
+        "question": "Các khoản đầu tư vào công ty liên kết được kế toán theo phương pháp nào trong Báo cáo tài chính hợp nhất?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào dự phòng nợ phải thu khó đòi được trích lập?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản đầu tư vào công cụ vốn của đơn vị khác được xác định giá trị sau ghi nhận ban đầu như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xử lý lợi thế thương mại phát sinh từ đầu tư vào công ty liên kết.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không ghi nhận tăng giá trị khoản đầu tư khi nhận cổ tức bằng cổ phiếu đến Báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ thận trọng của chính sách trích lập dự phòng nợ phải thu khó đòi của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Hàng tồn kho, Tài sản cố định)\nLoại nội dung: Text\nSau ghi nhận ban đầu, tại thời điểm lập Báo cáo tài chính nếu giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc thì hàng tồn kho được ghi nhận theo giá trị thuần có thể thực hiện được.\nGiá trị thuần có thể thực hiện được ước tính dựa vào giá bán của hàng tồn kho trừ đi các khoản chi phí ước tính để hoàn thành sản phẩm và các chi phí ước tính để bán sản phẩm.\nGiá trị hàng tồn kho được xác định theo phương pháp bình quân gia quyền.\nHàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên.\nPhương pháp xác định giá trị sản phẩm dở dang cuối kỳ: Chi phí sản xuất kinh doanh dở dang được tập hợp theo chi phí phát sinh thực tế cho từng loại sản phẩm chưa hoàn thành.\nDự phòng giảm giá hàng tồn kho được lập vào thời điểm cuối quý căn cứ theo số chênh lệch giữa giá gốc của hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được.\n2.12 . Tài sản cố định, Tài sản cố định thuê tài chính\nTài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận ban đầu theo giá gốc. Trong quá trình sử dụng, tài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại.\nGiá trị sau ghi nhận ban đầu\nNếu các khoản chi phí này làm tăng lợi ích kinh tế trong tương lai dự tính thu được từ việc sử dụng tài sản cố định hữu hình vượt trên mức hoạt động tiêu chuẩn theo như đánh giá ban đầu thì các chi phí này được vốn hóa như một khoản nguyên giá tăng thêm của tài sản cố định hữu hình.\nCác chi phí khác phát sinh sau khi tài sản cố định đã đưa vào hoạt động như chi phí sửa chữa, bảo dưỡng và đại tu được ghi nhận vào báo cáo kết quả hoạt động kinh doanh hợp nhất trong năm mà chi phí phát sinh.",
+    "questions": [
+      {
+        "question": "Hàng tồn kho được xác định theo phương pháp nào trong báo cáo này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hàng tồn kho được ghi nhận ban đầu theo giá trị nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào chi phí phát sinh sau khi tài sản cố định đã đưa vào hoạt động được vốn hóa?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giá trị thuần có thể thực hiện được của hàng tồn kho được ước tính dựa trên những yếu tố nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc áp dụng phương pháp bình quân gia quyền trong xác định giá trị hàng tồn kho đến Báo cáo tài chính khi giá cả biến động.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá chính sách kế toán đối với chi phí sửa chữa, bảo dưỡng và đại tu tài sản cố định. Chính sách này có tác động như thế nào đến lợi nhuận?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Tài sản cố định, Xây dựng cơ bản dở dang, Chi phí trả trước)\nLoại nội dung: Text\nTài sản cố định thuê tài chính được ghi nhận nguyên giá theo giá trị hợp lý hoặc giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu (trường hợp giá trị hợp lý cao hơn giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu) cộng các chi phí trực tiếp phát sinh ban đầu liên quan đến hoạt động thuê tài chính (không bao gồm thuế GTGT).\nTrong quá trình sử dụng, tài sản cố định thuê tài chính được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại. Khấu hao của tài sản cố định thuê tài chính được trích căn cứ theo thời gian thuê theo hợp đồng và tính vào chi phí sản xuất, kinh doanh, đảm bảo thu hồi đủ vốn.\nKhấu hao tài sản cố định được trích theo phương pháp đường thẳng với thời gian khấu hao được ước tính như sau:\n- Nhà cửa, vật kiến trúc: 05-30 năm\n- Máy móc, thiết bị: 05-10 năm\n- Phương tiện vận tải, truyền dẫn: 06-10 năm\n- Thiết bị, dụng cụ quản lý: 03-05 năm\n- Tài sản cố định khác: 03-05 năm\n- Phần mềm quản lý: 03-05 năm\n\n2.13 . Chi phí xây dựng cơ bản dở dang\nChi phí xây dựng cơ bản dở dang bao gồm tài sản cố định đang mua sắm và xây dựng mà chưa hoàn thành tại ngày kết thúc năm tài chính và được ghi nhận theo giá gốc. Chi phí này bao gồm các chi phí về xây dựng, lắp đặt máy móc thiết bị và các chi phí trực tiếp khác.\n2.14 . Chi phí trả trước\nCác chi phí đã phát sinh liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều năm tài chính được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh trong các năm tài chính sau.",
+    "questions": [
+      {
+        "question": "Thời gian khấu hao ước tính cho máy móc, thiết bị của công ty là bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tài sản cố định thuê tài chính được ghi nhận nguyên giá dựa trên những tiêu chí nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khấu hao tài sản cố định thuê tài chính được tính toán và hạch toán như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí xây dựng cơ bản dở dang bao gồm những loại chi phí nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc phân bổ chi phí trả trước đến lợi nhuận của công ty qua các năm.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ linh hoạt của chính sách khấu hao tài sản cố định của công ty với các loại tài sản khác nhau.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Chi phí trả trước, Nợ phải trả, Chi phí đi vay, Vốn chủ sở hữu)\nLoại nội dung: Text\nViệc tính và phân bổ chi phí trả trước dài hạn vào chi phí sản xuất kinh doanh từng năm tài chính được căn cứ vào tính chất, mức độ từng loại chi phí để chọn phương pháp và tiêu thức phân bổ hợp lý.\nCác loại chi phí trả trước của Công ty bao gồm:\n- Công cụ và dụng cụ: bao gồm các tài sản mà Công ty nắm giữ để sử dụng trong quá trình hoạt động kinh doanh bình thường, với nguyên giá của mỗi tài sản thấp hơn 30 triệu đồng và do đó không đủ điều kiện để ghi nhận là tài sản cố định theo quy định hiện hành. Nguyên giá công cụ dụng cụ được phân bổ theo phương pháp đường thẳng trong thời gian từ 01 đến 03 năm.\n- Chi phí trả trước về sử dụng thương hiệu: được ghi nhận theo giá trị thương hiệu và được phân bổ theo phương pháp đường thẳng trong thời hạn quy định trong hợp đồng.\n- Chi phí trả trước khác: được ghi nhận theo nguyên giá và được phân bổ theo phương pháp đường thẳng trong thời gian hữu dụng từ 01 đến 03 năm.\n\n2.15 . Các khoản nợ phải trả\nCác khoản nợ phải trả được theo dõi theo kỳ hạn phải trả, đối tượng phải trả, loại nguyên tệ phải trả và các yếu tố khác theo nhu cầu quản lý của Công ty. Các khoản phải trả được phân loại ngắn hạn và dài hạn trên báo cáo tài chính hợp nhất căn cứ theo kỳ hạn còn lại của các khoản phải trả tại ngày báo cáo.\n\n2.16 . Vay và nợ phải trả thuê tài chính\nGiá trị khoản nợ phải trả thuê tài chính là tổng số tiền phải trả được tính bằng giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu hoặc giá trị hợp lý của tài sản thuê.\nCác khoản vay và nợ phải trả thuê tài chính được theo dõi theo từng đối tượng cho vay, từng khế ước vay nợ và kỳ hạn phải trả của các khoản vay, nợ thuê tài chính. Trường hợp vay, nợ bằng ngoại tệ thì theo dõi chi tiết theo nguyên tệ.\n\n2.17 . Chi phí đi vay\nChi phí đi vay được ghi nhận vào chi phí sản xuất, kinh doanh trong kỳ khi phát sinh, trừ chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó (được vốn hóa khi có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 'Chi phí đi vay'). Ngoài ra, đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng.\n\n2.18 . Chi phí phải trả\nCác khoản phải trả cho hàng hóa dịch vụ đã nhận được từ người bán hoặc đã được cung cấp cho người mua trong quý báo cáo nhưng thực tế chưa chi trả và các khoản phải trả khác như chi phí lãi tiền vay phải trả... được ghi nhận vào chi phí sản xuất, kinh doanh của quý báo cáo.\nViệc ghi nhận các khoản chi phí phải trả vào chi phí sản xuất, kinh doanh trong kỳ được thực hiện theo nguyên tắc phù hợp giữa doanh thu và chi phí phát sinh trong kỳ. Các khoản chi phí phải trả sẽ được quyết toán với số chi phí thực tế phát sinh, số chênh lệch giữa số trích trước và chi phí thực tế được hoàn nhập.\n\n2.19 . Vốn chủ sở hữu\nVốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.",
+    "questions": [
+      {
+        "question": "Nguyên giá công cụ dụng cụ có giá trị dưới bao nhiêu thì không đủ điều kiện ghi nhận là tài sản cố định?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản nợ phải trả được phân loại ngắn hạn và dài hạn dựa trên tiêu chí nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào chi phí đi vay được vốn hóa thay vì ghi nhận vào chi phí sản xuất, kinh doanh trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty ghi nhận và quyết toán các khoản chi phí phải trả.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ chi tiết trong theo dõi các khoản vay và nợ phải trả thuê tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc vốn hóa chi phí đi vay đến lợi nhuận và tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Vốn chủ sở hữu, Doanh thu, Giảm trừ doanh thu, Giá vốn)\nLoại nội dung: Text\nThặng dư vốn cổ phần phản ánh chênh lệch giữa mệnh giá, chi phí trực tiếp liên quan đến việc phát hành cổ phiếu và giá phát hành cổ phiếu (kể cả các trường hợp tái phát hành cổ phiếu quỹ) và có thể là thặng dư dương nếu giá phát hành cao hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu hoặc thặng dư âm nếu giá phát hành thấp hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu.\nQuyền chọn chuyển đổi trái phiếu thành cổ phiếu: cấu phần vốn của trái phiếu chuyển đổi phát sinh khi Công ty phát hành loại trái phiếu có thể chuyển đổi thành một số lượng cổ phiếu xác định được quy định sẵn trong phương án phát hành. Giá trị cấu phần vốn của trái phiếu chuyển đổi được xác định là phần chênh lệch giữa tổng số tiền thu từ việc phát hành trái phiếu chuyển đổi trừ đi giá trị cấu phần nợ của trái phiếu chuyển đổi.\nLợi nhuận sau thuế chưa phân phối: phản ánh kết quả kinh doanh (lãi, lỗ) sau thuế thu nhập doanh nghiệp và tình hình phân chia lợi nhuận hoặc xử lý lỗ của Công ty.\nCổ tức phải trả cho các cổ đông được ghi nhận là khoản phải trả trên Bảng Cân đối kế toán của Công ty sau khi có thông báo chia cổ tức của Hội đồng Quản trị Công ty và thông báo ngày chốt quyền nhận cổ tức của Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam.\n\n2.20 . Doanh thu\nDoanh thu được ghi nhận khi Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định một cách chắc chắn. Doanh thu được xác định theo giá trị hợp lý của các khoản đã thu hoặc sẽ thu được sau khi trừ đi các khoản chiết khấu thương mại, giảm giá hàng bán, hàng bán bị trả lại. Các điều kiện ghi nhận cụ thể sau đây cũng phải được đáp ứng khi ghi nhận doanh thu:\n- Doanh thu bán hàng:\n  - Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua.\n  - Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n- Doanh thu cung cấp dịch vụ:\n  - Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán.\n- Doanh thu hoạt động tài chính:\n  - Có khả năng thu được lợi ích kinh tế từ giao dịch đó.\n  - Doanh thu được xác định tương đối chắc chắn.\n\n2.21 . Các khoản giảm trừ doanh thu\nKhoản giảm trừ doanh thu bán hàng, cung cấp dịch vụ phát sinh trong kỳ là hàng bán bị trả lại.\nKhoản hàng bán bị trả lại phát sinh cùng quý tiêu thụ sản phẩm, hàng hóa dịch vụ được điều chỉnh giảm doanh thu của quý phát sinh. Trường hợp sản phẩm, hàng hóa, dịch vụ đã tiêu thụ từ các quý trước, đến quý sau mới phát sinh các khoản giảm trừ doanh thu thì được ghi giảm doanh thu theo nguyên tắc nếu phát sinh trước thời điểm phát hành Báo cáo tài chính hợp nhất thì ghi giảm doanh thu trên Báo cáo tài chính hợp nhất của quý lập báo cáo (quý trước), và nếu phát sinh sau thời điểm phát hành Báo cáo tài chính hợp nhất thì ghi giảm doanh thu của quý phát sinh (quý sau).\n\n2.22 . Giá vốn hàng bán và dịch vụ cung cấp\nGiá vốn hàng bán và dịch vụ cung cấp là tổng chi phí phát sinh của thành phẩm, hàng hóa, vật tư xuất bán và dịch vụ cung cấp cho khách hàng trong năm được ghi nhận phù hợp với doanh thu phát sinh trong năm và đảm bảo tuân thủ nguyên tắc thận trọng. Các trường hợp hao hụt vật tư hàng hóa vượt định mức, chi phí vượt định mức bình thường, chi phí nhân công và chi phí sản xuất chung cố định không phân bổ vào giá trị sản phẩm nhập kho, dự phòng giảm giá hàng tồn kho, hàng tồn kho bị mất mát (sau khi đã trừ đi phần trách nhiệm của tập thể, cá nhân có liên quan...) được ghi nhận đầy đủ và kịp thời vào giá vốn hàng bán trong năm kể cả khi sản phẩm, hàng hóa chưa được xác định là tiêu thụ.",
+    "questions": [
+      {
+        "question": "Thặng dư vốn cổ phần phản ánh điều gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu một trong các điều kiện để ghi nhận doanh thu bán hàng.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối dùng để phản ánh những thông tin gì của công ty?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi nào cổ tức phải trả cho các cổ đông được ghi nhận trên Bảng Cân đối kế toán?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản giảm trừ doanh thu đến lợi nhuận gộp của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ thận trọng trong chính sách ghi nhận giá vốn hàng bán và dịch vụ cung cấp của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Chi phí tài chính, Chi phí thuế TNDN)\nLoại nội dung: Text\n2.23 . Chi phí tài chính\nCác khoản chi phí được ghi nhận vào chi phí tài chính gồm:\n- Chi phí đi vay vốn\n- Khoản lỗ phát sinh khi bán ngoại tệ, lỗ tỷ giá hối đoái...\nCác khoản trên được ghi nhận theo tổng số phát sinh trong quý không bù trừ với doanh thu hoạt động tài chính.\n\n2.24 . Thuế thu nhập doanh nghiệp\na Tài sản thuế thu nhập hoãn lại và Thuế thu nhập hoãn lại phải trả\nThuế thu nhập hoãn lại phải trả được xác định dựa trên các khoản chênh lệch tạm thời chịu thuế.\nTài sản thuế TNDN hoãn lại được xác định theo thuế suất thuế TNDN hiện hành, dựa trên các mức thuế suất và luật thuế có hiệu lực vào ngày kết thúc năm tài chính.\nTài sản thuế thu nhập hoãn lại chỉ được ghi nhận trong phạm vi chắc chắn có đủ lợi nhuận tính thuế trong tương lai để chênh lệch tạm thời này có thể sử dụng được. Tài sản thuế thu nhập hoãn lại được ghi giảm trong phạm vi không còn chắc chắn là các lợi ích về thuế liên quan này sẽ sử dụng được.\nTài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được bù trừ khi lập Bảng cân đối kế toán.\nb Chi phí thuế TNDN hiện hành và Chi phí thuế TNDN hoãn lại\nChi phí thuế TNDN hiện hành được xác định trên cơ sở thu nhập chịu thuế trong kỳ và thuế suất thuế TNDN trong năm tài chính hiện hành.\nChi phí thuế TNDN hoãn lại được xác định trên cơ sở số chênh lệch tạm thời được khấu trừ, số chênh lệch tạm thời chịu thuế và thuế suất thuế TNDN.\nKhông bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại.\nc Thuế suất thuế TNDN hiện hành\nTrong năm tài chính kết thúc ngày 31/12/2024, Công ty được áp dụng mức thuế suất thuế TNDN là 20% đối với các hoạt động sản xuất kinh doanh có thu nhập chịu thuế TNDN.",
+    "questions": [
+      {
+        "question": "Mức thuế suất thuế TNDN hiện hành áp dụng cho công ty là bao nhiêu phần trăm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu hai loại chi phí được ghi nhận vào chi phí tài chính.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào tài sản thuế thu nhập hoãn lại được ghi nhận?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xác định chi phí thuế TNDN hiện hành và chi phí thuế TNDN hoãn lại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại đến báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro về thuế thu nhập doanh nghiệp nếu lợi nhuận tính thuế trong tương lai không đủ để sử dụng chênh lệch tạm thời được khấu trừ.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Lãi trên cổ phiếu, Các bên liên quan, Thông tin bộ phận)\nLoại nội dung: Text\n2.25 . Lãi trên cổ phiếu\nLãi cơ bản trên cổ phiếu được tính bằng cách chia lợi nhuận hoặc lỗ sau thuế phân bổ cho cổ đông sở hữu cổ phiếu phổ thông của Công ty (sau khi đã điều chỉnh cho việc trích lập Quỹ Khen thưởng, phúc lợi và Quỹ khen thưởng Ban điều hành) cho số lượng bình quân gia quyền của số cổ phiếu phổ thông đang lưu hành trong năm.\n\n2.26 . Các bên liên quan\nCác bên được coi là liên quan nếu bên đó có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định về các chính sách tài chính và hoạt động. Các bên liên quan của Công ty bao gồm:\n- Các doanh nghiệp trực tiếp hay gián tiếp (qua một hoặc nhiều trung gian) có quyền kiểm soát Công ty hoặc chịu sự kiểm soát của Công ty, hoặc cùng chung sự kiểm soát với Công ty, bao gồm cả công ty mẹ, công ty con và công ty liên kết.\n- Các cá nhân trực tiếp hoặc gián tiếp nắm quyền biểu quyết của Công ty mà có ảnh hưởng đáng kể đối với Công ty, những nhân sự quản lý chủ chốt của Công ty, những thành viên mật thiết trong gia đình của các cá nhân này.\n- Các doanh nghiệp do các cá nhân nêu trên nắm trực tiếp hoặc gián tiếp phần quan trọng quyền biểu quyết hoặc có ảnh hưởng đáng kể tới các doanh nghiệp này.\nTrong việc xem xét từng mối quan hệ của các bên liên quan để phục vụ cho việc lập và trình bày Báo cáo tài chính hợp nhất, Công ty chú ý tới bản chất của mối quan hệ hơn là hình thức pháp lý của các quan hệ đó.\n\n2.27 . Thông tin bộ phận\nMột bộ phận là một cấu phần có thể xác định riêng biệt của Công ty tham gia vào việc cung cấp các sản phẩm hoặc dịch vụ liên quan (bộ phận chia theo hoạt động kinh doanh), hoặc cung cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận được chia theo khu vực địa lý). Mỗi bộ phận này chịu rủi ro và thu được lợi ích khác biệt so với các bộ phận khác.\nThông tin bộ phận được lập và trình bày phù hợp với chính sách kế toán áp dụng cho việc lập và trình bày báo cáo tài chính của Công ty nhằm mục đích để giúp người sử dụng báo cáo tài chính hiểu rõ và đánh giá được tình hình hoạt động của Công ty một cách toàn diện.",
+    "questions": [
+      {
+        "question": "Lãi cơ bản trên cổ phiếu được tính bằng cách chia lợi nhuận hoặc lỗ sau thuế cho số lượng bình quân gia quyền của cổ phiếu nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu một trong ba nhóm các bên được coi là liên quan của công ty.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mục đích của việc lập và trình bày thông tin bộ phận là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xác định các bên liên quan và yếu tố nào được ưu tiên khi xem xét mối quan hệ này.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc điều chỉnh Quỹ Khen thưởng, phúc lợi và Quỹ khen thưởng Ban điều hành trong tính toán lãi cơ bản trên cổ phiếu.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá lợi ích của việc cung cấp thông tin bộ phận cho người sử dụng báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Tiền)\nLoại nội dung: Bảng\n3 . TIỀN\n| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Tiền mặt | 1.544.814.431 | 3.972.514.779 |\n| Tiền gửi ngân hàng không kỳ hạn | 4.365.079.043 | 38.270.348.068 |\n| Tổng | 5.909.893.474 | 42.242.862.847 |\n\n",
+    "questions": [
+      {
+        "question": "Số dư tiền mặt tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng tiền và tương đương tiền tại ngày 01/01/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư tiền gửi ngân hàng không kỳ hạn đã thay đổi như thế nào từ đầu năm đến cuối quý 2/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng tiền mặt trên tổng tiền và tương đương tiền cuối quý 2/2025 là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá xu hướng biến động của các khoản tiền và tương đương tiền trong giai đoạn này.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự sụt giảm mạnh tiền gửi ngân hàng không kỳ hạn đến khả năng thanh khoản của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Các khoản đầu tư tài chính)\nLoại nội dung: Bảng\n4 . CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH\na Đầu tư nắm giữ đến ngày đáo hạn\n| Chỉ tiêu | Giá gốc 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá gốc 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Đầu tư ngắn hạn | 243.121.699.172 | - | 158.435.580.071 | - |\n| Tiền gửi có kỳ hạn (1) | 243.121.699.172 | - | 158.435.580.071 | - |\n| Đầu tư dài hạn | - | - | 3.000.000.000 | - |\n| Trái phiếu (2) | - | - | 3.000.000.000 | - |\n| Tổng | 243.121.699.172 | - | 161.435.580.071 | - |\n\n(1) Tại ngày 30/06/2025, các đầu tư nắm giữ đến ngày đáo hạn là tiền gửi có kỳ hạn 06 đến 12 tháng có giá trị 243.121.699.172 VND được gửi tại các ngân hàng thương mại cổ phần với lãi suất từ 2,9%/năm đến 6,3%/năm.\n\nb Đầu tư góp vốn vào Công ty liên kết\n| Chỉ tiêu | Địa chỉ | Tỷ lệ lợi ích | Tỷ lệ quyền biểu quyết | Giá trị ghi sổ theo phương pháp vốn chủ sở hữu 30/06/2025 VND | Địa chỉ | Tỷ lệ lợi ích | Tỷ lệ quyền biểu quyết | Giá trị ghi sổ theo phương pháp vốn chủ sở hữu 01/01/2025 VND |\n|---|---|---|---|---|---|---|---|---|\n| Đầu tư vào công ty liên kết | - | - | - | 114.047.246.574 | - | - | - | 128.032.218.869 |\n| Công ty Cổ phần Sản xuất và Đầu tư Royal House | Đồng Nai | 45% | 45% | 114.047.246.574 | Đồng Nai | 45% | 45% | 128.032.218.869 |\n\nCác giao dịch trọng yếu giữa Công ty và Công ty liên kết trong năm: Xem thuyết minh số 39.",
+    "questions": [
+      {
+        "question": "Tổng giá gốc đầu tư nắm giữ đến ngày đáo hạn tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lãi suất tiền gửi có kỳ hạn của công ty dao động trong khoảng nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tỷ lệ lợi ích và quyền biểu quyết của Công ty tại Công ty Cổ phần Sản xuất và Đầu tư Royal House là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giá trị ghi sổ đầu tư vào công ty liên kết đã thay đổi như thế nào từ đầu năm đến cuối quý 2/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro lãi suất đối với các khoản tiền gửi có kỳ hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược đầu tư tài chính của công ty dựa trên các khoản đầu tư nắm giữ đến ngày đáo hạn và đầu tư vào công ty liên kết.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Phải thu ngắn hạn của khách hàng)\nLoại nội dung: Bảng\n5 . PHẢI THU NGẮN HẠN CỦA KHÁCH HÀNG\n| Khách hàng | Giá trị 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá trị 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Bên liên quan | 54.794.744.675 | - | 85.180.303.939 | - |\n| Công ty Cổ phần Vinagres | 18.059.110.442 | - | 25.602.313.404 | - |\n| Royal American Wholesale | 2.385.367.499 | - | 2.338.141.668 | - |\n| Công ty Cổ phần Hoàng Gia Pha Lê | 3.193.688.184 | - | 6.705.149.684 | - |\n| Công Ty Cổ Phần Farrah Life | 2.018.016.569 | - | - | - |\n| Công ty Cổ phần Bảo Sơn Xanh | 12.649.269.042 | - | 36.639.606.433 | - |\n| Công Ty Cổ Phần Sản Xuất Và Đầu Tư Hoàng Gia Xanh | - | - | - | - |\n| Công Ty Cổ Phần Sản Xuất Và Đầu Tư Hoàng Gia Miền Tây | 16.489.292.939 | - | 13.895.092.750 | - |\n| Bên khác | 584.958.837.799 | - | 394.157.671.976 | - |\n| Công ty Cổ phần Top Tile | 247.392.111.803 | - | 103.262.042.555 | - |\n| Công ty Cổ phần Hoàng Gia Quán Quân | 45.558.847.313 | - | 43.016.085.398 | - |\n| Rc Flooring Distributor | 23.813.035.243 | - | 23.341.581.518 | - |\n| Care About Trading Co., Ltd | 45.596.564.507 | - | 33.042.985.523 | - |\n| Công ty TNHH Mylux Việt Nam | 39.752.663.286 | - | 33.346.694.862 | - |\n| New Pacific Marble & Title | 25.738.758.304 | - | 25.229.178.850 | - |\n| Phải thu khách hàng khác | 157.106.857.343 | - | 132.919.103.270 | - |\n| Tổng | 639.753.582.474 | - | 479.337.975.915 | - |",
+    "questions": [
+      {
+        "question": "Tổng giá trị phải thu ngắn hạn của khách hàng tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải thu ngắn hạn của khách hàng từ Công ty Cổ phần Vinagres tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải thu từ Công ty Cổ phần Bảo Sơn Xanh đã giảm bao nhiêu từ 01/01/2025 đến 30/06/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng các khoản phải thu từ bên liên quan trên tổng phải thu ngắn hạn của khách hàng tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro tín dụng của công ty dựa trên cơ cấu các khoản phải thu ngắn hạn của khách hàng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích xu hướng biến động của các khoản phải thu từ các khách hàng lớn như Top Tile và Mylux Việt Nam.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Trả trước cho người bán ngắn hạn)\nLoại nội dung: Bảng\n6 . TRẢ TRƯỚC CHO NGƯỜI BÁN NGẮN HẠN\n| Chỉ tiêu | Giá trị 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá trị 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Bên liên quan | 4.835.363.153 | - | 10.510.000.000 | - |\n| Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Xanh | - | - | - | - |\n| Công ty Cổ phần Bảo Sơn Xanh | - | - | - | - |\n| Công Ty Cổ Phần Sản Xuất Và Đầu tư Royal House | 4.835.363.153 | - | 10.510.000.000 | - |\n| Bên khác | 76.249.406.520 | - | 69.797.254.618 | - |\n| Công ty Cổ phần Sản xuất và Đầu tư Dịch vụ UM Hoàng Quân | 5.177.871.694 | - | 6.895.833.094 | - |\n| Công Ty TNHH MTV Trang Minh Anh | 4.941.943.291 | - | 4.941.943.291 | - |\n| Công ty TNHH MTV Võ Trường Phát | - | - | 5.336.517.072 | - |\n| Công Ty TNHH Thương Mại Và Dịch Vụ Tùng Thịnh Phát | - | - | 6.875.194.154 | - |\n| Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Xanh (1) | 25.227.276.733 | - | 32.225.032.044 | - |\n| Trả trước cho người bán khác | 40.902.314.802 | - | 13.522.734.963 | - |\n| Tổng | 81.084.769.673 | - | 80.307.254.618 | - |\n\n(1) Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Xanh không còn là bên liên quan từ năm 2024.",
+    "questions": [
+      {
+        "question": "Tổng giá trị trả trước cho người bán ngắn hạn tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản trả trước cho người bán của Công Ty Cổ Phần Sản Xuất Và Đầu tư Royal House tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Xanh còn là bên liên quan từ năm nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản trả trước cho người bán khác đã tăng hay giảm từ 01/01/2025 đến 30/06/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản trả trước cho người bán, đặc biệt là các giao dịch với bên liên quan.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Xanh không còn là bên liên quan đến cấu trúc các khoản trả trước của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Phải thu khác ngắn hạn)\nLoại nội dung: Bảng và Text\n7 . PHẢI THU KHÁC\na Ngắn hạn\na.1 Chi tiết theo nội dung\n| Chỉ tiêu | Giá trị 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá trị 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Phải thu về lãi tiền gửi, tiền cho vay | 2.350.260.184 | - | 1.546.756.204 | - |\n| Cho mượn | 9.894.000.000 | - | - | - |\n| Ký cược, ký quỹ | - | - | - | - |\n| Khoản giao xây dựng và mua lại tài sản (1), (2) | 30.000.000.000 | - | 36.000.000.000 | - |\n| Phải thu liên quan hoạt động thuê tài chính | 918.530.344 | - | 1.241.563.393 | - |\n| Phải thu khác | 16.503.253.764 | - | 103.194.194 | - |\n| Tổng | 59.666.044.292 | - | 38.891.513.791 | - |\n\na.2 Chi tiết theo đối tượng\n| Đối tượng | Giá trị 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá trị 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Ông Huỳnh Sơn Tùng (1) | 30.000.000.000 | - | 30.000.000.000 | - |\n| Bà Nguyễn Thị Bích Trâm (2) | 6.000.000.000 | - | 6.000.000.000 | - |\n| Ông Huỳnh Sơn Tùng (1) | 900.000.000 | - | - | - |\n| Ông Huỳnh Sơn Tùng (1) | 8.994.000.000 | - | - | - |\n| Công ty TNHH MTV Cho Thuê Tài Chính Ngân Hàng Sài Gòn Thương Tín | 872.638.258 | - | 1.136.361.599 | - |\n| Các ngân hàng thương mại | 2.350.260.184 | - | 1.546.756.204 | - |\n| Các đối tượng khác | 10.549.145.850 | - | 208.395.988 | - |\n| Tổng | 59.666.044.292 | - | 38.891.513.791 | - |\n\n(1) Khoản thỏa thuận và giao việc cho ông Huỳnh Sơn Tùng theo biên bản thỏa thuận số 01/CTCP/HST/BBTT ngày 07/09/2022 về việc ông Huỳnh Sơn Tùng (chủ sở hữu lô đất 716 Nguyễn Thị Định, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức) thực hiện xây dựng tòa nhà văn phòng và showroom trên mảnh đất này và sau khi công trình hoàn thành sẽ tiến hành chuyển nhượng quyền sử dụng đất và tài sản hình thành trên đất cho Công ty. Mục đích công việc nêu trên nhằm thực hiện Dự án đầu tư xây dựng Tòa nhà văn phòng và showroom để mở rộng văn phòng làm việc và showroom trưng bày sản phẩm, đáp ứng nhu cầu phát triển kinh doanh của Công ty trong thời gian tới. Trong đó giá trị quyền sử dụng đất là 24 tỷ VND, còn giá trị xây dựng công trình dự kiến là 12 tỷ VND và có thể thay đổi khi có quyết toán xây dựng. Công ty ứng trước cho ông Huỳnh Sơn Tùng số tiền 30 tỷ VND và đã thực hiện xong việc mua lô đất. Trong năm 2024, ông Huỳnh Sơn Tùng đã nhận được Giấy phép xây dựng số 941/GPXD ngày 18/04/2024 của UBND thành phố Thủ Đức và Phụ lục Giấy phép xây dựng số 255/PLGPXD ngày 24/06/2024 của UBND thành phố Thủ Đức và đang tiến hành quá trình thi công xây dựng công trình.",
+    "questions": [
+      {
+        "question": "Tổng giá trị phải thu ngắn hạn khác tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải thu về lãi tiền gửi, tiền cho vay tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản cho mượn của công ty tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ông Huỳnh Sơn Tùng đang thực hiện dự án gì cho công ty và giá trị quyền sử dụng đất là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh các khoản phải thu ngắn hạn khác giữa ngày 30/06/2025 và 01/01/2025. Có sự thay đổi đáng kể nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro của các khoản phải thu liên quan đến ông Huỳnh Sơn Tùng và dự án xây dựng tòa nhà văn phòng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Phải thu khác dài hạn và các bên liên quan)\nLoại nội dung: Bảng và Text\n(2) Khoản thỏa thuận và giao việc cho bà Nguyễn Thị Bích Trâm theo biên bản thỏa thuận số 06/HGK/NTBT/BBTT ngày 31/05/2022 về việc bà Nguyễn Thị Bích Trâm (chủ sở hữu Thửa đất số 123, tờ bản đồ số 43, phường Trường Thạnh, Thành phố Thủ Đức, Thành phố Hồ Chí Minh) thực hiện xây dựng tòa nhà văn phòng và showroom trên mảnh đất này và sau khi công trình hoàn thành sẽ tiến hành chuyển nhượng quyền sử dụng đất và tài sản hình thành trên đất cho Công ty. Mục đích công việc nêu trên nhằm thực hiện Dự án Văn phòng showroom Royal Sintered Stone. Trong đó giá trị quyền sử dụng đất là 6 tỷ VND. Bà Trâm đã thực hiện mua xong lô đất và đang trong quá trình lên kế hoạch xây dựng. Do Công ty đang tập trung thực hiện Dự án Nhà máy sản xuất tấm Porcelain khổ lớn 4.0 nên quá trình thực hiện xây dựng Dự án Văn phòng showroom Royal Sintered Stone sẽ được thực hiện sau khi Dự án Nhà máy sản xuất tấm Porcelain khổ lớn 4.0 đi vào hoạt động. Công ty cũng đã thu hồi 1 phần tiền giao cho Bà Nguyễn Thị Bích Trâm số tiền 8,3 tỷ VND để tập trung tài chính cho dự án này.\n\nb Dài hạn\nb.1 Chi tiết theo nội dung\n| Chỉ tiêu | Giá trị 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá trị 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Ký cược, ký quỹ | 6.274.122.757 | - | 6.246.856.657 | - |\n| Tổng | 6.274.122.757 | - | 6.246.856.657 | - |\n\nb.2 Chi tiết theo đối tượng\n| Đối tượng | Giá trị 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá trị 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Công ty TNHH MTV Cho Thuê Tài Chính Ngân Hàng Sài Gòn Thương Tín | 1.137.855.150 | - | 1.489.069.050 | - |\n| Công Ty Cho Thuê Tài Chính TNHH MTV Quốc Tế Chailease | 2.442.107.607 | - | 2.442.107.607 | - |\n| Các đối tượng khác | 2.694.160.000 | - | 2.315.680.000 | - |\n| Tổng | 6.274.122.757 | - | 6.246.856.657 | - |\n\nc Trong đó: Phải thu khác là các bên liên quan\n| Đối tượng | Giá trị 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá trị 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Ông Huỳnh Sơn Tùng (1) | 30.000.000.000 | - | 30.000.000.000 | - |\n| Bà Nguyễn Thị Bích Trâm (2) | 6.000.000.000 | - | 6.000.000.000 | - |\n| Công Ty Cổ Phần Sản Xuất Và Đầu Tư Hoàng Gia Xanh | 8.994.000.000 | - | - | - |\n| Tổng | 44.994.000.000 | - | 36.000.000.000 | - |",
+    "questions": [
+      {
+        "question": "Bà Nguyễn Thị Bích Trâm đang thực hiện dự án gì cho công ty và giá trị quyền sử dụng đất là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị phải thu dài hạn khác tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phải thu dài hạn khác từ Công Ty Cho Thuê Tài Chính TNHH MTV Quốc Tế Chailease tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích lý do công ty tạm hoãn Dự án Văn phòng showroom Royal Sintered Stone.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro liên quan đến các khoản phải thu từ các bên liên quan và tác động tiềm ẩn đến tài chính công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích chiến lược đầu tư của công ty dựa trên việc tập trung nguồn lực vào Dự án Nhà máy sản xuất tấm Porcelain khổ lớn 4.0.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Hàng tồn kho, Tài sản dở dang dài hạn)\nLoại nội dung: Bảng và Text\n8 . HÀNG TỒN KHO\n| Chỉ tiêu | Giá gốc 30/06/2025 VND | Dự phòng 30/06/2025 VND | Giá gốc 01/01/2025 VND | Dự phòng 01/01/2025 VND |\n|---|---|---|---|---|\n| Hàng mua đang đi đường | 543.269.086 | - | 299.661.785 | - |\n| Nguyên liệu, vật liệu | 179.545.332.695 | - | 102.085.045.670 | - |\n| Công cụ, dụng cụ | 27.640.423.286 | - | 19.730.431.198 | - |\n| Chi phí sản xuất kinh doanh dở dang | 10.302.228.991 | - | 8.198.954.088 | - |\n| Thành phẩm | 194.158.341.936 | - | 246.173.229.649 | - |\n| Hàng hóa | 273.459.265.481 | - | 303.231.966.572 | - |\n| Hàng gửi đi bán | 3.292.530.870 | - | 4.224.786.567 | - |\n| Tổng | 688.941.392.345 | - | 683.944.075.529 | - |\n\n9 . TÀI SẢN DỞ DANG DÀI HẠN\n| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Xây dựng cơ bản dở dang | 603.877.838.661 | 460.417.449.070 |\n| Chi phí sửa chữa tòa nhà văn phòng RYG | 2.688.878.800 | 925.925.926 |\n| Thi công hệ thống bù gạch đầu lò nung | - | - |\n| Hệ thống báo cháy | - | - |\n| Dự án Nhà máy sản xuất tấm Porcelain khổ lớn 4.0 | 601.188.959.861 | 458.261.523.144 |\n| Thi công mái che, móng và sàn cho 2 cối nghiền xương 60 tấn | - | 1.230.000.000 |\n| Tổng | 603.877.838.661 | 460.417.449.070 |\n\nThông tin về dự án:\n- Địa điểm xây dựng: Đường số 8, KCN Nhơn Trạch II, thị trấn Hiệp Phước, huyện Nhơn Trạch, Đồng Nai.\n- Mục đích xây dựng: Sản xuất gạch Porcelain tấm lớn, cung cấp cho thị trường trong nước và xuất khẩu.\n- Chủ đầu tư: Công ty Cổ phần Sản xuất và Đầu Tư Royal Sintered Stone (đổi tên từ Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Khang).\n- Quy mô của dự án: diện tích khoảng 32.000 m2.\n- Tổng mức đầu tư: 764.664.000.000 VND.\n- Thời gian dự kiến hoàn thành: Dự kiến hoàn thành trong năm 2025.\n- Tình trạng của dự án tại thời điểm 31/12/2024: đang trong quá trình lắp đặt dây chuyền trang thiết bị.",
+    "questions": [
+      {
+        "question": "Tổng giá gốc hàng tồn kho tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị Dự án Nhà máy sản xuất tấm Porcelain khổ lớn 4.0 tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên liệu, vật liệu tồn kho đã tăng bao nhiêu từ 01/01/2025 đến 30/06/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Mục đích xây dựng và tổng mức đầu tư của Dự án Nhà máy sản xuất tấm Porcelain khổ lớn 4.0 là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của sự tăng trưởng chi phí sản xuất kinh doanh dở dang đến hiệu quả hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích rủi ro và cơ hội liên quan đến Dự án Nhà máy sản xuất tấm Porcelain khổ lớn 4.0 dựa trên thông tin cung cấp.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Tài sản cố định hữu hình)\nLoại nội dung: Bảng\n10 . TÀI SẢN CỐ ĐỊNH HỮU HÌNH\n| Chỉ tiêu | Nhà cửa, vật kiến trúc VND | Máy móc, thiết bị VND | Phương tiện vận tải, truyền dẫn VND | Thiết bị, dụng cụ quản lý VND | Tài sản cố định khác VND | Cộng VND |\n|---|---|---|---|---|---|---|\n| Nguyên giá | | | | | | |\n| Số dư đầu năm | 148.977.227.938 | 405.066.812.937 | 16.345.907.191 | 3.944.152.222 | 3.144.270.035 | 577.478.370.323 |\n| Mua trong kỳ | - | - | - | - | - | - |\n| Đầu tư xây dựng cơ bản hoàn thành | 6.457.407.407 | - | - | - | - | 6.457.407.407 |\n| Tăng do tài sản thuê tài chính chuyển thành | - | 8.038.586.500 | - | - | - | 8.038.586.500 |\n| Thanh lý, nhượng bán | - | - | - | - | - | - |\n| Bán TSCĐ để thuê lại tài chính | - | - | - | - | - | - |\n| Số dư cuối kỳ | 155.434.635.345 | 413.105.399.437 | 16.345.907.191 | 3.944.152.222 | 3.144.270.035 | 591.974.364.230 |\n| Giá trị hao mòn lũy kế | | | | | | |\n| Số dư đầu năm | 87.967.599.512 | 301.590.176.487 | 10.348.255.880 | 2.748.318.391 | 807.263.000 | 403.461.613.270 |\n| Khấu hao trong kỳ | 2.781.949.240 | 8.739.676.908 | 894.539.630 | 185.499.285 | 157.213.500 | 12.758.878.563 |\n| Tăng do tài sản thuê tài chính chuyển thành | - | 3.215.434.600 | - | - | - | 3.215.434.600 |\n| Thanh lý, nhượng bán | - | - | - | - | - | - |\n| Bán TSCĐ để thuê lại tài chính | - | - | - | - | - | - |\n| Số dư cuối kỳ | 90.749.548.752 | 313.545.287.995 | 11.242.795.510 | 2.933.817.676 | 964.476.500 | 419.435.926.433 |\n| Giá trị còn lại | | | | | | |\n| Tại ngày đầu năm | 61.009.628.426 | 103.476.636.450 | 5.997.651.311 | 1.195.833.831 | 2.337.007.035 | 174.016.757.053 |\n| Tại ngày cuối kỳ | 64.685.086.593 | 99.560.111.442 | 5.103.111.681 | 1.010.334.546 | 2.179.793.535 | 172.538.437.797 |\nTrong đó:\n- Giá trị còn lại cuối kỳ của tài sản cố định hữu hình đã dùng thế chấp, cầm cố đảm bảo các khoản vay: 140.529.468.320 VND.\n- Nguyên giá tài sản cố định cuối kỳ đã khấu hao hết nhưng vẫn còn sử dụng: 269.314.708.865 VND.",
+    "questions": [
+      {
+        "question": "Tổng nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của máy móc, thiết bị tại ngày cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản cố định hữu hình đã dùng thế chấp, cầm cố đảm bảo các khoản vay là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khấu hao trong kỳ của Nhà cửa, vật kiến trúc là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích xu hướng biến động của giá trị còn lại của các loại tài sản cố định hữu hình từ đầu năm đến cuối kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của việc quản lý tài sản cố định dựa trên tỷ lệ tài sản đã khấu hao hết nhưng vẫn còn sử dụng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "26",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Tài sản cố định thuê tài chính, Tài sản cố định vô hình)\nLoại nội dung: Bảng\n11 . TÀI SẢN CỐ ĐỊNH THUÊ TÀI CHÍNH\n| Chỉ tiêu | Máy móc, thiết bị VND | Phương tiện vận tải, truyền dẫn VND | Cộng VND |\n|---|---|---|---|\n| Nguyên giá | | | |\n| Số dư đầu năm | 56.301.950.904 | 11.107.472.454 | 67.409.423.358 |\n| Mua lại TSCĐ thuê tài chính | (8.038.586.500) | - | (8.038.586.500) |\n| Thuê lại tài chính | - | - | - |\n| Chuyển tài sản thuê tài chính thành TSCĐ | - | - | - |\n| Số dư cuối kỳ | 48.263.364.404 | 11.107.472.454 | 59.370.836.858 |\n| Giá trị hao mòn lũy kế | | | |\n| Số dư đầu năm | 10.805.733.487 | 267.619.464 | 11.073.352.951 |\n| Trích khấu hao | 3.807.917.334 | 563.709.679 | 4.371.627.013 |\n| Giảm do mua lại TSCĐ thuê tài chính | (3.215.434.600) | - | (3.215.434.600) |\n| Trả lại tài sản cố định thuê tài chính | - | - | - |\n| Chuyển tài sản thuê tài chính thành TSCĐ | - | - | - |\n| Số dư cuối kỳ | 11.398.216.221 | 831.329.143 | 12.229.545.364 |\n| Giá trị còn lại | | | |\n| Tại ngày đầu năm | 45.496.217.417 | 10.839.852.990 | 56.336.070.407 |\n| Tại ngày cuối kỳ | 36.865.148.183 | 10.276.143.311 | 47.141.291.494 |\n\n12 . TÀI SẢN CỐ ĐỊNH VÔ HÌNH\n| Chỉ tiêu | Lợi thế quyền thuê VND | Phần mềm quản lý VND | Cộng VND |\n|---|---|---|---|\n| Nguyên giá | | | |\n| Số dư đầu năm | 565.248.000 | 67.639.223.219 | 68.204.471.219 |\n| Số dư cuối kỳ | 565.248.000 | 67.639.223.219 | 68.204.471.219 |\n| Giá trị hao mòn lũy kế | | | |\n| Số dư đầu năm | 534.185.067 | 4.877.828.599 | 5.412.013.666 |\n| Khấu hao trong kỳ | 23.698.135 | 975.565.720 | 999.263.855 |\n| Số dư cuối kỳ | 557.883.202 | 5.853.394.319 | 6.411.277.521 |\n| Giá trị còn lại | | | |\n| Tại ngày đầu năm | 31.062.933 | 62.761.394.620 | 62.792.457.553 |\n| Tại ngày cuối kỳ | 7.364.798 | 61.785.828.901 | 61.793.193.699 |\nTrong đó:\n- Nguyên giá tài sản cố định vô hình cuối năm đã khấu hao hết nhưng vẫn còn sử dụng: 295.600.000 VND.\n- Giá trị lợi thế quyền thuê đất khu công nghiệp trên Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất số CK 292958 do Sở Tài nguyên và Môi trường tỉnh Đồng Nai cấp ngày 25/12/2017 (thời hạn 35 năm 02 tháng) theo chứng thư thẩm định giá Công ty Cổ phần Sản xuất và Đầu tư Hoàng Gia Khang số 220502DN ngày 31/05/2022 của Công ty Cổ phần Thẩm định giá và Tư vấn Đầu tư Việt Nam.",
+    "questions": [
+      {
+        "question": "Giá trị còn lại của tài sản cố định thuê tài chính tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khấu hao trong kỳ của tài sản cố định vô hình là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích sự thay đổi nguyên giá tài sản cố định thuê tài chính từ đầu năm đến cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giá trị lợi thế quyền thuê đất khu công nghiệp được xác định như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của tài sản cố định thuê tài chính và tác động của nó đến Bảng cân đối kế toán.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của việc có tài sản cố định vô hình đã khấu hao hết nhưng vẫn còn sử dụng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "27",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Chi phí trả trước, Lợi thế thương mại)\nLoại nội dung: Bảng và Text\n13 . CHI PHÍ TRẢ TRƯỚC\na Ngắn hạn\n| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Công cụ dụng cụ xuất dùng | 6.378.352.877 | 6.299.517.113 |\n| Chi phí bảo hiểm sức khỏe | - | 84.999.998 |\n| Chi phí trả trước ngắn hạn khác | - | 197.495.263 |\n| Tổng | 6.378.352.877 | 6.582.012.374 |\n\nb Dài hạn\n| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Công cụ dụng cụ xuất dùng | 4.746.439.354 | 7.674.439.100 |\n| Chi phí thuê thương hiệu (1) | 29.000.000.000 | 35.000.000.000 |\n| Chi phí chương trình phần mềm | 4.637.941.473 | 4.362.299.393 |\n| Tổng | 38.384.380.827 | 47.036.738.493 |\n\n(1) Chi phí sử dụng thương hiệu từ Hợp đồng License chuyển giao quyền sử dụng nhãn hiệu hàng hóa số 01/12/22/CQSDNHTTHG ngày 01/12/2022 giữa Công ty và Công ty TNHH Top Tile có thời hạn 5 năm tính từ thời điểm tháng 12/2022 và thanh toán trước toàn bộ giá trị hợp đồng với số tiền là 60 tỷ VND.\n\n14 . LỢI THẾ THƯƠNG MẠI\nGiá trị lợi thế thương mại của Công ty phát sinh khi mua Công ty Cổ phần Sản xuất và Đầu tư Royal Sintered Stone là 9.247.546.839 VND được phân bổ với thời gian 10 năm. Tại ngày 30/06/2025, giá trị lợi thế thương mại chưa phân bổ là 6.473.282.788 VND, giá trị lợi thế thương mại phân bổ trong kỳ là 462.377.342 VND.",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước dài hạn tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị lợi thế thương mại chưa phân bổ tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời hạn và tổng giá trị hợp đồng License chuyển giao quyền sử dụng nhãn hiệu hàng hóa là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh chi phí thuê thương hiệu dài hạn giữa ngày 30/06/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc phân bổ lợi thế thương mại đến lợi nhuận của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích sự biến động của công cụ dụng cụ xuất dùng (ngắn hạn và dài hạn) và ý nghĩa của nó.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "28",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Phải trả người bán)\nLoại nội dung: Bảng\n15 . PHẢI TRẢ NGƯỜI BÁN\na Ngắn hạn\n| Người bán | Giá trị 30/06/2025 VND | Số có khả năng trả nợ 30/06/2025 VND | Giá trị 01/01/2025 VND | Số có khả năng trả nợ 01/01/2025 VND |\n|---|---|---|---|---|\n| Bên liên quan | 2.629.627.027 | 2.629.627.027 | 5.766.195.325 | 5.766.195.325 |\n| Công ty Cổ phần Sản xuất và Đầu tư Royal House | - | - | 2.332.101.636 | 2.332.101.636 |\n| Công ty Cổ phần Hoàng Gia Pha Lê | 1.518.765.149 | 1.518.765.149 | 3.434.093.689 | 3.434.093.689 |\n| Công ty Cổ Phần Bảo Sơn Xanh | 1.110.861.878 | 1.110.861.878 | - | - |\n| Bên khác | 362.333.746.227 | 362.333.746.227 | 272.849.469.280 | 213.932.772.583 |\n| Công ty Cổ phần Frit Huế | 13.231.009.830 | 13.231.009.830 | 11.235.721.330 | 11.235.721.330 |\n| CN Công ty Cổ phần Phân phối Khí thấp áp Dầu Khí VN - XN pp Khí Thấp Áp | - | - | 3.701.565.394 | 3.701.565.394 |\n| Công ty Cổ phần Công nghệ Hexagon | 5.021.440.154 | 5.021.440.154 | 7.943.838.176 | 7.943.838.176 |\n| Forwell International HK Co., LTD | 101.875.976.660 | 101.875.976.660 | 58.916.696.697 | - |\n| Phải trả các đối tượng khác | 242.205.319.583 | 242.205.319.583 | 191.051.647.683 | 191.051.647.683 |\n| Tổng | 364.963.373.254 | 364.963.373.254 | 278.615.664.605 | 219.698.967.908 |\n\nb Dài hạn\n| Người bán | Giá trị 30/06/2025 VND | Số có khả năng trả nợ 30/06/2025 VND | Giá trị 01/01/2025 VND | Số có khả năng trả nợ 01/01/2025 VND |\n|---|---|---|---|---|\n| Bên khác | - | - | - | - |\n| Forwell International HK Co., LTD | - | - | 48.552.878.934 | - |\n| Tổng | - | - | 48.552.878.934 | - |",
+    "questions": [
+      {
+        "question": "Tổng giá trị phải trả người bán ngắn hạn tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phải trả người bán ngắn hạn từ Forwell International HK Co., LTD tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh phải trả người bán ngắn hạn từ bên liên quan giữa 30/06/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phải trả người bán dài hạn từ Forwell International HK Co., LTD đã thay đổi như thế nào từ đầu năm đến cuối quý 2/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro tín dụng của công ty từ phía các nhà cung cấp dựa trên xu hướng phải trả người bán.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng phải trả người bán ngắn hạn từ Forwell International HK Co., LTD đến lưu chuyển tiền tệ của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "29",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Người mua trả tiền trước ngắn hạn, Thuế và các khoản phải nộp Nhà nước)\nLoại nội dung: Bảng\n16 . NGƯỜI MUA TRẢ TIỀN TRƯỚC NGẮN HẠN\n| Khách hàng | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Bên liên quan | 54.620.946 | - |\n| Công Ty Cổ Phần Sản xuất và Đầu tư Royal House | 54.620.946 | - |\n| Bên khác | 56.637.325.741 | 68.040.488.517 |\n| Công ty TNHH VINAMEN | - | 5.232.580.340 |\n| FONG STEEL IMPORT EXPORT CO.,LTD | - | - |\n| Công ty TNHH MTV Dũng Đài Loan | - | - |\n| Công ty TNHH MTV Vật liệu Xây dựng Hùng Ngọc | 13.957.247.361 | 14.620.634.450 |\n| Công ty TNHH Thương Mại Dịch Vụ và Đầu Tư Hòa Phát Đạt | - | - |\n| Công Ty TNHH Trang Hòa | 8.098.633.047 | - |\n| Công Ty TNHH Gạch Men Minh Long | - | 6.263.766.598 |\n| Các đối tượng khác | 34.581.445.333 | 41.923.507.129 |\n| Tổng | 56.691.946.687 | 68.040.488.517 |\n\n17 . THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC\n| Chỉ tiêu | Số đã thực nộp trong kỳ VND | Số phải thu đầu năm VND | Số phải nộp đầu năm VND | Số phải nộp trong kỳ VND | Số phải thu cuối kỳ VND | Số phải nộp cuối kỳ VND |\n|---|---|---|---|---|---|---|\n| Thuế Giá trị gia tăng | - | - | - | 10.242.505.240 | - | 10.242.505.240 |\n| Thuế Xuất khẩu, Nhập khẩu | - | - | - | 128.675.590 | - | 128.675.590 |\n| Thuế Thu nhập doanh nghiệp | 110.312.826 | - | 15.458.865.622 | 4.177.371.050 | - | 19.525.923.846 |\n| Thuế Thu nhập cá nhân | 2.029.784.527 | - | 2.719.451.916 | 1.014.409.838 | - | 1.704.077.227 |\n| Các loại thuế khác | 2.950.214.616 | - | 2.944.214.616 | 6.000.000 | - | - |\n| Phí, lệ phí và các khoản phải nộp khác | - | - | - | 17.400.000 | - | 15.400.000 |\n| Tổng | 5.090.311.969 | - | 21.122.532.154 | 15.586.361.718 | - | 31.616.581.657 |\n\nQuyết toán thuế của Công ty sẽ chịu sự kiểm tra của cơ quan thuế. Do việc áp dụng luật và các quy định về thuế đối với nhiều loại giao dịch khác nhau có thể được giải thích theo nhiều cách khác nhau, số thuế được trình bày trên Báo cáo tài chính hợp nhất có thể bị thay đổi theo quyết định của cơ quan thuế.",
+    "questions": [
+      {
+        "question": "Tổng người mua trả tiền trước ngắn hạn tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thuế Thu nhập doanh nghiệp phải nộp cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản người mua trả tiền trước ngắn hạn từ Công Ty Cổ Phần Sản xuất và Đầu tư Royal House tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản Thuế Giá trị gia tăng phải nộp cuối kỳ với Thuế Thu nhập doanh nghiệp phải nộp cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản người mua trả tiền trước ngắn hạn và ý nghĩa của nó đối với dòng tiền của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn liên quan đến các khoản thuế và các khoản phải nộp Nhà nước dựa trên thông tin về quyết toán thuế.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "30",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Chi phí phải trả ngắn hạn, Phải trả khác)\nLoại nội dung: Bảng\n18 . CHI PHÍ PHẢI TRẢ NGẮN HẠN\n| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Chi phí lãi vay | 1.445.396.112 | 973.730.310 |\n| Trích trước chi phí tiền điện | 1.537.939.173 | 1.645.451.218 |\n| Trích trước chi phí nhiên liệu khí thấp áp | 10.356.190.607 | 9.886.422.942 |\n| Trích trước chi phí chưa có hóa đơn chứng từ | 2.791.249.917 | 714.240.120 |\n| Trích trước chi phí xuất nhập khẩu | 339.084.025 | 1.230.378.947 |\n| Tổng | 16.469.859.834 | 14.450.223.537 |\n\n19 . PHẢI TRẢ KHÁC\na Ngắn hạn\na.1 Chi tiết theo nội dung\n| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Kinh phí công đoàn | 5.742.627.622 | 5.316.761.822 |\n| Bảo hiểm xã hội | 3.139.215.092 | 2.788.258.228 |\n| Bảo hiểm y tế | 408.444.996 | 187.822.800 |\n| Bảo hiểm thất nghiệp | 176.794.153 | 83.252.800 |\n| Cổ tức, lợi nhuận phải trả | 205.500.000 | 205.500.000 |\n| Khoản mượn tiền | 9.600.000.000 | - |\n| Khoản mở LC Upas tại Ngân hàng TMCP Quân đội | - | 49.999.944.261 |\n| Các khoản phải trả, phải nộp khác | 13.444.667.440 | 2.648.584.164 |\n| Tổng | 32.717.249.303 | 61.230.124.075 |\n\na.2 Chi tiết theo đối tượng\n| Đối tượng | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Cán bộ Công nhân viên | 2.540.210.948 | 2.573.206.322 |\n| Nguyễn Minh Tuyến | 1.000.000.000 | - |\n| Lê Thị Vi Na | 8.600.000.000 | - |\n| Công đoàn cấp cơ sở | 5.742.627.622 | 5.316.761.822 |\n| Cơ quan bảo hiểm | 3.724.454.241 | 3.059.333.828 |\n| Ngân hàng TMCP Quân đội | - | 49.999.944.261 |\n| Các đối tượng khác | 11.109.956.492 | 280.877.842 |\n| Tổng | 32.717.249.303 | 61.230.124.075 |\n\nb Dài hạn\nb.1 Chi tiết theo nội dung\n| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Nhận ký quỹ, ký cược dài hạn | 150.000.000 | 150.000.000 |\n| Tổng | 150.000.000 | 150.000.000 |\n\nb.2 Chi tiết theo đối tượng\n| Đối tượng | 30/06/2025 VND | 01/01/2025 VND |\n|---|---|---|\n| Công ty TNHH Quảng Lộc Phát | 150.000.000 | 150.000.000 |\n| Tổng | 150.000.000 | 150.000.000 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí phải trả ngắn hạn tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản 'Trích trước chi phí nhiên liệu khí thấp áp' là bao nhiêu VND tại 30/06/2025?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mượn tiền tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng phải trả ngắn hạn khác giữa ngày 30/06/2025 và 01/01/2025. Có sự thay đổi đáng kể nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của các khoản phải trả người lao động, bảo hiểm xã hội, y tế, thất nghiệp và kinh phí công đoàn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc khoản mở LC Upas tại Ngân hàng TMCP Quân đội giảm về 0 đến cấu trúc nợ ngắn hạn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "31",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Vay và nợ thuê tài chính ngắn hạn và nợ dài hạn đến hạn trả)\nLoại nội dung: Bảng\n20 . VAY VÀ NỢ THUÊ TÀI CHÍNH\na Vay ngắn hạn\n| Ngân hàng | 01/01/2025 Giá trị VND | 01/01/2025 Số có khả năng trả nợ VND | Trong kỳ Tăng VND | Trong kỳ Giảm VND | 30/06/2025 Giá trị VND | 30/06/2025 Số có khả năng trả nợ VND |\n|---|---|---|---|---|---|---|\n| Vay ngắn hạn Ngân hàng | 833.835.440.802 | 833.835.440.802 | 768.112.367.425 | 516.660.746.164 | 1.085.287.062.063 | 1.085.287.062.063 |\n| Ngân hàng TMCP Công thương Việt Nam - Chi nhánh KCN Biên Hòa 1 | 160.281.071.705 | 160.281.071.705 | 220.929.000.398 | 146.000.286.217 | 235.209.785.886 | 235.209.785.886 |\n| Ngân hàng TMCP Sài Gòn Thương Tín - Chi nhánh Đồng Nai 2 | 108.702.665.268 | 108.702.665.268 | 54.617.347.258 | 55.625.329.766 | 107.694.682.760 | 107.694.682.760 |\n| Ngân hàng TMCP Đầu tư và Phát Triển Việt Nam - Chi nhánh Thống Nhất 3 | 144.612.906.773 | 144.612.906.773 | 90.216.921.496 | 87.168.608.332 | 147.661.219.937 | 147.661.219.937 |\n| Ngân hàng TMCP Thịnh Vượng Và Phát Triển - Chi nhánh Vũng Tàu 4 | 120.376.628.422 | 120.376.628.422 | 89.863.156.450 | 85.570.141.021 | 124.669.643.851 | 124.669.643.851 |\n| Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Đồng Nai 5 | 59.987.514.015 | 59.987.514.015 | 29.887.445.504 | 47.075.955.842 | 42.799.003.677 | 42.799.003.677 |\n| Ngân hàng Thương mại Cổ phần Quân đội - Chi nhánh Gia Định 6 | 59.877.556.533 | 59.877.556.533 | 103.077.839.431 | 75.195.439.080 | 87.759.956.884 | 87.759.956.884 |\n| Ngân Hàng TMCP An Bình - Chi nhánh Sài Gòn 7 | 99.997.098.086 | 99.997.098.086 | 20.000.000.000 | 20.024.985.906 | 99.972.112.180 | 99.972.112.180 |\n| Ngân hàng Woori - Chi nhánh Bắc Ninh 8 | 80.000.000.000 | 80.000.000.000 | - | - | 80.000.000.000 | 80.000.000.000 |\n| Ngân hàng TMCP Quốc tế VIB CN Sài Gòn | - | - | 119.788.241.008 | - | 119.788.241.008 | 119.788.241.008 |\n| Ngân hàng TNHH một thành viên United Overseas Bank Việt Nam | - | - | 39.732.415.880 | - | 39.732.415.880 | 39.732.415.880 |\n| Tổng vay ngắn hạn | 864.219.493.965 | 864.219.493.965 | 774.904.948.245 | 523.453.326.984 | 1.115.671.115.226 | 1.115.671.115.226 |\n\nNợ dài hạn đến hạn trả:\n| Ngân hàng | 01/01/2025 Giá trị VND | 01/01/2025 Số có khả năng trả nợ VND | Trong kỳ Tăng VND | Trong kỳ Giảm VND | 30/06/2025 Giá trị VND | 30/06/2025 Số có khả năng trả nợ VND |\n|---|---|---|---|---|---|---|\n| Nợ dài hạn đến hạn trả | 30.384.053.163 | 30.384.053.163 | 6.792.580.820 | 6.792.580.820 | 30.384.053.163 | 30.384.053.163 |\n| Công ty TNHH MTV CTTC Ngân hàng Sài gòn Thương Tín Sacombank SBL 10 | 5.069.966.000 | 5.069.966.000 | 2.831.016.400 | 3.138.747.200 | 4.762.235.200 | 4.762.235.200 |\n| Ngân hàng TMCP Công thương Việt Nam - Chi nhánh KCN Biên Hòa 11 | 18.128.525.305 | 18.128.525.305 | 551.941.564 | - | 18.680.466.869 | 18.680.466.869 |\n| Công Ty Cho Thuê Tài Chính TNHH MTV Quốc Tế Chailease 12 | 5.250.531.354 | 5.250.531.354 | 2.442.107.604 | 2.686.318.368 | 5.006.320.590 | 5.006.320.590 |\n| Công Ty Cho Thuê Tài Chính TNHH BIDV Sumi Trust 13 | 1.935.030.504 | 1.935.030.504 | 967.515.252 | 967.515.252 | 1.935.030.504 | 1.935.030.504 |\n| Tổng nợ dài hạn đến hạn trả | 30.384.053.163 | 30.384.053.163 | 6.792.580.820 | 6.792.580.820 | 30.384.053.163 | 30.384.053.163 |",
+    "questions": [
+      {
+        "question": "Tổng vay ngắn hạn ngân hàng tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay ngắn hạn từ Ngân hàng TMCP Công thương Việt Nam - Chi nhánh KCN Biên Hòa 1 tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản nợ dài hạn đến hạn trả từ Công ty TNHH MTV CTTC Ngân hàng Sài Gòn Thương Tín Sacombank SBL 10 tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự biến động của tổng vay ngắn hạn từ đầu năm đến cuối quý 2/2025.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào các khoản vay ngắn hạn từ các ngân hàng thương mại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh khoản nếu các khoản nợ dài hạn đến hạn trả không được tái cấp vốn kịp thời.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32",
+    "content": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ĐẦU TƯ HOÀNG GIA\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất\nThời gian: Quý II/2025, Tại ngày 30/06/2025, Phát hành ngày 29/07/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất (Vay và nợ thuê tài chính dài hạn và chi tiết vay ngắn hạn)\nLoại nội dung: Bảng\n| Ngân hàng | 01/01/2025 Giá trị VND | 01/01/2025 Số có khả năng trả nợ VND | Trong kỳ Tăng VND | Trong kỳ Giảm VND | 30/06/2025 Giá trị VND | 30/06/2025 Số có khả năng trả nợ VND |\n|---|---|---|---|---|---|---|\n| Vay dài hạn | | | | | | |\n| Công ty TNHH MTV CTTC Ngân hàng Sài Gòn Thương Tín Sacombank SBL10 | 12.461.011.428 | 12.461.011.428 | - | - | 12.461.011.428 | 12.461.011.428 |\n| Công Ty Cho Thuê Tài Chính TNHH MTV Quốc Tế Chailease 12 | 11.355.800.370 | 11.355.800.370 | - | - | 11.355.800.370 | 11.355.800.370 |\n| Công Ty Cho Thuê Tài Chính TNHH BIDV Sumi Trust 13 | 9.352.647.458 | 9.352.647.458 | - | - | 9.352.647.458 | 9.352.647.458 |\n| Ngân hàng TMCP Công thương Việt Nam - Chi nhánh KCN Biên Hòa | 320.468.644.061 | 320.468.644.061 | 8.599.503.996 | - | 329.068.148.057 | 329.068.148.057 |\n| Tổng vay dài hạn | 353.638.103.317 | 353.638.103.317 | 8.599.503.996 | - | 362.237.607.313 | 362.237.607.313 |\n| Khoản nợ đến hạn trả trong vòng 12 tháng | 6.000.000.000 | - | 84.095.105.704 | - | 90.095.105.704 | 90.095.105.704 |\n| Khoản nợ đến hạn trả sau 12 tháng | 359.638.103.317 | 353.638.103.317 | 452.332.713.017 | - | 452.332.713.017 | 452.332.713.017 |\n\nc Thông tin chi tiết liên quan đến các khoản vay ngắn hạn\n| Số hợp đồng | Ngày HĐ | Mục đích vay | Kỳ hạn | Lãi suất | Hình thức tài sản bảo đảm | Hạn mức VND | Số dư 30/06/2025 Nguyên tệ | Số dư quy đổi VND |\n|---|---|---|---|---|---|---|---|---|\n| 1 Ngân hàng TMCP Công thương Việt Nam - Chi nhánh KCN Biên Hòa | | | | | | 150.000.000.000 | | 153.947.180.182 |\n| HĐCVHMNHCT682 | 11/21/2024 | Bổ sung vốn lưu động phục vụ sản xuất kinh doanh gạch men | 12 tháng | Được ghi trên từng Giấy nhận nợ | Tài sản thế chấp được quy định chi tiết tại các Hợp đồng thế chấp cụ thể. | | VND | 153.947.180.182 |\n| 2 Ngân hàng TMCP Sài Gòn Thương Tín - Chi nhánh Đồng Nai | | | | | | 110.000.000.000 | | 107.694.682.760 |\n| 202025393705L103 | 2/24/2025 | Bổ sung vốn lưu động, bảo lãnh, mở LC | 12 tháng | Được ghi trên từng Giấy nhận nợ | Tài sản thế chấp được quy định chi tiết tại các Hợp đồng thế chấp cụ thể. | | VND và 282,492 USD | 107.694.682.760 |\n| 3 Ngân hàng TMCP Đầu tư và Phát Triển Việt Nam - Chi nhánh Thống Nhất | | | | | | 150.000.000.000 | | 147.661.219.937 |\n| 0120247856791HĐT | 7/12/2024 | Bổ sung vốn lưu động, bảo lãnh, mở LC | 12 tháng | Được ghi trên từng Giấy nhận nợ | Tài sản thế chấp được quy định chi tiết tại các Hợp đồng thế chấp cụ thể. | | VND | 147.661.219.937 |\n| 4 Ngân hàng TMCP Thịnh Vượng Và Phát Triển - Chi nhánh Vũng Tàu | | | | | | 155.000.000.000 | | 124.669.643.851 |\n| 510.36824DN | 10/8/2024 | Bổ sung vốn lưu động, bảo lãnh, mở LC | 12 tháng | Được ghi trên từng Giấy nhận nợ | Tài sản thế chấp được quy định chi tiết tại các Hợp đồng thế chấp cụ thể. | | VND | 124.669.643.851 |\n| 5 Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Đồng Nai | | | | | | 60.000.000.000 | | 42.799.003.677 |\n| 2024079HDTDQLN | 9/30/2024 | Bổ sung vốn lưu động phục vụ sản xuất kinh doanh nhưng không bao gồm đầu tư | 12 tháng | Được ghi trên từng Giấy nhận nợ | Tài sản thế chấp được quy định chi tiết tại các Hợp đồng thế chấp cụ thể. | | VND | 42.799.003.677 |\n| 6 Ngân hàng Thương mại Cổ phần Quân đội - Chi nhánh Gia Định | | | | | | 70.000.000.000 | | 59.950.804.034 |\n| 240496.24.220.828327.TD | 8/30/2024 | Bổ sung vốn lưu động phục vụ sản xuất kinh doanh gạch ốp lát | 12 tháng | Được ghi trên từng Giấy nhận nợ | Tài sản thế chấp được quy định chi tiết tại các Hợp đồng thế chấp cụ thể. | | VND | 59.950.804.034 |\n| 7 Ngân hàng Thương mại Cổ phần An Bình - Chi nhánh Sài Gòn | | | | | | 100.000.000.000 | | 99.972.112.180 |\n| 274724TDSME029 | 9/21/2024 | Tài trợ bổ sung vốn lưu động phục vụ sản xuất kinh doanh gạch men các loại | 12 tháng | Được ghi trên từng Giấy nhận nợ | Tài sản thế chấp được quy định chi tiết tại các Hợp đồng thế chấp cụ thể. | | VND | 99.972.112.180 |\n| 8 Ngân hàng TNHH MTV Woori Việt Nam - Chi nhánh Bắc Ninh | | | | | | 80.000.000.000 | |

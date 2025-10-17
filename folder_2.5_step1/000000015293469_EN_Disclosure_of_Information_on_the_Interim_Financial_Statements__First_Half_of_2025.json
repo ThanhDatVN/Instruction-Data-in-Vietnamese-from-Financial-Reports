@@ -1,0 +1,832 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 07/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Công bố thông tin định kỳ báo cáo tài chính\nLoại nội dung: Văn bản\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nCÔNG TY CỔ PHẦN CÁN THÉP THÁI TRUNG\nThái Nguyên, ngày 07 tháng 8 năm 2025\nSố: CBTT-TTR\n\nCÔNG BỐ THÔNG TIN ĐỊNH KỲ BÁO CÁO TÀI CHÍNH\nKính gửi: Sở Giao dịch Chứng khoán Hà Nội,\n\nCăn cứ quy định tại Khoản 2, Điều 14 của Thông tư số 96/2020/TT-BTC ngày 16 tháng 11 năm 2020 của Bộ Tài chính, hướng dẫn công bố thông tin trên thị trường chứng khoán, Công ty Cổ phần Cán thép Thái Trung đã công bố Báo cáo tài chính bán niên 2025 (BCNH) tới Sở Giao dịch Chứng khoán Hà Nội như sau:\n\n1. Tên tổ chức: CÔNG TY CỔ PHẦN CÁN THÉP THÁI TRUNG\n   Mã chứng khoán: TTS\n   Địa chỉ: Tổ 13, Phường Cam Giá, Thành phố Thái Nguyên, Tỉnh Thái Nguyên\n   Điện thoại liên hệ: 02083735690 Fax: 02083735716\n   Email: thukvthaitrung@gmail.com Website: www.ttr.com.vn\n\n2. Nội dung công bố thông tin:\n   Báo cáo tài chính bán niên 2025\n   ☐ Báo cáo tài chính riêng (Tổ chức niêm yết không có công ty con và đơn vị kế toán cấp trên có các đơn vị trực thuộc)\n   ☐ Báo cáo tài chính hợp nhất (Tổ chức niêm yết có công ty con)\n   ☐ Báo cáo tài chính hợp nhất (Tổ chức niêm yết có đơn vị kế toán và bộ máy kế toán riêng)\n\n   Các trường hợp cần giải trình:\n   - Tổ chức kiểm toán đưa ra ý kiến không phải là ý kiến chấp nhận toàn phần đối với Báo cáo tài chính cho Báo cáo tài chính đã được kiểm toán của năm ................ Có ☐ Không ☒\n   - Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch từ 5% trở lên trước và sau kiểm toán, thay đổi từ lỗ sang lãi hoặc ngược lại đối với Báo cáo tài chính đã được kiểm toán trong ....\n     Có ☐ Không ☒\n     Tài liệu giải trình trong các trường hợp sau: Có ☐ Không ☒\n   - Lợi nhuận sau thuế thu nhập doanh nghiệp trong báo cáo kết quả kinh doanh của kỳ báo cáo thay đổi từ 10% trở lên so với báo cáo cùng kỳ năm trước.\n     Có ☐ Không ☒\n     Tài liệu giải trình trong các trường hợp sau: Có ☐ Không ☒\n   - Lợi nhuận sau thuế trong kỳ báo cáo là lỗ, thay đổi từ lãi cùng kỳ năm trước sang lỗ trong kỳ này hoặc ngược lại.\n     Có ☐ Không ☒\n     Tài liệu giải trình trong các trường hợp sau: Có ☐ Không ☒\n\n   Thông tin này đã được công bố trên trang web của Công ty vào ngày 07 tháng 8 năm 2025 tại đường dẫn www.ttr.com.vn.\n\n   Tài liệu đính kèm:\n   - Báo cáo tài chính bán niên năm 2025.\n   - Tài liệu giải trình Báo cáo tài chính bán niên năm 2025.\n\nNGƯỜI ĐƯỢC ỦY QUYỀN CÔNG BỐ THÔNG TIN\nNgười nhận: Như trên\nLưu trữ: Thư ký Công ty",
+    "questions": [
+      {
+        "question": "Tên đầy đủ của Công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Mã cổ phiếu của Công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Báo cáo tài chính này thuộc loại báo cáo nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Báo cáo tài chính bán niên 2025 được công bố vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty có công bố báo cáo tài chính hợp nhất không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổ chức kiểm toán đã đưa ra ý kiến chấp nhận toàn phần hay không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Website chính thức của Công ty là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Có sự thay đổi lớn về lợi nhuận sau thuế trong kỳ báo cáo so với cùng kỳ năm trước không?",
+        "difficulty": "Medium_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Báo cáo của Ban Giám đốc và Mục lục\nLoại nội dung: Văn bản\nBÁO CÁO TÀI CHÍNH BÁN NIÊN\nCÔNG TY CỔ PHẦN CÁN THÉP THÁI TRUNG\nCho giai đoạn từ 01/01/2025 đến 30/06/2025\nĐã soát xét\nCÔNG TY CỔ PHẦN CÁN THÉP THÁI TRUNG\nPhường Gia Sàng, Tỉnh Thái Nguyên, Việt Nam\n\nMỤC LỤC\nTrang\nBáo cáo của Ban Giám đốc 02-03\nBáo cáo soát xét thông tin tài chính bán niên 04-05\nBáo cáo tài chính bán niên đã soát xét 06-35\nBảng cân đối kế toán bán niên 06-07\nBáo cáo kết quả kinh doanh bán niên 08\nBáo cáo lưu chuyển tiền tệ bán niên 09-10\nThuyết minh báo cáo tài chính bán niên 11-35\nPhụ lục 01 Thông tin về các khoản vay ngắn hạn 32-34\nPhụ lục 02 Thông tin về các khoản vay dài hạn 35\n\nCÔNG TY CỔ PHẦN CÁN THÉP THÁI TRUNG\nPhường Gia Sàng, Tỉnh Thái Nguyên, Việt Nam\nBÁO CÁO CỦA BAN GIÁM ĐỐC\nBan Giám đốc Công ty Cổ phần Cán thép Thái Trung (“Công ty”) trình bày báo cáo này và Báo cáo tài chính bán niên của Công ty cho giai đoạn từ 01/01/2025 đến 30/06/2025.\n\nCÔNG TY\nCông ty Cổ phần Cán thép Thái Trung được thành lập và hoạt động theo Giấy chứng nhận đăng ký kinh doanh số 4600451322, cấp lần đầu bởi Sở Kế hoạch và Đầu tư tỉnh Thái Nguyên vào ngày 29 tháng 8 năm 2008 và sửa đổi gần đây nhất lần thứ 8 vào ngày 24 tháng 8 năm 2021.\nTrụ sở chính của Công ty đặt tại Phường Gia Sàng, Tỉnh Thái Nguyên, Việt Nam.\n\nHỘI ĐỒNG QUẢN TRỊ, BAN GIÁM ĐỐC VÀ BAN KIỂM SOÁT\nCác thành viên Hội đồng quản trị trong kỳ và đến ngày báo cáo là:\nÔng Hoàng Danh Sơn – Chủ tịch\nÔng Trần Tuấn – Thành viên\nÔng Nguyễn Đức Lợi – Thành viên\n\nCác thành viên Ban Giám đốc trong kỳ và đến ngày báo cáo là:\nÔng Trần Tuấn – Tổng Giám đốc\nÔng Nguyễn Đức Lợi – Phó Tổng Giám đốc\nÔng Trần Quốc Hùng – Phó Tổng Giám đốc (Được bổ nhiệm vào ngày 06 tháng 5 năm 2025)\n\nCác thành viên Ban Kiểm soát là:\nBà Đỗ Thúy Hương – Trưởng ban\nÔng Nguyễn Văn Giang – Thành viên\nBà Trần Nguyệt Anh – Thành viên\n\nNGƯỜI ĐẠI DIỆN PHÁP LUẬT\nNgười đại diện pháp luật của Công ty trong kỳ và tại ngày lập Báo cáo tài chính này là Ông Trần Tuấn – Tổng Giám đốc.\n\nKIỂM TOÁN VIÊN\nCác kiểm toán viên của Công ty TNHH Hãng Kiểm toán AASC đã thực hiện soát xét Báo cáo tài chính bán niên cho Công ty.",
+    "questions": [
+      {
+        "question": "Tên đầy đủ của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Trụ sở chính của Công ty đặt ở đâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ai là Chủ tịch Hội đồng quản trị của Công ty?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Ai là Tổng Giám đốc và người đại diện pháp luật của Công ty?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Công ty TNHH Hãng Kiểm toán AASC có vai trò gì đối với báo cáo này?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Ông Trần Quốc Hùng được bổ nhiệm vào vị trí Phó Tổng Giám đốc khi nào?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Báo cáo trách nhiệm của Ban Giám đốc và Báo cáo soát xét\nLoại nội dung: Văn bản\nCÔNG TY CỔ PHẦN CÁN THÉP THÁI TRUNG\nPhường Gia Sàng, Tỉnh Thái Nguyên, Việt Nam\nTUYÊN BỐ VỀ TRÁCH NHIỆM CỦA BAN GIÁM ĐỐC ĐỐI VỚI BÁO CÁO TÀI CHÍNH BÁN NIÊN\nBan Giám đốc chịu trách nhiệm về Báo cáo tài chính bán niên phản ánh trung thực và hợp lý tình hình tài chính của Công ty, kết quả hoạt động và lưu chuyển tiền tệ trong kỳ. Trong quá trình lập Báo cáo tài chính bán niên, Ban Giám đốc có trách nhiệm:\n- Xây dựng và duy trì hệ thống kiểm soát nội bộ được Ban Giám đốc và Hội đồng quản trị xác định là cần thiết để đảm bảo việc lập và trình bày Báo cáo tài chính bán niên không chứa đựng sai sót trọng yếu do gian lận hoặc nhầm lẫn;\n- Lựa chọn các chính sách kế toán phù hợp và áp dụng chúng một cách nhất quán;\n- Đưa ra các xét đoán và ước tính hợp lý và thận trọng;\n- Nêu rõ liệu các chuẩn mực kế toán áp dụng đã được tuân thủ hay chưa, với bất kỳ sai lệch trọng yếu nào được công bố và giải thích trong Báo cáo tài chính bán niên;\n- Lập Báo cáo tài chính bán niên trên cơ sở tuân thủ Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định pháp luật có liên quan đến việc lập và trình bày Báo cáo tài chính;\n- Lập Báo cáo tài chính bán niên trên cơ sở hoạt động liên tục trừ khi việc cho rằng Công ty sẽ không tiếp tục hoạt động kinh doanh là không phù hợp.\n\nBan Giám đốc chịu trách nhiệm đảm bảo rằng các sổ sách kế toán được lưu giữ để phản ánh tình hình tài chính của Công ty, với độ chính xác hợp lý tại mọi thời điểm và đảm bảo rằng Báo cáo tài chính bán niên tuân thủ các quy định hiện hành của Nhà nước. Ban Giám đốc chịu trách nhiệm bảo vệ tài sản của Công ty và do đó thực hiện các bước hợp lý để ngăn ngừa và phát hiện gian lận và các sai phạm khác.\nBan Giám đốc xác nhận rằng Báo cáo tài chính bán niên phản ánh trung thực và hợp lý tình hình tài chính tại ngày 30 tháng 6 năm 2025, kết quả hoạt động và lưu chuyển tiền tệ của Công ty cho giai đoạn từ 01 tháng 01 năm 2025 đến 30 tháng 06 năm 2025 theo Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định pháp luật có liên quan đến việc lập và trình bày Báo cáo tài chính bán niên.\n\nCác cam kết khác\nBan Giám đốc cam kết rằng Công ty tuân thủ Nghị định số 155/2020/NĐ-CP ngày 31 tháng 12 năm 2020 quy định chi tiết và hướng dẫn thi hành một số điều của Luật Chứng khoán và Công ty không vi phạm các nghĩa vụ công bố thông tin theo quy định tại Thông tư số 96/2020/TT-BTC ngày 16 tháng 11 năm 2020 của Bộ Tài chính hướng dẫn công bố thông tin trên Thị trường Chứng khoán và Thông tư số 68/2024/TT-BTC ngày 18 tháng 9 năm 2024 của Bộ Tài chính sửa đổi, bổ sung một số điều của Thông tư số 96/2020/TT-BTC.\n\nTổng Giám đốc\nThái Nguyên, ngày 05 tháng 8 năm 2025\n\nAASC kể từ năm 1991\nSố: 050825.003BCTC.KT2\n\nBÁO CÁO SOÁT XÉT THÔNG TIN TÀI CHÍNH BÁN NIÊN\nKính gửi: Các cổ đông, Hội đồng quản trị và Ban Giám đốc Công ty Cổ phần Cán thép Thái Trung\n\nChúng tôi đã soát xét Báo cáo tài chính bán niên của Công ty Cổ phần Cán thép Thái Trung được lập vào ngày 05 tháng 8 năm 2025, từ trang 06 đến trang 35 bao gồm Bảng cân đối kế toán bán niên tại ngày 30 tháng 6 năm 2025, Báo cáo kết quả kinh doanh bán niên, Báo cáo lưu chuyển tiền tệ bán niên và Thuyết minh Báo cáo tài chính bán niên cho giai đoạn từ 01 tháng 01 năm 2025 đến 30 tháng 06 năm 2025.\n\nTrách nhiệm của Ban Giám đốc\nBan Giám đốc chịu trách nhiệm về việc lập Báo cáo tài chính bán niên phản ánh trung thực và hợp lý theo Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định pháp luật có liên quan đến việc lập và trình bày Báo cáo tài chính bán niên và về kiểm soát nội bộ mà ban quản lý xác định là cần thiết để cho phép lập Báo cáo tài chính bán niên không có sai sót trọng yếu, do gian lận hoặc nhầm lẫn.\n\nTrách nhiệm của Kiểm toán viên\nTrách nhiệm của chúng tôi là đưa ra kết luận về các Báo cáo tài chính bán niên này dựa trên cuộc soát xét của chúng tôi. Chúng tôi đã thực hiện soát xét theo Chuẩn mực soát xét Việt Nam 2410, Soát xét thông tin tài chính bán niên do kiểm toán viên độc lập của đơn vị thực hiện.\nMột cuộc soát xét thông tin tài chính bán niên bao gồm việc thực hiện các thủ tục phỏng vấn, chủ yếu với những người chịu trách nhiệm về các vấn đề tài chính và kế toán, và áp dụng các thủ tục phân tích và soát xét khác. Một cuộc soát xét có phạm vi nhỏ hơn đáng kể so với một cuộc kiểm toán được thực hiện theo Chuẩn mực kiểm toán Việt Nam và do đó không cho phép chúng tôi có được sự đảm bảo rằng chúng tôi sẽ nhận biết được tất cả các vấn đề trọng yếu có thể được xác định trong một cuộc kiểm toán. Theo đó, chúng tôi không đưa ra ý kiến kiểm toán.\n\nKết luận của Kiểm toán viên\nTrên cơ sở cuộc soát xét của chúng tôi, không có vấn đề gì khiến chúng tôi tin rằng các Báo cáo tài chính bán niên kèm theo không phản ánh trung thực và hợp lý, trên tất cả các khía cạnh trọng yếu, tình hình tài chính của Công ty Cổ phần Cán thép Thái Trung tại ngày 30 tháng 6 năm 2025, cũng như kết quả hoạt động tài chính và lưu chuyển tiền tệ của Công ty cho giai đoạn sáu tháng kết thúc vào ngày đó theo Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định pháp luật có liên quan đến việc lập và trình bày Báo cáo tài chính bán niên.\n\n1 Lê Phụng Hiểu, Hà Nội, Việt Nam aasc.com.vn CÔNG TY KIỂM TOÁN AASC",
+    "questions": [
+      {
+        "question": "Ban Giám đốc có trách nhiệm gì trong việc lập Báo cáo tài chính bán niên?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty có tuân thủ các quy định về công bố thông tin trên thị trường chứng khoán không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Cuộc soát xét của kiểm toán viên có cung cấp ý kiến kiểm toán đầy đủ không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Theo kết luận của kiểm toán viên, Báo cáo tài chính bán niên có phản ánh trung thực và hợp lý tình hình tài chính của Công ty không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu mục đích của việc soát xét thông tin tài chính bán niên.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đảm bảo của thông tin tài chính từ một cuộc soát xét so với một cuộc kiểm toán.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Báo cáo soát xét thông tin tài chính bán niên (Đoạn nhấn mạnh)\nLoại nội dung: Văn bản\nĐoạn nhấn mạnh\nTại ngày 30 tháng 6 năm 2025, nợ ngắn hạn mã số 310 của Công ty đã vượt quá tài sản ngắn hạn mã số 100 là 339,67 tỷ VND và nợ phải trả cao hơn 2,72 lần vốn chủ sở hữu, lỗ lũy kế mã số 421 là 201,1 tỷ VND, tương đương 39,59% vốn chủ sở hữu mã số 411. Tình hình này, cùng với các vấn đề được nêu trong Thuyết minh số 01, cho thấy sự tồn tại của một yếu tố không chắc chắn trọng yếu gây nghi ngờ đáng kể về khả năng Công ty có thể hoạt động liên tục. Báo cáo tài chính bán niên cho giai đoạn từ 01 tháng 01 năm 2025 đến 30 tháng 06 năm 2025 vẫn được trình bày trên cơ sở giả định hoạt động liên tục.\nKết luận của chúng tôi không bị sửa đổi liên quan đến vấn đề này.\n\nCông ty TNHH Hãng Kiểm toán AASC\nPhó Tổng Giám đốc\nKiểm toán viên Đăng ký\nSố 0743-2023-002-1\nHà Nội, ngày 05 tháng 8 năm 2025\n\nSection: Bảng cân đối kế toán bán niên (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n\nBẢNG CÂN ĐỐI KẾ TOÁN BÁN NIÊN\nTại ngày 30 tháng 6 năm 2025\n\n| Mã số | CHỈ TIÊU | Thuyết minh | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|------|-----------|-------------|-------------------|-------------------|\n| 100  | A. TÀI SẢN NGẮN HẠN | | 495.637.589.584 | 608.360.900.973 |\n| 110  | I. Tiền và các khoản tương đương tiền | 3 | 439.403.363 | 916.829.794 |\n| 111  | 1. Tiền | | 439.403.363 | 916.829.794 |\n| 130  | III. Các khoản phải thu ngắn hạn | | 462.572.226.208 | 572.548.447.612 |\n| 131  | 1. Phải thu ngắn hạn của khách hàng | 4 | 460.968.523.828 | 571.589.187.601 |\n| 132  | 2. Trả trước cho người bán ngắn hạn | 5 | 1.519.177.318 | 868.764.958 |\n| 136  | 3. Phải thu ngắn hạn khác | 6 | 258.806.015 | 264.776.006 |\n| 137  | 4. Dự phòng phải thu ngắn hạn khó đòi | 7 | 174.280.953 | 174.280.953 |\n| 140  | IV. Hàng tồn kho | 8 | 30.904.193.354 | 32.483.062.090 |\n| 141  | 1. Hàng tồn kho | | 30.904.193.354 | 32.483.062.090 |\n| 150  | V. Tài sản ngắn hạn khác | | 1.721.766.659 | 2.412.561.477 |\n| 151  | 1. Chi phí trả trước ngắn hạn | 11 | 1.721.766.659 | 2.412.561.477 |",
+    "questions": [
+      {
+        "question": "Tại ngày 30 tháng 6 năm 2025, tổng tài sản ngắn hạn của Công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mục nào trong tài sản ngắn hạn giảm nhiều nhất về giá trị tuyệt đối từ 01/01/2025 đến 30/06/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Dựa trên Bảng cân đối kế toán, nêu các chỉ số tài chính cho thấy Công ty đang đối mặt với rủi ro hoạt động liên tục.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm tài sản ngắn hạn đến khả năng thanh khoản của Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Bảng cân đối kế toán bán niên (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n\nBẢNG CÂN ĐỐI KẾ TOÁN BÁN NIÊN\nTại ngày 30 tháng 6 năm 2025\n\n| Mã số | CHỈ TIÊU | Thuyết minh | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|------|-----------|-------------|-------------------|-------------------|\n| 200  | B. TÀI SẢN DÀI HẠN | | 646.570.312.303 | 680.272.184.215 |\n| 220  | II. Tài sản cố định | | 622.449.541.221 | 656.804.056.996 |\n| 221  | 1. Tài sản cố định hữu hình | 9 | 622.106.833.708 | 656.804.056.996 |\n| 222  | - Nguyên giá | | 1.258.876.499.603 | 1.258.722.041.923 |\n| 223  | - Giá trị hao mòn lũy kế | | 636.769.665.895 | 601.917.984.927 |\n| 227  | 2. Tài sản cố định vô hình | 10 | 342.707.513 | - |\n| 228  | - Nguyên giá | | 596.000.000 | 246.000.000 |\n| 229  | - Giá trị hao mòn lũy kế | | 253.292.487 | 246.000.000 |\n| 260  | VI. Tài sản dài hạn khác | | 24.120.771.082 | 23.468.127.219 |\n| 261  | 1. Chi phí trả trước dài hạn | 11 | 24.120.771.082 | 23.468.127.219 |\n| 270  | TỔNG CỘNG TÀI SẢN | | 1.142.207.901.887 | 1.288.633.085.188 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định hữu hình tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tài sản cố định vô hình có sự thay đổi nào từ đầu năm đến cuối quý 2 năm 2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh nguyên giá và giá trị hao mòn lũy kế của tài sản cố định hữu hình giữa hai thời điểm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản dài hạn của Công ty trong 6 tháng đầu năm 2025.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm tài sản dài hạn đến khả năng sản xuất và hoạt động của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa vào thông tin tài sản dài hạn, đánh giá chiến lược sử dụng vốn của Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Bảng cân đối kế toán bán niên (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n\nBẢNG CÂN ĐỐI KẾ TOÁN BÁN NIÊN\nTại ngày 30 tháng 6 năm 2025\n\n| Mã số | CHỈ TIÊU | Thuyết minh | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|------|-----------|-------------|-------------------|-------------------|\n| 300  | C. NỢ PHẢI TRẢ | | 835.310.704.453 | 983.373.219.143 |\n| 310  | I. Nợ ngắn hạn | | 835.310.704.453 | 983.373.219.143 |\n| 311  | 1. Phải trả người bán ngắn hạn | 12 | 548.410.549.587 | 633.363.944.168 |\n| 313  | 2. Thuế và các khoản phải nộp nhà nước | 13 | 8.306.681.819 | 12.738.598.873 |\n| 314  | 3. Phải trả người lao động | | 11.203.279.645 | 6.517.088.305 |\n| 315  | 4. Chi phí phải trả ngắn hạn | 14 | 315.918.619 | 293.013.611 |\n| 319  | 5. Phải trả ngắn hạn khác | 15 | 417.258.301 | 244.640.919 |\n| 320  | 6. Vay và nợ thuê tài chính ngắn hạn | 16 | 272.148.596.482 | 330.215.933.267 |\n| 321  | 7. Dự phòng phải trả ngắn hạn | 17 | 500.000.000 | - |\n| 322  | 8. Quỹ khen thưởng, phúc lợi | | 8.420.000 | - |\n| 400  | D. VỐN CHỦ SỞ HỮU | | 306.897.197.434 | 305.259.866.045 |\n| 410  | I. Vốn chủ sở hữu | 18 | 306.897.197.434 | 305.259.866.045 |\n| 411  | 1. Vốn đầu tư của chủ sở hữu | | 508.000.001.467 | 508.000.001.467 |\n| 411a | - Cổ phiếu phổ thông có quyền biểu quyết | | 508.000.001.467 | 508.000.001.467 |\n| 421  | 2. Lợi nhuận sau thuế chưa phân phối | | -201.102.804.033 | -202.740.135.422 |\n| 421a | - LNST chưa phân phối lũy kế đến cuối kỳ trước | | -202.740.135.422 | -213.962.904.759 |\n| 421b | - LNST chưa phân phối kỳ này | | 1.637.331.389 | 11.222.769.337 |\n| 440  | TỔNG CỘNG NGUỒN VỐN | | 1.142.207.901.887 | 1.288.633.085.188 |\n\nNgười lập biểu\nNguyễn Thị Huệ\nKế toán trưởng\nNguyễn Thị Hoa\nTổng Giám đốc\nMai Trần Tuấn\nThái Nguyên, ngày 05 tháng 8 năm 2025",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối của Công ty tại cuối kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng nợ ngắn hạn giữa ngày 30/06/2025 và 01/01/2025, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ lệ nợ phải trả trên vốn chủ sở hữu tại ngày 30 tháng 6 năm 2025.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro tài chính của Công ty dựa trên cơ cấu nợ và vốn chủ sở hữu hiện tại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của lỗ lũy kế đến tình hình tài chính của Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Báo cáo kết quả kinh doanh bán niên\nLoại nội dung: Bảng\n\nBÁO CÁO KẾT QUẢ KINH DOANH BÁN NIÊN\nCho giai đoạn từ 01/01/2025 đến 30/06/2025\n\n| Mã số | CHỈ TIÊU | Thuyết minh | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|------|-----------|-------------|-----------------------------|-----------------------------|\n| 01   | 1. Doanh thu bán hàng và cung cấp dịch vụ | 20 | 3.127.945.686.875 | 2.620.377.399.935 |\n| 02   | 2. Các khoản giảm trừ doanh thu | | - | - |\n| 10   | 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | | 3.127.945.686.875 | 2.620.377.399.935 |\n| 11   | 4. Giá vốn hàng bán | 21 | 3.107.056.714.230 | 2.585.346.405.416 |\n| 20   | 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | | 20.888.972.645 | 35.030.994.519 |\n| 21   | 6. Doanh thu hoạt động tài chính | 22 | 899.749 | 1.772.824 |\n| 22   | 7. Chi phí tài chính | 23 | 11.647.431.591 | 16.738.080.840 |\n| 23   | Trong đó: Chi phí lãi vay | | 11.647.431.591 | 16.677.489.847 |\n| 25   | 8. Chi phí bán hàng | 24 | 143.667.462 | 116.321.289 |\n| 26   | 9. Chi phí quản lý doanh nghiệp | 25 | 6.588.602.132 | 6.296.631.601 |\n| 30   | 10. Lợi nhuận thuần từ hoạt động kinh doanh | | 2.510.171.209 | 11.881.733.613 |\n| 31   | 11. Thu nhập khác | 26 | 22.610.227 | 571.786.563 |\n| 32   | 12. Chi phí khác | 27 | 381.969.760 | 22.599.943 |\n| 40   | 13. Lợi nhuận khác | | -359.359.533 | 549.186.620 |\n| 50   | 14. Tổng lợi nhuận kế toán trước thuế | | 2.150.811.676 | 12.430.920.233 |\n| 51   | 15. Chi phí thuế TNDN hiện hành | 28 | 513.480.287 | 2.495.269.835 |\n| 52   | 16. Chi phí thuế TNDN hoãn lại | | - | - |\n| 60   | 17. Lợi nhuận sau thuế thu nhập doanh nghiệp | | 1.637.331.389 | 9.935.650.398 |\n| 70   | 18. Lãi cơ bản trên cổ phiếu | 29 | 32 | 196 |\n\nNgười lập biểu\nNguyễn Thị Huệ\nKế toán trưởng\nNguyễn Thị Hoa\nTổng Giám đốc\nMai Trần Tuấn\nThái Nguyên, ngày 05 tháng 8 năm 2025",
+    "questions": [
+      {
+        "question": "Tổng doanh thu thuần về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa 6 tháng đầu năm 2025 và 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí tài chính và chi phí lãi vay có xu hướng thay đổi như thế nào giữa hai kỳ báo cáo?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ suất lợi nhuận sau thuế (Net Profit Margin) cho 6 tháng đầu năm 2025 và 2024. Nhận xét về sự thay đổi.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của chi phí khác tăng đột biến đến tổng lợi nhuận kế toán trước thuế.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Báo cáo lưu chuyển tiền tệ bán niên\nLoại nội dung: Bảng\n\nBÁO CÁO LƯU CHUYỂN TIỀN TỆ BÁN NIÊN\nCho giai đoạn từ 01/01/2025 đến 30/06/2025\n(Phương pháp gián tiếp)\n\n| Mã số | CHỈ TIÊU | Thuyết minh | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|------|-----------|-------------|-----------------------------|-----------------------------|\n| I.   | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | | |\n| 01   | 1. Lợi nhuận trước thuế | | 2.150.811.676 | 12.430.920.233 |\n|      | 2. Điều chỉnh cho | | | |\n| 02   | - Khấu hao và phân bổ tài sản cố định và bất động sản đầu tư | | 31.969.069.775 | 28.693.819.370 |\n| 03   | - Các khoản dự phòng | | 500.000.000 | 1.500.000.000 |\n| 05   | - Lãi/lỗ từ hoạt động đầu tư | | -899.749 | -1.772.824 |\n| 06   | - Chi phí lãi vay | | 11.647.431.591 | 16.677.489.847 |\n| 08   | 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | | 49.266.413.293 | 59.300.456.626 |\n| 09   | - Tăng/giảm các khoản phải thu | | -109.762.214.041 | -87.657.874.515 |\n| 10   | - Tăng/giảm hàng tồn kho | | -1.578.868.736 | 34.023.994.331 |\n| 11   | - Tăng/giảm các khoản phải trả (trừ lãi vay và thuế TNDN) | | 87.459.683.979 | 95.418.329.293 |\n| 12   | - Tăng/giảm chi phí trả trước | | -38.150.955 | -765.123.266 |\n| 14   | - Tiền lãi vay đã trả | | -11.672.958.083 | -17.560.402.734 |\n| 15   | - Thuế TNDN đã nộp | | -3.531.867.721 | -3.353.729.482 |\n| 16   | - Các khoản thu khác từ hoạt động kinh doanh | | 8.420.000 | - |\n| 20   | Lưu chuyển tiền thuần từ hoạt động kinh doanh | | 58.203.564.605 | 12.887.908.123 |\n| II.  | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | | |\n| 21   | 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | | -614.554.000 | - |\n| 27   | 2. Tiền lãi và cổ tức được nhận | | 899.749 | 1.772.824 |\n| 30   | Lưu chuyển tiền thuần từ hoạt động đầu tư | | -513.654.251 | 1.772.824 |\n| III. | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | | |\n| 33   | 1. Tiền thu từ đi vay | | 343.750.623.392 | 378.500.999.725 |\n| 34   | 2. Tiền chi trả nợ gốc vay | | -401.817.960.177 | -395.941.515.019 |\n| 40   | Lưu chuyển tiền thuần từ hoạt động tài chính | | -58.067.336.785 | -17.440.515.294 |\n|      | | | | |\n| 50   | Lưu chuyển tiền thuần trong kỳ | | -477.426.431 | -4.550.834.347 |\n| 60   | Tiền và các khoản tương đương tiền đầu kỳ | | 916.829.794 | 6.636.203.371 |\n| 70   | Tiền và các khoản tương đương tiền cuối kỳ | 3 | 439.403.363 | 2.085.369.024 |\n\nNgười lập biểu\nNguyễn Thị Huệ\nKế toán trưởng\nNguyễn Thị Hoa\nTổng Giám đốc\nMai Trần Tuấn\nThái Nguyên, ngày 05 tháng 8 năm 2025",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lưu chuyển tiền từ hoạt động đầu tư trong 6 tháng đầu năm 2025 là dương hay âm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động tài chính giữa 6 tháng đầu năm 2025 và 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tạo tiền từ hoạt động kinh doanh của Công ty trong 6 tháng đầu năm 2025 so với cùng kỳ năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân chính dẫn đến lưu chuyển tiền thuần âm trong kỳ báo cáo.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Thông tin chung)\nLoại nội dung: Văn bản\n\nTHUYẾT MINH BÁO CÁO TÀI CHÍNH BÁN NIÊN\nCho giai đoạn từ 01/01/2025 đến 30/06/2025\n\n1. THÔNG TIN CHUNG\nHình thức sở hữu\nCông ty Cổ phần Cán thép Thái Trung được thành lập và hoạt động theo Giấy chứng nhận đăng ký kinh doanh số 4600451322, cấp lần đầu bởi Sở Kế hoạch và Đầu tư tỉnh Thái Nguyên vào ngày 29 tháng 8 năm 2008 và sửa đổi gần đây nhất lần thứ 8 vào ngày 24 tháng 8 năm 2021.\nTrụ sở chính của Công ty đặt tại Phường Gia Sàng, Tỉnh Thái Nguyên, Việt Nam.\nVốn điều lệ đã đăng ký của Công ty là 508.000.001.467 VND, với vốn điều lệ thực góp tính đến ngày 30 tháng 6 năm 2025 là 508.000.001.467 VND, tương đương 50.800.000 cổ phiếu với mệnh giá 10.000 VND mỗi cổ phiếu.\nTại ngày 30 tháng 6 năm 2025, Công ty có tổng cộng 248 nhân viên (tại ngày 01 tháng 01 năm 2025 là 249 nhân viên).\n\nLĩnh vực kinh doanh\nSản xuất công nghiệp.\n\nHoạt động kinh doanh\nHoạt động kinh doanh chính của Công ty bao gồm sản xuất sắt và thép.\n\nHoạt động của Công ty trong kỳ kế toán ảnh hưởng đến Báo cáo tài chính bán niên\nTại ngày 30 tháng 6 năm 2025, Công ty ghi nhận lỗ lũy kế là 201,1 tỷ VND. Đồng thời, tổng nợ phải trả cao hơn 2,72 lần vốn chủ sở hữu và nợ ngắn hạn vượt quá tài sản ngắn hạn là 339,67 tỷ VND. Những điều kiện này cho thấy sự tồn tại của một yếu tố không chắc chắn trọng yếu có thể gây nghi ngờ đáng kể về khả năng Công ty có thể hoạt động liên tục. Theo đó, khả năng hoạt động liên tục của Công ty phụ thuộc vào khả năng sinh lời trong tương lai và/hoặc khả năng nhận được hỗ trợ tài chính từ các bên khác.\n\nHiện tại, Công ty có một khách hàng chủ chốt mua số lượng lớn hàng hóa là Tổng Công ty Cổ phần Gang thép Thái Nguyên. Đây cũng là nhà cung cấp nguyên vật liệu chính với các điều khoản thanh toán ưu đãi để giảm áp lực vốn lưu động của Công ty. Sự hỗ trợ cả về cung cấp đầu vào và tiêu thụ đầu ra đã giúp kết quả sản xuất kinh doanh của Công ty có lợi nhuận trong những năm gần đây, với lỗ lũy kế giảm từ 202,74 tỷ VND tại ngày 01 tháng 01 năm 2025 xuống còn 201,1 tỷ VND tại ngày 30 tháng 6 năm 2025. Ngoài ra, Công ty nhận được hạn mức tín dụng hàng năm từ Ngân hàng TMCP Đầu tư và Phát triển Việt Nam, đảm bảo đủ vốn lưu động cho hoạt động.\nTrên cơ sở này, Ban Giám đốc tin rằng việc lập Báo cáo tài chính bán niên cho kỳ kế toán từ 01 tháng 01 năm 2025 đến 30 tháng 06 năm 2025 trên cơ sở giả định hoạt động liên tục là phù hợp.",
+    "questions": [
+      {
+        "question": "Vốn điều lệ đăng ký và thực góp của Công ty là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lĩnh vực kinh doanh chính của Công ty là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lỗ lũy kế của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu những yếu tố tài chính chính gây ra nghi ngờ về khả năng hoạt động liên tục của Công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Ai là khách hàng và nhà cung cấp chủ chốt hỗ trợ Công ty trong hoạt động kinh doanh?",
+        "difficulty": "Medium_NER"
+      },
+      {
+        "question": "Đánh giá lý do Ban Giám đốc vẫn tin rằng giả định hoạt động liên tục là phù hợp, mặc dù có các vấn đề tài chính nêu trên.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của mối quan hệ với Tổng Công ty Cổ phần Gang thép Thái Nguyên đối với Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Hệ thống và chính sách kế toán)\nLoại nội dung: Văn bản\n\n2. HỆ THỐNG VÀ CHÍNH SÁCH KẾ TOÁN\n2.1. Kỳ kế toán và đơn vị tiền tệ kế toán\nKỳ kế toán hàng năm bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12.\nCông ty duy trì sổ sách kế toán bằng VND.\n\n2.2. Chuẩn mực và chính sách kế toán áp dụng\nChính sách kế toán áp dụng\nCông ty áp dụng Chế độ kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính và Thông tư số 53/2016/TT-BTC ngày 21 tháng 3 năm 2016 của Bộ Tài chính sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC.\n\nTuyên bố tuân thủ các chuẩn mực kế toán và hệ thống kế toán\nCông ty áp dụng Chuẩn mực kế toán Việt Nam và các tài liệu hướng dẫn bổ sung do Nhà nước ban hành. Báo cáo tài chính được lập và trình bày phù hợp với các quy định của từng chuẩn mực và tài liệu hướng dẫn bổ sung cũng như với các Chuẩn mực và Hệ thống kế toán hiện hành.\n\n2.3. Ước tính kế toán\nViệc lập Báo cáo tài chính bán niên phù hợp với Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định pháp luật liên quan đến lập báo cáo tài chính yêu cầu Ban Giám đốc đưa ra các ước tính và giả định ảnh hưởng đến số liệu được báo cáo về nợ phải trả, tài sản và các thuyết minh về nợ tiềm tàng và tài sản tại ngày lập báo cáo tài chính bán niên và số liệu được báo cáo về doanh thu và chi phí trong kỳ kế toán.\nCác ước tính và giả định có ảnh hưởng trọng yếu trong Báo cáo tài chính bán niên bao gồm:\n- Dự phòng nợ phải thu khó đòi\n- Dự phòng phải trả\n- Ước tính phân bổ chi phí trả trước\n- Ước tính thời gian sử dụng hữu ích của tài sản cố định\n- Ước tính thuế thu nhập.\nCác ước tính và giả định đó được đánh giá liên tục. Chúng dựa trên kinh nghiệm trong quá khứ và các yếu tố khác, bao gồm kỳ vọng về các sự kiện trong tương lai có thể có tác động tài chính đến Công ty và được Ban Giám đốc đánh giá là hợp lý trong các tình huống.\n\n2.4. Công cụ tài chính\nGhi nhận ban đầu\nTài sản tài chính\nTài sản tài chính của Công ty bao gồm tiền, các khoản phải thu thương mại, các khoản phải thu khác. Tại thời điểm ghi nhận ban đầu, tài sản tài chính được xác định bằng giá mua/chi phí phát hành cộng với các chi phí khác liên quan trực tiếp đến việc mua và phát hành các tài sản đó.\n\nNợ phải trả tài chính\nNợ phải trả tài chính của Công ty bao gồm các khoản vay, các khoản phải trả thương mại, các khoản phải trả khác và chi phí phải trả. Tại thời điểm ghi nhận ban đầu, nợ phải trả tài chính được xác định bằng giá phát hành cộng với các chi phí khác liên quan trực tiếp đến việc phát hành các khoản nợ đó.\n\nĐo lường sau ghi nhận ban đầu\nTài sản tài chính và nợ phải trả tài chính không được định giá lại theo giá trị hợp lý vào cuối kỳ kế toán vì Thông tư số 210/2009/TT-BTC và các quy định pháp luật hiện hành yêu cầu trình bày Báo cáo tài chính và Thuyết minh về các công cụ tài chính nhưng không cung cấp hướng dẫn liên quan nào cho việc đánh giá và ghi nhận giá trị hợp lý của tài sản tài chính và nợ phải trả tài chính.\n\n2.5. Tiền\nTiền bao gồm tiền mặt, tiền gửi không kỳ hạn.\n\n2.6. Các khoản phải thu\nCác khoản phải thu được ghi nhận chi tiết theo thời gian đáo hạn, đối tượng phải thu, loại tiền tệ và các yếu tố khác theo yêu cầu quản lý của Công ty. Các khoản phải thu được phân loại thành phải thu ngắn hạn hoặc phải thu dài hạn trên báo cáo tài chính bán niên theo thời hạn còn lại của chúng tại ngày báo cáo.\nKhoản dự phòng nợ phải thu khó đòi được lập cho các khoản phải thu quá hạn theo hợp đồng kinh tế, hợp đồng cho vay, cam kết hợp đồng hoặc hối phiếu và cho các khoản phải thu chưa đến hạn nhưng khó có khả năng thu hồi. Theo đó, dự phòng cho các khoản nợ quá hạn được dựa trên ngày đáo hạn quy định trong hợp đồng bán hàng ban đầu, không bao gồm việc tái cơ cấu nợ giữa các bên hợp đồng và trường hợp các khoản nợ chưa đến hạn nhưng con nợ đang phá sản, giải thể, hoặc mất tích và bỏ trốn hoặc ước tính các khoản lỗ có thể xảy ra.\n\n2.7. Hàng tồn kho\nHàng tồn kho được ghi nhận ban đầu theo giá gốc bao gồm giá mua, chi phí chế biến và các chi phí khác phát sinh để đưa hàng tồn kho đến địa điểm và trạng thái hiện tại tại thời điểm ghi nhận ban đầu. Sau ghi nhận ban đầu, tại ngày báo cáo, hàng tồn kho được trình bày theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được.\nGiá trị thuần có thể thực hiện được ước tính dựa trên giá bán của hàng tồn kho trừ đi chi phí ước tính để hoàn thành sản phẩm và chi phí ước tính cần thiết cho việc tiêu thụ chúng.\nGiá gốc hàng tồn kho được tính theo phương pháp bình quân gia quyền.\nHàng tồn kho được ghi sổ theo phương pháp kê khai thường xuyên.\n\nPhương pháp đánh giá sản phẩm dở dang cuối kỳ:\n- Giá trị sản phẩm dở dang được ghi nhận dựa trên chi phí thực tế phát sinh cho từng sản phẩm chưa hoàn thành.\nDự phòng giảm giá hàng tồn kho được lập vào cuối kỳ dựa trên phần chênh lệch giữa giá gốc của hàng tồn kho và giá trị thuần có thể thực hiện được của chúng.",
+    "questions": [
+      {
+        "question": "Công ty áp dụng kỳ kế toán hàng năm như thế nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty áp dụng hệ thống chuẩn mực kế toán nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu ít nhất ba ước tính kế toán có ảnh hưởng trọng yếu đến Báo cáo tài chính bán niên.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty đo lường tài sản tài chính và nợ phải trả tài chính sau ghi nhận ban đầu như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản phải thu được phân loại thành ngắn hạn hay dài hạn dựa trên yếu tố nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thảo luận về các điều kiện để lập dự phòng nợ phải thu khó đòi.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Giải thích cách Công ty xác định giá trị hàng tồn kho và dự phòng giảm giá hàng tồn kho.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không định giá lại công cụ tài chính theo giá trị hợp lý đến thông tin trên Báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Chính sách kế toán khác)\nLoại nội dung: Văn bản\n\n2.8. Tài sản cố định\nTài sản cố định hữu hình và vô hình ban đầu được ghi nhận theo nguyên giá. Trong thời gian sử dụng, tài sản cố định hữu hình và vô hình được ghi nhận theo giá gốc, khấu hao lũy kế và giá trị còn lại.\n\nĐo lường sau ghi nhận ban đầu\nNếu các chi phí này làm tăng lợi ích kinh tế trong tương lai thu được từ việc sử dụng tài sản cố định hữu hình được mở rộng đến các điều kiện tiêu chuẩn ban đầu của chúng, các chi phí này được vốn hóa như một khoản tăng thêm vào nguyên giá. Các chi phí khác phát sinh sau khi tài sản cố định hữu hình đã được đưa vào hoạt động như chi phí sửa chữa, bảo trì và đại tu được ghi nhận vào Báo cáo kết quả kinh doanh trong kỳ mà các chi phí đó phát sinh.\nĐối với máy móc thiết bị liên quan trực tiếp đến sản xuất, Công ty áp dụng phương pháp khấu hao theo sản lượng từ ngày 01 tháng 01 năm 2015, phù hợp với Công văn số 19139/BTCTCDN ngày 23 tháng 12 năm 2015 của Bộ Tài chính về phương pháp khấu hao của Công ty Cổ phần Cán thép Thái Trung.\nTrừ máy móc thiết bị sản xuất được khấu hao theo phương pháp sản lượng bao gồm hệ thống dây chuyền cán thép, hệ thống cẩu trục, v.v., các tài sản cố định khác được khấu hao theo phương pháp đường thẳng với thời gian sử dụng hữu ích ước tính như sau:\n- Nhà cửa, vật kiến trúc: 05 - 50 năm\n- Máy móc, thiết bị (Bao gồm máy phay, máy tiện, cân điện tử,...): 05 - 20 năm\n- Phương tiện vận tải, thiết bị truyền dẫn: 06 - 10 năm\n- Thiết bị văn phòng và đồ dùng nội thất: 03 - 05 năm\n- Phần mềm quản lý: 03 - 05 năm\n\n2.9. Thuê hoạt động\nThuê hoạt động là việc cho thuê tài sản cố định mà phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu được giữ lại bởi bên cho thuê. Các khoản thanh toán theo hợp đồng thuê hoạt động được ghi nhận vào báo cáo kết quả kinh doanh theo phương pháp đường thẳng trong suốt thời gian thuê.\n\n2.10. Chi phí trả trước\nCác chi phí phát sinh nhưng liên quan đến kết quả hoạt động kinh doanh của nhiều kỳ kế toán được ghi nhận là chi phí trả trước và được phân bổ vào kết quả hoạt động kinh doanh trong các kỳ kế toán tiếp theo.\nViệc tính toán và phân bổ chi phí trả trước dài hạn vào chi phí hoạt động trong từng kỳ kế toán phải dựa trên bản chất của các chi phí đó để lựa chọn phương pháp và tiêu chí phân bổ hợp lý.\nCác loại chi phí trả trước bao gồm:\n- Công cụ, dụng cụ bao gồm tài sản do Công ty nắm giữ để sử dụng trong quá trình hoạt động kinh doanh thông thường, với nguyên giá mỗi tài sản dưới 30 triệu VND và do đó không đủ điều kiện ghi nhận là tài sản cố định theo quy định hiện hành. Nguyên giá công cụ, dụng cụ được phân bổ theo phương pháp đường thẳng trong thời gian từ 03 đến 36 tháng.\n- Chi phí vật liệu phụ dùng cho sản xuất được phân bổ theo định mức tiêu hao kỹ thuật và kinh tế.\n- Các chi phí trả trước khác được ghi nhận theo giá gốc và phân bổ theo phương pháp đường thẳng theo các phương pháp và tiêu chí phân bổ hợp lý.\n\n2.11. Các khoản phải trả\nCác khoản phải trả được ghi nhận chi tiết theo thời gian đáo hạn, đối tượng phải trả, loại tiền tệ và các yếu tố khác theo yêu cầu quản lý của Công ty. Các khoản phải trả được phân loại thành phải trả ngắn hạn hoặc phải trả dài hạn trên báo cáo tài chính theo thời hạn còn lại của chúng tại ngày báo cáo.\n\n2.12. Các khoản vay\nCác khoản vay được ghi nhận chi tiết theo đối tượng cho vay, hợp đồng vay và điều khoản vay. Trong trường hợp các khoản vay hoặc nợ phải trả bằng ngoại tệ, chúng được ghi nhận chi tiết theo loại tiền tệ.\n\n2.13. Chi phí đi vay\nChi phí đi vay được ghi nhận vào chi phí hoạt động trong kỳ, trừ trường hợp chi phí đi vay liên quan trực tiếp đến việc xây dựng hoặc sản xuất tài sản dở dang được vốn hóa vào giá gốc tài sản đó, khi đáp ứng đủ các điều kiện theo quy định tại Chuẩn mực kế toán số 16 Chi phí đi vay. Bên cạnh đó, đối với các khoản vay phục vụ xây dựng tài sản cố định, bất động sản đầu tư, tiền lãi được vốn hóa ngay cả khi thời gian xây dựng dưới 12 tháng.\n\n2.14. Chi phí phải trả\nChi phí phải trả bao gồm các khoản phải trả hàng hóa hoặc dịch vụ nhận được từ nhà cung cấp hoặc cung cấp cho khách hàng trong kỳ báo cáo, nhưng chưa thanh toán và các khoản phải trả khác như chi phí lãi vay hàng năm, v.v. được ghi nhận là chi phí hoạt động của kỳ báo cáo.\n\n2.15. Dự phòng phải trả\nDự phòng phải trả chỉ được ghi nhận khi đáp ứng đủ các điều kiện sau:\n- Công ty có nghĩa vụ nợ hiện tại (nghĩa vụ pháp lý hoặc nghĩa vụ liên đới) do kết quả của các sự kiện trong quá khứ;\n- Có khả năng giảm lợi ích kinh tế dẫn đến yêu cầu thanh toán nợ;\n- Nghĩa vụ nợ có thể được ước tính một cách đáng tin cậy.\nGiá trị được ghi nhận của một khoản dự phòng phải trả là ước tính hợp lý nhất về số tiền sẽ được thanh toán cho nghĩa vụ nợ hiện tại tại cuối kỳ kế toán. Chỉ các chi phí liên quan đến khoản dự phòng phải trả được lập ban đầu mới được bù trừ bằng khoản dự phòng phải trả đó. Các khoản dự phòng phải trả được ghi nhận là chi phí hoạt động của kỳ kế toán. Phần chênh lệch khi khoản dự phòng được lập trong kỳ kế toán trước chưa được sử dụng hết lớn hơn khoản dự phòng cần lập trong kỳ báo cáo hiện tại sẽ được hoàn nhập để giảm chi phí sản xuất kinh doanh trong kỳ.\n\n2.16. Vốn chủ sở hữu\nVốn chủ sở hữu được ghi nhận theo vốn thực góp của chủ sở hữu. Lợi nhuận giữ lại được sử dụng để trình bày kết quả hoạt động kinh doanh (lãi, lỗ sau thuế thu nhập doanh nghiệp) và phân phối lợi nhuận hoặc xử lý lỗ của Công ty. Cổ tức phải trả cho các cổ đông được ghi nhận là một khoản phải trả trong Bảng cân đối kế toán sau khi có thông báo chi trả cổ tức từ Ban Giám đốc và thông báo về ngày chốt danh sách chi trả cổ tức của Trung tâm Lưu ký Chứng khoán Việt Nam.\n\n2.17. Doanh thu\nDoanh thu được ghi nhận trong phạm vi mà có khả năng các lợi ích kinh tế sẽ chảy vào Công ty và doanh thu có thể được đo lường một cách đáng tin cậy bất kể thời điểm thanh toán. Doanh thu được đo lường theo giá trị hợp lý của khoản đối ứng nhận được, không bao gồm các khoản chiết khấu, giảm giá và hàng bán bị trả lại. Các điều kiện ghi nhận cụ thể sau đây cũng phải được đáp ứng khi ghi nhận doanh thu:\nDoanh thu từ bán hàng\n- Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm, hàng hóa đã được chuyển giao cho người mua;\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như chủ sở hữu hàng hóa, hoặc quyền kiểm soát hàng hóa;\nDoanh thu từ cung cấp dịch vụ\n- Tỷ lệ hoàn thành của giao dịch tại ngày Bảng cân đối kế toán có thể được đo lường một cách đáng tin cậy.\nDoanh thu hoạt động tài chính\nDoanh thu phát sinh từ việc người khác sử dụng tài sản của đơn vị tạo ra lãi, tiền bản quyền và cổ tức sẽ được ghi nhận khi:\n- Có khả năng các lợi ích kinh tế gắn liền với giao dịch sẽ chảy vào đơn vị;\n- Giá trị doanh thu có thể được đo lường một cách đáng tin cậy.\n\n2.18. Giá vốn hàng bán và dịch vụ cung cấp\nGiá vốn hàng bán và dịch vụ cung cấp là chi phí của thành phẩm, hàng hóa, vật liệu bán hoặc dịch vụ cung cấp trong kỳ, và được ghi nhận trên cơ sở phù hợp với doanh thu và trên cơ sở thận trọng. Các trường hợp mất mát vật liệu và hàng hóa vượt định mức, chi phí nhân công và chi phí sản xuất chung cố định không được phân bổ vào giá trị hàng tồn kho, dự phòng giảm giá hàng tồn kho, các chi phí bất thường và tổn thất hàng tồn kho sau khi trừ trách nhiệm của tập thể và cá nhân liên quan, v.v. được ghi nhận đầy đủ và kịp thời vào giá vốn hàng bán trong kỳ ngay cả khi sản phẩm và hàng hóa chưa được xác định là đã bán.\n\n2.19. Chi phí tài chính\nCác khoản mục ghi nhận vào chi phí tài chính bao gồm chi phí đi vay, lãi trả chậm, v.v. được ghi nhận theo tổng số tiền phát sinh trong kỳ mà không bù trừ với doanh thu tài chính.\n\n2.20. Thuế thu nhập doanh nghiệp\na. Chi phí thuế thu nhập doanh nghiệp hiện hành\nChi phí thuế thu nhập doanh nghiệp hiện hành được xác định dựa trên thu nhập chịu thuế trong kỳ và thuế suất thuế thu nhập doanh nghiệp hiện hành.\nb. Thuế suất thuế thu nhập doanh nghiệp hiện hành\nCông ty chịu thuế suất thuế thu nhập doanh nghiệp 20% đối với các hoạt động sản xuất kinh doanh có thu nhập chịu thuế cho giai đoạn từ 01/01/2025 đến 30/06/2025.\n\n2.21. Lãi cơ bản trên cổ phiếu\nLãi cơ bản trên cổ phiếu được tính bằng cách chia lợi nhuận hoặc lỗ sau thuế của năm có thể phân bổ cho các cổ đông phổ thông của Công ty sau khi điều chỉnh cho quỹ khen thưởng, phúc lợi và phụ cấp cho Ban Giám đốc chia cho số lượng cổ phiếu phổ thông đang lưu hành bình quân gia quyền trong kỳ.\n\n2.22. Các bên liên quan\nCác bên được coi là bên liên quan nếu bên đó có khả năng kiểm soát hoặc ảnh hưởng đáng kể đến bên kia trong việc ra quyết định về các chính sách và hoạt động tài chính. Các bên liên quan của Công ty bao gồm:\n- Các công ty, trực tiếp hoặc gián tiếp thông qua một hoặc nhiều trung gian, có quyền kiểm soát Công ty hoặc thuộc quyền kiểm soát của Công ty, hoặc thuộc quyền kiểm soát chung với Công ty, bao gồm công ty mẹ, các công ty con và công ty liên kết của Công ty;\n- Các cá nhân, trực tiếp hoặc gián tiếp, nắm giữ quyền biểu quyết của Công ty có ảnh hưởng đáng kể đến Công ty, các nhân sự quản lý chủ chốt bao gồm các giám đốc và nhân viên của Công ty, các thành viên thân thiết trong gia đình của các cá nhân này;\n- Các doanh nghiệp mà các cá nhân nêu trên trực tiếp hoặc gián tiếp nắm giữ một phần quan trọng của quyền biểu quyết hoặc có ảnh hưởng đáng kể đến các doanh nghiệp này.\nKhi xem xét mối quan hệ của các bên liên quan để phục vụ cho việc lập và trình bày Báo cáo tài chính bán niên, Công ty nên xem xét bản chất của mối quan hệ hơn là hình thức pháp lý của mối quan hệ.\n\n2.23. Thông tin bộ phận\nTrong kỳ, Công ty chủ yếu hoạt động trong lĩnh vực sản xuất và kinh doanh thép tại Việt Nam, do đó, Công ty không lập báo cáo bộ phận theo lĩnh vực kinh doanh và khu vực địa lý.",
+    "questions": [
+      {
+        "question": "Công ty áp dụng phương pháp khấu hao nào cho máy móc thiết bị liên quan trực tiếp đến sản xuất?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian sử dụng hữu ích ước tính cho nhà cửa, vật kiến trúc là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các điều kiện nào cần được thỏa mãn để ghi nhận doanh thu từ bán hàng?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí đi vay được ghi nhận vào chi phí hoạt động hay được vốn hóa trong trường hợp nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích cách Công ty xác định lãi cơ bản trên cổ phiếu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Giải thích định nghĩa về 'bên liên quan' theo chính sách kế toán của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá các trường hợp chi phí trả trước được phân bổ vào kết quả hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Tiền, Các khoản phải thu, Hàng tồn kho)\nLoại nội dung: Bảng\n\n3. TIỀN\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|---|---|---|\n| Tiền mặt | 178.673.538 | 82.921.227 |\n| Tiền gửi không kỳ hạn | 260.729.825 | 833.908.567 |\n| Tổng | 439.403.363 | 916.829.794 |\n\n4. PHẢI THU NGẮN HẠN CỦA KHÁCH HÀNG\n| CHỈ TIÊU | 30/06/2025 (Giá trị) | 30/06/2025 (Dự phòng) | 01/01/2025 (Giá trị) | 01/01/2025 (Dự phòng) |\n|---|---|---|---|---|\n| Các bên liên quan | 460.794.242.875 | - | 571.414.906.648 | - |\n| Tổng Công ty Cổ phần Gang thép Thái Nguyên | 460.794.242.875 | - | 571.414.906.648 | - |\n| Khác | 174.280.953 | 174.280.953 | 174.280.953 | 174.280.953 |\n| Khách hàng khác | 174.280.953 | 174.280.953 | 174.280.953 | 174.280.953 |\n| Tổng | 460.968.523.828 | 174.280.953 | 571.589.187.601 | 174.280.953 |\n\n5. TRẢ TRƯỚC CHO NGƯỜI BÁN NGẮN HẠN\n| CHỈ TIÊU | 30/06/2025 (Giá trị) | 30/06/2025 (Dự phòng) | 01/01/2025 (Giá trị) | 01/01/2025 (Dự phòng) |\n|---|---|---|---|---|\n| Khác | 1.519.177.318 | - | 868.764.958 | - |\n| Công ty CP Cơ khí Việt Thái | - | - | 766.584.000 | - |\n| Công ty CP Du lịch và Thương mại Hải Bình | 416.728.558 | - | - | - |\n| Công ty TNHH Saigon Trust | 406.450.000 | - | - | - |\n| Công ty CP Máy móc và Thiết bị HD Việt Nam | 541.929.960 | - | - | - |\n| Khác | 154.068.800 | - | 102.180.958 | - |\n| Tổng | 1.519.177.318 | - | 868.764.958 | - |\n\n6. PHẢI THU NGẮN HẠN KHÁC\n| CHỈ TIÊU | 30/06/2025 (Giá trị) | 30/06/2025 (Dự phòng) | 01/01/2025 (Giá trị) | 01/01/2025 (Dự phòng) |\n|---|---|---|---|---|\n| a1. Chi tiết theo nội dung | | | | |\n| Phải thu từ bảo hiểm xã hội | 182.666.664 | - | 183.303.447 | - |\n| Tiền đặt cọc | 60.000.000 | - | 60.000.000 | - |\n| Khác | 16.139.351 | - | 21.472.559 | - |\n| Tổng | 258.806.015 | - | 264.776.006 | - |\n| a2. Chi tiết theo đối tượng | | | | |\n| Các bên liên quan | | | | |\n| Tổng Công ty Cổ phần Gang thép Thái Nguyên | 60.000.000 | - | 60.000.000 | - |\n| Các bên khác | | | | |\n| Phạm Ngọc Sơn | 15.269.231 | - | 21.269.231 | - |\n| Khác | 183.536.784 | - | 183.506.775 | - |\n| Tổng | 258.806.015 | - | 264.776.006 | - |\n\n7. NỢ PHẢI THU KHÓ ĐÒI\n| CHỈ TIÊU | 30/06/2025 (Nguyên giá) | 30/06/2025 (Giá trị có thể thu hồi) | 01/01/2025 (Nguyên giá) | 01/01/2025 (Giá trị có thể thu hồi) |\n|---|---|---|---|---|\n| Công ty CP Xây dựng và Sản xuất Kết cấu Thép Thanh Trung | 136.505.633 | - | 136.505.633 | - |\n| Công ty TNHH Thương mại và Xây dựng Việt Thắng | 37.775.320 | - | 37.775.320 | - |\n| Tổng | 174.280.953 | - | 174.280.953 | - |\n\n8. HÀNG TỒN KHO\n| CHỈ TIÊU | 30/06/2025 (Nguyên giá) | 30/06/2025 (Dự phòng) | 01/01/2025 (Nguyên giá) | 01/01/2025 (Dự phòng) |\n|---|---|---|---|---|\n| Nguyên vật liệu | 30.111.494.439 | - | 31.456.270.234 | - |\n| Công cụ, dụng cụ | 787.358.915 | - | 1.026.791.856 | - |\n| Chi phí sản xuất kinh doanh dở dang | 5.340.000 | - | - | - |\n| Tổng | 30.904.193.354 | - | 32.483.062.090 | - |",
+    "questions": [
+      {
+        "question": "Tổng tiền và các khoản tương đương tiền tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải thu ngắn hạn của khách hàng từ các bên liên quan tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị hàng tồn kho cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị phải thu ngắn hạn của khách hàng giữa ngày 30/06/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản phải thu khó đòi có được dự phòng đầy đủ không?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích biến động của hàng tồn kho và ảnh hưởng của nó đến hoạt động kinh doanh của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tín dụng của Công ty dựa trên cơ cấu các khoản phải thu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Tài sản cố định hữu hình)\nLoại nội dung: Bảng\n\n9. TÀI SẢN CỐ ĐỊNH HỮU HÌNH\n\n| CHỈ TIÊU | Nhà cửa, vật kiến trúc (VND) | Máy móc, thiết bị (VND) | Phương tiện vận tải (VND) | Thiết bị quản lý (VND) | Tổng cộng (VND) |\n|---|---|---|---|---|---|\n| Nguyên giá | | | | | |\n| Số dư đầu kỳ | 164.411.326.048 | 896.812.978.606 | 197.305.440.949 | 192.296.320 | 1.258.722.041.923 |\n| Mua sắm trong kỳ | - | 264.554.000 | - | - | 264.554.000 |\n| Thanh lý, nhượng bán | - | - | - | 110.096.320 | 110.096.320 |\n| Số dư cuối kỳ | 164.411.326.048 | 897.077.532.606 | 197.305.440.949 | 82.200.000 | 1.258.876.499.603 |\n| Khấu hao lũy kế | | | | | |\n| Số dư đầu kỳ | 73.128.204.142 | 449.938.849.674 | 78.670.197.816 | 180.733.295 | 601.917.984.927 |\n| Khấu hao trong kỳ | 3.487.246.692 | 26.054.872.700 | 5.415.497.896 | 4.160.000 | 34.961.777.288 |\n| Thanh lý, nhượng bán | - | - | - | 110.096.320 | 110.096.320 |\n| Số dư cuối kỳ | 76.615.450.834 | 475.993.722.374 | 84.085.695.712 | 74.796.975 | 636.769.665.895 |\n| Giá trị còn lại thuần | | | | | |\n| Số dư đầu kỳ | 91.283.121.906 | 446.874.128.932 | 118.635.243.133 | 11.563.025 | 656.804.056.996 |\n| Số dư cuối kỳ | 87.795.875.214 | 421.083.810.232 | 113.219.745.237 | 7.403.025 | 622.106.833.708 |\n\nTrong đó:\nGiá trị còn lại của tài sản cố định hữu hình dùng để thế chấp cho các khoản vay tại cuối kỳ là 621.279.542.472 VND.\nNguyên giá của tài sản cố định hữu hình đã khấu hao hết nhưng vẫn đang được sử dụng tại cuối kỳ là 21.637.514.206 VND.",
+    "questions": [
+      {
+        "question": "Tổng nguyên giá tài sản cố định hữu hình tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mục tài sản cố định hữu hình nào có giá trị còn lại lớn nhất tại ngày 30 tháng 6 năm 2025?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản cố định hữu hình được mua sắm trong kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khấu hao lũy kế của máy móc, thiết bị giữa số dư đầu kỳ và cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng giá trị tài sản cố định hữu hình được dùng làm tài sản thế chấp là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư và thoái vốn vào tài sản cố định hữu hình trong kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của việc có tài sản cố định đã khấu hao hết nhưng vẫn còn sử dụng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Tài sản cố định vô hình và Chi phí trả trước)\nLoại nội dung: Văn bản và Bảng\n\n10. TÀI SẢN CỐ ĐỊNH VÔ HÌNH\nTài sản cố định vô hình của Công ty bao gồm phần mềm máy tính, với nguyên giá là 596.000.000 VND và khấu hao lũy kế là 253.292.487 VND tính đến ngày 30 tháng 6 năm 2025. Khấu hao trong kỳ là 7.292.487 VND.\n\n11. CHI PHÍ TRẢ TRƯỚC\na. Ngắn hạn\n\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|---|---|---|\n| Phụ tùng thay thế, vật liệu sửa chữa, công cụ, dụng cụ chờ phân bổ | 919.954.763 | 1.940.312.507 |\n| Phí bảo hiểm | 79.258.186 | 424.082.302 |\n| Tiền thuê đất | 192.610.388 | - |\n| Chi phí sửa chữa và bảo trì tài sản cố định | 138.319.462 | - |\n| Khác | 391.623.860 | 48.166.668 |\n| Tổng | 1.721.766.659 | 2.412.561.477 |\n\nb. Dài hạn\n\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|---|---|---|\n| Phụ tùng thay thế, vật liệu sửa chữa, công cụ, dụng cụ chờ phân bổ | 4.786.565.627 | 5.389.217.735 |\n| Vật liệu phụ dùng cho sản xuất | 18.922.104.844 | 17.428.225.551 |\n| Chi phí sửa chữa | 290.669.774 | 393.259.098 |\n| Khác | 121.430.837 | 257.424.835 |\n| Tổng | 24.120.771.082 | 23.468.127.219 |\n\nVật liệu phụ dùng cho sản xuất là các phụ tùng sử dụng trong quá trình cán thép, như trục cán, con lăn và lưỡi cắt, với thời gian phân bổ trên 12 tháng.",
+    "questions": [
+      {
+        "question": "Nguyên giá của tài sản cố định vô hình là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khấu hao lũy kế của tài sản cố định vô hình tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí trả trước ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng chi phí trả trước dài hạn giữa ngày 30/06/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu ví dụ về vật liệu phụ dùng cho sản xuất của Công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự biến động của các khoản chi phí trả trước ngắn hạn và dài hạn, có ý nghĩa gì đối với hoạt động của Công ty?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của việc phân bổ chi phí trả trước dài hạn dựa trên thông tin được cung cấp.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Phải trả người bán và Thuế phải nộp)\nLoại nội dung: Bảng\n\n12. PHẢI TRẢ NGƯỜI BÁN NGẮN HẠN\n\n| CHỈ TIÊU | 30/06/2025 (Số dư cuối kỳ) | 30/06/2025 (Số có thể thanh toán) | 01/01/2025 (Số dư đầu kỳ) | 01/01/2025 (Số có thể thanh toán) |\n|---|---|---|---|---|\n| a. Các bên liên quan | 521.041.339.998 | 521.041.339.998 | 584.392.961.915 | 584.392.961.915 |\n| Tổng Công ty Cổ phần Gang thép Thái Nguyên | 521.041.339.998 | 521.041.339.998 | 584.392.961.915 | 584.392.961.915 |\n| a1. Khác | 27.369.209.589 | 27.369.209.589 | 48.970.982.253 | 48.970.982.253 |\n| Công ty CP Thương mại Dịch vụ Dầu khí Đình Vũ | - | - | 28.993.135.077 | 28.993.135.077 |\n| Công ty TNHH Vận tải Dầu khí Mạnh Hùng | 14.407.882.164 | 14.407.882.164 | - | - |\n| Khác | 12.961.327.425 | 12.961.327.425 | 19.977.847.176 | 19.977.847.176 |\n| Tổng | 548.410.549.587 | 548.410.549.587 | 633.363.944.168 | 633.363.944.168 |\n\n13. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC\n\n| CHỈ TIÊU | Số dư đầu kỳ phải thu (VND) | Số dư đầu kỳ phải trả (VND) | Phát sinh trong kỳ (VND) | Đã nộp/chi trong kỳ (VND) | Bù trừ giảm tiền thuê đất năm 2023 (VND) | Số dư cuối kỳ phải thu (VND) | Số dư cuối kỳ phải trả (VND) |\n|---|---|---|---|---|---|---|---|\n| Thuế GTGT | - | 9.206.731.152 | 8.731.937.384 | 10.338.077.392 | - | - | 7.600.591.144 |\n| Thuế TNDN | - | 3.531.867.721 | 513.480.287 | 3.531.867.721 | - | - | 513.480.287 |\n| Thuế TNCN | - | 70.899.017 | 65.944.289 | - | - | 4.954.728 |\n| Thuế đất và tiền thuê đất | - | - | 392.738.412 | 200.128.024 | - | 192.610.388 | - |\n| Phí và các nghĩa vụ khác | - | 3.000.000 | 3.000.000 | - | - | - |\n| Tổng | - | 12.738.598.873 | 9.712.055.100 | 14.139.017.426 | 4.954.728 | 192.610.388 | 8.306.681.819 |\n\nCác khoản quyết toán thuế của Công ty có thể bị kiểm tra bởi các cơ quan thuế. Do việc áp dụng các luật và quy định về thuế đối với nhiều loại giao dịch có thể bị diễn giải khác nhau, các số liệu được báo cáo trong báo cáo tài chính có thể thay đổi vào một ngày sau đó sau khi có quyết định cuối cùng của cơ quan thuế.",
+    "questions": [
+      {
+        "question": "Tổng phải trả người bán ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải trả người bán ngắn hạn cho các bên liên quan là bao nhiêu VND tại cuối kỳ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng thuế và các khoản phải nộp nhà nước cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản thuế nào có số dư phải trả cuối kỳ lớn nhất?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh khoản phải trả người bán ngắn hạn giữa các bên liên quan và các bên khác.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn liên quan đến các khoản quyết toán thuế của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá sự biến động của Thuế GTGT và Thuế TNDN từ đầu kỳ đến cuối kỳ.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Chi phí phải trả, Phải trả khác, Vay và nợ thuê tài chính)\nLoại nội dung: Bảng\n\n14. CHI PHÍ PHẢI TRẢ NGẮN HẠN\n\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|---|---|---|\n| Chi phí lãi vay phải trả | 267.487.119 | 293.013.611 |\n| Các chi phí phải trả khác | 48.431.500 | - |\n| Tổng | 315.918.619 | 293.013.611 |\n\n15. PHẢI TRẢ NGẮN HẠN KHÁC\n\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|---|---|---|\n| Phí công đoàn | 104.634.988 | 104.099.334 |\n| Khác | 312.623.313 | 140.541.585 |\n| Tổng | 417.258.301 | 244.640.919 |\n\n16. VAY VÀ NỢ THUÊ TÀI CHÍNH\n\n| CHỈ TIÊU | 01/01/2025 (Số dư đầu kỳ) | Phát sinh trong kỳ (Tăng) (VND) | Phát sinh trong kỳ (Giảm) (VND) | 30/06/2025 (Số dư cuối kỳ) | 30/06/2025 (Nợ đến hạn trả) |\n|---|---|---|---|---|---|\n| a. Vay ngắn hạn | 330.215.933.267 | 343.750.623.392 | 401.817.960.177 | 272.148.596.482 | 272.148.596.482 |\n| Vay ngắn hạn từ ngân hàng | 247.992.646.210 | 343.750.623.392 | 343.817.960.177 | 247.925.309.425 | 247.925.309.425 |\n| Phần nợ dài hạn đến hạn trả | 82.223.287.057 | - | 58.000.000.000 | 24.223.287.057 | 24.223.287.057 |\n| b. Vay dài hạn | 82.223.287.057 | - | 58.000.000.000 | 24.223.287.057 | 24.223.287.057 |\n| Vay dài hạn | 82.223.287.057 | - | 58.000.000.000 | 24.223.287.057 | 24.223.287.057 |\n| Tổng | 412.439.220.324 | 343.750.623.392 | 459.817.960.177 | 296.371.883.539 | 296.371.883.539 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí phải trả ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vay và nợ thuê tài chính ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản phải trả ngắn hạn khác có sự thay đổi như thế nào từ đầu năm đến cuối quý 2 năm 2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh tổng số dư đầu kỳ của vay và nợ thuê tài chính với số dư cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự tăng giảm của vay ngắn hạn và ảnh hưởng của nó đến tình hình tài chính của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của Công ty vào vay ngắn hạn so với vay dài hạn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Dự phòng phải trả và Vốn chủ sở hữu)\nLoại nội dung: Bảng\n\n17. DỰ PHÒNG PHẢI TRẢ NGẮN HẠN\n\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|---|---|---|\n| Dự phòng chi phí sửa chữa tài sản cố định | 500.000.000 | - |\n| Tổng | 500.000.000 | - |\n\n18. VỐN CHỦ SỞ HỮU\na. Thay đổi vốn chủ sở hữu\n\n| CHỈ TIÊU | Vốn góp (VND) | Lợi nhuận giữ lại đã điều chỉnh (VND) | Tổng cộng (VND) |\n|---|---|---|---|\n| Số dư đầu kỳ năm trước | 508.000.001.467 | -213.962.904.759 | 294.037.096.708 |\n| Lợi nhuận trong năm trước | - | 9.935.650.398 | 9.935.650.398 |\n| Số dư cuối kỳ năm trước | 508.000.001.467 | -204.027.254.361 | 303.972.747.106 |\n| Số dư đầu kỳ hiện tại | 508.000.001.467 | -202.740.135.422 | 305.259.866.045 |\n| Lợi nhuận trong kỳ hiện tại | - | 1.637.331.389 | 1.637.331.389 |\n| Số dư cuối kỳ này | 508.000.001.467 | -201.102.804.033 | 306.897.197.434 |\n\nĐiều chỉnh hồi tố chi phí thuế thu nhập doanh nghiệp và thuế giá trị gia tăng theo thuế:\n- Năm 2021, ghi nhận bổ sung chi phí thuế thu nhập doanh nghiệp 164.834.349 VND và chi phí thuế GTGT 15.564.606 VND.\n- Năm 2022, ghi nhận bổ sung chi phí thuế thu nhập doanh nghiệp 274.222.134 VND.\n- Năm 2023, ghi nhận bổ sung chi phí thuế thu nhập doanh nghiệp 246.135.645 VND.\n\nb. Chi tiết vốn đầu tư của chủ sở hữu\n\n| CHỈ TIÊU | 30/06/2025 (Tỷ lệ) | 30/06/2025 (VND) | 01/01/2025 (Tỷ lệ) | 01/01/2025 (VND) |\n|---|---|---|---|---|\n| Tổng Công ty Cổ phần Gang thép Thái Nguyên | 93,68% | 475.876.533.387 | 93,68% | 475.876.533.387 |\n| Công ty TNHH Thương mại và Xây dựng Hà Nam | 4,77% | 24.208.538.080 | 4,77% | 24.208.538.080 |\n| Khác | 1,55% | 7.914.930.000 | 1,55% | 7.914.930.000 |\n| Tổng | 100% | 508.000.001.467 | 100% | 508.000.001.467 |\n\nc. Giao dịch vốn với chủ sở hữu và phân phối cổ tức, lợi nhuận\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Vốn góp của chủ sở hữu | 508.000.001.467 | 508.000.001.467 |\n| - Đầu kỳ | 508.000.001.467 | 508.000.001.467 |\n| - Cuối kỳ | 508.000.001.467 | 508.000.001.467 |\n\nd. Cổ phiếu\n\n| CHỈ TIÊU | 30/06/2025 | 01/01/2025 |\n|---|---|---|\n| Số lượng cổ phiếu được phép phát hành | 50.800.000 | 50.800.000 |\n| Số lượng cổ phiếu đã phát hành | 50.800.000 | 50.800.000 |\n| - Cổ phiếu phổ thông | 50.800.000 | 50.800.000 |\n| Số lượng cổ phiếu đang lưu hành | 50.800.000 | 50.800.000 |\n| - Cổ phiếu phổ thông | 50.800.000 | 50.800.000 |\n| Mệnh giá mỗi cổ phiếu (VND) | 10.000 | 10.000 |",
+    "questions": [
+      {
+        "question": "Dự phòng phải trả ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vốn chủ sở hữu cuối kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty mẹ của Công ty Cổ phần Cán thép Thái Trung là ai và tỷ lệ sở hữu là bao nhiêu?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Giá trị lợi nhuận giữ lại đã điều chỉnh đầu kỳ hiện tại là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành của Công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phân tích các điều chỉnh hồi tố thuế TNDN và GTGT đã ảnh hưởng đến lợi nhuận giữ lại trong quá khứ như thế nào?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ tập trung sở hữu vốn của Công ty dựa trên chi tiết vốn đầu tư của chủ sở hữu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Các khoản mục ngoài Bảng Cân đối Kế toán, Doanh thu, Giá vốn, Doanh thu/Chi phí tài chính)\nLoại nội dung: Văn bản và Bảng\n\n19. CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN VÀ CAM KẾT THUÊ HOẠT ĐỘNG\na. Tài sản thuê hoạt động\nCông ty đã ký hợp đồng thuê đất với Sở Tài nguyên và Môi trường tỉnh Thái Nguyên cho một thửa đất thuộc phường Cam Giá, thành phố Thái Nguyên cho mục đích sản xuất kinh doanh. Thời hạn thuê là 49 năm, từ năm 2008 đến năm 2057 với tổng diện tích 53.133,9 m2. Theo hợp đồng này, Công ty có nghĩa vụ thanh toán tiền thuê đất hàng năm theo quy định hiện hành của chính phủ.\n\nb. Tài sản nhận giữ hộ\n\n| CHỈ TIÊU | 30/06/2025 | 01/01/2025 |\n|---|---|---|\n| Phôi thép nhận giữ hộ (tấn) | 28.249,197 | 58.043,347 |\n| Thép nhận giữ hộ (tấn) | 8.928,481 | 19.637,614 |\n\n20. TỔNG DOANH THU TỪ BÁN HÀNG VÀ CUNG CẤP DỊCH VỤ\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Doanh thu từ bán hàng | 3.127.945.686.875 | 2.620.377.399.935 |\n| Tổng | 3.127.945.686.875 | 2.620.377.399.935 |\n| Doanh thu từ các bên liên quan | 3.127.945.686.875 | 2.573.904.876.775 |\nChi tiết như trong Thuyết minh 33\n\n21. GIÁ VỐN HÀNG BÁN\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Giá vốn hàng bán | 3.107.056.714.230 | 2.585.346.405.416 |\n| Tổng | 3.107.056.714.230 | 2.585.346.405.416 |\n| Trong đó: Mua từ bên liên quan | | |\n| Tổng giá trị mua | 2.897.665.467.204 | 2.424.629.542.835 |\nChi tiết như trong Thuyết minh 33\n\n22. DOANH THU HOẠT ĐỘNG TÀI CHÍNH\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Thu nhập lãi | 899.749 | 1.772.824 |\n| Tổng | 899.749 | 1.772.824 |\n\n23. CHI PHÍ TÀI CHÍNH\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Lãi tiền vay | 11.647.431.591 | 16.677.489.847 |\n| Lãi trả trước cho việc gia công và mua trả chậm | - | 60.590.993 |\n| Tổng | 11.647.431.591 | 16.738.080.840 |",
+    "questions": [
+      {
+        "question": "Công ty thuê đất để làm gì và thời hạn thuê là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng phôi thép nhận giữ hộ tại ngày 30 tháng 6 năm 2025 là bao nhiêu tấn?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng doanh thu từ bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu từ các bên liên quan chiếm bao nhiêu phần trăm tổng doanh thu trong 6 tháng đầu năm 2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh chi phí tài chính giữa 6 tháng đầu năm 2025 và 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của Công ty vào giao dịch với các bên liên quan dựa trên doanh thu và giá vốn hàng bán.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm lãi tiền vay đến kết quả hoạt động tài chính của Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Chi phí bán hàng, Chi phí quản lý doanh nghiệp, Thu nhập khác, Chi phí khác)\nLoại nội dung: Bảng\n\n24. CHI PHÍ BÁN HÀNG\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Khấu hao và phân bổ | 6.263.366 | 4.959.091 |\n| Chi phí dịch vụ thuê ngoài | 89.233.800 | 66.370.100 |\n| Các chi phí khác bằng tiền | 48.170.296 | 44.992.098 |\n| Tổng | 143.667.462 | 116.321.289 |\n\n25. CHI PHÍ QUẢN LÝ DOANH NGHIỆP\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Nguyên vật liệu | 477.015.705 | 321.631.954 |\n| Chi phí nhân công | 3.006.898.246 | 2.580.043.609 |\n| Khấu hao và phân bổ | 422.541.462 | 415.248.972 |\n| Thuế, phí, lệ phí | 203.128.024 | 200.517.637 |\n| Chi phí dịch vụ thuê ngoài | 911.878.188 | 978.293.250 |\n| Các chi phí khác bằng tiền | 1.567.140.507 | 1.800.896.179 |\n| Tổng | 6.588.602.132 | 6.296.631.601 |\n\n26. THU NHẬP KHÁC\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Lãi từ thanh lý, nhượng bán tài sản cố định | - | 337.500 |\n| Thu nhập giảm tiền thuê đất năm 2023 theo quy định | - | 74.727.517 |\n| Thu nhập từ thu hồi phế liệu thép | - | 426.495.000 |\n| Khác | 22.610.227 | 70.226.546 |\n| Tổng | 22.610.227 | 571.786.563 |\n\n27. CHI PHÍ KHÁC\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Tiền phạt | 371.589.760 | 428.943 |\n| Khác | 10.380.000 | 22.171.000 |\n| Tổng | 381.969.760 | 22.599.943 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí bán hàng trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mục nào có chi phí quản lý doanh nghiệp lớn nhất trong 6 tháng đầu năm 2025?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí khác tăng hay giảm trong 6 tháng đầu năm 2025 so với cùng kỳ năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các nguồn thu nhập khác của Công ty trong 6 tháng đầu năm 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của sự tăng đáng kể của khoản 'Tiền phạt' trong chi phí khác.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "So sánh cơ cấu chi phí quản lý doanh nghiệp giữa hai kỳ để nhận xét về hiệu quả hoạt động.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Thuế TNDN, Lãi cơ bản trên cổ phiếu, Chi phí sản xuất kinh doanh)\nLoại nội dung: Văn bản và Bảng\n\n28. CHI PHÍ THUẾ THU NHẬP DOANH NGHIỆP HIỆN HÀNH\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (Đã điều chỉnh) (VND) |\n|---|---|---|\n| Tổng lợi nhuận trước thuế | 2.150.811.676 | 12.430.920.233 |\n| Khoản tăng | 416.589.760 | 45.428.943 |\n| - Chi phí không được khấu trừ | 416.589.760 | 45.428.943 |\n| Thu nhập chịu thuế | 2.567.401.436 | 12.476.349.176 |\n| Chi phí thuế TNDN hiện hành (Thuế suất 20%) | 513.480.287 | 2.495.269.835 |\n| Thuế phải nộp đầu kỳ | 3.531.867.721 | 3.353.729.482 |\n| Thuế đã nộp trong kỳ | 3.531.867.721 | 3.353.729.482 |\n| Thuế TNDN phải nộp cuối kỳ | 513.480.287 | 2.495.269.835 |\n\nPhần chi phí lãi vay không được khấu trừ theo Nghị định số 132/2020/NĐ-CP ngày 05 tháng 11 năm 2020 của Bộ Tài chính được chuyển sang kỳ tính thuế tiếp theo để xác định tổng chi phí lãi vay được khấu trừ nếu tổng chi phí lãi vay được khấu trừ trong kỳ tính thuế tiếp theo thấp hơn mức quy định. Chi phí lãi vay có thể được chuyển sang tối đa 05 năm liên tiếp, tính từ năm liền kề sau năm phát sinh chi phí lãi vay không được khấu trừ. Chi phí lãi vay thực tế được chuyển sang các năm tiếp theo cho mục đích thuế sẽ phụ thuộc vào việc kiểm tra và phê duyệt của cơ quan thuế và có thể khác với các số liệu trình bày trong Báo cáo tài chính. Chi phí lãi vay vượt 30% EBITDA theo quy định tại Nghị định số 132/2020/NĐ-CP ngày 05 tháng 11 năm 2020 của Bộ Tài chính, được ước tính sẽ được bù trừ vào thu nhập chịu thuế trong tương lai của Công ty như sau:\n\n| Năm phát sinh chi phí lãi vay không được khấu trừ | Tình trạng kiểm tra của cơ quan thuế | Chi phí lãi vay không được khấu trừ vượt 30% EBITDA (VND) | Chi phí lãi vay không được khấu trừ đã sử dụng (VND) | Chi phí lãi vay không được khấu trừ sẽ chuyển sang các năm tính thuế tiếp theo (VND) |\n|---|---|---|---|---|\n| 2021 | Đã kiểm tra | 10.367.281.098 | - | 10.367.281.098 |\n| 2022 | Đã kiểm tra | 9.494.347.434 | - | 9.494.347.434 |\n| 2023 | Đã kiểm tra | 11.175.152.287 | - | 11.175.152.287 |\n| 2024 | Chưa kiểm tra | 72.270.634 | - | 72.270.634 |\n| 6 tháng đầu năm 2025 | Chưa kiểm tra | - | - | - |\n\nHội đồng quản trị đánh giá rằng khả năng Công ty có thể chuyển các chi phí lãi vay không được khấu trừ này sang các năm tiếp theo là không chắc chắn. Do đó, không có tài sản thuế thu nhập hoãn lại liên quan đến các khoản này được ghi nhận trong Bảng cân đối kế toán cho kỳ hiện tại.\n\n29. LÃI CƠ BẢN TRÊN CỔ PHIẾU\nLãi cơ bản trên cổ phiếu phân bổ cho các cổ đông phổ thông của công ty được tính như sau:\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Lợi nhuận sau thuế | 1.637.331.389 | 9.935.650.398 |\n| Lợi nhuận phân phối cho cổ phiếu phổ thông | 1.637.331.389 | 9.935.650.398 |\n| Số lượng cổ phiếu phổ thông đang lưu hành bình quân trong kỳ | 50.800.000 | 50.800.000 |\n| Lãi cơ bản trên cổ phiếu | 32 | 196 |\n\nCông ty chưa có kế hoạch thực hiện phân phối cho quỹ khen thưởng, phúc lợi, thưởng cho Hội đồng quản trị từ lợi nhuận sau thuế tại ngày lập Báo cáo tài chính bán niên.\nTại ngày 30 tháng 6 năm 2025, Công ty không có cổ phiếu có khả năng pha loãng lãi trên mỗi cổ phiếu.\n\n30. CHI PHÍ SẢN XUẤT KINH DOANH THEO KHOẢN MỤC\n\n| CHỈ TIÊU | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|\n| Nguyên vật liệu | 3.048.277.894.377 | 2.527.619.139.787 |\n| Chi phí nhân công | 21.866.385.380 | 18.552.363.404 |\n| Khấu hao và phân bổ | 34.969.069.775 | 28.693.819.370 |\n| Chi phí dịch vụ thuê ngoài | 3.781.908.451 | 11.712.528.152 |\n| Các chi phí khác bằng tiền | 4.899.065.841 | 5.184.371.096 |\n| Tổng | 3.113.794.323.824 | 2.591.762.221.809 |",
+    "questions": [
+      {
+        "question": "Thu nhập chịu thuế của Công ty trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lãi cơ bản trên cổ phiếu trong 6 tháng đầu năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí sản xuất kinh doanh theo khoản mục trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí lãi vay không được khấu trừ vượt 30% EBITDA của năm 2023 là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tại sao Công ty không ghi nhận tài sản thuế thu nhập hoãn lại liên quan đến chi phí lãi vay không được khấu trừ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản chi phí không được khấu trừ đến chi phí thuế TNDN hiện hành của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng Công ty bù trừ các khoản chi phí lãi vay không được khấu trừ vào thu nhập chịu thuế trong tương lai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "So sánh cơ cấu chi phí sản xuất kinh doanh theo khoản mục giữa hai kỳ, nhận xét về sự thay đổi.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Công cụ tài chính)\nLoại nội dung: Văn bản và Bảng\n\n31. CÔNG CỤ TÀI CHÍNH\nQuản lý rủi ro tài chính\nCác rủi ro tài chính của Công ty bao gồm rủi ro thị trường, rủi ro tín dụng và rủi ro thanh khoản.\nCông ty đã phát triển hệ thống kiểm soát để đảm bảo sự cân bằng hợp lý giữa chi phí rủi ro phát sinh và chi phí quản lý rủi ro. Ban Giám đốc của Công ty chịu trách nhiệm giám sát quá trình quản lý rủi ro để đảm bảo sự cân bằng thích hợp giữa rủi ro và kiểm soát rủi ro.\n\nRủi ro thị trường\nHoạt động kinh doanh của Công ty sẽ chịu các rủi ro về biến động giá cả, tỷ giá hối đoái và lãi suất.\n\nRủi ro lãi suất\nCông ty chịu rủi ro về lãi suất do biến động giá trị hợp lý của dòng tiền tương lai của một công cụ tài chính phù hợp với sự thay đổi của lãi suất thị trường nếu Công ty có tiền gửi có kỳ hạn hoặc không kỳ hạn, các khoản vay và nợ phải chịu lãi suất thả nổi. Công ty quản lý rủi ro lãi suất bằng cách phân tích tình hình cạnh tranh thị trường để đạt được lãi suất có lợi cho mục đích hoạt động.\n\nRủi ro tín dụng\nRủi ro tín dụng là rủi ro tổn thất tài chính đối với Công ty nếu một đối tác không thực hiện nghĩa vụ hợp đồng của mình. Công ty có rủi ro tín dụng từ các hoạt động kinh doanh chủ yếu từ các khoản phải thu thương mại và các hoạt động tài chính bao gồm tiền gửi, các khoản vay và các công cụ tài chính khác, chi tiết như sau:\n\n| CHỈ TIÊU | Đến 1 năm (VND) | Trên 1 đến 5 năm (VND) | Trên 5 năm (VND) | Tổng cộng (VND) |\n|---|---|---|---|---|\n| Tại 30/06/2025 | | | | |\n| Tiền và tiền gửi | 260.729.825 | - | - | 260.729.825 |\n| Các khoản phải thu thương mại, phải thu khác | 461.053.048.890 | - | - | 461.053.048.890 |\n| Tổng | 461.313.778.715 | - | - | 461.313.778.715 |\n| Tại 01/01/2025 | | | | |\n| Tiền và tiền gửi | 833.908.567 | - | - | 833.908.567 |\n| Các khoản phải thu thương mại, phải thu khác | 571.679.682.654 | - | - | 571.679.682.654 |\n| Tổng | 572.513.591.221 | - | - | 572.513.591.221 |\n\nRủi ro thanh khoản\nRủi ro thanh khoản là rủi ro Công ty gặp khó khăn trong việc thanh toán các nghĩa vụ tài chính do thiếu vốn. Rủi ro thanh khoản của Công ty chủ yếu phát sinh từ sự chênh lệch kỳ đáo hạn của các tài sản tài chính và nợ phải trả tài chính.\nNgày đáo hạn thanh toán các khoản nợ tài chính dựa trên dự kiến thanh toán theo hợp đồng dựa trên dòng tiền của các khoản nợ gốc như sau:\n\n| CHỈ TIÊU | Đến 1 năm (VND) | Trên 1 đến 5 năm (VND) | Trên 5 năm (VND) | Tổng cộng (VND) |\n|---|---|---|---|---|\n| Tại 30/06/2025 | | | | |\n| Các khoản vay và nợ | 272.148.596.482 | - | - | 272.148.596.482 |\n| Các khoản phải trả thương mại, phải trả khác | 548.827.807.888 | - | - | 548.827.807.888 |\n| Chi phí phải trả | 315.918.619 | - | - | 315.918.619 |\n| Tổng | 821.292.322.989 | - | - | 821.292.322.989 |\n| Tại 01/01/2025 | | | | |\n| Các khoản vay và nợ | 330.215.933.267 | - | - | 330.215.933.267 |\n| Các khoản phải trả thương mại, phải trả khác | 633.608.585.087 | - | - | 633.608.585.087 |\n| Chi phí phải trả | 293.013.611 | - | - | 293.013.611 |\n| Tổng | 964.117.531.965 | - | - | 964.117.531.965 |\n\nCông ty tin rằng mức độ rủi ro trả nợ có thể kiểm soát được. Công ty có khả năng thanh toán các khoản nợ đến hạn từ dòng tiền từ hoạt động kinh doanh và tiền thu được từ các tài sản tài chính đến hạn.",
+    "questions": [
+      {
+        "question": "Nêu ba loại rủi ro tài chính chính mà Công ty phải đối mặt.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị các khoản phải thu thương mại, phải thu khác tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng các khoản vay và nợ có kỳ hạn đến 1 năm tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty quản lý rủi ro lãi suất bằng cách nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh tổng tài sản tài chính có kỳ hạn đến 1 năm giữa hai thời điểm báo cáo.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro thanh khoản của Công ty dựa trên cơ cấu ngày đáo hạn của nợ tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích chiến lược quản lý rủi ro tín dụng của Công ty dựa trên thông tin được cung cấp.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Thuyết minh báo cáo tài chính bán niên (Các sự kiện sau ngày báo cáo, Giao dịch với các bên liên quan, Số liệu so sánh)\nLoại nội dung: Văn bản và Bảng\n\n32. CÁC SỰ KIỆN SAU NGÀY BÁO CÁO\nKhông có sự kiện quan trọng nào xảy ra sau ngày báo cáo mà cần điều chỉnh hoặc thuyết minh trong Báo cáo tài chính bán niên.\n\n33. GIAO DỊCH VÀ SỐ DƯ VỚI CÁC BÊN LIÊN QUAN\nNgoài các thông tin về các bên liên quan được trình bày trong các Thuyết minh trên, trong kỳ, Công ty có các giao dịch với các bên liên quan như sau:\n\n| CHỈ TIÊU | Mối quan hệ | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|---|\n| Doanh thu | | | |\n| Tổng Công ty Cổ phần Gang thép Thái Nguyên | Công ty mẹ | 3.127.945.686.875 | 2.573.904.876.775 |\n| Mua hàng | | | |\n| Tổng Công ty Cổ phần Gang thép Thái Nguyên | Công ty mẹ | 2.897.665.467.204 | 2.424.629.542.835 |\n\nGiao dịch với các bên liên quan khác\n\n| CHỈ TIÊU | Mối quan hệ | 6 tháng đầu năm 2025 (VND) | 6 tháng đầu năm 2024 (VND) |\n|---|---|---|---|\n| Thu nhập của Ban quản lý | | | |\n| Ông Hoàng Danh Sơn | Chủ tịch | 36.700.000 | 40.000.000 |\n| Ông Trần Tuấn | Thành viên kiêm Tổng Giám đốc | 233.077.424 | 217.973.765 |\n| Ông Nguyễn Đức Lợi | Thành viên kiêm Phó Tổng Giám đốc | 203.736.781 | 178.656.950 |\n| Ông Trần Quốc Hùng | Phó Tổng Giám đốc | 20.050.000 | - |\n| Bà Đỗ Thúy Hương | Trưởng Ban kiểm soát | 161.926.478 | 146.580.143 |\n| Ông Nguyễn Văn Giang | Thành viên Ban kiểm soát | 182.875.016 | 155.354.684 |\n| Bà Trần Nguyệt Anh | Thành viên Ban kiểm soát | 9.000.000 | 9.000.000 |\n\nNgoài các giao dịch với bên liên quan nêu trên, các bên liên quan khác không có bất kỳ giao dịch nào trong kỳ và không có số dư tại cuối kỳ kế toán với Công ty.\n\n34. SỐ LIỆU SO SÁNH\nCác số liệu so sánh trên Bảng cân đối kế toán bán niên và các Thuyết minh tương ứng được lấy từ Báo cáo tài chính cho năm tài chính kết thúc tại ngày 31 tháng 12 năm 2024, đã được kiểm toán bởi Công ty TNHH Hãng Kiểm toán AASC. Các số liệu so sánh trên Báo cáo kết quả kinh doanh bán niên, Báo cáo lưu chuyển tiền tệ bán niên và các Thuyết minh tương ứng được lấy từ Báo cáo tài chính bán niên đã được soát xét cho giai đoạn từ 01/01/2024 đến 30/06/2024.\nBan Giám đốc Công ty đã quyết định điều chỉnh hồi tố một số khoản mục trong Báo cáo tài chính cho năm tài chính kết thúc tại ngày 31 tháng 12 năm 2024 và Báo cáo tài chính bán niên cho giai đoạn từ 01 tháng 01 năm 2024 đến 30 tháng 6 năm 2024. Theo đó, các số liệu so sánh của Bảng cân đối kế toán bán niên, Báo cáo kết quả kinh doanh bán niên và Báo cáo lưu chuyển tiền tệ bán niên trong Báo cáo tài chính bán niên cho giai đoạn từ 01 tháng 01 năm 2025 đến 30 tháng 6 năm 2025 đã được điều chỉnh như sau:\n\n| Mã số | CHỈ TIÊU | Số liệu trong Báo cáo tài chính bán niên của kỳ/năm trước (VND) | Số liệu đã điều chỉnh (VND) | Chênh lệch (VND) | Thuyết minh |\n|---|---|---|---|---|---|\n| a. Bảng cân đối kế toán bán niên | | | | | |\n| 313 | Thuế và các khoản phải nộp Nhà nước | 12.037.842.139 | 12.738.598.873 | 700.756.734 | |\n| 421 | Lợi nhuận sau thuế chưa phân phối | -202.039.378.688 | -202.740.135.422 | -700.756.734 | |\n| 421a | Lợi nhuận sau thuế chưa phân phối lũy kế đến cuối kỳ trước | -213.262.148.025 | -213.962.904.759 | -700.756.734 | |\n\n- Điều chỉnh hồi tố chi phí thuế thu nhập doanh nghiệp và thuế giá trị gia tăng theo thuế:\n- Năm 2021, ghi nhận bổ sung chi phí thuế thu nhập doanh nghiệp 164.834.349 VND và chi phí thuế GTGT 15.564.606 VND.\n- Năm 2022, ghi nhận bổ sung chi phí thuế thu nhập doanh nghiệp 274.222.134 VND.\n- Năm 2023, ghi nhận bổ sung chi phí thuế thu nhập doanh nghiệp 246.135.645 VND.\n\nNgười lập biểu\nNguyễn Thị Huệ\nKế toán trưởng\nNguyễn Thị Hoa\nTổng Giám đốc\nMai Trần Tuấn\nThái Nguyên, ngày 05 tháng 8 năm 2025",
+    "questions": [
+      {
+        "question": "Công ty có bất kỳ sự kiện quan trọng nào xảy ra sau ngày báo cáo tài chính không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu từ Tổng Công ty Cổ phần Gang thép Thái Nguyên trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ông Trần Quốc Hùng nhận bao nhiêu thu nhập trong 6 tháng đầu năm 2025?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Có sự điều chỉnh hồi tố nào đối với các khoản mục trên bảng cân đối kế toán bán niên không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản bổ sung chi phí thuế TNDN và GTGT trong năm 2021, 2022 và 2023 có tổng giá trị bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của các giao dịch với bên liên quan (doanh thu, mua hàng) đến hoạt động kinh doanh của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá ý nghĩa của các điều chỉnh hồi tố đối với thông tin tài chính so sánh của Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Phụ lục 01 - Thông tin về các khoản vay ngắn hạn (Phần 1)\nLoại nội dung: Bảng\n\nPHỤ LỤC 01 - THÔNG TIN VỀ CÁC KHOẢN VAY NGẮN HẠN\nĐơn vị: VND\n\n| STT | Ngân hàng | Số hợp đồng/Ngày hợp đồng | Lãi suất/năm | Thời hạn vay | Mục đích vay | Bảo đảm | Số dư cuối kỳ tại 30/06/2025 |\n|---|---|---|---|---|---|---|---|\n| | Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Thái Nguyên | | | | | | |\n| 1 | | 12.0120252573181HDTD ngày 17/02/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 200.000.000 |\n| 2 | | 14.0120252573181HDTD ngày 18/02/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 10.989.350.600 |\n| 3 | | 15.0120252573181HDTD ngày 21/02/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.146.501.000 |\n| 4 | | 16.0120252573181HDTD ngày 24/02/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 14.000.000.000 |\n| 5 | | 17.0120252573181HDTD ngày 25/02/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 6.000.000.000 |\n| 6 | | 18.0120252573181HDTD ngày 27/02/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.495.713.919 |\n| 7 | | 19.0120252573181HDTD ngày 28/02/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 9.506.076.754 |\n| 8 | | 20.0120252573181HDTD ngày 03/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 65.000.000.000 |\n| 9 | | 21.0120252573181HDTD ngày 03/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.380.624.219 |\n| 10 | | 22.0120252573181HDTD ngày 10/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.001.484.795 |\n| 11 | | 23.0120252573181HDTD ngày 11/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.099.475.539 |\n| 12 | | 24.0120252573181HDTD ngày 13/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 1.886.364.115 |\n| 13 | | 25.0120252573181HDTD ngày 14/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 1.692.390.000 |\n| 14 | | 26.0120252573181HDTD ngày 17/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.057.419.606 |\n| 15 | | 27.0120252573181HDTD ngày 21/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.213.282.427 |\n| 16 | | 28.0120252573181HDTD ngày 24/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.852.723.221 |\n| 17 | | 29.0120252573181HDTD ngày 25/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 1.685.000.000 |\n| 18 | | 30.0120252573181HDTD ngày 26/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 1.137.385.000 |",
+    "questions": [
+      {
+        "question": "Ngân hàng nào đã cung cấp các khoản vay ngắn hạn này?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Mục đích chính của các khoản vay ngắn hạn là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lãi suất áp dụng cho các khoản vay ngắn hạn này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay ngắn hạn lớn nhất trong phần này có giá trị bao nhiêu VND và được ký vào ngày nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tất cả các khoản vay ngắn hạn trong phần này đều có bảo đảm hay không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro liên quan đến thời hạn vay ngắn hạn và mục đích vay để bổ sung vốn lưu động.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có bảo đảm đối với các khoản vay ngắn hạn này từ góc độ của người cho vay.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Phụ lục 01 - Thông tin về các khoản vay ngắn hạn (Phần 2)\nLoại nội dung: Bảng\n\nPHỤ LỤC 01 - THÔNG TIN VỀ CÁC KHOẢN VAY NGẮN HẠN\nĐơn vị: VND\n\n| STT | Ngân hàng | Số hợp đồng/Ngày hợp đồng | Lãi suất/năm | Thời hạn vay | Mục đích vay | Bảo đảm | Số dư cuối kỳ tại 30/06/2025 |\n|---|---|---|---|---|---|---|---|\n| 19 | Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Thái Nguyên | 31.0120252573181HDTD ngày 31/03/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.845.018.518 |\n| 20 | | 32.0120252573181HDTD ngày 03/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 3.752.963.012 |\n| 21 | | 33.0120252573181HDTD ngày 08/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 652.001.300 |\n| 22 | | 34.0120252573181HDTD ngày 09/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.869.994.352 |\n| 23 | | 35.0120252573181HDTD ngày 11/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.678.429.327 |\n| 24 | | 36.0120252573181HDTD ngày 14/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.378.763.458 |\n| 25 | | 37.0120252573181HDTD ngày 18/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.406.015.497 |\n| 26 | | 38.0120252573181HDTD ngày 21/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.043.750.000 |\n| 27 | | 39.0120252573181HDTD ngày 22/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.866.920.869 |\n| 28 | | 40.0120252573181HDTD ngày 23/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 3.449.411.533 |\n| 29 | | 41.0120252573181HDTD ngày 29/04/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 8.587.790.504 |\n| 30 | | 42.0120252573181HDTD ngày 05/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 6.422.768.681 |\n| 31 | | 43.0120252573181HDTD ngày 07/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 5.083.183.192 |\n| 32 | | 44.0120252573181HDTD ngày 07/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.860.902.778 |\n| 33 | | 45.0120252573181HDTD ngày 08/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 3.087.190.647 |\n| 34 | | 46.0120252573181HDTD ngày 12/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.023.744.000 |\n| 35 | | 47.0120252573181HDTD ngày 13/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.023.897.038 |\n| 36 | | 48.0120252573181HDTD ngày 14/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.397.090.122 |\n| 37 | | 49.0120252573181HDTD ngày 16/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 5.137.134.230 |\n| 38 | | 50.0120252573181HDTD ngày 21/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 2.876.939.641 |\n| 39 | | 51.0120252573181HDTD ngày 30/05/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 5.366.085.451 |\n| 40 | | 52.0120252573181HDTD ngày 04/06/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.638.680.628 |\n| 41 | | 53.0120252573181HDTD ngày 10/06/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 5.034.881.796 |\n| 42 | | 54.0120252573181HDTD ngày 12/06/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 5.200.531.906 |\n| 43 | | 55.0120252573181HDTD ngày 18/06/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 5.151.511.428 |\n| 44 | | 56.0120252573181HDTD ngày 23/06/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.977.093.759 |\n| 45 | | 57.0120252573181HDTD ngày 25/06/2025 | 7,0% | 5 tháng | Bổ sung vốn lưu động | Không có bảo đảm | 4.768.824.563 |\n| Tổng | | | | | | | 247.925.309.425 |\n\nTổng hạn mức của các hợp đồng tín dụng trên là 250.000.000.000 VND.",
+    "questions": [
+      {
+        "question": "Khoản vay ngắn hạn nào có số dư cuối kỳ lớn nhất trong các khoản từ STT 19 đến 45?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản vay ngắn hạn này được dùng để làm gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng số dư cuối kỳ của tất cả các khoản vay ngắn hạn liệt kê trong Phụ lục 01 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng hạn mức tín dụng của các hợp đồng này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lãi suất và thời hạn vay giữa các khoản vay ngắn hạn được liệt kê.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc sử dụng hạn mức tín dụng gần tối đa đến tình hình thanh khoản của Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: Công ty Cổ phần Cán thép Thái Trung\nMã cổ phiếu: TTS\nLoại báo cáo: Báo cáo tài chính riêng bán niên 2025\nThời gian: Phát hành 05/08/2025, Giai đoạn 01/01/2025 - 30/06/2025\nÝ kiến kiểm toán: Chấp nhận toàn phần (có đoạn nhấn mạnh)\n\nSection: Phụ lục 02 - Thông tin về các khoản vay dài hạn\nLoại nội dung: Bảng\n\nPHỤ LỤC 02 - THÔNG TIN VỀ CÁC KHOẢN VAY DÀI HẠN\nĐơn vị: VND\n\n| Ngân hàng | Số hợp đồng | Mục đích vay | Thời hạn vay | Lãi suất/năm | Số dư cuối kỳ tại 30/06/2025 | Số đến hạn trả trong vòng 12 tháng | Bảo đảm |\n|---|---|---|---|---|---|---|---|\n| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Thái Nguyên | HĐTD số 012009TTHDTD ngày 11/06/2009\nĐG số 0120172573181HDTD ngày 01/4/2017 | Đầu tư dự án Nhà máy cán thép Thái Trung | 192 tháng | 9,00% | 10.629.369.951 | 10.629.369.951 | Có tài sản bảo đảm |\n| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Tuyên Quang | HĐTD số 012009TTHDTD ngày 11/06/2009\nĐG số 0120172573181HDTD ngày 01/4/2017 | Đầu tư dự án Nhà máy cán thép Thái Trung | 192 tháng | 9,00% | 4.768.473.105 | 4.768.473.105 | Có tài sản bảo đảm |\n| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Đông Đô | HĐTD số 012009TTHDTD ngày 11/06/2009\nĐG số 0120172573181HDTD ngày 01/4/2017 | Đầu tư dự án Nhà máy cán thép Thái Trung | 192 tháng | 9,00% | 3.177.367.555 | 3.177.367.555 | Có tài sản bảo đảm |\n| Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam – Chi nhánh Thái Nguyên | HĐTD số 012009TTHDTD ngày 11/06/2009\nĐG số 0120172573181HDTD ngày 01/4/2017 | Đầu tư dự án Nhà máy cán thép Thái Trung | 192 tháng | 9,00% | 2.470.708.892 | 2.470.708.892 | Có tài sản bảo đảm |\n| Ngân hàng TMCP Công Thương Việt Nam – Chi nhánh Lưu Xá | HĐTD số 012009TTHDTD ngày 11/06/2009\nĐG số 0120172573181HDTD ngày 01/4/2017 | Đầu tư dự án Nhà máy cán thép Thái Trung | 192 tháng | 9,00% | 1.588.683.777 | 1.588.683.777 | Có tài sản bảo đảm |\n| Ngân hàng TMCP Công Thương Việt Nam – Chi nhánh Thái Nguyên | HĐTD số 012009TTHDTD ngày 11/06/2009\nĐG số 0120172573181HDTD ngày 01/4/2017 | Đầu tư dự án Nhà máy cán thép Thái Trung | 192 tháng | 9,00% | 1.588.683.777 | 1.588.683.777 | Có tài sản bảo đảm |\n| Tổng | | | | | 24.223.287.057 | 24.223.287.057 | |\n\nCác khoản vay từ ngân hàng và các tổ chức tín dụng khác được bảo đảm bằng các hợp đồng thế chấp tài sản và đã được đăng ký giao dịch bảo đảm đầy đủ.",
+    "questions": [
+      {
+        "question": "Tổng số dư cuối kỳ của các khoản vay dài hạn là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mục đích vay của tất cả các khoản vay dài hạn này là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời hạn vay của các khoản vay dài hạn này là bao nhiêu tháng?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay dài hạn nào có số dư lớn nhất tại ngày 30 tháng 6 năm 2025 và từ ngân hàng nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản vay dài hạn này có được bảo đảm bằng tài sản không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phân tích tác động của lãi suất 9,00% đối với chi phí tài chính của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro liên quan đến các khoản vay dài hạn đến hạn trả trong vòng 12 tháng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

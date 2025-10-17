@@ -1,0 +1,78 @@
+Dưới đây là dữ liệu huấn luyện được tạo theo yêu cầu của bạn, ở định dạng JSON Lines:
+
+```json
+[
+  {
+    "instruction": "Tổng tài sản ngắn hạn cuối kỳ là bao nhiêu VND?",
+    "input": "1",
+    "output": "Tổng tài sản ngắn hạn cuối kỳ là 876.757.662.407 VND."
+  },
+  {
+    "instruction": "Số dư tiền và các khoản tương đương tiền đầu năm là bao nhiêu?",
+    "input": "1",
+    "output": "Số dư tiền và các khoản tương đương tiền đầu năm là 14.069.518.738 VND."
+  },
+  {
+    "instruction": "So sánh khoản đầu tư tài chính ngắn hạn cuối kỳ so với đầu năm, giải thích sự thay đổi.",
+    "input": "1",
+    "output": "Khoản đầu tư tài chính ngắn hạn cuối kỳ là 0 VND, giảm so với số đầu năm là 3.500.000.000 VND. Sự thay đổi này cho thấy công ty đã thu hồi hoặc thanh lý toàn bộ khoản đầu tư nắm giữ đến ngày đáo hạn trong kỳ (theo thuyết minh V.2a trong Chunk 5, tiền thu hồi là 3.500.000.000 VND)."
+  },
+  {
+    "instruction": "Tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+    "input": "1",
+    "output": "Tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn cuối kỳ là (406.944.779.799 VND / 876.757.662.407 VND) * 100 ≈ 46.41%."
+  },
+  {
+    "instruction": "Đánh giá mức độ biến động của các khoản phải thu ngắn hạn của khách hàng giữa cuối kỳ và đầu năm.",
+    "input": "1",
+    "output": "Khoản phải thu ngắn hạn của khách hàng cuối kỳ là 253.506.512.264 VND, giảm 54.465.352.807 VND so với số đầu năm là 307.971.865.071 VND. Mức giảm này tương đương khoảng 17.69%, cho thấy sự biến động giảm đáng kể, có thể là do công ty đã thu hồi nợ hiệu quả hơn hoặc doanh số bán chịu giảm đi."
+  },
+  {
+    "instruction": "Tính hệ số thanh toán hiện hành (Current Ratio) của công ty dựa trên số liệu tài sản ngắn hạn và nợ ngắn hạn (nếu có đủ thông tin từ báo cáo).",
+    "input": "1",
+    "output": "Để tính hệ số thanh toán hiện hành (Current Ratio), ta cần thông tin về Tài sản ngắn hạn (từ Chunk 1) và Nợ ngắn hạn (từ Chunk 3).\nHệ số thanh toán hiện hành cuối kỳ = Tài sản ngắn hạn / Nợ ngắn hạn = 876.757.662.407 VND / 2.129.521.764.447 VND ≈ 0.41 lần."
+  },
+  {
+    "instruction": "Phân tích tác động của sự tăng/giảm các khoản phải thu ngắn hạn khác đến dòng tiền và thanh khoản của công ty.",
+    "input": "1",
+    "output": "Khoản phải thu ngắn hạn khác đã tăng đáng kể từ 61.551.442.452 VND (đầu năm) lên 186.781.209.550 VND (cuối kỳ), tăng 125.229.767.098 VND.\n*   **Tác động đến dòng tiền:** Sự tăng lên của các khoản phải thu ngắn hạn khác cho thấy công ty đang có nhiều tiền bị các bên khác nợ hơn. Điều này làm giảm dòng tiền thu về từ hoạt động kinh doanh (theo phương pháp gián tiếp, việc tăng các khoản phải thu là một khoản điều chỉnh giảm lợi nhuận trước thuế để tính lưu chuyển tiền thuần từ hoạt động kinh doanh), dẫn đến dòng tiền tự do có thể bị ảnh hưởng tiêu cực.\n*   **Tác động đến thanh khoản:** Mặc dù đây là tài sản ngắn hạn, nhưng nếu các khoản phải thu này không được thu hồi kịp thời, chúng sẽ không chuyển thành tiền mặt để đáp ứng các nghĩa vụ thanh toán ngắn hạn, từ đó có thể gây áp lực lên khả năng thanh khoản của công ty."
+  },
+  {
+    "instruction": "Nếu dự phòng phải thu ngắn hạn khó đòi tăng mạnh trong các kỳ tới, điều này báo hiệu rủi ro gì về chất lượng tài sản của công ty?",
+    "input": "1",
+    "output": "Nếu dự phòng phải thu ngắn hạn khó đòi tăng mạnh trong các kỳ tới, điều này báo hiệu những rủi ro sau về chất lượng tài sản của công ty:\n*   **Chất lượng khoản phải thu suy giảm:** Đây là dấu hiệu cho thấy công ty đánh giá rằng một phần lớn hơn các khoản phải thu hiện tại (từ khách hàng hoặc các đối tác khác) có nguy cơ không thể thu hồi được. Điều này phản ánh sự suy yếu trong khả năng thanh toán của các con nợ hoặc chất lượng tín dụng của các giao dịch bán chịu.\n*   **Giảm giá trị tài sản ròng:** Việc trích lập dự phòng làm giảm trực tiếp giá trị ghi sổ của các khoản phải thu, từ đó làm giảm tổng tài sản và vốn chủ sở hữu trên bảng cân đối kế toán.\n*   **Ảnh hưởng đến lợi nhuận:** Chi phí trích lập dự phòng tăng sẽ được ghi nhận vào chi phí quản lý doanh nghiệp (theo chính sách kế toán ở Chunk 10), làm giảm lợi nhuận của công ty.\n*   **Rủi ro thanh khoản:** Mặc dù các khoản phải thu được xếp vào tài sản ngắn hạn, nhưng nếu chúng bị nghi ngờ khó đòi, khả năng chuyển đổi thành tiền mặt sẽ thấp, ảnh hưởng tiêu cực đến khả năng đáp ứng các nghĩa vụ tài chính ngắn hạn của công ty.\n*   **Yếu kém trong quản lý công nợ:** Có thể cho thấy hệ thống quản lý tín dụng và thu hồi công nợ của công ty chưa hiệu quả hoặc tình hình kinh tế khó khăn ảnh hưởng đến khả năng thanh toán của các đối tác."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn cuối kỳ là bao nhiêu VND?",
+    "input": "2",
+    "output": "Tổng tài sản dài hạn cuối kỳ là 2.784.321.487.222 VND."
+  },
+  {
+    "instruction": "Giá trị còn lại của tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+    "input": "2",
+    "output": "Giá trị còn lại của tài sản cố định hữu hình cuối kỳ là 62.715.146.951 VND."
+  },
+  {
+    "instruction": "So sánh chi phí sản xuất, kinh doanh dở dang dài hạn cuối kỳ với đầu năm. Thay đổi bao nhiêu?",
+    "input": "2",
+    "output": "Chi phí sản xuất, kinh doanh dở dang dài hạn cuối kỳ là 2.110.357.848.911 VND, giảm 14.367.225.953 VND so với số đầu năm là 2.124.725.074.864 VND."
+  },
+  {
+    "instruction": "Tỷ trọng các khoản phải thu dài hạn trên tổng tài sản dài hạn cuối kỳ là bao nhiêu phần trăm?",
+    "input": "2",
+    "output": "Tỷ trọng các khoản phải thu dài hạn trên tổng tài sản dài hạn cuối kỳ là (439.754.851.906 VND / 2.784.321.487.222 VND) * 100 ≈ 15.79%."
+  },
+  {
+    "instruction": "Đánh giá mức độ đầu tư vào tài sản cố định vô hình của công ty dựa trên số liệu hiện tại.",
+    "input": "2",
+    "output": "Dựa trên số liệu hiện tại, mức độ đầu tư vào tài sản cố định vô hình của công ty là 60.725.552.823 VND tại cuối kỳ. Khoản mục này chiếm một tỷ trọng nhỏ (khoảng 2.18%) trong tổng tài sản dài hạn của công ty. Nguyên giá tài sản cố định vô hình là 101.402.245.137 VND, và đã khấu hao lũy kế 40.676.692.314 VND."
+  },
+  {
+    "instruction": "Phân tích xu hướng của tài sản dài hạn và tác động đến chiến lược đầu tư của công ty.",
+    "input": "2",
+    "output": "Tổng tài sản dài hạn của công ty đã giảm nhẹ từ 2.811.521.711.281 VND vào đầu năm xuống còn 2.784.321.487.222 VND vào cuối kỳ.\n*   **Xu hướng:** Các khoản mục lớn như \"Tài sản cố định\" và \"Tài sản dở dang dài hạn\" (chiếm tỷ trọng lớn nhất) đều có xu hướng giảm. Điều này cho thấy công ty có thể đã giảm tốc độ đầu tư vào các dự án mới hoặc đã hoàn thành và chuyển giao một phần các dự án đang triển khai (tài sản dở dang dài hạn).\n*   **Tác động đến chiến lược đầu tư:** Xu hướng giảm tổng tài sản dài hạn có thể phản ánh một chiến lược đầu tư thận trọng hơn, có thể do điều kiện thị trường không thuận lợi hoặc công ty đang tập trung vào tối ưu hóa việc sử dụng các tài sản hiện có. Việc giảm tài sản dở dang dài hạn có thể cho thấy công ty đang ưu tiên hoàn thiện các dự án hiện có thay vì mở rộng mạnh mẽ các dự án mới, hoặc đã có một số dự án được hoàn thành và chuyển thành tài sản hoạt động hoặc bán."
+  },
+  {
+    "instruction": "Làm thế nào để đánh giá hiệu quả của các khoản đầu tư tài chính dài hạn của công ty?",
+    "input": "2",
+    "output": "Để đánh giá hiệu quả của các khoản đầu tư tài chính dài hạn của công ty, cần xem xét các yếu tố sau:\n*   **Lợi nhuận thu được:** Theo dõi \"Phần lãi hoặc lỗ trong công ty liên doanh, liên kết\" (mã số 24 trên Báo cáo kết quả hoạt động kinh doanh - Chunk 4) và các khoản cổ tức, lợi nhuận được chia từ các khoản đầu tư góp vốn khác (nếu có chi tiết trong thuyết minh, ví dụ V.2b trong Chunk 15). So sánh khoản lợi nhuận này với giá trị đầu tư ban đầu để tính toán tỷ suất sinh lời.\n*   **Giá trị thị trường/Giá trị hợp lý:** Nếu có thông tin về giá trị thị trường hoặc giá trị hợp lý của các khoản đầu tư này (ví dụ từ thuyết minh V.2c trong Chunk 16), so sánh với giá gốc để đánh giá tiềm năng tăng giá hoặc suy giảm giá trị.\n*   **Mức độ rủi ro:** Đánh giá rủi ro liên quan đến từng khoản đầu tư, bao gồm rủi ro hoạt động của công ty liên doanh, liên kết, r

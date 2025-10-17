@@ -1,0 +1,596 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty là gì?",
+      "Mã chứng khoán của công ty là gì?",
+      "Địa chỉ trụ sở chính của Công ty Cổ phần Xây dựng điện VNECO12 ở đâu?",
+      "Báo cáo này được công bố vào ngày nào?",
+      "Ông Trương Xuân Phúc giữ chức vụ gì tại công ty?",
+      "Loại công bố thông tin là định kỳ hay bất thường?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Công bố thông tin về Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có (Đối với BCTC quý III/2024)<br><br>Section: Thông tin công bố<br>Loại nội dung: Text<br>CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>Độc lập – Tự do – Hạnh phúc<br><br>Số 12TB2024VNECO12CBTT Đồng Hới, ngày 16 tháng 10 năm 2024<br>CÔNG BỐ THÔNG TIN TRÊN CỔNG THÔNG TIN ĐIỆN TỬ<br>CỦA ỦY BAN CHỨNG KHOÁN NHÀ NƯỚC VÀ SGDCK HÀ NỘI<br>Kính gửi Ủy Ban Chứng khoán Nhà nước<br>Sở Giao dịch Chứng khoán Hà Nội<br><br>1. Tên Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>2. Mã chứng khoán: E12<br>3. Địa chỉ trụ sở chính: 155 Lý Thường Kiệt, Phường Đồng Phú, Thành Phố Đồng Hới, Tỉnh Quảng Bình<br>4. Điện thoại: 0232.1850554 Fax: 0232.3850554<br>Email: vneco12qbgmail.com Website: vneco12.com.vn<br>5. Người thực hiện công bố Thông tin<br>Họ và tên: Trương Xuân Phúc Chức vụ: Giám đốc Công ty<br>Địa chỉ: 155 Lý Thường Kiệt, TP Đồng Hới, tỉnh Quảng Bình<br>Điện thoại: 0982 882639<br>6. Loại công bố thông tin: Theo yêu cầu X Định kỳ<br>7. Nội dung công bố thông tin<br>Công ty Cổ phần Xây dựng điện VNECO12 công bố thông tin về Báo cáo Tài chính quý 3/2024 Kèm theo báo cáo.<br>Báo cáo Tài chính quý 3/2024 của Công ty Cổ phần Xây dựng điện VNECO12 đã được đăng tải trên trang thông tin điện tử của Công ty ngày 16 tháng 10 năm 2024. Truy cập tại Website http://www.vneco12.com.vn.<br>Chúng tôi cam đoan các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước Pháp Luật về nội dung thông tin đã công bố.<br>Trân trọng",
+    "output": [
+      "Tên đầy đủ của công ty là Công ty Cổ phần Xây dựng điện VNECO12.",
+      "Mã chứng khoán của công ty là E12.",
+      "Địa chỉ trụ sở chính của Công ty Cổ phần Xây dựng điện VNECO12 là 155 Lý Thường Kiệt, Phường Đồng Phú, Thành Phố Đồng Hới, Tỉnh Quảng Bình.",
+      "Báo cáo này được công bố vào ngày 16 tháng 10 năm 2024.",
+      "Ông Trương Xuân Phúc giữ chức vụ Giám đốc Công ty.",
+      "Loại công bố thông tin là Định kỳ."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty Cổ phần Xây dựng điện VNECO12 công bố loại báo cáo tài chính nào cho quý 3/2024?",
+      "Báo cáo này tuân thủ Thông tư nào của Bộ Tài chính?",
+      "Liệu có ý kiến kiểm toán ngoại trừ đối với BCTC năm 2023 được đề cập trong báo cáo này không?",
+      "Có sự chênh lệch lợi nhuận sau thuế từ 5% trở lên trước và sau kiểm toán năm 2023 không?",
+      "Lợi nhuận sau thuế TNDN trong kỳ báo cáo có thay đổi từ 10% trở lên so với cùng kỳ năm trước không?",
+      "Công ty có cam kết gì về tính chính xác của thông tin công bố?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Công bố thông tin về Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có (Đối với BCTC quý III/2024)<br><br>Section: Thông tin công bố (tiếp theo)<br>Loại nội dung: Text<br>CÔNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>Độc Lập – Tự Do – Hạnh Phúc<br><br>Số 12CBTT2024VNECO12<br>Quảng Bình, ngày 16 tháng 10 năm 2024.<br>CÔNG BỐ THÔNG TIN ĐỊNH KỲ BÁO CÁO TÀI CHÍNH<br>Kính gửi Sở Giao dịch Chứng khoán Hà Nội<br>Thực hiện quy định tại khoản 3 Điều 14 Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán, CTCP Xây dựng điện VNECO12 thực hiện công bố thông tin báo cáo Tài chính (BCTC) Báo cáo tài chính quý 3/2024, với Sở Giao dịch Chứng khoán Hà Nội như sau:<br>1. Tên tổ chức: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã chứng khoán: E12<br>Địa chỉ: 155 Lý Thường Kiệt, Phường Đồng Phú, TP Đồng Hới, tỉnh Quảng Bình.<br>Điện thoại liên hệ: Tel 0913464624 Fax 0232 3850554<br>Email: vneco12qbgmail.com Website: vneco12.com.vn<br>2. Nội dung thông tin công bố<br>BCTC Quý 3/2024<br>✓ BCTC riêng (TCNY không có công ty con và đơn vị kế toán cấp trên có đơn vị trực thuộc)<br>_ BCTC hợp nhất (TCNY có công ty con)<br>_ BCTC tổng hợp (TCNY có đơn vị kế toán trực thuộc tổ chức bộ máy kế toán riêng).<br>Các trường hợp thuộc diện phải giải trình nguyên nhân:<br>• Tổ chức kiểm toán đưa ra ý kiến không phải là ý kiến chấp nhận toàn phần đối với BCTC đã được soát xét/kiểm toán năm 2023: Có _ Không ✓<br>Văn bản giải trình trong trường hợp tích có: ____<br>• Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch trước và sau kiểm toán từ 5% trở lên, chuyển từ lỗ sang lãi hoặc ngược lại đối với BCTC được kiểm toán năm 2023: Có _ Không ✓<br>Văn bản giải trình trong trường hợp tích có: ____<br>• Lợi nhuận sau thuế thu nhập doanh nghiệp tại báo cáo kết quả kinh doanh của kỳ báo cáo thay đổi từ 10% trở lên so với báo cáo cùng kỳ năm trước: Có _ Không ✓<br>Văn bản giải trình trong trường hợp tích có: ____<br>• Lợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này hoặc ngược lại: Có _ Không ✓<br>Văn bản giải trình trong trường hợp tích có: ____<br>Thông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 16/10/2024 tại đường dẫn Website http://www.vneco12.com.vn.<br>Chúng tôi xin cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước Pháp luật về nội dung các thông tin công bố.<br>Tài liệu đính kèm: BCTC... Người đại diện theo pháp luật/Người UQCBTT<br>Văn bản giải trình ....",
+    "output": [
+      "Công ty Cổ phần Xây dựng điện VNECO12 công bố Báo cáo Tài chính riêng quý 3/2024 (BCTC riêng) cho quý 3/2024.",
+      "Báo cáo này tuân thủ quy định tại khoản 3 Điều 14 Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính.",
+      "Không có ý kiến kiểm toán ngoại trừ đối với BCTC đã được soát xét/kiểm toán năm 2023 (được đánh dấu là \\Không ✓\\).",
+      "Không có sự chênh lệch lợi nhuận sau thuế từ 5% trở lên trước và sau kiểm toán năm 2023 (được đánh dấu là \\Không ✓\\).",
+      "Không có sự thay đổi lợi nhuận sau thuế thu nhập doanh nghiệp tại báo cáo kết quả kinh doanh của kỳ báo cáo từ 10% trở lên so với báo cáo cùng kỳ năm trước (được đánh dấu là \\Không ✓\\).",
+      "Công ty cam kết các thông tin công bố là đúng sự thật và hoàn toàn chịu trách nhiệm trước Pháp luật về nội dung các thông tin đã công bố."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Easy_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn đến ngày 30/09/2024 của công ty là bao nhiêu?",
+      "Giá trị tiền và các khoản tương đương tiền vào cuối quý III/2024 là bao nhiêu?",
+      "Hàng tồn kho của công ty có thay đổi như thế nào từ đầu năm đến cuối quý III/2024?",
+      "So sánh các khoản phải thu ngắn hạn của khách hàng vào cuối quý III/2024 so với đầu năm.",
+      "Đánh giá mức độ biến động của tài sản ngắn hạn từ đầu năm đến cuối quý III/2024.",
+      "Tính tỷ trọng của Tiền và các khoản tương đương tiền trong tổng Tài sản ngắn hạn vào cuối quý III/2024.",
+      "Phân tích ý nghĩa của việc không có các khoản đầu tư tài chính ngắn hạn đối với chiến lược quản lý vốn của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Đến ngày 30/09/2024 | Từ ngày 01/01/2024 |<br>|:-------------------------------------------|:-------|:-------------|:--------------------|:-------------------|<br>| A. TÀI SẢN NGẮN HẠN | 100 | | 69.792.583.435 | 65.335.374.441 |<br>| I. Tiền và các khoản tương đương tiền | 110 | | 8.866.329.546 | 10.530.024.358 |<br>| 1. Tiền | 111 | | 8.866.329.546 | 10.530.024.358 |<br>| 2. Các khoản tương đương tiền | 112 | | 0 | 0 |<br>| II. Các khoản đầu tư tài chính ngắn hạn | 120 | | 0 | 0 |<br>| 1. Chứng khoán và công cụ tài chính kinh doanh | 121 | | 0 | 0 |<br>| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | 0 | 0 |<br>| 3. Đầu tư ngắn hạn khác | 123 | | 0 | 0 |<br>| III. Các khoản phải thu ngắn hạn | 130 | | 36.037.907.067 | 30.094.213.725 |<br>| 1. Phải thu ngắn hạn của khách hàng | 131 | | 28.453.746.255 | 20.213.269.209 |<br>| 2. Trả trước cho người bán | 132 | | 1.414.287.169 | 3.805.417.334 |<br>| 3. Phải thu nội bộ ngắn hạn | 133 | | 0 | 0 |<br>| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | 0 | 0 |<br>| 5. Phải thu về cho vay ngắn hạn | 135 | | 2.217.662.067 | 2.217.662.067 |<br>| 6. Phải thu ngắn hạn khác | 136 | | 5.448.267.157 | 5.353.920.696 |<br>| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | | 1.496.055.581 | 1.496.055.581 |<br>| 8. Tài sản thiếu chờ xử lý | 139 | | 0 | 0 |<br>| IV. Hàng tồn kho | 140 | | 24.862.148.991 | 24.698.236.591 |<br>| 1. Hàng tồn kho | 141 | | 24.864.710.238 | 24.700.797.838 |<br>| 2. Dự phòng giảm giá hàng tồn kho | 149 | | 2.561.247 | 2.561.247 |<br>| V. Tài sản ngắn hạn khác | 150 | | 26.197.831 | 12.899.767 |<br>| 1. Chi phí trả trước ngắn hạn | 151 | | 26.197.831 | 12.899.767 |<br>| 2. Thuế GTGT được khấu trừ | 152 | | 0 | 0 |<br>| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | | 0 | 0 |<br>| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | 0 | 0 |<br>| 5. Tài sản ngắn hạn khác | 155 | | 0 | 0 |",
+    "output": [
+      "Tổng tài sản ngắn hạn đến ngày 30/09/2024 của công ty là 69.792.583.435 đồng.",
+      "Giá trị tiền và các khoản tương đương tiền vào cuối quý III/2024 là 8.866.329.546 đồng.",
+      "Hàng tồn kho của công ty đã tăng từ 24.698.236.591 đồng vào ngày 01/01/2024 lên 24.862.148.991 đồng vào ngày 30/09/2024, tức là tăng 163.912.400 đồng.",
+      "Các khoản phải thu ngắn hạn của khách hàng vào cuối quý III/2024 là 28.453.746.255 đồng, trong khi đầu năm là 20.213.269.209 đồng. Như vậy, các khoản phải thu ngắn hạn của khách hàng đã tăng 8.240.477.046 đồng trong giai đoạn này.",
+      "Tổng tài sản ngắn hạn của công ty đã tăng từ 65.335.374.441 đồng vào ngày 01/01/2024 lên 69.792.583.435 đồng vào ngày 30/09/2024, tức là tăng 4.457.208.994 đồng (khoảng 6.82%). Đây là một mức độ biến động tăng tương đối trong 9 tháng đầu năm, cho thấy sự gia tăng trong các tài sản có tính thanh khoản cao như tiền, các khoản phải thu và hàng tồn kho.",
+      "Tiền và các khoản tương đương tiền là 8.866.329.546 đồng. Tổng tài sản ngắn hạn là 69.792.583.435 đồng. Tỷ trọng của Tiền và các khoản tương đương tiền trong tổng Tài sản ngắn hạn vào cuối quý III/2024 là khoảng 12.70% (8.866.329.546 / 69.792.583.435).",
+      "Việc không có các khoản đầu tư tài chính ngắn hạn (giá trị 0 đồng cho tất cả các chỉ tiêu liên quan đến đầu tư tài chính ngắn hạn) cho thấy công ty không sử dụng các nguồn vốn nhàn rỗi để đầu tư vào các công cụ tài chính có tính thanh khoản cao trong ngắn hạn như chứng khoán kinh doanh. Điều này có thể phản ánh chiến lược quản lý vốn tập trung vào việc duy trì tính thanh khoản cao cho các hoạt động kinh doanh cốt lõi hoặc công ty không có thặng dư tiền mặt để đầu tư vào các kênh này, hoặc ưu tiên sử dụng vốn cho các hoạt động sản xuất kinh doanh trực tiếp thay vì tìm kiếm lợi nhuận từ thị trường tài chính ngắn hạn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn của công ty đến ngày 30/09/2024 là bao nhiêu?",
+      "Nguyên giá tài sản cố định hữu hình của công ty là bao nhiêu?",
+      "So sánh giá trị tài sản cố định hữu hình vào cuối quý III/2024 với đầu năm.",
+      "Giá trị hao mòn lũy kế của tài sản cố định hữu hình đã tăng hay giảm trong 9 tháng đầu năm 2024?",
+      "Đánh giá sự thay đổi của tổng tài sản dài hạn trong quý III/2024 và tác động của nó đến cơ cấu tài sản.",
+      "Tính tỷ lệ tài sản cố định hữu hình trên tổng tài sản dài hạn vào cuối quý III/2024.",
+      "Nếu công ty không có các khoản đầu tư tài chính dài hạn, điều này nói lên điều gì về chiến lược đầu tư dài hạn của công ty?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Đến ngày 30/09/2024 | Từ ngày 01/01/2024 |<br>|:------------------------------------------|:-------|:-------------|:--------------------|:-------------------|<br>| B. TÀI SẢN DÀI HẠN | 200 | | 5.208.008.985 | 6.039.154.740 |<br>| I. Các khoản phải thu dài hạn | 210 | | 60.000.000 | 0 |<br>| 1. Phải thu dài hạn của khách hàng | 211 | | 0 | 0 |<br>| 2. Trả trước cho người bán dài hạn | 212 | | 0 | 0 |<br>| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | 0 | 0 |<br>| 4. Phải thu nội bộ dài hạn | 214 | | 0 | 0 |<br>| 5. Phải thu về cho vay dài hạn | 215 | | 0 | 0 |<br>| 6. Phải thu dài hạn khác | 216 | | 60.000.000 | 0 |<br>| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | 0 | 0 |<br>| II. Tài sản cố định | 220 | | 4.993.214.204 | 5.804.532.371 |<br>| 1. Tài sản cố định hữu hình | 221 | | 4.993.214.204 | 5.804.532.371 |<br>| - Nguyên giá | 222 | | 26.995.006.564 | 26.995.006.564 |<br>| - Giá trị hao mòn lũy kế | 223 | | 22.001.792.360 | 21.190.474.193 |<br>| 2. Tài sản cố định thuê tài chính | 224 | | 0 | 0 |<br>| - Nguyên giá | 225 | | 0 | 0 |<br>| - Giá trị hao mòn lũy kế | 226 | | 0 | 0 |<br>| 3. Tài sản cố định vô hình | 227 | | 0 | 0 |<br>| - Nguyên giá | 228 | | 0 | 0 |<br>| - Giá trị hao mòn lũy kế | 229 | | 0 | 0 |<br>| III. Bất động sản đầu tư | 230 | | 0 | 0 |<br>| - Nguyên giá | 231 | | 0 | 0 |<br>| - Giá trị hao mòn lũy kế | 232 | | 0 | 0 |<br>| IV. Tài sản dài hạn dở dang | 240 | | 0 | 0 |<br>| 1. Chi phí sản xuất kinh doanh dở dang dài hạn | 241 | | 0 | 0 |<br>| 2. Chi phí xây dựng cơ bản dở dang | 242 | | 0 | 0 |<br>| V. Các khoản đầu tư tài chính dài hạn | 250 | | 0 | 0 |<br>| 1. Đầu tư vào công ty con | 251 | | 0 | 0 |<br>| 2. Đầu tư vào công ty liên kết, liên doanh | 252 | | 0 | 0 |<br>| 3. Đầu tư góp vốn vào đơn vị khác | 253 | | 0 | 0 |<br>| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | 0 | 0 |<br>| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | 0 | 0 |<br>| VI. Tài sản dài hạn khác | 260 | | 154.794.781 | 234.622.369 |<br>| 1. Chi phí trả trước dài hạn | 261 | | 154.794.781 | 234.622.369 |<br>| 2. Tài sản thuế thu nhập hoãn lại | 262 | | 0 | 0 |<br>| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | 0 | 0 |<br>| 4. Tài sản dài hạn khác | 268 | | 0 | 0 |<br>| TỔNG CỘNG TÀI SẢN | 270 | | 75.000.592.420 | 71.374.529.181 |",
+    "output": [
+      "Tổng tài sản dài hạn của công ty đến ngày 30/09/2024 là 5.208.008.985 đồng.",
+      "Nguyên giá tài sản cố định hữu hình của công ty là 26.995.006.564 đồng.",
+      "Giá trị tài sản cố định hữu hình vào cuối quý III/2024 là 4.993.214.204 đồng, trong khi đầu năm là 5.804.532.371 đồng. Như vậy, giá trị này đã giảm 811.318.167 đồng.",
+      "Giá trị hao mòn lũy kế của tài sản cố định hữu hình đã tăng từ 21.190.474.193 đồng vào ngày 01/01/2024 lên 22.001.792.360 đồng vào ngày 30/09/2024, tức là tăng 811.318.167 đồng trong 9 tháng đầu năm 2024.",
+      "Tổng tài sản dài hạn đã giảm từ 6.039.154.740 đồng vào ngày 01/01/2024 xuống còn 5.208.008.985 đồng vào ngày 30/09/2024, tức giảm 831.145.755 đồng (khoảng 13.76%). Sự giảm này chủ yếu do giá trị còn lại của tài sản cố định hữu hình giảm do khấu hao. Tác động của sự thay đổi này là làm giảm quy mô tổng thể của tài sản dài hạn trong cơ cấu tài sản của công ty, có thể cho thấy công ty không đầu tư mạnh vào tài sản dài hạn mới hoặc đang trong quá trình sử dụng và khấu hao tài sản hiện có.",
+      "Tài sản cố định hữu hình vào cuối quý III/2024 là 4.993.214.204 đồng. Tổng tài sản dài hạn là 5.208.008.985 đồng. Tỷ lệ tài sản cố định hữu hình trên tổng tài sản dài hạn vào cuối quý III/2024 là khoảng 95.87% (4.993.214.204 / 5.208.008.985).",
+      "Việc công ty không có các khoản đầu tư tài chính dài hạn (giá trị 0 đồng) cho thấy chiến lược đầu tư dài hạn của công ty không tập trung vào việc góp vốn vào các công ty con, liên kết, liên doanh hoặc các khoản đầu tư dài hạn khác. Thay vào đó, công ty có thể ưu tiên đầu tư vào tài sản cố định hữu hình để phục vụ trực tiếp cho hoạt động sản xuất kinh doanh cốt lõi, hoặc có thể đang trong giai đoạn không có kế hoạch mở rộng thông qua các khoản đầu tư tài chính bên ngoài."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả đến ngày 30/09/2024 của công ty là bao nhiêu?",
+      "Giá trị vốn chủ sở hữu vào cuối quý III/2024 là bao nhiêu?",
+      "So sánh khoản vay và nợ thuê tài chính ngắn hạn vào cuối quý III/2024 với đầu năm.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là bao nhiêu?",
+      "Tính tỷ lệ nợ ngắn hạn trên tổng nợ phải trả vào cuối quý III/2024. Tỷ lệ này có ý nghĩa gì?",
+      "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) vào cuối quý III/2024 và đánh giá rủi ro tài chính của công ty.",
+      "Phân tích sự thay đổi trong cơ cấu vốn chủ sở hữu từ đầu năm đến cuối quý III/2024 và tác động của nó."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Đến ngày 30/09/2024 | Từ ngày 01/01/2024 |<br>|:-------------------------------------------|:-------|:-------------|:--------------------|:-------------------|<br>| C. NỢ PHẢI TRẢ | 300 | | 63.169.567.736 | 59.645.364.750 |<br>| I. Nợ ngắn hạn | 310 | | 63.169.567.736 | 59.645.364.750 |<br>| 1. Phải trả người bán ngắn hạn | 311 | | 10.135.137.146 | 3.481.984.977 |<br>| 2. Người mua trả tiền trước ngắn hạn | 312 | | 4.461.210.713 | 4.203.819.889 |<br>| 3. Thuế và các khoản phải nộp Nhà nước | 313 | | 653.477.324 | 680.106.658 |<br>| 4. Phải trả người lao động | 314 | | 1.437.064.077 | 1.384.974.575 |<br>| 5. Chi phí phải trả ngắn hạn | 315 | | 185.485.406 | 1.521.586.926 |<br>| 6. Phải trả nội bộ ngắn hạn | 316 | | 0 | 0 |<br>| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | 0 | 0 |<br>| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | 0 | 0 |<br>| 9. Phải trả ngắn hạn khác | 319 | | 2.398.390.937 | 2.378.938.096 |<br>| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | | 43.629.018.033 | 45.721.669.529 |<br>| 11. Dự phòng phải trả ngắn hạn | 321 | | 0 | 0 |<br>| 12. Quỹ khen thưởng, phúc lợi | 322 | | 269.784.100 | 272.284.100 |<br>| 13. Quỹ bình ổn giá | 323 | | 0 | 0 |<br>| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | 0 | 0 |<br>| II. Nợ dài hạn | 330 | | 0 | 0 |<br>| 1. Phải trả dài hạn người bán | 331 | | 0 | 0 |<br>| 2. Người mua trả tiền trước dài hạn | 332 | | 0 | 0 |<br>| 3. Chi phí phải trả dài hạn | 333 | | 0 | 0 |<br>| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | 0 | 0 |<br>| 5. Phải trả nội bộ dài hạn | 335 | | 0 | 0 |<br>| 6. Doanh thu chưa thực hiện dài hạn | 336 | | 0 | 0 |<br>| 7. Phải trả dài hạn khác | 337 | | 0 | 0 |<br>| 8. Vay và nợ thuê tài chính dài hạn | 338 | | 0 | 0 |<br>| 9. Trái phiếu chuyển đổi | 339 | | 0 | 0 |<br>| 10. Cổ phiếu ưu đãi | 340 | | 0 | 0 |<br>| 11. Thuế thu nhập hoãn lại phải trả | 341 | | 0 | 0 |<br>| 12. Dự phòng phải trả dài hạn | 342 | | 0 | 0 |<br>| 13. Quỹ phát triển khoa học và công nghệ | 343 | | 0 | 0 |<br>| D. VỐN CHỦ SỞ HỮU | 400 | | 11.831.024.684 | 11.729.164.431 |<br>| I. Vốn chủ sở hữu | 410 | | 11.831.024.684 | 11.729.164.431 |<br>| 1. Vốn góp của chủ sở hữu | 411 | | 12.000.000.000 | 12.000.000.000 |<br>| - Cổ phiếu phổ thông có quyền biểu quyết | 411A | | 0 | 0 |<br>| - Cổ phiếu ưu đãi | 411B | | 12.000.000.000 | 12.000.000.000 |<br>| 2. Thặng dư vốn cổ phần | 412 | | 0 | 0 |<br>| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | 0 | 0 |<br>| 4. Vốn khác của chủ sở hữu | 414 | | 0 | 0 |<br>| 5. Cổ phiếu quỹ | 415 | | 0 | 0 |<br>| 6. Chênh lệch đánh giá lại tài sản | 416 | | 0 | 0 |<br>| 7. Chênh lệch tỷ giá hối đoái | 417 | | 0 | 0 |<br>| 8. Quỹ đầu tư phát triển | 418 | | 1.525.591.850 | 1.525.591.850 |<br>| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | 0 | 0 |<br>| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | 0 | 0 |<br>| 11. Lợi nhuận sau thuế chưa phân phối | 421 | | 1.694.567.166 | 1.796.427.419 |<br>| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421A | | 0 | 0 |<br>| - LNST chưa phân phối kỳ này | 421B | | 1.694.567.166 | 1.796.427.419 |<br>| 12. Nguồn vốn đầu tư XDCB | 422 | | 0 | 0 |<br>| II. Nguồn kinh phí và quỹ khác | 430 | | 0 | 0 |<br>| 1. Nguồn kinh phí | 431 | | 0 | 0 |<br>| 2. Nguồn kinh phí đã hình thành TSCĐ | 432 | | 0 | 0 |<br>| Tổng Cộng Nguồn vốn | 440 | | 75.000.592.420 | 71.374.529.181 |",
+    "output": [
+      "Tổng nợ phải trả đến ngày 30/09/2024 của công ty là 63.169.567.736 đồng.",
+      "Giá trị vốn chủ sở hữu vào cuối quý III/2024 là 11.831.024.684 đồng.",
+      "Khoản vay và nợ thuê tài chính ngắn hạn vào cuối quý III/2024 là 43.629.018.033 đồng, so với 45.721.669.529 đồng vào đầu năm. Như vậy, khoản mục này đã giảm 2.092.651.496 đồng.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là 1.694.567.166 đồng.",
+      "Nợ ngắn hạn vào cuối quý III/2024 là 63.169.567.736 đồng và tổng nợ phải trả cũng là 63.169.567.736 đồng. Do đó, tỷ lệ nợ ngắn hạn trên tổng nợ phải trả là 100%. Tỷ lệ này có ý nghĩa rằng toàn bộ nghĩa vụ nợ của công ty đều là nợ ngắn hạn, cho thấy công ty phải đối mặt với áp lực thanh khoản cao vì phải đáp ứng các nghĩa vụ tài chính trong thời gian ngắn.",
+      "Hệ số nợ trên vốn chủ sở hữu (D/E ratio) vào cuối quý III/2024 được tính bằng tổng nợ phải trả (63.169.567.736 đồng) chia cho vốn chủ sở hữu (11.831.024.684 đồng), cho kết quả khoảng 5.34. Hệ số D/E rất cao này cho thấy công ty đang sử dụng đòn bẩy tài chính ở mức độ rất lớn. Điều này tiềm ẩn rủi ro tài chính đáng kể, đặc biệt khi toàn bộ nợ đều là nợ ngắn hạn, có thể gây áp lực lớn lên khả năng thanh toán và ổn định tài chính của công ty.",
+      "Tổng vốn chủ sở hữu đã tăng từ 11.729.164.431 đồng vào đầu năm lên 11.831.024.684 đồng vào cuối quý III/2024, tăng 101.860.253 đồng. Trong cơ cấu vốn chủ sở hữu, Vốn góp của chủ sở hữu và Quỹ đầu tư phát triển giữ nguyên. Tuy nhiên, Lợi nhuận sau thuế chưa phân phối đã giảm từ 1.796.427.419 đồng xuống 1.694.567.166 đồng. Mặc dù tổng vốn chủ sở hữu tăng, sự sụt giảm của lợi nhuận sau thuế chưa phân phối (có thể do các khoản điều chỉnh hoặc phân phối trong kỳ không được hiển thị chi tiết ở đây) cho thấy khả năng giữ lại lợi nhuận để tái đầu tư hoặc tăng cường vốn đã giảm đi, tuy nhiên, sự tăng nhẹ tổng vốn chủ sở hữu cho thấy công ty vẫn duy trì được năng lực tài chính ở mức độ nhất định."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong Quý 3/2024 là bao nhiêu?",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế từ đầu năm đến cuối quý 3/2024 là bao nhiêu?",
+      "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa Quý 3/2024 và Quý 3/2023.",
+      "Chi phí tài chính lũy kế năm 2024 thay đổi như thế nào so với cùng kỳ năm 2023?",
+      "Đánh giá hiệu quả hoạt động kinh doanh của công ty trong quý 3/2024 so với cùng kỳ năm trước dựa trên lợi nhuận thuần từ hoạt động kinh doanh.",
+      "Tính biên lợi nhuận gộp (Gross Profit Margin) của Quý 3/2024.",
+      "Phân tích tác động của chi phí lãi vay đến lợi nhuận sau thuế của công ty trong 9 tháng đầu năm 2024."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo kết quả kinh doanh<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:-----------------------------------------------------|:-------|:-------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | | 24.241.194.230 | 6.425.406.840 | 44.406.540.834 | 17.683.058.837 |<br>| 2. Các khoản giảm trừ doanh thu | 02 | | 0 | 0 | 0 | 0 |<br>| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | 01-02 | 24.241.194.230 | 6.425.406.840 | 44.406.540.834 | 17.683.058.837 |<br>| 4. Giá vốn hàng bán | 11 | | 22.684.361.326 | 5.010.023.336 | 40.484.985.656 | 14.036.986.814 |<br>| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | 10-11 | 1.556.832.904 | 1.415.383.504 | 3.921.555.178 | 3.646.072.023 |<br>| 6. Doanh thu hoạt động tài chính | 21 | | 79.716.091 | 81.568.272 | 253.684.200 | 181.947.161 |<br>| 7. Chi phí tài chính | 22 | | 712.009.244 | 1.004.189.605 | 2.034.222.194 | 2.584.737.552 |<br>| Trong đó: Chi phí lãi vay | 23 | | 712.009.244 | 1.004.189.605 | 2.034.222.194 | 2.584.737.552 |<br>| 8. Chi phí bán hàng | 25 | | 126.919.565 | 42.748.184 | 212.168.942 | 306.386.789 |<br>| 9. Chi phí quản lý doanh nghiệp | 26 | | 741.595.109 | 415.087.201 | 1.789.522.926 | 866.000.291 |<br>| 10. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | 20+21-22-25-26 | 56.025.077 | 34.926.786 | 139.325.316 | 70.894.552 |<br>| 11. Thu nhập khác | 31 | | 0 | 0 | 0 | 18.500.000 |<br>| 12. Chi phí khác | 32 | | 0 | 13.593.378 | 0 | 28.397.923 |<br>| 13. Lợi nhuận khác | 40 | 31-32 | 0 | (13.593.378) | 0 | (9.897.923) |<br>| 14. Tổng lợi nhuận kế toán trước thuế | 50 | 30+40 | 56.025.077 | 21.333.408 | 139.325.316 | 60.996.629 |<br>| 15. Chi phí thuế TNDN hiện hành | 51 | | 16.005.015 | 11.785.357 | 37.465.063 | 24.518.000 |<br>| 16. Chi phí thuế TNDN hoãn lại | 52 | | 0 | 0 | 0 | 0 |<br>| 17. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | 50-51-52 | 40.020.062 | 9.548.051 | 101.860.253 | 36.478.629 |<br>| 18. Lãi cơ bản trên cổ phiếu | 70 | | 0 | 0 | 0 | 0 |<br>| 19. Lãi suy giảm trên cổ phiếu | 71 | | 0 | 0 | 0 | 0 |",
+    "output": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong Quý 3/2024 là 24.241.194.230 đồng.",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế từ đầu năm đến cuối quý 3/2024 là 101.860.253 đồng.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý 3/2024 là 1.556.832.904 đồng, cao hơn so với 1.415.383.504 đồng trong Quý 3/2023. Cụ thể, lợi nhuận gộp đã tăng 141.449.400 đồng.",
+      "Chi phí tài chính lũy kế từ đầu năm đến cuối quý 3/2024 là 2.034.222.194 đồng, thấp hơn so với 2.584.737.552 đồng của cùng kỳ năm 2023. Như vậy, chi phí tài chính đã giảm 550.515.358 đồng.",
+      "Lợi nhuận thuần từ hoạt động kinh doanh của công ty trong Quý 3/2024 là 56.025.077 đồng, tăng đáng kể so với 34.926.786 đồng của Quý 3/2023. Sự tăng trưởng này cho thấy công ty đã cải thiện hiệu quả trong việc quản lý doanh thu và chi phí hoạt động cốt lõi, dẫn đến mức lợi nhuận thuần từ hoạt động kinh doanh cao hơn trong quý này so với cùng kỳ năm trước.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý 3/2024 là 1.556.832.904 đồng và Doanh thu thuần về bán hàng và cung cấp dịch vụ là 24.241.194.230 đồng. Biên lợi nhuận gộp của Quý 3/2024 là khoảng 6.42% (1.556.832.904 / 24.241.194.230 * 100%).",
+      "Trong 9 tháng đầu năm 2024, chi phí lãi vay lũy kế của công ty là 2.034.222.194 đồng. Trong khi đó, tổng lợi nhuận kế toán trước thuế lũy kế chỉ đạt 139.325.316 đồng và lợi nhuận sau thuế thu nhập doanh nghiệp là 101.860.253 đồng. Điều này cho thấy chi phí lãi vay là một gánh nặng tài chính rất lớn, chiếm phần lớn lợi nhuận mà công ty tạo ra. Nếu không có chi phí lãi vay, lợi nhuận của công ty sẽ cao hơn đáng kể, cho thấy mức độ ảnh hưởng tiêu cực của chi phí lãi vay đến khả năng sinh lời cuối cùng của doanh nghiệp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm 2024 là bao nhiêu?",
+      "Tiền và tương đương tiền cuối kỳ của năm 2024 là bao nhiêu?",
+      "So sánh lưu chuyển tiền thuần từ hoạt động kinh doanh giữa năm 2024 và năm 2023.",
+      "Khoản tiền chi trả nợ gốc vay lũy kế năm 2024 thay đổi như thế nào so với năm 2023?",
+      "Đánh giá khả năng tạo tiền từ hoạt động kinh doanh của công ty trong năm 2024.",
+      "Phân tích nguyên nhân chính dẫn đến sự sụt giảm của lưu chuyển tiền thuần trong kỳ năm 2024 so với năm 2023.",
+      "Tính tỷ lệ chi trả lãi vay trên tiền thu từ bán hàng và cung cấp dịch vụ lũy kế năm 2024."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo lưu chuyển tiền tệ (Trực tiếp)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Lũy kế từ đầu năm đến cuối quý này Năm 2024 | Lũy kế từ đầu năm đến cuối quý này Năm 2023 |<br>|:-------------------------------------------------------|:-------|:-------------------------------------------|:-------------------------------------------|<br>| I. Lưu chuyển tiền tệ từ hoạt động SX – KD | | | |<br>| 1. Tiền thu từ bán hàng, cung cấp dịch vụ và doanh thu khác | 01 | 40.128.121.808 | 28.744.009.741 |<br>| 2. Tiền chi trả cho người cung cấp hàng hóa và dịch vụ | 02 | 38.541.689.079 | 43.636.883.921 |<br>| 3. Tiền chi trả cho người lao động | 03 | 5.565.128.900 | 5.620.950.349 |<br>| 4. Tiền chi trả lãi vay | 04 | 2.034.222.194 | 2.849.341.558 |<br>| 5. Tiền chi nộp thuế thu nhập doanh nghiệp | 05 | 0 | 227.501.580 |<br>| 6. Tiền thu khác từ hoạt động kinh doanh | 06 | 10.847.615.350 | 25.312.848.557 |<br>| 7. Tiền chi khác cho hoạt động kinh doanh | 07 | 4.659.424.501 | 2.591.239.116 |<br>| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 175.272.484 | 869.058.226 |<br>| II. Lưu chuyển tiền từ hoạt động đầu tư | | | |<br>| 1. Tiền chi để mua sắm, xây dựng, TSCĐ và các tài sản dài hạn | 21 | 0 | 245.580.000 |<br>| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác | 22 | 0 | 0 |<br>| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | 0 | 0 |<br>| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | 0 | 0 |<br>| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | 0 | 0 |<br>| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | 0 | 0 |<br>| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 253.684.200 | 181.947.161 |<br>| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | 253.684.200 | 63.632.839 |<br>| III. Lưu chuyển tiền từ hoạt động tài chính | | | |<br>| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | 0 | 0 |<br>| 2. Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu của đơn vị | 32 | 0 | 0 |<br>| 3. Tiền vay ngắn hạn, dài hạn nhận được | 33 | 55.973.872.739 | 61.731.452.103 |<br>| 4. Tiền chi trả nợ gốc vay | 34 | 58.066.524.235 | 55.375.529.725 |<br>| 5. Tiền chi trả nợ thuê tài chính | 35 | 0 | 0 |<br>| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | 0 | 0 |<br>| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | (2.092.651.496) | 6.355.922.378 |<br>| Lưu chuyển tiền thuần trong kỳ | 50 | (1.663.694.812) | 5.423.231.313 |<br>| Tiền và tương đương tiền đầu kỳ | 60 | 10.530.024.358 | 3.506.104.723 |<br>| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | 0 | 0 |<br>| Tiền và tương đương tiền cuối kỳ | 70 | 8.866.329.546 | 8.929.336.036 |",
+    "output": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế từ đầu năm đến cuối quý 3/2024 là 175.272.484 đồng.",
+      "Tiền và tương đương tiền cuối kỳ của năm 2024 là 8.866.329.546 đồng.",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm 2024 là 175.272.484 đồng, giảm đáng kể so với 869.058.226 đồng của năm 2023. Tức là giảm 693.785.742 đồng.",
+      "Khoản tiền chi trả nợ gốc vay lũy kế năm 2024 là 58.066.524.235 đồng, tăng so với 55.375.529.725 đồng của năm 2023. Như vậy, khoản tiền này đã tăng 2.690.994.510 đồng.",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế từ đầu năm đến cuối quý III/2024 là 175.272.484 đồng. Mặc dù là số dương, nhưng con số này đã giảm đáng kể so với 869.058.226 đồng của cùng kỳ năm 2023. Điều này cho thấy khả năng tạo tiền từ các hoạt động kinh doanh cốt lõi của công ty đang suy yếu, có thể gây áp lực lên thanh khoản nếu xu hướng này tiếp diễn và công ty cần tìm các nguồn tài chính khác để bù đắp.",
+      "Lưu chuyển tiền thuần trong kỳ năm 2024 là (1.663.694.812) đồng, so với 5.423.231.313 đồng vào năm 2023, cho thấy một sự sụt giảm đáng kể và chuyển sang âm. Các nguyên nhân chính là: (1) Lưu chuyển tiền thuần từ hoạt động kinh doanh giảm mạnh (từ 869.058.226 đồng năm 2023 xuống 175.272.484 đồng năm 2024). (2) Lưu chuyển tiền thuần từ hoạt động tài chính chuyển từ dương 6.355.922.378 đồng năm 2023 sang âm (2.092.651.496) đồng năm 2024, chủ yếu do tiền vay ngắn hạn, dài hạn nhận được giảm trong khi tiền chi trả nợ gốc vay lại tăng.",
+      "Tiền chi trả lãi vay lũy kế năm 2024 là 2.034.222.194 đồng. Tiền thu từ bán hàng, cung cấp dịch vụ và doanh thu khác lũy kế năm 2024 là 40.128.121.808 đồng. Tỷ lệ chi trả lãi vay trên tiền thu từ bán hàng và cung cấp dịch vụ lũy kế năm 2024 là khoảng 5.07% (2.034.222.194 / 40.128.121.808 * 100%)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Vốn điều lệ của Công ty Cổ phần Xây dựng điện VNECO12 tại thời điểm 30/9/2024 là bao nhiêu?",
+      "Tổng Công ty Cổ phần Xây dựng điện Việt Nam nắm giữ bao nhiêu phần trăm vốn góp tại VNECO12?",
+      "Niên độ kế toán của công ty bắt đầu và kết thúc vào ngày nào?",
+      "Các lĩnh vực kinh doanh chính của VNECO12 trong 9 tháng đầu năm 2024 là gì?",
+      "Công ty VNECO12 áp dụng chế độ kế toán nào?",
+      "Đánh giá mức độ tập trung vốn góp từ các cổ đông chính của VNECO12.",
+      "Phân tích tầm quan trọng của việc tuân thủ các chuẩn mực kế toán và chế độ kế toán đối với tính minh bạch của báo cáo tài chính."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Đặc điểm hoạt động & Kỳ kế toán)<br>Loại nội dung: Text<br>CÔNG TY CỔ PHẦN XÂY DỰNG ĐIỆN VNECO12<br>Số 155 Lý Thường Kiệt, Tp. Đồng Hới, tỉnh Quảng Bình<br>THUYẾT MINH BÁO CÁO TÀI CHÍNH<br>Các thuyết minh này là một bộ phận hợp thành và cần được đọc đồng thời với Báo cáo tài chính.<br><br>I. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP<br>1. Hình thức sở hữu vốn<br>Công ty Cổ phần Xây dựng điện VNECO12 được thành lập theo Quyết định số 2006/QĐ-TCCB ngày 13/6/2005 của Bộ trưởng Bộ Công nghiệp về việc phê duyệt phương án và chuyển Công ty Đầu tư và Xây dựng 3.12 thành Công ty Cổ phần Đầu tư và Xây dựng 3.12, Công ty được đổi tên thành Công ty Cổ phần Xây dựng điện VNECO12 theo Quyết định số 13/VNECO12-HC ngày 07/3/2006 của Giám đốc Công ty.<br>Công ty được Sở Kế hoạch và Đầu tư tỉnh Quảng Bình cấp Giấy chứng nhận đăng ký kinh doanh số 3100320136 ngày 01/8/2005, đăng ký thay đổi lần 5 ngày 19/4/2021.<br>Hình thức sở hữu vốn: Công ty cổ phần.<br>Công ty có trụ sở chính tại số 155 Lý Thường Kiệt, phường Đồng Phú, thành phố Đồng Hới, tỉnh Quảng Bình.<br>Vốn điều lệ của Công ty tại thời điểm 30/9/2024 là 12.000.000.000 đồng (Mười hai tỷ đồng chẵn).<br>Các cổ đông đóng góp và tỷ lệ vốn góp tại 30/9/2024 bao gồm:<br>| Đối tượng góp vốn | Số tiền (đ) | Tỷ lệ (%) |<br>|:------------------------------------|:--------------|:----------|<br>| Tổng Công ty cổ phần xây dựng điện Việt Nam | 7.887.000.000 | 65,73 |<br>| Các cổ đông khác | 4.113.000.000 | 34,27 |<br>| Tổng | 12.000.000.000 | 100,00 |<br><br>2. Lĩnh vực kinh doanh chính<br>Trong 9 tháng đầu năm 2024, các hoạt động chính của Công ty là xây lắp các công trình nguồn điện, hệ thống lưới điện, trạm biến áp điện, các công trình công nghiệp và dân dụng; sản xuất kinh doanh các kết cấu bê tông, cột điện bê tông ly tâm các loại.<br>3. Ngành nghề kinh doanh theo Giấy chứng nhận đăng ký kinh doanh<br>Ngành nghề kinh doanh theo Giấy chứng nhận đăng ký kinh doanh của Công ty là:<br>Xây lắp các công trình hệ thống lưới điện và trạm biến áp điện đến 500 KV, các công trình nguồn điện, công trình giao thông, thủy lợi, công trình công nghiệp và dân dụng.<br>Sản xuất cột điện bê tông ly tâm, ống cống bê tông ly tâm cốt thép, sản phẩm bê tông tươi, các sản phẩm bê tông đúc sẵn; gia công chế tạo các sản phẩm cơ khí.<br>Sản xuất kinh doanh các chủng loại vật liệu xây dựng, vận tải hàng hóa.<br>Kinh doanh phát triển nhà và hạ tầng kỹ thuật đô thị, khu công nghiệp, khu chế xuất, khu công nghệ cao, khu kinh tế mới.<br>Kinh doanh khách sạn, nhà hàng, dịch vụ du lịch.<br>4. Chu kỳ sản xuất, kinh doanh thông thường<br>Chu kỳ sản xuất, kinh doanh thông thường của Công ty là 12 tháng theo năm tài chính thông thường bắt đầu từ ngày 01 tháng 01 đến ngày 31 tháng 12.<br>5. Đặc điểm hoạt động của doanh nghiệp trong năm tài chính có ảnh hưởng đến báo cáo tài chính<br>Không có<br>6. Tổng số CB công nhân viên đến ngày 30/9/2024: 70 Cán bộ công nhân.<br><br>7. Tuyên bố về khả năng so sánh thông tin trên Báo cáo tài chính<br>Việc lựa chọn số liệu và thông tin cần phải trình bày trong báo cáo tài chính được thực hiện theo nguyên tắc có thể so sánh được giữa các kỳ kế toán tương ứng. Một số chỉ tiêu của kỳ báo cáo trước được phân loại lại như trình bày tại Thuyết minh số VIII.4 theo hướng dẫn của Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính.<br><br>II. KỲ KẾ TOÁN, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN<br>1. Niên độ kế toán<br>Niên độ kế toán của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc ngày 31 tháng 12 hàng năm.<br>2. Đơn vị tiền tệ sử dụng trong kế toán<br>Đơn vị tiền tệ sử dụng để ghi sổ kế toán và lập Báo cáo tài chính là Đồng Việt Nam (ký hiệu là đ).<br><br>III. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG<br>1. Chế độ kế toán áp dụng<br>Công ty áp dụng Chế độ kế toán doanh nghiệp Việt Nam theo hướng dẫn tại Thông tư số 200/2014/TT-BTC được Bộ Tài chính ban hành ngày 22/12/2014, thay thế cho Chế độ kế toán doanh nghiệp ban hành theo Quyết định số 15/2006/QĐ-BTC ngày 20/3/2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31/12/2009 của Bộ Tài chính.<br>2. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán<br>Chúng tôi đã thực hiện công việc kế toán theo các Chuẩn mực kế toán Việt Nam và các quy định pháp lý có liên quan. Báo cáo tài chính đã được trình bày một cách trung thực và hợp lý về tình hình tài chính, kết quả kinh doanh và các luồng tiền của doanh nghiệp.<br>Việc lựa chọn số liệu và thông tin cần phải trình bày trong bản Thuyết minh báo cáo tài chính được thực hiện theo nguyên tắc trọng yếu quy định tại Chuẩn mực kế toán Việt Nam số 21 \"Trình bày Báo cáo tài chính\".",
+    "output": [
+      "Vốn điều lệ của Công ty Cổ phần Xây dựng điện VNECO12 tại thời điểm 30/9/2024 là 12.000.000.000 đồng (Mười hai tỷ đồng chẵn).",
+      "Tổng Công ty Cổ phần Xây dựng điện Việt Nam nắm giữ 65,73% vốn góp tại VNECO12.",
+      "Niên độ kế toán của công ty bắt đầu từ ngày 01 tháng 01 và kết thúc ngày 31 tháng 12 hàng năm.",
+      "Trong 9 tháng đầu năm 2024, các hoạt động kinh doanh chính của VNECO12 là xây lắp các công trình nguồn điện, hệ thống lưới điện, trạm biến áp điện, các công trình công nghiệp và dân dụng; sản xuất kinh doanh các kết cấu bê tông, cột điện bê tông ly tâm các loại.",
+      "Công ty VNECO12 áp dụng Chế độ kế toán doanh nghiệp Việt Nam theo hướng dẫn tại Thông tư số 200/2014/TT-BTC được Bộ Tài chính ban hành ngày 22/12/2014.",
+      "Với việc Tổng Công ty Cổ phần Xây dựng điện Việt Nam nắm giữ 65,73% vốn góp, mức độ tập trung vốn góp từ cổ đông chính tại VNECO12 là rất cao. Điều này cho thấy cổ đông này có quyền kiểm soát chi phối và có thể ảnh hưởng lớn đến các quyết sách và hoạt động của công ty.",
+      "Việc tuân thủ các Chuẩn mực kế toán Việt Nam và Chế độ kế toán (Thông tư số 200/2014/TT-BTC) là cực kỳ quan trọng đối với tính minh bạch của báo cáo tài chính. Nó đảm bảo rằng các thông tin tài chính được trình bày một cách trung thực và hợp lý về tình hình tài chính, kết quả kinh doanh và luồng tiền của doanh nghiệp. Điều này giúp các nhà đầu tư, chủ nợ và các bên liên quan khác có thể tin cậy vào thông tin tài chính để đưa ra các quyết định, đồng thời đảm bảo sự nhất quán và khả năng so sánh của báo cáo giữa các kỳ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty ghi nhận các khoản tiền theo nguyên tắc nào?",
+      "Các loại chứng khoán kinh doanh bao gồm những gì?",
+      "Khi nào thì dự phòng giảm giá hàng tồn kho được trích lập?",
+      "Phương pháp tính giá trị và hạch toán hàng tồn kho của công ty là gì?",
+      "Đánh giá tầm quan trọng của việc lập dự phòng phải thu khó đòi và dự phòng giảm giá chứng khoán kinh doanh đối với độ tin cậy của báo cáo tài chính.",
+      "Giải thích cách xác định giá gốc của chứng khoán kinh doanh theo chính sách kế toán của công ty.",
+      "Phân tích tác động của các chính sách kế toán liên quan đến phải thu và hàng tồn kho đến sức khỏe tài chính của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Chính sách kế toán)<br>Loại nội dung: Text<br>IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG<br>1. Nguyên tắc ghi nhận các khoản tiền<br>Các khoản tiền được ghi nhận trong Báo cáo tài chính gồm Tiền mặt, tiền gửi thanh toán tại các ngân hàng, công ty chứng khoán đảm bảo đã được kiểm kê, có đối chiếu xác nhận đầy đủ tại thời điểm kết thúc kỳ kế toán.<br>2. Nguyên tắc kế toán các khoản đầu tư tài chính<br>Nguyên tắc kế toán đối với chứng khoán kinh doanh<br>Chứng khoán kinh doanh bao gồm cổ phiếu, trái phiếu niêm yết trên thị trường chứng khoán; các loại chứng khoán và công cụ tài chính khác nắm giữ vì mục đích kinh doanh kể cả chứng khoán có thời gian đáo hạn trên 12 tháng mua vào, bán ra để kiếm lời.<br>Chứng khoán kinh doanh được ghi sổ kế toán theo giá gốc, bao gồm Giá mua cộng các chi phí mua nếu có như chi phí môi giới, giao dịch, cung cấp thông tin, thuế, lệ phí và phí ngân hàng. Giá gốc của chứng khoán kinh doanh được xác định theo giá trị hợp lý của các khoản thanh toán tại thời điểm giao dịch phát sinh. Thời điểm ghi nhận các khoản chứng khoán kinh doanh là thời điểm nhà đầu tư có quyền sở hữu, cụ thể như sau:<br>- Chứng khoán niêm yết được ghi nhận tại thời điểm khớp lệnh (T0).<br>- Chứng khoán chưa niêm yết được ghi nhận tại thời điểm chính thức có quyền sở hữu theo quy định của pháp luật.<br>Dự phòng giảm giá chứng khoán kinh doanh: Là dự phòng phần giá trị bị tổn thất có thể xảy ra do giảm giá các loại chứng khoán Công ty đang nắm giữ vì mục đích kinh doanh. Việc lập dự phòng dựa trên giá trị thị trường của chứng khoán kinh doanh tại thời điểm khóa sổ lập báo cáo tài chính.<br><br>3. Nguyên tắc ghi nhận các khoản phải thu thương mại và phải thu khác<br>Nguyên tắc ghi nhận các khoản phải thu theo giá gốc trừ dự phòng cho các khoản phải thu khó đòi.<br>Việc phân loại các khoản phải thu là phải thu khách hàng, phải thu nội bộ và phải thu khác tùy thuộc theo tính chất của giao dịch phát sinh hoặc quan hệ giữa công ty và đối tượng phải thu.<br>Phương pháp lập dự phòng phải thu khó đòi: dự phòng phải thu khó đòi được ước tính cho phần giá trị bị tổn thất của các khoản nợ phải thu và các khoản đầu tư nắm giữ đến ngày đáo hạn khác có bản chất tương tự các khoản phải thu khó có khả năng thu hồi đã quá hạn thanh toán, chưa quá hạn nhưng có thể không đòi được do khách nợ không có khả năng thanh toán vì lâm vào tình trạng phá sản, đang làm thủ tục giải thể, mất tích, bỏ trốn.<br>Dự phòng phải thu khó đòi được lập theo hướng dẫn tại Thông tư số 228/2009/TT-BTC ngày 07/12/2009 của Bộ Tài chính về việc \"Hướng dẫn chế độ trích lập và sử dụng các khoản dự phòng giảm giá hàng tồn kho, tổn thất các khoản đầu tư tài chính, nợ phải thu khó đòi và bảo hành sản phẩm, hàng hóa, công trình xây lắp tại doanh nghiệp\", Thông tư số 34/2011/TT-BTC ngày 14/3/2011 và Thông tư số 89/2013/TT-BTC ngày 28/6/2013 của Bộ Tài chính về việc sửa đổi Thông tư số 228/2009/TT-BTC ngày 07/12/2009 của Bộ Tài chính.<br><br>4. Nguyên tắc ghi nhận hàng tồn kho<br>Nguyên tắc ghi nhận hàng tồn kho: Hàng tồn kho được ghi nhận theo giá gốc trừ dự phòng giảm giá và dự phòng cho hàng tồn kho lỗi thời, mất phẩm chất. Giá gốc hàng tồn kho bao gồm giá mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.<br>Phương pháp tính giá trị hàng tồn kho: Bình quân gia quyền.<br>Hạch toán hàng tồn kho: Phương pháp kê khai thường xuyên.<br>Phương pháp lập dự phòng giảm giá hàng tồn kho: Dự phòng cho hàng tồn kho được trích lập khi giá trị thuần có thể thực hiện được của hàng tồn kho nhỏ hơn giá gốc. Giá trị thuần có thể thực hiện được là giá bán ước tính trừ đi chi phí ước tính để hoàn thành sản phẩm và chi phí bán hàng ước tính, số dự phòng giảm giá hàng tồn kho là số chênh lệch giữa giá gốc hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được của chúng. Việc lập dự phòng giảm giá hàng tồn kho được thực hiện trên cơ sở từng mặt hàng tồn kho. Đối với dịch vụ cung cấp dở dang, việc lập dự phòng giảm giá hàng tồn kho được tính theo từng loại dịch vụ có mức giá riêng biệt.<br>",
+    "output": [
+      "Công ty ghi nhận các khoản tiền (Tiền mặt, tiền gửi thanh toán tại các ngân hàng, công ty chứng khoán) đã được kiểm kê, có đối chiếu xác nhận đầy đủ tại thời điểm kết thúc kỳ kế toán.",
+      "Các loại chứng khoán kinh doanh bao gồm cổ phiếu, trái phiếu niêm yết trên thị trường chứng khoán; các loại chứng khoán và công cụ tài chính khác nắm giữ vì mục đích kinh doanh kể cả chứng khoán có thời gian đáo hạn trên 12 tháng mua vào, bán ra để kiếm lời.",
+      "Dự phòng giảm giá hàng tồn kho được trích lập khi giá trị thuần có thể thực hiện được của hàng tồn kho nhỏ hơn giá gốc.",
+      "Phương pháp tính giá trị hàng tồn kho của công ty là Bình quân gia quyền, và phương pháp hạch toán hàng tồn kho là Kê khai thường xuyên.",
+      "Việc lập dự phòng phải thu khó đòi và dự phòng giảm giá chứng khoán kinh doanh là rất quan trọng để đảm bảo độ tin cậy và tính trung thực của báo cáo tài chính. Các khoản dự phòng này phản ánh nguyên tắc thận trọng trong kế toán, giúp ước tính và ghi nhận các tổn thất tiềm năng, tránh việc đánh giá quá cao giá trị tài sản và lợi nhuận của công ty. Điều này cung cấp cho các bên liên quan một cái nhìn thực tế hơn về tình hình tài chính và rủi ro mà công ty đang đối mặt, từ đó tăng cường niềm tin vào thông tin được công bố.",
+      "Giá gốc của chứng khoán kinh doanh được ghi sổ kế toán bao gồm giá mua cộng các chi phí mua nếu có (như chi phí môi giới, giao dịch, cung cấp thông tin, thuế, lệ phí và phí ngân hàng). Giá gốc này được xác định theo giá trị hợp lý của các khoản thanh toán tại thời điểm giao dịch phát sinh. Chứng khoán niêm yết được ghi nhận tại thời điểm khớp lệnh (T0), trong khi chứng khoán chưa niêm yết được ghi nhận tại thời điểm chính thức có quyền sở hữu theo quy định của pháp luật.",
+      "Các chính sách kế toán liên quan đến phải thu (ghi nhận theo giá gốc trừ dự phòng khó đòi) và hàng tồn kho (ghi nhận theo giá gốc trừ dự phòng giảm giá) có tác động tích cực đến sức khỏe tài chính của công ty bằng cách đảm bảo tính thận trọng và trung thực. Việc này giúp công ty phản ánh đúng giá trị thực của các khoản phải thu và hàng tồn kho trên báo cáo tài chính, tránh việc ghi nhận quá cao tài sản. Điều này làm giảm rủi ro về việc công bố lợi nhuận ảo hoặc tài sản không có khả năng thu hồi/thanh lý, từ đó cung cấp thông tin đáng tin cậy hơn cho các quyết định quản lý và đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá tài sản cố định hữu hình được xác định như thế nào?",
+      "Quyền sử dụng đất vô thời hạn có được tính khấu hao không?",
+      "Phương pháp khấu hao tài sản cố định của công ty là gì?",
+      "Thời gian phân bổ chi phí trả trước dài hạn là bao lâu?",
+      "Giải thích nguyên tắc ghi nhận và vốn hóa chi phí đi vay của công ty.",
+      "Phân tích tầm quan trọng của việc phân loại nợ phải trả đối với quản lý rủi ro tài chính của công ty.",
+      "Đánh giá các điều kiện để một chi phí phát sinh sau ghi nhận ban đầu được ghi tăng nguyên giá tài sản cố định hữu hình."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Chính sách kế toán - TSCĐ và Chi phí)<br>Loại nội dung: Text<br>5. Nguyên tắc ghi nhận và khấu hao TSCĐ<br>5.1 Nguyên tắc ghi nhận TSCĐ hữu hình<br>Tài sản cố định hữu hình được ghi nhận theo nguyên giá trừ đi giá trị hao mòn lũy kế. Nguyên giá là toàn bộ các chi phí mà doanh nghiệp phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng theo dự tính. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí không thỏa mãn điều kiện trên được ghi nhận là chi phí trong kỳ.<br>Khi tài sản cố định được bán hoặc thanh lý, nguyên giá và khấu hao lũy kế được xóa sổ và bất kỳ khoản lãi lỗ nào phát sinh từ việc thanh lý đều được tính vào thu nhập hay chi phí trong kỳ.<br>Nguyên giá tài sản cố định bao gồm giá mua trừ các khoản được chiết khấu thương mại hoặc giảm giá, các khoản thuế (không bao gồm các khoản thuế được hoàn lại) và các chi phí liên quan trực tiếp đến việc đưa tài sản vào trạng thái sẵn sàng sử dụng, như chi phí lắp đặt, chạy thử, chuyên gia và các chi phí liên quan trực tiếp khác.<br><br>5.2 Nguyên tắc ghi nhận TSCĐ vô hình<br>Tài sản cố định vô hình được ghi nhận theo nguyên giá trừ đi giá trị hao mòn lũy kế. Nguyên giá tài sản cố định vô hình là toàn bộ các chi phí mà doanh nghiệp phải bỏ ra để có được tài sản cố định vô hình tính đến thời điểm đưa tài sản đó vào sử dụng theo dự kiến.<br>Tài sản cố định vô hình là quyền sử dụng đất: Nguyên giá tài sản cố định vô hình là quyền sử dụng đất là số tiền trả khi nhận chuyển nhượng quyền sử dụng đất hợp pháp từ người khác, chi phí đền bù, giải phóng mặt bằng, san lấp mặt bằng, lệ phí trước bạ....<br><br>5.3 Phương pháp khấu hao TSCĐ<br>Tài sản cố định được khấu hao theo phương pháp đường thẳng dựa trên thời gian sử dụng ước tính của tài sản. Thời gian hữu dụng ước tính là thời gian mà tài sản phát huy được tác dụng cho sản xuất kinh doanh.<br>Thời gian hữu dụng ước tính của các TSCĐ như sau:<br>- Nhà xưởng, vật kiến trúc: 20 – 25 năm<br>- Máy móc, thiết bị: 8 – 10 năm<br>- Phương tiện vận tải, truyền dẫn: 10 năm<br>- Thiết bị, dụng cụ quản lý: 5 – 8 năm<br>Quyền sử dụng đất vô thời hạn được ghi nhận theo giá gốc và không tính khấu hao.<br><br>6. Nguyên tắc ghi nhận chi phí trả trước<br>Chi phí trả trước tại Công ty bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán và việc kết chuyển các khoản chi phí này vào chi phí sản xuất kinh doanh của các kỳ kế toán sau.<br>Phương pháp phân bổ chi phí trả trước: Việc tính và phân bổ chi phí trả trước vào chi phí sản xuất kinh doanh từng kỳ theo phương pháp đường thẳng. Căn cứ vào tính chất và mức độ từng loại chi phí mà có thời gian phân bổ như sau: chi phí trả trước ngắn hạn phân bổ trong vòng 12 tháng; chi phí trả trước dài hạn phân bổ từ 12 tháng đến 36 tháng.<br><br>7. Nguyên tắc ghi nhận nợ phải trả<br>Các khoản nợ phải trả được ghi nhận theo nguyên giá và không thấp hơn nghĩa vụ phải thanh toán.<br>Công ty thực hiện phân loại các khoản nợ phải trả là phải trả người bán, phải trả nội bộ, phải trả khác tùy thuộc theo tính chất của giao dịch phát sinh hoặc quan hệ giữa công ty và đối tượng phải trả.<br>Các khoản nợ phải trả được theo dõi chi tiết theo kỳ hạn phải trả, đối tượng phải trả và các yếu tố khác theo nhu cầu quản lý của Công ty.<br>Tại thời điểm lập báo cáo tài chính, Công ty ghi nhận ngay một khoản phải trả khi có các bằng chứng cho thấy một khoản tổn thất có khả năng chắc chắn xảy ra theo nguyên tắc thận trọng.<br><br>8. Nguyên tắc ghi nhận và vốn hóa các khoản chi phí đi vay<br>Nguyên tắc ghi nhận chi phí đi vay: lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay của doanh nghiệp được ghi nhận như khoản chi phí sản xuất, kinh doanh trong kỳ, trừ khi chi phí này phát sinh từ các khoản vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị tài sản đó được vốn hóa khi có đủ điều kiện quy định tại Chuẩn mực kế toán số 16 \"Chi phí đi vay\".<br><br>9. Nguyên tắc ghi nhận chi phí phải trả<br>Chi phí phải trả bao gồm các khoản phải trả cho hàng hóa, dịch vụ mà Công ty đã nhận được từ người bán hoặc đã cung cấp cho người mua trong kỳ báo cáo nhưng thực tế Công ty chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán, được ghi nhận vào chi phí sản xuất, kinh doanh của kỳ báo cáo, như chi phí lãi tiền vay, chi phí để tạm tính giá vốn hàng hóa, thành phẩm.<br>",
+    "output": [
+      "Nguyên giá tài sản cố định hữu hình là toàn bộ các chi phí mà doanh nghiệp phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng theo dự tính. Nguyên giá bao gồm giá mua trừ các khoản chiết khấu thương mại hoặc giảm giá, các khoản thuế (không bao gồm các khoản thuế được hoàn lại) và các chi phí liên quan trực tiếp đến việc đưa tài sản vào trạng thái sẵn sàng sử dụng (như chi phí lắp đặt, chạy thử, chuyên gia và các chi phí liên quan trực tiếp khác).",
+      "Không, quyền sử dụng đất vô thời hạn được ghi nhận theo giá gốc và không tính khấu hao.",
+      "Tài sản cố định được khấu hao theo phương pháp đường thẳng dựa trên thời gian sử dụng ước tính của tài sản.",
+      "Thời gian phân bổ chi phí trả trước dài hạn là từ 12 tháng đến 36 tháng.",
+      "Công ty ghi nhận lãi tiền vay và các chi phí khác liên quan trực tiếp đến khoản vay là chi phí sản xuất, kinh doanh trong kỳ. Tuy nhiên, nếu chi phí đi vay phát sinh trực tiếp từ việc đầu tư xây dựng hoặc sản xuất tài sản dở dang và đáp ứng đủ điều kiện theo Chuẩn mực kế toán số 16 \\Chi phí đi vay\\, thì chi phí đó sẽ được vốn hóa (tức là tính vào giá trị của tài sản dở dang đó) thay vì ghi nhận là chi phí trong kỳ.",
+      "Việc phân loại nợ phải trả (theo đối tượng và kỳ hạn) là rất quan trọng đối với quản lý rủi ro tài chính của công ty. Nó giúp công ty theo dõi chi tiết các nghĩa vụ nợ, đánh giá đúng áp lực thanh khoản ngắn hạn và dài hạn, và xây dựng kế hoạch dòng tiền phù hợp. Bằng cách hiểu rõ các loại nợ, công ty có thể quản lý tốt hơn rủi ro lãi suất, rủi ro tái cấp vốn và duy trì khả năng thanh toán, đảm bảo ổn định tài chính và tránh các rắc rối về thanh khoản.",
+      "Theo chính sách của công ty, một chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định hữu hình nếu chi phí đó chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản. Điều kiện này rất quan trọng vì nó đảm bảo rằng chỉ những khoản chi thực sự cải thiện hiệu suất, nâng cao năng lực hoặc kéo dài tuổi thọ hữu ích của tài sản mới được vốn hóa. Điều này giúp ngăn chặn việc thổi phồng giá trị tài sản trên bảng cân đối kế toán và đảm bảo lợi nhuận được báo cáo chính xác hơn bằng cách phân biệt chi phí vốn hóa với chi phí bảo trì thông thường."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Vốn đầu tư của chủ sở hữu được hình thành từ những nguồn nào?",
+      "Có bao nhiêu điều kiện để doanh thu bán hàng được ghi nhận?",
+      "Lợi nhuận chưa phân phối được ghi nhận dựa trên cơ sở nào?",
+      "Doanh thu hoạt động xây lắp được ghi nhận khi nào?",
+      "Đánh giá tầm quan trọng của việc xác định chi phí liên quan đến giao dịch bán hàng trong nguyên tắc ghi nhận doanh thu.",
+      "Phân tích sự khác biệt trong việc ghi nhận doanh thu bán hàng và doanh thu hoạt động tài chính theo chính sách kế toán của công ty.",
+      "Giải thích cách công ty xử lý các khoản doanh thu không thể thu hồi được."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Chính sách kế toán - Vốn & Doanh thu)<br>Loại nội dung: Text<br>10. Nguyên tắc ghi nhận vốn chủ sở hữu<br>Nguyên tắc ghi nhận vốn đầu tư của chủ sở hữu: Nguồn vốn kinh doanh được hình thành từ số tiền mà các cổ đông đã góp vốn mua cổ phần, cổ phiếu, hoặc được bổ sung từ lợi nhuận sau thuế theo Nghị quyết của Đại hội đồng cổ đông hoặc theo quy định trong điều lệ hoạt động của Công ty. Nguồn vốn kinh doanh được ghi nhận theo số vốn thực tế đã góp bằng tiền hoặc bằng tài sản tính theo mệnh giá của cổ phiếu đã phát hành khi mới thành lập, hoặc huy động thêm để mở rộng quy mô hoạt động của công ty.<br>Nguyên tắc ghi nhận lợi nhuận chưa phân phối: Lợi nhuận chưa phân phối được ghi nhận là số lợi nhuận hoặc lỗ từ kết quả hoạt động kinh doanh của doanh nghiệp sau khi trừ chi phí thuế thu nhập doanh nghiệp của kỳ hiện hành và các khoản điều chỉnh do áp dụng hồi tố thay đổi chính sách kế toán và điều chỉnh hồi tố sai sót trọng yếu của các năm trước.<br>Việc phân phối lợi nhuận được căn cứ vào Điều lệ hoạt động của Công ty và Nghị quyết của Đại hội đồng cổ đông.<br><br>11. Nguyên tắc và phương pháp ghi nhận doanh thu<br>Nguyên tắc và phương pháp ghi nhận doanh thu bán hàng<br>Doanh thu bán hàng được ghi nhận khi đồng thời thỏa mãn 05 điều kiện sau: 1. Doanh nghiệp đã chuyển giao phần lớn rủi ro và lợi ích gắn liền quyền sở hữu sản phẩm hoặc hàng hóa cho người mua; 2. Doanh nghiệp không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa; 3. Doanh thu được xác định tương đối chắc chắn; 4. Doanh nghiệp đã thu được lợi ích kinh tế từ giao dịch bán hàng; 5. Xác định chi phí liên quan đến giao dịch bán hàng.<br>Nguyên tắc và phương pháp ghi nhận doanh thu hợp đồng xây dựng<br>Doanh thu hoạt động xây lắp được ghi nhận theo giá trị khối lượng thực hiện, khi kết quả thực hiện hợp đồng xây dựng được xác định đáng tin cậy căn cứ vào biên bản nghiệm thu khối lượng công việc hoàn thành, phiếu giá đã thống nhất với khách hàng và được khách hàng xác nhận phản ánh trên hóa đơn tài chính đã lập và được khách hàng chấp nhận thanh toán.<br>Nguyên tắc và phương pháp ghi nhận doanh thu hoạt động tài chính<br>Doanh thu hoạt động tài chính được ghi nhận thỏa mãn đồng thời 02 điều kiện ghi nhận doanh thu quy định tại Chuẩn mực kế toán số 14 “Doanh thu và thu nhập khác”, bao gồm lãi tiền gửi ngân hàng được ghi nhận trên cơ sở thông báo lãi tiền gửi hàng tháng của ngân hàng, cổ tức lợi nhuận được chia, lãi thu được từ hoạt động kinh doanh chứng khoán.<br>Khi không thể thu hồi một khoản mà trước đó đã ghi vào doanh thu thì khoản có khả năng không thu hồi được hoặc không chắc chắn thu hồi được đó phải hạch toán vào chi phí phát sinh trong kỳ, không ghi giảm doanh thu.<br>",
+    "output": [
+      "Vốn đầu tư của chủ sở hữu được hình thành từ số tiền mà các cổ đông đã góp vốn mua cổ phần, cổ phiếu, hoặc được bổ sung từ lợi nhuận sau thuế theo Nghị quyết của Đại hội đồng cổ đông hoặc theo quy định trong điều lệ hoạt động của Công ty.",
+      "Có 05 điều kiện để doanh thu bán hàng được ghi nhận.",
+      "Lợi nhuận chưa phân phối được ghi nhận là số lợi nhuận hoặc lỗ từ kết quả hoạt động kinh doanh của doanh nghiệp sau khi trừ chi phí thuế thu nhập doanh nghiệp của kỳ hiện hành và các khoản điều chỉnh do áp dụng hồi tố thay đổi chính sách kế toán và điều chỉnh hồi tố sai sót trọng yếu của các năm trước. Việc phân phối lợi nhuận được căn cứ vào Điều lệ hoạt động của Công ty và Nghị quyết của Đại hội đồng cổ đông.",
+      "Doanh thu hoạt động xây lắp được ghi nhận theo giá trị khối lượng thực hiện, khi kết quả thực hiện hợp đồng xây dựng được xác định đáng tin cậy căn cứ vào biên bản nghiệm thu khối lượng công việc hoàn thành, phiếu giá đã thống nhất với khách hàng và được khách hàng xác nhận phản ánh trên hóa đơn tài chính đã lập và được khách hàng chấp nhận thanh toán.",
+      "Việc xác định chi phí liên quan đến giao dịch bán hàng là điều kiện thiết yếu thứ năm để ghi nhận doanh thu. Điều này cực kỳ quan trọng vì nó tuân thủ nguyên tắc phù hợp trong kế toán, đảm bảo rằng doanh thu và các chi phí phát sinh để tạo ra doanh thu đó được ghi nhận trong cùng kỳ kế toán. Điều này giúp báo cáo kết quả kinh doanh phản ánh chính xác lợi nhuận thực tế từ một giao dịch, tránh việc ghi nhận doanh thu mà chưa trừ đi các chi phí tương ứng, từ đó cung cấp cái nhìn trung thực về hiệu quả hoạt động của công ty.",
+      "Sự khác biệt chính trong việc ghi nhận doanh thu bán hàng và doanh thu hoạt động tài chính nằm ở số lượng và bản chất các điều kiện cần thỏa mãn. Doanh thu bán hàng đòi hỏi 5 điều kiện, tập trung vào việc chuyển giao rủi ro, lợi ích, quyền kiểm soát hàng hóa và xác định chi phí liên quan, phản ánh giao dịch phức tạp hơn. Trong khi đó, doanh thu hoạt động tài chính (như lãi tiền gửi, cổ tức) chỉ yêu cầu 2 điều kiện theo Chuẩn mực kế toán số 14, thường dựa trên các bằng chứng tài chính rõ ràng và đơn giản hơn về việc phát sinh thu nhập.",
+      "Khi không thể thu hồi một khoản đã ghi vào doanh thu trước đó, công ty sẽ hạch toán khoản đó vào chi phí phát sinh trong kỳ, không ghi giảm doanh thu. Điều này áp dụng cho các khoản có khả năng không thu hồi được hoặc không chắc chắn thu hồi được."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Giá vốn hàng bán được ghi nhận khi nào?",
+      "Chi phí thuế thu nhập doanh nghiệp được xác định gồm những khoản mục nào?",
+      "Các khoản chi phí nào được ghi nhận vào chi phí tài chính?",
+      "Lãi cơ bản trên cổ phiếu được tính như thế nào?",
+      "Đánh giá tầm quan trọng của nguyên tắc phù hợp trong ghi nhận giá vốn hàng bán và doanh thu.",
+      "Phân tích cách công ty phân loại và ghi nhận tài sản tài chính ban đầu theo Thông tư 210.",
+      "Giải thích sự khác biệt giữa lãi cơ bản trên cổ phiếu và lãi suy giảm trên cổ phiếu."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Chính sách kế toán - Chi phí & Công cụ tài chính)<br>Loại nội dung: Text<br>12. Nguyên tắc và phương pháp ghi nhận giá vốn hàng bán<br>Giá vốn hàng bán phản ánh trị giá vốn của hàng hóa, giá thành sản xuất của sản phẩm xây lắp nghiệm thu trong kỳ. Giá vốn được ghi nhận tại thời điểm giao dịch phát sinh hoặc khi có khả năng tương đối chắc chắn sẽ phát sinh trong tương lai không phân biệt đã chi tiền hay chưa. Giá vốn hàng bán và doanh thu do nó tạo ra được ghi nhận đồng thời theo nguyên tắc phù hợp.<br><br>13. Nguyên tắc và phương pháp ghi nhận chi phí tài chính<br>Các khoản chi phí được ghi nhận vào chi phí tài chính bao gồm: Chi phí lãi tiền vay, các khoản lỗ do thanh lý, nhượng bán các khoản đầu tư, dự phòng giảm giá đầu tư chứng khoán và các khoản chi phí đầu tư tài chính khác.<br>Khoản chi phí tài chính được ghi nhận chi tiết cho từng nội dung chi phí khi thực tế phát sinh trong kỳ và được xác định một cách đáng tin cậy khi có đầy đủ bằng chứng về các khoản chi phí này.<br><br>14. Nguyên tắc và phương pháp ghi nhận chi phí thuế thu nhập doanh nghiệp hiện hành<br>Chi phí thuế thu nhập doanh nghiệp được xác định gồm tổng chi phí thuế thu nhập doanh nghiệp hiện hành và chi phí thuế thu nhập doanh nghiệp hoãn lại khi xác định lợi nhuận hoặc lỗ của một kỳ kế toán.<br>Chi phí thuế thu nhập doanh nghiệp hiện hành là số thuế thu nhập doanh nghiệp phải nộp hoặc thu hồi được tính trên thu nhập chịu thuế và thuế suất thuế thu nhập doanh nghiệp của năm hiện hành theo luật thuế TNDN hiện hành được ghi nhận.<br>Các khoản thuế phải nộp ngân sách nhà nước sẽ được quyết toán cụ thể với cơ quan thuế. Chênh lệch giữa số thuế phải nộp theo sổ sách và số liệu kiểm tra quyết toán sẽ được điều chỉnh khi có quyết toán chính thức với cơ quan thuế.<br><br>15. Nguyên tắc ghi nhận lãi trên cổ phiếu<br>Lãi cơ bản trên cổ phiếu được tính bằng cách chia lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông của Công ty (trước khi trích lập Quỹ khen thưởng và phúc lợi) cho số lượng bình quân gia quyền của số cổ phiếu phổ thông đang lưu hành trong kỳ.<br>Lãi suy giảm trên cổ phiếu được tính bằng cách chia lợi nhuận hoặc lỗ sau thuế phân bổ cho cổ đông sở hữu cổ phiếu phổ thông của Công ty (sau khi đã điều chỉnh cho cổ tức của cổ phiếu ưu đãi có quyền chuyển đổi) cho số lượng bình quân gia quyền của số cổ phiếu phổ thông đang lưu hành trong kỳ và số lượng bình quân gia quyền của cổ phiếu phổ thông sẽ được phát hành trong trường hợp tất cả các cổ phiếu phổ thông tiềm năng có tác động suy giảm đều được chuyển thành cổ phiếu phổ thông.<br><br>16. Công cụ tài chính<br>Ghi nhận ban đầu<br>Tài sản tài chính<br>Theo Thông tư số 210/2009/TT-BTC ngày 06/11/2009 của Bộ Tài chính (Thông tư 210), tài sản tài chính được phân loại một cách phù hợp, cho mục đích thuyết minh trong các báo cáo tài chính, thành tài sản tài chính được ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh, các khoản cho vay và phải thu, các khoản đầu tư giữ đến ngày đáo hạn và tài sản tài chính sẵn sàng để bán. Công ty quyết định phân loại các tài sản tài chính này tại thời điểm ghi nhận lần đầu.<br>Tại thời điểm ghi nhận lần đầu, tài sản tài chính được xác định theo nguyên giá cộng với chi phí giao dịch trực tiếp có liên quan.<br>Các tài sản tài chính của Công ty bao gồm tiền và các khoản tiền gửi ngắn hạn, các khoản phải thu khách hàng và phải thu khác, các công cụ tài chính được niêm yết, không được niêm yết.<br>",
+    "output": [
+      "Giá vốn hàng bán được ghi nhận tại thời điểm giao dịch phát sinh hoặc khi có khả năng tương đối chắc chắn sẽ phát sinh trong tương lai, không phân biệt đã chi tiền hay chưa.",
+      "Chi phí thuế thu nhập doanh nghiệp được xác định gồm tổng chi phí thuế thu nhập doanh nghiệp hiện hành và chi phí thuế thu nhập doanh nghiệp hoãn lại khi xác định lợi nhuận hoặc lỗ của một kỳ kế toán.",
+      "Các khoản chi phí được ghi nhận vào chi phí tài chính bao gồm chi phí lãi tiền vay, các khoản lỗ do thanh lý, nhượng bán các khoản đầu tư, dự phòng giảm giá đầu tư chứng khoán và các khoản chi phí đầu tư tài chính khác.",
+      "Lãi cơ bản trên cổ phiếu được tính bằng cách chia lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông của Công ty (trước khi trích lập Quỹ khen thưởng và phúc lợi) cho số lượng bình quân gia quyền của số cổ phiếu phổ thông đang lưu hành trong kỳ.",
+      "Nguyên tắc phù hợp là cực kỳ quan trọng trong việc ghi nhận giá vốn hàng bán và doanh thu. Nó đảm bảo rằng giá vốn hàng bán, tức là chi phí để tạo ra doanh thu, được ghi nhận trong cùng kỳ kế toán với doanh thu mà nó tạo ra. Điều này giúp báo cáo kết quả kinh doanh phản ánh chính xác hiệu quả kinh doanh thực tế của công ty trong một kỳ nhất định, tránh tình trạng doanh thu được ghi nhận sớm hơn hoặc muộn hơn chi phí liên quan, làm sai lệch lợi nhuận và cung cấp thông tin không đáng tin cậy cho người sử dụng báo cáo tài chính.",
+      "Theo Thông tư 210, công ty phân loại tài sản tài chính (như tiền, tiền gửi ngắn hạn, phải thu khách hàng, công cụ tài chính niêm yết/không niêm yết) tại thời điểm ghi nhận ban đầu thành các nhóm như: ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh, các khoản cho vay và phải thu, các khoản đầu tư giữ đến ngày đáo hạn và tài sản tài chính sẵn sàng để bán. Tại thời điểm ghi nhận ban đầu, các tài sản tài chính này được xác định theo nguyên giá cộng với chi phí giao dịch trực tiếp có liên quan. Cách phân loại này giúp công ty áp dụng các chính sách kế toán phù hợp với mục đích nắm giữ, từ đó cung cấp thông tin minh bạch hơn về tính chất và rủi ro của các công cụ tài chính.",
+      "Lãi cơ bản trên cổ phiếu được tính dựa trên lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông hiện có, chia cho số lượng bình quân gia quyền của cổ phiếu phổ thông đang lưu hành. Ngược lại, lãi suy giảm trên cổ phiếu tính đến tác động tiềm tàng của tất cả các cổ phiếu phổ thông tiềm năng có khả năng chuyển đổi (như cổ phiếu ưu đãi chuyển đổi) thành cổ phiếu phổ thông. Tức là, lãi suy giảm cung cấp một ước tính thận trọng hơn về thu nhập trên mỗi cổ phiếu, giả định tất cả các công cụ tài chính có khả năng chuyển đổi được thực hiện, làm tăng số lượng cổ phiếu đang lưu hành và có thể làm giảm lãi trên mỗi cổ phiếu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty phân loại nợ phải trả tài chính như thế nào?",
+      "Tổng tiền mặt tại quỹ vào ngày 30/09/2024 là bao nhiêu?",
+      "Thuế suất GTGT áp dụng cho các mặt hàng kinh doanh chính của công ty trong giai đoạn từ 01/01/2024 đến 30/09/2024 là bao nhiêu?",
+      "So sánh khoản phải thu khách hàng là bên liên quan vào cuối quý III/2024 với đầu năm.",
+      "Đánh giá sự thay đổi của tiền và các khoản tương đương tiền từ đầu năm đến cuối quý III/2024.",
+      "Phân tích tầm quan trọng của việc xác định các bên liên quan trong báo cáo tài chính.",
+      "Giải thích khi nào tài sản tài chính và nợ phải trả tài chính được bù trừ trên báo cáo tài chính."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Chính sách kế toán - Nợ phải trả và khác)<br>Loại nội dung: Text<br>Nợ phải trả tài chính<br>Nợ phải trả tài chính theo phạm vi của Thông tư 210, cho mục đích thuyết minh trong các báo cáo tài chính, được phân loại một cách phù hợp thành các khoản nợ phải trả tài chính được ghi nhận thông qua Báo cáo kết quả hoạt động kinh doanh, các khoản nợ phải trả tài chính được xác định theo giá trị phân bổ. Công ty xác định việc phân loại các khoản nợ phải trả tài chính tại thời điểm ghi nhận lần đầu.<br>Tất cả nợ phải trả tài chính được ghi nhận ban đầu theo nguyên giá cộng với các chi phí giao dịch trực tiếp có liên quan.<br>Nợ phải trả tài chính của Công ty bao gồm các khoản phải trả người bán, các khoản phải trả khác, chi phí phải trả, các khoản vay ngắn hạn.<br>Giá trị sau ghi nhận lần đầu<br>Hiện tại không có yêu cầu xác định lại giá trị của các công cụ tài chính sau ghi nhận ban đầu.<br>Bù trừ các công cụ tài chính<br>Các tài sản tài chính và nợ phải trả tài chính được bù trừ và giá trị thuần sẽ được trình bày trên các báo cáo tài chính nếu, và chỉ nếu đơn vị có quyền hợp pháp thi hành việc bù trừ các giá trị đã được ghi nhận này và có ý định bù trừ trên cơ sở thuần, hoặc thu được các tài sản và thanh toán nợ phải trả đồng thời.<br><br>17. Các bên liên quan<br>Các bên liên quan là các doanh nghiệp, các cá nhân, trực tiếp hay gián tiếp qua một hay nhiều trung gian, có quyền kiểm soát hoặc chịu sự kiểm soát của Công ty. Các bên liên kết, các cá nhân nào trực tiếp hoặc gián tiếp nắm giữ quyền biểu quyết và có ảnh hưởng đáng kể đối với Công ty, những chức trách quản lý chủ chốt như Hội đồng quản trị, Ban Giám đốc, những thành viên thân cận trong gia đình của những cá nhân hoặc các bên liên kết hoặc những công ty liên kết với cá nhân này cũng được coi là các bên liên quan. Trong việc xem xét từng mối quan hệ giữa các bên liên quan, bản chất của mối quan hệ được chú ý chứ không phải là hình thức pháp lý.<br><br>18. Các nguyên tắc và phương pháp kế toán khác<br>Thuế GTGT: Công ty thực hiện nộp thuế GTGT theo phương pháp khấu trừ.<br>Thuế suất Thuế GTGT áp dụng đối với một số mặt hàng sản xuất kinh doanh chính của Công ty (cột bê tông ly tâm, vật liệu điện và hoạt động xây lắp) từ 01/01/2024 đến 30/09/2024 là 8%.<br>Các loại thuế, phí khác thực hiện theo quy định về thuế, phí hiện hành của Nhà nước.<br><br>V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN<br>1. Tiền<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:--------------------------|:-----------------|:-----------------|<br>| Tiền mặt tại quỹ | 441.708.978 | 946.344 |<br>| Tiền gửi ngân hàng | 4.502.727.815 | 6.679.078.014 |<br>| Các khoản tương đương tiền | 3.921.892.753 | 3.850.000.000 |<br>| Cộng | 8.866.329.546 | 10.530.024.358 |<br><br>2. Phải thu ngắn hạn của khách hàng<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:------------------------------------|:-----------------|:-----------------|<br>| Phải thu khách hàng là bên liên quan | 24.365.993.399 | 17.679.254.595 |<br>| Công ty TNHH Hoàng Phương Anh | 254.218.700 | 304.218.700 |<br>| Công ty CP Xây dựng điện VNECO8 | 118.503.762 | 118.503.762 |<br>| Các đối tượng khác | 3.715.030.394 | 2.378.685.226 |<br>| Cộng | 28.453.746.255 | 20.480.662.283 |",
+    "output": [
+      "Theo Thông tư 210, công ty phân loại nợ phải trả tài chính thành các khoản nợ phải trả tài chính được ghi nhận thông qua Báo cáo kết quả hoạt động kinh doanh và các khoản nợ phải trả tài chính được xác định theo giá trị phân bổ. Việc phân loại này được xác định tại thời điểm ghi nhận lần đầu.",
+      "Tổng tiền mặt tại quỹ vào ngày 30/09/2024 là 441.708.978 đồng.",
+      "Thuế suất GTGT áp dụng cho các mặt hàng sản xuất kinh doanh chính của Công ty (cột bê tông ly tâm, vật liệu điện và hoạt động xây lắp) trong giai đoạn từ 01/01/2024 đến 30/09/2024 là 8%.",
+      "Khoản phải thu khách hàng là bên liên quan vào cuối quý III/2024 là 24.365.993.399 đồng, trong khi đầu năm là 17.679.254.595 đồng. Như vậy, khoản này đã tăng 6.686.738.804 đồng.",
+      "Tổng tiền và các khoản tương đương tiền đã giảm từ 10.530.024.358 đồng vào ngày 01/01/2024 xuống còn 8.866.329.546 đồng vào ngày 30/09/2024, tức là giảm 1.663.694.812 đồng (khoảng 15.8%). Sự sụt giảm này có thể cho thấy công ty đã sử dụng tiền cho các hoạt động kinh doanh, đầu tư hoặc tài chính, hoặc gặp khó khăn trong việc tạo ra dòng tiền dương, gây áp lực lên thanh khoản của công ty.",
+      "Việc xác định và thuyết minh thông tin về các bên liên quan là cực kỳ quan trọng đối với tính minh bạch và độ tin cậy của báo cáo tài chính. Nó giúp người đọc hiểu rõ các mối quan hệ có thể ảnh hưởng đến các giao dịch và tình hình tài chính của công ty. Các giao dịch với bên liên quan có thể không được thực hiện trên cơ sở giá thị trường, và việc thuyết minh đầy đủ giúp đánh giá xem các quyết định kinh doanh có vì lợi ích tốt nhất của công ty hay không, từ đó bảo vệ quyền lợi của các cổ đông và nhà đầu tư.",
+      "Các tài sản tài chính và nợ phải trả tài chính được bù trừ và giá trị thuần sẽ được trình bày trên các báo cáo tài chính nếu, và chỉ nếu đơn vị có quyền hợp pháp thi hành việc bù trừ các giá trị đã được ghi nhận này và có ý định bù trừ trên cơ sở thuần, hoặc thu được các tài sản và thanh toán nợ phải trả đồng thời."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị trả trước cho người bán vào ngày 30/09/2024 là bao nhiêu?",
+      "Tổng giá gốc hàng tồn kho vào ngày 30/09/2024 là bao nhiêu?",
+      "Giá trị còn lại của máy móc, thiết bị vào ngày 30/09/2024 là bao nhiêu?",
+      "So sánh giá trị phải thu ngắn hạn khác giữa ngày 30/09/2024 và 01/01/2024.",
+      "Đánh giá sự thay đổi của nguyên liệu, vật liệu trong hàng tồn kho từ đầu năm đến cuối quý III/2024.",
+      "Phân tích nguyên nhân và tác động của việc không có tăng/giảm nguyên giá tài sản cố định hữu hình trong 9 tháng đầu năm 2024.",
+      "Tính tổng khấu hao phát sinh trong 9 tháng đầu năm 2024 cho tài sản cố định hữu hình."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Phải thu, Hàng tồn kho, TSCĐ)<br>Loại nội dung: Bảng<br>3. Trả trước cho người bán<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:------------------------------------|:-----------------|:-----------------|<br>| Công ty TNHH Nhật Tâm Gia | 636.019.949 | 636.019.949 |<br>| Công ty TNHH dịch vụ TMTH An Bình | 0 | 763.052.686 |<br>| Công ty TNHH XDTM Thành Lợi | 0 | 1.806.479.838 |<br>| Các đối tượng khác | 778.267.220 | 599.864.861 |<br>| Cộng | 1.414.287.169 | 3.805.417.334 |<br><br>4. Phải thu ngắn hạn khác<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:----------------------------|:-----------------|:-----------------|<br>| Phải thu về tạm ứng | 4.534.930.571 | 4.503.921.101 |<br>| Lãi phải thu | 629.481.409 | 454.681.033 |<br>| Phải thu khác | 283.855.177 | 395.318.562 |<br>| Cộng | 5.448.267.157 | 5.353.920.696 |<br><br>5. Nợ xấu<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:--------------------------------------------|:-----------------|:-----------------|<br>| Tổng giá trị các khoản thu ngắn hạn quá hạn thanh toán khó có khả năng thu hồi. | 1.496.055.581 | 1.496.055.581 |<br><br>6. Hàng tồn kho<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:-----------------------------------|:-----------------|:-----------------|<br>| Nguyên liệu, vật liệu | 7.460.977.386 | 8.920.906.426 |<br>| Công cụ, dụng cụ | 112.245.477 | 45.802.134 |<br>| Chi phí sản xuất kinh doanh dở dang | 14.234.571.233 | 12.612.746.737 |<br>| Thành phẩm | 3.056.916.142 | 3.121.342.541 |<br>| Dự phòng giảm giá hàng tồn kho | 2.561.247 | 2.561.247 |<br>| Hàng hóa | 0 | 0 |<br>| Cộng giá gốc hàng tồn kho | 24.862.148.991 | 24.698.236.591 |<br><br>7. Tăng, giảm tài sản cố định hữu hình (Đơn vị tính: đồng)<br>| Khoản mục | Nhà cửa, vật kiến trúc | Máy móc, thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ | Tổng cộng |<br>|:-----------------------------|:----------------------|:--------------------|:-------------------------------|:-------------------|:-------------|<br>| NGUYÊN GIÁ | | | | | |<br>| Tại ngày 01/01/2024 | 8.102.944.303 | 13.840.986.193 | 4.979.901.932 | 71.174.136 | 26.995.006.564 |<br>| Tăng do mua sắm | 0 | 0 | 0 | 0 | 0 |<br>| Giảm | 0 | 0 | 0 | 0 | 0 |<br>| Tại ngày 30/09/2024 | 8.102.944.303 | 13.840.986.193 | 4.979.901.932 | 71.174.136 | 26.995.006.564 |<br>| GIÁ TRỊ HAO MÒN LŨY KẾ | | | | | |<br>| Tại ngày 01/01/2024 | 6.968.051.045 | 9.633.889.129 | 4.517.359.883 | 71.174.136 | 21.190.474.193 |<br>| Khấu hao | 128.304.237 | 573.464.499 | 109.549.431 | 0 | 811.318.167 |<br>| Giảm | 0 | 0 | 0 | 0 | 0 |<br>| Tại ngày 30/09/2024 | 7.096.355.282 | 10.207.353.628 | 4.626.909.314 | 71.174.136 | 22.001.792.360 |<br>| GIÁ TRỊ CÒN LẠI | | | | | |<br>| Tại ngày 01/01/2024 | 1.134.893.258 | 4.207.097.064 | 462.542.049 | 0 | 5.804.532.371 |<br>| Tại ngày 30/09/2024 | 1.006.589.021 | 3.633.632.565 | 352.992.618 | 0 | 4.993.214.204 |",
+    "output": [
+      "Tổng giá trị trả trước cho người bán vào ngày 30/09/2024 là 1.414.287.169 đồng.",
+      "Tổng giá gốc hàng tồn kho vào ngày 30/09/2024 là 24.862.148.991 đồng.",
+      "Giá trị còn lại của máy móc, thiết bị vào ngày 30/09/2024 là 3.633.632.565 đồng.",
+      "Giá trị phải thu ngắn hạn khác vào ngày 30/09/2024 là 5.448.267.157 đồng, tăng so với 5.353.920.696 đồng vào ngày 01/01/2024. Như vậy, khoản này đã tăng 94.346.461 đồng.",
+      "Giá trị nguyên liệu, vật liệu trong hàng tồn kho đã giảm từ 8.920.906.426 đồng vào ngày 01/01/2024 xuống còn 7.460.977.386 đồng vào ngày 30/09/2024, tức giảm 1.459.929.040 đồng (khoảng 16.36%). Sự giảm này có thể cho thấy công ty đã sử dụng một lượng lớn nguyên liệu cho sản xuất hoặc đã thực hiện quản lý tồn kho hiệu quả hơn, hoặc giảm nhu cầu dự trữ.",
+      "Trong 9 tháng đầu năm 2024, nguyên giá tài sản cố định hữu hình của công ty không thay đổi (giữ nguyên ở mức 26.995.006.564 đồng), không có tăng do mua sắm hay giảm do thanh lý. Nguyên nhân có thể là công ty không thực hiện đầu tư lớn vào tài sản mới hoặc không thanh lý tài sản hiện có. Tác động của việc này là không có sự mở rộng đáng kể về năng lực sản xuất thông qua đầu tư tài sản cố định, nhưng cũng giúp duy trì dòng tiền vốn ra ổn định. Mặc dù nguyên giá không đổi, giá trị còn lại của tài sản cố định vẫn giảm do khấu hao, phản ánh sự hao mòn tài sản theo thời gian.",
+      "Tổng khấu hao phát sinh trong 9 tháng đầu năm 2024 cho tài sản cố định hữu hình là 811.318.167 đồng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí trả trước ngắn hạn vào ngày 30/09/2024 là bao nhiêu?",
+      "Khoản vay và nợ ngắn hạn từ Ngân hàng CPTM Công thương Việt Nam CN Quảng Bình là bao nhiêu vào cuối quý III/2024?",
+      "So sánh tổng vay và nợ ngắn hạn vào cuối quý III/2024 với đầu năm.",
+      "Khoản phải trả người bán ngắn hạn cho Công ty CP TNHH Vinh Đạt Phát thay đổi như thế nào từ đầu năm đến cuối quý III/2024?",
+      "Đánh giá mức độ phụ thuộc của công ty vào nợ ngắn hạn dựa trên các khoản vay và nợ hiện tại.",
+      "Phân tích rủi ro thanh khoản nếu các khoản phải trả người bán ngắn hạn tăng đột biến.",
+      "Tính tỷ lệ chi phí trả trước dài hạn trên tổng chi phí trả trước vào cuối quý III/2024."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Chi phí trả trước, Nợ vay, Phải trả)<br>Loại nội dung: Bảng<br>8. Chi phí trả trước<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:-------------------------------|:-----------------|:-----------------|<br>| a. Chi phí trả trước ngắn hạn | 26.197.831 | 12.899.767 |<br>| - Chi phí mua bảo hiểm | 23.497.831 | 11.099.767 |<br>| - Công cụ dụng cụ xuất dùng | 2.700.000 | 1.800.000 |<br>| - Sửa chữa lớn TSCĐ | 0 | 0 |<br>| - Các khoản khác | 0 | 0 |<br>| b. Thuế và các khoản phải thu Nhà nước | 0 | 0 |<br>| c. Chi phí trả trước dài hạn | 154.794.781 | 234.622.369 |<br>| - Chi phí mua bảo hiểm | 0 | 0 |<br>| - Công cụ dụng cụ chờ phân bổ | 25.482.323 | 52.376.189 |<br>| - Chi phí sửa chữa tài sản TSCĐ | 129.312.458 | 182.246.180 |<br>| - Chi phí lãi trả chậm | 0 | 0 |<br>| Cộng | 180.992.612 | 247.522.136 |<br><br>9. Vay và nợ ngắn hạn<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:-------------------------------------------|:-----------------|:-----------------|<br>| Ngân hàng CPTM Công thương Việt Nam CN Quảng Bình | 40.747.518.033 | 40.645.169.529 |<br>| Lê Thị Diệp | 300.000.000 | 300.000.000 |<br>| Trần Thị Hương | 1.200.000.000 | 700.000.000 |<br>| Nguyễn Đại Lỵ | 0 | 630.000.000 |<br>| Phạm Xuân Trụ | 366.000.000 | 666.000.000 |<br>| Hoàng Thị Hồng Nhạn | 100.000.000 | 0 |<br>| Võ Doãn Bình | 673.000.000 | 723.000.000 |<br>| Công ty TNHH Vinh Đạt Phát | 0 | 1.600.000.000 |<br>| Công ty TNHH TMXDTH Trung Kiên | 242.500.000 | 457.500.000 |<br>| Cộng | 43.629.018.033 | 45.721.669.529 |<br><br>10. Phải trả người bán ngắn hạn<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:-------------------------------------|:-----------------|:-----------------|<br>| Công ty TNHH Phú Huy Phước | 153.895.217 | 252.303.062 |<br>| Công ty TNHH TMDV Hùng Hà | 134.301.802 | 237.826.101 |<br>| Công Ty TNHH SX TMTH Sơn Hà | 4.273.429 | 42.985.653 |<br>| Công ty TNHH TMXDTH Trung Kiên | 533.191.017 | 421.525.817 |<br>| Công ty TNHH MTV Hoàng Minh Long | 109.503.000 | 149.503.000 |<br>| Công ty CP TNHH Vinh Đạt Phát | 5.602.176.832 | 518.816.094 |<br>| Các đối tượng khác | 3.597.795.849 | 1.859.025.250 |<br>| Cộng | 10.135.137.146 | 3.481.984.977 |",
+    "output": [
+      "Tổng chi phí trả trước ngắn hạn vào ngày 30/09/2024 là 26.197.831 đồng.",
+      "Khoản vay và nợ ngắn hạn từ Ngân hàng CPTM Công thương Việt Nam CN Quảng Bình vào cuối quý III/2024 là 40.747.518.033 đồng.",
+      "Tổng vay và nợ ngắn hạn vào cuối quý III/2024 là 43.629.018.033 đồng, giảm so với 45.721.669.529 đồng vào đầu năm. Như vậy, tổng vay và nợ ngắn hạn đã giảm 2.092.651.496 đồng.",
+      "Khoản phải trả người bán ngắn hạn cho Công ty CP TNHH Vinh Đạt Phát đã tăng đáng kể từ 518.816.094 đồng vào ngày 01/01/2024 lên 5.602.176.832 đồng vào ngày 30/09/2024. Tức là tăng 5.083.360.738 đồng.",
+      "Với tổng vay và nợ ngắn hạn là 43.629.018.033 đồng vào cuối quý III/2024, và theo Chunk 5, toàn bộ nợ phải trả của công ty là nợ ngắn hạn, cho thấy công ty có mức độ phụ thuộc rất cao vào các nguồn tài trợ ngắn hạn. Điều này tiềm ẩn rủi ro thanh khoản đáng kể, vì công ty cần có đủ dòng tiền hoặc khả năng tái cấp vốn nhanh chóng để đáp ứng các nghĩa vụ nợ đến hạn trong thời gian ngắn, có thể gây áp lực lên hoạt động tài chính nếu không được quản lý chặt chẽ.",
+      "Các khoản phải trả người bán ngắn hạn đã tăng đột biến từ 3.481.984.977 đồng lên 10.135.137.146 đồng trong 9 tháng đầu năm 2024. Nếu xu hướng này tiếp tục, công ty sẽ đối mặt với rủi ro thanh khoản cao. Điều này có nghĩa là công ty sẽ cần một lượng tiền mặt lớn hơn đáng kể để thanh toán cho các nhà cung cấp trong thời gian ngắn. Nếu dòng tiền từ hoạt động kinh doanh không đủ hoặc khả năng tiếp cận vốn vay gặp khó khăn, công ty có thể thiếu hụt tiền mặt để chi trả các nghĩa vụ ngắn hạn, ảnh hưởng nghiêm trọng đến hoạt động và uy tín.",
+      "Chi phí trả trước dài hạn vào cuối quý III/2024 là 154.794.781 đồng. Tổng chi phí trả trước (ngắn hạn và dài hạn) là 180.992.612 đồng. Tỷ lệ chi phí trả trước dài hạn trên tổng chi phí trả trước là khoảng 85.53% (154.794.781 / 180.992.612 * 100%)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng người mua trả trước ngắn hạn vào ngày 30/09/2024 là bao nhiêu?",
+      "Số dư đầu kỳ này của lợi nhuận chưa phân phối là bao nhiêu?",
+      "So sánh khoản phải trả cho BQLDA lưới điện Miền Trung vào cuối quý III/2024 với đầu năm.",
+      "Khoản chi phí phải trả cho trích trước công trình thay đổi như thế nào từ đầu năm đến cuối quý III/2024?",
+      "Đánh giá mức độ ảnh hưởng của lợi nhuận trong kỳ này đến tổng vốn chủ sở hữu.",
+      "Phân tích sự biến động của thuế và các khoản phải nộp Nhà nước và ý nghĩa của chúng.",
+      "Tính tổng lãi trong kỳ trước và lãi trong kỳ này."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Phải trả, Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>11. Người mua trả trước ngắn hạn<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:-----------------------------------|:-----------------|:-----------------|<br>| Công ty CP XD FLC FAROS | 117.891.000 | 117.891.000 |<br>| Công ty TNHH VT Trường Phát | 77.931.000 | 77.931.000 |<br>| BQLDA lưới điện Miền Trung | 2.346.422.032 | 3.429.437.851 |<br>| Hoàng Đăng Sơn | 80.000.000 | 80.000.000 |<br>| Công ty CP tập đoàn Trường Thịnh | 0 | 229.174.716 |<br>| Các đối tượng khác | 1.838.966.681 | 269.385.322 |<br>| Cộng | 4.461.210.713 | 4.203.819.889 |<br><br>12. Thuế và các khoản phải nộp Nhà nước<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:-------------------------------|:-----------------|:-----------------|<br>| Thuế giá trị gia tăng | 484.963.519 | 468.256.516 |<br>| Thuế thu nhập doanh nghiệp | 98.312.755 | 60.847.692 |<br>| Thuế đất | 60.601.050 | 141.402.450 |<br>| Thuế thu nhập cá nhân | 9.600.000 | 9.600.000 |<br>| Cộng | 653.477.324 | 680.106.658 |<br><br>13. Chi phí phải trả<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:------------------------|:-----------------|:-----------------|<br>| Dự chi phí lãi vay phải trả | 0 | 212.755.901 |<br>| Chi phí kiểm toán | 0 | 35.000.000 |<br>| Trích trước công trình | 185.485.406 | 1.273.831.025 |<br>| Cộng | 185.485.406 | 1.521.586.926 |<br><br>14. Các khoản phải trả phải nộp ngắn hạn khác<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:---------------------------------------|:-----------------|:-----------------|<br>| Bảo hiểm xã hội | 386.698.014 | 0 |<br>| Kinh phí công đoàn | 226.592.222 | 186.097.241 |<br>| Tổng Công ty CP Xây dựng điện Việt Nam | 232.572.888 | 232.572.888 |<br>| Công ty CP Xây dựng điện VNECO8 | 68.150.290 | 35.176.423 |<br>| Công ty CP Xây dựng điện VNECO4 | 1.395.091.458 | 1.816.201.103 |<br>| Các khoản phải trả, phải nộp khác | 89.286.065 | 108.890.441 |<br>| Cộng | 2.398.390.937 | 2.378.938.096 |<br><br>15. Nguồn vốn chủ sở hữu<br>a. Bảng đối chiếu biến động của vốn chủ sở hữu (Đơn vị tính: đ)<br>| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Quỹ đầu tư phát triển | Lợi nhuận chưa phân phối | Cộng |<br>|:-------------------------------|:-------------------------|:---------------------|:-------------------------|:--------------|<br>| Số dư đầu kỳ trước | 12.000.000.000 | 1.525.591.850 | 1.503.530.126 | 15.029.121.976 |<br>| Trích quỹ khen thưởng, phúc lợi | 0 | 0 | 0 | 0 |<br>| Lãi trong kỳ trước | 0 | 0 | 36.478.629 | 36.478.629 |<br>| Số dư cuối kỳ trước | 12.000.000.000 | 1.525.591.850 | 1.540.008.755 | 15.065.600.605 |<br>| Số dư đầu kỳ này | 12.000.000.000 | 1.525.591.850 | 1.796.427.419 | 11.729.164.431 |<br>| Trích quỹ khen thưởng, phúc lợi | 0 | 0 | 0 | 0 |<br>| Lãi trong kỳ này | 0 | 0 | 101.860.253 | 101.860.253 |<br>| Số dư cuối quý này | 12.000.000.000 | 1.525.591.850 | 1.694.567.166 | 11.831.024.684 |",
+    "output": [
+      "Tổng người mua trả trước ngắn hạn vào ngày 30/09/2024 là 4.461.210.713 đồng.",
+      "Số dư đầu kỳ này của lợi nhuận chưa phân phối là 1.796.427.419 đồng.",
+      "Khoản phải trả cho BQLDA lưới điện Miền Trung vào cuối quý III/2024 là 2.346.422.032 đồng, giảm so với 3.429.437.851 đồng vào đầu năm. Như vậy, khoản này đã giảm 1.083.015.819 đồng.",
+      "Khoản chi phí phải trả cho trích trước công trình đã giảm từ 1.273.831.025 đồng vào ngày 01/01/2024 xuống còn 185.485.406 đồng vào ngày 30/09/2024. Tức là giảm 1.088.345.619 đồng.",
+      "Lợi nhuận trong kỳ này là 101.860.253 đồng, và tổng vốn chủ sở hữu cuối quý này là 11.831.024.684 đồng. Mức lợi nhuận này đóng góp tích cực vào việc tăng lợi nhuận chưa phân phối, từ đó làm tăng tổng vốn chủ sở hữu. Tuy nhiên, so với quy mô tổng thể của vốn chủ sở hữu, mức ảnh hưởng là tương đối nhỏ (khoảng 0.86%), cho thấy lợi nhuận trong kỳ tuy có tăng nhưng chưa tạo ra sự thay đổi lớn về quy mô vốn chủ sở hữu tổng thể.",
+      "Tổng thuế và các khoản phải nộp Nhà nước đã giảm nhẹ từ 680.106.658 đồng vào đầu năm xuống còn 653.477.324 đồng vào cuối quý III/2024. Cụ thể, thuế GTGT và thuế TNDN có xu hướng tăng, điều này thường đi đôi với sự tăng trưởng doanh thu và lợi nhuận chịu thuế của công ty. Trong khi đó, thuế đất giảm mạnh và thuế thu nhập cá nhân không đổi. Sự biến động này có thể phản ánh sự thay đổi trong hoạt động kinh doanh, chính sách thuế, hoặc việc công ty đã thực hiện nghĩa vụ nộp thuế của mình một cách kịp thời.",
+      "Lãi trong kỳ trước là 36.478.629 đồng và lãi trong kỳ này là 101.860.253 đồng. Tổng cộng lãi trong kỳ trước và lãi trong kỳ này là 138.338.882 đồng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Mệnh giá cổ phiếu đang lưu hành của công ty là bao nhiêu?",
+      "Số lượng cổ phiếu phổ thông đang lưu hành vào ngày 30/09/2024 là bao nhiêu?",
+      "Tổng doanh thu bán hàng và cung cấp dịch vụ lũy kế năm 2024 là bao nhiêu?",
+      "Mục đích sử dụng của Quỹ đầu tư phát triển là gì?",
+      "So sánh doanh thu xây lắp quý 3/2024 với quý 3/2023.",
+      "Đánh giá cơ cấu doanh thu theo ngành nghề của công ty trong 9 tháng đầu năm 2024.",
+      "Phân tích vai trò của các quỹ doanh nghiệp (đầu tư phát triển, dự phòng tài chính) trong việc hỗ trợ chiến lược và quản lý rủi ro của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Vốn chủ sở hữu & Hoạt động kinh doanh)<br>Loại nội dung: Bảng và Text<br>b. Chi tiết vốn đầu tư của chủ sở hữu<br>| Chỉ tiêu | Tại ngày 30/09/2024 (đ) | Tại ngày 01/01/2024 (đ) |<br>|:-------------------------------------------|:-------------------------|:-------------------------|<br>| Tổng Công ty Cổ phần Xây dựng điện Việt Nam VNECO | 7.887.000.000 | 7.887.000.000 |<br>| Các đối tượng khác | 4.113.000.000 | 4.113.000.000 |<br>| Cộng | 12.000.000.000 | 12.000.000.000 |<br><br>c. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức lợi nhuận được chia<br>| Chỉ tiêu | Tại ngày 30/09/2024 (đ) | Tại ngày 01/01/2024 (đ) |<br>|:----------------------------|:-------------------------|:-------------------------|<br>| Vốn đầu tư của chủ sở hữu | | |<br>| - Vốn góp đầu năm | 12.000.000.000 | 12.000.000.000 |<br>| - Vốn góp tăng trong năm | 0 | 0 |<br>| - Vốn góp giảm trong năm | 0 | 0 |<br>| - Vốn góp cuối năm | 12.000.000.000 | 12.000.000.000 |<br>| Cổ tức lợi nhuận đã chia | 0 | 0 |<br><br>d. Cổ phiếu<br>| Chỉ tiêu | Tại ngày 30/09/2024 | Tại ngày 01/01/2024 |<br>|:-----------------------------------|:--------------------|:--------------------|<br>| Số lượng cổ phiếu đăng ký phát hành | 1.200.000 | 1.200.000 |<br>| Số lượng cổ phiếu đã bán ra công chúng | 1.200.000 | 1.200.000 |<br>| - Cổ phiếu phổ thông | 1.200.000 | 1.200.000 |<br>| Số lượng cổ phiếu được mua lại | 0 | 0 |<br>| Số lượng cổ phiếu đang lưu hành | 1.200.000 | 1.200.000 |<br>| - Cổ phiếu phổ thông | 1.200.000 | 1.200.000 |<br>Mệnh giá cổ phiếu đang lưu hành: 10.000 đồng.<br><br>e. Các quỹ của doanh nghiệp<br>| Chỉ tiêu | 30/09/2024 (đ) | 01/01/2024 (đ) |<br>|:-----------------------|:-----------------|:-----------------|<br>| Quỹ đầu tư phát triển | 1.525.591.850 | 1.525.591.850 |<br>Mục đích trích lập và sử dụng các quỹ của doanh nghiệp:<br>- Quỹ đầu tư phát triển được trích lập từ lợi nhuận sau thuế thu nhập doanh nghiệp và được sử dụng vào việc đầu tư mở rộng quy mô sản xuất, kinh doanh hoặc đầu tư chiều sâu của doanh nghiệp.<br>- Quỹ dự phòng tài chính được trích lập từ lợi nhuận sau thuế thu nhập doanh nghiệp và được sử dụng để bù đắp các rủi ro phát sinh trong quá trình hoạt động sản xuất kinh doanh của doanh nghiệp.<br><br>VI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH<br>1. Tổng doanh thu bán hàng và cung cấp dịch vụ<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:-------------------------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Tổng doanh thu bán hàng và cung cấp dịch vụ | 24.241.194.230 | 6.425.406.840 | 44.406.540.834 | 17.683.058.837 |<br>Trong đó:<br>| Doanh thu xây lắp | 19.292.736.497 | 2.827.174.884 | 33.102.000.700 | 8.137.635.942 |<br>| Sản xuất công nghiệp | 4.948.457.733 | 3.598.231.956 | 11.304.540.134 | 9.545.422.895 |<br>| Doanh thu khác | 0 | 0 | 0 | 0 |<br>| Cộng | 24.241.194.230 | 6.425.406.840 | 44.406.540.834 | 17.683.058.837 |<br>",
+    "output": [
+      "Mệnh giá cổ phiếu đang lưu hành của công ty là 10.000 đồng.",
+      "Số lượng cổ phiếu phổ thông đang lưu hành vào ngày 30/09/2024 là 1.200.000 cổ phiếu.",
+      "Tổng doanh thu bán hàng và cung cấp dịch vụ lũy kế từ đầu năm đến cuối quý 3/2024 là 44.406.540.834 đồng.",
+      "Quỹ đầu tư phát triển được trích lập từ lợi nhuận sau thuế thu nhập doanh nghiệp và được sử dụng vào việc đầu tư mở rộng quy mô sản xuất, kinh doanh hoặc đầu tư chiều sâu của doanh nghiệp.",
+      "Doanh thu xây lắp trong quý 3/2024 là 19.292.736.497 đồng, tăng đáng kể so với 2.827.174.884 đồng trong quý 3/2023. Tức là tăng 16.465.561.613 đồng.",
+      "Trong 9 tháng đầu năm 2024, tổng doanh thu bán hàng và cung cấp dịch vụ là 44.406.540.834 đồng. Trong đó, doanh thu xây lắp chiếm 33.102.000.700 đồng (khoảng 74.54%) và sản xuất công nghiệp chiếm 11.304.540.134 đồng (khoảng 25.46%). Cơ cấu này cho thấy công ty phụ thuộc chủ yếu vào hoạt động xây lắp, với tỷ trọng doanh thu từ ngành này áp đảo so với sản xuất công nghiệp. Điều này có thể làm tăng rủi ro nếu ngành xây lắp gặp biến động hoặc suy thoái.",
+      "Các quỹ doanh nghiệp đóng vai trò quan trọng trong việc hỗ trợ chiến lược và quản lý rủi ro của công ty. Quỹ đầu tư phát triển được dùng để mở rộng quy mô sản xuất, kinh doanh hoặc đầu tư chiều sâu, giúp công ty thực hiện chiến lược tăng trưởng bền vững mà không phụ thuộc quá nhiều vào vốn vay. Trong khi đó, Quỹ dự phòng tài chính được sử dụng để bù đắp các rủi ro phát sinh trong hoạt động sản xuất kinh doanh, là một công cụ quản lý rủi ro hữu hiệu, giúp ổn định tài chính và đảm bảo khả năng ứng phó với các biến cố bất ngờ. Sự tồn tại của các quỹ này cho thấy công ty có tầm nhìn dài hạn và chiến lược quản lý tài chính thận trọng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần bán hàng và cung cấp dịch vụ lũy kế năm 2024 là bao nhiêu?",
+      "Doanh thu hoạt động tài chính trong Quý 3/2024 là bao nhiêu?",
+      "So sánh giá vốn xây lắp lũy kế năm 2024 với cùng kỳ năm 2023.",
+      "Doanh thu sản xuất công nghiệp có xu hướng tăng hay giảm trong quý 3/2024 so với quý 3/2023?",
+      "Đánh giá mức độ đóng góp của doanh thu hoạt động tài chính vào tổng doanh thu của công ty.",
+      "Phân tích mối quan hệ giữa doanh thu thuần và giá vốn hàng bán để đánh giá hiệu quả kinh doanh.",
+      "Tính tỷ lệ giá vốn hàng bán trên doanh thu thuần lũy kế năm 2024."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Hoạt động kinh doanh tiếp theo)<br>Loại nội dung: Bảng<br>2. Các khoản giảm trừ<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:-----------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Các khoản giảm trừ | 0 | 0 | 0 | 0 |<br>Trong đó:<br>| Hàng bán trả lại | 0 | 0 | 0 | 0 |<br><br>3. Doanh thu thuần bán hàng và cung cấp dịch vụ<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:-----------------------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Doanh thu thuần bán hàng và cung cấp dịch vụ | 24.241.194.230 | 6.425.406.840 | 44.406.540.834 | 17.683.058.837 |<br>Trong đó:<br>| Doanh thu xây lắp | 19.292.736.497 | 2.827.174.884 | 33.102.000.700 | 8.137.635.942 |<br>| Sản xuất công nghiệp | 4.948.457.733 | 3.598.231.956 | 11.304.540.134 | 9.545.422.895 |<br>| Doanh thu khác | 0 | 0 | 0 | 0 |<br>| Cộng | 24.241.194.230 | 6.425.406.840 | 44.406.540.834 | 17.683.058.837 |<br><br>4. Giá vốn hàng bán<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:----------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Giá vốn hàng bán | 22.684.361.326 | 5.010.023.336 | 40.484.985.656 | 14.036.986.814 |<br>Trong đó:<br>| Giá vốn xây lắp | 18.181.016.106 | 1.787.067.958 | 30.187.042.809 | 5.615.508.991 |<br>| Giá vốn sản xuất công nghiệp | 4.503.345.220 | 3.222.955.378 | 10.297.942.847 | 8.421.477.823 |<br>| Giá vốn của hoạt động khác | 0 | 0 | 0 | 0 |<br>| Cộng | 22.684.361.326 | 5.010.023.336 | 40.484.985.656 | 14.036.986.814 |<br><br>5. Doanh thu hoạt động tài chính<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:----------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Doanh thu hoạt động tài chính | 79.716.091 | 81.568.272 | 253.684.200 | 181.947.161 |<br>Lãi tiền gửi, tiền cho vay<br>| Lãi tiền gửi, tiền cho vay | 79.716.091 | 81.568.272 | 253.684.200 | 181.947.161 |<br>| Lãi bán cổ phiếu | 0 | 0 | 0 | 0 |<br>| Lợi nhuận được chia | 0 | 0 | 0 | 0 |<br>| Cộng | 79.716.091 | 81.568.272 | 253.684.200 | 181.947.161 |",
+    "output": [
+      "Doanh thu thuần bán hàng và cung cấp dịch vụ lũy kế từ đầu năm đến cuối quý 3/2024 là 44.406.540.834 đồng.",
+      "Doanh thu hoạt động tài chính trong Quý 3/2024 là 79.716.091 đồng.",
+      "Giá vốn xây lắp lũy kế từ đầu năm đến cuối quý 3/2024 là 30.187.042.809 đồng, tăng đáng kể so với 5.615.508.991 đồng của cùng kỳ năm 2023. Như vậy, giá vốn xây lắp đã tăng 24.571.533.818 đồng.",
+      "Doanh thu sản xuất công nghiệp trong quý 3/2024 là 4.948.457.733 đồng, so với 3.598.231.956 đồng trong quý 3/2023. Như vậy, doanh thu này có xu hướng tăng.",
+      "Doanh thu hoạt động tài chính lũy kế năm 2024 là 253.684.200 đồng, trong khi doanh thu thuần bán hàng và cung cấp dịch vụ lũy kế là 44.406.540.834 đồng. Tỷ lệ đóng góp của doanh thu hoạt động tài chính vào tổng doanh thu là rất nhỏ, chỉ khoảng 0.57%. Điều này cho thấy công ty chủ yếu tạo doanh thu từ các hoạt động kinh doanh cốt lõi và không phụ thuộc đáng kể vào các hoạt động tài chính để tạo nguồn thu.",
+      "Trong 9 tháng đầu năm 2024, doanh thu thuần của công ty là 44.406.540.834 đồng và giá vốn hàng bán là 40.484.985.656 đồng. Lợi nhuận gộp là 3.921.555.178 đồng. Tỷ lệ giá vốn hàng bán trên doanh thu thuần là khoảng 91.17%. Tỷ lệ này rất cao, cho thấy một phần lớn doanh thu được dùng để bù đắp giá vốn, dẫn đến biên lợi nhuận gộp thấp. Mặc dù doanh thu tăng trưởng mạnh, hiệu quả kinh doanh có thể bị ảnh hưởng nếu công ty không thể kiểm soát hoặc tối ưu hóa chi phí sản xuất để cải thiện biên lợi nhuận.",
+      "Giá vốn hàng bán lũy kế từ đầu năm đến cuối quý 3/2024 là 40.484.985.656 đồng. Doanh thu thuần bán hàng và cung cấp dịch vụ lũy kế là 44.406.540.834 đồng. Tỷ lệ giá vốn hàng bán trên doanh thu thuần lũy kế năm 2024 là khoảng 91.17% (40.484.985.656 / 44.406.540.834 * 100%)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lãi tiền vay trong Quý 3/2024 là bao nhiêu?",
+      "Lợi nhuận trước thuế lũy kế từ đầu năm đến cuối quý 3/2024 là bao nhiêu?",
+      "So sánh chi phí quản lý doanh nghiệp giữa Quý 3/2024 và Quý 3/2023.",
+      "Thuế suất thuế TNDN áp dụng cho công ty là bao nhiêu phần trăm?",
+      "Đánh giá sự thay đổi của chi phí tài chính lũy kế từ đầu năm đến cuối quý này giữa năm 2024 và 2023.",
+      "Phân tích tác động của các khoản chi phí không được trừ vào thu nhập chịu thuế đến lợi nhuận sau thuế của công ty.",
+      "Tính tổng chi phí hoạt động (chi phí bán hàng + chi phí quản lý doanh nghiệp) trong Quý 3/2024."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Chi phí & Lợi nhuận)<br>Loại nội dung: Bảng<br>6. Chi phí tài chính<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:----------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Chi phí tài chính | 712.009.244 | 1.004.189.605 | 2.034.222.194 | 2.584.737.552 |<br>| Lãi tiền vay | 712.009.244 | 1.004.189.605 | 2.034.222.194 | 2.584.737.552 |<br>| Chiết khấu thanh toán | 0 | 0 | 0 | 0 |<br>| Cộng | 712.009.244 | 1.004.189.605 | 2.034.222.194 | 2.584.737.552 |<br><br>7. Chi phí bán hàng<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:-----------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Chi phí bán hàng | 126.919.565 | 42.748.184 | 212.168.942 | 306.386.789 |<br><br>8. Chi phí quản lý doanh nghiệp<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:----------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Chi phí quản lý doanh nghiệp | 741.595.109 | 415.087.201 | 1.789.522.926 | 866.000.291 |<br><br>9. Thu nhập khác<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:-------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Thu nhập khác | 0 | 0 | 0 | 18.500.000 |<br><br>10. Chi phí khác<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:------------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Chi phí khác | 0 | 13.593.378 | 0 | 28.397.923 |<br>| Chi phí nhượng bán TLTS | 0 | 0 | 0 | 0 |<br>| Các khoản bị phạt | 0 | 13.593.378 | 0 | 28.397.923 |<br>| Cộng | 0 | 13.593.378 | 0 | 28.397.923 |<br><br>11. Lợi nhuận trước thuế<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:----------------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Lợi nhuận trước thuế | 56.025.077 | 21.333.408 | 139.325.316 | 60.996.629 |<br>| Trừ thu nhập được miễn thuế | 0 | 0 | 0 | 0 |<br>| Chi phí không được trừ vào thu nhập chịu thuế | 24.000.000 | 37.593.378 | 48.000.000 | 61.593.378 |<br>| Thu nhập chịu thuế | 80.025.077 | 58.926.786 | 187.325.316 | 122.590.007 |<br>| Thuế suất (%) | 20 | 20 | 20 | 20 |<br><br>12. Thuế phải nộp trong kỳ<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:-----------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Thuế phải nộp trong kỳ | 16.005.015 | 11.785.357 | 37.465.063 | 24.518.000 |<br><br>13. Lợi nhuận sau thuế<br>| Chỉ tiêu | Quý 3/2024 | Quý 3/2023 | Lũy kế từ đầu năm đến cuối quý này 2024 | Lũy kế từ đầu năm đến cuối quý này 2023 |<br>|:--------------------|:-----------|:-----------|:-----------------------------------------|:-----------------------------------------|<br>| Lợi nhuận sau thuế | 40.020.062 | 9.548.051 | 101.860.203 | 36.478.629 |<br>",
+    "output": [
+      "Lãi tiền vay trong Quý 3/2024 là 712.009.244 đồng.",
+      "Lợi nhuận trước thuế lũy kế từ đầu năm đến cuối quý 3/2024 là 139.325.316 đồng.",
+      "Chi phí quản lý doanh nghiệp trong Quý 3/2024 là 741.595.109 đồng, tăng so với 415.087.201 đồng trong Quý 3/2023. Như vậy, chi phí này đã tăng 326.507.908 đồng.",
+      "Thuế suất thuế TNDN áp dụng cho công ty là 20%.",
+      "Chi phí tài chính lũy kế từ đầu năm đến cuối quý III/2024 là 2.034.222.194 đồng, giảm so với 2.584.737.552 đồng của cùng kỳ năm 2023. Mức giảm 550.515.358 đồng này (khoảng 21.3%) là một tín hiệu tích cực, cho thấy công ty đã quản lý chi phí tài chính hiệu quả hơn, có thể do giảm nợ vay hoặc tối ưu hóa lãi suất, góp phần cải thiện khả năng sinh lời.",
+      "Các khoản chi phí không được trừ vào thu nhập chịu thuế lũy kế 9 tháng đầu năm 2024 là 48.000.000 đồng. Các khoản này làm tăng cơ sở tính thuế thu nhập doanh nghiệp. Cụ thể, lợi nhuận trước thuế là 139.325.316 đồng, nhưng do có thêm 48.000.000 đồng chi phí không được trừ, thu nhập chịu thuế tăng lên 187.325.316 đồng. Với thuế suất 20%, điều này đã làm tăng chi phí thuế TNDN phải nộp thêm 9.600.000 đồng (20% của 48.000.000 đồng), trực tiếp làm giảm lợi nhuận sau thuế của công ty. Điều này cho thấy việc quản lý và kiểm soát các chi phí không được khấu trừ có ảnh hưởng đáng kể đến lợi nhuận ròng.",
+      "Tổng chi phí hoạt động trong Quý 3/2024 là tổng của chi phí bán hàng (126.919.565 đồng) và chi phí quản lý doanh nghiệp (741.595.109 đồng), bằng 868.514.674 đồng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty mẹ của VNECO12 là ai?",
+      "Địa chỉ của Công ty mẹ VNECO là gì?",
+      "Số dư cuối kỳ của khoản phải thu khách hàng là bao nhiêu?",
+      "Giao dịch chủ yếu giữa VNECO12 và Công ty mẹ VNECO là gì?",
+      "Số dư cuối kỳ của phải thu về lãi thu xếp vốn thay đổi như thế nào từ đầu năm đến cuối quý III/2024?",
+      "Phân tích tác động của các giao dịch với bên liên quan đến tình hình tài chính của công ty.",
+      "Đánh giá mức độ phụ thuộc của VNECO12 vào các giao dịch với công ty mẹ."
+    ],
+    "input": "Công ty: Công ty Cổ phần Xây dựng điện VNECO12<br>Mã cổ phiếu: E12<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Phát hành ngày 16/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (Thông tin khác)<br>Loại nội dung: Text và Bảng<br>VII. NHỮNG THÔNG TIN KHÁC<br>1. Thông tin về các bên liên quan<br>Công ty mẹ:<br>Tổng Công ty Cổ phần Xây dựng điện Việt Nam (VNECO)<br>Địa chỉ: số 344 Phan Châu Trinh, quận Hải Châu, thành phố Đà Nẵng.<br>Các giao dịch chủ yếu với Công ty mẹ: Nhận dịch vụ xây dựng các công trình điện.<br><br>| TT | Nội dung | Số dư tại 01/01/2024 | Phát sinh tăng | Phát sinh giảm | Số dư tại 30/09/2024 |<br>|:---|:-------------------------------|:---------------------|:---------------|:---------------|:---------------------|<br>| 1 | Phải thu khách hàng | 17.679.254.595 | 19.529.344.261 | 12.842.605.457 | 24.365.993.399 |<br>| | Phải thu về bán hàng và cung cấp DV | 17.679.254.595 | 19.529.344.261 | 12.842.605.457 | 24.365.993.399 |<br>| 2 | Phải thu khác | 2.672.343.100 | 174.800.376 | 0 | 2.847.143.476 |<br>| | Phải thu về thu xếp vốn | 2.217.662.067 | 0 | 0 | 2.217.662.067 |<br>| | Phải thu về lãi thu xếp vốn | 454.681.033 | 174.800.376 | 0 | 629.481.409 |<br>| 3 | Phải trả khác | 232.572.888 | 0 | 0 | 232.572.888 |<br>| | Phải trả về lãi thu xếp vốn | 0 | 80.947.951 | 80.947.951 | 0 |<br>| | Phải trả về đền Vật tư thu hồi | 0 | 150.424.937 | 150.424.937 | 0 |<br>| | Phải trả về nhận BHLĐ | 1.200.000 | 0 | 0 | 1.200.000 |<br><br>2. Thông tin so sánh<br>Số liệu so sánh được lấy từ Báo cáo tài chính quý 3 năm 2023 của Công ty.<br><br>Đồng Hới, ngày 16 tháng 10 năm 2024<br>Người lập biểu: Đào Thị Ngọc Hà<br>Kế toán trưởng: Hoàng Thị Hồng Nhạn<br>Giám đốc: Trương Xuân Phúc",
+    "output": [
+      "Công ty mẹ của VNECO12 là Tổng Công ty Cổ phần Xây dựng điện Việt Nam (VNECO).",
+      "Địa chỉ của Công ty mẹ VNECO là số 344 Phan Châu Trinh, quận Hải Châu, thành phố Đà Nẵng.",
+      "Số dư cuối kỳ của khoản phải thu khách hàng là 24.365.993.399 đồng.",
+      "Giao dịch chủ yếu giữa VNECO12 và Công ty mẹ VNECO là VNECO12 nhận dịch vụ xây dựng các công trình điện từ Công ty mẹ.",
+      "Số dư cuối kỳ của phải thu về lãi thu xếp vốn vào ngày 30/09/2024 là 629.481.409 đồng, tăng so với 454.681.033 đồng vào ngày 01/01/2024. Như vậy, khoản này đã tăng 174.800.376 đồng.",
+      "Các giao dịch với bên liên quan có tác động đáng kể đến tình hình tài chính của công ty. Công ty nhận dịch vụ xây dựng từ công ty mẹ, tạo ra doanh thu và lợi nhuận. Tuy nhiên, các khoản phải thu khách hàng từ bên liên quan (24.365.993.399 đồng) chiếm tỷ trọng rất lớn trong tổng phải thu khách hàng và đã tăng mạnh, cho thấy VNECO12 đang cấp tín dụng lớn cho công ty mẹ. Điều này có thể ảnh hưởng đến dòng tiền và thanh khoản của VNECO12 nếu các khoản này chậm được thanh toán. Các khoản phải thu và phải trả khác với bên liên quan cũng thể hiện mối quan hệ tài chính chặt chẽ. Tổng thể, dù mang lại cơ hội kinh doanh, sự phụ thuộc vào các giao dịch bên liên quan tiềm ẩn rủi ro về tính độc lập tài chính và thanh khoản nếu các điều khoản không được quản lý chặt chẽ.",
+      "VNECO12 có mức độ phụ thuộc rất cao vào các giao dịch với công ty mẹ (Tổng Công ty Cổ phần Xây dựng điện Việt Nam). Khoản phải thu khách hàng từ bên liên quan (24.365.993.399 đồng) chiếm khoảng 85.63% tổng phải thu ngắn hạn của khách hàng (theo Chunk 3). Điều này cho thấy công ty mẹ là khách hàng chính và nguồn tạo doanh thu đáng kể cho VNECO12. Mức độ phụ thuộc cao này có thể mang lại sự ổn định nhưng cũng tiềm ẩn rủi ro đáng kể nếu mối quan hệ này thay đổi hoặc nếu công ty mẹ gặp khó khăn tài chính, có thể ảnh hưởng nghiêm trọng đến doanh thu, dòng tiền và khả năng hoạt động của VNECO12."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  }
+]

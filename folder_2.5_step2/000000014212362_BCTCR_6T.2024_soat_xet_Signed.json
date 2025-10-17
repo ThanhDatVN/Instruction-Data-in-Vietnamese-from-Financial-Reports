@@ -1,0 +1,750 @@
+```json
+[
+  {
+    "instruction": "Tên công ty được đề cập trong báo cáo là gì?",
+    "input": "1",
+    "output": "CÔNG TY CỔ PHẦN TẬP ĐOÀN BIA SÀI GÒN BÌNH TÂY."
+  },
+  {
+    "instruction": "Mã cổ phiếu của công ty là gì?",
+    "input": "1",
+    "output": "SBB."
+  },
+  {
+    "instruction": "Loại báo cáo tài chính này là gì?",
+    "input": "1",
+    "output": "Báo cáo tài chính riêng giữa niên độ đã được soát xét."
+  },
+  {
+    "instruction": "Thời gian báo cáo tài chính này bao gồm giai đoạn nào?",
+    "input": "1",
+    "output": "Cho giai đoạn 06 tháng đầu năm 2024, kết thúc tại ngày 30 tháng 06 năm 2024."
+  },
+  {
+    "instruction": "Ý kiến kiểm toán đối với báo cáo tài chính riêng giữa niên độ này là gì?",
+    "input": "1",
+    "output": "Ý kiến kiểm toán là ngoại trừ."
+  },
+  {
+    "instruction": "Vấn đề nào là cơ sở để đưa ra kết luận kiểm toán ngoại trừ?",
+    "input": "1",
+    "output": "Cơ sở để đưa ra kết luận kiểm toán ngoại trừ là việc Công ty chưa đánh giá và ghi nhận lên báo cáo tài chính riêng giữa niên độ cho giai đoạn 06 tháng đầu năm 2024 về ảnh hưởng của khoản chậm nộp thuế tại Công ty con – Công ty TNHH Bia Sài Gòn – Ninh Thuận theo thông báo số 1888/TB-CTNTH ngày 12/03/2024 của Cục Thuế Tỉnh Ninh Thuận, với số tiền chậm nộp thuế tính đến ngày 12/03/2024 là 49.370.835.434 đồng."
+  },
+  {
+    "instruction": "Nếu Công ty điều chỉnh khoản chậm nộp thuế theo yêu cầu, Lợi nhuận sau thuế chưa phân phối sẽ thay đổi như thế nào?",
+    "input": "1",
+    "output": "Nếu Công ty thực hiện điều chỉnh khoản chậm nộp thuế theo đúng quy định, Lợi nhuận sau thuế chưa phân phối trên Bảng cân đối kế toán riêng tại ngày 30 tháng 06 năm 2024 của Công ty sẽ lỗ thêm 49.370.835.434 đồng."
+  },
+  {
+    "instruction": "Phân tích mức độ nghiêm trọng của khoản chậm nộp thuế bị ngoại trừ đối với tình hình tài chính của công ty.",
+    "input": "1",
+    "output": "Khoản chậm nộp thuế 49.370.835.434 đồng bị ngoại trừ là một vấn đề nghiêm trọng đối với tình hình tài chính của công ty. Nếu được ghi nhận, khoản này sẽ làm tăng chi phí tài chính và giảm lợi nhuận sau thuế chưa phân phối thêm một khoản tương ứng. Điều này cho thấy báo cáo tài chính hiện tại có thể chưa phản ánh đầy đủ các nghĩa vụ tài chính tiềm ẩn, dẫn đến việc lợi nhuận và vốn chủ sở hữu bị overstated. Hơn nữa, việc không tuân thủ nghĩa vụ thuế của công ty con có thể gây ra các rủi ro pháp lý và ảnh hưởng tiêu cực đến uy tín của tập đoàn."
+  },
+  {
+    "instruction": "Vốn điều lệ của Công ty là bao nhiêu VND?",
+    "input": "2",
+    "output": "Vốn điều lệ của Công ty là 875.245.360.000 VND."
+  },
+  {
+    "instruction": "Ai là Chủ tịch Hội đồng Quản trị của Công ty?",
+    "input": "2",
+    "output": "Ông Văn Thanh Liêm là Chủ tịch Hội đồng Quản trị của Công ty."
+  },
+  {
+    "instruction": "Công ty được thành lập vào ngày nào và theo số giấy chứng nhận đăng ký kinh doanh nào?",
+    "input": "2",
+    "output": "Công ty được thành lập theo Giấy chứng nhận đăng ký kinh doanh số 0304116373 ngày 25 tháng 11 năm 2005."
+  },
+  {
+    "instruction": "So sánh vốn điều lệ và vốn góp thực tế của Công ty tại ngày 30/06/2024. Có sự khác biệt không?",
+    "input": "2",
+    "output": "Vốn điều lệ của Công ty theo Giấy chứng nhận đăng ký doanh nghiệp là 875.245.360.000 VND, và vốn góp của Công ty tại ngày 30 tháng 06 năm 2024 cũng là 875.245.360.000 VND. Không có sự khác biệt giữa hai khoản mục này."
+  },
+  {
+    "instruction": "Hai thành viên Hội đồng Quản trị nào đã miễn nhiệm vào ngày 18/07/2024?",
+    "input": "2",
+    "output": "Ông Đặng Thái và Ông Nguyễn Tiến Dũng là hai thành viên Hội đồng Quản trị đã miễn nhiệm vào ngày 18/07/2024."
+  },
+  {
+    "instruction": "Đánh giá mức độ chi tiết thông tin về ngành nghề kinh doanh chính của công ty.",
+    "input": "2",
+    "output": "Thông tin về ngành nghề kinh doanh chính của công ty được trình bày khá chi tiết, liệt kê đa dạng các lĩnh vực từ sản xuất, chế biến lương thực thực phẩm, rượu bia, nước giải khát, đến sản xuất vật liệu xây dựng, xây dựng công nghiệp/dân dụng, mua bán nông sản, cho thuê kho bãi, kinh doanh nhà ở, môi giới bất động sản, bán buôn phế liệu và kinh doanh nhà hàng. Điều này cung cấp cái nhìn toàn diện về phạm vi hoạt động của công ty."
+  },
+  {
+    "instruction": "Phân tích khả năng ảnh hưởng của Hội đồng Quản trị, Ban Tổng Giám đốc và Ban Kiểm soát đến lợi ích của các cổ đông khác, dựa trên thông tin được công bố.",
+    "input": "2",
+    "output": "Dựa trên thông tin được công bố, Hội đồng Quản trị, Ban Tổng Giám đốc và Ban Kiểm soát cam kết không sử dụng quyền lực mà họ được giao để có được bất kỳ lợi ích nào khác ngoài những lợi ích thông thường từ việc nắm giữ cổ phiếu như các cổ đông khác. Điều này ngụ ý rằng có một cơ chế quản trị nhằm ngăn chặn xung đột lợi ích và bảo vệ quyền lợi của cổ đông thiểu số. Tuy nhiên, đây là một tuyên bố tự thân, và mức độ ảnh hưởng thực tế cần được đánh giá thông qua các cơ chế giám sát và minh bạch độc lập."
+  },
+  {
+    "instruction": "Trụ sở chính của Công ty nằm ở đâu?",
+    "input": "2",
+    "output": "Trụ sở chính của Công ty tại 08 Nam Kỳ Khởi Nghĩa, Phường Nguyễn Thái Bình, Quận 1, TP. Hồ Chí Minh, Việt Nam."
+  },
+  {
+    "instruction": "Công ty kiểm toán nào đã thực hiện soát xét báo cáo tài chính cho Công ty Cổ phần Tập đoàn Bia Sài Gòn Bình Tây?",
+    "input": "3",
+    "output": "Công ty TNHH Dịch vụ Tư vấn Tài chính Kế toán và Kiểm toán Phía Nam (AASCS) đã thực hiện soát xét báo cáo tài chính cho Công ty Cổ phần Tập đoàn Bia Sài Gòn Bình Tây."
+  },
+  {
+    "instruction": "Hội đồng Quản trị cam kết đã tuân thủ những yêu cầu nào trong quá trình lập Báo cáo tài chính riêng giữa niên độ?",
+    "input": "3",
+    "output": "Trong quá trình lập Báo cáo tài chính riêng giữa niên độ, Hội đồng Quản trị cam kết đã tuân thủ các yêu cầu: xây dựng và duy trì hệ thống kiểm soát nội bộ cần thiết để đảm bảo báo cáo không có sai sót trọng yếu do gian lận hoặc nhầm lẫn; lựa chọn và áp dụng nhất quán các chính sách kế toán thích hợp; đưa ra các đánh giá và dự đoán hợp lý, thận trọng; tuân thủ các chuẩn mực và chế độ kế toán doanh nghiệp Việt Nam; và lập báo cáo tài chính trên cơ sở hoạt động kinh doanh liên tục."
+  },
+  {
+    "instruction": "Theo Hội đồng Quản trị, các sổ kế toán được lưu giữ nhằm mục đích gì?",
+    "input": "3",
+    "output": "Theo Hội đồng Quản trị, các sổ kế toán được lưu giữ nhằm mục đích phản ánh tình hình tài chính riêng giữa niên độ của Công ty với mức độ trung thực, hợp lý tại bất cứ thời điểm nào và đảm bảo rằng Báo cáo tài chính riêng giữa niên độ tuân thủ các quy định hiện hành của Nhà nước."
+  },
+  {
+    "instruction": "Công ty cam kết tuân thủ nghĩa vụ công bố thông tin theo văn bản pháp luật nào?",
+    "input": "3",
+    "output": "Công ty cam kết tuân thủ nghĩa vụ công bố thông tin theo quy định tại Thông tư số 96/2020/TT-BTC ngày 16/11/2020 do Bộ Tài chính ban hành hướng dẫn về việc công bố thông tin trên thị trường chứng khoán."
+  },
+  {
+    "instruction": "Giải thích tầm quan trọng của việc duy trì hệ thống kiểm soát nội bộ trong việc lập báo cáo tài chính.",
+    "input": "3",
+    "output": "Việc duy trì hệ thống kiểm soát nội bộ có tầm quan trọng sống còn trong việc lập báo cáo tài chính vì nó là yếu tố then chốt để đảm bảo tính trung thực, hợp lý và đáng tin cậy của thông tin tài chính. Một hệ thống kiểm soát nội bộ hiệu quả giúp ngăn chặn và phát hiện các sai sót trọng yếu do gian lận hoặc nhầm lẫn, bảo vệ tài sản của công ty, và đảm bảo rằng các báo cáo tài chính được lập tuân thủ các chuẩn mực kế toán và quy định pháp lý. Điều này củng cố niềm tin của các bên liên quan (nhà đầu tư, cơ quan quản lý) vào báo cáo tài chính, từ đó hỗ trợ quá trình ra quyết định hiệu quả."
+  },
+  {
+    "instruction": "Tại sao việc lập báo cáo tài chính dựa trên cơ sở hoạt động kinh doanh liên tục lại quan trọng?",
+    "input": "3",
+    "output": "Việc lập báo cáo tài chính dựa trên cơ sở hoạt động kinh doanh liên tục (going concern basis) là quan trọng vì nó giả định rằng doanh nghiệp sẽ tiếp tục hoạt động trong tương lai gần mà không có ý định hoặc không cần phải giải thể, hoặc thu hẹp đáng kể quy mô hoạt động. Giả định này ảnh hưởng đến cách thức định giá tài sản và nợ phải trả trên báo cáo tài chính (ví dụ, tài sản không được định giá theo giá trị thanh lý). Nếu giả định này không còn phù hợp, cách trình bày báo cáo tài chính sẽ thay đổi đáng kể, cung cấp một bức tranh tài chính khác biệt và thường là tiêu cực hơn, cảnh báo các bên liên quan về những vấn đề nghiêm trọng đối với sự tồn tại của doanh nghiệp."
+  },
+  {
+    "instruction": "Tổng tài sản ngắn hạn tại ngày 30/06/2024 của công ty là bao nhiêu?",
+    "input": "4",
+    "output": "Tổng tài sản ngắn hạn tại ngày 30/06/2024 của công ty là 588.874.670.984 VND."
+  },
+  {
+    "instruction": "Khoản mục Tiền và các khoản tương đương tiền thay đổi như thế nào từ ngày 01/01/2024 đến ngày 30/06/2024?",
+    "input": "4",
+    "output": "Khoản mục Tiền và các khoản tương đương tiền đã tăng 5.930.752.467 VND, từ 33.524.408.935 VND tại ngày 01/01/2024 lên 39.455.161.402 VND tại ngày 30/06/2024."
+  },
+  {
+    "instruction": "Các khoản phải thu ngắn hạn của khách hàng tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "4",
+    "output": "Các khoản phải thu ngắn hạn của khách hàng tại ngày 30/06/2024 là 158.285.489.753 VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn tại ngày 30/06/2024.",
+    "input": "4",
+    "output": "Hàng tồn kho tại ngày 30/06/2024 là 147.448.744.430 VND và tổng tài sản ngắn hạn là 588.874.670.984 VND. Do đó, tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn là khoảng 25,04% (147.448.744.430 VND / 588.874.670.984 VND * 100%)."
+  },
+  {
+    "instruction": "Đánh giá sự biến động của khoản phải thu về cho vay ngắn hạn giữa hai kỳ.",
+    "input": "4",
+    "output": "Khoản phải thu về cho vay ngắn hạn đã tăng đáng kể từ 35.000.000.000 VND tại ngày 01/01/2024 lên 160.000.000.000 VND tại ngày 30/06/2024. Mức tăng này cho thấy công ty đã mở rộng đáng kể hoạt động cho vay ngắn hạn hoặc có các khoản cho vay mới trong giai đoạn này."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không có các khoản đầu tư tài chính ngắn hạn đến chiến lược quản lý vốn của công ty.",
+    "input": "4",
+    "output": "Việc không có các khoản đầu tư tài chính ngắn hạn (giá trị bằng 0) cho thấy chiến lược quản lý vốn của công ty có thể ưu tiên duy trì thanh khoản dưới dạng tiền mặt và tương đương tiền, hoặc tập trung vốn vào các hoạt động kinh doanh cốt lõi và đầu tư dài hạn. Điều này có thể phản ánh một chính sách thận trọng, tránh các rủi ro biến động của thị trường tài chính ngắn hạn, nhưng đồng thời cũng bỏ lỡ các cơ hội sinh lời tiềm năng từ các công cụ đầu tư ngắn hạn."
+  },
+  {
+    "instruction": "Dự báo rủi ro về thanh khoản nếu các khoản phải thu ngắn hạn tăng nhanh nhưng khả năng thu hồi thấp.",
+    "input": "4",
+    "output": "Nếu các khoản phải thu ngắn hạn tăng nhanh (như đã thấy) nhưng khả năng thu hồi thấp, công ty sẽ đối mặt với rủi ro thanh khoản nghiêm trọng. Dòng tiền từ hoạt động kinh doanh sẽ bị ảnh hưởng tiêu cực, làm giảm khả năng chi trả các khoản nợ ngắn hạn, chi phí hoạt động và các nghĩa vụ tài chính khác. Điều này có thể buộc công ty phải tìm kiếm các nguồn tài trợ bên ngoài với chi phí cao hơn, hoặc ảnh hưởng đến hoạt động sản xuất kinh doanh liên tục nếu không có đủ tiền mặt. Ngoài ra, việc này cũng sẽ dẫn đến việc trích lập dự phòng phải thu khó đòi tăng lên, làm giảm lợi nhuận của công ty."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn tại ngày 30/06/2024 của công ty là bao nhiêu?",
+    "input": "5",
+    "output": "Tổng tài sản dài hạn tại ngày 30/06/2024 của công ty là 1.720.345.819.443 VND."
+  },
+  {
+    "instruction": "Giá trị tài sản cố định hữu hình còn lại tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "5",
+    "output": "Giá trị tài sản cố định hữu hình còn lại tại ngày 30/06/2024 là 561.014.667.993 VND."
+  },
+  {
+    "instruction": "Khoản mục Đầu tư tài chính dài hạn thay đổi như thế nào so với đầu năm?",
+    "input": "5",
+    "output": "Khoản mục Đầu tư tài chính dài hạn đã giảm 283.656.415.787 VND, từ 1.303.361.460.195 VND tại ngày 01/01/2024 xuống còn 1.019.705.044.408 VND tại ngày 30/06/2024."
+  },
+  {
+    "instruction": "Giá trị hao mòn lũy kế của tài sản cố định vô hình tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "5",
+    "output": "Giá trị hao mòn lũy kế của tài sản cố định vô hình tại ngày 30/06/2024 là (20.094.292.475) VND."
+  },
+  {
+    "instruction": "Tính tỷ trọng tài sản cố định hữu hình trên tổng tài sản dài hạn tại ngày 30/06/2024.",
+    "input": "5",
+    "output": "Tại ngày 30/06/2024, tài sản cố định hữu hình có giá trị 561.014.667.993 VND và tổng tài sản dài hạn là 1.720.345.819.443 VND. Tỷ trọng tài sản cố định hữu hình trên tổng tài sản dài hạn là khoảng 32,61% (561.014.667.993 VND / 1.720.345.819.443 VND * 100%)."
+  },
+  {
+    "instruction": "Đánh giá xu hướng giảm của tổng tài sản dài hạn và tác động của nó đến khả năng sinh lời dài hạn của công ty.",
+    "input": "5",
+    "output": "Tổng tài sản dài hạn của công ty đã giảm đáng kể từ 2.063.696.853.871 VND tại ngày 01/01/2024 xuống 1.720.345.819.443 VND tại ngày 30/06/2024. Xu hướng giảm này có thể tác động tiêu cực đến khả năng sinh lời dài hạn, đặc biệt nếu sự giảm chủ yếu do thanh lý tài sản tạo doanh thu hoặc giảm đầu tư vào công ty con/liên kết. Nó có thể báo hiệu sự thu hẹp quy mô hoạt động hoặc giảm tiềm năng tăng trưởng trong tương lai, từ đó ảnh hưởng đến năng lực cạnh tranh và khả năng tạo ra lợi nhuận bền vững."
+  },
+  {
+    "instruction": "Phân tích ý nghĩa của việc dự phòng đầu tư tài chính dài hạn tăng đáng kể.",
+    "input": "5",
+    "output": "Việc dự phòng đầu tư tài chính dài hạn tăng đáng kể từ (160.958.840.269) VND tại ngày 01/01/2024 lên (221.720.519.214) VND tại ngày 30/06/2024 có ý nghĩa rằng công ty đã đánh giá các khoản đầu tư dài hạn của mình có khả năng bị suy giảm giá trị. Sự gia tăng này ngụ ý có rủi ro về khả năng thu hồi vốn và tiềm năng thua lỗ từ các khoản đầu tư vào công ty con, liên kết hoặc đơn vị khác. Đây là một biện pháp thận trọng trong kế toán, nhưng đồng thời cũng báo hiệu những vấn đề tiềm ẩn về hiệu quả hoặc rủi ro của danh mục đầu tư dài hạn, ảnh hưởng trực tiếp đến giá trị tài sản ròng và lợi nhuận của công ty."
+  },
+  {
+    "instruction": "Tổng nợ phải trả tại ngày 30/06/2024 của công ty là bao nhiêu?",
+    "input": "6",
+    "output": "Tổng nợ phải trả tại ngày 30/06/2024 của công ty là 450.764.710.114 VND."
+  },
+  {
+    "instruction": "Vốn chủ sở hữu của công ty tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "6",
+    "output": "Vốn chủ sở hữu của công ty tại ngày 30/06/2024 là 1.858.455.780.313 VND."
+  },
+  {
+    "instruction": "Khoản mục vay và nợ thuê tài chính ngắn hạn thay đổi như thế nào giữa hai kỳ?",
+    "input": "6",
+    "output": "Khoản mục vay và nợ thuê tài chính ngắn hạn đã tăng 23.931.502.738 VND, từ 266.875.572.729 VND tại ngày 01/01/2024 lên 290.807.075.467 VND tại ngày 30/06/2024."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế chưa phân phối kỳ này là bao nhiêu VND?",
+    "input": "6",
+    "output": "Lợi nhuận sau thuế chưa phân phối kỳ này là (154.209.774.554) VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ nợ ngắn hạn trên tổng nợ phải trả tại ngày 30/06/2024.",
+    "input": "6",
+    "output": "Tại ngày 30/06/2024, nợ ngắn hạn của công ty là 450.764.710.114 VND và tổng nợ phải trả cũng là 450.764.710.114 VND. Do đó, tỷ lệ nợ ngắn hạn trên tổng nợ phải trả là 100%."
+  },
+  {
+    "instruction": "Đánh giá sự thay đổi của lợi nhuận sau thuế chưa phân phối và ý nghĩa của nó đối với công ty.",
+    "input": "6",
+    "output": "Lợi nhuận sau thuế chưa phân phối đã giảm đáng kể từ 204.800.979.066 VND tại ngày 01/01/2024 xuống còn 50.591.204.512 VND tại ngày 30/06/2024, chủ yếu do kỳ này ghi nhận lỗ 154.209.774.554 VND. Sự sụt giảm này có ý nghĩa tiêu cực sâu sắc, phản ánh hiệu quả kinh doanh kém trong nửa đầu năm 2024. Nó làm xói mòn nguồn vốn nội bộ, giảm khả năng tái đầu tư hoặc chi trả cổ tức trong tương lai, đồng thời có thể gây ảnh hưởng đến niềm tin của nhà đầu tư và khả năng huy động vốn của công ty."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính của công ty dựa trên cơ cấu nợ và vốn chủ sở hữu hiện tại.",
+    "input": "6",
+    "output": "Dựa trên cơ cấu nợ và vốn chủ sở hữu, rủi ro tài chính chính của công ty nằm ở tính thanh khoản. Toàn bộ nợ phải trả (450.764.710.114 VND) đều là nợ ngắn hạn, đòi hỏi công ty phải có đủ tài sản ngắn hạn và dòng tiền để đáp ứng các nghĩa vụ trong vòng 12 tháng. Mặc dù vốn chủ sở hữu vẫn mạnh (1.858.455.780.313 VND) so với tổng nợ, việc phụ thuộc hoàn toàn vào nợ ngắn hạn và khoản lỗ lớn trong kỳ có thể gây áp lực lên khả năng thanh toán. Công ty cần đảm bảo dòng tiền được quản lý chặt chẽ để tránh các nguy cơ về thanh khoản."
+  },
+  {
+    "instruction": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong 06 tháng đầu năm 2024 là bao nhiêu?",
+    "input": "7",
+    "output": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong 06 tháng đầu năm 2024 là 635.382.713.810 VND."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong 06 tháng đầu năm 2024 là bao nhiêu?",
+    "input": "7",
+    "output": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong 06 tháng đầu năm 2024 là (154.209.774.554) VND."
+  },
+  {
+    "instruction": "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa 06 tháng đầu năm 2024 và 06 tháng đầu năm 2023.",
+    "input": "7",
+    "output": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong 06 tháng đầu năm 2024 là 30.447.397.662 VND, giảm so với 33.933.158.783 VND trong 06 tháng đầu năm 2023."
+  },
+  {
+    "instruction": "Tỷ lệ chi phí tài chính trên doanh thu thuần năm 2024 là bao nhiêu?",
+    "input": "7",
+    "output": "Chi phí tài chính trong 06 tháng đầu năm 2024 là 177.393.026.757 VND và doanh thu thuần là 635.382.713.810 VND. Do đó, tỷ lệ chi phí tài chính trên doanh thu thuần là khoảng 27,92% (177.393.026.757 VND / 635.382.713.810 VND * 100%)."
+  },
+  {
+    "instruction": "Đánh giá nguyên nhân chính dẫn đến sự sụt giảm mạnh về lợi nhuận thuần từ hoạt động kinh doanh trong kỳ 06 tháng đầu năm 2024.",
+    "input": "7",
+    "output": "Sự sụt giảm mạnh về lợi nhuận thuần từ hoạt động kinh doanh trong 06 tháng đầu năm 2024 (chuyển từ lãi 31.896.372.076 VND năm 2023 sang lỗ 154.207.102.962 VND năm 2024) chủ yếu do chi phí tài chính tăng vọt từ 23.813.227.518 VND lên 177.393.026.757 VND. Mặc dù doanh thu thuần tăng và lợi nhuận gộp giảm nhẹ, nhưng mức tăng đột biến của chi phí tài chính đã áp đảo và dẫn đến khoản lỗ lớn từ hoạt động kinh doanh."
+  },
+  {
+    "instruction": "Phân tích tác động của chi phí tài chính tăng vọt đến kết quả kinh doanh chung của công ty.",
+    "input": "7",
+    "output": "Chi phí tài chính tăng vọt từ 23.813.227.518 VND (năm 2023) lên 177.393.026.757 VND (năm 2024) đã gây ra tác động cực kỳ tiêu cực đến kết quả kinh doanh chung của công ty. Khoản chi phí này đã vượt xa lợi nhuận gộp, dẫn đến việc công ty ghi nhận lỗ thuần từ hoạt động kinh doanh (154.207.102.962 VND) và lỗ sau thuế (154.209.774.554 VND). Điều này cho thấy chi phí tài chính là gánh nặng lớn nhất, làm suy yếu nghiêm trọng hiệu quả hoạt động cốt lõi và khả năng sinh lời tổng thể của công ty trong kỳ này."
+  },
+  {
+    "instruction": "Nếu chi phí lãi vay tiếp tục duy trì ở mức cao, dự báo ảnh hưởng đến lợi nhuận của công ty trong các kỳ tới.",
+    "input": "7",
+    "output": "Nếu chi phí lãi vay tiếp tục duy trì ở mức cao (khoảng 8.689.732.582 VND trong 06 tháng đầu năm 2024), mặc dù đã giảm so với cùng kỳ năm 2023, nó vẫn sẽ là một yếu tố chi phí đáng kể làm giảm lợi nhuận của công ty. Lãi vay là chi phí không thể tránh khỏi khi sử dụng vốn vay, và việc duy trì chi phí này ở mức cao sẽ tiếp tục ăn mòn lợi nhuận thuần, đặc biệt nếu doanh thu hoặc lợi nhuận gộp không đủ để bù đắp. Trong bối cảnh công ty đang ghi nhận lỗ lớn từ hoạt động kinh doanh, chi phí lãi vay, dù đã giảm, vẫn góp phần vào gánh nặng tài chính chung và gây áp lực lên khả năng phục hồi lợi nhuận trong các kỳ tới."
+  },
+  {
+    "instruction": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 06 tháng đầu năm 2024 là bao nhiêu?",
+    "input": "8",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 06 tháng đầu năm 2024 là 20.402.737.856 VND."
+  },
+  {
+    "instruction": "Tiền và tương đương tiền cuối kỳ tại ngày 30/06/2024 là bao nhiêu VND?",
+    "input": "8",
+    "output": "Tiền và tương đương tiền cuối kỳ tại ngày 30/06/2024 là 39.455.161.402 VND."
+  },
+  {
+    "instruction": "So sánh lưu chuyển tiền thuần từ hoạt động kinh doanh giữa hai kỳ. Có sự thay đổi đáng kể nào không?",
+    "input": "8",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 06 tháng đầu năm 2024 là 20.402.737.856 VND, giảm đáng kể so với 82.082.226.050 VND trong 06 tháng đầu năm 2023."
+  },
+  {
+    "instruction": "Khoản mục tiền chi cho vay, mua các công cụ nợ của đơn vị khác trong 06 tháng đầu năm 2024 là bao nhiêu?",
+    "input": "8",
+    "output": "Khoản mục tiền chi cho vay, mua các công cụ nợ của đơn vị khác trong 06 tháng đầu năm 2024 là (125.000.000.000) VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ lưu chuyển tiền thuần từ hoạt động tài chính trên lưu chuyển tiền thuần trong kỳ tại ngày 30/06/2024.",
+    "input": "8",
+    "output": "Lưu chuyển tiền thuần từ hoạt động tài chính là (19.012.463.762) VND và lưu chuyển tiền thuần trong kỳ là 5.930.752.467 VND. Tỷ lệ lưu chuyển tiền thuần từ hoạt động tài chính trên lưu chuyển tiền thuần trong kỳ tại ngày 30/06/2024 là khoảng -320,58%."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của việc giảm mạnh lưu chuyển tiền thuần từ hoạt động tài chính trong kỳ 06 tháng đầu năm 2024.",
+    "input": "8",
+    "output": "Lưu chuyển tiền thuần từ hoạt động tài chính trong 06 tháng đầu năm 2024 là (19.012.463.762) VND, đây là một khoản chi ròng nhưng đã được cải thiện đáng kể so với khoản chi ròng (73.175.623.008) VND của cùng kỳ năm 2023. Nguyên nhân chính của sự cải thiện này là do tiền thu từ đi vay tăng lên (389.771.942.417 VND trong 2024 so với 287.373.559.464 VND trong 2023), bù đắp cho việc tiền trả nợ gốc vay cũng tăng lên. Tác động là làm giảm áp lực lên dòng tiền tổng thể của công ty, mặc dù hoạt động tài chính vẫn đang tiêu tốn tiền."
+  },
+  {
+    "instruction": "Đánh giá sức khỏe tài chính của công ty dựa trên khả năng tạo ra tiền từ các hoạt động kinh doanh, đầu tư và tài chính.",
+    "input": "8",
+    "output": "Dựa trên khả năng tạo ra tiền từ các hoạt động, sức khỏe tài chính của công ty có một số điểm đáng quan tâm. Lưu chuyển tiền thuần từ hoạt động kinh doanh là dương (20.402.737.856 VND) nhưng đã giảm mạnh so với năm trước, cho thấy hiệu quả hoạt động cốt lõi đang yếu đi. Lưu chuyển tiền thuần từ hoạt động đầu tư cũng dương (4.540.478.373 VND) nhưng thấp hơn đáng kể. Lưu chuyển tiền thuần từ hoạt động tài chính vẫn âm (19.012.463.762 VND), dù đã cải thiện, cho thấy công ty vẫn đang chi nhiều hơn cho các nghĩa vụ tài chính. Tổng lưu chuyển tiền thuần trong kỳ chỉ là 5.930.752.467 VND, rất thấp so với kỳ trước, phản ánh khả năng tích lũy tiền mặt của công ty đang gặp thách thức lớn và có thể gây áp lực lên thanh khoản trong tương lai."
+  },
+  {
+    "instruction": "Lợi nhuận trước thuế trong 06 tháng đầu năm 2024 là bao nhiêu?",
+    "input": "8",
+    "output": "Lợi nhuận trước thuế trong 06 tháng đầu năm 2024 là (154.209.774.554) VND."
+  },
+  {
+    "instruction": "Mã chứng khoán của Công ty là gì?",
+    "input": "9",
+    "output": "Mã chứng khoán của Công ty là SBB."
+  },
+  {
+    "instruction": "Số lượng nhân viên của Công ty tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "9",
+    "output": "Tại ngày 30/06/2024, Công ty có 299 nhân viên."
+  },
+  {
+    "instruction": "Vốn điều lệ của Công ty theo Giấy chứng nhận đăng ký doanh nghiệp là bao nhiêu?",
+    "input": "9",
+    "output": "Vốn điều lệ của Công ty theo Giấy chứng nhận đăng ký doanh nghiệp là 875.245.360.000 VND."
+  },
+  {
+    "instruction": "Chu kỳ sản xuất kinh doanh thông thường của Công ty kéo dài bao lâu?",
+    "input": "9",
+    "output": "Chu kỳ sản xuất kinh doanh thông thường của Công ty là trong vòng 12 tháng."
+  },
+  {
+    "instruction": "So sánh số lượng nhân viên của Công ty tại ngày 30/06/2024 và 31/12/2023. Có sự thay đổi đáng kể nào không?",
+    "input": "9",
+    "output": "Số lượng nhân viên của Công ty tại ngày 30/06/2024 là 299 người, giảm nhẹ so với 304 người tại ngày 31/12/2023. Sự thay đổi này không đáng kể."
+  },
+  {
+    "instruction": "Đánh giá khả năng so sánh thông tin trên Báo cáo tài chính riêng giữa niên độ.",
+    "input": "9",
+    "output": "Dựa trên tuyên bố của Công ty, khả năng so sánh thông tin trên Báo cáo tài chính riêng giữa niên độ là cao vì các số liệu tương ứng của kỳ kế toán trước được khẳng định là so sánh được với số liệu của kỳ kế toán này. Điều này giúp người đọc dễ dàng phân tích xu hướng và hiệu suất của công ty qua các giai đoạn."
+  },
+  {
+    "instruction": "Phân tích tác động của sự thay đổi số lượng nhân viên đến chi phí hoạt động của công ty.",
+    "input": "9",
+    "output": "Sự thay đổi số lượng nhân viên từ 304 tại cuối năm 2023 xuống 299 tại giữa năm 2024 là một mức giảm nhẹ. Tác động của sự thay đổi này đến chi phí hoạt động có thể bao gồm việc giảm nhẹ các chi phí liên quan đến nhân sự như lương, bảo hiểm và phúc lợi. Tuy nhiên, nếu việc giảm nhân sự không đi kèm với tối ưu hóa quy trình hoặc công nghệ, nó có thể ảnh hưởng đến năng suất hoặc chất lượng dịch vụ, từ đó gián tiếp tác động đến doanh thu. Ở mức độ thay đổi này, tác động trực tiếp lên tổng chi phí hoạt động có thể không lớn."
+  },
+  {
+    "instruction": "Công ty có bao nhiêu công ty con tại ngày 30/06/2024?",
+    "input": "10",
+    "output": "Tại ngày 30/06/2024, Công ty có 03 công ty con."
+  },
+  {
+    "instruction": "Công ty TNHH Bia Sài Gòn – Ninh Thuận có ngành nghề kinh doanh chính là gì?",
+    "input": "10",
+    "output": "Công ty TNHH Bia Sài Gòn – Ninh Thuận có ngành nghề kinh doanh chính là sản xuất các loại bia."
+  },
+  {
+    "instruction": "Tỷ lệ lợi ích của Công ty trong Công ty Cổ phần Tập đoàn Bao Bì Sài Gòn tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "10",
+    "output": "Tỷ lệ lợi ích của Công ty trong Công ty Cổ phần Tập đoàn Bao Bì Sài Gòn tại ngày 30/06/2024 là 18,46%."
+  },
+  {
+    "instruction": "Sự thay đổi tỷ lệ sở hữu của Công ty trong Công ty Cổ phần Tập đoàn Bao Bì Sài Gòn là do sự kiện nào?",
+    "input": "10",
+    "output": "Sự thay đổi tỷ lệ sở hữu của Công ty trong Công ty Cổ phần Tập đoàn Bao Bì Sài Gòn là do Công ty đã thoái một phần vốn góp là 11.500.000 cổ phần, tương đương 115.000.000.000 đồng, theo Nghị quyết HĐQT số 02/2024/NQ-HĐQT ngày 31/01/2024."
+  },
+  {
+    "instruction": "Phân tích tác động của việc thoái vốn tại Công ty Cổ phần Tập đoàn Bao Bì Sài Gòn đối với cấu trúc đầu tư của Công ty.",
+    "input": "10",
+    "output": "Việc thoái một phần vốn góp tại Công ty Cổ phần Tập đoàn Bao Bì Sài Gòn đã làm giảm đáng kể tỷ lệ lợi ích của Công ty từ 38,96% xuống 18,46%. Tác động này làm thay đổi cấu trúc đầu tư, chuyển Công ty Bao Bì Sài Gòn từ một khoản đầu tư có ảnh hưởng đáng kể (nếu xét riêng theo tỷ lệ lợi ích) sang một khoản đầu tư mà quyền biểu quyết phải dựa thêm vào ủy quyền để duy trì ảnh hưởng đáng kể (20,01%). Điều này giải phóng một lượng vốn đáng kể (115 tỷ đồng) có thể được sử dụng cho các mục đích khác như tăng cường thanh khoản, giảm nợ hoặc đầu tư vào các dự án chiến lược khác, nhưng cũng có thể làm giảm khả năng kiểm soát hoặc ảnh hưởng chiến lược của công ty mẹ đối với hoạt động của công ty bao bì."
+  },
+  {
+    "instruction": "Đánh giá rủi ro và lợi ích khi Công ty nắm giữ quyền biểu quyết gián tiếp trong Công ty Bao Bì Sài Gòn.",
+    "input": "10",
+    "output": "Việc Công ty nắm giữ 1,55% quyền biểu quyết gián tiếp (nâng tổng quyền biểu quyết lên 20,01%) trong Công ty Bao Bì Sài Gòn mang lại cả lợi ích và rủi ro. Lợi ích là công ty vẫn duy trì được ảnh hưởng đáng kể, cho phép tham gia vào các quyết định chiến lược và bảo vệ lợi ích đầu tư mà không cần phải nắm giữ tỷ lệ sở hữu trực tiếp cao hơn. Điều này có thể giúp duy trì mối quan hệ đối tác quan trọng. Tuy nhiên, rủi ro tiềm ẩn là quyền biểu quyết gián tiếp phụ thuộc vào sự ủy quyền, có thể không ổn định hoặc bị thu hồi trong tương lai, làm suy yếu ảnh hưởng của công ty mẹ. Ngoài ra, việc có ảnh hưởng đáng kể nhưng không kiểm soát hoàn toàn có thể dẫn đến những bất đồng trong quản lý hoặc khó khăn trong việc thúc đẩy các quyết định phù hợp với lợi ích của công ty mẹ."
+  },
+  {
+    "instruction": "Công ty có bao nhiêu chi nhánh tại ngày 30/06/2024?",
+    "input": "11",
+    "output": "Tại ngày 30/06/2024, Công ty có 03 chi nhánh."
+  },
+  {
+    "instruction": "Địa chỉ của Chi nhánh Nhà Máy Bia Sài Gòn – Đồng Tháp là gì?",
+    "input": "11",
+    "output": "Địa chỉ của Chi nhánh Nhà Máy Bia Sài Gòn – Đồng Tháp là Khu Công nghiệp Trần Quốc Toản, Phường 11, Thành phố Cao Lãnh, Tỉnh Đồng Tháp, Việt Nam."
+  },
+  {
+    "instruction": "Niên độ kế toán của Công ty bắt đầu và kết thúc vào ngày nào?",
+    "input": "11",
+    "output": "Niên độ kế toán của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm."
+  },
+  {
+    "instruction": "Đơn vị tiền tệ được sử dụng trong kế toán và trình bày báo cáo tài chính của Công ty là gì?",
+    "input": "11",
+    "output": "Đơn vị tiền tệ được sử dụng trong kế toán và trình bày báo cáo tài chính của Công ty là Đồng Việt Nam (VND hoặc Đồng)."
+  },
+  {
+    "instruction": "Công ty áp dụng Chế độ kế toán doanh nghiệp theo văn bản pháp luật nào?",
+    "input": "11",
+    "output": "Công ty áp dụng Chế độ kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính và các Thông tư hướng dẫn, bổ sung, sửa đổi."
+  },
+  {
+    "instruction": "Đánh giá mức độ tuân thủ các chuẩn mực và chế độ kế toán của Công ty dựa trên tuyên bố.",
+    "input": "11",
+    "output": "Dựa trên tuyên bố của Công ty, Công ty khẳng định đã áp dụng các Chuẩn mực kế toán Việt Nam (VAS) và các văn bản hướng dẫn, đồng thời các báo cáo tài chính được lập và trình bày theo đúng quy định của chuẩn mực, thông tư hướng dẫn và Chế độ kế toán Doanh nghiệp Việt Nam hiện hành. Tuyên bố này cho thấy Công ty cam kết tuân thủ đầy đủ các quy định pháp lý về kế toán, mang lại sự tin cậy về tính hợp pháp và tính chính xác của thông tin tài chính."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của việc thống nhất đơn vị tiền tệ trong báo cáo tài chính.",
+    "input": "11",
+    "output": "Việc thống nhất đơn vị tiền tệ trong báo cáo tài chính (Đồng Việt Nam) là cực kỳ quan trọng để đảm bảo tính nhất quán, khả năng so sánh và minh bạch của thông tin tài chính. Khi tất cả các giao dịch và khoản mục được quy đổi về cùng một đơn vị tiền tệ, người đọc báo cáo có thể dễ dàng tổng hợp, phân tích và so sánh các số liệu trong nội bộ công ty qua các kỳ, cũng như so sánh với các công ty khác. Điều này giúp tránh nhầm lẫn, sai lệch do chênh lệch tỷ giá và làm cho báo cáo tài chính trở nên dễ hiểu hơn, hỗ trợ quá trình ra quyết định của các bên liên quan."
+  },
+  {
+    "instruction": "Các khoản tiền của Công ty bao gồm những gì tại thời điểm báo cáo?",
+    "input": "12",
+    "output": "Các khoản tiền của Công ty tại thời điểm báo cáo bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng không kỳ hạn và tiền đang chuyển."
+  },
+  {
+    "instruction": "Thời gian thu hồi của các khoản tương đương tiền là bao lâu?",
+    "input": "12",
+    "output": "Thời gian thu hồi của các khoản tương đương tiền là không quá 3 tháng kể từ ngày báo cáo."
+  },
+  {
+    "instruction": "Ngoại tệ được quy đổi ra Đồng Việt Nam theo tỷ giá nào?",
+    "input": "12",
+    "output": "Các nghiệp vụ kinh tế phát sinh bằng ngoại tệ được quy đổi ra Đồng Việt Nam theo tỷ giá giao dịch thực tế tại ngân hàng thương mại nơi doanh nghiệp thường xuyên có giao dịch hoặc tỷ giá liên ngân hàng. Tại thời điểm lập Báo cáo tài chính, số dư ngoại tệ được đánh giá lại theo tỷ giá giao dịch thực tế: tỷ giá mua đối với tài sản và tiền gửi ngân hàng, và tỷ giá bán đối với nợ phải trả."
+  },
+  {
+    "instruction": "Khi nào một khoản đầu tư được phân loại là ngắn hạn và khi nào là dài hạn?",
+    "input": "12",
+    "output": "Một khoản đầu tư được phân loại là ngắn hạn khi có kỳ hạn thu hồi còn lại không quá 12 tháng hoặc trong 1 chu kỳ sản xuất kinh doanh. Ngược lại, một khoản đầu tư được phân loại là dài hạn khi có kỳ hạn thu hồi còn lại từ 12 tháng trở lên hoặc trên 1 chu kỳ sản xuất kinh doanh."
+  },
+  {
+    "instruction": "Giải thích nguyên tắc ghi nhận dự phòng cho các khoản đầu tư nắm giữ đến ngày đáo hạn.",
+    "input": "12",
+    "output": "Các khoản đầu tư nắm giữ đến ngày đáo hạn có bản chất tương tự các khoản phải thu khó đòi cần được trích lập dự phòng khi lập Báo cáo tài chính. Việc trích lập hoặc hoàn nhập dự phòng được ghi nhận vào chi phí quản lý doanh nghiệp. Trường hợp có bằng chứng chắc chắn về khả năng không thu hồi được, tổn thất được ghi nhận vào chi phí tài chính. Nếu tổn thất không xác định đáng tin cậy, khoản đầu tư không giảm nhưng được thuyết minh về khả năng thu hồi."
+  },
+  {
+    "instruction": "Phân tích ảnh hưởng của chính sách kế toán ngoại tệ đến tính chính xác của báo cáo tài chính trong môi trường tỷ giá biến động.",
+    "input": "12",
+    "output": "Trong môi trường tỷ giá biến động, chính sách kế toán ngoại tệ của Công ty (quy đổi theo tỷ giá giao dịch thực tế và đánh giá lại số dư ngoại tệ tại thời điểm báo cáo theo tỷ giá mua/bán của ngân hàng) có ảnh hưởng lớn đến tính chính xác của báo cáo tài chính. Việc liên tục cập nhật tỷ giá giúp phản ánh sát thực giá trị tài sản và nợ phải trả có gốc ngoại tệ. Tuy nhiên, biến động tỷ giá có thể tạo ra các khoản lãi hoặc lỗ tỷ giá chưa thực hiện (đối với các khoản mục tiền tệ) hoặc đã thực hiện, làm biến động lợi nhuận và vốn chủ sở hữu. Nếu tỷ giá biến động mạnh và không được quản lý tốt, điều này có thể tạo ra sự không chắc chắn và làm giảm khả năng dự đoán của các số liệu tài chính."
+  },
+  {
+    "instruction": "Đầu tư vào công ty con được ghi nhận ban đầu theo nguyên tắc nào?",
+    "input": "13",
+    "output": "Đầu tư vào công ty con được ghi nhận ban đầu theo giá gốc, cộng các chi phí liên quan trực tiếp đến việc đầu tư."
+  },
+  {
+    "instruction": "Công ty liên kết được định nghĩa như thế nào về mặt quyền biểu quyết?",
+    "input": "13",
+    "output": "Công ty liên kết là tất cả các công ty trong đó Công ty có ảnh hưởng đáng kể nhưng không phải kiểm soát, thường được thể hiện thông qua việc nắm giữ từ 20% đến 50% quyền biểu quyết ở công ty đó."
+  },
+  {
+    "instruction": "Dự phòng giảm giá đầu tư vào công ty con và công ty liên kết được tính dựa trên cơ sở nào?",
+    "input": "13",
+    "output": "Dự phòng giảm giá đầu tư vào công ty con và công ty liên kết được tính dựa trên khoản lỗ của bên được đầu tư."
+  },
+  {
+    "instruction": "Các khoản phải thu được phân loại thành những loại nào?",
+    "input": "13",
+    "output": "Các khoản phải thu được phân loại thành phải thu khách hàng (mang tính chất thương mại phát sinh từ giao dịch mua-bán) và phải thu khác (không có tính chất thương mại, không liên quan đến giao dịch mua-bán)."
+  },
+  {
+    "instruction": "Phân tích sự khác biệt trong chính sách ghi nhận đầu tư vào công ty con, công ty liên kết và đơn vị khác, và ý nghĩa của những khác biệt này.",
+    "input": "13",
+    "output": "Chính sách ghi nhận ban đầu cho đầu tư vào công ty con, công ty liên kết và đơn vị khác đều theo giá gốc cộng chi phí trực tiếp. Tuy nhiên, sự khác biệt nằm ở cơ sở tính dự phòng giảm giá: đối với công ty con và công ty liên kết, dự phòng dựa trên khoản lỗ của bên được đầu tư, phản ánh mức độ ảnh hưởng/kiểm soát. Đối với đầu tư vào đơn vị khác, dự phòng ưu tiên dựa trên giá trị thị trường (nếu xác định tin cậy), sau đó mới đến phương pháp tương tự công ty con/liên kết nếu không có giá thị trường. Ý nghĩa là các chính sách này phản ánh chính xác bản chất kinh tế và mức độ rủi ro của từng loại hình đầu tư, đảm bảo báo cáo tài chính trung thực và phù hợp với chuẩn mực."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc rà soát và ghi nhận dự phòng vào cuối kỳ kế toán đối với độ chính xác của báo cáo tài chính.",
+    "input": "13",
+    "output": "Việc rà soát và ghi nhận dự phòng vào cuối kỳ kế toán có tác động tích cực đáng kể đến độ chính xác và tính thận trọng của báo cáo tài chính. Chính sách này đảm bảo rằng giá trị của các khoản đầu tư được đánh giá lại định kỳ dựa trên tình hình thực tế và các rủi ro tiềm ẩn (ví dụ: lỗ của bên được đầu tư, giảm giá trị thị trường). Khi có dấu hiệu suy giảm giá trị, việc trích lập dự phòng sẽ làm giảm giá trị ghi sổ của khoản đầu tư và ghi nhận chi phí, qua đó phản ánh trung thực hơn tình hình tài chính và kết quả kinh doanh, tránh việc phóng đại tài sản và lợi nhuận."
+  },
+  {
+    "instruction": "Khi nào thì các khoản phải thu bằng ngoại tệ được đánh giá lại và theo tỷ giá nào?",
+    "input": "13",
+    "output": "Các khoản phải thu bằng ngoại tệ được đánh giá lại tại thời điểm lập Báo cáo tài chính theo quy định của pháp luật. Chúng được đánh giá lại theo tỷ giá mua ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch tại thời điểm lập Báo cáo tài chính."
+  },
+  {
+    "instruction": "Dự phòng nợ phải thu khó đòi được ghi nhận vào khoản mục nào trong báo cáo tài chính?",
+    "input": "14",
+    "output": "Dự phòng nợ phải thu khó đòi được ghi nhận vào chi phí quản lý doanh nghiệp trong kỳ."
+  },
+  {
+    "instruction": "Hàng tồn kho được ghi nhận theo nguyên tắc nào?",
+    "input": "14",
+    "output": "Hàng tồn kho được ghi nhận theo giá gốc. Trường hợp giá trị thuần có thể thực hiện được thấp hơn giá gốc thì phải tính theo giá trị thuần có thể thực hiện được."
+  },
+  {
+    "instruction": "Phương pháp tính giá trị hàng tồn kho cuối kỳ của Công ty là gì?",
+    "input": "14",
+    "output": "Phương pháp tính giá trị hàng tồn kho cuối kỳ của Công ty là phương pháp bình quân gia quyền."
+  },
+  {
+    "instruction": "Khi nào Công ty lập dự phòng giảm giá hàng tồn kho?",
+    "input": "14",
+    "output": "Công ty lập dự phòng giảm giá hàng tồn kho vào cuối niên độ kế toán nếu giá trị hàng tồn kho không thu hồi đủ do bị hư hỏng, lỗi thời, giá bán bị giảm hoặc chi phí hoàn thiện, chi phí bán hàng tăng lên."
+  },
+  {
+    "instruction": "Giải thích nguyên tắc ghi tăng nguyên giá tài sản cố định hữu hình đối với các chi phí phát sinh sau ghi nhận ban đầu.",
+    "input": "14",
+    "output": "Đối với các chi phí phát sinh sau ghi nhận ban đầu, nguyên tắc ghi tăng nguyên giá tài sản cố định hữu hình là chỉ khi các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Nếu các chi phí này không thỏa mãn điều kiện trên, chúng sẽ được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ thay vì vốn hóa vào nguyên giá tài sản."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của việc trích lập dự phòng phải thu khó đòi đối với sức khỏe tài chính của công ty.",
+    "input": "14",
+    "output": "Việc trích lập dự phòng phải thu khó đòi có tầm quan trọng rất lớn đối với sức khỏe tài chính của công ty. Nó đảm bảo rằng các khoản phải thu trên báo cáo tài chính được phản ánh ở giá trị thực tế có thể thu hồi, tránh việc phóng đại tài sản. Khi trích lập dự phòng, công ty ghi nhận một khoản chi phí (vào chi phí quản lý doanh nghiệp), làm giảm lợi nhuận và vốn chủ sở hữu, từ đó cung cấp bức tranh tài chính thận trọng và trung thực hơn. Điều này giúp các nhà đầu tư và chủ nợ đánh giá đúng rủi ro tiềm ẩn liên quan đến các khoản phải thu và khả năng thanh khoản của công ty."
+  },
+  {
+    "instruction": "Phương pháp khấu hao tài sản cố định hữu hình của Công ty là gì?",
+    "input": "15",
+    "output": "Phương pháp khấu hao tài sản cố định hữu hình của Công ty là phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính."
+  },
+  {
+    "instruction": "Thời gian khấu hao ước tính cho Nhà cửa, vật kiến trúc là bao nhiêu năm?",
+    "input": "15",
+    "output": "Thời gian khấu hao ước tính cho Nhà cửa, vật kiến trúc là 08 - 40 năm."
+  },
+  {
+    "instruction": "Tài sản cố định vô hình của Công ty bao gồm những gì?",
+    "input": "15",
+    "output": "Tài sản cố định vô hình của Công ty bao gồm Quyền sử dụng đất và Chương trình phần mềm."
+  },
+  {
+    "instruction": "Chi phí xây dựng cơ bản dở dang được ghi nhận như thế nào và có được tính khấu hao không?",
+    "input": "15",
+    "output": "Chi phí xây dựng cơ bản dở dang được ghi nhận theo giá gốc, bao gồm các chi phí liên quan trực tiếp đến tài sản đang trong quá trình xây dựng, máy móc thiết bị đang lắp đặt, cũng như chi phí sửa chữa tài sản cố định đang thực hiện. Các tài sản này không được tính khấu hao."
+  },
+  {
+    "instruction": "Phân tích sự khác biệt trong chính sách khấu hao giữa tài sản cố định hữu hình và vô hình, và ý nghĩa của những khác biệt này.",
+    "input": "15",
+    "output": "Mặc dù cả tài sản cố định hữu hình và vô hình đều được khấu hao theo phương pháp đường thẳng, sự khác biệt nằm ở thời gian khấu hao ước tính cụ thể. Tài sản hữu hình có khung thời gian đa dạng (05-40 năm tùy loại), phản ánh tuổi thọ vật lý và kinh tế khác nhau của từng loại tài sản. Tài sản vô hình như quyền sử dụng đất có thời gian khấu hao rất dài (41-49 năm), phù hợp với lợi ích lâu dài, trong khi chương trình phần mềm có thời gian ngắn hơn (05-07 năm) do tốc độ lỗi thời của công nghệ. Ý nghĩa của sự khác biệt này là để phân bổ chi phí một cách hợp lý vào các kỳ kế toán, khớp với lợi ích kinh tế mà tài sản đó mang lại, từ đó ảnh hưởng đến lợi nhuận và giá trị tài sản trên báo cáo tài chính một cách chính xác."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc khấu hao quyền sử dụng đất trong thời gian dài đến báo cáo tài chính của công ty.",
+    "input": "15",
+    "output": "Việc khấu hao quyền sử dụng đất trong thời gian dài (41-49 năm) có tác động đáng kể đến báo cáo tài chính. Nó giúp dàn trải chi phí mua hoặc thuê quyền sử dụng đất thành các khoản chi phí nhỏ hàng năm trên báo cáo kết quả kinh doanh. Điều này làm giảm áp lực lên lợi nhuận trong ngắn hạn, vì chi phí khấu hao hàng kỳ thấp hơn so với việc phân bổ trong thời gian ngắn hơn. Đồng thời, nó duy trì giá trị tài sản trên bảng cân đối kế toán ở mức cao hơn trong thời gian dài, phản ánh lợi ích kinh tế bền vững mà quyền sử dụng đất mang lại cho công ty. Tuy nhiên, nếu giá trị đất giảm nhanh hơn dự kiến, giá trị ghi sổ có thể không phản ánh đúng giá trị thị trường."
+  },
+  {
+    "instruction": "Chi phí trả trước được phân bổ theo phương pháp nào?",
+    "input": "16",
+    "output": "Chi phí trả trước được phân bổ theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính."
+  },
+  {
+    "instruction": "Khi nào một chi phí trả trước được phân loại là ngắn hạn?",
+    "input": "16",
+    "output": "Một chi phí trả trước được phân loại là ngắn hạn khi nó phản ánh số tiền trả trước để được cung cấp dịch vụ hoặc các công cụ, dụng cụ không thỏa mãn điều kiện ghi nhận tài sản trong khoảng thời gian không quá 12 tháng hoặc một chu kỳ sản xuất kinh doanh kể từ ngày trả trước."
+  },
+  {
+    "instruction": "Các khoản phải trả và chi phí phải trả được ghi nhận dựa trên nguyên tắc nào?",
+    "input": "16",
+    "output": "Các khoản phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Đặc biệt, chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả."
+  },
+  {
+    "instruction": "Sự khác biệt giữa phải trả người bán và chi phí phải trả là gì?",
+    "input": "16",
+    "output": "Phải trả người bán là các khoản nợ mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản. Trong khi đó, chi phí phải trả là các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán trong kỳ kế toán nhưng thực tế chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán, và được ghi nhận vào chi phí sản xuất kinh doanh của kỳ kế toán."
+  },
+  {
+    "instruction": "Trong trường hợp nào chi phí đi vay được vốn hóa thay vì ghi nhận vào chi phí tài chính trong kỳ?",
+    "input": "16",
+    "output": "Chi phí đi vay được vốn hóa (tính vào giá trị của tài sản) thay vì ghi nhận vào chi phí tài chính trong kỳ khi các chi phí này liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang và có đủ các điều kiện quy định trong Chuẩn mực kế toán Chi phí đi vay."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của việc phân loại nợ thành ngắn hạn và dài hạn trong báo cáo tài chính.",
+    "input": "16",
+    "output": "Việc phân loại nợ thành ngắn hạn và dài hạn trong báo cáo tài chính có tầm quan trọng rất lớn đối với việc đánh giá khả năng thanh khoản và rủi ro tài chính của công ty. Nợ ngắn hạn cho biết các nghĩa vụ mà công ty phải thanh toán trong vòng 12 tháng tới (hoặc một chu kỳ kinh doanh), trong khi nợ dài hạn là các nghĩa vụ có thời hạn thanh toán xa hơn. Sự phân loại này giúp người đọc báo cáo (nhà đầu tư, ngân hàng, nhà cung cấp) hiểu rõ hơn về áp lực tài chính ngắn hạn và cơ cấu tài chính tổng thể của công ty. Một tỷ lệ nợ ngắn hạn quá cao có thể báo hiệu rủi ro thanh khoản, ngay cả khi tổng nợ không quá lớn, nếu công ty không có đủ tài sản ngắn hạn để đối ứng."
+  },
+  {
+    "instruction": "Vốn góp của chủ sở hữu và thặng dư vốn cổ phần được ghi nhận theo nguyên tắc nào trong công ty cổ phần?",
+    "input": "17",
+    "output": "Trong công ty cổ phần, vốn góp của chủ sở hữu được ghi nhận theo mệnh giá của cổ phiếu. Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch lớn hơn hoặc nhỏ hơn giữa giá thực tế phát hành cổ phiếu và mệnh giá."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế chưa phân phối phản ánh điều gì và được phân phối như thế nào?",
+    "input": "17",
+    "output": "Lợi nhuận sau thuế chưa phân phối phản ánh kết quả kinh doanh sau thuế thu nhập doanh nghiệp của Công ty tại thời điểm báo cáo. Khoản này được phân phối cho các cổ đông sau khi đã trích lập các quỹ theo Điều lệ của Công ty cũng như các quy định của pháp luật và phải được Đại hội đồng cổ đông phê duyệt."
+  },
+  {
+    "instruction": "Nêu các điều kiện để doanh thu bán hàng hóa, thành phẩm được ghi nhận.",
+    "input": "17",
+    "output": "Các điều kiện để doanh thu bán hàng hóa, thành phẩm được ghi nhận bao gồm: Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm/hàng hóa cho người mua; Công ty không còn nắm giữ quyền quản lý hoặc kiểm soát hàng hóa; Doanh thu được xác định tương đối chắc chắn; Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng; và Xác định được chi phí liên quan đến giao dịch bán hàng."
+  },
+  {
+    "instruction": "Khi nào doanh thu cung cấp dịch vụ được ghi nhận?",
+    "input": "17",
+    "output": "Doanh thu cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Nếu dịch vụ liên quan đến nhiều kỳ, doanh thu được ghi nhận trong kỳ theo kết quả phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán. Các điều kiện để xác định kết quả đáng tin cậy bao gồm: doanh thu được xác định tương đối chắc chắn, có khả năng thu được lợi ích kinh tế, xác định được phần công việc đã hoàn thành, và xác định được chi phí phát sinh và chi phí để hoàn thành giao dịch."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của việc xác định chắc chắn doanh thu và chi phí liên quan đến giao dịch bán hàng để ghi nhận doanh thu.",
+    "input": "17",
+    "output": "Việc xác định chắc chắn doanh thu và chi phí liên quan đến giao dịch bán hàng là yếu tố cốt lõi để đảm bảo nguyên tắc phù hợp (matching principle) và tính thận trọng trong kế toán. Nếu doanh thu không chắc chắn, việc ghi nhận có thể dẫn đến phóng đại kết quả kinh doanh, gây hiểu lầm về hiệu suất thực tế. Tương tự, nếu chi phí liên quan không được xác định rõ ràng, lợi nhuận gộp và lợi nhuận thuần sẽ bị tính toán sai lệch. Điều này có tầm quan trọng sống còn trong việc cung cấp bức tranh tài chính trung thực và hợp lý về hiệu suất hoạt động của công ty, hỗ trợ các nhà đầu tư và các bên liên quan đưa ra các quyết định chính xác."
+  },
+  {
+    "instruction": "Đánh giá mức độ minh bạch của chính sách ghi nhận vốn chủ sở hữu và lợi nhuận chưa phân phối.",
+    "input": "17",
+    "output": "Chính sách ghi nhận vốn chủ sở hữu và lợi nhuận chưa phân phối của Công ty thể hiện mức độ minh bạch cao. Việc tách bạch rõ ràng vốn góp của chủ sở hữu theo mệnh giá và thặng dư vốn cổ phần theo chênh lệch giữa giá phát hành và mệnh giá giúp nhà đầu tư hiểu rõ hơn về cấu trúc vốn. Đối với lợi nhuận chưa phân phối, việc nêu rõ khoản mục này phản ánh kết quả kinh doanh sau thuế và chỉ được phân phối sau khi trích lập quỹ và được Đại hội đồng cổ đông phê duyệt, làm tăng tính rõ ràng về quy trình sử dụng lợi nhuận. Điều này cho thấy công ty tuân thủ các quy định kế toán và cung cấp thông tin chi tiết, giúp các bên liên quan có thể đánh giá chính xác nguồn vốn và chính sách phân phối lợi nhuận của công ty."
+  },
+  {
+    "instruction": "Khi nào thì thu nhập lãi được ghi nhận?",
+    "input": "18",
+    "output": "Thu nhập lãi được ghi nhận trên cơ sở thời gian và lãi suất thực tế từng kỳ khi thỏa mãn đồng thời hai điều kiện: có khả năng thu được lợi ích kinh tế từ giao dịch đó và doanh thu được xác định tương đối chắc chắn."
+  },
+  {
+    "instruction": "Thu nhập từ cổ tức và lợi nhuận được chia được ghi nhận khi nào?",
+    "input": "18",
+    "output": "Thu nhập từ cổ tức và lợi nhuận được ghi nhận khi Công ty xác lập quyền nhận cổ tức và lợi nhuận từ các đơn vị đầu tư."
+  },
+  {
+    "instruction": "Giá vốn hàng bán bao gồm những thành phần nào và được ghi nhận theo nguyên tắc gì?",
+    "input": "18",
+    "output": "Giá vốn hàng bán bao gồm trị giá vốn của sản phẩm, hàng hóa, dịch vụ, bất động sản đầu tư; giá thành sản xuất của sản phẩm xây lắp bán trong kỳ và các chi phí liên quan đến hoạt động kinh doanh bất động sản đầu tư. Các khoản này được ghi nhận theo nguyên tắc phù hợp với doanh thu và nguyên tắc thận trọng."
+  },
+  {
+    "instruction": "Chi phí tài chính bao gồm những khoản mục chính nào?",
+    "input": "18",
+    "output": "Chi phí tài chính chủ yếu bao gồm các chi phí hoặc các khoản lỗ liên quan đến các hoạt động đầu tư tài chính, chi phí lãi vay, lãi trái phiếu, chi phí đi vay phát hành trái phiếu, chi phí phải trả theo hợp đồng hợp tác đầu tư, dự phòng đầu tư tài chính, khoản lỗ phát sinh từ bán ngoại tệ, lỗ tỷ giá hối đoái và chi phí tài chính khác."
+  },
+  {
+    "instruction": "Giải thích sự khác biệt giữa chi phí bán hàng và chi phí quản lý doanh nghiệp.",
+    "input": "18",
+    "output": "Sự khác biệt chính giữa chi phí bán hàng và chi phí quản lý doanh nghiệp là mục đích phát sinh của chúng. Chi phí bán hàng là các chi phí thực tế phát sinh trực tiếp trong quá trình bán sản phẩm, hàng hóa, cung cấp dịch vụ (ví dụ: chi phí quảng cáo, vận chuyển). Ngược lại, chi phí quản lý doanh nghiệp là các chi phí chung của công ty, không trực tiếp liên quan đến sản xuất hay bán hàng, mà phục vụ cho công tác quản lý tổng thể (ví dụ: lương nhân viên quản lý, chi phí văn phòng, khấu hao tài sản cố định dùng cho quản lý, dự phòng nợ phải thu khó đòi)."
+  },
+  {
+    "instruction": "Phân tích tác động của việc ghi nhận chi phí nguyên vật liệu tiêu hao vượt mức bình thường vào giá vốn hàng bán đến lợi nhuận gộp.",
+    "input": "18",
+    "output": "Việc ghi nhận chi phí nguyên vật liệu tiêu hao vượt mức bình thường (và các chi phí sản xuất khác không phân bổ vào sản phẩm nhập kho) trực tiếp vào giá vốn hàng bán có tác động tiêu cực ngay lập tức đến lợi nhuận gộp của công ty. Thay vì được vốn hóa vào giá trị hàng tồn kho và chỉ ảnh hưởng đến lợi nhuận gộp khi hàng hóa được bán, những chi phí này được ghi nhận ngay lập tức, làm tăng giá vốn hàng bán trong kỳ và do đó làm giảm lợi nhuận gộp. Chính sách này phản ánh nguyên tắc thận trọng trong kế toán, đảm bảo rằng những chi phí kém hiệu quả hoặc không liên quan trực tiếp đến sản phẩm bán được không làm tăng giá trị hàng tồn kho một cách không chính đáng."
+  },
+  {
+    "instruction": "Thế nào là 'Bên liên quan' theo chính sách kế toán của Công ty?",
+    "input": "19",
+    "output": "Theo chính sách kế toán của Công ty, các bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung."
+  },
+  {
+    "instruction": "Công ty có trình bày và thuyết minh về công cụ tài chính trong báo cáo này không? Nếu không, dựa trên văn bản nào?",
+    "input": "19",
+    "output": "Công ty quyết định không trình bày và thuyết minh về công cụ tài chính theo Thông tư số 210/2009/TT-BTC trong báo cáo tài chính này. Quyết định này được thực hiện căn cứ Thông tư số 75/2015/TT-BTC ngày 18/05/2015 của Bộ Tài chính, do Chuẩn mực kế toán về công cụ tài chính và các văn bản hướng dẫn chưa được ban hành đầy đủ."
+  },
+  {
+    "instruction": "Tổng tiền gửi ngân hàng không kỳ hạn tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "19",
+    "output": "Tổng tiền gửi ngân hàng không kỳ hạn tại ngày 30/06/2024 là 39.449.606.604 VND."
+  },
+  {
+    "instruction": "Phải thu ngắn hạn của khách hàng từ Công ty TNHH TM – DV Bia Sài Gòn Bình Tây tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "19",
+    "output": "Phải thu ngắn hạn của khách hàng từ Công ty TNHH TM – DV Bia Sài Gòn Bình Tây tại ngày 30/06/2024 là 124.915.006.605 VND."
+  },
+  {
+    "instruction": "So sánh khoản trả trước cho người bán ngắn hạn giữa ngày 30/06/2024 và 01/01/2024.",
+    "input": "19",
+    "output": "Khoản trả trước cho người bán ngắn hạn tại ngày 30/06/2024 là 340.236.139 VND, giảm so với 675.022.561 VND tại ngày 01/01/2024."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc không trình bày công cụ tài chính đến sự minh bạch của báo cáo tài chính.",
+    "input": "19",
+    "output": "Việc Công ty quyết định không trình bày và thuyết minh về công cụ tài chính có tác động tiêu cực đến sự minh bạch của báo cáo tài chính. Thông tin về công cụ tài chính (như các khoản đầu tư, vay nợ phức tạp, phái sinh) là rất quan trọng để người đọc hiểu rõ hơn về rủi ro lãi suất, rủi ro tỷ giá, rủi ro tín dụng và thanh khoản mà công ty đang đối mặt. Khi thiếu các thuyết minh này, nhà đầu tư và các bên liên quan sẽ khó có cái nhìn toàn diện về mức độ tiếp xúc với rủi ro tài chính của công ty, làm giảm khả năng đánh giá chính xác sức khỏe tài chính và tiềm năng của doanh nghiệp."
+  },
+  {
+    "instruction": "Tổng khoản phải thu về cho vay ngắn hạn tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "20",
+    "output": "Tổng khoản phải thu về cho vay ngắn hạn tại ngày 30/06/2024 là 160.000.000.000 VND."
+  },
+  {
+    "instruction": "Công ty đã cho Công ty TNHH Bia Sài Gòn – Ninh Thuận vay tổng cộng bao nhiêu tiền theo các hợp đồng vay?",
+    "input": "20",
+    "output": "Công ty đã cho Công ty TNHH Bia Sài Gòn – Ninh Thuận vay tổng cộng 160.000.000.000 VND (35 tỷ + 45 tỷ + 80 tỷ) theo các hợp đồng vay."
+  },
+  {
+    "instruction": "Tổng giá trị gốc đầu tư vào công ty con tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "20",
+    "output": "Tổng giá trị gốc đầu tư vào công ty con tại ngày 30/06/2024 là 978.653.450.464 VND."
+  },
+  {
+    "instruction": "Dự phòng đầu tư tài chính dài hạn thay đổi như thế nào giữa hai kỳ báo cáo?",
+    "input": "20",
+    "output": "Dự phòng đầu tư tài chính dài hạn đã tăng 60.761.678.945 VND, từ (160.958.840.269) VND tại ngày 01/01/2024 lên (221.720.519.214) VND tại ngày 30/06/2024."
+  },
+  {
+    "instruction": "Tại sao Công ty chưa xác định được giá trị hợp lý của các khoản đầu tư tài chính?",
+    "input": "20",
+    "output": "Công ty chưa xác định được giá trị hợp lý của các khoản đầu tư tài chính do không áp dụng được giá niêm yết trên thị trường chứng khoán và/hoặc các quy định về Chế độ kế toán, các Chuẩn mực Kế toán Việt Nam hiện không có hướng dẫn về cách tính giá trị hợp lý có sử dụng kỹ thuật định giá."
+  },
+  {
+    "instruction": "Phân tích rủi ro tiềm ẩn từ việc gia tăng đáng kể các khoản phải thu về cho vay ngắn hạn cho Công ty TNHH Bia Sài Gòn – Ninh Thuận.",
+    "input": "20",
+    "output": "Việc gia tăng đáng kể các khoản phải thu về cho vay ngắn hạn cho Công ty TNHH Bia Sài Gòn – Ninh Thuận (từ 35 tỷ VND lên 160 tỷ VND) tiềm ẩn rủi ro tín dụng và thanh khoản cho công ty mẹ. Rủi ro tín dụng tăng do sự tập trung vào một công ty con duy nhất; nếu công ty con gặp khó khăn tài chính, khả năng thu hồi khoản vay của công ty mẹ sẽ bị ảnh hưởng. Về thanh khoản, việc cấp các khoản vay lớn làm giảm lượng tiền mặt sẵn có của công ty mẹ, có thể ảnh hưởng đến khả năng tài trợ cho các hoạt động khác hoặc chi trả các nghĩa vụ ngắn hạn, đặc biệt khi công ty mẹ cũng đang đối mặt với khoản lỗ lớn."
+  },
+  {
+    "instruction": "Đánh giá mức độ minh bạch và đầy đủ của thông tin về các khoản đầu tư tài chính dài hạn khi không xác định được giá trị hợp lý.",
+    "input": "20",
+    "output": "Mức độ minh bạch và đầy đủ của thông tin về các khoản đầu tư tài chính dài hạn bị hạn chế đáng kể do Công ty chưa xác định được giá trị hợp lý của chúng. Mặc dù công ty giải thích lý do (không có giá niêm yết, thiếu hướng dẫn định giá), việc chỉ cung cấp giá trị hợp lý mang tính tham khảo làm giảm khả năng người đọc báo cáo đánh giá chính xác giá trị thực và rủi ro của các khoản đầu tư này. Điều này có thể dẫn đến việc định giá sai lệch tài sản trên bảng cân đối kế toán và ảnh hưởng đến niềm tin của nhà đầu tư vào tính chính xác của báo cáo tài chính."
+  },
+  {
+    "instruction": "Tổng khoản phải thu khác ngắn hạn tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "21",
+    "output": "Tổng khoản phải thu khác ngắn hạn tại ngày 30/06/2024 là 81.904.645.781 VND."
+  },
+  {
+    "instruction": "Khoản phải thu về tạm ứng cổ tức là bao nhiêu VND?",
+    "input": "21",
+    "output": "Khoản phải thu về tạm ứng cổ tức tại ngày 30/06/2024 là 43.762.268.000 VND."
+  },
+  {
+    "instruction": "Công ty đã chi trả cổ tức năm 2023 bằng tiền với tỷ lệ bao nhiêu đồng/cổ phiếu?",
+    "input": "21",
+    "output": "Công ty đã tạm ứng cổ tức năm 2023 bằng tiền cho các cổ đông với tỷ lệ chi trả cổ tức là 500 đồng/cổ phiếu."
+  },
+  {
+    "instruction": "Giá gốc của hàng tồn kho tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "21",
+    "output": "Giá gốc của hàng tồn kho tại ngày 30/06/2024 là 147.448.744.430 VND."
+  },
+  {
+    "instruction": "So sánh giá trị hàng hóa gửi bán giữa hai kỳ báo cáo. Có sự thay đổi đáng kể nào?",
+    "input": "21",
+    "output": "Giá trị hàng hóa gửi bán đã giảm đáng kể từ 25.075.928.579 VND tại ngày 01/01/2024 xuống còn 9.996.819.236 VND tại ngày 30/06/2024. Đây là mức giảm 15.079.109.343 VND."
+  },
+  {
+    "instruction": "Giải thích mối liên hệ giữa việc tạm ứng cổ tức và việc hoàn nhập quỹ đầu tư phát triển sang lợi nhuận chưa phân phối.",
+    "input": "21",
+    "output": "Công ty đã tạm ứng cổ tức năm 2023 bằng tiền cho cổ đông, dẫn đến khoản 'Phải thu về tạm ứng cổ tức'. Để có nguồn hợp pháp và đầy đủ để chi trả cổ tức bằng tiền này, Hội đồng Quản trị đã phê duyệt việc hoàn nhập quỹ đầu tư phát triển sang lợi nhuận chưa phân phối. Mối liên hệ là việc hoàn nhập quỹ đầu tư phát triển nhằm bổ sung lợi nhuận chưa phân phối, tạo nguồn hợp pháp để thực hiện việc chi trả cổ tức đã tạm ứng, đảm bảo rằng cổ tức được chi trả từ nguồn vốn có sẵn và được phê duyệt theo quy định."
+  },
+  {
+    "instruction": "Đánh giá rủi ro tài chính của công ty khi giá trị hàng tồn kho giảm và các khoản phải thu ngắn hạn tăng mạnh.",
+    "input": "21",
+    "output": "Khi giá trị hàng tồn kho giảm (từ 168.5 tỷ xuống 147.4 tỷ VND) và các khoản phải thu ngắn hạn tăng mạnh (từ 231.6 tỷ lên 400.2 tỷ VND), công ty đối mặt với rủi ro tài chính đáng kể. Việc giảm hàng tồn kho có thể do hiệu quả bán hàng hoặc giảm sản xuất. Tuy nhiên, việc các khoản phải thu tăng mạnh có thể báo hiệu rủi ro tín dụng gia tăng, nếu khả năng thu hồi các khoản này thấp, sẽ ảnh hưởng trực tiếp đến dòng tiền và lợi nhuận của công ty. Sự kết hợp này có thể gây áp lực lên vốn lưu động và thanh khoản, buộc công ty phải tìm kiếm nguồn tài chính bổ sung để duy trì hoạt động."
+  },
+  {
+    "instruction": "Tổng nguyên giá tài sản cố định hữu hình tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "22",
+    "output": "Tổng nguyên giá tài sản cố định hữu hình tại ngày 30/06/2024 là 2.054.691.398.991 VND."
+  },
+  {
+    "instruction": "Giá trị hao mòn lũy kế của máy móc thiết bị tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "22",
+    "output": "Giá trị hao mòn lũy kế của máy móc thiết bị tại ngày 30/06/2024 là 1.278.794.823.865 VND."
+  },
+  {
+    "instruction": "Khấu hao tăng trong kỳ đối với Nhà cửa, vật kiến trúc là bao nhiêu VND?",
+    "input": "22",
+    "output": "Khấu hao tăng trong kỳ đối với Nhà cửa, vật kiến trúc là 9.966.206.688 VND."
+  },
+  {
+    "instruction": "Giá trị còn lại của Phương tiện vận tải, truyền dẫn tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "22",
+    "output": "Giá trị còn lại của Phương tiện vận tải, truyền dẫn tại ngày 30/06/2024 là 5.045.984.202 VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ giá trị còn lại của máy móc thiết bị trên tổng giá trị còn lại của tài sản cố định hữu hình tại ngày 30/06/2024.",
+    "input": "22",
+    "output": "Giá trị còn lại của máy móc thiết bị tại ngày 30/06/2024 là 354.388.809.391 VND và tổng giá trị còn lại của tài sản cố định hữu hình là 561.014.667.993 VND. Tỷ lệ này là khoảng 63,17% (354.388.809.391 VND / 561.014.667.993 VND * 100%)."
+  },
+  {
+    "instruction": "Phân tích ý nghĩa của việc tài sản cố định hữu hình đã khấu hao hết nhưng vẫn còn sử dụng với giá trị lớn.",
+    "input": "22",
+    "output": "Việc tài sản cố định hữu hình đã khấu hao hết nhưng vẫn còn sử dụng với nguyên giá lớn (841.961.254.740 VND) cho thấy công ty đang tận dụng tối đa vòng đời của tài sản. Điều này có ý nghĩa tích cực đối với hiệu quả hoạt động vì công ty không phải chịu thêm chi phí khấu hao cho những tài sản này, góp phần làm tăng lợi nhuận kế toán. Đồng thời, nó phản ánh khả năng bảo trì và vận hành hiệu quả của công ty. Tuy nhiên, nếu những tài sản này quá cũ kỹ hoặc lạc hậu, có thể tiềm ẩn rủi ro về hiệu suất, chi phí bảo trì tăng cao, hoặc nhu cầu đầu tư thay thế lớn trong tương lai."
+  },
+  {
+    "instruction": "Đánh giá rủi ro tài chính của công ty khi một phần lớn tài sản cố định hữu hình được thế chấp.",
+    "input": "22",
+    "output": "Việc một phần lớn tài sản cố định hữu hình có giá trị còn lại là 454.304.568.767 VND được thế chấp tại ngân hàng (chiếm khoảng 81% tổng giá trị còn lại của TSCĐ hữu hình) tạo ra rủi ro tài chính đáng kể. Trong trường hợp công ty không thể thanh toán các khoản vay, ngân hàng có quyền tịch biên và thanh lý các tài sản thế chấp này. Điều này có thể làm gián đoạn hoạt động sản xuất kinh doanh cốt lõi của công ty, gây mất mát tài sản quan trọng và ảnh hưởng nghiêm trọng đến khả năng hoạt động liên tục. Mức độ thế chấp cao cũng có thể hạn chế khả năng huy động vốn thêm trong tương lai hoặc tăng chi phí vay."
+  },
+  {
+    "instruction": "Tổng nguyên giá tài sản cố định vô hình tại ngày 30/06/2024 là bao nhiêu?",
+    "input": "23",
+    "output": "Tổng nguyên giá tài sản cố định vô hình tại ngày 30/06/2024 là 85.758.649.990 VND."
+  },
+  {
+    "instruction": "Giá trị còn lại của quyền sử dụng đất tại ngày 30/06/2024 là bao nhiêu VND?",
+    "input": "23

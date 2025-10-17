@@ -1,0 +1,930 @@
+```json
+[
+  {
+    "instruction": "Tên đầy đủ của công ty là gì?",
+    "input": "1",
+    "output": "Tên đầy đủ của công ty là CÔNG TY CỔ PHẦN ĐỊA ỐC FIRST REAL."
+  },
+  {
+    "instruction": "Mã cổ phiếu của công ty là gì và niêm yết ở đâu?",
+    "input": "1",
+    "output": "Mã cổ phiếu của công ty là FIR, niêm yết và giao dịch tại HOSE (Sở Giao dịch Chứng khoán Tp.Hồ Chí Minh)."
+  },
+  {
+    "instruction": "Loại báo cáo tài chính này là gì và cho kỳ kế toán nào?",
+    "input": "1",
+    "output": "Đây là Báo cáo tài chính riêng đã được soát xét cho kỳ kế toán 06 tháng kết thúc ngày 31 tháng 03 năm 2025."
+  },
+  {
+    "instruction": "Ai là Tổng Giám đốc của công ty tại thời điểm báo cáo?",
+    "input": "1",
+    "output": "Tại thời điểm báo cáo, Ông Hà Thân Thúc Luân là Tổng Giám Đốc của công ty."
+  },
+  {
+    "instruction": "Công ty Kiểm toán nào đã soát xét báo cáo này?",
+    "input": "1",
+    "output": "Công ty TNHH Kiểm toán và Dịch vụ Tin học Moore Aisc (MOORE AISC) đã soát xét báo cáo này."
+  },
+  {
+    "instruction": "Tại sao báo cáo này không có 'ý kiến kiểm toán' chính thức?",
+    "input": "1",
+    "output": "Báo cáo này không có 'ý kiến kiểm toán' chính thức vì đây là báo cáo soát xét, không phải là một cuộc kiểm toán đầy đủ. Công việc soát xét có phạm vi hẹp hơn một cuộc kiểm toán và không cho phép kiểm toán viên đạt được sự đảm bảo rằng sẽ nhận biết được tất cả các vấn đề trọng yếu có thể được phát hiện trong một cuộc kiểm toán."
+  },
+  {
+    "instruction": "Vấn đề cần nhấn mạnh trong báo cáo soát xét liên quan đến điều gì?",
+    "input": "1",
+    "output": "Vấn đề cần nhấn mạnh trong báo cáo soát xét liên quan đến khả năng hoạt động liên tục của Công ty, cụ thể là Công ty có một số khoản nợ quá hạn thanh toán. Những điều kiện và sự kiện này có thể dẫn đến nghi ngờ đáng kể về khả năng hoạt động liên tục của Công ty."
+  },
+  {
+    "instruction": "Ban Tổng Giám đốc đã đưa ra cam kết gì liên quan đến việc lập báo cáo tài chính?",
+    "input": "1",
+    "output": "Ban Tổng Giám đốc cam kết chịu trách nhiệm lập các báo cáo tài chính riêng thể hiện trung thực và hợp lý tình hình tài chính của Công ty tại ngày 31 tháng 03 năm 2025, kết quả hoạt động kinh doanh và các luồng lưu chuyển tiền tệ. Trong việc soạn lập báo cáo, Ban Tổng Giám đốc đã chọn lựa chính sách kế toán thích hợp và áp dụng nhất quán, thực hiện xét đoán và ước tính hợp lý, thận trọng, và lập báo cáo trên cơ sở hoạt động liên tục. Ban cũng chịu trách nhiệm đảm bảo sổ sách kế toán thích hợp đã được thiết lập và duy trì, bảo vệ tài sản và thực hiện các biện pháp phòng ngừa, phát hiện gian lận."
+  },
+  {
+    "instruction": "Phân tích tác động của 'vấn đề cần nhấn mạnh về khả năng hoạt động liên tục' đối với các nhà đầu tư tiềm năng.",
+    "input": "1",
+    "output": "Đối với các nhà đầu tư tiềm năng, 'vấn đề cần nhấn mạnh về khả năng hoạt động liên tục' là một tín hiệu rủi ro nghiêm trọng. Nó cho thấy công ty đang đối mặt với những khó khăn tài chính đáng kể (như nợ quá hạn thanh toán) có thể ảnh hưởng đến khả năng duy trì hoạt động trong tương lai. Điều này có thể khiến nhà đầu tư ngần ngại đầu tư vì lo ngại về khả năng công ty không thể thực hiện các kế hoạch kinh doanh, không thể tạo ra lợi nhuận bền vững hoặc thậm chí có thể phá sản. Việc công ty phải dựa vào "thực hiện thành công các kế hoạch đã nêu" để đảm bảo khả năng hoạt động liên tục cho thấy mức độ rủi ro cao và sự không chắc chắn về tài chính. Nhà đầu tư sẽ yêu cầu thông tin chi tiết hơn về các kế hoạch này và đánh giá tính khả thi của chúng trước khi đưa ra quyết định."
+  },
+  {
+    "instruction": "Đánh giá mức độ tin cậy của báo cáo tài chính giữa niên độ so với báo cáo tài chính đã được kiểm toán toàn phần.",
+    "input": "1",
+    "output": "Mức độ tin cậy của báo cáo tài chính giữa niên độ thường thấp hơn so với báo cáo tài chính đã được kiểm toán toàn phần. Báo cáo giữa niên độ này chỉ được 'soát xét' chứ không phải 'kiểm toán'. Theo mô tả trong chunk, công việc soát xét có phạm vi hẹp hơn, chỉ bao gồm phỏng vấn và các thủ tục phân tích, không cho phép kiểm toán viên đạt được sự đảm bảo rằng tất cả các vấn đề trọng yếu sẽ được phát hiện. Do đó, kiểm toán viên không đưa ra 'ý kiến kiểm toán' chính thức mà chỉ kết luận là 'không thấy có vấn đề gì khiến chúng tôi cho rằng báo cáo tài chính riêng giữa niên độ đính kèm không phản ánh trung thực và hợp lý'. Ngược lại, một báo cáo kiểm toán toàn phần được thực hiện theo các chuẩn mực kiểm toán Việt Nam, có phạm vi rộng hơn và cung cấp mức độ đảm bảo cao hơn về tính trung thực và hợp lý của báo cáo tài chính. Do đó, nhà đầu tư cần thận trọng hơn khi dựa vào báo cáo soát xét so với báo cáo kiểm toán toàn phần."
+  },
+  {
+    "instruction": "Tổng tài sản ngắn hạn của công ty tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "2",
+    "output": "Tổng tài sản ngắn hạn của công ty tại ngày 31/03/2025 là 728.362.414.177 VND."
+  },
+  {
+    "instruction": "Giá trị tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu?",
+    "input": "2",
+    "output": "Giá trị tiền và các khoản tương đương tiền cuối kỳ tại ngày 31/03/2025 là 4.671.835.959 VND."
+  },
+  {
+    "instruction": "So sánh khoản phải thu ngắn hạn của khách hàng giữa 31/03/2025 và 01/10/2024?",
+    "input": "2",
+    "output": "Khoản phải thu ngắn hạn của khách hàng tại ngày 31/03/2025 là 18.761.105.384 VND, tăng so với 14.963.736.249 VND tại ngày 01/10/2024."
+  },
+  {
+    "instruction": "Tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn tại 31/03/2025 là bao nhiêu phần trăm?",
+    "input": "2",
+    "output": "Tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn tại 31/03/2025 là khoảng 38,16% (277.951.009.293 VND / 728.362.414.177 VND * 100%)."
+  },
+  {
+    "instruction": "Đánh giá xu hướng biến động của hàng tồn kho và các khoản phải thu ngắn hạn trong kỳ.",
+    "input": "2",
+    "output": "Trong kỳ, hàng tồn kho của công ty có xu hướng tăng, từ 266.162.166.740 VND (01/10/2024) lên 277.951.009.293 VND (31/03/2025). Các khoản phải thu ngắn hạn tổng thể lại giảm, từ 508.509.414.244 VND (01/10/2024) xuống 445.654.078.062 VND (31/03/2025). Cụ thể, Phải thu ngắn hạn của khách hàng tăng, nhưng Trả trước cho người bán ngắn hạn và Phải thu ngắn hạn khác đều giảm, trong đó Trả trước cho người bán ngắn hạn giảm đáng kể nhất (từ 160.777.511.462 VND xuống 83.010.197.347 VND). Sự tăng hàng tồn kho có thể cho thấy công ty đang tích lũy sản phẩm hoặc chậm tiêu thụ, trong khi sự giảm tổng các khoản phải thu ngắn hạn có thể là tín hiệu tích cực về khả năng thu hồi công nợ hoặc giảm các hoạt động trả trước."
+  },
+  {
+    "instruction": "Hệ số thanh toán hiện thời (Current Ratio) của công ty tại 31/03/2025 là bao nhiêu, dựa trên thông tin về tài sản ngắn hạn và giả định các khoản nợ ngắn hạn tương ứng?",
+    "input": "2",
+    "output": "Chunk 2 cung cấp thông tin về tài sản ngắn hạn là 728.362.414.177 VND. Tuy nhiên, thông tin về các khoản nợ ngắn hạn để tính Hệ số thanh toán hiện thời không có trong chunk này. Để tính chính xác, cần dữ liệu về tổng nợ ngắn hạn từ các chunk khác."
+  },
+  {
+    "instruction": "Phân tích rủi ro thanh khoản của công ty dựa trên cơ cấu tài sản ngắn hạn, đặc biệt là tỷ trọng của tiền và các khoản phải thu so với hàng tồn kho.",
+    "input": "2",
+    "output": "Dựa trên cơ cấu tài sản ngắn hạn tại 31/03/2025, công ty có tổng tài sản ngắn hạn là 728.362.414.177 VND. Trong đó, tiền và các khoản tương đương tiền chỉ chiếm một tỷ trọng rất nhỏ (khoảng 0.64%) với 4.671.835.959 VND. Các khoản phải thu ngắn hạn chiếm khoảng 61.18% (445.654.078.062 VND), và hàng tồn kho chiếm khoảng 38.16% (277.951.009.293 VND). Tỷ trọng tiền mặt thấp cho thấy khả năng thanh toán tức thời yếu. Mặc dù các khoản phải thu chiếm tỷ trọng lớn, khả năng chuyển đổi các khoản này thành tiền mặt có thể mất thời gian và có rủi ro khó đòi, đặc biệt nếu không có thông tin chi tiết về chất lượng các khoản phải thu. Hàng tồn kho cũng chiếm tỷ trọng đáng kể, nhưng việc chuyển đổi hàng tồn kho (thường là bất động sản) thành tiền mặt có thể chậm và phụ thuộc vào điều kiện thị trường. Cơ cấu này cho thấy công ty có thể đối mặt với rủi ro thanh khoản nếu cần huy động một lượng tiền mặt lớn trong thời gian ngắn để đáp ứng các nghĩa vụ thanh toán."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn của công ty tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "3",
+    "output": "Tổng tài sản dài hạn của công ty tại ngày 31/03/2025 là 480.659.461.712 VND."
+  },
+  {
+    "instruction": "Giá trị tài sản cố định hữu hình của công ty tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "3",
+    "output": "Giá trị tài sản cố định hữu hình của công ty tại ngày 31/03/2025 là 1.265.718.581 VND."
+  },
+  {
+    "instruction": "Khoản đầu tư vào công ty con là bao nhiêu tại ngày 31/03/2025?",
+    "input": "3",
+    "output": "Khoản đầu tư vào công ty con tại ngày 31/03/2025 là 107.300.000.000 VND."
+  },
+  {
+    "instruction": "So sánh tổng tài sản dài hạn giữa hai kỳ báo cáo.",
+    "input": "3",
+    "output": "Tổng tài sản dài hạn tại ngày 31/03/2025 là 480.659.461.712 VND, giảm so với 531.500.474.023 VND tại ngày 01/10/2024."
+  },
+  {
+    "instruction": "Thay đổi của chi phí xây dựng cơ bản dở dang trong kỳ là bao nhiêu?",
+    "input": "3",
+    "output": "Chi phí xây dựng cơ bản dở dang tăng từ 50.897.889.227 VND tại 01/10/2024 lên 50.916.324.306 VND tại 31/03/2025. Mức thay đổi là 50.916.324.306 - 50.897.889.227 = 18.435.079 VND."
+  },
+  {
+    "instruction": "Tỷ lệ tài sản cố định trên tổng tài sản dài hạn của công ty tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "3",
+    "output": "Tỷ lệ tài sản cố định trên tổng tài sản dài hạn của công ty tại ngày 31/03/2025 là khoảng 0.26% (1.265.718.581 VND / 480.659.461.712 VND * 100%)."
+  },
+  {
+    "instruction": "Đánh giá mức độ phụ thuộc của công ty vào các khoản đầu tư tài chính dài hạn.",
+    "input": "3",
+    "output": "Công ty có các khoản đầu tư tài chính dài hạn đáng kể, tổng cộng 305.085.694.837 VND tại 31/03/2025, chiếm khoảng 63.47% tổng tài sản dài hạn. Trong đó, đầu tư vào công ty con là 107.300.000.000 VND và đầu tư vào công ty liên doanh, liên kết là 200.000.000.000 VND. Tỷ trọng này cho thấy công ty phụ thuộc khá lớn vào hiệu quả của các khoản đầu tư tài chính này để tạo ra lợi nhuận và giá trị. Bất kỳ suy giảm nào về giá trị hoặc hiệu suất của các công ty con, liên doanh, liên kết có thể ảnh hưởng đáng kể đến tình hình tài chính tổng thể của First Real."
+  },
+  {
+    "instruction": "Phân tích ý nghĩa của sự giảm sút các khoản phải thu dài hạn đối với công ty.",
+    "input": "3",
+    "output": "Các khoản phải thu dài hạn của công ty giảm đáng kể từ 156.976.000.000 VND tại 01/10/2024 xuống 108.100.000.000 VND tại 31/03/2025, tức giảm gần 48.876.000.000 VND. Sự giảm sút này có thể có hai ý nghĩa: Một mặt, đây là tín hiệu tích cực nếu nó đến từ việc công ty đã thu hồi được các khoản nợ dài hạn, giúp cải thiện dòng tiền và giảm thiểu rủi ro tín dụng. Mặt khác, nếu sự giảm sút này là do việc xóa sổ nợ khó đòi hoặc chuyển nhượng các khoản phải thu với giá thấp, nó có thể ảnh hưởng tiêu cực đến lợi nhuận và tài sản. Tuy nhiên, việc giảm các khoản phải thu nói chung thường được coi là cải thiện quản lý vốn lưu động và giảm thiểu rủi ro tín dụng dài hạn cho công ty."
+  },
+  {
+    "instruction": "Dự báo tác động của việc tăng dự phòng đầu tư tài chính dài hạn đến lợi nhuận công ty.",
+    "input": "3",
+    "output": "Dự phòng đầu tư tài chính dài hạn của công ty tăng từ 1.207.614.256 VND tại 01/10/2024 lên 2.214.305.163 VND tại 31/03/2025. Việc tăng trích lập dự phòng này phản ánh đánh giá của công ty về khả năng tổn thất đối với các khoản đầu tư tài chính dài hạn. Khi dự phòng tăng, nó sẽ được ghi nhận vào chi phí trong báo cáo kết quả hoạt động kinh doanh, do đó sẽ làm giảm lợi nhuận trước thuế và lợi nhuận sau thuế của công ty. Tác động cụ thể đến lợi nhuận phụ thuộc vào quy mô của khoản dự phòng bổ sung này so với tổng lợi nhuận của công ty. Đây là dấu hiệu thận trọng nhưng cũng cho thấy có rủi ro suy giảm giá trị đối với một phần các khoản đầu tư dài hạn."
+  },
+  {
+    "instruction": "Tổng nợ phải trả của công ty tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "4",
+    "output": "Tổng nợ phải trả của công ty tại ngày 31/03/2025 là 464.302.701.920 VND."
+  },
+  {
+    "instruction": "Vốn chủ sở hữu của công ty tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "4",
+    "output": "Vốn chủ sở hữu của công ty tại ngày 31/03/2025 là 744.719.173.969 VND."
+  },
+  {
+    "instruction": "Khoản vay và nợ thuê tài chính ngắn hạn đã thay đổi như thế nào giữa hai kỳ báo cáo?",
+    "input": "4",
+    "output": "Khoản vay và nợ thuê tài chính ngắn hạn đã giảm từ 278.791.541.132 VND tại 01/10/2024 xuống 168.375.666.957 VND tại 31/03/2025. Mức giảm là 110.415.874.175 VND."
+  },
+  {
+    "instruction": "Tỷ lệ nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "4",
+    "output": "Tại ngày 31/03/2025, tổng nợ phải trả là 464.302.701.920 VND và vốn chủ sở hữu là 744.719.173.969 VND. Tỷ lệ nợ trên vốn chủ sở hữu (D/E ratio) là khoảng 0.62 (464.302.701.920 VND / 744.719.173.969 VND)."
+  },
+  {
+    "instruction": "Đánh giá mức độ biến động của Lợi nhuận sau thuế chưa phân phối kỳ này so với kỳ trước.",
+    "input": "4",
+    "output": "Lợi nhuận sau thuế chưa phân phối kỳ này (từ 01/10/2024 đến 31/03/2025) là 2.595.843.721 VND. So với kỳ trước (01/10/2023 đến 31/03/2024) là 711.321.679 VND, lợi nhuận sau thuế chưa phân phối kỳ này đã tăng hơn 3.6 lần. Mức tăng đáng kể này cho thấy công ty đã có kết quả kinh doanh tốt hơn trong kỳ hiện tại so với kỳ trước, ít nhất là về mặt lợi nhuận sau thuế chưa phân phối phát sinh trong kỳ, góp phần làm tăng tổng lợi nhuận lũy kế chưa phân phối."
+  },
+  {
+    "instruction": "Tính tỷ lệ nợ ngắn hạn trên tổng nợ phải trả và đánh giá rủi ro thanh toán ngắn hạn của công ty.",
+    "input": "4",
+    "output": "Tại ngày 31/03/2025:\n- Tổng nợ phải trả: 464.302.701.920 VND\n- Nợ ngắn hạn: 446.183.379.957 VND\n\nTỷ lệ nợ ngắn hạn trên tổng nợ phải trả = (446.183.379.957 VND / 464.302.701.920 VND) * 100% ≈ 96.10%.\n\nVới tỷ lệ nợ ngắn hạn chiếm tới hơn 96% tổng nợ phải trả, công ty đối mặt với rủi ro thanh toán ngắn hạn rất cao. Điều này có nghĩa là phần lớn các nghĩa vụ tài chính của công ty sẽ đáo hạn trong vòng một năm tới. Nếu công ty không có đủ dòng tiền từ hoạt động kinh doanh hoặc khả năng tái cấp vốn hiệu quả, công ty có thể gặp khó khăn nghiêm trọng trong việc đáp ứng các khoản nợ đến hạn, dẫn đến rủi ro vỡ nợ hoặc mất khả năng hoạt động liên tục."
+  },
+  {
+    "instruction": "Phân tích tác động của sự gia tăng các khoản phải trả ngắn hạn khác đến tình hình tài chính tổng thể của công ty.",
+    "input": "4",
+    "output": "Khoản 'Phải trả ngắn hạn khác' đã tăng đột biến từ 26.426.769.041 VND tại 01/10/2024 lên 84.613.747.968 VND tại 31/03/2025. Sự gia tăng này làm tăng tổng nợ ngắn hạn của công ty, gây áp lực lên khả năng thanh khoản. Mặc dù khoản này giúp tài trợ cho hoạt động của công ty trong ngắn hạn mà không cần vay ngân hàng, nhưng nếu không được quản lý tốt hoặc nếu các khoản này có tính chất phát sinh đột ngột và cần thanh toán nhanh chóng, nó có thể làm suy yếu vị thế tiền mặt và khả năng thanh toán. Đặc biệt khi tổng nợ ngắn hạn đã chiếm tỷ trọng rất lớn trong tổng nợ, việc gia tăng thêm các khoản phải trả ngắn hạn khác càng làm tăng rủi ro thanh khoản tổng thể của công ty."
+  },
+  {
+    "instruction": "Dự báo khả năng chi trả cổ tức dựa trên lợi nhuận sau thuế chưa phân phối và vốn chủ sở hữu hiện tại.",
+    "input": "4",
+    "output": "Tại ngày 31/03/2025, công ty có lợi nhuận sau thuế chưa phân phối lũy kế là 34.938.123.969 VND và vốn chủ sở hữu là 744.719.173.969 VND. Mặc dù có lợi nhuận sau thuế chưa phân phối dương, khả năng chi trả cổ tức còn phụ thuộc vào dòng tiền thực tế, các kế hoạch đầu tư, và các nghĩa vụ tài chính khác của công ty. Trong bối cảnh công ty có 'vấn đề cần nhấn mạnh về khả năng hoạt động liên tục' (theo thông tin chung của báo cáo), việc chi trả cổ tức có thể bị hạn chế để ưu tiên cho việc củng cố tình hình tài chính và đảm bảo khả năng hoạt động liên tục. Với lượng nợ ngắn hạn rất cao và những lo ngại về hoạt động liên tục, công ty có thể sẽ ưu tiên giữ lại lợi nhuận để tái đầu tư hoặc thanh toán nợ thay vì chia cổ tức để bảo vệ dòng tiền và sức khỏe tài chính. Do đó, khả năng chi trả cổ tức trong tương lai gần có thể bị ảnh hưởng tiêu cực."
+  },
+  {
+    "instruction": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong 6 tháng cuối năm 2024 là bao nhiêu?",
+    "input": "5",
+    "output": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong kỳ từ 01/10/2024 đến 31/03/2025 là 45.602.679.716 VND."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong kỳ báo cáo là bao nhiêu?",
+    "input": "5",
+    "output": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong kỳ từ 01/10/2024 đến 31/03/2025 là 2.595.843.721 VND."
+  },
+  {
+    "instruction": "So sánh Lợi nhuận gộp giữa kỳ hiện tại (01/10/2024 - 31/03/2025) và kỳ trước (01/10/2023 - 31/03/2024).",
+    "input": "5",
+    "output": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong kỳ hiện tại (01/10/2024 - 31/03/2025) là 31.498.079.941 VND. So với kỳ trước (01/10/2023 - 31/03/2024) là 49.768.357.443 VND, lợi nhuận gộp đã giảm đáng kể."
+  },
+  {
+    "instruction": "Phân tích sự thay đổi trong chi phí tài chính giữa hai kỳ.",
+    "input": "5",
+    "output": "Chi phí tài chính đã giảm từ 22.230.275.841 VND trong kỳ 01/10/2023 đến 31/03/2024 xuống còn 16.504.228.034 VND trong kỳ 01/10/2024 đến 31/03/2025. Mức giảm này chủ yếu do sự giảm của Chi phí lãi vay, từ 22.310.275.841 VND xuống còn 15.497.537.127 VND. Sự giảm chi phí tài chính là một tín hiệu tích cực, có thể đến từ việc giảm nợ vay hoặc lãi suất vay ưu đãi hơn, giúp cải thiện lợi nhuận của công ty."
+  },
+  {
+    "instruction": "Chi phí quản lý doanh nghiệp và chi phí bán hàng có xu hướng như thế nào giữa hai kỳ và ý nghĩa của sự thay đổi đó?",
+    "input": "5",
+    "output": "Chi phí bán hàng giảm mạnh từ 4.586.151.132 VND (kỳ trước) xuống 547.992.554 VND (kỳ hiện tại). Tương tự, chi phí quản lý doanh nghiệp cũng giảm từ 8.555.325.408 VND (kỳ trước) xuống 7.029.337.740 VND (kỳ hiện tại). Cả hai loại chi phí này đều có xu hướng giảm. Sự giảm này có ý nghĩa tích cực trong việc kiểm soát chi phí hoạt động, đặc biệt là trong bối cảnh doanh thu thuần cũng giảm. Tuy nhiên, việc giảm quá mạnh chi phí bán hàng cũng có thể cho thấy công ty đã cắt giảm các hoạt động tiếp thị hoặc phân phối, điều này có thể ảnh hưởng đến khả năng tạo ra doanh thu trong tương lai."
+  },
+  {
+    "instruction": "Tính biên lợi nhuận gộp và biên lợi nhuận ròng của công ty cho kỳ báo cáo hiện tại.",
+    "input": "5",
+    "output": "Cho kỳ báo cáo từ 01/10/2024 đến 31/03/2025:\n- Doanh thu thuần về bán hàng và cung cấp dịch vụ: 45.602.679.716 VND\n- Lợi nhuận gộp về bán hàng và cung cấp dịch vụ: 31.498.079.941 VND\n- Lợi nhuận sau thuế thu nhập doanh nghiệp: 2.595.843.721 VND\n\nBiên lợi nhuận gộp = (Lợi nhuận gộp / Doanh thu thuần) * 100%\n= (31.498.079.941 VND / 45.602.679.716 VND) * 100% ≈ **69.07%**\n\nBiên lợi nhuận ròng = (Lợi nhuận sau thuế TNDN / Doanh thu thuần) * 100%\n= (2.595.843.721 VND / 45.602.679.716 VND) * 100% ≈ **5.69%**"
+  },
+  {
+    "instruction": "Đánh giá mức độ ảnh hưởng của chi phí khác đến tổng lợi nhuận kế toán trước thuế trong kỳ hiện tại.",
+    "input": "5",
+    "output": "Trong kỳ hiện tại (01/10/2024 đến 31/03/2025), tổng lợi nhuận kế toán trước thuế là 3.249.285.703 VND. Chi phí khác trong kỳ này là 4.220.783.918 VND, dẫn đến Lợi nhuận khác là âm 4.220.783.918 VND. Điều này có nghĩa là các khoản chi phí khác (mà chủ yếu là lãi chậm nộp thuế và các khoản phạt theo Thuyết minh 8) đã làm giảm đáng kể lợi nhuận kế toán trước thuế. Nếu không có các khoản chi phí khác này, lợi nhuận kế toán trước thuế của công ty sẽ cao hơn rất nhiều. Cụ thể, lợi nhuận thuần từ hoạt động kinh doanh là 7.470.069.621 VND, nhưng sau khi trừ đi lợi nhuận khác âm, lợi nhuận trước thuế chỉ còn 3.249.285.703 VND. Điều này cho thấy chi phí khác đã ảnh hưởng tiêu cực và mạnh mẽ, làm suy giảm lợi nhuận trước thuế của công ty trong kỳ hiện tại."
+  },
+  {
+    "instruction": "Phân tích các yếu tố chính gây ra sự sụt giảm lợi nhuận thuần từ hoạt động kinh doanh trong kỳ hiện tại so với kỳ trước.",
+    "input": "5",
+    "output": "Lợi nhuận thuần từ hoạt động kinh doanh đã sụt giảm đáng kể, từ 14.422.691.284 VND trong kỳ trước xuống 7.470.069.621 VND trong kỳ hiện tại. Các yếu tố chính góp phần vào sự sụt giảm này bao gồm:\n1.  **Doanh thu thuần giảm mạnh:** Doanh thu thuần giảm từ 81.326.046.021 VND (kỳ trước) xuống 45.602.679.716 VND (kỳ hiện tại). Đây là yếu tố quan trọng nhất, trực tiếp làm giảm lợi nhuận.
+2.  **Lợi nhuận gộp giảm:** Tương ứng với doanh thu giảm, lợi nhuận gộp cũng giảm từ 49.768.357.443 VND xuống 31.498.079.941 VND. Mặc dù biên lợi nhuận gộp vẫn cao, nhưng giá trị tuyệt đối thấp hơn do doanh thu cơ sở thấp.
+3.  **Chi phí tài chính giảm nhưng vẫn đáng kể:** Mặc dù chi phí tài chính có giảm (từ 22.230.275.841 VND xuống 16.504.228.034 VND), nhưng nó vẫn là một khoản mục lớn, chiếm tỷ trọng cao so với lợi nhuận gộp, làm xói mòn lợi nhuận.
+4.  **Chi phí bán hàng và quản lý doanh nghiệp giảm:** Dù chi phí bán hàng và quản lý doanh nghiệp giảm cũng là một nỗ lực kiểm soát chi phí, nhưng mức giảm này chưa đủ để bù đắp cho sự sụt giảm doanh thu và lợi nhuận gộp.
+Tổng thể, nguyên nhân chính là sự sụt giảm mạnh về doanh thu thuần, dù công ty đã cố gắng cắt giảm chi phí. Điều này cho thấy hoạt động kinh doanh cốt lõi đang gặp nhiều thách thức."
+  },
+  {
+    "instruction": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ 01/10/2024 đến 31/03/2025 là bao nhiêu?",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ 01/10/2024 đến 31/03/2025 là 171.174.551.385 VND."
+  },
+  {
+    "instruction": "Tiền và tương đương tiền cuối kỳ 31/03/2025 là bao nhiêu?",
+    "input": "6",
+    "output": "Tiền và tương đương tiền cuối kỳ 31/03/2025 là 4.671.835.959 VND."
+  },
+  {
+    "instruction": "So sánh lưu chuyển tiền thuần từ hoạt động tài chính giữa hai kỳ.",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động tài chính trong kỳ 01/10/2024 đến 31/03/2025 là âm 172.450.115.949 VND. So với kỳ 01/10/2023 đến 31/03/2024 là âm 51.292.695.563 VND, lưu chuyển tiền thuần từ hoạt động tài chính trong kỳ hiện tại có mức âm lớn hơn đáng kể, cho thấy công ty đã trả nợ gốc vay nhiều hơn và/hoặc không thu được tiền từ đi vay trong kỳ hiện tại."
+  },
+  {
+    "instruction": "Các khoản điều chỉnh chính từ lợi nhuận trước thuế để tính lưu chuyển tiền từ hoạt động kinh doanh là gì?",
+    "input": "6",
+    "output": "Các khoản điều chỉnh chính từ lợi nhuận trước thuế để tính lưu chuyển tiền từ hoạt động kinh doanh bao gồm:\n- Khấu hao tài sản cố định và bất động sản đầu tư.\n- Các khoản dự phòng.\n- Lãi, lỗ từ hoạt động đầu tư.\n- Chi phí lãi vay."
+  },
+  {
+    "instruction": "Đánh giá mức độ tự chủ tài chính của công ty thông qua dòng tiền từ hoạt động kinh doanh.",
+    "input": "6",
+    "output": "Trong kỳ 01/10/2024 đến 31/03/2025, lưu chuyển tiền thuần từ hoạt động kinh doanh của công ty là dương 171.174.551.385 VND. Đây là một con số rất tích cực và cao hơn đáng kể so với kỳ trước (46.505.932.507 VND). Một dòng tiền thuần dương mạnh mẽ từ hoạt động kinh doanh cho thấy công ty có khả năng tạo ra tiền mặt từ các hoạt động cốt lõi của mình để trang trải chi phí, trả nợ và tài trợ cho các hoạt động đầu tư mà không cần phụ thuộc quá nhiều vào nguồn tài chính bên ngoài. Điều này cải thiện mức độ tự chủ tài chính và khả năng tự cân đối dòng tiền của công ty, bất chấp lợi nhuận trước thuế giảm so với kỳ trước. Sự tăng trưởng mạnh mẽ của dòng tiền từ HĐKD chủ yếu nhờ vào sự tăng, giảm các khoản phải thu và tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế thu nhập phải nộp."
+  },
+  {
+    "instruction": "Tính tổng tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác trong kỳ hiện tại.",
+    "input": "6",
+    "output": "Tiền chi để mua sắm, xây dựng TSCĐ và các TSDH khác trong kỳ từ 01/10/2024 đến 31/03/2025 là 18.435.079 VND."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của dòng tiền thuần âm trong kỳ báo cáo.",
+    "input": "6",
+    "output": "Trong kỳ 01/10/2024 đến 31/03/2025, công ty có dòng tiền thuần trong kỳ là âm 1.092.951.635 VND. Mặc dù lưu chuyển tiền thuần từ hoạt động kinh doanh rất tích cực (dương 171.174.551.385 VND) và lưu chuyển tiền thuần từ hoạt động đầu tư cũng dương (182.612.929 VND), nguyên nhân chính gây ra dòng tiền thuần âm là do lưu chuyển tiền thuần từ hoạt động tài chính âm rất lớn (-172.450.115.949 VND). Cụ thể, công ty không thu được tiền từ đi vay trong kỳ này nhưng lại trả nợ gốc vay rất lớn (172.450.115.949 VND). Tác động của dòng tiền thuần âm là làm giảm lượng tiền và tương đương tiền cuối kỳ so với đầu kỳ, cho thấy công ty đang sử dụng nhiều tiền hơn số tiền tạo ra từ các hoạt động, chủ yếu do áp lực trả nợ vay. Điều này có thể ảnh hưởng đến khả năng thanh toán các nghĩa vụ trong tương lai nếu xu hướng này tiếp tục."
+  },
+  {
+    "instruction": "Dự báo khả năng đáp ứng các nghĩa vụ tài chính trong tương lai dựa trên lưu chuyển tiền tệ hiện tại và các khoản vay.",
+    "input": "6",
+    "output": "Dựa trên báo cáo lưu chuyển tiền tệ hiện tại, khả năng đáp ứng các nghĩa vụ tài chính trong tương lai của công ty có thể đối mặt với thách thức. Mặc dù dòng tiền từ hoạt động kinh doanh rất mạnh và dương (171.174.551.385 VND), cho thấy khả năng tạo tiền từ hoạt động cốt lõi tốt, nhưng dòng tiền thuần từ hoạt động tài chính lại âm rất lớn (-172.450.115.949 VND), chủ yếu do việc trả nợ gốc vay lớn mà không có nguồn thu từ đi vay mới. Điều này dẫn đến lưu chuyển tiền thuần trong kỳ là âm (-1.092.951.635 VND) và làm giảm lượng tiền và tương đương tiền cuối kỳ. Nếu công ty tiếp tục phải trả nợ gốc vay lớn mà không có nguồn tài trợ mới hoặc dòng tiền từ hoạt động kinh doanh không duy trì được mức cao, công ty có thể gặp khó khăn trong việc đáp ứng các nghĩa vụ tài chính trong tương lai, đặc biệt là các khoản nợ quá hạn và lãi vay như đã được nhấn mạnh trong ý kiến kiểm toán."
+  },
+  {
+    "instruction": "Ngành nghề kinh doanh chính của First Real là gì?",
+    "input": "7",
+    "output": "Ngành nghề kinh doanh chính của First Real là cung cấp dịch vụ tư vấn, đăng ký môi giới bất động sản, đấu giá quyền sử dụng đất, kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê."
+  },
+  {
+    "instruction": "Công ty Cổ phần Đầu tư Bất động sản Primo là loại hình công ty gì của First Real và tỷ lệ vốn góp là bao nhiêu?",
+    "input": "7",
+    "output": "Công ty Cổ phần Đầu tư Bất động sản Primo là công ty con của First Real, với tỷ lệ vốn góp là 99,9%."
+  },
+  {
+    "instruction": "Tên viết tắt và tên tiếng Anh của công ty là gì?",
+    "input": "7",
+    "output": "Tên tiếng Anh của công ty là First Real Joint Stock Company và tên viết tắt là First Real.JSC."
+  },
+  {
+    "instruction": "Chu kỳ sản xuất kinh doanh thông thường của công ty là từ khi nào đến khi nào?",
+    "input": "7",
+    "output": "Chu kỳ sản xuất, kinh doanh thông thường của Công ty kéo dài trong vòng 12 tháng theo năm tài chính bắt đầu từ ngày 01 tháng 10 đến ngày 30 tháng 09."
+  },
+  {
+    "instruction": "Thị trường bất động sản đã ảnh hưởng đến doanh thu và kết quả hoạt động của công ty như thế nào trong kỳ báo cáo?",
+    "input": "7",
+    "output": "Thị trường bất động sản gặp nhiều khó khăn trong quá khứ nhưng đang có kết quả phục hồi tích cực nhờ các bước tiến lớn trong việc hoàn thiện hành lang pháp lý. Tuy nhiên, từ sự kiện này, doanh thu và kết quả hoạt động của Công ty trong kỳ kế toán kết thúc ngày 31 tháng 03 năm 2025 bị sụt giảm đáng kể. Mặc dù vậy, thị trường bất động sản tiếp tục phục hồi, nguồn cung và lượng giao dịch trong quý 01 năm 2025 tăng trưởng."
+  },
+  {
+    "instruction": "Đơn vị tiền tệ sử dụng trong kế toán của công ty là gì?",
+    "input": "7",
+    "output": "Đồng Việt Nam (VND) được sử dụng làm đơn vị tiền tệ để ghi sổ kế toán của công ty."
+  },
+  {
+    "instruction": "Công ty áp dụng chế độ kế toán nào để lập báo cáo tài chính?",
+    "input": "7",
+    "output": "Công ty áp dụng các chuẩn mực kế toán, Chế độ kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014, Thông tư số 53/2016/TT-BTC ngày 21 tháng 3 năm 2016 sửa đổi bổ sung một số điều Thông tư số 200/2014/TT-BTC và các thông tư hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính."
+  },
+  {
+    "instruction": "Đánh giá mức độ ảnh hưởng của quy mô nhân sự hiện tại (28 nhân viên) đến khả năng triển khai các kế hoạch kinh doanh của công ty.",
+    "input": "7",
+    "output": "Quy mô nhân sự hiện tại của công ty là 28 nhân viên (giảm từ 29 nhân viên tại 30/09/2024). Với một công ty hoạt động trong lĩnh vực kinh doanh và đầu tư bất động sản, 28 nhân viên là một quy mô khá nhỏ. Mức độ ảnh hưởng của quy mô nhân sự này đến khả năng triển khai các kế hoạch kinh doanh có thể là đáng kể. Nếu công ty có nhiều dự án hoặc hoạt động đa dạng, số lượng nhân sự hạn chế có thể gây áp lực lên hiệu suất làm việc, khả năng quản lý dự án, tiếp thị và bán hàng. Điều này có thể hạn chế khả năng mở rộng nhanh chóng hoặc tham gia vào nhiều dự án lớn đồng thời. Tuy nhiên, nếu công ty tập trung vào các dự án chiến lược, tối ưu hóa quy trình và sử dụng hiệu quả công nghệ, một đội ngũ tinh gọn vẫn có thể đạt được kết quả. Nhưng nhìn chung, một quy mô nhân sự nhỏ có thể là một yếu tố hạn chế đối với các mục tiêu tăng trưởng và khả năng mở rộng của công ty trong một thị trường cạnh tranh như bất động sản."
+  },
+  {
+    "instruction": "Cơ sở lập Báo cáo tài chính riêng của công ty là gì?",
+    "input": "8",
+    "output": "Cơ sở lập Báo cáo tài chính riêng của công ty là kế toán dồn tích (trừ các thông tin liên quan đến các luồng tiền)."
+  },
+  {
+    "instruction": "Các khoản tương đương tiền được định nghĩa như thế nào trong chính sách kế toán của công ty?",
+    "input": "8",
+    "output": "Các khoản tương đương tiền được định nghĩa là các khoản đầu tư ngắn hạn có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày mua, dễ dàng chuyển đổi thành một lượng tiền xác định cũng như không có nhiều rủi ro trong việc chuyển đổi thành tiền."
+  },
+  {
+    "instruction": "Khi nào dự phòng tổn thất cho các khoản đầu tư vào công ty con, liên kết được trích lập?",
+    "input": "8",
+    "output": "Dự phòng tổn thất cho các khoản đầu tư vào công ty con, công ty liên kết được trích lập khi công ty con, công ty liên kết bị lỗ với mức trích lập bằng chênh lệch giữa vốn góp thực tế của các bên tại công ty con, công ty liên kết và vốn chủ sở hữu thực có nhân với tỷ lệ góp vốn của Công ty so với tổng số vốn góp thực tế của các bên tại công ty con, công ty liên kết."
+  },
+  {
+    "instruction": "Sự khác biệt trong nguyên tắc ghi nhận giữa phải thu của khách hàng và phải thu khác là gì?",
+    "input": "8",
+    "output": "Sự khác biệt nằm ở bản chất của khoản phải thu:\n- **Phải thu của khách hàng:** Phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua bán giữa Công ty và người mua là đơn vị độc lập với Công ty (bao gồm cả các khoản phải thu về tiền bán hàng xuất khẩu ủy thác cho đơn vị khác).\n- **Phải thu khác:** Phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua bán."
+  },
+  {
+    "instruction": "Cách thức lập dự phòng phải thu khó đòi của công ty được quy định như thế nào?",
+    "input": "8",
+    "output": "Dự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào tuổi nợ quá hạn của các khoản nợ hoặc dự kiến mức tổn thất có thể xảy ra. Cụ thể:\n- Đối với nợ phải thu quá hạn thanh toán.\n- Đối với nợ phải thu chưa quá hạn thanh toán nhưng khó có khả năng thu hồi căn cứ vào dự kiến mức tổn thất để lập dự phòng.\nViệc tăng, giảm số dư dự phòng nợ phải thu khó đòi cần phải trích lập tại ngày kết thúc năm tài chính được ghi nhận vào chi phí quản lý doanh nghiệp."
+  },
+  {
+    "instruction": "Phân tích ý nghĩa của việc sử dụng phương pháp giá bình quân gia quyền để tính giá trị hàng tồn kho.",
+    "input": "8",
+    "output": "Việc sử dụng phương pháp giá bình quân gia quyền để tính giá trị hàng tồn kho có ý nghĩa trong việc làm mượt các biến động về giá mua hàng tồn kho theo thời gian. Thay vì phản ánh chi phí của từng lô hàng cụ thể, phương pháp này tính một giá trị trung bình cho tất cả các đơn vị hàng tồn kho có sẵn để bán. Điều này giúp báo cáo tài chính ít bị ảnh hưởng bởi những biến động giá ngắn hạn, tạo ra một bức tranh ổn định hơn về giá vốn hàng bán và giá trị hàng tồn kho cuối kỳ. Tuy nhiên, nó có thể không phản ánh chính xác chi phí của những lô hàng cụ thể nếu giá cả thị trường có sự thay đổi lớn và liên tục, và cũng có thể không tối ưu cho mục đích quản lý thuế so với các phương pháp khác như FIFO hoặc LIFO (nếu được phép)."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc trích lập dự phòng giảm giá hàng tồn kho vào giá vốn hàng bán đến lợi nhuận của công ty.",
+    "input": "8",
+    "output": "Việc trích lập dự phòng giảm giá hàng tồn kho được ghi nhận vào giá vốn hàng bán có tác động trực tiếp và tiêu cực đến lợi nhuận gộp và sau đó là lợi nhuận ròng của công ty. Khi giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc, công ty phải trích lập dự phòng, làm tăng giá vốn hàng bán. Điều này sẽ làm giảm lợi nhuận gộp, và kéo theo đó là giảm lợi nhuận trước thuế và lợi nhuận sau thuế. Đây là một nguyên tắc kế toán thận trọng, giúp đảm bảo rằng tài sản không được ghi nhận cao hơn giá trị thực tế có thể thu hồi, nhưng đồng thời cũng làm giảm lợi nhuận được báo cáo trong kỳ khi giá trị hàng tồn kho bị suy giảm."
+  },
+  {
+    "instruction": "Giải thích cách mà các chính sách kế toán đối với khoản đầu tư tài chính dài hạn ảnh hưởng đến việc đánh giá rủi ro đầu tư của công ty.",
+    "input": "8",
+    "output": "Các chính sách kế toán đối với khoản đầu tư tài chính dài hạn ảnh hưởng đến việc đánh giá rủi ro đầu tư của công ty như sau:\n1.  **Ghi nhận ban đầu theo giá gốc:** Việc ghi nhận đầu tư vào công ty con, liên kết hoặc công cụ vốn của đơn vị khác theo giá gốc ban đầu cộng chi phí liên quan trực tiếp có thể che khuất các biến động giá trị thị trường ngay sau khi đầu tư, nếu có. Điều này có nghĩa là giá trị được báo cáo có thể không phản ánh kịp thời giá trị thực tế nếu thị trường thay đổi.\n2.  **Dự phòng tổn thất dựa trên lỗ của bên được đầu tư:** Chính sách trích lập dự phòng khi công ty con/liên kết bị lỗ hoặc khi giá trị hợp lý không xác định được, dựa trên chênh lệch giữa vốn góp và vốn chủ sở hữu thực có của bên được đầu tư, cho phép công ty phản ánh một phần rủi ro suy giảm giá trị. Tuy nhiên, việc này chỉ xảy ra khi có tổn thất thực tế được ghi nhận hoặc xác định được, chứ không phải theo biến động thị trường hàng ngày. Điều này giúp nhà đầu tư nhìn thấy mức độ thiệt hại tiềm tàng khi các khoản đầu tư hoạt động không hiệu quả.\n3.  **Thiếu thông tin giá trị hợp lý:** Đối với các khoản đầu tư vào công cụ vốn không xác định được giá trị hợp lý tại thời điểm báo cáo (như đã nói ở thuyết minh V.2 - Chunk 12), việc đánh giá rủi ro trở nên khó khăn hơn. Nhà đầu tư không thể biết giá trị thị trường thực tế của các khoản đầu tư này, gây ra sự không chắc chắn về giá trị thực của tài sản và mức độ rủi ro tiềm ẩn.
+Tổng thể, các chính sách này cung cấp một cái nhìn thận trọng về rủi ro khi có dấu hiệu suy giảm giá trị rõ ràng, nhưng việc thiếu thông tin giá trị hợp lý cho một số khoản đầu tư có thể hạn chế khả năng nhà đầu tư đánh giá đầy đủ và kịp thời rủi ro thị trường đối với danh mục đầu tư dài hạn của công ty."
+  },
+  {
+    "instruction": "Phương pháp khấu hao tài sản cố định của công ty là gì?",
+    "input": "9",
+    "output": "Tài sản cố định được khấu hao theo phương pháp đường thẳng dựa trên thời gian sử dụng ước tính của tài sản."
+  },
+  {
+    "instruction": "Thời gian hữu dụng ước tính của phương tiện vận tải, truyền dẫn là bao nhiêu năm?",
+    "input": "9",
+    "output": "Thời gian hữu dụng ước tính của phương tiện vận tải, truyền dẫn là 6 năm."
+  },
+  {
+    "instruction": "Khi nào chi phí xây dựng cơ bản dở dang được kết chuyển ghi tăng tài sản?",
+    "input": "9",
+    "output": "Chi phí xây dựng cơ bản dở dang được kết chuyển ghi tăng tài sản khi công trình hoàn thành, việc nghiệm thu tổng thể đã thực hiện xong, tài sản được bàn giao và đưa vào trạng thái sẵn sàng sử dụng."
+  },
+  {
+    "instruction": "Sự khác biệt trong việc ghi nhận chi phí phát sinh sau ghi nhận ban đầu giữa TSCĐ hữu hình và Bất động sản đầu tư là gì?",
+    "input": "9",
+    "output": "Đối với TSCĐ hữu hình, các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai. Các chi phí không thỏa mãn điều kiện trên được ghi nhận là chi phí trong kỳ.\nĐối với Bất động sản đầu tư, chi phí liên quan phát sinh sau ghi nhận ban đầu được ghi nhận là chi phí kinh doanh trong kỳ, trừ khi chi phí này có khả năng chắc chắn làm cho bất động sản đầu tư tạo ra lợi ích kinh tế trong tương lai nhiều hơn mức hoạt động được đánh giá ban đầu thì được ghi tăng nguyên giá bất động sản đầu tư. Về cơ bản, nguyên tắc là tương tự nhau, đều yêu cầu chi phí phải làm tăng lợi ích kinh tế trong tương lai để được vốn hóa."
+  },
+  {
+    "instruction": "Nguyên tắc kế toán các hợp đồng hợp tác kinh doanh (BCC) liên quan đến việc ghi nhận lợi nhuận như thế nào?",
+    "input": "9",
+    "output": "Đối với các BCC phân chia lợi nhuận mà Công ty được hưởng một khoản lợi nhuận cố định, Công ty ghi nhận toàn bộ doanh thu, chi phí và lợi nhuận sau thuế của BCC trên Báo cáo kết quả hoạt động kinh doanh. Đồng thời, ghi nhận toàn bộ Lợi nhuận sau thuế của BCC vào chỉ tiêu Lợi nhuận sau thuế chưa phân phối của Bảng cân đối kế toán."
+  },
+  {
+    "instruction": "Đánh giá mức độ ảnh hưởng của chính sách vốn hóa chi phí xây dựng cơ bản dở dang đến báo cáo tài chính của công ty.",
+    "input": "9",
+    "output": "Chính sách vốn hóa chi phí xây dựng cơ bản dở dang của công ty quy định rằng các chi phí liên quan trực tiếp đến tài sản đang trong quá trình xây dựng được ghi nhận theo giá gốc và không tính khấu hao cho đến khi công trình hoàn thành, nghiệm thu và sẵn sàng sử dụng. Chính sách này có ảnh hưởng đáng kể đến báo cáo tài chính:\n1.  **Trên Bảng cân đối kế toán:** Giúp tăng giá trị tài sản trên bảng cân đối kế toán (trong khoản mục chi phí xây dựng cơ bản dở dang), từ đó làm tăng tổng tài sản của công ty. Điều này có thể làm cho tình hình tài chính có vẻ mạnh hơn về mặt tài sản.\n2.  **Trên Báo cáo kết quả hoạt động kinh doanh:** Việc không tính khấu hao trong giai đoạn xây dựng giúp tránh được việc ghi nhận chi phí vào báo cáo kết quả hoạt động kinh doanh trong các kỳ này, từ đó làm tăng lợi nhuận được báo cáo trong các kỳ đó. Tuy nhiên, khi tài sản được đưa vào sử dụng, khấu hao sẽ bắt đầu được tính, làm tăng chi phí và giảm lợi nhuận trong các kỳ sau.\n3.  **Tác động đến dòng tiền:** Chính sách này không trực tiếp ảnh hưởng đến dòng tiền mà chỉ là bút toán kế toán. Tuy nhiên, việc trì hoãn ghi nhận chi phí (dưới dạng khấu hao) có thể tạo ra hình ảnh tích cực hơn về lợi nhuận trong giai đoạn phát triển dự án.\nNhìn chung, chính sách này cho phép công ty tập trung nguồn lực vào việc hoàn thành dự án mà không ảnh hưởng ngay lập tức đến lợi nhuận, nhưng đòi hỏi sự minh bạch trong việc thuyết minh và cần được đánh giá kỹ lưỡng về thời điểm và điều kiện vốn hóa."
+  },
+  {
+    "instruction": "Phân tích tác động của việc phân bổ chi phí trả trước theo phương pháp đường thẳng đến chi phí hoạt động kinh doanh hàng kỳ.",
+    "input": "9",
+    "output": "Việc phân bổ chi phí trả trước theo phương pháp đường thẳng có tác động làm cho chi phí hoạt động kinh doanh hàng kỳ trở nên ổn định và dễ dự đoán hơn. Cụ thể:\n-   **Tính ổn định:** Mỗi kỳ, một lượng chi phí cố định sẽ được ghi nhận vào chi phí hoạt động kinh doanh trong suốt thời gian phân bổ (ví dụ, công cụ, dụng cụ từ 12-36 tháng, chi phí bảo hiểm từ 12-36 tháng, chi phí thuê văn phòng 219 tháng). Điều này tránh được sự biến động lớn trong chi phí do việc chi tiền một lần, giúp báo cáo kết quả kinh doanh phản ánh một cách mượt mà hơn.\n-   **Dễ dự đoán:** Vì chi phí được phân bổ đều, việc lập kế hoạch và dự báo chi phí hoạt động trong tương lai trở nên đơn giản hơn đối với ban quản lý và các nhà đầu tư.\n-   **Phản ánh hợp lý:** Phương pháp này được coi là phản ánh hợp lý việc tiêu dùng lợi ích kinh tế của các chi phí trả trước theo thời gian, phù hợp với nguyên tắc phù hợp giữa doanh thu và chi phí.\nTuy nhiên, nếu lợi ích kinh tế mà các chi phí này mang lại không phát sinh đều theo thời gian, phương pháp đường thẳng có thể không phản ánh chính xác nhất hiệu quả hoạt động trong một số kỳ nhất định."
+  },
+  {
+    "instruction": "Với các nguyên tắc ghi nhận nợ phải trả đã nêu, hãy đánh giá khả năng công ty che giấu nợ hoặc không ghi nhận đủ nợ phải trả.",
+    "input": "9",
+    "output": "Dựa trên các nguyên tắc ghi nhận nợ phải trả được nêu trong chunk, công ty ghi nhận các khoản nợ phải trả cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được, và chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả. Việc phân loại nợ phải trả người bán và phải trả khác cũng được thực hiện rõ ràng. \n\nVới các nguyên tắc này, khả năng công ty che giấu nợ hoặc không ghi nhận đủ nợ phải trả **là thấp nếu các quy tắc được tuân thủ nghiêm ngặt và kiểm soát nội bộ hiệu quả**.\n\nTuy nhiên, vẫn có một số điểm cần lưu ý:\n*   **Tính khách quan của ước tính:** Việc ghi nhận 'chi phí phải trả' dựa trên 'ước tính hợp lý' có thể tiềm ẩn rủi ro nếu các ước tính này không đủ thận trọng hoặc bị thao túng. Nếu ước tính thấp hơn thực tế, nợ phải trả có thể bị ghi nhận thiếu.\n*   **Khả năng phát hiện sai sót:** Mặc dù nguyên tắc rõ ràng, việc phát hiện sai sót (cố ý hoặc không cố ý) vẫn phụ thuộc vào hiệu quả của hệ thống kiểm soát nội bộ và quy trình kiểm toán. Nếu có sự cố ý che giấu, các nguyên tắc này có thể bị lách.\n*   **Phân loại:** Việc phân loại giữa nợ phải trả người bán (thương mại) và nợ phải trả khác (phi thương mại) giúp minh bạch hóa, nhưng đôi khi các giao dịch phức tạp có thể bị phân loại sai để che giấu bản chất thực sự của nghĩa vụ.\n\nNhìn chung, các nguyên tắc kế toán đã được công bố là khá đầy đủ và phù hợp với chuẩn mực. Rủi ro che giấu nợ chủ yếu nằm ở việc thực thi và giám sát các nguyên tắc này, đặc biệt là tính chính xác và khách quan của các ước tính và việc tuân thủ các quy định."
+  },
+  {
+    "instruction": "Các khoản vay và nợ phải trả thuê tài chính được theo dõi như thế nào?",
+    "input": "10",
+    "output": "Các khoản vay và nợ phải trả thuê tài chính được theo dõi chi tiết theo từng đối tượng cho vay, cho nợ, từng khế ước vay nợ và từng loại tài sản vay nợ."
+  },
+  {
+    "instruction": "Khi nào chi phí đi vay được vốn hóa vào giá trị tài sản?",
+    "input": "10",
+    "output": "Chi phí đi vay được vốn hóa vào giá trị tài sản khi chi phí đó liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng."
+  },
+  {
+    "instruction": "Cách công ty xác định tỷ lệ vốn hóa cho chi phí đi vay chung là gì?",
+    "input": "10",
+    "output": "Đối với các khoản vốn vay chung có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang, chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong năm, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể."
+  },
+  {
+    "instruction": "Chi phí phải trả bao gồm những khoản mục nào?",
+    "input": "10",
+    "output": "Chi phí phải trả bao gồm các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước."
+  },
+  {
+    "instruction": "Nguyên tắc ghi nhận thặng dư vốn cổ phần là gì?",
+    "input": "10",
+    "output": "Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu, phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn. Chi phí trực tiếp liên quan đến việc phát hành bổ sung cổ phiếu và tái phát hành cổ phiếu quỹ được ghi giảm thặng dư vốn cổ phần."
+  },
+  {
+    "instruction": "Giải thích cách thức việc phân phối lợi nhuận cho các cổ đông có thể bị ảnh hưởng bởi các khoản mục phi tiền tệ.",
+    "input": "10",
+    "output": "Việc phân phối lợi nhuận cho các cổ đông của công ty có thể bị ảnh hưởng bởi các khoản mục phi tiền tệ nằm trong lợi nhuận sau thuế chưa phân phối, cụ thể là: lãi do đánh giá lại tài sản mang đi góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác. Mặc dù các khoản mục này góp phần làm tăng lợi nhuận kế toán (và do đó tăng lợi nhuận sau thuế chưa phân phối), nhưng chúng không tạo ra dòng tiền thực tế. Do đó, nếu lợi nhuận chưa phân phối chủ yếu đến từ các khoản mục phi tiền tệ này, công ty có thể có lợi nhuận trên sổ sách nhưng lại thiếu tiền mặt để chi trả cổ tức. Điều này buộc Ban Tổng Giám đốc phải cân nhắc kỹ khả năng chi trả cổ tức thực tế dựa trên luồng tiền, chứ không chỉ dựa vào số liệu lợi nhuận trên báo cáo kết quả kinh doanh."
+  },
+  {
+    "instruction": "Đánh giá tác động của chính sách vốn hóa chi phí đi vay đến lợi nhuận và giá trị tài sản của công ty.",
+    "input": "10",
+    "output": "Chính sách vốn hóa chi phí đi vay của công ty cho phép đưa các chi phí lãi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang vào nguyên giá tài sản thay vì ghi nhận trực tiếp vào chi phí trong kỳ. Chính sách này có tác động đáng kể:\n\n1.  **Đối với lợi nhuận:** Trong giai đoạn xây dựng/sản xuất tài sản dở dang, việc vốn hóa chi phí đi vay sẽ làm giảm chi phí tài chính được ghi nhận trên báo cáo kết quả hoạt động kinh doanh, từ đó làm tăng lợi nhuận trước thuế và lợi nhuận sau thuế trong các kỳ này. Tuy nhiên, khi tài sản hoàn thành và đi vào sử dụng, chi phí đi vay được vốn hóa sẽ được chuyển thành chi phí khấu hao trong suốt thời gian sử dụng hữu ích của tài sản, làm giảm lợi nhuận trong các kỳ tương lai.\n2.  **Đối với giá trị tài sản:** Việc vốn hóa chi phí đi vay làm tăng nguyên giá của tài sản trên bảng cân đối kế toán. Điều này làm tăng tổng giá trị tài sản của công ty, có thể cải thiện các chỉ số tài chính liên quan đến quy mô tài sản và sức khỏe tài chính. Tuy nhiên, nếu việc vốn hóa không được kiểm soát chặt chẽ, nó có thể làm thổi phồng giá trị tài sản và làm méo mó bức tranh thực tế về chi phí vốn của công ty trong một số trường hợp.
+\nTổng thể, chính sách này giúp phân bổ chi phí đi vay theo thời gian sử dụng của tài sản, phù hợp với nguyên tắc phù hợp. Tuy nhiên, nó cũng có thể ảnh hưởng đến khả năng so sánh lợi nhuận giữa các kỳ và cần được nhà đầu tư đánh giá cẩn thận để hiểu rõ bản chất của lợi nhuận được báo cáo."
+  },
+  {
+    "instruction": "Phân tích rủi ro tiềm ẩn nếu công ty có các khoản chi phí phải trả lớn chưa được ghi nhận do thiếu hóa đơn.",
+    "input": "10",
+    "output": "Theo định nghĩa về chi phí phải trả, chúng bao gồm các khoản phải trả cho hàng hóa, dịch vụ đã nhận được nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ kế toán. Nếu công ty có các khoản chi phí phải trả lớn chưa được ghi nhận vì lý do này, sẽ có một số rủi ro tiềm ẩn:\n\n1.  **Báo cáo tài chính không chính xác:** Việc không ghi nhận đầy đủ chi phí phải trả sẽ làm cho lợi nhuận được báo cáo trong kỳ cao hơn thực tế và nợ phải trả bị ghi nhận thấp hơn thực tế trên bảng cân đối kế toán. Điều này làm sai lệch bức tranh tài chính của công ty, gây hiểu lầm cho các bên liên quan như nhà đầu tư, chủ nợ.\n2.  **Rủi ro pháp lý và tuân thủ:** Việc không có đủ hóa đơn hoặc chứng từ để ghi nhận nợ có thể vi phạm các quy định về kế toán và thuế. Điều này có thể dẫn đến các khoản phạt từ cơ quan thuế hoặc các cuộc kiểm tra, thanh tra, gây tổn thất tài chính và uy tín.\n3.  **Rủi ro thanh khoản:** Mặc dù nợ chưa được ghi nhận, nghĩa vụ thanh toán vẫn tồn tại. Khi các hóa đơn hoặc hồ sơ được hoàn thiện và các khoản nợ này phải được thanh toán, nó có thể tạo ra áp lực bất ngờ lên dòng tiền của công ty, đặc biệt nếu công ty không có kế hoạch dự phòng cho các khoản này.\n4.  **Khó khăn trong quản lý:** Việc không nắm bắt đầy đủ các nghĩa vụ tài chính làm giảm khả năng quản lý hiệu quả tài chính và dòng tiền của công ty, gây khó khăn trong việc lập kế hoạch và ra quyết định."
+  },
+  {
+    "instruction": "Các điều kiện để ghi nhận doanh thu từ cung cấp dịch vụ là gì?",
+    "input": "11",
+    "output": "Để ghi nhận doanh thu từ cung cấp dịch vụ, cần thỏa mãn tất cả bốn (4) điều kiện sau:\n1.  Doanh thu được xác định tương đối chắc chắn (và người mua không còn quyền trả lại dịch vụ đã mua).\n2.  Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n3.  Xác định được phần công việc đã hoàn thành vào ngày kết thúc kỳ kế toán.\n4.  Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó."
+  },
+  {
+    "instruction": "Khi nào doanh thu bán bất động sản phân lô bán nền được ghi nhận?",
+    "input": "11",
+    "output": "Doanh thu bán bất động sản phân lô bán nền đối với hợp đồng không hủy ngang được ghi nhận khi thỏa mãn đồng thời tất cả 4 điều kiện sau:\n1.  Đã chuyển giao rủi ro và lợi ích gắn liền với quyền sử dụng đất cho người mua.\n2.  Doanh thu được xác định tương đối chắc chắn.\n3.  Xác định được chi phí liên quan đến giao dịch bán nền đất.\n4.  Công ty đã thu được hoặc chắc chắn sẽ thu được lợi ích kinh tế từ giao dịch bán nền đất."
+  },
+  {
+    "instruction": "Doanh thu hoạt động tài chính bao gồm những khoản mục nào và được ghi nhận dựa trên cơ sở gì?",
+    "input": "11",
+    "output": "Doanh thu hoạt động tài chính bao gồm tiền lãi. Tiền lãi được ghi nhận trên cơ sở dồn tích, được xác định trên số dư các tài khoản tiền gửi và lãi suất thực tế từng kỳ. Doanh thu hoạt động tài chính được ghi nhận khi có khả năng thu được lợi ích từ giao dịch đó và doanh thu được xác định tương đối chắc chắn."
+  },
+  {
+    "instruction": "Nguyên tắc phù hợp trong ghi nhận giá vốn hàng bán được áp dụng như thế nào?",
+    "input": "11",
+    "output": "Nguyên tắc phù hợp trong ghi nhận giá vốn hàng bán được áp dụng theo cách giá vốn hàng bán và doanh thu được ghi nhận đồng thời. Các chi phí vượt trên mức tiêu hao bình thường được ghi nhận ngay vào giá vốn theo nguyên tắc thận trọng."
+  },
+  {
+    "instruction": "Chi phí tài chính bao gồm những loại chi phí và khoản lỗ nào?",
+    "input": "11",
+    "output": "Chi phí tài chính bao gồm:\n- Các khoản chi phí hoặc khoản lỗ liên quan đến các hoạt động đầu tư tài chính.\n- Chi phí đi vay vốn.\n- Chi phí góp vốn liên doanh, liên kết.\n- Dự phòng giảm giá đầu tư tài chính.\n- Chi phí tài chính khác."
+  },
+  {
+    "instruction": "Đánh giá mức độ chặt chẽ của các nguyên tắc ghi nhận doanh thu bất động sản của công ty.",
+    "input": "11",
+    "output": "Các nguyên tắc ghi nhận doanh thu bất động sản của công ty được trình bày khá chặt chẽ và tuân thủ các chuẩn mực kế toán Việt Nam, đặc biệt khi yêu cầu nhiều điều kiện phải thỏa mãn đồng thời:\n\n*   **Đối với chuyển nhượng bất động sản hoàn thành:** Yêu cầu đến 5 điều kiện, bao gồm hoàn thành toàn bộ và bàn giao, chuyển giao rủi ro và lợi ích, không còn quyền quản lý, doanh thu xác định chắc chắn, thu được lợi ích kinh tế, và xác định được chi phí. Đây là các điều kiện cơ bản để đảm bảo doanh thu được ghi nhận khi giao dịch thực sự hoàn tất và có tính chất thương mại.\n*   **Đối với phân lô bán nền:** Yêu cầu 4 điều kiện đối với hợp đồng không hủy ngang, tập trung vào chuyển giao rủi ro quyền sử dụng đất, doanh thu chắc chắn, xác định chi phí và thu được lợi ích kinh tế. Việc này cũng khá chặt chẽ, đảm bảo tính chắc chắn của giao dịch.\n\nNhìn chung, các nguyên tắc này đặt ra các ngưỡng cao để ghi nhận doanh thu, điều này làm tăng tính tin cậy của các số liệu doanh thu trên báo cáo tài chính. Việc yêu cầu xác định chắc chắn doanh thu và khả năng thu được lợi ích kinh tế giúp giảm thiểu rủi ro ghi nhận doanh thu ảo hoặc doanh thu từ các giao dịch không chắc chắn. Do đó, mức độ chặt chẽ là tương đối cao."
+  },
+  {
+    "instruction": "Phân tích tác động của thuế suất thuế TNDN 20% đến lợi nhuận sau thuế của công ty.",
+    "input": "11",
+    "output": "Thuế suất thuế thu nhập doanh nghiệp (TNDN) 20% là mức phổ biến áp dụng cho các doanh nghiệp tại Việt Nam. Tác động của thuế suất này đến lợi nhuận sau thuế của công ty là trực tiếp và đáng kể:\n\n*   **Giảm lợi nhuận ròng:** Với mỗi 100 VND lợi nhuận trước thuế, 20 VND sẽ được nộp làm thuế TNDN, làm giảm lợi nhuận sau thuế xuống còn 80 VND. Điều này trực tiếp ảnh hưởng đến số tiền mà công ty có thể giữ lại để tái đầu tư hoặc phân phối cho cổ đông.\n*   **Khả năng chi trả cổ tức:** Lợi nhuận sau thuế là một trong những cơ sở để công ty xem xét chi trả cổ tức. Mức thuế suất 20% sẽ làm giảm phần lợi nhuận sẵn có cho mục đích này.\n*   **Dòng tiền:** Khoản thuế phải nộp ảnh hưởng đến dòng tiền ra của công ty, làm giảm tiền mặt có sẵn.
+\nDo đó, mức thuế suất 20% là một yếu tố chi phí quan trọng mà công ty phải tính đến trong mọi hoạt động kinh doanh để tối ưu hóa lợi nhuận sau thuế. Mức này không quá cao cũng không quá thấp so với khu vực, nhưng bất kỳ biến động nào trong lợi nhuận trước thuế sẽ trực tiếp được phản ánh vào chi phí thuế TNDN và lợi nhuận sau thuế theo tỷ lệ 20%."
+  },
+  {
+    "instruction": "Giải thích tại sao việc xác định các bên liên quan lại quan trọng trong báo cáo tài chính.",
+    "input": "11",
+    "output": "Việc xác định các bên liên quan là cực kỳ quan trọng trong báo cáo tài chính vì nhiều lý do:\n\n1.  **Tính minh bạch và trung thực:** Các giao dịch với bên liên quan có thể không được thực hiện theo các điều khoản thị trường thông thường (ví dụ: giá cả, lãi suất ưu đãi, điều khoản thanh toán dài hạn). Việc thuyết minh các giao dịch này giúp người đọc báo cáo tài chính hiểu rõ hơn về bản chất của các hoạt động của công ty và đánh giá tính trung thực, hợp lý của các giao dịch.\n2.  **Đánh giá rủi ro:** Giao dịch với bên liên quan có thể tiềm ẩn rủi ro về xung đột lợi ích, thao túng giá, hoặc chuyển dịch lợi nhuận. Việc biết rõ ai là bên liên quan và các giao dịch với họ giúp nhà đầu tư và các bên khác đánh giá rủi ro tài chính và hoạt động của công ty.\n3.  **Tuân thủ chuẩn mực:** Chuẩn mực kế toán Việt Nam số 26 (VAS 26) yêu cầu thuyết minh thông tin về các bên liên quan và giao dịch của họ. Việc tuân thủ chuẩn mực này đảm bảo báo cáo tài chính được lập theo quy định, tăng tính pháp lý và tin cậy.\n4.  **Ảnh hưởng đến tình hình tài chính:** Các giao dịch với bên liên quan có thể có ảnh hưởng trọng yếu đến doanh thu, chi phí, tài sản và nợ phải trả của công ty. Ví dụ, một khoản vay không lãi suất từ bên liên quan có thể cải thiện tình hình tài chính của công ty trong ngắn hạn nhưng cũng tiềm ẩn rủi ro về sự phụ thuộc.\n5.  **Chất lượng thông tin:** Thông tin về bên liên quan cung cấp cái nhìn sâu sắc hơn về cấu trúc quản trị và quyền kiểm soát của công ty, giúp người sử dụng báo cáo tài chính đưa ra quyết định sáng suốt hơn."
+  },
+  {
+    "instruction": "Dự báo ảnh hưởng của chính sách kế toán công cụ tài chính của công ty đến việc đánh giá giá trị tài sản và nợ.",
+    "input": "11",
+    "output": "Chính sách kế toán công cụ tài chính của công ty, tuân thủ Thông tư 210/2009/TT-BTC, tập trung vào việc phân loại ban đầu và ghi nhận theo nguyên giá cộng chi phí giao dịch trực tiếp. Tuy nhiên, điểm đáng chú ý là \"Hiện tại không có yêu cầu xác định lại giá trị của các công cụ tài chính sau ghi nhận ban đầu\".\n\nĐiều này sẽ ảnh hưởng đến việc đánh giá giá trị tài sản và nợ như sau:\n\n*   **Đối với tài sản tài chính (tiền gửi, phải thu):** Vì các công cụ này thường có kỳ hạn ngắn và giá trị hợp lý thường tương đương với giá trị ghi sổ, việc không xác định lại giá trị sau ghi nhận ban đầu có thể không gây ra sự sai lệch đáng kể. Các khoản phải thu khách hàng và tiền và các khoản tương đương tiền sẽ được đánh giá khá chính xác. Tuy nhiên, nếu có những khoản phải thu có rủi ro cao hoặc cần đánh giá lại, chính sách này có thể không phản ánh kịp thời sự suy giảm giá trị.\n*   **Đối với nợ phải trả tài chính (phải trả người bán, vay và nợ):** Tương tự, nếu các khoản nợ này có kỳ hạn ngắn, giá trị ghi sổ có thể gần với giá trị hợp lý. Tuy nhiên, đối với các khoản vay và nợ dài hạn, đặc biệt nếu lãi suất thị trường thay đổi đáng kể so với lãi suất ban đầu của khoản vay, việc không xác định lại giá trị hợp lý có thể làm cho giá trị ghi sổ không phản ánh đúng giá trị thực tế của nghĩa vụ nợ. Điều này có thể làm méo mó việc đánh giá rủi ro lãi suất hoặc rủi ro vỡ nợ nếu thị trường thay đổi bất lợi.\n\nTổng thể, chính sách này có thể làm giảm tính 'hợp lý' của việc trình bày tài sản và nợ trên báo cáo tài chính nếu có những biến động lớn trên thị trường tài chính hoặc đối với các công cụ tài chính dài hạn. Việc thiếu thông tin về giá trị hợp lý của các khoản mục dài hạn sau ghi nhận ban đầu có thể khiến các nhà đầu tư khó đánh giá chính xác giá trị thực và rủi ro liên quan đến các công cụ tài chính của công ty."
+  },
+  {
+    "instruction": "Số tiền mặt của công ty tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "12",
+    "output": "Số tiền mặt của công ty tại ngày 31/03/2025 là 536.649.291 VND."
+  },
+  {
+    "instruction": "Tổng giá gốc các khoản đầu tư tài chính vào công ty con tại ngày 31/03/2025 là bao nhiêu?",
+    "input": "12",
+    "output": "Tổng giá gốc các khoản đầu tư tài chính vào công ty con tại ngày 31/03/2025 là 107.300.000.000 VND."
+  },
+  {
+    "instruction": "Công ty Cổ phần Đầu tư Bất động sản Primo kinh doanh có lãi hay lỗ trong kỳ báo cáo?",
+    "input": "12",
+    "output": "Trong kỳ kế toán kết thúc ngày 31 tháng 03 năm 2025, Công ty Cổ phần Đầu tư Bất động sản Primo kinh doanh lỗ."
+  },
+  {
+    "instruction": "So sánh số tiền gửi ngân hàng không kỳ hạn tại Ngân hàng TMCP Công thương Việt Nam giữa hai kỳ báo cáo.",
+    "input": "12",
+    "output": "Số tiền gửi ngân hàng không kỳ hạn tại Ngân hàng TMCP Công thương Việt Nam tại ngày 31/03/2025 là 4.110.404.716 VND, tăng đáng kể so với 736.446 VND tại ngày 01/10/2024."
+  },
+  {
+    "instruction": "Dự phòng đầu tư tài chính dài hạn đã biến động như thế nào trong kỳ 01/10/2024 đến 31/03/2025?",
+    "input": "12",
+    "output": "Trong kỳ 01/10/2024 đến 31/03/2025, dự phòng đầu tư tài chính dài hạn đã tăng. Cụ thể, số đầu kỳ là 1.207.614.256 VND, sau đó công ty đã trích lập dự phòng bổ sung 1.006.690.907 VND, dẫn đến số cuối kỳ là 2.214.305.163 VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ dự phòng trên tổng giá gốc đầu tư vào công ty con tại ngày 31/03/2025.",
+    "input": "12",
+    "output": "Tại ngày 31/03/2025:\n- Giá gốc đầu tư vào công ty con: 107.300.000.000 VND\n- Dự phòng đầu tư vào công ty con: 2.214.305.163 VND\n\nTỷ lệ dự phòng trên tổng giá gốc đầu tư vào công ty con = (2.214.305.163 VND / 107.300.000.000 VND) * 100% ≈ **2.06%**."
+  },
+  {
+    "instruction": "Đánh giá rủi ro của việc không xác định được giá trị hợp lý của các khoản đầu tư tài chính.",
+    "input": "12",
+    "output": "Việc công ty không trình bày giá trị hợp lý của các khoản đầu tư tài chính (đầu tư vào công ty con, công ty liên doanh, liên kết, và đơn vị khác) với lý do cổ phiếu của các công ty này chưa được niêm yết trên thị trường chứng khoán, tiềm ẩn rủi ro đáng kể:\n\n1.  **Thiếu minh bạch:** Người đọc báo cáo tài chính, đặc biệt là nhà đầu tư, không thể đánh giá được giá trị thực tế của các khoản đầu tư này tại thời điểm báo cáo. Điều này làm giảm tính minh bạch và độ tin cậy của thông tin tài chính.\n2.  **Đánh giá sai lệch về tài sản:** Giá trị ghi sổ (giá gốc trừ dự phòng) có thể không phản ánh đúng giá trị mà công ty có thể thu hồi được nếu cần thanh lý các khoản đầu tư này. Nếu giá trị thực tế thấp hơn giá trị ghi sổ, tài sản của công ty có thể bị đánh giá quá cao.\n3.  **Rủi ro tiềm ẩn:** Việc không có giá trị hợp lý khiến việc phát hiện sớm các rủi ro suy giảm giá trị không được phản ánh kịp thời trên báo cáo. Mặc dù có dự phòng, nhưng dự phòng được trích lập dựa trên lỗ của công ty con/liên kết, không phải dựa trên biến động giá thị trường.\n4.  **Khó khăn trong ra quyết định:** Đối với ban quản lý, việc thiếu thông tin giá trị hợp lý có thể gây khó khăn trong việc đánh giá hiệu quả đầu tư và đưa ra các quyết định chiến lược về việc tiếp tục nắm giữ hay thoái vốn."
+  },
+  {
+    "instruction": "Phân tích ý nghĩa của việc Công ty Cổ phần Đầu tư Bất động sản Primo kinh doanh lỗ đối với First Real, xét đến tỷ lệ vốn góp.",
+    "input": "12",
+    "output": "Việc Công ty Cổ phần Đầu tư Bất động sản Primo kinh doanh lỗ trong kỳ kế toán kết thúc ngày 31 tháng 03 năm 2025 có ý nghĩa tiêu cực đáng kể đối với First Real, đặc biệt khi xét đến tỷ lệ vốn góp:\n\n1.  **Ảnh hưởng đến lợi nhuận hợp nhất:** Với tỷ lệ vốn góp chiếm 99,9% vốn điều lệ, Primo là công ty con của First Real. Kết quả kinh doanh lỗ của Primo sẽ được hợp nhất vào báo cáo tài chính của First Real, làm giảm lợi nhuận hợp nhất của công ty mẹ. Điều này có thể ảnh hưởng xấu đến lợi nhuận ròng tổng thể của First Real.\n2.  **Tăng dự phòng tổn thất:** Việc Primo kinh doanh lỗ là cơ sở để First Real trích lập dự phòng tổn thất cho khoản đầu tư vào công ty con, như đã thấy dự phòng tăng từ 1.207.614.256 VND lên 2.214.305.163 VND. Khoản trích lập dự phòng này được ghi nhận vào chi phí tài chính (theo Thuyết minh VI.5 - Chunk 19), trực tiếp làm giảm lợi nhuận của First Real.\n3.  **Rủi ro tài chính:** Việc công ty con kinh doanh lỗ kéo dài có thể làm suy yếu tài chính của First Real, đặc biệt nếu Primo cần thêm vốn để duy trì hoạt động. First Real, với tư cách là công ty mẹ, có thể phải đối mặt với áp lực phải hỗ trợ tài chính cho Primo.\n4.  **Giá trị tài sản giảm:** Dù giá gốc đầu tư vào Primo không đổi, nhưng dự phòng tổn thất tăng làm giảm giá trị sổ sách ròng của khoản đầu tư này, ảnh hưởng đến tổng tài sản của First Real."
+  },
+  {
+    "instruction": "Tổng giá trị phải thu ngắn hạn của khách hàng tại 31/03/2025 là bao nhiêu?",
+    "input": "13",
+    "output": "Tổng giá trị phải thu ngắn hạn của khách hàng tại 31/03/2025 là 18.761.105.384 VND."
+  },
+  {
+    "instruction": "Khoản trả trước cho người bán ngắn hạn của công ty đã thay đổi như thế nào giữa 01/10/2024 và 31/03/2025?",
+    "input": "13",
+    "output": "Khoản trả trước cho người bán ngắn hạn của công ty đã giảm từ 160.777.511.462 VND tại 01/10/2024 xuống 83.010.197.347 VND tại 31/03/2025. Mức giảm là 77.767.314.115 VND."
+  },
+  {
+    "instruction": "Công ty Cổ phần và Đầu tư Xây dựng Điện Bàn đang thực hiện dự án nào cho First Real?",
+    "input": "13",
+    "output": "Công ty Cổ phần và Đầu tư Xây dựng Điện Bàn đang thực hiện dự án Khu đô thị Viêm Trung và dự án Khu đô thị Ngân cầu villa cho First Real."
+  },
+  {
+    "instruction": "Các khoản phải thu khác dài hạn giảm bao nhiêu giữa hai kỳ báo cáo?",
+    "input": "13",
+    "output": "Các khoản phải thu khác dài hạn giảm từ 156.976.000.000 VND tại 01/10/2024 xuống 108.100.000.000 VND tại 31/03/2025. Mức giảm là 48.876.000.000 VND."
+  },
+  {
+    "instruction": "Phân tích rủi ro của các khoản phải thu khác dài hạn từ các đối tượng cá nhân.",
+    "input": "13",
+    "output": "Các khoản phải thu khác dài hạn từ các đối tượng cá nhân (108.100.000.000 VND tại 31/03/2025) tiềm ẩn nhiều rủi ro:\n\n1.  **Rủi ro tín dụng cao:** Các khoản phải thu từ cá nhân thường có rủi ro tín dụng cao hơn so với từ các tổ chức hoặc doanh nghiệp lớn do khả năng tài chính của cá nhân có thể không ổn định hoặc khó kiểm soát. Nếu các cá nhân này gặp khó khăn tài chính, khả năng thu hồi nợ sẽ bị ảnh hưởng nghiêm trọng.\n2.  **Thông tin minh bạch hạn chế:** Thông tin về tình hình tài chính của các cá nhân thường không được công khai và minh bạch như doanh nghiệp, gây khó khăn cho việc đánh giá khả năng thanh toán của họ.\n3.  **Khó khăn trong việc thu hồi:** Quá trình thu hồi nợ từ cá nhân có thể phức tạp, tốn kém thời gian và chi phí pháp lý nếu xảy ra tranh chấp hoặc chậm trễ. Việc các khoản này được mô tả là \"ủy thác đầu tư cho các cá nhân để đầu tư trong lĩnh vực mua bán sáp nhập doanh nghiệp và hợp tác đầu tư phát triển kinh doanh dịch vụ - du lịch\" càng làm tăng độ phức tạp và rủi ro.\n4.  **Phụ thuộc vào tài sản đảm bảo:** Mặc dù các khoản này được bảo đảm bằng tài sản thế chấp theo hợp đồng thế chấp, nhưng giá trị và tính thanh khoản của tài sản thế chấp cần được đánh giá kỹ lưỡng. Nếu thị trường bất động sản suy thoái hoặc giá trị tài sản đảm bảo giảm, công ty có thể không thu hồi đủ nợ.\n5.  **Tác động đến khả năng hoạt động liên tục:** Với một khoản phải thu dài hạn lớn như vậy, bất kỳ rủi ro không thu hồi được nào cũng sẽ ảnh hưởng lớn đến tình hình tài chính và khả năng hoạt động liên tục của công ty, đặc biệt trong bối cảnh công ty đã có những vấn đề về nợ quá hạn."
+  },
+  {
+    "instruction": "Đánh giá mức độ rủi ro liên quan đến khoản phải thu của Công ty Cổ phần Tập đoàn Đầu tư GAIA.",
+    "input": "13",
+    "output": "Dựa trên thuyết minh V.3, khoản phải thu ngắn hạn của khách hàng từ Công ty Cổ phần Tập đoàn Đầu tư GAIA là 9.616.234.047 VND và đáng chú ý là khoản này đã được trích lập dự phòng toàn bộ với cùng giá trị (9.616.234.047 VND). Điều này cho thấy công ty đã đánh giá rất cao rủi ro khó đòi của khoản nợ này, thậm chí có thể coi là không có khả năng thu hồi. Việc dự phòng 100% cho thấy công ty không kỳ vọng thu hồi được khoản tiền này. Mức độ rủi ro đối với khoản phải thu này là **rất cao**, và nó đã được phản ánh vào chi phí, làm giảm lợi nhuận của công ty. Đây là một điểm đáng ngại về chất lượng tài sản của công ty."
+  },
+  {
+    "instruction": "Tính tỷ lệ dự phòng phải thu ngắn hạn khó đòi trên tổng phải thu ngắn hạn của khách hàng tại 31/03/2025.",
+    "input": "13",
+    "output": "Tại ngày 31/03/2025:\n- Tổng phải thu ngắn hạn của khách hàng: 18.761.105.384 VND\n- Dự phòng phải thu ngắn hạn khó đòi (cho khoản này): 9.616.234.047 VND\n\nTỷ lệ dự phòng phải thu ngắn hạn khó đòi trên tổng phải thu ngắn hạn của khách hàng = (9.616.234.047 VND / 18.761.105.384 VND) * 100% ≈ **51.26%**."
+  },
+  {
+    "instruction": "Phân tích các biện pháp bảo đảm cho các khoản tạm ứng và ủy thác đầu tư của công ty.",
+    "input": "13",
+    "output": "Các khoản tạm ứng cho nhân viên, các khoản ủy thác đầu tư cho cá nhân, và các khoản trả trước cho người bán của công ty được bảo đảm bằng một số biện pháp:\n\n1.  **Cổ phiếu của Công ty:** Được bảo đảm bằng 17.581.691 cổ phiếu của chính First Real.\n2.  **Cổ phiếu của các công ty niêm yết khác:** Được bảo đảm bằng 10.239.500 cổ phiếu của các công ty niêm yết khác, do các cổ đông lớn của Công ty nắm giữ.\n3.  **Hợp đồng cầm cố cổ phiếu:** Các biện pháp bảo đảm này được thiết lập thông qua các hợp đồng cầm cố cổ phiếu được ký giữa Công ty và các cổ đông cá nhân.\n4.  **Đăng ký giao dịch tài sản đảm bảo và phong tỏa:** Các cổ phiếu này đã được đăng ký giao dịch tài sản đảm bảo và được phong tỏa tại các công ty chứng khoán, tăng tính pháp lý và an toàn cho khoản bảo đảm.\n\nViệc sử dụng cổ phiếu (cả của công ty và các công ty niêm yết khác) làm tài sản đảm bảo, cùng với việc phong tỏa tại công ty chứng khoán, là một biện pháp giúp giảm thiểu rủi ro cho các khoản tạm ứng và ủy thác đầu tư. Tuy nhiên, rủi ro vẫn tồn tại nếu giá trị cổ phiếu giảm mạnh hoặc nếu có các vấn đề pháp lý phức tạp trong quá trình thực hiện quyền bảo đảm."
+  },
+  {
+    "instruction": "Dự báo tác động của việc Công ty Cổ phần Đầu tư Phát triển Hạ Tầng Quảng Nam hoàn tất nghĩa vụ để thanh lý hợp đồng đến dòng tiền của First Real.",
+    "input": "13",
+    "output": "Khoản phải thu ngắn hạn từ Công ty Cổ phần Đầu tư Phát triển Hạ Tầng Quảng Nam là 11.108.814.128 VND. Việc công ty này hoàn tất nghĩa vụ để thanh lý hợp đồng hợp tác đầu tư liên quan đến Dự án Khu đô thị mới An Phú sẽ có tác động tích cực đến dòng tiền của First Real. Cụ thể, khi các nghĩa vụ được hoàn tất, First Real dự kiến sẽ thu hồi được khoản tiền này. Điều này sẽ làm tăng lưu chuyển tiền từ hoạt động kinh doanh (nếu đây là khoản phải thu liên quan đến hoạt động kinh doanh) hoặc từ hoạt động đầu tư (nếu bản chất là đầu tư), giúp cải thiện vị thế tiền mặt và khả năng thanh khoản của First Real. Việc thu hồi một khoản phải thu lớn như vậy là đặc biệt quan trọng trong bối cảnh công ty đang đối mặt với các vấn đề về khả năng hoạt động liên tục và nợ quá hạn thanh toán."
+  },
+  {
+    "instruction": "Tổng giá gốc nợ xấu tại 31/03/2025 là bao nhiêu?",
+    "input": "14",
+    "output": "Tổng giá gốc nợ xấu tại 31/03/2025 là 27.797.284.047 VND."
+  },
+  {
+    "instruction": "Giá trị hàng hóa bất động sản tại Dự án Khu dân cư An Phú tại 31/03/2025 là bao nhiêu?",
+    "input": "14",
+    "output": "Giá trị hàng hóa bất động sản tại Dự án Khu dân cư An Phú tại 31/03/2025 là 222.138.999.443 VND."
+  },
+  {
+    "instruction": "Chi phí trả trước ngắn hạn đã thay đổi như thế nào giữa hai kỳ báo cáo?",
+    "input": "14",
+    "output": "Chi phí trả trước ngắn hạn đã giảm từ 257.687.515 VND tại 01/10/2024 xuống 85.490.863 VND tại 31/03/2025. Mức giảm là 172.196.652 VND."
+  },
+  {
+    "instruction": "Dự án Khu nhà ở thương mại Trường Thịnh và Mỹ Cảnh có giá trị hàng hóa bất động sản thay đổi như thế nào?",
+    "input": "14",
+    "output": "Giá trị hàng hóa bất động sản tại Dự án Khu nhà ở thương mại Trường Thịnh và Mỹ Cảnh đã giảm từ 41.376.875.170 VND tại 01/10/2024 xuống 30.687.661.564 VND tại 31/03/2025. Mức giảm là 10.689.213.606 VND."
+  },
+  {
+    "instruction": "Đánh giá mức độ rủi ro của các khoản nợ xấu có thời gian quá hạn hơn 3 năm.",
+    "input": "14",
+    "output": "Các khoản nợ xấu có thời gian quá hạn hơn 3 năm bao gồm Công ty Cổ phần Tập đoàn Đầu tư GAIA (9.616.234.047 VND), Công ty Cổ phần và Đầu tư Xây dựng Điện Bàn (13.181.050.000 VND), và Công ty Cổ phần Tân Cường Thành (5.000.000.000 VND), với tổng giá gốc là 27.797.284.047 VND. Mức độ rủi ro của các khoản nợ này là **rất cao**.\n\n-   **Thời gian quá hạn dài:** Việc nợ quá hạn hơn 3 năm cho thấy khả năng thu hồi là cực kỳ thấp. Theo nguyên tắc kế toán thông thường, các khoản nợ quá hạn lâu như vậy thường được xem là khó đòi hoặc không có khả năng thu hồi.\n-   **Giá trị có thể thu hồi thấp:** Đối với Công ty Cổ phần Tập đoàn Đầu tư GAIA và Công ty Cổ phần Tân Cường Thành, giá trị có thể thu hồi là 0 VND, cho thấy công ty không kỳ vọng thu hồi được bất kỳ phần nào của các khoản này. Đối với Công ty Cổ phần và Đầu tư Xây dựng Điện Bàn, chỉ có 8.181.050.000 VND (tức khoảng 62%) có thể thu hồi được.\n-   **Đã trích lập dự phòng:** Mặc dù số dư dự phòng cho nợ phải thu ngắn hạn (19.616.234.047 VND) không thay đổi trong kỳ, nhưng việc tồn tại các khoản nợ xấu lớn và không có khả năng thu hồi cho thấy chất lượng tài sản của công ty đang bị ảnh hưởng nghiêm trọng.
+\nNhững khoản nợ này gây gánh nặng lên báo cáo tài chính, làm giảm lợi nhuận do trích lập dự phòng và ảnh hưởng tiêu cực đến dòng tiền nếu công ty không thể thu hồi."
+  },
+  {
+    "instruction": "Tính tỷ lệ hàng hóa bất động sản trên tổng hàng tồn kho tại ngày 31/03/2025.",
+    "input": "14",
+    "output": "Tại ngày 31/03/2025:\n- Hàng hóa bất động sản: 253.493.094.702 VND\n- Tổng hàng tồn kho: 277.951.009.293 VND\n\nTỷ lệ hàng hóa bất động sản trên tổng hàng tồn kho = (253.493.094.702 VND / 277.951.009.293 VND) * 100% ≈ **91.20%**."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không trích lập dự phòng bổ sung nợ xấu trong kỳ đến lợi nhuận của công ty.",
+    "input": "14",
+    "output": "Theo thuyết minh V.6, trong kỳ từ 01/10/2024 đến 31/03/2025, công ty không trích lập dự phòng bổ sung nợ phải thu khó đòi. Số dư dự phòng đầu kỳ và cuối kỳ cho nợ phải thu ngắn hạn đều là 19.616.234.047 VND. \n\nTác động của việc này đến lợi nhuận của công ty là:\n\n*   **Không làm giảm lợi nhuận trong kỳ:** Việc không trích lập bổ sung dự phòng có nghĩa là không có khoản chi phí nào được ghi nhận vào chi phí quản lý doanh nghiệp (theo chính sách kế toán tại Thuyết minh IV.4 - Chunk 8) trong kỳ báo cáo do nợ xấu tăng thêm hoặc khả năng thu hồi giảm đi. Điều này có thể giúp duy trì mức lợi nhuận cao hơn so với trường hợp phải trích lập thêm.\n*   **Rủi ro đánh giá thấp rủi ro:** Tuy nhiên, nếu thực tế có các khoản nợ mới trở nên khó đòi hoặc tình hình tài chính của các con nợ xấu hiện tại trở nên tệ hơn mà công ty không trích lập bổ sung, điều này có thể dẫn đến việc đánh giá thấp rủi ro tín dụng và báo cáo lợi nhuận cao hơn thực tế. Điều này tiềm ẩn rủi ro về tính trung thực và hợp lý của báo cáo tài chính nếu việc không trích lập là do đánh giá không đầy đủ.\n*   **Ảnh hưởng đến dòng tiền trong tương lai:** Nếu công ty tiếp tục không thu hồi được các khoản nợ xấu và không có biện pháp xử lý, các khoản này cuối cùng có thể phải được xóa sổ, ảnh hưởng đến dòng tiền và lợi nhuận trong các kỳ tương lai."
+  },
+  {
+    "instruction": "Giải thích lý do một số quyền sử dụng đất và tài sản gắn liền trên đất được sử dụng làm tài sản đảm bảo cho khoản vay ngân hàng.",
+    "input": "14",
+    "output": "Lý do một số quyền sử dụng đất và tài sản gắn liền trên đất tại Dự án Khu nhà ở thương mại Trường Thịnh và Mỹ Cảnh và Dự án Khu dân cư An Phú được sử dụng làm tài sản đảm bảo cho khoản vay ngân hàng là để **hạ thấp rủi ro cho ngân hàng khi cho công ty vay vốn**, từ đó giúp công ty **dễ dàng tiếp cận các khoản vay hơn** hoặc **được hưởng lãi suất ưu đãi hơn**. \n\nTrong lĩnh vực bất động sản, các dự án và quyền sử dụng đất thường có giá trị lớn và được coi là tài sản có tính thanh khoản tương đối, phù hợp để làm tài sản thế chấp. Việc thế chấp tài sản đảm bảo cho ngân hàng là một thông lệ phổ biến trong hoạt động vay vốn của các doanh nghiệp, đặc biệt là trong các ngành đòi hỏi vốn lớn như bất động sản, nhằm đáp ứng các nhu cầu về vốn lưu động hoặc tài trợ cho các dự án đầu tư. Điều này cũng là một phần của chiến lược quản lý tài chính để huy động vốn phục vụ hoạt động kinh doanh."
+  },
+  {
+    "instruction": "Tổng nguyên giá tài sản cố định hữu hình của công ty tại 31/03/2025 là bao nhiêu?",
+    "input": "15",
+    "output": "Tổng nguyên giá tài sản cố định hữu hình của công ty tại 31/03/2025 là 4.612.522.727 VND."
+  },
+  {
+    "instruction": "Giá trị còn lại của tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+    "input": "15",
+    "output": "Giá trị còn lại của tài sản cố định hữu hình cuối kỳ (31/03/2025) là 1.265.718.581 VND."
+  },
+  {
+    "instruction": "Tổng chi phí phát sinh trong kỳ cho dự án Khu phức hợp thương mại dịch vụ và du lịch First Real tại Tuy Hòa, Phú Yên là bao nhiêu?",
+    "input": "15",
+    "output": "Tổng chi phí phát sinh trong kỳ cho dự án Khu phức hợp thương mại dịch vụ và du lịch First Real tại Tuy Hòa, Phú Yên là 18.435.079 VND."
+  },
+  {
+    "instruction": "So sánh giá trị hao mòn lũy kế của bất động sản đầu tư giữa đầu kỳ và cuối kỳ.",
+    "input": "15",
+    "output": "Giá trị hao mòn lũy kế của bất động sản đầu tư tại đầu kỳ là 212.069.469 VND. Tại cuối kỳ (31/03/2025), giá trị này là 236.408.229 VND. Như vậy, giá trị hao mòn lũy kế đã tăng 24.338.760 VND trong kỳ."
+  },
+  {
+    "instruction": "Đánh giá ý nghĩa của việc có nguyên giá tài sản cố định hữu hình đã khấu hao hết nhưng vẫn còn sử dụng.",
+    "input": "15",
+    "output": "Việc có nguyên giá tài sản cố định hữu hình cuối kỳ đã khấu hao hết nhưng vẫn còn sử dụng (1.823.263.637 VND) có một số ý nghĩa quan trọng:\n\n1.  **Hiệu quả sử dụng tài sản:** Điều này cho thấy công ty đang tận dụng tối đa các tài sản của mình, tiếp tục khai thác chúng ngay cả sau khi chi phí của chúng đã được phân bổ hoàn toàn vào chi phí. Đây là một dấu hiệu tích cực về hiệu quả quản lý tài sản và khả năng kéo dài vòng đời sử dụng của chúng.\n2.  **Giảm chi phí hoạt động:** Đối với những tài sản này, công ty không còn phải chịu chi phí khấu hao hàng kỳ, điều này giúp giảm chi phí hoạt động và có thể cải thiện lợi nhuận. Điều này đặc biệt có lợi trong các giai đoạn kinh doanh khó khăn.\n3.  **Rủi ro về tuổi thọ và bảo trì:** Tuy nhiên, việc sử dụng tài sản đã khấu hao hết cũng tiềm ẩn rủi ro về độ tin cậy và hiệu suất. Những tài sản này có thể cũ, dễ hỏng hóc hơn và yêu cầu chi phí bảo trì, sửa chữa cao hơn, hoặc có thể kém hiệu quả hơn so với công nghệ mới. Điều này cần được cân nhắc để tránh ảnh hưởng đến chất lượng hoạt động hoặc phát sinh chi phí bất ngờ."
+  },
+  {
+    "instruction": "Tính tỷ lệ khấu hao trong kỳ trên nguyên giá tài sản cố định hữu hình.",
+    "input": "15",
+    "output": "Trong kỳ, khấu hao tài sản cố định hữu hình là 245.631.903 VND. Nguyên giá tài sản cố định hữu hình cuối kỳ là 4.612.522.727 VND. \n\nTỷ lệ khấu hao trong kỳ trên nguyên giá tài sản cố định hữu hình = (245.631.903 VND / 4.612.522.727 VND) * 100% ≈ **5.32%**."
+  },
+  {
+    "instruction": "Phân tích rủi ro của việc Công ty chưa xác định được giá trị hợp lý của các bất động sản đầu tư.",
+    "input": "15",
+    "output": "Việc Công ty chưa xác định được giá trị hợp lý của các bất động sản đầu tư tại ngày 31 tháng 03 năm 2025 do chưa thu thập đủ thông tin tiềm ẩn một số rủi ro đáng kể:\n\n1.  **Thiếu minh bạch và chính xác:** Theo Chuẩn mực kế toán Việt Nam số 05: Bất động sản đầu tư, giá trị hợp lý của bất động sản đầu tư cần được trình bày. Việc thiếu thông tin này làm giảm tính minh bạch của báo cáo tài chính và có thể khiến giá trị ghi sổ của bất động sản đầu tư (nguyên giá trừ hao mòn lũy kế) không phản ánh đúng giá trị thị trường thực tế. Nếu giá thị trường giảm, giá trị tài sản có thể bị ghi nhận quá cao.\n2.  **Đánh giá sai lệch về sức khỏe tài chính:** Các nhà đầu tư và chủ nợ sẽ gặp khó khăn trong việc đánh giá chính xác giá trị tài sản thực tế và mức độ rủi ro tiềm ẩn liên quan đến danh mục bất động sản đầu tư của công ty. Điều này có thể ảnh hưởng đến các quyết định đầu tư và cấp tín dụng.\n3.  **Rủi ro giảm giá trị tiềm ẩn:** Nếu giá trị hợp lý thấp hơn giá trị ghi sổ, công ty có thể phải ghi nhận lỗ giảm giá trong tương lai khi có đủ thông tin, điều này sẽ ảnh hưởng tiêu cực đến lợi nhuận. Ngược lại, nếu giá trị hợp lý cao hơn, công ty đang bỏ lỡ cơ hội phản ánh giá trị tăng thêm trên báo cáo tài chính.\n\nNhìn chung, việc thiếu thông tin giá trị hợp lý này tạo ra sự không chắc chắn và làm giảm khả năng đánh giá toàn diện tình hình tài chính của công ty, đặc biệt trong một thị trường biến động như bất động sản."
+  },
+  {
+    "instruction": "Dự báo tác động của việc gia hạn tiến độ dự án Khu phức hợp thương mại dịch vụ và du lịch First Real tại Tuy Hòa đến chi phí xây dựng cơ bản dở dang trong tương lai.",
+    "input": "15",
+    "output": "Việc Uỷ ban Nhân dân tỉnh Phú Yên có quyết định gia hạn tiến độ thêm 21 tháng cho Dự án Khu phức hợp thương mại dịch vụ và du lịch First Real tại Tuy Hòa sẽ có một số tác động đến chi phí xây dựng cơ bản dở dang (CPXDCBDD) trong tương lai:\n\n1.  **Tăng chi phí vốn hóa (nếu có):** Nếu công ty vẫn đang sử dụng các khoản vay để tài trợ cho dự án, việc gia hạn tiến độ sẽ kéo dài thời gian vốn hóa chi phí đi vay vào CPXDCBDD. Điều này sẽ làm tăng tổng giá trị CPXDCBDD trên bảng cân đối kế toán.\n2.  **Phát sinh thêm chi phí quản lý và khác:** Trong thời gian gia hạn, dự án có thể tiếp tục phát sinh các chi phí gián tiếp khác như chi phí quản lý dự án, chi phí bảo trì, chi phí hành chính... Các chi phí này, tùy theo chính sách vốn hóa của công ty, có thể tiếp tục được vốn hóa vào CPXDCBDD hoặc ghi nhận vào chi phí trong kỳ.\n3.  **Chậm trễ dòng tiền và doanh thu:** Việc gia hạn tiến độ cũng đồng nghĩa với việc chậm trễ thời điểm hoàn thành dự án, bàn giao và bắt đầu tạo ra doanh thu. Điều này sẽ ảnh hưởng tiêu cực đến dòng tiền và khả năng sinh lời của công ty trong các kỳ tới.\n\nNhìn chung, việc gia hạn tiến độ dự án có khả năng làm tăng tổng chi phí xây dựng cơ bản dở dang do kéo dài thời gian phát sinh chi phí, đồng thời làm chậm trễ khả năng tạo ra doanh thu và dòng tiền từ dự án."
+  },
+  {
+    "instruction": "Tổng số phải trả người bán ngắn hạn tại 31/03/2025 là bao nhiêu?",
+    "input": "16",
+    "output": "Tổng số phải trả người bán ngắn hạn tại 31/03/2025 là 850.967.104 VND."
+  },
+  {
+    "instruction": "Số tiền người mua trả trước liên quan đến Dự án Khu dân cư An Phú tại 31/03/2025 là bao nhiêu?",
+    "input": "16",
+    "output": "Số tiền người mua trả trước liên quan đến Dự án Khu dân cư An Phú tại 31/03/2025 là 112.706.672.986 VND."
+  },
+  {
+    "instruction": "Tổng số tiền thuế và các khoản phải nộp Nhà nước tại 31/03/2025 là bao nhiêu?",
+    "input": "16",
+    "output": "Tổng số tiền thuế và các khoản phải nộp Nhà nước tại 31/03/2025 là 56.548.704.101 VND."
+  },
+  {
+    "instruction": "So sánh chi phí lãi vay phải trả giữa hai kỳ báo cáo.",
+    "input": "16",
+    "output": "Chi phí lãi vay phải trả tại ngày 31/03/2025 là 21.629.158.884 VND, tăng so với 16.575.375.646 VND tại ngày 01/10/2024."
+  },
+  {
+    "instruction": "Tỷ lệ thuế suất thuế GTGT và thuế TNDN mà công ty đang áp dụng là bao nhiêu?",
+    "input": "16",
+    "output": "Công ty đang áp dụng thuế suất thuế GTGT là 10% cho lĩnh vực kinh doanh hàng hóa dịch vụ bất động sản và thuế suất thuế TNDN là 20% cho thu nhập từ các hoạt động khác."
+  },
+  {
+    "instruction": "Đánh giá rủi ro thanh khoản của công ty dựa trên số tiền thuế và lãi vay quá hạn thanh toán.",
+    "input": "16",
+    "output": "Tại ngày 31/03/2025, công ty có:\n-   56,5 tỷ VND tiền thuế phải trả quá hạn chưa thanh toán và chưa có xác nhận của cơ quan thuế.\n-   21.629.158.884 VND lãi vay quá hạn thanh toán.\n\nNhững khoản mục này cho thấy công ty đang đối mặt với rủi ro thanh khoản **rất cao và nghiêm trọng**:\n\n1.  **Áp lực tài chính tức thời:** Các khoản nợ quá hạn này đòi hỏi phải được thanh toán trong thời gian tới, tạo áp lực lớn lên dòng tiền của công ty. Nếu công ty không có đủ tiền mặt, điều này có thể dẫn đến việc phải tìm kiếm các nguồn tài trợ đắt đỏ hoặc gặp khó khăn trong việc duy trì hoạt động.\n2.  **Rủi ro bị cưỡng chế:** Đặc biệt, việc có 56,5 tỷ VND tiền thuế quá hạn và bị cưỡng chế xuất hóa đơn là một dấu hiệu cực kỳ tiêu cực. Cưỡng chế xuất hóa đơn có thể làm gián đoạn nghiêm trọng hoạt động kinh doanh, vì công ty sẽ không thể xuất hóa đơn cho khách hàng, ảnh hưởng trực tiếp đến doanh thu và dòng tiền.\n3.  **Tổn thất thêm chi phí:** Việc chậm thanh toán thuế và lãi vay sẽ dẫn đến các khoản phạt và lãi chậm nộp bổ sung, làm tăng gánh nặng tài chính.\n4.  **Ảnh hưởng đến uy tín:** Tình trạng nợ quá hạn, đặc biệt là nợ thuế và lãi vay, ảnh hưởng nghiêm trọng đến uy tín của công ty với các ngân hàng, nhà cung cấp và cơ quan nhà nước, gây khó khăn cho các giao dịch trong tương lai.
+\nTổng thể, các khoản thuế và lãi vay quá hạn thanh toán, cùng với việc bị cưỡng chế xuất hóa đơn, là những tín hiệu cảnh báo mạnh mẽ về rủi ro thanh khoản và khả năng hoạt động liên tục của công ty."
+  },
+  {
+    "instruction": "Phân tích tác động của việc người mua trả tiền trước đến dòng tiền và nghĩa vụ của công ty.",
+    "input": "16",
+    "output": "Khoản người mua trả tiền trước liên quan đến Dự án Khu dân cư An Phú là 112.706.672.986 VND tại 31/03/2025. Việc người mua trả tiền trước có tác động hai mặt đến dòng tiền và nghĩa vụ của công ty:\n\n1.  **Tác động tích cực đến dòng tiền:** Đây là một nguồn tiền mặt quan trọng, giúp công ty có nguồn vốn để tài trợ cho các hoạt động đầu tư, phát triển dự án hoặc trang trải các chi phí mà không cần phải đi vay từ bên ngoài. Điều này đặc biệt hữu ích trong bối cảnh công ty đang có những khoản nợ quá hạn và hạn chế về dòng tiền.\n2.  **Phát sinh nghĩa vụ cung cấp sản phẩm/dịch vụ:** Tuy nhiên, khoản tiền này cũng tạo ra một nghĩa vụ cho công ty phải bàn giao bất động sản hoặc cung cấp dịch vụ cho người mua trong tương lai. Đây là một khoản nợ phải trả (chứ không phải doanh thu ngay lập tức), và công ty phải đảm bảo hoàn thành dự án theo đúng cam kết để chuyển giao cho khách hàng.\n3.  **Rủi ro hoàn tiền:** Nếu dự án gặp vấn đề (chậm tiến độ, pháp lý, không thể hoàn thành), công ty có thể phải hoàn trả tiền cho người mua, gây áp lực lớn lên dòng tiền.
+\nDo đó, khoản người mua trả tiền trước là một yếu tố tài chính quan trọng, cung cấp dòng tiền cần thiết nhưng đồng thời cũng là một cam kết và rủi ro mà công ty phải quản lý cẩn thận."
+  },
+  {
+    "instruction": "Giải thích lý do phải trả người lao động giảm mạnh trong kỳ hiện tại.",
+    "input": "16",
+    "output": "Khoản phải trả người lao động đã giảm mạnh từ 951.528.582 VND tại 01/10/2024 xuống 409.205.957 VND tại 31/03/2025. Mức giảm này có thể đến từ một số lý do sau:\n\n1.  **Thanh toán các khoản lương/thưởng tồn đọng:** Công ty đã thanh toán các khoản tiền lương, tiền thưởng, hoặc các khoản phúc lợi khác còn nợ người lao động từ các kỳ trước, dẫn đến giảm số dư phải trả.\n2.  **Giảm quy mô nhân sự:** Theo Thuyết minh I.6 (Chunk 7), tổng số nhân viên của công ty giảm từ 29 người tại 30/09/2024 xuống 28 người tại 31/03/2025. Mặc dù chỉ là một sự giảm nhẹ, nhưng nếu có các đợt cắt giảm nhân sự lớn hơn không được thể hiện chi tiết, điều này sẽ làm giảm tổng quỹ lương và các khoản phải trả liên quan.\n3.  **Điều chỉnh chính sách lương/thưởng:** Công ty có thể đã điều chỉnh chính sách chi trả lương, thưởng hoặc các khoản phúc lợi khác, dẫn đến giảm số tiền phải trả cho người lao động vào cuối kỳ. \n4.  **Tối ưu hóa quản lý dòng tiền:** Trong bối cảnh công ty đang đối mặt với các vấn đề thanh khoản và nợ quá hạn, việc giảm các khoản phải trả, bao gồm cả phải trả người lao động, có thể là một biện pháp để tối ưu hóa dòng tiền và giảm áp lực thanh toán."
+  },
+  {
+    "instruction": "Tổng giá trị phải trả khác ngắn hạn tại 31/03/2025 là bao nhiêu?",
+    "input": "17",
+    "output": "Tổng giá trị phải trả khác ngắn hạn tại 31/03/2025 là 84.613.747.968 VND."
+  },
+  {
+    "instruction": "Khoản vay và nợ thuê tài chính ngắn hạn của công ty tại 31/03/2025 là bao nhiêu?",
+    "input": "17",
+    "output": "Khoản vay và nợ thuê tài chính ngắn hạn của công ty tại 31/03/2025 là 168.375.666.957 VND."
+  },
+  {
+    "instruction": "Số tiền vay ngân hàng dài hạn tại Ngân hàng TMCP Công thương Việt Nam tại 31/03/2025 là bao nhiêu?",
+    "input": "17",
+    "output": "Số tiền vay ngân hàng dài hạn tại Ngân hàng TMCP Công thương Việt Nam tại 31/03/2025 là 18.119.321.963 VND."
+  },
+  {
+    "instruction": "Sự thay đổi về các khoản vay và nợ thuê tài chính ngắn hạn giữa hai kỳ báo cáo là bao nhiêu?",
+    "input": "17",
+    "output": "Các khoản vay và nợ thuê tài chính ngắn hạn đã giảm từ 278.791.541.132 VND tại 01/10/2024 xuống 168.375.666.957 VND tại 31/03/2025. Mức giảm là 110.415.874.175 VND."
+  },
+  {
+    "instruction": "Đánh giá tầm quan trọng của các khoản tiền khách hàng đặt giữ chỗ đối với các dự án bất động sản của công ty.",
+    "input": "17",
+    "output": "Các khoản tiền khách hàng đặt giữ chỗ (như Dự án Khu dân cư An Phú: 9.445.250.000 VND và Dự án Khu phố chợ Điện Nam Bắc: 12.503.614.189 VND) có tầm quan trọng đáng kể đối với công ty:\n\n1.  **Nguồn vốn phi lãi suất:** Đây là nguồn vốn mà công ty có thể sử dụng để tài trợ cho các hoạt động phát triển dự án mà không phải chịu chi phí lãi vay như vay ngân hàng. Điều này đặc biệt có giá trị trong bối cảnh công ty đang đối mặt với chi phí lãi vay cao và nợ quá hạn.\n2.  **Chỉ báo nhu cầu thị trường:** Số tiền đặt giữ chỗ cho thấy mức độ quan tâm và nhu cầu của khách hàng đối với các dự án bất động sản của công ty. Nếu các khoản này lớn, đó là dấu hiệu tích cực về tiềm năng bán hàng trong tương lai.\n3.  **Tăng cường dòng tiền:** Các khoản đặt giữ chỗ giúp cải thiện dòng tiền ngay lập tức, hỗ trợ công ty trang trải chi phí hoạt động và đầu tư.\n4.  **Nghĩa vụ bán hàng:** Tuy nhiên, những khoản này cũng là một nghĩa vụ đối với công ty, phải đảm bảo hoàn thành dự án và bàn giao sản phẩm cho khách hàng. Nếu không, công ty có thể phải hoàn trả tiền, tạo áp lực tài chính ngược lại.\n\nNhìn chung, các khoản tiền đặt giữ chỗ là một yếu tố quan trọng trong việc huy động vốn, đánh giá tiềm năng thị trường và duy trì hoạt động của các dự án bất động sản."
+  },
+  {
+    "instruction": "Tính tỷ lệ tổng vay và nợ thuê tài chính ngắn hạn trên tổng vay và nợ thuê tài chính tại 31/03/2025.",
+    "input": "17",
+    "output": "Tại ngày 31/03/2025:\n- Vay và nợ thuê tài chính ngắn hạn: 168.375.666.957 VND\n- Tổng vay và nợ thuê tài chính (ngắn hạn + dài hạn): 168.375.666.957 VND + 18.119.321.963 VND = 186.494.988.920 VND\n\nTỷ lệ vay và nợ thuê tài chính ngắn hạn trên tổng vay và nợ thuê tài chính = (168.375.666.957 VND / 186.494.988.920 VND) * 100% ≈ **90.28%**."
+  },
+  {
+    "instruction": "Phân tích rủi ro thanh khoản của công ty dựa trên cơ cấu nợ ngắn hạn và dài hạn.",
+    "input": "17",
+    "output": "Tại ngày 31/03/2025, cơ cấu nợ của công ty có một đặc điểm đáng lo ngại về rủi ro thanh khoản:\n\n*   **Tỷ trọng nợ ngắn hạn cực kỳ cao:** Tổng vay và nợ thuê tài chính ngắn hạn là 168.375.666.957 VND, chiếm khoảng 90.28% tổng vay và nợ (186.494.988.920 VND). Điều này có nghĩa là phần lớn các nghĩa vụ nợ của công ty sẽ đáo hạn trong vòng 1 năm tới. Tỷ lệ này là một tín hiệu cảnh báo mạnh mẽ về rủi ro thanh khoản.\n*   **Giảm nợ dài hạn:** Nợ dài hạn giảm mạnh từ 80.153.563.737 VND xuống 18.119.321.963 VND, cho thấy công ty đã phải thanh toán hoặc tái cơ cấu các khoản nợ dài hạn thành ngắn hạn (hoặc các khoản nợ dài hạn đã chuyển sang đáo hạn trong ngắn hạn).\n\n**Phân tích rủi ro:**\n-   **Áp lực trả nợ lớn:** Với hơn 90% nợ là ngắn hạn, công ty sẽ đối mặt với áp lực dòng tiền rất lớn trong tương lai gần để trả các khoản gốc và lãi vay. Điều này đặc biệt đáng lo ngại khi công ty đã có các khoản nợ quá hạn thanh toán và bị cưỡng chế xuất hóa đơn (theo ý kiến kiểm toán ban đầu và Thuyết minh V.14, V.16).\n-   **Khó khăn tái cấp vốn:** Trong bối cảnh tình hình tài chính khó khăn, việc tái cấp vốn cho các khoản nợ ngắn hạn lớn này có thể gặp thách thức, đặc biệt nếu các ngân hàng trở nên thận trọng hơn khi cho vay.\n-   **Phụ thuộc vào dòng tiền từ HĐKD/BĐS:** Công ty sẽ phải dựa rất nhiều vào dòng tiền từ hoạt động kinh doanh hoặc thanh lý tài sản nhanh chóng để đáp ứng các nghĩa vụ nợ ngắn hạn. Tuy nhiên, thị trường bất động sản có thể không luôn thuận lợi cho việc này.\n\nNhìn chung, cơ cấu nợ cho thấy First Real đang ở trong tình trạng rủi ro thanh khoản rất cao, đòi hỏi các biện pháp cấp bách để cơ cấu lại nợ và cải thiện dòng tiền."
+  },
+  {
+    "instruction": "Giải thích các nghĩa vụ và lợi ích của Công ty Cổ phần FIRST REAL trong hợp đồng hợp tác với Công ty Cổ phần SSLand.",
+    "input": "17",
+    "output": "Trong hợp đồng hợp tác số 01/2024/HĐHT/FIRSTREAL/SSLAND ngày 10 tháng 10 năm 2024 để thực hiện đầu tư xây dựng, kinh doanh Nhà Ở tại khu B – Dự án Khu nhà ở thương mại Mỹ Cảnh, Công ty Cổ phần FIRST REAL có các nghĩa vụ và lợi ích sau:\n\n**Lợi ích:**\n1.  **Ưu tiên thu hồi vốn đã góp:** FIRST REAL được ưu tiên thu hồi phần vốn đã góp vào dự án trước.\n2.  **Phân chia lợi nhuận cố định:** FIRST REAL sẽ nhận được một khoản lợi nhuận cố định từ dự án.\n\n**Nghĩa vụ:**\n1.  **Góp vốn:** FIRST REAL có nghĩa vụ góp vốn để cùng thực hiện đầu tư xây dựng và kinh doanh dự án.\n2.  **Phụ thuộc vào SSLand:** FIRST REAL phụ thuộc vào việc Công ty Cổ phần SSLand chuyển nhượng sản phẩm cho bên thứ ba để có thể nhận được phần lợi nhuận cố định của mình, và SSLand sẽ nhận lợi nhuận còn lại. Điều này có nghĩa là hiệu quả của FIRST REAL bị gắn liền với khả năng bán hàng của SSLand.
+\nNhìn chung, hợp đồng này mang lại lợi ích về sự ổn định trong thu hồi vốn và lợi nhuận cho FIRST REAL (do có khoản lợi nhuận cố định), nhưng cũng đòi hỏi việc góp vốn và phụ thuộc vào đối tác trong việc bán hàng."
+  },
+  {
+    "instruction": "Ngân hàng TMCP Bảo Việt đã cho công ty vay bao nhiêu tiền gốc quá hạn chưa thanh toán tại 31/03/2025?",
+    "input": "18",
+    "output": "Ngân hàng TMCP Bảo Việt đã cho công ty vay 158.040.759.102 VND tiền gốc quá hạn chưa thanh toán tại 31/03/2025."
+  },
+  {
+    "instruction": "Tổng số dư cuối kỳ này của vốn chủ sở hữu là bao nhiêu?",
+    "input": "18",
+    "output": "Tổng số dư cuối kỳ này (31/03/2025) của vốn chủ sở hữu là 744.719.173.969 VND."
+  },
+  {
+    "instruction": "Mục đích vay của khoản vay tại Ngân hàng TMCP An Bình là gì?",
+    "input": "18",
+    "output": "Mục đích vay của khoản vay tại Ngân hàng TMCP An Bình là tài trợ vốn lưu động phục vụ cho hoạt động kinh doanh."
+  },
+  {
+    "instruction": "Tại sao công ty không chia cổ tức và không trích lập các quỹ từ lợi nhuận sau thuế năm 2024?",
+    "input": "18",
+    "output": "Theo Nghị quyết số 01/2025/NQ-ĐHĐCĐ-FIR ngày 21 tháng 03 năm 2025 của Đại hội đồng cổ đông thường niên năm 2025, Công ty không thực hiện chia cổ tức và không trích lập các quỹ từ nguồn lợi nhuận sau thuế năm 2024."
+  },
+  {
+    "instruction": "So sánh tỷ lệ vốn góp của Ông Nguyễn Anh Tuấn và Ông Vũ Hoàng Việt tại 31/03/2025.",
+    "input": "18",
+    "output": "Tại 31/03/2025, tỷ lệ vốn góp của Ông Nguyễn Anh Tuấn là 15,21% (tương ứng 97.743.260.000 VND). Tỷ lệ vốn góp của Ông Vũ Hoàng Việt và Bà Vũ Hạnh Quyên là 6,83% (tương ứng 43.865.000.000 VND). Như vậy, tỷ lệ vốn góp của Ông Nguyễn Anh Tuấn cao hơn Ông Vũ Hoàng Việt và Bà Vũ Hạnh Quyên."
+  },
+  {
+    "instruction": "Phân tích tác động của khoản vay và nợ thuê tài chính quá hạn chưa thanh toán đến khả năng hoạt động liên tục của công ty.",
+    "input": "18",
+    "output": "Khoản vay và nợ thuê tài chính gốc quá hạn chưa thanh toán 158.040.759.102 VND và lãi quá hạn 16.730.243.668 VND từ Ngân hàng TMCP Bảo Việt tại 31/03/2025 có tác động nghiêm trọng đến khả năng hoạt động liên tục của công ty. \n\n1.  **Bằng chứng cho nghi ngờ hoạt động liên tục:** Cùng với nợ quá hạn khác và việc bị cưỡng chế xuất hóa đơn (theo thông tin chung của báo cáo), khoản nợ quá hạn lớn này là một trong những bằng chứng mạnh mẽ nhất gây ra nghi ngờ đáng kể về khả năng hoạt động liên tục của công ty. \n2.  **Rủi ro vỡ nợ và bị khởi kiện:** Nếu công ty không thể đạt được thỏa thuận gia hạn nợ vay thành công hoặc không thể thanh toán, ngân hàng có thể thực hiện các biện pháp thu hồi nợ, bao gồm cả khởi kiện hoặc thu giữ tài sản đảm bảo. Điều này có thể dẫn đến việc phá sản hoặc thanh lý tài sản, chấm dứt hoạt động của công ty. \n3.  **Hạn chế tiếp cận nguồn vốn:** Các khoản nợ quá hạn làm giảm uy tín tín dụng của công ty, khiến việc tiếp cận các nguồn vốn vay mới trở nên cực kỳ khó khăn hoặc phải chịu lãi suất rất cao. Điều này cản trở khả năng tài trợ cho các hoạt động kinh doanh và đầu tư trong tương lai. \n4.  **Ảnh hưởng đến dòng tiền:** Việc phải đối mặt với các khoản nợ quá hạn lớn tạo áp lực khổng lồ lên dòng tiền của công ty, buộc công ty phải ưu tiên sử dụng tiền mặt để thanh toán nợ thay vì đầu tư hay chi trả các chi phí khác. \n\nBan Tổng Giám đốc đang thảo luận gia hạn nợ, nhưng sự thành công của việc này là yếu tố then chốt quyết định khả năng công ty có thể tiếp tục hoạt động trong tương lai."
+  },
+  {
+    "instruction": "Đánh giá mức độ rủi ro tín dụng của các khoản vay ngân hàng dựa trên hình thức đảm bảo và lãi suất.",
+    "input": "18",
+    "output": "Các khoản vay ngân hàng của công ty có mức độ rủi ro tín dụng khác nhau, được đánh giá dựa trên hình thức đảm bảo và lãi suất:\n\n1.  **Hình thức đảm bảo:**\n    *   Phần lớn các khoản vay đều có tài sản đảm bảo là quyền sử dụng đất và tài sản gắn liền với đất tại các dự án bất động sản (Khu dân cư An Phú, Mỹ Cảnh, 320 đường 2 Tháng 9 Đà Nẵng). Điều này làm giảm rủi ro tín dụng cho ngân hàng. Trong trường hợp công ty không trả được nợ, ngân hàng có thể thu giữ và thanh lý tài sản đảm bảo để thu hồi vốn. Đây là một điểm tích cực đối với các ngân hàng.\n    *   Tuy nhiên, rủi ro vẫn tồn tại nếu giá trị tài sản đảm bảo suy giảm (do thị trường bất động sản đi xuống) hoặc nếu quá trình thanh lý tài sản gặp khó khăn pháp lý hoặc chậm trễ.\n\n2.  **Lãi suất:**\n    *   Lãi suất các khoản vay dao động từ 8,50% đến 14,80%. Khoản vay lớn nhất (138 tỷ VND từ Ngân hàng TMCP Bảo Việt) có lãi suất khá cao (11,70-14,80%), phản ánh mức độ rủi ro cao hơn mà ngân hàng đánh giá về khoản vay này hoặc mục đích vay (bù đắp chi phí đầu tư chuyển nhượng quyền sử dụng đất).\n    *   Mức lãi suất cao hơn ngụ ý rằng công ty phải đối mặt với chi phí tài chính lớn hơn, điều này có thể ảnh hưởng đến khả năng sinh lời và khả năng thanh toán nợ của công ty, đặc biệt nếu hiệu quả kinh doanh không đạt kỳ vọng.\n\n**Kết luận:** Nhờ có tài sản đảm bảo, rủi ro tín dụng đối với các ngân hàng đã được giảm bớt. Tuy nhiên, lãi suất cao, đặc biệt cho các khoản vay lớn, cho thấy ngân hàng vẫn nhìn nhận công ty có mức độ rủi ro nhất định. Đối với chính công ty, việc có tài sản đảm bảo giúp tiếp cận vốn, nhưng lãi suất cao lại làm tăng gánh nặng chi phí và áp lực trả nợ."
+  },
+  {
+    "instruction": "Dự báo tác động của việc không chia cổ tức và không trích lập quỹ đến tâm lý nhà đầu tư và sự ổn định tài chính của công ty.",
+    "input": "18",
+    "output": "Việc công ty không chia cổ tức và không trích lập các quỹ từ lợi nhuận sau thuế năm 2024 có những tác động sau:\n\n1.  **Tâm lý nhà đầu tư:**\n    *   **Tiêu cực đối với nhà đầu tư ngắn hạn/tìm kiếm cổ tức:** Những nhà đầu tư kỳ vọng thu nhập từ cổ tức sẽ thất vọng, có thể dẫn đến việc bán cổ phiếu và gây áp lực giảm giá. Điều này cho thấy công ty đang ưu tiên tái cơ cấu tài chính hơn là chia sẻ lợi nhuận với cổ đông.\n    *   **Trung lập đến tích cực đối với nhà đầu tư dài hạn/giá trị:** Một số nhà đầu tư dài hạn có thể hiểu rằng việc giữ lại lợi nhuận là cần thiết để củng cố tình hình tài chính của công ty, đặc biệt trong bối cảnh công ty đang đối mặt với vấn đề khả năng hoạt động liên tục và nợ quá hạn. Họ có thể coi đây là một bước đi thận trọng để đảm bảo sự tồn tại và phát triển bền vững trong tương lai.\n\n2.  **Sự ổn định tài chính của công ty:**\n    *   **Tăng cường vốn chủ sở hữu:** Việc giữ lại toàn bộ lợi nhuận sẽ giúp tăng lợi nhuận sau thuế chưa phân phối và vốn chủ sở hữu của công ty. Điều này làm tăng sức mạnh tài chính, cải thiện các chỉ số về vốn hóa và có thể giúp công ty vượt qua giai đoạn khó khăn.\n    *   **Cải thiện thanh khoản và giảm nợ:** Lợi nhuận được giữ lại có thể được sử dụng để thanh toán các khoản nợ quá hạn, giảm áp lực lãi suất và cải thiện tình hình thanh khoản. Đây là một động thái quan trọng để củng cố khả năng hoạt động liên tục.\n    *   **Tăng khả năng tái đầu tư:** Lợi nhuận không chia có thể được dùng để tài trợ cho các kế hoạch kinh doanh mới, nghiên cứu các lĩnh vực tiềm năng, hoặc đầu tư vào các dự án bất động sản, góp phần vào tăng trưởng dài hạn.\n\nTổng thể, mặc dù có thể gây thất vọng cho một số nhà đầu tư, quyết định này là cần thiết và có lợi cho sự ổn định và phát triển bền vững của công ty trong dài hạn, đặc biệt khi công ty đang trong giai đoạn thách thức tài chính."
+  },
+  {
+    "instruction": "Doanh thu chuyển nhượng bất động sản trong kỳ 01/10/2024 đến 31/03/2025 là bao nhiêu?",
+    "input": "19",
+    "output": "Doanh thu chuyển nhượng bất động sản trong kỳ 01/10/2024 đến 31/03/2025 là 45.493.588.806 VND."
+  },
+  {
+    "instruction": "Tổng chi phí tài chính trong kỳ 01/10/2024 đến 31/03/2025 là bao nhiêu?",
+    "input": "19",
+    "output": "Tổng chi phí tài chính trong kỳ 01/10/2024 đến 31/03/2025 là 16.504.228.034 VND."
+  },
+  {
+    "instruction": "Chi phí dịch vụ mua ngoài trong chi phí bán hàng đã thay đổi như thế nào giữa hai kỳ báo cáo?",
+    "input": "19",
+    "output": "Chi phí dịch vụ mua ngoài trong chi phí bán hàng đã giảm đáng kể, từ 4.586.151.132 VND trong kỳ 01/10/2023 đến 31/03/2024 xuống còn 547.992.554 VND trong kỳ 01/10/2024 đến 31/03/2025."
+  },
+  {
+    "instruction": "Tổng lợi nhuận kế toán trước thuế trong kỳ 01/10/2024 đến 31/03/2025 là bao nhiêu?",
+    "input": "19",
+    "output": "Tổng lợi nhuận kế toán trước thuế trong kỳ 01/10/2024 đến 31/03/2025 là 3.249.285.703 VND."
+  },
+  {
+    "instruction": "Khoản lãi chậm nộp thuế là bao nhiêu trong kỳ báo cáo hiện tại?",
+    "input": "19",
+    "output": "Khoản lãi chậm nộp thuế trong kỳ báo cáo hiện tại (01/10/2024 đến 31/03/2025) là 4.202.859.706 VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ Chi phí khấu hao tài sản cố định trên tổng Chi phí sản xuất, kinh doanh theo yếu tố trong kỳ hiện tại.",
+    "input": "19",
+    "output": "Trong kỳ 01/10/2024 đến 31/03/2025:\n- Chi phí khấu hao tài sản cố định: 269.970.663 VND\n- Tổng Chi phí sản xuất, kinh doanh theo yếu tố: 21.681.930.069 VND\n\nTỷ lệ = (269.970.663 VND / 21.681.930.069 VND) * 100% ≈ **1.24%**."
+  },
+  {
+    "instruction": "Phân tích tác động của các khoản chi phí lãi vay vượt ngưỡng quy định đến lợi nhuận chịu thuế của công ty.",
+    "input": "19",
+    "output": "Công ty có các khoản chi phí lãi vay vượt ngưỡng quy định (chưa được trừ khi tính thuế TNDN) lũy kế lên tới 39.947.934.372 VND (đến 31/03/2025). Tác động của các khoản này đến lợi nhuận chịu thuế của công ty là:\n\n1.  **Làm tăng thu nhập chịu thuế:** Các khoản chi phí lãi vay này, mặc dù là chi phí thực tế của công ty, nhưng không được phép khấu trừ khi tính thuế thu nhập doanh nghiệp theo quy định. Do đó, chúng sẽ được cộng ngược trở lại vào lợi nhuận kế toán để xác định thu nhập chịu thuế, dẫn đến một khoản thu nhập chịu thuế cao hơn so với lợi nhuận kế toán.\n2.  **Tăng số thuế phải nộp:** Thu nhập chịu thuế cao hơn trực tiếp dẫn đến việc công ty phải nộp một khoản thuế TNDN lớn hơn (vì thuế suất là 20%). Điều này làm giảm lợi nhuận sau thuế của công ty.\n3.  **Khả năng chuyển lỗ:** Mặc dù các khoản này có thể được chuyển sang các năm sau (tối đa 5 năm) để khấu trừ, nhưng nếu công ty không tạo ra đủ lợi nhuận chịu thuế trong các năm đó, hoặc nếu các khoản này tiếp tục tăng, chúng sẽ tiếp tục làm tăng gánh nặng thuế. Việc công ty chưa ghi nhận tài sản thuế thu nhập hoãn lại cũng phản ánh sự không chắc chắn về khả năng sử dụng các khoản này trong tương lai.\n\nTổng thể, các khoản chi phí lãi vay vượt ngưỡng quy định là một gánh nặng tài chính đáng kể, làm tăng nghĩa vụ thuế và giảm lợi nhuận sau thuế, đồng thời tạo ra rủi ro về thuế trong tương lai nếu không được quản lý hiệu quả."
+  },
+  {
+    "instruction": "Đánh giá rủi ro tài chính của công ty khi doanh thu chuyển nhượng bất động sản sụt giảm đáng kể.",
+    "input": "19",
+    "output": "Doanh thu chuyển nhượng bất động sản của công ty đã sụt giảm đáng kể, từ 80.966.808.783 VND (kỳ trước) xuống 45.493.588.806 VND (kỳ hiện tại). Sự sụt giảm này gây ra rủi ro tài chính nghiêm trọng cho công ty:\n\n1.  **Giảm lợi nhuận:** Đây là nguồn doanh thu chính của công ty. Sự sụt giảm kéo theo giảm lợi nhuận gộp và lợi nhuận ròng, như đã thấy trong báo cáo. Điều này ảnh hưởng trực tiếp đến khả năng sinh lời và tích lũy vốn của công ty.\n2.  **Ảnh hưởng đến dòng tiền:** Doanh thu giảm có nghĩa là dòng tiền từ hoạt động kinh doanh cũng sẽ bị ảnh hưởng tiêu cực, làm giảm khả năng công ty thanh toán các khoản nợ, chi phí hoạt động và đầu tư. Điều này đặc biệt đáng lo ngại khi công ty đang đối mặt với các khoản nợ quá hạn và vấn đề về khả năng hoạt động liên tục.\n3.  **Rủi ro thanh khoản:** Nếu doanh thu tiếp tục sụt giảm, công ty có thể thiếu tiền mặt để đáp ứng các nghĩa vụ tài chính ngắn hạn (lãi vay, thuế, nợ gốc). Điều này càng làm trầm trọng thêm rủi ro thanh khoản đã được nhấn mạnh trong báo cáo.\n4.  **Tác động đến khả năng trả nợ:** Khả năng trả nợ của công ty phụ thuộc lớn vào việc tạo ra doanh thu và lợi nhuận từ các dự án bất động sản. Doanh thu sụt giảm sẽ làm suy yếu khả năng này, tăng rủi ro vỡ nợ.\n\nNhìn chung, sự sụt giảm doanh thu chuyển nhượng bất động sản là một chỉ báo nguy hiểm về sức khỏe tài chính của công ty, cho thấy hoạt động kinh doanh cốt lõi đang gặp thách thức lớn và làm tăng đáng kể các rủi ro tài chính tổng thể."
+  },
+  {
+    "instruction": "Giải thích lý do công ty chưa ghi nhận tài sản thuế thu nhập hoãn lại cho phần chi phí lãi vay không được khấu trừ.",
+    "input": "19",
+    "output": "Công ty chưa ghi nhận tài sản thuế thu nhập hoãn lại cho phần chi phí lãi vay không được khấu trừ là 39.947.934.372 VND (lũy kế) do **không thể dự tính được liệu chi phí lãi vay không được khấu trừ này có thể sẽ được sử dụng trong thời gian cho phép còn lại hay không**.\n\nTheo chuẩn mực kế toán, tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi có đủ bằng chứng rằng sẽ có đủ lợi nhuận chịu thuế trong tương lai để bù trừ với tài sản thuế hoãn lại đó. Trong trường hợp của First Real, việc không chắc chắn về khả năng tạo ra đủ lợi nhuận chịu thuế trong vòng 5 năm tới (thời gian được phép chuyển) cho thấy một sự thận trọng trong kế toán. Điều này cũng phản ánh tình hình kinh doanh khó khăn và những lo ngại về khả năng hoạt động liên tục, khiến ban quản lý không tự tin về việc tạo ra lợi nhuận chịu thuế đủ để tận dụng khoản chi phí lãi vay không được khấu trừ này. Việc không ghi nhận tài sản thuế hoãn lại có nghĩa là lợi nhuận sau thuế của công ty có thể bị thấp hơn nếu công ty thực sự tạo ra lợi nhuận trong tương lai và có thể sử dụng khoản này, nhưng đây là một quyết định thận trọng dựa trên nguyên tắc không chắc chắn."
+  },
+  {
+    "instruction": "Các loại rủi ro chính từ công cụ tài chính là gì?",
+    "input": "20",
+    "output": "Các rủi ro chính từ công cụ tài chính bao gồm rủi ro thị trường, rủi ro tín dụng và rủi ro thanh khoản."
+  },
+  {
+    "instruction": "Tổng các khoản vay và nợ của công ty phải thanh toán dưới 1 năm tại 31/03/2025 là bao nhiêu?",
+    "input": "20",
+    "output": "Tổng các khoản vay và nợ của công ty phải thanh toán dưới 1 năm tại 31/03/2025 là 168.375.666.957 VND."
+  },
+  {
+    "instruction": "Công ty giảm thiểu rủi ro tín dụng đối với phải thu khách hàng bằng cách nào?",
+    "input": "20",
+    "output": "Công ty giảm thiểu rủi ro tín dụng đối với phải thu khách hàng bằng cách chỉ giao dịch với các đơn vị có khả năng tài chính tốt và thường xuyên theo dõi chặt chẽ nợ phải thu để đôn đốc thu hồi. Ngoài ra, rủi ro tín dụng không tập trung vào một khách hàng nhất định do công ty giao dịch với nhiều khách hàng khác nhau."
+  },
+  {
+    "instruction": "Tài sản nào đã được công ty sử dụng làm tài sản đảm bảo cho các khoản vay ngân hàng?",
+    "input": "20",
+    "output": "Công ty đã sử dụng hàng hóa bất động sản của mình làm tài sản thế chấp cho các khoản vay ngắn hạn và vay dài hạn từ các ngân hàng."
+  },
+  {
+    "instruction": "Giá trị ghi sổ của tiền và các khoản tương đương tiền tại 31/03/2025 là bao nhiêu?",
+    "input": "20",
+    "output": "Giá trị ghi sổ của tiền và các khoản tương đương tiền tại 31/03/2025 là 4.671.835.959 VND."
+  },
+  {
+    "instruction": "So sánh tổng giá trị hợp lý của tài sản tài chính giữa hai kỳ báo cáo.",
+    "input": "20",
+    "output": "Tổng giá trị hợp lý của tài sản tài chính tại ngày 31/03/2025 là 14.041.707.296 VND. So với ngày 01/10/2024 là 11.337.289.796 VND, tổng giá trị hợp lý của tài sản tài chính đã tăng lên."
+  },
+  {
+    "instruction": "Đánh giá hiệu quả của các chính sách quản lý rủi ro lãi suất và tín dụng của công ty.",
+    "input": "20",
+    "output": "1.  **Rủi ro lãi suất:** Công ty tuyên bố không thực hiện phân tích độ nhạy đối với lãi suất vì rủi ro do thay đổi lãi suất tại ngày lập báo cáo là không đáng kể. Công ty quản lý rủi ro lãi suất bằng cách phân tích tình hình cạnh tranh để có được lãi suất có lợi. Việc không có phân tích độ nhạy có thể là một điểm yếu nếu rủi ro lãi suất tăng đột biến trong tương lai. Tuy nhiên, nếu các khoản vay chủ yếu có lãi suất cố định hoặc biến động không lớn, chính sách này có thể tạm chấp nhận được. Mức độ hiệu quả chưa được chứng minh rõ ràng qua các phân tích chi tiết. \n2.  **Rủi ro tín dụng:** Công ty giảm thiểu rủi ro tín dụng bằng cách giao dịch với các đơn vị có khả năng tài chính tốt, theo dõi chặt chẽ nợ phải thu và duy trì tiền gửi tại các ngân hàng lớn. Đây là các biện pháp cơ bản và cần thiết. Việc rủi ro tín dụng không tập trung vào một khách hàng nhất định là một điểm tích cực. Tuy nhiên, báo cáo vẫn có khoản mục nợ xấu lớn (như Thuyết minh V.6 - Chunk 14) và các khoản phải thu cá nhân (Thuyết minh V.5 - Chunk 13) cho thấy vẫn có rủi ro đáng kể. Điều này cho thấy các chính sách này có hiệu quả ở mức độ nhất định trong việc giảm thiểu rủi ro chung, nhưng chưa loại bỏ được hoàn toàn các rủi ro cụ thể đã phát sinh."
+  },
+  {
+    "instruction": "Phân tích mức độ rủi ro thanh khoản của công ty dựa trên bảng tổng hợp thời hạn thanh toán các khoản nợ phải trả tài chính.",
+    "input": "20",
+    "output": "Dựa trên bảng tổng hợp thời hạn thanh toán các khoản nợ phải trả tài chính tại ngày 31 tháng 03 năm 2025, công ty có mức độ rủi ro thanh khoản **cao**:\n\n1.  **Tập trung nợ ngắn hạn:** Tổng cộng 253.133.317.907 VND (chiếm khoảng 93.31% tổng nợ) sẽ đáo hạn trong vòng 1 năm. Đây là một tỷ trọng rất lớn, tạo áp lực thanh toán cực kỳ cao lên dòng tiền của công ty trong ngắn hạn.\n2.  **Khoản vay và nợ ngắn hạn lớn:** Riêng các khoản vay và nợ phải trả dưới 1 năm là 168.375.666.957 VND. Điều này phù hợp với thông tin đã nêu về khả năng hoạt động liên tục (nợ quá hạn thanh toán). Việc phải thanh toán một lượng nợ vay lớn trong ngắn hạn mà không có nguồn thu từ đi vay mới (theo Chunk 21) là một thách thức lớn.\n3.  **Không có nợ trên 5 năm:** Tất cả các khoản nợ đều đáo hạn trong vòng 5 năm, cho thấy không có khoản nợ dài hạn thực sự giúp giãn áp lực thanh toán trong tương lai xa.\n\nCông ty tuyên bố giám sát rủi ro thanh khoản bằng cách duy trì tiền mặt và các khoản tương đương tiền cũng như vay ngân hàng ở mức đủ. Tuy nhiên, với cơ cấu nợ tập trung mạnh vào ngắn hạn và các vấn đề về nợ quá hạn đã được chỉ ra, khả năng của công ty trong việc duy trì đủ thanh khoản để đáp ứng các nghĩa vụ có thể rất căng thẳng. Rủi ro thanh khoản là một vấn đề trọng yếu cần được quản lý hết sức thận trọng."
+  },
+  {
+    "instruction": "Tại sao Ban Tổng Giám đốc đánh giá giá trị hợp lý của tài sản tài chính và nợ phải trả tài chính dài hạn không có khác biệt trọng yếu so với giá trị ghi sổ?",
+    "input": "20",
+    "output": "Ban Tổng Giám đốc đánh giá giá trị hợp lý của tài sản tài chính và nợ phải trả tài chính dài hạn không có khác biệt trọng yếu so với giá trị ghi sổ vào ngày kết thúc kỳ kế toán vì:\n\n1.  **Thiếu thị trường hoạt động:** Đối với nhiều công cụ tài chính dài hạn, đặc biệt là các khoản đầu tư vào công ty con, liên kết hoặc các khoản vay không có thị trường giao dịch công khai, việc xác định giá trị hợp lý có thể rất khó khăn và tốn kém. Trong trường hợp này, giá trị ghi sổ thường là cơ sở hợp lý nhất nếu không có thông tin rõ ràng về suy giảm giá trị.\n2.  **Giả định về ổn định:** Ban Tổng Giám đốc có thể cho rằng các điều kiện thị trường không có sự thay đổi đột biến hoặc các yếu tố nội tại của các công cụ tài chính không bị ảnh hưởng nghiêm trọng đến mức làm thay đổi đáng kể giá trị của chúng so với giá gốc.\n3.  **Tính thận trọng:** Trong một số trường hợp, nếu việc xác định giá trị hợp lý quá phức tạp hoặc không đáng tin cậy, việc duy trì giá trị ghi sổ và chỉ điều chỉnh khi có bằng chứng rõ ràng về suy giảm giá trị (dự phòng) là một cách tiếp cận thận trọng.\n\nTuy nhiên, việc này cũng tiềm ẩn rủi ro nếu có những biến động thị trường lớn mà không được phản ánh kịp thời, dẫn đến việc báo cáo không phản ánh đầy đủ giá trị thực của các công cụ tài chính dài hạn."
+  },
+  {
+    "instruction": "Số tiền đi vay thực thu trong kỳ 01/10/2024 đến 31/03/2025 là bao nhiêu?",
+    "input": "21",
+    "output": "Số tiền đi vay thực thu trong kỳ 01/10/2024 đến 31/03/2025 là 0 VND (ghi rõ là \"-\")."
+  },
+  {
+    "instruction": "Số tiền đã thực trả gốc vay theo khế ước thông thường trong kỳ 01/10/2024 đến 31/03/2025 là bao nhiêu?",
+    "input": "21",
+    "output": "Số tiền đã thực trả gốc vay theo khế ước thông thường trong kỳ 01/10/2024 đến 31/03/2025 là 172.450.115.949 VND."
+  },
+  {
+    "instruction": "Tổng cam kết đi thuê hoạt động đến 1 năm tại 31/03/2025 là bao nhiêu?",
+    "input": "21",
+    "output": "Tổng cam kết đi thuê hoạt động đến 1 năm tại 31/03/2025 là 16.998.456.994 VND."
+  },
+  {
+    "instruction": "Có khoản nợ tiềm tàng nào yêu cầu điều chỉnh trong báo cáo tài chính riêng không?",
+    "input": "21",
+    "output": "Không có khoản nợ tiềm tàng nào yêu cầu phải có các điều chỉnh hoặc thuyết minh trong Báo cáo tài chính riêng."
+  },
+  {
+    "instruction": "So sánh tổng cam kết cho thuê hoạt động giữa hai kỳ báo cáo.",
+    "input": "21",
+    "output": "Tổng cam kết cho thuê hoạt động tại 31/03/2025 là 18.181.818 VND, giảm đáng kể so với 454.545.455 VND tại 01/10/2024."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không có sự kiện quan trọng nào phát sinh sau ngày kết thúc kỳ kế toán đến sự ổn định của báo cáo tài chính.",
+    "input": "21",
+    "output": "Việc không có sự kiện quan trọng nào phát sinh kể từ ngày kết thúc kỳ kế toán (31/03/2025) yêu cầu phải có các điều chỉnh hoặc thuyết minh trong báo cáo tài chính riêng có tác động tích cực đến sự ổn định và độ tin cậy của báo cáo tài chính.\n\n1.  **Tăng độ tin cậy:** Nó ngụ ý rằng các thông tin và số liệu được trình bày trong báo cáo tài chính tại ngày 31/03/2025 vẫn phản ánh chính xác tình hình tài chính của công ty mà không bị ảnh hưởng bởi các sự kiện bất ngờ hoặc trọng yếu xảy ra sau đó. Điều này củng cố niềm tin của người sử dụng báo cáo vào các số liệu đã công bố.\n2.  **Giảm bất định:** Việc không có các sự kiện phát sinh sau kỳ kế toán giúp giảm bớt sự bất định cho các nhà đầu tư và các bên liên quan. Họ có thể dựa vào báo cáo để đưa ra quyết định mà không cần lo ngại về những thay đổi lớn chưa được phản ánh.\n3.  **Đơn giản hóa phân tích:** Đối với các nhà phân tích, việc thiếu các sự kiện sau kỳ kế toán giúp đơn giản hóa quá trình phân tích và đánh giá hiệu quả hoạt động cũng như tình hình tài chính của công ty, vì không cần phải điều chỉnh hoặc xem xét các tác động từ các sự kiện mới."
+  },
+  {
+    "instruction": "Đánh giá rủi ro tài chính của công ty khi không thu được khoản tiền đi vay nào trong kỳ hiện tại mà vẫn phải trả gốc vay lớn.",
+    "input": "21",
+    "output": "Trong kỳ 01/10/2024 đến 31/03/2025, công ty không thu được khoản tiền đi vay nào (0 VND) nhưng lại phải trả gốc vay theo khế ước thông thường lên tới 172.450.115.949 VND. Điều này cho thấy công ty đang đối mặt với rủi ro tài chính **rất cao**:\n\n1.  **Áp lực thanh khoản cực lớn:** Việc phải trả một khoản gốc vay khổng lồ mà không có nguồn thu từ đi vay mới tạo ra áp lực thanh khoản nghiêm trọng. Công ty phải dựa hoàn toàn vào dòng tiền từ hoạt động kinh doanh hoặc thanh lý tài sản để đáp ứng nghĩa vụ này. Nếu dòng tiền từ HĐKD không đủ, công ty sẽ gặp khó khăn nghiêm trọng.\n2.  **Suy giảm vị thế tiền mặt:** Việc dòng tiền thuần từ hoạt động tài chính âm nặng (-172.450.115.949 VND, theo Chunk 6) trực tiếp làm giảm lượng tiền và các khoản tương đương tiền cuối kỳ, làm suy yếu khả năng thanh toán tức thời của công ty.\n3.  **Khó khăn trong tái cấp vốn:** Việc không thu được khoản đi vay mới có thể là dấu hiệu cho thấy công ty đang gặp khó khăn trong việc tiếp cận các nguồn tài trợ tín dụng, có thể do lịch sử nợ quá hạn hoặc tình hình tài chính yếu kém. Điều này làm tăng rủi ro không thể tái cấp vốn cho các khoản nợ đến hạn trong tương lai.\n4.  **Ảnh hưởng đến hoạt động liên tục:** Nếu tình trạng này kéo dài, nó sẽ đe dọa trực tiếp đến khả năng hoạt động liên tục của công ty, buộc công ty phải cân nhắc các biện pháp cấp bách như bán tài sản, tái cấu trúc nợ hoặc tìm kiếm các nhà đầu tư chiến lược."
+  },
+  {
+    "instruction": "Dự báo tác động của các cam kết đi thuê và cho thuê hoạt động đến dòng tiền tương lai của công ty.",
+    "input": "21",
+    "output": "Các cam kết đi thuê và cho thuê hoạt động sẽ có tác động đáng kể đến dòng tiền tương lai của công ty:\n\n1.  **Tác động của cam kết đi thuê hoạt động:**\n    *   **Dòng tiền ra:** Công ty có cam kết đi thuê văn phòng với số tiền tối thiểu là 16.998.456.994 VND đến 1 năm. Khoản này sẽ tạo ra một dòng tiền ra định kỳ dưới dạng chi phí thuê. Điều này là một gánh nặng tài chính cần được tính toán trong kế hoạch dòng tiền, đặc biệt khi công ty đang đối mặt với áp lực thanh khoản.\n\n2.  **Tác động của cam kết cho thuê hoạt động:**\n    *   **Dòng tiền vào:** Công ty cũng có cam kết cho thuê nhà văn phòng với khoản tiền cho thuê tối thiểu đến 1 năm là 18.181.818 VND (giảm đáng kể so với kỳ trước). Khoản này sẽ tạo ra một dòng tiền vào định kỳ. Mặc dù số tiền này không lớn, nhưng nó vẫn đóng góp vào nguồn thu nhập của công ty.\n\n**Dự báo tổng thể:**\n-   Trong ngắn hạn, dòng tiền ra từ cam kết đi thuê sẽ lớn hơn rất nhiều so với dòng tiền vào từ cam kết cho thuê. Điều này sẽ tạo thêm áp lực lên dòng tiền của công ty. Công ty cần đảm bảo có đủ nguồn lực để thanh toán các khoản thuê này.\n-   Các cam kết này là cố định và dễ dự báo, giúp công ty lập kế hoạch dòng tiền tốt hơn cho các khoản chi và thu liên quan đến hoạt động thuê. Tuy nhiên, nếu công ty gặp khó khăn về dòng tiền, các cam kết đi thuê có thể trở thành một gánh nặng cố định khó điều chỉnh trong ngắn hạn."
+  },
+  {
+    "instruction": "Số lượng cổ phiếu dự kiến phát hành để tăng vốn cổ phần là bao nhiêu?",
+    "input": "22",
+    "output": "Số lượng cổ phiếu dự kiến phát hành để tăng vốn cổ phần từ nguồn vốn chủ sở hữu là 6.424.528 cổ phiếu."
+  },
+  {
+    "instruction": "Tổng thu nhập của Chủ tịch HĐQT Ông Nguyễn Anh Tuấn từ 01/10/2024 đến 31/03/2025 là bao nhiêu?",
+    "input": "22",
+    "output": "Tổng thu nhập (tiền lương) của Chủ tịch HĐQT Ông Nguyễn Anh Tuấn từ 01/10/2024 đến 31/03/2025 là 222.500.000 VND."
+  },
+  {
+    "instruction": "Khoản phải trả tiền thuê mặt bằng cho Công ty Cổ phần Thương mại - Dịch vụ - Khách sạn Bạch Đằng tại 31/03/2025 là bao nhiêu?",
+    "input": "22",
+    "output": "Khoản phải trả tiền thuê mặt bằng cho Công ty Cổ phần Thương mại - Dịch vụ - Khách sạn Bạch Đằng tại 31/03/2025 là 252.529.193 VND."
+  },
+  {
+    "instruction": "Các ngành nghề kinh doanh mới mà công ty đã bổ sung là gì?",
+    "input": "22",
+    "output": "Các ngành nghề kinh doanh mới mà công ty đã bổ sung liên quan đến các hoạt động vận tải đường bộ, bán lẻ, sửa chữa ô tô con, cho thuê xe và đào tạo lái xe."
+  },
+  {
+    "instruction": "Nguồn vốn để thực hiện việc phát hành cổ phiếu tăng vốn cổ phần là từ đâu?",
+    "input": "22",
+    "output": "Nguồn vốn để thực hiện việc phát hành cổ phiếu tăng vốn cổ phần là từ nguồn thặng dư vốn cổ phần tính đến hết năm tài chính 2024 là 64.245.280.000 đồng."
+  },
+  {
+    "instruction": "Các vấn đề chính gây nghi ngờ về khả năng hoạt động liên tục của công ty tại 31/03/2025 là gì?",
+    "input": "22",
+    "output": "Tại ngày 31 tháng 03 năm 2025, các vấn đề chính gây nghi ngờ đáng kể về khả năng hoạt động liên tục của công ty là:\n- Khoản nợ vay quá hạn thanh toán 138,04 tỷ VND.\n- Lãi vay quá hạn thanh toán 21,6 tỷ VND.\n- 56,5 tỷ VND tiền thuế phải trả quá hạn thanh toán và bị cưỡng chế xuất hóa đơn."
+  },
+  {
+    "instruction": "Đánh giá khả năng thành công của các kế hoạch kinh doanh 06 tháng cuối năm 2025 của công ty dựa trên tình hình tài chính hiện tại.",
+    "input": "22",
+    "output": "Công ty đang đối mặt với những thách thức tài chính nghiêm trọng như nợ vay, lãi vay và thuế quá hạn thanh toán, cùng việc bị cưỡng chế xuất hóa đơn. Trong bối cảnh này, khả năng thành công của các kế hoạch kinh doanh 06 tháng cuối năm 2025 là một vấn đề cần được đánh giá thận trọng:\n\n1.  **Khó khăn trong việc bán dự án:** Kế hoạch bán dự án An Phú và Mỹ Cảnh với dự kiến thu về 207,5 tỷ VND là mục tiêu lớn. Mặc dù thị trường bất động sản có dấu hiệu phục hồi, nhưng việc bán được tài sản với giá trị lớn trong thời gian ngắn, đặc biệt khi công ty đang gặp vấn đề, có thể không dễ dàng. Bất kỳ sự chậm trễ nào cũng sẽ ảnh hưởng đến khả năng hoàn thành các mục tiêu tài chính khác.\n2.  **Áp lực thanh toán nợ lớn:** Công ty dự kiến trả gốc vay 121,1 tỷ VND và lãi vay 27 tỷ VND, cùng với 20 tỷ VND thuế quá hạn. Tổng số tiền phải trả là rất lớn (khoảng 168.1 tỷ VND). Khả năng thực hiện được các khoản thanh toán này phụ thuộc hoàn toàn vào việc thu tiền từ bán dự án và các dòng tiền khác.\n3.  **Rủi ro cưỡng chế thuế:** Việc bị cưỡng chế xuất hóa đơn (do nợ thuế quá hạn) có thể làm tê liệt hoạt động kinh doanh, cản trở việc tạo doanh thu và thu hồi tiền từ khách hàng, từ đó ảnh hưởng trực tiếp đến khả năng thực hiện các kế hoạch.\n4.  **Phụ thuộc vào yếu tố bên ngoài:** Các kế hoạch như hoàn thành pháp lý dự án, tìm kiếm quỹ đất mới, nghiên cứu lĩnh vực mới đều cần vốn và sự chấp thuận từ các bên liên quan (chủ đầu tư, cơ quan nhà nước). Điều này có thể không nằm hoàn toàn trong tầm kiểm soát của công ty.\n\n**Kết luận:** Mặc dù Ban Tổng Giám đốc bày tỏ sự tin tưởng, nhưng dựa trên tình hình tài chính hiện tại, các kế hoạch này có mức độ rủi ro cao. Khả năng thành công sẽ phụ thuộc rất nhiều vào việc thực hiện hiệu quả các hoạt động bán hàng và thu hồi tiền một cách nhanh chóng, cũng như khả năng đàm phán thành công với các chủ nợ và cơ quan thuế. Nếu một trong các yếu tố này không đạt được, khả năng hoạt động liên tục của công ty có thể tiếp tục bị đe dọa."
+  },
+  {
+    "instruction": "Phân tích tác động của việc công ty chưa trích lập dự phòng nợ phải thu khó đòi liên quan đến các bên liên quan đến báo cáo tài chính.",
+    "input": "22",
+    "output": "Theo thuyết minh X.4b.2, tại ngày 31 tháng 03 năm 2025, công ty chưa trích lập bất cứ một khoản dự phòng nợ phải thu khó đòi nào liên quan đến số tiền các bên liên quan còn nợ Công ty. Điều này có những tác động sau đến báo cáo tài chính:\n\n1.  **Làm tăng lợi nhuận và tài sản:** Việc không trích lập dự phòng có nghĩa là các khoản nợ phải thu từ bên liên quan vẫn được ghi nhận theo giá trị gốc hoặc giá trị có thể thu hồi cao hơn so với nếu có dự phòng. Điều này trực tiếp làm tăng lợi nhuận được báo cáo (do không có chi phí dự phòng) và làm tăng giá trị tài sản trên bảng cân đối kế toán.\n2.  **Rủi ro đánh giá sai lệch:** Nếu các khoản phải thu từ bên liên quan này thực sự có rủi ro khó đòi, việc không trích lập dự phòng sẽ khiến báo cáo tài chính không phản ánh trung thực và hợp lý tình hình tài chính thực tế của công ty. Lợi nhuận và giá trị tài sản có thể bị thổi phồng, gây hiểu lầm cho người sử dụng báo cáo.\n3.  **Thiếu thận trọng:** Đây là dấu hiệu của sự thiếu thận trọng trong kế toán, đặc biệt khi việc đánh giá khả năng thu hồi dựa trên việc kiểm tra tình hình tài chính của bên liên quan và thị trường mà bên liên quan đó hoạt động. Nếu có bất kỳ nghi ngờ nào về khả năng thu hồi, việc trích lập dự phòng là cần thiết.\n4.  **Rủi ro cho nhà đầu tư:** Đối với nhà đầu tư, điều này làm tăng rủi ro về chất lượng tài sản và lợi nhuận của công ty. Nếu sau này công ty buộc phải trích lập dự phòng hoặc xóa sổ nợ, nó sẽ gây ra một cú sốc tiêu cực cho lợi nhuận và vốn chủ sở hữu.\n\nTổng thể, việc không trích lập dự phòng nợ phải thu khó đòi từ bên liên quan có thể tạm thời làm đẹp báo cáo tài chính, nhưng lại tiềm ẩn rủi ro lớn về tính chính xác và trung thực của thông tin tài chính, gây rủi ro cho người sử dụng báo cáo."
+  },
+  {
+    "instruction": "Giải thích tại sao báo cáo của công ty không trình bày báo cáo bộ phận.",
+    "input": "22",
+    "output": "Báo cáo của công ty không trình bày báo cáo bộ phận là do Ban Tổng Giám đốc của Công ty xác định rằng **các loại sản phẩm, dịch vụ mà Công ty cung cấp chủ yếu là kinh doanh bất động sản và tập trung trên địa bàn tỉnh Quảng Nam**. Theo chuẩn mực kế toán, báo cáo bộ phận cần được trình bày khi công ty có các bộ phận kinh doanh hoặc bộ phận theo khu vực địa lý có rủi ro và lợi ích kinh tế khác biệt đáng kể. Do Công ty tập trung vào một lĩnh vực kinh doanh chính (bất động sản) và một khu vực địa lý cụ thể, nên không có sự phân biệt đủ để yêu cầu trình bày báo cáo bộ phận."
+  }
+]
+```

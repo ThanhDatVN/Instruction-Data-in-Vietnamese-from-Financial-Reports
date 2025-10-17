@@ -1,0 +1,952 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Công bố thông tin định kỳ Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Công bố thông tin định kỳ\nLoại nội dung: Văn bản\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập – Tự do – Hạnh phúc\nHà Nội, ngày 30 tháng 07 năm 2025\n\nKính gửi: Sở Giao dịch Chứng khoán Hà Nội\n\nThực hiện quy định tại khoản 3 Điều 14 Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán, Công ty CP One Capital Hospitality (mã CK OCH) thực hiện công bố thông tin báo cáo tài chính (BCTC) Quý II năm 2025 với Sở Giao dịch Chứng khoán Hà Nội như sau:\n\n1. Tên tổ chức: Công ty CP One Capital Hospitality\nMã chứng khoán: OCH\nĐịa chỉ: Tầng 23, tòa nhà Leadvisors, 643 Phạm Văn Đồng, P. Nghĩa Đô, TP. Hà Nội\nĐiện thoại liên hệ: 0243 783 0101 Fax: 0243 783 0202\nEmail: info@och.vn Website: http://och.vn\n\n2. Nội dung thông tin công bố:\nBCTC Quý II năm 2025\n[X] BCTC riêng và BCTC hợp nhất (Tổ chức niêm yết có công ty con)\nCác trường hợp thuộc diện phải giải trình nguyên nhân:\n- Tổ chức kiểm toán đưa ra ý kiến không phải là ý kiến chấp nhận toàn phần đối với BCTC: Có (X)\nVăn bản giải trình trong trường hợp tích có: Có (X)\n- Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch trước và sau kiểm toán từ 5% trở lên, chuyển từ lỗ sang lãi hoặc ngược lại: Không (X)\n- Lợi nhuận sau thuế thu nhập doanh nghiệp tại báo cáo kết quả kinh doanh của kỳ báo cáo thay đổi từ 10% trở lên so với báo cáo cùng kỳ năm trước: Có (X)\nVăn bản giải trình trong trường hợp tích có: Có (X)\n- Lợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này hoặc ngược lại: Có (X)\nVăn bản giải trình trong trường hợp tích có: Có (X)\n\nThông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 30/07/2025 tại đường dẫn http://och.vn/congbo_thongtin\n\n3. Báo cáo về các giao dịch có giá trị từ 35% tổng tài sản trở lên trong kỳ:\nTrường hợp Tổ chức niêm yết có giao dịch đề nghị báo cáo đầy đủ các nội dung sau:\n- Nội dung giao dịch: ...\n- Tỷ trọng giá trị giao dịch/tổng giá trị tài sản của doanh nghiệp (căn cứ trên báo cáo tài chính gần nhất): ...\n- Ngày hoàn thành giao dịch: ...\n\nChúng tôi xin cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin công bố.\n\nĐại diện tổ chức\nTổng Giám đốc\nPhạm Tiến Thanh (đã ký)\n\nTài liệu đính kèm:\n- BCTC riêng, hợp nhất quý II năm 2025\n- Văn bản giải trình thông tin BCTC Quý II/2025.\n\nSection: Mục lục Báo cáo tài chính hợp nhất\nLoại nội dung: Văn bản\nBẢNG MỤC LỤC\nBảng cân đối kế toán hợp nhất\nBáo cáo kết quả kinh doanh hợp nhất\nBáo cáo lưu chuyển tiền tệ hợp nhất\nThuyết minh Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tên đầy đủ của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Mã cổ phiếu của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Loại báo cáo tài chính đang được công bố là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Báo cáo này được phát hành vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ý kiến kiểm toán đối với báo cáo tài chính này có phải là chấp nhận toàn phần không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong kỳ báo cáo có thay đổi từ 10% trở lên so với cùng kỳ năm trước không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của việc có văn bản giải trình đối với ý kiến kiểm toán không phải chấp nhận toàn phần.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ minh bạch của thông tin công bố khi có nhiều trường hợp cần giải trình nguyên nhân.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|------|---------------------------------------|-------------|--------------------|--------------------|\n| 100  | **A. TÀI SẢN NGẮN HẠN**              |             | 498.453.926.786    | 628.613.173.938    |\n| 110  | I. Tiền và các khoản tương đương tiền | 03          | 160.165.709.288    | 169.749.007.919    |\n| 111  | 1. Tiền                               |             | 108.765.709.288    | 66.949.007.919     |\n| 112  | 2. Các khoản tương đương tiền         |             | 51.400.000.000     | 102.800.000.000    |\n| 120  | II. Các khoản đầu tư tài chính ngắn hạn | 04          | 35.837.297.824     | 26.034.992.071     |\n| 121  | 1. Chứng khoán kinh doanh             |             | 172.559            | 172.559            |\n| 122  | 2. Dự phòng giảm giá chứng khoán kinh doanh |             | 79.359             | 79.359             |\n| 123  | 3. Đầu tư nắm giữ đến ngày đáo hạn     |             | 35.837.204.624     | 26.034.898.871     |\n| 130  | III. Các khoản phải thu ngắn hạn      |             | 145.028.707.855    | 185.581.624.762    |\n| 131  | 1. Phải thu ngắn hạn của khách hàng   | 05          | 24.539.509.200     | 21.691.223.141     |\n| 132  | 2. Trả trước cho người bán ngắn hạn    | 06          | 131.133.918.322    | 66.637.766.798     |\n| 135  | 3. Phải thu cho vay ngắn hạn          | 07          | 10.858.959.999     | 10.400.000.000     |\n| 136  | 4. Phải thu ngắn hạn khác             | 08          | 159.780.866.216    | 264.547.268.098    |\n| 137  | 5. Dự phòng phải thu ngắn hạn khó đòi  |             | 183.275.175.823    | 179.687.028.788    |\n| 139  | 6. Tài sản thiếu chờ xử lý            |             | 1.990.629.941      | 1.992.395.513      |\n| 140  | IV. Hàng tồn kho                      | 09          | 136.657.426.598    | 228.885.001.731    |\n| 141  | 1. Hàng tồn kho                       |             | 137.591.068.022    | 331.138.228.504    |\n| 149  | 2. Dự phòng giảm giá hàng tồn kho     |             | 933.641.424        | 102.253.226.773    |\n| 150  | V. Tài sản ngắn hạn khác              |             | 20.764.785.221     | 18.362.547.455     |\n| 151  | 1. Chi phí trả trước ngắn hạn         | 13          | 7.343.739.685      | 4.647.983.605      |\n| 152  | 2. Thuế GTGT được khấu trừ            |             | 4.373.275.968      | 5.415.954.617      |\n| 153  | 3. Thuế và các khoản khác phải thu Nhà nước |             | 9.047.769.568      | 8.298.609.233      |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn của công ty tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng tài sản ngắn hạn giữa cuối quý II/2025 và đầu năm 2025, cho biết sự thay đổi?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Trả trước cho người bán ngắn hạn' đã thay đổi như thế nào giữa hai kỳ báo cáo?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của việc giảm hàng tồn kho và dự phòng giảm giá hàng tồn kho đến tài sản ngắn hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ các khoản phải thu ngắn hạn trên tổng tài sản ngắn hạn tại ngày 30/06/2025 và nhận xét về khả năng thu hồi các khoản nợ này.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi lớn trong 'Trả trước cho người bán ngắn hạn' đối với dòng tiền hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro về thanh khoản nếu xu hướng giảm của tiền và các khoản tương đương tiền tiếp tục diễn ra.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|------|---------------------------------------|-------------|--------------------|--------------------|\n| 200  | **B. TÀI SẢN DÀI HẠN**               |             | 3.263.582.554.422  | 3.224.643.675.479  |\n| 210  | I. Các khoản phải thu dài hạn         |             | 203.908.063.423    | 202.884.004.359    |\n| 215  | 1. Phải thu cho vay dài hạn           | 07          | 30.227.733.073     | 30.227.733.073     |\n| 216  | 2. Phải thu dài hạn khác              | 08          | 173.680.330.350    | 172.656.271.286    |\n| 220  | II. Tài sản cố định                   |             | 471.456.150.373    | 482.842.470.131    |\n| 221  | 1. Tài sản cố định hữu hình           | 12          | 416.637.682.977    | 427.179.420.965    |\n| 222  | - Nguyên giá                          |             | 838.141.219.829    | 829.407.529.197    |\n| 223  | - Giá trị hao mòn lũy kế              |             | 421.503.536.852    | 402.228.108.232    |\n| 227  | 2. Tài sản cố định vô hình            | 11          | 54.818.467.396     | 55.663.049.166     |\n| 228  | - Nguyên giá                          |             | 75.825.450.065     | 75.202.950.065     |\n| 229  | - Giá trị hao mòn lũy kế              |             | 21.006.982.669     | 19.539.900.899     |\n| 230  | III. Bất động sản đầu tư              |             | 20.576.115.711     | 21.178.712.553     |\n| 231  | - Nguyên giá                          |             | 36.155.810.460     | 36.155.810.460     |\n| 232  | - Giá trị hao mòn lũy kế              |             | 15.579.694.749     | 14.977.097.907     |\n| 240  | IV. Tài sản dở dang dài hạn           |             | 179.057.841.628    | 181.946.261.390    |\n| 242  | 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 10          | 179.057.841.628    | 181.946.261.390    |\n| 250  | V. Đầu tư tài chính dài hạn           |             | 2.085.000.000.000  | 2.085.000.000.000  |\n| 253  | 1. Đầu tư góp vốn vào đơn vị khác     | 04          | 2.101.423.700.000  | 2.101.423.700.000  |\n| 254  | 2. Dự phòng đầu tư tài chính dài hạn  |             | 16.423.700.000     | 16.423.700.000     |\n| 260  | VI. Tài sản dài hạn khác              |             | 303.584.383.287    | 250.792.227.046    |\n| 261  | 1. Chi phí trả trước dài hạn          | 13          | 216.795.861.808    | 218.416.769.457    |\n| 262  | 2. Tài sản thuế thu nhập hoãn lại     | 30          | 213.154.833        | 241.943.120        |\n| 269  | 3. Lợi thế thương mại                 | 14          | 86.575.366.646     | 32.133.514.469     |\n| 270  | **TỔNG CỘNG TÀI SẢN**                 |             | 3.762.036.481.208  | 3.853.256.849.417  |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của công ty tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị nguyên giá của tài sản cố định hữu hình cuối quý II/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị lợi thế thương mại giữa 30/06/2025 và 01/01/2025, cho biết sự thay đổi?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tài sản cố định trên tổng tài sản dài hạn tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tăng trưởng của lợi thế thương mại và tác động của nó đến tổng tài sản dài hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn từ các khoản phải thu dài hạn đối với sức khỏe tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý tài sản dài hạn dựa trên sự biến động của giá trị hao mòn lũy kế và chi phí sản xuất, kinh doanh dở dang.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có sự tăng trưởng trong các khoản đầu tư tài chính dài hạn đến chiến lược mở rộng của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|------|-----------------------------------------------|-------------|--------------------|--------------------|\n| 300  | **C. NỢ PHẢI TRẢ**                            |             | 1.929.220.760.294  | 1.938.771.943.991  |\n| 310  | I. Nợ ngắn hạn                                 |             | 640.192.218.330    | 589.967.426.483    |\n| 311  | 1. Phải trả người bán ngắn hạn                 | 16          | 27.705.305.877     | 25.589.927.836     |\n| 312  | 2. Người mua trả tiền trước ngắn hạn            | 17          | 6.414.845.112      | 6.347.429.299      |\n| 313  | 3. Thuế và các khoản phải nộp Nhà nước         | 18          | 223.703.704.295    | 229.110.392.979    |\n| 314  | 4. Phải trả người lao động                     |             | 15.367.891.063     | 11.303.329.565     |\n| 315  | 5. Chi phí phải trả ngắn hạn                   | 19          | 21.379.164.963     | 13.117.056.461     |\n| 318  | 6. Doanh thu chưa thực hiện ngắn hạn          | 21          | 418.750.101        | 8.063.976          |\n| 319  | 7. Phải trả ngắn hạn khác                      | 20          | 78.095.998.353     | 135.421.065.960    |\n| 320  | 8. Vay và nợ thuê tài chính ngắn hạn           | 15          | 256.274.731.629    | 155.296.663.881    |\n| 321  | 9. Dự phòng phải trả ngắn hạn                  | 22          | 3.386.672.199      | -                  |\n| 322  | 10. Quỹ khen thưởng, phúc lợi                  |             | 10.831.826.937     | 10.386.824.327     |\n| 330  | II. Nợ dài hạn                                |             | 1.289.028.541.964  | 1.348.804.517.508  |\n| 331  | 1. Phải trả người bán dài hạn                  | 16          | 2.235.664.458      | 2.625.664.458      |\n| 337  | 2. Phải trả dài hạn khác                       | 20          | 36.946.793.008     | 36.672.970.938     |\n| 338  | 3. Vay và nợ thuê tài chính dài hạn            | 15          | 1.210.000.000.000  | 1.270.000.000.000  |\n| 341  | 4. Thuế thu nhập hoãn lại phải trả             | 30          | 39.846.084.498     | 39.505.882.112     |\n| 400  | **D. VỐN CHỦ SỞ HỮU**                         |             | 1.832.815.720.914  | 1.914.484.905.426  |\n| 410  | I. Vốn chủ sở hữu                             | 23          | 1.832.815.720.914  | 1.914.484.905.426  |\n| 411  | 1. Vốn đầu tư của chủ sở hữu                   |             | 2.000.000.000.000  | 2.000.000.000.000  |\n| 411a | - Cổ phiếu phổ thông có quyền biểu quyết        |             | 2.000.000.000.000  | 2.000.000.000.000  |\n| 414  | 2. Vốn khác của chủ sở hữu                     |             | 4.984.000.000      | 4.984.000.000      |\n| 418  | 3. Quỹ đầu tư phát triển                       |             | 14.780.152.648     | 14.419.362.244     |\n| 420  | 4. Quỹ khác thuộc vốn chủ sở hữu                |             | 6.329.814.592      | 6.329.814.592      |\n| 421  | 5. Lợi nhuận sau thuế chưa phân phối           |             | 544.625.953.655    | 484.413.899.284    |\n| 421a | - LNST chưa phân phối lũy kế đến cuối kỳ trước |             | 484.413.899.284    | 628.319.372.540    |\n| 421b | - LNST chưa phân phối kỳ này                   |             | 60.212.054.371     | (143.905.473.256)  |\n| 429  | 6. Lợi ích cổ đông không kiểm soát            |             | 351.347.707.329    | 373.165.627.874    |\n| 440  | **TỔNG CỘNG NGUỒN VỐN**                        |             | 3.762.036.481.208  | 3.853.256.849.417  |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả của công ty tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vốn chủ sở hữu của công ty tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ ngắn hạn và nợ dài hạn của công ty tại ngày 30/06/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối kỳ này (30/06/2025) là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong vay và nợ thuê tài chính ngắn hạn giữa 01/01/2025 và 30/06/2025 và ảnh hưởng của nó đến tình hình tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 30/06/2025 và nhận xét về đòn bẩy tài chính của công ty.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi lợi nhuận sau thuế chưa phân phối kỳ này (từ âm sang dương) đến giá trị công ty và khả năng chi trả cổ tức.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro thanh toán nợ dựa trên cơ cấu nợ ngắn hạn và dài hạn hiện tại của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Báo cáo kết quả kinh doanh hợp nhất\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Quý II/2025 (VND) | Quý II/2024 (VND) | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|------|---------------------------------------|-------------|--------------------|--------------------|-----------------------------------|-----------------------------------|\n| 01   | 1. Doanh thu bán hàng và cung cấp dịch vụ | 25          | 188.859.333.744    | 158.015.388.911    | 322.815.572.774                   | 276.647.502.366                   |\n| 02   | 2. Các khoản giảm trừ doanh thu       | 26          | 10.648.024.932     | 6.766.139.556      | 16.240.684.754                    | 7.502.125.740                     |\n| 10   | 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ |             | 178.211.308.812    | 151.249.249.355    | 306.574.888.020                   | 269.145.376.626                   |\n| 11   | 4. Giá vốn hàng bán và dịch vụ cung cấp | 27          | 113.224.851.277    | 98.224.594.070     | 206.900.476.676                   | 186.112.926.266                   |\n| 20   | 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ |             | 64.986.457.535     | 53.024.655.285     | 99.674.411.344                    | 83.032.450.360                    |\n| 21   | 6. Doanh thu hoạt động tài chính      | 28          | 2.882.088.110      | 6.287.053.277      | 5.074.959.230                     | 12.920.511.805                    |\n| 22   | 7. Chi phí tài chính                  | 29          | 27.201.209.261     | 26.622.249.995     | 53.963.125.689                    | 53.164.084.556                    |\n| 23   | Trong đó: Chi phí lãi vay             |             | 27.198.039.042     | 26.506.360.176     | 53.958.305.472                    | 53.049.951.563                    |\n| 24   | 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết |             | -                  | 1.994.920.166      | -                                 | 1.994.920.166                     |\n| 25   | 9. Chi phí bán hàng                   |             | 27.812.616.700     | 24.201.930.153     | 54.160.035.130                    | 45.973.965.197                    |\n| 26   | 10. Chi phí quản lý doanh nghiệp      |             | 27.839.323.603     | 29.165.832.303     | 51.886.403.404                    | 52.395.076.969                    |\n| 30   | 11. Lợi nhuận thuần từ hoạt động kinh doanh |             | (14.984.603.919)   | 22.673.224.055     | (55.260.193.649)                  | 57.575.084.723                    |\n| 31   | 12. Thu nhập khác                     |             | 20.583.129         | 232.998.501        | 25.875.650                        | 233.914.518                       |\n| 32   | 13. Chi phí khác                      |             | 3.089.028.076      | 3.251.858.354      | 5.804.417.546                     | 6.204.577.887                     |\n| 40   | 14. Lợi nhuận khác                    |             | (3.068.444.947)    | (3.018.859.853)    | (5.778.541.896)                   | (5.970.663.369)                   |\n| 50   | 15. Tổng lợi nhuận kế toán trước thuế |             | (18.053.048.866)   | 25.692.083.908     | (61.038.735.545)                  | 63.545.748.092                    |\n| 51   | 16. Chi phí thuế TNDN hiện hành       |             | 4.563.625.170      | 4.836.884.504      | 5.532.676.834                     | 6.670.655.320                     |\n| 52   | 17. Chi phí thuế TNDN hoãn lại        | 30          | 387.988.242        | 41.884.013         | 368.990.675                       | 112.947.173                       |\n| 60   | 18. Lợi nhuận sau thuế thu nhập doanh nghiệp |             | (23.004.662.278)   | 30.487.084.399     | (66.940.403.054)                  | 70.103.456.239                    |\n| 61   | 19. Lợi nhuận sau thuế của cổ đông Công ty mẹ |             | (14.236.611.011)   | 7.141.513.499      | (35.425.209.619)                  | 26.619.595.004                    |\n| 62   | 20. Lợi nhuận sau thuế của cổ đông không kiểm soát |             | (8.768.051.267)    | 23.345.570.900     | (31.515.193.435)                  | 43.483.861.235                    |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong Quý II/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong Quý II/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa Quý II/2025 và Quý II/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ chi phí tài chính trên doanh thu thuần Quý II/2025 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của lợi nhuận thuần từ hoạt động kinh doanh giữa các kỳ báo cáo.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của việc lợi nhuận sau thuế thu nhập doanh nghiệp chuyển từ lãi sang lỗ trong Quý II/2025 so với cùng kỳ năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận gộp và biên lợi nhuận ròng của công ty cho Quý II/2025 và nhận xét về hiệu quả hoạt động.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Dự báo xu hướng lợi nhuận của công ty trong các quý tiếp theo dựa trên dữ liệu hiện tại.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất (Phương pháp gián tiếp)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|------|---------------------------------------|-------------|-----------------------------------|-----------------------------------|\n|      | **I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH** |             |                                   |                                   |\n| 01   | 1. Lợi nhuận trước thuế               |             | 61.038.735.545                    | 63.545.748.092                    |\n| 02   | 2. Điều chỉnh cho                      |             | 174.724.743.961                   | 63.632.637.099                    |\n| 02   | - Khấu hao và phân bổ                  |             | 23.250.807.777                    | 25.631.550.961                    |\n| 03   | - Các khoản dự phòng                   |             | 102.454.701.609                   | 4.160.320.974                     |\n| 04   | - Lãi/lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ |             | 18.678.600                        | 55.184.098                        |\n| 05   | - Lãi/lỗ từ hoạt động đầu tư           |             | 4.920.392.297                     | 10.833.360.353                    |\n| 06   | - Chi phí lãi vay                      |             | 53.958.305.472                    | 53.049.951.563                    |\n| 08   | 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động |             | (113.686.008.416)                 | 86.889.007                        |\n| 09   | - Tăng/giảm các khoản phải thu         |             | 37.992.093.332                    | 14.389.724.675                    |\n| 10   | - Tăng/giảm hàng tồn kho               |             | 10.025.651.640                    | 9.111.418.989                     |\n| 11   | - Tăng/giảm các khoản phải trả (trừ lãi phải trả, thuế TNDN phải nộp) |             | (158.309.475.982)                 | 8.904.488.544                     |\n| 12   | - Tăng/giảm chi phí trả trước          |             | 1.074.848.431                     | 7.592.067.771                     |\n| 14   | - Tiền lãi vay đã trả                 |             | (54.259.487.646)                  | (54.344.917.782)                  |\n| 15   | - Thuế thu nhập doanh nghiệp đã nộp   |             | (25.413.992.457)                  | (38.589.462.853)                  |\n| 17   | - Tiền chi khác từ hoạt động kinh doanh |             | (445.002.610)                     | (2.088.241.897)                   |\n| 20   | **Lưu chuyển tiền thuần từ hoạt động kinh doanh** |             | (96.960.351.798)                  | 101.940.320.874                   |\n|      | **II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ** |             |                                   |                                   |\n| 21   | 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác |             | (2.888.419.762)                   | (4.609.988.909)                   |\n| 22   | 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác |             | 11.388.889                        | 12.909.091                        |\n| 23   | 3. Tiền chi cho vay, đầu tư vào các đơn vị khác |             | (13.802.305.753)                  | (10.021.886.841)                  |\n| 24   | 4. Tiền thu hồi cho vay, thu hồi đầu tư vào các đơn vị khác |             | 4.113.340.001                     | 31.170.000.000                    |\n| 25   | 5. Tiền chi đầu tư vào đơn vị khác    |             | (1.000.000.000)                   | -                                 |\n| 27   | 6. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia |             | 2.066.587.484                     | 2.199.260.346                     |\n| 30   | **Lưu chuyển tiền thuần từ hoạt động đầu tư** |             | (9.499.409.141)                   | 18.750.293.687                    |\n|      | **III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH** |             |                                   |                                   |\n| 31   | 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu |             | 55.879.715.960                    | -                                 |\n| 33   | 2. Tiền vay và nợ thuê tài chính nhận được |             | 75.580.078.420                    | 47.259.528.146                    |\n| 34   | 3. Tiền trả nợ gốc vay                 |             | (34.602.010.672)                  | (32.398.031.809)                  |\n| 40   | **Lưu chuyển tiền thuần từ hoạt động tài chính** |             | 96.857.783.708                    | 14.861.496.337                    |\n| 50   | Lưu chuyển tiền thuần trong kỳ         |             | (9.601.977.231)                   | 68.328.530.850                    |\n| 60   | Tiền và các khoản tương đương tiền đầu kỳ |             | 169.749.007.919                   | 168.490.954.691                   |\n| 61   | Ảnh hưởng của chênh lệch tỷ giá hối đoái quy đổi ngoại tệ |             | 18.678.600                        | 55.184.098                        |\n| 70   | Tiền và các khoản tương đương tiền cuối kỳ | 03          | 160.165.709.288                   | 100.217.607.939                   |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh từ 01/01/2025 đến 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động đầu tư giữa kỳ hiện tại và cùng kỳ năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Tiền lãi vay đã trả' có sự thay đổi như thế nào giữa hai kỳ báo cáo?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đóng góp của từng hoạt động (kinh doanh, đầu tư, tài chính) vào sự thay đổi tiền và tương đương tiền trong kỳ hiện tại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của việc lưu chuyển tiền thuần từ hoạt động kinh doanh âm trong kỳ hiện tại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo khả năng công ty duy trì hoạt động và mở rộng kinh doanh dựa trên các dòng tiền hiện có.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính toán chỉ số dòng tiền tự do (Free Cash Flow) và nhận xét về khả năng tạo tiền của công ty.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Đặc điểm hoạt động và Chính sách kế toán)\nLoại nội dung: Văn bản\n**1. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP**\n**Hình thức sở hữu**\nCông ty Cổ phần One Capital Hospitality được thành lập theo Giấy chứng nhận đăng ký kinh doanh số 0403000464 do Sở Kế hoạch và Đầu tư tỉnh Hải Dương cấp lần đầu ngày 24/07/2006, thay đổi lần thứ mười bảy Giấy chứng nhận đăng ký kinh doanh số 0800338870 do Sở Kế hoạch và Đầu tư Hà Nội cấp ngày 10/05/2022.\nTrụ sở chính của Công ty đặt tại Tầng 23, tòa nhà Leadvisors, 643 Phạm Văn Đồng, phường Nghĩa Đô, Hà Nội.\nVốn điều lệ: 2.000.000.000.000 VND (Hai nghìn tỷ đồng), tương đương 200.000.000 cổ phiếu (Mệnh giá 10.000 VND).\n**Lĩnh vực kinh doanh**\nCác lĩnh vực kinh doanh của công ty là hoạt động đầu tư, kinh doanh thực phẩm, dịch vụ khách sạn và kinh doanh bất động sản.\n**Hoạt động kinh doanh chính**\nHoạt động kinh doanh chính của Công ty là:\n- Hoạt động cung cấp dịch vụ lưu trú ngắn hạn\n- Hoạt động dịch vụ ăn uống khác (trừ hoạt động của quán bar, karaoke, vũ trường)\n- Cung cấp dịch vụ ăn uống theo hợp đồng tạm thời cho khách hàng (phục vụ đồ ăn cho tiệc, hội họp, đám cưới, ...)\n- Nhà hàng và các dịch vụ ăn uống lưu động (trừ hoạt động của quán bar, karaoke, vũ trường)\n- Dịch vụ đồ uống (trừ hoạt động của quán bar)\n- Tư vấn, quản lý quyền sử dụng đất cho chủ sở hữu hoặc người thuê\n- Kinh doanh bất động sản\n- Đầu tư và xây dựng cơ sở hạ tầng, nhà ở, văn phòng, nhà máy và kho bãi\n- Xây dựng công trình dân dụng\n- Bán buôn thực phẩm...\n\n**Cơ cấu công ty**\nChi tiết các công ty con được hợp nhất vào Báo cáo tài chính hợp nhất này tại ngày 30/06/2025 như sau:\n| Công ty con | Trụ sở chính | Tỷ lệ lợi ích của Công ty mẹ | Tỷ lệ quyền biểu quyết của Công ty mẹ | Hoạt động kinh doanh chính |\n|-------------|--------------|-------------------------------|-----------------------------------------|---------------------------------------------|\n|             |              | 30/06/2025 | 01/01/2025 | 30/06/2025 | 01/01/2025 |                                             |\n| Công ty CP Tân Việt | Nha Trang | 51,42      | 51,42      | 51,42      | 51,42      | Kinh doanh khách sạn                        |\n| Công ty CP Ngôi Sao Chiều Nha Trang | Nha Trang | 99,99      | 99,99      | 99,99      | 99,99      | Kinh doanh khách sạn                        |\n| Công ty CP Viptour – Togi | Hà Nội | 86,13      | 86,13      | 86,13      | 86,13      | Kinh doanh khách sạn                        |\n| Quỹ đầu tư cơ hội đặc biệt Leadvisors | Hà Nội | 99,63      | 99,51      | 100        | 100        | Quỹ đầu tư vào cổ phiếu và thị trường chứng khoán |\n| Công ty CP One Capital Consumer | Hà Nội | 62,67      | 62,72      |            |            | Sản xuất thực phẩm và bánh bột, chế biến và bảo quản thịt |\n| Công ty CP Bánh Givral Bakery (Công ty con của One Capital Consumer) | Hồ Chí Minh | 62,67      | 50,77      | 99,99      | 50,77      | Sản xuất và kinh doanh các loại bánh, kem |\n| Công ty TNHH Sản xuất Bình Hưng (Công ty con của Givral Bakery) | Bắc Ninh | 62,67      | 50,77      | 100        | 100        | Nhà máy khu công nghiệp cho thuê            |\n| Công ty CP Kem Tràng Tiền (Công ty con của One Capital Consumer) | Hà Nội | 62,66      | 99,81      | 99,98      | 99,98      | Sản xuất và kinh doanh các loại bánh, kem |\n| Công ty CP Kem Tín Phát (Công ty con của Kem Tràng Tiền) | Hà Nội | 62,58      | 99,68      | 99,87      | 99,87      | Chế biến sữa và các sản phẩm từ sữa         |\n| Công ty CP Fuji Food (Công ty con của Kem Tràng Tiền) | Hà Nội | 31,96      | 51         |            |            | Chế biến và bảo quản thịt và các sản phẩm từ thịt và thủy sản |\n| Công ty TNHH JP Good Food (Công ty con của One Capital Consumer) | Sơn La | 62,67      | 100        | 100        | 100        | Chế biến, bảo quản sản phẩm thịt, thủy sản |\n\n**2. CHÍNH SÁCH VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG**\n**2.1. KỲ KẾ TOÁN, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN**\nKỳ kế toán của Công ty bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.\nĐơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND).\n\n**2.2. CHUẨN MỰC KẾ TOÁN VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG**\n**Chế độ kế toán áp dụng**\nCông ty áp dụng chế độ kế toán ban hành theo Thông tư số 200/2014/TT-BTC hướng dẫn Chế độ kế toán doanh nghiệp ban hành ngày 22/12/2014, sửa đổi và bổ sung bởi Thông tư số 75/2015/TT-BTC ngày 18/05/2015 và Thông tư số 53/2016/TT-BTC ngày 21/03/2016 của Bộ Tài chính.\nCông ty lập Báo cáo tài chính hợp nhất theo Thông tư số 202/2014/TT-BTC ngày 22/12/2014 hướng dẫn phương pháp lập và trình bày báo cáo tài chính hợp nhất.\n**Tuyên bố tuân thủ các chuẩn mực kế toán và chế độ kế toán**\nCông ty áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn bổ sung do Nhà nước ban hành.\nBáo cáo tài chính hợp nhất được lập và trình bày phù hợp với các quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện chuẩn mực và chế độ kế toán hiện hành đang được áp dụng.",
+    "questions": [
+      {
+        "question": "Trụ sở chính của Công ty Cổ phần One Capital Hospitality đặt ở đâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn điều lệ của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tỷ lệ lợi ích của Công ty mẹ trong Công ty CP Tân Việt là bao nhiêu tại ngày 30/06/2025?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lĩnh vực kinh doanh chính của công ty bao gồm những gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Kỳ kế toán của công ty bắt đầu và kết thúc vào ngày nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự đa dạng trong các hoạt động kinh doanh của Công ty One Capital Hospitality.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc sở hữu nhiều công ty con đến hoạt động kinh doanh và quản lý của Công ty mẹ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro pháp lý nếu công ty không tuân thủ đúng các chuẩn mực kế toán và chế độ kế toán hiện hành.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chính sách kế toán: Hợp nhất, Công cụ tài chính, Ngoại tệ)\nLoại nội dung: Văn bản\n**2.3. CƠ SỞ LẬP BÁO CÁO TÀI CHÍNH HỢP NHẤT**\nBáo cáo tài chính hợp nhất của Công ty được lập trên cơ sở hợp nhất báo cáo tài chính của Công ty và báo cáo tài chính của các Công ty con được lập cho năm tài chính kết thúc ngày 31/03/2025. Quyền kiểm soát đạt được khi Công ty có quyền chi phối các chính sách tài chính và hoạt động của các công ty được đầu tư nhằm thu được lợi ích từ các hoạt động của họ.\nBáo cáo tài chính của các công ty con được áp dụng các chính sách kế toán nhất quán với các chính sách kế toán của Công ty. Trong trường hợp cần thiết, báo cáo tài chính của các công ty con được điều chỉnh để đảm bảo sự nhất quán các chính sách kế toán áp dụng tại Công ty và các công ty con.\nSố dư giữa các công ty trong cùng tập đoàn, các giao dịch nội bộ và các khoản lãi/lỗ chưa thực hiện phát sinh từ các giao dịch này được loại trừ khi hợp nhất báo cáo tài chính.\n**Lợi ích của cổ đông không kiểm soát**\nLợi ích của cổ đông không kiểm soát thể hiện phần lãi hoặc lỗ và tài sản thuần không do cổ đông của Công ty nắm giữ.\n\n**2.4. CÁC CÔNG CỤ TÀI CHÍNH**\n**Ghi nhận ban đầu**\n**Tài sản tài chính**\nCác tài sản tài chính của Công ty gồm tiền, các khoản tương đương tiền, các khoản phải thu thương mại, các khoản phải thu khác, các khoản phải thu cho vay, các khoản đầu tư tài chính dài hạn. Tại ngày ghi nhận ban đầu, các tài sản tài chính được ghi nhận theo giá gốc cộng với chi phí giao dịch liên quan trực tiếp đến việc mua sắm các tài sản tài chính này.\n**Nợ tài chính**\nCác khoản nợ tài chính của Công ty gồm các khoản vay, các khoản phải trả người bán, các khoản phải trả khác. Tại ngày ghi nhận ban đầu, các khoản nợ tài chính được ghi nhận theo giá gốc cộng với chi phí giao dịch liên quan trực tiếp đến việc phát hành các khoản nợ tài chính này.\n\n**Đánh giá sau ghi nhận ban đầu**\nHiện tại, chưa có quy định về việc đánh giá sau ghi nhận ban đầu đối với công cụ tài chính.\n\n**2.5. CÁC LOẠI TỶ GIÁ HỐI ĐOÁI ÁP DỤNG TRONG KẾ TOÁN**\nCác giao dịch bằng ngoại tệ trong kỳ được quy đổi ra VND theo tỷ giá thực tế tại ngày giao dịch.\n**Tỷ giá thực tế đối với các giao dịch bằng ngoại tệ phát sinh trong kỳ**\n- Tỷ giá dùng để ghi nhận các khoản phải thu là tỷ giá mua của ngân hàng thương mại được chỉ định nơi khách hàng của công ty thanh toán tại thời điểm phát sinh giao dịch.\n- Tỷ giá dùng để ghi nhận các khoản phải trả là tỷ giá bán của ngân hàng thương mại nơi công ty dự kiến giao dịch tại thời điểm phát sinh giao dịch.\n\n**Tỷ giá thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại ngày lập Báo cáo tài chính hợp nhất**\n- Đối với các khoản mục được phân loại là tài sản, áp dụng tỷ giá mua của ngân hàng thương mại nơi công ty thường xuyên có giao dịch.\n- Đối với các khoản tiền gửi ngoại tệ, áp dụng tỷ giá mua của ngân hàng nơi công ty mở tài khoản ngoại tệ.\n- Đối với các khoản mục được phân loại là các khoản phải trả, áp dụng tỷ giá bán của ngân hàng thương mại nơi công ty thường xuyên có giao dịch.\n\nToàn bộ chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư cuối kỳ các khoản mục tiền tệ có gốc ngoại tệ được ghi nhận vào kết quả hoạt động kinh doanh của kỳ kế toán. Trong đó, lãi chênh lệch tỷ giá phát sinh do đánh giá lại số dư cuối kỳ các khoản mục tiền tệ có gốc ngoại tệ không được dùng để chia lãi hoặc trả cổ tức.",
+    "questions": [
+      {
+        "question": "Công ty áp dụng cơ sở nào để lập báo cáo tài chính hợp nhất?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào quyền kiểm soát đạt được đối với các công ty con?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các tài sản tài chính của công ty bao gồm những gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản nợ tài chính của công ty bao gồm những gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ giá nào được sử dụng để ghi nhận các khoản phải thu bằng ngoại tệ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích vai trò của lợi ích của cổ đông không kiểm soát trong báo cáo tài chính hợp nhất.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc nhất quán chính sách kế toán giữa Công ty mẹ và các công ty con.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của biến động tỷ giá hối đoái đến kết quả hoạt động kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chính sách kế toán: Tiền, Đầu tư tài chính, Phải thu)\nLoại nội dung: Văn bản\n**2.6. TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN**\nTiền gồm tiền mặt tại quỹ, tiền gửi ngân hàng.\nCác khoản tương đương tiền là các khoản đầu tư ngắn hạn không quá 03 tháng có khả năng chuyển đổi dễ dàng thành tiền và không có nhiều rủi ro về chuyển đổi thành tiền kể từ ngày mua khoản đầu tư đó.\n\n**2.7. CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH**\n**Chứng khoán kinh doanh** được ghi nhận ban đầu trên sổ kế toán theo giá gốc, bao gồm giá mua cộng các chi phí mua có liên quan trực tiếp nếu có như phí môi giới, giao dịch, cung cấp thông tin, thuế, lệ phí và phí ngân hàng. Sau ghi nhận ban đầu, chứng khoán kinh doanh được đo lường theo giá gốc trừ đi dự phòng giảm giá chứng khoán kinh doanh. Khi thanh lý hoặc bán, giá gốc của chứng khoán kinh doanh được xác định theo phương pháp nhập trước xuất trước (FIFO).\n**Đầu tư nắm giữ đến ngày đáo hạn** gồm tiền gửi có kỳ hạn tại ngân hàng (bao gồm chứng chỉ tiền gửi, kỳ phiếu, tín phiếu, trái phiếu, cổ phiếu ưu đãi bên phát hành có nghĩa vụ mua lại tại một thời điểm nhất định trong tương lai), các khoản cho vay,... được nắm giữ đến ngày đáo hạn với mục đích hưởng lãi định kỳ và các khoản đầu tư nắm giữ đến ngày đáo hạn khác.\n**Đầu tư vào công ty con, công ty liên kết và các khoản đầu tư khác**\nCác khoản đầu tư vào công ty con, công ty liên doanh, liên kết mua trong kỳ được xác định tại ngày mua theo giá gốc khoản đầu tư và các thủ tục kế toán được thực hiện theo quy định của Chuẩn mực kế toán Hợp nhất kinh doanh và Đầu tư vào công ty liên kết.\n**Đầu tư vào công cụ vốn của đơn vị khác** gồm các khoản đầu tư vào công cụ vốn của một đơn vị khác mà không kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đến bên được đầu tư. Giá trị ghi sổ ban đầu của các khoản đầu tư này được đo lường theo giá gốc. Sau ghi nhận ban đầu, các khoản đầu tư này được đo lường theo giá gốc trừ đi dự phòng tổn thất đầu tư.\nCổ tức nhận bằng cổ phiếu chỉ được ghi nhận theo số lượng cổ phiếu nhận được, không ghi nhận tăng giá trị khoản đầu tư và doanh thu hoạt động tài chính.\n**Dự phòng tổn thất các khoản đầu tư vào công cụ vốn của đơn vị khác** được lập như sau:\n- Đối với các khoản đầu tư chứng khoán kinh doanh: Cơ sở lập dự phòng là khoản chênh lệch giữa giá gốc khoản đầu tư ghi trên sổ kế toán và giá trị thị trường của chúng tại thời điểm lập dự phòng.\n- Đối với các khoản đầu tư được nắm giữ dài hạn không được phân loại là chứng khoán kinh doanh và không có ảnh hưởng đáng kể đến công ty: Nếu khoản đầu tư vào cổ phiếu niêm yết hoặc giá trị hợp lý của khoản đầu tư có thể xác định một cách đáng tin cậy thì khoản dự phòng được trích lập dựa trên giá trị thị trường của cổ phiếu; nếu khoản đầu tư không xác định được giá trị hợp lý tại thời điểm của báo cáo, khoản dự phòng được trích lập dựa trên báo cáo tài chính tại thời điểm lập dự phòng của công ty.\n- Đối với các khoản đầu tư nắm giữ đến ngày đáo hạn: Căn cứ vào khả năng thu hồi để trích lập dự phòng phải thu khó đòi theo quy định của pháp luật.\n\n**2.8. CÁC KHOẢN PHẢI THU**\nCác khoản phải thu được theo dõi chi tiết theo kỳ hạn, đối tượng, nguyên tệ và các yếu tố khác tùy theo yêu cầu quản lý của công ty.\n**Dự phòng phải thu khó đòi** được lập từ các khoản mục sau: các khoản phải thu quá hạn ghi trong hợp đồng bán hàng, hợp đồng cho vay, cam kết hợp đồng, các cam kết về nợ và phải thu chưa đến hạn thanh toán nhưng khó có khả năng thu hồi. Các khoản dự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi trên cơ sở tuổi nợ quá hạn hoặc tổn thất dự kiến có thể xảy ra. Trong đó, việc trích lập dự phòng đối với các khoản phải thu quá hạn được căn cứ vào thời gian trả nợ gốc theo hợp đồng bán hàng ban đầu và các khoản phải thu chưa đến hạn thanh toán nhưng khách hàng đã phá sản hoặc đang trong quá trình giải thể, mất tích hoặc bỏ trốn.",
+    "questions": [
+      {
+        "question": "Thế nào là 'các khoản tương đương tiền' theo chính sách kế toán của công ty?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chứng khoán kinh doanh được ghi nhận ban đầu theo giá nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phương pháp xác định giá gốc của chứng khoán kinh doanh khi bán là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm những loại tài sản nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi nào thì các khoản dự phòng phải thu khó đòi được lập?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự khác biệt trong cách hạch toán giữa chứng khoán kinh doanh và đầu tư nắm giữ đến ngày đáo hạn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tài chính liên quan đến chính sách lập dự phòng phải thu khó đòi của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích tác động của việc không ghi nhận cổ tức nhận bằng cổ phiếu là tăng giá trị đầu tư đến báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chính sách kế toán: Hàng tồn kho, Tài sản cố định, Chi phí trả trước)\nLoại nội dung: Văn bản\n**2.9. HÀNG TỒN KHO**\nHàng tồn kho được ghi nhận theo giá gốc bao gồm chi phí mua, chi phí chế biến và các chi phí trực tiếp khác phát sinh để đưa hàng tồn kho về địa điểm và trạng thái hiện tại. Sau ghi nhận ban đầu, tại thời điểm lập báo cáo tài chính hợp nhất, nếu giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc thì hàng tồn kho được ghi nhận theo giá trị thuần có thể thực hiện được.\nPhương pháp tính giá trị hàng tồn kho được xác định theo phương pháp bình quân gia quyền tháng.\nHàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên.\n**Phương pháp xác định giá trị sản phẩm dở dang cuối kỳ:** Sản phẩm dở dang được tập hợp cho từng công trình chưa hoàn thành hoặc chưa ghi nhận doanh thu, tương ứng với giá trị sản phẩm dở dang tại thời điểm cuối kỳ.\n**Dự phòng giảm giá hàng tồn kho** được lập cho từng khoản mục hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được.\n\n**2.10. TÀI SẢN CỐ ĐỊNH**\n**Tài sản cố định hữu hình, tài sản cố định vô hình** được ghi nhận theo nguyên giá. Trong quá trình sử dụng, tài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo nguyên giá, khấu hao lũy kế và giá trị còn lại.\n**Khấu hao** được trích theo phương pháp đường thẳng, dựa trên thời gian sử dụng hữu ích ước tính của từng tài sản. Chi tiết như sau:\n- Nhà cửa, vật kiến trúc: 04 – 45 năm\n- Máy móc, thiết bị: 03 – 25 năm\n- Phương tiện vận tải: 06 – 15 năm\n- Thiết bị văn phòng: 03 – 10 năm\n- Tài sản cố định hữu hình khác: 04 – 08 năm\n- Quyền sử dụng đất, quyền đầu tư dự án: 30 – 40 năm\n- Phần mềm quản lý: 03 năm\n- Tài sản cố định vô hình khác: 03 – 10 năm\n\n**2.11. CHI PHÍ TRẢ TRƯỚC**\nCác chi phí phát sinh có liên quan đến kết quả sản xuất kinh doanh của nhiều kỳ kế toán được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả kinh doanh của các kỳ kế toán tiếp theo.\nViệc tính toán và phân bổ chi phí trả trước vào chi phí sản xuất kinh doanh của từng kỳ kế toán căn cứ vào tính chất, mức độ của từng loại chi phí để lựa chọn phương pháp và tiêu thức phân bổ hợp lý. Chi phí trả trước được phân bổ dần vào chi phí sản xuất kinh doanh theo phương pháp đường thẳng.",
+    "questions": [
+      {
+        "question": "Hàng tồn kho được ghi nhận theo giá trị nào khi giá trị thuần có thể thực hiện được thấp hơn giá gốc?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phương pháp tính giá trị hàng tồn kho mà công ty sử dụng là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tài sản cố định hữu hình và vô hình được ghi nhận theo giá trị nào ban đầu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phương pháp khấu hao tài sản cố định được áp dụng là gì và dựa trên cơ sở nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí trả trước được xử lý như thế nào trong kế toán của công ty?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc lập dự phòng giảm giá hàng tồn kho đối với báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của phương pháp khấu hao đường thẳng đến lợi nhuận và giá trị tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích mối liên hệ giữa chi phí trả trước và kết quả sản xuất kinh doanh của các kỳ kế toán tiếp theo.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chính sách kế toán: Phải trả, Vay, Chi phí, Doanh thu chưa thực hiện)\nLoại nội dung: Văn bản\n**2.12. CÁC KHOẢN PHẢI TRẢ**\nCác khoản phải trả được theo dõi chi tiết theo kỳ hạn phải trả, đối tượng phải trả, nguyên tệ và các yếu tố khác tùy thuộc vào yêu cầu quản lý của Công ty.\n\n**2.13. CÁC KHOẢN VAY**\nCác khoản vay được theo dõi theo từng đối tượng vay, từng hợp đồng vay và kỳ hạn trả nợ vay. Trong đó các khoản vay bằng ngoại tệ, theo dõi chi tiết theo nguyên tệ.\n\n**2.14. CHI PHÍ ĐI VAY**\nChi phí đi vay được ghi nhận vào chi phí sản xuất kinh doanh trong năm khi phát sinh, ngoại trừ các chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó (vốn hóa) khi thỏa mãn đầy đủ các điều kiện quy định trong Chuẩn mực kế toán Việt Nam số 16 'Chi phí đi vay'. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định và bất động sản đầu tư, chi phí đi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng.\n\n**2.15. CHI PHÍ PHẢI TRẢ**\nCác khoản chi phí phải trả phản ánh các khoản nợ phải trả về hàng hóa, dịch vụ đã nhận từ nhà cung cấp, hoặc đã cung cấp cho khách hàng nhưng chưa thanh toán, được ghi nhận là chi phí hoạt động trong kết quả hoạt động kinh doanh của các kỳ báo cáo.\nViệc hạch toán chi phí phải trả vào chi phí sản xuất kinh doanh trong kỳ được thực hiện theo nguyên tắc phù hợp giữa doanh thu và chi phí trong kỳ. Chi phí phải trả sẽ được thanh toán theo các chi phí thực tế phát sinh. Khoản chênh lệch lớn giữa dự phòng và chi phí thực tế sẽ được hoàn nhập.\n\n**2.16. DOANH THU CHƯA THỰC HIỆN**\nDoanh thu chưa thực hiện bao gồm các khoản tiền khách hàng trả trước cho một hoặc nhiều kỳ kế toán có liên quan đến việc cho thuê tài sản, lãi nhận trước khi cho vay vốn hoặc mua các công cụ nợ và các khoản doanh thu chưa thực hiện khác.\nDoanh thu chưa thực hiện được kết chuyển vào Doanh thu bán hàng và cung cấp dịch vụ theo số tiền xác định phù hợp với từng kỳ kế toán.",
+    "questions": [
+      {
+        "question": "Công ty theo dõi các khoản phải trả dựa trên những yếu tố nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí đi vay được vốn hóa khi nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí phải trả được ghi nhận dựa trên nguyên tắc kế toán nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản doanh thu chưa thực hiện bao gồm những loại khoản mục nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích quy trình xử lý khoản chênh lệch lớn giữa dự phòng chi phí phải trả và chi phí thực tế.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc vốn hóa chi phí đi vay đến giá trị tài sản và lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro liên quan đến việc quản lý các khoản vay bằng ngoại tệ của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Làm thế nào để doanh thu chưa thực hiện được chuyển đổi thành doanh thu bán hàng và cung cấp dịch vụ?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chính sách kế toán: Vốn chủ sở hữu, Doanh thu, Giảm trừ doanh thu, Giá vốn hàng bán)\nLoại nội dung: Văn bản\n**2.17. VỐN CHỦ SỞ HỮU**\n**Vốn góp của chủ sở hữu** được ghi nhận theo vốn thực góp của chủ sở hữu.\n**Vốn khác** được hình thành do bổ sung từ kết quả hoạt động kinh doanh, đánh giá lại tài sản và giá trị còn lại giữa giá trị hợp lý của tài sản được tặng, biếu, tài trợ sau khi trừ các khoản thuế phải nộp nếu có liên quan đến các tài sản này nếu được phép ghi nhận tăng hoặc giảm vốn chủ sở hữu.\n**Lợi nhuận chưa phân phối** được xác định trên cơ sở kết quả kinh doanh (lãi hoặc lỗ sau thuế thu nhập doanh nghiệp) và tình hình phân phối lợi nhuận hoặc xử lý lỗ của công ty. Việc phân phối lợi nhuận cho chủ sở hữu được xác định khi công ty có lợi nhuận sau thuế chưa phân phối mà không vượt quá lợi nhuận sau thuế chưa phân phối trên Báo cáo tài chính hợp nhất sau khi loại trừ các khoản lãi chênh lệch tỷ giá chưa thực hiện tại ngày khóa sổ kế toán. Trường hợp chia cổ tức, lợi nhuận cho chủ sở hữu vượt quá lợi nhuận sau thuế chưa phân phối được ghi nhận là giảm vốn góp. Lợi nhuận sau thuế chưa phân phối có thể được chia cho các nhà đầu tư dựa trên tỷ lệ vốn góp sau khi được Đại hội đồng cổ đông/Hội đồng quản trị phê duyệt và sau khi đã trích lập các quỹ theo Điều lệ Công ty và các quy định của pháp luật Việt Nam.\n**Cổ tức phải trả cho cổ đông** được ghi nhận là khoản phải trả trên Bảng cân đối kế toán hợp nhất của công ty sau thông báo trả cổ tức của Hội đồng quản trị công ty và thông báo về ngày chốt danh sách cổ đông thực hiện quyền của Trung tâm Lưu ký Chứng khoán Việt Nam (VSDC).\n\n**2.18. DOANH THU**\n**Doanh thu bán thành phẩm và hàng hóa**\nDoanh thu bán hàng được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu hàng hóa đã chuyển giao cho khách hàng\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như chủ sở hữu hoặc quyền kiểm soát hàng hóa\n- Doanh thu được đo lường một cách đáng tin cậy\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng\n- Các chi phí liên quan đến giao dịch bán hàng có thể xác định được.\n**Doanh thu cung cấp dịch vụ**\nDoanh thu cung cấp dịch vụ được xác định khi đồng thời thỏa mãn bốn (4) điều kiện sau:\n- Doanh thu được đo lường một cách đáng tin cậy\n- Có khả năng thu được lợi ích kinh tế từ giao dịch đó\n- Xác định được mức độ hoàn thành của giao dịch tại ngày lập Báo cáo cân đối kế toán hợp nhất một cách đáng tin cậy\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch một cách đáng tin cậy.\nPhần dịch vụ đã hoàn thành được xác định theo phương pháp đánh giá khối lượng công việc hoàn thành.\n**Doanh thu bán bất động sản, quyền kinh doanh bất động sản**\nDoanh thu bán bất động sản do công ty đầu tư được ghi nhận khi đồng thời đáp ứng các điều kiện sau:\n- Bất động sản đã được hoàn thành đầy đủ và các rủi ro và lợi ích gắn liền với quyền sở hữu bất động sản đã được chuyển giao cho người mua\n- Công ty không còn nắm giữ quyền quản lý bất động sản như chủ sở hữu tài sản, hoặc quyền kiểm soát\n- Doanh thu có thể đo lường một cách đáng tin cậy\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán bất động sản\n- Có thể xác định được các chi phí liên quan đến giao dịch bán bất động sản.\n**Doanh thu hoạt động tài chính**\nThu nhập phát sinh từ lãi tiền gửi, tiền cho vay, tiền bản quyền, cổ tức, lợi nhuận được chia và các hoạt động tài chính khác được ghi nhận khi đồng thời thỏa mãn hai (2) điều kiện:\n- Có khả năng thu được lợi ích kinh tế từ giao dịch đó\n- Doanh thu được đo lường một cách đáng tin cậy.\n\n**2.19. CÁC KHOẢN GIẢM TRỪ DOANH THU**\nCác khoản giảm trừ doanh thu từ bán hàng và cung cấp dịch vụ trong kỳ bao gồm: Chiết khấu thương mại, giảm giá hàng bán và hàng bán bị trả lại.\nChiết khấu thương mại, giảm giá hàng bán, hàng bán bị trả lại phát sinh trong cùng kỳ tiêu thụ sản phẩm, hàng hóa, dịch vụ thì được điều chỉnh giảm doanh thu của kỳ này. Trường hợp sản phẩm, hàng hóa, dịch vụ đã tiêu thụ từ các kỳ trước, nay phát sinh các khoản giảm trừ doanh thu ở kỳ tiếp theo, công ty hạch toán giảm trừ doanh thu theo nguyên tắc sau: nếu đã phát sinh trước thời điểm phát hành Báo cáo tài chính, công ty hạch toán giảm doanh thu trên Báo cáo tài chính của kỳ báo cáo (kỳ trước) và nếu phát sinh sau thời điểm phát hành Báo cáo tài chính, công ty hạch toán giảm doanh thu của kỳ phát sinh (kỳ này).\n\n**2.20. GIÁ VỐN HÀNG BÁN**\nGiá vốn hàng bán được ghi nhận phù hợp với doanh thu phát sinh và đảm bảo tuân thủ nguyên tắc thận trọng.",
+    "questions": [
+      {
+        "question": "Các loại vốn chủ sở hữu nào được đề cập trong chính sách kế toán của công ty?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào cổ tức phải trả cho cổ đông được ghi nhận là khoản phải trả trên Bảng cân đối kế toán hợp nhất?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu các điều kiện để ghi nhận doanh thu bán thành phẩm và hàng hóa.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Doanh thu hoạt động tài chính được ghi nhận khi thỏa mãn những điều kiện nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xử lý các khoản giảm trừ doanh thu phát sinh ở kỳ sau nhưng liên quan đến sản phẩm đã bán ở kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của chính sách phân phối lợi nhuận chưa phân phối đến cấu trúc vốn và khả năng chi trả của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ tuân thủ nguyên tắc thận trọng trong việc ghi nhận giá vốn hàng bán và ảnh hưởng của nó đến lợi nhuận.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "So sánh các điều kiện ghi nhận doanh thu từ bán hàng và cung cấp dịch vụ với doanh thu từ bất động sản.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chính sách kế toán: Chi phí tài chính, Thuế TNDN, Bên liên quan)\nLoại nội dung: Văn bản\n**2.21. CHI PHÍ TÀI CHÍNH**\nCác khoản chi phí được ghi nhận vào chi phí tài chính là:\n- Chi phí hoặc các khoản lỗ liên quan đến hoạt động đầu tư tài chính\n- Chi phí đi vay\n- Các khoản lỗ thanh lý, chuyển nhượng chứng khoán kinh doanh, chi phí giao dịch bán chứng khoán\n- Dự phòng giảm giá chứng khoán kinh doanh, dự phòng tổn thất đầu tư vào đơn vị khác, các khoản lỗ phát sinh do bán ngoại tệ, lỗ chênh lệch tỷ giá...\nCác khoản mục trên được ghi nhận theo tổng số phát sinh trong kỳ, không được bù trừ với các khoản doanh thu tài chính.\n\n**2.22. CHI PHÍ THUẾ THU NHẬP DOANH NGHIỆP**\n**a. Tài sản thuế thu nhập hoãn lại và nợ phải trả thuế thu nhập hoãn lại**\n**Tài sản thuế thu nhập hoãn lại** được ghi nhận cho tất cả các khoản chênh lệch tạm thời được khấu trừ, các khoản tín dụng thuế chưa sử dụng được chuyển sang kỳ sau và các khoản lỗ tính thuế chưa sử dụng. **Nợ phải trả thuế thu nhập hoãn lại** được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế.\n**Tài sản thuế thu nhập hoãn lại và nợ phải trả thuế thu nhập hoãn lại** được xác định theo thuế suất thuế thu nhập doanh nghiệp hiện hành.\n**b. Chi phí thuế thu nhập doanh nghiệp hiện hành và chi phí thuế thu nhập doanh nghiệp hoãn lại**\n**Chi phí thuế thu nhập doanh nghiệp hiện hành** được tính dựa trên lợi nhuận chịu thuế và thuế suất thu nhập áp dụng trong kỳ hiện hành.\n**Chi phí thuế thu nhập doanh nghiệp hoãn lại** được xác định dựa trên các khoản chênh lệch tạm thời được khấu trừ, các khoản chênh lệch tạm thời chịu thuế và thuế suất thuế thu nhập doanh nghiệp.\n**Chi phí thuế thu nhập doanh nghiệp hiện hành không được bù trừ với chi phí thuế thu nhập doanh nghiệp hoãn lại.**\n\n**2.23. CÁC BÊN LIÊN QUAN**\nCác bên được xem là có liên quan nếu bên đó có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đến bên kia trong việc ra quyết định về các chính sách tài chính và hoạt động. Các bên liên quan của Công ty bao gồm:\n- Các doanh nghiệp trực tiếp hoặc gián tiếp thông qua một hoặc nhiều trung gian, kiểm soát Công ty hoặc chịu sự kiểm soát của Công ty, hoặc cùng kiểm soát Công ty, bao gồm công ty mẹ, các công ty con và các công ty liên kết.\n- Cá nhân trực tiếp hoặc gián tiếp nắm giữ quyền biểu quyết của Công ty có ảnh hưởng đáng kể đến Công ty, các thành viên chủ chốt của ban quản lý Công ty, các thành viên thân cận trong gia đình của những cá nhân này.\n- Các doanh nghiệp của các cá nhân nêu trên trực tiếp hoặc gián tiếp nắm giữ một phần quan trọng của quyền biểu quyết hoặc có ảnh hưởng đáng kể đến Công ty.\nTrong việc xem xét mối quan hệ của các bên liên quan, vì mục đích lập và trình bày Báo cáo tài chính hợp nhất, bản chất của mối quan hệ được nhấn mạnh hơn hình thức pháp lý của mối quan hệ.",
+    "questions": [
+      {
+        "question": "Các khoản chi phí nào được ghi nhận vào chi phí tài chính?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tài sản thuế thu nhập hoãn lại và nợ phải trả thuế thu nhập hoãn lại được xác định theo thuế suất nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các bên liên quan của công ty bao gồm những đối tượng nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Sự khác biệt giữa chi phí thuế thu nhập doanh nghiệp hiện hành và chi phí thuế thu nhập doanh nghiệp hoãn lại là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích tại sao chi phí tài chính không được bù trừ với doanh thu tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của chính sách thuế thu nhập doanh nghiệp hoãn lại đến lợi nhuận và nghĩa vụ thuế trong tương lai của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc xác định và công bố các giao dịch với bên liên quan đối với minh bạch tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro tiềm ẩn từ các khoản lỗ liên quan đến hoạt động đầu tư tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Tiền và các khoản tương đương tiền, Các khoản đầu tư tài chính)\nLoại nội dung: Bảng\n**3. TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-------------------------------|--------------------|--------------------|\n| Tiền mặt tại quỹ              | 3.681.433.289      | 8.247.593.000      |\n| Tiền gửi ngân hàng            | 104.994.029.832    | 58.659.769.242     |\n| Tiền đang chuyển              | 90.246.167         | 41.645.677         |\n| Các khoản tương đương tiền     | 51.400.000.000     | 102.800.000.000    |\n| **TỔNG CỘNG**                 | **160.165.709.288**| **169.749.007.919**|\n\n**4. CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH**\n**a. Đầu tư nắm giữ đến ngày đáo hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-------------------------------|--------------------|--------------------|\n| **Giá gốc**                   |                    |                    |\n| Ngắn hạn                      | 35.837.204.624     | 26.034.898.871     |\n| - Tiền gửi có kỳ hạn          | 25.837.204.624     | 16.034.898.871     |\n| - Các khoản đầu tư khác       | 10.000.000.000     | 10.000.000.000     |\n| **Giá trị ghi sổ**             |                    |                    |\n| Ngắn hạn                      | 35.837.204.624     | 26.034.898.871     |\n| - Tiền gửi có kỳ hạn          | 25.837.204.624     | 16.034.898.871     |\n| - Các khoản đầu tư khác       | 10.000.000.000     | 10.000.000.000     |\n\n**b. Chứng khoán kinh doanh**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-------------------------------|--------------------|--------------------|\n| **Giá gốc**                   |                    |                    |\n| - Tổng giá trị đầu tư         | 172.559            | 172.559            |\n| -- Tổng Công ty Hùng Vương   | 172.559            | 172.559            |\n| **Dự phòng**                  |                    |                    |\n| - Dự phòng giảm giá           | 79.359             | 79.359             |\n| -- Tổng Công ty Hùng Vương   | 79.359             | 79.359             |\n\n**c. Đầu tư góp vốn vào đơn vị khác**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-------------------------------|--------------------|--------------------|\n| Công ty CP Vật liệu Xây dựng và Xây lắp Kỹ thuật | 4.423.700.000      | 4.423.700.000      |\n| Công ty CP Đầu tư và Thương mại Vneco Hà Nội | 12.000.000.000     | 12.000.000.000     |\n| Công ty CP IDS Equity Holdings | 2.085.000.000.000  | 2.085.000.000.000  |\n| **TỔNG CỘNG**                 | **2.101.423.700.000**| **2.101.423.700.000**|\n",
+    "questions": [
+      {
+        "question": "Tổng tiền mặt tại quỹ vào ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tiền gửi có kỳ hạn (đầu tư nắm giữ đến ngày đáo hạn) ngắn hạn vào ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng tiền và các khoản tương đương tiền giữa cuối quý II/2025 và đầu năm 2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giá trị đầu tư góp vốn vào Công ty CP IDS Equity Holdings là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ thanh khoản của công ty dựa trên cơ cấu tiền và các khoản tương đương tiền.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro của các khoản đầu tư nắm giữ đến ngày đáo hạn nếu có biến động lãi suất thị trường.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của dự phòng giảm giá chứng khoán kinh doanh đến lợi nhuận và giá trị tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ đầu tư vào Công ty CP IDS Equity Holdings trên tổng các khoản đầu tư góp vốn vào đơn vị khác.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Các khoản phải thu)\nLoại nội dung: Bảng và Văn bản\n**5. CÁC KHOẢN PHẢI THU KHÁCH HÀNG**\n**a. Phải thu khách hàng chi tiết theo khách hàng có số dư lớn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Công ty CP Thương mại Mika                      | 6.647.496.885      | 6.647.496.885      |\n| Khác                                          | 17.892.012.315     | 15.043.726.256     |\n| **TỔNG CỘNG**                                 | **24.539.509.200**| **21.691.223.141**|\n\n**6. TRẢ TRƯỚC CHO NGƯỜI BÁN NGẮN HẠN**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Ngắn hạn                                      |                    |                    |\n| Công ty CP Xúc tiến Đầu tư và Du lịch Việt Nam 1 | 18.267.900.000     | 18.267.900.000     |\n| Công ty CP Đầu tư Xây dựng Sông Đà tại Công ty CP Ngôi Sao Chiều Nha Trang 2 | 43.284.161.557     | 43.284.161.557     |\n| Trả trước ngắn hạn cho các nhà cung cấp khác   | 69.581.856.765     | 5.085.705.241      |\n| **TỔNG CỘNG**                                 | **131.133.918.322**| **66.637.766.798**|\n1 Khoản tiền gửi để mua lại 3.853.010 cổ phần của Công ty CP Viptour – Togi (một công ty con), bao gồm số tiền 18.267.900.000 VND hiện đang bị phong tỏa trong tài khoản đồng sở hữu giữa Công ty và Công ty CP Xúc tiến Đầu tư và Du lịch Việt Nam (trước đây là Công ty TNHH MTV Xúc tiến Đầu tư và Du lịch Việt Nam, viết tắt là Viptour) tại Ngân hàng TMCP Đại Chúng Việt Nam (trước đây là Ngân hàng TMCP Đại Dương). Theo Bản án phúc thẩm số 10/2025/KDTM-PT ngày 10/04/2025 của Tòa án nhân dân cấp cao tại Hà Nội, Viptour phải phối hợp với OCH để hoàn tất thủ tục giải tỏa 18.267.900.000 VND và tiền lãi phát sinh hiện đang bị phong tỏa tại tài khoản đồng sở hữu tại Ngân hàng TMCP Đại Dương (nay là Ngân hàng TMCP Đại Chúng Việt Nam) để hoàn trả cho OCH. Ngoài ra, Viptour phải hoàn trả Công ty 20,3 tỷ VND đã nhận trước đó và bồi thường thiệt hại số tiền 15,2 tỷ VND.\n2 Một khoản trả trước được ghi nhận với giá trị 43.284.161.557 VND cho việc thực hiện hợp đồng nguyên tắc ký ngày 22/10/2020 cho dự án khách sạn StarCity Westlake Hà Nội tại Công ty CP Viptour – Togi (Viptour Togi – một công ty con gián tiếp).\n\n**7. PHẢI THU CHO VAY**\n**a. Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Công ty CP Tosy Robotics                       | 5.786.659.999      | 5.900.000.000      |\n| Công ty CP Tập đoàn Đại Dương 1                 | 4.500.000.000      | 4.500.000.000      |\n| Khác                                          | 572.300.000        | -                  |\n| **TỔNG CỘNG**                                 | **10.858.959.999**| **10.400.000.000**|\n**b. Dài hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Công ty CP Tập đoàn Đại Dương 1                 | 30.227.733.073     | 30.227.733.073     |\n| **TỔNG CỘNG**                                 | **30.227.733.073**| **30.227.733.073**|\n1 Khoản cho vay từ Công ty CP Viptour – Togi cho Công ty CP Tập đoàn Đại Dương theo Hợp đồng tín dụng số 27082013/HĐVV-TOGC ngày 27/08/2013 để tăng vốn lưu động. Số tiền cho vay là 46.380.000.000 VND, thời hạn cho vay là 06 tháng kể từ ngày chuyển tiền và có thể gia hạn theo thỏa thuận của hai bên. Lãi suất cho vay theo hợp đồng là 8%/năm. Theo Nghị quyết số 02/2022/NQ-HĐQTVTG ngày 22/02/2022, thời hạn cho vay được kéo dài đến 31/12/2026, lãi suất cho vay là 7,5%/năm từ ngày 01/01/2022 đến 31/12/2026. Số dư khoản vay tính đến ngày 30/06/2025 là 34.727.733.073 VND, trong đó số dư khoản vay dài hạn đến hạn thu hồi là 4.500.000.000 VND.\n\n**8. CÁC KHOẢN PHẢI THU KHÁC**\n**a. Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Tiền tạm ứng cho cá nhân tại Công ty CP Viptour – Togi | 46.240.000.000     | 46.240.000.000     |\n| Bà Nguyễn Thị Dung                              | 53.200.000.000     | 53.200.000.000     |\n| Tổ chức Đầu tư Tập đoàn – IOC                   | 14.663.642.060     | 14.663.642.060     |\n| Ký quỹ, ký cược                                | 8.024.418.800      | 7.841.918.800      |\n| Ngân hàng TMCP Ngoại thương Việt Nam – CN Khánh Hòa | 7.500.000.000      | 7.500.000.000      |\n| Khác                                          | 524.418.800        | 341.918.800        |\n| Các khoản phải thu khác                       | 37.652.805.356     | 142.601.707.238    |\n| **TỔNG CỘNG**                                 | **159.780.866.216**| **264.547.268.098**|\n**b. Dài hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Phải thu lãi hỗ trợ vốn từ Công ty CP Tập đoàn Đại Dương tại Công ty CP Viptour-Togi | 28.737.199.120     | 28.295.867.512     |\n| Ký quỹ, ký cược                                | 144.943.131.230    | 144.360.403.774    |\n| Ngân hàng TMCP Công thương Việt Nam – CN Ba Đình | 140.400.000.000    | 140.400.000.000    |\n| Khác                                          | 4.543.131.230      | 3.960.403.774      |\n| **TỔNG CỘNG**                                 | **173.680.330.350**| **172.656.271.286**|\n",
+    "questions": [
+      {
+        "question": "Khoản phải thu ngắn hạn của khách hàng Công ty CP Thương mại Mika tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị trả trước cho người bán ngắn hạn tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng các khoản phải thu khác ngắn hạn giữa cuối quý II/2025 và đầu năm 2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi tiết về khoản tiền bị phong tỏa 18.267.900.000 VND thuộc khoản mục nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro thu hồi các khoản phải thu cho vay ngắn hạn và dài hạn liên quan đến Công ty CP Tập đoàn Đại Dương.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản phải thu tạm ứng lớn cho cá nhân tại Công ty CP Viptour – Togi đến tình hình tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng công ty thu hồi các khoản phải thu có liên quan đến các bản án phúc thẩm hoặc các tranh chấp pháp lý.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự biến động lớn trong 'Trả trước ngắn hạn cho các nhà cung cấp khác' đến dòng tiền hoạt động.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Hàng tồn kho, Chi phí xây dựng cơ bản dở dang)\nLoại nội dung: Bảng và Văn bản\n**9. HÀNG TỒN KHO**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| **Giá gốc**                                   |                    |                    |\n| Nguyên vật liệu                                | 46.584.005.539     | 24.933.391.662     |\n| Công cụ, dụng cụ, phụ tùng thay thế             | 1.767.259.620      | 1.464.041.433      |\n| Chi phí sản xuất, kinh doanh dở dang          | 75.227.710.621     | 293.409.731.339    |\n| Dự án Saigon Airport Plaza 1                   | -                  | 218.295.997.573    |\n| Dự án Nhà máy Tân Phú Trung                    | 75.030.827.113     | 74.764.242.374     |\n| Khác                                          | 196.883.508        | 349.491.392        |\n| Thành phẩm                                    | 7.752.614.592      | 5.419.083.016      |\n| Hàng hóa bất động sản 2                        | 6.148.019.538      | 5.911.981.054      |\n| Hàng gửi đi bán                                | 111.458.112        | -                  |\n| **TỔNG GIÁ GỐC**                              | **137.591.068.022**| **331.138.228.504**|\n| **Dự phòng**                                  |                    |                    |\n| Dự phòng giảm giá hàng tồn kho                 | 933.641.424        | 102.253.226.773    |\n| **TỔNG CỘNG HÀNG TỒN KHO**                    | **136.657.426.598**| **228.885.001.731**|\n\n1 Là chi phí phát sinh của dự án đầu tư xây dựng khách sạn và văn phòng cho thuê tại 1 Bạch Đằng, Phường 2, Quận Tân Bình, TP. Hồ Chí Minh (Dự án Starcity Airport). Dự án này được Công ty CP One Capital Hospitality (một công ty con của Công ty – OCH) hợp tác với Công ty TNHH Đầu tư và Dịch vụ Đại Dương Xanh (nay là Công ty TNHH Pegasus Thăng Long – Pegasus Thăng Long), số vốn góp tính đến 31/03/2025 là 116.042.770.800 VND, tỷ lệ góp vốn của Pegasus Thăng Long là 60%. Toàn bộ chi phí phát sinh của Dự án tích lũy đến ngày 31/03/2025 là 218.295.997.573 VND là giá trị quyền sử dụng đất và chi phí xây dựng dở dang của Dự án đã thế chấp tại Ngân hàng TMCP Đại Chúng Việt Nam (trước đây là Ngân hàng TMCP Đại Dương) – Chi nhánh Sài Gòn để đảm bảo cho khoản vay của Pegasus Thăng Long. Tài sản đảm bảo này đã có quyết định thi hành án để thu hồi nợ của Pegasus Thăng Long. Công ty xác định khoản lỗ là toàn bộ chi phí của dự án đã phát sinh với số tiền 218.295.997.573 VND. Do đó, Công ty đã trích lập dự phòng 102.253.226.773 VND bằng khoản lỗ sau khi được bù trừ từ nguồn tiền thu được từ hợp tác kinh doanh từ Pegasus Thăng Long là 116.042.770.800 VND.\nTính đến ngày 25/03/2025, Công ty và Công ty TNHH Pegasus Thăng Long đã ký xác nhận thanh toán công nợ, trong đó Công ty không còn nghĩa vụ thanh toán đối với Công ty TNHH Pegasus Thăng Long liên quan đến Dự án Starcity Airport. Hai bên sẽ tiếp tục làm việc để giải quyết các vấn đề còn lại liên quan đến dự án.\nTheo đó, Công ty đã thực hiện điều chỉnh giá trị hàng tồn kho, ghi nhận dự phòng hàng tồn kho liên quan đến Dự án Starcity Airport và điều chỉnh khoản phải trả khác cho Pegasus Thăng Long.\n2 Số dư tại ngày 30/06/2025 bao gồm hàng hóa kinh doanh tại các công ty con và quyền kinh doanh, khai thác, sử dụng 05 phòng khách sạn StarCity Nha Trang tại Công ty có giá trị 4.519.394.429 VND. Khách sạn đã hoàn thành và đưa vào kinh doanh ngày 15/01/2016. Công ty đang tiếp tục tìm kiếm khách hàng để chuyển nhượng các căn hộ trên trong thời gian tới.\n\n**10. CHI PHÍ XÂY DỰNG CƠ BẢN DỞ DANG**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Mua sắm tài sản                                | 277.245.455        | 313.245.455        |\n| Chi phí xây dựng cơ bản dở dang                | 178.659.544.802    | 178.659.544.802    |\n| Dự án StarCity Westlake Hà Nội 1              | 178.659.544.802    | 178.659.544.802    |\n| Sửa chữa tài sản cố định                      | 121.051.371        | 2.973.471.133      |\n| **TỔNG CỘNG**                                 | **179.057.841.628**| **181.946.261.390**|\n1 Dự án StarCity Westlake Hà Nội do Công ty CP Viptour – Togi thực hiện tại số 10 Trần Vũ, Quận Ba Đình, TP. Hà Nội với tổng mức đầu tư 230.000.000.000 VND. Quy mô dự án: Khách sạn đạt tiêu chuẩn 5 sao, gồm 03 tầng hầm và 09 tầng nổi tương đương 20.940 m2 sàn xây dựng. Thời gian thực hiện dự kiến 24 tháng kể từ ngày bàn giao mặt bằng đủ điều kiện thi công và nhà thầu chính nhận đủ hồ sơ thiết kế, tạm ứng và thanh toán theo hợp đồng.\nHiện tại, Công ty CP Viptour – Togi đã gia hạn thời gian bắt đầu sử dụng đất và đang thực hiện các thủ tục để triển khai dự án.",
+    "questions": [
+      {
+        "question": "Tổng giá gốc hàng tồn kho tại ngày 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Dự phòng giảm giá hàng tồn kho tại ngày 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí sản xuất, kinh doanh dở dang giữa cuối quý II/2025 và đầu năm 2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng mức đầu tư dự án StarCity Westlake Hà Nội là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc trích lập dự phòng lớn cho Dự án Saigon Airport Plaza đến giá trị hàng tồn kho và lợi nhuận của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn từ Dự án StarCity Westlake Hà Nội khi thời gian triển khai dự án bị kéo dài và cần gia hạn thời gian sử dụng đất.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược của công ty đối với hàng hóa bất động sản và khả năng chuyển nhượng các căn hộ để thu hồi vốn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự biến động lớn trong chi phí sản xuất, kinh doanh dở dang đến hiệu quả hoạt động và dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Tài sản cố định vô hình, Tài sản cố định hữu hình)\nLoại nội dung: Bảng\n**11. TÀI SẢN CỐ ĐỊNH VÔ HÌNH**\n| CHỈ TIÊU | Quyền sử dụng đất, quyền đầu tư dự án (VND) | Phần mềm quản lý (VND) | Tài sản cố định vô hình khác (VND) | Tổng cộng (VND) |\n|-----------------------------------|---------------------------------------------|-----------------------|------------------------------------|--------------------|\n| **Nguyên giá**                    |                                             |                       |                                    |                    |\n| Số dư đầu kỳ                       | 70.000.000.000                              | 4.967.021.383         | 235.928.682                        | 75.202.950.065     |\n| Tăng trong kỳ                      | -                                           | 622.500.000           | -                                  | 622.500.000        |\n| - Mua trong kỳ                    | -                                           | 164.500.000           | -                                  | 164.500.000        |\n| - Tăng do mua công ty con trong kỳ | -                                           | 458.000.000           | -                                  | 458.000.000        |\n| Số dư cuối kỳ                      | 70.000.000.000                              | 5.589.521.383         | 235.928.682                        | 75.825.450.065     |\n| **Hao mòn lũy kế**                |                                             |                       |                                    |                    |\n| Số dư đầu kỳ                       | 15.949.367.099                              | 3.354.605.118         | 235.928.682                        | 19.539.900.899     |\n| Tăng trong kỳ                      | 886.075.950                                 | 581.005.820           | -                                  | 1.467.081.770      |\n| - Khấu hao trong kỳ               | 886.075.950                                 | 394.635.537           | -                                  | 1.280.711.487      |\n| - Tăng do mua công ty con trong kỳ | -                                           | 186.370.283           | -                                  | 186.370.283        |\n| Số dư cuối kỳ                      | 16.835.443.049                              | 3.935.610.938         | 235.928.682                        | 21.006.982.669     |\n| **Giá trị còn lại**              |                                             |                       |                                    |                    |\n| Số dư đầu kỳ                       | 54.050.632.901                              | 1.612.416.265         | -                                  | 55.663.049.166     |\n| Số dư cuối kỳ                      | 53.164.556.951                              | 1.653.910.445         | -                                  | 54.818.467.396     |\n\n**12. TÀI SẢN CỐ ĐỊNH HỮU HÌNH**\n| CHỈ TIÊU | Nhà cửa và vật kiến trúc (VND) | Máy móc, thiết bị (VND) | Phương tiện vận tải (VND) | Thiết bị quản lý và công cụ (VND) | Tài sản khác (VND) | Tổng cộng (VND) |\n|-----------------------------------|--------------------------------|--------------------------|----------------------------|-----------------------------------|--------------------|--------------------|\n| **Nguyên giá**                    |                                |                          |                            |                                   |                    |                    |\n| Số dư đầu kỳ 01/01/2025            | 528.853.520.770                | 253.187.935.190          | 35.088.634.007             | 1.668.297.082                     | 10.609.142.148     | 829.407.529.197    |\n| Tăng trong kỳ                      | 468.534.000                    | 7.912.575.850            | 238.204.100                | 56.310.000                        | 257.428.182        | 8.933.052.132      |\n| - Mua trong kỳ                    | 65.932.000                     | 3.876.247.827            | -                          | 56.310.000                        | 111.528.182        | 4.110.018.009      |\n| - Tăng do mua công ty con trong kỳ | 402.602.000                    | 4.036.328.023            | 238.204.100                | -                                 | 145.900.000        | 4.823.034.123      |\n| Giảm trong kỳ                      | -                              | -                        | -                          | 199.361.500                       | -                  | 199.361.500        |\n| - Thanh lý, nhượng bán            | -                              | -                        | -                          | 199.361.500                       | -                  | 199.361.500        |\n| Số dư cuối kỳ 30/06/2025           | 529.322.054.770                | 260.901.149.540          | 35.326.838.107             | 1.724.607.082                     | 10.866.570.330     | 838.141.219.829    |\n| **Hao mòn lũy kế**                |                                |                          |                            |                                   |                    |                    |\n| Số dư đầu kỳ 01/01/2025            | 212.247.139.268                | 153.973.384.083          | 25.409.237.942             | 1.219.216.600                     | 9.379.130.339      | 402.228.108.232    |\n| Tăng trong kỳ                      | 8.151.845.516                  | 9.395.335.059            | 1.604.981.963              | 96.494.630                        | 226.132.952        | 19.474.790.120     |\n| - Khấu hao trong kỳ               | 7.985.805.991                  | 7.523.214.229            | 1.422.616.325              | 96.494.630                        | 226.018.263        | 17.254.149.438     |\n| - Tăng do mua công ty con trong kỳ | 166.039.525                    | 1.872.120.830            | 182.365.638                | -                                 | 114.689            | 2.220.640.682      |\n| Giảm trong kỳ                      | -                              | -                        | -                          | 199.361.500                       | -                  | 199.361.500        |\n| - Thanh lý, nhượng bán            | -                              | -                        | -                          | 199.361.500                       | -                  | 199.361.500        |\n| Số dư cuối kỳ 30/06/2025           | 220.398.984.784                | 163.169.357.642          | 27.014.219.905             | 1.315.711.230                     | 9.605.263.291      | 421.503.536.852    |\n| **Giá trị còn lại**              |                                |                          |                            |                                   |                    |                    |\n| Số dư đầu kỳ 01/01/2025            | 316.606.381.502                | 99.214.551.107           | 9.679.396.065              | 449.080.482                       | 1.230.011.809      | 427.179.420.965    |\n| Số dư cuối kỳ 30/06/2025           | 308.923.069.986                | 97.731.791.898           | 8.312.618.202              | 408.895.852                       | 1.261.307.039      | 416.637.682.977    |",
+    "questions": [
+      {
+        "question": "Nguyên giá quyền sử dụng đất, quyền đầu tư dự án tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị còn lại của tài sản cố định hữu hình tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị còn lại của tài sản cố định vô hình và hữu hình tại ngày 30/06/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Máy móc, thiết bị' có sự thay đổi như thế nào về nguyên giá và hao mòn lũy kế trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản cố định vô hình và hữu hình của công ty trong kỳ hiện tại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm tài sản cố định hữu hình do thanh lý, nhượng bán đến khả năng hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu giá trị hao mòn lũy kế tăng nhanh hơn nguyên giá của tài sản cố định.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả sử dụng tài sản cố định dựa trên tỷ lệ giữa giá trị còn lại và nguyên giá của các loại tài sản chính.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chi phí trả trước, Lợi thế thương mại)\nLoại nội dung: Bảng và Văn bản\n**13. CHI PHÍ TRẢ TRƯỚC**\n**a. Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Chi phí bảo hiểm                               | 115.909.733        | 85.781.157         |\n| Công cụ, dụng cụ gửi đi                        | 2.912.914.546      | 677.636.320        |\n| Chi phí thuê văn phòng, nhà xưởng              | 1.077.979.379      | 356.809.959        |\n| Chi phí sửa chữa                              | 127.099.325        | 49.484.974         |\n| Khác                                          | 3.109.836.702      | 3.478.271.195      |\n| **TỔNG CỘNG**                                 | **7.343.739.685** | **4.647.983.605**  |\n**b. Dài hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Công cụ, dụng cụ gửi đi                        | 7.197.460.436      | 7.020.457.198      |\n| Chi phí sửa chữa và cải tạo                   | 1.774.540.275      | 2.674.887.904      |\n| Chi phí thuê đất tại Khu Công nghiệp VSIP Bắc Ninh | 13.463.959.313     | 13.677.007.697     |\n| Chi phí thuê đất tại Khu Công nghiệp Tân Bình | 3.576.623.183      | 3.657.910.073      |\n| Chi phí thuê đất tại Tòa nhà VNT Tower 19 Nguyễn Trãi 1 | 51.164.352.998     | 51.888.376.862     |\n| Chi phí tư vấn                                | 1.168.750.000      | 1.581.250.000      |\n| Quyền khai thác 12 căn biệt thự tại Hội An 2   | 132.280.175.403    | 134.560.868.085    |\n| Khác                                          | 6.170.000.200      | 3.356.011.638      |\n| **TỔNG CỘNG**                                 | **216.795.861.808**| **218.416.769.457**|\n\n1 Chi phí thuê sàn thương mại từ tầng 2 đến tầng 4 của Tòa nhà VNT Tower tại số 19 Nguyễn Trãi, Phường Khương Trung, Quận Thanh Xuân, Hà Nội theo Hợp đồng số 2512/HĐTV/POG-GIVRAL ngày 25/12/2019 ký giữa Công ty CP Tập đoàn Đại Dương và Công ty CP Bánh Givral Bakery (Công ty con) với tổng diện tích thuê 3.000 m2, thời hạn thuê đến hết thời gian hoạt động của dự án “Tổ hợp công trình nhà ở, rạp chiếu phim, văn phòng và căn hộ” theo giấy chứng nhận đầu tư do UBND TP. Hà Nội cấp.\n2 Đây là chi phí mà Công ty CP Ngôi Sao Chiều Nha Trang (Evening Star Nha Trang – một công ty con) gián tiếp có được quyền khai thác 12 căn biệt thự tại khu nghỉ dưỡng Sunrise Hội An, thời gian phân bổ đến ngày 22/06/2054.\n\n**14. LỢI THẾ THƯƠNG MẠI**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Công ty CP Kem Tín Phát                      | 321.281.203        | 340.180.097        |\n| Công ty CP Viptour – Togi                     | 209.230.411        | 230.153.453        |\n| Công ty CP Fuji Food                          | 56.909.611.107     | -                  |\n| Công ty TNHH Sản xuất Bình Hưng               | 29.135.243.925     | 31.563.180.919     |\n| **TỔNG CỘNG**                                 | **86.575.366.646**| **32.133.514.469**|\n",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước ngắn hạn tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị lợi thế thương mại của Công ty CP Fuji Food tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng chi phí trả trước dài hạn giữa cuối quý II/2025 và đầu năm 2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản chi phí nào có giá trị lớn nhất trong chi phí trả trước dài hạn tại 30/06/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của chi phí thuê đất lớn và quyền khai thác biệt thự đến tài sản dài hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của sự tăng trưởng đáng kể trong lợi thế thương mại từ Công ty CP Fuji Food.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro liên quan đến các khoản chi phí trả trước dài hạn nếu các dự án hoặc quyền khai thác không đạt hiệu quả như mong đợi.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc tăng chi phí trả trước ngắn hạn (công cụ, dụng cụ gửi đi) đến dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Vay và nợ thuê tài chính, Phải trả người bán)\nLoại nội dung: Bảng và Văn bản\n**15. CÁC KHOẢN VAY VÀ NỢ THUÊ TÀI CHÍNH**\n**a. Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Vay ngắn hạn                                  | 86.274.731.629     | 25.296.663.881     |\n| Ngân hàng TMCP Ngoại thương Việt Nam – CN Khánh Hòa 1 | 10.694.653.209     | 25.296.663.881     |\n| Ngân hàng TMCP Công thương Việt Nam             | 43.080.078.420     | -                  |\n| Khác                                          | 32.500.000.000     | -                  |\n| Các khoản vay dài hạn đến hạn trả              | 170.000.000.000    | 130.000.000.000    |\n| Ngân hàng TMCP Công thương Việt Nam 2           | 170.000.000.000    | 130.000.000.000    |\n| **TỔNG CỘNG**                                 | **256.274.731.629**| **155.296.663.881**|\n**b. Dài hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Ngân hàng TMCP Công thương Việt Nam 2           | 1.210.000.000.000  | 1.270.000.000.000  |\n| **TỔNG CỘNG**                                 | **1.210.000.000.000**| **1.270.000.000.000**|\n\n**Tổng Vay và Nợ thuê tài chính:** 1.466.274.731.629 VND (30/06/2025) và 1.425.296.663.881 VND (01/01/2025).\n\n**Thông tin chi tiết về các khoản vay:**\n1 Khoản vay từ Ngân hàng TMCP Ngoại thương Việt Nam – Chi nhánh Khánh Hòa của Tổng Công ty Tân Việt (công ty con) theo Hợp đồng hạn mức tín dụng số 2024/TV ngày 03/07/2024. Hạn mức tín dụng 30.000.000.000 VND, thời hạn vay 12 tháng. Mục đích vay để thanh toán nhu cầu vốn ngắn hạn hợp lý, hợp pháp cho hoạt động kinh doanh. Lãi suất cho vay được xác định tại thời điểm giải ngân, ghi nhận trên từng giấy nhận nợ. Khoản vay được đảm bảo bằng số dư tiền gửi có kỳ hạn thuộc sở hữu theo hợp đồng tiền gửi tại Ngân hàng TMCP Ngoại thương Việt Nam – Chi nhánh Khánh Hòa.\n2 Khoản vay dài hạn của Công ty CP Bánh Givral Bakery (công ty con) với Ngân hàng TMCP Công thương Việt Nam theo Hợp đồng tín dụng số 4602/2023/HĐCVDADT-NHCT124-GIVRAL ngày 13/12/2023. Thời hạn vay 84 tháng kể từ ngày giải ngân đầu tiên. Mục đích vay cho các mục đích đầu tư và vốn lưu động.\n\n**16. CÁC KHOẢN PHẢI TRẢ NGƯỜI BÁN**\n**a. Phân loại theo số dư nhà cung cấp**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Ông Phan Đạo Sơn                              | 2.235.664.458      | 2.625.664.658      |\n| Công ty TNHH Dịch vụ Thương mại Lan Chinh     | 2.347.142.400      | 1.929.960.000      |\n| Công ty TNHH Thương mại và Xây dựng Huyền Linh | 1.543.069.440      | 387.159.264        |\n| Công ty TNHH Sản xuất Thương mại Thực phẩm Ngon | 1.279.251.662      | 779.699.908        |\n| Khác                                          | 22.535.842.375     | 22.493.108.464     |\n| **TỔNG CỘNG**                                 | **29.940.970.335**| **28.215.592.294**|\n**b. Phân loại theo điều khoản thanh toán**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Phải trả người bán ngắn hạn                   | 27.705.305.877     | 25.589.927.836     |\n| Phải trả người bán dài hạn                    | 2.235.664.458      | 2.625.664.458      |\n| **TỔNG CỘNG**                                 | **29.940.970.335**| **28.215.592.294**|\n",
+    "questions": [
+      {
+        "question": "Tổng vay ngắn hạn tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng các khoản phải trả người bán tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh vay ngắn hạn và vay dài hạn đến hạn trả giữa cuối quý II/2025 và đầu năm 2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Mục đích vay của Công ty CP Bánh Givral Bakery với Ngân hàng TMCP Công thương Việt Nam là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào các khoản vay ngắn hạn và dài hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh khoản của công ty nếu các khoản vay ngắn hạn và dài hạn đến hạn trả tiếp tục tăng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc tăng các khoản phải trả người bán ngắn hạn đến dòng tiền hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ các khoản vay ngắn hạn trên tổng các khoản vay và nợ thuê tài chính tại 30/06/2025.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Người mua trả tiền trước, Thuế và các khoản phải nộp Nhà nước, Chi phí phải trả, Phải trả khác, Doanh thu chưa thực hiện, Dự phòng phải trả)\nLoại nội dung: Bảng và Văn bản\n**17. NGƯỜI MUA TRẢ TIỀN TRƯỚC**\n**Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------|--------------------|--------------------|\n| Khách hàng trả tiền trước mua căn hộ | 582.964.702        | 582.964.702        |\n| Khác                              | 5.831.880.410      | 5.764.464.597      |\n| **TỔNG CỘNG**                     | **6.414.845.112** | **6.347.429.299**  |\n\n**18. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Thuế giá trị gia tăng                         | 8.183.719.289      | 948.218.031        |\n| Thuế tiêu thụ đặc biệt                        | 148.417.198        | 118.865.753        |\n| Thuế thu nhập doanh nghiệp                     | 7.351.635.967      | 26.655.620.373     |\n| Thuế thu nhập cá nhân                         | 319.321.073        | 1.066.471.267      |\n| Thuế tài sản, tiền thuê đất                    | 103.643.482.248    | 100.461.578.805    |\n| Các loại thuế khác                            | 104.057.128.520    | 99.859.638.750     |\n| **TỔNG CỘNG**                                 | **223.703.704.295**| **229.110.392.979**|\nTính đến ngày 30/06/2025, Công ty CP Viptour – Togi (Công ty con) đang phản ánh khoản tiền thuê đất và các chi phí liên quan đến tiền thuê đất với số tiền 198,5 tỷ đồng.\n\n**19. CHI PHÍ PHẢI TRẢ**\n**Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------|--------------------|--------------------|\n| Chi phí lãi vay phải trả          | 1.912.117.866      | 2.067.397.262      |\n| Chi phí lương phải trả            | 13.267.797.754     | 6.030.303.485      |\n| Khác                              | 6.199.249.343      | 5.019.355.714      |\n| **TỔNG CỘNG**                     | **21.379.164.963**| **13.117.056.461**|\n\n**20. CÁC KHOẢN PHẢI TRẢ KHÁC**\n**a. Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Tài sản thừa chờ xử lý                         | 107.462.343        | 76.724.123         |\n| Kinh phí công đoàn                           | 634.008.271        | 608.284.928        |\n| Bảo hiểm xã hội                                | 119.012.923        | 37.970.420         |\n| Bảo hiểm y tế                                 | 32.028.781         | 6.660.342          |\n| Bảo hiểm thất nghiệp                          | 12.522.808         | 46.598.485         |\n| Tiền gửi, ký quỹ, ký cược nhận ngắn hạn        | 12.690.877.323     | 11.534.727.323     |\n| Các khoản phải trả khác                       | 64.500.085.904     | 123.110.100.339    |\n| - Giá trị vốn góp của Công ty Pegasus Thăng Long tương ứng với 60% lợi nhuận từ Dự án Saigon Airport Plaza theo hợp đồng hợp tác kinh doanh i | -                  | 116.042.770.800    |\n| - Lãi phải trả cho cá nhân mua nợ ii          | 275.000.000        | 275.000.000        |\n| - Khác                                        | 64.225.085.904     | 6.792.329.539      |\n| **TỔNG CỘNG**                                 | **78.095.998.353**| **135.421.065.960**|\n**b. Dài hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Tiền gửi, ký quỹ, ký cược nhận dài hạn        | 3.427.616.269      | 3.153.794.199      |\n| Các khoản phải trả khác                       | 33.519.176.739     | 33.519.176.739     |\n| - Lãi phải trả cho cá nhân mua nợ ii          | 29.794.176.739     | 29.794.176.739     |\n| - Công ty CP MGM Nha Trang                    | 3.725.000.000      | 3.725.000.000      |\n| **TỔNG CỘNG**                                 | **36.946.793.008**| **36.672.970.938**|\n\ni Chi tiết được trình bày tại Thuyết minh số 9\nii Số dư lãi cá nhân phải trả liên quan đến việc bán nợ của Công ty do Ngân hàng TMCP Đại Dương (nay là Ngân hàng TMCP Đại Chúng Việt Nam) theo Hợp đồng số 00472011/HĐTD1-OCEANBANK-01 kèm phụ lục sửa đổi, bổ sung hợp đồng trung dài hạn số 12/00472011/PLHĐTDOCEANBANK-01 ngày 29/05/2020 giữa Ngân hàng TMCP Đại Dương (nay là Ngân hàng TMCP Đại Chúng Việt Nam) và Công ty cho các cá nhân.\n\n**21. DOANH THU CHƯA THỰC HIỆN**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------|--------------------|--------------------|\n| Doanh thu chưa thực hiện từ cho thuê mặt bằng và tài sản | 418.750.101        | 8.063.976          |\n| **TỔNG CỘNG**                     | **418.750.101** | **8.063.976**      |\n\n**22. DỰ PHÒNG PHẢI TRẢ**\n**Ngắn hạn**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------|--------------------|--------------------|\n| Dự phòng quỹ lương                | 3.386.672.199      | -                  |\n| **TỔNG CỘNG**                     | **3.386.672.199**| **-**              |\n",
+    "questions": [
+      {
+        "question": "Tổng thuế và các khoản phải nộp Nhà nước tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị chi phí lương phải trả ngắn hạn tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu chưa thực hiện ngắn hạn giữa cuối quý II/2025 và đầu năm 2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản tiền thuê đất và các chi phí liên quan của Công ty CP Viptour – Togi tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động trong các khoản phải trả khác ngắn hạn và dài hạn, đặc biệt là các khoản liên quan đến cá nhân mua nợ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không còn giá trị vốn góp của Công ty Pegasus Thăng Long trong các khoản phải trả khác ngắn hạn đến cơ cấu nợ của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tài chính phát sinh từ các khoản lãi phải trả cho cá nhân mua nợ, cả ngắn hạn và dài hạn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ các loại thuế chính (GTGT, TNDN, TNCN) trên tổng thuế và các khoản phải nộp Nhà nước tại 30/06/2025.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Vốn chủ sở hữu)\nLoại nội dung: Bảng\n**23. VỐN CHỦ SỞ HỮU**\n**a. Thay đổi vốn chủ sở hữu**\nĐơn vị: VND\n| CHỈ TIÊU | Vốn đầu tư của chủ sở hữu | Vốn khác của chủ sở hữu | Quỹ khác thuộc vốn chủ sở hữu | Quỹ đầu tư phát triển | Lợi nhuận sau thuế chưa phân phối | Lợi ích cổ đông không kiểm soát | Tổng cộng |\n|---------------------------------------------|---------------------------|--------------------------|--------------------------------|-----------------------|-----------------------------------|--------------------------------|--------------------|\n| Số dư đầu kỳ năm trước (01/01/2024)         | 2.000.000.000.000         | 4.983.002.620            | 6.329.814.592                  | 14.414.221.829        | 626.910.505.151                   | 375.588.790.890                | 1.774.405.324.780  |\n| Tăng vốn ở công ty con                      | -                         | -                        | -                              | -                     | -                                 | 2.007.386                      | 2.007.386          |\n| Lãi/lỗ năm trước                            | -                         | -                        | -                              | -                     | (177.788.446.056)                 | 1.052.856.487                  | (176.735.589.569)  |\n| Mua thêm cổ phiếu ở công ty con            | -                         | -                        | -                              | -                     | -                                 | (33.882.972.800)               | (33.882.972.800)   |\n| Giảm từ quỹ khen thưởng phúc lợi tại công ty con | -                         | -                        | -                              | 1.408.867.389         | -                                 | 1.366.176.120                  | 2.775.043.509      |\n| Tăng/giảm khác                              | -                         | 997.380                  | -                              | 5.140.415             | -                                 | -                              | 6.137.795          |\n| Số dư cuối kỳ năm trước (31/12/2024)         | 2.000.000.000.000         | 4.984.000.000            | 6.329.814.592                  | 14.419.362.244        | 484.413.899.284                   | 373.165.627.874                | 1.914.484.905.426  |\n| Số dư đầu kỳ năm nay (01/01/2025)           | 2.000.000.000.000         | 4.984.000.000            | 6.329.814.592                  | 14.419.362.244        | 484.413.899.284                   | 373.165.627.874                | 1.914.484.905.426  |\n| Lợi nhuận kỳ này                            | -                         | -                        | -                              | -                     | 35.425.209.619                    | 31.515.193.435                 | 66.940.403.054     |\n| Điều chỉnh do thay đổi lãi suất tại công ty con | -                         | -                        | -                              | 1.304.540.966         | 24.786.844.752                    | (23.482.303.786)               | 2.609.081.932      |\n| Ảnh hưởng của việc mua công ty con trong kỳ | -                         | -                        | -                              | 943.750.562           | -                                 | (13.792.319.288)               | (12.848.568.726)   |\n| Tăng khác                                   | -                         | -                        | -                              | -                     | -                                 | 7.288.392                      | 7.288.392          |\n| Số dư cuối kỳ này (30/06/2025)              | 2.000.000.000.000         | 4.984.000.000            | 6.329.814.592                  | 14.780.152.648        | 544.625.953.655                   | 351.347.707.329                | 1.832.815.720.914  |\n\n**b. Chi tiết vốn góp của chủ sở hữu**\n| CHỈ TIÊU | 30/06/2025 (VND) | Tỷ lệ (%) | 01/01/2025 (VND) | Tỷ lệ (%) |\n|-----------------------------------------------|--------------------|-----------|--------------------|-----------|\n| Công ty CP Tập đoàn Đại Dương                 | 1.111.945.520.000  | 55,60     | 1.111.945.520.000  | 55,60     |\n| Khác                                          | 888.054.480.000    | 44,40     | 888.054.480.000    | 44,40     |\n| **TỔNG CỘNG**                                 | **2.000.000.000.000**| **100**   | **2.000.000.000.000**| **100**   |\n\n**c. Các giao dịch vốn với chủ sở hữu và phân phối cổ tức, chia lợi nhuận**\n| CHỈ TIÊU | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|-----------------------------------------------|-----------------------------------|-----------------------------------|\n| **Vốn góp của chủ sở hữu**                    |                                   |                                   |\n| Số dư đầu kỳ                                  | 2.000.000.000.000                 | 2.000.000.000.000                 |\n| Số dư cuối kỳ                                 | 2.000.000.000.000                 | 2.000.000.000.000                 |\n\n**d. Cổ phiếu**\n| CHỈ TIÊU | 30/06/2025 | 01/01/2025 |\n|-----------------------------------------------|------------|------------|\n| Số lượng cổ phiếu được phép phát hành         | 200.000.000| 200.000.000|\n| Số lượng cổ phiếu đã phát hành                | 200.000.000| 200.000.000|\n| - Cổ phiếu phổ thông có quyền biểu quyết      | 200.000.000| 200.000.000|\n| Số lượng cổ phiếu đang lưu hành               | 200.000.000| 200.000.000|\n| - Cổ phiếu phổ thông có quyền biểu quyết      | 200.000.000| 200.000.000|\n| Mệnh giá mỗi cổ phiếu (VND)                   | 10.000     | 10.000     |\n\n**e. Các quỹ của doanh nghiệp**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Quỹ đầu tư phát triển                         | 14.780.152.648     | 14.419.362.244     |\n| Quỹ khác thuộc vốn chủ sở hữu                  | 6.329.814.592      | 6.329.814.592      |\n| **TỔNG CỘNG**                                 | **21.109.967.240**| **20.749.176.836**|\n",
+    "questions": [
+      {
+        "question": "Vốn đầu tư của chủ sở hữu tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối cuối kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu đang lưu hành của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Quỹ đầu tư phát triển giữa 30/06/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi lợi nhuận sau thuế chưa phân phối và ảnh hưởng của nó đến vốn chủ sở hữu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các điều chỉnh do thay đổi lãi suất tại công ty con đến tổng vốn chủ sở hữu.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ tập trung vốn góp của chủ sở hữu vào Công ty CP Tập đoàn Đại Dương và rủi ro liên quan.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ suất lợi nhuận trên vốn chủ sở hữu (ROE) dựa trên lợi nhuận kỳ này và vốn chủ sở hữu cuối kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Các khoản mục ngoài bảng cân đối, Doanh thu, Chi phí)\nLoại nội dung: Bảng và Văn bản\n**24. CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT**\n**a. Tài sản thuê hoạt động**\nCông ty đang thuê văn phòng tại Tầng 8, Tòa nhà Leadvisors, số 643 Phạm Văn Đồng, phường Nghĩa Đô, Hà Nội.\n**b. Xử lý nợ khó đòi**\n| CHỈ TIÊU | Năm xử lý | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|-----------|--------------------|--------------------|\n| Phải thu khách hàng ngắn hạn                   |           | 2.061.673.687      | 2.061.673.687      |\n| Công ty CP Giao dịch Hàng hóa Info Commodity Exchange | 2022      | 471.500.857        | 471.500.857        |\n| Công ty CP Truyền thông TV Shopping Media     | 2022      | 557.377.711        | 557.377.711        |\n| Công ty TNHH Royal Việt Nam                   | 2028      | 14.400.000         | 14.400.000         |\n| Khác                                          | 2022      | 1.018.395.119      | 1.018.395.119      |\n| Phải thu khác ngắn hạn                        |           | 844.370.612.374    | 844.370.612.374    |\n| Ông Hà Trọng Nam                              | 2022      | 586.131.347.928    | 586.131.347.928    |\n| Công ty TNHH VNT                              | 2022      | 201.200.820.000    | 201.200.820.000    |\n| Khác                                          | 2022      | 57.038.444.446     | 57.038.444.446     |\n| Phải thu khác dài hạn                         |           | 6.255.083.564      | 6.255.083.564      |\n| Bà Đặng Minh Lê                               | 2022      | 196.828.000        | 196.828.000        |\n| Bà Đinh Thị Chặng Nhung                       | 2022      | 2.868.400.000      | 2.868.400.000      |\n| Ông Nguyễn Khoa Điền                          | 2022      | 3.189.855.564      | 3.189.855.564      |\n| Trả trước cho người bán ngắn hạn              | 2022      | 86.000.000         | 86.000.000         |\n| **TỔNG CỘNG**                                 |           | **852.773.369.625**| **852.773.369.625**|\nCông ty vẫn đang thực hiện các thủ tục để thu hồi các khoản phải thu này.\n\n**25. DOANH THU BÁN HÀNG VÀ CUNG CẤP DỊCH VỤ**\n| CHỈ TIÊU | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|-----------------------------------------------|-----------------------------------|-----------------------------------|\n| Doanh thu thành phẩm                          | 237.447.189.470                   | 200.061.370.684                   |\n| Doanh thu hàng hóa                            | 9.143.854.548                     | 7.929.558.193                     |\n| Doanh thu cung cấp dịch vụ                    | 76.224.528.756                    | 68.656.573.489                    |\n| **TỔNG CỘNG**                                 | **322.815.572.774**               | **276.647.502.366**               |\n\n**26. CÁC KHOẢN GIẢM TRỪ DOANH THU**\n| CHỈ TIÊU | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|-----------------------------------------------|-----------------------------------|-----------------------------------|\n| Chiết khấu thương mại                         | 16.206.805.436                    | 7.419.839.234                     |\n| Hàng bán bị trả lại                           | 1.180.005                         | -                                 |\n| Giảm giá hàng bán                             | 32.699.313                        | 82.286.506                        |\n| **TỔNG CỘNG**                                 | **16.240.684.754**                | **7.502.125.740**                 |\n\n**27. GIÁ VỐN HÀNG BÁN VÀ DỊCH VỤ CUNG CẤP**\n| CHỈ TIÊU | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|-----------------------------------------------|-----------------------------------|-----------------------------------|\n| Giá vốn thành phẩm bán ra                     | 143.230.119.287                   | 128.106.275.545                   |\n| Giá vốn hàng hóa bán ra                       | 7.428.769.773                     | 6.429.683.765                     |\n| Giá thành dịch vụ cung cấp                    | 56.241.587.616                    | 51.576.966.956                    |\n| **TỔNG CỘNG**                                 | **206.900.476.676**               | **186.112.926.266**               |\n\n**28. DOANH THU HOẠT ĐỘNG TÀI CHÍNH**\n| CHỈ TIÊU | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|-----------------------------------------------|-----------------------------------|-----------------------------------|\n| Lãi tiền gửi, lãi cho vay                     | 4.920.392.297                     | 12.815.371.428                    |\n| Lãi chênh lệch tỷ giá hối đoái                | 154.566.933                       | 105.140.377                       |\n| **TỔNG CỘNG**                                 | **5.074.959.230**                 | **12.920.511.805**                |\n\n**29. CHI PHÍ TÀI CHÍNH**\n| CHỈ TIÊU | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|-----------------------------------------------|-----------------------------------|-----------------------------------|\n| Lãi tiền vay                                  | 53.958.305.472                    | 53.049.951.563                    |\n| Lỗ chênh lệch tỷ giá hối đoái                 | 4.820.217                         | 1.855.319                         |\n| Dự phòng đầu tư tài chính                     | -                                 | 5.314.919                         |\n| **TỔNG CỘNG**                                 | **53.963.125.689**                | **53.046.491.963**                |\n",
+    "questions": [
+      {
+        "question": "Tổng giá trị nợ khó đòi đang chờ xử lý của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu thành phẩm từ 01/01/2025 đến 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu bán hàng và cung cấp dịch vụ giữa hai kỳ báo cáo (01/01-30/06/2025 và 01/01-30/06/2024).",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản chiết khấu thương mại đã thay đổi như thế nào giữa hai kỳ báo cáo?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng thu hồi các khoản nợ khó đòi của công ty dựa trên thông tin được cung cấp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng đáng kể các khoản giảm trừ doanh thu đến lợi nhuận thuần của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mối tương quan giữa doanh thu hoạt động tài chính và chi phí tài chính trong kỳ báo cáo.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ giá vốn hàng bán và dịch vụ cung cấp trên doanh thu thuần về bán hàng và cung cấp dịch vụ cho kỳ từ 01/01/2025 đến 30/06/2025.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Chi phí thuế TNDN hoãn lại, Các công cụ tài chính)\nLoại nội dung: Bảng và Văn bản\n**30. CHI PHÍ THUẾ THU NHẬP DOANH NGHIỆP HOÃN LẠI**\n**a. Tài sản thuế thu nhập hoãn lại**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Thuế suất thuế thu nhập doanh nghiệp dùng để xác định giá trị tài sản thuế hoãn lại (%) | 20,0               | 20,0               |\n| Lãi/lỗ thuế thu nhập doanh nghiệp hoãn lại phát sinh từ chênh lệch tạm thời được khấu trừ | 213.154.833        | 241.943.120        |\n| **TỔNG CỘNG**                                 | **213.154.833** | **241.943.120**    |\n**b. Nợ phải trả thuế thu nhập hoãn lại**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Thuế suất thuế thu nhập doanh nghiệp dùng để xác định giá trị nợ phải trả thuế hoãn lại (%) | 20                 | 20                 |\n| Lãi/lỗ thuế thu nhập doanh nghiệp hoãn lại phát sinh từ lỗ tính thuế và ưu đãi chưa sử dụng | 39.846.084.498     | 39.505.882.112     |\n| **TỔNG CỘNG**                                 | **39.846.084.498**| **39.505.882.112**|\n\n**31. CÁC CÔNG CỤ TÀI CHÍNH**\nCác công cụ tài chính của công ty bao gồm:\n**Giá trị ghi sổ thuần**\n**Tài sản tài chính**\n| CHỈ TIÊU | Giá gốc (30/06/2025, VND) | Dự phòng (30/06/2025, VND) | Giá gốc (01/01/2025, VND) | Dự phòng (01/01/2025, VND) |\n|-----------------------------------------------|---------------------------|---------------------------|---------------------------|---------------------------|\n| Tiền và các khoản tương đương tiền            | 160.165.709.288           | -                         | 169.749.007.919           | -                         |\n| Phải thu khách hàng và các khoản phải thu khác | 358.000.705.766           | 148.304.613.407           | 458.894.762.525           | 145.232.232.237           |\n| Phải thu cho vay, đầu tư nắm giữ đến ngày đáo hạn | 76.923.897.696            | 6.352.959.999             | 66.662.631.944            | 5.900.000.000             |\n| **TỔNG CỘNG**                                 | **595.090.312.750**       | **154.657.573.406**       | **695.306.402.388**       | **151.132.232.237**       |\n**Nợ tài chính**\n| CHỈ TIÊU | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------------|--------------------|\n| Vay và nợ phải trả                            | 1.466.274.731.629  | 1.425.296.663.881  |\n| Phải trả người bán và các khoản phải trả khác | 144.983.761.696    | 84.266.858.392     |\n| Chi phí phải trả                              | 21.379.164.963     | 13.117.056.461     |\n| **TỔNG CỘNG**                                 | **1.632.637.658.288**| **1.522.680.578.734**|\n\nCác tài sản tài chính và nợ tài chính chưa được đánh giá theo giá trị hợp lý tại cuối kỳ kế toán do Thông tư số 210/2009/TT-BTC cũng như các quy định hiện hành yêu cầu trình bày báo cáo tài chính và thuyết minh các công cụ tài chính nhưng không đưa ra cơ sở để đánh giá so sánh và ghi nhận giá trị hợp lý của tài sản tài chính và nợ tài chính, ngoại trừ dự phòng phải thu khó đòi và dự phòng giảm giá đầu tư chứng khoán như chi tiết tại các Thuyết minh liên quan.\n\n**Quản lý rủi ro tài chính**\nRủi ro tài chính bao gồm rủi ro thị trường, rủi ro tín dụng và rủi ro thanh khoản. Công ty đã thiết lập một hệ thống kiểm soát để đảm bảo sự cân bằng phù hợp giữa chi phí rủi ro phát sinh và chi phí quản lý rủi ro. Hội đồng quản trị của công ty chịu trách nhiệm giám sát quá trình quản lý rủi ro để đảm bảo sự cân bằng phù hợp giữa rủi ro và kiểm soát rủi ro.\n\n**Rủi ro thị trường**\nHoạt động của công ty chủ yếu chịu rủi ro từ sự thay đổi về giá cả, tỷ giá hối đoái và lãi suất.\n**Quản lý rủi ro giá**\nCông ty sẽ chịu rủi ro giá cổ phiếu phát sinh từ các khoản đầu tư chứng khoán dài hạn do sự không chắc chắn về giá tương lai của các khoản đầu tư chứng khoán. Các khoản đầu tư chứng khoán dài hạn được nắm giữ cho các mục đích chiến lược dài hạn, và tại cuối năm tài chính công ty không có kế hoạch bán các khoản đầu tư này.\n**Quản lý rủi ro tỷ giá hối đoái**\nCông ty sẽ chịu rủi ro tỷ giá hối đoái do giá trị hợp lý của dòng tiền trong tương lai của các công cụ tài chính sẽ biến động theo sự thay đổi của tỷ giá hối đoái khi các khoản vay, doanh thu và chi phí của công ty được thực hiện bằng các loại tiền tệ khác với Đồng Việt Nam.\n**Quản lý rủi ro lãi suất**\nCông ty sẽ chịu rủi ro lãi suất do giá trị hợp lý của dòng tiền trong tương lai của một công cụ tài chính sẽ biến động theo sự thay đổi của lãi suất thị trường khi công ty có các khoản tiền gửi có kỳ hạn hoặc không kỳ hạn, các khoản vay và nợ phải trả chịu lãi suất thả nổi. Công ty quản lý rủi ro lãi suất bằng cách phân tích tình hình cạnh tranh trên thị trường để có được lãi suất có lợi cho mục đích của công ty.",
+    "questions": [
+      {
+        "question": "Giá trị tài sản thuế thu nhập hoãn lại tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá gốc tài sản tài chính tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thế nào là 'rủi ro thị trường' theo giải thích của công ty?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ phải trả thuế thu nhập hoãn lại giữa 30/06/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của hệ thống quản lý rủi ro tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của rủi ro tỷ giá hối đoái đến các công cụ tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược quản lý rủi ro giá cổ phiếu đối với các khoản đầu tư chứng khoán dài hạn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro lãi suất có thể ảnh hưởng đến các khoản vay và tiền gửi của công ty như thế nào.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Các công cụ tài chính: Rủi ro tín dụng, Rủi ro thanh khoản)\nLoại nội dung: Bảng và Văn bản\n**31. CÁC CÔNG CỤ TÀI CHÍNH (tiếp theo)**\n**Rủi ro tín dụng**\nRủi ro tín dụng là rủi ro mà đối tác của một công cụ tài chính hoặc hợp đồng không thực hiện nghĩa vụ hợp đồng dẫn đến tổn thất tài chính cho công ty. Công ty sẽ chịu rủi ro tín dụng từ các hoạt động kinh doanh chủ yếu là các khoản phải thu thương mại và các khoản phải thu khác và các hoạt động tài chính bao gồm tiền gửi ngân hàng, các khoản cho vay và các tài sản tài chính khác.\n| CHỈ TIÊU | Dưới 1 năm (VND) | Từ 1 đến 5 năm (VND) | Trên 5 năm (VND) | Tổng cộng (VND) |\n|-----------------------------------------------|-------------------|---------------------|-----------------|--------------------|\n| **Tại ngày 30/06/2025**                      |                   |                     |                 |                    |\n| Tiền và các khoản tương đương tiền            | 160.165.709.288   | -                   | -               | 160.165.709.288    |\n| Phải thu khách hàng và các khoản phải thu khác | 36.015.762.009    | 173.680.330.350     | -               | 209.696.092.359    |\n| Phải thu cho vay, đầu tư nắm giữ đến ngày đáo hạn | 40.343.204.624    | 30.227.733.073      | -               | 70.570.937.697     |\n| **TỔNG CỘNG**                                 | **236.524.675.921**| **203.908.063.423** | **-**           | **440.432.739.344**|\n| **Tại ngày 01/01/2025**                      |                   |                     |                 |                    |\n| Tiền và các khoản tương đương tiền            | 169.749.007.919   | -                   | -               | 169.749.007.919    |\n| Phải thu khách hàng và các khoản phải thu khác | 141.006.259.002   | 172.656.271.286     | -               | 313.662.530.288    |\n| Phải thu cho vay, đầu tư nắm giữ đến ngày đáo hạn | 30.534.898.871    | 30.227.733.073      | -               | 60.762.631.944     |\n| **TỔNG CỘNG**                                 | **341.290.165.792**| **202.884.004.359** | **-**           | **544.174.170.151**|\n\n**Rủi ro thanh khoản**\nRủi ro thanh khoản là rủi ro mà công ty phải đối mặt với khó khăn trong việc thực hiện các nghĩa vụ tài chính do thiếu vốn. Rủi ro thanh khoản của công ty chủ yếu phát sinh từ việc các tài sản tài chính và nợ tài chính có thời hạn đáo hạn khác nhau.\nCác điều khoản thanh toán của các khoản nợ tài chính dựa trên các khoản thanh toán dự kiến theo hợp đồng trên cơ sở dòng tiền gốc như sau:\n| CHỈ TIÊU | Dưới 1 năm (VND) | Từ 1 đến 5 năm (VND) | Trên 5 năm (VND) | Tổng cộng (VND) |\n|-----------------------------------------------|-------------------|---------------------|-----------------|--------------------|\n| **Tại ngày 30/06/2025**                      |                   |                     |                 |                    |\n| Vay và nợ phải trả                            | 256.274.731.629   | 990.000.000.000     | 220.000.000.000 | 1.466.274.731.629  |\n| Phải trả người bán và các khoản phải trả khác | 105.801.304.230   | 5.960.664.458       | 33.221.793.008  | 144.983.761.696    |\n| Chi phí phải trả                              | 21.379.164.963    | -                   | -               | 21.379.164.963     |\n| **TỔNG CỘNG**                                 | **383.455.200.822**| **995.960.664.458** | **253.221.793.008**| **1.632.637.658.288**|\n| **Tại ngày 01/01/2025**                      |                   |                     |                 |                    |\n| Vay và nợ phải trả                            | 155.296.663.881   | 910.000.000.000     | 360.000.000.000 | 1.425.296.663.881  |\n| Phải trả người bán và các khoản phải trả khác | 44.968.222.996    | 6.350.664.458       | 32.947.970.938  | 84.266.858.392     |\n| Chi phí phải trả                              | 13.117.056.461    | -                   | -               | 13.117.056.461     |\n| **TỔNG CỘNG**                                 | **213.381.943.338**| **916.350.664.458** | **392.947.970.938**| **1.522.680.578.737**|\nCông ty tin rằng rủi ro tập trung trả nợ có thể quản lý được. Công ty có khả năng thanh toán các khoản nợ đến hạn từ dòng tiền từ hoạt động kinh doanh và các khoản thu từ tài sản tài chính đến hạn.",
+    "questions": [
+      {
+        "question": "Giá trị Tiền và các khoản tương đương tiền dưới 1 năm tại 30/06/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vay và nợ phải trả dưới 1 năm tại 30/06/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng tài sản tài chính dưới 1 năm giữa 30/06/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong tổng nợ tài chính có thời hạn từ 1 đến 5 năm giữa hai kỳ báo cáo.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích mối liên hệ giữa rủi ro tín dụng và các khoản phải thu của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro thanh khoản của công ty dựa trên cơ cấu thời hạn đáo hạn của tài sản và nợ tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích khả năng công ty thanh toán các khoản nợ đến hạn từ dòng tiền hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ tài sản tài chính dưới 1 năm trên tổng tài sản tài chính tại 30/06/2025 và nhận xét về khả năng chuyển đổi thành tiền của tài sản.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: Công ty Cổ phần ONE CAPITAL HOSPITALITY\nMã cổ phiếu: OCH\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2025\nThời gian: Ngày phát hành 30/07/2025, Quý II/2025\nÝ kiến kiểm toán: Không phải chấp nhận toàn phần (có văn bản giải trình kèm theo)\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Các sự kiện phát sinh sau ngày báo cáo, Giao dịch với bên liên quan, Số liệu so sánh, Giải trình Báo cáo kết quả kinh doanh)\nLoại nội dung: Bảng và Văn bản\n**32. CÁC SỰ KIỆN PHÁT SINH SAU NGÀY KẾT THÚC KỲ KẾ TOÁN**\nKhông có các sự kiện trọng yếu nào ngoài hai sự kiện đã được đề cập ở trên phát sinh sau ngày kết thúc kỳ báo cáo cần phải điều chỉnh hoặc trình bày trên Báo cáo tài chính hợp nhất này.\n\n**33. CÁC GIAO DỊCH VÀ SỐ DƯ VỚI CÁC BÊN LIÊN QUAN**\nTrong kỳ, Công ty đã thực hiện các giao dịch và số dư quan trọng với các bên liên quan như sau:\n**Các giao dịch với bên liên quan trong kỳ**\n| CHỈ TIÊU | Mối quan hệ | Từ 01/01/2025 đến 30/06/2025 (VND) | Từ 01/01/2024 đến 30/06/2024 (VND) |\n|-----------------------------------------------|--------------|-----------------------------------|-----------------------------------|\n| Doanh thu bán hàng và cung cấp dịch vụ        |              | 10.061.806                        | 7.926.295                         |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 10.061.806                        | 7.926.295                         |\n| Mua hàng hóa và dịch vụ                       |              | 783.893.898                       | 1.371.389.876                     |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 783.893.898                       | 1.371.389.876                     |\n| Doanh thu hoạt động tài chính                 |              | 441.331.608                       | 1.316.759.879                     |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 441.331.608                       | 1.316.759.879                     |\n| Các khoản vay                                 |              | 6.000.000.000                     | -                                 |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 6.000.000.000                     | -                                 |\n| Chi phí tài chính                             |              | 76.000.000                        | -                                 |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 76.000.000                        | -                                 |\n\n**Số dư tại cuối kỳ báo cáo**\n| CHỈ TIÊU | Mối quan hệ | 30/06/2025 (VND) | 01/01/2025 (VND) |\n|-----------------------------------------------|--------------|--------------------|--------------------|\n| Phải thu khách hàng ngắn hạn                   |              | 2.901.750          | -                  |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 2.901.750          | -                  |\n| Các khoản vay                                 |              | 6.000.000.000      | -                  |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 6.000.000.000      | -                  |\n| Phải thu cho vay ngắn hạn                     |              | 4.500.000.000      | 4.500.000.000      |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 4.500.000.000      | 4.500.000.000      |\n| Phải thu cho vay dài hạn                      |              | 30.227.733.073     | 30.227.733.073     |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 30.227.733.073     | 30.227.733.073     |\n| Phải thu khác dài hạn                         |              | 28.737.199.120     | 28.295.867.512     |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 28.737.199.120     | 28.295.867.512     |\n| Phải trả khác ngắn hạn                        |              | 803.535.855        | 803.535.855        |\n| Công ty CP Tập đoàn Đại Dương                 | Công ty mẹ   | 803.535.855        | 803.535.855        |\n\nTrong kỳ này, thu nhập của các thành viên Hội đồng quản trị, Ban kiểm soát và Ban Tổng Giám đốc như sau:\n**a. Thù lao của Hội đồng quản trị**\n| CHỨC VỤ | THÙ LAO (VND) | THƯỞNG (VND) | TỔNG THU NHẬP (VND) |\n|-------------------------|---------------|--------------|---------------------|\n| Nguyễn Thu Hằng (Chủ tịch HĐQT) | 120.000.000   | 2.500.000    | 122.500.000         |\n| Huỳnh Minh Việt (Thành viên HĐQT) | 60.000.000    | 2.000.000    | 62.000.000          |\n| Hoàng Thúy Vân (Thành viên HĐQT) | 60.000.000    | 2.500.000    | 62.500.000          |\n| Nguyễn Dũng Minh (Thành viên HĐQT) | 60.000.000    | 2.000.000    | 62.000.000          |\n| Đinh Hoài Nam (Thành viên HĐQT) | 60.000.000    | 2.000.000    | 62.000.000          |\n| **TỔNG CỘNG**           | **360.000.000**| **11.000.000**| **371.000.000**     |\n\n**b. Thù lao của Ban kiểm soát**\n| CHỨC VỤ | THÙ LAO (VND) | THƯỞNG (VND) | TỔNG THU NHẬP (VND) |\n|---------------------------------------------|---------------|--------------|---------------------|\n| Dương Thị Mai Hương (Trưởng Ban kiểm soát) | 60.000.000    | 2.500.000    | 62.500.000          |\n| Lê Thị Bích Hạnh (Thành viên Ban kiểm soát) | 30.000.000    | 2.500.000    | 32.500.000          |\n| Trần Thị Kim Oanh (Thành viên Ban kiểm soát) (Miễn nhiệm ngày 26/06/2025) | 30.000.000    | 2.500.000    | 32.500.000          |\n| Trịnh Thị Hằng (Thành viên Ban kiểm soát) (Bổ nhiệm ngày 26/06/2025) | -             | -            | -                   |\n| **TỔNG CỘNG**                               | **120.000.000**| **7.500.000**| **127.500.000**     |\n\n**c. Lương của Tổng Giám đốc và các nhà quản lý khác**\n| CHỨC VỤ | LƯƠNG (VND) | THƯỞNG (VND) | TỔNG THU NHẬP (VND) |\n|---------------------------------------------|-------------|--------------|---------------------|\n| Nguyễn Đức Minh (Tổng Giám đốc) (Bổ nhiệm ngày 15/01/2025) | -           | -            | -                   |\n| Lê Đình Quang (Phó Tổng Giám đốc) (Bổ nhiệm ngày 15/01/2025) | 600.143.700 | 3.500.000    | 603.643.700         |\n| **TỔNG CỘNG**                               | **600.143.700**| **3.500.000**| **603.643.700**     |\n\n**34. SỐ LIỆU SO SÁNH**\nCác số liệu trình bày trên Bảng cân đối kế toán được lấy từ Báo cáo tài chính hợp nhất đã được kiểm toán cho năm tài chính kết thúc ngày 31/12/2024 của Công ty TNHH Kiểm toán CPA Việt Nam. Các số liệu so sánh trên Báo cáo kết quả kinh doanh và Báo cáo lưu chuyển tiền tệ được so sánh với Báo cáo tài chính hợp nhất cùng kỳ năm 2024 đã được công bố.\n\n**35. GIẢI TRÌNH BÁO CÁO KẾT QUẢ KINH DOANH**\nChỉ tiêu lợi nhuận sau thuế thu nhập doanh nghiệp trên Báo cáo kết quả kinh doanh hợp nhất Quý II/2025 lỗ 23 tỷ đồng, có sự cải thiện đáng kể so với lỗ 30,5 tỷ đồng cùng kỳ năm trước, do các nguyên nhân sau:\n1. Doanh thu bán hàng và cung cấp dịch vụ Quý II/2025 đạt gần 189 tỷ đồng, tăng 31 tỷ đồng, tương đương tăng 20% so với cùng kỳ năm 2024. Giá vốn hàng bán và dịch vụ cung cấp Quý II/2025 đạt 113 tỷ đồng, tăng 15 tỷ đồng so với Quý II/2024, tương đương tăng 15%; do đó, Lợi nhuận gộp về bán hàng và cung cấp dịch vụ Quý II/2025 đạt gần 65 tỷ đồng, tăng 12 tỷ đồng, tương đương tăng 23% so với cùng kỳ năm trước.\n2. Doanh thu hoạt động tài chính kỳ này đạt 2,9 tỷ đồng, giảm 3,4 tỷ đồng so với cùng kỳ năm trước, chủ yếu do giảm lãi tiền gửi ngân hàng và lãi tiền cho vay.\n3. Chi phí bán hàng kỳ này đạt 27,8 tỷ đồng, tăng 3,6 tỷ đồng so với cùng kỳ năm trước, chủ yếu do Công ty đẩy mạnh các hoạt động marketing và xúc tiến sản phẩm, mở rộng kênh bán hàng và dịch vụ phòng khách sạn.\n4. Chi phí quản lý doanh nghiệp kỳ này là 27,8 tỷ đồng, giảm 1,3 tỷ đồng, tương đương giảm 5% so với cùng kỳ năm trước, chủ yếu do Công ty kiểm soát chi phí hiệu quả và cải thiện hiệu quả quản lý.\n",
+    "questions": [
+      {
+        "question": "Ai là Chủ tịch Hội đồng quản trị của công ty?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Tổng thu nhập của Tổng Giám đốc và các nhà quản lý khác trong kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu bán hàng và cung cấp dịch vụ Quý II/2025 là bao nhiêu tỷ đồng?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu hoạt động tài chính giữa kỳ hiện tại và cùng kỳ năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự cải thiện trong lợi nhuận sau thuế thu nhập doanh nghiệp của Quý II/2025 so với cùng kỳ năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân tăng chi phí bán hàng và tác động của nó đến lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của việc kiểm soát chi phí quản lý doanh nghiệp của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của các giao dịch với bên liên quan (Công ty mẹ Tập đoàn Đại Dương) đến tình hình tài chính tổng thể của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

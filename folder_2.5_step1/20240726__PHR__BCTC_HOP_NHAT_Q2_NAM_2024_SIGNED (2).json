@@ -1,0 +1,846 @@
+[
+    {
+        "chunk_id": "1",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT (Phần A - Tài sản ngắn hạn)<br>Loại nội dung: Bảng<br>| Mã số | TÀI SẢN | Thuyết minh | 30/06/2024 VND | 01/01/2024 VND |<br>|------|---------|-------------|----------------|----------------|<br>| 100 | A. TÀI SẢN NGẮN HẠN | | 2.686.356.939.381 | 2.761.558.839.599 |<br>| 110 | I. Tiền và các khoản tương đương tiền | 03 | 75.878.138.936 | 145.835.512.937 |<br>| 111 | 1. Tiền | | 75.878.138.936 | 69.535.512.937 |<br>| 112 | 2. Các khoản tương đương tiền | | - | 76.300.000.000 |<br>| 120 | II. Đầu tư tài chính ngắn hạn | 04 | 2.010.986.586.992 | 1.997.490.215.773 |<br>| 123 | 1. Đầu tư nắm giữ đến ngày đáo hạn | | 2.010.986.586.992 | 1.997.490.215.773 |<br>| 130 | III. Các khoản phải thu ngắn hạn | | 196.117.926.732 | 193.008.385.088 |<br>| 131 | 1. Phải thu ngắn hạn của khách hàng | 05 | 35.876.574.022 | 57.745.125.359 |<br>| 132 | 2. Trả trước cho người bán ngắn hạn | 06 | 72.529.975.735 | 72.758.230.271 |<br>| 136 | 3. Phải thu ngắn hạn khác | 07 | 92.865.961.582 | 68.408.924.489 |<br>| 137 | 4. Dự phòng phải thu ngắn hạn khó đòi | | 5.154.584.607 | 5.903.895.031 |<br>| 140 | IV. Hàng tồn kho | 09 | 269.283.588.502 | 325.592.274.303 |<br>| 141 | 1. Hàng tồn kho | | 269.501.132.797 | 325.809.818.598 |<br>| 149 | 2. Dự phòng giảm giá hàng tồn kho | | 217.544.295 | 217.544.295 |<br>| 150 | V. Tài sản ngắn hạn khác | | 134.090.698.219 | 99.632.451.498 |<br>| 151 | 1. Chi phí trả trước ngắn hạn | 14 | 29.300.098.161 | 1.644.290.043 |<br>| 152 | 2. Thuế GTGT được khấu trừ | | 54.186.523.434 | 52.622.222.814 |<br>| 153 | 3. Thuế và các khoản khác phải thu Nhà nước | 18 | 50.604.076.624 | 45.365.938.641 |",
+        "questions": [
+            {
+                "question": "Tổng tài sản ngắn hạn của công ty tại ngày 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Mã cổ phiếu của công ty là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Tiền và các khoản tương đương tiền giữa 30/06/2024 và 01/01/2024. Mức thay đổi là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá sự biến động của Đầu tư tài chính ngắn hạn. Điều này có ý nghĩa gì đối với thanh khoản của công ty?",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Hàng tồn kho đã giảm bao nhiêu so với đầu năm 2024?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Phân tích cơ cấu tài sản ngắn hạn và cho biết khoản mục nào chiếm tỷ trọng lớn nhất.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo tác động của sự giảm sút các khoản phải thu ngắn hạn đến dòng tiền hoạt động của công ty.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "2",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT (Phần B - Tài sản dài hạn)<br>Loại nội dung: Bảng<br>| Mã số | TÀI SẢN | Thuyết minh | 30/06/2024 VND | 01/01/2024 VND |<br>|------|---------|-------------|----------------|----------------|<br>| 200 | B. TÀI SẢN DÀI HẠN | | 3.308.197.666.657 | 3.398.973.651.088 |<br>| 210 | I. Các khoản phải thu dài hạn | | 232.213.154 | 215.334.517 |<br>| 216 | 1. Phải thu dài hạn khác | 07 | 232.213.154 | 215.334.517 |<br>| 220 | II. Tài sản cố định | | 1.745.182.807.018 | 1.779.577.911.931 |<br>| 221 | 1. Tài sản cố định hữu hình | 11 | 1.744.649.051.430 | 1.778.988.730.122 |<br>| 222 | - Nguyên giá | | 2.805.865.173.341 | 2.761.232.973.103 |<br>| 223 | - Giá trị hao mòn lũy kế | | 1.061.216.121.911 | 982.244.242.981 |<br>| 227 | 2. Tài sản cố định vô hình | 12 | 533.755.588 | 589.181.809 |<br>| 228 | - Nguyên giá | | 1.436.829.510 | 1.419.025.415 |<br>| 229 | - Giá trị hao mòn lũy kế | | 903.073.922 | 829.843.606 |<br>| 230 | III. Bất động sản đầu tư | 13 | 177.743.963.249 | 185.085.044.219 |<br>| 231 | - Nguyên giá | | 261.565.997.728 | 261.565.997.728 |<br>| 232 | - Giá trị hao mòn lũy kế | | 83.822.034.479 | 76.480.953.509 |<br>| 240 | IV. Tài sản dở dang dài hạn | 10 | 502.432.430.414 | 486.552.200.139 |<br>| 241 | 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | | 79.231.226.825 | 78.737.608.719 |<br>| 242 | 2. Chi phí xây dựng cơ bản dở dang | | 423.201.203.589 | 407.814.591.420 |<br>| 250 | V. Đầu tư tài chính dài hạn | 04 | 513.131.875.780 | 572.750.897.346 |<br>| 252 | 1. Đầu tư vào công ty liên doanh, liên kết | | 366.085.409.176 | 322.903.436.824 |<br>| 253 | 2. Đầu tư góp vốn vào đơn vị khác | | 130.766.466.604 | 130.766.466.604 |<br>| 255 | 3. Đầu tư nắm giữ đến ngày đáo hạn | | 16.280.000.000 | 119.080.993.918 |<br>| 260 | VI. Tài sản dài hạn khác | | 369.474.377.042 | 374.792.262.936 |<br>| 261 | 1. Chi phí trả trước dài hạn | 14 | 344.863.614.604 | 345.815.747.251 |<br>| 262 | 2. Tài sản thuế thu nhập hoãn lại | | 24.610.762.438 | 28.976.515.685 |<br>| 270 | TỔNG CỘNG TÀI SẢN | | 5.994.554.606.038 | 6.160.532.490.687 |",
+        "questions": [
+            {
+                "question": "Tổng tài sản dài hạn của công ty tại ngày 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tài sản cố định hữu hình chiếm bao nhiêu trong tổng tài sản dài hạn tại 30/06/2024?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "So sánh giá trị hao mòn lũy kế của tài sản cố định hữu hình giữa cuối kỳ và đầu kỳ.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ đầu tư vào tài sản dở dang dài hạn của công ty và khả năng chuyển đổi thành tài sản hoạt động.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Sự thay đổi trong Đầu tư nắm giữ đến ngày đáo hạn dài hạn có ảnh hưởng gì đến chiến lược đầu tư của công ty?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Liệt kê các loại tài sản dài hạn khác mà công ty đang sở hữu.",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "3",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>| Mã số | NGUỒN VỐN | Thuyết minh | 30/06/2024 VND | 01/01/2024 VND |<br>|------|----------|-------------|----------------|----------------|<br>| 300 | C. NỢ PHẢI TRẢ | | 2.005.827.604.345 | 2.346.294.739.345 |<br>| 310 | I. Nợ ngắn hạn | | 559.508.395.347 | 882.868.362.279 |<br>| 311 | 1. Phải trả người bán ngắn hạn | 16 | 64.786.105.237 | 46.966.342.773 |<br>| 312 | 2. Người mua trả tiền trước ngắn hạn | 17 | 15.021.456.950 | 7.733.030.870 |<br>| 313 | 3. Thuế và các khoản phải nộp Nhà nước | 18 | 12.888.747.531 | 35.437.387.139 |<br>| 314 | 4. Phải trả người lao động | | 36.958.017.176 | 96.135.930.165 |<br>| 315 | 5. Chi phí phải trả ngắn hạn | 19 | 162.477.000.133 | 166.271.615.062 |<br>| 318 | 6. Doanh thu chưa thực hiện ngắn hạn | 21 | 49.946.876.336 | 45.849.151.936 |<br>| 319 | 7. Phải trả ngắn hạn khác | 20 | 24.964.429.583 | 158.512.358.768 |<br>| 320 | 8. Vay và nợ thuê tài chính ngắn hạn | 15 | 179.595.831.137 | 276.792.508.096 |<br>| 322 | 9. Quỹ khen thưởng, phúc lợi | | 12.869.931.264 | 49.170.037.470 |<br>| 330 | II. Nợ dài hạn | | 1.446.319.208.998 | 1.463.426.377.066 |<br>| 332 | 1. Người mua trả tiền trước dài hạn | 17 | 78.711.544.617 | 78.701.769.117 |<br>| 336 | 2. Doanh thu chưa thực hiện dài hạn | 21 | 1.320.832.901.984 | 1.338.375.511.739 |<br>| 337 | 3. Phải trả dài hạn khác | 20 | 64.575.000 | 64.575.000 |<br>| 338 | 4. Vay và nợ thuê tài chính dài hạn | 15 | 44.734.002.029 | 41.765.300.553 |<br>| 341 | 5. Thuế thu nhập hoãn lại phải trả | | 1.976.185.368 | 4.519.220.657 |<br>| 400 | D. VỐN CHỦ SỞ HỮU | | 3.988.727.001.693 | 3.814.237.751.342 |<br>| 410 | I. Vốn chủ sở hữu | 22 | 3.991.787.265.542 | 3.814.163.837.737 |<br>| 411 | 1. Vốn góp của chủ sở hữu | | 1.354.991.980.000 | 1.354.991.980.000 |<br>| 411a | Cổ phiếu phổ thông có quyền biểu quyết | | 1.354.991.980.000 | 1.354.991.980.000 |<br>| 412 | 2. Thặng dư vốn cổ phần | | 21.238.165.708 | 21.238.165.708 |<br>| 417 | 3. Chênh lệch tỷ giá hối đoái | 23 | 232.915.899.448 | 202.719.264.386 |<br>| 418 | 4. Quỹ đầu tư phát triển | | 1.372.212.476.151 | 1.299.487.984.700 |<br>| 421 | 5. Lợi nhuận sau thuế chưa phân phối | | 831.486.521.021 | 767.619.915.334 |<br>| 421a | LNST chưa phân phối lũy kế đến cuối kỳ trước | | 693.783.627.363 | 183.772.257.267 |<br>| 421b | LNST chưa phân phối kỳ này | | 137.702.893.658 | 583.847.658.067 |<br>| 429 | 6. Lợi ích cổ đông không kiểm soát | | 178.942.223.214 | 168.106.527.609 |<br>| 430 | II. Nguồn kinh phí và quỹ khác | | 3.060.263.849 | 73.913.605 |<br>| 431 | 1. Nguồn kinh phí | 24 | 3.060.263.849 | 73.913.605 |<br>| 440 | TỔNG CỘNG NGUỒN VỐN | | 5.994.554.606.038 | 6.160.532.490.687 |",
+        "questions": [
+            {
+                "question": "Tổng nợ phải trả của công ty tại ngày 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Vốn chủ sở hữu tại 01/01/2024 là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh Nợ ngắn hạn với Nợ dài hạn tại cuối kỳ. Khoản mục nào chiếm tỷ trọng lớn hơn?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi trong Lợi nhuận sau thuế chưa phân phối giữa hai kỳ báo cáo.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Tính tỷ lệ nợ phải trả trên tổng nguồn vốn tại ngày 30/06/2024. Đánh giá mức độ rủi ro tài chính của công ty.",
+                "difficulty": "Hard_QA"
+            },
+            {
+                "question": "Giải thích ý nghĩa của sự tăng lên của 'Người mua trả tiền trước dài hạn'.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Chỉ ra một khoản mục trong Vốn chủ sở hữu có sự tăng trưởng đáng kể và nêu ý nghĩa của nó.",
+                "difficulty": "Medium_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "4",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT<br>Loại nội dung: Bảng<br>| Mã số | CHỈ TIÊU | Thuyết minh | Quý 2 năm 2024 VND | Quý 2 năm 2023 VND | Lũy kế năm 2024 VND | Lũy kế năm 2023 VND |<br>|------|---------|-------------|--------------------|--------------------|--------------------|--------------------|<br>| 01 | 1. Doanh thu bán hàng và cung cấp dịch vụ | 25 | 271.948.926.553 | 110.763.718.492 | 595.311.178.581 | 437.286.134.572 |<br>| 02 | 2. Các khoản giảm trừ doanh thu | 26 | - | - | - | 253.857.792 |<br>| 10 | 3. Doanh thu thuần bán hàng và cung cấp dịch vụ | | 271.948.926.553 | 110.763.718.492 | 595.311.178.581 | 437.032.276.780 |<br>| 11 | 4. Giá vốn hàng bán | 27 | 214.416.322.527 | 63.557.211.067 | 465.304.707.293 | 343.590.362.707 |<br>| 20 | 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | | 57.532.604.026 | 47.206.507.425 | 130.006.471.288 | 93.441.914.073 |<br>| 21 | 6. Doanh thu hoạt động tài chính | 28 | 34.929.375.149 | 60.736.251.210 | 64.447.269.419 | 100.219.934.228 |<br>| 22 | 7. Chi phí tài chính | 29 | 6.792.981.400 | 7.486.968.325 | 11.202.037.380 | 12.559.556.970 |<br>| 23 | Trong đó: Chi phí lãi vay | | 5.651.194.447 | 4.715.808.776 | 9.663.770.160 | 9.467.757.308 |<br>| 24 | 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết | 30 | 21.288.432.920 | 8.494.344.471 | 42.781.074.288 | 34.783.819.729 |<br>| 25 | 9. Chi phí bán hàng | 31 | 4.820.605.027 | 4.172.725.099 | 13.138.217.912 | 12.488.290.275 |<br>| 26 | 10. Chi phí quản lý doanh nghiệp | 32 | 22.665.652.083 | 20.332.345.680 | 43.314.143.516 | 40.620.038.496 |<br>| 30 | 11. Lợi nhuận thuần từ hoạt động kinh doanh | | 79.471.173.585 | 84.445.064.002 | 169.580.416.187 | 162.777.782.289 |<br>| 31 | 12. Thu nhập khác | 33 | 3.961.399.717 | 69.781.705.002 | 4.325.475.779 | 275.837.517.479 |<br>| 32 | 13. Chi phí khác | 34 | 2.283.853.658 | 90.843.013 | 2.485.635.738 | 920.498.558 |<br>| 40 | 14. Lợi nhuận khác | | 1.677.546.059 | 69.690.861.989 | 1.839.840.041 | 274.917.018.921 |<br>| 50 | 15. Tổng lợi nhuận kế toán trước thuế | | 81.148.719.644 | 154.135.925.991 | 171.420.256.228 | 437.694.801.210 |<br>| 51 | 16. Chi phí thuế thu nhập doanh nghiệp hiện hành | 35 | 11.803.883.469 | 23.972.229.505 | 21.072.525.257 | 74.005.317.459 |<br>| 52 | 17. Chi phí thuế thu nhập doanh nghiệp hoãn lại | 36 | 985.947.599 | 2.792.503.251 | 1.578.537.699 | 2.798.652.327 |<br>| 60 | 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | | 70.330.783.774 | 127.371.193.235 | 148.769.193.272 | 360.890.831.424 |<br>| 61 | 19. Lợi nhuận sau thuế của Công ty mẹ | | 64.625.712.054 | 121.638.697.299 | 137.702.893.658 | 349.596.722.270 |<br>| 62 | 20. Lợi nhuận sau thuế của cổ đông không kiểm soát | | 5.705.071.720 | 5.732.495.936 | 11.066.299.614 | 11.294.109.154 |<br>| 70 | 21. Lãi cơ bản trên cổ phiếu | 37 | 477 | 898 | 1.016 | 2.580 |",
+        "questions": [
+            {
+                "question": "Doanh thu thuần lũy kế năm 2024 của công ty là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lợi nhuận sau thuế của Công ty mẹ lũy kế năm 2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh Lợi nhuận gộp quý 2 năm 2024 với quý 2 năm 2023. Tỷ lệ tăng trưởng là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tác động của sự thay đổi trong 'Thu nhập khác' đến Tổng lợi nhuận kế toán trước thuế lũy kế năm 2024 so với năm 2023.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Tính biên lợi nhuận gộp (Gross Profit Margin) lũy kế năm 2024 và so sánh với năm 2023.",
+                "difficulty": "Hard_QA"
+            },
+            {
+                "question": "Đánh giá hiệu quả hoạt động kinh doanh chính của công ty dựa trên xu hướng lợi nhuận gộp và lợi nhuận thuần từ hoạt động kinh doanh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Liệt kê 3 khoản mục chi phí lớn nhất trong quý 2 năm 2024.",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "5",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: BÁO CÁO LƯU CHUYỂN TIỀN TỆ HỢP NHẤT (Theo phương pháp gián tiếp)<br>Loại nội dung: Bảng<br>| Mã số | CHỈ TIÊU | Thuyết minh | 6 tháng đầu năm 2024 VND | 6 tháng đầu năm 2023 VND |<br>|------|----------|-------------|--------------------------|--------------------------|<br>| I. | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | | |<br>| 01 | 1. Lợi nhuận trước thuế | | 171.420.256.228 | 437.694.801.210 |<br>| | 2. Điều chỉnh cho các khoản | | | |<br>| 02 | Khấu hao tài sản cố định và bất động sản đầu tư | | 71.859.365.610 | 67.525.573.982 |<br>| 03 | Các khoản dự phòng | | 7.067.267.145 | 72.880.152 |<br>| 04 | Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | | 803.269.150 | 2.427.417.745 |<br>| 05 | Lãi, lỗ từ hoạt động đầu tư | | 200.736.690.093 | 103.946.073.662 |<br>| 06 | Chi phí lãi vay | | 9.663.770.160 | 9.467.757.308 |<br>| 08 | 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | | 156.867.854.631 | 316.305.980.000 |<br>| 09 | Tăng, giảm các khoản phải thu | | 32.339.911.860 | 4.980.932.963 |<br>| 10 | Tăng, giảm hàng tồn kho | | 73.278.498.271 | 55.815.067.695 |<br>| 11 | Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế thu nhập doanh nghiệp phải nộp | | 65.790.883.287 | 101.139.754.461 |<br>| 12 | Tăng, giảm chi phí trả trước | | 26.703.675.471 | 75.925.865.446 |<br>| 14 | Tiền lãi vay đã trả | | 11.579.603.982 | 9.249.944.984 |<br>| 15 | Thuế thu nhập doanh nghiệp đã nộp | | 34.819.885.215 | 103.485.158.409 |<br>| 17 | Tiền chi khác cho hoạt động kinh doanh | | 37.530.147.768 | 58.070.151.136 |<br>| 20 | Lưu chuyển tiền thuần từ hoạt động kinh doanh | | 41.239.659.566 | 74.053.515.695 |<br>| II. | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | | |<br>| 21 | 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | | 17.702.752.616 | 31.847.847.896 |<br>| 22 | 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | | 8.018.790.000 | 74.462.282.000 |<br>| 23 | 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | | 397.108.062.030 | 278.823.503.311 |<br>| 24 | 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | | 486.412.684.729 | 592.387.317.310 |<br>| 27 | 5. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | | 39.428.581.818 | 83.320.066.417 |<br>| 30 | Lưu chuyển tiền thuần từ hoạt động đầu tư | | 119.049.241.901 | 439.498.314.520 |<br>| III. | LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | | |<br>| 33 | 1. Tiền thu từ đi vay | | 119.330.795.206 | 108.782.719.865 |<br>| 34 | 2. Tiền trả nợ gốc vay | | 221.350.562.457 | 117.553.187.380 |<br>| 36 | 3. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | | 128.392.155.634 | 485.359.853.500 |<br>| 40 | Lưu chuyển tiền thuần từ hoạt động tài chính | | (230.411.922.885) | (494.130.321.015) |<br>| 50 | Lưu chuyển tiền thuần trong kỳ | | (70.123.021.418) | 19.421.509.200 |<br>| 60 | Tiền và tương đương tiền đầu kỳ | | 145.835.512.937 | 165.825.300.815 |<br>| 61 | Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | | 165.647.417 | 15.581.831 |<br>| 70 | Tiền và tương đương tiền cuối kỳ | 03 | 75.878.138.936 | 185.262.391.846 |",
+        "questions": [
+            {
+                "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tiền và tương đương tiền cuối kỳ tại ngày 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh Lưu chuyển tiền thuần từ hoạt động đầu tư giữa 6 tháng đầu năm 2024 và 2023. Thay đổi như thế nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tác động của việc 'Tiền trả nợ gốc vay' tăng mạnh trong 6 tháng đầu năm 2024 đến dòng tiền tài chính của công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính tổng tiền thu được từ hoạt động đầu tư trong 6 tháng đầu năm 2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Dự báo rủi ro thanh khoản của công ty nếu xu hướng Lưu chuyển tiền thuần trong kỳ tiếp tục âm.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "6",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 1. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP<br>Loại nội dung: Văn bản<br>Công ty Cổ phần Cao su Phước Hòa được thành lập và hoạt động theo Giấy chứng nhận đăng ký doanh nghiệp công ty cổ phần số 3700147532 do Sở Kế hoạch và Đầu tư tỉnh Bình Dương cấp lần đầu ngày 03 tháng 03 năm 2008, đăng ký thay đổi lần thứ sáu ngày 31 tháng 10 năm 2018.<br>Trụ sở chính của Công ty được đặt tại Xã Phước Hòa, huyện Phú Giáo, tỉnh Bình Dương.<br>Vốn điều lệ của Công ty là 1.354.991.980.000 VND tương đương với 135.499.198 cổ phần. Mệnh giá mỗi cổ phần là 10.000 VND.<br><br>Lĩnh vực kinh doanh:<br>Trồng và kinh doanh cây cao su, kinh doanh bất động sản và bán lẻ hàng hóa.<br><br>Ngành nghề kinh doanh:<br>Hoạt động chính của Công ty là:<br>- Trồng cây cao su; Hoạt động dịch vụ trồng trọt; Trồng rừng và chăm sóc rừng; Khai thác gỗ rừng trồng.<br>- Bán buôn phân bón, hóa chất (trừ thuốc bảo vệ thực vật, hóa chất bảng 1 theo công ước quốc tế).<br>- Bán buôn mủ cao su; Bán buôn gỗ cao su.<br>- Đầu tư tài chính (trừ bảo hiểm và bảo hiểm xã hội).<br>- Xây dựng công trình dân dụng và công nghiệp.<br>- Chế biến gỗ cao su.<br>- Bán lẻ xăng dầu.<br>- Dịch vụ ủy thác xuất nhập khẩu hàng hóa.<br>- Kinh doanh bất động sản; Đầu tư, kinh doanh cơ sở hạ tầng khu công nghiệp, khu dân cư, khu thương mại theo quy định của tỉnh.<br>- Xây dựng và sửa chữa công trình đường bộ.<br>- Khai thác và chế biến mủ cao su.<br><br>Chu kỳ sản xuất, kinh doanh thông thường:<br>Chu kỳ sản xuất kinh doanh thông thường đối với hoạt động sản xuất và chế biến mủ cao su của Công ty không quá 12 tháng.<br>Chu kỳ sản xuất kinh doanh thông thường của các hoạt động đầu tư dự án được tính từ khi bắt đầu có chủ trương đầu tư dự án cho đến khi quyết toán xong dự án, chu kỳ này kéo dài trên 12 tháng.",
+        "questions": [
+            {
+                "question": "Vốn điều lệ của Công ty Cổ phần Cao su Phước Hòa là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Trụ sở chính của Công ty đặt ở đâu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Nêu các lĩnh vực kinh doanh chính của Công ty.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "So sánh chu kỳ sản xuất kinh doanh của hoạt động chế biến mủ cao su với hoạt động đầu tư dự án.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá mức độ đa dạng hóa ngành nghề kinh doanh của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Công ty được thành lập vào ngày tháng năm nào?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "7",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 1. Cấu trúc tập đoàn & 2. CHẾ ĐỘ VÀ CHÍNH SÁCH KẾ TOÁN ÁP DỤNG TẠI CÔNG TY<br>Loại nội dung: Văn bản và Bảng<br>Cấu trúc tập đoàn:<br>Công ty có các công ty con được hợp nhất báo cáo tài chính tại thời điểm 30/06/2024 bao gồm:<br>| STT | Tên Công ty | Địa chỉ | Tỷ lệ lợi ích (%) | Tỷ lệ quyền biểu quyết (%) | Hoạt động kinh doanh chính |<br>|-----|--------------------------------|-------------------|-------------------|---------------------------|----------------------------|<br>| 1 | Công ty Cổ phần Cao su Trường Phát | Tỉnh Bình Dương | 70,00 | 70,00 | Kinh doanh gỗ cao su |<br>| 2 | Công ty Cổ phần Khu Công nghiệp Tân Bình | Tỉnh Bình Dương | 80,00 | 80,00 | Kinh doanh hạ tầng Khu công nghiệp |<br>| 3 | Công ty TNHH MTV Cao su Phước Hòa Đắk Lắk | Tỉnh Đắk Lắk | 100,00 | 100,00 | Trồng, chế biến sản phẩm từ cao su |<br>| 4 | Công ty TNHH Cao su và Lâm Nghiệp Phước Hòa Đắk Lắk | Tỉnh Đắk Lắk | 90,40 | 90,40 | Trồng, chế biến sản phẩm từ cao su |<br>| 5 | Công ty TNHH Phát triển Cao su Phước Hòa Kampong Thom | Vương quốc Campuchia | 100,00 | 100,00 | Trồng, chế biến sản phẩm từ cao su |<br>| 6 | Công ty Cổ phần Thành phố Nội Thất Việt Nam | Tỉnh Bình Dương | 51,00 | 51,00 | Kinh doanh hạ tầng Khu công nghiệp, Kinh doanh Bất động sản |<br><br>2. CHẾ ĐỘ VÀ CHÍNH SÁCH KẾ TOÁN ÁP DỤNG TẠI CÔNG TY<br>2.1 . Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán<br>Kỳ kế toán năm của Công ty theo năm dương lịch bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.<br>Đơn vị tiền tệ sử dụng trong ghi chép kế toán là Đồng Việt Nam (VND).<br><br>2.2 . Chuẩn mực và Chế độ kế toán áp dụng<br>Chế độ kế toán áp dụng:<br>Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính và Thông tư số 53/2016/TT-BTC ngày 21/03/2016 của Bộ Tài chính về việc sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC và Thông tư số 202/2014/TT-BTC hướng dẫn phương pháp lập và trình bày báo cáo tài chính hợp nhất.<br>Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán:<br>Công ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các Báo cáo tài chính hợp nhất được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện Chuẩn mực và Chế độ kế toán doanh nghiệp hiện hành đang áp dụng.",
+        "questions": [
+            {
+                "question": "Công ty có bao nhiêu công ty con được hợp nhất báo cáo tài chính?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Công ty con nào của PHR có trụ sở tại Vương quốc Campuchia?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Đơn vị tiền tệ sử dụng trong ghi chép kế toán của Công ty là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu các Thông tư chính mà Công ty áp dụng cho Chế độ Kế toán doanh nghiệp.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ kiểm soát của công ty mẹ đối với các công ty con dựa trên tỷ lệ quyền biểu quyết.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích vai trò của Thông tư 202/2014/TT-BTC đối với báo cáo tài chính hợp nhất của công ty.",
+                "difficulty": "Medium_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "8",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 2.3 Cơ sở lập Báo cáo tài chính hợp nhất & 2.4 Công cụ tài chính<br>Loại nội dung: Văn bản<br>2.3 . Cơ sở lập Báo cáo tài chính hợp nhất<br>Báo cáo tài chính hợp nhất của Công ty được lập trên cơ sở hợp nhất Báo cáo tài chính riêng của Công ty và Báo cáo tài chính của các công ty con do Công ty kiểm soát. Các công ty con được lập cho kỳ kế toán từ ngày 01/01/2024 đến ngày 30/06/2024. Việc kiểm soát đạt được khi Công ty có khả năng kiểm soát các chính sách tài chính và hoạt động của các công ty nhận đầu tư nhằm thu được lợi ích từ hoạt động của các công ty này.<br>Báo cáo tài chính của các công ty con được áp dụng các chính sách kế toán nhất quán với các chính sách kế toán của Công ty. Trong trường hợp cần thiết, Báo cáo tài chính của các công ty con được điều chỉnh để đảm bảo tính nhất quán trong các chính sách kế toán được áp dụng tại Công ty và các công ty con.<br>Các số dư, thu nhập và chi phí chủ yếu, kể cả các khoản lãi hay lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ được loại trừ khi hợp nhất Báo cáo tài chính.<br>Lợi ích của cổ đông không kiểm soát:<br>Lợi ích của các cổ đông không kiểm soát là phần lợi ích của những chủ sở hữu không nắm quyền kiểm soát trong lãi, hoặc lỗ, và trong tài sản thuần của công ty con.<br>Lãi, lỗ khi có sự thay đổi tỷ lệ sở hữu tại công ty con:<br>Khi công ty con huy động thêm vốn góp từ các chủ sở hữu. Khi lập Báo cáo tài chính hợp nhất, công ty mẹ xác định và điều chỉnh lại sự biến động giữa phần sở hữu của mình và cổ đông không kiểm soát trong tài sản thuần của công ty con tại thời điểm trước và sau khi huy động thêm vốn.<br><br>2.4 . Công cụ tài chính<br>Ghi nhận ban đầu:<br>Tài sản tài chính:<br>Tài sản tài chính của Công ty bao gồm tiền và các khoản tương đương tiền, các khoản phải thu khách hàng, phải thu khác và các khoản cho vay. Tại thời điểm ghi nhận ban đầu, tài sản tài chính được xác định theo giá mua, chi phí phát hành cộng các chi phí phát sinh khác liên quan trực tiếp đến việc mua, phát hành tài sản tài chính đó.<br>Nợ phải trả tài chính:<br>Nợ phải trả tài chính của Công ty bao gồm các khoản vay, các khoản phải trả người bán và phải trả khác, chi phí phải trả. Tại thời điểm ghi nhận ban đầu, các khoản nợ phải trả tài chính được xác định theo giá phát hành cộng các chi phí phát sinh liên quan trực tiếp đến việc phát hành nợ phải trả tài chính đó.<br>Giá trị sau ghi nhận ban đầu:<br>Tài sản tài chính và nợ phải trả tài chính chưa được đánh giá theo giá trị hợp lý tại ngày kết thúc kỳ kế toán năm do Thông tư số 210/2009/TT-BTC và các quy định hiện hành yêu cầu trình bày Báo cáo tài chính và thuyết minh thông tin đối với công cụ tài chính nhưng không đưa ra hướng dẫn tương đương cho việc đánh giá và ghi nhận giá trị hợp lý của các tài sản tài chính và nợ phải trả tài chính.",
+        "questions": [
+            {
+                "question": "Các loại tài sản tài chính của công ty bao gồm những gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lợi ích của cổ đông không kiểm soát được định nghĩa như thế nào trong báo cáo này?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khi nào thì công ty đạt được khả năng kiểm soát đối với các công ty con?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tại sao tài sản tài chính và nợ phải trả tài chính chưa được đánh giá theo giá trị hợp lý trong báo cáo này?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tầm quan trọng của việc loại trừ các giao dịch nội bộ khi lập báo cáo tài chính hợp nhất.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích cách công ty mẹ xử lý khi có sự thay đổi tỷ lệ sở hữu tại công ty con.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "9",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - Chính sách kế toán (2.5 - 2.8)<br>Loại nội dung: Văn bản<br>2.5 . Chuyển đổi Báo cáo tài chính lập bằng ngoại tệ sang Đồng Việt Nam<br>Báo cáo tài chính lập bằng ngoại tệ được chuyển đổi sang Báo cáo tài chính lập bằng đồng Việt Nam theo các tỷ giá sau: tài sản và nợ phải trả theo tỷ giá cuối kỳ do Tập đoàn Công nghiệp Cao su Việt Nam thông báo; vốn đầu tư của chủ sở hữu theo tỷ giá tại ngày góp vốn; Báo cáo kết quả hoạt động kinh doanh và Báo cáo lưu chuyển tiền tệ theo tỷ giá bình quân giữa các tháng trong kỳ kế toán (nếu chênh lệch không vượt quá 3%).<br><br>2.6 . Các nghiệp vụ bằng ngoại tệ<br>Các giao dịch bằng ngoại tệ trong năm tài chính được quy đổi ra đồng Việt Nam theo tỷ giá thực tế tại ngày giao dịch.<br>Tỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại thời điểm lập Báo cáo tài chính hợp nhất được xác định theo nguyên tắc:<br>- Đối với khoản mục phân loại là tài sản: áp dụng tỷ giá mua ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.<br>- Đối với tiền gửi ngoại tệ: áp dụng tỷ giá mua của chính ngân hàng nơi Công ty mở tài khoản ngoại tệ.<br>- Đối với khoản mục phân loại là nợ phải trả: áp dụng tỷ giá bán ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.<br>Tất cả các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ cuối kỳ được hạch toán vào kết quả hoạt động kinh doanh của kỳ kế toán.<br><br>2.7 . Tiền và các khoản tương đương tiền<br>Tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng không kỳ hạn.<br>Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời gian thu hồi không quá 03 tháng kể từ ngày đầu tư, có tính thanh khoản cao, có khả năng chuyển đổi dễ dàng thành các lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.<br><br>2.8 . Các khoản đầu tư tài chính<br>Các khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm: Các khoản tiền gửi ngân hàng có kỳ hạn được nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ.<br>Trong Báo cáo tài chính hợp nhất, các khoản đầu tư vào công ty liên kết được kế toán theo phương pháp vốn chủ sở hữu. Theo phương pháp vốn chủ sở hữu, khoản đầu tư được ghi nhận ban đầu trên Bảng cân đối kế toán hợp nhất theo giá gốc, sau đó được điều chỉnh theo những thay đổi của phần sở hữu của Tập đoàn trong giá trị tài sản thuần của công ty liên kết sau khi mua. Lợi thế thương mại phát sinh từ việc đầu tư vào công ty liên kết được phản ánh trong giá trị còn lại của khoản đầu tư. Tập đoàn không phân bổ lợi thế thương mại này mà hàng năm thực hiện đánh giá xem lợi thế thương mại có bị suy giảm giá trị hay không.<br>Đối với việc điều chỉnh giá trị khoản đầu tư vào công ty liên kết từ sau ngày đầu tư đến đầu kỳ báo cáo, Công ty thực hiện như sau:<br>- Đối với phần điều chỉnh vào Báo cáo kết quả hoạt động kinh doanh của các kỳ trước, Công ty điều chỉnh vào Lợi nhuận sau thuế chưa phân phối theo số đã điều chỉnh lũy kế thuần đến đầu kỳ báo cáo.<br>- Đối với phần điều chỉnh do chênh lệch đánh giá lại tài sản và chênh lệch tỷ giá hối đoái được ghi nhận vào Bảng cân đối kế toán của các kỳ trước, Công ty xác định điều chỉnh vào các khoản mục tương ứng trên Bảng cân đối kế toán theo số đã điều chỉnh lũy kế thuần.<br>Đối với việc điều chỉnh giá trị khoản đầu tư vào công ty liên kết phát sinh trong kỳ, Công ty loại trừ phần cổ tức ưu đãi của các cổ đông khác (nếu cổ phiếu ưu đãi được phân loại là vốn chủ sở hữu), số dự kiến trích quỹ khen thưởng, phúc lợi của công ty liên kết, phần lãi liên quan tới giao dịch công ty liên kết góp vốn hoặc bán tài sản cho Công ty trước khi xác định phần sở hữu của Công ty trong lợi nhuận hoặc lỗ của công ty liên kết kỳ báo cáo. Sau đó Công ty điều chỉnh giá trị khoản đầu tư tương ứng với phần sở hữu trong lãi, lỗ của công ty liên kết và ghi nhận ngay vào báo cáo kết quả hoạt động kinh doanh hợp nhất.<br>Báo cáo tài chính của công ty liên kết được lập cùng kỳ với Báo cáo tài chính hợp nhất của Tập đoàn và sử dụng các chính sách kế toán nhất quán với Tập đoàn. Các điều chỉnh thích hợp đã được ghi nhận để đảm bảo các chính sách kế toán được áp dụng nhất quán với Tập đoàn trong trường hợp cần thiết.<br>Các khoản đầu tư góp vốn vào các đơn vị khác bao gồm các khoản đầu tư vào công cụ vốn của đơn vị khác không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư. Giá trị ghi sổ ban đầu của các khoản đầu tư này được xác định theo giá gốc. Sau ghi nhận ban đầu, giá trị của các khoản đầu tư này được xác định theo giá gốc trừ đi dự phòng giảm giá khoản đầu tư.",
+        "questions": [
+            {
+                "question": "Các khoản tương đương tiền được định nghĩa như thế nào trong chính sách kế toán của công ty?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Theo chính sách của công ty, chênh lệch tỷ giá hối đoái do đánh giá lại số dư cuối kỳ được hạch toán vào đâu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu các nguyên tắc xác định tỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phương pháp kế toán nào được áp dụng cho các khoản đầu tư vào công ty liên kết trong Báo cáo tài chính hợp nhất?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích cách công ty xử lý lợi thế thương mại phát sinh từ việc đầu tư vào công ty liên kết.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích các bước điều chỉnh giá trị khoản đầu tư vào công ty liên kết phát sinh trong kỳ.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "10",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - Chính sách kế toán (2.9 - 2.11)<br>Loại nội dung: Văn bản<br>2.9 . Các khoản nợ phải thu<br>Các khoản phải thu được theo dõi chi tiết theo kỳ hạn phải thu, đối tượng phải thu, loại nguyên tệ phải thu, và các yếu tố khác theo nhu cầu quản lý của Công ty. Các khoản phải thu được phân loại là ngắn hạn và dài hạn trên Báo cáo tài chính hợp nhất căn cứ kỳ hạn còn lại của các khoản phải thu tại ngày báo cáo.<br>Dự phòng nợ phải thu khó đòi được trích lập cho các khoản nợ phải thu quá hạn thanh toán ghi trong hợp đồng kinh tế, các khế ước vay nợ, cam kết hợp đồng hoặc cam kết nợ và nợ phải thu chưa đến hạn thanh toán nhưng khó có khả năng thu hồi. Trong đó, việc trích lập dự phòng nợ phải thu quá hạn thanh toán được căn cứ vào thời gian trả nợ gốc theo hợp đồng mua bán ban đầu, không tính đến việc gia hạn nợ giữa các bên và nợ phải thu chưa đến hạn thanh toán nhưng khách nợ đã lâm vào tình trạng phá sản hoặc đang làm thủ tục giải thể, mất tích, bỏ trốn.<br><br>2.10 . Hàng tồn kho<br>Hàng tồn kho được ghi nhận ban đầu theo giá gốc bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái tại thời điểm ghi nhận ban đầu. Sau ghi nhận ban đầu, tại thời điểm lập Báo cáo tài chính hợp nhất nếu giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc thì hàng tồn kho được ghi nhận theo giá trị thuần có thể thực hiện được.<br>Giá trị hàng tồn kho được xác định theo phương pháp bình quân gia quyền.<br>Hàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên.<br>Phương pháp xác định giá trị sản phẩm dở dang cuối kỳ:<br>- Đối với hoạt động đầu tư xây dựng khu dân cư: Chi phí sản xuất kinh doanh dở dang được tập hợp theo từng công trình chưa hoàn thành hoặc chưa ghi nhận doanh thu, tương ứng với khối lượng công việc còn dở dang cuối kỳ.<br>- Đối với hoạt động sản xuất: Chi phí sản xuất kinh doanh dở dang được tập hợp theo chi phí phát sinh thực tế cho từng giai đoạn sản xuất trong dây chuyền.<br>Dự phòng giảm giá hàng tồn kho được lập vào thời điểm cuối kỳ căn cứ theo số chênh lệch giữa giá gốc của hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được.<br><br>2.11 .Tài sản cố định<br>Tài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận ban đầu theo giá gốc. Trong quá trình sử dụng, tài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại.<br>Khấu hao tài sản cố định được trích theo phương pháp đường thẳng với thời gian khấu hao được ước tính như sau:<br>- Nhà cửa, vật kiến trúc: 05-35 năm<br>- Máy móc, thiết bị: 05-10 năm<br>- Phương tiện vận tải, truyền dẫn: 06-10 năm<br>- Thiết bị, dụng cụ quản lý: 03-10 năm<br>- Phần mềm quản lý: 03-05 năm",
+        "questions": [
+            {
+                "question": "Khi nào thì dự phòng nợ phải thu khó đòi được trích lập?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Phương pháp xác định giá trị hàng tồn kho của công ty là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu các yếu tố được bao gồm trong giá gốc của hàng tồn kho khi ghi nhận ban đầu.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích sự khác biệt trong phương pháp xác định giá trị sản phẩm dở dang cuối kỳ giữa hoạt động đầu tư xây dựng khu dân cư và hoạt động sản xuất.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc không gia hạn nợ đến việc trích lập dự phòng nợ phải thu khó đòi.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Nếu giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc, công ty sẽ ghi nhận hàng tồn kho theo giá trị nào?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "11",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - Chính sách kế toán (2.11 - 2.15)<br>Loại nội dung: Văn bản<br>2.11 .Tài sản cố định (tiếp theo)<br>Riêng khấu hao tài sản cố định với vườn cây cao su được thực hiện theo Công văn số 1937/BTC-TCDN ngày 09/02/2010 của Cục Tài chính doanh nghiệp - Bộ Tài chính về việc trích khấu hao vườn cây cao su và Quyết định số 221/QĐ-CSVN ngày 27/04/2010 của Tập đoàn Công nghiệp Cao su Việt Nam về việc ban hành tỷ lệ trích khấu hao vườn cây cao su theo chu kỳ khai thác 20 năm, cụ thể như sau:<br>| Năm khai thác | Tỷ lệ khấu hao theo (%) | Năm khai thác | Tỷ lệ khấu hao theo (%) |<br>|---------------|------------------------|---------------|------------------------|<br>| Năm thứ 1 | 2,50 | Năm thứ 11 | 7,00 |<br>| Năm thứ 2 | 2,80 | Năm thứ 12 | 6,60 |<br>| Năm thứ 3 | 3,50 | Năm thứ 13 | 6,20 |<br>| Năm thứ 4 | 4,40 | Năm thứ 14 | 5,90 |<br>| Năm thứ 5 | 4,80 | Năm thứ 15 | 5,50 |<br>| Năm thứ 6 | 5,40 | Năm thứ 16 | 5,40 |<br>| Năm thứ 7 | 5,40 | Năm thứ 17 | 5,00 |<br>| Năm thứ 8 | 5,10 | Năm thứ 18 | 5,00 |<br>| Năm thứ 9 | 5,10 | Năm thứ 19 | 5,20 |<br>| Năm thứ 10 | 5,00 | Năm thứ 20 | Giá trị còn lại |<br><br>2.12 . Bất động sản đầu tư<br>Bất động sản đầu tư được ghi nhận ban đầu theo giá gốc.<br>Đối với bất động sản đầu tư cho thuê hoạt động được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại. Trong đó khấu hao được trích theo phương pháp đường thẳng với thời gian khấu hao được ước tính như sau:<br>- Nhà cửa, vật kiến trúc: 20 - 30 năm<br>- Bất động sản đầu tư khác: 05 - 20 năm<br><br>2.13 . Chi phí xây dựng cơ bản dở dang<br>Chi phí xây dựng cơ bản dở dang bao gồm chi phí vườn cây kiến thiết cơ bản và chi phí xây dựng mà chưa hoàn thành tại ngày kết thúc kỳ kế toán và được ghi nhận theo giá gốc. Chi phí vườn cây kiến thiết cơ bản bao gồm các chi phí nguyên vật liệu phục vụ công tác trồng và chăm sóc, chi phí nhân công và các khoản chi phí chung khác có liên quan... Các vườn cây kiến thiết cơ bản được ghi nhận tăng tài sản cố định khi đảm bảo các điều kiện kỹ thuật theo hướng dẫn của Tập đoàn Công nghiệp Cao su Việt Nam, thông thường chu kỳ đầu tư khoảng 7-8 năm tùy vào tiêu chuẩn kỹ thuật của từng năm trồng. Chi phí xây dựng cơ bản chưa hoàn thành bao gồm các chi phí về xây dựng, lắp đặt máy móc thiết bị và các chi phí trực tiếp khác.<br><br>2.14 .Thuê hoạt động<br>Thuê hoạt động là loại hình thuê tài sản cố định mà phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu của tài sản thuộc về bên cho thuê. Khoản thanh toán dưới hình thức thuê hoạt động được hạch toán vào báo cáo kết quả hoạt động kinh doanh theo phương pháp đường thẳng dựa trên thời hạn thuê hoạt động.<br><br>2.15 . Chi phí trả trước<br>Các chi phí đã phát sinh liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động sản xuất kinh doanh trong các năm tài chính sau.<br>Việc tính và phân bổ chi phí trả trước dài hạn vào chi phí sản xuất kinh doanh từng năm tài chính được căn cứ vào tính chất, mức độ từng loại chi phí để lựa chọn phương pháp và tiêu thức phân bổ hợp lý.",
+        "questions": [
+            {
+                "question": "Tỷ lệ khấu hao vườn cây cao su năm thứ 5 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Thời gian khấu hao ước tính cho bất động sản đầu tư là nhà cửa, vật kiến trúc là bao nhiêu năm?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu các loại chi phí được bao gồm trong chi phí xây dựng cơ bản dở dang.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích định nghĩa và phương pháp hạch toán của thuê hoạt động.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tầm quan trọng của việc phân bổ chi phí trả trước dài hạn đối với kết quả hoạt động kinh doanh của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Khi nào thì vườn cây kiến thiết cơ bản được ghi nhận tăng tài sản cố định?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "12",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - Chính sách kế toán (2.15 - 2.22)<br>Loại nội dung: Văn bản<br>2.15 . Chi phí trả trước (tiếp theo)<br>Các loại chi phí trả trước của Công ty bao gồm:<br>- Chi phí đất trả trước: bao gồm tiền thuê đất trả trước, kể cả các khoản liên quan đến đất thuê mà Công ty đã nhận được giấy chứng nhận quyền sử dụng đất nhưng không đủ điều kiện ghi nhận tài sản cố định vô hình theo Thông tư số 45/2013/TT-BTC do Bộ Tài chính ban hành ngày 25/04/2013 hướng dẫn chế độ quản lý, sử dụng và trích khấu hao tài sản cố định và các chi phí phát sinh khác liên quan đến việc đảm bảo cho việc sử dụng đất thuê. Các chi phí này được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh hợp nhất theo phương pháp đường thẳng dựa trên thời hạn của hợp đồng thuê đất.<br>- Công cụ và dụng cụ: bao gồm các tài sản mà Công ty nắm giữ để sử dụng trong quá trình hoạt động kinh doanh bình thường, với nguyên giá của mỗi tài sản thấp hơn 30 triệu đồng và do đó không đủ điều kiện để ghi nhận là tài sản cố định theo quy định hiện hành. Được phân bổ theo phương pháp đường thẳng trong thời gian hữu dụng nhưng tối đa không quá 03 năm.<br>- Khoản chi phí: bao gồm các khoản tư vấn phương án quản lý rừng bền vững và cấp chứng chỉ rừng theo hệ thống chứng chỉ rừng quốc gia VFCS, VFTC, eoe, PEFC, DDS với thời gian phân bổ là 60 tháng.<br>- Các chi phí trả trước khác: được ghi nhận theo nguyên giá và được phân bổ theo phương pháp đường thẳng trong thời gian hữu dụng.<br><br>2.16 . Các khoản nợ phải trả<br>Các khoản nợ phải trả được theo dõi theo kỳ hạn phải trả, đối tượng phải trả, loại nguyên tệ phải trả và các yếu tố khác theo nhu cầu quản lý của Công ty. Các khoản phải trả được phân loại ngắn hạn và dài hạn trên Báo cáo tài chính hợp nhất căn cứ theo kỳ hạn còn lại của các khoản phải trả tại ngày báo cáo.<br><br>2.17 . Các khoản vay<br>Các khoản vay được theo dõi theo từng đối tượng cho vay, từng khế ước vay nợ và kỳ hạn phải trả của các khoản vay. Trường hợp vay, nợ bằng ngoại tệ thì thực hiện theo dõi chi tiết theo nguyên tệ.<br><br>2.18 . Chi phí đi vay<br>Chi phí đi vay được ghi nhận vào chi phí sản xuất, kinh doanh trong kỳ khi phát sinh, trừ chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó được vốn hóa khi có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 - Chi phí đi vay. Ngoài ra, đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng.<br><br>2.19 . Chi phí phải trả<br>Các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã được cung cấp cho người mua trong kỳ kế toán nhưng thực tế chưa chi trả và các khoản phải trả khác như chi phí lãi tiền vay phải trả, trích trước giá vốn cho thuê đất và phí sử dụng hạ tầng khu công nghiệp, xử lý nước thải... được ghi nhận vào chi phí sản xuất, kinh doanh của kỳ kế toán.<br>Việc ghi nhận các khoản chi phí phải trả vào chi phí sản xuất, kinh doanh trong kỳ được thực hiện theo nguyên tắc phù hợp giữa doanh thu và chi phí phát sinh trong kỳ. Các khoản chi phí phải trả sẽ được quyết toán với số chi phí thực tế phát sinh, số chênh lệch giữa số trích trước và chi phí thực tế được hoàn nhập.<br><br>2.20 . Doanh thu chưa thực hiện<br>Doanh thu chưa thực hiện gồm doanh thu nhận trước như số tiền của khách hàng đã trả trước cho một hoặc nhiều kỳ kế toán về cho thuê tài sản.<br>Doanh thu chưa thực hiện được kết chuyển vào doanh thu bán hàng và cung cấp dịch vụ theo số tiền được xác định phù hợp với từng kỳ kế toán.<br><br>2.21 .Vốn chủ sở hữu<br>Vốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.<br>Thặng dư vốn cổ phần phản ánh chênh lệch giữa mệnh giá, chi phí trực tiếp liên quan đến việc phát hành cổ phiếu và giá phát hành cổ phiếu (kể cả các trường hợp tái phát hành cổ phiếu quỹ) và có thể là thặng dư dương nếu giá phát hành cao hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu hoặc thặng dư âm nếu giá phát hành thấp hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu.<br>Lợi nhuận sau thuế chưa phân phối phản ánh kết quả kinh doanh lãi, lỗ sau thuế thu nhập doanh nghiệp và tình hình phân chia lợi nhuận hoặc xử lý lỗ của Công ty.<br><br>2.22 . Doanh thu<br>Doanh thu được ghi nhận khi Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định một cách chắc chắn. Doanh thu được xác định theo giá trị hợp lý của các khoản đã thu hoặc sẽ thu được sau khi trừ đi các khoản chiết khấu thương mại, giảm giá hàng bán, hàng bán bị trả lại.<br>Doanh thu cho thuê đất đã phát triển cơ sở hạ tầng:<br>Doanh thu cho thuê đất đã phát triển cơ sở hạ tầng là doanh thu tại Công ty cổ phần Khu Công nghiệp Tân Bình.<br>Trường hợp thời gian cho thuê chiếm 90% thời gian sử dụng hữu ích của tài sản, Công ty ghi nhận doanh thu một lần đối với toàn bộ số tiền cho thuê nhận trước nếu thỏa mãn đồng thời các điều kiện sau:<br>- Bên đi thuê không có quyền hủy ngang hợp đồng thuê và doanh nghiệp cho thuê không có nghĩa vụ trả lại số tiền đã nhận trước trong mọi trường hợp và dưới mọi hình thức.<br>- Số tiền nhận trước từ việc cho thuê không nhỏ hơn 90% tổng số tiền cho thuê dự kiến thu được theo hợp đồng trong suốt thời hạn cho thuê và bên đi thuê phải thanh toán toàn bộ số tiền thuê trong vòng 12 tháng kể từ thời điểm khởi đầu thuê tài sản.<br>- Hầu như toàn bộ rủi ro và lợi ích gắn liền với quyền sở hữu tài sản thuê đã chuyển giao cho bên đi thuê.<br>- Doanh nghiệp cho thuê phải ước tính được tương đối đầy đủ giá vốn của hoạt động cho thuê.<br>Xem thêm thông tin tại Thuyết minh số 26<br>Doanh thu hoạt động tài chính:<br>Doanh thu phát sinh từ tiền lãi, cổ tức, lợi nhuận được chia và các khoản doanh thu hoạt động tài chính khác được ghi nhận khi thỏa mãn đồng thời hai (2) điều kiện sau:<br>- Có khả năng thu được lợi ích kinh tế từ giao dịch đó.<br>- Doanh thu được xác định tương đối chắc chắn.<br>Cổ tức, lợi nhuận được chia được ghi nhận khi Công ty được quyền nhận cổ tức hoặc được quyền nhận lợi nhuận từ việc góp vốn.",
+        "questions": [
+            {
+                "question": "Công cụ và dụng cụ có nguyên giá dưới bao nhiêu tiền sẽ được phân bổ tối đa 3 năm?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Thặng dư vốn cổ phần phản ánh điều gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu hai điều kiện để doanh thu hoạt động tài chính được ghi nhận.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích các trường hợp và cách thức ghi nhận chi phí đi vay vào giá trị tài sản.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích các điều kiện để Công ty ghi nhận doanh thu một lần đối với toàn bộ số tiền cho thuê đất đã phát triển cơ sở hạ tầng.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Lợi nhuận sau thuế chưa phân phối của công ty phản ánh điều gì?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "13",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - Chính sách kế toán (2.23 - 2.28)<br>Loại nội dung: Văn bản<br>2.23 . Các khoản giảm trừ doanh thu<br>Khoản giảm trừ doanh thu bán hàng, cung cấp dịch vụ phát sinh trong kỳ là chiết khấu thương mại.<br>Khoản chiết khấu thương mại phát sinh cùng kỳ tiêu thụ sản phẩm, hàng hóa dịch vụ được điều chỉnh giảm doanh thu của kỳ phát sinh.<br>Trường hợp sản phẩm, hàng hoá, dịch vụ đã tiêu thụ từ các kỳ trước, đến kỳ sau mới phát sinh các khoản giảm trừ doanh thu thì được ghi giảm doanh thu theo nguyên tắc nếu phát sinh trước thời điểm phát hành Báo cáo tài chính thì ghi giảm doanh thu trên Báo cáo tài chính của kỳ lập báo cáo (kỳ trước), và nếu phát sinh sau thời điểm phát hành Báo cáo tài chính thì ghi giảm doanh thu của kỳ phát sinh (kỳ sau).<br><br>2.24 . Giá vốn hàng bán<br>Giá vốn hàng bán trong kỳ được ghi nhận phù hợp với doanh thu phát sinh trong kỳ và đảm bảo tuân thủ nguyên tắc thận trọng. Các trường hợp hao hụt vật tư hàng hóa vượt định mức, chi phí vượt định mức bình thường, hàng tồn kho bị mất mát sau khi đã trừ đi phần trách nhiệm của tập thể, cá nhân có liên quan... được ghi nhận đầy đủ, kịp thời vào giá vốn hàng bán trong kỳ.<br>Việc trích trước chi phí để tạm tính giá vốn bất động sản nếu có đảm bảo các nguyên tắc sau:<br>- Chỉ trích trước đối với các khoản chi phí đã có trong dự toán đầu tư, xây dựng nhưng chưa có đủ hồ sơ, tài liệu để nghiệm thu khối lượng.<br>- Chỉ trích trước chi phí để tạm tính giá vốn hàng bán cho phần bất động sản đã hoàn thành bán trong năm và đủ điều kiện ghi nhận doanh thu.<br>- Số chi phí trích trước và chi phí thực tế được ghi nhận vào giá vốn hàng bán phải đảm bảo tương ứng với định mức giá vốn tính theo tổng chi phí dự toán của phần hàng hóa bất động sản đã bán được xác định theo diện tích.<br><br>2.25 . Chi phí tài chính<br>Các khoản chi phí được ghi nhận vào chi phí tài chính gồm:<br>- Chi phí đi vay vốn.<br>- Khoản lỗ phát sinh khi bán ngoại tệ, lỗ tỷ giá hối đoái...<br>Các khoản trên được ghi nhận theo tổng số phát sinh trong kỳ, không bù trừ với doanh thu hoạt động tài chính.<br><br>2.26 . Thuế thu nhập doanh nghiệp<br>a. Chi phí thuế TNDN hiện hành và Chi phí thuế TNDN hoãn lại<br>Chi phí thuế TNDN hiện hành được xác định trên cơ sở thu nhập chịu thuế trong kỳ và thuế suất thuế TNDN trong kỳ kế toán hiện hành.<br>Chi phí thuế TNDN hoãn lại được xác định trên cơ sở số chênh lệch tạm thời được khấu trừ, số chênh lệch tạm thời chịu thuế và thuế suất thuế TNDN.<br>Không bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại.<br><br>b. Ưu đãi thuế tại Công ty TNHH Phát triển Cao su Phước Hòa Kampong Thom<br>Theo thông báo số 19397O.PO.DO của Tổng Cục thuế Campuchia ngày 27 tháng 10 năm 2017 căn cứ trên kết quả đầu tư và dự án đầu tư 'Trồng cây Công - Nông nghiệp cây cao su và xây dựng nhà máy chế biến' của các đơn vị thành viên Tập đoàn tại Campuchia đã được Hội đồng Phát triển Vương quốc Campuchia (gọi tắt là CDC) cấp phép đầu tư. Các dự án sẽ được hưởng thời gian ưu đãi miễn thuế thu nhập. Thuế TNDN được tính theo công thức: 'Thời gian khởi đầu + thời gian 03 năm + thời gian ưu tiên', trong đó:<br>Thời gian khởi đầu: Là thời gian bắt đầu từ khi dự án được CDC cấp giấy chứng nhận đầu tư vĩnh viễn và kết thúc vào ngày cuối cùng của năm, trước năm mà công ty có thu nhập chịu thuế đầu tiên hoặc kết thúc vào năm thứ 3 tính từ khi dự án đầu tư có thu nhập đầu tiên và đơn vị phải chọn lấy trường hợp nào xảy ra trước. Theo đó, thời gian khởi đầu được tính từ năm 2016.<br>Thời gian ưu tiên: Theo quy định của Luật quản lý tài chính năm 2009, dự án đầu tư Công - Nông nghiệp sẽ nhận được thời gian ưu tiên là 03 năm.<br><br>c. Thuế suất thuế TNDN hiện hành<br>Tại Công ty mẹ và các công ty con tại Việt Nam, hiện đang áp dụng mức thuế suất thuế TNDN là 20% đối với các hoạt động sản xuất kinh doanh có thu nhập chịu thuế TNDN cho kỳ kế toán từ ngày 01/01/2024 đến ngày 30/06/2024.<br>Đối với công ty con tại Campuchia: Năm 2024 là năm thứ sáu (08) công ty được miễn thuế TNDN.<br><br>2.27 . Lãi cơ bản trên cổ phiếu (EPS)<br>Lãi cơ bản trên cổ phiếu (EPS) được tính bằng cách chia lợi nhuận hoặc lỗ sau thuế phân bổ cho cổ đông sở hữu cổ phiếu phổ thông của Công ty sau khi đã điều chỉnh cho việc trích lập Quỹ Khen thưởng, phúc lợi và Quỹ khen thưởng Ban điều hành cho số lượng bình quân gia quyền của số cổ phiếu phổ thông đang lưu hành trong kỳ.<br>Công ty không có các cổ phiếu có tác động suy giảm tiềm năng, quy định về trình bày lãi suy giảm trên cổ phiếu không áp dụng.<br><br>2.28 . Các bên liên quan<br>Các bên được coi là liên quan nếu bên đó có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định về các chính sách tài chính và hoạt động. Các bên liên quan của Công ty bao gồm:<br>- Các doanh nghiệp trực tiếp hay gián tiếp qua một hoặc nhiều trung gian có quyền kiểm soát Công ty hoặc chịu sự kiểm soát của Công ty, hoặc cùng chung sự kiểm soát với Công ty, bao gồm cả công ty mẹ, công ty con và công ty liên kết.<br>- Các cá nhân trực tiếp hoặc gián tiếp nắm quyền biểu quyết của Công ty mà có ảnh hưởng đáng kể đối với Công ty, những nhân sự quản lý chủ chốt của Công ty, những thành viên mật thiết trong gia đình của các cá nhân này.<br>- Các doanh nghiệp do các cá nhân nêu trên nắm trực tiếp hoặc gián tiếp phần quan trọng quyền biểu quyết hoặc có ảnh hưởng đáng kể tới các doanh nghiệp này.<br>Trong việc xem xét từng mối quan hệ của các bên liên quan để phục vụ cho việc lập và trình bày Báo cáo tài chính hợp nhất, công ty chú ý tới bản chất của mối quan hệ hơn là hình thức pháp lý của các quan hệ đó.",
+        "questions": [
+            {
+                "question": "Thuế suất thuế TNDN hiện hành áp dụng cho công ty mẹ tại Việt Nam là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Các khoản giảm trừ doanh thu bán hàng, cung cấp dịch vụ phát sinh trong kỳ là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu các nguyên tắc trích trước chi phí để tạm tính giá vốn bất động sản.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích công thức tính ưu đãi thuế TNDN cho Công ty TNHH Phát triển Cao su Phước Hòa Kampong Thom.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tầm quan trọng của việc xác định các bên liên quan trong báo cáo tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Lãi cơ bản trên cổ phiếu (EPS) được tính như thế nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tại sao công ty không bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại?",
+                "difficulty": "Medium_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "14",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - Chính sách kế toán (2.29) & TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN (3)<br>Loại nội dung: Văn bản và Bảng<br>2.29 . Thông tin bộ phận<br>Một bộ phận là một cấu phần có thể xác định riêng biệt của Công ty tham gia vào việc cung cấp các sản phẩm hoặc dịch vụ liên quan (bộ phận chia theo hoạt động kinh doanh), hoặc cung cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận được chia theo khu vực địa lý). Mỗi bộ phận này chịu rủi ro và thu được lợi ích khác biệt so với các bộ phận khác.<br>Thông tin bộ phận được lập và trình bày phù hợp với chính sách kế toán áp dụng cho việc lập và trình bày báo cáo tài chính của Công ty nhằm mục đích để giúp người sử dụng báo cáo tài chính hiểu rõ và đánh giá được tình hình hoạt động của Công ty một cách toàn diện.<br><br>3 . TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|--------------------------|----------------|----------------|<br>| Tiền mặt | 3.504.382.231 | 767.777.202 |<br>| Tiền gửi ngân hàng không kỳ hạn | 72.373.756.705 | 68.767.735.735 |<br>| Các khoản tương đương tiền | - | 76.300.000.000 |<br>| **Tổng cộng** | **75.878.138.936** | **145.835.512.937** |",
+        "questions": [
+            {
+                "question": "Tổng tiền mặt của công ty tại ngày 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Công ty có bao nhiêu tiền gửi ngân hàng không kỳ hạn vào đầu năm 2024?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu mục đích của việc lập và trình bày thông tin bộ phận trong báo cáo tài chính.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi trong tổng tiền và các khoản tương đương tiền giữa cuối kỳ và đầu kỳ.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá ý nghĩa của việc công ty không có các khoản tương đương tiền tại ngày 30/06/2024 so với đầu năm.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tiền gửi ngân hàng không kỳ hạn đã tăng hay giảm trong 6 tháng đầu năm 2024?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "15",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 4. CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH<br>Loại nội dung: Bảng và Văn bản<br>4 . CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH<br>a. Đầu tư nắm giữ đến ngày đáo hạn<br>| Chỉ tiêu | 30/06/2024 Giá gốc VND | 30/06/2024 Dự phòng VND | 01/01/2024 Giá gốc VND | 01/01/2024 Dự phòng VND |<br>|--------------------------|------------------------|--------------------------|------------------------|--------------------------|<br>| Đầu tư ngắn hạn | 2.010.986.586.992 | - | 1.997.490.215.773 | - |<br>| Tiền gửi có kỳ hạn 1 | 2.010.986.586.992 | - | 1.997.490.215.773 | - |<br>| Đầu tư dài hạn | 16.280.000.000 | - | 119.080.993.918 | - |<br>| Tiền gửi có kỳ hạn 2 | 16.280.000.000 | - | 119.080.993.918 | - |<br>| **Tổng cộng** | **2.027.266.586.992** | **-** | **2.116.571.209.691** | **-** |<br>1. Tại ngày 30/06/2024, các khoản tiền gửi có kỳ hạn còn lại dưới 12 tháng được gửi tại các Ngân hàng thương mại với lãi suất từ 2,9%/năm đến 8,25%/năm.<br>2. Đây là khoản tiền gửi có kỳ hạn còn lại trên 12 tháng được gửi tại các Ngân hàng thương mại với lãi suất 5%/năm đến 8,25%/năm.<br><br>b. Đầu tư vào công ty liên kết<br>| Địa chỉ | Tỷ lệ lợi ích (%) | Tỷ lệ quyền biểu quyết (%) | Giá trị ghi sổ theo phương pháp vốn chủ sở hữu 30/06/2024 VND | Giá trị ghi sổ theo phương pháp vốn chủ sở hữu 01/01/2024 VND |<br>|----------------------------------|-------------------|---------------------------|----------------------------------------------------|----------------------------------------------------|<br>| Công ty Cổ phần Khu công nghiệp Nam Tân Uyên (Mã chứng khoán: NTC) Tỉnh Bình Dương | 32,85 | 32,85 | 359.559.934.845 | 316.034.443.987 |<br>| Công ty Cổ phần Thể thao Ngôi sao Geru Tp. Hồ Chí Minh | 26,82 | 26,82 | 6.525.474.331 | 6.868.992.837 |<br>| **Tổng cộng** | | | **366.085.409.176** | **322.903.436.824** |<br><br>c. Đầu tư góp vốn vào đơn vị khác<br>| Chỉ tiêu | Giá gốc VND | Dự phòng VND | Tỷ lệ quyền biểu quyết (%) | Giá gốc VND | Dự phòng VND | Tỷ lệ quyền biểu quyết (%) |<br>|------------------------------------|------------|--------------|--------------------------|------------|--------------|--------------------------|<br>| Công ty Cổ phần Thủy điện Genico Sông Côn | 57.000.000.000 | - | 15,20 | 57.000.000.000 | - | 15,20 |<br>| Công ty Cổ phần Cao su Quasa Genico Lào | 24.300.000.000 | - | 2,95 | 24.300.000.000 | - | 2,95 |<br>| Công ty Cổ phần Cao su Sơn La | 20.000.000.000 | - | 1,93 | 20.000.000.000 | - | 1,96 |<br>| Công ty Cổ phần Thủy điện VRG Ngọc Linh | 28.465.390.000 | - | 14,23 | 28.465.390.000 | - | 14,23 |<br>| Công ty Cổ phần Đầu tư Sài Gòn VRG | 1.076.604 | - | 0,0002 | 1.076.604 | - | 0,0002 |<br>| Công ty Cổ phần Gỗ MDF VRG Kiên Giang | 1.000.000.000 | - | 0,21 | 1.000.000.000 | - | 0,21 |<br>| **Tổng cộng** | **130.766.466.604** | **-** | | **130.766.466.604** | **-** | |",
+        "questions": [
+            {
+                "question": "Tổng giá gốc đầu tư ngắn hạn nắm giữ đến ngày đáo hạn tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Công ty Cổ phần Khu công nghiệp Nam Tân Uyên có mã chứng khoán là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh tổng giá trị ghi sổ đầu tư vào công ty liên kết giữa 30/06/2024 và 01/01/2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá rủi ro của các khoản đầu tư nắm giữ đến ngày đáo hạn dài hạn của công ty dựa trên sự biến động giữa hai kỳ báo cáo.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Công ty đã đầu tư góp vốn vào những đơn vị nào khác?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Phân tích lãi suất các khoản tiền gửi có kỳ hạn dưới 12 tháng tại 30/06/2024. Điều này cho thấy điều gì về chính sách quản lý tiền của công ty?",
+                "difficulty": "Medium_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "16",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 5. PHẢI THU NGẮN HẠN CỦA KHÁCH HÀNG & 6. TRẢ TRƯỚC CHO NGƯỜI BÁN NGẮN HẠN<br>Loại nội dung: Bảng và Văn bản<br>5 . PHẢI THU NGẮN HẠN CỦA KHÁCH HÀNG<br>| Chỉ tiêu | 30/06/2024 Giá trị VND | 30/06/2024 Dự phòng VND | 01/01/2024 Giá trị VND | 01/01/2024 Dự phòng VND |<br>|----------------------------------|------------------------|--------------------------|------------------------|--------------------------|<br>| Phải thu của khách hàng là các bên liên quan | - | - | 2.998.068.160 | - |<br>| Tập đoàn Công nghiệp Cao su Việt Nam - Công ty cổ phần | - | - | 2.359.852.960 | - |<br>| Công ty Cổ phần Thể thao Ngôi sao Geru | - | - | 638.215.200 | - |<br>| Phải thu của khách hàng là các bên khác | 35.876.574.022 | 4.092.719.939 | 54.747.057.199 | 4.851.809.939 |<br>| Công ty TNHH Lốp KumHo Việt Nam | 5.057.712.981 | - | - | - |<br>| Modan International Pte Ltd | - | - | 4.284.431.604 | - |<br>| Soha Trading Pte Ltd | 1.030.479.936 | - | 4.268.357.856 | - |<br>| Công ty TNHH MTV Liên Khanh | 1.826.000.000 | - | 2.826.000.000 | - |<br>| LG Commurade Pty Ltd | - | - | 9.736.235.240 | - |<br>| Công ty RI International Pte Ltd Singapore | 969.588.672 | - | - | - |<br>| Công ty Cổ phần Đầu tư Xây dựng Cao su | 800.000.000 | 800.000.000 | 800.000.000 | 800.000.000 |<br>| Công ty TNHH Dịch vụ Thương mại Nguyễn Thái Dương | - | - | 18.961.917.330 | - |<br>| Công ty cổ phần gỗ cao su Thiên Hưng | 10.604.275.739 | - | - | - |<br>| Công Ty Cổ Phần Đầu Tư Năng Lượng Đống Đa | 2.393.551.053 | - | - | - |<br>| Dong Ah Tire & Rubber Co., Ltd | 2.994.327.907 | - | 2.533.430.088 | - |<br>| Công ty Marubeni Techno Rubber Corporation | 1.847.904.883 | - | - | - |<br>| Các khoản phải thu khách hàng khác | 8.352.732.851 | 3.292.719.939 | 11.336.685.081 | 4.051.809.939 |<br>| **Tổng cộng** | **35.876.574.022** | **4.092.719.939** | **57.745.125.359** | **4.851.809.939** |<br><br>6 . TRẢ TRƯỚC CHO NGƯỜI BÁN NGẮN HẠN<br>| Chỉ tiêu | 30/06/2024 Giá trị VND | 30/06/2024 Dự phòng VND | 01/01/2024 Giá trị VND | 01/01/2024 Dự phòng VND |<br>|--------------------------------------|------------------------|--------------------------|------------------------|--------------------------|<br>| Trả trước cho người bán là các bên liên quan | 907.684.423 | - | 870.984.467 | - |<br>| Công ty TNHH MTV TCT cao su Đồng Nai | 756.854.108 | - | 756.854.108 | - |<br>| Công ty TNHH MTV Cao su Dầu Tiếng | 114.130.359 | - | 114.130.359 | - |<br>| Công ty Cổ phần Gỗ MDI 7 VRG DongWha | 36.654.958 | - | - | - |<br>| Công ty TNHH MTV Cao su Lộc Ninh | 44.998 | - | - | - |<br>| Trả trước cho người bán là các bên khác | 71.622.291.312 | 1.011.864.668 | 71.887.245.804 | 1.002.085.092 |<br>| Công ty TNHH Tư vấn Đầu tư Phát triển và Xây dựng Bình An | 68.352.802.000 | - | 68.352.802.000 | - |<br>| Trả trước các đối tượng khác | 3.269.489.312 | 1.011.864.668 | 3.534.443.804 | 1.002.085.092 |<br>| **Tổng cộng** | **72.529.975.735** | **1.011.864.668** | **72.758.230.271** | **1.002.085.092** |<br>1. Khoản ứng trước cho Công ty TNHH Tư vấn Đầu tư Phát triển và Xây dựng Bình An theo Hợp đồng khoán việc số 241/KVPHBA ngày 05/08/2014 và Phụ lục hợp đồng số 01/2017/PLPHBA ngày 18/01/2017 về việc tư vấn thực hiện xin quỹ đất lập Dự án đầu tư sản xuất kinh doanh nông lâm nghiệp với diện tích 25.742,25 ha đất lâm nghiệp tại huyện Ea Súp, tỉnh Đắk Lắk. Đến nay, Công ty vẫn đang thực hiện các thủ tục pháp lý để xin cấp quyền sử dụng đất cho dự án.",
+        "questions": [
+            {
+                "question": "Tổng giá trị phải thu ngắn hạn của khách hàng tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tên công ty nhận khoản trả trước lớn nhất từ PHR là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh dự phòng phải thu ngắn hạn khó đòi giữa 30/06/2024 và 01/01/2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích ý nghĩa của khoản ứng trước cho Công ty TNHH Tư vấn Đầu tư Phát triển và Xây dựng Bình An đối với tình hình tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ rủi ro tín dụng của công ty dựa trên số liệu phải thu ngắn hạn của khách hàng.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Liệt kê 3 khách hàng có số dư phải thu ngắn hạn lớn nhất tại 30/06/2024.",
+                "difficulty": "Medium_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "17",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 7. PHẢI THU KHÁC & 8. NỢ XẤU<br>Loại nội dung: Bảng và Văn bản<br>7 . PHẢI THU KHÁC<br>| Chỉ tiêu | 30/06/2024 Giá trị VND | 30/06/2024 Dự phòng VND | 01/01/2024 Giá trị VND | 01/01/2024 Dự phòng VND |<br>|---------------------------------------|------------------------|--------------------------|------------------------|--------------------------|<br>| **a. Ngắn hạn** | | | | |<br>| a.1 Chi tiết theo nội dung | | | | |<br>| Phải thu về tạm ứng | 4.925.869.548 | - | 2.005.960.437 | - |<br>| Phải thu BHXH, BHYT, BHTN | 45.875.232 | - | 66.151.332 | - |<br>| Phải thu về cổ tức và lợi nhuận được chia | 236.000.000 | - | - | - |<br>| Phải thu lãi tiền gửi ngân hàng | 76.121.185.952 | - | 54.639.558.396 | - |<br>| Phải thu các nông trường về tiền chi hộ | 1.615.292.056 | - | 1.817.957.825 | - |<br>| Phải thu Công ty Đầu tư PH tiền mượn kinh phí hoạt động | 7.657.834.190 | - | 7.404.675.743 | - |<br>| Phải thu khác | 2.263.904.604 | 50.000.000 | 2.474.620.756 | 50.000.000 |<br>| **Tổng cộng** | **92.865.961.582** | **50.000.000** | **68.408.924.489** | **50.000.000** |<br><br>| Chỉ tiêu | 30/06/2024 Giá trị VND | 30/06/2024 Dự phòng VND | 01/01/2024 Giá trị VND | 01/01/2024 Dự phòng VND |<br>|---------------------------------------|------------------------|--------------------------|------------------------|--------------------------|<br>| a.2 Chi tiết theo đối tượng | | | | |<br>| Phải thu khác là các bên liên quan | 236.000.000 | - | - | - |<br>| Công ty Cổ phần Thể thao Ngôi sao Geru | 236.000.000 | - | - | - |<br>| Phải thu khác là các bên khác | 92.629.961.582 | 50.000.000 | 68.408.924.489 | 50.000.000 |<br>| Phải thu Công ty Đầu tư PH tiền mượn kinh phí hoạt động | 7.657.834.190 | - | 7.404.675.743 | - |<br>| Phải thu các nông trường | 1.615.292.056 | - | 455.520.258 | - |<br>| Phải thu các Ngân hàng TMCP về lãi tiền gửi | 76.121.185.952 | - | 54.639.558.396 | - |<br>| Phải thu các đối tượng khác | 7.235.649.384 | 50.000.000 | 5.909.170.092 | 50.000.000 |<br>| **Tổng cộng** | **92.865.961.582** | **50.000.000** | **68.408.924.489** | **50.000.000** |<br><br>b. Dài hạn<br>Chi tiết theo nội dung<br>| Chỉ tiêu | 30/06/2024 Giá trị VND | 30/06/2024 Dự phòng VND | 01/01/2024 Giá trị VND | 01/01/2024 Dự phòng VND |<br>|-----------------|------------------------|--------------------------|------------------------|--------------------------|<br>| Ký cược, ký quỹ | 232.213.154 | - | 215.334.517 | - |<br>| **Tổng cộng** | **232.213.154** | **-** | **215.334.517** | **-** |<br><br>8 . NỢ XẤU<br>| Chỉ tiêu | 30/06/2024 Giá gốc VND | 30/06/2024 Dự phòng VND | 30/06/2024 Giá trị có thể thu hồi VND | 01/01/2024 Giá gốc VND | 01/01/2024 Dự phòng VND | 01/01/2024 Giá trị có thể thu hồi VND |<br>|-----------------------------------------------|------------------------|--------------------------|------------------------------|------------------------|--------------------------|------------------------------|<br>| Tổng giá trị các khoản phải thu quá hạn thanh toán hoặc chưa quá hạn nhưng khó có khả năng thu hồi | | | | | | |<br>| Phải thu khách hàng | 4.352.677.529 | 4.092.719.939 | 259.957.590 | 7.674.494.064 | 4.851.809.939 | 2.822.684.125 |<br>| Công ty Cổ phần Đầu tư Xây dựng Cao su | 800.000.000 | 800.000.000 | - | 800.000.000 | 800.000.000 | - |<br>| Công ty TNHH XNK và PTNN Công nghệ cao Bình Dương | - | - | - | 762.250.000 | 762.250.000 | - |<br>| Công ty TNHH Phạm Ngọc Sang | 246.774.000 | 246.774.000 | - | 246.774.000 | 246.774.000 | - |<br>| Công ty TNHH Gỗ Thành Bích | 361.390.579 | 361.390.579 | - | 361.390.579 | 361.390.579 | - |<br>| Công ty TNHH MTV Lệ Thủy | 898.114.153 | 898.114.153 | - | 938.114.153 | 938.114.153 | - |<br>| Fosan Shunde Trade Co. Ltd | 488.156.550 | 488.156.550 | - | 488.156.550 | 488.156.550 | - |<br>| Công ty TNHH MTV Trí Thịnh | 246.383.190 | 246.383.190 | - | 246.383.190 | 246.383.190 | - |<br>| Công ty TNHH SXTMDV Vĩnh Hưng Đạt | - | - | - | - | - | - |<br>| Các đối tượng khác | 1.311.859.057 | 1.051.901.467 | 259.957.590 | 3.831.425.592 | 1.008.741.467 | 2.822.684.125 |<br>| Trả trước cho người bán | 1.362.664.668 | 1.011.864.668 | 350.800.000 | 1.352.885.092 | 1.002.085.092 | 350.800.000 |<br>| Công ty TNHH Thương mại, Sản xuất và Xuất nhập khẩu Duy Anh | 311.600.000 | 155.800.000 | 155.800.000 | 311.600.000 | 155.800.000 | 155.800.000 |<br>| Công ty TNHH Xây dựng An Bình | 390.000.000 | 195.000.000 | 195.000.000 | 390.000.000 | 195.000.000 | 195.000.000 |<br>| Công ty Cổ phần Đầu tư PTCN và TT Chơn Thành | 58.194.000 | 58.194.000 | - | 129.000.000 | 129.000.000 | - |<br>| Công ty TNHH Deloitte Việt Nam | 366.870.668 | 366.870.668 | - | 357.091.092 | 357.091.092 | - |<br>| Các đối tượng khác | 236.000.000 | 236.000.000 | - | 165.194.000 | 165.194.000 | - |<br>| Phải thu khác | 100.000.000 | 50.000.000 | 50.000.000 | 100.000.000 | 50.000.000 | 50.000.000 |<br>| Công ty TNHH MTV Lâm nghiệp Chư Ma Lanh | 100.000.000 | 50.000.000 | 50.000.000 | 100.000.000 | 50.000.000 | 50.000.000 |<br>| **Tổng cộng** | **5.815.342.197** | **5.154.584.607** | **660.757.590** | **9.127.379.156** | **5.903.895.031** | **3.223.484.125** |",
+        "questions": [
+            {
+                "question": "Khoản phải thu lãi tiền gửi ngân hàng ngắn hạn tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tổng giá trị có thể thu hồi từ nợ xấu tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh tổng giá trị phải thu ngắn hạn khác giữa cuối kỳ và đầu kỳ.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích xu hướng của các khoản phải thu khách hàng và các khoản trả trước cho người bán trong danh mục nợ xấu. Điều này có ý nghĩa gì đối với rủi ro tín dụng của công ty?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Liệt kê các loại khoản phải thu khác của công ty theo nội dung.",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Đánh giá hiệu quả của chính sách dự phòng nợ xấu của công ty dựa trên tỷ lệ dự phòng so với giá gốc.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "18",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 9. HÀNG TỒN KHO & 10. TÀI SẢN DỞ DANG DÀI HẠN<br>Loại nội dung: Bảng và Văn bản<br>9 . HÀNG TỒN KHO<br>| Chỉ tiêu | 30/06/2024 Giá gốc VND | 30/06/2024 Dự phòng VND | 01/01/2024 Giá gốc VND | 01/01/2024 Dự phòng VND |<br>|----------------------------------------|------------------------|--------------------------|------------------------|--------------------------|<br>| Nguyên liệu, vật liệu | 36.045.968.598 | - | 32.721.854.250 | - |<br>| Công cụ, dụng cụ | 11.252.042.768 | - | 5.108.709.531 | - |<br>| Chi phí sản xuất kinh doanh dở dang | 62.634.357.066 | - | 67.466.329.695 | - |<br>| Thành phẩm | 153.004.668.365 | 217.544.295 | 220.512.925.122 | 217.544.295 |<br>| Hàng hoá | 6.564.096.000 | - | - | - |<br>| **Tổng cộng** | **269.501.132.797** | **217.544.295** | **325.809.818.598** | **217.544.295** |<br><br>Chi tiết bao gồm:<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|---------------------------------------|----------------|----------------|<br>| Chi phí sản xuất vườn ươm | 9.573.527.705 | 9.573.527.705 |<br>| Chi phí sản xuất vườn nhân | 2.988.704.634 | 2.988.704.634 |<br>| Chi phí vườn keo | 27.603.402.841 | 32.918.958.956 |<br>| Chi phí sản xuất kinh doanh dở dang khác | 22.468.721.886 | 21.985.138.400 |<br>| **Tổng cộng** | **62.634.357.066** | **67.466.329.695** |<br><br>10 . TÀI SẢN DỞ DANG DÀI HẠN<br>a. Chi phí sản xuất kinh doanh dở dang dài hạn<br>| Chỉ tiêu | 30/06/2024 Giá gốc VND | 30/06/2024 Giá trị có thể thu hồi VND | 01/01/2024 Giá gốc VND | 01/01/2024 Giá trị có thể thu hồi VND |<br>|----------------------------------------------------|------------------------|----------------------------------|------------------------|----------------------------------|<br>| Dự án Khu dân cư Phước Hòa 1 | 62.398.687.755 | 62.398.687.755 | 61.905.069.649 | 61.905.069.649 |<br>| Dự án Khu tái định cư và nhà ở cho công nhân Tân Bình | 16.832.539.070 | 16.832.539.070 | 16.832.539.070 | 16.832.539.070 |<br>| **Tổng cộng** | **79.231.226.825** | **79.231.226.825** | **78.737.608.719** | **78.737.608.719** |<br>1. Chi tiết dự án Khu Dân cư Phước Hòa:<br>- Chủ đầu tư: Công ty Cổ phần Cao su Phước Hòa<br>- Địa điểm: xã Phước Hòa, huyện Phú Giáo, tỉnh Bình Dương<br>- Mục đích đầu tư: khu dân cư<br>- Quy mô dự án: 31,35 ha<br>- Tổng vốn đầu tư: 106,632 tỷ đồng (bao gồm hai giai đoạn: giai đoạn một bao gồm các hạng mục đầu tư cơ sở hạ tầng của dự án và giai đoạn hai thực hiện đầu tư các hạng mục khu thương mại, khu nhà ở cao tầng...)<br>- Tình trạng dự án: Công ty đang hoàn thiện hồ sơ để tách nền đất bàn giao cho các khách hàng đã ứng trước tiền. Xem thêm thuyết minh số 17",
+        "questions": [
+            {
+                "question": "Tổng giá gốc hàng tồn kho tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tổng vốn đầu tư của Dự án Khu Dân cư Phước Hòa là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh giá gốc thành phẩm giữa 30/06/2024 và 01/01/2024. Mức thay đổi là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tình trạng hiện tại của Dự án Khu Dân cư Phước Hòa và ý nghĩa của nó đối với công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá tác động của sự giảm chi phí vườn keo đến tổng chi phí sản xuất kinh doanh dở dang.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Loại hàng tồn kho nào có giá gốc tăng đáng kể nhất trong 6 tháng đầu năm 2024?",
+                "difficulty": "Medium_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "19",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 10. TÀI SẢN DỞ DANG DÀI HẠN (tiếp theo) & 11. TÀI SẢN CỐ ĐỊNH HỮU HÌNH<br>Loại nội dung: Bảng và Văn bản<br>10 . TÀI SẢN DỞ DANG DÀI HẠN (tiếp theo)<br>b. Xây dựng cơ bản dở dang<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|-----------------------------------|----------------|----------------|<br>| Vườn cây kiến thiết cơ bản tại Việt Nam | 419.284.148.377 | 404.968.812.131 |<br>| Dự án Khu Công nghiệp Tân Bình 2 | 278.116.488 | 685.116.488 |<br>| Công trình xây dựng cơ bản khác | 3.638.938.724 | 2.160.662.801 |<br>| **Tổng cộng** | **423.201.203.589** | **407.814.591.420** |<br>2. Chi tiết dự án Khu Công nghiệp Tân Bình:<br>- Chủ đầu tư: Công ty Cổ phần Khu Công nghiệp Tân Bình<br>- Địa điểm xây dựng: xã Tân Bình, huyện Bắc Tân Uyên, tỉnh Bình Dương<br>- Mục đích: Đầu tư xây dựng Khu công nghiệp Tân Bình<br>- Quy mô dự án: 352,49 ha<br>- Tổng vốn đầu tư: 831,493 tỷ đồng<br>- Tình trạng thực hiện dự án: Công ty đang thực hiện triển khai hoàn thiện các hạ tầng còn lại để cho thuê.<br><br>11 . TÀI SẢN CỐ ĐỊNH HỮU HÌNH<br>| Chỉ tiêu | Nhà cửa, vật kiến trúc VND | Máy móc, thiết bị VND | Phương tiện vận tải, truyền dẫn VND | Thiết bị, dụng cụ quản lý VND | Vườn cây lâu năm VND | Cộng VND |<br>|---------------------------------------|--------------------------|----------------------|-----------------------------------|---------------------------|----------------------|-----------|<br>| **Nguyên giá** | | | | | | |<br>| Số dư đầu kỳ | 580.135.977.927 | 198.478.554.840 | 131.391.027.770 | 2.033.996.555 | 1.849.193.416.011 | 2.761.232.973.103 |<br>| Mua trong kỳ | - | 63.500.000 | - | - | - | 63.500.000 |<br>| Đầu tư xây dựng cơ bản hoàn thành | - | - | - | - | 597.260.784 | 597.260.784 |<br>| Thanh lý, nhượng bán | - | - | - | - | - | - |<br>| Chênh lệch do thay đổi tỷ giá chuyển đổi BCTC tại ngày đầu kỳ và ngày cuối kỳ | 5.560.283.909 | 1.122.238.539 | 1.844.567.446 | 20.292.774 | 35.424.056.786 | 43.971.439.454 |<br>| **Số dư cuối kỳ** | **585.696.261.836** | **199.600.793.379** | **133.299.095.216** | **2.054.289.329** | **1.885.214.733.581** | **2.805.865.173.341** |<br>| **Giá trị hao mòn lũy kế** | | | | | | |<br>| Số dư đầu kỳ | 352.137.727.008 | 129.112.301.599 | 72.185.803.481 | 1.730.462.412 | 427.077.948.481 | 982.244.242.981 |<br>| Khấu hao trong kỳ | 10.638.329.517 | 5.701.317.621 | 3.979.041.126 | 44.158.122 | 48.806.425.437 | 69.169.271.823 |<br>| Thanh lý, nhượng bán | - | - | - | - | - | - |<br>| Chênh lệch do thay đổi tỷ giá chuyển đổi BCTC tại ngày đầu kỳ và ngày cuối kỳ | 2.134.817.127 | 232.008.773 | 562.437.100 | 20.292.774 | 6.853.051.333 | 9.802.607.107 |<br>| **Số dư cuối kỳ** | **364.910.873.652** | **135.045.627.993** | **76.727.281.707** | **1.794.913.308** | **482.737.425.251** | **1.061.216.121.911** |<br>| **Giá trị còn lại** | | | | | | |<br>| Tại ngày đầu kỳ | 227.998.250.919 | 69.366.253.241 | 59.205.224.289 | 303.534.143 | 1.422.115.467.530 | 1.778.988.730.122 |<br>| Tại ngày cuối kỳ | 220.785.388.184 | 64.555.165.386 | 56.571.813.509 | 259.376.021 | 1.402.477.308.330 | 1.744.649.051.430 |",
+        "questions": [
+            {
+                "question": "Nguyên giá vườn cây lâu năm tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tổng vốn đầu tư của Dự án Khu Công nghiệp Tân Bình là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh khấu hao trong kỳ của 'Nhà cửa, vật kiến trúc' với 'Vườn cây lâu năm'.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tình hình thực hiện dự án Khu Công nghiệp Tân Bình. Điều này có ý nghĩa gì đối với tiềm năng doanh thu tương lai?",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá hiệu quả quản lý tài sản cố định hữu hình của công ty dựa trên sự biến động của giá trị còn lại.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tổng giá trị khấu hao tài sản cố định hữu hình trong kỳ là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản chi phí xây dựng cơ bản dở dang nào có giá trị lớn nhất tại 30/06/2024?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "20",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 12. TÀI SẢN CỐ ĐỊNH VÔ HÌNH & 13. BẤT ĐỘNG SẢN ĐẦU TƯ & 14. CHI PHÍ TRẢ TRƯỚC<br>Loại nội dung: Bảng và Văn bản<br>12 . TÀI SẢN CỐ ĐỊNH VÔ HÌNH<br>Tài sản cố định vô hình tại Công ty là phần mềm máy tính. Nguyên giá và giá trị hao mòn lũy kế tại thời điểm 30/06/2024 lần lượt là 1.436.829.510 đồng và 903.073.922 đồng; tại thời điểm 01/01/2024 lần lượt là 1.419.025.415 đồng và 829.843.606 đồng, trong đó chi phí khấu hao phát sinh trong kỳ này là 73.230.316 đồng.<br><br>13 . BẤT ĐỘNG SẢN ĐẦU TƯ<br>Bất động sản đầu tư cho thuê<br>| Chỉ tiêu | Nhà và quyền sử dụng đất VND | Cơ sở hạ tầng VND | Cộng VND |<br>|----------------------------|----------------------------|-------------------|-----------|<br>| **Nguyên giá** | | | |<br>| Số dư đầu kỳ | 237.906.494.894 | 23.659.502.834 | 261.565.997.728 |<br>| Đầu tư xây dựng cơ bản hoàn thành | - | - | - |<br>| Điều chỉnh theo Kiểm toán quyết toán dự án hoàn thành | - | - | - |<br>| **Số dư cuối kỳ** | **237.906.494.894** | **23.659.502.834** | **261.565.997.728** |<br>| **Giá trị hao mòn lũy kế** | | | |<br>| Số dư đầu kỳ | 65.106.692.921 | 11.374.260.588 | 76.480.953.509 |<br>| Khấu hao trong kỳ | 6.225.410.958 | 1.115.670.012 | 7.341.080.970 |<br>| **Số dư cuối kỳ** | **71.332.103.879** | **12.489.930.600** | **83.822.034.479** |<br>| **Giá trị còn lại** | | | |<br>| Tại ngày đầu kỳ | 172.799.801.973 | 12.285.242.246 | 185.085.044.219 |<br>| Tại ngày cuối kỳ | 166.574.391.015 | 11.169.572.234 | 177.743.963.249 |<br><br>14 . CHI PHÍ TRẢ TRƯỚC<br>a. Ngắn hạn<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|---------------------------------------|----------------|----------------|<br>| Công cụ dụng cụ chờ phân bổ | 855.047.918 | 1.532.377.143 |<br>| Chi phí thẩm định GTDN để thoái vốn | 111.912.900 | 111.912.900 |<br>| Chi phí trả trước chờ phân bổ khác | 28.333.137.343 | - |<br>| **Tổng cộng** | **29.300.098.161** | **1.644.290.043** |",
+        "questions": [
+            {
+                "question": "Nguyên giá tài sản cố định vô hình tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị còn lại của bất động sản đầu tư tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh chi phí khấu hao trong kỳ của bất động sản đầu tư giữa Nhà và quyền sử dụng đất với Cơ sở hạ tầng.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự tăng đột biến của 'Chi phí trả trước chờ phân bổ khác' trong ngắn hạn. Điều này có ý nghĩa gì đối với công ty?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá tình hình đầu tư bất động sản của công ty dựa trên sự biến động nguyên giá và giá trị còn lại.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Chi phí khấu hao tài sản cố định vô hình phát sinh trong kỳ này là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "21",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 14. CHI PHÍ TRẢ TRƯỚC (tiếp theo)<br>Loại nội dung: Bảng và Văn bản<br>14 . CHI PHÍ TRẢ TRƯỚC (tiếp theo)<br>b. Dài hạn<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|-----------------------------------------------|----------------|----------------|<br>| Công cụ dụng cụ chờ phân bổ | 3.749.765.183 | 821.029.965 |<br>| Chi phí sửa chữa tài sản | 667.016.129 | 1.141.757.879 |<br>| Chi phí mua đất mở rộng nhà máy Cua Paris 1 | 1.798.394.839 | 1.842.074.839 |<br>| Chi phí chứng chỉ quản lý rừng bền vững | 1.147.449.181 | 1.321.390.134 |<br>| Chi phí hoạt động tại Khu công nghiệp Tân Bình | 2.430.558.520 | 1.768.749.087 |<br>| Chi phí môi giới cho thuê đất | 6.327.608.218 | 6.408.265.258 |<br>| Chi phí tiền thuê đất dự án 983 | 1.829.996.485 | 1.840.551.261 |<br>| Tiền thuê đất Khu Công nghiệp Tân Bình 2 | 324.907.310.577 | 329.020.061.345 |<br>| Chi phí trả trước dài hạn khác | 2.005.515.472 | 1.651.867.483 |<br>| **Tổng cộng** | **344.863.614.604** | **345.815.747.251** |<br>1. Khoản phí chuyển nhượng Quyền sử dụng đất thuê trả tiền hàng năm tại phường Chánh Phú Hoà, thị xã Bến Cát, tỉnh Bình Dương với số tiền 3.575.485.326 đồng với thời hạn thuê đất đến 09/02/2045.<br>2. Khoản tiền thuê đất tại Khu công nghiệp Tân Bình đã được Công ty Cổ phần Khu Công nghiệp Tân Bình - Công ty con trả trước một lần cho cả thời hạn thuê. Hiện tại Công ty đang được miễn tiền thuê đất cho một số diện tích đất thuê từ thời điểm 15/07/2015 đến 15/07/2029, sau khi hết thời gian được miễn tiền thuê đất, Công ty sẽ phân bổ khoản chi phí này vào kết quả kinh doanh tương ứng với số năm còn lại của dự án. Xem thêm thuyết minh 10b.",
+        "questions": [
+            {
+                "question": "Tổng chi phí trả trước dài hạn tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Công ty được miễn tiền thuê đất tại Khu công nghiệp Tân Bình đến khi nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh 'Công cụ dụng cụ chờ phân bổ' dài hạn giữa 30/06/2024 và 01/01/2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích ý nghĩa của khoản tiền thuê đất trả trước một lần tại Khu công nghiệp Tân Bình đối với cấu trúc chi phí của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ biến động của các chi phí trả trước dài hạn và giải thích các nguyên nhân tiềm ẩn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Khoản phí chuyển nhượng Quyền sử dụng đất thuê có thời hạn đến ngày bao nhiêu?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "22",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 15. CÁC KHOẢN VAY<br>Loại nội dung: Bảng và Văn bản<br>15 . CÁC KHOẢN VAY<br>| Chỉ tiêu | 01/01/2024 Giá trị VND | 01/01/2024 Số có khả năng trả nợ VND | Trong kỳ Tăng VND | Trong kỳ Giảm VND | Trong kỳ Chênh lệch do thay đổi tỷ giá khi chuyển đổi BCTC VND | 30/06/2024 Giá trị VND | 30/06/2024 Số có khả năng trả nợ VND |<br>|---------------------------------------|-------------------------|--------------------------------|-------------------|------------------|-----------------------------------------------------------|-------------------------|--------------------------------|<br>| **a. Vay ngắn hạn** | | | | | | | |<br>| Vay ngắn hạn | 224.585.651.927 | 224.585.651.927 | 119.299.958.114 | 190.817.353.686 | - | 153.068.256.355 | 153.068.256.355 |<br>| Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh Bình Dương | 66.455.207.061 | 66.455.207.061 | 119.299.958.114 | 155.755.165.175 | - | 30.000.000.000 | 30.000.000.000 |<br>| Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bình Dương | 137.898.256.355 | 137.898.256.355 | - | 14.830.000.000 | - | 123.068.256.355 | 123.068.256.355 |<br>| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - Chi nhánh Bình Dương | 20.232.188.511 | 20.232.188.511 | - | 20.232.188.511 | - | - | - |<br>| Vay dài hạn đến hạn trả | 52.206.856.169 | 52.206.856.169 | 1.143.034.157 | 30.533.208.771 | 3.710.893.227 | 26.527.574.782 | 26.527.574.782 |<br>| Ngân hàng Shinhan Singapore | 52.206.856.169 | 52.206.856.169 | 1.143.034.157 | 30.533.208.771 | 3.710.893.227 | 26.527.574.782 | 26.527.574.782 |<br>| **Tổng cộng** | **276.792.508.096** | **276.792.508.096** | **120.442.992.271** | **221.350.562.457** | **3.710.893.227** | **179.595.831.137** | **179.595.831.137** |<br><br>b. Vay dài hạn<br>| Chỉ tiêu | 01/01/2024 Giá trị VND | 01/01/2024 Số có khả năng trả nợ VND | Trong kỳ Tăng VND | Trong kỳ Giảm VND | Trong kỳ Chênh lệch do thay đổi tỷ giá khi chuyển đổi BCTC VND | 30/06/2024 Giá trị VND | 30/06/2024 Số có khả năng trả nợ VND |<br>|--------------------------------------|-------------------------|--------------------------------|-------------------|------------------|-----------------------------------------------------------|-------------------------|--------------------------------|<br>| Ngân hàng Shinhan - Chi nhánh Singapore | 93.972.156.722 | 93.972.156.722 | 1.143.034.157 | 30.533.208.771 | 6.679.594.703 | 71.261.576.811 | 71.261.576.811 |<br>| **Tổng cộng** | **93.972.156.722** | **93.972.156.722** | **1.143.034.157** | **30.533.208.771** | **6.679.594.703** | **71.261.576.811** | **71.261.576.811** |<br>Khoản nợ đến hạn trả trong vòng 12 tháng: 52.206.856.169 VND<br>Khoản nợ đến hạn trả sau 12 tháng: 41.765.300.553 VND<br><br>c. Thông tin chi tiết liên quan đến các khoản vay ngắn hạn<br>| Hạn mức USD | Thời hạn vay | Mục đích vay | Lãi suất | Hình thức đảm bảo | 30/06/2024 VND |<br>|--------------|--------------|--------------|----------|--------------------|------------------|<br>| Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh Bình Dương | | | | | 30.000.000.000 |<br>| Hợp đồng tín dụng số 130003025899 ngày 09/02/2021 | 100.000.000.000 VND | 06 tháng | Bổ sung vốn lưu động phục vụ hoạt động sản xuất kinh doanh | Theo từng giấy nhận nợ | Thế chấp các khoản tiền gửi có kỳ hạn tại Ngân hàng TMCP Đầu tư và Phát triển Việt Nam và Ngân hàng TMCP Sài Gòn - Hà Nội. | 30.000.000.000 |<br>| Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bình Dương | | | | | 123.068.256.355 |<br>| Hợp đồng cho vay theo từng lần ngắn hạn số 066B22CSPH ngày 02/12/2021 | 100.000.000.000 VND | 06 tháng | Bổ sung vốn lưu động phục vụ hoạt động sản xuất kinh doanh | 7,0%/năm | Thế chấp các khoản tiền gửi có kỳ hạn tại các Ngân hàng Thương mại. | 123.068.256.355 |",
+        "questions": [
+            {
+                "question": "Tổng giá trị vay ngắn hạn tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Ngân hàng nào đã cấp khoản vay ngắn hạn lớn nhất cho công ty?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh khoản vay ngắn hạn của Ngân hàng TNHH MTV Shinhan Việt Nam giữa đầu kỳ và cuối kỳ.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Nêu mục đích và hình thức đảm bảo của Hợp đồng tín dụng số 130003025899 của Ngân hàng Shinhan.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ phụ thuộc của công ty vào vay ngắn hạn và rủi ro thanh khoản liên quan.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Khoản nợ dài hạn đến hạn trả trong vòng 12 tháng là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "23",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 15. CÁC KHOẢN VAY (tiếp theo) & 16. PHẢI TRẢ NGƯỜI BÁN NGẮN HẠN<br>Loại nội dung: Bảng và Văn bản<br>15 . CÁC KHOẢN VAY (tiếp theo)<br>d. Thông tin chi tiết liên quan đến các khoản vay dài hạn<br>| Hạn mức USD | Thời hạn vay | Mục đích vay | Lãi suất | Hình thức đảm bảo | 30/06/2024 VND |<br>|--------------|--------------|--------------|----------|--------------------|------------------|<br>| Ngân hàng Shinhan - Chi nhánh Singapore | | | | | 71.261.576.811 |<br>| Hợp đồng tín dụng với Ngân hàng Shinhan - Chi nhánh Singapore ngày 29/07/2019 | 2.000.000 USD hoặc KHR tương đương | 05 năm | Thực hiện dự án Xây dựng Nhà máy chế biến mủ cao su tại huyện Santuk, Tỉnh Kampong Thom, Vương quốc Campuchia | Theo từng giấy nhận nợ | Thế chấp Vườn cây cao su diện tích 15.283.934,3 m2 theo Giấy chứng nhận số BA 179752 thuộc quyền sở hữu của Công ty mẹ - Công ty cổ phần Cao su Phước Hòa tại Xã Tân Thành, Huyện Bắc Tân Uyên, Tỉnh Bình Dương, Việt Nam theo Hợp đồng tín dụng số 130002033672 ngày 29/07/2019 với Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh Bình Dương | 3.750.616.545 |<br>| Hợp đồng tín dụng với Ngân hàng Shinhan - Chi nhánh Singapore ngày 11/12/2020 | 6.000.000 USD hoặc KHR tương đương | 05 năm | Bổ sung vốn lưu động phục vụ hoạt động sản xuất kinh doanh | Theo từng giấy nhận nợ | Thế chấp Vườn cây cao su diện tích 15.283.934,3 m2 theo Giấy chứng nhận số BA 179752 thuộc quyền sở hữu của Công ty mẹ - Công ty cổ phần Cao su Phước Hòa tại Xã Tân Thành, Huyện Bắc Tân Uyên, Tỉnh Bình Dương, Việt Nam theo Hợp đồng tín dụng số 130002033672 ngày 29/07/2019 với Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh Bình Dương | 67.510.960.266 |<br>| **Tổng cộng** | | | | | | **71.261.576.811** |<br>Khoản nợ đến hạn trả trong vòng 12 tháng: 26.527.574.782 VND<br>Khoản nợ đến hạn trả sau 12 tháng: 44.734.002.029 VND<br><br>16 . PHẢI TRẢ NGƯỜI BÁN NGẮN HẠN<br>| Chỉ tiêu | 30/06/2024 Giá trị VND | 30/06/2024 Số có khả năng trả nợ VND | 01/01/2024 Giá trị VND | 01/01/2024 Số có khả năng trả nợ VND |<br>|---------------------------------------|------------------------|--------------------------------|------------------------|--------------------------------|<br>| Phải trả người bán là các bên liên quan | 160.720.000 | 160.720.000 | 935.301.614 | 935.301.614 |<br>| Viện nghiên cứu cao su Việt Nam | 111.000.000 | 111.000.000 | - | - |<br>| Công ty Cổ phần Cơ khí Cao su | 49.720.000 | 49.720.000 | 935.301.614 | 935.301.614 |<br>| Phải trả người bán là các bên khác | 64.625.385.237 | 64.625.385.237 | 46.031.041.159 | 46.031.041.159 |<br>| Phải trả tiền thu mua mủ | 11.589.214.943 | 11.589.214.943 | 9.033.566.336 | 9.033.566.336 |<br>| Công ty TNHH Kim Ngoan | 24.844.302.955 | 24.844.302.955 | 74.930.000 | 74.930.000 |<br>| Nghĩa Thao Import Export Service Trading | 927.275.940 | 927.275.940 | 641.598.630 | 641.598.630 |<br>| Công ty TNHH Phát triển công nghiệp Minh Khuê | 1.434.300.000 | 1.434.300.000 | - | - |<br>| Công ty Cổ phần Tư vấn Kiến trúc và Xây dựng Vạn Gia | - | - | 401.003.025 | 401.003.025 |<br>| Công ty TNHH TM Hưng Phát Thành | 565.791.491 | 565.791.491 | 4.389.421.285 | 4.389.421.285 |<br>| Công ty TNHH MTV TMXD Sơn Bình Nguyên | - | - | 1.107.185.603 | 1.107.185.603 |<br>| Công ty TNHH Vật tư Cao su Thái Bình | 4.632.628.910 | 4.632.628.910 | - | - |<br>| Công ty TNHH Thương mại Dịch vụ xuất nhập khẩu Đại Trung Tín | 5.685.585.370 | 5.685.585.370 | - | - |<br>| Công ty TNHH Sản xuất Thương mại Vật tư nông nghiệp Dương Thành Danh | 1.386.000.000 | 1.386.000.000 | - | - |<br>| Công ty Cổ phần Xuất nhập khẩu Nam Thiên Sáng | 3.505.066.000 | 3.505.066.000 | - | - |<br>| Công ty Cổ phần Tư vấn Xây dựng Thương mại Phước Lộc | 103.191.543 | 103.191.543 | 564.694.644 | 564.694.644 |<br>| Piseth Lykung Co., Ltd | 881.682.737 | 881.682.737 | 2.635.836.662 | 2.635.836.662 |<br>| Long Vanna Import Export Co., Ltd | - | - | 5.378.020.406 | 5.378.020.406 |<br>| Công ty TNHH MTV Xây dựng Cường Minh Thịnh | 434.696.549 | 434.696.549 | 2.429.186.021 | 2.429.186.021 |<br>| Công ty TNHH MTV Xây dựng Cầu đường Thái Phát | 135.303.678 | 135.303.678 | - | - |<br>| Biomass Technology Cambodia Co., Ltd | 183.638.130 | 183.638.130 | 2.776.055.193 | 2.776.055.193 |<br>| Phải trả các đối tượng khác | 9.886.310.669 | 9.886.310.669 | 15.029.939.676 | 15.029.939.676 |<br>| **Tổng cộng** | **64.786.105.237** | **64.786.105.237** | **46.966.342.773** | **46.966.342.773** |",
+        "questions": [
+            {
+                "question": "Tổng giá trị vay dài hạn tại Ngân hàng Shinhan - Chi nhánh Singapore là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Mục đích của Hợp đồng tín dụng 6.000.000 USD với Ngân hàng Shinhan - Chi nhánh Singapore ngày 11/12/2020 là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh tổng số 'Phải trả người bán ngắn hạn' giữa 30/06/2024 và 01/01/2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi đáng kể trong khoản phải trả người bán là Công ty TNHH Kim Ngoan. Điều này có ý nghĩa gì đối với quan hệ kinh doanh của công ty?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ biến động của các khoản vay dài hạn và giải thích các nguyên nhân tiềm ẩn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đâu là hình thức đảm bảo cho các khoản vay dài hạn với Ngân hàng Shinhan - Chi nhánh Singapore?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "24",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 17. NGƯỜI MUA TRẢ TIỀN TRƯỚC & 18. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC<br>Loại nội dung: Bảng và Văn bản<br>17 . NGƯỜI MUA TRẢ TIỀN TRƯỚC<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|-----------------------------------------------|----------------|----------------|<br>| **a. Ngắn hạn** | | |<br>| a.1 Người mua trả tiền trước là các bên liên quan | 1.468.880 | 272.160.045 |<br>| Tập đoàn Công nghiệp Cao su Việt Nam - Công ty cổ phần | 500.000 | - |<br>| Công ty Cổ phần Cao su Dầu Tiếng - Kratie | - | 272.160.045 |<br>| Công ty Cổ phần Gỗ MDF VRG Kiên Giang | 968.880 | - |<br>| a.2 Người mua trả tiền trước là các bên khác | 15.019.988.070 | 7.460.870.825 |<br>| Công ty TNHH Thương mại và Dịch vụ Lưu Gia | 2.382.253.337 | - |<br>| Công ty TNHH Sản xuất Cao su Liên Anh | 1.318.028.628 | 1.338.876.000 |<br>| Công ty TNHH Phát triển PTN | - | - |<br>| Công ty TNHH MTV Đặng Thái Gia | 6.218.208.149 | 1.987.263.149 |<br>| Công ty TNHH Gia Phú Anh | 3.051.367.200 | - |<br>| Công ty TNHH MTV Thắng Thăng Lợi | 1.028.408.686 | 1.133.710.408 |<br>| Các đối tượng khác | 1.021.722.070 | 3.001.021.268 |<br>| **Tổng cộng** | **15.021.456.950** | **7.733.030.870** |<br><br>b. Dài hạn<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|----------------------------------------------------|----------------|----------------|<br>| Người mua trả tiền trước là các bên khác | | |<br>| Người mua nhà trong khu dân cư Phước Hòa khu Tây | 44.352.440.914 | 44.352.440.914 |<br>| Người mua nhà trong khu dân cư Phước Hòa khu Đông | 34.359.103.703 | 34.349.328.203 |<br>| **Tổng cộng** | **78.711.544.617** | **78.701.769.117** |<br>1. Các khoản người mua trả trước theo Hợp đồng mua bán bất động sản tại Khu dân cư Phước Hòa, thông tin chi tiết của dự án xem tại thuyết minh số 10a.<br><br>18 . THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC<br>| Chỉ tiêu | Số phải thu đầu kỳ VND | Số phải nộp đầu kỳ VND | Số phát sinh trong kỳ VND | Số đã thực nộp trong kỳ VND | Số phải thu cuối kỳ VND | Số phải nộp cuối kỳ VND |<br>|------------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|<br>| Thuế giá trị gia tăng | 180.764.169 | 2.668.576.639 | 16.147.774.709 | 22.140.658.743 | 4.323.730.314 | 818.658.750 |<br>| Thuế xuất, nhập khẩu | 103.489.603 | - | 970.308.666 | 970.308.666 | 103.489.603 | - |<br>| Thuế thu nhập doanh nghiệp | 21.216.483.335 | 25.425.325.806 | 21.072.525.257 | 34.819.885.215 | 21.233.455.812 | 11.694.938.325 |<br>| Thuế thu nhập cá nhân | 927.672.818 | 1.923.956.492 | 2.490.816.284 | 5.036.102.363 | 1.654.930.956 | 105.928.551 |<br>| Thuế tài nguyên | 28.000.000 | - | 161.813.067 | 133.813.067 | - | - |<br>| Thuế nhà đất và tiền thuê đất | 22.907.528.716 | - | 23.775.828.706 | 24.154.769.929 | 23.286.469.939 | - |<br>| Các loại thuế khác | 2.000.000 | 10.813.249 | 100.020.097 | 100.329.072 | 2.000.000 | 10.504.274 |<br>| Các khoản phí, lệ phí và các khoản phải nộp khác | - | 5.408.714.953 | 658.469.227 | 5.808.466.549 | - | 258.717.631 |<br>| **Tổng cộng** | **45.365.938.641** | **35.437.387.139** | **65.406.711.222** | **93.193.488.813** | **50.604.076.624** | **12.888.747.531** |<br>Quyết toán thuế của Công ty sẽ chịu sự kiểm tra của cơ quan thuế. Do việc áp dụng luật và các quy định về thuế đối với nhiều loại giao dịch khác nhau có thể được giải thích theo nhiều cách khác nhau, số thuế được trình bày trên Báo cáo tài chính hợp nhất có thể bị thay đổi theo quyết định của cơ quan thuế.",
+        "questions": [
+            {
+                "question": "Tổng số người mua trả tiền trước ngắn hạn tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Số thuế thu nhập doanh nghiệp phải nộp cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh khoản 'Người mua nhà trong khu dân cư Phước Hòa khu Tây' trả tiền trước dài hạn giữa hai kỳ.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích biến động của 'Người mua trả tiền trước ngắn hạn' từ các bên khác. Điều này cho thấy điều gì về hoạt động bán hàng của công ty?",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá rủi ro tiềm ẩn từ việc quyết toán thuế của công ty có thể bị thay đổi theo quyết định của cơ quan thuế.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Khoản thuế nào có số phải nộp đầu kỳ lớn nhất?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giải thích mối liên hệ giữa 'Người mua nhà trong khu dân cư Phước Hòa' và thuyết minh số 10a.",
+                "difficulty": "Medium_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "25",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 19. CHI PHÍ PHẢI TRẢ NGẮN HẠN & 20. PHẢI TRẢ KHÁC & 21. DOANH THU CHƯA THỰC HIỆN<br>Loại nội dung: Bảng và Văn bản<br>19 . CHI PHÍ PHẢI TRẢ NGẮN HẠN<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|-----------------------------------------------|----------------|----------------|<br>| Chi phí lãi vay | 72.492.261 | 97.473.288 |<br>| Trích trước giá vốn cho thuê đất và phí sử dụng hạ tầng khu công nghiệp | 162.242.635.278 | 165.978.022.680 |<br>| Chi phí phải trả khác | 161.872.594 | 196.119.094 |<br>| **Tổng cộng** | **162.477.000.133** | **166.271.615.062** |<br><br>20 . PHẢI TRẢ KHÁC<br>a. Ngắn hạn<br>a.1 Chi tiết theo nội dung<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|---------------------------------------------|----------------|----------------|<br>| Các khoản phải nộp KPCĐ, BHXH, BHYT, BHTN | 1.871.062.011 | 1.836.808.029 |<br>| Phải trả về cổ phần hóa | 283.122.320 | 283.122.320 |<br>| Nhận ký quỹ, ký cược ngắn hạn | 1.027.076.000 | 1.106.134.000 |<br>| Cổ tức, lợi nhuận phải trả | 1.845.166.300 | 130.237.321.934 |<br>| Chi phí lãi vay phải trả | 19.726.027 | 1.910.578.822 |<br>| Các khoản phải trả, phải nộp khác | 19.918.276.925 | 23.138.393.663 |<br>| **Tổng cộng** | **24.964.429.583** | **158.512.358.768** |<br><br>a.2 Chi tiết theo đối tượng<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|----------------------------------------------------|----------------|----------------|<br>| Phải trả khác là các bên liên quan | 395.035.220 | 126.409.854.720 |<br>| Tập đoàn Công nghiệp Cao su Việt Nam | 395.035.220 | 126.409.854.720 |<br>| Phải trả khác là các bên khác | 24.569.394.363 | 32.102.504.048 |<br>| Phải trả các Ngân hàng Thương mại cổ phần lãi tiền vay | 19.726.027 | 1.910.578.822 |<br>| Phải trả các cổ đông khác tiền cổ tức | 1.845.166.300 | 4.222.502.434 |<br>| Phải trả, phải nộp các đối tượng khác | 22.704.502.036 | 25.969.422.792 |<br>| **Tổng cộng** | **24.964.429.583** | **158.512.358.768** |<br><br>b. Dài hạn<br>b.1 Chi tiết theo nội dung<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|---------------------------|----------------|----------------|<br>| Nhận ký quỹ, ký cược dài hạn | 64.575.000 | 64.575.000 |<br>| **Tổng cộng** | **64.575.000** | **64.575.000** |<br><br>21 . DOANH THU CHƯA THỰC HIỆN<br>a. Ngắn hạn<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|--------------------------------------------|----------------|----------------|<br>| Doanh thu nhận trước cho thuê hạ tầng khu công nghiệp | 49.946.876.336 | 45.849.151.936 |<br>| **Tổng cộng** | **49.946.876.336** | **45.849.151.936** |<br><br>b. Dài hạn<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|--------------------------------------------|--------------------|--------------------|<br>| Doanh thu nhận trước cho thuê hạ tầng khu công nghiệp | 1.320.832.901.984 | 1.338.375.511.739 |<br>| **Tổng cộng** | **1.320.832.901.984** | **1.338.375.511.739** |",
+        "questions": [
+            {
+                "question": "Tổng chi phí phải trả ngắn hạn tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản cổ tức, lợi nhuận phải trả của công ty giảm bao nhiêu giữa 01/01/2024 và 30/06/2024?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Nêu sự khác biệt về xu hướng của doanh thu chưa thực hiện ngắn hạn và dài hạn.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của sự sụt giảm đáng kể trong 'Phải trả khác là các bên liên quan' đến tình hình tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ biến động của các khoản chi phí phải trả và doanh thu chưa thực hiện, đặc biệt là các khoản mục lớn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tổng doanh thu chưa thực hiện dài hạn tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "26",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 22. VỐN CHỦ SỞ HỮU<br>Loại nội dung: Bảng<br>22 . VỐN CHỦ SỞ HỮU<br>a. Bảng đối chiếu biến động của vốn chủ sở hữu<br>| Chỉ tiêu | Vốn đầu tư của Chủ sở hữu VND | Thặng dư vốn cổ phần VND | Chênh lệch tỷ giá hối đoái VND | Quỹ đầu tư phát triển VND | Lợi nhuận chưa phân phối VND | Lợi ích cổ đông không kiểm soát VND | Cộng VND |<br>|---------------------------------------|---------------------------------|--------------------------|-------------------------------|---------------------------|----------------------------|---------------------------------|------------------|<br>| **Số dư tại ngày 01/01/2023** | **1.354.991.980.000** | **21.238.165.708** | **156.100.776.217** | **1.251.882.728.836** | **503.871.666.370** | **150.725.894.131** | **3.438.811.211.262** |<br>| Tăng vốn trong năm | - | - | - | - | - | - | - |<br>| Lãi trong năm 2023 | - | - | - | - | 619.711.048.513 | 41.576.953.704 | 661.288.002.217 |<br>| Phân phối lợi nhuận năm 2022 | - | - | - | (47.605.255.864) | (317.535.634.918) | (291.073.795) | (270.221.452.849) |<br>| Trích Quỹ đầu tư phát triển | - | - | - | 47.605.255.864 | - | - | 47.605.255.864 |<br>| Trích Quỹ khen thưởng, phúc lợi và Quỹ khen thưởng ban điều hành | - | - | - | - | (1.144.545.174) | (291.073.795) | (1.435.618.969) |<br>| Chi trả Cổ tức 2022 | - | - | - | - | (268.785.833.880) | - | (268.785.833.880) |<br>| Tạm phân phối lợi nhuận năm 2023 | - | - | - | - | (35.863.390.446) | (24.000.000.000) | (59.863.390.446) |<br>| Tạm ứng cổ tức đợt 1 năm 2023 | - | - | - | - | - | (24.000.000.000) | (24.000.000.000) |<br>| Trích Quỹ khen thưởng, phúc lợi và Quỹ khen thưởng ban điều hành | - | - | - | - | (35.863.390.446) | - | (35.863.390.446) |<br>| Điều chỉnh do thay đổi tỷ lệ lợi ích tại Công ty con trong năm | - | - | - | - | 449.469 | 94.753.569 | 94.304.100 |<br>| Điều chỉnh lợi ích của Công ty trong Công ty liên kết do ảnh hưởng của việc phân phối Lợi nhuận | - | - | - | - | 2.175.977.438 | - | 2.175.977.438 |<br>| Chênh lệch tỷ giá do chuyển đổi BCTC | - | - | 46.618.488.169 | - | 387.347.278 | - | 46.231.140.891 |<br>| **Số dư tại ngày 31/12/2023** | **1.354.991.980.000** | **21.238.165.708** | **202.719.264.386** | **1.299.487.984.700** | **767.619.915.334** | **168.106.527.609** | **3.814.163.837.737** |<br><br>| Chỉ tiêu | Vốn đầu tư của Chủ sở hữu VND | Thặng dư vốn cổ phần VND | Chênh lệch tỷ giá hối đoái VND | Quỹ đầu tư phát triển VND | Lợi nhuận chưa phân phối VND | Lợi ích cổ đông không kiểm soát VND | Cộng VND |<br>|---------------------------------------|---------------------------------|--------------------------|-------------------------------|---------------------------|----------------------------|---------------------------------|------------------|<br>| **Số dư tại ngày 01/01/2024** | **1.354.991.980.000** | **21.238.165.708** | **202.719.264.386** | **1.299.487.984.700** | **767.619.915.334** | **168.106.527.609** | **3.814.163.837.737** |<br>| Tăng vốn trong năm nay | - | - | - | - | - | 63.500.000 | 63.500.000 |<br>| Lãi trong năm 2024 | - | - | - | - | 137.702.893.658 | 11.066.299.614 | 148.769.193.272 |<br>| Phân phối lợi nhuận năm 2023 1 | - | - | - | (72.724.491.451) | (73.899.257.287) | (293.691.459) | (1.468.457.295) |<br>| Trích Quỹ đầu tư phát triển | - | - | - | 72.724.491.451 | - | - | 72.724.491.451 |<br>| Trích Quỹ khen thưởng, phúc lợi và Quỹ khen thưởng ban điều hành | - | - | - | - | (1.174.765.836) | (293.691.459) | (1.468.457.295) |<br>| Điều chỉnh do thay đổi tỷ lệ lợi ích tại Công ty con trong kỳ | - | - | - | - | 97.089 | 97.089 | - |<br>| Điều chỉnh lợi ích của Công ty trong Công ty liên kết do ảnh hưởng của việc phân phối Lợi nhuận | - | - | - | - | 400.898.064 | - | 400.898.064 |<br>| Điều chỉnh khác | - | - | - | - | 338.025.837 | 315.461 | 338.341.298 |<br>| Chênh lệch tỷ giá do chuyển đổi BCTC | - | - | 30.196.635.062 | - | - | - | 30.196.635.062 |<br>| **Số dư tại ngày 30/06/2024** | **1.354.991.980.000** | **21.238.165.708** | **232.915.899.448** | **1.372.212.476.151** | **831.486.521.021** | **178.942.223.214** | **3.991.787.265.542** |",
+        "questions": [
+            {
+                "question": "Tổng vốn chủ sở hữu tại 30/06/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lợi nhuận chưa phân phối tại 01/01/2024 là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh 'Chênh lệch tỷ giá hối đoái' tại 30/06/2024 với 01/01/2024. Mức thay đổi là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tác động của việc 'Phân phối lợi nhuận năm 2022' và 'Tạm phân phối lợi nhuận năm 2023' đến 'Lợi nhuận chưa phân phối'.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá sự thay đổi của 'Quỹ đầu tư phát triển' từ 01/01/2023 đến 30/06/2024 và ý nghĩa của nó đối với chiến lược đầu tư của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Khoản mục nào trong vốn chủ sở hữu tăng đáng kể nhất trong 6 tháng đầu năm 2024?",
+                "difficulty": "Medium_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "27",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 22. VỐN CHỦ SỞ HỮU (tiếp theo) & 23. CHÊNH LỆCH TỶ GIÁ & 25. CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN VÀ CAM KẾT HOẠT ĐỘNG<br>Loại nội dung: Bảng và Văn bản<br>22 . VỐN CHỦ SỞ HỮU (tiếp theo)<br>b. Chi tiết vốn đầu tư của chủ sở hữu<br>| Chỉ tiêu | Tỷ lệ (%) | 30/06/2024 VND | Tỷ lệ (%) | 01/01/2024 VND |<br>|----------------------------------------------|------------|----------------|------------|----------------|<br>| Tập đoàn Công nghiệp Cao su Việt Nam - Công ty Cổ phần | 66,62 | 902.640.100.000 | 66,62 | 902.640.100.000 |<br>| Cổ đông khác | 33,38 | 452.351.880.000 | 33,38 | 452.351.880.000 |<br>| **Tổng cộng** | **100** | **1.354.991.980.000** | **100** | **1.354.991.980.000** |<br><br>c. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận<br>| Chỉ tiêu | 6 tháng đầu năm 2024 VND | 6 tháng đầu năm 2023 VND |<br>|---------------------------------------|--------------------------|--------------------------|<br>| **Vốn đầu tư của chủ sở hữu** | | |<br>| Vốn góp đầu kỳ | 1.354.991.980.000 | 1.354.991.980.000 |<br>| Vốn góp cuối kỳ | 1.354.991.980.000 | 1.354.991.980.000 |<br>| **Cổ tức, lợi nhuận** | | |<br>| Cổ tức, lợi nhuận phải trả đầu kỳ | 130.237.321.934 | 551.878.002.670 |<br>| Cổ tức, lợi nhuận phải trả trong kỳ | - | - |<br>| Cổ tức, lợi nhuận chia trên lợi nhuận kỳ trước | - | - |<br>| Cổ tức, lợi nhuận đã chi trả bằng tiền | 128.392.155.634 | 275.248.171.200 |<br>| Cổ tức, lợi nhuận chia trên lợi nhuận kỳ trước | 128.392.155.634 | 275.248.171.200 |<br>| Cổ tức, lợi nhuận còn phải trả cuối kỳ | 1.845.166.300 | 276.629.831.470 |<br><br>d. Cổ phiếu<br>| Chỉ tiêu | 30/06/2024 | 01/01/2024 |<br>|-------------------------------------|------------|------------|<br>| Số lượng cổ phiếu đăng ký phát hành | 135.499.198 | 135.499.198 |<br>| Số lượng cổ phiếu đã bán ra công chúng | 135.499.198 | 135.499.198 |<br>| Cổ phiếu phổ thông | 135.499.198 | 135.499.198 |<br>| Số lượng cổ phiếu đang lưu hành | 135.499.198 | 135.499.198 |<br>| Cổ phiếu phổ thông | 135.499.198 | 135.499.198 |<br>Mệnh giá cổ phiếu đang lưu hành: 10.000 đồng/cổ phần.<br><br>e. Các quỹ của công ty<br>| Chỉ tiêu | 30/06/2024 VND | 01/01/2024 VND |<br>|-----------------------|----------------|----------------|<br>| Quỹ đầu tư phát triển | 1.372.212.476.151 | 1.299.487.984.700 |<br>| **Tổng cộng** | **1.372.212.476.151** | **1.299.487.984.700** |<br><br>23 . CHÊNH LỆCH TỶ GIÁ<br>| Chỉ tiêu | 6 tháng đầu năm 2024 VND | 6 tháng đầu năm 2023 VND |<br>|-----------------------------------------------|--------------------------|--------------------------|<br>| Số dư đầu kỳ | 202.719.264.386 | 156.100.776.217 |<br>| Số tăng trong kỳ | 30.196.635.062 | 71.383.103 |<br>| Do chuyển đổi BCTC lập bằng ngoại tệ sang VND | 30.196.635.062 | 71.383.103 |<br>| Số giảm trong kỳ | - | - |<br>| **Số dư cuối kỳ** | **232.915.899.448** | **156.172.159.320** |<br><br>25 . CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN VÀ CAM KẾT HOẠT ĐỘNG<br>a. Tài sản thuê ngoài và cam kết thuê hoạt động<br>Công ty ký các hợp đồng thuê đất tại xã Phước Hoà, huyện Phú Giáo, tỉnh Bình Dương để sử dụng với mục đích làm văn phòng. Diện tích khu đất thuê là 439.860,8 m2. Theo các hợp đồng này, Công ty phải trả tiền thuê đất hàng năm cho đến ngày đáo hạn hợp đồng theo quy định hiện hành của Nhà nước.<br>Công ty ký các hợp đồng thuê đất tại xã Phước Hòa, huyện Phú Giáo, tỉnh Bình Dương để sử dụng với mục đích thực hiện Dự án Khu dân cư Phước Hòa. Tổng diện tích các khu đất thuê là 10.997,4 m2. Theo hợp đồng này, Công ty phải trả tiền thuê đất hàng năm cho đến ngày đáo hạn hợp đồng theo quy định hiện hành của Nhà nước tương ứng diện tích 5.033,2 m2 và trả tiền thuê đất một lần cho cả thời hạn thuê tương ứng diện tích 5.964,2 m2.<br>Công ty ký các hợp đồng thuê đất tại các thị xã, huyện thuộc tỉnh Bình Dương để sử dụng với mục đích trồng cây cao su. Tổng diện tích các khu đất thuê là 154.303.913,2 m2. Theo các hợp đồng này, Công ty phải trả tiền thuê đất hàng năm cho đến ngày đáo hạn hợp đồng theo quy định hiện hành của Nhà nước.<br>Công ty ký hợp đồng thuê đất tại xã Ea Lê, huyện Ea Súp, tỉnh Đắk Lắk để sử dụng với mục đích trồng cao su, trồng rừng, quản lý bảo vệ rừng. Diện tích khu đất thuê là 9.836.900 m2. Theo hợp đồng này, Công ty phải trả tiền thuê đất hàng năm cho đến ngày đáo hạn hợp đồng theo quy định hiện hành của Nhà nước. Trong kỳ, Công ty được miễn tiền thuê đất đối với tổng diện tích 9.836.900 m2 theo các Thông báo của Cục thuế tỉnh Đắk Lắk.<br>Công ty ký các hợp đồng thuê đất tại xã Tân Bình, huyện Bắc Tân Uyên, tỉnh Bình Dương để sử dụng với mục đích đầu tư xây dựng, kinh doanh cho thuê Hạ tầng Khu công nghiệp. Diện tích khu đất thuê là 3.208.388,3 m2. Theo các hợp đồng này, Công ty phải trả tiền thuê đất một lần cho đến ngày đáo hạn hợp đồng theo quy định hiện hành của Nhà nước.<br>Công ty ký hợp đồng thuê đất tại ấp 1, xã Hưng Hòa, huyện Bàu Bàng, tỉnh Bình Dương để sử dụng với mục đích phục vụ sản xuất, chế biến gỗ. Diện tích khu đất thuê là 6,22 ha. Theo các hợp đồng này, Công ty phải trả tiền thuê đất hàng năm cho đến ngày đáo hạn hợp đồng theo quy định hiện hành của Nhà nước.",
+        "questions": [
+            {
+                "question": "Mệnh giá cổ phiếu đang lưu hành của công ty là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Công ty mẹ của CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA là ai?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh 'Quỹ đầu tư phát triển' giữa 30/06/2024 và 01/01/2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tác động của việc miễn tiền thuê đất tại xã Ea Lê, huyện Ea Súp, tỉnh Đắk Lắk đến tình hình tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ biến động của 'Chênh lệch tỷ giá hối đoái' và nêu nguyên nhân chính dẫn đến sự thay đổi này.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Tổng diện tích đất thuê để trồng cây cao su tại các thị xã, huyện thuộc tỉnh Bình Dương là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu các mục đích sử dụng đất thuê của công ty tại tỉnh Bình Dương.",
+                "difficulty": "Medium_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "28",
+        "content": "Công ty: CÔNG TY CỔ PHẦN CAO SU PHƯỚC HÒA<br>Mã cổ phiếu: PHR<br>Loại báo cáo: Báo cáo tài chính hợp nhất quý II/2024<br>Thời gian: Từ 01/01/2024 đến 30/06/2024, phát hành tháng 7 năm 2024<br>Ý kiến kiểm toán: Đã được kiểm toán bởi AASC, chi tiết ý kiến không có trong báo cáo.<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT - 25. CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN VÀ CAM KẾT HOẠT ĐỘNG (tiếp theo) & 26. TỔNG DOANH THU BÁN HÀNG VÀ CUNG CẤP DỊCH VỤ & 27. CÁC KHOẢN GIẢM TRỪ DOANH THU<br>Loại nội dung: Bảng và Văn bản<br>25 . CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN VÀ CAM KẾT HOẠT ĐỘNG (tiếp theo)<br>b. Tài sản nhận giữ hộ<br>| Chủng loại, quy cách | ĐVT | Số lượng 30/06/2024 | Phẩm chất 30/06/2024 | Số lượng 01/01/2024 | Phẩm chất 01/01/2024 |<br>|----------------------|-----|-------------------|----------------------|-------------------|----------------------|<br>| Mủ cốm | Tấn | 60,480 | Bình thường | 950,440 | Bình thường |<br>| Mủ Latex | Tấn | 120,000 | Bình thường | 342,000 | Bình thường |<br><br>c. Ngoại tệ các loại<br>| Chỉ tiêu | 30/06/2024 | 01/01/2024 |<br

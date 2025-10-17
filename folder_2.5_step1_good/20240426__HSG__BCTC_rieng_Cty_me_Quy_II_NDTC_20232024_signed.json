@@ -1,0 +1,752 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Số liệu cuối kỳ 31/03/2024, Số liệu đầu kỳ 01/10/2023, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| STT | CHỈ TIÊU | Mã số | TM | Số cuối kỳ 31/03/2024 (VNĐ) | Số đầu kỳ 01/10/2023 (VNĐ) |\n|-----|--------------------------------------------|-------|----|------------------------------|----------------------------|\n| A | TÀI SẢN NGẮN HẠN | 100 | | 17.485.908.535.174 | 13.186.804.684.705 |\n| I | Tiền và các khoản tương đương tiền | 110 | 4 | 255.576.064.873 | 501.386.999.566 |\n| 1 | Tiền | 111 | | 254.826.064.873 | 500.636.999.566 |\n| 2 | Các khoản tương đương tiền | 112 | | 750.000.000 | 750.000.000 |\n| II | Đầu tư tài chính ngắn hạn | 120 | | 20.560.958.904 | 20.560.958.904 |\n| 1 | Chứng khoán kinh doanh | 121 | | - | - |\n| 2 | DP giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3 | Đầu tư nắm giữ đến ngày đáo hạn | 123 | 13a | 20.560.958.904 | 20.560.958.904 |\n| III | Các khoản phải thu ngắn hạn | 130 | | 10.529.375.388.165 | 8.405.245.948.063 |\n| 1 | Phải thu ngắn hạn của khách hàng | 131 | 5 | 10.159.265.815.969 | 7.416.195.465.814 |\n| 2 | Trả trước cho người bán ngắn hạn | 132 | 6 | 52.347.362.532 | 26.549.614.993 |\n| 3 | Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4 | Phải thu theo tiến độ kế hoạch hợp đồng XD | 134 | | - | - |\n| 5 | Phải thu về cho vay ngắn hạn | 135 | 9a | 172.500.000.000 | 118.500.000.000 |\n| 6 | Các khoản phải thu khác | 136 | 7a | 145.690.847.950 | 854.774.675.210 |\n| 7 | DP các khoản phải thu khó đòi | 137 | | 428.638.286 | 10.773.807.954 |\n| 8 | Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV | Hàng tồn kho | 140 | 8 | 5.662.298.715.746 | 3.749.491.109.277 |\n| 1 | Hàng tồn kho | 141 | | 5.805.715.460.060 | 3.876.500.070.101 |\n| 2 | Dự phòng giảm giá hàng tồn kho | 149 | | 143.416.744.314 | 127.008.960.824 |\n| V | Tài sản ngắn hạn khác | 150 | | 1.018.097.407.486 | 510.119.668.895 |\n| 1 | Chi phí trả trước ngắn hạn | 151 | 14a | 89.119.461.471 | 96.483.062.965 |\n| 2 | Thuế GTGT được khấu trừ | 152 | 18 | 800.192.116.221 | 285.106.020.138 |\n| 3 | Thuế và các khoản khác phải thu Nhà nước | 153 | 18 | 128.785.829.794 | 128.530.585.792 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối kỳ 31/03/2024 của Công ty Cổ phần Tập đoàn Hoa Sen là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã cổ phiếu của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối kỳ và đầu kỳ. Tình hình hàng tồn kho có biến động đáng kể không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng của Tiền và các khoản tương đương tiền trong tổng tài sản ngắn hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sơ bộ khả năng thanh toán ngắn hạn của công ty dựa trên cơ cấu tài sản ngắn hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân có thể dẫn đến sự tăng giảm của các khoản phải thu ngắn hạn khác giữa cuối kỳ và đầu kỳ.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Số liệu cuối kỳ 31/03/2024, Số liệu đầu kỳ 01/10/2023, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| STT | CHỈ TIÊU | Mã số | TM | Số cuối kỳ 31/03/2024 (VNĐ) | Số đầu kỳ 01/10/2023 (VNĐ) |\n|-----|--------------------------------------------|-------|----|------------------------------|----------------------------|\n| B | TÀI SẢN DÀI HẠN | 200 | | 4.782.105.149.455 | 4.924.991.584.484 |\n| I | Các khoản phải thu dài hạn | 210 | | 119.556.045.140 | 140.931.524.246 |\n| 1 | Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2 | Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3 | Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4 | Phải thu dài hạn nội bộ | 214 | | - | - |\n| 5 | Phải thu về cho vay dài hạn | 215 | 9b | 1.500.000.000 | - |\n| 6 | Phải thu dài hạn khác | 216 | 7b | 118.056.045.140 | 140.931.524.246 |\n| 7 | Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |\n| II | Tài sản cố định | 220 | | 904.243.995.729 | 1.016.313.002.019 |\n| 1 | Tài sản cố định hữu hình | 221 | 10 | 735.718.442.535 | 848.743.235.444 |\n| | - Nguyên giá | 222 | | 3.851.604.047.179 | 3.888.602.489.525 |\n| | - Giá trị hao mòn lũy kế | 223 | | (3.115.885.604.644) | (3.039.859.254.081) |\n| 2 | Tài sản cố định thuê tài chính | 224 | | - | - |\n| | - Nguyên giá | 225 | | - | - |\n| | - Giá trị hao mòn lũy kế | 226 | | - | - |\n| 3 | Tài sản cố định vô hình | 227 | 11 | 168.525.553.194 | 167.569.766.575 |\n| | - Nguyên giá | 228 | | 258.793.677.210 | 254.559.214.510 |\n| | - Giá trị hao mòn lũy kế | 229 | | (90.268.124.016) | (86.989.447.935) |\n| III | Bất động sản đầu tư | 230 | | - | - |\n| | - Nguyên giá | 231 | | - | - |\n| | - Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV | Tài sản dở dang dài hạn | 240 | | 16.629.603.083 | 27.180.502.737 |\n| 1 | Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2 | Chi phí xây dựng cơ bản dở dang | 242 | 12 | 16.629.603.083 | 27.180.502.737 |\n| V | Các khoản đầu tư tài chính dài hạn | 250 | | 3.589.850.000.000 | 3.589.850.000.000 |\n| 1 | Đầu tư vào công ty con | 251 | 13b | 3.588.850.000.000 | 3.588.850.000.000 |\n| 2 | Đầu tư vào công ty liên kết, liên doanh | 252 | 13b | - | - |\n| 3 | Đầu tư góp vốn vào đơn vị khác | 253 | | - | - |\n| 4 | Dự phòng giảm giá đầu tư dài hạn | 254 | | - | - |\n| 5 | Đầu tư nắm giữ đến ngày đáo hạn | 255 | 13a | 1.000.000.000 | 1.000.000.000 |\n| VI | Tài sản dài hạn khác | 260 | | 151.825.505.503 | 150.716.555.482 |\n| 1 | Chi phí trả trước dài hạn | 261 | 14b | 78.477.054.666 | 100.428.317.304 |\n| 2 | Tài sản thuế thu nhập hoãn lại | 262 | 15 | 73.348.450.837 | 50.288.238.178 |\n| TỔNG CỘNG TÀI SẢN | 270 | | | 22.268.013.684.629 | 18.111.796.269.189 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của Tập đoàn Hoa Sen tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tài sản cố định hữu hình và vô hình cuối kỳ và đầu kỳ. Loại tài sản nào có biến động lớn hơn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ đầu tư vào công ty con trên tổng tài sản dài hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản dài hạn của công ty và ý nghĩa của việc này đối với hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm chi phí xây dựng cơ bản dở dang đến kế hoạch phát triển của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Số liệu cuối kỳ 31/03/2024, Số liệu đầu kỳ 01/10/2023, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| STT | CHỈ TIÊU | Mã số | TM | Số cuối kỳ 31/03/2024 (VNĐ) | Số đầu kỳ 01/10/2023 (VNĐ) |\n|-----|--------------------------------------------|-------|----|------------------------------|----------------------------|\n| C | NỢ PHẢI TRẢ | 300 | | 10.854.300.831.220 | 6.829.845.298.714 |\n| I | Nợ ngắn hạn | 310 | | 10.840.169.616.905 | 6.815.609.482.547 |\n| 1 | Phải trả người bán ngắn hạn | 311 | 16 | 4.142.626.148.939 | 3.330.483.232.614 |\n| 2 | Người mua trả tiền trước ngắn hạn | 312 | 17 | 268.243.251.839 | 129.957.335.766 |\n| 3 | Thuế và các khoản phải nộp Nhà nước | 313 | 18 | 64.109.029.360 | 145.505.586.644 |\n| 4 | Phải trả người lao động | 314 | | 44.969.413.644 | 48.600.453.107 |\n| 5 | Chi phí phải trả ngắn hạn | 315 | 19 | 149.276.967.226 | 66.684.028.030 |\n| 6 | Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7 | Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |\n| 8 | Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9 | Phải trả ngắn hạn khác | 319 | 20 | 23.581.477.555 | 42.122.470.287 |\n| 10 | Vay và nợ thuê tài chính ngắn hạn | 320 | 22 | 6.094.463.842.402 | 2.903.786.802.438 |\n| 11 | Dự phòng phải trả ngắn hạn | 321 | | - | - |\n| 12 | Quỹ khen thưởng, phúc lợi | 322 | | 52.899.485.940 | 148.469.573.661 |\n| II | Nợ dài hạn | 330 | | 14.131.214.315 | 14.235.816.167 |\n| 1 | Phải trả người bán dài hạn | 331 | | - | - |\n| 2 | Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3 | Chi phí phải trả dài hạn | 333 | | - | - |\n| 4 | Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |\n| 5 | Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6 | Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7 | Phải trả dài hạn khác | 337 | | 709.500.000 | 709.500.000 |\n| 8 | Vay và nợ thuê tài chính dài hạn | 338 | | - | - |\n| 9 | Dự phòng phải trả dài hạn | 342 | 21 | 13.421.714.315 | 13.526.316.167 |\n| D | VỐN CHỦ SỞ HỮU | 400 | | 11.413.712.853.409 | 11.281.950.970.475 |\n| I | Vốn chủ sở hữu | 410 | 23 | 11.413.712.853.409 | 11.281.950.970.475 |\n| 1 | Vốn góp của chủ sở hữu | 411 | 24 | 6.159.823.090.000 | 6.159.823.090.000 |\n| | - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 6.159.823.090.000 | 6.159.823.090.000 |\n| | - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2 | Thặng dư vốn cổ phần | 412 | | 157.292.539.068 | 157.292.539.068 |\n| 3 | Cổ phiếu quỹ | 415 | | - | - |\n| 4 | Quỹ khác thuộc vốn chủ sở hữu | 420 | | 47.910.893.831 | 77.910.496.944 |\n| 5 | Lợi nhuận sau thuế chưa phân phối | 421 | | 5.048.686.330.510 | 4.886.924.844.463 |\n| | - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 4.884.074.062.073 | 4.638.635.861.919 |\n| | - LNST chưa phân phối kỳ này | 421b | | 164.612.268.437 | 248.288.982.544 |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | | 22.268.013.684.629 | 18.111.796.269.189 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả của Tập đoàn Hoa Sen tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản vay và nợ thuê tài chính ngắn hạn cuối kỳ với đầu kỳ. Có sự thay đổi đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ nợ phải trả trên tổng nguồn vốn của công ty là bao nhiêu phần trăm tại cuối kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đòn bẩy tài chính của công ty dựa trên cơ cấu nợ và vốn chủ sở hữu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng mạnh các khoản vay và nợ thuê tài chính ngắn hạn đối với rủi ro thanh khoản của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024 (Kỳ này), Từ 01/01/2023 đến 31/03/2023 (Kỳ trước), Từ 01/10/2023 đến 31/03/2024 (Lũy kế kỳ này), Từ 01/10/2022 đến 31/03/2023 (Lũy kế kỳ trước), Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh\nLoại nội dung: Bảng\n| STT | CHỈ TIÊU | Mã số | TM | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) | Lũy kế kỳ này 01/10/2023 - 31/03/2024 (VNĐ) | Lũy kế kỳ trước 01/10/2022 - 31/03/2023 (VNĐ) |\n|-----|--------------------------------------------|-------|----|--------------------------------------|--------------------------------------|------------------------------------------|------------------------------------------|\n| 1 | Doanh thu bán hàng và cung cấp dịch vụ | 01 | 26 | 17.013.509.869.532 | 12.002.197.710.367 | 33.378.850.367.252 | 24.632.681.403.063 |\n| 2 | Các khoản giảm trừ doanh thu | 02 | 26 | 151.749.835.732 | 53.102.197.990 | 253.394.934.041 | 64.515.126.617 |\n| 3 | DT thuần về bán hàng và cung cấp dịch vụ | 10 | 26 | 16.861.760.033.800 | 11.949.095.512.377 | 33.125.455.433.211 | 24.568.166.276.446 |\n| 4 | Giá vốn hàng bán | 11 | 27 | 16.012.828.714.376 | 11.276.625.502.523 | 31.638.420.846.990 | 23.515.762.832.323 |\n| 5 | Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 848.931.319.424 | 672.470.009.854 | 1.487.034.586.221 | 1.052.403.444.123 |\n| 6 | Doanh thu hoạt động tài chính | 21 | 28 | 103.302.800.006 | 72.950.685.827 | 188.344.590.545 | 105.811.629.579 |\n| 7 | Chi phí tài chính | 22 | 29 | 42.183.270.659 | 74.049.742.670 | 91.332.406.088 | 178.799.975.104 |\n| | Trong đó: Chi phí lãi vay | 23 | | 28.655.267.274 | 56.283.166.812 | 54.032.560.780 | 96.238.845.958 |\n| 8 | Chi phí bán hàng | 25 | 30 | 694.278.652.761 | 443.169.572.070 | 1.321.123.751.880 | 1.028.500.773.077 |\n| 9 | Chi phí quản lý doanh nghiệp | 26 | 31 | 64.871.930.237 | 55.598.242.724 | 127.764.774.119 | 123.798.910.918 |\n| 10 | Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 150.900.265.773 | 172.603.138.217 | 135.158.244.679 | 172.884.585.397 |\n| 11 | Thu nhập khác | 31 | 32 | 10.520.239.316 | 28.459.952.798 | 19.222.514.438 | 31.096.798.980 |\n| 12 | Chi phí khác | 32 | 33 | 357.443.917 | 9.180.185 | 2.910.546.294 | 122.618.565 |\n| 13 | Lợi nhuận khác | 40 | | 10.162.795.399 | 28.450.772.613 | 16.311.968.144 | 30.974.180.415 |\n| 14 | Tổng lợi nhuận kế toán trước thuế | 50 | | 161.063.061.172 | 201.053.910.830 | 151.470.212.823 | 141.910.404.982 |\n| 15 | Chi phí thuế TNDN hiện hành | 51 | 34 | 15.806.600 | 1.536.979.754 | 99.693.200 | 1.536.979.754 |\n| 16 | Chi phí thuế TNDN hoãn lại | 52 | 34 | 14.719.449.286 | 64.794.218.240 | 23.060.212.659 | 64.230.429.042 |\n| 17 | Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 175.766.703.858 | 134.722.712.836 | 174.430.732.282 | 207.677.813.778 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ lũy kế kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong kỳ này là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận thuần từ hoạt động kinh doanh kỳ này với kỳ trước. Kết quả kinh doanh có cải thiện hay không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí lãi vay lũy kế kỳ này so với lũy kế kỳ trước thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động kinh doanh của công ty trong kỳ này dựa trên tỷ suất lợi nhuận gộp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích các yếu tố chính đóng góp vào sự thay đổi của Tổng lợi nhuận kế toán trước thuế giữa kỳ này và kỳ trước.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024 (Kỳ này), Từ 01/01/2023 đến 31/03/2023 (Kỳ trước), Từ 01/10/2023 đến 31/03/2024 (Lũy kế kỳ này), Từ 01/10/2022 đến 31/03/2023 (Lũy kế kỳ trước), Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ (Theo phương pháp gián tiếp)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MS | TM | Lũy kế kỳ này 01/10/2023 - 31/03/2024 (VNĐ) | Lũy kế kỳ trước 01/10/2022 - 31/03/2023 (VNĐ) |\n|-----------------------------------------------------------|----|----|------------------------------------------|------------------------------------------|\n| LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | | | |\n| Lợi nhuận kế toán trước thuế | 01 | | 151.470.212.823 | 141.910.404.982 |\n| Điều chỉnh cho các khoản: | | | | |\n| Khấu hao TSCĐ và BĐSĐT | 02 | | 120.706.500.306 | 157.240.350.889 |\n| Các khoản dự phòng | 03 | | 16.303.181.638 | 119.587.708.331 |\n| Lãi, lỗ CLTG hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | | 4.135.455.725 | 10.656.756.441 |\n| Lãi, lỗ từ hoạt động đầu tư | 05 | | 15.596.620.658 | 8.880.639.248 |\n| Chi phí lãi vay | 06 | | 54.032.560.780 | 96.238.845.958 |\n| Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 08 | | 322.780.379.164 | 27.556.312.155 |\n| Tăng, giảm các khoản phải thu | 09 | | 2.561.730.872.163 | 275.533.755.095 |\n| Tăng, giảm hàng tồn kho | 10 | | 1.929.215.389.959 | 264.148.948.224 |\n| Tăng, giảm các khoản phải trả | 11 | | 911.370.912.784 | 470.173.036.313 |\n| Tăng, giảm chi phí trả trước | 12 | | 34.736.441.802 | 4.163.768.407 |\n| Tiền lãi vay đã trả | 14 | | 53.022.218.017 | 96.386.470.943 |\n| Thuế thu nhập doanh nghiệp đã nộp | 15 | | - | 1.461.479.656 |\n| Tiền chi khác từ hoạt động kinh doanh | 17 | | 112.900.444.599 | 69.622.716.335 |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | | 3.387.981.190.988 | 282.367.095.688 |\n| LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | | | |\n| Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | 21 | | 19.324.196.563 | 136.041.211.843 |\n| Tiền thu từ thanh lý nhượng bán TSCĐ và các tài sản dài hạn khác | 22 | | 23.684.038.649 | 9.778.984.428 |\n| Tiền chi cho vay, mua công cụ nợ của các đơn vị khác | 23 | | 75.500.000.000 | 17.000.000.000 |\n| Tiền thu hồi cho vay, bán lại các công cụ nợ của các đơn vị khác | 24 | | 20.000.000.000 | 15.000.000.000 |\n| Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | | - | 130.000.000.000 |\n| Tiền thu từ chuyển nhượng công ty con | 26 | | - | - |\n| Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | | 2.008.009.481 | 8.056.410.470 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | | 49.132.148.433 | 250.205.816.945 |\n| LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | | | |\n| Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | | - | - |\n| Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp phát hành | 32 | | - | - |\n| Tiền thu từ đi vay | 33 | | 16.352.587.350.750 | 8.517.766.698.140 |\n| Tiền trả nợ gốc vay | 34 | | 13.161.910.310.786 | 8.558.642.463.974 |\n| Tiền trả nợ gốc thuê tài chính | 35 | | - | - |\n| Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | | 66.184.200 | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | | 3.190.610.855.764 | -40.875.765.834 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | | 246.502.483.657 | 8.714.487.091 |\n| Tiền và các khoản tương đương tiền đầu kỳ | 60 | | 501.386.999.566 | 242.815.476.591 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | | 691.548.964 | 11.684.584.453 |\n| Tiền và các khoản tương đương tiền cuối kỳ | 70 | | 255.576.064.873 | 245.785.573.953 |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế kỳ này của Tập đoàn Hoa Sen là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng tiền thu từ đi vay lũy kế kỳ này là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động đầu tư lũy kế kỳ này với lũy kế kỳ trước. Hoạt động đầu tư có xu hướng thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự chênh lệch lớn về Tiền và các khoản tương đương tiền cuối kỳ giữa Lũy kế kỳ này và Lũy kế kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ tự chủ về tài chính của công ty khi so sánh lưu chuyển tiền từ hoạt động kinh doanh với hoạt động tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm chi phí lãi vay đã trả đến dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Thông tin chung về đơn vị báo cáo\nLoại nội dung: Text\nCác thuyết minh này là bộ phận hợp thành và cần được đọc đồng thời với báo cáo tài chính riêng đính kèm.\n\n1. Đơn vị báo cáo\na. Hình thức sở hữu vốn\nCông ty Cổ phần Tập đoàn Hoa Sen ('Công ty') là công ty cổ phần được thành lập tại Việt Nam, theo Giấy Chứng nhận Đăng ký Doanh nghiệp số 3700381324, cấp ngày 8 tháng 8 năm 2001. Giấy Chứng nhận Đăng ký Doanh nghiệp của Công ty đã được điều chỉnh nhiều lần và lần điều chỉnh gần nhất là Giấy Chứng nhận Đăng ký Doanh nghiệp số 3700381324 ngày 02 tháng 10 năm 2023. Giấy Chứng nhận Đăng ký Doanh nghiệp và các giấy chứng nhận điều chỉnh do Sở Kế hoạch và Đầu tư Tỉnh Bình Dương cấp.\nTrụ sở chính đặt tại số 9, đại lộ Thống Nhất, Khu công nghiệp Sóng Thần II, Phường Dĩ An, Thành phố Dĩ An, Tỉnh Bình Dương, Việt Nam.\nCổ phiếu của Công ty được niêm yết tại Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh với mã chứng khoán là HSG theo Quyết định Niêm yết số 117/QĐ-SGDHCM do Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh cấp ngày 5 tháng 11 năm 2008.\n\nCơ cấu vốn điều lệ\nVốn điều lệ: 6.159.823.090.000 VNĐ\nSố lượng cổ phiếu: 615.982.309 cổ phiếu\n\nb. Hoạt động chính\nMục tiêu và phạm vi hoạt động kinh doanh Công ty là:\n- Sản xuất tấm lợp bằng thép mạ kẽm, hợp kim nhôm kẽm, mạ kẽm phủ sơn và mạ các loại hợp kim khác\n- Sản xuất xà gồ thép, xà gồ mạ kẽm\n- Sản xuất ống thép đen, ống thép mạ kẽm, ống thép mạ các loại hợp kim khác\n- Sản xuất lưới thép mạ, dây thép mạ kẽm, dây thép các loại\n- Sản xuất tấm trần PVC\n- Sản xuất các loại vật liệu xây dựng\n- Mua bán vật liệu xây dựng, tư liệu sản xuất và hàng tiêu dùng\n- Dịch vụ cho thuê kho và vận tải hàng hóa\n- Xây dựng công nghiệp và dân dụng\n- Sản xuất thép cán nguội dạng cuộn\n- Cho thuê máy móc, thiết bị và đồ dùng hữu hình khác.\n\nc. Chu kỳ sản xuất kinh doanh thông thường\nChu kỳ sản xuất kinh doanh thông thường của Công ty nằm trong phạm vi 12 tháng.\n\nd. Cấu trúc Công ty\nTại ngày 31 tháng 03 năm 2024, Công ty có 63 chi nhánh, 9 công ty con và 2 công ty liên kết.\n\nTại ngày 31 tháng 03 năm 2024, Công ty có 5.195 nhân viên.\n\n2. Cơ sở lập báo cáo tài chính\na. Tuyên bố về tuân thủ\nBáo cáo tài chính riêng được lập theo các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán Doanh nghiệp Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày báo cáo tài chính. Công ty cũng lập và phát hành báo cáo tài chính hợp nhất. Để hiểu tổng quát tình hình tài chính hợp nhất của Công ty, kết quả hoạt động kinh doanh hợp nhất và lưu chuyển tiền tệ hợp nhất, báo cáo tài chính riêng này cần được đọc đồng thời với báo cáo tài chính hợp nhất của Công ty.\n\nb. Cơ sở đo lường\nBáo cáo tài chính riêng, trừ báo cáo lưu chuyển tiền tệ riêng, được lập trên cơ sở dồn tích theo nguyên tắc giá gốc. Báo cáo lưu chuyển tiền tệ riêng được lập theo phương pháp gián tiếp.\n\nc. Kỳ kế toán năm\nKỳ kế toán năm của Công ty từ ngày 1 tháng 10 đến ngày 30 tháng 9 năm sau.\n\nd. Đơn vị tiền tệ kế toán và trình bày báo cáo tài chính\nĐơn vị tiền tệ kế toán của Công ty là Đồng Việt Nam (VND), cũng là đơn vị tiền tệ được sử dụng cho mục đích lập và trình bày báo cáo tài chính.",
+    "questions": [
+      {
+        "question": "Công ty Cổ phần Tập đoàn Hoa Sen được thành lập vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn điều lệ hiện tại của Tập đoàn Hoa Sen là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Trụ sở chính của công ty đặt tại đâu?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Ngoài sản xuất thép, công ty còn kinh doanh các mặt hàng nào khác?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tại ngày 31/03/2024, Tập đoàn Hoa Sen có bao nhiêu chi nhánh và công ty con?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của việc báo cáo tài chính riêng cần được đọc đồng thời với báo cáo tài chính hợp nhất.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Tóm tắt những chính sách kế toán chủ yếu\nLoại nội dung: Text\n3. Tóm tắt những chính sách kế toán chủ yếu\nSau đây là những chính sách kế toán chủ yếu được Công ty áp dụng trong việc lập báo cáo tài chính riêng này.\n\na. Các giao dịch bằng ngoại tệ\nCác giao dịch bằng các đơn vị tiền khác (VND) trong kỳ được quy đổi sang VND theo tỷ giá thực tế tại ngày giao dịch.\nCác khoản mục tài sản và nợ phải trả có gốc bằng đơn vị tiền tệ khác (VND) được quy đổi sang VND lần lượt theo tỷ giá mua chuyển khoản và bán chuyển khoản của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch tại ngày kết thúc kỳ kế toán.\nTất cả các khoản chênh lệch tỷ giá được ghi nhận vào báo cáo kết quả hoạt động kinh doanh riêng.\n\nb. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt và tiền gửi không kỳ hạn. Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có tính thanh khoản cao, có thể dễ dàng chuyển đổi thành một lượng tiền xác định, không có nhiều rủi ro về thay đổi giá trị và được sử dụng cho mục đích đáp ứng các cam kết chi tiền ngắn hạn hơn là cho mục đích đầu tư hay là các mục đích khác.\n\nc. Các khoản đầu tư\ni. Đầu tư nắm giữ đến ngày đáo hạn\nĐầu tư nắm giữ đến ngày đáo hạn là các khoản đầu tư mà Ban Tổng Giám đốc Công ty dự định và có khả năng nắm giữ đến ngày đáo hạn. Đầu tư nắm giữ đến ngày đáo hạn gồm tiền gửi ngân hàng có kỳ hạn và trái phiếu ngân hàng. Các khoản đầu tư này được ghi nhận theo giá gốc trừ đi dự phòng phải thu khó đòi.\n\nii. Đầu tư vào các công ty con và các công ty liên kết\nCho mục đích của báo cáo tài chính riêng này, các khoản đầu tư vào công ty con và công ty liên kết được ghi nhận ban đầu theo giá gốc bao gồm giá mua và các chi phí mua có liên quan trực tiếp. Sau ghi nhận ban đầu, các khoản đầu tư này được xác định theo giá gốc trừ đi dự phòng giảm giá khoản đầu tư. Dự phòng giảm giá đầu tư được lập khi đơn vị nhận đầu tư phát sinh lỗ dẫn đến Công ty có khả năng mất vốn, trừ khi có bằng chứng rằng giá trị của khoản đầu tư không bị suy giảm. Dự phòng giảm giá đầu tư được hoàn nhập khi đơn vị nhận đầu tư sau đó tạo ra lợi nhuận để bù trừ cho các khoản lỗ đã được lập dự phòng trước kia. Khoản dự phòng chỉ được hoàn nhập trong phạm vi sao cho giá trị ghi sổ của khoản đầu tư không vượt quá giá trị ghi sổ của các khoản đầu tư này khi giả định không có khoản dự phòng nào đã được ghi nhận.",
+    "questions": [
+      {
+        "question": "Công ty ghi nhận các giao dịch bằng ngoại tệ như thế nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Theo chính sách kế toán, 'Đầu tư nắm giữ đến ngày đáo hạn' được định nghĩa và ghi nhận như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi nào Công ty lập dự phòng giảm giá cho các khoản đầu tư vào công ty con và công ty liên kết?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc ghi nhận chênh lệch tỷ giá vào báo cáo kết quả hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá các rủi ro liên quan đến chính sách kế toán đối với đầu tư vào công ty con và công ty liên kết, đặc biệt là khả năng mất vốn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\nLoại nội dung: Text\n3. Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\n\nd. Các khoản phải thu\nCác khoản phải thu khách hàng và các khoản phải thu khác được phản ánh theo giá gốc trừ đi dự phòng phải thu khó đòi.\n\ne. Hàng tồn kho\nHàng tồn kho được phản ánh theo giá trị thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được. Giá gốc được tính theo phương pháp bình quân gia quyền và bao gồm tất cả các chi phí phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại. Đối với thành phẩm và chi phí sản xuất kinh doanh dở dang, giá gốc bao gồm nguyên vật liệu, chi phí nhân công trực tiếp và các chi phí sản xuất chung được phân bổ. Giá trị thuần có thể thực hiện được ước tính dựa vào giá bán của hàng tồn kho trừ đi các khoản chi phí ước tính để hoàn thành sản phẩm và các chi phí ước tính để bán sản phẩm.\nCông ty áp dụng phương pháp kê khai thường xuyên để hạch toán hàng tồn kho.\n\nf. Tài sản cố định hữu hình\ni. Nguyên giá\nTài sản cố định hữu hình được thể hiện theo nguyên giá trừ đi giá trị hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm giá mua, thuế nhập khẩu, các loại thuế mua hàng không hoàn lại và chi phí liên quan trực tiếp để đưa tài sản đến vị trí và trạng thái hoạt động cho mục đích sử dụng đã dự kiến, và chi phí để tháo dỡ, di dời tài sản và khôi phục hiện trường tại địa điểm đặt tài sản. Các chi phí phát sinh sau khi tài sản cố định hữu hình đã đưa vào hoạt động như chi phí sửa chữa, bảo dưỡng và đại tu được ghi nhận vào báo cáo kết quả hoạt động kinh doanh riêng trong kỳ mà chi phí phát sinh. Trong các trường hợp có thể chứng minh một cách rõ ràng rằng các khoản chi phí này làm tăng lợi ích kinh tế trong tương lai dự tính thu được từ việc sử dụng tài sản cố định hữu hình vượt trên mức hoạt động tiêu chuẩn theo như đánh giá ban đầu, thì các chi phí này được vốn hóa như một khoản nguyên giá tăng thêm của tài sản cố định hữu hình.\n\nii. Khấu hao\nKhấu hao được tính theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính của tài sản cố định hữu hình. Thời gian hữu dụng ước tính như sau:\n- nhà cửa, vật kiến trúc: 5-50 năm\n- máy móc và thiết bị: 3-10 năm\n- phương tiện vận chuyển: 2-10 năm\n- thiết bị văn phòng: 3-10 năm\n- tài sản khác: 3-8 năm",
+    "questions": [
+      {
+        "question": "Hàng tồn kho được phản ánh theo giá trị nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá tài sản cố định hữu hình bao gồm những chi phí gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chính sách kế toán của công ty về khấu hao tài sản cố định hữu hình là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi nào các chi phí phát sinh sau khi tài sản cố định đã đưa vào hoạt động được vốn hóa?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của phương pháp bình quân gia quyền đối với việc tính giá gốc hàng tồn kho trong bối cảnh giá cả biến động.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn nếu thời gian hữu dụng ước tính của tài sản cố định không chính xác.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\nLoại nội dung: Text\n3. Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\n\ng. Tài sản cố định vô hình\ni. Quyền sử dụng đất\nQuyền sử dụng đất được thể hiện theo nguyên giá trừ giá trị hao mòn lũy kế. Nguyên giá ban đầu của quyền sử dụng đất bao gồm giá mua và các chi phí liên quan trực tiếp tới việc có được quyền sử dụng đất. Quyền sử dụng đất có thời hạn xác định được khấu hao theo phương pháp đường thẳng trong thời hạn sử dụng là từ 14 đến 55 năm. Quyền sử dụng đất vô thời hạn không được khấu hao.\n\nii. Phần mềm máy vi tính\nGiá mua của phần mềm máy vi tính mới mà phần mềm này không phải là một bộ phận gắn kết với phần cứng có liên quan thì được vốn hóa và hạch toán như tài sản cố định vô hình. Phần mềm máy vi tính được khấu hao theo phương pháp đường thẳng trong vòng 3 đến 6 năm.\n\nh. Xây dựng cơ bản dở dang\nXây dựng cơ bản dở dang phản ánh các khoản chi cho xây dựng hoặc triển khai tài sản cố định hữu hình và tài sản cố định vô hình chưa hoàn thành hoặc chưa lắp đặt xong. Không tính khấu hao cho xây dựng cơ bản dở dang trong quá trình xây dựng và lắp đặt.\n\ni. Chi phí trả trước dài hạn\ni. Bảng hiệu quảng cáo\nBảng hiệu quảng cáo được ghi nhận theo nguyên giá và phân bổ theo phương pháp đường thẳng trong thời gian từ 2 đến 3 năm.\n\nii. Công cụ và dụng cụ\nCông cụ và dụng cụ bao gồm các tài sản Công ty nắm giữ để sử dụng trong quá trình hoạt động kinh doanh bình thường, với nguyên giá của mỗi tài sản thấp hơn 30 triệu VND và do đó không đủ điều kiện ghi nhận là tài sản cố định theo quy định hiện hành. Nguyên giá của công cụ và dụng cụ được phân bổ theo phương pháp đường thẳng trong thời gian từ 2 đến 3 năm.\n\niii. Chi phí thuê\nChi phí thuê bao gồm tiền thuê kho trả trước cho việc sử dụng kho trong quá trình hoạt động sản xuất kinh doanh của Công ty và được ghi nhận ban đầu theo giá gốc. Chi phí thuê được phân bổ theo phương pháp đường thẳng trong thời gian trả trước theo hợp đồng thuê từ 2 đến 3 năm.\n\niv. Chi phí sửa chữa\nChi phí sửa chữa tài sản cố định phản ánh chi phí sửa chữa và thay thế máy móc, thiết bị và các tài sản cố định khác nhưng không thỏa mãn điều kiện vốn hóa vào giá trị tài sản cố định. Chi phí sửa chữa được ghi nhận ban đầu theo giá gốc và được phân bổ theo phương pháp đường thẳng trong thời gian từ 2 đến 3 năm.",
+    "questions": [
+      {
+        "question": "Quyền sử dụng đất có thời hạn xác định được khấu hao trong bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty xử lý chi phí xây dựng cơ bản dở dang như thế nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu điều kiện để một phần mềm máy vi tính được vốn hóa và hạch toán như tài sản cố định vô hình.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty phân bổ nguyên giá của công cụ và dụng cụ trong thời gian bao lâu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự khác biệt trong chính sách khấu hao giữa quyền sử dụng đất có thời hạn và vô thời hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc không tính khấu hao cho xây dựng cơ bản dở dang đối với báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\nLoại nội dung: Text\n3. Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\n\nj. Phải trả người bán và các khoản phải trả khác\nPhải trả người bán và các khoản phải trả khác thể hiện theo giá gốc.\n\nk. Dự phòng\nMột khoản dự phòng được ghi nhận nếu, do kết quả của một sự kiện trong quá khứ, Công ty có nghĩa vụ pháp lý hiện tại hoặc liên đới có thể ước tính một cách đáng tin cậy, và chắc chắn sẽ làm giảm sút các lợi ích kinh tế trong tương lai để thanh toán các khoản nợ phải trả do nghĩa vụ đó. Khoản dự phòng được xác định bằng cách chiết khấu dòng tiền dự kiến phải trả trong tương lai với tỷ lệ chiết khấu trước thuế phản ánh đánh giá của thị trường ở thời điểm hiện tại về giá trị thời gian của tiền và rủi ro cụ thể của khoản nợ đó.\n\nDự phòng trợ cấp thôi việc\nTheo Bộ luật Lao động Việt Nam, khi nhân viên làm việc cho công ty từ 12 tháng trở lên nhân viên đủ điều kiện tự nguyện chấm dứt hợp đồng lao động của mình thì bên sử dụng lao động phải thanh toán tiền trợ cấp thôi việc cho nhân viên đó tính dựa trên số năm làm việc và mức lương tại thời điểm thôi việc của nhân viên đó. Dự phòng trợ cấp thôi việc được lập trên cơ sở số năm nhân viên làm việc cho Công ty và mức lương bình quân của họ trong vòng sáu tháng trước ngày kết thúc kỳ kế toán. Cho mục đích xác định số năm làm việc của nhân viên, thời gian nhân viên đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật và thời gian làm việc đã được Công ty chi trả trợ cấp thôi việc được loại trừ.\n\nl. Vốn cổ phần\ni. Cổ phiếu phổ thông\nCổ phiếu phổ thông được ghi nhận theo mệnh giá.\n\nii. Thặng dư vốn cổ phần\nKhi nhận được tiền mua cổ phiếu từ các cổ đông, chênh lệch giữa giá phát hành và mệnh giá cổ phiếu được ghi nhận vào tài khoản thặng dư vốn cổ phần trong vốn chủ sở hữu. Các chi phí phát sinh liên quan trực tiếp đến việc phát hành cổ phiếu, trừ đi ảnh hưởng thuế được ghi giảm thặng dư vốn cổ phần.\n\niii. Mua lại và phát hành lại cổ phiếu phổ thông (cổ phiếu quỹ)\nTrước ngày 1 tháng 1 năm 2021\nKhi mua lại cổ phiếu đã được ghi nhận là vốn chủ sở hữu, giá trị khoản thanh toán bao gồm các chi phí liên quan trực tiếp, trừ đi thuế, được ghi giảm vào vốn chủ sở hữu. Cổ phiếu đã mua lại được phân loại là cổ phiếu quỹ trong phần vốn chủ sở hữu. Khi cổ phiếu quỹ được bán ra sau đó phát hành lại, giá vốn của cổ phiếu phát hành lại được xác định theo phương pháp bình quân gia quyền. Chênh lệch giữa giá trị khoản nhận được và giá vốn của cổ phiếu phát hành lại được trình bày trong thặng dư vốn cổ phần.\n\nTừ ngày 1 tháng 1 năm 2021\nCổ phiếu quỹ chỉ được ghi nhận đối với việc mua lại các cổ phiếu lẻ phát sinh khi phát hành cổ phiếu để trả cổ tức hoặc phát hành cổ phiếu từ nguồn vốn chủ sở hữu theo phương án đã được thông qua, hoặc mua lại cổ phiếu lô lẻ theo yêu cầu của cổ đông, cổ phiếu lẻ là cổ phiếu đại diện cho phần vốn cổ phần hình thành do gộp các phần lẻ cổ phần chia theo tỉ lệ cho nhà đầu tư. Trong tất cả các trường hợp khác, khi mua lại cổ phiếu mà trước đó đã được ghi nhận là vốn chủ sở hữu, mệnh giá của các cổ phiếu mua lại phải được ghi giảm trừ vào vốn cổ phần. Chênh lệch giữa mệnh giá của cổ phiếu mua lại và giá trị khoản thanh toán bao gồm các chi phí liên quan trực tiếp, trừ đi thuế, được ghi nhận vào thặng dư vốn cổ phần.\nThay đổi chính sách kế toán này được áp dụng phi hồi tố từ ngày 1 tháng 1 năm 2021 do các thay đổi trong các quy định pháp luật áp dụng đối với việc mua lại cổ phiếu.",
+    "questions": [
+      {
+        "question": "Phải trả người bán và các khoản phải trả khác được thể hiện theo giá trị nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào một khoản dự phòng được ghi nhận?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích cách Công ty xác định dự phòng trợ cấp thôi việc.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu sự khác biệt trong chính sách kế toán đối với cổ phiếu quỹ trước và sau ngày 1 tháng 1 năm 2021.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc ghi giảm thặng dư vốn cổ phần khi phát sinh chi phí liên quan trực tiếp đến phát hành cổ phiếu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá các yếu tố rủi ro liên quan đến chính sách kế toán dự phòng, đặc biệt là khả năng ước tính dòng tiền dự kiến phải trả trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\nLoại nội dung: Text\n3. Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\n\nm. Thuế\nThuế thu nhập doanh nghiệp tính trên lợi nhuận hoặc lỗ của năm bao gồm thuế thu nhập hiện hành và thuế thu nhập hoãn lại. Thuế thu nhập doanh nghiệp được ghi nhận trong báo cáo kết quả hoạt động kinh doanh ngoại trừ trường hợp có các khoản thuế thu nhập liên quan đến các khoản mục được ghi nhận thẳng vào vốn chủ sở hữu, thì khi đó các thuế thu nhập này cũng được ghi nhận thẳng vào vốn chủ sở hữu.\nThuế thu nhập hiện hành là khoản thuế dự kiến phải nộp dựa trên thu nhập chịu thuế trong năm, sử dụng các mức thuế suất có hiệu lực tại ngày kết thúc kỳ kế toán năm, và các khoản điều chỉnh thuế phải nộp liên quan đến những năm trước.\nThuế thu nhập hoãn lại được tính theo phương pháp bảng cân đối kế toán cho các chênh lệch tạm thời giữa giá trị ghi sổ cho mục đích báo cáo tài chính và giá trị sử dụng cho mục đích tính thuế của các khoản mục tài sản và nợ phải trả. Giá trị của thuế thu nhập hoãn lại được ghi nhận dựa trên cách thức dự kiến thu hồi hoặc thanh toán giá trị ghi sổ của các khoản mục tài sản và nợ phải trả sử dụng các mức thuế suất có hiệu lực hoặc cơ bản có hiệu lực tại ngày kết thúc kỳ kế toán năm.\nTài sản thuế thu nhập hoãn lại chỉ được ghi nhận trong phạm vi chắc chắn có đủ lợi nhuận tính thuế trong tương lai để chênh lệch tạm thời này có thể sử dụng được. Tài sản thuế thu nhập hoãn lại được ghi giảm trong phạm vi không còn chắc chắn là các lợi ích về thuế liên quan này sẽ sử dụng được.\n\nn. Doanh thu và thu nhập khác\ni. Doanh thu bán hàng\nDoanh thu bán hàng được ghi nhận trong báo cáo kết quả hoạt động kinh doanh riêng khi phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa được chuyển giao cho người mua. Doanh thu không được ghi nhận nếu như có những yếu tố không chắc chắn trọng yếu liên quan tới khả năng thu hồi các khoản phải thu hoặc liên quan tới khả năng hàng bán bị trả lại. Doanh thu hàng bán được ghi nhận theo giá trị thuần sau khi đã trừ đi các khoản chiết khấu giảm giá trên hóa đơn bán hàng.\n\nii. Thu nhập lãi tiền gửi\nThu nhập lãi tiền gửi được ghi nhận theo tỷ lệ tương ứng với thời gian dựa trên số dư gốc và lãi suất áp dụng.\n\niii. Thu nhập cổ tức\nThu nhập từ cổ tức được ghi nhận khi quyền nhận cổ tức được xác lập.\n\no. Thuê tài sản\ni. Tài sản thuê\nCác hợp đồng thuê được phân loại là thuê tài chính nếu theo các điều khoản của hợp đồng, Công ty, với tư cách là bên thuê, đã nhận phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu. Tài sản cố định hữu hình dưới hình thức thuê tài chính được thể hiện bằng số thấp hơn giữa giá trị hợp lý của tài sản cố định và giá trị hiện tại của các khoản tiền thuê tối thiểu, tính tại thời điểm bắt đầu thuê, trừ đi giá trị hao mòn lũy kế.\nKhấu hao của tài sản thuê tài chính được hạch toán theo phương pháp đường thẳng dựa trên thời gian ngắn hơn giữa thời hạn thuê và thời gian hữu dụng ước tính của tài sản thuê tài chính trừ khi chắc chắn là Công ty sẽ có quyền sở hữu tài sản khi hết hạn hợp đồng thuê. Thời gian hữu dụng ước tính của tài sản thuê tài chính nhất quán với tài sản cố định hữu hình được nêu trong phần chính sách kế toán 3f.\n\nii. Các khoản thanh toán tiền thuê\nCác khoản thanh toán thuê hoạt động được ghi nhận trong báo cáo kết quả hoạt động kinh doanh riêng theo phương pháp đường thẳng dựa vào thời hạn của hợp đồng thuê. Các khoản hoa hồng đi thuê đã nhận được ghi nhận trong báo cáo kết quả hoạt động kinh doanh riêng như là một bộ phận hợp thành của tổng chi phí thuê, trong suốt thời hạn thuê.\nCác khoản thanh toán tiền thuê tài sản thuê tài chính được chia tách thành chi phí tài chính và khoản trả nợ gốc. Chi phí tài chính phải được tính theo từng kỳ kế toán trong suốt thời hạn thuê để đạt tới một tỷ lệ lãi suất định kỳ cố định trên số dư nợ còn lại.",
+    "questions": [
+      {
+        "question": "Thuế thu nhập doanh nghiệp bao gồm những loại thuế nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu bán hàng được ghi nhận khi nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu điều kiện để một hợp đồng thuê được phân loại là thuê tài chính.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi nào tài sản thuế thu nhập hoãn lại được ghi nhận và được ghi giảm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc phân biệt giữa thuê tài chính và thuê hoạt động trong báo cáo tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của chính sách ghi nhận doanh thu khi có các yếu tố không chắc chắn trọng yếu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Tóm tắt những chính sách kế toán chủ yếu (Kết thúc)\nLoại nội dung: Text\n3. Tóm tắt những chính sách kế toán chủ yếu (Tiếp theo)\n\np. Chi phí đi vay\nChi phí đi vay được ghi nhận là một chi phí trong kỳ khi chi phí này phát sinh, ngoại trừ trường hợp chi phí đi vay liên quan đến các khoản vay cho mục đích hình thành tài sản đủ điều kiện vốn hóa chi phí đi vay thì khi đó chi phí đi vay sẽ được vốn hóa và được ghi vào nguyên giá các tài sản này.\n\nq. Báo cáo bộ phận\nMột bộ phận là một hợp phần có thể xác định riêng biệt của Công ty tham gia vào việc cung cấp các sản phẩm hoặc dịch vụ liên quan (bộ phận chia theo hoạt động kinh doanh), hoặc cung cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận chia theo vùng địa lý), mỗi bộ phận này chịu rủi ro và thu được lợi ích khác biệt với các bộ phận khác. Mẫu báo cáo bộ phận cơ bản của Công ty là dựa theo bộ phận chia theo hoạt động kinh doanh.\n\nr. Các bên liên quan\nCác bên được coi là bên liên quan của Công ty nếu một bên có khả năng, trực tiếp hoặc gián tiếp, kiểm soát bên kia hoặc gây ảnh hưởng đáng kể tới bên kia trong việc ra các quyết định tài chính và hoạt động, hoặc khi Công ty và bên kia cùng chịu sự kiểm soát chung hoặc ảnh hưởng đáng kể chung. Các bên liên quan có thể là các công ty hoặc các cá nhân, bao gồm cả các thành viên gia đình thân cận của các cá nhân được coi là liên quan.\n\ns. Thông tin so sánh\nThông tin so sánh trong báo cáo tài chính riêng này được trình bày dưới dạng dữ liệu tương ứng. Theo phương pháp này, các thông tin so sánh của kỳ trước được trình bày như một phần không thể tách rời của báo cáo tài chính kỳ hiện tại và phải được xem xét trong mối liên hệ với các số liệu và thuyết minh của kỳ hiện tại. Theo đó, thông tin so sánh trong báo cáo tài chính riêng này không nhằm mục đích trình bày về tình hình tài chính, kết quả hoạt động kinh doanh và lưu chuyển tiền tệ riêng của Công ty trong kỳ trước.\n\n4. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|-----------------------------------|------------------|------------------|\n| Tiền mặt | 28.443.379.000 | 19.658.150.000 |\n| Tiền gửi ngân hàng không kỳ hạn | 226.256.217.873 | 480.959.663.566 |\n| Tiền đang chuyển | 126.468.000 | 19.186.000 |\n| Các khoản tương đương tiền | 750.000.000 | 750.000.000 |\n| Tổng | 255.576.064.873 | 501.386.999.566 |\n\nCác khoản tương đương tiền phản ánh các khoản tiền gửi có kỳ hạn tại các ngân hàng với thời gian đáo hạn không quá 3 tháng kể từ ngày gửi.\n\n5. Phải thu khách hàng\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|--------------------------|------------------|------------------|\n| Các bên khác | 1.793.607.143.616 | 1.554.983.637.140 |\n| Các bên liên quan | 8.365.658.672.353 | 5.861.211.828.674 |\n| Tổng | 10.159.265.815.969 | 7.416.195.465.814 |\n\nPhải thu khách hàng là bên liên quan chi tiết\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------|------------------|------------------|\n| Công ty TNHH MTV Tôn Hoa Sen | 1.667.698.026.351 | 946.241.475.038 |\n| Công ty Cổ phần Nhựa Hoa Sen | 280.628.910.147 | 431.164.423.550 |\n| Công ty TNHH MTV Hoa Sen Bình Định | 1.857.591 | - |\n| Công Ty TNHH MTV Hoa Sen Nghệ An | 2.666.129.492.628 | 1.372.936.869.815 |\n| Công Ty TNHH MTV Hoa Sen Nhơn Hội - Bình Định | 2.453.260.088.566 | 2.215.264.273.972 |\n| Công Ty TNHH MTV Hoa Sen Phú Mỹ | 1.104.432.315.165 | 895.604.786.299 |\n| Công ty TNHH Tập đoàn Đầu Tư Hoa Sen | 193.507.981.905 | - |\n| Tổng | 8.365.658.672.353 | 5.861.211.828.674 |\n\nKhoản phải thu thương mại từ các bên liên quan không có đảm bảo, không hưởng lãi và có thời hạn hoàn trả là 365 ngày kể từ ngày ghi trên hóa đơn cho các công ty con và 45 ngày kể từ ngày ghi trên hóa đơn cho công ty thuộc sở hữu của Chủ tịch Công ty.\n\n6. Trả trước cho người bán\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|--------------------------|------------------|------------------|\n| Các bên khác | 51.494.912.802 | 26.549.614.993 |\n| Các bên liên quan | 852.449.730 | - |\n| Tổng | 52.347.362.532 | 26.549.614.993 |",
+    "questions": [
+      {
+        "question": "Tổng tiền mặt của Tập đoàn Hoa Sen tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản tương đương tiền có thời gian đáo hạn tối đa là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng phải thu khách hàng cuối kỳ với đầu kỳ. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản phải thu thương mại từ các bên liên quan có đặc điểm gì về lãi suất và thời hạn hoàn trả?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của khoản mục 'Tiền và các khoản tương đương tiền' và ý nghĩa của nó đối với thanh khoản công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tín dụng đối với công ty dựa trên khoản phải thu khách hàng từ các bên liên quan.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Các khoản phải thu khác và Hàng tồn kho\nLoại nội dung: Cả hai\n7. Phải thu khác\na. Phải thu ngắn hạn khác\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|-----------------------------------------------|------------------|------------------|\n| Tạm ứng để mua đất | 58.438.165.400 | 58.438.165.400 |\n| Đặt cọc thuê mặt bằng và ký quỹ, ký cược ngắn hạn | 27.871.930.086 | 32.922.961.831 |\n| Tạm ứng cho nhân viên | 34.009.803.747 | 25.152.379.411 |\n| Phải thu từ chuyển nhượng quyền sử dụng đất | 12.818.775.000 | 12.818.775.000 |\n| Tài sản thiếu chờ xử lý | - | 10.345.169.668 |\n| Phải thu về cổ tức và lợi nhuận được chia | - | 569.044.918.051 |\n| Khoản ký quỹ LC chờ thanh toán tại NH Ngoại Thương | 144.324.780.746 | - |\n| Phải thu lãi tiền gửi và cho vay | 3.142.003.347 | - |\n| Các khoản phải thu khác | 9.410.170.370 | 1.727.525.103 |\n| Tổng | 145.690.847.950 | 854.774.675.210 |\n\nPhải thu ngắn hạn khác từ các bên liên quan chi tiết\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------|------------------|------------------|\n| Công ty TNHH MTV Tôn Hoa Sen | - | 79.701.680.202 |\n| Công ty Cổ phần Nhựa Hoa Sen | 3.116.573.210 | - |\n| Công ty TNHH MTV Hoa Sen Bình Định | - | 14.943.615.661 |\n| Công Ty TNHH MTV Hoa Sen Nghệ An | - | 452.606.481.613 |\n| Công Ty TNHH MTV Hoa Sen Nhơn Hội - Bình Định | - | - |\n| Công Ty TNHH MTV Hoa Sen Hà Nam | - | 21.793.140.575 |\n| Công Ty Cổ Phần Hoa Sen Yên Bái | 25.430.137 | - |\n| Công Ty TNHH Tập đoàn Đầu Tư Hoa Sen | 940.000.000 | 1.010.000.000 |\n| Ông Hoàng Đức Huy - Phó Tổng Giám đốc | 45.462.225.000 | 45.462.225.000 |\n| Tổng | 49.544.228.347 | 615.517.143.051 |\n\nCác khoản phải thu phi thương mại từ bên liên quan không có đảm bảo, không hưởng lãi và được hoàn trả khi có yêu cầu.\n\nb. Phải thu dài hạn khác\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|--------------------------|------------------|------------------|\n| Đặt cọc thuê mặt bằng | 105.056.045.140 | 127.931.524.246 |\n| Các khoản khác | 13.000.000.000 | 13.000.000.000 |\n| Tổng | 118.056.045.140 | 140.931.524.246 |\n\n8. Hàng tồn kho\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|-----------------------------------|------------------|------------------|\n| Hàng mua đang đi trên đường | 1.091.445.845.383 | 1.158.658.126.605 |\n| Nguyên liệu, vật liệu | 1.748.615.635.829 | 435.595.761.803 |\n| Công cụ, dụng cụ | 140.631.830.952 | 150.718.345.305 |\n| Chi phí sản xuất, kinh doanh dở dang | - | - |\n| Thành phẩm | 1.575.426.812.384 | 871.628.051.071 |\n| Hàng hóa | 1.249.595.335.512 | 1.259.899.785.317 |\n| Tổng | 5.805.715.460.060 | 3.876.500.070.101 |\n| Dự phòng giảm giá hàng tồn kho | 143.416.744.314 | 127.008.960.824 |\n| Giá trị thuần | 5.662.298.715.746 | 3.749.491.109.277 |",
+    "questions": [
+      {
+        "question": "Tổng phải thu ngắn hạn khác của Tập đoàn Hoa Sen tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị thuần của hàng tồn kho cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải thu về cổ tức và lợi nhuận được chia cuối kỳ với đầu kỳ. Nêu nhận xét.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự thay đổi trong cơ cấu hàng tồn kho giữa Nguyên liệu, vật liệu và Thành phẩm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro tiềm ẩn khi các khoản phải thu phi thương mại từ bên liên quan không có đảm bảo và không hưởng lãi.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Dự báo tác động của sự tăng trưởng mạnh của Nguyên liệu, vật liệu trong hàng tồn kho đối với hoạt động sản xuất của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Phải thu về cho vay và Tài sản cố định hữu hình\nLoại nội dung: Cả hai\n9. Phải thu về cho vay\na. Phải thu về cho vay ngắn hạn\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|----------------------------------------|------------------|------------------|\n| Công ty Cổ phần Nhựa Hoa Sen - Công ty con | 172.500.000.000 | 118.500.000.000 |\n| Tổng | 172.500.000.000 | 118.500.000.000 |\n\nb. Phải thu về cho vay dài hạn\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|--------------------------------------|------------------|------------------|\n| Công ty Cổ phần Hoa Sen Yên Bái - Công ty con | 1.500.000.000 | - |\n| Tổng | 1.500.000.000 | - |\n\n10. Tài sản cố định hữu hình\n| Chỉ tiêu | Nhà cửa, vật kiến trúc (VND) | Máy móc thiết bị (VND) | Phương tiện vận chuyển (VND) | Thiết bị dụng cụ quản lý (VND) | Tài sản khác (VND) | Tổng cộng (VND) |\n|---------------------------|----------------------------|-----------------------|------------------------------|-------------------------------|--------------------|--------------------|\n| Nguyên giá | | | | | | |\n| Số dư đầu kỳ 01/10/2023 | 857.057.288.549 | 2.587.589.173.611 | 323.870.381.174 | 89.735.166.898 | 30.350.479.293 | 3.888.602.489.525 |\n| Mua trong kỳ | - | 2.346.396.650 | 3.441.215.838 | - | - | 5.787.612.488 |\n| Chuyển từ đầu tư XDCB dở dang | 8.988.425.522 | 462.548.176 | - | - | - | 9.450.973.698 |\n| Thanh lý, nhượng bán | - | (47.826.550.413) | (3.046.614.909) | - | - | (50.873.165.322) |\n| Xóa sổ | - | (1.363.863.210) | - | - | - | (1.363.863.210) |\n| Số dư cuối kỳ 31/03/2024 | 866.045.714.071 | 2.541.207.704.814 | 324.264.982.103 | 89.735.166.898 | 30.350.479.293 | 3.851.604.047.179 |",
+    "questions": [
+      {
+        "question": "Khoản phải thu về cho vay ngắn hạn của Công ty Cổ phần Nhựa Hoa Sen tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải thu về cho vay dài hạn cuối kỳ với đầu kỳ. Nêu nhận xét về sự thay đổi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Những loại tài sản cố định hữu hình nào có sự tăng giảm về nguyên giá đáng kể nhất trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro của công ty khi cho các công ty con vay ngắn hạn và dài hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các hoạt động mua, chuyển từ XDCB dở dang, thanh lý, nhượng bán và xóa sổ đến tổng nguyên giá tài sản cố định hữu hình.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Khấu hao TSCĐ hữu hình và TSCĐ vô hình\nLoại nội dung: Cả hai\n10. Tài sản cố định hữu hình (Tiếp theo)\n| Chỉ tiêu | Nhà cửa, vật kiến trúc (VND) | Máy móc thiết bị (VND) | Phương tiện vận chuyển (VND) | Thiết bị dụng cụ quản lý (VND) | Tài sản khác (VND) | Tổng cộng (VND) |\n|---------------------------|----------------------------|-----------------------|------------------------------|-------------------------------|--------------------|--------------------|\n| Khấu hao | | | | | | |\n| Số dư đầu kỳ 01/10/2023 | 391.113.290.220 | 2.291.669.826.248 | 266.252.799.840 | 67.385.906.106 | 23.437.431.667 | 3.039.859.254.081 |\n| Khấu hao trong kỳ | 39.388.692.686 | 60.956.207.673 | 12.060.766.223 | 4.150.495.527 | 871.662.116 | 117.427.824.225 |\n| Thanh lý, nhượng bán | - | (37.009.586.120) | (3.028.024.332) | - | - | (40.037.610.452) |\n| Xóa sổ | - | (1.363.863.210) | - | - | - | (1.363.863.210) |\n| Số dư cuối kỳ 31/03/2024 | 430.501.982.906 | 2.314.252.584.591 | 275.285.541.731 | 71.536.401.633 | 24.309.093.783 | 3.115.885.604.644 |\n| Giá trị còn lại | | | | | | |\n| Số dư đầu kỳ | 465.943.998.329 | 295.919.347.363 | 57.617.581.334 | 22.349.260.792 | 6.913.047.626 | 848.743.235.444 |\n| Số dư cuối kỳ | 435.543.731.165 | 226.955.120.223 | 48.979.440.372 | 18.198.765.265 | 6.041.385.510 | 735.718.442.535 |\n\n11. Tài sản cố định vô hình\n| Chỉ tiêu | Quyền sử dụng đất (VND) | Phần mềm máy tính (VND) | Tổng cộng (VND) |\n|---------------------------|-------------------------|--------------------------|-----------------|\n| Nguyên giá | | | |\n| Số dư đầu kỳ 01/10/2023 | 200.348.707.708 | 54.210.506.802 | 254.559.214.510 |\n| Chuyển từ đầu tư XDCB dở dang | - | 4.234.462.700 | 4.234.462.700 |\n| Số dư cuối kỳ 31/03/2024 | 200.348.707.708 | 58.444.969.502 | 258.793.677.210 |\n| Khấu hao | | | |\n| Số dư đầu kỳ 01/10/2023 | 36.528.851.604 | 50.460.596.331 | 86.989.447.935 |\n| Khấu hao trong kỳ | 1.276.358.485 | 2.002.317.596 | 3.278.676.081 |\n| Số dư cuối kỳ 31/03/2024 | 37.805.210.089 | 52.462.913.927 | 90.268.124.016 |\n| Giá trị còn lại | | | |\n| Số dư đầu kỳ | 163.819.856.104 | 3.749.910.471 | 167.569.766.575 |\n| Số dư cuối kỳ | 162.543.497.619 | 5.982.055.575 | 168.525.553.194 |",
+    "questions": [
+      {
+        "question": "Tổng khấu hao lũy kế của tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định vô hình cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khấu hao trong kỳ của Máy móc thiết bị và Nhà cửa, vật kiến trúc. Khoản nào lớn hơn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự thay đổi trong giá trị còn lại của quyền sử dụng đất và phần mềm máy tính từ đầu kỳ đến cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả sử dụng tài sản cố định dựa trên sự biến động của nguyên giá và khấu hao lũy kế.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc khấu hao tài sản cố định hữu hình đối với lợi nhuận của công ty trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Xây dựng cơ bản dở dang và Các khoản đầu tư tài chính\nLoại nội dung: Cả hai\n12. Xây dựng cơ bản dở dang\nCác công trình xây dựng cơ bản dở dang lớn như sau:\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|-----------------------------------------------|------------------|------------------|\n| Máy móc, thiết bị chờ lắp đặt | 1.164.543.893 | 82.250.414 |\n| Phần mềm máy tính chờ lắp đặt | 9.040.000.000 | 12.390.962.700 |\n| Chi phí xây dựng, nâng cấp Hoa Sen Home | 4.746.240.950 | 12.111.342.101 |\n| Sửa chữa lớn tài sản cố định | 887.774.362 | 272.693.086 |\n| Các công trình khác | 791.043.878 | 2.323.254.436 |\n| Tổng | 16.629.603.083 | 27.180.502.737 |\n\n13. Các khoản đầu tư tài chính\na. Đầu tư nắm giữ đến ngày đáo hạn\nĐầu tư nắm giữ đến ngày đáo hạn - ngắn hạn\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|--------------------------|------------------|------------------|\n| Tiền gửi có kỳ hạn | 20.560.958.904 | 20.560.958.904 |\n| Tổng | 20.560.958.904 | 20.560.958.904 |\n\nĐầu tư nắm giữ đến ngày đáo hạn - ngắn hạn phản ánh các khoản tiền gửi có kỳ hạn tại các ngân hàng với thời gian đáo hạn trên 3 tháng kể từ ngày gửi và dưới 12 tháng kể từ ngày cuối kỳ.\n\nĐầu tư nắm giữ đến ngày đáo hạn - dài hạn\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------------------|------------------|------------------|\n| Ngân Hàng Nông Nghiệp Và Phát Triển Nông Thôn Việt Nam, Chi Nhánh Sài Gòn | 1.000.000.000 | 1.000.000.000 |\n| Tổng | 1.000.000.000 | 1.000.000.000 |\n\nTrái phiếu có kỳ hạn gốc là 7 năm, phát hành bằng VND và hưởng lãi suất bình quân lãi suất tiền gửi tiết kiệm cá nhân bằng Đồng Việt Nam kỳ hạn 12 tháng của 4 ngân hàng Agribank, Vietcombank, Vietinbank và BIDV cộng biên độ hàng năm là 1,2%.\n\nb. Đầu tư tài chính dài hạn\nĐầu tư vào các công ty con\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|-------------------------------------------|------------------|------------------|\n| Công ty TNHH MTV Tôn Hoa Sen | 280.000.000.000 | 280.000.000.000 |\n| Công ty Cổ Phần Nhựa Hoa Sen | 299.850.000.000 | 299.850.000.000 |\n| Công ty TNHH MTV Hoa Sen Bình Định | 105.000.000.000 | 105.000.000.000 |\n| Công ty TNHH MTV Hoa Sen Nghệ An | 1.100.000.000.000 | 1.100.000.000.000 |\n| Công ty TNHH MTV Hoa Sen Nhơn Hội - Bình Định | 770.000.000.000 | 770.000.000.000 |\n| Công ty TNHH MTV Hoa Sen Hà Nam | 200.000.000.000 | 200.000.000.000 |\n| Công ty Cổ Phần Hoa Sen Yên Bái | 404.000.000.000 | 404.000.000.000 |\n| Công ty TNHH MTV Hoa Sen Phú Mỹ | 380.000.000.000 | 380.000.000.000 |\n| Công ty TNHH MTV Vật Liệu Xây Dựng Hoa Sen Yên Bái | 50.000.000.000 | 50.000.000.000 |\n| Tổng | 3.588.850.000.000 | 3.588.850.000.000 |",
+    "questions": [
+      {
+        "question": "Tổng giá trị xây dựng cơ bản dở dang cuối kỳ của Tập đoàn Hoa Sen là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản đầu tư nắm giữ đến ngày đáo hạn dài hạn có giá trị là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí xây dựng, nâng cấp Hoa Sen Home cuối kỳ với đầu kỳ. Nêu nhận xét.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đặc điểm của trái phiếu dài hạn mà công ty đang nắm giữ là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hoàn thành các dự án xây dựng cơ bản dở dang trong kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược đầu tư của công ty vào các công ty con và tác động của nó đến cơ cấu tài chính tổng thể.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Các khoản đầu tư tài chính (Kết thúc), Chi phí trả trước và Tài sản thuế TNDN hoãn lại\nLoại nội dung: Cả hai\n13. Các khoản đầu tư tài chính (Tiếp theo)\nĐầu tư vào các công ty liên kết\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------|------------------|------------------|\n| Công ty Cổ phần Cảng Quốc tế Hoa Sen | - | - |\n| Công ty Cổ phần Hoa Sen Sài Gòn | - | - |\n\n- Công ty Cổ phần Cảng Quốc tế Hoa Sen được thành lập theo Giấy Chứng Nhận Đăng Ký Doanh Nghiệp số 3502399898 do Sở Kế Hoạch và Đầu Tư tỉnh Bà Rịa Vũng Tàu cấp ngày 5 tháng 7 năm 2019, trong đó Công ty nắm giữ 49% quyền sở hữu. Tại ngày 30 tháng 09 năm 2023, Công ty vẫn chưa góp vốn vào Công ty Cổ phần Cảng Quốc tế Hoa Sen.\n- Công ty Cổ phần Hoa Sen Sài Gòn được thành lập theo Giấy Chứng Nhận Đăng Ký Doanh Nghiệp số 0318310211 do Sở Kế Hoạch và Đầu Tư thành phố Hồ Chí Minh cấp ngày 21 tháng 2 năm 2024, trong đó Công ty nắm giữ 40% quyền sở hữu. Tại ngày 31 tháng 03 năm 2024, Công ty vẫn chưa góp vốn vào Công ty Cổ phần Hoa Sen Sài Gòn.\n\n14. Chi phí trả trước\na. Chi phí trả trước ngắn hạn\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|------------------------------------|------------------|------------------|\n| Chi phí quảng cáo | 3.589.834.236 | 12.053.314.299 |\n| Chi phí thuê nhà xưởng, MMTB | 72.691.089.575 | 64.417.050.951 |\n| Chi phí công cụ, dụng cụ | 5.800.274.894 | 7.097.532.603 |\n| Chi phí tư vấn | - | 420.243.334 |\n| Chi phí bảo hiểm | 572.590.050 | 1.665.144.665 |\n| Chi phí sửa chữa | 2.646.562.982 | 3.277.044.736 |\n| Khác | 3.819.109.734 | 7.552.732.377 |\n| Tổng | 89.119.461.471 | 96.483.062.965 |\n\nb. Chi phí trả trước dài hạn\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|------------------------------------|------------------|------------------|\n| Chi phí công cụ, dụng cụ | 18.234.717.181 | 23.936.086.329 |\n| Chi phí làm bảng hiệu | 21.683.967.806 | 29.506.341.258 |\n| Chi phí sửa chữa | 24.626.049.565 | 29.666.238.371 |\n| Chi phí thuê nhà xưởng, MMTB | 6.228.457.756 | 7.087.889.100 |\n| Khác | 7.703.862.358 | 10.231.762.246 |\n| Tổng | 78.477.054.666 | 100.428.317.304 |\n\n15. Tài sản thuế thu nhập hoãn lại\n| Chỉ tiêu | Thuế suất | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------------------|------------|------------------|------------------|\n| Tài sản thuế thu nhập hoãn lại ghi nhận đối với: | | | |\n| Lợi nhuận chưa thực hiện | 20% | 12.688.580.997 | 5.565.058.173 |\n| Chi phí trích trước | 20% | 30.110.282.980 | 14.944.363.399 |\n| Các khoản dự phòng | 20% | 31.453.419.383 | 30.261.816.989 |\n| Chênh lệch tỷ giá hối đoái chưa thực hiện | 20% | 903.832.523 | 483.000.383 |\n| Tổng | | 73.348.450.837 | 50.288.238.178 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước ngắn hạn của Tập đoàn Hoa Sen tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản thuế thu nhập hoãn lại ghi nhận đối với Lợi nhuận chưa thực hiện cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu lý do Công ty chưa góp vốn vào Công ty Cổ phần Cảng Quốc tế Hoa Sen và Công ty Cổ phần Hoa Sen Sài Gòn.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh sự biến động của Chi phí quảng cáo và Chi phí thuê nhà xưởng, MMTB trong chi phí trả trước ngắn hạn.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá các rủi ro tiềm ẩn khi công ty có các khoản đầu tư vào công ty liên kết nhưng chưa góp vốn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng Tài sản thuế thu nhập hoãn lại đối với lợi nhuận tương lai của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Phải trả người bán và Người mua trả tiền trước\nLoại nội dung: Cả hai\n16. Phải trả người bán\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|--------------------------|------------------|------------------|\n| Các bên khác | 3.456.493.108.061 | 2.605.167.809.280 |\n| Các bên liên quan | 686.133.040.878 | 725.315.423.334 |\n| Tổng | 4.142.626.148.939 | 3.330.483.232.614 |\n\nPhải trả người bán là bên liên quan chi tiết\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------|------------------|------------------|\n| Công ty Cổ phần Nhựa Hoa Sen | 1.534.452.903 | 505.888.267 |\n| Công ty TNHH MTV Hoa Sen Bình Định | 314.768.493.057 | 334.337.182.195 |\n| Công Ty TNHH MTV Hoa Sen Nhơn Hội - Bình Định | 249.757.918.225 | 253.940.389.459 |\n| Công Ty TNHH MTV Hoa Sen Hà Nam | 93.209.840.502 | 111.279.330.138 |\n| Công Ty TNHH MTV Vật Liệu Xây Dựng Hoa Sen Yên Bái | 26.610.178.621 | 20.317.701.360 |\n| Công Ty TNHH Tập đoàn Đầu Tư Hoa Sen | 244.200.000 | 4.927.051.994 |\n| Công ty TNHH MTV Đầu Tư Hoa Sen Nghệ An | 7.957.570 | 7.879.921 |\n| Tổng | 686.133.040.878 | 725.315.423.334 |\n\nKhoản phải trả thương mại đối với các bên liên quan không được đảm bảo, không chịu lãi và phải trả trong vòng 365 ngày kể từ ngày ghi trên hóa đơn đối với các công ty con và 45 ngày đối với các khoản phải trả công ty thuộc sở hữu của Chủ tịch Công ty.\n\n17. Người mua trả tiền trước\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|--------------------------|------------------|------------------|\n| Các bên khác | 230.873.083.839 | 121.002.749.172 |\n| Các bên liên quan | 37.370.168.000 | 8.954.586.594 |\n| Tổng | 268.243.251.839 | 129.957.335.766 |\n\nNgười mua trả tiền trước là bên liên quan chi tiết\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------|------------------|------------------|\n| Công Ty TNHH Tập đoàn Đầu Tư Hoa Sen | 37.370.168.000 | 8.954.586.594 |\n| Tổng | 37.370.168.000 | 8.954.586.594 |",
+    "questions": [
+      {
+        "question": "Tổng khoản phải trả người bán của Tập đoàn Hoa Sen tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng khoản người mua trả tiền trước cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải trả người bán từ các bên liên quan cuối kỳ với đầu kỳ. Nêu nhận xét về sự thay đổi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản phải trả thương mại đối với các công ty con có thời hạn thanh toán là bao nhiêu ngày?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của các khoản người mua trả tiền trước từ các bên liên quan và ý nghĩa của nó.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh toán và khả năng đàm phán của công ty dựa trên cơ cấu phải trả người bán.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Thuế và các khoản phải nộp Nhà nước, Chi phí phải trả và Phải trả ngắn hạn khác\nLoại nội dung: Cả hai\n18. Thuế và các khoản phải nộp Nhà nước\na. Thuế phải nộp Nhà nước\n| Chỉ tiêu | Đầu kỳ 01/10/2023 (VNĐ) | Số phát sinh tăng trong kỳ (VNĐ) | Số đã thực nộp (VNĐ) | Số đã cấn trừ (VNĐ) | Phân loại lại (VNĐ) | Cuối kỳ 31/03/2024 (VNĐ) |\n|--------------------------------------|--------------------------|---------------------------------|--------------------|--------------------|-------------------|--------------------------|\n| Thuế giá trị gia tăng hàng nhập khẩu | 142.077.492.529 | 727.310.673.890 | 822.336.916.715 | - | - | 47.051.249.704 |\n| Thuế giá trị gia tăng đầu ra | 761.322.753 | 2.564.915.561.290 | 13.564.520.162 | 2.535.488.557.947 | - | 16.623.805.934 |\n| Thuế xuất, nhập khẩu | 31.974.921 | 3.471.223.495 | 3.503.198.416 | - | - | - |\n| Thuế thu nhập doanh nghiệp | - | 99.693.200 | - | - | 99.693.200 | - |\n| Thuế thu nhập cá nhân | 1.905.541.818 | 17.237.225.602 | 19.063.730.900 | 354.937.202 | - | 433.973.722 |\n| Các loại thuế khác | 729.254.623 | 9.535.645.184 | 10.264.899.807 | - | - | - |\n| Tổng | 145.505.586.644 | 3.322.570.022.661 | 868.733.266.000 | 2.535.488.557.947 | 255.244.002 | 64.109.029.360 |\n\nb. Thuế giá trị gia tăng được khấu trừ\n| Chỉ tiêu | 01/10/2023 (VNĐ) | Số phát sinh tăng (VNĐ) | Số đã cấn trừ (VNĐ) | Số được hoàn (VNĐ) | 31/03/2024 (VNĐ) |\n|-----------------------------------|------------------|-----------------------|--------------------|--------------------|------------------|\n| Thuế giá trị gia tăng được khấu trừ | 285.106.020.138 | 3.547.433.066.177 | 2.535.488.557.947 | 496.858.412.147 | 800.192.116.221 |\n\nc. Thuế phải thu Nhà nước\n| Chỉ tiêu | Đầu kỳ 01/10/2023 (VNĐ) | Số phát sinh tăng (VNĐ) | Phân loại lại (VNĐ) | Cuối kỳ 31/03/2024 (VNĐ) |\n|-----------------------------------|--------------------------|--------------------------|---------------------|--------------------------|\n| Thuế thu nhập doanh nghiệp | 128.498.372.448 | - | 99.693.200 | 128.398.679.248 |\n| Thuế thu nhập cá nhân | 32.213.344 | - | 354.937.202 | 387.150.546 |\n| Các loại thuế khác | - | - | - | - |\n| Tổng | 128.530.585.792 | - | 255.244.002 | 128.785.829.794 |\n\n19. Chi phí phải trả\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|------------------------------------|------------------|------------------|\n| Chi phí lương và thưởng | 37.127.516.500 | 644.609.213 |\n| Chi phí lãi vay | 2.679.357.884 | 1.669.015.121 |\n| Chi phí điện | 11.775.096.564 | 7.929.241.402 |\n| Xây dựng Cơ bản | 2.004.568.119 | 2.004.568.119 |\n| Chi phí vận chuyển | 33.884.514.350 | 2.197.954.978 |\n| Chứng thư bảo lãnh | 4.349.463.325 | 2.457.188.443 |\n| Trích trước chiết khấu thương mại | 55.638.319.984 | 48.754.012.121 |\n| Chi phí khác | 1.818.130.500 | 1.027.438.633 |\n| Tổng | 149.276.967.226 | 66.684.028.030 |\n\n20. Phải trả ngắn hạn khác\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|------------------------------------------|------------------|------------------|\n| Cổ tức phải trả | 3.474.831.777 | 3.541.015.977 |\n| BHXH, BHYT, BHTN và KPCĐ | 1.689.818.520 | 1.723.454.640 |\n| Phải trả cho các bên liên quan | 2.065.167.971 | 185.203.980 |\n| Nhận ký quỹ, ký cược ngắn hạn | 5.528.539.004 | 5.674.230.502 |\n| Chiết khấu bộ chứng từ xuất khẩu phải trả | 5.517.429.625 | 28.135.471.782 |\n| Các khoản phải trả, phải nộp khác | 5.305.690.658 | 2.863.093.406 |\n| Tổng | 23.581.477.555 | 42.122.470.287 |\n\nPhải trả ngắn hạn khác cho các bên liên quan\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|----------------------------------------------------|------------------|------------------|\n| Công ty TNHH MTV Hoa Sen Bình Định | 1.093.022.842 | - |\n| Công Ty TNHH MTV Hoa Sen Hà Nam | 53.191.649 | - |\n| Công Ty TNHH MTV Vật Liệu Xây Dựng Hoa Sen Yên Bái | 918.953.480 | 185.203.980 |\n| Tổng | 2.065.167.971 | 185.203.980 |\n\nKhoản phải trả khác cho bên liên quan không được đảm bảo, không chịu lãi suất và phải hoàn trả khi được yêu cầu.",
+    "questions": [
+      {
+        "question": "Tổng Thuế phải nộp Nhà nước cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản chi phí lương và thưởng phải trả tại ngày 31/03/2024 là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Thuế GTGT được khấu trừ cuối kỳ với đầu kỳ. Nêu nhận xét về sự thay đổi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các khoản phải trả ngắn hạn khác nào có sự biến động lớn nhất giữa cuối kỳ và đầu kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tuân thủ nghĩa vụ thuế của công ty dựa trên số liệu Thuế phải nộp Nhà nước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính của công ty khi khoản phải trả ngắn hạn khác cho bên liên quan không được đảm bảo.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Dự phòng phải trả dài hạn, Vay và nợ thuê tài chính ngắn hạn và Thay đổi vốn chủ sở hữu\nLoại nội dung: Cả hai\n21. Dự phòng phải trả dài hạn\nDự phòng phải trả dài hạn phản ánh dự phòng trợ cấp thôi việc.\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------|------------------|------------------|\n| Dự phòng trợ cấp thôi việc | 13.421.714.315 | 13.526.316.167 |\n| Tổng | 13.421.714.315 | 13.526.316.167 |\n\n22. Vay và nợ thuê tài chính ngắn hạn\n| Chỉ tiêu | 31/03/2024 (VNĐ) | 01/10/2023 (VNĐ) |\n|---------------------------------------------------------|------------------|------------------|\n| Ngân Hàng TMCP Ngoại Thương Việt Nam - Chi Nhánh Nam Bình Dương | 1.727.201.049.538 | 1.100.416.059.001 |\n| Ngân Hàng TMCP Công Thương Việt Nam, Chi Nhánh KCN Bình Dương | 3.246.612.518.650 | 1.625.599.905.996 |\n| Ngân Hàng TNHH Một Thành Viên HSBC Việt Nam | 374.825.026.417 | - |\n| Ngân Hàng TMCP Đầu Tư Và Phát Triển Việt Nam, Chi Nhánh Sở Giao Dịch 2 | 358.746.002.288 | - |\n| Ngân Hàng TNHH Một Thành Viên United Overseas Bank Việt Nam | 146.311.076.748 | - |\n| Ngân Hàng Đại Chúng TNHH Kasikornbank - Chi Nhánh Thành Phố Hồ Chí Minh | 240.768.168.761 | 177.770.837.441 |\n| Tổng | 6.094.463.842.402 | 2.903.786.802.438 |\n\nTình hình tăng giảm các khoản vay trong kỳ như sau:\n| Chỉ tiêu | Số tiền (VNĐ) |\n|-----------------------------------|------------------|\n| Vào ngày 01 tháng 10 năm 2023 | 2.903.786.802.438 |\n| Tiền thu từ đi vay | 16.352.587.350.750 |\n| Tiền chi trả nợ gốc vay | (13.161.910.310.786) |\n| Chênh lệch tỷ giá | - |\n| Vào ngày 31 tháng 03 năm 2024 | 6.094.463.842.402 |\n\n23. Thay đổi vốn chủ sở hữu\n| Chỉ tiêu | Vốn cổ phần (VNĐ) | Thặng dư vốn cổ phần (VNĐ) | Cổ phiếu quỹ (VNĐ) | Quỹ khác thuộc vốn chủ sở hữu (VNĐ) | Lợi nhuận sau thuế chưa phân phối (VNĐ) | Cộng (VNĐ) |\n|----------------------------------------------|--------------------|-----------------------------|--------------------|--------------------------------------|------------------------------------------|--------------------|\n| Số dư đầu năm trước 01/10/2022 | 5.980.549.860.000 | 157.292.539.068 | - | 187.499.009.876 | 4.841.786.518.282 | 11.167.127.927.226 |\n| Lợi nhuận thuần trong kỳ | - | - | - | - | 248.288.982.544 | 248.288.982.544 |\n| Trích lập quỹ khác thuộc vốn chủ sở hữu | - | - | - | 13.823.773.157 | - | 13.823.773.157 |\n| Trích lập quỹ khen thưởng, phúc lợi | - | - | - | - | 10.053.653.206 | 10.053.653.206 |\n| Sử dụng quỹ khác thuộc vốn CSH | - | - | - | (123.412.286.089) | - | (123.412.286.089) |\n| Chi cổ tức bằng cổ phiếu | 179.273.230.000 | - | - | - | - | 179.273.230.000 |\n| Số dư cuối năm trước 30/09/2023 | 6.159.823.090.000 | 157.292.539.068 | - | 77.910.496.944 | 4.886.924.844.463 | 11.281.950.970.475 |\n| Số dư đầu kỳ này 01/10/2023 | 6.159.823.090.000 | 157.292.539.068 | - | 77.910.496.944 | 4.886.924.844.463 | 11.281.950.970.475 |\n| Lợi nhuận thuần trong kỳ | - | - | - | - | 174.430.732.282 | 174.430.732.282 |\n| Trích lập quỹ khác thuộc vốn chủ sở hữu | - | - | - | 7.334.826.767 | - | 7.334.826.767 |\n| Trích lập quỹ khen thưởng, phúc lợi | - | - | - | - | 5.334.419.468 | 5.334.419.468 |\n| Sử dụng quỹ khác thuộc vốn CSH | - | - | - | (37.334.429.880) | - | (37.334.429.880) |\n| Số dư cuối kỳ này 31/03/2024 | 6.159.823.090.000 | 157.292.539.068 | - | 47.910.893.831 | 5.048.686.330.510 | 11.413.712.853.409 |",
+    "questions": [
+      {
+        "question": "Dự phòng trợ cấp thôi việc tại ngày 31/03/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Trong kỳ này, công ty đã thu từ đi vay và chi trả nợ gốc vay bao nhiêu tiền?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận sau thuế chưa phân phối đầu kỳ này và cuối kỳ này. Nêu nhận xét.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng thanh toán nợ ngắn hạn của công ty dựa trên số liệu Vay và nợ thuê tài chính ngắn hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc sử dụng quỹ khác thuộc vốn chủ sở hữu đến cơ cấu vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024, Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Vốn cổ phần, Các khoản mục ngoài bảng cân đối kế toán, Doanh thu bán hàng và cung cấp dịch vụ\nLoại nội dung: Cả hai\n24. Vốn cổ phần\nVốn cổ phần được duyệt và đã phát hành của Công ty như sau:\n| Chỉ tiêu | Số cổ phiếu (CP) | 31/03/2024 (VNĐ) | Số cổ phiếu (CP) | 01/10/2023 (VNĐ) |\n|-------------------------------------|------------------|------------------|------------------|------------------|\n| Vốn cổ phần được duyệt và đã phát hành | | | | |\n| Cổ phiếu phổ thông | 615.982.309 | 6.159.823.090.000 | 615.982.309 | 6.159.823.090.000 |\n| Cổ phiếu quỹ | - | - | - | - |\n| Số cổ phiếu đang lưu hành | | | | |\n| Cổ phiếu phổ thông | 615.982.309 | 6.159.823.090.000 | 615.982.309 | 6.159.823.090.000 |\n\nTất cả các cổ phiếu phổ thông có mệnh giá 10.000 VNĐ. Mỗi cổ phiếu phổ thông tương ứng với một phiếu biểu quyết tại các cuộc họp cổ đông của Công ty. Các cổ đông được nhận cổ tức mà Công ty công bố vào từng thời điểm. Tất cả cổ phiếu phổ thông đều có thứ tự ưu tiên như nhau đối với tài sản còn lại của Công ty. Các quyền lợi của các cổ phiếu đã được Công ty mua lại đều bị tạm ngừng cho tới khi chúng được phát hành lại.\n\nBiến động của vốn cổ phần trong kỳ như sau:\n| Chỉ tiêu | Số lượng cổ phiếu (CP) | 31/03/2024 (VNĐ) | Số lượng cổ phiếu (CP) | 01/10/2023 (VNĐ) |\n|---------------------------------|-------------------------|------------------|-------------------------|------------------|\n| Số dư đầu kỳ | 615.982.309 | 6.159.823.090.000 | 598.054.986 | 5.980.549.860.000 |\n| Cổ phiếu phát hành để trả cổ tức | - | - | 17.927.323 | 179.273.230.000 |\n| Số dư cuối kỳ | 615.982.309 | 6.159.823.090.000 | 615.982.309 | 6.159.823.090.000 |\n\n25. Các khoản mục ngoài bảng cân đối kế toán\nNgoại tệ các loại\n| Chỉ tiêu | Ngoại tệ | Tương đương VNĐ | Ngoại tệ | Tương đương VNĐ |\n|-----------|------------|------------------|------------|------------------|\n| USD | 4.956.589 | 122.280.210.243 | 2.877.534 | 69.399.055.929 |\n| EUR | - | - | - | - |\n| Tổng | | 122.280.210.243 | | 69.399.055.929 |\n\n26. Doanh thu bán hàng và cung cấp dịch vụ\nTổng doanh thu thể hiện tổng giá trị hàng bán, không bao gồm thuế giá trị gia tăng.\n\nDoanh thu thuần bao gồm:\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|--------------------------------------------|--------------------------------------|--------------------------------------|\n| Tổng doanh thu | | |\n| Bán thành phẩm | 4.162.634.733.387 | 3.618.596.496.654 |\n| Bán hàng hóa | 12.848.440.385.821 | 8.381.977.747.562 |\n| Khác | 2.434.750.324 | 1.623.466.151 |\n| Tổng | 17.013.509.869.532 | 12.002.197.710.367 |\n\nTrừ các khoản giảm trừ doanh thu:\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|----------------------------------|--------------------------------------|--------------------------------------|\n| Chiết khấu thương mại | 91.684.168.336 | 45.268.864.636 |\n| Giảm giá hàng bán | 903.690.235 | 6.673.702.647 |\n| Hàng bán bị trả lại | 59.161.977.161 | 1.159.630.707 |\n| Tổng | 151.749.835.732 | 53.102.197.990 |\n\nDoanh thu thuần | 16.861.760.033.800 | 11.949.095.512.377 |\n\n27. Giá vốn hàng bán\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|------------------------------------|--------------------------------------|--------------------------------------|\n| Giá vốn thành phẩm đã bán | 3.737.959.803.063 | 3.136.096.725.018 |\n| Giá vốn hàng hóa đã bán | 12.258.175.052.937 | 8.271.946.000.287 |\n| Giá vốn khác | 286.074.886 | 328.260.902 |\n| Dự phòng giảm giá hàng tồn kho | 16.407.783.490 | 131.745.483.684 |\n| Tổng | 16.012.828.714.376 | 11.276.625.502.523 |",
+    "questions": [
+      {
+        "question": "Mệnh giá mỗi cổ phiếu phổ thông của Tập đoàn Hoa Sen là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong kỳ này là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng doanh thu bán hàng và cung cấp dịch vụ kỳ này với kỳ trước. Nêu nhận xét.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giá trị tương đương VNĐ của USD cuối kỳ là bao nhiêu, và thay đổi như thế nào so với đầu kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của việc kiểm soát giá vốn hàng bán trong kỳ này so với kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản giảm trừ doanh thu đến doanh thu thuần và lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024 (Kỳ này), Từ 01/01/2023 đến 31/03/2023 (Kỳ trước), Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Doanh thu hoạt động tài chính, Chi phí tài chính và Chi phí bán hàng\nLoại nội dung: Bảng\n28. Doanh thu hoạt động tài chính\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|------------------------------------|--------------------------------------|--------------------------------------|\n| Lợi nhuận công ty con chuyển về | - | - |\n| Lãi tiền gửi, tiền cho vay | 1.202.542.578 | 1.034.181.901 |\n| Lãi từ hoạt động đầu tư | - | - |\n| Lãi chênh lệch tỷ giá | 95.342.906.950 | 17.574.210.333 |\n| Lãi chênh lệch tỷ giá cuối kỳ | 4.135.455.725 | 54.266.950.643 |\n| Doanh thu tài chính khác | 2.621.894.753 | 75.342.950 |\n| Tổng | 103.302.800.006 | 72.950.685.827 |\n\n29. Chi phí tài chính\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|--------------------------|--------------------------------------|--------------------------------------|\n| Lãi vay | 28.655.267.274 | 56.283.166.812 |\n| Chênh lệch tỷ giá | 13.457.815.028 | 17.267.539.966 |\n| Chi phí tài chính khác | 70.188.357 | 499.035.892 |\n| Tổng | 42.183.270.659 | 74.049.742.670 |\n\n30. Chi phí bán hàng\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|------------------------------------|--------------------------------------|--------------------------------------|\n| Chi phí nhân viên | 185.630.408.738 | 121.167.042.491 |\n| Chi phí xuất khẩu | 331.781.034.359 | 136.920.371.210 |\n| Chi phí thuê | 44.282.343.203 | 47.067.036.486 |\n| Khấu hao và phân bổ | 40.820.270.062 | 44.410.744.111 |\n| Chi phí quảng cáo | 9.415.508.233 | 16.088.900.908 |\n| Chi phí vận chuyển | 21.443.197.101 | 25.024.154.380 |\n| Chi phí dịch vụ mua ngoài | 16.139.043.497 | 15.990.121.670 |\n| Chi phí khác | 44.766.847.568 | 36.501.200.814 |\n| Tổng | 694.278.652.761 | 443.169.572.070 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu hoạt động tài chính trong kỳ này của Tập đoàn Hoa Sen là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí xuất khẩu kỳ này là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lãi chênh lệch tỷ giá kỳ này với kỳ trước trong doanh thu tài chính. Nêu nhận xét.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản chi phí bán hàng nào có sự tăng trưởng lớn nhất trong kỳ này so với kỳ trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của chi phí lãi vay và chênh lệch tỷ giá đến chi phí tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược bán hàng của công ty dựa trên cơ cấu và biến động của các khoản chi phí bán hàng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024 (Kỳ này), Từ 01/01/2023 đến 31/03/2023 (Kỳ trước), Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Chi phí quản lý doanh nghiệp, Thu nhập khác, Chi phí khác và Thuế thu nhập doanh nghiệp\nLoại nội dung: Bảng\n31. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|------------------------------------|--------------------------------------|--------------------------------------|\n| Chi phí nhân viên | 30.300.351.837 | 20.013.023.110 |\n| Khấu hao và phân bổ | 4.124.898.580 | 7.550.510.784 |\n| Chi phí thuê | 6.718.551.550 | 5.342.993.421 |\n| Chi phí dịch vụ chuyên môn | 186.257.752 | 1.733.795.247 |\n| Chi phí tiếp khách | 3.110.527.981 | 3.697.292.616 |\n| Chi phí công tác | 1.173.372.452 | 2.030.332.267 |\n| Chi phí dịch vụ mua ngoài | 8.539.127.862 | 7.430.338.533 |\n| Chi phí khác | 10.718.842.223 | 7.799.956.746 |\n| Tổng | 64.871.930.237 | 55.598.242.724 |\n\n32. Thu nhập khác\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|-------------------------------|--------------------------------------|--------------------------------------|\n| Thanh lý, nhượng bán TSCĐ | 7.632.961.309 | 3.290.951.081 |\n| Thu từ bán phế liệu, công cụ dụng cụ | 1.030.494.759 | 1.041.192.451 |\n| Thu bồi thường | 301.390.565 | 20.596.721.881 |\n| Các khoản khác | 1.555.392.683 | 3.531.087.385 |\n| Tổng | 10.520.239.316 | 28.459.952.798 |\n\n33. Chi phí khác\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|-------------------|--------------------------------------|--------------------------------------|\n| Chi phí từ thiện | - | - |\n| Các khoản khác | 357.443.917 | 9.180.185 |\n| Tổng | 357.443.917 | 9.180.185 |\n\n34. Thuế thu nhập doanh nghiệp\na. Ghi nhận trong báo cáo kết quả hoạt động kinh doanh riêng\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|-------------------------------------------|--------------------------------------|--------------------------------------|\n| Chi phí thuế hiện hành | | |\n| Kỳ này | 15.806.600 | 1.536.979.754 |\n| Dự phòng thiếu những năm trước | - | - |\n| Tổng | 15.806.600 | 1.536.979.754 |\n| Lợi ích thuế thu nhập hoãn lại | | |\n| Trích lập/Hoàn nhập các khoản chênh lệch tạm thời | 14.719.449.286 | 64.794.218.240 |\n| Tổng | 14.703.642.686 | 66.331.197.994 |\n\nb. Thuế suất áp dụng\nTheo các điều khoản trong Luật Thuế thu nhập doanh nghiệp, Công ty có nghĩa vụ nộp cho Nhà nước thuế thu nhập bằng 20% trên lợi nhuận tính thuế.",
+    "questions": [
+      {
+        "question": "Tổng chi phí quản lý doanh nghiệp trong kỳ này của Tập đoàn Hoa Sen là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thu nhập từ Thanh lý, nhượng bán TSCĐ trong kỳ này là bao nhiêu VNĐ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng chi phí quản lý doanh nghiệp kỳ này với kỳ trước. Nêu nhận xét về sự thay đổi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Thuế suất thuế thu nhập doanh nghiệp mà công ty áp dụng là bao nhiêu phần trăm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của công ty trong việc quản lý chi phí hoạt động dựa trên chi phí quản lý doanh nghiệp và chi phí bán hàng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi trong thu nhập khác (đặc biệt là thu bồi thường) đối với lợi nhuận tổng thể của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024 (Kỳ này), Từ 01/01/2023 đến 31/03/2023 (Kỳ trước), Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Các giao dịch chủ yếu với các bên liên quan\nLoại nội dung: Bảng\n35. Các giao dịch chủ yếu với các bên liên quan\nNgoài số dư với các bên liên quan được trình bày trong các thuyết minh khác của báo cáo tài chính riêng này, trong kỳ Công ty có các giao dịch chủ yếu với các bên liên quan như sau:\n\nCác công ty con\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|-------------------------------------------------------|--------------------------------------|--------------------------------------|\n| Công ty TNHH Một thành viên Tôn Hoa Sen | | |\n| Bán hàng hóa và dịch vụ | 2.774.157.105.843 | 2.775.445.169.241 |\n| Chi phí chi hộ | 38.072.649.633 | 29.985.736.840 |\n| Mua hàng hóa và dịch vụ | 3.183.064.079.261 | 2.668.366.703.259 |\n| Trả lại hàng mua | 584.274.420 | - |\n| Công ty Cổ Phần Nhựa Hoa Sen | | |\n| Bán hàng hóa và dịch vụ | 285.532.655 | 253.220.024 |\n| Doanh thu cho thuê tài sản | 151.388.888 | 58.909.092 |\n| Lãi chậm thanh toán | 2.380.785.538 | - |\n| Lãi cho vay | 1.113.869.864 | - |\n| Mua hàng hóa và dịch vụ | 7.570.468.947 | 6.850.769.364 |\n| Thuê hoạt động | 299.315.407 | 411.010.867 |\n| Trả lại hàng mua | - | 61.440.100 |\n| Bán Công cụ dụng cụ | 19.838.544 | - |\n| Công ty TNHH Một thành viên Hoa Sen Bình Định | | |\n| Bán hàng hóa và dịch vụ | 401.617.837 | 3.237.419.899 |\n| Doanh thu cho thuê tài sản | 6.000.000 | - |\n| Bán khác | - | 625.747 |\n| Mua hàng hóa và dịch vụ | 209.430.454.237 | 262.405.312.519 |\n| Mua dịch vụ vận chuyển | 839.516.546 | 749.713.721 |\n| Thuê hoạt động | 195.000.000 | 375.000.000 |\n| Trả lại hàng mua | 21.230.553 | 140.744.410 |\n| Hàng mua được giảm giá | 3.790.711 | - |\n| Công Ty TNHH Một thành viên Hoa Sen Nghệ An | | |\n| Bán hàng hóa và dịch vụ | 3.832.966.998.591 | 2.095.424.260.966 |\n| Doanh thu cho thuê tài sản | 29.010.000 | 29.010.000 |\n| Bán khác | 173.000.000 | - |\n| Mua hàng hóa và dịch vụ | 2.593.988.698.055 | 1.653.156.266.507 |\n| Mua dịch vụ đóng cont hàng | 768.899.710 | 189.431.188 |\n| Mua dịch vụ gia công | 25.720.521.954 | 34.636.550.842 |\n| Mua dịch vụ vận chuyển | 487.985.906 | 1.382.584.920 |\n| Thuê hoạt động | 106.216.761 | 106.216.761 |\n| Hàng mua được giảm giá | 477.053.998 | 61.957.275 |\n| Trả lại hàng mua | 900.564.191 | 428.218.391 |\n| Công Ty TNHH Một thành viên Hoa Sen Nhơn Hội - Bình Định | | |\n| Bán hàng hóa và dịch vụ | 1.535.107.289.437 | 220.728.111.523 |\n| Cung cấp dịch vụ gia công | - | 224.001 |\n| Mua hàng hóa và dịch vụ | 1.019.602.254.815 | 219.127.617.961 |\n| Mua tài sản cố định | - | 805.000.002 |\n| Mua dịch vụ vận chuyển | 22.800.000 | 638.438.759 |\n| Thuê hoạt động | 216.000.000 | 165.709.678 |\n| Trả lại hàng mua | 374.682.844 | - |\n| Công Ty TNHH Một thành viên Hoa Sen Hà Nam | | |\n| Bán hàng hóa và dịch vụ | 216.037.024 | 471.517.698 |\n| Doanh thu cho thuê tài sản | 57.000.000 | 57.000.000 |\n| Mua hàng hóa và dịch vụ | 71.733.510.976 | 98.621.337.455 |\n| Mua dịch vụ vận chuyển | 177.069.164 | 293.276.806 |\n| Mua dịch vụ gia công | 297.300 | - |\n| Thuê hoạt động | 204.000.000 | 189.000.000 |\n| Trả lại hàng mua | - | 18.490.680 |\n| Công Ty TNHH Một thành viên Hoa Sen Phú Mỹ | | |\n| Bán hàng hóa và dịch vụ | 639.539.645.216 | 1.017.053.705.451 |\n| Cung cấp dịch vụ vận chuyển | - | 87.054.366 |\n| Hàng bán bị trả lại | - | 318.554.000 |\n| Bán khác | 73.299.000 | - |\n| Cung cấp dịch vụ gia công | 131.040 | - |\n| Bán Tài sản cố định | 120.000.000 | 50.000.000 |\n| Mua hàng hóa và dịch vụ | 330.212.252.926 | 818.212.836.951 |\n| Mua dịch vụ vận chuyển | 260.780 | 90.256.251 |\n| Thuê hoạt động | 828.000.000 | 555.000.000 |\n| Trả lại hàng mua | 172.492.654 | - |\n| Hàng mua được giảm giá | - | 1.363.636 |\n| Công Ty TNHH Một thành viên VLXD Hoa Sen Yên Bái | | |\n| Bán hàng hóa và dịch vụ | 26.338.992 | 82.479.664 |\n| Mua hàng hóa và dịch vụ | 28.083.498.045 | 57.216.449.419 |\n| Mua dịch vụ vận chuyển | 28.692.390 | 175.739.070 |\n| Thuê hoạt động | 30.000.000 | 60.000.000 |\n| Hàng mua được giảm giá | 5.465.814 | - |\n| Công ty Cổ phần Hoa Sen Yên Bái | | |\n| Lãi cho vay | 21.090.411 | 856.767.123 |",
+    "questions": [
+      {
+        "question": "Trong kỳ này, Công ty TNHH Một thành viên Tôn Hoa Sen đã mua hàng hóa và dịch vụ của Tập đoàn Hoa Sen với giá trị bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty TNHH Một thành viên Hoa Sen Nghệ An đã bán hàng hóa và dịch vụ cho Tập đoàn Hoa Sen với giá trị bao nhiêu trong kỳ này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu cho thuê tài sản từ Công ty Cổ phần Nhựa Hoa Sen trong kỳ này với kỳ trước. Có sự tăng trưởng nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục nào có biến động lớn nhất trong giao dịch 'Bán hàng hóa và dịch vụ' giữa các công ty con trong kỳ này so với kỳ trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của các công ty con vào Tập đoàn Hoa Sen thông qua các giao dịch mua bán hàng hóa và dịch vụ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các giao dịch nội bộ này đối với kết quả hoạt động kinh doanh riêng của Tập đoàn Hoa Sen.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: Công ty Cổ phần Tập đoàn Hoa Sen\nMã cổ phiếu: HSG\nLoại báo cáo: Báo cáo tài chính riêng quý II Niên độ 2023-2024\nThời gian: Từ 01/01/2024 đến 31/03/2024 (Kỳ này), Từ 01/01/2023 đến 31/03/2023 (Kỳ trước), Ngày phát hành 26/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Các giao dịch chủ yếu với các bên liên quan (Kết thúc) và Thông tin so sánh\nLoại nội dung: Cả hai\n35. Các giao dịch chủ yếu với các bên liên quan (Tiếp theo)\nCông ty thuộc sở hữu của Chủ tịch Công ty\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|----------------------------------------------------|--------------------------------------|--------------------------------------|\n| Công Ty TNHH Tập Đoàn Đầu Tư Hoa Sen | | |\n| Bán hàng hóa và dịch vụ | 420.639.372.514 | 988.705.123.936 |\n| Cung cấp dịch vụ gia công | 20.901.503 | 4.689.751 |\n| Cung cấp dịch vụ vận chuyển | - | - |\n| Doanh thu cho thuê tài sản | 891.057.273 | 1.452.869.816 |\n| Bán khác | - | 3.620.400 |\n| Chiết khấu thương mại | 18.495.187.491 | 33.543.994.682 |\n| Giảm giá hàng bán | 122.258.504 | 5.900.072 |\n| Hàng bán bị trả lại | 763.633.881 | 1.138.258.176 |\n| Mua hàng hóa và dịch vụ | 190.038.380.759 | 155.100.000 |\n| Mua dịch vụ vận chuyển | 10.663.335.526 | 9.681.847.328 |\n| Thuê hoạt động | 2.808.861.819 | 3.157.701.818 |\n| Mua tài sản cố định | - | 18.000.000 |\n| Công ty TNHH MTV Đầu Tư Hoa Sen Nghệ An | | |\n| Mua dịch vụ vận chuyển | 96.330.059 | 136.178.632 |\n\nCác khoản chi các nhân sự quản lý chủ chốt\n| Chỉ tiêu | Kỳ này 01/01/2024 - 31/03/2024 (VNĐ) | Kỳ trước 01/01/2023 - 31/03/2023 (VNĐ) |\n|---------------------------------------------|--------------------------------------|--------------------------------------|\n| Thành viên Hội đồng Quản Trị | | |\n| Ông Lê Phước Vũ - Chủ tịch HĐQT | 90.000.000 | 90.000.000 |\n| Ông Trần Ngọc Chu - Phó Chủ tịch HĐQT | 75.000.000 | 75.000.000 |\n| Ông Trần Quốc Trí - Thành viên HĐQT | 60.000.000 | 60.000.000 |\n| Ông Lý Văn Xuân - Thành viên HĐQT | 75.000.000 | 75.000.000 |\n| Ông Nguyễn Văn Luân - Thành viên HĐQT | 90.000.000 | 90.000.000 |\n| Ông Đinh Viết Duy - Thành viên HĐQT | 75.000.000 | 75.000.000 |\n| Tổng Giám Đốc | | |\n| Lương, thưởng và các khoản trợ cấp | 763.200.000 | 743.252.815 |\n| Các thành viên khác của Ban Tổng Giám đốc và Hội đồng Quản trị | | |\n| Lương, thưởng và các khoản trợ cấp | 4.707.044.884 | 4.335.083.241 |\n\n36. Thông tin so sánh\nThông tin so sánh tại ngày 1 tháng 10 năm 2023 được mang sang từ số liệu trình bày trong báo cáo tài chính riêng của Công ty tại ngày và cho năm kết thúc ngày 30 tháng 9 năm 2023 đã kiểm toán.\nThông tin so sánh cùng kỳ Quý II kết thúc 31 tháng 03 năm 2024 được mang sang từ số liệu trình bày trong báo cáo tài chính riêng của Công ty Quý II Niên độ 2022-2023 và báo cáo tài chính riêng soát xét kỳ kết thúc 31 tháng 03 năm 2023.\n\nNgày 26 tháng 04 năm 2024\nNgười lập biểu: Nguyễn Thị Thanh Tuyền\nKế toán trưởng: Nguyễn Thị Ngọc Lan\nGiám đốc: Vũ Văn Thanh",
+    "questions": [
+      {
+        "question": "Ông Lê Phước Vũ nhận thù lao bao nhiêu trong kỳ này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công Ty TNHH Tập Đoàn Đầu Tư Hoa Sen đã bán hàng hóa và dịch vụ cho Tập đoàn Hoa Sen với giá trị bao nhiêu trong kỳ này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lương, thưởng và các khoản trợ cấp của Tổng Giám đốc kỳ này với kỳ trước. Nêu nhận xét.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các thông tin so sánh trong báo cáo tài chính này được lấy từ nguồn nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động trong các giao dịch với Công Ty TNHH Tập Đoàn Đầu Tư Hoa Sen và ý nghĩa của nó đối với Tập đoàn Hoa Sen.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích các rủi ro và lợi ích tiềm ẩn của các giao dịch với các bên liên quan, đặc biệt là công ty thuộc sở hữu của Chủ tịch Công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

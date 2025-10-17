@@ -1,0 +1,744 @@
+```json
+[
+  {
+    "instruction": "Tên công ty là gì?",
+    "input": "1",
+    "output": "Tên công ty là CÔNG TY CỔ PHẦN DAMAC GLS."
+  },
+  {
+    "instruction": "Mã cổ phiếu của công ty là gì?",
+    "input": "1",
+    "output": "Mã cổ phiếu của công ty là KSH."
+  },
+  {
+    "instruction": "Loại báo cáo tài chính này là gì?",
+    "input": "1",
+    "output": "Loại báo cáo tài chính này là Báo cáo tài chính hợp nhất Quý 1 năm 2025 trước kiểm toán kèm giải trình chênh lệch số liệu so với cùng kỳ năm trước."
+  },
+  {
+    "instruction": "Ngày phát hành của báo cáo tài chính là khi nào?",
+    "input": "1",
+    "output": "Ngày phát hành của báo cáo tài chính là 04/05/2025."
+  },
+  {
+    "instruction": "Báo cáo này đã được kiểm toán hay chưa?",
+    "input": "1",
+    "output": "Báo cáo này chưa được kiểm toán (trước kiểm toán)."
+  },
+  {
+    "instruction": "Tổng giám đốc của Công ty Cổ phần Damac GLS là ai?",
+    "input": "1",
+    "output": "Tổng giám đốc của Công ty Cổ phần Damac GLS là Hoàng Trọng Khánh."
+  },
+  {
+    "instruction": "Tổng tài sản ngắn hạn cuối quý 1 năm 2025 của Công ty Damac GLS là bao nhiêu?",
+    "input": "2",
+    "output": "Tổng tài sản ngắn hạn cuối quý 1 năm 2025 của Công ty Damac GLS là 525.639.934.669 VND."
+  },
+  {
+    "instruction": "Số dư tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu?",
+    "input": "2",
+    "output": "Số dư tiền và các khoản tương đương tiền cuối kỳ là 12.038.360 VND."
+  },
+  {
+    "instruction": "Các khoản phải thu ngắn hạn cuối quý là bao nhiêu VND?",
+    "input": "2",
+    "output": "Các khoản phải thu ngắn hạn cuối quý là 525.508.462.358 VND."
+  },
+  {
+    "instruction": "So sánh tổng tài sản ngắn hạn cuối kỳ và đầu năm. Có sự thay đổi đáng kể nào không?",
+    "input": "2",
+    "output": "Tổng tài sản ngắn hạn cuối kỳ là 525.639.934.669 VND và số đầu năm là 525.639.934.643 VND. Có sự thay đổi rất nhỏ (tăng 26 VND), không đáng kể."
+  },
+  {
+    "instruction": "Tỷ lệ tiền và các khoản tương đương tiền so với tổng tài sản ngắn hạn cuối kỳ là bao nhiêu?",
+    "input": "2",
+    "output": "Tiền và các khoản tương đương tiền cuối kỳ là 12.038.360 VND. Tổng tài sản ngắn hạn cuối kỳ là 525.639.934.669 VND. Tỷ lệ này là khoảng 0.00229%."
+  },
+  {
+    "instruction": "Đánh giá mức độ rủi ro từ các khoản phải thu ngắn hạn dựa trên tỷ lệ dự phòng phải thu khó đòi.",
+    "input": "2",
+    "output": "Các khoản phải thu ngắn hạn là 525.508.462.358 VND và dự phòng phải thu ngắn hạn khó đòi là 99.741.753.905 VND. Tỷ lệ dự phòng so với tổng phải thu ngắn hạn là khoảng 18.98%. Tỷ lệ này khá cao, cho thấy công ty đối mặt với rủi ro đáng kể về khả năng thu hồi các khoản nợ từ khách hàng và các đối tượng khác, có thể ảnh hưởng đến dòng tiền và lợi nhuận nếu các khoản dự phòng này trở thành tổn thất thực tế."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn cuối quý 1 năm 2025 là bao nhiêu?",
+    "input": "3",
+    "output": "Tổng tài sản dài hạn cuối quý 1 năm 2025 là 29.573.099.146 VND."
+  },
+  {
+    "instruction": "Khoản mục nào chiếm toàn bộ giá trị tài sản dài hạn của công ty?",
+    "input": "3",
+    "output": "Khoản mục 'Dự phòng đầu tư tài chính dài hạn' (Mã số 254) chiếm toàn bộ giá trị tài sản dài hạn của công ty."
+  },
+  {
+    "instruction": "Tổng tài sản của Công ty Damac GLS cuối kỳ là bao nhiêu VND?",
+    "input": "3",
+    "output": "Tổng tài sản của Công ty Damac GLS cuối kỳ là 496.066.835.523 VND."
+  },
+  {
+    "instruction": "So sánh tổng tài sản cuối kỳ và đầu năm. Có sự thay đổi nào không?",
+    "input": "3",
+    "output": "Tổng tài sản cuối kỳ là 496.066.835.523 VND và số đầu năm là 496.066.835.497 VND. Có sự thay đổi rất nhỏ (tăng 26 VND), không đáng kể."
+  },
+  {
+    "instruction": "Đánh giá mức độ đa dạng hóa của các khoản đầu tư tài chính dài hạn.",
+    "input": "3",
+    "output": "Các khoản đầu tư tài chính dài hạn của công ty không đa dạng. Toàn bộ giá trị 29.573.099.146 VND của 'Đầu tư tài chính dài hạn' nằm ở 'Dự phòng đầu tư tài chính dài hạn'. Các khoản mục đầu tư khác như công ty con, liên doanh, liên kết, góp vốn vào đơn vị khác đều bằng 0, cho thấy công ty không có các hoạt động đầu tư tài chính dài hạn đa dạng."
+  },
+  {
+    "instruction": "Nếu công ty chỉ có dự phòng đầu tư tài chính dài hạn mà không có các khoản đầu tư thực tế, điều này có ý nghĩa gì về tình hình tài chính?",
+    "input": "3",
+    "output": "Việc công ty chỉ có 'Dự phòng đầu tư tài chính dài hạn' với cùng giá trị với tổng 'Đầu tư tài chính dài hạn', trong khi các khoản đầu tư cụ thể như công ty con, liên doanh, liên kết đều bằng 0, ngụ ý rằng các khoản đầu tư dài hạn đã từng tồn tại nhưng đã được đánh giá là có rủi ro cao hoặc mất khả năng thu hồi, dẫn đến việc phải trích lập dự phòng toàn bộ. Điều này cho thấy tình hình tài chính liên quan đến các khoản đầu tư dài hạn rất kém khả quan, có thể dẫn đến tổn thất lớn và không có tài sản sinh lời từ hoạt động đầu tư trong dài hạn."
+  },
+  {
+    "instruction": "Tổng nợ phải trả cuối quý 1 năm 2025 là bao nhiêu?",
+    "input": "4",
+    "output": "Tổng nợ phải trả cuối quý 1 năm 2025 là 16.679.807.373 VND."
+  },
+  {
+    "instruction": "Tổng vốn chủ sở hữu cuối quý 1 năm 2025 là bao nhiêu VND?",
+    "input": "4",
+    "output": "Tổng vốn chủ sở hữu cuối quý 1 năm 2025 là 479.387.028.150 VND."
+  },
+  {
+    "instruction": "Số dư lợi nhuận sau thuế chưa phân phối cuối kỳ là bao nhiêu?",
+    "input": "4",
+    "output": "Số dư lợi nhuận sau thuế chưa phân phối cuối kỳ là 110.709.121.850 VND."
+  },
+  {
+    "instruction": "So sánh nợ ngắn hạn cuối kỳ và đầu năm. Có sự thay đổi đáng kể nào không?",
+    "input": "4",
+    "output": "Nợ ngắn hạn cuối kỳ là 16.679.807.373 VND và đầu năm là 16.673.807.373 VND. Có sự tăng 6.000.000 VND, nhưng xét trên tổng giá trị thì không phải là sự thay đổi đáng kể."
+  },
+  {
+    "instruction": "Tỷ lệ nợ phải trả trên tổng nguồn vốn của công ty cuối kỳ là bao nhiêu?",
+    "input": "4",
+    "output": "Tổng nợ phải trả cuối kỳ là 16.679.807.373 VND. Tổng nguồn vốn cuối kỳ là 496.066.835.523 VND. Tỷ lệ nợ phải trả trên tổng nguồn vốn là khoảng 3.36%."
+  },
+  {
+    "instruction": "Đánh giá mức độ phụ thuộc của công ty vào nợ ngắn hạn.",
+    "input": "4",
+    "output": "Công ty hoàn toàn phụ thuộc vào nợ ngắn hạn vì không có nợ dài hạn (nợ dài hạn = 0). Tuy nhiên, tổng nợ phải trả (chỉ bao gồm nợ ngắn hạn) chỉ chiếm khoảng 3.36% tổng nguồn vốn, một tỷ lệ rất thấp. Điều này cho thấy công ty có cấu trúc tài chính khá an toàn về mặt nợ và không bị áp lực trả nợ lớn. Rủi ro thanh khoản từ nợ ngắn hạn là thấp do tỷ lệ nợ tổng thể thấp."
+  },
+  {
+    "instruction": "Phân tích tác động của lợi nhuận sau thuế chưa phân phối kỳ này đến vốn chủ sở hữu.",
+    "input": "4",
+    "output": "Lợi nhuận sau thuế chưa phân phối kỳ này là 5.999.974 VND. Khoản này góp phần làm tăng mục 'Lợi nhuận sau thuế chưa phân phối' trong vốn chủ sở hữu. Mặc dù giá trị tuyệt đối không lớn, nó thể hiện công ty vẫn có khả năng tạo ra lợi nhuận dương trong kỳ, củng cố một phần cho vốn chủ sở hữu và cho thấy khả năng tích lũy lợi nhuận."
+  },
+  {
+    "instruction": "Lợi nhuận thuần từ hoạt động kinh doanh trong quý 1 năm 2025 là bao nhiêu?",
+    "input": "5",
+    "output": "Lợi nhuận thuần từ hoạt động kinh doanh trong quý 1 năm 2025 là 5.999.974 VND."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế của Công ty mẹ trong quý 1 năm 2025 là bao nhiêu?",
+    "input": "5",
+    "output": "Lợi nhuận sau thuế của Công ty mẹ trong quý 1 năm 2025 là 5.399.974 VND."
+  },
+  {
+    "instruction": "Doanh thu hoạt động tài chính của công ty trong quý 1 năm nay là bao nhiêu?",
+    "input": "5",
+    "output": "Doanh thu hoạt động tài chính của công ty trong quý 1 năm nay là 26 VND."
+  },
+  {
+    "instruction": "So sánh chi phí quản lý doanh nghiệp quý này so với cùng kỳ năm trước.",
+    "input": "5",
+    "output": "Chi phí quản lý doanh nghiệp quý này (Quý 1 năm nay) là 6.000.000 VND, trong khi cùng kỳ năm trước là 51.255.000 VND. Chi phí quản lý doanh nghiệp quý này thấp hơn đáng kể so với cùng kỳ năm trước."
+  },
+  {
+    "instruction": "Giải thích sự chênh lệch lớn về lợi nhuận thuần từ hoạt động kinh doanh giữa quý này và quý trước.",
+    "input": "5",
+    "output": "Sự chênh lệch lớn về lợi nhuận thuần từ hoạt động kinh doanh giữa quý này (5.999.974 VND) và quý trước (51.254.960 VND) là do sự giảm đáng kể của chi phí quản lý doanh nghiệp (từ 51.255.000 VND xuống 6.000.000 VND) và Doanh thu hoạt động tài chính giảm từ 40 VND xuống 26 VND. Mặc dù chi phí giảm mạnh, lợi nhuận vẫn giảm do sự sụt giảm tổng thể."
+  },
+  {
+    "instruction": "Dự báo tác động của việc không có doanh thu bán hàng và giá vốn hàng bán đến lợi nhuận của công ty.",
+    "input": "5",
+    "output": "Việc không có doanh thu bán hàng và giá vốn hàng bán cho thấy hoạt động kinh doanh cốt lõi của công ty đang bị đình trệ hoặc không tạo ra doanh thu. Điều này có tác động cực kỳ tiêu cực đến lợi nhuận vì công ty không có nguồn thu nhập chính. Lợi nhuận hiện tại chủ yếu đến từ việc cắt giảm chi phí quản lý doanh nghiệp và một phần rất nhỏ từ doanh thu hoạt động tài chính. Nếu tình trạng này tiếp diễn, công ty sẽ khó duy trì hoạt động kinh doanh bền vững và có thể đối mặt với rủi ro thua lỗ trong tương lai."
+  },
+  {
+    "instruction": "Phân tích rủi ro khi lợi nhuận chủ yếu đến từ các khoản mục khác ngoài hoạt động kinh doanh chính.",
+    "input": "5",
+    "output": "Lợi nhuận thuần từ hoạt động kinh doanh rất thấp và báo cáo không có doanh thu bán hàng và cung cấp dịch vụ hay giá vốn hàng bán. Lợi nhuận chủ yếu đến từ sự chênh lệch giữa doanh thu hoạt động tài chính (rất nhỏ) và chi phí quản lý doanh nghiệp (giảm mạnh). Rủi ro chính là tính bền vững của lợi nhuận. Khi không có hoạt động kinh doanh cốt lõi tạo doanh thu, công ty sẽ không có nguồn thu nhập ổn định và có thể không duy trì được lợi nhuận chỉ bằng cách cắt giảm chi phí hoặc dựa vào các nguồn thu không thường xuyên. Điều này cho thấy công ty đang gặp khó khăn lớn trong hoạt động kinh doanh chính và tình hình tài chính có thể không ổn định trong dài hạn."
+  },
+  {
+    "instruction": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong quý này là bao nhiêu?",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong quý này là 26 VND."
+  },
+  {
+    "instruction": "Tiền và tương đương tiền cuối năm trong quý này là bao nhiêu VND?",
+    "input": "6",
+    "output": "Tiền và tương đương tiền cuối năm trong quý này là 12.038.360 VND."
+  },
+  {
+    "instruction": "So sánh tiền chi trả cho người lao động trong quý này với quý trước.",
+    "input": "6",
+    "output": "Tiền chi trả cho người lao động trong quý này là 34.695.000 VND, trong khi quý trước không phát sinh (bằng '-'). Điều này cho thấy có sự tăng chi phí cho người lao động trong quý này."
+  },
+  {
+    "instruction": "Lưu chuyển tiền thuần từ hoạt động đầu tư và hoạt động tài chính trong quý này là bao nhiêu?",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động đầu tư trong quý này là 0 VND ('-'). Lưu chuyển tiền thuần từ hoạt động tài chính trong quý này là 0 VND ('-')."
+  },
+  {
+    "instruction": "Đánh giá khả năng tạo tiền từ hoạt động kinh doanh chính của công ty trong quý này.",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong quý này là 26 VND, một con số cực kỳ nhỏ và gần như bằng 0. Mặc dù có tiền thu bán hàng, cung cấp dịch vụ và doanh thu khác là 26 VND, nhưng có khoản chi tiền trả cho người lao động là 34.695.000 VND. Điều này cho thấy khả năng tạo tiền từ hoạt động kinh doanh chính của công ty trong quý này là cực kỳ kém, gần như không có, và công ty thậm chí còn phải chi tiền cho người lao động mà không có nguồn thu tương xứng từ hoạt động kinh doanh."
+  },
+  {
+    "instruction": "Phân tích tác động của các khoản chi phí hoạt động kinh doanh đến dòng tiền thuần của công ty.",
+    "input": "6",
+    "output": "Trong quý này, dòng tiền từ hoạt động kinh doanh có tiền thu bán hàng, cung cấp dịch vụ và doanh thu khác là 26 VND, nhưng có khoản chi trả cho người lao động là 34.695.000 VND. Mặc dù các khoản chi khác đều bằng 0, khoản chi trả cho người lao động đã khiến dòng tiền thuần từ hoạt động kinh doanh trở nên rất thấp (26 VND). Điều này cho thấy các chi phí hoạt động kinh doanh, đặc biệt là chi phí nhân sự, đang vượt xa khả năng tạo ra dòng tiền của công ty từ hoạt động cốt lõi, gây áp lực lên thanh khoản và khả năng tự chủ tài chính."
+  },
+  {
+    "instruction": "Dự báo tình hình thanh khoản của công ty dựa trên lưu chuyển tiền tệ từ các hoạt động chính.",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh chỉ là 26 VND, hoạt động đầu tư và tài chính đều bằng 0 VND, dẫn đến lưu chuyển tiền thuần trong năm chỉ là 26 VND. Mặc dù tiền và tương đương tiền cuối năm là 12.038.360 VND, nhưng hầu hết đến từ số dư đầu năm. Khả năng tạo ra tiền từ các hoạt động kinh doanh cốt lõi của công ty là cực kỳ yếu. Nếu tình hình này tiếp diễn, công ty có thể đối mặt với rủi ro thanh khoản nghiêm trọng trong tương lai, không đủ khả năng chi trả cho các hoạt động thường ngày nếu không có nguồn vốn bổ sung từ bên ngoài hoặc thanh lý tài sản."
+  },
+  {
+    "instruction": "Địa chỉ trụ sở chính của công ty Damac GLS là gì?",
+    "input": "7",
+    "output": "Địa chỉ trụ sở chính của công ty Damac GLS là Số 99 An Trạch, Phường Quốc Tử Giám, Quận Đống Đa, Thành phố Hà Nội, Việt Nam."
+  },
+  {
+    "instruction": "Lĩnh vực kinh doanh chính của công ty là gì?",
+    "input": "7",
+    "output": "Lĩnh vực kinh doanh chính của công ty là Thương mại dịch vụ."
+  },
+  {
+    "instruction": "Đơn vị tiền tệ sử dụng trong kế toán của công ty là gì?",
+    "input": "7",
+    "output": "Đơn vị tiền tệ sử dụng trong kế toán của công ty là VND."
+  },
+  {
+    "instruction": "Công ty áp dụng Chế độ Kế toán doanh nghiệp theo Thông tư nào?",
+    "input": "7",
+    "output": "Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính."
+  },
+  {
+    "instruction": "Nêu mục đích của phần 'Tuyên bố về khả năng so sánh thông tin' trong báo cáo tài chính.",
+    "input": "7",
+    "output": "Mục đích của phần 'Tuyên bố về khả năng so sánh thông tin' là để giải thích liệu thông tin trên Báo cáo tài chính có so sánh được với các kỳ trước hay không. Nếu không so sánh được, công ty phải nêu rõ lý do như chuyển đổi hình thức sở hữu, chia tách, sáp nhập, và độ dài về kỳ so sánh, giúp người đọc báo cáo hiểu rõ hơn về tính liên tục và nhất quán của dữ liệu tài chính."
+  },
+  {
+    "instruction": "Đánh giá tầm quan trọng của việc công ty tuân thủ các Chuẩn mực kế toán Việt Nam.",
+    "input": "7",
+    "output": "Việc công ty tuyên bố tuân thủ các Chuẩn mực kế toán Việt Nam và Chế độ kế toán (Thông tư số 200/2014/TT-BTC) là cực kỳ quan trọng. Điều này đảm bảo rằng báo cáo tài chính được lập một cách hợp pháp, minh bạch và có độ tin cậy cao, tuân thủ các quy tắc đã định. Nó giúp nhà đầu tư và các bên liên quan có thể tin tưởng vào tính chính xác và trung thực của thông tin tài chính, từ đó đưa ra các quyết định kinh tế phù hợp."
+  },
+  {
+    "instruction": "Tiền và các khoản tương đương tiền được ghi nhận theo nguyên tắc nào?",
+    "input": "8",
+    "output": "Tiền và các khoản tương đương tiền bao gồm tiền mặt tại quỹ, các khoản tiền gửi không kỳ hạn, các khoản đầu tư ngắn hạn, có khả năng thanh khoản cao, dễ dàng chuyển đổi thành tiền và ít rủi ro liên quan đến việc biến động giá trị."
+  },
+  {
+    "instruction": "Các khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm những gì?",
+    "input": "8",
+    "output": "Các khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm các khoản tiền gửi ngân hàng có kỳ hạn (bao gồm cả các loại tín phiếu, kỳ phiếu, trái phiếu, cổ phiếu ưu đãi bên phát hành bắt buộc phải mua lại tại một thời điểm nhất định trong tương lai) và các khoản cho vay nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ và các khoản đầu tư nắm giữ đến ngày đáo hạn khác."
+  },
+  {
+    "instruction": "Khi nào thì chênh lệch tỷ giá phát sinh được hạch toán vào Báo cáo kết quả hoạt động kinh doanh?",
+    "input": "8",
+    "output": "Chênh lệch tỷ giá phát sinh được hạch toán vào Báo cáo kết quả hoạt động kinh doanh khi các nghiệp vụ phát sinh bằng ngoại tệ được chuyển đổi theo tỷ giá tại ngày phát sinh nghiệp vụ, hoặc khi số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc niên độ kế toán được chuyển đổi theo tỷ giá tại ngày này."
+  },
+  {
+    "instruction": "Giải thích cách Công ty xác định giá trị các khoản đầu tư nắm giữ đến ngày đáo hạn.",
+    "input": "8",
+    "output": "Công ty xác định giá trị các khoản đầu tư nắm giữ đến ngày đáo hạn bằng cách ghi nhận ban đầu theo giá mua và các chi phí liên quan đến giao dịch mua. Thu nhập lãi sau ngày mua được ghi nhận trên Báo cáo kết quả hoạt động kinh doanh trên cơ sở dự thu, còn lãi được hưởng trước khi nắm giữ thì được ghi giảm trừ vào giá gốc. Cuối cùng, các khoản này được xác định theo giá gốc trừ đi dự phòng phải thu khó đòi, được trích lập theo quy định."
+  },
+  {
+    "instruction": "Phân tích tác động của các chính sách kế toán này đến việc thể hiện tính thanh khoản của công ty.",
+    "input": "8",
+    "output": "Chính sách kế toán về tiền và các khoản tương đương tiền giúp phản ánh tính thanh khoản tức thời. Tuy nhiên, chính sách về các khoản đầu tư nắm giữ đến ngày đáo hạn, mặc dù được ghi nhận theo giá gốc trừ dự phòng, nhưng do có kỳ hạn và mục đích giữ đến đáo hạn, có thể làm giảm tính thanh khoản tức thời so với các khoản đầu tư ngắn hạn khác vì chúng không dễ dàng chuyển đổi thành tiền mặt trước ngày đáo hạn mà không chịu chi phí hoặc tổn thất. Việc ghi nhận dự phòng phải thu khó đòi cho các khoản cho vay cũng làm giảm giá trị tài sản có thể thu hồi, ảnh hưởng đến ước tính thanh khoản thực tế."
+  },
+  {
+    "instruction": "Đánh giá rủi ro liên quan đến dự phòng phải thu khó đòi của các khoản cho vay.",
+    "input": "8",
+    "output": "Việc trích lập dự phòng phải thu khó đòi cho các khoản cho vay là cần thiết để phản ánh rủi ro mất khả năng thu hồi. Tuy nhiên, rủi ro vẫn tồn tại nếu việc trích lập dự phòng không đủ để bù đắp cho các khoản nợ thực sự không thể thu hồi. Nếu tỷ lệ dự phòng thấp hơn mức độ rủi ro thực tế của các khoản cho vay, báo cáo tài chính có thể bị thổi phồng về giá trị tài sản và lợi nhuận. Rủi ro chính là sự không chắc chắn về khả năng thu hồi các khoản cho vay, đặc biệt nếu công ty có các khoản cho vay lớn và chất lượng tín dụng của người vay không cao."
+  },
+  {
+    "instruction": "Khi nào thì dự phòng phải thu khó đòi được trích lập?",
+    "input": "9",
+    "output": "Dự phòng phải thu khó đòi được trích lập cho những khoản nợ phải thu đã quá hạn thanh toán từ sáu tháng trở lên, hoặc các khoản nợ phải thu mà người nợ khó có khả năng thanh toán do bị thanh lý, phá sản hay các khó khăn tương tự."
+  },
+  {
+    "instruction": "Giá trị hàng tồn kho được xác định dựa trên nguyên tắc nào?",
+    "input": "9",
+    "output": "Giá trị hàng tồn kho được xác định trên cơ sở giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được."
+  },
+  {
+    "instruction": "Phương pháp tính giá trị hàng tồn kho mà công ty áp dụng là gì?",
+    "input": "9",
+    "output": "Phương pháp tính giá trị hàng tồn kho mà công ty áp dụng là bình quân cuối kỳ."
+  },
+  {
+    "instruction": "Giải thích các thành phần cấu thành giá gốc hàng tồn kho đối với doanh nghiệp thương mại.",
+    "input": "9",
+    "output": "Đối với doanh nghiệp hoạt động thương mại, giá gốc hàng tồn kho bao gồm chi phí mua và các chi phí khác có liên quan trực tiếp đến việc mua hàng tồn kho."
+  },
+  {
+    "instruction": "Phân tích tác động của việc lập dự phòng giảm giá hàng tồn kho đến kết quả kinh doanh của công ty.",
+    "input": "9",
+    "output": "Việc lập dự phòng giảm giá hàng tồn kho khi giá gốc cao hơn giá trị thuần có thể thực hiện được hoặc khi hàng tồn kho bị lỗi thời, hỏng, kém phẩm chất sẽ làm tăng chi phí trong kỳ và trực tiếp làm giảm lợi nhuận trên Báo cáo kết quả hoạt động kinh doanh. Mặc dù làm giảm lợi nhuận trong ngắn hạn, nó giúp báo cáo tài chính phản ánh đúng hơn giá trị thực của hàng tồn kho và tránh việc ghi nhận quá cao tài sản, từ đó cung cấp thông tin tài chính minh bạch và đáng tin cậy."
+  },
+  {
+    "instruction": "Đánh giá rủi ro liên quan đến khả năng thu hồi các khoản nợ phải thu của công ty.",
+    "input": "9",
+    "output": "Chính sách kế toán nợ phải thu của công ty là trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi, được trích lập cho các khoản quá hạn hoặc khó có khả năng thanh toán. Rủi ro tiềm ẩn là khả năng thu hồi các khoản nợ phải thu. Nếu số lượng và giá trị các khoản nợ khó đòi tăng lên nhanh chóng hoặc việc đánh giá khả năng thu hồi không chính xác, công ty có thể đối mặt với tổn thất tài chính lớn hơn dự kiến, ảnh hưởng trực tiếp đến dòng tiền và lợi nhuận."
+  },
+  {
+    "instruction": "Nguyên giá tài sản cố định hữu hình bao gồm những gì?",
+    "input": "10",
+    "output": "Nguyên giá tài sản cố định hữu hình bao gồm giá mua và toàn bộ các chi phí khác liên quan trực tiếp đến việc đưa tài sản vào trạng thái sẵn sàng sử dụng."
+  },
+  {
+    "instruction": "Khi nào chi phí phát triển tài sản vô hình được tạo ra từ nội bộ doanh nghiệp được ghi nhận?",
+    "input": "10",
+    "output": "Chi phí phát triển tài sản vô hình được tạo ra từ nội bộ doanh nghiệp chỉ được ghi nhận khi thỏa mãn các điều kiện: Tài sản được tạo ra có thể xác định được; Chắc chắn thu được lợi ích kinh tế trong tương lai từ tài sản đó; Chi phí phát triển tài sản có thể xác định được một cách tin cậy."
+  },
+  {
+    "instruction": "Các khoản chi phí trả trước bao gồm những gì theo nguyên tắc kế toán của công ty?",
+    "input": "10",
+    "output": "Các khoản chi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán, bao gồm khoản trả trước tiền thuê đất, chi phí thành lập và các khoản chi phí trả trước khác (như giá trị công cụ, dụng cụ, linh kiện loại nhỏ đã xuất dùng, chi phí quảng cáo và đào tạo phát sinh trong giai đoạn trước khi công ty đi vào hoạt động chính thức)."
+  },
+  {
+    "instruction": "So sánh nguyên tắc ghi nhận bất động sản đầu tư cho thuê và bất động sản đầu tư chờ tăng giá.",
+    "input": "10",
+    "output": "Bất động sản đầu tư cho thuê được trình bày theo nguyên giá trừ giá trị hao mòn lũy kế và được khấu hao theo phương pháp đường thẳng trên thời gian hữu dụng ước tính. Trong khi đó, bất động sản đầu tư chờ tăng giá được trình bày theo nguyên giá trừ suy giảm giá trị và công ty không trích khấu hao đối với loại bất động sản này."
+  },
+  {
+    "instruction": "Phân tích tác động của chính sách không trích khấu hao đối với bất động sản đầu tư nắm giữ chờ tăng giá đến lợi nhuận và tài sản của công ty.",
+    "input": "10",
+    "output": "Chính sách không trích khấu hao đối với bất động sản đầu tư nắm giữ chờ tăng giá làm giảm chi phí trong kỳ, từ đó làm tăng lợi nhuận được báo cáo trong ngắn hạn (hoặc giảm lỗ). Về tài sản, giá trị của bất động sản này trên bảng cân đối kế toán được giữ ở nguyên giá trừ suy giảm giá trị, thay vì giảm dần qua khấu hao. Điều này có thể làm cho tổng tài sản trên sổ sách có vẻ lớn hơn, nhưng cũng tiềm ẩn rủi ro nếu giá trị thị trường của bất động sản không tăng như kỳ vọng hoặc thậm chí giảm, dẫn đến tổn thất lớn khi bán hoặc đánh giá lại. Nó cũng có thể che khuất chi phí cơ hội của việc nắm giữ tài sản này."
+  },
+  {
+    "instruction": "Đánh giá rủi ro tiềm ẩn khi vốn hóa chi phí thành lập và các chi phí trả trước khác.",
+    "input": "10",
+    "output": "Vốn hóa chi phí thành lập và các chi phí trả trước khác giúp phân bổ gánh nặng chi phí qua nhiều kỳ, làm tăng lợi nhuận được báo cáo trong những năm đầu hoạt động. Tuy nhiên, rủi ro tiềm ẩn là việc này có thể làm thổi phồng giá trị tài sản trên bảng cân đối kế toán nếu những chi phí này không thực sự mang lại lợi ích kinh tế tương xứng trong tương lai. Nếu công ty không hoạt động hiệu quả hoặc không đạt được lợi ích kỳ vọng, việc vốn hóa này có thể dẫn đến tổn thất lớn khi phải ghi giảm giá trị tài sản đã vốn hóa, ảnh hưởng tiêu cực đến lợi nhuận và vốn chủ sở hữu trong các kỳ sau."
+  },
+  {
+    "instruction": "Khi nào thì các khoản dự phòng phải trả được ghi nhận?",
+    "input": "11",
+    "output": "Các khoản dự phòng phải trả được ghi nhận khi Công ty có nghĩa vụ nợ hiện tại do kết quả từ một sự kiện đã xảy ra, và Công ty có khả năng phải thanh toán nghĩa vụ này. Các khoản dự phòng được xác định trên cơ sở ước tính của Ban Giám đốc về các khoản chi phí cần thiết để thanh toán nghĩa vụ nợ này tại ngày kết thúc kỳ hoạt động."
+  },
+  {
+    "instruction": "Nêu hai trong năm điều kiện để doanh thu bán hàng được ghi nhận.",
+    "input": "11",
+    "output": "Hai trong năm điều kiện để doanh thu bán hàng được ghi nhận là: Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua; và Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa."
+  },
+  {
+    "instruction": "Doanh thu cung cấp dịch vụ được ghi nhận khi nào?",
+    "input": "11",
+    "output": "Doanh thu của giao dịch về cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp giao dịch về cung cấp dịch vụ liên quan đến nhiều kỳ thì doanh thu được ghi nhận trong kỳ theo kết quả phần công việc đã hoàn thành tại ngày của Bảng cân đối kế toán của kỳ đó, khi thỏa mãn bốn điều kiện cụ thể."
+  },
+  {
+    "instruction": "Giải thích nguyên tắc ghi nhận doanh thu từ hợp đồng xây dựng khi kết quả thực hiện không thể ước tính đáng tin cậy.",
+    "input": "11",
+    "output": "Khi kết quả thực hiện hợp đồng xây dựng không thể được ước tính một cách đáng tin cậy, doanh thu chỉ được ghi nhận tương đương với chi phí của hợp đồng đã phát sinh mà việc được hoàn trả là tương đối chắc chắn."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của các nguyên tắc ghi nhận doanh thu đối với độ tin cậy của báo cáo tài chính.",
+    "input": "11",
+    "output": "Các nguyên tắc ghi nhận doanh thu là nền tảng để xác định khi nào và mức độ doanh thu được đưa vào báo cáo tài chính. Việc tuân thủ các nguyên tắc này, đặc biệt là các điều kiện cụ thể về chuyển giao rủi ro, khả năng thu hồi lợi ích kinh tế, và tính chắc chắn của doanh thu, đảm bảo rằng doanh thu được báo cáo là thực tế và hợp lý. Điều này trực tiếp ảnh hưởng đến độ tin cậy của báo cáo kết quả hoạt động kinh doanh và khả năng đánh giá hiệu quả hoạt động thực sự của công ty. Nếu các nguyên tắc này không được áp dụng chặt chẽ, có thể dẫn đến việc ghi nhận doanh thu sớm hoặc quá mức, làm sai lệch bức tranh tài chính."
+  },
+  {
+    "instruction": "Đánh giá ảnh hưởng của việc ghi nhận dự phòng phải trả đến lợi nhuận và nghĩa vụ tài chính của công ty.",
+    "input": "11",
+    "output": "Việc ghi nhận dự phòng phải trả tạo ra một khoản chi phí trên Báo cáo kết quả hoạt động kinh doanh, làm giảm lợi nhuận trong kỳ, và tạo ra một khoản nợ phải trả trên Bảng cân đối kế toán, phản ánh nghĩa vụ hiện tại của công ty. Mặc dù làm giảm lợi nhuận trong ngắn hạn, việc này giúp công ty phản ánh trung thực hơn tình hình tài chính bằng cách tính đến các nghĩa vụ nợ tiềm ẩn. Nó cũng đảm bảo công ty có nguồn lực để đối phó với các chi phí dự kiến trong tương lai, từ đó giảm thiểu rủi ro tài chính bất ngờ và tăng cường sự tin cậy của báo cáo tài chính."
+  },
+  {
+    "instruction": "Khi nào thì tài sản thuế thu nhập hoãn lại được ghi nhận?",
+    "input": "12",
+    "output": "Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế trong tương lai để khấu trừ các khoản chênh lệch tạm thời."
+  },
+  {
+    "instruction": "Thuế thu nhập doanh nghiệp bao gồm những gì?",
+    "input": "12",
+    "output": "Thuế thu nhập doanh nghiệp bao gồm tổng giá trị của số thuế phải trả hiện tại và số thuế hoãn lại."
+  },
+  {
+    "instruction": "Nêu một nguyên tắc xác định giá trị tài sản trong trường hợp doanh nghiệp không đáp ứng giả định hoạt động liên tục.",
+    "input": "12",
+    "output": "Một nguyên tắc là xác định giá trị từng loại tài sản và nợ phải trả theo giá trị thuần có thể thực hiện được, giá trị có thể thu hồi, giá trị hợp lý, giá trị hiện tại, giá hiện hành."
+  },
+  {
+    "instruction": "Giải thích sự khác biệt giữa thu nhập chịu thuế và lợi nhuận trước thuế theo chính sách kế toán của công ty.",
+    "input": "12",
+    "output": "Thu nhập chịu thuế khác với lợi nhuận trước thuế được trình bày trên Báo cáo kết quả hoạt động kinh doanh vì thu nhập chịu thuế không bao gồm các khoản thu nhập hay chi phí tính thuế hoặc được khấu trừ trong các năm khác (bao gồm cả lỗ mang sang, nếu có) và ngoài ra không bao gồm các chỉ tiêu không chịu thuế hoặc không được khấu trừ. Lợi nhuận trước thuế là một chỉ tiêu kế toán, trong khi thu nhập chịu thuế là một chỉ tiêu thuế, được sử dụng để tính toán nghĩa vụ thuế."
+  },
+  {
+    "instruction": "Phân tích tác động của việc thay đổi các quy định về thuế đến chi phí thuế TNDN của công ty.",
+    "input": "12",
+    "output": "Các quy định về thuế thay đổi theo từng thời kỳ và việc xác định sau cùng về thuế thu nhập doanh nghiệp tùy thuộc vào cơ quan thuế. Sự thay đổi trong các quy định về thuế (ví dụ: thay đổi thuế suất, các khoản được khấu trừ, ưu đãi thuế) có thể tác động trực tiếp và đáng kể đến chi phí thuế TNDN của công ty. Nếu thuế suất tăng hoặc các khoản khấu trừ bị hạn chế, chi phí thuế TNDN sẽ tăng, làm giảm lợi nhuận sau thuế. Ngược lại, nếu thuế suất giảm hoặc có thêm ưu đãi, chi phí thuế sẽ giảm, làm tăng lợi nhuận. Sự không chắc chắn này tạo ra rủi ro cho việc lập kế hoạch tài chính và dự báo lợi nhuận của công ty."
+  },
+  {
+    "instruction": "Đánh giá ý nghĩa của việc tái phân loại tài sản dài hạn thành ngắn hạn khi doanh nghiệp không đáp ứng giả định hoạt động liên tục.",
+    "input": "12",
+    "output": "Khi doanh nghiệp không đáp ứng giả định hoạt động liên tục, việc tái phân loại tài sản dài hạn thành ngắn hạn có ý nghĩa cực kỳ quan trọng. Nó phản ánh rằng công ty có thể không tiếp tục hoạt động trong tương lai gần, và do đó, các tài sản dài hạn không còn được giữ để sử dụng trong nhiều kỳ mà sẽ được thanh lý hoặc chuyển đổi thành tiền mặt trong vòng một năm. Điều này nhằm mục đích cung cấp một bức tranh chân thực hơn về khả năng thanh lý tài sản và khả năng thanh toán nợ trong tình huống khó khăn, giúp các bên liên quan đánh giá chính xác hơn rủi ro và giá trị còn lại của công ty."
+  },
+  {
+    "instruction": "Tổng số tiền mặt cuối quý của công ty là bao nhiêu?",
+    "input": "13",
+    "output": "Tổng số tiền mặt cuối quý của công ty là 11.930.077 VND."
+  },
+  {
+    "instruction": "Công ty có khoản đầu tư vào công ty con nào không, giá trị là bao nhiêu?",
+    "input": "13",
+    "output": "Có, công ty có khoản đầu tư vào công ty con với giá gốc là 60.000.000.000 VND."
+  },
+  {
+    "instruction": "So sánh tổng tiền cuối quý và đầu quý. Có sự thay đổi nào không?",
+    "input": "13",
+    "output": "Tổng tiền cuối quý là 12.038.360 VND và tổng tiền đầu quý là 11.930.334 VND. Có sự thay đổi (tăng 108.026 VND), nhưng không lớn."
+  },
+  {
+    "instruction": "Đánh giá tính thanh khoản của công ty dựa trên cơ cấu tiền và các khoản tương đương tiền.",
+    "input": "13",
+    "output": "Cơ cấu tiền bao gồm tiền mặt (11.930.077 VND) và tiền gửi ngân hàng (108.283 VND), tổng cộng 12.038.360 VND. So với tổng tài sản ngắn hạn, số tiền này là rất nhỏ (khoảng 0.00229%), cho thấy tính thanh khoản tức thời của công ty ở mức thấp. Nếu không có các khoản khác dễ dàng chuyển đổi thành tiền, công ty có thể gặp khó khăn trong việc đáp ứng các nghĩa vụ thanh toán ngắn hạn lớn."
+  },
+  {
+    "instruction": "Phân tích rủi ro liên quan đến việc không có thông tin chi tiết về các khoản đầu tư tài chính ngắn hạn.",
+    "input": "13",
+    "output": "Các mục 'Chứng khoán kinh doanh' và 'Đầu tư nắm giữ đến ngày đáo hạn' (ngắn hạn) đều hiển thị giá trị 0 hoặc '-'. Việc không có thông tin chi tiết về các khoản đầu tư tài chính ngắn hạn (loại cổ phiếu/trái phiếu, giá trị, lý do thay đổi) tạo ra rủi ro về minh bạch và khả năng đánh giá tài chính. Nhà đầu tư không thể biết liệu công ty có đang thực hiện các hoạt động đầu tư ngắn hạn nào hay không, mức độ rủi ro liên quan, và khả năng sinh lời. Điều này hạn chế khả năng phân tích tính thanh khoản và hiệu quả sử dụng vốn của công ty."
+  },
+  {
+    "instruction": "Đánh giá mức độ minh bạch của thông tin về các khoản đầu tư tài chính dài hạn.",
+    "input": "13",
+    "output": "Thông tin về các khoản đầu tư tài chính dài hạn bao gồm 'Đầu tư vào công ty con' (60.000.000.000 VND) và 'Đầu tư vào đơn vị khác' (29.573.099.146 VND). Tuy nhiên, phần thuyết minh yêu cầu 'Tóm tắt tình hình hoạt động của các công ty con...' và 'Các giao dịch trọng yếu...' nhưng lại không cung cấp thông tin này (dấu gạch ngang '-'). Việc thiếu các chi tiết này làm giảm đáng kể mức độ minh bạch của thông tin, khiến người đọc không thể hiểu được hiệu quả hoạt động, rủi ro liên quan, hay liệu các giao dịch có đang phục vụ lợi ích tốt nhất của công ty hay không."
+  },
+  {
+    "instruction": "Tổng giá trị phải thu của khách hàng ngắn hạn cuối quý là bao nhiêu?",
+    "input": "14",
+    "output": "Tổng giá trị phải thu của khách hàng ngắn hạn cuối quý là 58.532.578.125 VND."
+  },
+  {
+    "instruction": "Tổng giá trị 'Phải thu khác' ngắn hạn cuối quý là bao nhiêu?",
+    "input": "14",
+    "output": "Tổng giá trị 'Phải thu khác' ngắn hạn cuối quý là 669.633.689.138 VND."
+  },
+  {
+    "instruction": "Có tài sản thiếu chờ xử lý nào được ghi nhận không?",
+    "input": "14",
+    "output": "Không có tài sản thiếu chờ xử lý nào được ghi nhận (tất cả các chỉ tiêu đều bằng '-')."
+  },
+  {
+    "instruction": "Đánh giá tình hình nợ xấu của công ty dựa trên thông tin được cung cấp.",
+    "input": "14",
+    "output": "Mục 'Nợ xấu' (mã 06) cho thấy tất cả các chỉ tiêu đều bằng '-'. Dựa trên dữ liệu này, không có bằng chứng về nợ xấu được ghi nhận. Điều này có thể được hiểu là công ty không có các khoản nợ xấu hoặc thông tin chi tiết về nợ xấu không được thuyết minh trong dữ liệu này."
+  },
+  {
+    "instruction": "Phân tích tác động của các khoản phải thu khác chiếm tỷ trọng lớn đến cơ cấu tài sản ngắn hạn của công ty.",
+    "input": "14",
+    "output": "Khoản 'Phải thu khác' ngắn hạn có giá trị 669.633.689.138 VND, một con số cực kỳ lớn. Nếu khoản mục này chiếm tỷ trọng lớn trong cơ cấu tài sản ngắn hạn của công ty, nó cho thấy công ty đang nắm giữ một lượng lớn các khoản phải thu không rõ ràng về bản chất. Sự thiếu minh bạch và chi tiết về các khoản phải thu này (đối tượng, kỳ hạn) tạo ra rủi ro thanh khoản đáng kể nếu chúng không được thu hồi kịp thời. Việc không có dự phòng cụ thể cho khoản mục này cũng làm tăng mức độ rủi ro, vì nó có thể làm thổi phồng giá trị tài sản thực tế."
+  },
+  {
+    "instruction": "Dự báo rủi ro về khả năng thu hồi các khoản phải thu nếu không có dự phòng cụ thể.",
+    "input": "14",
+    "output": "Trong mục 'Phải thu khác' và 'Nợ xấu', cột 'Dự phòng' và các thông tin chi tiết đều là '-'. Việc không có dự phòng cụ thể cho các khoản phải thu, đặc biệt là các khoản 'Phải thu khác' có giá trị lớn, tạo ra rủi ro lớn về khả năng thu hồi. Nếu các khoản phải thu này trở thành nợ khó đòi mà không có dự phòng, công ty sẽ phải ghi nhận tổn thất trực tiếp vào lợi nhuận, làm giảm đột ngột và nghiêm trọng kết quả kinh doanh. Điều này cũng ảnh hưởng đến dòng tiền và thanh khoản, đặc biệt nếu công ty gặp khó khăn trong việc thu hồi các khoản này. Sự thiếu thông tin về dự phòng và nợ xấu khiến việc đánh giá chất lượng tài sản và rủi ro tín dụng của công ty trở nên cực kỳ khó khăn và không đáng tin cậy."
+  },
+  {
+    "instruction": "Tổng nguyên giá tài sản cố định hữu hình cuối năm là bao nhiêu?",
+    "input": "15",
+    "output": "Thông tin không có trong dữ liệu."
+  },
+  {
+    "instruction": "Có bất kỳ sự tăng hay giảm nào của tài sản cố định hữu hình trong năm không?",
+    "input": "15",
+    "output": "Không có bất kỳ sự tăng hay giảm nào của tài sản cố định hữu hình trong năm, tất cả các chỉ tiêu liên quan đều bằng '-'."
+  },
+  {
+    "instruction": "Giá trị hao mòn lũy kế của tài sản cố định hữu hình cuối năm là bao nhiêu?",
+    "input": "15",
+    "output": "Thông tin không có trong dữ liệu."
+  },
+  {
+    "instruction": "Đánh giá tình hình đầu tư và thanh lý tài sản cố định hữu hình của công ty.",
+    "input": "15",
+    "output": "Bảng thuyết minh cho thấy tất cả các khoản mục liên quan đến tăng, giảm nguyên giá tài sản cố định hữu hình (mua trong năm, đầu tư XDCB hoàn thành, thanh lý, nhượng bán, v.v.) đều bằng '-'. Điều này ngụ ý rằng công ty không có hoạt động đầu tư hay thanh lý tài sản cố định hữu hình nào trong kỳ. Tình hình này có thể cho thấy công ty không mở rộng hoạt động sản xuất kinh doanh, không thay thế tài sản cũ, hoặc không có sự thay đổi đáng kể trong cơ cấu tài sản."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không có phát sinh tăng/giảm TSCĐ hữu hình đến khả năng mở rộng sản xuất của công ty.",
+    "input": "15",
+    "output": "Việc không có bất kỳ phát sinh tăng hay giảm nào của Tài sản cố định hữu hình trong kỳ cho thấy công ty không đầu tư thêm vào nhà cửa, máy móc, thiết bị hay phương tiện vận tải. Điều này có tác động tiêu cực đến khả năng mở rộng sản xuất hoặc nâng cấp công nghệ của công ty. Trong một môi trường kinh doanh cạnh tranh, việc thiếu đầu tư vào TSCĐ có thể khiến công ty mất khả năng cạnh tranh, giảm năng lực sản xuất, và không thể tận dụng các cơ hội phát triển mới. Về lâu dài, điều này có thể hạn chế tiềm năng tăng trưởng và hiệu quả hoạt động của công ty."
+  },
+  {
+    "instruction": "Dự báo rủi ro nếu có nhiều TSCĐ đã khấu hao hết nhưng vẫn còn sử dụng.",
+    "input": "15",
+    "output": "Mặc dù chunk này không có số liệu cụ thể, nếu thực tế có nhiều TSCĐ đã khấu hao hết nhưng vẫn còn sử dụng, rủi ro tiềm ẩn là công nghệ và thiết bị của công ty có thể đã lỗi thời, kém hiệu quả, hoặc dễ gặp sự cố. Điều này có thể dẫn đến chi phí bảo trì cao hơn, giảm năng suất, chất lượng sản phẩm/dịch vụ thấp hơn và khó khăn trong việc duy trì lợi thế cạnh tranh. Về mặt tài chính, mặc dù không còn chi phí khấu hao giúp tăng lợi nhuận kế toán, nhưng nó không phản ánh đầy đủ nhu cầu tái đầu tư và chi phí vận hành thực tế của các tài sản này."
+  },
+  {
+    "instruction": "Tổng nguyên giá tài sản cố định vô hình cuối năm là bao nhiêu?",
+    "input": "16",
+    "output": "Thông tin không có trong dữ liệu."
+  },
+  {
+    "instruction": "Công ty có bất động sản đầu tư cho thuê không?",
+    "input": "16",
+    "output": "Không có bất động sản đầu tư cho thuê nào được ghi nhận, tất cả các chỉ tiêu liên quan đều bằng '-'."
+  },
+  {
+    "instruction": "Có sự tăng hay giảm nào về tài sản cố định thuê tài chính trong năm không?",
+    "input": "16",
+    "output": "Không có sự tăng hay giảm nào về tài sản cố định thuê tài chính trong năm, tất cả các chỉ tiêu đều bằng '-'."
+  },
+  {
+    "instruction": "Đánh giá mức độ minh bạch của thông tin về tài sản cố định vô hình và các tài sản dài hạn khác.",
+    "input": "16",
+    "output": "Các bảng thuyết minh về tăng/giảm tài sản cố định vô hình, tài sản cố định thuê tài chính, và bất động sản đầu tư đều chỉ hiển thị các giá trị bằng '-'. Điều này cho thấy công ty không có hoạt động đáng kể nào liên quan đến các loại tài sản này trong kỳ hoặc không cung cấp chi tiết cụ thể. Việc thiếu các số liệu cụ thể làm giảm đáng kể mức độ minh bạch của báo cáo tài chính, khiến người đọc không thể đánh giá được quy mô, tính chất, và biến động của các tài sản dài hạn quan trọng này."
+  },
+  {
+    "instruction": "Phân tích rủi ro liên quan đến việc không có dữ liệu về biến động tài sản cố định vô hình và tài sản cố định thuê tài chính.",
+    "input": "16",
+    "output": "Việc không có dữ liệu về biến động tài sản cố định vô hình và tài sản cố định thuê tài chính tiềm ẩn rủi ro. Đối với TSCĐ vô hình, nếu công ty kinh doanh trong lĩnh vực cần đổi mới công nghệ, việc không có sự tăng trưởng hoặc thay đổi có thể cho thấy thiếu đầu tư vào đổi mới. Đối với TSCĐ thuê tài chính, việc không có dữ liệu cho thấy công ty không sử dụng hình thức tài trợ này hoặc không có nhu cầu bổ sung tài sản qua thuê. Rủi ro chung là việc thiếu thông tin làm giảm khả năng đánh giá đúng về chiến lược đầu tư, năng lực cạnh tranh và sức khỏe tài chính dài hạn của công ty."
+  },
+  {
+    "instruction": "Dự báo tác động đến định giá công ty nếu có nhiều bất động sản đầu tư nắm giữ chờ tăng giá mà không có kế hoạch cụ thể.",
+    "input": "16",
+    "output": "Mặc dù bảng cho thấy không có bất động sản đầu tư nắm giữ chờ tăng giá, nếu trong một tình huống giả định mà có loại tài sản này nhưng không có kế hoạch cụ thể, tác động đến định giá công ty sẽ là tiêu cực. Các nhà đầu tư thường mong muốn thấy một chiến lược rõ ràng cho các tài sản không tạo ra doanh thu trực tiếp. Việc thiếu kế hoạch làm tăng sự không chắc chắn và giảm khả năng dự báo dòng tiền tương lai từ các tài sản này. Điều này có thể dẫn đến việc định giá công ty thấp hơn vì tài sản không được sử dụng hiệu quả và tiềm ẩn rủi ro về việc thanh lý trong tương lai."
+  },
+  {
+    "instruction": "Tổng chi phí trả trước của công ty cuối quý là bao nhiêu?",
+    "input": "17",
+    "output": "Không có chi phí trả trước nào được ghi nhận cuối quý, tất cả các chỉ tiêu đều bằng '-'."
+  },
+  {
+    "instruction": "Có khoản vay ngắn hạn nào được ghi nhận cuối quý không?",
+    "input": "17",
+    "output": "Không có khoản vay ngắn hạn nào được ghi nhận cuối quý, tất cả các chỉ tiêu liên quan đều bằng '-'."
+  },
+  {
+    "instruction": "Công ty có bất kỳ khoản nợ thuê tài chính quá hạn nào chưa thanh toán không?",
+    "input": "17",
+    "output": "Không có khoản nợ thuê tài chính quá hạn nào chưa thanh toán, tất cả các chỉ tiêu liên quan đều bằng '-'."
+  },
+  {
+    "instruction": "Đánh giá tình hình nợ vay và nợ thuê tài chính của công ty dựa trên bảng thuyết minh.",
+    "input": "17",
+    "output": "Bảng thuyết minh cho thấy các chỉ tiêu về vay ngắn hạn, vay dài hạn, các khoản nợ thuê tài chính, và các khoản vay/nợ thuê tài chính quá hạn chưa thanh toán đều bằng '-'. Điều này ngụ ý rằng công ty không có các khoản nợ vay hay nợ thuê tài chính đáng kể nào trong kỳ này. Tình hình này có thể cho thấy công ty không sử dụng đòn bẩy tài chính thông qua vay nợ hoặc thuê tài chính, hoặc đã hoàn tất các nghĩa vụ nợ. Mặc dù điều này giảm rủi ro về nghĩa vụ tài chính, nó cũng có thể chỉ ra việc thiếu khả năng tiếp cận vốn vay hoặc không có nhu cầu đầu tư mở rộng cần đến nguồn vốn này."
+  },
+  {
+    "instruction": "Phân tích rủi ro thanh khoản của công ty nếu có các khoản vay và nợ thuê tài chính đáng kể.",
+    "input": "17",
+    "output": "Nếu công ty có các khoản vay và nợ thuê tài chính đáng kể (mặc dù chunk này hiển thị là 0), rủi ro thanh khoản sẽ tăng lên đáng kể. Các khoản vay ngắn hạn yêu cầu thanh toán trong thời gian ngắn, gây áp lực lên dòng tiền hoạt động. Nợ thuê tài chính cũng tạo ra các nghĩa vụ thanh toán định kỳ. Nếu công ty không có đủ dòng tiền từ hoạt động kinh doanh hoặc không thể tái cấp vốn các khoản nợ, nó có thể đối mặt với rủi ro vỡ nợ. Sự biến động của lãi suất cũng có thể ảnh hưởng đến chi phí tài chính, làm giảm lợi nhuận và khả năng thanh toán. Việc thiếu thông tin chi tiết về các điều khoản vay, kỳ hạn, và lãi suất trong trường hợp có nợ sẽ làm tăng sự không chắc chắn và rủi ro."
+  },
+  {
+    "instruction": "Dự báo tác động của việc không có các khoản chi phí trả trước đến báo cáo kết quả kinh doanh của công ty.",
+    "input": "17",
+    "output": "Việc không có các khoản chi phí trả trước (tất cả là '-') có nghĩa là không có các chi phí lớn đã được thanh toán nhưng sẽ được phân bổ vào các kỳ sau. Điều này có thể dẫn đến việc các kỳ sau có chi phí thấp hơn nếu công ty không phát sinh các chi phí tương tự mới, hoặc ngược lại, nếu các chi phí này phát sinh liên tục và được hạch toán ngay thì KQKD của mỗi kỳ sẽ phản ánh đúng hơn chi phí thực tế của kỳ đó. Tuy nhiên, nhìn chung, việc không có khoản mục này có thể cho thấy hoạt động của công ty không đòi hỏi các khoản đầu tư ban đầu lớn hoặc các chi phí cần được phân bổ dài hạn."
+  },
+  {
+    "instruction": "Tổng các khoản phải trả người bán ngắn hạn cuối quý là bao nhiêu?",
+    "input": "18",
+    "output": "Tổng các khoản phải trả người bán ngắn hạn cuối quý là 15.276.587.150 VND."
+  },
+  {
+    "instruction": "Tổng số thuế và các khoản phí, lệ phí phải nộp khác cuối quý là bao nhiêu?",
+    "input": "18",
+    "output": "Tổng số thuế và các khoản phí, lệ phí phải nộp khác cuối quý là 24.000.000 VND."
+  },
+  {
+    "instruction": "Các khoản phải trả khác ngắn hạn cuối quý bao gồm những gì và tổng giá trị là bao nhiêu?",
+    "input": "18",
+    "output": "Các khoản phải trả khác ngắn hạn cuối quý bao gồm Kinh phí công đoàn (4.095.200 VND) và Các khoản phải trả, phải nộp khác (259.673 VND), với tổng giá trị là 4.354.873 VND."
+  },
+  {
+    "instruction": "So sánh khoản phải trả người bán ngắn hạn cuối quý và đầu quý. Có sự thay đổi nào không?",
+    "input": "18",
+    "output": "Khoản phải trả người bán ngắn hạn cuối quý là 15.276.587.150 VND và đầu quý cũng là 15.276.587.150 VND. Không có sự thay đổi nào giữa cuối quý và đầu quý."
+  },
+  {
+    "instruction": "Đánh giá khả năng quản lý nợ của công ty dựa trên thông tin về thuế và các khoản phải nộp nhà nước.",
+    "input": "18",
+    "output": "Đối với khoản 'Thuế và các khoản phí, lệ phí và các khoản phải nộp khác', số dư đầu quý là 18.000.000 VND, số phải nộp trong quý là 6.000.000 VND, và số đã thực nộp trong quý là 0 VND, dẫn đến số dư cuối quý là 24.000.000 VND. Việc không thực nộp bất kỳ khoản nào trong quý và số dư phải nộp tăng lên cho thấy công ty chưa thực hiện nghĩa vụ nộp các khoản này cho Nhà nước trong kỳ. Điều này tiềm ẩn rủi ro về tuân thủ pháp luật về thuế và có thể dẫn đến các khoản phạt hoặc lãi chậm nộp trong tương lai. Nó cũng cho thấy khả năng quản lý dòng tiền để đáp ứng nghĩa vụ thuế của công ty có thể không hiệu quả."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không có doanh thu chưa thực hiện đến doanh thu kỳ tới của công ty.",
+    "input": "18",
+    "output": "Mục 'Doanh thu chưa thực hiện' ngắn hạn và dài hạn đều có giá trị bằng '-'. Việc không có khoản mục này cho thấy công ty không có các hợp đồng trả trước hoặc các nguồn doanh thu được ghi nhận sớm để chuyển giao sang các kỳ kế toán tiếp theo. Điều này có thể có tác động tiêu cực đến doanh thu kỳ tới, vì công ty sẽ không có 'đệm' doanh thu đã được đảm bảo từ trước. Doanh thu của kỳ tới sẽ hoàn toàn phụ thuộc vào các hoạt động kinh doanh mới phát sinh trong chính kỳ đó, tiềm ẩn rủi ro về sự ổn định và dự báo doanh thu."
+  },
+  {
+    "instruction": "Công ty có phát hành trái phiếu thường hay trái phiếu chuyển đổi không?",
+    "input": "19",
+    "output": "Không, tất cả các chỉ tiêu liên quan đến trái phiếu thường và trái phiếu chuyển đổi đều bằng '-'."
+  },
+  {
+    "instruction": "Tổng vốn góp của chủ sở hữu đầu năm nay là bao nhiêu?",
+    "input": "19",
+    "output": "Tổng vốn góp của chủ sở hữu đầu năm nay là 575.096.750.000 VND."
+  },
+  {
+    "instruction": "Có bất kỳ dự phòng phải trả ngắn hạn nào được ghi nhận không?",
+    "input": "19",
+    "output": "Không có bất kỳ dự phòng phải trả ngắn hạn nào được ghi nhận, tất cả các chỉ tiêu đều bằng '-'."
+  },
+  {
+    "instruction": "Đánh giá tình hình phát hành cổ phiếu và cổ tức của công ty dựa trên thông tin thuyết minh.",
+    "input": "19",
+    "output": "Thông tin về 'Cổ phiếu' và 'Cổ tức' đều hiển thị các giá trị bằng '-'. Điều này cho thấy công ty không có hoạt động phát hành cổ phiếu, mua lại cổ phiếu quỹ, hoặc chi trả cổ tức trong kỳ. Tình hình này có thể cho thấy công ty không có nhu cầu huy động vốn từ thị trường chứng khoán thông qua phát hành cổ phiếu mới, hoặc không đủ lợi nhuận để chi trả cổ tức cho cổ đông, hoặc đang trong giai đoạn tích lũy lợi nhuận để tái đầu tư. Việc không có hoạt động cổ tức cũng có thể ảnh hưởng đến sự hấp dẫn của cổ phiếu đối với nhà đầu tư tìm kiếm thu nhập."
+  },
+  {
+    "instruction": "Phân tích tác động của các khoản tài sản thuế thu nhập hoãn lại đến tình hình tài chính của công ty.",
+    "input": "19",
+    "output": "Mục 'Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả' đều có giá trị bằng '-'. Nếu công ty có tài sản thuế thu nhập hoãn lại, nó sẽ tác động tích cực đến tình hình tài chính bằng cách giảm bớt nghĩa vụ thuế trong tương lai, cải thiện dòng tiền và lợi nhuận sau thuế dài hạn. Nó phản ánh quyền lợi của công ty trong việc được giảm thuế khi các khoản chênh lệch tạm thời này được đảo ngược. Tuy nhiên, việc ghi nhận này đòi hỏi phải chắc chắn có đủ lợi nhuận tính thuế trong tương lai, nếu không, giá trị tài sản này có thể bị ghi giảm, ảnh hưởng tiêu cực đến báo cáo tài chính."
+  },
+  {
+    "instruction": "Dự báo rủi ro về cơ cấu vốn nếu công ty không có các giao dịch tăng/giảm vốn trong năm.",
+    "input": "19",
+    "output": "Bảng 'Bảng đối chiếu biến động của vốn chủ sở hữu' cho thấy 'Vốn góp của chủ sở hữu' đầu năm trước, đầu năm nay và cuối năm nay đều là 575.096.750.000 VND, và tất cả các chỉ tiêu tăng/giảm vốn đều bằng '-'. Việc không có các giao dịch tăng/giảm vốn trong năm cho thấy cơ cấu vốn của công ty ổn định, nhưng cũng có thể chỉ ra sự thiếu hoạt động đầu tư mở rộng quy mô hoặc tái cấu trúc vốn. Rủi ro tiềm ẩn là nếu công ty có nhu cầu vốn lớn để mở rộng hoặc đầu tư mới trong tương lai mà không có khả năng huy động thêm vốn từ bên ngoài, hoặc không có sự linh hoạt trong việc điều chỉnh cơ cấu vốn để tối ưu hóa chi phí vốn, điều này có thể hạn chế tiềm năng tăng trưởng và hiệu quả hoạt động dài hạn."
+  },
+  {
+    "instruction": "Có chênh lệch đánh giá lại tài sản nào trong quý này không?",
+    "input": "20",
+    "output": "Không có chênh lệch đánh giá lại tài sản nào trong quý này, tất cả các chỉ tiêu đều bằng '-'."
+  },
+  {
+    "instruction": "Thông tin về tài sản thuê ngoài được trình bày theo thời hạn nào?",
+    "input": "20",
+    "output": "Thông tin về tài sản thuê ngoài được trình bày theo các thời hạn: Từ 1 năm trở xuống, Trên 1 năm đến 5 năm, và Trên 5 năm."
+  },
+  {
+    "instruction": "Khi nào doanh nghiệp phải thuyết minh chi tiết về số lượng ngoại tệ?",
+    "input": "20",
+    "output": "Doanh nghiệp phải thuyết minh chi tiết số lượng từng loại ngoại tệ tính theo nguyên tệ khi có."
+  },
+  {
+    "instruction": "Đánh giá sự minh bạch của các khoản mục ngoài Bảng cân đối kế toán.",
+    "input": "20",
+    "output": "Các khoản mục ngoài Bảng cân đối kế toán (Tài sản thuê ngoài, Tài sản nhận giữ hộ, Ngoại tệ các loại, Vàng tiền tệ, Nợ khó đòi đã xử lý) đều không có số liệu cụ thể, tất cả các chỉ tiêu đều bằng '-'. Mặc dù có cấu trúc thuyết minh được cung cấp, việc thiếu dữ liệu thực tế cho thấy hoặc công ty không có các khoản mục này, hoặc thông tin chưa được công bố. Nếu các khoản mục này thực sự tồn tại mà không được tiết lộ, mức độ minh bạch của báo cáo tài chính bị ảnh hưởng nghiêm trọng, vì các khoản mục ngoài bảng cân đối kế toán có thể tiềm ẩn các nghĩa vụ hoặc quyền lợi quan trọng."
+  },
+  {
+    "instruction": "Phân tích tác động của các khoản nợ khó đòi đã xử lý đến báo cáo tài chính của công ty.",
+    "input": "20",
+    "output": "Mục 'Nợ khó đòi đã xử lý' hiển thị là '-'. Nếu trong một tình huống giả định mà công ty có các khoản nợ khó đòi đã xử lý, chúng sẽ tác động đáng kể đến báo cáo tài chính. Việc xử lý (xóa sổ kế toán) nợ khó đòi sẽ làm giảm giá trị tài sản trên Bảng cân đối kế toán và thường dẫn đến việc ghi nhận một khoản chi phí trên Báo cáo kết quả hoạt động kinh doanh, làm giảm lợi nhuận trong kỳ. Mặc dù đây là một tổn thất, việc xử lý nợ khó đòi giúp làm sạch bảng cân đối kế toán, phản ánh chân thực hơn chất lượng tài sản và cải thiện khả năng đánh giá rủi ro tín dụng của công ty. Tuy nhiên, việc có nhiều nợ khó đòi phải xử lý cũng cho thấy những vấn đề trong quản lý tín dụng và khả năng thu hồi nợ của công ty."
+  },
+  {
+    "instruction": "Dự báo rủi ro liên quan đến sự biến động của tỷ giá hối đoái nếu công ty có các giao dịch bằng ngoại tệ.",
+    "input": "20",
+    "output": "Mục 'Chênh lệch tỷ giá' hiển thị là '-'. Nếu công ty có các giao dịch bằng ngoại tệ (mặc dù hiện tại không có), sự biến động của tỷ giá hối đoái sẽ tạo ra rủi ro đáng kể. Nếu công ty có các khoản phải thu bằng ngoại tệ và đồng tiền đó mất giá so với VND, công ty sẽ chịu tổn thất chênh lệch tỷ giá khi chuyển đổi về VND. Ngược lại, nếu có các khoản phải trả bằng ngoại tệ và đồng tiền đó tăng giá so với VND, chi phí phải trả sẽ tăng lên. Những chênh lệch này có thể được hạch toán vào Báo cáo kết quả hoạt động kinh doanh, gây biến động lớn trong lợi nhuận, đặc biệt nếu công ty không có các chính sách phòng ngừa rủi ro tỷ giá. Điều này ảnh hưởng đến khả năng dự báo lợi nhuận và dòng tiền của công ty."
+  },
+  {
+    "instruction": "Tổng doanh thu bán hàng và cung cấp dịch vụ trong quý này là bao nhiêu?",
+    "input": "21",
+    "output": "Thông tin không có trong dữ liệu."
+  },
+  {
+    "instruction": "Các khoản giảm trừ doanh thu trong quý này là bao nhiêu?",
+    "input": "21",
+    "output": "Thông tin không có trong dữ liệu."
+  },
+  {
+    "instruction": "Doanh thu hoạt động tài chính khác trong quý này là bao nhiêu?",
+    "input": "21",
+    "output": "Doanh thu hoạt động tài chính khác trong quý này là 26 VND."
+  },
+  {
+    "instruction": "Nêu một trường hợp mà doanh nghiệp phải thuyết minh thêm về doanh thu cho thuê tài sản.",
+    "input": "21",
+    "output": "Doanh nghiệp phải thuyết minh thêm về doanh thu cho thuê tài sản trong trường hợp ghi nhận doanh thu cho thuê tài sản là tổng số tiền nhận trước để so sánh sự khác biệt giữa việc ghi nhận doanh thu theo phương pháp phân bổ dần theo thời gian cho thuê."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của các khoản giảm trừ doanh thu đối với việc đánh giá hiệu quả kinh doanh thực tế.",
+    "input": "21",
+    "output": "Các khoản giảm trừ doanh thu (chiết khấu thương mại, giảm giá hàng bán, hàng bán bị trả lại) là rất quan trọng để đánh giá hiệu quả kinh doanh thực tế. Doanh thu thuần được tính bằng cách lấy tổng doanh thu bán hàng và cung cấp dịch vụ trừ đi các khoản giảm trừ này. Nếu các khoản giảm trừ doanh thu lớn, nó cho thấy doanh thu ban đầu có thể bị thổi phồng hoặc công ty đang phải dùng các chính sách bán hàng kém hiệu quả. Do đó, việc xem xét doanh thu thuần sau khi đã trừ đi các khoản này mới phản ánh đúng năng lực tạo doanh thu thực tế và hiệu quả hoạt động kinh doanh của công ty."
+  },
+  {
+    "instruction": "Dự báo ảnh hưởng đến lợi nhuận nếu công ty tiếp tục không có doanh thu từ hoạt động bán hàng chính.",
+    "input": "21",
+    "output": "Nếu công ty tiếp tục không có doanh thu từ hoạt động bán hàng chính, điều này sẽ có tác động cực kỳ tiêu cực và nghiêm trọng đến lợi nhuận. Hoạt động bán hàng chính là nguồn thu nhập cốt lõi, nếu không có nguồn thu này, công ty sẽ phải dựa vào các nguồn thu khác hoặc cắt giảm chi phí đến mức tối đa để duy trì lợi nhuận. Về lâu dài, việc thiếu doanh thu chính sẽ dẫn đến thua lỗ triền miên, cạn kiệt nguồn vốn, và cuối cùng là phá sản, vì không có hoạt động kinh doanh nào có thể bền vững nếu không tạo ra doanh thu từ sản phẩm/dịch vụ cốt lõi."
+  },
+  {
+    "instruction": "Tổng chi phí khác trong quý này là bao nhiêu?",
+    "input": "22",
+    "output": "Tổng chi phí khác trong quý này là 428.100 VND."
+  },
+  {
+    "instruction": "Chi phí quản lý doanh nghiệp phát sinh trong quý này là bao nhiêu?",
+    "input": "22",
+    "output": "Chi phí quản lý doanh nghiệp phát sinh trong quý này là 6.000.000 VND."
+  },
+  {
+    "instruction": "So sánh chi phí quản lý doanh nghiệp quý này với quý trước.",
+    "input": "22",
+    "output": "Chi phí quản lý doanh nghiệp quý này là 6.000.000 VND, trong khi quý trước là 1.560.000 VND. Chi phí quản lý doanh nghiệp quý này cao hơn quý trước."
+  },
+  {
+    "instruction": "Chi phí tài chính và thu nhập khác của công ty trong quý này là bao nhiêu?",
+    "input": "22",
+    "output": "Chi phí tài chính trong quý này là 0 VND ('-'). Thu nhập khác trong quý này là 0 VND ('-')."
+  },
+  {
+    "instruction": "Phân tích tác động của chi phí khác tăng đột biến đến lợi nhuận của công ty.",
+    "input": "22",
+    "output": "Trong quý này, 'Các khoản khác' trong mục Chi phí khác là 428.100 VND, trong khi quý trước là '-'. Điều này cho thấy có sự phát sinh chi phí khác trong quý này. Nếu khoản chi phí khác này tăng đột biến, nó sẽ trực tiếp làm giảm lợi nhuận thuần từ hoạt động kinh doanh và tổng lợi nhuận kế toán trước thuế của công ty. Mặc dù 428.100 VND không phải là con số quá lớn, nhưng nếu các chi phí này không được kiểm soát hoặc không liên quan đến hoạt động tạo doanh thu, chúng có thể bào mòn lợi nhuận và làm giảm hiệu quả hoạt động tổng thể của công ty."
+  },
+  {
+    "instruction": "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên cơ cấu chi phí.",
+    "input": "22",
+    "output": "Dựa trên cơ cấu chi phí, công ty không phát sinh chi phí tài chính, chi phí bán hàng, chi phí nguyên liệu, vật liệu, nhân công, khấu hao TSCĐ. Chi phí chính phát sinh là chi phí quản lý doanh nghiệp (6.000.000 VND) và một khoản chi phí khác bằng tiền (1.560.000 VND). Việc không có các chi phí liên quan đến hoạt động sản xuất kinh doanh trực tiếp cho thấy công ty có thể đang tạm dừng hoặc không có hoạt động sản xuất/bán hàng chính thức trong quý. Cơ cấu chi phí này ngụ ý hiệu quả hoạt động kinh doanh cốt lõi rất thấp hoặc không tồn tại. Lợi nhuận (nếu có) sẽ chủ yếu đến từ việc kiểm soát chi phí quản lý hoặc các hoạt động không cốt lõi, điều này không bền vững và cho thấy công ty đang gặp khó khăn trong hoạt động kinh doanh chính."
+  },
+  {
+    "instruction": "Nêu một giao dịch không bằng tiền có thể ảnh hưởng đến báo cáo lưu chuyển tiền tệ.",
+    "input": "23",
+    "output": "Một giao dịch không bằng tiền có thể ảnh hưởng đến báo cáo lưu chuyển tiền tệ là mua tài sản bằng cách nhận các khoản nợ liên quan trực tiếp hoặc thông qua nghiệp vụ cho thuê tài chính."
+  },
+  {
+    "instruction": "Các khoản tiền do doanh nghiệp nắm giữ nhưng không được sử dụng có cần được trình bày không?",
+    "input": "23",
+    "output": "Có, các khoản tiền do doanh nghiệp nắm giữ nhưng không được sử dụng cần được trình bày giá trị và lý do của chúng do có sự hạn chế của pháp luật hoặc các ràng buộc khác mà doanh nghiệp phải thực hiện."
+  },
+  {
+    "instruction": "Nêu hai hình thức tiền thu từ đi vay trong kỳ.",
+    "input": "23",
+    "output": "Hai hình thức tiền thu từ đi vay trong kỳ là: Tiền thu từ đi vay theo khế ước thông thường và Tiền thu từ phát hành trái phiếu thường."
+  },
+  {
+    "instruction": "Giải thích mục đích của việc thuyết minh về các khoản nợ tiềm tàng và cam kết tài chính.",
+    "input": "23",
+    "output": "Mục đích của việc thuyết minh về các khoản nợ tiềm tàng và cam kết tài chính là cung cấp thông tin quan trọng cho người đọc báo cáo tài chính về các nghĩa vụ hoặc quyền lợi có thể phát sinh trong tương lai nhưng chưa đủ điều kiện ghi nhận là tài sản hoặc nợ trên bảng cân đối kế toán. Điều này giúp nhà đầu tư và các bên liên quan đánh giá toàn diện hơn về rủi ro và cơ hội tài chính của công ty, từ đó đưa ra quyết định chính xác hơn."
+  },
+  {
+    "instruction": "Đánh giá tầm quan trọng của việc báo cáo các sự kiện phát sinh sau ngày kết thúc kỳ kế toán năm.",
+    "input": "23",
+    "output": "Việc báo cáo các sự kiện phát sinh sau ngày kết thúc kỳ kế toán năm là rất quan trọng vì những sự kiện này có thể ảnh hưởng đáng kể đến tình hình tài chính, kết quả kinh doanh và dòng tiền của công ty trong tương lai. Việc tiết lộ kịp thời giúp người dùng báo cáo tài chính cập nhật thông tin mới nhất và tránh đưa ra các quyết định dựa trên thông tin không đầy đủ, từ đó nâng cao tính minh bạch và độ tin cậy của báo cáo."
+  },
+  {
+    "instruction": "Phân tích cách thông tin về hoạt động liên tục có thể ảnh hưởng đến quyết định đầu tư.",
+    "input": "23",
+    "output": "Thông tin về hoạt động liên tục là giả định công ty sẽ tiếp tục hoạt động trong tương lai gần. Nếu công ty được xác nhận có khả năng hoạt động liên tục, nhà đầu tư sẽ tin tưởng hơn vào khả năng sinh lời và tăng trưởng dài hạn, sẵn sàng đầu tư. Ngược lại, nếu có những nghi ngờ đáng kể về khả năng hoạt động liên tục (ví dụ: thua lỗ nghiêm trọng, thiếu thanh khoản), điều này báo hiệu rủi ro cao cho nhà đầu tư. Các tài sản có thể phải được định giá lại theo giá thanh lý, và các khoản nợ có thể phải được thanh toán sớm hơn, khiến nhà đầu tư có thể rút vốn hoặc yêu cầu tỷ suất lợi nhuận cao hơn."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế TNDN của BCTC riêng Quý 1 năm 2025 là bao nhiêu?",
+    "input": "24",
+    "output": "Lợi nhuận sau thuế TNDN của BCTC riêng Quý 1 năm 2025 là 2.999.974 đồng."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế TNDN của BCTC hợp nhất Quý 1 năm 2024 là bao nhiêu?",
+    "input": "24",
+    "output": "Lợi nhuận sau thuế TNDN của BCTC hợp nhất Quý 1 năm 2024 là 51.254.960 đồng."
+  },
+  {
+    "instruction": "Sự chênh lệch về lợi nhuận sau thuế TNDN giữa BCTC riêng Quý 1 năm 2025 và Quý 1 năm 2024 là bao nhiêu?",
+    "input": "24",
+    "output": "Sự chênh lệch về lợi nhuận sau thuế TNDN giữa BCTC riêng Quý 1 năm 2025 và Quý 1 năm 2024 là 45.254.986 đồng (giảm lỗ)."
+  },
+  {
+    "instruction": "Nguyên nhân chính dẫn đến sự giảm lỗ của lợi nhuận sau thuế TNDN trong Quý 1 năm 2025 là gì?",
+    "input": "24",
+    "output": "Nguyên nhân chính dẫn đến sự giảm lỗ của lợi nhuận sau thuế TNDN trong Quý 1 năm 2025 là do Quý 1 năm 2025 Công ty mẹ không phát sinh các khoản chi phí trả cho người lao động và các chi phí khác."
+  },
+  {
+    "instruction": "So sánh sự chênh lệch về lợi nhuận sau thuế TNDN giữa BCTC riêng và BCTC hợp nhất trong Quý 1 năm 2025 so với Quý 1 năm 2024.",
+    "input": "24",
+    "output": "Cả BCTC riêng và BCTC hợp nhất đều ghi nhận mức chênh lệch giảm lỗ về lợi nhuận sau thuế TNDN là 45.254.986 đồng khi so sánh Quý 1 năm 2025 với Quý 1 năm 2024. Cụ thể, BCTC riêng giảm lỗ từ 48.254.960 đồng (Q1/2024) xuống 2.999.974 đồng (Q1/2025), và BCTC hợp nhất giảm lỗ từ 51.254.960 đồng (Q1/2024) xuống 5.999.974 đồng (Q1/2025). Lợi nhuận sau thuế TNDN của BCTC hợp nhất cao hơn của BCTC riêng trong cả hai kỳ, cho thấy hoạt động của các công ty con/đơn vị hợp nhất có đóng góp tích cực vào lợi nhuận tổng thể."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc không phát sinh chi phí cho người lao động và các chi phí khác đến kết quả kinh doanh của công ty mẹ.",
+    "input": "24",
+    "output": "Việc công ty mẹ không phát sinh các khoản chi phí trả cho người lao động và các chi phí khác trong Quý 1 năm 2025 là nguyên nhân chính dẫn đến sự 'giảm lỗ' trong lợi nhuận sau thuế TNDN. Tác động trực tiếp là làm giảm đáng kể tổng chi phí hoạt động của công ty mẹ, từ đó cải thiện lợi nhuận (giảm mức lỗ) so với cùng kỳ năm trước. Mặc dù điều này giúp con số lợi nhuận trông tích cực hơn, nhưng nó cũng đặt ra câu hỏi về tính bền vững của hoạt động kinh doanh. Việc không có chi phí lao động có thể ngụ ý rằng công ty đã cắt giảm nhân sự, tạm dừng hoạt động, hoặc không có nhu cầu về lao động trong quý. Nếu không đi kèm với tăng trưởng doanh thu hoặc tái cấu trúc hiệu quả, sự 'giảm lỗ' này có thể chỉ là tạm thời và không phản ánh sự cải thiện thực sự trong hiệu quả kinh doanh cốt lõi."
+  },
+  {
+    "instruction": "Phân tích rủi ro nếu sự giảm chi phí là không bền vững và không đi kèm với tăng trưởng doanh thu.",
+    "input": "24",
+    "output": "Nếu sự giảm chi phí (như chi phí cho người lao động và các chi phí khác) là không bền vững và không đi kèm với tăng trưởng doanh thu, công ty sẽ đối mặt với rủi ro nghiêm trọng. Trong ngắn hạn, cắt giảm chi phí có thể làm giảm lỗ. Tuy nhiên, nếu không có tăng trưởng doanh thu hoặc thậm chí doanh thu giảm, công ty sẽ không có nguồn lực để duy trì hoạt động, tái đầu tư, hoặc mở rộng. Về lâu dài, điều này có thể dẫn đến suy giảm khả năng cạnh tranh, mất thị phần, và cuối cùng là thua lỗ triền miên. Công ty cần có một chiến lược tăng trưởng doanh thu bền vững để bổ sung cho việc quản lý chi phí, nếu không, tình hình tài chính có thể xấu đi nhanh chóng khi các chi phí không thể tiếp tục được cắt giảm."
+  }
+]
+```

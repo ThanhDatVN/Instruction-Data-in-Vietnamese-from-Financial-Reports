@@ -1,0 +1,869 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty là gì?",
+      "Mã chứng khoán của công ty là gì?",
+      "Địa chỉ trụ sở chính của công ty nằm ở đâu?",
+      "Báo cáo tài chính được công bố thuộc loại hình báo cáo nào?",
+      "Tại sao công ty lại công bố công văn giải trình lợi nhuận sau thuế TNDN?",
+      "So sánh ngày công bố thông tin trên tài liệu và trên website, có sự khác biệt không?"
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Công bố thông tin về Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Công bố ngày 29/04/2024, Quý 1 năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Công bố thông tin\nLoại nội dung: Text\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nHà Nội, ngày 29 tháng 04 năm 2024\nCÔNG BỐ THÔNG TIN TRÊN CỔNG THÔNG TIN ĐIỆN TỬ CỦA ỦY BAN CHỨNG KHOÁN NHÀ NƯỚC VÀ SỞ GIAO DỊCH CHỨNG KHOÁN\nKính gửi: Ủy ban Chứng khoán Nhà nước\nSở Giao dịch Chứng khoán Tp. Hồ Chí Minh.\nTên tổ chức: TỔNG CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL.\nMã chứng khoán: VTP.\nĐịa chỉ trụ sở chính: số 2 ngõ 15 phố Duy Tân, phường Dịch Vọng Hậu, quận Cầu Giấy, thành phố Hà Nội.\nĐiện thoại: 0962.683.130\nNgười thực hiện công bố thông tin: Lê Công Phú.\nChức vụ: Người được ủy quyền công bố thông tin\nLoại thông tin công bố: Định kỳ ☐ Bất thường ☐ 24h ☐ Theo yêu cầu ☐\nNội dung thông tin công bố:\n- Báo cáo tài chính riêng quý 1 năm 2024\n- Công văn giải trình lợi nhuận sau thuế TNDN quý 1 năm 2024 biến động hơn 10% so với cùng kỳ năm 2023\nThông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 30/04/2024 tại đường dẫn https://viettelpost.com.vn/baocaotaichinh\nTôi cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố.\nNơi nhận: Đại diện tổ chức\nNhư trên\nLưu VPHĐQT.\nLÊ CÔNG PHÚ\n\nTẬP ĐOÀN CÔNG NGHIỆP VIỄN THÔNG QUÂN ĐỘI\nTỔNG CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL\nBÁO CÁO TÀI CHÍNH RIÊNG\nQuý 1 năm 2024",
+    "output": [
+      "Tên đầy đủ của công ty là Tổng Công ty Cổ phần Bưu chính Viettel.",
+      "Mã chứng khoán của công ty là VTP.",
+      "Địa chỉ trụ sở chính của công ty nằm ở số 2 ngõ 15 phố Duy Tân, phường Dịch Vọng Hậu, quận Cầu Giấy, thành phố Hà Nội.",
+      "Báo cáo tài chính được công bố thuộc loại hình Báo cáo tài chính riêng quý 1 năm 2024.",
+      "Công ty công bố công văn giải trình lợi nhuận sau thuế TNDN quý 1 năm 2024 biến động hơn 10% so với cùng kỳ năm 2023.",
+      "Ngày công bố thông tin trên tài liệu là ngày 29 tháng 04 năm 2024. Thông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 30/04/2024. Có sự khác biệt, thông tin trên website được công bố muộn hơn một ngày so với ngày trên tài liệu."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn tại ngày 31/03/2024 là bao nhiêu?",
+      "Khoản mục 'Tiền' tại ngày 31/03/2024 có giá trị bao nhiêu?",
+      "So sánh Tiền và các khoản tương đương tiền giữa cuối quý 1/2024 và đầu năm 2024.",
+      "Tỷ trọng Đầu tư tài chính ngắn hạn trong tổng tài sản ngắn hạn tại cuối quý 1/2024 là bao nhiêu phần trăm?",
+      "Đánh giá sự thay đổi của các khoản phải thu ngắn hạn và hàng tồn kho từ đầu năm đến cuối quý 1/2024.",
+      "Phân tích tác động của việc giảm các khoản tương đương tiền và Đầu tư nắm giữ đến ngày đáo hạn đến thanh khoản của công ty.",
+      "Dự báo rủi ro về khả năng thu hồi nợ dựa trên sự biến động của Phải thu ngắn hạn và Dự phòng phải thu ngắn hạn khó đòi."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|---|---|\n| **A. TÀI SẢN NGẮN HẠN** | **100** | | **4.751.987.498.582** | **4.864.212.782.261** |\n| I. Tiền và các khoản tương đương tiền | 110 | 3 | 587.213.546.357 | 605.466.501.241 |\n| 1. Tiền | 111 | | 587.213.546.357 | 505.466.501.241 |\n| 2. Các khoản tương đương tiền | 112 | | - | 100.000.000.000 |\n| II. Đầu tư tài chính ngắn hạn | 120 | 4 | 1.571.819.575.145 | 1.671.819.575.145 |\n| 1. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | 1.571.819.575.145 | 1.671.819.575.145 |\n| III. Các khoản phải thu ngắn hạn | 130 | | 1.979.327.166.574 | 1.971.490.526.627 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | 5 | 1.093.078.827.752 | 1.142.035.062.168 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | | 46.728.087.554 | 153.204.976.009 |\n| 3. Phải thu ngắn hạn khác | 136 | 6 | 854.041.968.484 | 690.772.205.666 |\n| 4. Dự phòng phải thu ngắn hạn khó đòi | 137 | 7 | 14.521.717.216 | 14.521.717.216 |\n| IV. Hàng tồn kho | 140 | 8 | 391.154.627.482 | 396.834.081.440 |\n| 1. Hàng tồn kho | 141 | | 391.154.627.482 | 396.834.081.440 |\n| V. Tài sản ngắn hạn khác | 150 | | 222.472.583.024 | 218.602.097.808 |\n| 1. Chi phí trả trước ngắn hạn | 151 | 12 | 222.472.583.024 | 218.602.097.808 |",
+    "output": [
+      "Tổng tài sản ngắn hạn tại ngày 31/03/2024 là 4.751.987.498.582 VND.",
+      "Khoản mục 'Tiền' tại ngày 31/03/2024 có giá trị 587.213.546.357 VND.",
+      "Tại cuối quý 1/2024 (31/03/2024), Tiền và các khoản tương đương tiền là 587.213.546.357 VND. Tại đầu năm 2024 (01/01/2024), Tiền và các khoản tương đương tiền là 605.466.501.241 VND. Khoản mục này đã giảm 18.252.954.884 VND.",
+      "Đầu tư tài chính ngắn hạn tại 31/03/2024 là 1.571.819.575.145 VND. Tổng tài sản ngắn hạn là 4.751.987.498.582 VND. Tỷ trọng là (1.571.819.575.145 / 4.751.987.498.582) * 100% ≈ 33.08%.",
+      "Các khoản phải thu ngắn hạn tăng từ 1.971.490.526.627 VND (01/01/2024) lên 1.979.327.166.574 VND (31/03/2024), tăng khoảng 7,8 tỷ VND. Hàng tồn kho giảm từ 396.834.081.440 VND (01/01/2024) xuống 391.154.627.482 VND (31/03/2024), giảm khoảng 5,68 tỷ VND. Sự tăng nhẹ của các khoản phải thu có thể cho thấy hoạt động bán hàng tín dụng tăng hoặc khả năng thu hồi nợ chậm hơn. Sự giảm nhẹ của hàng tồn kho có thể cho thấy công ty quản lý hàng tồn kho hiệu quả hơn hoặc nhu cầu thị trường tăng.",
+      "Các khoản tương đương tiền giảm từ 100.000.000.000 VND (01/01/2024) về 0 VND (31/03/2024) và Đầu tư nắm giữ đến ngày đáo hạn (ngắn hạn) giảm từ 1.671.819.575.145 VND xuống 1.571.819.575.145 VND. Sự giảm này cho thấy lượng tài sản có tính thanh khoản cao của công ty đã giảm đáng kể. Điều này có thể ảnh hưởng đến khả năng công ty nhanh chóng chuyển đổi tài sản thành tiền để đáp ứng các nghĩa vụ tài chính ngắn hạn, làm giảm thanh khoản. Tuy nhiên, khoản tiền (mã 111) vẫn duy trì ở mức cao, bù đắp một phần cho sự sụt giảm này.",
+      "Phải thu ngắn hạn tăng từ 1.971.490.526.627 VND (01/01/2024) lên 1.979.327.166.574 VND (31/03/2024). Trong khi đó, Dự phòng phải thu ngắn hạn khó đòi vẫn giữ nguyên ở mức 14.521.717.216 VND. Việc các khoản phải thu ngắn hạn tăng mà dự phòng không tăng tương ứng có thể báo hiệu rủi ro tiềm ẩn về khả năng thu hồi nợ. Nếu chất lượng các khoản phải thu mới hoặc hiện tại không được đảm bảo, công ty có thể đối mặt với tổn thất nợ xấu lớn hơn trong tương lai."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn tại ngày 31/03/2024 là bao nhiêu?",
+      "Giá trị nguyên giá của tài sản cố định hữu hình tại ngày 31/03/2024 là bao nhiêu?",
+      "So sánh tổng Tài sản dài hạn cuối quý 1/2024 với đầu năm 2024.",
+      "Mức độ tăng trưởng của Tài sản cố định hữu hình từ đầu năm đến cuối quý 1/2024 là bao nhiêu phần trăm?",
+      "Đánh giá sự dịch chuyển trong cơ cấu đầu tư tài chính dài hạn của công ty từ đầu năm đến cuối quý 1/2024.",
+      "Phân tích ý nghĩa của việc tăng Tài sản dở dang dài hạn đối với kế hoạch phát triển của công ty.",
+      "Tính tỷ lệ tài sản cố định hữu hình trên tổng tài sản tại ngày 31/03/2024 và đánh giá mức độ phụ thuộc vào tài sản này."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|---|---|\n| **B. TÀI SẢN DÀI HẠN** | **200** | | **1.229.788.273.024** | **961.656.776.115** |\n| I. Các khoản phải thu dài hạn | 210 | | 46.349.516.696 | 22.765.462.377 |\n| 1. Phải thu dài hạn khác | 216 | 6 | 46.349.516.696 | 22.765.462.377 |\n| II. Tài sản cố định | 220 | | 604.086.716.980 | 367.673.823.685 |\n| 1. Tài sản cố định hữu hình | 221 | 10 | 569.510.008.755 | 331.928.885.626 |\n| - Nguyên giá | 222 | | 1.071.226.935.031 | 808.666.268.040 |\n| - Giá trị hao mòn lũy kế | 223 | | (501.716.926.276) | (476.737.382.414) |\n| 2. Tài sản cố định vô hình | 227 | 11 | 34.576.708.225 | 35.744.938.059 |\n| - Nguyên giá | 228 | | 60.456.088.213 | 60.456.088.213 |\n| - Giá trị hao mòn lũy kế | 229 | | (25.879.379.988) | (24.711.150.154) |\n| IV. Tài sản dở dang dài hạn | 240 | 9 | 82.913.910.167 | 82.302.128.315 |\n| 1. Chi phí xây dựng cơ bản dở dang | 242 | | 82.913.910.167 | 82.302.128.315 |\n| V. Đầu tư tài chính dài hạn | 250 | 4 | 124.519.023.812 | 114.519.023.812 |\n| 1. Đầu tư vào công ty con | 251 | | 40.519.023.812 | 40.519.023.812 |\n| 2. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | 84.000.000.000 | 74.000.000.000 |\n| VI. Tài sản dài hạn khác | 260 | | 371.919.105.369 | 374.396.337.926 |\n| 1. Chi phí trả trước dài hạn | 261 | 12 | 371.919.105.369 | 374.396.337.926 |\n| **TỔNG CỘNG TÀI SẢN** | **270** | | **5.981.775.771.606** | **5.825.869.558.376** |",
+    "output": [
+      "Tổng tài sản dài hạn tại ngày 31/03/2024 là 1.229.788.273.024 VND.",
+      "Giá trị nguyên giá của tài sản cố định hữu hình tại ngày 31/03/2024 là 1.071.226.935.031 VND.",
+      "Tổng tài sản dài hạn tại cuối quý 1/2024 (31/03/2024) là 1.229.788.273.024 VND, trong khi đầu năm 2024 (01/01/2024) là 961.656.776.115 VND. Tài sản dài hạn đã tăng 268.131.496.909 VND.",
+      "Tài sản cố định hữu hình tại 01/01/2024 là 331.928.885.626 VND và tại 31/03/2024 là 569.510.008.755 VND. Mức độ tăng trưởng là ((569.510.008.755 - 331.928.885.626) / 331.928.885.626) * 100% ≈ 71.57%.",
+      "Khoản Đầu tư tài chính dài hạn tăng từ 114.519.023.812 VND (01/01/2024) lên 124.519.023.812 VND (31/03/2024), tăng 10.000.000.000 VND. Sự tăng này chủ yếu đến từ Đầu tư nắm giữ đến ngày đáo hạn, tăng từ 74.000.000.000 VND lên 84.000.000.000 VND. Trong khi đó, Đầu tư vào công ty con giữ nguyên ở mức 40.519.023.812 VND. Điều này cho thấy công ty đang ưu tiên tăng cường các khoản đầu tư có kỳ hạn xác định, có thể để đảm bảo dòng tiền ổn định hoặc tìm kiếm lợi suất an toàn hơn trong dài hạn, thay vì mở rộng đầu tư vào các công ty con trong quý này.",
+      "Tài sản dở dang dài hạn tăng nhẹ từ 82.302.128.315 VND (01/01/2024) lên 82.913.910.167 VND (31/03/2024). Khoản mục này chủ yếu là Chi phí xây dựng cơ bản dở dang. Sự tăng này cho thấy công ty vẫn đang trong quá trình đầu tư vào các dự án xây dựng cơ bản. Điều này có ý nghĩa rằng công ty đang thực hiện các kế hoạch mở rộng hoặc nâng cấp cơ sở hạ tầng, nhằm tăng cường năng lực hoạt động và tạo ra lợi ích kinh tế trong tương lai. Đây là dấu hiệu của sự phát triển và mở rộng hoạt động kinh doanh, dù mức tăng trong quý này là khiêm tốn.",
+      "Tài sản cố định hữu hình tại 31/03/2024 là 569.510.008.755 VND. Tổng cộng tài sản tại 31/03/2024 là 5.981.775.771.606 VND. Tỷ lệ tài sản cố định hữu hình trên tổng tài sản là (569.510.008.755 / 5.981.775.771.606) * 100% ≈ 9.52%. Mức độ phụ thuộc vào tài sản cố định hữu hình không quá cao, cho thấy công ty có thể có cấu trúc tài sản linh hoạt hơn hoặc tập trung vào các tài sản vô hình/ngắn hạn hơn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả tại ngày 31/03/2024 là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối tại ngày 31/03/2024 là bao nhiêu?",
+      "So sánh Vay và nợ thuê tài chính ngắn hạn giữa cuối quý 1/2024 và đầu năm 2024.",
+      "Tỷ lệ nợ ngắn hạn trên tổng nợ phải trả tại ngày 31/03/2024 là bao nhiêu phần trăm?",
+      "Đánh giá sự biến động của Quỹ khen thưởng, phúc lợi từ đầu năm đến cuối quý 1/2024.",
+      "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 31/03/2024 và nhận xét về đòn bẩy tài chính của công ty.",
+      "Phân tích tác động của sự thay đổi trong Lợi nhuận sau thuế chưa phân phối kỳ này đến khả năng chia cổ tức của công ty."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|---|---|\n| **C. NỢ PHẢI TRẢ** | **300** | | **4.373.327.296.924** | **4.265.171.549.193** |\n| I. Nợ ngắn hạn | 310 | | 4.301.982.328.617 | 4.211.774.489.977 |\n| 1. Phải trả người bán ngắn hạn | 311 | 14 | 259.819.723.799 | 186.906.560.193 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | | 1.584.505.212 | 1.584.505.212 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | 15 | 24.402.975.787 | 64.006.911.671 |\n| 4. Phải trả người lao động | 314 | | 255.878.401.513 | 516.400.126.529 |\n| 5. Chi phí phải trả ngắn hạn | 315 | 16 | 197.873.301.565 | 210.316.374.256 |\n| 6. Doanh thu chưa thực hiện ngắn hạn | 318 | 17 | 27.093.014.724 | 7.973.828.013 |\n| 7. Phải trả ngắn hạn khác | 319 | 18 | 1.696.759.705.420 | 1.538.646.774.086 |\n| 8. Vay và nợ thuê tài chính ngắn hạn | 320 | 13 | 1.833.728.551.996 | 1.670.707.830.732 |\n| 9. Quỹ khen thưởng, phúc lợi | 322 | | 4.842.148.601 | 15.231.579.285 |\n| II. Nợ dài hạn | 330 | | 71.344.968.307 | 53.397.059.216 |\n| 1. Phải trả dài hạn khác | 337 | 18 | 12.656.347.100 | 12.606.347.100 |\n| 2. Vay và nợ thuê tài chính dài hạn | 338 | 13 | 58.688.621.207 | 40.790.712.116 |\n| **D. VỐN CHỦ SỞ HỮU** | **400** | | **1.608.448.474.682** | **1.560.698.009.183** |\n| I. Vốn chủ sở hữu | 410 | 19 | 1.608.448.474.682 | 1.560.698.009.183 |\n| 1. Vốn góp của chủ sở hữu | 411 | | 1.217.830.420.000 | 1.217.830.420.000 |\n| Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 1.217.830.420.000 | 1.217.830.420.000 |\n| 2. Thặng dư vốn cổ phần | 412 | | 21.173.847.940 | 21.173.847.940 |\n| 3. Lợi nhuận sau thuế chưa phân phối | 421 | | 369.444.206.742 | 321.693.741.243 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 321.693.741.243 | 782.989.180 |\n| - LNST chưa phân phối kỳ này | 421b | | 47.750.465.499 | 322.476.730.423 |\n| **TỔNG CỘNG NGUỒN VỐN** | **440** | | **5.981.775.771.606** | **5.825.869.558.376** |",
+    "output": [
+      "Tổng nợ phải trả tại ngày 31/03/2024 là 4.373.327.296.924 VND.",
+      "Lợi nhuận sau thuế chưa phân phối tại ngày 31/03/2024 là 369.444.206.742 VND.",
+      "Vay và nợ thuê tài chính ngắn hạn tại cuối quý 1/2024 (31/03/2024) là 1.833.728.551.996 VND. Tại đầu năm 2024 (01/01/2024) là 1.670.707.830.732 VND. Khoản mục này đã tăng 163.020.721.264 VND.",
+      "Nợ ngắn hạn tại ngày 31/03/2024 là 4.301.982.328.617 VND. Tổng nợ phải trả tại ngày 31/03/2024 là 4.373.327.296.924 VND. Tỷ lệ nợ ngắn hạn trên tổng nợ phải trả là (4.301.982.328.617 / 4.373.327.296.924) * 100% ≈ 98.37%.",
+      "Quỹ khen thưởng, phúc lợi giảm từ 15.231.579.285 VND (01/01/2024) xuống 4.842.148.601 VND (31/03/2024). Đây là một sự giảm đáng kể, cho thấy công ty đã sử dụng phần lớn quỹ này trong quý 1. Điều này có thể ảnh hưởng đến tâm lý và động lực của người lao động nếu không có kế hoạch bổ sung rõ ràng, hoặc đơn giản là việc chi tiêu quỹ này đã được thực hiện theo kế hoạch trong quý.",
+      "Tổng nợ phải trả tại 31/03/2024 là 4.373.327.296.924 VND. Vốn chủ sở hữu tại 31/03/2024 là 1.608.448.474.682 VND. Hệ số nợ trên vốn chủ sở hữu (D/E ratio) là (4.373.327.296.924 / 1.608.448.474.682) ≈ 2.72. Hệ số này cho thấy công ty đang sử dụng một lượng nợ đáng kể so với vốn chủ sở hữu để tài trợ hoạt động. Mức đòn bẩy tài chính khá cao, điều này có thể giúp khuếch đại lợi nhuận khi kinh doanh thuận lợi nhưng cũng làm tăng rủi ro tài chính khi gặp khó khăn.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là 47.750.465.499 VND. Khoản này sẽ làm tăng tổng lợi nhuận sau thuế chưa phân phối lũy kế. Việc có lợi nhuận sau thuế chưa phân phối dương trong kỳ là điều kiện tiên quyết để công ty có thể xem xét chia cổ tức cho cổ đông. Mặc dù lợi nhuận kỳ này không phải là quá lớn so với tổng lợi nhuận chưa phân phối, nó vẫn là một yếu tố tích cực, củng cố khả năng tài chính cho việc chia cổ tức trong tương lai, sau khi đã trích lập các quỹ theo quy định và được Đại hội đồng cổ đông/Hội đồng quản trị phê duyệt."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ quý 1 năm 2024 là bao nhiêu?",
+      "Lợi nhuận sau thuế TNDN quý 1 năm 2024 là bao nhiêu?",
+      "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa quý 1/2024 và quý 1/2023.",
+      "Tính tỷ suất lợi nhuận gộp (Gross Profit Margin) của quý 1/2024.",
+      "Đánh giá hiệu quả hoạt động kinh doanh của công ty qua sự biến động của lợi nhuận thuần từ hoạt động kinh doanh giữa hai kỳ.",
+      "Phân tích tác động của sự thay đổi Chi phí bán hàng và Chi phí quản lý doanh nghiệp đến Lợi nhuận thuần từ hoạt động kinh doanh.",
+      "Tính toán và phân tích các chỉ số ROA, ROE của công ty dựa trên thông tin từ báo cáo kết quả kinh doanh và bảng cân đối kế toán (nếu có đủ dữ liệu từ các chunk khác)."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh giữa niên độ\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|---|---|---|---|\n| | | | (Số liệu phát sinh trong kỳ) | (Số liệu phát sinh trong kỳ) | (Số liệu lũy kế từ đầu năm đến cuối kỳ) | (Số liệu lũy kế từ đầu năm đến cuối kỳ) |\n| 01 | 1. Doanh thu bán hàng và cung cấp dịch vụ | 21 | 4.279.552.904.797 | 4.355.309.128.218 | 4.279.552.904.797 | 4.355.309.128.218 |\n| 10 | 2. Doanh thu thuần về bán hàng và cung cấp dịch vụ | | 4.279.552.904.797 | 4.355.309.128.218 | 4.279.552.904.797 | 4.355.309.128.218 |\n| 11 | 3. Giá vốn hàng bán | 22 | 4.139.873.817.252 | 4.224.684.277.584 | 4.139.873.817.252 | 4.224.684.277.584 |\n| 20 | 4. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | | 139.679.087.545 | 130.624.850.634 | 139.679.087.545 | 130.624.850.634 |\n| 21 | 5. Doanh thu hoạt động tài chính | 23 | 34.066.131.864 | 52.317.700.886 | 34.066.131.864 | 52.317.700.886 |\n| 22 | 6. Chi phí tài chính | 24 | 13.232.207.496 | 15.206.144.674 | 13.232.207.496 | 15.206.144.674 |\n| 23 | Trong đó: chi phí lãi vay | | 13.232.207.496 | 15.205.565.375 | 13.232.207.496 | 15.205.565.375 |\n| 25 | 7. Chi phí bán hàng | 25 | 19.443.623.283 | 6.351.494.862 | 19.443.623.283 | 6.351.494.862 |\n| 26 | 8. Chi phí quản lý doanh nghiệp | 26 | 73.237.536.469 | 79.106.435.660 | 73.237.536.469 | 79.106.435.660 |\n| 30 | 9. Lợi nhuận thuần từ hoạt động kinh doanh | | 67.831.852.161 | 82.278.476.324 | 67.831.852.161 | 82.278.476.324 |\n| 31 | 10. Thu nhập khác | 27 | 1.422.596.470 | 1.784.267.457 | 1.422.596.470 | 1.784.267.457 |\n| 32 | 11. Chi phí khác | 28 | 80.324.897 | 184.423.293 | 80.324.897 | 184.423.293 |\n| 40 | 12. Lợi nhuận khác | | 1.342.271.573 | 1.599.844.164 | 1.342.271.573 | 1.599.844.164 |\n| 50 | 13. Tổng lợi nhuận kế toán trước thuế | | 69.174.123.734 | 83.878.320.488 | 69.174.123.734 | 83.878.320.488 |\n| 51 | 14. Chi phí thuế TNDN hiện hành | 29 | 12.997.105.500 | 12.261.234.917 | 12.997.105.500 | 12.261.234.917 |\n| 60 | 15. Lợi nhuận sau thuế TNDN | | 56.177.018.234 | 71.617.085.571 | 56.177.018.234 | 71.617.085.571 |\nHà Nội, ngày 29 tháng 04 năm 2024\nNgười lập biểu: Dương Vũ Minh\nKế toán trưởng: Hoàng Trung Thành\nTổng Giám đốc: Trung tá Nguyễn Bình Minh",
+    "output": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ quý 1 năm 2024 là 4.279.552.904.797 VND.",
+      "Lợi nhuận sau thuế TNDN quý 1 năm 2024 là 56.177.018.234 VND.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ quý 1 năm 2024 là 139.679.087.545 VND. Cùng kỳ năm 2023 là 130.624.850.634 VND. Lợi nhuận gộp quý 1/2024 đã tăng 9.054.236.911 VND so với quý 1/2023.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ quý 1/2024 là 139.679.087.545 VND. Doanh thu thuần về bán hàng và cung cấp dịch vụ quý 1/2024 là 4.279.552.904.797 VND. Tỷ suất lợi nhuận gộp là (139.679.087.545 / 4.279.552.904.797) * 100% ≈ 3.26%.",
+      "Lợi nhuận thuần từ hoạt động kinh doanh quý 1 năm 2024 là 67.831.852.161 VND, giảm so với 82.278.476.324 VND của quý 1 năm 2023. Mặc dù lợi nhuận gộp tăng, sự sụt giảm của lợi nhuận thuần cho thấy hiệu quả hoạt động kinh doanh đã giảm. Điều này có thể là do sự tăng của chi phí bán hàng (từ 6,35 tỷ VND lên 19,44 tỷ VND) hoặc chi phí tài chính (từ 15,2 tỷ VND lên 13,2 tỷ VND) và giảm doanh thu hoạt động tài chính (từ 52,3 tỷ VND xuống 34,06 tỷ VND) đã ảnh hưởng tiêu cực đến kết quả cuối cùng từ các hoạt động kinh doanh chính.",
+      "Lợi nhuận thuần từ hoạt động kinh doanh giảm từ 82.278.476.324 VND (Q1/2023) xuống 67.831.852.161 VND (Q1/2024). Đồng thời, Chi phí bán hàng tăng đáng kể từ 6.351.494.862 VND lên 19.443.623.283 VND, tăng khoảng 13 tỷ VND. Ngược lại, Chi phí quản lý doanh nghiệp giảm từ 79.106.435.660 VND xuống 73.237.536.469 VND, giảm khoảng 5,8 tỷ VND. Sự tăng mạnh của Chi phí bán hàng đã gây áp lực lớn lên lợi nhuận, làm giảm lợi nhuận thuần. Mặc dù Chi phí quản lý doanh nghiệp có xu hướng giảm, nhưng không đủ để bù đắp cho sự tăng vọt của chi phí bán hàng và sự giảm của Doanh thu hoạt động tài chính.",
+      "Thông tin về Tổng tài sản và Vốn chủ sở hữu cần lấy từ Bảng cân đối kế toán, vốn không nằm trong chunk dữ liệu này. Do đó, không thể tính toán các chỉ số ROA, ROE chỉ dựa trên nội dung chunk hiện tại."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh quý 1 năm 2024 là bao nhiêu?",
+      "Tiền và tương đương tiền cuối năm tại ngày 31/03/2024 là bao nhiêu?",
+      "So sánh Lưu chuyển tiền thuần từ hoạt động đầu tư giữa quý 1/2024 và quý 1/2023.",
+      "Tính tỷ lệ tiền thu từ đi vay so với tiền trả nợ gốc vay trong quý 1/2024.",
+      "Đánh giá tình hình dòng tiền của công ty dựa trên lưu chuyển tiền thuần từ ba hoạt động chính trong quý 1/2024 so với cùng kỳ.",
+      "Phân tích nguyên nhân và tác động của việc giảm đáng kể 'Tăng, giảm các khoản phải thu' đến lưu chuyển tiền từ hoạt động kinh doanh.",
+      "Dự báo khả năng thanh toán nợ của công ty trong tương lai dựa trên lưu chuyển tiền thuần từ hoạt động tài chính."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ giữa niên độ\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|---|---|\n| **I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH** | | | | |\n| 01 | 1. Lợi nhuận trước thuế | | 69.174.123.734 | 83.878.320.488 |\n| | 2. Điều chỉnh cho các khoản: | | | |\n| 02 | Khấu hao tài sản cố định và bất động sản đầu tư | | 26.147.773.696 | 18.543.854.365 |\n| 04 | Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | | 28.051.430 | 31.401.813 |\n| 05 | Lãi/lỗ từ hoạt động đầu tư | | 28.277.513.014 | 31.068.627.578 |\n| 06 | Chi phí lãi vay | | 13.232.207.496 | 15.205.565.375 |\n| 08 | 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | | 80.248.540.482 | 86.527.710.837 |\n| 09 | Tăng, giảm các khoản phải thu | | 129.414.937.541 | 512.172.042.221 |\n| 10 | Tăng, giảm hàng tồn kho | | 5.679.453.958 | 19.168.936.994 |\n| 11 | Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế TNDN phải nộp | | 50.902.472.941 | 662.210.523.278 |\n| 12 | Tăng, giảm chi phí trả trước | | 1.393.252.659 | 29.183.386.548 |\n| 14 | Tiền lãi vay đã trả | | (14.368.232.879) | (15.274.649.106) |\n| 15 | Thuế thu nhập doanh nghiệp đã nộp | | (18.010.447.268) | - |\n| 17 | Tiền chi khác cho hoạt động kinh doanh | | (18.815.983.419) | (11.079.414.665) |\n| 20 | Lưu chuyển tiền thuần từ hoạt động kinh doanh | | 146.977.332.267 | 138.217.157.533 |\n| **II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ** | | | | |\n| 21 | 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | | (162.198.359.108) | (287.081.042) |\n| 22 | 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác | | 1.675.454.546 | - |\n| 23 | 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | | (200.000.000.000) | - |\n| 24 | 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | | 290.000.000.000 | - |\n| 27 | 6. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | | 19.976.054.706 | 5.193.315.107 |\n| 30 | Lưu chuyển tiền thuần từ hoạt động đầu tư | | 52.222.304.402 | 6.581.688.611 |\n| **III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH** | | | | |\n| 33 | 1. Tiền thu từ đi vay | | 12.064.068.234.702 | 5.247.678.733.232 |\n| 34 | 2. Tiền trả nợ gốc vay | | (11.883.149.604.347) | (5.200.320.526.263) |\n| 36 | 3. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | | - | - |\n| 40 | Lưu chuyển tiền thuần từ hoạt động tài chính | | 180.918.630.355 | 47.358.206.969 |\n| 50 | Lưu chuyển tiền thuần trong năm | | 18.281.006.314 | 84.277.261.953 |\n| 60 | Tiền và tương đương tiền đầu năm | | 605.466.501.241 | 252.015.151.287 |\n| 61 | Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | | 28.051.430 | 31.401.813 |\n| 70 | Tiền và tương đương tiền cuối năm | | 587.213.546.357 | 167.769.291.147 |\nNgười lập biểu: Dương Vũ Minh\nKế toán trưởng: Hoàng Trung Thành\nTổng Giám đốc: Trung tá Nguyễn Bình Minh",
+    "output": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh quý 1 năm 2024 là 146.977.332.267 VND.",
+      "Tiền và tương đương tiền cuối năm tại ngày 31/03/2024 là 587.213.546.357 VND.",
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư quý 1 năm 2024 là 52.222.304.402 VND. Cùng kỳ năm 2023 là 6.581.688.611 VND. Lưu chuyển tiền thuần từ hoạt động đầu tư quý 1/2024 đã tăng đáng kể, khoảng 45.640.615.791 VND.",
+      "Tiền thu từ đi vay trong quý 1/2024 là 12.064.068.234.702 VND. Tiền trả nợ gốc vay trong quý 1/2024 là 11.883.149.604.347 VND. Tỷ lệ tiền thu từ đi vay so với tiền trả nợ gốc vay là (12.064.068.234.702 / 11.883.149.604.347) * 100% ≈ 101.52%.",
+      "Trong quý 1/2024, Lưu chuyển tiền thuần từ hoạt động kinh doanh tăng nhẹ (146.977.332.267 VND so với 138.217.157.533 VND), cho thấy hoạt động kinh doanh tạo ra dòng tiền dương và ổn định. Lưu chuyển tiền thuần từ hoạt động đầu tư tăng mạnh (52.222.304.402 VND so với 6.581.688.611 VND), chủ yếu nhờ Tiền thu hồi cho vay, bán lại các công cụ nợ, cho thấy công ty đã thực hiện các hoạt động thu hồi vốn đầu tư. Lưu chuyển tiền thuần từ hoạt động tài chính cũng tăng đáng kể (180.918.630.355 VND so với 47.358.206.969 VND), phản ánh khả năng huy động vốn mạnh mẽ từ đi vay. Nhìn chung, công ty có tình hình dòng tiền khá tích cực và tăng trưởng tốt từ cả ba hoạt động chính, đặc biệt là hoạt động đầu tư và tài chính.",
+      "'Tăng, giảm các khoản phải thu' đã giảm đáng kể từ 512.172.042.221 VND (Q1/2023) xuống 129.414.937.541 VND (Q1/2024). Khoản mục này thể hiện mức độ tiền thu được từ khách hàng khi các khoản phải thu giảm. Việc giảm đáng kể giá trị dương của chỉ tiêu này có nghĩa là công ty đã thu được ít tiền hơn từ việc giảm các khoản phải thu so với cùng kỳ năm trước. Điều này cho thấy hoặc các khoản phải thu không giảm nhiều trong kỳ (tức là mức độ thu hồi nợ chậm hơn hoặc phát sinh phải thu mới tương đương), hoặc mức phải thu đầu kỳ thấp hơn. Điều này đã làm giảm dòng tiền vào từ hoạt động kinh doanh so với cùng kỳ nếu không có các yếu tố khác bù đắp.",
+      "Lưu chuyển tiền thuần từ hoạt động tài chính quý 1/2024 là 180.918.630.355 VND, tăng đáng kể so với 47.358.206.969 VND cùng kỳ năm trước. Khoản mục này chủ yếu đến từ việc Tiền thu từ đi vay (12.064.068.234.702 VND) lớn hơn Tiền trả nợ gốc vay (11.883.149.604.347 VND). Dòng tiền dương mạnh mẽ từ hoạt động tài chính cho thấy công ty có khả năng huy động vốn tốt và có thể sử dụng nguồn vốn này để trả nợ. Tuy nhiên, việc phụ thuộc vào vay nợ để duy trì dòng tiền dương cho hoạt động tài chính cũng cần được xem xét cẩn trọng về cấu trúc nợ và chi phí lãi vay trong tương lai. Hiện tại, khả năng thanh toán nợ có vẻ ổn định nhờ nguồn tiền thu từ đi vay."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Vốn điều lệ của Tổng Công ty Cổ phần Bưu chính Viettel là bao nhiêu?",
+      "Công ty có bao nhiêu chi nhánh trên toàn quốc?",
+      "Liệt kê ba ngành nghề kinh doanh chính của công ty.",
+      "Công ty TNHH MTV Logistics Viettel hoạt động kinh doanh chính là gì và có trụ sở ở đâu?",
+      "Giải thích vai trò của Công ty TNHH MTV Công nghệ Bưu chính Viettel trong cấu trúc Tổng Công ty.",
+      "Phân tích tầm quan trọng của các công ty con hoạt động ở Campuchia và Myanmar đối với chiến lược mở rộng quốc tế của Viettel Post.",
+      "Nếu công ty có thay đổi về vốn điều lệ, thông tin này sẽ ảnh hưởng như thế nào đến các nhà đầu tư hiện tại?"
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Đặc điểm hoạt động và Chính sách kế toán)\nLoại nội dung: Text\nTHUYẾT MINH BÁO CÁO TÀI CHÍNH GIỮA NIÊN ĐỘ\nQuý 1 năm 2024\n\n1. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP\nHình thức sở hữu vốn\nTổng Công ty Cổ Phần Bưu Chính Viettel được thành lập theo giấy phép đăng ký kinh doanh số 0104093672, do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp, đăng ký lần đầu ngày 03 tháng 07 năm 2009, đăng ký thay đổi lần thứ 24 ngày 16 tháng 10 năm 2023.\nTrụ sở chính của Công ty được đặt tại số 2, ngõ 15, phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam.\nVốn điều lệ của Tổng Công ty là 1.217.830.420.000 đồng, tương đương 121.783.042 cổ phần, mệnh giá một cổ phần 10.000 đồng.\nNgành nghề kinh doanh\nHoạt động chính của Công ty là:\n- Chuyển phát, kinh doanh dịch vụ chuyển phát nhanh Bưu phẩm, bưu kiện, hàng hóa Bưu chính\n- Cho thuê xe có động cơ\n- Vận tải hàng hóa bằng đường bộ\n- Kho bãi và lưu giữ hàng hóa\nChu kỳ sản xuất, kinh doanh thông thường: 12 tháng.\nĐặc điểm hoạt động của doanh nghiệp trong kỳ kế toán có ảnh hưởng đến Báo cáo tài chính\nCấu trúc Tổng Công ty:\nTổng Công ty có 63 Chi nhánh tại các tỉnh, thành phố trong toàn quốc.\nTổng Công ty có các công ty trực thuộc sau:\n| Địa chỉ | Hoạt động kinh doanh chính |\n|---|---|\n| Công ty TNHH MTV Dịch vụ và Thương mại Viettelpost (Đổi tên từ Công ty TNHH MTV Thương mại Điện tử BMT) | Hà Nội | Kinh doanh thương mại |\n| Công ty TNHH MTV Công nghệ Bưu chính Viettel | Hà Nội | Cung cấp giải pháp Công nghệ Bưu chính |\n| Công ty TNHH MTV Logistics Viettel | Hà Nội | Logistics, Forwarding, CPN quốc tế |\n| Công ty TNHH Mygo Campuchia (Đổi tên từ Công ty TNHH VTP Logistics Campuchia) | Campuchia | Logistics, Forwarding, CPN quốc tế |\n| Công ty TNHH Mygo Myanmar (Đổi tên từ Công ty TNHH VTP Logistics Myanmar) | Myanmar | Logistics, Forwarding, CPN quốc tế |\nThông tin về các công ty con, công ty liên doanh, liên kết của Công ty xem chi tiết tại Thuyết minh số 4.\n\n2. CHẾ ĐỘ VÀ CHÍNH SÁCH KẾ TOÁN ÁP DỤNG TẠI CÔNG TY\n2.1. Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán.\nKỳ kế toán năm của Công ty theo năm dương lịch bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.\nĐơn vị tiền tệ sử dụng trong ghi chép kế toán là đồng Việt Nam (VND).",
+    "output": [
+      "Vốn điều lệ của Tổng Công ty Cổ phần Bưu chính Viettel là 1.217.830.420.000 đồng.",
+      "Tổng Công ty có 63 Chi nhánh tại các tỉnh, thành phố trong toàn quốc.",
+      "Ba ngành nghề kinh doanh chính của công ty là: Chuyển phát, kinh doanh dịch vụ chuyển phát nhanh Bưu phẩm, bưu kiện, hàng hóa Bưu chính; Cho thuê xe có động cơ; Vận tải hàng hóa bằng đường bộ.",
+      "Công ty TNHH MTV Logistics Viettel có trụ sở tại Hà Nội và hoạt động kinh doanh chính là Logistics, Forwarding, CPN quốc tế.",
+      "Công ty TNHH MTV Công nghệ Bưu chính Viettel có trụ sở tại Hà Nội và hoạt động kinh doanh chính là Cung cấp giải pháp Công nghệ Bưu chính. Vai trò của công ty này là cung cấp các giải pháp công nghệ chuyên biệt cho lĩnh vực bưu chính, hỗ trợ Tổng Công ty hiện đại hóa hoạt động, nâng cao hiệu quả vận hành và có thể phát triển các dịch vụ mới dựa trên nền tảng công nghệ.",
+      "Các công ty con như Công ty TNHH Mygo Campuchia và Công ty TNHH Mygo Myanmar, hoạt động trong lĩnh vực Logistics, Forwarding, CPN quốc tế tại Campuchia và Myanmar, đóng vai trò quan trọng trong chiến lược mở rộng quốc tế của Viettel Post. Chúng giúp Tổng Công ty thiết lập và phát triển mạng lưới dịch vụ ở các thị trường nước ngoài, mở rộng phạm vi hoạt động ra ngoài Việt Nam. Điều này không chỉ tạo ra nguồn doanh thu mới mà còn tăng cường vị thế cạnh tranh, tận dụng lợi thế địa lý và mạng lưới viễn thông của Tập đoàn Viettel ở các quốc gia này, góp phần vào mục tiêu trở thành một đơn vị chuyển phát quốc tế.",
+      "Nếu công ty có thay đổi về vốn điều lệ (hiện tại là 1.217.830.420.000 đồng), thông tin này sẽ ảnh hưởng trực tiếp đến các nhà đầu tư hiện tại. Việc tăng vốn điều lệ có thể yêu cầu phát hành thêm cổ phiếu, làm giảm tỷ lệ sở hữu của các cổ đông hiện hữu nếu họ không mua thêm. Ngược lại, việc giảm vốn điều lệ có thể dẫn đến việc hoàn trả vốn cho cổ đông hoặc phản ánh sự tái cấu trúc, ảnh hưởng đến giá trị đầu tư. Bất kỳ sự thay đổi nào về vốn điều lệ đều cần được công bố minh bạch và có thể tác động đến giá cổ phiếu và kỳ vọng về lợi nhuận của nhà đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Chế độ kế toán mà Tổng Công ty áp dụng là gì?",
+      "Khi nào các thay đổi chính sách kế toán theo Thông tư 200/2014/TT-BTC có hiệu lực?",
+      "Theo nguyên tắc giá gốc, tài sản tài chính được xác định như thế nào tại thời điểm ghi nhận ban đầu?",
+      "Giải thích nguyên tắc xác định tỷ giá thực tế khi ghi nhận nợ phải trả bằng ngoại tệ.",
+      "Phân tích tầm quan trọng của việc đọc Báo cáo tài chính riêng kết hợp với Báo cáo tài chính hợp nhất.",
+      "Đánh giá các rủi ro liên quan đến biến động tỷ giá hối đoái đối với các giao dịch bằng ngoại tệ của công ty.",
+      "Trong trường hợp nào công ty sẽ không ghi nhận tăng giá trị khoản đầu tư khi nhận cổ tức bằng cổ phiếu?"
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chính sách kế toán - tiếp theo)\nLoại nội dung: Text\n2.2. Chuẩn mực và Chế độ kế toán áp dụng\nChế độ kế toán áp dụng\nTổng Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính, Thông tư số 53/2016/TT-BTC ngày 21/03/2016 của Bộ Tài chính về việc sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC.\nTuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán\nCông ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các Báo cáo tài chính được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện Chuẩn mực và Chế độ kế toán doanh nghiệp hiện hành đang áp dụng.\n\n2.3. Thay đổi trong các chính sách kế toán và thuyết minh.\nNgày 22/12/2014, Bộ Tài chính đã ban hành Thông tư số 200/2014/TT-BTC hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20/03/2006, và có hiệu lực cho năm tài chính bắt đầu từ hoặc sau ngày 01 tháng 01 năm 2015.\nẢnh hưởng của các thay đổi chính sách kế toán theo hướng dẫn của Thông tư số 200/2014/TT-BTC được áp dụng phi hồi tố.\n\n2.4. Cơ sở lập Báo cáo tài chính riêng\nBáo cáo tài chính riêng được trình bày theo nguyên tắc giá gốc.\nBáo cáo tài chính riêng của Tổng Công ty được lập trên cơ sở tổng hợp các nghiệp vụ, giao dịch phát sinh và được ghi sổ kế toán tại các đơn vị thành viên hạch toán phụ thuộc và tại Tổng Công ty.\nTrong Báo cáo tài chính riêng của Tổng Công ty, các nghiệp vụ, giao dịch nội bộ và số dư nội bộ có liên quan đến tài sản, nguồn vốn và công nợ phải thu, phải trả nội bộ đã được loại trừ toàn bộ.\nNhững người sử dụng các Báo cáo tài chính riêng này nên đọc các Báo cáo tài chính riêng kết hợp với các Báo cáo tài chính hợp nhất của Công ty và các Công ty con (Tập đoàn) Quý 3/2023 để có đủ thông tin về tình hình tài chính, kết quả hoạt động kinh doanh và các luồng lưu chuyển tiền tệ của cả Tổng Công ty.\n\n2.5. Công cụ tài chính\nGhi nhận ban đầu\n**Tài sản tài chính**\nTài sản tài chính của Công ty bao gồm tiền và các khoản tương đương tiền, các khoản phải thu khách hàng và phải thu khác, các khoản cho vay, các khoản đầu tư ngắn hạn và dài hạn. Tại thời điểm ghi nhận ban đầu, tài sản tài chính được xác định theo giá mua (chi phí phát hành) cộng các chi phí phát sinh khác liên quan trực tiếp đến việc mua, phát hành tài sản tài chính đó.\n**Nợ phải trả tài chính**\nNợ phải trả tài chính của Công ty bao gồm các khoản vay, các khoản phải trả người bán và phải trả khác, chi phí phải trả. Tại thời điểm ghi nhận ban đầu, các khoản nợ phải trả tài chính được xác định theo giá phát hành cộng các chi phí phát sinh liên quan trực tiếp đến việc phát hành nợ phải trả tài chính đó.\n**Giá trị sau ghi nhận ban đầu**\nHiện tại chưa có các quy định về đánh giá lại công cụ tài chính sau ghi nhận ban đầu.\n\n2.6. Các nghiệp vụ bằng ngoại tệ\nCác giao dịch bằng ngoại tệ trong năm tài chính được quy đổi ra đồng Việt Nam theo tỷ giá thực tế tại ngày giao dịch. Tỷ giá giao dịch thực tế này được xác định theo nguyên tắc sau:\n- Khi mua bán ngoại tệ là tỷ giá được quy định trong hợp đồng mua, bán ngoại tệ giữa Công ty và ngân hàng thương mại.\n- Khi góp vốn hoặc nhận góp vốn là tỷ giá mua ngoại tệ của ngân hàng nơi Công ty mở tài khoản để nhận vốn của nhà đầu tư tại ngày góp vốn.\n- Khi ghi nhận nợ phải thu là tỷ giá mua của ngân hàng thương mại nơi Công ty chỉ định khách hàng thanh toán tại thời điểm giao dịch phát sinh.\n- Khi ghi nhận nợ phải trả là tỷ giá bán của ngân hàng thương mại nơi Công ty dự kiến giao dịch tại thời điểm giao dịch phát sinh.\n- Khi mua sắm tài sản hoặc thanh toán ngay bằng ngoại tệ là tỷ giá mua của ngân hàng thương mại nơi Công ty thực hiện thanh toán.",
+    "output": [
+      "Tổng Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính, Thông tư số 53/2016/TT-BTC ngày 21/03/2016 của Bộ Tài chính về việc sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC.",
+      "Các thay đổi chính sách kế toán theo hướng dẫn của Thông tư số 200/2014/TT-BTC có hiệu lực cho năm tài chính bắt đầu từ hoặc sau ngày 01 tháng 01 năm 2015.",
+      "Theo nguyên tắc giá gốc, tại thời điểm ghi nhận ban đầu, tài sản tài chính được xác định theo giá mua (chi phí phát hành) cộng các chi phí phát sinh khác liên quan trực tiếp đến việc mua, phát hành tài sản tài chính đó.",
+      "Khi ghi nhận nợ phải trả bằng ngoại tệ, tỷ giá giao dịch thực tế được xác định là tỷ giá bán của ngân hàng thương mại nơi Công ty dự kiến giao dịch tại thời điểm giao dịch phát sinh.",
+      "Việc đọc Báo cáo tài chính riêng kết hợp với Báo cáo tài chính hợp nhất rất quan trọng để có cái nhìn đầy đủ và toàn diện về tình hình tài chính, kết quả hoạt động kinh doanh và các luồng lưu chuyển tiền tệ của cả Tổng Công ty và các Công ty con (Tập đoàn). Báo cáo tài chính riêng chỉ phản ánh tình hình của riêng Tổng Công ty, trong khi báo cáo hợp nhất sẽ tổng hợp thông tin của toàn bộ nhóm công ty, loại bỏ các giao dịch nội bộ. Điều này giúp người sử dụng hiểu rõ hơn về hiệu quả hoạt động chung của tập đoàn, quy mô thực sự của tài sản và nợ phải trả, cũng như mức độ đóng góp của từng đơn vị trong hệ thống.",
+      "Công ty có các giao dịch bằng ngoại tệ và áp dụng các nguyên tắc tỷ giá khác nhau cho từng loại giao dịch (mua bán, góp vốn, phải thu, phải trả, mua sắm tài sản). Việc này tiềm ẩn rủi ro tỷ giá hối đoái, đặc biệt khi tỷ giá thị trường biến động mạnh. Nếu đồng ngoại tệ tăng giá so với VND đối với các khoản nợ phải trả bằng ngoại tệ hoặc giảm giá đối với các khoản phải thu bằng ngoại tệ, công ty có thể ghi nhận lỗ do chênh lệch tỷ giá. Hiện tại, chunk dữ liệu chưa cung cấp thông tin về các biện pháp phòng ngừa rủi ro tỷ giá mà công ty áp dụng, do đó rủi ro này cần được theo dõi chặt chẽ.",
+      "Thông tin không có trong dữ liệu. Chunk 8 không đề cập đến việc nhận cổ tức bằng cổ phiếu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Thời gian thu hồi tối đa của các khoản tương đương tiền là bao lâu?",
+      "Khi nào cổ tức nhận bằng cổ phiếu được ghi nhận tăng doanh thu hoạt động tài chính?",
+      "Giải thích nguyên tắc đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ là tài sản tại thời điểm lập Báo cáo tài chính riêng.",
+      "Nêu các trường hợp được phép trích lập dự phòng nợ phải thu khó đòi.",
+      "Phân tích tác động của chênh lệch tỷ giá hối đoái đến kết quả hoạt động kinh doanh của công ty.",
+      "Đánh giá rủi ro tiềm ẩn khi công ty có các khoản đầu tư nắm giữ lâu dài không phân loại là chứng khoán kinh doanh.",
+      "So sánh cách ghi nhận cổ tức nhận bằng cổ phiếu khi chỉ ghi nhận số lượng cổ phiếu và khi ghi nhận tăng giá trị khoản đầu tư."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chính sách kế toán - tiếp theo)\nLoại nội dung: Text\nTỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại thời điểm lập Báo cáo tài chính riêng được xác định theo nguyên tắc:\n- Đối với khoản mục phân loại là tài sản: áp dụng tỷ giá mua ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.\n- Đối với tiền gửi ngoại tệ: áp dụng tỷ giá mua của chính ngân hàng nơi Công ty mở tài khoản ngoại tệ.\n- Đối với khoản mục phân loại là nợ phải trả: áp dụng tỷ giá bán ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.\nTất cả các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ cuối kỳ được hạch toán vào kết quả hoạt động kinh doanh của kỳ kế toán.\nChênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ cuối kỳ được phản ánh lũy kế trên Bảng cân đối kế toán và phân bổ dần vào chi phí tài chính hoặc doanh thu hoạt động tài chính khi doanh nghiệp đi vào hoạt động, số phân bổ khoản lỗ tỷ giá tối thiểu trong từng kỳ không nhỏ hơn mức lợi nhuận trước thuế (trước khi phân bổ khoản lỗ tỷ giá). Sau khi phân bổ lỗ tỷ giá, lợi nhuận trước thuế của báo cáo kết quả hoạt động kinh doanh bằng không.\n\n2.7. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng không kỳ hạn, vàng tiền tệ sử dụng với các chức năng cất trừ giá trị (không bao gồm các loại vàng được phân loại là hàng tồn kho sử dụng với mục đích là nguyên vật liệu để sản xuất sản phẩm hoặc hàng hóa để bán).\nCác khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời gian thu hồi không quá 03 tháng kể từ ngày đầu tư, có tính thanh khoản cao, có khả năng chuyển đổi dễ dàng thành các lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.\n\n2.8. Các khoản đầu tư tài chính\nChứng khoán kinh doanh được ghi nhận ban đầu trên sổ kế toán theo giá gốc, bao gồm Giá mua cộng các chi phí mua (nếu có) như chi phí môi giới, giao dịch, cung cấp thông tin, thuế, lệ phí và phí ngân hàng. Sau ghi nhận ban đầu, chứng khoán kinh doanh được xác định theo giá gốc trừ đi dự phòng giảm giá chứng khoán kinh doanh.\nCác khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm Các khoản tiền gửi ngân hàng có kỳ hạn (bao gồm cả các loại tín phiếu, kỳ phiếu, trái phiếu, cổ phiếu ưu đãi bên phát hành bắt buộc phải mua lại tại thời điểm nhất định trong tương lai), các khoản cho vay.... được nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ và các khoản đầu tư nắm giữ đến ngày đáo hạn khác.\nCác khoản đầu tư vào các công ty con, công ty liên doanh liên kết được ghi nhận ban đầu trên sổ kế toán theo giá gốc. Sau ghi nhận ban đầu, giá trị của các khoản đầu tư này được xác định theo giá gốc trừ đi dự phòng giảm giá khoản đầu tư.\nCác khoản đầu tư góp vốn vào các đơn vị khác bao gồm các khoản đầu tư vào công cụ vốn của đơn vị khác không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư. Giá trị ghi sổ ban đầu của các khoản đầu tư này được xác định theo giá gốc. Sau ghi nhận ban đầu, giá trị của các khoản đầu tư này được xác định theo giá gốc trừ đi dự phòng giảm giá khoản đầu tư.\nCổ tức nhận bằng cổ phiếu chỉ thực hiện ghi nhận số lượng cổ phiếu được nhận, không ghi nhận tăng giá trị khoản đầu tư và doanh thu hoạt động tài chính.\nCổ tức nhận bằng cổ phiếu được thực hiện ghi nhận tăng doanh thu hoạt động tài chính và tăng giá trị khoản đầu tư tương ứng với số tiền cổ tức được chia.\nDự phòng giảm giá các khoản đầu tư được lập vào thời điểm cuối kỳ cụ thể như sau:\n- Đối với các khoản đầu tư chứng khoán kinh doanh: căn cứ trích lập dự phòng là số chênh lệch giữa giá gốc của các khoản đầu tư được hạch toán trên sổ kế toán lớn hơn giá trị thị trường của chúng tại thời điểm lập dự phòng.\n- Đối với khoản đầu tư nắm giữ lâu dài không phân loại là chứng khoán kinh doanh và không có ảnh hưởng đáng kể đối với bên được đầu tư: nếu khoản đầu tư vào cổ phiếu niêm yết hoặc giá trị hợp lý của khoản đầu tư được xác định tin cậy thì việc lập dự phòng dựa trên giá trị thị trường của cổ phiếu; nếu khoản đầu tư không xác định được giá trị hợp lý tại thời điểm báo cáo thì việc lập dự phòng căn cứ vào Báo cáo tài chính tại thời điểm trích lập dự phòng của bên được đầu tư.\n- Đối với các khoản đầu tư nắm giữ đến ngày đáo hạn: căn cứ khả năng thu hồi để lập dự phòng phải thu khó đòi theo quy định của pháp luật.\n\n2.9. Các khoản nợ phải thu\nCác khoản phải thu được theo dõi chi tiết theo kỳ hạn phải thu, đối tượng phải thu, loại nguyên tệ phải thu, và các yếu tố khác theo nhu cầu quản lý của Công ty.\nDự phòng nợ phải thu khó đòi được trích lập cho các khoản nợ phải thu quá hạn thanh toán ghi trong hợp đồng kinh tế, các khế ước vay nợ, cam kết hợp đồng hoặc cam kết nợ và nợ phải thu chưa đến hạn thanh toán nhưng khó có khả năng thu hồi.\nTrong đó, việc trích lập dự phòng nợ phải thu quá hạn thanh toán được căn cứ vào thời gian trả nợ gốc theo hợp đồng mua bán ban đầu, không tính đến việc gia hạn nợ giữa các bên và nợ phải thu chưa đến hạn thanh toán nhưng khách nợ đã lâm vào tình trạng phá sản hoặc đang làm thủ tục giải thể, mất tích, bỏ trốn.",
+    "output": [
+      "Thời gian thu hồi tối đa của các khoản tương đương tiền là không quá 03 tháng kể từ ngày đầu tư.",
+      "Thông tin không có trong dữ liệu. Chunk 9 đưa ra hai phương pháp ghi nhận cổ tức bằng cổ phiếu nhưng không nêu rõ trường hợp cụ thể nào dẫn đến việc ghi nhận tăng doanh thu hoạt động tài chính.",
+      "Tại thời điểm lập Báo cáo tài chính riêng, đối với khoản mục tiền tệ phân loại là tài sản (bao gồm tiền gửi ngoại tệ), công ty áp dụng tỷ giá mua ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch hoặc tỷ giá mua của chính ngân hàng nơi Công ty mở tài khoản ngoại tệ để đánh giá lại.",
+      "Các trường hợp được phép trích lập dự phòng nợ phải thu khó đòi là: các khoản nợ phải thu quá hạn thanh toán ghi trong hợp đồng kinh tế, các khế ước vay nợ, cam kết hợp đồng hoặc cam kết nợ; và nợ phải thu chưa đến hạn thanh toán nhưng khó có khả năng thu hồi, ví dụ như khách nợ đã lâm vào tình trạng phá sản hoặc đang làm thủ tục giải thể, mất tích, bỏ trốn.",
+      "Tất cả các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ cuối kỳ được hạch toán vào kết quả hoạt động kinh doanh của kỳ kế toán. Điều này có nghĩa là nếu có lãi tỷ giá, lợi nhuận sẽ tăng và ngược lại, nếu lỗ tỷ giá, lợi nhuận sẽ giảm. Việc phân bổ lỗ tỷ giá tối thiểu không nhỏ hơn mức lợi nhuận trước thuế (trước khi phân bổ) cũng cho thấy sự thận trọng trong việc ghi nhận, đảm bảo không làm lợi nhuận trước thuế âm do lỗ tỷ giá.",
+      "Đối với các khoản đầu tư nắm giữ lâu dài không phân loại là chứng khoán kinh doanh, công ty lập dự phòng dựa trên giá trị thị trường của cổ phiếu (nếu có) hoặc Báo cáo tài chính của bên được đầu tư (nếu không xác định được giá trị hợp lý). Rủi ro tiềm ẩn nằm ở việc giá trị thị trường có thể biến động bất lợi hoặc tình hình tài chính của bên được đầu tư xấu đi, dẫn đến phải trích lập dự phòng, làm giảm giá trị tài sản và lợi nhuận của công ty. Nếu không thể xác định được giá trị hợp lý một cách tin cậy, việc đánh giá và trích lập dự phòng có thể mang tính chủ quan hoặc không phản ánh đúng rủi ro thực tế, gây sai lệch thông tin cho nhà đầu tư.",
+      "Chunk 9 đưa ra hai quy định mâu thuẫn về cổ tức nhận bằng cổ phiếu. Một quy định nêu rằng: 'Cổ tức nhận bằng cổ phiếu chỉ thực hiện ghi nhận số lượng cổ phiếu được nhận, không ghi nhận tăng giá trị khoản đầu tư và doanh thu hoạt động tài chính'. Quy định còn lại nêu: 'Cổ tức nhận bằng cổ phiếu được thực hiện ghi nhận tăng doanh thu hoạt động tài chính và tăng giá trị khoản đầu tư tương ứng với số tiền cổ tức được chia'. Nếu chỉ ghi nhận số lượng cổ phiếu, nó không ảnh hưởng đến giá trị tài sản trên bảng cân đối kế toán hoặc doanh thu trên báo cáo kết quả kinh doanh. Nếu ghi nhận tăng giá trị khoản đầu tư và doanh thu hoạt động tài chính, nó sẽ làm tăng tài sản và lợi nhuận, thể hiện rõ hơn thu nhập từ hoạt động tài chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Phương pháp xác định giá trị hàng tồn kho khi xuất kho là gì?",
+      "Thời gian khấu hao ước tính cho Nhà cửa, vật kiến trúc là bao lâu?",
+      "Giải thích nguyên tắc ghi nhận ban đầu và sau ghi nhận ban đầu đối với hàng tồn kho.",
+      "Chi phí trả trước dài hạn được phân bổ vào chi phí sản xuất kinh doanh theo phương pháp nào?",
+      "Đánh giá tầm quan trọng của việc lập dự phòng giảm giá hàng tồn kho đối với báo cáo tài chính của công ty.",
+      "Phân tích tác động của việc khấu hao tài sản cố định theo phương pháp đường thẳng đối với lợi nhuận của công ty trong các giai đoạn đầu và cuối vòng đời tài sản.",
+      "Nếu công ty quyết định mua một phần mềm quản lý mới, chi phí này sẽ được ghi nhận và khấu hao như thế nào?"
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chính sách kế toán - tiếp theo)\nLoại nội dung: Text\n2.10. Hàng tồn kho\nHàng tồn kho được ghi nhận ban đầu theo giá gốc bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái tại thời điểm ghi nhận ban đầu. Sau ghi nhận ban đầu, tại thời điểm lập Báo cáo tài chính nếu giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc thì hàng tồn kho được ghi nhận theo giá trị thuần có thể thực hiện được.\nKhi xuất kho, giá trị hàng tồn kho được xác định theo phương pháp bình quân gia quyền.\nHàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên.\nDự phòng giảm giá hàng tồn kho được lập vào thời điểm cuối kỳ căn cứ theo số chênh lệch giữa giá gốc của hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được.\n\n2.11. Tài sản cố định\nTài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận ban đầu theo giá gốc. Trong quá trình sử dụng, tài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại. Khấu hao được trích theo phương pháp đường thẳng.\nKhấu hao tài sản cố định được trích theo phương pháp đường thẳng với thời gian khấu hao được ước tính như sau:\n- Nhà cửa, vật kiến trúc: 05-30 năm\n- Máy móc, thiết bị: 05-10 năm\n- Phương tiện vận tải: 06-10 năm\n- Thiết bị văn phòng: 03-05 năm\n- Các tài sản khác: 03-05 năm\n- Quyền sử dụng đất có thời hạn: 20-50 năm\n- Quyền sử dụng đất không thời hạn: Không trích khấu hao\n- Phần mềm quản lý: 3-5 năm\n\n2.12. Chi phí trả trước\nCác chi phí đã phát sinh liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh trong các kỳ kế toán sau.\nViệc tính và phân bổ chi phí trả trước dài hạn vào chi phí sản xuất kinh doanh từng kỳ kế toán được căn cứ vào tính chất, mức độ từng loại chi phí để lựa chọn phương pháp và tiêu thức phân bổ hợp lý. Chi phí trả trước được phân bổ dần vào chi phí sản xuất kinh doanh theo phương pháp đường thẳng.\n\n2.13. Các khoản nợ phải trả\nCác khoản nợ phải trả được theo dõi theo kỳ hạn phải trả, đối tượng phải trả, loại nguyên tệ phải trả và các yếu tố khác theo nhu cầu quản lý của Công ty.\n\n2.14. Vay và nợ phải trả thuê tài chính\nGiá trị khoản nợ phải trả thuê tài chính là tổng số tiền phải trả được tính bằng giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu hoặc giá trị hợp lý của tài sản thuê.\nCác khoản vay và nợ phải trả thuê tài chính được theo dõi theo từng đối tượng cho vay, từng khế ước vay nợ và kỳ hạn phải trả của các khoản vay, nợ thuê tài chính. Trường hợp vay, nợ bằng ngoại tệ thì thực hiện theo dõi chi tiết theo nguyên tệ.",
+    "output": [
+      "Phương pháp xác định giá trị hàng tồn kho khi xuất kho là phương pháp bình quân gia quyền.",
+      "Thời gian khấu hao ước tính cho Nhà cửa, vật kiến trúc là 05-30 năm.",
+      "Hàng tồn kho được ghi nhận ban đầu theo giá gốc, bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái tại thời điểm ghi nhận ban đầu. Sau ghi nhận ban đầu, tại thời điểm lập Báo cáo tài chính, nếu giá trị thuần có thể thực hiện được của hàng tồn kho thấp hơn giá gốc thì hàng tồn kho được ghi nhận theo giá trị thuần có thể thực hiện được.",
+      "Chi phí trả trước dài hạn được phân bổ dần vào chi phí sản xuất kinh doanh theo phương pháp đường thẳng.",
+      "Việc lập dự phòng giảm giá hàng tồn kho là rất quan trọng đối với báo cáo tài chính của công ty. Nó đảm bảo rằng giá trị hàng tồn kho được phản ánh một cách trung thực và hợp lý trên bảng cân đối kế toán, theo nguyên tắc thận trọng. Nếu giá trị thuần có thể thực hiện được thấp hơn giá gốc, việc trích lập dự phòng sẽ ghi nhận khoản lỗ tiềm năng vào chi phí, làm giảm lợi nhuận. Điều này giúp các nhà đầu tư và các bên liên quan có cái nhìn chính xác hơn về giá trị tài sản thực tế và hiệu quả hoạt động của công ty, tránh đánh giá quá cao tài sản và lợi nhuận.",
+      "Việc khấu hao tài sản cố định theo phương pháp đường thẳng có nghĩa là chi phí khấu hao được phân bổ đều hàng năm trong suốt thời gian sử dụng ước tính của tài sản. Tác động của phương pháp này đối với lợi nhuận của công ty trong các giai đoạn đầu và cuối vòng đời tài sản là: chi phí khấu hao sẽ ổn định, không biến động nhiều. Điều này giúp ổn định lợi nhuận báo cáo qua các năm. Tuy nhiên, trong các năm đầu, khi tài sản còn mới và hiệu suất cao, chi phí khấu hao có thể được coi là thấp so với lợi ích mang lại. Đến các năm cuối, khi tài sản có thể đã lỗi thời hoặc hiệu suất giảm, chi phí khấu hao vẫn giữ nguyên, có thể làm giảm lợi nhuận tương đối nếu doanh thu từ tài sản đó không còn cao.",
+      "Nếu công ty quyết định mua một phần mềm quản lý mới, chi phí này sẽ được ghi nhận là tài sản cố định vô hình theo giá gốc ban đầu. Sau đó, phần mềm này sẽ được khấu hao theo phương pháp đường thẳng với thời gian khấu hao ước tính là 3-5 năm, phân bổ chi phí vào chi phí sản xuất kinh doanh trong các kỳ kế toán tiếp theo."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Khi nào chi phí đi vay được vốn hóa vào giá trị tài sản?",
+      "Nêu một ví dụ về 'Doanh thu chưa thực hiện'.",
+      "Giải thích cách xác định tỷ lệ vốn hóa đối với chi phí đi vay từ vốn vay chung.",
+      "Nêu ba điều kiện để ghi nhận các khoản dự phòng phải trả.",
+      "Phân tích nguyên tắc phù hợp giữa doanh thu và chi phí trong việc ghi nhận chi phí phải trả.",
+      "Đánh giá tác động của việc hoàn nhập khoản dự phòng phải trả chưa sử dụng hết đối với lợi nhuận của công ty.",
+      "Giải thích sự khác biệt giữa chi phí đi vay được vốn hóa và chi phí đi vay được ghi nhận vào chi phí trong kỳ."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chính sách kế toán - tiếp theo)\nLoại nội dung: Text\n2.15. Chi phí đi vay\nChi phí đi vay được ghi nhận vào chi phí sản xuất, kinh doanh trong kỳ khi phát sinh, trừ chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó (được vốn hóa khi có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 Chi phí đi vay). Ngoài ra, đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng.\nĐối với các khoản vốn vay chung, trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất một tài sản dở dang thì số chi phí đi vay có đủ điều kiện vốn hóa trong mỗi kỳ kế toán được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích có một tài sản dở dang.\n\n2.16. Chi phí phải trả\nCác khoản phải trả cho hàng hóa dịch vụ đã nhận được từ người bán hoặc đã được cung cấp cho người mua trong kỳ báo cáo nhưng thực tế chưa chi trả và các khoản phải trả khác như tiền lương nghỉ phép, chi phí trong thời gian ngừng sản xuất theo mùa, vụ, chi phí lãi tiền vay phải trả được ghi nhận vào chi phí sản xuất, kinh doanh của kỳ báo cáo.\nViệc ghi nhận các khoản chi phí phải trả vào chi phí sản xuất, kinh doanh trong kỳ được thực hiện theo nguyên tắc phù hợp giữa doanh thu và chi phí phát sinh trong kỳ. Các khoản chi phí phải trả sẽ được quyết toán với số chi phí thực tế phát sinh. Số chênh lệch giữa số trích trước và chi phí thực tế được hoàn nhập.\n\n2.17. Các khoản dự phòng phải trả\nCác khoản dự phòng phải trả chỉ được ghi nhận khi thỏa mãn các điều kiện sau:\n- Công ty có nghĩa vụ nợ hiện tại (nghĩa vụ pháp lý hoặc nghĩa vụ liên đới) do kết quả từ một sự kiện đã xảy ra.\n- Sự giảm sút về những lợi ích kinh tế có thể xảy ra dẫn đến việc yêu cầu phải thanh toán nghĩa vụ nợ.\n- Đưa ra được một ước tính đáng tin cậy về giá trị của nghĩa vụ nợ đó.\nGiá trị được ghi nhận của một khoản dự phòng phải trả là giá trị được ước tính hợp lý nhất về khoản tiền sẽ phải chi để thanh toán nghĩa vụ nợ hiện tại tại ngày kết thúc kỳ kế toán.\nChỉ những khoản chi phí liên quan đến khoản dự phòng phải trả đã lập ban đầu mới được bù đắp bằng khoản dự phòng phải trả đó.\nDự phòng phải trả được ghi nhận vào chi phí sản xuất kinh doanh của kỳ kế toán. Khoản chênh lệch giữa số dự phòng phải trả đã lập ở kỳ kế toán trước (chưa sử dụng hết) lớn hơn số dự phòng phải trả lập ở kỳ báo cáo được hoàn nhập (ghi giảm chi phí sản xuất, kinh doanh trong kỳ), trừ khoản chênh lệch lớn hơn của khoản dự phòng phải trả về bảo hành công trình xây lắp được hoàn nhập vào thu nhập khác trong kỳ.\n\n2.18. Doanh thu chưa thực hiện\nDoanh thu chưa thực hiện gồm doanh thu nhận trước như số tiền của khách hàng đã trả trước cho một hoặc nhiều kỳ kế toán về cho thuê tài sản, khoản lãi nhận trước khi cho vay vốn hoặc mua các công cụ nợ và các khoản doanh thu chưa thực hiện khác như chênh lệch giữa giá bán hàng trả chậm, trả góp theo cam kết với giá bán trả tiền ngay, khoản doanh thu tương ứng với giá trị hàng hóa, dịch vụ hoặc số phải chiết khấu giảm giá cho khách hàng trong chương trình khách hàng truyền thống...\nDoanh thu chưa thực hiện được kết chuyển vào Doanh thu bán hàng và cung cấp dịch vụ hoặc Doanh thu hoạt động tài chính theo số tiền được xác định phù hợp với từng kỳ kế toán.",
+    "output": [
+      "Chi phí đi vay được vốn hóa vào giá trị của tài sản dở dang khi liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang và có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 Chi phí đi vay. Đối với khoản vay riêng phục vụ xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng.",
+      "Một ví dụ về 'Doanh thu chưa thực hiện' là số tiền của khách hàng đã trả trước cho một hoặc nhiều kỳ kế toán về cho thuê tài sản.",
+      "Đối với các khoản vốn vay chung có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất một tài sản dở dang, số chi phí đi vay đủ điều kiện vốn hóa trong mỗi kỳ kế toán được xác định theo tỷ lệ vốn hóa. Tỷ lệ vốn hóa này được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chung chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích có một tài sản dở dang.",
+      "Ba điều kiện để ghi nhận các khoản dự phòng phải trả là: Công ty có nghĩa vụ nợ hiện tại (nghĩa vụ pháp lý hoặc nghĩa vụ liên đới) do kết quả từ một sự kiện đã xảy ra; Sự giảm sút về những lợi ích kinh tế có thể xảy ra dẫn đến việc yêu cầu phải thanh toán nghĩa vụ nợ; Đưa ra được một ước tính đáng tin cậy về giá trị của nghĩa vụ nợ đó.",
+      "Nguyên tắc phù hợp giữa doanh thu và chi phí là nền tảng trong việc ghi nhận chi phí phải trả. Theo nguyên tắc này, các chi phí phải trả cho hàng hóa dịch vụ đã nhận hoặc đã cung cấp trong kỳ báo cáo nhưng chưa chi trả thực tế sẽ được ghi nhận vào chi phí sản xuất, kinh doanh của chính kỳ báo cáo đó, bất kể việc thanh toán thực tế diễn ra khi nào. Điều này đảm bảo rằng doanh thu và chi phí liên quan đến việc tạo ra doanh thu đó được ghi nhận cùng kỳ, giúp phản ánh chính xác kết quả hoạt động kinh doanh trong kỳ, đồng thời tuân thủ nguyên tắc kế toán dồn tích.",
+      "Khoản chênh lệch giữa số dự phòng phải trả đã lập ở kỳ kế toán trước (chưa sử dụng hết) lớn hơn số dự phòng phải trả lập ở kỳ báo cáo được hoàn nhập (ghi giảm chi phí sản xuất, kinh doanh trong kỳ). Việc hoàn nhập này có tác động tích cực đến lợi nhuận của công ty vì nó làm giảm chi phí trong kỳ báo cáo. Ngoại lệ là dự phòng phải trả về bảo hành công trình xây lắp được hoàn nhập vào thu nhập khác. Điều này cho thấy công ty đã trích lập dự phòng một cách thận trọng hơn mức cần thiết, hoặc các rủi ro đã được giải quyết mà không cần đến khoản dự phòng đó, giúp cải thiện lợi nhuận ghi nhận.",
+      "Chi phí đi vay được ghi nhận vào chi phí trong kỳ khi phát sinh, ảnh hưởng trực tiếp đến lợi nhuận của kỳ đó. Ngược lại, chi phí đi vay được vốn hóa là chi phí liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang. Thay vì ghi nhận ngay vào chi phí, khoản này được cộng vào giá trị của tài sản đó. Khi tài sản hoàn thành và đưa vào sử dụng, chi phí này sẽ được phân bổ dần vào chi phí thông qua khấu hao tài sản. Sự khác biệt này ảnh hưởng đến việc phân bổ chi phí qua thời gian và do đó ảnh hưởng đến lợi nhuận được báo cáo trong từng kỳ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Thặng dư vốn cổ phần phản ánh điều gì?",
+      "Một trong các điều kiện để ghi nhận doanh thu bán hàng là gì?",
+      "Giải thích khi nào Công ty ghi nhận cổ tức phải trả cho các cổ đông.",
+      "Nêu các điều kiện để ghi nhận doanh thu cung cấp dịch vụ.",
+      "Đánh giá tầm quan trọng của 'Lợi nhuận sau thuế chưa phân phối' đối với các nhà đầu tư của công ty.",
+      "Phân tích sự khác biệt trong cách ghi nhận cổ tức bằng cổ phiếu tùy thuộc vào loại cổ phiếu (thường hay ưu đãi) và ảnh hưởng của nó đến báo cáo tài chính.",
+      "Nếu công ty thực hiện một giao dịch bán hàng mà rủi ro và lợi ích chưa được chuyển giao hoàn toàn, doanh thu sẽ được ghi nhận như thế nào?"
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chính sách kế toán - tiếp theo)\nLoại nội dung: Text\n2.19. Vốn chủ sở hữu\nVốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.\nThặng dư vốn cổ phần phản ánh chênh lệch giữa mệnh giá, chi phí trực tiếp liên quan đến việc phát hành cổ phiếu và giá phát hành cổ phiếu (kể cả các trường hợp tái phát hành cổ phiếu quỹ) và có thể là thặng dư dương (nếu giá phát hành cao hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu) hoặc thặng dư âm (nếu giá phát hành thấp hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu).\nVốn khác thuộc vốn chủ sở hữu phản ánh số vốn kinh doanh được hình thành do bổ sung từ kết quả hoạt động kinh doanh hoặc do được tặng, biếu, tài trợ, đánh giá lại tài sản (nếu được phép ghi tăng, giảm vốn đầu tư của chủ sở hữu).\nLợi nhuận sau thuế chưa phân phối phản ánh kết quả kinh doanh lãi, lỗ sau thuế thu nhập doanh nghiệp và tình hình phân chia lợi nhuận hoặc xử lý lỗ của Công ty. Việc phân phối lợi nhuận được thực hiện khi Công ty có lợi nhuận sau thuế chưa phân phối không vượt quá mức lợi nhuận sau thuế chưa phân phối trên Báo cáo tài chính hợp nhất sau khi đã loại trừ ảnh hưởng của các khoản lãi do ghi nhận từ giao dịch mua giá rẻ. Trường hợp trả cổ tức, lợi nhuận cho chủ sở hữu quá mức số lợi nhuận sau thuế chưa phân phối được ghi nhận như trường hợp giảm vốn góp. Lợi nhuận sau thuế chưa phân phối có thể được chia cho các nhà đầu tư dựa trên tỷ lệ góp vốn sau khi được Đại hội đồng cổ đông/Hội đồng quản trị phê duyệt và sau khi đã trích lập các quỹ theo Điều lệ Công ty và các quy định của pháp luật Việt Nam.\nCổ tức phải trả cho các cổ đông được ghi nhận là khoản phải trả trên Bảng Cân đối kế toán của Công ty sau khi có thông báo chia cổ tức của Hội đồng Quản trị Công ty và thông báo ngày chốt quyền nhận cổ tức của Trung tâm Lưu ký chứng khoán Việt Nam.\n\n2.20. Doanh thu\n**Doanh thu bán hàng**\nDoanh thu bán hàng được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua.\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n- Doanh thu được xác định tương đối chắc chắn.\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.\n**Doanh thu cung cấp dịch vụ**\nDoanh thu cung cấp dịch vụ được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Doanh thu được xác định tương đối chắc chắn.\n- Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n- Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán.\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\nPhần công việc cung cấp dịch vụ đã hoàn thành được xác định theo phương pháp đánh giá công việc hoàn thành.\n**Doanh thu hoạt động tài chính**\nDoanh thu phát sinh từ tiền lãi, tiền bán quyền, cổ tức, lợi nhuận được chia và các khoản doanh thu hoạt động tài chính khác được ghi nhận khi thỏa mãn đồng thời hai (2) điều kiện sau:\n- Có khả năng thu được lợi ích kinh tế từ giao dịch đó.\n- Doanh thu được xác định tương đối chắc chắn.\nCổ tức, lợi nhuận được chia được ghi nhận khi Công ty được quyền nhận cổ tức hoặc được quyền nhận lợi nhuận từ việc góp vốn.\nCổ phiếu thường hay cổ tức trả bằng cổ phiếu: Không ghi nhận khoản thu nhập khi quyền được nhận cổ phiếu thường hay cổ tức bằng cổ phiếu được, xác lập, số lượng cổ phiếu thường hay cổ tức bằng cổ phiếu nhận được thuyết minh trên báo cáo tài chính riêng có liên quan.\nCổ phiếu thường hay cổ tức trả bằng cổ phiếu được ghi nhận tăng doanh thu hoạt động tài chính và tăng giá trị khoản đầu tư tương ứng với số tiền cổ tức được chia.",
+    "output": [
+      "Thặng dư vốn cổ phần phản ánh chênh lệch giữa mệnh giá, chi phí trực tiếp liên quan đến việc phát hành cổ phiếu và giá phát hành cổ phiếu (kể cả các trường hợp tái phát hành cổ phiếu quỹ).",
+      "Một trong các điều kiện để ghi nhận doanh thu bán hàng là phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua.",
+      "Công ty ghi nhận cổ tức phải trả cho các cổ đông là khoản phải trả trên Bảng Cân đối kế toán sau khi có thông báo chia cổ tức của Hội đồng Quản trị Công ty và thông báo ngày chốt quyền nhận cổ tức của Trung tâm Lưu ký chứng khoán Việt Nam.",
+      "Các điều kiện để ghi nhận doanh thu cung cấp dịch vụ là: Doanh thu được xác định tương đối chắc chắn; Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó; Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán; Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.",
+      "Lợi nhuận sau thuế chưa phân phối rất quan trọng đối với các nhà đầu tư vì nó phản ánh khả năng sinh lời của công ty và là nguồn chính để chia cổ tức hoặc tái đầu tư. Khoản lợi nhuận này cho thấy công ty có đủ tiềm lực tài chính để thực hiện các khoản thanh toán cho cổ đông. Sự biến động của khoản mục này cũng là chỉ báo về hiệu quả kinh doanh và chính sách phân phối lợi nhuận của ban lãnh đạo. Lợi nhuận sau thuế chưa phân phối càng cao càng củng cố niềm tin của nhà đầu tư vào khả năng công ty duy trì hoặc tăng mức cổ tức trong tương lai, cũng như khả năng tự tài trợ cho các dự án phát triển mà không cần vay nợ.",
+      "Chunk dữ liệu này chỉ đề cập đến 'Cổ phiếu thường hay cổ tức trả bằng cổ phiếu' và không phân biệt cách ghi nhận giữa cổ phiếu thường và cổ phiếu ưu đãi. Tuy nhiên, chunk này đưa ra hai quy định mâu thuẫn về cách ghi nhận cổ tức bằng cổ phiếu: 1) 'Không ghi nhận khoản thu nhập khi quyền được nhận cổ phiếu thường hay cổ tức bằng cổ phiếu được, xác lập, số lượng cổ phiếu thường hay cổ tức bằng cổ phiếu nhận được thuyết minh trên báo cáo tài chính riêng có liên quan.' và 2) 'Cổ phiếu thường hay cổ tức trả bằng cổ phiếu được ghi nhận tăng doanh thu hoạt động tài chính và tăng giá trị khoản đầu tư tương ứng với số tiền cổ tức được chia.' Sự khác biệt trong cách ghi nhận này sẽ ảnh hưởng lớn đến báo cáo tài chính. Nếu áp dụng quy định thứ nhất, sẽ không có tác động đến doanh thu hoặc giá trị khoản đầu tư trên Bảng cân đối kế toán, chỉ có sự thay đổi về số lượng cổ phiếu sở hữu. Ngược lại, nếu áp dụng quy định thứ hai, cả doanh thu hoạt động tài chính và giá trị khoản đầu tư đều tăng, làm tăng lợi nhuận và tổng tài sản. Sự mâu thuẫn này cần được làm rõ để đảm bảo tính nhất quán và chính xác của báo cáo tài chính.",
+      "Nếu công ty thực hiện một giao dịch bán hàng mà phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa chưa được chuyển giao hoàn toàn cho người mua, doanh thu sẽ chưa được ghi nhận. Điều này là do điều kiện tiên quyết đầu tiên để ghi nhận doanh thu bán hàng là 'Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua'."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tiền mặt tại quỹ tại ngày 31/03/2024 là bao nhiêu?",
+      "Nêu một khoản giảm trừ doanh thu theo chính sách của công ty.",
+      "Giải thích nguyên tắc ghi nhận giảm trừ doanh thu khi phát sinh ở kỳ sau nhưng thuộc kỳ tiêu thụ sản phẩm trước.",
+      "So sánh giá trị 'Tiền đang chuyển' giữa ngày 31/03/2024 và 01/01/2024.",
+      "Phân tích tác động của việc không bù trừ chi phí thuế TNDN hiện hành và chi phí thuế TNDN hoãn lại đối với Báo cáo kết quả kinh doanh.",
+      "Đánh giá rủi ro tài chính của công ty khi không còn 'Các khoản tương đương tiền' tại ngày 31/03/2024.",
+      "Dựa vào chính sách ghi nhận giá vốn hàng bán, phân tích các rủi ro nếu có sự hao hụt vật tư vượt định mức."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chính sách kế toán - tiếp theo)\nLoại nội dung: Text\n2.21. Các khoản giảm trừ doanh thu\nCác khoản giảm trừ doanh thu bán hàng, cung cấp dịch vụ phát sinh trong kỳ gồm: Chiết khấu thương mại, giảm giá hàng bán và hàng bán bị trả lại.\nCác khoản chiết khấu thương mại, giảm giá hàng bán, hàng bán bị trả lại phát sinh cùng kỳ tiêu thụ sản phẩm, hàng hóa dịch vụ được điều chỉnh giảm doanh thu của kỳ phát sinh. Trường hợp sản phẩm, hàng hoá, dịch vụ đã tiêu thụ từ các kỳ trước, đến kỳ sau mới phát sinh các khoản giảm trừ doanh thu thì được ghi giảm doanh thu (theo nguyên tắc nếu phát sinh trước thời điểm phát hành Báo cáo tài chính thì ghi giảm doanh thu trên Báo cáo tài chính riêng của kỳ lập báo cáo - kỳ trước, và nếu phát sinh sau thời điểm phát hành Báo cáo tài chính riêng thì ghi giảm doanh thu của kỳ phát sinh - kỳ sau).\n\n2.22. Giá vốn hàng bán\nGiá vốn hàng bán trong năm được ghi nhận phù hợp với doanh thu phát sinh trong năm và đảm bảo tuân thủ nguyên tắc thận trọng. Các trường hợp hao hụt vật tư hàng hóa vượt định mức, chi phí vượt định mức bình thường, hàng tồn kho bị mất mát sau khi đã trừ đi phần trách nhiệm của tập thể, cá nhân có liên quan,... được ghi nhận đầy đủ, kịp thời vào giá vốn hàng bán trong năm.\nViệc trích trước chi phí để tạm tính giá vốn bất động sản (nếu có) đảm bảo các nguyên tắc sau:\n- Chỉ trích trước đối với các khoản chi phí đã có trong dự toán đầu tư, xây dựng nhưng chưa có đủ hồ sơ, tài liệu để nghiệm thu khối lượng.\n- Chỉ trích trước chi phí để tạm tính giá vốn hàng bán cho phần bất động sản đã hoàn thành bán trong năm và đủ điều kiện ghi nhận doanh thu.\n- Số chi phí trích trước và chi phí thực tế được ghi nhận vào giá vốn hàng bán phải đảm bảo tương ứng với định mức giá vốn tính theo tổng chi phí dự toán của phần hàng hóa bất động sản đã bán được xác định theo diện tích.\n\n2.23. Ghi nhận chi phí tài chính\nCác khoản chi phí được ghi nhận vào chi phí tài chính gồm:\n- Chi phí hoặc các khoản lỗ liên quan đến các hoạt động đầu tư tài chính.\n- Chi phí cho vay và đi vay vốn.\n- Các khoản lỗ do thanh lý, chuyển nhượng chứng khoán ngắn hạn, chi phí giao dịch bán chứng khoán.\n- Dự phòng giảm giá chứng khoán kinh doanh, dự phòng tổn thất đầu tư vào đơn vị khác, khoản lỗ phát sinh khi bán ngoại tệ, lỗ tỷ giá hối đoái...\nCác khoản trên được ghi nhận theo tổng số phát sinh trong kỳ, không bù trừ với doanh thu hoạt động tài chính.\n\n2.24. Thuế thu nhập doanh nghiệp\n**Chi phí thuế TNDN hiện hành và Chi phí thuế TNDN hoãn lại**\nChi phí thuế TNDN hiện hành được xác định trên cơ sở thu nhập chịu thuế trong kỳ và thuế suất thuế TNDN trong kỳ kế toán hiện hành.\nChi phí thuế TNDN hoãn lại được xác định trên cơ sở số chênh lệch tạm thời được khấu trừ, số chênh lệch tạm thời chịu thuế và thuế suất thuế TNDN.\nKhông bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại.\n\n3. TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN\nLoại nội dung: Bảng\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Tiền mặt | 2.880.563.186 | 2.828.686.090 |\n| Tiền gửi ngân hàng không kỳ hạn | 523.539.598.578 | 478.365.252.321 |\n| Tiền đang chuyển | 60.793.384.593 | 24.272.562.830 |\n| Các khoản tương đương tiền | - | 100.000.000.000 |\n| **Tổng cộng** | **587.213.546.357** | **605.466.501.241** |\n\n4. CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH\nĐầu tư nắm giữ đến ngày đáo hạn\nXem chi tiết tại Phụ lục 1.\nĐầu tư vào công ty con\nThông tin chi tiết về các công ty con của Công ty tại ngày 31/03/2024 như sau:\n| Tên công ty con | Nơi thành lập và hoạt động | Tỷ lệ quyền biểu quyết | Tỷ lệ lợi ích | Hoạt động kinh doanh chính |\n|---|---|---|---|---|\n| Công ty TNHH MTV Dịch vụ và Thương mại Viettelpost | Hà Nội | 100,00 | 100,00 | Kinh doanh thương mại |\n| Công ty TNHH MTV Logistics Viettel | Hà Nội | 100,00 | 100,00 | Kinh doanh dịch vụ Logistics |\n| Công ty TNHH MTV Công nghệ Bưu chính Viettel | Hà Nội | 100,00 | 100,00 | Cung cấp giải pháp Công nghệ Bưu chính |\n| Công ty TNHH Mygo Campuchia (Đổi tên từ Công ty TNHH VTP Logistics Campuchia) | Campuchia | 100,00 | 100,00 | Kinh doanh dịch vụ Logistics |\n| Công ty TNHH Mygo Myanmar (Đổi tên từ Công ty TNHH VTP Logistics Myanmar) | Myanmar | 100,00 | 100,00 | Kinh doanh dịch vụ Logistics |",
+    "output": [
+      "Tổng tiền mặt tại quỹ tại ngày 31/03/2024 là 2.880.563.186 VND.",
+      "Một khoản giảm trừ doanh thu theo chính sách của công ty là Chiết khấu thương mại.",
+      "Khi các khoản giảm trừ doanh thu phát sinh ở kỳ sau nhưng thuộc kỳ tiêu thụ sản phẩm, hàng hóa dịch vụ trước đó, nguyên tắc ghi nhận phụ thuộc vào thời điểm phát sinh so với thời điểm phát hành Báo cáo tài chính riêng: Nếu phát sinh trước thời điểm phát hành Báo cáo tài chính thì ghi giảm doanh thu trên Báo cáo tài chính riêng của kỳ lập báo cáo (kỳ trước). Nếu phát sinh sau thời điểm phát hành Báo cáo tài chính riêng thì ghi giảm doanh thu của kỳ phát sinh (kỳ sau).",
+      "Giá trị 'Tiền đang chuyển' tại ngày 31/03/2024 là 60.793.384.593 VND. Giá trị 'Tiền đang chuyển' tại ngày 01/01/2024 là 24.272.562.830 VND. Tiền đang chuyển đã tăng 36.520.821.763 VND trong quý.",
+      "Việc không bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại có nghĩa là hai khoản mục này được trình bày riêng biệt trên báo cáo tài chính. Điều này giúp người đọc báo cáo có cái nhìn rõ ràng hơn về thành phần chi phí thuế của công ty. Chi phí thuế TNDN hiện hành phản ánh số thuế phải nộp trong kỳ dựa trên thu nhập chịu thuế, trong khi chi phí thuế TNDN hoãn lại phản ánh ảnh hưởng của các chênh lệch tạm thời giữa kế toán và thuế. Việc không bù trừ giúp tăng tính minh bạch, cho phép phân tích sâu hơn về quản lý thuế và tác động của các chính sách thuế đối với công ty.",
+      "Tại ngày 01/01/2024, công ty có 100.000.000.000 VND trong 'Các khoản tương đương tiền', nhưng đến ngày 31/03/2024, khoản mục này bằng 0. 'Các khoản tương đương tiền' là những khoản đầu tư ngắn hạn có tính thanh khoản cao, dễ dàng chuyển đổi thành tiền. Việc không còn khoản mục này có thể làm giảm đáng kể khả năng thanh khoản tức thời của công ty. Mặc dù công ty vẫn có tiền mặt và tiền gửi ngân hàng, sự biến mất của các khoản tương đương tiền cho thấy một phần tài sản có khả năng chuyển đổi nhanh đã được sử dụng hoặc chuyển đổi sang hình thức khác. Điều này có thể tăng rủi ro về khả năng đáp ứng các nghĩa vụ tài chính đột xuất hoặc ngắn hạn nếu không có kế hoạch quản lý dòng tiền hiệu quả.",
+      "Chính sách ghi nhận giá vốn hàng bán nêu rõ rằng các trường hợp hao hụt vật tư hàng hóa vượt định mức, chi phí vượt định mức bình thường, hàng tồn kho bị mất mát,... sẽ được ghi nhận đầy đủ, kịp thời vào giá vốn hàng bán trong năm. Điều này có nghĩa là nếu có sự hao hụt vật tư vượt định mức, nó sẽ làm tăng giá vốn hàng bán, trực tiếp làm giảm lợi nhuận gộp và lợi nhuận thuần của công ty. Rủi ro ở đây là nếu sự hao hụt này không được kiểm soát tốt, nó có thể bào mòn đáng kể hiệu quả kinh doanh. Đồng thời, việc ghi nhận này cũng đảm bảo tính minh bạch, phản ánh đúng chi phí thực tế phát sinh trong kỳ, nhưng yêu cầu công ty phải có hệ thống kiểm soát nội bộ chặt chẽ để giảm thiểu các tổn thất không mong muốn này."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng khoản phải thu của khách hàng tại ngày 31/03/2024 là bao nhiêu?",
+      "Khoản 'Phải thu Dịch vụ phát hàng thu tiền COD' tại ngày 31/03/2024 có giá trị là bao nhiêu?",
+      "So sánh 'Phải thu nhân viên quản lý điểm bán về dịch vụ ví điện tử' giữa cuối quý 1/2024 và đầu năm 2024.",
+      "Tỷ lệ dự phòng so với tổng giá trị của khoản 'Phải thu Dịch vụ phát hàng thu tiền COD' tại 31/03/2024 là bao nhiêu?",
+      "Đánh giá tình hình thu hồi nợ của công ty dựa trên sự biến động của 'Phải thu các đối tượng khác' và 'Tạm ứng'.",
+      "Phân tích rủi ro tín dụng của công ty khi khoản 'Phải thu nhân viên quản lý điểm bán về dịch vụ ví điện tử' tăng đáng kể.",
+      "Tính toán và giải thích sự thay đổi về tổng các khoản phải thu khác (ngắn hạn và dài hạn) từ đầu năm đến cuối quý 1/2024."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Các khoản phải thu)\nLoại nội dung: Bảng\n5. PHẢI THU CỦA KHÁCH HÀNG\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Tổng Công ty Viễn thông Viettel | 466.665.470.047 | 452.158.988.187 |\n| Tổng Công ty Mạng lưới Viettel | 36.355.392.035 | 52.414.793.702 |\n| Phải thu các đối tượng khác | 590.057.965.670 | 637.461.280.279 |\n| **Tổng cộng** | **1.093.078.827.752** | **1.142.035.062.168** |\nPhải thu của khách hàng phân loại theo kỳ hạn thanh toán:\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Các khoản phải thu khách hàng ngắn hạn | 1.093.078.827.752 | 1.142.035.062.168 |\n| **Tổng cộng** | **1.093.078.827.752** | **1.142.035.062.168** |\n\n6. PHẢI THU KHÁC\nNgắn hạn\n| Chỉ tiêu | Giá trị (31/03/2024) | Dự phòng (31/03/2024) | Giá trị (01/01/2024) | Dự phòng (01/01/2024) |\n|---|---|---|---|---|\n| Thu tiền đặt cọc mua đất - Công ty CP Lilama 3 | 740.000.000 | 740.000.000 | 740.000.000 | 740.000.000 |\n| Công nợ dịch vụ qua ví Tổng công ty Dịch vụ số Viettel (VDS) | 17.632.973.557 | - | 8.802.153.284 | - |\n| Phải thu nhân viên quản lý điểm bán về dịch vụ ví điện tử | 461.118.862.178 | - | 433.575.869.607 | - |\n| Phải thu về lãi tiền gửi có kỳ hạn | 80.676.471.370 | - | 72.375.013.062 | - |\n| Tài sản thiếu quy trách nhiệm cá nhân | 2.790.000.000 | 2.790.000.000 | 2.790.000.000 | 2.790.000.000 |\n| Phải thu Dịch vụ phát hàng thu tiền COD | 156.703.263.742 | 6.479.177.421 | 146.722.079.339 | 6.479.177.421 |\n| Tạm ứng | 25.724.764.320 | - | 2.956.146.139 | - |\n| Ký quỹ, ký cược ngắn hạn | 1.260.445.002 | - | 7.597.657.214 | - |\n| Phải thu khác | 107.395.188.315 | - | 15.213.287.021 | - |\n| **Tổng cộng** | **854.041.968.484** | **10.009.177.421** | **690.772.205.666** | **10.009.177.421** |\n\nDài hạn\n| Chỉ tiêu | Giá trị (31/03/2024) | Dự phòng (31/03/2024) | Giá trị (01/01/2024) | Dự phòng (01/01/2024) |\n|---|---|---|---|---|\n| Ký quỹ, ký cược | 46.349.516.696 | - | 22.765.462.377 | - |\n| **Tổng cộng** | **46.349.516.696** | **-** | **22.765.462.377** | **-** |",
+    "output": [
+      "Tổng khoản phải thu của khách hàng tại ngày 31/03/2024 là 1.093.078.827.752 VND.",
+      "Khoản 'Phải thu Dịch vụ phát hàng thu tiền COD' tại ngày 31/03/2024 có giá trị là 156.703.263.742 VND.",
+      "'Phải thu nhân viên quản lý điểm bán về dịch vụ ví điện tử' tại cuối quý 1/2024 (31/03/2024) là 461.118.862.178 VND. Tại đầu năm 2024 (01/01/2024) là 433.575.869.607 VND. Khoản mục này đã tăng 27.542.992.571 VND.",
+      "Tại 31/03/2024, giá trị của khoản 'Phải thu Dịch vụ phát hàng thu tiền COD' là 156.703.263.742 VND và dự phòng tương ứng là 6.479.177.421 VND. Tỷ lệ dự phòng là (6.479.177.421 / 156.703.263.742) * 100% ≈ 4.13%.",
+      "Khoản 'Phải thu các đối tượng khác' ngắn hạn giảm từ 637.461.280.279 VND (01/01/2024) xuống 590.057.965.670 VND (31/03/2024), cho thấy công ty đã thu hồi được một phần nợ từ các đối tượng này. Ngược lại, khoản 'Tạm ứng' tăng đáng kể từ 2.956.146.139 VND lên 25.724.764.320 VND. Sự tăng của tạm ứng có thể liên quan đến các hoạt động chi tiêu hoặc đầu tư trong quý. Tổng thể, tình hình thu hồi nợ từ khách hàng có xu hướng tích cực, nhưng sự gia tăng của tạm ứng cần được quản lý để đảm bảo không tạo ra rủi ro cho dòng tiền trong tương lai.",
+      "Khoản 'Phải thu nhân viên quản lý điểm bán về dịch vụ ví điện tử' tăng đáng kể từ 433.575.869.607 VND (01/01/2024) lên 461.118.862.178 VND (31/03/2024). Việc tăng khoản phải thu này, đặc biệt từ nội bộ nhân viên, có thể tiềm ẩn rủi ro tín dụng nếu không có quy trình kiểm soát chặt chẽ. Nếu các khoản phải thu này không được thu hồi kịp thời, chúng có thể trở thành nợ khó đòi, ảnh hưởng đến dòng tiền và lợi nhuận của công ty. Mặc dù chưa có dự phòng được trích lập cho khoản này trong dữ liệu, sự tăng trưởng liên tục sẽ đòi hỏi công ty phải đánh giá kỹ lưỡng khả năng thu hồi và có các biện pháp quản lý rủi ro phù hợp để tránh phát sinh nợ xấu.",
+      "Tổng phải thu khác ngắn hạn tăng từ 690.772.205.666 VND (01/01/2024) lên 854.041.968.484 VND (31/03/2024), tăng 163.269.762.818 VND. Tổng phải thu khác dài hạn tăng từ 22.765.462.377 VND (01/01/2024) lên 46.349.516.696 VND (31/03/2024), tăng 23.584.054.319 VND. Tổng cộng các khoản phải thu khác (ngắn hạn và dài hạn) tăng 186.853.817.137 VND. Sự tăng này cho thấy công ty có thể đã mở rộng các hoạt động tín dụng khác hoặc phát sinh các giao dịch phải thu không thuộc khách hàng chính, cả ngắn hạn và dài hạn. Điều này cần được xem xét kỹ lưỡng để đánh giá chất lượng các khoản phải thu và khả năng thu hồi."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị gốc của các khoản phải thu quá hạn thanh toán tại 31/03/2024 là bao nhiêu?",
+      "Giá trị hàng hóa tồn kho tại ngày 31/03/2024 là bao nhiêu?",
+      "So sánh tổng giá trị có thể thu hồi của các khoản phải thu quá hạn thanh toán giữa 31/03/2024 và 01/01/2024.",
+      "Tỷ lệ tăng trưởng của 'Dự án trung tâm Logistics Đà Nẵng' trong quý 1/2024 là bao nhiêu phần trăm?",
+      "Đánh giá mức độ rủi ro của các khoản nợ xấu dựa trên tỷ lệ giữa giá trị có thể thu hồi và giá gốc.",
+      "Phân tích tác động của việc hàng tồn kho không có dự phòng giảm giá đến rủi ro tài chính của công ty.",
+      "Dự báo tiềm năng tăng trưởng của công ty dựa trên các dự án tài sản dở dang dài hạn hiện có."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Dự phòng nợ xấu, Hàng tồn kho, Tài sản dở dang dài hạn)\nLoại nội dung: Bảng\n7. DỰ PHÒNG NỢ XẤU\n| Chỉ tiêu | Giá gốc (31/03/2024) | Giá trị có thể thu hồi (31/03/2024) | Giá gốc (01/01/2024) | Giá trị có thể thu hồi (01/01/2024) |\n|---|---|---|---|---|\n| Các khoản phải thu quá hạn thanh toán | | | | |\n| - Công ty Cổ phần Lilama 3 | 740.000.000 | 740.000.000 | - | - |\n| - Công ty Cổ phần Tập đoàn An Phát | 1.557.240.200 | 1.557.240.200 | - | - |\n| - Ông Chu Sỹ Minh - KH Chi nhánh Đông Anh | 719.195.245 | 719.195.245 | - | - |\n| - Bà Nguyễn Hoàng Ngọc - Nhân viên CHÍT | 2.790.000.000 | 2.790.000.000 | - | - |\n| - Ông Trịnh Văn Minh | 483.147.988 | 144.944.396 | 483.147.988 | 144.944.396 |\n| - Công ty TNHH Mộc Hòa Phát | 433.371.368 | - | 433.371.368 | - |\n| - Các khoản công nợ khác | 12.759.984.688 | 4.816.277.877 | 12.759.984.688 | 4.816.277.877 |\n| **Tổng cộng** | **19.482.939.489** | **4.961.222.273** | **19.482.939.489** | **4.961.222.273** |\n\n8. HÀNG TỒN KHO\n| Chỉ tiêu | Giá gốc (31/03/2024) | Dự phòng (31/03/2024) | Giá gốc (01/01/2024) | Dự phòng (01/01/2024) |\n|---|---|---|---|---|\n| Nguyên liệu, vật liệu | 11.703.943.832 | - | 11.630.217.741 | - |\n| Công cụ, dụng cụ | 2.724.589.888 | - | 3.699.877.959 | - |\n| Hàng hóa | 376.726.093.762 | - | 381.503.985.740 | - |\n| **Tổng cộng** | **391.154.627.482** | **-** | **396.834.081.440** | **-** |\n\n9. TÀI SẢN DỞ DANG DÀI HẠN\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Mua sắm xe ô tô tải | 56.753.316.000 | 56.753.316.000 |\n| Xây dựng cơ bản | 26.160.594.167 | 25.548.812.315 |\n| Xây dựng phần mềm SAP | 9.527.110.055 | 9.527.110.055 |\n| Xây dựng phần mềm quản lý xe | 4.757.000.000 | 4.757.000.000 |\n| Dự án trung tâm Logistics Đà Nẵng | 1.220.773.558 | 608.991.706 |\n| Xây dựng các phần mềm khác | 10.655.710.554 | 10.655.710.554 |\n| **Tổng cộng** | **82.913.910.167** | **82.302.128.315** |",
+    "output": [
+      "Tổng giá trị gốc của các khoản phải thu quá hạn thanh toán tại 31/03/2024 là 19.482.939.489 VND.",
+      "Giá trị hàng hóa tồn kho tại ngày 31/03/2024 là 376.726.093.762 VND.",
+      "Tổng giá trị có thể thu hồi của các khoản phải thu quá hạn thanh toán tại 31/03/2024 là 4.961.222.273 VND. Tại 01/01/2024 cũng là 4.961.222.273 VND. Giá trị này không thay đổi giữa hai kỳ.",
+      "'Dự án trung tâm Logistics Đà Nẵng' tại 01/01/2024 là 608.991.706 VND và tại 31/03/2024 là 1.220.773.558 VND. Tỷ lệ tăng trưởng là ((1.220.773.558 - 608.991.706) / 608.991.706) * 100% ≈ 100.46%.",
+      "Tổng giá gốc của các khoản phải thu quá hạn thanh toán tại 31/03/2024 là 19.482.939.489 VND, trong khi giá trị có thể thu hồi là 4.961.222.273 VND. Tỷ lệ giá trị có thể thu hồi trên giá gốc là (4.961.222.273 / 19.482.939.489) * 100% ≈ 25.46%. Điều này cho thấy công ty chỉ dự kiến thu hồi được khoảng một phần tư giá gốc của các khoản nợ quá hạn, ngụ ý mức độ rủi ro nợ xấu khá cao. Các khoản như Công ty TNHH Mộc Hòa Phát không có khả năng thu hồi, hoặc Ông Trịnh Văn Minh chỉ thu hồi được một phần, thể hiện rủi ro đáng kể. Điều này đòi hỏi công ty phải có chính sách quản lý nợ và trích lập dự phòng hiệu quả hơn.",
+      "Trong dữ liệu cung cấp, tất cả các khoản mục hàng tồn kho (Nguyên liệu, vật liệu; Công cụ, dụng cụ; Hàng hóa) đều không có dự phòng giảm giá tại cả 31/03/2024 và 01/01/2024. Điều này có thể cho thấy công ty đánh giá rằng giá trị thuần có thể thực hiện được của hàng tồn kho không thấp hơn giá gốc, hoặc rủi ro giảm giá là không đáng kể. Tuy nhiên, nếu thị trường thay đổi bất lợi (ví dụ, giảm giá bán, hàng hóa lỗi thời, hỏng hóc), việc không có dự phòng sẽ làm công ty đối mặt với rủi ro tài chính trực tiếp, khi giá trị thực tế của hàng tồn kho thấp hơn giá trị ghi sổ, dẫn đến tổn thất không được dự báo trước và ảnh hưởng tiêu cực đến lợi nhuận khi hàng tồn kho được bán hoặc thanh lý.",
+      "Các dự án tài sản dở dang dài hạn của công ty bao gồm Mua sắm xe ô tô tải, Xây dựng cơ bản, Xây dựng phần mềm SAP, Xây dựng phần mềm quản lý xe, Dự án trung tâm Logistics Đà Nẵng và Xây dựng các phần mềm khác. Việc có nhiều dự án đầu tư vào hạ tầng (Logistics Đà Nẵng, Xây dựng cơ bản), công nghệ (phần mềm SAP, quản lý xe, các phần mềm khác) và phương tiện vận tải (xe ô tô tải) cho thấy công ty đang có kế hoạch đầu tư mạnh mẽ vào các yếu tố cốt lõi để nâng cao năng lực hoạt động và hiệu quả. 'Dự án trung tâm Logistics Đà Nẵng' tăng trưởng 100% trong quý 1, thể hiện sự đẩy mạnh đầu tư. Những dự án này là động lực tiềm năng cho sự tăng trưởng của công ty trong tương lai, giúp mở rộng quy mô, cải thiện dịch vụ và tối ưu hóa hoạt động, đặc biệt trong lĩnh vực bưu chính và logistics."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí trả trước ngắn hạn tại ngày 31/03/2024 là bao nhiêu?",
+      "Khoản mục 'Chi phí thuê đất' dài hạn tại 31/03/2024 có giá trị là bao nhiêu?",
+      "So sánh 'Tiền thuê VP, CH, ST' ngắn hạn giữa cuối quý 1/2024 và đầu năm 2024.",
+      "Tỷ lệ thay đổi của 'Chi phí cải tạo sửa chữa' ngắn hạn trong quý 1/2024 là bao nhiêu phần trăm?",
+      "Đánh giá xu hướng biến động của chi phí trả trước ngắn hạn và dài hạn, liệu có ảnh hưởng đến lợi nhuận trong tương lai không?",
+      "Phân tích tác động của sự giảm 'Công cụ dụng cụ' dài hạn và tăng 'Chi phí cải tạo sửa chữa' dài hạn đối với hiệu quả hoạt động và đầu tư của công ty.",
+      "Dựa vào dữ liệu, đánh giá mức độ ổn định của các khoản chi phí thuê của công ty."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Tài sản cố định và Chi phí trả trước)\nLoại nội dung: Bảng và Text\n10. TÀI SẢN CỐ ĐỊNH HỮU HÌNH\nXem chi tiết Phụ lục 2.\n\n11. TÀI SẢN CỐ ĐỊNH VÔ HÌNH\nXem chi tiết Phụ lục 3.\n\n12. CHI PHÍ TRẢ TRƯỚC\nNgắn hạn\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Tiền thuê VP, CH, ST | 192.385.630.641 | 166.864.573.250 |\n| Chi phí cải tạo sửa chữa | 11.564.801.453 | 22.387.095.442 |\n| Công cụ dụng cụ | 14.887.330.138 | 21.276.483.474 |\n| Chi phí trả trước ngắn hạn khác | 3.634.820.792 | 8.073.945.642 |\n| **Tổng cộng** | **222.472.583.024** | **218.602.097.808** |\n\nDài hạn\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Chi phí cải tạo sửa chữa | 65.687.629.685 | 58.182.713.191 |\n| Công cụ dụng cụ | 108.233.688.645 | 118.148.483.282 |\n| Chi phí thuê địa điểm, văn phòng | 4.005.969.043 | 3.018.475.780 |\n| Chi phí thuê đất | 191.386.889.384 | 193.487.505.345 |\n| Chi phí trả trước dài hạn khác | 2.604.928.612 | 1.559.160.328 |\n| **Tổng cộng** | **371.919.105.369** | **374.396.337.926** |",
+    "output": [
+      "Tổng chi phí trả trước ngắn hạn tại ngày 31/03/2024 là 222.472.583.024 VND.",
+      "Khoản mục 'Chi phí thuê đất' dài hạn tại 31/03/2024 có giá trị là 191.386.889.384 VND.",
+      "'Tiền thuê VP, CH, ST' ngắn hạn tại cuối quý 1/2024 (31/03/2024) là 192.385.630.641 VND. Tại đầu năm 2024 (01/01/2024) là 166.864.573.250 VND. Khoản mục này đã tăng 25.521.057.391 VND.",
+      "'Chi phí cải tạo sửa chữa' ngắn hạn tại 01/01/2024 là 22.387.095.442 VND và tại 31/03/2024 là 11.564.801.453 VND. Tỷ lệ thay đổi là ((11.564.801.453 - 22.387.095.442) / 22.387.095.442) * 100% ≈ -48.34%. Khoản mục này giảm khoảng 48.34%.",
+      "Tổng chi phí trả trước ngắn hạn tăng nhẹ từ 218.602.097.808 VND lên 222.472.583.024 VND. Trong khi đó, tổng chi phí trả trước dài hạn giảm nhẹ từ 374.396.337.926 VND xuống 371.919.105.369 VND. Sự tăng của chi phí trả trước ngắn hạn, đặc biệt là tiền thuê, cho thấy công ty có thể đang mở rộng hoạt động hoặc duy trì nhiều địa điểm hơn. Ngược lại, sự giảm của chi phí trả trước dài hạn có thể do các chi phí này đang dần được phân bổ hết. Cả hai khoản mục này sẽ được phân bổ vào chi phí sản xuất kinh doanh trong các kỳ kế toán sau, do đó sẽ ảnh hưởng trực tiếp đến lợi nhuận trong tương lai. Việc tăng chi phí trả trước ngắn hạn có thể gây áp lực lên lợi nhuận trong ngắn hạn, còn sự giảm chi phí trả trước dài hạn có thể giúp giảm gánh nặng chi phí dài hạn.",
+      "'Công cụ dụng cụ' dài hạn giảm từ 118.148.483.282 VND (01/01/2024) xuống 108.233.688.645 VND (31/03/2024), có thể do khấu hao hoặc thanh lý. Sự giảm này có thể cho thấy việc sử dụng công cụ dụng cụ hiệu quả hơn hoặc một sự thay đổi trong chính sách đầu tư vào các tài sản này. Ngược lại, 'Chi phí cải tạo sửa chữa' dài hạn tăng từ 58.182.713.191 VND lên 65.687.629.685 VND, phản ánh công ty đang đầu tư vào việc nâng cấp, cải thiện tài sản hiện có. Điều này có tác động tích cực đến hiệu quả hoạt động bằng cách duy trì và nâng cao chất lượng cơ sở vật chất, nhưng cũng đòi hỏi một khoản chi phí đáng kể trong dài hạn. Sự kết hợp này cho thấy công ty đang chuyển dịch từ việc mua sắm mới công cụ dụng cụ sang việc tối ưu hóa và bảo trì tài sản hiện có.",
+      "Dựa trên dữ liệu, 'Tiền thuê VP, CH, ST' ngắn hạn tăng từ 166.864.573.250 VND lên 192.385.630.641 VND, cho thấy chi phí thuê văn phòng, cửa hàng đang có xu hướng tăng trong ngắn hạn. Tuy nhiên, 'Chi phí thuê đất' dài hạn giảm nhẹ từ 193.487.505.345 VND xuống 191.386.889.384 VND. Điều này cho thấy công ty có thể đang có sự điều chỉnh trong hợp đồng thuê đất hoặc phân bổ chi phí thuê đất. Tổng thể, các khoản chi phí thuê không hoàn toàn ổn định. Chi phí thuê ngắn hạn có xu hướng tăng, có thể phản ánh sự mở rộng hoặc chi phí thị trường tăng, trong khi chi phí thuê dài hạn có vẻ được quản lý tốt hơn hoặc đang trong giai đoạn giảm dần do phân bổ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng khoản phải trả người bán ngắn hạn tại ngày 31/03/2024 là bao nhiêu?",
+      "Khoản phải trả cho 'Tổng Công ty Viễn thông Viettel' tại 31/03/2024 là bao nhiêu?",
+      "So sánh khoản phải trả cho 'Công ty TNHH Cung ứng Nhân lực Nhãn Kiệt' giữa 31/03/2024 và 01/01/2024.",
+      "Tính tỷ lệ tăng trưởng của 'Phải trả các đối tượng khác' trong quý 1/2024.",
+      "Đánh giá mức độ biến động các khoản phải trả người bán và ý nghĩa của nó đối với dòng tiền hoạt động của công ty.",
+      "Phân tích tác động của sự thay đổi lớn trong khoản phải trả cho 'Tập đoàn Công nghiệp Viễn thông Quân đội' đến mối quan hệ giữa công ty và đối tác.",
+      "Dựa trên dữ liệu 'Phải trả người bán', đánh giá khả năng công ty duy trì các mối quan hệ tín dụng với nhà cung cấp chính."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Vay và nợ thuê tài chính, Phải trả người bán)\nLoại nội dung: Bảng và Text\n13. VAY VÀ NỢ THUÊ TÀI CHÍNH\nXem chi tiết Phụ lục 4.\n\n14. PHẢI TRẢ NGƯỜI BÁN\n| Chỉ tiêu | Giá trị (31/03/2024) | Số có khả năng trả nợ (31/03/2024) | Giá trị (01/01/2024) | Số có khả năng trả nợ (01/01/2024) |\n|---|---|---|---|---|\n| Phải trả người bán chi tiết theo nhà cung cấp có số dư lớn: | | | | |\n| - Tập đoàn Công nghiệp Viễn thông Quân đội | 508.493.119 | 508.493.119 | 1.355.787.566 | 1.355.787.566 |\n| - Tổng Công ty Viễn thông Viettel | 27.146.993.366 | 27.146.993.366 | 24.070.419 | 24.070.419 |\n| - Công ty TNHH Cung ứng Nhân lực Nhãn Kiệt | 10.137.717.120 | 10.137.717.120 | 27.758.640.149 | 27.758.640.149 |\n| - Chi nhánh công ty cổ phần UPS Việt Nam tại Hà Nội | 13.596.797.583 | 13.596.797.583 | 15.815.710.460 | 15.815.710.460 |\n| - Công ty Cổ phần đầu tư Sài Gòn - Đà Nẵng | 10.374.406.718 | 10.374.406.718 | 10.932.278.446 | 10.932.278.446 |\n| - Phải trả các đối tượng khác | 198.055.315.893 | 198.055.315.893 | 131.020.073.153 | 131.020.073.153 |\n| **Tổng cộng** | **259.819.723.799** | **259.819.723.799** | **186.906.560.193** | **186.906.560.193** |\n\nPhải trả người bán chi tiết theo kỳ hạn thanh toán:\n| Chỉ tiêu | Giá trị (31/03/2024) | Số có khả năng trả nợ (31/03/2024) | Giá trị (01/01/2024) | Số có khả năng trả nợ (01/01/2024) |\n|---|---|---|---|---|\n| Phải trả người bán ngắn hạn | 259.819.723.799 | 259.819.723.799 | 186.906.560.193 | 186.906.560.193 |\n| **Tổng cộng** | **259.819.723.799** | **259.819.723.799** | **186.906.560.193** | **186.906.560.193** |",
+    "output": [
+      "Tổng khoản phải trả người bán ngắn hạn tại ngày 31/03/2024 là 259.819.723.799 VND.",
+      "Khoản phải trả cho 'Tổng Công ty Viễn thông Viettel' tại 31/03/2024 là 27.146.993.366 VND.",
+      "Khoản phải trả cho 'Công ty TNHH Cung ứng Nhân lực Nhãn Kiệt' tại 31/03/2024 là 10.137.717.120 VND. Tại 01/01/2024 là 27.758.640.149 VND. Khoản mục này đã giảm 17.620.923.029 VND.",
+      "'Phải trả các đối tượng khác' tại 01/01/2024 là 131.020.073.153 VND và tại 31/03/2024 là 198.055.315.893 VND. Tỷ lệ tăng trưởng là ((198.055.315.893 - 131.020.073.153) / 131.020.073.153) * 100% ≈ 51.16%.",
+      "Tổng khoản phải trả người bán ngắn hạn của công ty tăng từ 186.906.560.193 VND (01/01/2024) lên 259.819.723.799 VND (31/03/2024), tăng khoảng 72,9 tỷ VND. Sự biến động này cho thấy công ty có thể đã tăng cường mua hàng hóa, dịch vụ từ các nhà cung cấp, hoặc kéo dài thời gian thanh toán nợ. Một số khoản phải trả chính có sự biến động lớn như giảm phải trả cho 'Tập đoàn Công nghiệp Viễn thông Quân đội' và 'Công ty TNHH Cung ứng Nhân lực Nhãn Kiệt', nhưng tăng mạnh cho 'Tổng Công ty Viễn thông Viettel' và 'Phải trả các đối tượng khác'. Việc tăng các khoản phải trả người bán giúp công ty giữ lại tiền mặt trong hoạt động kinh doanh, có tác động tích cực đến dòng tiền hoạt động trong ngắn hạn. Tuy nhiên, nếu khoản phải trả tăng quá nhanh mà không đi kèm với tăng trưởng doanh thu, có thể gây áp lực lên mối quan hệ với nhà cung cấp.",
+      "Khoản phải trả cho 'Tập đoàn Công nghiệp Viễn thông Quân đội' giảm đáng kể từ 1.355.787.566 VND (01/01/2024) xuống 508.493.119 VND (31/03/2024). Đây là một sự giảm hơn 50%. Sự thay đổi này có thể cho thấy công ty đã thanh toán một phần lớn nợ cho Tập đoàn, hoặc giảm quy mô giao dịch mua hàng/dịch vụ từ đối tác này. Điều này thường là dấu hiệu tích cực về việc duy trì mối quan hệ lành mạnh với đối tác chính, thể hiện cam kết thanh toán. Tuy nhiên, nếu sự giảm này xuất phát từ việc giảm giao dịch, có thể cần phân tích sâu hơn về nguyên nhân và tác động đến chuỗi cung ứng hoặc mối quan hệ chiến lược giữa hai bên.",
+      "Dữ liệu cho thấy các khoản phải trả cho các nhà cung cấp chính như 'Tập đoàn Công nghiệp Viễn thông Quân đội', 'Công ty TNHH Cung ứng Nhân lực Nhãn Kiệt', 'Chi nhánh công ty cổ phần UPS Việt Nam tại Hà Nội', và 'Công ty Cổ phần đầu tư Sài Gòn - Đà Nẵng' đều giảm hoặc biến động trong mức chấp nhận được, với khoản phải trả cho Tập đoàn Công nghiệp Viễn thông Quân đội giảm đáng kể. Điều này cho thấy công ty đang thực hiện các nghĩa vụ thanh toán một cách tương đối hiệu quả. Việc 'Phải trả các đối tượng khác' tăng có thể là dấu hiệu mở rộng giao dịch hoặc tận dụng tín dụng thương mại từ các nhà cung cấp khác. Tổng thể, công ty có vẻ đang duy trì khả năng tín dụng tốt với các nhà cung cấp chính bằng cách thực hiện thanh toán, mặc dù có sự dịch chuyển trong cơ cấu các khoản phải trả."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí phải trả ngắn hạn tại ngày 31/03/2024 là bao nhiêu?",
+      "Doanh thu chưa thực hiện ngắn hạn tại 31/03/2024 có giá trị là bao nhiêu?",
+      "So sánh 'Phải trả TCT Viễn thông Viettel (VTT)' giữa cuối quý 1/2024 và đầu năm 2024.",
+      "Tính tỷ lệ tăng trưởng của 'Chi phí thuê nhà làm văn phòng, cửa hàng, bưu cục' ngắn hạn trong quý 1/2024.",
+      "Đánh giá xu hướng và nguyên nhân của sự biến động lớn trong 'Doanh thu chưa thực hiện ngắn hạn' và 'Phải trả TCT Viễn thông Viettel'.",
+      "Phân tích rủi ro thanh khoản của công ty dựa trên sự biến động của các khoản 'Phải trả công nợ thu hộ, chi hộ COD' và 'Phải trả đại lý hộ kinh doanh'.",
+      "Dự báo tác động của việc giảm 'Chi phí nhân công thuê ngoài' đến chi phí hoạt động của công ty trong các quý tiếp theo."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Thuế, Chi phí phải trả, Doanh thu chưa thực hiện, Phải trả khác)\nLoại nội dung: Bảng và Text\n15. THUẾ VÀ CÁC KHOẢN PHẢI THU, PHẢI NỘP VỚI NHÀ NƯỚC\nXem chi tiết Phụ lục 5.\n\n16. CHI PHÍ PHẢI TRẢ\nNgắn hạn\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Chi phí thuê nhà làm văn phòng, cửa hàng, bưu cục | 2.080.550.078 | 422.957.416 |\n| Chi phí nhân công thuê ngoài | 184.033.071.025 | 189.878.950.224 |\n| Chi phí lãi vay | 1.167.948.628 | 2.303.974.011 |\n| Chi phí phải trả khác | 10.591.731.834 | 17.710.492.605 |\n| **Tổng cộng** | **197.873.301.565** | **210.316.374.256** |\n\n17. DOANH THU CHƯA THỰC HIỆN\nNgắn hạn\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Các khoản Doanh thu chưa thực hiện khác | 27.093.014.724 | 7.973.828.013 |\n| **Tổng cộng** | **27.093.014.724** | **7.973.828.013** |\n\n18. PHẢI TRẢ KHÁC\nNgắn hạn\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Phải trả công nợ nhân viên điểm bán | 1.800.284.309 | 964.535.271 |\n| Phải trả TCT Viễn thông Viettel (VTT) | 328.602.282.706 | 92.230.207.527 |\n| Phải trả TCT Dịch vụ số Viettel (VDS) | 93.562.289.409 | 191.082.020.979 |\n| Phải trả về BHXH, BHYT, BHTN, KPCĐ | 18.560.519.793 | 17.094.893.665 |\n| Nhận ký quỹ, ký cược ngắn hạn | 70.314.880 | 120.314.880 |\n| Thu hộ CBCNV để tiến hành làm sổ tiết kiệm | 20.583.624.546 | 21.118.805.825 |\n| Phải trả công nợ thu hộ, chi hộ COD | 954.771.698.285 | 912.602.822.843 |\n| Phải trả đại lý hộ kinh doanh | 142.112.524.922 | 178.952.507.755 |\n| Các khoản phải trả khác | 136.696.166.570 | 124.480.665.341 |\n| **Tổng cộng** | **1.696.759.705.420** | **1.538.646.774.086** |\n\nDài hạn\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Ký quỹ, ký cược | 12.656.347.100 | 12.606.347.100 |\n| **Tổng cộng** | **12.656.347.100** | **12.606.347.100** |",
+    "output": [
+      "Tổng chi phí phải trả ngắn hạn tại ngày 31/03/2024 là 197.873.301.565 VND.",
+      "Doanh thu chưa thực hiện ngắn hạn tại 31/03/2024 có giá trị là 27.093.014.724 VND.",
+      "'Phải trả TCT Viễn thông Viettel (VTT)' tại cuối quý 1/2024 (31/03/2024) là 328.602.282.706 VND. Tại đầu năm 2024 (01/01/2024) là 92.230.207.527 VND. Khoản mục này đã tăng 236.372.075.179 VND.",
+      "'Chi phí thuê nhà làm văn phòng, cửa hàng, bưu cục' ngắn hạn tại 01/01/2024 là 422.957.416 VND và tại 31/03/2024 là 2.080.550.078 VND. Tỷ lệ tăng trưởng là ((2.080.550.078 - 422.957.416) / 422.957.416) * 100% ≈ 392.05%.",
+      "Doanh thu chưa thực hiện ngắn hạn tăng đột biến từ 7.973.828.013 VND (01/01/2024) lên 27.093.014.724 VND (31/03/2024), gấp hơn 3 lần. Điều này có thể do công ty đã nhận được các khoản tiền trả trước lớn cho hàng hóa/dịch vụ sẽ cung cấp trong tương lai gần, cho thấy sự gia tăng về số lượng hợp đồng hoặc quy mô giao dịch. Tương tự, 'Phải trả TCT Viễn thông Viettel (VTT)' cũng tăng rất mạnh từ 92.230.207.527 VND lên 328.602.282.706 VND. Nguyên nhân có thể là do công ty tăng cường sử dụng các dịch vụ hoặc sản phẩm của Viettel, hoặc có sự chậm trễ trong việc thanh toán các khoản nợ này. Cả hai xu hướng đều chỉ ra sự mở rộng hoạt động và tăng cường các giao dịch trong ngắn hạn.",
+      "'Phải trả công nợ thu hộ, chi hộ COD' tăng từ 912.602.822.843 VND lên 954.771.698.285 VND, và 'Phải trả đại lý hộ kinh doanh' giảm từ 178.952.507.755 VND xuống 142.112.524.922 VND. Cả hai khoản mục này đều liên quan đến các nghĩa vụ thanh toán của công ty đối với các đối tác trong chuỗi dịch vụ. Mặc dù tổng thể các khoản phải trả ngắn hạn tăng, việc 'Phải trả đại lý hộ kinh doanh' giảm có thể là dấu hiệu tích cực về việc công ty đang thanh toán các khoản nợ này. Tuy nhiên, 'Phải trả công nợ thu hộ, chi hộ COD' vẫn ở mức rất cao và tiếp tục tăng, thể hiện nghĩa vụ thanh toán lớn. Rủi ro thanh khoản tiềm ẩn nếu công ty không duy trì được dòng tiền đủ mạnh để thực hiện các khoản thanh toán này kịp thời, đặc biệt khi các khoản này chiếm tỷ trọng lớn trong tổng nợ ngắn hạn khác.",
+      "'Chi phí nhân công thuê ngoài' giảm từ 189.878.950.224 VND (01/01/2024) xuống 184.033.071.025 VND (31/03/2024). Nếu xu hướng giảm này tiếp tục trong các quý tiếp theo, nó sẽ có tác động tích cực đến chi phí hoạt động của công ty. Việc giảm chi phí nhân công thuê ngoài có thể là kết quả của việc tối ưu hóa nhân sự, tự động hóa quy trình, hoặc chuyển đổi sang mô hình sử dụng nhân viên nội bộ hiệu quả hơn. Điều này có thể giúp công ty tiết kiệm chi phí, cải thiện biên lợi nhuận, và nâng cao hiệu quả hoạt động trong dài hạn. Tuy nhiên, cần xem xét liệu sự giảm này có ảnh hưởng đến chất lượng dịch vụ hoặc năng lực hoạt động của công ty hay không."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn đầu tư của chủ sở hữu tại ngày 31/03/2024 là bao nhiêu?",
+      "Tập đoàn Công nghiệp Viễn thông Quân đội nắm giữ bao nhiêu phần trăm vốn cổ phần của công ty?",
+      "Số lượng cổ phiếu phổ thông đang lưu hành là bao nhiêu?",
+      "So sánh lượng Đô la Mỹ (USD) tại ngày 31/03/2024 và 01/01/2024.",
+      "Đánh giá mức độ ổn định của cơ cấu vốn chủ sở hữu của công ty dựa trên các giao dịch về vốn với chủ sở hữu.",
+      "Phân tích ý nghĩa của việc không có cổ tức hay lợi nhuận được chia trong kỳ báo cáo.",
+      "Dựa trên mệnh giá và số lượng cổ phiếu đang lưu hành, tính toán và nhận xét về tổng giá trị vốn điều lệ của công ty."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Vốn chủ sở hữu, Các khoản mục ngoài bảng cân đối kế toán)\nLoại nội dung: Bảng và Text\n19. VỐN CHỦ SỞ HỮU\nBảng đối chiếu biến động của vốn chủ sở hữu\nXem chi tiết Phụ lục 6.\nChi tiết vốn đầu tư của chủ sở hữu:\n| Chỉ tiêu | 31/03/2024 (VND) | Tỷ lệ (%) | 01/01/2024 (VND) | Tỷ lệ (%) |\n|---|---|---|---|---|\n| Tập đoàn Công nghiệp Viễn thông Quân đội | 740.947.050.000 | 60,84 | 740.947.050.000 | 60,84 |\n| Vốn góp của các đối tượng khác | 476.883.370.000 | 39,16 | 476.883.370.000 | 39,16 |\n| - Các cổ đông khác | 476.883.370.000 | 39,16 | 476.883.370.000 | 39,16 |\n| **Tổng cộng** | **1.217.830.420.000** | **100,00** | **1.217.830.420.000** | **100,00** |\n\nCác giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận:\n| Chỉ tiêu | 31/03/2024 (VND) | 01/01/2024 (VND) |\n|---|---|---|\n| Vốn đầu tư của chủ sở hữu: | | |\n| - Vốn góp đầu năm | 1.217.830.420.000 | 1.132.172.370.000 |\n| - Vốn góp tăng trong năm | - | 86.089.850.000 |\n| - Vốn góp giảm trong năm | - | 431.800.000 |\n| - Vốn góp cuối năm | 1.217.830.420.000 | 1.217.830.420.000 |\n| Cổ tức, lợi nhuận đã chia | - | - |\n\nCổ phiếu:\n| Chỉ tiêu | 31/03/2024 | 01/01/2024 |\n|---|---|---|\n| Số lượng cổ phiếu đăng ký phát hành | 121.783.042 | 121.783.042 |\n| Số lượng cổ phiếu đã bán ra công chúng | 121.783.042 | 121.783.042 |\n| - Cổ phiếu phổ thông | 121.783.042 | 121.783.042 |\n| Số lượng cổ phiếu đang lưu hành | 121.783.042 | 121.783.042 |\n| - Cổ phiếu phổ thông | 121.783.042 | 121.783.042 |\n| Mệnh giá cổ phiếu đang lưu hành | 10.000 VND/cổ phiếu | 10.000 VND/cổ phiếu |\n\n20. CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN\nNgoại tệ các loại:\n| Chỉ tiêu | 31/03/2024 (USD) | 01/01/2024 (USD) |\n|---|---|---|\n| Đô la Mỹ (USD) | 79.482,67 | 36.875,76 |",
+    "output": [
+      "Tổng vốn đầu tư của chủ sở hữu tại ngày 31/03/2024 là 1.217.830.420.000 VND.",
+      "Tập đoàn Công nghiệp Viễn thông Quân đội nắm giữ 60,84% vốn cổ phần của công ty.",
+      "Số lượng cổ phiếu phổ thông đang lưu hành là 121.783.042 cổ phiếu.",
+      "Lượng Đô la Mỹ (USD) tại ngày 31/03/2024 là 79.482,67 USD. Tại ngày 01/01/2024 là 36.875,76 USD. Lượng Đô la Mỹ đã tăng 42.606,91 USD.",
+      "Vốn đầu tư của chủ sở hữu và Thặng dư vốn cổ phần đều không có sự thay đổi trong quý 1 năm 2024 (cả hai đều giữ nguyên từ 01/01/2024 đến 31/03/2024). Không có các giao dịch tăng hoặc giảm vốn trong kỳ này. Điều này cho thấy cơ cấu vốn chủ sở hữu của công ty khá ổn định trong quý báo cáo, không có hoạt động phát hành thêm cổ phiếu hay mua lại cổ phiếu quỹ. Sự ổn định này có thể là một yếu tố tích cực, cho thấy không có sự thay đổi lớn trong chính sách tài trợ vốn của công ty.",
+      "Việc không có cổ tức hay lợi nhuận được chia trong kỳ báo cáo (cả quý 1/2024 và trong kỳ trước) cho thấy công ty chưa thực hiện phân phối lợi nhuận cho các chủ sở hữu trong giai đoạn này. Điều này có thể có một số ý nghĩa: công ty có thể đang ưu tiên giữ lại lợi nhuận để tái đầu tư vào các dự án phát triển, mở rộng hoạt động kinh doanh, hoặc củng cố tình hình tài chính. Nó cũng có thể xuất phát từ chính sách phân phối lợi nhuận theo chu kỳ hàng năm thay vì hàng quý, hoặc quyết định của Đại hội đồng cổ đông/Hội đồng quản trị về việc không chia cổ tức trong kỳ này để dồn cho các mục đích chiến lược khác. Đối với nhà đầu tư, điều này có nghĩa là họ chưa nhận được dòng tiền từ cổ tức trong quý này.",
+      "Số lượng cổ phiếu đang lưu hành là 121.783.042 cổ phiếu. Mệnh giá cổ phiếu đang lưu hành là 10.000 VND/cổ phiếu. Tổng giá trị vốn điều lệ của công ty là 121.783.042 * 10.000 VND = 1.217.830.420.000 VND. Giá trị này khớp với 'Vốn góp của chủ sở hữu' và 'Vốn đầu tư của chủ sở hữu' trên báo cáo, khẳng định quy mô vốn góp của công ty. Đây là một con số ổn định, phản ánh cấu trúc vốn được thiết lập vững chắc, cung cấp nền tảng tài chính cho hoạt động kinh doanh."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu bán hàng và cung cấp dịch vụ quý 1 năm 2024 là bao nhiêu?",
+      "Lãi tiền gửi, lãi cho vay trong quý 1 năm 2024 là bao nhiêu?",
+      "So sánh 'Doanh thu bán hàng' giữa quý 1/2024 và quý 1/2023.",
+      "Tính tỷ suất chi phí tài chính trên tổng doanh thu hoạt động tài chính trong quý 1/2024.",
+      "Đánh giá sự thay đổi trong cơ cấu doanh thu (bán hàng so với dịch vụ) giữa hai quý và ý nghĩa của nó.",
+      "Phân tích nguyên nhân sự sụt giảm đáng kể của 'Cổ tức, lợi nhuận được chia' và tác động của nó đến doanh thu hoạt động tài chính.",
+      "Dựa trên các số liệu, đánh giá hiệu quả quản lý chi phí tài chính của công ty trong quý 1/2024 so với cùng kỳ năm trước."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Doanh thu và Chi phí tài chính)\nLoại nội dung: Bảng\n21. TỔNG DOANH THU BÁN HÀNG VÀ CUNG CẤP DỊCH VỤ\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Doanh thu bán hàng | 1.660.336.577.380 | 2.347.558.497.362 |\n| Doanh thu cung cấp dịch vụ | 2.619.216.327.417 | 2.007.750.630.856 |\n| **Tổng cộng** | **4.279.552.904.797** | **4.355.309.128.218** |\n\n22. GIÁ VỐN HÀNG BÁN\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Giá vốn của hàng hóa đã bán | 1.657.711.469.523 | 2.338.731.284.086 |\n| Giá vốn của dịch vụ đã cung cấp | 2.482.162.347.729 | 1.885.952.993.498 |\n| **Tổng cộng** | **4.139.873.817.252** | **4.224.684.277.584** |\n\n23. DOANH THU HOẠT ĐỘNG TÀI CHÍNH\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Lãi tiền gửi, lãi cho vay | 28.277.513.014 | 29.429.949.891 |\n| Cổ tức, lợi nhuận được chia | 5.760.567.420 | 22.855.769.883 |\n| Lãi chênh lệch tỷ giá phát sinh trong kỳ | 31.981.112 | - |\n| Lãi chênh lệch tỷ giá do đánh giá lại số dư cuối kỳ | 28.051.430 | - |\n| **Tổng cộng** | **34.066.131.864** | **52.317.700.886** |\n\n24. CHI PHÍ TÀI CHÍNH\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Lãi tiền vay | 13.232.207.496 | 15.205.565.375 |\n| Lỗ chênh lệch tỷ giá do đánh giá lại số dư cuối kỳ | - | 579.299 |\n| **Tổng cộng** | **13.232.207.496** | **15.206.144.674** |",
+    "output": [
+      "Tổng doanh thu bán hàng và cung cấp dịch vụ quý 1 năm 2024 là 4.279.552.904.797 VND.",
+      "Lãi tiền gửi, lãi cho vay trong quý 1 năm 2024 là 28.277.513.014 VND.",
+      "Doanh thu bán hàng quý 1 năm 2024 là 1.660.336.577.380 VND. Doanh thu bán hàng quý 1 năm 2023 là 2.347.558.497.362 VND. Doanh thu bán hàng quý 1/2024 đã giảm 687.221.919.982 VND so với cùng kỳ năm 2023.",
+      "Chi phí tài chính quý 1 năm 2024 là 13.232.207.496 VND. Doanh thu hoạt động tài chính quý 1 năm 2024 là 34.066.131.864 VND. Tỷ suất chi phí tài chính trên tổng doanh thu hoạt động tài chính là (13.232.207.496 / 34.066.131.864) * 100% ≈ 38.85%.",
+      "Trong quý 1/2024, doanh thu bán hàng giảm đáng kể từ 2.347.558.497.362 VND (Q1/2023) xuống 1.660.336.577.380 VND (Q1/2024). Ngược lại, doanh thu cung cấp dịch vụ tăng mạnh từ 2.007.750.630.856 VND (Q1/2023) lên 2.619.216.327.417 VND (Q1/2024). Sự thay đổi này cho thấy công ty đang có sự dịch chuyển rõ rệt trong cơ cấu doanh thu, giảm phụ thuộc vào doanh thu bán hàng và tăng cường mảng dịch vụ. Điều này có thể phản ánh chiến lược tập trung vào các dịch vụ cốt lõi hoặc mở rộng các dịch vụ mới, nhằm tối ưu hóa hoạt động kinh doanh và tìm kiếm nguồn tăng trưởng bền vững hơn trong lĩnh vực dịch vụ.",
+      "'Cổ tức, lợi nhuận được chia' sụt giảm đáng kể từ 22.855.769.883 VND (Q1/2023) xuống 5.760.567.420 VND (Q1/2024), giảm khoảng 74.8% so với cùng kỳ. Nguyên nhân có thể do các công ty mà VTP đầu tư vào đã giảm hoặc không chia cổ tức/lợi nhuận trong kỳ này, hoặc VTP đã giảm tỷ lệ sở hữu tại các công ty đó. Sự sụt giảm này có tác động tiêu cực trực tiếp đến doanh thu hoạt động tài chính của công ty, làm giảm tổng doanh thu tài chính. Điều này cho thấy nguồn thu từ đầu tư tài chính của công ty đang yếu đi trong quý này, đòi hỏi công ty phải cân nhắc lại chiến lược đầu tư hoặc tìm kiếm các nguồn doanh thu tài chính khác.",
+      "Trong quý 1/2024, chi phí tài chính là 13.232.207.496 VND, giảm so với 15.206.144.674 VND của quý 1/2023. Chủ yếu, chi phí lãi vay giảm từ 15.205.565.375 VND xuống 13.232.207.496 VND, trong khi lỗ chênh lệch tỷ giá do đánh giá lại số dư cuối kỳ không phát sinh trong Q1/2024 (so với 579.299 VND năm 2023). Sự giảm tổng chi phí tài chính, đặc biệt là chi phí lãi vay, cho thấy công ty đã quản lý hiệu quả hơn các khoản vay nợ hoặc có thể đã giảm quy mô vay nợ, dẫn đến giảm gánh nặng lãi vay. Điều này phản ánh hiệu quả tích cực trong việc quản lý chi phí tài chính, góp phần cải thiện lợi nhuận của công ty trong quý 1/2024."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí bán hàng quý 1 năm 2024 là bao nhiêu?",
+      "Thu nhập từ nhượng bán, thanh lý tài sản cố định trong quý 1 năm 2023 là bao nhiêu?",
+      "So sánh 'Chi phí nhân công' trong chi phí quản lý doanh nghiệp giữa quý 1/2024 và quý 1/2023.",
+      "Tính tỷ lệ tăng trưởng của 'Chi phí dịch vụ mua ngoài' trong chi phí bán hàng giữa hai kỳ.",
+      "Đánh giá sự thay đổi trong cơ cấu chi phí quản lý doanh nghiệp và tác động của nó đến hiệu quả hoạt động.",
+      "Phân tích nguyên nhân và ảnh hưởng của sự tăng đột biến trong 'Chi phí khác bằng tiền' của chi phí bán hàng.",
+      "Dựa vào các khoản 'Thu nhập khác' và 'Chi phí khác', đánh giá các sự kiện không thường xuyên ảnh hưởng đến lợi nhuận công ty trong hai kỳ."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chi phí bán hàng, Chi phí quản lý doanh nghiệp, Thu nhập khác, Chi phí khác)\nLoại nội dung: Bảng\n25. CHI PHÍ BÁN HÀNG\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Chi phí dịch vụ mua ngoài | 9.754.647.336 | 5.581.575.764 |\n| Chi phí khác bằng tiền | 9.688.975.947 | 769.919.098 |\n| **Tổng cộng** | **19.443.623.283** | **6.351.494.862** |\n\n26. CHI PHÍ QUẢN LÝ DOANH NGHIỆP\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Chi phí nhân công | 42.559.384.916 | 51.613.558.740 |\n| Chi phí công cụ dụng cụ | 1.092.755.013 | 1.084.885.512 |\n| Chi phí khấu hao tài sản cố định | 1.869.593.994 | 1.787.230.504 |\n| Thuế và các khoản lệ phí | 2.127.500.000 | 1.940.000.000 |\n| Chi phí dịch vụ mua ngoài | 12.599.148.644 | 15.221.388.028 |\n| Chi phí khác bằng tiền | 12.989.153.902 | 7.459.372.876 |\n| **Tổng cộng** | **73.237.536.469** | **79.106.435.660** |\n\n27. THU NHẬP KHÁC\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Thu nhập từ nhượng bán, thanh lý tài sản cố định | - | 1.638.677.687 |\n| Tiền phạt thu được | 1.384.333.264 | 145.589.770 |\n| Thu nhập khác | 38.263.206 | - |\n| **Tổng cộng** | **1.422.596.470** | **1.784.267.457** |\n\n28. CHI PHÍ KHÁC\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Các khoản bị phạt | 77.324.897 | 162.084.773 |\n| Chi phí khác | 3.000.000 | 22.338.520 |\n| **Tổng cộng** | **80.324.897** | **184.423.293** |",
+    "output": [
+      "Tổng chi phí bán hàng quý 1 năm 2024 là 19.443.623.283 VND.",
+      "Thu nhập từ nhượng bán, thanh lý tài sản cố định trong quý 1 năm 2023 là 1.638.677.687 VND.",
+      "'Chi phí nhân công' trong chi phí quản lý doanh nghiệp quý 1 năm 2024 là 42.559.384.916 VND. Cùng kỳ năm 2023 là 51.613.558.740 VND. Khoản mục này đã giảm 9.054.173.824 VND.",
+      "'Chi phí dịch vụ mua ngoài' trong chi phí bán hàng quý 1 năm 2023 là 5.581.575.764 VND và quý 1 năm 2024 là 9.754.647.336 VND. Tỷ lệ tăng trưởng là ((9.754.647.336 - 5.581.575.764) / 5.581.575.764) * 100% ≈ 74.77%.",
+      "Trong quý 1/2024, tổng chi phí quản lý doanh nghiệp giảm từ 79.106.435.660 VND (Q1/2023) xuống 73.237.536.469 VND. Sự giảm này chủ yếu do 'Chi phí nhân công' giảm đáng kể (từ 51,6 tỷ VND xuống 42,5 tỷ VND) và 'Chi phí dịch vụ mua ngoài' giảm (từ 15,2 tỷ VND xuống 12,5 tỷ VND). Tuy nhiên, 'Chi phí khác bằng tiền' lại tăng từ 7,45 tỷ VND lên 12,98 tỷ VND. Sự giảm tổng chi phí quản lý cho thấy công ty đang nỗ lực tối ưu hóa hoạt động và giảm gánh nặng chi phí hành chính. Điều này có tác động tích cực đến hiệu quả hoạt động, giúp cải thiện lợi nhuận. Tuy nhiên, cần xem xét nguyên nhân tăng của 'Chi phí khác bằng tiền' để đảm bảo không có chi phí bất thường hoặc kém hiệu quả.",
+      "'Chi phí khác bằng tiền' trong chi phí bán hàng tăng đột biến từ 769.919.098 VND (Q1/2023) lên 9.688.975.947 VND (Q1/2024), gấp hơn 12 lần. Chunk dữ liệu không nêu rõ nguyên nhân cụ thể của sự tăng này. Tuy nhiên, nó có thể xuất phát từ việc công ty đẩy mạnh các chương trình khuyến mãi, chi phí quảng cáo, hỗ trợ đại lý hoặc các hoạt động thúc đẩy bán hàng khác không được phân loại rõ ràng. Sự tăng đột biến này có ảnh hưởng tiêu cực đáng kể đến lợi nhuận của công ty vì nó làm tăng tổng chi phí bán hàng và làm giảm lợi nhuận gộp từ hoạt động bán hàng. Điều này cần được xem xét kỹ lưỡng để đánh giá hiệu quả của các khoản chi này trong việc tạo ra doanh thu và lợi nhuận.",
+      "Trong quý 1/2023, công ty có thu nhập đáng kể từ 'Thu nhập từ nhượng bán, thanh lý tài sản cố định' (1.638.677.687 VND), trong khi quý 1/2024 không có khoản này. 'Tiền phạt thu được' tăng mạnh từ 145.589.770 VND (Q1/2023) lên 1.384.333.264 VND (Q1/2024), cho thấy có thể công ty đã thu được nhiều khoản phạt từ đối tác hoặc khách hàng. Về chi phí khác, 'Các khoản bị phạt' giảm từ 162.084.773 VND (Q1/2023) xuống 77.324.897 VND (Q1/2024), cho thấy công ty đã giảm thiểu các khoản phạt phải chịu. Tổng lợi nhuận khác quý 1/2024 là 1.342.271.573 VND, giảm so với 1.599.844.164 VND năm 2023. Các khoản này thường là các sự kiện không thường xuyên. Việc không có thu nhập từ thanh lý tài sản trong Q1/2024 là một yếu tố làm giảm lợi nhuận khác so với Q1/2023. Tuy nhiên, việc tăng tiền phạt thu được và giảm tiền phạt phải chịu là những điểm tích cực, nhưng không đủ bù đắp cho việc thiếu đi thu nhập từ thanh lý tài sản."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Thu nhập chịu thuế TNDN quý 1 năm 2024 là bao nhiêu?",
+      "Tổng chi phí sản xuất kinh doanh theo yếu tố quý 1 năm 2024 là bao nhiêu?",
+      "So sánh 'Chi phí dịch vụ mua ngoài' trong chi phí sản xuất kinh doanh giữa quý 1/2024 và quý 1/2023.",
+      "Tính tỷ lệ chi phí thuế TNDN hiện hành trên Tổng lợi nhuận kế toán trước thuế TNDN từ hoạt động kinh doanh trong quý 1/2024.",
+      "Đánh giá mức độ biến động và các yếu tố ảnh hưởng đến 'Chi phí nhân công' trong chi phí sản xuất kinh doanh.",
+      "Phân tích rủi ro tiềm ẩn từ việc 'Chi phí không hợp lệ' tăng trong kỳ và tác động của nó đến kết quả quyết toán thuế.",
+      "Dựa trên thông tin về số liệu so sánh, giải thích tại sao công ty sử dụng các kỳ so sánh khác nhau cho Bảng cân đối kế toán và Báo cáo kết quả hoạt động kinh doanh."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Chi phí thuế TNDN, Chi phí sản xuất kinh doanh theo yếu tố, Số liệu so sánh)\nLoại nội dung: Bảng và Text\n29. CHI PHÍ THUẾ THU NHẬP DOANH NGHIỆP HIỆN HÀNH\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Thuế TNDN từ hoạt động kinh doanh chính | | |\n| Tổng lợi nhuận kế toán trước thuế TNDN từ hoạt động kinh doanh | 69.174.123.734 | 83.878.320.488 |\n| Các khoản điều chỉnh tăng | 1.606.537.863 | 283.623.982 |\n| - Chi phí không hợp lệ | 1.606.537.863 | 179.507.047 |\n| - Lãi chênh lệch chưa thực hiện kỳ trước | - | 103.537.636 |\n| - Lỗ chênh lệch tỷ giá chưa thực hiện kỳ này | - | 579.299 |\n| Các khoản điều chỉnh giảm | 5.795.134.099 | 22.855.769.883 |\n| - Cổ tức, lợi nhuận được chia | 5.760.567.420 | 22.855.769.883 |\n| - Lãi chênh lệch chưa thực hiện kỳ này | 28.051.430 | - |\n| - Lỗ chênh lệch tỷ giá chưa thực hiện kỳ trước đã thực hiện kỳ này | 6.515.249 | - |\n| Thu nhập chịu thuế TNDN | 64.985.527.498 | 61.306.174.587 |\n| Chi phí thuế TNDN hiện hành (thuế suất 20%) | 12.997.105.500 | 12.261.234.917 |\nQuyết toán thuế của Công ty sẽ chịu sự kiểm tra của cơ quan thuế. Do việc áp dụng luật và các qui định về thuế đối với nhiều loại giao dịch khác nhau có thể được giải thích theo nhiều cách khác nhau, số thuế được trình bày trên Báo cáo tài chính có thể bị thay đổi theo quyết định của Cơ quan thuế.\n\n30. CHI PHÍ SẢN XUẤT KINH DOANH THEO YẾU TỐ\n| Chỉ tiêu | Quý 1 năm 2024 (VND) | Quý 1 năm 2023 (VND) |\n|---|---|---|\n| Chi phí nguyên liệu, vật liệu | 59.872.655.600 | 38.087.873.540 |\n| Chi phí nhân công | 789.084.575.005 | 787.017.379.087 |\n| Chi phí khấu hao tài sản cố định | 26.147.773.696 | 18.543.854.365 |\n| Chi phí dịch vụ mua ngoài | 1.568.845.779.902 | 1.028.040.415.808 |\n| Chi phí khác bằng tiền | 130.892.723.278 | 99.721.401.220 |\n| **Tổng cộng** | **2.574.843.507.481** | **1.971.410.924.020** |\n\n31. SỐ LIỆU SO SÁNH\nSố liệu so sánh trên Bảng cân đối kế toán riêng và thuyết minh tương ứng là số liệu Báo cáo tài chính riêng cho năm tài chính kết thúc ngày 31/12/2023. Báo cáo kết quả hoạt động kinh doanh riêng, Báo cáo lưu chuyển tiền tệ riêng và thuyết minh tương ứng là số liệu của Báo cáo tài chính riêng quý 1 năm 2023 đã được lập cho kỳ kế toán từ ngày 01 tháng 01 năm 2023 đến ngày 31 tháng 03 năm 2023.\nHà Nội, ngày 29 tháng 04 năm 2024\nNgười lập biểu: Dương Vũ Minh\nKế toán trưởng: Hoàng Trung Thành\nTổng Giám đốc: Trung tá Nguyễn Bình Minh",
+    "output": [
+      "Thu nhập chịu thuế TNDN quý 1 năm 2024 là 64.985.527.498 VND.",
+      "Tổng chi phí sản xuất kinh doanh theo yếu tố quý 1 năm 2024 là 2.574.843.507.481 VND.",
+      "'Chi phí dịch vụ mua ngoài' trong chi phí sản xuất kinh doanh quý 1 năm 2024 là 1.568.845.779.902 VND. Cùng kỳ năm 2023 là 1.028.040.415.808 VND. Khoản mục này đã tăng 540.805.364.094 VND.",
+      "Tổng lợi nhuận kế toán trước thuế TNDN từ hoạt động kinh doanh quý 1 năm 2024 là 69.174.123.734 VND. Chi phí thuế TNDN hiện hành là 12.997.105.500 VND. Tỷ lệ chi phí thuế TNDN hiện hành trên Tổng lợi nhuận kế toán trước thuế TNDN là (12.997.105.500 / 69.174.123.734) * 100% ≈ 18.79%.",
+      "'Chi phí nhân công' trong chi phí sản xuất kinh doanh quý 1/2024 là 789.084.575.005 VND, tăng nhẹ so với 787.017.379.087 VND của quý 1/2023. Mức tăng này (khoảng 2 tỷ VND) là tương đối nhỏ so với tổng chi phí nhân công. Điều này cho thấy chi phí nhân công trong hoạt động sản xuất kinh doanh khá ổn định giữa hai kỳ. Các yếu tố ảnh hưởng có thể bao gồm số lượng lao động, mức lương trung bình, và các chế độ phúc lợi. Sự ổn định này có thể phản ánh chính sách quản lý chi phí nhân sự hiệu quả hoặc không có sự thay đổi lớn về quy mô lao động trực tiếp tham gia vào sản xuất kinh doanh.",
+      "'Chi phí không hợp lệ' tăng đáng kể từ 179.507.047 VND (Q1/2023) lên 1.606.537.863 VND (Q1/2024). Đây là một khoản điều chỉnh tăng thu nhập chịu thuế TNDN. Sự tăng này tiềm ẩn rủi ro lớn đối với công ty. Thứ nhất, nó làm tăng thu nhập chịu thuế, dẫn đến tăng chi phí thuế TNDN hiện hành. Thứ hai, và quan trọng hơn, việc có 'Chi phí không hợp lệ' với số lượng lớn có thể là dấu hiệu của việc quản lý chi phí không chặt chẽ hoặc không tuân thủ đầy đủ các quy định về thuế. Điều này có thể dẫn đến rủi ro bị cơ quan thuế kiểm tra và có thể phải chịu thêm các khoản phạt, truy thu thuế nếu các khoản chi phí này bị loại bỏ hoặc đánh giá lại trong quá trình quyết toán thuế.",
+      "Công ty sử dụng các kỳ so sánh khác nhau cho Bảng cân đối kế toán và Báo cáo kết quả hoạt động kinh doanh để phản ánh đúng bản chất của từng loại báo cáo. Bảng cân đối kế toán là báo cáo thời điểm, phản ánh tình hình tài chính tại một ngày cụ thể. Do đó, số liệu so sánh trên Bảng cân đối kế toán riêng (31/12/2023) là số liệu tại cuối năm tài chính trước đó, để thấy sự biến động tài sản và nguồn vốn qua một khoảng thời gian. Trong khi đó, Báo cáo kết quả hoạt động kinh doanh và Báo cáo lưu chuyển tiền tệ là báo cáo về một kỳ hoạt động. Vì vậy, số liệu so sánh là của quý 1 năm 2023 (từ 01/01/2023 đến 31/03/2023) để so sánh hiệu quả hoạt động giữa các kỳ tương đương, tránh so sánh một quý với một năm đầy đủ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng đầu tư ngắn hạn nắm giữ đến ngày đáo hạn tại 31/03/2024 là bao nhiêu?",
+      "Giá gốc của khoản đầu tư vào Công ty TNHH MTV Công nghệ Bưu chính Viettel là bao nhiêu?",
+      "So sánh tổng Đầu tư nắm giữ đến ngày đáo hạn giữa cuối quý 1/2024 và đầu năm 2024.",
+      "Tỷ lệ đầu tư dài hạn nắm giữ đến ngày đáo hạn trên tổng đầu tư nắm giữ đến ngày đáo hạn tại 31/03/2024 là bao nhiêu phần trăm?",
+      "Đánh giá sự thay đổi trong các khoản đầu tư nắm giữ đến ngày đáo hạn và ý nghĩa của nó đối với dòng tiền và lợi nhuận tài chính của công ty.",
+      "Phân tích tác động của việc không có dự phòng cho các khoản đầu tư vào công ty con đối với rủi ro tài chính của công ty.",
+      "Giải thích tại sao giá trị hợp lý của các khoản đầu tư vào công ty con lại trùng với giá gốc tại 31/03/2024."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Phụ lục 1 - Các khoản đầu tư tài chính\nLoại nội dung: Bảng\nPHỤ LỤC 1 - CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH\nĐầu tư nắm giữ đến ngày đáo hạn:\n| Chỉ tiêu | Giá gốc (31/03/2024) | Giá trị ghi sổ (31/03/2024) | Giá gốc (01/01/2024) | Giá trị ghi sổ (01/01/2024) |\n|---|---|---|---|---|\n| Đầu tư ngắn hạn | 1.571.819.575.145 | 1.571.819.575.145 | 1.671.819.575.145 | 1.671.819.575.145 |\n| - Tiền gửi có kỳ hạn | 1.571.819.575.145 | 1.571.819.575.145 | 1.671.819.575.145 | 1.671.819.575.145 |\n| Đầu tư dài hạn | 84.000.000.000 | 84.000.000.000 | 74.000.000.000 | 74.000.000.000 |\n| - Tiền gửi có kỳ hạn | 84.000.000.000 | 84.000.000.000 | 74.000.000.000 | 74.000.000.000 |\n| **Tổng cộng** | **1.655.819.575.145** | **1.655.819.575.145** | **1.745.819.575.145** | **1.745.819.575.145** |\n\nĐầu tư vào công ty con:\n| Chỉ tiêu | Giá gốc (31/03/2024) | Giá trị hợp lý (31/03/2024) | Dự phòng (31/03/2024) | Giá gốc (01/01/2024) | Giá trị hợp lý (01/01/2024) | Dự phòng (01/01/2024) |\n|---|---|---|---|---|---|---|\n| Đầu tư vào công ty con | 40.519.023.812 | - | - | 40.519.023.812 | - | - |\n| - Công ty TNHH MTV Công nghệ Bưu chính Viettel | 10.000.000.000 | 10.000.000.000 | - | - | - | - |\n| - Công ty TNHH MTV Logistics Viettel | 10.000.000.000 | 10.000.000.000 | - | - | - | - |\n| - Công ty TNHH MTV Dịch vụ và Thương mại Viettelpost | 10.000.000.001 | 10.000.000.001 | - | - | - | - |\n| - Công ty TNHH Mygo Campuchia (Đổi tên từ Công ty TNHH VTP Logistics Campuchia) | 7.104.273.811 | 7.104.273.811 | - | - | - | - |\n| - Công ty TNHH Mygo Myanmar (Đổi tên từ Công ty TNHH VTP Logistics Myanmar) | 3.414.750.000 | 3.414.750.000 | - | - | - | - |\n| **Tổng cộng** | **40.519.023.812** | **-** | **-** | **40.519.023.812** | **-** | **-** |",
+    "output": [
+      "Tổng đầu tư ngắn hạn nắm giữ đến ngày đáo hạn tại 31/03/2024 là 1.571.819.575.145 VND.",
+      "Giá gốc của khoản đầu tư vào Công ty TNHH MTV Công nghệ Bưu chính Viettel là 10.000.000.000 VND.",
+      "Tổng Đầu tư nắm giữ đến ngày đáo hạn tại cuối quý 1/2024 (31/03/2024) là 1.655.819.575.145 VND. Tại đầu năm 2024 (01/01/2024) là 1.745.819.575.145 VND. Tổng Đầu tư nắm giữ đến ngày đáo hạn đã giảm 90.000.000.000 VND.",
+      "Đầu tư dài hạn nắm giữ đến ngày đáo hạn tại 31/03/2024 là 84.000.000.000 VND. Tổng đầu tư nắm giữ đến ngày đáo hạn là 1.655.819.575.145 VND. Tỷ lệ là (84.000.000.000 / 1.655.819.575.145) * 100% ≈ 5.07%.",
+      "Tổng các khoản đầu tư nắm giữ đến ngày đáo hạn giảm 90.000.000.000 VND từ đầu năm đến cuối quý 1/2024. Sự giảm này chủ yếu do đầu tư ngắn hạn giảm từ 1.671.819.575.145 VND xuống 1.571.819.575.145 VND. Điều này có ý nghĩa rằng công ty đã rút bớt hoặc đáo hạn một phần các khoản tiền gửi có kỳ hạn ngắn hạn. Việc này có thể giải phóng tiền mặt để sử dụng cho các hoạt động kinh doanh hoặc đầu tư khác. Đối với dòng tiền, đây có thể là một nguồn thu tiền từ hoạt động đầu tư. Đối với lợi nhuận tài chính, việc giảm quy mô đầu tư có kỳ hạn có thể làm giảm tổng thu nhập từ lãi tiền gửi, ảnh hưởng đến doanh thu hoạt động tài chính nếu không có các khoản đầu tư sinh lời khác thay thế.",
+      "Dữ liệu cho thấy không có dự phòng nào được trích lập cho các khoản đầu tư vào công ty con tại cả 31/03/2024 và 01/01/2024. Điều này có thể cho thấy công ty đánh giá rằng các khoản đầu tư này không có dấu hiệu suy giảm giá trị hoặc các công ty con đang hoạt động tốt. Tuy nhiên, việc không có dự phòng cũng tiềm ẩn rủi ro tài chính. Nếu một trong các công ty con gặp khó khăn về tài chính hoặc giá trị đầu tư suy giảm trong tương lai, công ty sẽ phải ghi nhận tổn thất trực tiếp vào lợi nhuận mà không có khoản dự phòng nào để hấp thụ. Điều này có thể làm ảnh hưởng đột ngột và lớn đến lợi nhuận và vốn chủ sở hữu khi rủi ro phát sinh.",
+      "Thông tin trong chunk cho thấy tại 31/03/2024, giá trị hợp lý của các khoản đầu tư vào công ty con (ví dụ: Công ty TNHH MTV Công nghệ Bưu chính Viettel, Công ty TNHH MTV Logistics Viettel...) đều trùng với giá gốc. Điều này thường xảy ra khi các khoản đầu tư này không được giao dịch trên thị trường mở (ví dụ, cổ phần không niêm yết) hoặc không có thông tin định giá thị trường độc lập. Trong trường hợp đó, công ty thường giữ giá gốc làm giá trị ghi sổ, và chỉ điều chỉnh khi có dấu hiệu suy giảm giá trị (thông qua lập dự phòng) hoặc có giao dịch chuyển nhượng/đánh giá lại chính thức. Việc không có sự chênh lệch cho thấy không có sự kiện nào trong kỳ làm thay đổi đánh giá về giá trị của các công ty con so với chi phí đầu tư ban đầu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá của Tài sản cố định hữu hình tại 31/03/2024 là bao nhiêu?",
+      "Giá trị còn lại của Phương tiện vận tải, truyền dẫn tại 31/03/2024 là bao nhiêu?",
+      "So sánh 'Số tăng trong kỳ' của Nguyên giá và Giá trị hao mòn lũy kế đối với Tài sản cố định hữu hình.",
+      "Tính tỷ lệ khấu hao trong kỳ trên Nguyên giá đầu kỳ của Máy móc, thiết bị.",
+      "Đánh giá sự thay đổi trong cơ cấu tài sản cố định hữu hình của công ty dựa trên số tăng/giảm trong kỳ.",
+      "Phân tích tác động của việc không có tài sản cố định hữu hình nào được thanh lý, nhượng bán trong kỳ đến hiệu quả sử dụng tài sản của công ty.",
+      "Dự báo mức độ hao mòn lũy kế có thể ảnh hưởng đến khả năng tái đầu tư và duy trì công suất của công ty như thế nào trong tương lai."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Phụ lục 2 - Tài sản cố định hữu hình\nLoại nội dung: Bảng\nPHỤ LỤC 2 - TÀI SẢN CỐ ĐỊNH HỮU HÌNH\n| Chỉ tiêu | Nhà cửa, vật kiến trúc (VND) | Phương tiện vận tải, truyền dẫn (VND) | Máy móc, thiết bị (VND) | Dụng cụ quản lý (VND) | TSCĐ hữu hình khác (VND) | Cộng (VND) |\n|---|---|---|---|---|---|---|\n| **Nguyên giá** | | | | | | |\n| Số dư đầu kỳ | 13.545.201.118 | 104.901.460.208 | 667.905.946.606 | 12.939.999.921 | 9.373.660.187 | 808.666.268.040 |\n| Số tăng trong kỳ | - | 262.342.126.991 | - | 218.540.000 | - | 262.560.666.991 |\n| - Mua trong kỳ | - | 262.512.126.991 | - | 218.540.000 | - | 262.560.666.991 |\n| Số giảm trong kỳ | - | - | - | - | - | - |\n| - Thanh lý, nhượng bán | - | - | - | - | - | - |\n| **Số dư cuối kỳ** | **13.545.201.118** | **367.243.587.199** | **667.905.946.606** | **13.158.539.921** | **9.373.660.187** | **1.071.226.935.031** |\n| **Giá trị hao mòn lũy kế** | | | | | | |\n| Số dư đầu kỳ | 10.783.050.022 | 46.411.697.964 | 410.520.348.977 | 7.270.937.241 | 1.751.348.210 | 476.737.382.414 |\n| Số tăng trong kỳ | 268.031.313 | 9.351.630.800 | 14.300.460.056 | 529.942.126 | 529.479.567 | 24.979.543.862 |\n| - Khấu hao trong kỳ hạch toán chi phí | 268.031.313 | 9.351.630.800 | 14.300.460.056 | 529.942.126 | 529.479.567 | 24.979.543.862 |\n| Số giảm trong kỳ | - | - | - | - | - | - |\n| - Thanh lý, nhượng bán | - | - | - | - | - | - |\n| **Số dư cuối kỳ** | **11.051.081.335** | **55.763.328.764** | **424.820.809.033** | **7.800.879.367** | **2.280.827.777** | **501.716.926.276** |\n| **Giá trị còn lại** | | | | | | |\n| Tại ngày đầu kỳ | 2.762.151.096 | 58.489.762.244 | 257.385.597.629 | 5.669.062.680 | 7.622.311.977 | 331.928.885.626 |\n| **Tại ngày cuối kỳ** | **2.494.119.783** | **311.480.258.435** | **243.085.137.573** | **5.357.660.554** | **7.092.832.410** | **569.510.008.755** |",
+    "output": [
+      "Nguyên giá của Tài sản cố định hữu hình tại 31/03/2024 là 1.071.226.935.031 VND.",
+      "Giá trị còn lại của Phương tiện vận tải, truyền dẫn tại 31/03/2024 là 311.480.258.435 VND.",
+      "'Số tăng trong kỳ' của Nguyên giá là 262.560.666.991 VND. 'Số tăng trong kỳ' của Giá trị hao mòn lũy kế là 24.979.543.862 VND. Số tăng về nguyên giá lớn hơn rất nhiều so với số tăng về hao mòn lũy kế.",
+      "Nguyên giá đầu kỳ của 'Máy móc, thiết bị' là 667.905.946.606 VND. Khấu hao trong kỳ của 'Máy móc, thiết bị' là 14.300.460.056 VND. Tỷ lệ khấu hao trong kỳ trên Nguyên giá đầu kỳ là (14.300.460.056 / 667.905.946.606) * 100% ≈ 2.14%.",
+      "Trong quý 1/2024, nguyên giá tài sản cố định hữu hình tăng đáng kể 262.560.666.991 VND, chủ yếu đến từ 'Phương tiện vận tải, truyền dẫn' (tăng 262.342.126.991 VND). Không có sự giảm nguyên giá nào trong kỳ. Điều này cho thấy công ty đang tập trung đầu tư mạnh mẽ vào việc mở rộng năng lực vận tải và truyền dẫn, có thể để đáp ứng nhu cầu tăng trưởng của hoạt động kinh doanh cốt lõi (bưu chính, logistics). Sự tăng trưởng này làm thay đổi cơ cấu tài sản hữu hình theo hướng tăng tỷ trọng của phương tiện vận tải, phản ánh chiến lược mở rộng năng lực vận hành.",
+      "Việc không có tài sản cố định hữu hình nào được thanh lý hay nhượng bán trong kỳ cho thấy công ty không có hoạt động thoái vốn hoặc tái cấu trúc tài sản thông qua bán các tài sản không còn hiệu quả. Điều này có thể có hai tác động. Một mặt, nó cho thấy công ty đang duy trì và sử dụng hiệu quả toàn bộ tài sản hiện có, không có tài sản nào bị coi là lỗi thời hoặc không cần thiết phải thanh lý. Mặt khác, nếu có tài sản kém hiệu quả nhưng không được thanh lý, nó có thể làm giảm hiệu quả sử dụng vốn của công ty do phải chịu chi phí bảo trì, khấu hao cho tài sản không tạo ra giá trị tối ưu. Tuy nhiên, dựa trên việc nguyên giá tăng mạnh, có thể công ty đang tập trung vào mở rộng thay vì thoái vốn.",
+      "Giá trị hao mòn lũy kế tiếp tục tăng trong kỳ (tăng 24.979.543.862 VND), cho thấy tài sản của công ty đang dần mất đi giá trị do sử dụng và thời gian. Mức độ hao mòn lũy kế tăng sẽ làm giảm giá trị còn lại của tài sản, và trong tương lai, công ty sẽ cần phải đầu tư thay thế các tài sản đã cũ để duy trì hoặc mở rộng công suất. Nếu không có kế hoạch tái đầu tư phù hợp, khả năng công ty duy trì công suất và năng lực cạnh tranh có thể bị ảnh hưởng. Tuy nhiên, với việc nguyên giá tăng đáng kể trong kỳ, đặc biệt là Phương tiện vận tải, truyền dẫn, cho thấy công ty đang chủ động tái đầu tư và nâng cấp, giúp đảm bảo duy trì và phát triển công suất trong tương lai."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nguyên giá của tài sản cố định vô hình tại 31/03/2024 là bao nhiêu?",
+      "Giá trị còn lại của 'Chương trình phần mềm' tại 31/03/2024 là bao nhiêu?",
+      "So sánh tổng 'Giá trị hao mòn lũy kế' của tài sản cố định vô hình giữa 31/03/2024 và 01/01/2024.",
+      "Tính tỷ lệ khấu hao trong kỳ trên Nguyên giá đầu kỳ của 'Quyền sử dụng đất'.",
+      "Đánh giá mức độ đóng góp của 'Quyền sử dụng đất' trong tổng giá trị còn lại của tài sản cố định vô hình và ý nghĩa của nó.",
+      "Phân tích tác động của việc không có bất kỳ sự tăng hay giảm nguyên giá nào của tài sản cố định vô hình trong kỳ đến khả năng đổi mới công nghệ của công ty.",
+      "Dự báo rủi ro nếu giá trị hao mòn lũy kế của 'Chương trình phần mềm' tiếp tục tăng nhanh hơn giá trị của nó."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Phụ lục 3 - Tài sản cố định vô hình\nLoại nội dung: Bảng\nPHỤ LỤC 3 - TÀI SẢN CỐ ĐỊNH VÔ HÌNH\n| Chỉ tiêu | Quyền sử dụng đất (VND) | Chương trình phần mềm (VND) | TSCĐ vô hình khác (VND) | Cộng (VND) |\n|---|---|---|---|---|\n| **Nguyên giá** | | | | |\n| Số dư đầu kỳ | 34.526.245.981 | 25.404.842.232 | 525.000.000 | 60.456.088.213 |\n| Số tăng trong kỳ | - | - | - | - |\n| - Mua trong kỳ | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - |\n| **Số dư cuối kỳ** | **34.526.245.981** | **25.404.842.232** | **525.000.000** | **60.456.088.213** |\n| **Giá trị hao mòn lũy kế** | | | | |\n| Số dư đầu kỳ | 6.641.372.624 | 17.799.366.571 | 270.410.959 | 24.711.150.154 |\n| Số tăng trong kỳ | 154.315.944 | 970.402.961 | 43.510.929 | 1.168.229.834 |\n| - Khấu hao trong kỳ hạch toán chi phí | 154.315.944 | 970.402.961 | 43.510.929 | 1.168.229.834 |\n| Số giảm trong kỳ | - | - | - | - |\n| **Số dư cuối kỳ** | **6.795.688.568** | **18.769.769.532** | **313.921.888** | **25.879.379.988** |\n| **Giá trị còn lại** | | | | |\n| Tại ngày đầu kỳ | 27.884.873.357 | 7.605.475.661 | 254.589.041 | 35.744.938.059 |\n| **Tại ngày cuối kỳ** | **27.730.557.413** | **6.635.072.700** | **211.078.112** | **34.576.708.225** |",
+    "output": [
+      "Tổng nguyên giá của tài sản cố định vô hình tại 31/03/2024 là 60.456.088.213 VND.",
+      "Giá trị còn lại của 'Chương trình phần mềm' tại 31/03/2024 là 6.635.072.700 VND.",
+      "Tổng 'Giá trị hao mòn lũy kế' của tài sản cố định vô hình tại 31/03/2024 là 25.879.379.988 VND. Tại 01/01/2024 là 24.711.150.154 VND. Khoản mục này đã tăng 1.168.229.834 VND.",
+      "Nguyên giá đầu kỳ của 'Quyền sử dụng đất' là 34.526.245.981 VND. Khấu hao trong kỳ của 'Quyền sử dụng đất' là 154.315.944 VND. Tỷ lệ khấu hao trong kỳ trên Nguyên giá đầu kỳ là (154.315.944 / 34.526.245.981) * 100% ≈ 0.45%.",
+      "Tại 31/03/2024, giá trị còn lại của 'Quyền sử dụng đất' là 27.730.557.413 VND, chiếm tỷ trọng lớn trong tổng giá trị còn lại của tài sản cố định vô hình (34.576.708.225 VND). Cụ thể, 'Quyền sử dụng đất' chiếm khoảng (27.730.557.413 / 34.576.708.225) * 100% ≈ 80.19%. Điều này cho thấy 'Quyền sử dụng đất' là tài sản vô hình quan trọng nhất của công ty về mặt giá trị. Tỷ trọng cao này có ý nghĩa rằng công ty có nền tảng đất đai vững chắc, là tài sản chiến lược cho các hoạt động kinh doanh dài hạn, đặc biệt là trong lĩnh vực logistics và bưu chính cần mặt bằng rộng lớn.",
+      "Trong quý 1/2024, không có bất kỳ sự tăng hay giảm nguyên giá nào của tài sản cố định vô hình. Điều này có nghĩa là công ty không mua sắm thêm các tài sản vô hình mới như bản quyền, phần mềm lớn, hoặc bằng sáng chế. Việc không có sự tăng nguyên giá trong 'Chương trình phần mềm' và 'TSCĐ vô hình khác' có thể cho thấy công ty chưa có các khoản đầu tư lớn vào đổi mới công nghệ trong quý này. Điều này có thể ảnh hưởng đến khả năng cạnh tranh và thích nghi với sự thay đổi nhanh chóng của công nghệ trong dài hạn, đặc biệt trong một lĩnh vực như bưu chính và logistics mà công nghệ đóng vai trò ngày càng quan trọng. Tuy nhiên, nếu công ty đang phát triển công nghệ nội bộ và chưa ghi nhận vào nguyên giá, tác động có thể khác.",
+      "Giá trị hao mòn lũy kế của 'Chương trình phần mềm' tăng từ 17.799.366.571 VND (01/01/2024) lên 18.769.769.532 VND (31/03/2024). Trong khi đó, nguyên giá không thay đổi (25.404.842.232 VND). Nếu khấu hao lũy kế tiếp tục tăng nhanh so với giá trị còn lại hoặc nguyên giá của phần mềm, điều này có nghĩa là phần mềm đang nhanh chóng trở nên cũ kỹ, lỗi thời hoặc sắp hết thời gian sử dụng hữu ích. Rủi ro ở đây là công ty sẽ phải đối mặt với chi phí lớn để nâng cấp hoặc thay thế phần mềm mới trong tương lai gần, điều này có thể tạo áp lực lên ngân sách đầu tư và lợi nhuận. Nếu không có kế hoạch thay thế, công nghệ của công ty có thể bị tụt hậu, ảnh hưởng đến hiệu quả hoạt động và khả năng cạnh tranh."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vay ngắn hạn tại 31/03/2024 là bao nhiêu?",
+      "Khoản vay dài hạn của Ngân hàng TMCP Quân Đội, chi nhánh Điện Biên Phủ tại 31/03/2024 là bao nhiêu?",
+      "So sánh khoản vay ngắn hạn từ Ngân hàng TMCP Ngoại thương Việt Nam giữa 01/01/2024 và 31/03/2024.",
+      "Tính tổng 'Tăng trong kỳ' của các khoản vay ngắn hạn và dài hạn.",
+      "Đánh giá mức độ phụ thuộc của công ty vào nợ ngắn hạn so với nợ dài hạn và ý nghĩa của nó đối với rủi ro tài chính.",
+      "Phân tích tác động của sự biến động lớn trong các khoản vay ngắn hạn từ các ngân hàng khác nhau đến chi phí tài chính của công ty.",
+      "Dựa vào dữ liệu, đánh giá khả năng công ty quản lý và tái cơ cấu các khoản nợ đến hạn trả trong vòng 12 tháng."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Phụ lục 4 - Vay và nợ thuê tài chính\nLoại nội dung: Bảng\nPHỤ LỤC 4 - VAY VÀ NỢ THUÊ TÀI CHÍNH\n| Chỉ tiêu | Giá trị (01/01/2024) | Số có khả năng trả nợ (01/01/2024) | Tăng trong kỳ (VND) | Giảm trong kỳ (VND) | Giá trị (31/03/2024) | Số có khả năng trả nợ (31/03/2024) |\n|---|---|---|---|---|---|---|\n| Vay ngắn hạn | 1.660.171.830.732 | 1.660.171.830.732 | 12.039.025.325.611 | 11.830.168.604.347 | 1.819.028.551.996 | 1.819.028.551.996 |\n| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - Sở Giao dịch 1 | 329.900.573.961 | 329.900.573.961 | 2.147.380.920.970 | 2.256.956.579.096 | 220.324.915.835 | 220.324.915.835 |\n| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - Chi nhánh Hà Nội | 264.904.757.323 | 264.904.757.323 | 4.169.809.510.807 | 4.186.042.443.773 | 248.671.824.357 | 248.671.824.357 |\n| Ngân hàng TMCP Quân Đội, chi nhánh Điện Biên Phủ | 469.921.988.557 | 469.921.988.557 | 173.883.986.530 | - | - | 643.805.975.087 |\n| Ngân hàng TMCP Ngoại thương Việt Nam, Chi nhánh Ba Đình | 209.445.683.966 | 209.445.683.966 | 3.355.564.147.112 | 3.088.031.622.385 | 476.978.208.193 | 476.978.208.193 |\n| Ngân hàng TMCP Quốc tế Việt Nam - Chi nhánh Sở giao dịch | 385.998.826.925 | 385.998.826.925 | 401.018.831.333 | 385.998.826.925 | 401.018.831.333 | 401.018.831.333 |\n| Ngân hàng TMCP Công thương Việt Nam - Chi nhánh Hà Nội | 299.357.449.231 | - | 64.938.567 | 299.292.510.664 | 299.292.510.664 | 299.292.510.664 |\n| Ngân hàng TMCP Kỹ Thương Việt Nam | 172.742.261.614 | - | - | 172.742.261.614 | - | 172.742.261.614 |\n| Vay và nợ dài hạn đến hạn trả | - | - | - | - | - | - |\n| Ngân hàng TMCP Quân Đội, Chi nhánh Điện Biên Phủ | 10.536.000.000 | 10.536.000.000 | 6.798.000.000 | 2.634.000.000 | 14.700.000.000 | 14.700.000.000 |\n| **Tổng vay ngắn hạn** | **1.670.707.830.732** | **1.670.707.830.732** | **12.045.823.325.611** | **11.882.302.604.347** | **1.833.728.551.996** | **1.833.728.551.996** |\n| Vay dài hạn | | | | | | |\n| Ngân hàng TMCP Quân Đội, chi nhánh Điện Biên Phủ | 51.326.712.116 | 51.326.712.116 | 25.042.909.091 | 2.981.000.000 | 73.388.621.207 | 73.388.621.207 |\n| **Tổng vay dài hạn** | **51.326.712.116** | **51.326.712.116** | **25.042.909.091** | **2.981.000.000** | **73.388.621.207** | **73.388.621.207** |\n| Khoản đến hạn trả trong vòng 12 tháng | 10.536.000.000 | 10.536.000.000 | 6.798.000.000 | 2.634.000.000 | 14.700.000.000 | 14.700.000.000 |\n| Khoản đến hạn trả sau 12 tháng | 40.790.712.116 | 40.790.712.116 | - | - | 58.688.621.207 | 58.688.621.207 |",
+    "output": [
+      "Tổng vay ngắn hạn tại 31/03/2024 là 1.833.728.551.996 VND.",
+      "Khoản vay dài hạn của Ngân hàng TMCP Quân Đội, chi nhánh Điện Biên Phủ tại 31/03/2024 là 73.388.621.207 VND.",
+      "Khoản vay ngắn hạn từ Ngân hàng TMCP Ngoại thương Việt Nam tại 01/01/2024 là 209.445.683.966 VND. Tại 31/03/2024 là 476.978.208.193 VND. Khoản vay này đã tăng 267.532.524.227 VND.",
+      "Tổng 'Tăng trong kỳ' của các khoản vay ngắn hạn là 12.045.823.325.611 VND. Tổng 'Tăng trong kỳ' của các khoản vay dài hạn là 25.042.909.091 VND. Tổng 'Tăng trong kỳ' của cả vay ngắn hạn và dài hạn là 12.070.866.234.702 VND.",
+      "Tại 31/03/2024, tổng vay ngắn hạn là 1.833.728.551.996 VND và tổng vay dài hạn là 73.388.621.207 VND. Nợ ngắn hạn chiếm phần lớn đáng kể trong tổng nợ vay của công ty (1.833.728.551.996 / (1.833.728.551.996 + 73.388.621.207) ≈ 96.15%). Điều này cho thấy công ty phụ thuộc rất lớn vào các khoản vay ngắn hạn. Mức độ phụ thuộc cao vào nợ ngắn hạn có thể làm tăng rủi ro thanh khoản, do công ty phải thường xuyên đáo hạn hoặc tái cấp vốn các khoản nợ này. Rủi ro này càng cao nếu thị trường tài chính biến động hoặc khả năng tiếp cận các nguồn vốn ngắn hạn bị hạn chế. Tuy nhiên, nó cũng có thể giúp công ty linh hoạt hơn trong việc điều chỉnh cấu trúc vốn nếu được quản lý tốt.",
+      "Dữ liệu cho thấy sự biến động rất lớn trong các khoản vay ngắn hạn từ các ngân hàng. Ví dụ, Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - Sở Giao dịch 1 có số dư vay ngắn hạn giảm đáng kể, trong khi Ngân hàng TMCP Ngoại thương Việt Nam lại tăng mạnh. Tổng 'Tăng trong kỳ' của vay ngắn hạn lên tới hơn 12 nghìn tỷ VND và 'Giảm trong kỳ' cũng ở mức tương tự. Sự biến động này có tác động trực tiếp đến chi phí tài chính của công ty. Nếu công ty phải thường xuyên tái cấu trúc, đáo hạn hoặc tìm kiếm các khoản vay mới, nó có thể phải chịu chi phí lãi suất cao hơn hoặc các khoản phí giao dịch liên quan. Việc quản lý nhiều khoản vay từ các ngân hàng khác nhau cũng có thể tăng gánh nặng hành chính và đòi hỏi sự giám sát chặt chẽ hơn để tối ưu hóa chi phí lãi vay và các điều khoản tín dụng.",
+      "Dữ liệu cho thấy khoản đến hạn trả trong vòng 12 tháng của nợ dài hạn tăng từ 10.536.000.000 VND (01/01/2024) lên 14.700.000.000 VND (31/03/2024). Bên cạnh đó, tổng vay ngắn hạn cũng rất lớn và có sự biến động cao giữa tăng và giảm trong kỳ, cho thấy công ty thường xuyên thực hiện các giao dịch vay và trả nợ ngắn hạn. Với khả năng huy động vốn lớn từ các ngân hàng trong kỳ (tổng tăng vay ngắn hạn hơn 12 nghìn tỷ VND), công ty có vẻ có năng lực trong việc quản lý và tái cơ cấu các khoản nợ ngắn hạn và phần nợ dài hạn đến hạn. Tuy nhiên, quy mô nợ ngắn hạn lớn luôn tiềm ẩn rủi ro thanh khoản, đòi hỏi công ty phải duy trì mối quan hệ tốt với các tổ chức tín dụng và khả năng tạo ra dòng tiền mạnh từ hoạt động kinh doanh để đảm bảo khả năng thanh toán liên tục."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng số thuế giá trị gia tăng phải nộp cuối kỳ là bao nhiêu?",
+      "Tổng số thuế thu nhập doanh nghiệp đã thực nộp trong kỳ là bao nhiêu?",
+      "So sánh 'Số phải nộp đầu kỳ' và 'Số phải nộp cuối kỳ' đối với Thuế thu nhập cá nhân.",
+      "Tính toán và phân tích sự chênh lệch giữa 'Số phải nộp trong kỳ' và 'Số đã thực nộp trong kỳ' đối với Thuế giá trị gia tăng.",
+      "Đánh giá rủi ro tiềm ẩn đối với công ty từ việc số thuế trên báo cáo có thể bị thay đổi sau kiểm tra của cơ quan thuế.",
+      "Phân tích mức độ tuân thủ và hiệu quả quản lý nghĩa vụ thuế của công ty dựa trên các số liệu về thuế đã nộp và còn phải nộp.",
+      "Dự báo tác động của các khoản phí, lệ phí và các khoản phải nộp khác không có số đã thực nộp trong kỳ đến dòng tiền của công ty."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Phụ lục 5 - Thuế và các khoản phải thu, phải nộp với Nhà nước\nLoại nội dung: Bảng\nPHỤ LỤC 5 - THUẾ VÀ CÁC KHOẢN PHẢI THU, PHẢI NỘP VỚI NHÀ NƯỚC\n| Chỉ tiêu | Số phải thu cuối kỳ (VND) | Số phải nộp đầu kỳ (VND) | Số phải nộp trong kỳ (VND) | Số đã thực nộp trong kỳ (VND) | Số phải nộp cuối kỳ (VND) |\n|---|---|---|---|---|---|\n| Thuế giá trị gia tăng | - | 52.369.430.283 | 98.839.721.856 | 136.919.728.951 | 14.289.423.158 |\n| Thuế thu nhập doanh nghiệp | - | 11.456.814.694 | 13.245.939.502 | 18.010.447.268 | 6.692.306.928 |\n| Thuế thu nhập cá nhân | - | 180.666.694 | 74.614.981.535 | 71.398.922.614 | 3.396.725.615 |\n| Các khoản phí, lệ phí và các khoản phải nộp khác | - | 2.203.527.086 | 2.179.007.000 | - | 24.520.086 |\n| **Tổng cộng** | **-** | **64.006.911.671** | **188.904.169.979** | **228.508.105.863** | **24.402.975.787** |\nQuyết toán thuế của Công ty sẽ chịu sự kiểm tra của cơ quan thuế. Do việc áp dụng luật và các qui định về thuế đối với nhiều loại giao dịch khác nhau có thể được giải thích theo nhiều cách khác nhau, số thuế được trình bày trên Báo cáo tài chính có thể bị thay đổi theo quyết định của Cơ quan thuế.",
+    "output": [
+      "Tổng số thuế giá trị gia tăng phải nộp cuối kỳ là 14.289.423.158 VND.",
+      "Tổng số thuế thu nhập doanh nghiệp đã thực nộp trong kỳ là 18.010.447.268 VND.",
+      "'Số phải nộp đầu kỳ' đối với Thuế thu nhập cá nhân là 180.666.694 VND. 'Số phải nộp cuối kỳ' là 3.396.725.615 VND. Số phải nộp cuối kỳ cao hơn đáng kể so với đầu kỳ, tăng 3.216.058.921 VND.",
+      "Đối với Thuế giá trị gia tăng, 'Số phải nộp trong kỳ' là 98.839.721.856 VND và 'Số đã thực nộp trong kỳ' là 136.919.728.951 VND. Sự chênh lệch là 136.919.728.951 - 98.839.721.856 = 38.080.007.095 VND. Số tiền đã thực nộp trong kỳ cao hơn số phải nộp trong kỳ cho thấy công ty không chỉ nộp các khoản thuế phát sinh trong quý mà còn nộp thêm các khoản thuế tồn đọng từ các kỳ trước, hoặc có thể đã tạm nộp vượt mức cần thiết trong kỳ này.",
+      "Báo cáo nêu rõ rằng 'Quyết toán thuế của Công ty sẽ chịu sự kiểm tra của cơ quan thuế' và 'số thuế được trình bày trên Báo cáo tài chính có thể bị thay đổi theo quyết định của Cơ quan thuế'. Đây là một rủi ro tiềm ẩn đáng kể. Nếu cơ quan thuế đưa ra các quyết định khác biệt so với ước tính của công ty (ví dụ, bác bỏ một số chi phí, điều chỉnh thu nhập chịu thuế), công ty có thể phải đối mặt với việc truy thu thuế, phạt vi phạm hành chính, và lãi chậm nộp. Điều này sẽ ảnh hưởng tiêu cực đến dòng tiền, lợi nhuận sau thuế và có thể gây ảnh hưởng đến uy tín của công ty. Do đó, công ty cần có sự chuẩn bị kỹ lưỡng và tuân thủ chặt chẽ các quy định pháp luật về thuế.",
+      "Dựa trên số liệu, công ty có vẻ đang quản lý nghĩa vụ thuế một cách chủ động. Đối với Thuế GTGT và Thuế TNDN, số đã thực nộp trong kỳ lớn hơn số phải nộp trong kỳ (đặc biệt là Thuế GTGT), điều này có thể cho thấy công ty đã chủ động thanh toán các khoản thuế tồn đọng hoặc tạm nộp vượt mức. Tuy nhiên, việc 'Các khoản phí, lệ phí và các khoản phải nộp khác' không có số đã thực nộp trong kỳ và vẫn còn số phải nộp cuối kỳ, trong khi số phải nộp trong kỳ lại tương đương số phải nộp đầu kỳ, cần được xem xét. Điều này có thể là rủi ro nếu các khoản này không được thanh toán kịp thời. Tổng thể, mức độ tuân thủ có vẻ tốt, nhưng cần theo dõi chặt chẽ các khoản tồn đọng để tránh rủi ro phát sinh từ các quyết định kiểm tra của cơ quan thuế.",
+      "Các khoản phí, lệ phí và các khoản phải nộp khác có số phải nộp cuối kỳ là 24.520.086 VND, nhưng không có số đã thực nộp trong kỳ. Điều này có nghĩa là các khoản này đã phát sinh nghĩa vụ nộp nhưng chưa được thanh toán bằng tiền mặt trong quý này. Tác động của việc này là nó sẽ tạo ra một nghĩa vụ thanh toán trong các kỳ tiếp theo. Nếu các khoản này tích lũy hoặc có số lượng lớn, chúng có thể gây áp lực lên dòng tiền của công ty trong tương lai khi đến hạn thanh toán. Việc chưa nộp cũng có thể dẫn đến các khoản phạt chậm nộp nếu không được giải quyết kịp thời, ảnh hưởng tiêu cực đến kết quả tài chính của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lợi nhuận sau thuế chưa phân phối tại số dư cuối kỳ này là bao nhiêu?",
+      "Lãi/lỗ trong kỳ này là bao nhiêu?",
+      "So sánh 'Số dư cuối kỳ trước' của Vốn đầu tư của CSH với 'Số dư đầu kỳ trước'.",
+      "Tính tỷ lệ Lãi/lỗ trong kỳ này trên Lợi nhuận sau thuế chưa phân phối cuối kỳ này.",
+      "Đánh giá tác động của việc không có các hoạt động tăng/giảm vốn trong kỳ này đến cơ cấu vốn chủ sở hữu.",
+      "Phân tích ý nghĩa của việc tạm trích quỹ khen thưởng phúc lợi đến tình hình tài chính của công ty.",
+      "Dự báo ảnh hưởng của sự biến động vốn chủ sở hữu đến khả năng huy động vốn trong tương lai của công ty."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Báo cáo tài chính riêng quý 1 năm 2024\nThời gian: Quý 1 năm 2024, kết thúc ngày 31/03/2024. Công bố ngày 29/04/2024\nÝ kiến kiểm toán: Không có\n\nSection: Phụ lục 6 - Bảng đối chiếu biến động của vốn chủ sở hữu\nLoại nội dung: Bảng\nPHỤ LỤC 6 - BẢNG ĐỐI CHIẾU BIẾN ĐỘNG CỦA VỐN CHỦ SỞ HỮU\n| Chỉ tiêu | Vốn đầu tư của CSH (VND) | Thặng dư vốn cổ phần (VND) | Cổ phiếu quỹ (VND) | Lợi nhuận sau thuế chưa phân phối (VND) | Cộng (VND) |\n|---|---|---|---|---|---|\n| Số dư đầu kỳ trước | 1.132.172.370.000 | 22.037.447.940 | - | 215.466.253.795 | 1.369.676.071.735 |\n| Tăng vốn trong kỳ trước | 86.089.850.000 | - | - | - | 86.089.850.000 |\n| Lãi/lỗ trong kỳ trước | - | - | - | 379.384.388.733 | 379.384.388.733 |\n| Giảm vốn trong kỳ trước | (431.800.000) | - | (863.600.000) | - | (1.295.400.000) |\n| Phân phối lợi nhuận | - | - | - | (216.249.242.975) | (216.249.242.975) |\n| Tạm trích quỹ khen thưởng phúc lợi | - | - | - | (56.907.658.310) | (56.907.658.310) |\n| **Số dư cuối kỳ trước** | **1.217.830.420.000** | **21.173.847.940** | **-** | **321.693.741.243** | **1.560.698.009.183** |\n| Tăng vốn trong kỳ này | - | - | - | - | - |\n| Giảm vốn trong kỳ này | - | - | - | - | - |\n| Lãi/lỗ trong kỳ này | - | - | - | 56.177.018.234 | 56.177.018.234 |\n| Tăng do nhận bàn giao từ đơn vị khác | - | - | - | - | - |\n| Phân phối lợi nhuận | - | - | - | - | - |\n| Tạm trích quỹ khen thưởng phúc lợi | - | - | - | (8.426.552.735) | (8.426.552.735) |\n| **Số dư cuối kỳ này** | **1.217.830.420.000** | **21.173.847.940** | **-** | **369.444.206.742** | **1.608.448.474.682** |",
+    "output": [
+      "Lợi nhuận sau thuế chưa phân phối tại số dư cuối kỳ này là 369.444.206.742 VND.",
+      "Lãi/lỗ trong kỳ này là 56.177.018.234 VND.",
+      "'Số dư đầu kỳ trước' của Vốn đầu tư của CSH là 1.132.172.370.000 VND. 'Số dư cuối kỳ trước' là 1.217.830.420.000 VND. Vốn đầu tư của CSH đã tăng 85.658.050.000 VND trong kỳ trước.",
+      "Lãi/lỗ trong kỳ này là 56.177.018.234 VND. Lợi nhuận sau thuế chưa phân phối cuối kỳ này là 369.444.206.742 VND. Tỷ lệ là (56.177.018.234 / 369.444.206.742) * 100% ≈ 15.21%.",
+      "Trong kỳ này, không có các hoạt động tăng vốn hoặc giảm vốn của chủ sở hữu, Thặng dư vốn cổ phần, hay Cổ phiếu quỹ. Điều này có nghĩa là không có hoạt động phát hành thêm cổ phiếu, mua lại cổ phiếu quỹ hay giảm vốn điều lệ. Tác động là cơ cấu vốn chủ sở hữu về mặt Vốn đầu tư của CSH, Thặng dư vốn cổ phần và Cổ phiếu quỹ duy trì ổn định. Sự thay đổi duy nhất trong tổng vốn chủ sở hữu đến từ Lãi/lỗ trong kỳ này và Tạm trích quỹ khen thưởng phúc lợi. Điều này cho thấy công ty không có các sự kiện huy động vốn hoặc tái cấu trúc vốn lớn thông qua thị trường vốn trong quý, mà chủ yếu thay đổi thông qua kết quả hoạt động kinh doanh.",
+      "Việc tạm trích quỹ khen thưởng phúc lợi (-8.426.552.735 VND trong kỳ này và -56.907.658.310 VND trong kỳ trước) làm giảm lợi nhuận sau thuế chưa phân phối. Quỹ này được sử dụng để chăm lo đời sống vật chất, tinh thần cho người lao động. Ý nghĩa của việc trích lập này là: 1) Thể hiện trách nhiệm xã hội và quan tâm đến người lao động, có thể giúp tăng động lực và giữ chân nhân tài. 2) Về mặt tài chính, nó là một khoản chi phí từ lợi nhuận đã tạo ra, làm giảm lợi nhuận có thể phân phối cho cổ đông hoặc tái đầu tư. Tuy nhiên, việc trích lập này cũng có thể là một phần trong kế hoạch quản lý dòng tiền và lợi nhuận, đảm bảo công ty có nguồn để thực hiện các chương trình phúc lợi mà không ảnh hưởng đột ngột đến lợi nhuận chưa phân phối.",
+      "Tổng vốn chủ sở hữu của công ty tăng từ 1.560.698.009.183 VND (cuối kỳ trước) lên 1.608.448.474.682 VND (cuối kỳ này), chủ yếu do Lãi/lỗ trong kỳ này (56.177.018.234 VND) bù đắp cho việc Tạm trích quỹ khen thưởng phúc lợi. Sự tăng trưởng vốn chủ sở hữu từ lợi nhuận giữ lại là dấu hiệu tích cực về khả năng sinh lời và tự tài trợ của công ty. Điều này có thể củng cố niềm tin của các nhà đầu tư và tổ chức tín dụng, giúp công ty dễ dàng hơn trong việc huy động vốn vay hoặc phát hành cổ phiếu trong tương lai, vì một vốn chủ sở hữu mạnh mẽ thường được coi là một yếu tố ổn định và giảm rủi ro tài chính. Tuy nhiên, việc không có tăng vốn từ bên ngoài trong kỳ này cũng cho thấy công ty chưa thực hiện các đợt phát hành mới, có thể do chưa cần hoặc chưa có điều kiện thuận lợi."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lợi nhuận sau thuế TNDN của Báo cáo tài chính Riêng quý 1 năm 2024 là bao nhiêu?",
+      "Nguyên nhân chính dẫn đến biến động lợi nhuận sau thuế là gì?",
+      "So sánh tỷ lệ giảm lợi nhuận sau thuế TNDN của Báo cáo tài chính Riêng và Báo cáo Tài chính Hợp nhất.",
+      "Mức lợi nhuận sau thuế TNDN của Báo cáo tài chính Hợp nhất quý 1 năm 2023 là bao nhiêu?",
+      "Đánh giá mức độ ảnh hưởng của việc giảm doanh thu bán thẻ cào và vận hành kênh viễn thông đến lợi nhuận của công ty.",
+      "Phân tích chiến lược của công ty khi tăng chi phí bán hàng trong bối cảnh lợi nhuận giảm.",
+      "Dự báo tác động dài hạn của việc chuyển dịch trọng tâm sang dịch vụ chuyển phát đối với cơ cấu doanh thu và lợi nhuận của công ty."
+    ],
+    "input": "Công ty: Tổng Công ty Cổ phần Bưu chính Viettel\nMã cổ phiếu: VTP\nLoại báo cáo: Công văn giải trình lợi nhuận\nThời gian: Ngày 29 tháng 04 năm 2024, Quý 1 năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Công văn giải trình lợi nhuận\nLoại nội dung: Text\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nHà Nội, ngày 29 tháng 04 năm 2024\nV/v giải trình các nội dung liên quan đến Báo cáo tài chính quý 1 năm 2024.\nKính gửi: Ủy ban Chứng khoán Nhà nước\nSở giao dịch chứng khoán TP Hồ Chí Minh.\nThực hiện theo quy định của Luật Chứng khoán và Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính về việc hướng dẫn công bố thông tin trên thị trường chứng khoán. Tổng Công ty Cổ phần Bưu chính Viettel (Mã CK VTP) giải trình lợi nhuận sau thuế TNDN quý 1 năm 2024 biến động hơn 10% so với cùng kỳ năm 2023 trong Báo cáo tài chính Riêng và Báo cáo Tài chính Hợp nhất, cụ thể như sau:\n- Lợi nhuận sau thuế thu nhập doanh nghiệp Báo cáo tài chính Riêng quý 1 năm 2024 đạt 56,18 tỷ đồng, giảm 21,56% so với cùng kỳ năm 2023 (quý 1 năm 2023 đạt 71,62 tỷ đồng).\n- Lợi nhuận sau thuế thu nhập doanh nghiệp Báo cáo tài chính Hợp nhất quý 1 năm 2024 đạt 58,46 tỷ đồng, giảm 22,82% so với cùng kỳ năm 2023 (quý 1 năm 2023 đạt 75,74 tỷ đồng).\nNguyên nhân của việc biến động lợi nhuận sau thuế nêu trên là do doanh thu bán thẻ cào và doanh thu vận hành kênh viễn thông giảm so với cùng kỳ năm 2023 đồng thời công ty tăng chi phí bán hàng để phát triển khách hàng cho dịch vụ lõi là dịch vụ chuyển phát.\nChúng tôi xin cam kết các thông tin trên là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố.\nTrân trọng..\nNơi nhận: Tổng Giám đốc\nNhư trên\nWebsite công ty\nLưu VT, TC.\nHoàng Trung Thành",
+    "output": [
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp Báo cáo tài chính Riêng quý 1 năm 2024 đạt 56,18 tỷ đồng.",
+      "Nguyên nhân chính dẫn đến biến động lợi nhuận sau thuế là do doanh thu bán thẻ cào và doanh thu vận hành kênh viễn thông giảm so với cùng kỳ năm 2023, đồng thời công ty tăng chi phí bán hàng để phát triển khách hàng cho dịch vụ lõi là dịch vụ chuyển phát.",
+      "Lợi nhuận sau thuế TNDN Báo cáo tài chính Riêng quý 1 năm 2024 giảm 21,56% so với cùng kỳ năm 2023. Lợi nhuận sau thuế thu nhập doanh nghiệp Báo cáo tài chính Hợp nhất quý 1 năm 2024 giảm 22,82% so với cùng kỳ năm 2023. Tỷ lệ giảm của Báo cáo Tài chính Hợp nhất (-22,82%) cao hơn so với Báo cáo tài chính Riêng (-21,56%).",
+      "Mức lợi nhuận sau thuế TNDN của Báo cáo tài chính Hợp nhất quý 1 năm 2023 là 75,74 tỷ đồng.",
+      "Việc giảm doanh thu bán thẻ cào và doanh thu vận hành kênh viễn thông được xác định là nguyên nhân chính dẫn đến lợi nhuận sau thuế TNDN của công ty giảm hơn 20% so với cùng kỳ năm 2023. Đây là một tác động đáng kể, cho thấy hai mảng doanh thu này đóng góp lớn vào lợi nhuận của công ty trong các kỳ trước. Sự sụt giảm cho thấy sự dịch chuyển trong hoạt động kinh doanh hoặc sự cạnh tranh gay gắt trong các lĩnh vực này, gây áp lực trực tiếp lên hiệu quả tài chính tổng thể của công ty.",
+      "Trong bối cảnh lợi nhuận sau thuế TNDN giảm hơn 20% (riêng và hợp nhất), công ty lại tăng chi phí bán hàng để phát triển khách hàng cho dịch vụ lõi là dịch vụ chuyển phát. Đây là một chiến lược đầu tư dài hạn. Mặc dù làm giảm lợi nhuận trong ngắn hạn, việc này cho thấy công ty đang ưu tiên củng cố và mở rộng thị phần trong lĩnh vực cốt lõi (chuyển phát) để tạo ra tăng trưởng bền vững trong tương lai. Có thể công ty tin rằng việc đầu tư vào chi phí bán hàng sẽ mang lại lợi ích lâu dài bằng cách thu hút thêm khách hàng và tăng doanh thu từ dịch vụ chuyển phát, bù đắp cho sự sụt giảm ở các mảng khác và cải thiện lợi nhuận trong các kỳ sau.",
+      "Việc công ty chuyển dịch trọng tâm sang dịch vụ chuyển phát, thể hiện qua việc tăng chi phí bán hàng cho dịch vụ này trong khi doanh thu từ thẻ cào và kênh viễn thông giảm, sẽ có tác động dài hạn đáng kể. Về cơ cấu doanh thu, dự kiến tỷ trọng doanh thu từ dịch vụ chuyển phát sẽ tăng, trong khi tỷ trọng từ bán thẻ cào và vận hành kênh viễn thông sẽ tiếp tục giảm. Về lợi nhuận, trong ngắn hạn có thể tiếp tục chịu áp lực do chi phí bán hàng tăng và doanh thu cũ giảm. Tuy nhiên, về dài hạn, nếu chiến lược này thành công, công ty có thể thiết lập vị thế vững chắc trong lĩnh vực chuyển phát, một thị trường có tiềm năng tăng trưởng. Điều này có thể dẫn đến sự ổn định và tăng trưởng lợi nhuận bền vững hơn từ hoạt động cốt lõi, mặc dù cần thời gian để những khoản đầu tư này phát huy hiệu quả."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  }
+]

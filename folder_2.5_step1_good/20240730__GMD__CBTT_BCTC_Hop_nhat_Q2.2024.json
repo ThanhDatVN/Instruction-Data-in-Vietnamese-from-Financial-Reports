@@ -1,0 +1,868 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 3.931.370.813.726 | 3.380.201.263.412 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.1 | 1.831.415.100.863 | 1.471.676.297.950 |\n| 1. Tiền | 111 | | 633.199.931.287 | 762.008.256.853 |\n| 2. Các khoản tương đương tiền | 112 | | 1.198.215.169.576 | 709.668.041.097 |\n| II. Đầu tư tài chính ngắn hạn | 120 | | 407.154.499.867 | 358.867.040.371 |\n| 1. Chứng khoán kinh doanh | 121 | V.2a | 34.301.944.940 | 45.723.235.680 |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | V.2a | 14.234.654.290 | 32.575.500.775 |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | V.2b | 387.087.209.217 | 345.719.305.466 |\n| III. Các khoản phải thu ngắn hạn | 130 | | 1.283.266.564.715 | 1.193.181.492.780 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | V.3 | 674.860.970.475 | 584.659.664.426 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | V.4 | 154.284.947.046 | 91.860.358.118 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | - | - | - |\n| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | - | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | V.5 | 162.923.500.000 | 298.007.987.801 |\n| 6. Phải thu ngắn hạn khác | 136 | V.6a | 326.368.890.429 | 253.518.004.021 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | V.7 | 35.171.743.235 | 34.864.521.586 |\n| 8. Tài sản thiếu chờ xử lý | 139 | - | - | - |\n| IV. Hàng tồn kho | 140 | | 63.301.851.837 | 68.169.766.561 |\n| 1. Hàng tồn kho | 141 | V.8 | 63.301.851.837 | 68.169.766.561 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | - | - | - |\n| V. Tài sản ngắn hạn khác | 150 | | 346.232.796.444 | 288.306.665.750 |\n| 1. Chi phí trả trước ngắn hạn | 151 | V.9a | 12.848.121.862 | 7.949.598.183 |\n| 2. Thuế giá trị gia tăng được khấu trừ | 152 | | 321.155.927.114 | 268.633.238.575 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | V.18 | 12.228.747.468 | 11.723.828.992 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | - | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | - | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối kỳ của Gemadept là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã cổ phiếu của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền của công ty thay đổi như thế nào giữa số cuối kỳ và số đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ trọng hàng tồn kho trên tổng tài sản ngắn hạn vào cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản phải thu ngắn hạn và cho biết rủi ro tiềm ẩn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi trong dự phòng giảm giá chứng khoán kinh doanh đến lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Công ty có khả năng thanh toán các khoản nợ ngắn hạn hay không dựa trên số liệu tài sản ngắn hạn?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| B. TÀI SẢN DÀI HẠN | 200 | | 10.899.786.871.566 | 10.165.823.905.016 |\n| I. Các khoản phải thu dài hạn | 210 | | 44.914.349.587 | 39.754.955.799 |\n| 1. Phải thu dài hạn của khách hàng | 211 | - | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | - | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | - | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | - | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | | 8.100.000.000 | 8.100.000.000 |\n| 6. Phải thu dài hạn khác | 216 | V.6b | 36.814.349.587 | 31.654.955.799 |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | - | - | - |\n| II. Tài sản cố định | 220 | | 4.145.522.195.284 | 4.166.026.323.789 |\n| 1. Tài sản cố định hữu hình | 221 | V.10 | 3.895.355.229.218 | 3.891.229.902.798 |\n| - Nguyên giá | 222 | | 6.220.926.117.296 | 6.234.828.104.966 |\n| - Giá trị hao mòn lũy kế | 223 | | 2.325.570.888.078 | 2.343.598.202.168 |\n| 2. Tài sản cố định thuê tài chính | 224 | V.11 | 2.536.513.177 | 16.406.414.089 |\n| - Nguyên giá | 225 | | 235.413.682.251 | 235.413.682.251 |\n| - Giá trị hao mòn lũy kế | 226 | | 232.877.169.074 | 219.007.268.162 |\n| 3. Tài sản cố định vô hình | 227 | V.12 | 247.630.452.889 | 258.390.006.902 |\n| - Nguyên giá | 228 | | 371.947.556.146 | 382.206.554.971 |\n| - Giá trị hao mòn lũy kế | 229 | | 124.317.103.257 | 123.816.548.069 |\n| III. Bất động sản đầu tư | 230 | - | - | - |\n| - Nguyên giá | 231 | - | - | - |\n| - Giá trị hao mòn lũy kế | 232 | - | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | | 1.871.002.508.536 | 1.759.344.470.822 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | - | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | V.13 | 1.871.002.508.536 | 1.759.344.470.822 |\n| V. Đầu tư tài chính dài hạn | 250 | | 3.279.190.990.283 | 3.124.650.970.762 |\n| 1. Đầu tư vào công ty con | 251 | - | - | - |\n| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | V.2c | 3.239.599.467.043 | 3.085.037.407.601 |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | V.2d | 41.913.687.500 | 41.914.287.262 |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | V.2d | 2.322.164.260 | 2.300.724.101 |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | - | - | - |\n| VI. Tài sản dài hạn khác | 260 | | 1.559.156.827.876 | 1.076.047.183.844 |\n| 1. Chi phí trả trước dài hạn | 261 | V.9b | 1.238.354.682.650 | 732.373.580.412 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | V.14 | 175.883.258.807 | 184.952.918.307 |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | - | - | - |\n| 4. Tài sản dài hạn khác | 268 | - | - | - |\n| 5. Lợi thế thương mại | 269 | V.15 | 144.918.886.419 | 158.720.685.125 |\n| TỔNG CỘNG TÀI SẢN | 270 | | 14.831.157.685.292 | 13.546.025.168.428 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản cố định hữu hình cuối kỳ của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh sự thay đổi của tài sản dài hạn giữa số cuối kỳ và số đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng đầu tư tài chính dài hạn trên tổng tài sản dài hạn của Gemadept là bao nhiêu phần trăm vào cuối kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản dài hạn của công ty và ý nghĩa của nó đối với hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro từ các khoản phải thu dài hạn và dự phòng tương ứng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa vào nguyên giá và giá trị hao mòn lũy kế, hãy tính tỷ lệ khấu hao lũy kế trên nguyên giá của tài sản cố định hữu hình cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả sử dụng tài sản cố định vô hình của Gemadept.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| C. NỢ PHẢI TRẢ | 300 | | 4.036.642.980.422 | 3.813.651.116.409 |\n| I. Nợ ngắn hạn | 310 | | 2.041.557.944.446 | 1.915.337.161.256 |\n| 1. Phải trả người bán ngắn hạn | 311 | V.16 | 597.516.651.440 | 517.923.905.276 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | V.17 | 9.149.502.277 | 3.633.365.459 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V.18 | 88.469.230.762 | 73.690.792.494 |\n| 4. Phải trả người lao động | 314 | V.19 | 120.619.915.528 | 139.907.411.400 |\n| 5. Chi phí phải trả ngắn hạn | 315 | V.20 | 427.428.217.244 | 318.155.045.124 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | - | - | - |\n| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | - | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | V.21a | 1.512.380.799 | 8.477.602.875 |\n| 9. Phải trả ngắn hạn khác | 319 | V.22a | 285.876.943.368 | 306.758.506.379 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | V.23a | 401.396.470.490 | 445.359.774.088 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | V.24 | 32.810.717.539 | 52.001.501.539 |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | V.25 | 76.777.914.999 | 49.429.256.622 |\n| 13. Quỹ bình ổn giá | 323 | - | - | - |\n| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | - | - | - |\n| II. Nợ dài hạn | 330 | | 1.995.085.035.976 | 1.898.313.955.153 |\n| 1. Phải trả người bán dài hạn | 331 | - | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | - | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | - | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | - | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | - | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | V.21b | 269.693.619.119 | 275.267.069.902 |\n| 7. Phải trả dài hạn khác | 337 | V.22b | 112.156.103.498 | 104.658.652.936 |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | V.23b | 1.613.235.313.359 | 1.518.388.232.315 |\n| 9. Trái phiếu chuyển đổi | 339 | - | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | - | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | - | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | - | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | - | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | | 10.794.514.704.870 | 9.732.374.052.019 |\n| I. Vốn chủ sở hữu | 410 | | 10.794.514.704.870 | 9.732.374.052.019 |\n| 1. Vốn góp của chủ sở hữu | 411 | V.26a | 3.104.869.570.000 | 3.058.985.570.000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 3.104.869.570.000 | 3.058.985.570.000 |\n| - Cổ phiếu ưu đãi | 411b | - | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | V.26a | 1.941.832.197.040 | 1.941.832.197.040 |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | - | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | V.26a | 128.097.775.902 | 128.097.775.902 |\n| 5. Cổ phiếu quỹ | 415 | - | - | - |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | - | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | V.26a | 434.479.681.275 | 358.279.382.052 |\n| 8. Quỹ đầu tư phát triển | 418 | V.26a | 72.892.277.093 | 61.305.100.650 |\n| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | - | - | - |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | V.26a | 72.381.836.572 | 68.471.352.005 |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | V.26a | 3.709.485.357.622 | 2.963.514.009.028 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 2.846.908.984.323 | 2.963.514.009.028 |\n| - LNST chưa phân phối kỳ này | 421b | | 862.576.373.299 | - |\n| 12. Nguồn vốn đầu tư xây dựng cơ bản | 422 | - | - | - |\n| 13. Lợi ích cổ đông không kiểm soát | 429 | V.27 | 1.330.476.009.366 | 1.151.888.665.342 |\n| II. Nguồn kinh phí và quỹ khác | 430 | - | - | - |\n| 1. Nguồn kinh phí | 431 | - | - | - |\n| 2. Nguồn kinh phí đã hình thành tài sản cố định | 432 | - | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 14.831.157.685.292 | 13.546.025.168.428 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối kỳ của Gemadept là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu của công ty cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tỷ lệ nợ ngắn hạn trên tổng nợ phải trả cuối kỳ của Gemadept là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận sau thuế chưa phân phối cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá cơ cấu nợ và vốn chủ sở hữu của công ty, cho biết sự thay đổi này có ý nghĩa gì.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) vào cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng quỹ khen thưởng, phúc lợi đến khả năng tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu nợ dài hạn tiếp tục tăng và lợi nhuận chưa phân phối không đủ để bù đắp.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Quý 2 Năm nay | Quý 2 Năm trước | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|---|---|---|---|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | VI.1 | 1.181.097.334.105 | 912.150.278.762 | 2.186.636.875.016 | 1.814.145.021.045 |\n| 2. Các khoản giảm trừ doanh thu | 02 | - | - | - | - | - |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | 1.181.097.334.105 | 912.150.278.762 | 2.186.636.875.016 | 1.814.145.021.045 |\n| 4. Giá vốn hàng bán | 11 | VI.2 | 639.028.060.313 | 481.427.264.956 | 1.203.682.272.082 | 928.147.111.879 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 542.069.273.792 | 430.723.013.806 | 982.954.602.934 | 885.997.909.166 |\n| 6. Doanh thu hoạt động tài chính | 21 | VI.3 | 28.143.096.395 | 1.863.494.488.102 | 381.953.607.587 | 1.883.949.531.169 |\n| 7. Chi phí tài chính | 22 | VI.4 | 45.824.768.549 | 30.878.768.063 | 84.808.525.128 | 93.025.125.990 |\n| Trong đó: chi phí lãi vay | 23 | | 36.337.488.399 | 22.955.905.278 | 72.171.231.819 | 55.509.821.536 |\n| 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết | 24 | V.2c | 182.769.046.128 | 57.827.802.300 | 280.723.787.233 | 80.290.090.905 |\n| 9. Chi phí bán hàng | 25 | VI.5 | 77.365.194.260 | 42.296.716.920 | 119.529.274.055 | 72.113.812.070 |\n| 10. Chi phí quản lý doanh nghiệp | 26 | VI.6 | 123.966.465.227 | 112.318.605.443 | 231.296.463.869 | 210.498.344.178 |\n| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 505.824.988.279 | 2.166.551.213.782 | 1.209.997.734.702 | 2.474.600.249.002 |\n| 12. Thu nhập khác | 31 | VI.7 | 7.593.747.631 | 14.594.222.875 | 12.085.738.244 | 22.252.650.802 |\n| 13. Chi phí khác | 32 | VI.8 | 2.122.335.975 | 3.045.675.013 | 2.824.775.500 | 4.313.104.226 |\n| 14. Lợi nhuận khác | 40 | | 5.471.411.656 | 11.548.547.862 | 9.260.962.744 | 17.939.546.576 |\n| 15. Tổng lợi nhuận kế toán trước thuế | 50 | | 511.296.399.935 | 2.178.099.761.644 | 1.219.258.697.446 | 2.492.539.795.578 |\n| 16. Chi phí thuế thu nhập doanh nghiệp hiện hành | 51 | | 76.935.404.088 | 469.526.583.415 | 136.475.212.886 | 525.250.840.297 |\n| 17. Chi phí thuế thu nhập doanh nghiệp hoãn lại | 52 | | 1.631.862.555 | 2.921.589.564 | 8.764.247.162 | 4.765.000.390 |\n| 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 418.029.133.292 | 1.711.494.767.793 | 1.074.019.237.398 | 1.972.053.955.671 |\n| 19. Lợi nhuận sau thuế của công ty mẹ | 61 | | 303.161.313.536 | 1.646.210.093.822 | 862.576.373.299 | 1.852.574.275.241 |\n| 20. Lợi nhuận sau thuế của cổ đông không kiểm soát | 62 | | 114.867.819.756 | 65.284.673.971 | 211.442.864.099 | 119.479.680.430 |\n| 21. Lãi cơ bản trên cổ phiếu | 70 | VI.9 | 882 | 5.404 | 2.652 | 6.034 |\n| 22. Lãi suy giảm trên cổ phiếu | 71 | VI.9 | 882 | 5.404 | 2.652 | 6.034 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Gemadept trong Quý 2 năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế của công ty mẹ trong Quý 2 năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý 2 năm nay so với Quý 2 năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự thay đổi trong chi phí tài chính lũy kế từ đầu năm đến cuối kỳ này so với năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Giải thích nguyên nhân chính dẫn đến sự giảm mạnh của doanh thu hoạt động tài chính trong Quý 2 năm nay so với năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận gộp (Gross Profit Margin) của công ty trong Quý 2 năm nay và Quý 2 năm trước, sau đó so sánh.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đóng góp của các công ty liên doanh, liên kết vào lợi nhuận chung của Gemadept.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa trên các chỉ số lợi nhuận, hãy nhận định về hiệu quả hoạt động kinh doanh tổng thể của Gemadept trong Quý 2 năm nay.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|---|---|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | | |\n| 1. Lợi nhuận trước thuế | 01 | | 1.219.258.697.446 | 2.492.539.795.578 |\n| 2. Điều chỉnh cho các khoản: | | | | |\n| - Khấu hao tài sản cố định và bất động sản đầu tư | 02 | | 207.224.523.856 | 194.608.260.342 |\n| - Các khoản dự phòng | 03 | V.2, V.7, V.8, V.24 | 37.202.968.677 | 8.552.998.414 |\n| - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | VI.4 | 46.183.269.122 | 1.919.009.261 |\n| - Lãi, lỗ từ hoạt động đầu tư | 05 | V.2c, VI.3, VI.7, VI.8 | 645.593.689.065 | 1.951.578.692.585 |\n| - Chi phí lãi vay | 06 | VI.4 | 72.171.231.819 | 55.509.821.536 |\n| - Các khoản điều chỉnh khác | 07 | - | - | - |\n| 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 08 | | 862.041.064.501 | 780.607.177.196 |\n| - Tăng, giảm các khoản phải thu | 09 | | 63.099.961.787 | 322.302.583.799 |\n| - Tăng, giảm hàng tồn kho | 10 | | 8.198.325.549 | 28.767.584.883 |\n| - Tăng, giảm các khoản phải trả | 11 | | 387.566.675.240 | 102.312.227.292 |\n| - Tăng, giảm chi phí trả trước | 12 | | 514.075.129.721 | 5.305.729.235 |\n| - Tăng, giảm chứng khoán kinh doanh | 13 | V.2a | 11.421.290.740 | - |\n| - Tiền lãi vay đã trả | 14 | V.20, V.22, VI.4 | 71.857.112.836 | 59.313.593.417 |\n| - Thuế thu nhập doanh nghiệp đã nộp | 15 | V.18 | 115.996.984.355 | 70.728.116.936 |\n| - Tiền thu khác từ hoạt động kinh doanh | 16 | - | - | - |\n| - Tiền chi khác cho hoạt động kinh doanh | 17 | | 35.645.523.393 | 31.267.225.599 |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | | 594.752.567.512 | 873.361.911.869 |\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | | |\n| 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | 21 | V.10, V.12, V.13 | 770.092.208.929 | 1.014.348.208.927 |\n| 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | 22 | V.10, VI.7 | 3.789.203.704 | 4.694.090.910 |\n| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | V.5 | 389.267.903.750 | 904.500.000.000 |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | V.5 | 464.511.353.047 | 73.000.000.000 |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | - | - | - |\n| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | V.2d, VI.3 | 367.722.563.190 | 1.413.453.465.929 |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | V.2c, V.6, VI.3 | 169.873.165.906 | 28.289.493.386 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | | 153.463.826.832 | 399.411.158.702 |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | | 45.884.000.000 | - |\n| 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | 32 | - | - | - |\n| 3. Tiền thu từ đi vay | 33 | | 312.234.681.389 | 484.926.389.027 |\n| 4. Tiền trả nợ gốc vay | 34 | | 250.802.348.740 | 496.906.671.474 |\n| 5. Tiền trả nợ gốc thuê tài chính | 35 | | 18.372.320.981 | 18.257.146.056 |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | | 170.712.795.419 | 49.680.412.584 |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | | -81.768.783.751 | -79.917.841.087 |\n| Lưu chuyển tiền thuần trong năm | 50 | | 359.519.956.929 | 394.032.912.080 |\n| Tiền và tương đương tiền đầu năm | 60 | V.1 | 1.471.676.297.950 | 1.364.349.572.162 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | | 218.845.984 | 42.344.617 |\n| Tiền và tương đương tiền cuối năm | 70 | V.1 | 1.831.415.100.863 | 1.758.424.828.859 |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế từ đầu năm đến cuối kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và tương đương tiền cuối năm của Gemadept là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động đầu tư năm nay với năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tổng tiền thu từ hoạt động tài chính lũy kế năm nay.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của việc giảm mạnh tiền chi cho vay, mua các công cụ nợ của đơn vị khác so với năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của hoạt động đầu tư dựa trên lưu chuyển tiền thuần từ hoạt động đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính toán và giải thích sự chênh lệch giữa lợi nhuận trước thuế và lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất\nLoại nội dung: Text\n\nI. ĐẶC ĐIỂM HOẠT ĐỘNG\n1. Hình thức sở hữu vốn\nCông ty cổ phần Gemadept sau đây gọi tắt là Công ty hay Công ty mẹ là công ty cổ phần.\n2. Lĩnh vực kinh doanh\nCông ty kinh doanh trong nhiều lĩnh vực khác nhau.\n3. Ngành nghề kinh doanh\nCông ty kiên định với chiến lược tập trung phát triển hai lĩnh vực kinh doanh cốt lõi là Khai thác Cảng và Logistics.\n- Khai thác Cảng: Khai thác hệ thống cảng trải dọc từ Bắc chí Nam, tại các thành phố lớn và các vùng kinh tế trọng điểm (cảng Nam Hải đến 18/03/2024, cảng Nam Đình Vũ, Nam Hải ICD, cảng Dung Quất, cảng Phước Long, cảng Bình Dương và cảng nước sâu Gemalink Cái Mép).\n- Logistics: Trung tâm phân phối, Vận tải Container chuyên tuyến, Vận tải hàng siêu trường siêu trọng, Vận tải đa phương thức, Quản lý tàu và thuyền viên, Đại lý giao nhận, Ga hàng hóa hàng không,...\nNgoài ra, Công ty đầu tư một số dự án có chọn lọc trong lĩnh vực Trồng rừng và Bất động sản.\n- Trồng rừng: Trồng, chăm sóc, khai thác, chế biến cây cao su và cây công nghiệp tại Campuchia.\n- Bất động sản: Xây dựng và khai thác các trung tâm thương mại, khách sạn, cao ốc văn phòng ở các thành phố lớn tại Việt Nam và khu vực Đông Dương (bao gồm dự án Khu phức hợp Saigon Gem, dự án Khu phức hợp tại Viêng Chăn - Lào).\n4. Chu kỳ sản xuất, kinh doanh thông thường\nChu kỳ sản xuất kinh doanh thông thường của Công ty không quá 12 tháng.\n5. Đặc điểm hoạt động của Tập đoàn trong kỳ có ảnh hưởng đến Báo cáo tài chính hợp nhất\nTrong kỳ, Công ty tiếp tục góp vốn bổ sung vào Công ty Cổ phần Niềm Kiêu Hãnh Thái Bình Dương, Công ty TNHH MTV Công nghiệp Cao su Thái Bình Dương, Công ty Cổ phần Hoa Sen Thái Bình Dương, Công ty TNHH Thiết bị và Dịch vụ Hàng hải Thái Bình Dương và Công ty TNHH MTV Vận tải Hàng hải Thái Bình Dương.\nNgày 14/03/2024, Công ty đã hoàn tất thủ tục chấm dứt hoạt động Chi nhánh Gemadept Campuchia để cơ cấu lại hoạt động sản xuất kinh doanh của Công ty.\nTrong kỳ, Công ty đã hoàn thành việc phát hành cổ phiếu theo chương trình lựa chọn cho người lao động trong Công ty theo Nghị Quyết số 158/NQ-HĐQT/2023 ngày 28/12/2023 của Hội đồng quản trị và tăng vốn điều lệ.\nTrong kỳ, Công ty đã hoàn tất chuyển nhượng toàn bộ cổ phần của công ty tại Công ty Cổ phần Cảng Nam Hải.\nTrong kỳ, Tập đoàn đã góp vốn vào Công ty TNHH Liên doanh GNL.\n6. Cấu trúc tập đoàn\nTại thời điểm cuối kỳ, Tập đoàn bao gồm Công ty mẹ, 21 công ty con chịu sự kiểm soát của Công ty mẹ và 16 công ty liên doanh, liên kết; tại thời điểm đầu năm, Tập đoàn có 21 công ty con và 16 công ty liên doanh, liên kết. Toàn bộ các công ty con được hợp nhất trong Báo cáo tài chính hợp nhất này.\n\nII. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Năm tài chính\nNăm tài chính của Tập đoàn bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm. Quý 2 năm 2024 bắt đầu từ ngày 01 tháng 04 đến ngày 30 tháng 06 năm 2024.\n2. Đơn vị tiền tệ sử dụng trong kế toán\nĐơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND).\n\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chế độ kế toán áp dụng\nTập đoàn áp dụng các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 hướng dẫn Chế độ Kế toán doanh nghiệp, Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 hướng dẫn lập và trình bày Báo cáo tài chính hợp nhất và các thông tư khác hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập và trình bày Báo cáo tài chính hợp nhất.\n2. Tuyên bố về việc tuân thủ chuẩn mực kế toán và chế độ kế toán\nBan Tổng Giám đốc đảm bảo đã tuân thủ yêu cầu của các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014, Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 cũng như các thông tư khác hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập và trình bày Báo cáo tài chính hợp nhất.",
+    "questions": [
+      {
+        "question": "Các lĩnh vực kinh doanh cốt lõi của Gemadept là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ngày 14/03/2024, Gemadept đã hoàn tất thủ tục gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng công ty con và công ty liên doanh, liên kết của Tập đoàn tại cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Năm tài chính của Gemadept bắt đầu và kết thúc vào ngày nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của chiến lược tập trung vào Khai thác Cảng và Logistics đối với sự phát triển của Gemadept.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc chuyển nhượng toàn bộ cổ phần tại Công ty Cổ phần Cảng Nam Hải đến cấu trúc và hoạt động của Tập đoàn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích vai trò của các Thông tư 200/2014/TT-BTC và 202/2014/TT-BTC trong việc lập Báo cáo tài chính hợp nhất của Gemadept.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG - Phần 1)\nLoại nội dung: Text\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở lập Báo cáo tài chính hợp nhất\nBáo cáo tài chính hợp nhất được lập trên cơ sở kế toán dồn tích trừ các thông tin liên quan đến các luồng tiền.\n2. Cơ sở hợp nhất\nBáo cáo tài chính hợp nhất bao gồm Báo cáo tài chính của Công ty mẹ và Báo cáo tài chính của các công ty con. Công ty con là đơn vị chịu sự kiểm soát của Công ty mẹ. Sự kiểm soát tồn tại khi Công ty mẹ có khả năng trực tiếp hay gián tiếp chi phối các chính sách tài chính và hoạt động của công ty con để thu được các lợi ích kinh tế từ các hoạt động này. Khi xác định quyền kiểm soát có tính đến quyền biểu quyết tiềm năng phát sinh từ các quyền chọn mua hoặc các công cụ nợ và công cụ vốn có thể chuyển đổi thành cổ phiếu phổ thông tại ngày kết thúc kỳ kế toán.\nKết quả hoạt động kinh doanh của các công ty con được mua lại hoặc bán đi trong kỳ được trình bày trong Báo cáo kết quả hoạt động kinh doanh hợp nhất từ ngày mua hoặc cho đến ngày bán khoản đầu tư ở công ty con đó.\nBáo cáo tài chính của công ty mẹ và các công ty con sử dụng để hợp nhất được lập cho cùng một kỳ kế toán và áp dụng các chính sách kế toán thống nhất cho các giao dịch và sự kiện cùng loại trong những hoàn cảnh tương tự. Trong trường hợp chính sách kế toán của công ty con khác với chính sách kế toán áp dụng thống nhất trong Tập đoàn thì Báo cáo tài chính của công ty con sẽ có những điều chỉnh thích hợp trước khi sử dụng cho việc lập Báo cáo tài chính hợp nhất.\nSố dư các tài khoản trên Bảng cân đối kế toán giữa các công ty trong cùng Tập đoàn, các giao dịch nội bộ, các khoản lãi nội bộ chưa thực hiện phát sinh từ các giao dịch này phải được loại trừ hoàn toàn. Các khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ cũng được loại bỏ trừ khi chi phí tạo nên khoản lỗ đó không thể thu hồi được.\nLợi ích của cổ đông không kiểm soát thể hiện phần lãi hoặc lỗ trong kết quả kinh doanh và tài sản thuần của công ty con không được nắm giữ bởi Tập đoàn và được trình bày ở khoản mục riêng trên Báo cáo kết quả hoạt động kinh doanh hợp nhất và trên Bảng cân đối kế toán hợp nhất thuộc phần vốn chủ sở hữu. Lợi ích của cổ đông không kiểm soát bao gồm giá trị các lợi ích của cổ đông không kiểm soát tại ngày hợp nhất kinh doanh ban đầu và phần lợi ích của cổ đông không kiểm soát trong biến động của vốn chủ sở hữu kể từ ngày hợp nhất kinh doanh. Các khoản lỗ phát sinh tại công ty con được phân bổ tương ứng với phần sở hữu của cổ đông không kiểm soát, kể cả trường hợp số lỗ đó lớn hơn phần sở hữu của cổ đông không kiểm soát trong tài sản thuần của công ty con.\nKhi Tập đoàn đầu tư để tăng tỷ lệ lợi ích nắm giữ tại công ty con, phần chênh lệch giữa giá phí khoản đầu tư thêm và giá trị ghi sổ của tài sản thuần của công ty con mua thêm tại ngày mua được ghi nhận trực tiếp vào khoản mục Lợi nhuận sau thuế chưa phân phối trên Bảng cân đối kế toán hợp nhất.\nKhi Tập đoàn thoái một phần vốn tại công ty con:\n- Nếu sau khi thoái vốn Tập đoàn vẫn giữ quyền kiểm soát: kết quả của việc thoái vốn được ghi nhận vào khoản mục Lợi nhuận sau thuế chưa phân phối trên Bảng cân đối kế toán hợp nhất.\n- Nếu sau khi thoái vốn Tập đoàn mất quyền kiểm soát và công ty con trở thành công ty liên doanh, liên kết: khoản đầu tư còn lại được trình bày ở khoản mục Đầu tư vào công ty liên doanh, liên kết trên Báo cáo tài chính hợp nhất theo phương pháp vốn chủ sở hữu và kết quả của việc thoái vốn được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh hợp nhất.\n- Nếu sau khi thoái vốn Tập đoàn mất quyền kiểm soát và công ty con trở thành khoản đầu tư thông thường: khoản đầu tư còn lại được trình bày theo giá trị ghi sổ trên Báo cáo tài chính hợp nhất và kết quả của việc thoái vốn được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh hợp nhất.\nTrường hợp công ty con huy động thêm vốn góp từ các chủ sở hữu, nếu tỷ lệ vốn góp thêm của các bên không tương ứng với tỷ lệ hiện hành thì phần chênh lệch giữa số vốn góp thêm của Tập đoàn và phần sở hữu tăng thêm trong tài sản thuần của công ty con được ghi nhận vào khoản mục Lợi nhuận sau thuế chưa phân phối trên Bảng cân đối kế toán hợp nhất.",
+    "questions": [
+      {
+        "question": "Báo cáo tài chính hợp nhất của Gemadept được lập trên cơ sở kế toán nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào thì sự kiểm soát của công ty mẹ đối với công ty con được xác định là tồn tại?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích cách hạch toán lợi ích của cổ đông không kiểm soát trong Báo cáo tài chính hợp nhất.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi Gemadept đầu tư để tăng tỷ lệ lợi ích nắm giữ tại công ty con, phần chênh lệch được ghi nhận vào đâu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích các phương pháp xử lý khi Gemadept thoái một phần vốn tại công ty con.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Trong trường hợp chính sách kế toán của công ty con khác với công ty mẹ, Gemadept sẽ xử lý như thế nào khi lập Báo cáo tài chính hợp nhất?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG - Phần 2)\nLoại nội dung: Text\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n3. Các giao dịch bằng ngoại tệ\nCác giao dịch phát sinh bằng ngoại tệ được chuyển đổi theo tỷ giá tại ngày phát sinh giao dịch, số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán được quy đổi theo tỷ giá tại ngày này. Chênh lệch tỷ giá phát sinh trong năm từ các giao dịch bằng ngoại tệ được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính. Chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán sau khi bù trừ chênh lệch tăng và chênh lệch giảm được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính.\nTỷ giá sử dụng để quy đổi các giao dịch phát sinh bằng ngoại tệ là tỷ giá giao dịch thực tế tại thời điểm phát sinh giao dịch. Tỷ giá giao dịch thực tế đối với các giao dịch bằng ngoại tệ được xác định như sau:\n- Đối với hợp đồng mua bán ngoại tệ (hợp đồng mua bán ngoại tệ giao ngay, hợp đồng kỳ hạn, hợp đồng tương lai, hợp đồng quyền chọn, hợp đồng hoán đổi): tỷ giá ký kết trong hợp đồng mua, bán ngoại tệ giữa Tập đoàn và ngân hàng.\n- Đối với các khoản góp vốn hoặc nhận vốn góp: tỷ giá mua ngoại tệ của ngân hàng nơi Tập đoàn mở tài khoản để nhận vốn của nhà đầu tư tại ngày góp vốn.\n- Đối với nợ phải thu: tỷ giá mua ngoại tệ của ngân hàng thương mại nơi Tập đoàn chỉ định khách hàng thanh toán tại thời điểm giao dịch phát sinh.\n- Đối với nợ phải trả: tỷ giá bán ngoại tệ của ngân hàng thương mại nơi Tập đoàn dự kiến giao dịch tại thời điểm giao dịch phát sinh.\n- Đối với các giao dịch mua sắm tài sản hoặc các khoản chi phí được thanh toán ngay bằng ngoại tệ không qua các tài khoản phải trả: tỷ giá mua ngoại tệ của ngân hàng thương mại nơi Tập đoàn thực hiện thanh toán.\nTỷ giá sử dụng để đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán được xác định theo nguyên tắc sau:\n- Đối với các khoản ngoại tệ gửi ngân hàng: tỷ giá mua ngoại tệ của ngân hàng nơi Tập đoàn mở tài khoản ngoại tệ.\n- Đối với các khoản mục tiền tệ có gốc ngoại tệ được phân loại là tài sản khác: tỷ giá mua ngoại tệ của Ngân hàng TNHH MTV Shinhan Việt Nam (Ngân hàng Tập đoàn thường xuyên có giao dịch).\n- Đối với các khoản mục tiền tệ có gốc ngoại tệ được phân loại là nợ phải trả: tỷ giá bán ngoại tệ của Ngân hàng TNHH MTV Shinhan Việt Nam (Ngân hàng Tập đoàn thường xuyên có giao dịch).\nTỷ giá sử dụng khi chuyển đổi Báo cáo tài chính của công ty con lập bằng ngoại tệ sang đơn vị tiền tệ kế toán của Công ty mẹ như sau:\n- Tài sản và lợi thế thương mại phát sinh khi mua công ty con ở nước ngoài được quy đổi theo tỷ giá mua của ngân hàng tại ngày kết thúc kỳ kế toán.\n- Nợ phải trả được quy đổi theo tỷ giá bán của ngân hàng tại ngày kết thúc kỳ kế toán.\n- Giá trị tài sản thuần của công ty con do Công ty mẹ nắm giữ tại ngày mua được quy đổi theo tỷ giá ghi sổ tại ngày mua.\n- Lợi nhuận sau thuế chưa phân phối phát sinh sau ngày mua công ty con được quy đổi bằng cách tính toán theo các khoản mục doanh thu, chi phí của Báo cáo kết quả hoạt động kinh doanh.\n- Cổ tức đã trả được quy đổi theo tỷ giá giao dịch thực tế tại ngày trả cổ tức.\n- Các khoản mục thuộc Báo cáo kết quả hoạt động kinh doanh và Báo cáo lưu chuyển tiền tệ được quy đổi theo tỷ giá giao dịch thực tế tại thời điểm phát sinh giao dịch. Nếu tỷ giá bình quân kỳ báo cáo xấp xỉ tỷ giá giao dịch thực tế tại thời điểm phát sinh giao dịch (chênh lệch không quá 0.2%) thì áp dụng tỷ giá bình quân. Nếu biên độ giao động của tỷ giá giữa thời điểm đầu năm và cuối năm trên 0.2% thì áp dụng theo tỷ giá tại ngày kết thúc kỳ kế toán.\nChênh lệch tỷ giá hối đoái phát sinh khi chuyển đổi Báo cáo tài chính của công ty con được phản ánh lũy kế trong phần vốn chủ sở hữu của Bảng cân đối kế toán hợp nhất theo nguyên tắc:\n- Phần chênh lệch tỷ giá hối đoái phân bổ cho Công ty mẹ được trình bày tại khoản mục Chênh lệch tỷ giá hối đoái thuộc phần vốn chủ sở hữu của Bảng cân đối kế toán hợp nhất.\n- Phần chênh lệch tỷ giá hối đoái phân bổ cho cổ đông không kiểm soát được trình bày tại khoản mục Lợi ích cổ đông không kiểm soát.\nChênh lệch tỷ giá hối đoái phát sinh liên quan đến việc quy đổi khoản lợi thế thương mại chưa phân bổ hết tại ngày kết thúc năm tài chính được tính toàn bộ cho Công ty mẹ và được ghi nhận vào khoản mục Chênh lệch tỷ giá hối đoái thuộc phần vốn chủ sở hữu của Bảng cân đối kế toán hợp nhất.\n4. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt và tiền gửi ngân hàng không kỳ hạn. Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi không quá 03 tháng kể từ ngày đầu tư, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có rủi ro trong việc chuyển đổi thành tiền tại thời điểm báo cáo.\n5. Các khoản đầu tư tài chính\nChứng khoán kinh doanh\nKhoản đầu tư được phân loại là chứng khoán kinh doanh khi nắm giữ vì mục đích mua bán để kiếm lời. Chứng khoán kinh doanh được ghi sổ kế toán theo giá gốc. Giá gốc của chứng khoán kinh doanh được xác định theo giá trị hợp lý của các khoản thanh toán tại thời điểm giao dịch phát sinh cộng các chi phí liên quan đến giao dịch mua chứng khoán kinh doanh. Thời điểm ghi nhận các khoản chứng khoán kinh doanh là thời điểm Tập đoàn có quyền sở hữu, cụ thể như sau:\n- Đối với chứng khoán niêm yết: được ghi nhận tại thời điểm khớp lệnh (T+0).\n- Đối với chứng khoán chưa niêm yết: được ghi nhận tại thời điểm chính thức có quyền sở hữu theo quy định của pháp luật.\nTiền lãi, cổ tức và lợi nhuận của các kỳ trước khi chứng khoán kinh doanh được mua được hạch toán giảm giá trị của chính chứng khoán kinh doanh đó. Tiền lãi, cổ tức và lợi nhuận của các kỳ sau khi chứng khoán kinh doanh được mua được ghi nhận doanh thu. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được. Cổ phiếu hoán đổi được xác định theo giá trị hợp lý tại ngày trao đổi. Giá trị hợp lý của cổ phiếu được xác định như sau:\n- Đối với cổ phiếu của công ty niêm yết: giá trị hợp lý của cổ phiếu là giá đóng cửa niêm yết trên thị trường chứng khoán tại ngày trao đổi. Trường hợp tại ngày trao đổi thị trường chứng khoán không giao dịch thì giá trị hợp lý của cổ phiếu là giá đóng cửa phiên giao dịch trước liền kề với ngày trao đổi.\n- Đối với cổ phiếu chưa niêm yết được giao dịch trên sàn UPCOM: giá trị hợp lý của cổ phiếu là giá giao dịch đóng cửa trên sàn UPCOM tại ngày trao đổi. Trường hợp ngày trao đổi sàn UPCOM không giao dịch thì giá trị hợp lý của cổ phiếu là giá đóng cửa phiên giao dịch trước liền kề với ngày trao đổi.\n- Đối với cổ phiếu chưa niêm yết khác: giá trị hợp lý của cổ phiếu là giá do các bên thỏa thuận theo hợp đồng hoặc giá trị sổ sách tại thời điểm trao đổi.\nDự phòng giảm giá chứng khoán kinh doanh được lập cho từng loại chứng khoán được mua bán trên thị trường và có giá trị hợp lý thấp hơn giá gốc. Giá trị hợp lý của chứng khoán kinh doanh được xác định như sau:\n- Đối với chứng khoán niêm yết trên thị trường chứng khoán: giá đóng cửa tại ngày gần nhất có giao dịch tính đến thời điểm kết thúc năm tài chính.\n- Đối với cổ phiếu đã đăng ký giao dịch trên thị trường giao dịch của các công ty đại chúng chưa niêm yết (UPCOM): giá tham chiếu bình quân trong 30 ngày giao dịch liền kề gần nhất trước thời điểm kết thúc năm tài chính do Sở Giao dịch chứng khoán công bố.\n- Trường hợp cổ phiếu đã niêm yết trên thị trường chứng khoán hoặc cổ phiếu của công ty cổ phần đã đăng ký giao dịch trên thị trường Upcom không có giao dịch trong vòng 30 ngày trước ngày trích lập dự phòng, cổ phiếu đã niêm yết bị hủy niêm yết, bị đình chỉ giao dịch, bị ngừng giao dịch: việc lập dự phòng được thực hiện căn cứ vào khoản lỗ của công ty được đầu tư (mức trích lập bằng chênh lệch giữa vốn đầu tư thực tế của các chủ sở hữu và vốn chủ sở hữu tại ngày kết thúc năm tài chính nhân với tỷ lệ sở hữu vốn điều lệ của Công ty so với tổng số vốn điều lệ thực góp).\nTăng, giảm số dự phòng giảm giá chứng khoán kinh doanh cần phải trích lập tại ngày kết thúc năm tài chính được ghi nhận vào chi phí tài chính. Lãi hoặc lỗ từ việc chuyển nhượng chứng khoán kinh doanh được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính. Giá vốn được xác định theo phương pháp bình quân gia quyền di động.\nCác khoản đầu tư nắm giữ đến ngày đáo hạn\nKhoản đầu tư được phân loại là nắm giữ đến ngày đáo hạn khi Tập đoàn có ý định và khả năng giữ đến ngày đáo hạn. Các khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm các khoản tiền gửi ngân hàng có kỳ hạn (bao gồm cả các loại tín phiếu, kỳ phiếu, trái phiếu, cổ phiếu ưu đãi bên phát hành bắt buộc phải mua lại tại một thời điểm nhất định trong tương lai) và các khoản cho vay nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ và các khoản đầu tư nắm giữ đến ngày đáo hạn khác. Các khoản đầu tư nắm giữ đến ngày đáo hạn được ghi nhận ban đầu theo giá gốc (bao gồm giá mua và các chi phí liên quan đến giao dịch mua các khoản đầu tư). Sau ghi nhận ban đầu, các khoản đầu tư này được ghi nhận theo giá trị có thể thu hồi. Thu nhập lãi từ các khoản đầu tư nắm giữ đến ngày đáo hạn sau ngày mua được ghi nhận trên Báo cáo kết quả hoạt động kinh doanh trên cơ sở dự thu. Lãi được hưởng trước khi Tập đoàn nắm giữ được ghi giảm trừ vào giá gốc tại thời điểm mua. Khi có các bằng chứng chắc chắn cho thấy một phần hoặc toàn bộ khoản đầu tư có thể không thu hồi được và số tổn thất được xác định một cách đáng tin cậy thì tổn thất được ghi nhận vào chi phí tài chính trong năm và giảm trừ trực tiếp giá trị đầu tư.\nCác khoản cho vay\nCác khoản cho vay được xác định theo giá gốc trừ đi các khoản dự phòng phải thu khó đòi. Dự phòng phải thu khó đòi của các khoản cho vay được lập căn cứ vào dự kiến mức tổn thất có thể xảy ra.",
+    "questions": [
+      {
+        "question": "Chênh lệch tỷ giá hối đoái phát sinh trong năm từ các giao dịch bằng ngoại tệ được ghi nhận vào đâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền của Gemadept bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích cách Gemadept xác định tỷ giá giao dịch thực tế đối với các khoản góp vốn hoặc nhận vốn góp bằng ngoại tệ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các điều kiện để một khoản đầu tư được phân loại là chứng khoán kinh doanh.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của biến động tỷ giá hối đoái đến báo cáo tài chính của Gemadept, đặc biệt là khi chuyển đổi báo cáo của công ty con.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích các nguyên tắc lập dự phòng giảm giá chứng khoán kinh doanh của Gemadept trong các trường hợp khác nhau (niêm yết, UPCOM, không giao dịch).",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Đánh giá chiến lược của Gemadept đối với các khoản đầu tư nắm giữ đến ngày đáo hạn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG - Phần 3)\nLoại nội dung: Text\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n5. Các khoản đầu tư tài chính\nCác khoản đầu tư vào công ty liên doanh, liên kết\nCông ty liên doanh\nCông ty liên doanh là doanh nghiệp được thành lập trên cơ sở thỏa thuận trên hợp đồng mà theo đó Tập đoàn và các bên tham gia thực hiện hoạt động kinh tế trên cơ sở đồng kiểm soát. Đồng kiểm soát được hiểu là việc đưa ra các quyết định mang tính chiến lược liên quan đến các chính sách hoạt động và tài chính của công ty liên doanh phải có sự đồng thuận của các bên tham gia liên doanh. Tập đoàn ghi nhận lợi ích của mình trong cơ sở kinh doanh đồng kiểm soát theo phương pháp vốn chủ sở hữu. Theo đó khoản vốn góp trong liên doanh được ghi nhận ban đầu theo giá gốc, sau đó được điều chỉnh theo những thay đổi của phần sở hữu của Tập đoàn trong tài sản thuần của cơ sở kinh doanh đồng kiểm soát. Báo cáo kết quả hoạt động kinh doanh hợp nhất phản ánh phần sở hữu của Tập đoàn trong kết quả hoạt động kinh doanh của cơ sở kinh doanh đồng kiểm soát. Tập đoàn ngừng sử dụng phương pháp vốn chủ sở hữu kể từ ngày kết thúc quyền đồng kiểm soát hoặc không có ảnh hưởng đáng kể đối với cơ sở kinh doanh được đồng kiểm soát. Báo cáo tài chính của cơ sở kinh doanh đồng kiểm soát được lập cùng kỳ kế toán với Báo cáo tài chính hợp nhất của Tập đoàn. Khi chính sách kế toán của cơ sở kinh doanh đồng kiểm soát khác với chính sách kế toán áp dụng thống nhất trong Tập đoàn thì Báo cáo tài chính của cơ sở kinh doanh đồng kiểm soát sẽ có những điều chỉnh thích hợp trước khi sử dụng cho việc lập Báo cáo tài chính hợp nhất. Các khoản lãi, lỗ chưa thực hiện phát sinh từ các giao dịch với các cơ sở kinh doanh đồng kiểm soát được loại trừ tương ứng với phần thuộc về Tập đoàn khi lập Báo cáo tài chính hợp nhất.\nCông ty liên kết\nCông ty liên kết là doanh nghiệp mà Tập đoàn có ảnh hưởng đáng kể nhưng không có quyền kiểm soát đối với các chính sách tài chính và hoạt động. Ảnh hưởng đáng kể thể hiện ở quyền tham gia vào việc đưa ra các quyết định về chính sách tài chính và hoạt động của doanh nghiệp nhận đầu tư nhưng không kiểm soát các chính sách này. Các khoản đầu tư vào các công ty liên kết được ghi nhận theo phương pháp vốn chủ sở hữu. Theo đó, khoản đầu tư vào công ty liên kết được thể hiện trên Báo cáo tài chính hợp nhất theo chi phí đầu tư ban đầu và điều chỉnh cho các thay đổi trong phần lợi ích trên tài sản thuần của công ty liên kết sau ngày đầu tư. Nếu lợi ích của Tập đoàn trong khoản lỗ của công ty liên kết lớn hơn hoặc bằng giá trị ghi sổ của khoản đầu tư thì giá trị khoản đầu tư được trình bày trên Báo cáo tài chính hợp nhất là bằng không trừ khi Tập đoàn có các nghĩa vụ thực hiện thanh toán thay cho công ty liên kết. Báo cáo tài chính của công ty liên kết được lập cùng kỳ kế toán với Báo cáo tài chính hợp nhất của Tập đoàn. Khi chính sách kế toán của công ty liên kết khác với chính sách kế toán áp dụng thống nhất trong Tập đoàn thì Báo cáo tài chính của công ty liên kết sẽ có những điều chỉnh thích hợp trước khi sử dụng cho việc lập Báo cáo tài chính hợp nhất. Các khoản lãi, lỗ chưa thực hiện phát sinh từ các giao dịch với các công ty liên kết được loại trừ tương ứng với phần thuộc về Tập đoàn khi lập Báo cáo tài chính hợp nhất.\nCác khoản đầu tư vào công cụ vốn của đơn vị khác\nĐầu tư vào công cụ vốn của đơn vị khác bao gồm các khoản đầu tư công cụ vốn nhưng Tập đoàn không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư. Các khoản đầu tư vào công cụ vốn của đơn vị khác được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc khoản góp vốn cộng các chi phí trực tiếp liên quan đến hoạt động đầu tư. Cổ tức của các kỳ trước khi khoản đầu tư được mua được hạch toán giảm giá trị của chính khoản đầu tư đó. Cổ tức của các kỳ sau khi khoản đầu tư được mua được ghi nhận doanh thu. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được. Dự phòng tổn thất cho các khoản đầu tư vào công cụ vốn của đơn vị khác được trích lập như sau:\n- Đối với khoản đầu tư vào cổ phiếu niêm yết hoặc giá trị hợp lý khoản đầu tư được xác định tin cậy: việc lập dự phòng dựa trên giá trị thị trường của cổ phiếu.\n- Đối với khoản đầu tư không xác định được giá trị hợp lý tại thời điểm báo cáo: việc lập dự phòng được thực hiện căn cứ vào khoản lỗ của bên được đầu tư (với mức trích lập bằng chênh lệch giữa vốn đầu tư thực tế của các chủ sở hữu và vốn chủ sở hữu tại ngày kết thúc kỳ kế toán nhân với tỷ lệ vốn điều lệ của Công ty so với tổng vốn điều lệ thực góp tại đơn vị khác).\nTăng, giảm số dự phòng tổn thất đầu tư vào công cụ vốn của đơn vị khác cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí tài chính.\n6. Các khoản phải thu\nCác khoản nợ phải thu được trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi. Việc phân loại các khoản phải thu là phải thu khách hàng và phải thu khác được thực hiện theo nguyên tắc sau:\n- Phải thu của khách hàng: phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua - bán giữa Tập đoàn và người mua là đơn vị độc lập với Tập đoàn.\n- Phải thu khác: phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua - bán.\nDự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào dự kiến mức tổn thất có thể xảy ra. Tăng, giảm số dư dự phòng nợ phải thu khó đòi cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí quản lý doanh nghiệp.\n7. Hàng tồn kho\nHàng tồn kho được ghi nhận theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được. Giá gốc hàng tồn kho được xác định như sau:\n- Nguyên vật liệu, hàng hóa: bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\n- Chi phí sản xuất kinh doanh dở dang: chi phí phát sinh liên quan đến dự án chưa hoàn thành.\nGiá xuất kho được tính theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên. Giá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong kỳ sản xuất, kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng. Dự phòng giảm giá hàng tồn kho được lập cho từng mặt hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Đối với dịch vụ cung cấp dở dang, việc lập dự phòng giảm giá được tính theo từng loại dịch vụ có mức giá riêng biệt. Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào giá vốn hàng bán.\n8. Chi phí trả trước\nChi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán. Chi phí trả trước của Tập đoàn chủ yếu là chi phí nhượng quyền sử dụng đất, tiền thuê đất, chi phí sửa chữa và chi phí lãi thuê tài chính Container. Các chi phí trả trước này được phân bổ trong khoảng thời gian trả trước hoặc thời gian các lợi ích kinh tế tương ứng được tạo ra từ các chi phí này.\nChi phí nhượng quyền sử dụng đất\nChi phí nhượng quyền sử dụng đất thể hiện khoản tiền thuê đất, các chi phí tư vấn và chi phí khác đã trả cho phần đất Tập đoàn đang sử dụng. Chi phí nhượng quyền sử dụng đất được phân bổ theo thời hạn thuê đất.\nTiền thuê đất\nTiền thuê đất thể hiện khoản tiền thuê đất đã trả cho phần đất Tập đoàn đang sử dụng. Tiền thuê đất trả trước được phân bổ vào chi phí theo phương pháp đường thẳng tương ứng với thời gian thuê.\nChi phí sửa chữa\nChi phí sửa chữa phát sinh một lần có giá trị lớn được phân bổ vào chi phí theo phương pháp đường thẳng với thời gian phân bổ không quá 03 năm.\nChi phí lãi thuê tài chính Container\nChi phí lãi thuê tài chính Container được phân bổ vào chi phí theo phương pháp đường thẳng với thời gian phân bổ không quá 06 năm.",
+    "questions": [
+      {
+        "question": "Công ty liên doanh được định nghĩa như thế nào trong thuyết minh này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Cách tính giá xuất kho của hàng tồn kho là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phân biệt cách ghi nhận các khoản phải thu của khách hàng và phải thu khác.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các loại chi phí trả trước chủ yếu của Gemadept là gì và cách phân bổ chúng?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự khác biệt trong phương pháp kế toán giữa công ty liên doanh và công ty liên kết của Gemadept.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ thận trọng trong chính sách lập dự phòng tổn thất cho các khoản đầu tư vào công cụ vốn của đơn vị khác.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích quy tắc ghi nhận hàng tồn kho và dự phòng giảm giá hàng tồn kho.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG - Phần 4)\nLoại nội dung: Text\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n9. Tài sản thuê hoạt động\nThuê tài sản được phân loại là thuê hoạt động nếu phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu tài sản thuộc về người cho thuê. Chi phí thuê hoạt động được phản ánh vào chi phí theo phương pháp đường thẳng cho suốt thời hạn thuê tài sản, không phụ thuộc vào phương thức thanh toán tiền thuê.\n10. Tài sản cố định hữu hình\nTài sản cố định hữu hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà Tập đoàn phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí phát sinh không thỏa mãn điều kiện trên được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ. Khi tài sản cố định hữu hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ. Tài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính. Số năm khấu hao của các loại tài sản cố định hữu hình như sau:\nLoại tài sản cố định | Số năm\n|---|---|\n| Nhà cửa, vật kiến trúc | 05 - 40 |\n| Máy móc và thiết bị | 05 - 10 |\n| Phương tiện vận tải, truyền dẫn | 06 - 20 |\n| Thiết bị, dụng cụ quản lý | 03 - 10 |\n11. Tài sản cố định thuê tài chính\nThuê tài sản được phân loại là thuê tài chính nếu phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu tài sản thuộc về người đi thuê. Tài sản cố định thuê tài chính được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định thuê tài chính là giá thấp hơn giữa giá trị hợp lý của tài sản thuê tại thời điểm khởi đầu của hợp đồng thuê và giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu. Tỷ lệ chiết khấu để tính giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu cho việc thuê tài sản là lãi suất ngầm định trong hợp đồng thuê tài sản hoặc lãi suất ghi trong hợp đồng. Trong trường hợp không thể xác định được lãi suất ngầm định trong hợp đồng thuê thì sử dụng lãi suất tiền vay tại thời điểm khởi đầu việc thuê tài sản. Tài sản cố định thuê tài chính được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính. Trong trường hợp không chắc chắn Tập đoàn sẽ có quyền sở hữu tài sản khi hết hạn hợp đồng thuê thì tài sản cố định sẽ được khấu hao theo thời gian ngắn hơn giữa thời gian thuê và thời gian hữu dụng ước tính, số năm khấu hao của thiết bị và phương tiện vận tải không quá 06 năm.\n12. Tài sản cố định vô hình\nTài sản cố định vô hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định vô hình bao gồm toàn bộ các chi phí mà Tập đoàn phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Chi phí liên quan đến tài sản cố định vô hình phát sinh sau khi ghi nhận ban đầu được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ trừ khi các chi phí này gắn liền với một tài sản cố định vô hình cụ thể và làm tăng lợi ích kinh tế từ các tài sản này. Khi tài sản cố định vô hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ. Tài sản cố định vô hình của Tập đoàn bao gồm:\nQuyền sử dụng đất\nQuyền sử dụng đất là toàn bộ các chi phí thực tế Công ty đã chi ra có liên quan trực tiếp tới đất sử dụng, bao gồm tiền chi ra để có quyền sử dụng đất, chi phí cho đền bù, giải phóng mặt bằng, san lấp mặt bằng, lệ phí trước bạ,... Quyền sử dụng đất không xác định thời hạn không được tính khấu hao.\nChương trình phần mềm máy tính\nChi phí liên quan đến các chương trình phần mềm máy tính không phải là một bộ phận gắn kết với phần cứng có liên quan được vốn hóa. Nguyên giá của phần mềm máy tính là toàn bộ các chi phí mà Công ty đã chi ra tính đến thời điểm đưa phần mềm vào sử dụng. Phần mềm máy tính được khấu hao theo phương pháp đường thẳng từ 03 - 08 năm.\nChi phí thiết kế trang Web\nChi phí thiết kế trang Web bao gồm tất cả các chi phí liên quan trực tiếp đến việc thiết lập trang web. Chi phí này được khấu hao theo phương pháp đường thẳng trong 03 năm.\n13. Chi phí xây dựng cơ bản dở dang\nChi phí xây dựng cơ bản dở dang phản ánh các chi phí liên quan trực tiếp (bao gồm cả chi phí lãi vay có liên quan phù hợp với chính sách kế toán của Tập đoàn) đến các tài sản đang trong quá trình xây dựng, máy móc thiết bị đang lắp đặt để phục vụ cho mục đích sản xuất, cho thuê và quản lý cũng như chi phí liên quan đến việc sửa chữa tài sản cố định đang thực hiện. Các tài sản này được ghi nhận theo giá gốc và không được tính khấu hao. Các chi phí phát sinh liên quan đến các lô cây trồng sinh trưởng kém sẽ được ghi giảm vào chi phí khác trong báo cáo kết quả hoạt động kinh doanh trong kỳ.\n14. Hợp nhất kinh doanh và lợi thế thương mại\nViệc hợp nhất kinh doanh được kế toán theo phương pháp mua. Giá phí hợp nhất kinh doanh bao gồm giá trị hợp lý tại ngày diễn ra trao đổi của các tài sản đem trao đổi, các khoản nợ phải trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do Tập đoàn phát hành để đổi lấy quyền kiểm soát bên bị mua và các chi phí liên quan trực tiếp đến việc hợp nhất kinh doanh. Tài sản đã mua, nợ phải trả có thể xác định được và những khoản nợ tiềm tàng phải gánh chịu trong hợp nhất kinh doanh được ghi nhận theo giá trị hợp lý tại ngày nắm giữ quyền kiểm soát.\nĐối với giao dịch hợp nhất kinh doanh qua nhiều giai đoạn, giá phí hợp nhất kinh doanh được tính là tổng của giá phí khoản đầu tư tại ngày đạt được quyền kiểm soát công ty con cộng với giá phí khoản đầu tư của những lần trao đổi trước đã được đánh giá lại theo giá trị hợp lý tại ngày đạt được quyền kiểm soát công ty con. Chênh lệch giữa giá đánh giá lại và giá gốc khoản đầu tư được ghi nhận vào kết quả hoạt động kinh doanh nếu trước ngày đạt được quyền kiểm soát Tập đoàn không có ảnh hưởng đáng kể với công ty con và khoản đầu tư được trình bày theo phương pháp giá gốc. Nếu trước ngày đạt được quyền kiểm soát, Tập đoàn có ảnh hưởng đáng kể và khoản đầu tư được trình bày theo phương pháp vốn chủ sở hữu thì phần chênh lệch giữa giá đánh giá lại và giá trị khoản đầu tư theo phương pháp vốn chủ sở hữu được ghi nhận vào kết quả hoạt động kinh doanh và phần chênh lệch giữa giá trị khoản đầu tư theo phương pháp vốn chủ sở hữu và giá gốc khoản đầu tư được ghi nhận trực tiếp vào khoản mục Lợi nhuận sau thuế chưa phân phối trên Bảng cân đối kế toán hợp nhất.\nPhần chênh lệch cao hơn của giá phí hợp nhất kinh doanh so với phần sở hữu của Tập đoàn trong giá trị hợp lý thuần của tài sản, nợ phải trả có thể xác định được và các khoản nợ tiềm tàng đã ghi nhận tại ngày đạt được quyền kiểm soát công ty con được ghi nhận là lợi thế thương mại. Nếu phần sở hữu của Tập đoàn trong giá trị hợp lý thuần của tài sản, nợ phải trả có thể xác định được và nợ tiềm tàng được ghi nhận tại ngày đạt được quyền kiểm soát công ty con vượt quá giá phí hợp nhất kinh doanh thì phần chênh lệch được ghi nhận vào kết quả hoạt động kinh doanh.\nLợi thế thương mại được phân bổ theo phương pháp đường thẳng trong 10 năm. Khi có bằng chứng cho thấy lợi thế thương mại bị tổn thất lớn hơn số phân bổ thì số phân bổ trong kỳ là số tổn thất phát sinh. Lợi ích của cổ đông không kiểm soát tại ngày hợp nhất kinh doanh ban đầu được xác định trên cơ sở tỷ lệ của các cổ đông không kiểm soát trong giá trị hợp lý của tài sản, nợ phải trả và nợ tiềm tàng được ghi nhận.",
+    "questions": [
+      {
+        "question": "Phân loại tài sản thuê hoạt động của Gemadept dựa trên nguyên tắc nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Quyền sử dụng đất không xác định thời hạn của Gemadept có được tính khấu hao không?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu các chi phí cấu thành nguyên giá tài sản cố định hữu hình của Gemadept.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách Gemadept xử lý chênh lệch giữa giá đánh giá lại và giá gốc khoản đầu tư trong giao dịch hợp nhất kinh doanh qua nhiều giai đoạn.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá chính sách kế toán lợi thế thương mại của Gemadept và tác động của nó đến báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Trong trường hợp nào thì chi phí liên quan đến tài sản cố định vô hình được vốn hóa, và khi nào thì ghi nhận là chi phí sản xuất, kinh doanh trong kỳ?",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích sự khác biệt giữa tài sản cố định hữu hình và tài sản cố định thuê tài chính trong chính sách khấu hao của Gemadept.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG - Phần 5)\nLoại nội dung: Text\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n15. Các khoản nợ phải trả và chi phí phải trả\nCác khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả. Việc phân loại các khoản phải trả là phải trả người bán, chi phí phải trả và phải trả khác được thực hiện theo nguyên tắc sau:\n- Phải trả người bán: phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập với Tập đoàn.\n- Chi phí phải trả: phản ánh các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước.\n- Phải trả khác: phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.\nCác khoản nợ phải trả và chi phí phải trả được phân loại ngắn hạn và dài hạn trên Bảng cân đối kế toán hợp nhất căn cứ theo kỳ hạn còn lại tại ngày kết thúc kỳ kế toán.\n16. Các khoản dự phòng phải trả\nCác khoản dự phòng được ghi nhận khi Tập đoàn có nghĩa vụ nợ hiện tại (nghĩa vụ pháp lý hoặc nghĩa vụ liên đới) do kết quả từ một sự kiện đã xảy ra, việc thanh toán nghĩa vụ nợ này có thể sẽ dẫn đến sự giảm sút về những lợi ích kinh tế và giá trị của nghĩa vụ nợ đó có thể được ước tính một cách đáng tin cậy. Nếu ảnh hưởng của thời gian là trọng yếu, dự phòng sẽ được xác định bằng cách chiết khấu số tiền phải bỏ ra trong tương lai để thanh toán nghĩa vụ nợ với tỷ lệ chiết khấu trước thuế và phản ánh những đánh giá trên thị trường hiện tại về giá trị thời gian của tiền và những rủi ro cụ thể của khoản nợ đó. Khoản tăng lên của số dự phòng do thời gian trôi qua được ghi nhận là chi phí tài chính. Các khoản dự phòng phải trả của Tập đoàn liên quan đến những tổn thất phải bồi thường trong quá trình vận chuyển.\n17. Vốn chủ sở hữu\nVốn góp của chủ sở hữu\nVốn góp của chủ sở hữu được ghi nhận theo số vốn thực tế đã góp của các cổ đông của Công ty.\nThặng dư vốn cổ phần\nThặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu hoặc phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn. Chi phí trực tiếp liên quan đến việc phát hành bổ sung cổ phiếu và tái phát hành cổ phiếu quỹ được ghi giảm thặng dư vốn cổ phần.\nVốn khác của chủ sở hữu\nVốn khác được hình thành do bổ sung từ kết quả hoạt động kinh doanh, đánh giá lại tài sản và giá trị còn lại giữa giá trị hợp lý của các tài sản được tặng, biếu, tài trợ sau khi trừ các khoản thuế phải nộp nếu có liên quan đến các tài sản này.\n18. Phân phối lợi nhuận\nLợi nhuận sau thuế thu nhập doanh nghiệp được phân phối cho các cổ đông sau khi đã trích lập các quỹ theo Điều lệ của Công ty cũng như các quy định của pháp luật và đã được Đại hội đồng cổ đông phê duyệt. Việc phân phối lợi nhuận cho các cổ đông được cân nhắc đến các khoản mục phi tiền tệ nằm trong lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến luồng tiền và khả năng chi trả cổ tức như lãi do đánh giá lại tài sản mang đi góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác. Cổ tức được ghi nhận là nợ phải trả khi được Đại hội đồng cổ đông phê duyệt.\n19. Ghi nhận doanh thu và thu nhập\nDoanh thu cung cấp dịch vụ\nDoanh thu cung cấp dịch vụ được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại dịch vụ đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại dịch vụ đã cung cấp.\n- Tập đoàn đã hoặc sẽ thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n- Xác định được phần công việc đã hoàn thành vào thời điểm báo cáo.\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\nTrường hợp dịch vụ được thực hiện trong nhiều kỳ thì doanh thu được ghi nhận trong kỳ được căn cứ vào kết quả phần công việc đã hoàn thành vào ngày kết thúc kỳ.\nDoanh thu cho thuê tài sản hoạt động\nDoanh thu cho thuê tài sản hoạt động được ghi nhận theo phương pháp đường thẳng trong suốt thời gian cho thuê. Tiền cho thuê nhận trước của nhiều kỳ được phân bổ vào doanh thu phù hợp với thời gian cho thuê.\nTiền lãi\nTiền lãi được ghi nhận trên cơ sở thời gian và lãi suất thực tế từng kỳ.\nCổ tức và lợi nhuận được chia\nCổ tức và lợi nhuận được chia được ghi nhận khi Tập đoàn đã được quyền nhận cổ tức hoặc lợi nhuận từ việc góp vốn. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được.\n20. Các khoản giảm trừ doanh thu\nCác khoản giảm trừ doanh thu là giảm giá hàng bán phát sinh cùng kỳ cung cấp dịch vụ được điều chỉnh giảm doanh thu của kỳ phát sinh. Trường hợp dịch vụ đã cung cấp từ các kỳ trước, đến kỳ này mới phát sinh giảm giá hàng bán thì được ghi giảm doanh thu theo nguyên tắc:\n- Nếu khoản giảm giá hàng bán phát sinh trước thời điểm phát hành Báo cáo tài chính hợp nhất: ghi giảm doanh thu trên Báo cáo tài chính hợp nhất của kỳ này.\n- Nếu khoản giảm giá hàng bán phát sinh sau thời điểm phát hành Báo cáo tài chính hợp nhất: ghi giảm doanh thu trên Báo cáo tài chính hợp nhất của kỳ sau.\n21. Chi phí đi vay\nChi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay. Chi phí đi vay được ghi nhận vào chi phí khi phát sinh. Trường hợp chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán thì chi phí đi vay này được tính vào giá trị của tài sản đó. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng. Các khoản thu nhập phát sinh từ việc đầu tư tạm thời các khoản vay được ghi giảm nguyên giá tài sản có liên quan. Đối với các khoản vốn vay chung trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang thì chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể.\n22. Các khoản chi phí\nChi phí là những khoản làm giảm lợi ích kinh tế được ghi nhận tại thời điểm giao dịch phát sinh hoặc khi có khả năng tương đối chắc chắn sẽ phát sinh trong tương lai không phân biệt đã chi tiền hay chưa. Các khoản chi phí và khoản doanh thu do nó tạo ra phải được ghi nhận đồng thời theo nguyên tắc phù hợp. Trong trường hợp nguyên tắc phù hợp xung đột với nguyên tắc thận trọng, chi phí được ghi nhận căn cứ vào bản chất và quy định của các chuẩn mực kế toán để đảm bảo phản ánh giao dịch một cách trung thực, hợp lý.\n23. Thuế thu nhập doanh nghiệp\nChi phí thuế thu nhập doanh nghiệp bao gồm thuế thu nhập hiện hành và thuế thu nhập hoãn lại.\nThuế thu nhập hiện hành\nThuế thu nhập hiện hành là khoản thuế được tính dựa trên thu nhập tính thuế. Thu nhập tính thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán, các chi phí không được trừ cũng như điều chỉnh các khoản thu nhập không phải chịu thuế và các khoản lỗ được chuyển.\nThuế thu nhập hoãn lại\nThuế thu nhập hoãn lại là khoản thuế thu nhập doanh nghiệp sẽ phải nộp hoặc sẽ được hoàn lại do chênh lệch tạm thời giữa giá trị ghi sổ của tài sản và nợ phải trả cho mục đích lập Báo cáo tài chính và cơ sở tính thuế thu nhập. Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế. Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ này. Giá trị ghi sổ của tài sản thuế thu nhập doanh nghiệp hoãn lại được xem xét lại vào ngày kết thúc kỳ kế toán và sẽ được ghi giảm đến mức đảm bảo chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng. Các tài sản thuế thu nhập doanh nghiệp hoãn lại chưa được ghi nhận trước đây được xem xét lại vào ngày kết thúc kỳ kế toán và được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế để có thể sử dụng các tài sản thuế thu nhập hoãn lại chưa ghi nhận này. Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho năm tài sản được thu hồi hay nợ phải trả được thanh toán dựa trên các mức thuế suất có hiệu lực tại ngày kết thúc kỳ kế toán. Thuế thu nhập hoãn lại được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh và chỉ ghi trực tiếp vào vốn chủ sở hữu khi khoản thuế đó liên quan đến các khoản mục được ghi thẳng vào vốn chủ sở hữu. Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được bù trừ khi:\n- Tập đoàn có quyền hợp pháp được bù trừ giữa tài sản thuế thu nhập hiện hành với thuế thu nhập hiện hành phải nộp và\n- Các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả này liên quan đến thuế thu nhập doanh nghiệp được quản lý bởi cùng một cơ quan thuế đối với cùng một đơn vị chịu thuế hoặc Tập đoàn dự định thanh toán thuế thu nhập hiện hành phải trả và tài sản thuế thu nhập hiện hành trên cơ sở thuần hoặc thu hồi tài sản đồng thời với việc thanh toán nợ phải trả trong từng kỳ tương lai khi các khoản trọng yếu của thuế thu nhập hoãn lại phải trả hoặc tài sản thuế thu nhập hoãn lại được thanh toán hoặc thu hồi.\n24. Bên liên quan\nCác bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung. Trong việc xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được chú trọng nhiều hơn hình thức pháp lý.",
+    "questions": [
+      {
+        "question": "Khi nào thì các khoản dự phòng phải trả được ghi nhận?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thặng dư vốn cổ phần được ghi nhận dựa trên cơ sở nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu các điều kiện để doanh thu cung cấp dịch vụ được ghi nhận.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt giữa thuế thu nhập hiện hành và thuế thu nhập hoãn lại.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích cách Gemadept quản lý rủi ro từ các khoản dự phòng phải trả liên quan đến tổn thất trong quá trình vận chuyển.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ minh bạch của chính sách phân phối lợi nhuận của Gemadept dựa trên các yếu tố được cân nhắc.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích nguyên tắc ghi nhận chi phí đi vay và các trường hợp vốn hóa lãi vay của Gemadept.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 1)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n1. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền mặt | 19.088.864.192 | 22.054.492.056 |\n| Tiền gửi ngân hàng | 613.211.052.669 | 739.365.321.791 |\n| Tiền đang chuyển | 900.014.426 | 588.443.006 |\n| Các khoản tương đương tiền (tiền gửi ngân hàng có kỳ hạn gốc không quá 03 tháng) | 1.198.215.169.576 | 709.668.041.097 |\n| Cộng | 1.831.415.100.863 | 1.471.676.297.950 |\n\n2. Các khoản đầu tư tài chính\nCác khoản đầu tư tài chính của Tập đoàn bao gồm chứng khoán kinh doanh, đầu tư nắm giữ đến ngày đáo hạn, đầu tư vào công ty liên doanh, liên kết và đầu tư góp vốn vào đơn vị khác. Thông tin về các khoản đầu tư tài chính của Tập đoàn như sau:\n2a. Chứng khoán kinh doanh\n| Chỉ tiêu | Giá gốc Số cuối kỳ | Giá trị hợp lý Số cuối kỳ | Dự phòng Số cuối kỳ | Giá gốc Số đầu năm | Giá trị hợp lý Số đầu năm | Dự phòng Số đầu năm |\n|---|---|---|---|---|---|---|\n| Cổ phiếu | | | | | | |\n| Công ty Cổ phần Thép Thủ Đức | 20.067.290.650 | 20.914.832.000 | - | 31.488.264.362 | 13.147.432.455 | 18.340.831.907 |\n| Công ty Cổ phần Khoáng sản Mangan | 14.234.321.100 | - | 14.234.321.100 | 14.234.321.100 | - | 14.234.321.100 |\n| Các cổ phiếu khác | 333.190 | - | 233.190 | 650.218 | - | 371.448.347.768 |\n| Cộng | 34.301.944.940 | 20.914.832.000 | 14.234.654.290 | 45.723.235.680 | 13.147.803.903 | 32.575.500.775 |\n\nTình hình biến động dự phòng giảm giá chứng khoán kinh doanh như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Số đầu năm | 32.575.500.775 | 27.787.639.695 |\n| Hoàn nhập/trích lập trong kỳ | 18.340.846.485 | 2.862.827.105 |\n| Số cuối kỳ | 14.234.654.290 | 30.650.466.800 |",
+    "questions": [
+      {
+        "question": "Tổng tiền mặt của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Dự phòng giảm giá chứng khoán kinh doanh cuối kỳ năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền gửi ngân hàng của Gemadept cuối kỳ năm nay thay đổi như thế nào so với đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ lệ dự phòng giảm giá chứng khoán kinh doanh trên giá gốc của các cổ phiếu cuối kỳ năm nay.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự biến động của dự phòng giảm giá chứng khoán kinh doanh giữa các năm và ý nghĩa của nó.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro của danh mục chứng khoán kinh doanh của Gemadept dựa trên giá gốc và giá trị hợp lý.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích nguyên nhân của sự giảm giá gốc chứng khoán kinh doanh từ đầu năm đến cuối kỳ năm nay.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 2)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n2b. Đầu tư nắm giữ đến ngày đáo hạn\nKhoản tiền gửi ngân hàng có kỳ hạn trên 03 tháng đến 12 tháng.\n\n2c. Đầu tư vào công ty liên doanh, liên kết\n| Chỉ tiêu | Giá gốc Số cuối kỳ | Lợi nhuận phát sinh sau ngày đầu tư Số cuối kỳ | Cộng Số cuối kỳ | Giá gốc Số đầu năm | Lợi nhuận phát sinh sau ngày đầu tư Số đầu năm | Cộng Số đầu năm |\n|---|---|---|---|---|---|---|\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link | 1.477.350.000.000 | 256.837.530.302 | 1.734.187.530.302 | 1.477.350.000.000 | 101.025.525.463 | 1.578.375.525.463 |\n| Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn | 405.366.553.895 | 209.502.737.506 | 614.869.291.401 | 405.366.553.895 | 203.691.065.095 | 609.057.618.990 |\n| Công ty TNHH CJ Gemadept Logistics Holdings | 131.555.876.205 | 263.925.118.387 | 395.480.994.592 | 131.555.876.205 | 248.766.260.764 | 380.322.136.969 |\n| Công ty TNHH Tiếp vận K Line - Gemadept | 108.001.500.000 | 13.001.217.246 | 121.002.717.246 | 108.001.500.000 | 19.976.745.162 | 127.978.245.162 |\n| Công ty TNHH CJ Gemadept Shipping Holdings | 104.620.023.000 | 59.197.750.812 | 163.817.773.812 | 104.620.023.000 | 74.808.775.182 | 179.428.798.182 |\n| Công ty TNHH Golden Globe | 103.823.882.496 | 7.818.179.561 | 96.005.702.935 | 103.823.882.496 | 7.023.735.472 | 96.800.147.024 |\n| Công ty TNHH Thương mại Quả cầu Vàng | 62.538.064.097 | 17.546.001.092 | 80.084.065.189 | 62.538.064.097 | 15.693.553.410 | 78.231.617.507 |\n| Công ty Cổ phần Liên hợp Thực phẩm | 49.825.280.000 | 26.967.788.041 | 22.857.491.959 | 49.825.280.000 | 27.078.998.329 | 22.746.281.671 |\n| Các công ty liên doanh, liên kết khác | 28.396.608.143 | 17.102.708.536 | 11.293.899.607 | 28.396.608.143 | 16.299.571.510 | 12.097.036.633 |\n| Cộng | 2.471.477.787.836 | 768.121.679.207 | 3.239.599.467.043 | 2.471.477.787.836 | 613.559.619.765 | 3.085.037.407.601 |\n\nGiao dịch với các công ty liên doanh, liên kết\nCác giao dịch trọng yếu giữa Tập đoàn với các công ty liên doanh, liên kết như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link | | |\n| Doanh thu dịch vụ | 4.938.995.451 | 1.241.158.962 |\n| Chi phí dịch vụ | 209.852.966 | 271.837.000 |\n| Lãi cho vay | - | 73.972.603 |\n| Chi hộ | 48.218.964 | - |\n| Chi phí khác | 71.437.000 | 13.176.000 |\n| Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn | | |\n| Cổ tức được chia | 110.982.597.000 | 129.479.696.500 |\n| Công ty Cổ phần Thương cảng Vũng Tàu | | |\n| Cổ tức được chia | 1.542.720.000 | 964.200.000 |\n| Công ty Cổ phần Du lịch Minh Đạm | | |\n| Lãi cho vay | 98.686.725 | 104.077.480 |\n| Chi hộ | 55.166.910 | 53.000.000 |\n| Công ty TNHH Tiếp vận K Line - Gemadept | | |\n| Doanh thu dịch vụ | 17.783.396.620 | 12.539.903.008 |\n| Doanh thu cho thuê văn phòng | 197.232.000 | 196.559.527 |\n| Lợi nhuận được chia | 15.000.000.000 | 10.000.000.000 |\n| Công ty TNHH MTV Gemadept Hải Phòng | | |\n| Doanh thu dịch vụ | 13.502.576.609 | 12.159.822.255 |\n| Chi phí dịch vụ | 2.362.833.314 | 6.627.197.520 |\n| Nhờ thu hộ | 135.891.876.568 | - |\n| Chi hộ | 5.382.127.189 | - |\n| Công ty Cổ phần Mekong Logistics | | |\n| Doanh thu dịch vụ | 172.923.323 | 133.090.010 |\n| Công ty TNHH MTV Vận tải biển Gemadept | | |\n| Doanh thu dịch vụ, cho thuê tài sản, phí đại lý tàu | 45.571.967.920 | 36.825.666.446 |\n| Chi phí dịch vụ | 10.720.255.273 | 78.128.506.651 |\n| Chi hộ | 23.322.177.810 | 17.055.742.342 |\n| Thu hộ | 16.323.460.344 | 21.109.446.786 |\n| Công ty TNHH MTV Tiếp vận Gemadept | | |\n| Doanh thu dịch vụ, cho thuê tài sản | 9.702.876.285 | 10.752.058.118 |\n| Chi phí dịch vụ | 3.202.737.862 | 674.679.042 |\n| Chi hộ | 198.583.148 | 294.054.872 |\n| Thu hộ | 4.678.670.481 | - |",
+    "questions": [
+      {
+        "question": "Tổng giá trị đầu tư vào công ty liên doanh, liên kết của Gemadept cuối kỳ năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link đã đóng góp bao nhiêu lợi nhuận cho Gemadept sau ngày đầu tư vào cuối kỳ năm nay?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh cổ tức được chia từ Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn giữa năm nay và năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Doanh thu dịch vụ từ Công ty TNHH Tiếp vận K Line - Gemadept tăng hay giảm so với năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả đầu tư của Gemadept vào các công ty liên doanh, liên kết dựa trên lợi nhuận phát sinh sau ngày đầu tư.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản 'Nhờ thu hộ' và 'Chi hộ' trong giao dịch với Công ty TNHH MTV Gemadept Hải Phòng đến dòng tiền của Tập đoàn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa vào dữ liệu, đánh giá mức độ phụ thuộc của Gemadept vào các giao dịch với các bên liên quan trong hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 3)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n2d. Đầu tư góp vốn vào đơn vị khác\n| Chỉ tiêu | Giá gốc Số cuối kỳ | Dự phòng Số cuối kỳ | Giá gốc Số đầu năm | Dự phòng Số đầu năm |\n|---|---|---|---|---|\n| Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam | - | - | - | 599.762 |\n| Công ty Cổ phần Đầu tư Xây dựng Phát triển Hạ Tầng Mặt trời Đông Dương | 36.000.000.000 | - | 36.000.000.000 | - |\n| Công ty Cổ phần Quản lý Quỹ Trí Tuệ Việt Nam | 5.000.000.000 | 2.301.164.260 | 5.000.000.000 | 2.279.724.101 |\n| Công Ty TNHH Jinjiang Shipping Việt Nam | 892.687.500 | - | 892.687.500 | - |\n| Công ty TNHH OOCL Logistics Việt Nam | 21.000.000 | - | 21.000.000 | - |\n| Cộng | 41.913.687.500 | 2.322.164.260 | 41.914.287.262 | 2.300.724.101 |\n\n3. Phải thu ngắn hạn của khách hàng\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải thu các bên liên quan | 131.909.488.372 | 172.836.410.674 |\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link | 101.088.866.614 | 91.069.414.381 |\n| Công ty TNHH MTV Gemadept Hải Phòng | 3.718.291.133 | 63.266.504.905 |\n| Công ty TNHH MTV Vận tải biển Gemadept | 21.239.239.350 | 16.414.649.560 |\n| Công ty TNHH Tiếp vận K Line - Gemadept | 4.274.745.355 | 1.023.093.126 |\n| Công ty TNHH MTV Tiếp vận Gemadept | 1.588.345.920 | 1.062.748.702 |\n| Phải thu các khách hàng khác | 542.951.482.103 | 411.823.253.752 |\n| Các khách hàng khác | 542.951.482.103 | 411.823.253.752 |\n| Cộng | 674.860.970.475 | 584.659.664.426 |\n\n4. Trả trước cho người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Công ty Cổ phần Bông Sen Vàng | 22.192.800.000 | 22.192.800.000 |\n| Konecranes GMBH | 11.087.840.000 | - |\n| Các nhà cung cấp khác | 132.092.147.046 | 58.579.718.118 |\n| Cộng | 154.284.947.046 | 91.860.358.118 |\n\n5. Phải thu về cho vay ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Cho các bên liên quan vay | 2.623.500.000 | 20.623.500.000 |\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link | - | 18.000.000.000 |\n| Công ty Cổ phần Du lịch Minh Đạm | 2.623.500.000 | 2.623.500.000 |\n| Cho các tổ chức khác vay | 160.300.000.000 | 277.384.487.801 |\n| Các tổ chức khác | 160.300.000.000 | 277.384.487.801 |\n| Cộng | 162.923.500.000 | 298.007.987.801 |",
+    "questions": [
+      {
+        "question": "Tổng giá trị đầu tư góp vốn vào đơn vị khác của Gemadept cuối kỳ năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phải thu ngắn hạn của khách hàng cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải thu từ Công ty TNHH MTV Gemadept Hải Phòng cuối kỳ và đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản trả trước cho người bán ngắn hạn tăng hay giảm giữa cuối kỳ và đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro tín dụng của Gemadept dựa trên các khoản phải thu ngắn hạn từ các bên liên quan và khách hàng khác.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân giảm mạnh của khoản cho vay ngắn hạn đối với các bên liên quan từ đầu năm đến cuối kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ dự phòng tổn thất trên giá gốc của các khoản đầu tư góp vốn vào đơn vị khác cuối kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 4)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n6. Phải thu ngắn hạn/dài hạn khác\n6a. Phải thu ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải thu các bên liên quan | 33.143.795.708 | 105.069.689.421 |\n| Công ty TNHH Golden Globe - Chi hộ | 28.442.279.250 | 27.118.465.500 |\n| Công ty Cổ phần Du lịch Minh Đạm - Lãi cho vay, chi hộ | 3.399.647.524 | 3.245.793.889 |\n| Công ty TNHH MTV Vận tải biển Gemadept - Nhờ thu hộ, chi hộ | 1.167.056.003 | 682.511.484 |\n| Công ty TNHH MTV Tiếp vận Gemadept - Chi hộ | 134.812.931 | - |\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link - Chi hộ, lãi cho vay | - | 34.520.548 |\n| Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn - Cổ tức được chia | - | 73.988.398.000 |\n| Phải thu các tổ chức và cá nhân khác | 293.225.094.721 | 148.448.314.600 |\n| Tạm ứng | 228.664.849.635 | 91.289.142.360 |\n| Các khoản ký quỹ, đặt cọc ngắn hạn | 4.730.694.925 | 9.594.192.638 |\n| Công ty TNHH Sông Hằng - Góp vốn hợp tác thực hiện dự án Cảng tổng hợp Lê Chân | 4.000.000.000 | 4.000.000.000 |\n| Các khoản chi hộ | 23.756.102.301 | 11.075.418.250 |\n| Các khoản phải thu ngắn hạn khác | 32.073.447.860 | 32.489.561.352 |\n| Cộng | 326.368.890.429 | 253.518.004.021 |\n\n6b. Phải thu dài hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Công ty Cổ phần Đầu tư Xây dựng Phát triển Hạ tầng Mặt Trời Đông Dương - Góp vốn hợp tác thực hiện dự án Khu dịch vụ hậu cần logistics | 18.000.000.000 | 18.000.000.000 |\n| Các khoản ký quỹ, đặt cọc dài hạn | 18.814.349.587 | 13.654.955.799 |\n| Cộng | 36.814.349.587 | 31.654.955.799 |\n\n7. Dự phòng phải thu ngắn hạn khó đòi\nTình hình biến động dự phòng nợ phải thu khó đòi như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Số đầu năm | 34.864.521.586 | 11.172.305.211 |\n| Dự phòng trong kỳ | 307.221.649 | 243.270.704 |\n| Xóa nợ | - | 517.068.750 |\n| Số cuối kỳ | 35.171.743.235 | 10.898.507.165 |\n\n8. Hàng tồn kho\n| Chỉ tiêu | Giá gốc Số cuối kỳ | Dự phòng Số cuối kỳ | Giá gốc Số đầu năm | Dự phòng Số đầu năm |\n|---|---|---|---|---|\n| Nguyên liệu, vật liệu | 26.175.476.770 | - | 23.300.319.239 | - |\n| Nhiên liệu tồn trên tàu | 10.441.774.019 | - | 12.980.006.143 | - |\n| Phụ tùng thay thế | 13.919.171.476 | - | 18.137.913.390 | - |\n| Công cụ dụng cụ | 551.376.045 | - | 339.796.190 | - |\n| Chi phí sản xuất kinh doanh dở dang | 9.421.493.469 | - | 9.640.549.338 | - |\n| Hàng hóa, thành phẩm | 2.792.560.058 | - | 3.771.182.261 | - |\n| Cộng | 63.301.851.837 | - | 68.169.766.561 | - |",
+    "questions": [
+      {
+        "question": "Tổng phải thu ngắn hạn khác của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hàng tồn kho của công ty cuối kỳ năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản tạm ứng trong phải thu ngắn hạn khác thay đổi như thế nào giữa cuối kỳ và đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự biến động của dự phòng phải thu ngắn hạn khó đòi lũy kế từ đầu năm đến cuối kỳ này so với năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro liên quan đến các khoản phải thu từ các bên liên quan trong phải thu ngắn hạn khác.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "So sánh cơ cấu hàng tồn kho (nguyên liệu, nhiên liệu, phụ tùng,...) giữa cuối kỳ và đầu năm. Có nhận xét gì về sự thay đổi này?",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có dự phòng giảm giá hàng tồn kho đến sức khỏe tài chính của Gemadept.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 5)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n9. Chi phí ngắn hạn/dài hạn\n9a. Chi phí trả trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Chi phí bảo hiểm | 5.961.060.543 | 884.183.940 |\n| Chi phí sửa chữa | 1.829.006.908 | 3.472.177.644 |\n| Các chi phí trả trước ngắn hạn khác | 5.058.054.411 | 3.593.236.599 |\n| Cộng | 12.848.121.862 | 7.949.598.183 |\n\n9b. Chi phí trả trước dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền thuê đất | 1.177.877.318.939 | 686.651.950.762 |\n| Chi phí lãi thuê tài chính Container | 657.652.903 | 3.853.156.707 |\n| Chi phí sửa chữa | 20.370.676.308 | 12.671.290.161 |\n| Các chi phí trả trước dài hạn khác | 39.449.034.500 | 29.197.182.782 |\n| Cộng | 1.238.354.682.650 | 732.373.580.412 |\n- Tiền thuê đất của Công ty cổ phần ICD Nam Hải và Công ty cổ phần Cảng Nam Đình Vũ. Tiền thuê đất này đã được thế chấp để đảm bảo cho khoản vay tại Ngân hàng Thương mại Cổ phần Quốc Tế Việt Nam - TTKD KHDN Lớn Hội sở và Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh 1 TP. Hồ Chí Minh.\n\n10. Tài sản cố định hữu hình\nNguyên giá\n| Loại tài sản cố định | Số đầu năm | Mua trong kỳ | Đầu tư xây dựng cơ bản hoàn thành | Thanh lý, nhượng bán | Giảm do chuyển nhượng vốn | Tăng/Giảm khác | Ảnh hưởng của chênh lệch tỷ giá | Số cuối kỳ |\n|---|---|---|---|---|---|---|---|---|\n| Nhà cửa, vật kiến trúc | 2.242.842.696.118 | 698.380.000 | 857.468.805 | - | 78.161.526.611 | - | 11.455.855.336 | 2.177.692.873.648 |\n| Máy móc và thiết bị | 2.092.627.067.481 | 4.185.098.290 | 114.330.266.302 | 3.280.398.039 | 76.739.563.807 | 34.029.260 | 84.328.575 | 2.131.206.798.802 |\n| Phương tiện vận tải, truyền dẫn | 1.842.027.197.968 | 10.159.257.770 | 46.901.083.703 | 4.497.396.588 | 47.057.574.047 | - | 1.388.793.296 | 1.848.955.391.362 |\n| Thiết bị, dụng cụ quản lý | 57.331.143.399 | 9.256.713.028 | - | - | 3.554.181.958 | - | 71.408.275 | 63.071.053.484 |\n| Cộng | 6.234.828.104.966 | 24.299.449.088 | 162.088.818.810 | 7.777.794.627 | 205.512.846.423 | 34.029.260 | 13.000.385.482 | 6.220.926.117.296 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước ngắn hạn của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá nhà cửa, vật kiến trúc của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí thuê đất dài hạn của Gemadept đã tăng hay giảm so với đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tổng giá trị tài sản cố định hữu hình được mua trong kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc thế chấp tiền thuê đất đến tình hình tài chính của Gemadept.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược đầu tư và thanh lý tài sản cố định hữu hình của Gemadept trong kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích các yếu tố làm thay đổi nguyên giá máy móc và thiết bị từ đầu năm đến cuối kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 6)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n10. Tài sản cố định hữu hình\nGiá trị hao mòn\n| Loại tài sản cố định | Số đầu năm | Khấu hao trong kỳ | Thanh lý, nhượng bán | Giảm do chuyển nhượng vốn | Tăng/Giảm khác | Ảnh hưởng của chênh lệch tỷ giá | Số cuối kỳ |\n|---|---|---|---|---|---|---|---|\n| Nhà cửa, vật kiến trúc | 905.696.814.254 | 52.514.981.316 | - | 74.997.030.468 | - | 10.862.601.993 | 894.077.367.095 |\n| Máy móc và thiết bị | 567.686.266.652 | 59.172.839.106 | 3.280.398.039 | 72.095.468.923 | 3.583.260 | 58.408.039 | 551.541.646.835 |\n| Phương tiện vận tải, truyền dẫn | 840.523.228.794 | 57.884.039.787 | 4.497.396.588 | 46.846.935.644 | - | 917.279.128 | 847.983.798.737 |\n| Thiết bị, dụng cụ quản lý | 29.691.892.468 | 4.086.273.076 | - | 1.877.915.148 | - | 71.408.275 | 31.968.075.411 |\n| Cộng | 2.343.598.202.168 | 173.658.133.285 | 7.777.794.627 | 195.817.350.183 | 3.583.260 | 11.909.697.435 | 2.325.570.888.078 |\n\nGiá trị còn lại\n| Loại tài sản cố định | Số đầu năm | Số cuối kỳ |\n|---|---|---|\n| Nhà cửa, vật kiến trúc | 1.337.145.881.864 | 1.283.615.506.553 |\n| Máy móc và thiết bị | 1.524.940.800.829 | 1.579.665.151.967 |\n| Phương tiện vận tải, truyền dẫn | 1.001.503.969.174 | 1.000.971.592.625 |\n| Thiết bị, dụng cụ quản lý | 27.639.250.931 | 31.102.978.073 |\n| Cộng | 3.891.229.902.798 | 3.895.355.229.218 |\n\n11. Tài sản cố định thuê tài chính\n| Chỉ tiêu | Thiết bị và phương tiện vận tải |\n|---|---|\n| Nguyên giá | |\n| Số đầu năm | 235.413.682.251 |\n| Số cuối kỳ | 235.413.682.251 |\n| Giá trị hao mòn | |\n| Số đầu năm | 219.007.268.162 |\n| Khấu hao trong kỳ | 13.869.900.912 |\n| Số cuối kỳ | 232.877.169.074 |\n| Giá trị còn lại | |\n| Số đầu năm | 16.406.414.089 |\n| Số cuối kỳ | 2.536.513.177 |\n\n12. Tài sản cố định vô hình\n| Chỉ tiêu | Quyền sử dụng đất | Chương trình phần mềm máy tính | Chi phí thiết kế trang Web | Cộng |\n|---|---|---|---|---|\n| Nguyên giá | | | | |\n| Số đầu năm | 319.091.944.250 | 63.084.610.721 | 30.000.000 | 382.206.554.971 |\n| Mua trong kỳ | 328.840.000 | - | - | 328.840.000 |\n| Giảm do chuyển nhượng vốn | 22.500.000.000 | 2.511.200.000 | - | 25.011.200.000 |\n| Ảnh hưởng của chênh lệch tỷ giá | 14.416.347 | 600 | 7.013.575 | 14.423.361.175 |\n| Số cuối kỳ | 311.008.291.850 | 60.909.264.296 | 30.000.000 | 371.947.556.146 |\n| Giá trị hao mòn | | | | |\n| Số đầu năm | 79.807.394.023 | 43.979.154.046 | 30.000.000 | 123.816.548.069 |\n| Khấu hao trong kỳ | 3.140.613.994 | 2.754.076.950 | - | 5.894.690.944 |\n| Giảm do chuyển nhượng vốn | 7.119.695.869 | 1.890.522.533 | - | 9.010.218.402 |\n| Ảnh hưởng của chênh lệch tỷ giá | 3.609.069.071 | 7.013.575 | - | 3.616.082.646 |\n| Số cuối kỳ | 79.437.381.219 | 44.849.722.038 | 30.000.000 | 124.317.103.257 |\n| Giá trị còn lại | | | | |\n| Số đầu năm | 239.284.550.227 | 19.105.456.675 | - | 258.390.006.902 |\n| Số cuối kỳ | 231.570.910.631 | 16.059.542.258 | - | 247.630.452.889 |",
+    "questions": [
+      {
+        "question": "Tổng giá trị hao mòn lũy kế của tài sản cố định hữu hình cuối kỳ của Gemadept là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định thuê tài chính cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí khấu hao trong kỳ của máy móc và thiết bị với nhà cửa, vật kiến trúc.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng giá trị còn lại của tài sản cố định vô hình cuối kỳ là bao nhiêu và thay đổi như thế nào so với đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc giảm do chuyển nhượng vốn đối với tài sản cố định hữu hình của Gemadept.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích sự khác biệt về khấu hao giữa tài sản cố định hữu hình và tài sản cố định thuê tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa vào dữ liệu, đánh giá hiệu quả của việc quản lý tài sản cố định vô hình (quyền sử dụng đất, phần mềm) của Gemadept.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 7)\nLoại nội dung: Bảng\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n13. Chi phí xây dựng cơ bản dở dang\n| Chỉ tiêu | Số đầu năm | Chi phí phát sinh trong kỳ | Kết chuyển vào TSCĐ trong kỳ | Kết chuyển tăng/giảm khác | Số cuối kỳ |\n|---|---|---|---|---|---|\n| Mua sắm TSCĐ | 46.959.771.896 | 842.314.530 | 46.901.083.703 | - | 901.002.723 |\n| XDCB dở dang | 1.712.384.698.926 | 192.054.476.166 | 115.187.735.107 | 80.850.065.828 | 1.870.101.505.813 |\n| Công trình khu dân cư Rạch Chiếc | 51.165.085.825 | - | - | - | 51.165.085.825 |\n| Dự án trồng cao su của Pacific Pride | 840.183.328.100 | 847.346.990 | 41.029.902.605 | - | 882.060.577.695 |\n| Dự án trồng cao su của Pacific Pearl | 451.868.180.019 | 389.666.152 | 214.404.386 | 22.061.596.434 | 474.105.038.219 |\n| Dự án trồng cao su của Pacific Lotus | 363.756.839.991 | 720.878.660 | 643.064.419 | 17.758.566.789 | 381.593.221.021 |\n| Dự án Cảng Nam Đình Vũ | 469.826.622 | 114.815.374.864 | 114.330.266.302 | - | 954.935.184 |\n| Các dự án khác | 4.941.438.369 | 75.281.209.500 | - | - | 80.222.647.869 |\n| Cộng | 1.759.344.470.822 | 192.896.790.696 | 162.088.818.810 | 80.850.065.828 | 1.871.002.508.536 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí xây dựng cơ bản dở dang của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí phát sinh trong kỳ cho dự án Cảng Nam Đình Vũ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí xây dựng cơ bản dở dang cuối kỳ và đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tổng giá trị đã được kết chuyển vào Tài sản cố định (TSCĐ) trong kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tình hình tiến độ và quy mô đầu tư của các dự án trồng cao su.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ hoàn thành các dự án xây dựng cơ bản của Gemadept trong kỳ và tác động đến tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích các yếu tố đã làm tăng và giảm chi phí xây dựng cơ bản dở dang từ đầu năm đến cuối kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 8)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n14. Tài sản thuế thu nhập hoãn lại\nTài sản thuế thu nhập hoãn lại liên quan đến các khoản chênh lệch tạm thời được khấu trừ.\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Số đầu năm | 184.952.918.307 | 151.296.466.870 |\n| Ghi nhận vào kết quả kinh doanh trong kỳ | 6.742.817.116 | 4.511.786.678 |\n| Tăng/giảm do chuyển nhượng vốn | 202.473.676 | 4.559.106.224 |\n| Bù trừ với thuế thu nhập hoãn lại phải trả | 2.124.368.708 | 382.895.345 |\n| Số cuối kỳ | 175.883.258.807 | 151.632.042.669 |\n\n15. Lợi thế thương mại\nLợi thế thương mại phát sinh từ việc đầu tư vào Công ty cổ phần Cảng Nam Hải và Công ty cổ phần Cảng Bình Dương. Chi tiết phân bổ như sau:\n| Chỉ tiêu | Nguyên giá | Số đã phân bổ | Giá trị còn lại |\n|---|---|---|---|\n| Số đầu năm | 557.730.678.514 | 399.009.993.389 | 158.720.685.125 |\n| Phân bổ trong kỳ | - | 13.801.798.706 | - |\n| Giảm do chuyển nhượng vốn | 281.694.704.388 | 281.694.704.388 | - |\n| Số cuối kỳ | 276.035.974.126 | 131.117.087.707 | 144.918.886.419 |\n\n16. Phải trả người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | 9.859.948.292 | 6.682.482.271 |\n| Công ty TNHH MTV Vận tải biển Gemadept | 7.014.211.207 | 4.907.907.215 |\n| Công ty TNHH MTV Gemadept Hải Phòng | 538.430.000 | - |\n| Công ty Cổ phần Mekong Logistics | 797.655.873 | 830.427.039 |\n| Công ty TNHH MTV Tiếp vận Gemadept | 1.437.650.890 | 761.209.817 |\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link | 72.000.322 | 182.938.200 |\n| Phải trả các nhà cung cấp khác | 587.656.703.148 | 511.241.423.005 |\n| Rich Mountain Trading Co., Ltd | 41.801.040.162 | 39.991.023.780 |\n| V.K.S Capital Investment Co., Ltd | 55.154.266.965 | 61.934.332.290 |\n| Mitsui Es Machinery Co., Ltd | - | 12.889.170.000 |\n| Shanghai Jinjiang Shipping Co., Ltd | - | 82.064.138.395 |\n| Các nhà cung cấp khác | 490.701.396.021 | 314.362.758.540 |\n| Cộng | 597.516.651.440 | 517.923.905.276 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản thuế thu nhập hoãn lại cuối kỳ năm nay của Gemadept là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của lợi thế thương mại cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phải trả người bán ngắn hạn của Gemadept cuối kỳ tăng hay giảm so với đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh các khoản phải trả cho Công ty TNHH MTV Vận tải biển Gemadept và Công ty Cổ phần Mekong Logistics cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm do chuyển nhượng vốn đối với lợi thế thương mại của Gemadept.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro liên quan đến các khoản phải trả người bán ngắn hạn từ các nhà cung cấp lớn của Gemadept.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích nguyên nhân chính dẫn đến sự thay đổi của tài sản thuế thu nhập hoãn lại trong kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 9)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n17. Người mua trả tiền trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước của các khách hàng khác | | |\n| Các khách hàng khác | 9.149.502.277 | 3.633.365.459 |\n| Cộng | 9.149.502.277 | 3.633.365.459 |\n\n18. Thuế và các khoản phải nộp Nhà nước\n| Chỉ tiêu | Phải nộp Số cuối kỳ | Phải thu Số cuối kỳ | Phải nộp Số đầu năm | Phải thu Số đầu năm |\n|---|---|---|---|---|\n| Thuế GTGT | 8.148.885.653 | 2.718.230.924 | 10.258.335.553 | 514.990.266 |\n| Thuế thu nhập doanh nghiệp | 75.592.287.092 | 9.278.401.511 | 54.958.774.557 | 9.721.368.524 |\n| Thuế thu nhập cá nhân | 2.003.175.792 | 104.394.299 | 5.663.295.876 | 58.376.544 |\n| Các loại thuế khác | 2.724.882.225 | 127.720.734 | 2.810.386.508 | 1.429.093.658 |\n| Cộng | 88.469.230.762 | 12.228.747.468 | 73.690.792.494 | 11.723.828.992 |\n\n19. Phải trả người lao động\nTiền lương và các khoản khác phải trả công nhân viên.\n\n20. Chi phí phải trả ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các tổ chức và cá nhân khác | | | |\n| Chi phí cho dự án trồng cao su | 118.622.615.454 | 237.080.425.640 |\n| Chi phí lãi vay | 8.970.295.640 | 8.656.176.657 |\n| Chi phí bốc xếp, vận chuyển | 21.574.438.770 | 9.851.664.242 |\n| Chi phí thi công công trình | 20.000.000.000 | 20.000.000.000 |\n| Các chi phí phải trả ngắn hạn khác | 258.260.867.380 | 42.566.778.585 |\n| Cộng | 427.428.217.244 | 318.155.045.124 |\n\n21. Doanh thu chưa thực hiện ngắn hạn/dài hạn\n21a. Doanh thu chưa thực hiện ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền trả trước về cho thuê tài sản cố định | 1.512.380.799 | 8.477.602.875 |\n| Cộng | 1.512.380.799 | 8.477.602.875 |\n\n21b. Doanh thu chưa thực hiện dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Lãi hoãn lại do đánh giá lại tài sản cố định góp vốn vào công ty liên kết và cơ sở kinh doanh đồng kiểm soát | 192.628.789.365 | 195.817.565.684 |\n| Lãi hoãn lại do cung cấp dịch vụ cho cơ sở kinh doanh đồng kiểm soát | 77.064.829.754 | 79.449.504.218 |\n| Cộng | 269.693.619.119 | 275.267.069.902 |",
+    "questions": [
+      {
+        "question": "Tổng người mua trả tiền trước ngắn hạn của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản thuế thu nhập doanh nghiệp phải nộp cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí cho dự án trồng cao su trong chi phí phải trả ngắn hạn giữa cuối kỳ và đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Doanh thu chưa thực hiện ngắn hạn của công ty giảm bao nhiêu từ đầu năm đến cuối kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích biến động của các khoản thuế và các khoản phải nộp Nhà nước giữa cuối kỳ và đầu năm.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc giảm doanh thu chưa thực hiện ngắn hạn đến doanh thu trong tương lai của Gemadept.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích mối quan hệ giữa các khoản 'Lãi hoãn lại' trong doanh thu chưa thực hiện dài hạn với hoạt động đầu tư của công ty.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 10)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n22. Phải trả ngắn hạn/dài hạn khác\n22a. Phải trả ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | 1.866.981.228 | 79.541.731.353 |\n| Công ty TNHH MTV Vận tải biển Gemadept - Thu hộ, phải trả khác | 1.056.834.286 | - |\n| Công ty TNHH MTV Tiếp vận Gemadept - Thu hộ, phải trả khác | 737.842.442 | - |\n| Công ty TNHH Tiếp vận K Line - Gemadept - Nhận đặt cọc cho thuê văn phòng | 72.304.500 | 72.304.500 |\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link - Nhờ chi hộ | - | 7.237.231 |\n| Phải trả các tổ chức và cá nhân khác | 284.009.962.140 | 306.678.964.648 |\n| Chi phí thuê đất | 10.897.094.670 | 11.725.674.240 |\n| Kinh phí công đoàn, Bảo hiểm xã hội, Bảo hiểm y tế, Bảo hiểm thất nghiệp | 2.778.712.865 | 3.023.408.400 |\n| Các khoản đặt cọc ngắn hạn | 6.864.586.129 | 5.590.204.518 |\n| Cổ tức phải trả | 5.762.276.850 | 219.276.850 |\n| Phải trả về dịch vụ làm đại lý | 77.463.580.917 | 94.050.783.207 |\n| Nhận đặt cọc để chuyển nhượng công ty con | - | 20.000.000.000 |\n| Các khoản phải trả ngắn hạn khác | 180.243.710.709 | 172.069.617.433 |\n| Cộng | 285.876.943.368 | 306.758.506.379 |\n\n22b. Phải trả dài hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả bên liên quan | 2.000.000.000 | 2.000.000.000 |\n| Công ty TNHH MTV Tiếp vận Gemadept - Nhận đặt cọc cho thuê kho | 2.000.000.000 | 2.000.000.000 |\n| Phải trả các tổ chức và cá nhân khác | 110.156.103.498 | 102.658.652.936 |\n| Chi phí thuê đất | 110.156.103.498 | 102.322.976.990 |\n| Các khoản phải trả dài hạn khác | - | 335.675.946 |\n| Cộng | 112.156.103.498 | 104.658.652.936 |\n- Các khoản chi phí thuê đất phát sinh tại Công ty cổ phần Hòn Ngọc Thái Bình Dương, Công ty Cổ phần Hoa Sen Thái Bình Dương và Công ty cổ phần Niềm Kiêu Hãnh Thái Bình Dương được phân bổ cho giai đoạn từ năm 2011 lũy kế đến ngày 30 tháng 06 năm 2024. Các khoản chi phí này sẽ được thanh toán sau thời hạn 05 năm kể từ ngày ký Hợp đồng thuê đất.\n\n22c. Nợ quá hạn chưa thanh toán\nTập đoàn không có nợ phải trả khác quá hạn chưa thanh toán.\n\n23. Vay và nợ thuê tài chính ngắn hạn/dài hạn\n23a. Vay và nợ thuê tài chính ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Vay ngắn hạn phải trả các tổ chức | 24.811.532.960 | 63.358.586.830 |\n| Vay ngắn hạn ngân hàng | 24.811.532.960 | 63.358.586.830 |\n| Vay Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh 1 TP. Hồ Chí Minh | - | 23.091.357.960 |\n| Vay Ngân hàng TNHH MTV Shinhan Việt Nam | - | 49.271.128.028 |\n| Vay Ngân hàng The Siam Commercial Bank Public Company Limited - Chi nhánh TP. HCM | - | 4.055.384.068 |\n| Vay Ngân hàng TNHH MTV HSBC Việt Nam | 1.720.175.000 | 2.241.705.000 |\n| Vay Ngân Hàng Đại Chúng TNHH Kasikorn Bank - Chi nhánh TP. HCM | - | 7.790.369.734 |\n| Vay và nợ thuê tài chính đến hạn trả các tổ chức | 376.584.937.530 | 382.001.187.258 |\n| Vay dài hạn đến hạn trả | 369.979.917.523 | 357.760.173.770 |\n| Nợ thuê tài chính đến hạn trả | 6.605.020.007 | 24.241.013.488 |\n| Cộng | 401.396.470.490 | 445.359.774.088 |\nTập đoàn có khả năng trả được các khoản vay và nợ thuê tài chính ngắn hạn.",
+    "questions": [
+      {
+        "question": "Tổng phải trả ngắn hạn khác của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải trả các bên liên quan trong phải trả ngắn hạn khác giữa cuối kỳ và đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản cổ tức phải trả tăng hay giảm từ đầu năm đến cuối kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản vay và nợ thuê tài chính ngắn hạn và rủi ro thanh khoản tiềm ẩn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có nợ phải trả khác quá hạn chưa thanh toán đến uy tín tài chính của Gemadept.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích ý nghĩa của việc khoản chi phí thuê đất trong phải trả dài hạn khác sẽ được thanh toán sau 05 năm kể từ ngày ký hợp đồng thuê đất.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 11)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n23b. Vay và nợ thuê tài chính dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Vay dài hạn ngân hàng | 1.613.235.313.359 | 1.518.367.922.844 |\n| Vay Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh 1 TP. Hồ Chí Minh | 926.619.425.284 | 963.734.475.086 |\n| Vay Ngân hàng TMCP Quốc Tế Việt Nam - TTKD KHDN Lớn Hội sở | 263.439.549.491 | 315.694.107.349 |\n| Vay Ngân hàng TNHH MTV Shinhan Việt Nam | 157.988.529.126 | 182.344.070.629 |\n| Vay Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - Chi nhánh Ba Mươi Tháng Tư | 265.187.809.458 | 56.595.269.780 |\n| Nợ thuê tài chính | - | 20.309.471 |\n| Thuê tài chính Global Container Internationnal LLC | - | 20.309.471 |\n| Cộng | 1.613.235.313.359 | 1.518.388.232.315 |\nTập đoàn có khả năng trả được các khoản vay và nợ thuê tài chính dài hạn.\n\n23c. Vay và nợ thuê tài chính quá hạn chưa thanh toán\nTập đoàn không có các khoản vay và nợ thuê tài chính quá hạn chưa thanh toán.\n\n24. Dự phòng phải trả ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Dự phòng chi phí nạo vét, sửa chữa mặt bãi | 15.158.441.000 | 30.349.225.000 |\n| Dự phòng chi phí bảo hành công trình xây dựng | 15.900.000.000 | 19.900.000.000 |\n| Dự phòng tổn thất phải bồi thường trong quá trình vận chuyển | 1.752.276.539 | 1.752.276.539 |\n| Cộng | 32.810.717.539 | 52.001.501.539 |\n\n25. Quỹ khen thưởng, phúc lợi\nQuỹ khen thưởng, phúc lợi của Công ty bao gồm quỹ khen thưởng, quỹ phúc lợi và quỹ Hội đồng quản trị.\n\n26. Vốn chủ sở hữu\n26a. Bảng đối chiếu biến động của vốn chủ sở hữu\n| Chỉ tiêu | Số đầu năm | Tăng trong kỳ | Giảm trong kỳ | Số cuối kỳ |\n|---|---|---|---|---|\n| Vốn góp của chủ sở hữu | 3.058.985.570.000 | 45.884.000.000 | - | 3.104.869.570.000 |\n| Thặng dư vốn cổ phần | 1.941.832.197.040 | - | - | 1.941.832.197.040 |\n| Vốn khác của chủ sở hữu | 128.097.775.902 | - | - | 128.097.775.902 |\n| Chênh lệch tỷ giá hối đoái | 358.279.382.052 | 76.200.299.223 | - | 434.479.681.275 |\n| Quỹ đầu tư phát triển | 61.305.100.650 | 11.587.176.443 | - | 72.892.277.093 |\n| Quỹ khác thuộc vốn chủ sở hữu | 68.471.352.005 | 3.910.484.567 | - | 72.381.836.572 |\n| Lợi nhuận sau thuế chưa phân phối | 2.963.514.009.028 | 862.576.373.299 | 116.605.024.705 | 3.709.485.357.622 |\n| Cộng | 8.580.485.386.677 | 1.000.158.333.532 | 116.605.024.705 | 9.464.038.695.504 |",
+    "questions": [
+      {
+        "question": "Tổng vay và nợ thuê tài chính dài hạn của Gemadept cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng dự phòng phải trả ngắn hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh vốn góp của chủ sở hữu cuối kỳ và đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Quỹ đầu tư phát triển tăng hay giảm trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng quản lý nợ dài hạn của Gemadept dựa trên thông tin được cung cấp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của biến động lợi nhuận sau thuế chưa phân phối đến vốn chủ sở hữu của Gemadept.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích các yếu tố đã làm tăng và giảm vốn chủ sở hữu của công ty trong kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT - Phần 12 và VI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT - Phần 1)\nLoại nội dung: Cả hai\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n26b. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Số lượng cổ phiếu đã phát hành | 310.486.957 | 305.898.557 |\n| Cổ phiếu phổ thông | 310.486.957 | 305.898.557 |\n| Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu được mua lại | - | - |\n| Cổ phiếu phổ thông | - | - |\n| Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu đang lưu hành | 310.486.957 | 305.898.557 |\n| Cổ phiếu phổ thông | 310.486.957 | 305.898.557 |\n| Cổ phiếu ưu đãi | - | - |\n\nMệnh giá cổ phiếu đang lưu hành: 10.000 VND.\n\n26c. Chênh lệch tỷ giá hối đoái\nChênh lệch tỷ giá phát sinh do chuyển đổi Báo cáo tài chính của các Công ty con lập bằng USD sang VND.\n\n27. Lợi ích cổ đông không kiểm soát\nLợi ích cổ đông không kiểm soát thể hiện phần quyền lợi của các cổ đông không kiểm soát trong giá trị tài sản thuần của các công ty con.\n\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT\n1. Doanh thu bán hàng và cung cấp dịch vụ\n1a. Tổng doanh thu\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Doanh thu hoạt động khai thác cảng | 1.828.339.539.364 | 1.338.077.671.661 |\n| Doanh thu hoạt động logistics, cho thuê văn phòng, khác | 358.297.335.652 | 476.067.349.384 |\n| Cộng | 2.186.636.875.016 | 1.814.145.021.045 |\n\n1b. Doanh thu bán hàng và cung cấp dịch vụ cho các bên liên quan\nNgoài giao dịch bán hàng và cung cấp dịch vụ cho các công ty liên doanh, liên kết được trình bày ở thuyết minh số V.2c, Tập đoàn không phát sinh giao dịch bán hàng và cung cấp dịch vụ cho các bên liên quan không phải là công ty liên doanh, liên kết.",
+    "questions": [
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ của Gemadept là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng doanh thu bán hàng và cung cấp dịch vụ lũy kế từ đầu năm đến cuối kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chênh lệch tỷ giá hối đoái phát sinh do hoạt động nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Doanh thu hoạt động khai thác cảng tăng hay giảm so với năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đóng góp của từng mảng hoạt động (khai thác cảng, logistics) vào tổng doanh thu của Gemadept.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của mệnh giá cổ phiếu đang lưu hành là 10.000 VND đối với nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích cách lợi ích cổ đông không kiểm soát được xác định trong Báo cáo tài chính hợp nhất.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (VI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT - Phần 2)\nLoại nội dung: Cả hai\n\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT\n2. Giá vốn hàng bán\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Giá vốn hoạt động khai thác cảng | 1.024.255.268.108 | 719.723.416.529 |\n| Giá vốn hoạt động logistics | 179.427.003.974 | 208.423.695.350 |\n| Cộng | 1.203.682.272.082 | 928.147.111.879 |\n\n3. Doanh thu hoạt động tài chính\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Lãi tiền gửi ngân hàng | 26.969.682.877 | 22.572.502.618 |\n| Lãi từ hoạt động đầu tư chứng khoán | 4.885.845.176 | - |\n| Lãi chuyển nhượng vốn khoản đầu tư tài chính dài hạn | 323.239.544.230 | 1.844.422.436.722 |\n| Lãi chênh lệch tỷ giá | 9.909.818.472 | 15.617.070.196 |\n| Doanh thu hoạt động tài chính khác | 16.948.716.832 | 1.337.521.633 |\n| Cộng | 381.953.607.587 | 1.883.949.531.169 |\n\n4. Chi phí tài chính\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Chi phí lãi vay | 72.171.231.819 | 55.509.821.536 |\n| Lỗ chênh lệch tỷ giá | 30.674.357.142 | 33.648.658.536 |\n| Dự phòng/hoàn nhập các khoản đầu tư tài chính | 18.319.406.326 | 2.962.838.985 |\n| Chi phí tài chính khác | 282.342.493 | 903.806.933 |\n| Cộng | 84.808.525.128 | 93.025.125.990 |\n\n5. Chi phí bán hàng\nChi phí hoa hồng môi giới, chi phí khác cho hoạt động bán hàng.\n\n6. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Chi phí lương nhân viên quản lý | 99.768.304.360 | 88.222.625.887 |\n| Chi phí vật liệu, đồ dùng văn phòng | 3.402.071.644 | 3.567.209.823 |\n| Chi phí khấu hao tài sản cố định | 14.293.250.750 | 16.170.780.831 |\n| Phân bổ lợi thế thương mại | 13.801.798.706 | 13.801.798.706 |\n| Chi phí dịch vụ mua ngoài | 44.181.010.316 | 39.178.918.637 |\n| Chi phí khác | 55.850.028.093 | 49.557.010.294 |\n| Cộng | 231.296.463.869 | 210.498.344.178 |\n\n7. Thu nhập khác\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Lãi thanh lý tài sản cố định | 3.789.203.704 | 2.963.454.724 |\n| Phân bổ doanh thu chưa thực hiện | 5.573.450.783 | 11.974.370.935 |\n| Thu nhập khác | 2.723.083.757 | 7.314.825.143 |\n| Cộng | 12.085.738.244 | 22.252.650.802 |\n- Doanh thu chưa thực hiện bao gồm:\n- Phân bổ khoản đánh giá lại quyền sử dụng đất góp vốn vào Công ty cổ phần Cảng Cái Mép Gemadept - Terminal Link phát sinh từ năm 2008 với số tiền 283.980.000.000 VND, thời gian phân bổ 48 năm và 10 tháng.\n- Phân bổ khoản đánh giá lại giá trị tài sản cố định góp vốn vào Công ty TNHH CJ Gemadept Logistics Holdings phát sinh từ năm 2017 với số tiền 5.622.625.365 VND với thời gian phân bổ 10 năm.\n- Phân bổ khoản lợi nhuận chưa ghi nhận liên quan đến doanh thu dịch vụ tư vấn và thi công công trình cho Công ty cổ phần Cảng Cái Mép Gemadept - Terminal Link tương ứng với phần đã khấu hao và phân bổ trong năm của các tài sản này.",
+    "questions": [
+      {
+        "question": "Tổng giá vốn hàng bán lũy kế từ đầu năm đến cuối kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí lương nhân viên quản lý lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu hoạt động tài chính lũy kế năm nay với năm trước và nêu nguyên nhân chính dẫn đến sự thay đổi.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tổng chi phí quản lý doanh nghiệp lũy kế năm nay và so sánh với năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của chi phí lãi vay đến chi phí tài chính của Gemadept.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động logistics dựa trên giá vốn hoạt động logistics lũy kế năm nay so với năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích các thành phần của 'Phân bổ doanh thu chưa thực hiện' trong thu nhập khác và ý nghĩa của chúng.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Dự báo tác động của việc giảm chi phí dịch vụ mua ngoài đến chi phí quản lý doanh nghiệp trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: Công ty Cổ phần Gemadept\nMã cổ phiếu: GMD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý 2 năm 2024\nThời gian: Phát hành 30/07/2024, Quý 2 năm 2024 (Tính đến 30/06/2024)\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất (VI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT - Phần 3 và VII. NHỮNG THÔNG TIN KHÁC)\nLoại nội dung: Cả hai\n\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT\n8. Chi phí khác\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Chi phí khác | 2.824.775.500 | 4.313.104.226 |\n| Cộng | 2.824.775.500 | 4.313.104.226 |\n\n9. Lãi trên cổ phiếu\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp của cổ đông công ty mẹ | 862.576.373.299 | 1.852.574.275.241 |\n| Trích quỹ khen thưởng, phúc lợi, Quỹ Hội đồng quản trị, Ban điều hành và Ban kiểm soát | 42.359.775.371 | 34.119.006.222 |\n| Lợi nhuận tính lãi cơ bản trên cổ phiếu và lãi suy giảm trên cổ phiếu | 820.216.597.928 | 1.818.455.269.019 |\n| Số lượng bình quân gia quyền của cổ phiếu phổ thông đang lưu hành trong kỳ | 309.338.720 | 301.377.957 |\n| Lãi cơ bản trên cổ phiếu | 2.652 | 6.034 |\n| Lãi suy giảm trên cổ phiếu | 2.652 | 6.034 |\n\n10. Chi phí sản xuất kinh doanh theo yếu tố\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Chi phí nguyên liệu, vật liệu | 173.127.210.471 | 134.995.662.084 |\n| Chi phí nhân công | 255.367.758.008 | 237.804.038.020 |\n| Chi phí khấu hao tài sản cố định và lợi thế thương mại phân bổ | 207.224.523.856 | 194.608.260.342 |\n| Chi phí dịch vụ mua ngoài | 826.141.266.379 | 557.220.179.053 |\n| Chi phí khác | 92.647.251.292 | 86.131.128.628 |\n| Cộng | 1.554.508.010.006 | 1.210.759.268.127 |\n\nVII. NHỮNG THÔNG TIN KHÁC\n1. Giao dịch và số dư với các bên liên quan\nCác bên liên quan với Tập đoàn bao gồm các thành viên quản lý chủ chốt, các cá nhân có liên quan với các thành viên quản lý chủ chốt và các bên liên quan khác.\n1a. Giao dịch và số dư với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt\nCác thành viên quản lý chủ chốt gồm các thành viên Hội đồng quản trị và các thành viên Ban điều hành (Ban Tổng Giám đốc và Kế toán trưởng). Các cá nhân có liên quan với các thành viên quản lý chủ chốt là các thành viên mật thiết trong gia đình các thành viên quản lý chủ chốt.\nThu nhập của các thành viên quản lý chủ chốt\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này Năm nay | Lũy kế từ đầu năm đến cuối kỳ này Năm trước |\n|---|---|---|\n| Tiền lương | 11.443.811.384 | 8.615.754.300 |\n| Thu nhập khác | 2.580.000.000 | 3.547.571.680 |\n| Cộng | 14.023.811.384 | 12.163.325.980 |\n\n1b. Giao dịch và số dư với các bên liên quan khác\nCác bên liên quan khác với Tập đoàn gồm:\nBên liên quan khác | Mối quan hệ\n|---|---|\n| Công ty Cổ phần Cảng Cái Mép Gemadept - Terminal Link | Cơ sở kinh doanh đồng kiểm soát |\n| Công ty TNHH Tiếp vận K Line - Gemadept | Cơ sở kinh doanh đồng kiểm soát |\n| Công ty TNHH CJ Gemadept Shipping Holdings | Cơ sở kinh doanh đồng kiểm soát |\n| Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn | Công ty liên kết |\n| Công ty TNHH CJ Gemadept Logistics Holdings | Công ty liên kết |\n| Công ty TNHH Golden Globe | Công ty liên kết |\n| Công ty Cổ phần Thương cảng Vũng Tàu | Công ty liên kết |\n| Công ty TNHH Thương mại Quả cầu Vàng | Công ty liên kết |\n| Công ty Cổ phần Liên hợp Thực phẩm | Công ty liên kết |\n| Công ty Cổ phần Du lịch Minh Đạm | Công ty liên kết |\n| Công ty TNHH MTV Gemadept Hải Phòng | Công ty con của công ty liên kết |\n| Công ty TNHH MTV Tiếp vận Gemadept | Công ty con của công ty liên kết |\n| Công ty Cổ phần Mekong Logistics | Công ty con của công ty liên kết |\n| Công ty TNHH MTV Vận tải biển Gemadept | Công ty con của Cơ sở kinh doanh đồng kiểm soát |\n| Gemadept Shipping Singapore Pte. Ltd. | Công ty con của Cơ sở kinh doanh đồng kiểm soát |\n| Gemadept Malaysia Sdn. Bhd. | Công ty con của Cơ sở kinh doanh đồng kiểm soát |\n| Công ty Cổ phần Vận tải và Dịch vụ Điện lực | Công ty liên kết của công ty liên kết |\nGiao dịch với các bên liên quan khác\nNgoài các giao dịch phát sinh với các công ty liên doanh, liên kết đã được trình bày ở thuyết minh số V.2c. Tập đoàn không phát sinh giao dịch với các bên liên quan khác.\nCông nợ với các bên liên quan khác\nCông nợ với các bên liên quan khác được trình bày tại các thuyết minh số V.3, V.5, V.6, V. 16, V. 17, V.20, V.22 và V.23. Các khoản công nợ phải thu các bên liên quan khác không có bảo đảm và sẽ được thanh toán bằng tiền. Không có khoản dự phòng phải thu khó đòi nào được lập cho các khoản nợ phải thu các bên liên quan khác.\n\n2. Giải trình biến động lợi nhuận sau thuế\n| Chỉ tiêu | Quý 2 năm 2024 | Quý 2 năm 2023 | Chênh lệch giảm |\n|---|---|---|---|\n| Lợi nhuận sau thuế của công ty mẹ | 303.161.313.536 | 1.646.210.093.822 | 1.343.048.780.286 |\n| 6TĐN 2024 | 6TĐN 2023 | Chênh lệch giảm | |\n| Lợi nhuận sau thuế của công ty mẹ | 862.576.373.299 | 1.852.574.275.241 | 989.997.901.942 |\n\nLợi nhuận sau thuế quý 2 năm 2024 của công ty mẹ đạt hơn 303 tỷ, giảm hơn 1.343 tỷ so với cùng kỳ năm 2023. Lợi nhuận sau thuế 6 tháng đầu năm 2024 của công ty mẹ đạt hơn 862 tỷ, giảm hơn 989 tỷ so với cùng kỳ năm 2023.\nNguyên nhân chủ yếu do:\n- Trong quý 2 năm 2023 Công ty đã hoàn tất chuyển nhượng vốn tại Cảng Nam Hải Đình Vũ.\n- Lợi nhuận từ công ty liên doanh liên kết tăng.\n\nTP. Hồ Chí Minh, ngày 30 tháng 07 năm 2024\nNgười lập: Vũ Thị Anh Thư\nKế toán trưởng: Nguyễn Minh Nguyệt\nTổng Giám đốc: -",
+    "questions": [
+      {
+        "question": "Lãi cơ bản trên cổ phiếu của Gemadept lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí sản xuất kinh doanh theo yếu tố lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên nhân chính dẫn đến sự giảm lợi nhuận sau thuế của công ty mẹ trong Quý 2 năm 2024 là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh thu nhập của các thành viên quản lý chủ chốt lũy kế năm nay và năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc tăng chi phí dịch vụ mua ngoài đến tổng chi phí sản xuất kinh doanh của Gemadept.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích mối quan hệ giữa các bên liên quan của Gemadept và tầm quan trọng của các giao dịch với họ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa trên các yếu tố chi phí, hãy nhận định về cơ cấu chi phí chính của Gemadept.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

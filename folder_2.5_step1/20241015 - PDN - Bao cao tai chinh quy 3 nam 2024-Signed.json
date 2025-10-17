@@ -1,0 +1,914 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | Mã số | Thuyết minh | Quý 03 Năm nay | Quý 03 Năm trước | Lũy Kế Năm nay | Lũy Kế Năm trước |<br>|:-------------------------------------------|:------|:------------|:----------------|:------------------|:---------------|:-------------------|<br>| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | 6.1 | 332,791,074,373 | 300,322,486,358 | 968,056,320,945 | 832,355,576,292 |<br>| 2. Các khoản giảm trừ doanh thu | 02 | - | - | - | - | - |<br>| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | 6.1 | 332,791,074,373 | 300,322,486,358 | 968,056,320,945 | 832,355,576,292 |<br>| 4. Giá vốn hàng bán | 11 | 6.2 | 204,770,635,064 | 181,811,475,510 | 597,501,172,025 | 525,134,005,533 |<br>| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 128,020,439,309 | 118,511,010,848 | 370,555,148,920 | 307,221,570,759 |<br>| 6. Doanh thu hoạt động tài chính | 21 | 6.3 | 2,386,487,142 | 2,370,336,056 | 14,961,484,513 | 16,285,919,907 |<br>| 7. Chi phí tài chính | 22 | 6.4 | 1,565,981,331 | 2,265,941,343 | 5,219,655,155 | 8,391,715,983 |<br>| Trong đó: Lãi vay phải trả | 23 | | 1,562,934,867 | 2,265,941,343 | 5,192,556,150 | 8,391,715,983 |<br>| 8. Chi phí bán hàng | 25 | 6.5 | 3,637,607,460 | 5,814,987,953 | 14,891,134,886 | 13,238,584,564 |<br>| 9. Chi phí quản lý doanh nghiệp | 26 | 6.6 | 14,471,228,067 | 14,696,131,956 | 42,773,724,188 | 37,017,283,479 |<br>| 10. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 110,732,109,593 | 98,104,285,652 | 322,632,119,204 | 264,859,906,640 |<br>| 11. Thu nhập khác | 31 | 6.7 | 73,337,319 | 1,077,636,238 | 516,715,405 | 1,436,757,299 |<br>| 12. Chi phí khác | 32 | 6.8 | 42,483,650 | 2,358,147,270 | 172,900,579 | 2,415,847,335 |<br>| 13. Lợi nhuận khác | 40 | | 69,088,954 | (1,280,511,032) | 343,814,826 | (979,090,036) |<br>| 14. Tổng lợi nhuận trước thuế | 50 | | 110,801,198,547 | 96,823,774,620 | 322,975,934,030 | 263,880,816,604 |<br>| 15. Chi phí thuế TNDN hiện hành | 51 | 6.9 | 20,732,986,570 | 16,344,804,140 | 62,578,128,751 | 49,399,691,975 |<br>| 16. Chi phí thuế TNDN hoãn lại | 52 | - | - | - | - | - |<br>| 17. Lợi nhuận sau thuế TNDN | 60 | | 90,068,211,977 | 80,478,970,480 | 260,397,805,279 | 214,481,124,629 |<br>| 18. Lãi cơ bản trên cổ phiếu | 70 | 5.16.3 | 2,244 | 2,005 | 6,487 | 5,342 |<br>| 19. Lãi suy giảm trên cổ phiếu | 71 | - | - | - | - | - |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần lũy kế 9 tháng năm 2024 của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế TNDN quý 3 năm 2024 của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp quý 3 năm nay với quý 3 năm trước, có sự thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ chi phí tài chính trên tổng doanh thu thuần quý 3 năm nay là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên lợi nhuận thuần từ hoạt động kinh doanh lũy kế năm nay so với năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận ròng (Net Profit Margin) lũy kế 9 tháng năm 2024.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm chi phí lãi vay đến lợi nhuận của công ty trong quý 3.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa vào các chỉ số lợi nhuận, dự báo triển vọng kinh doanh của công ty trong quý cuối năm.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: BẢNG CÂN ĐỐI KẾ TOÁN (Phần A - Tài sản ngắn hạn)<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|:-------------------------------------------|:------|:------------|:------------|:------------|<br>| A. TÀI SẢN NGẮN HẠN | 100 | | 877,384,715,350 | 627,951,986,972 |<br>| I. Tiền và các khoản tương đương tiền | 110 | 5.1 | 317,496,374,344 | 182,785,268,810 |<br>| 1. Tiền | 111 | | 70,496,374,344 | 70,785,268,810 |<br>| 2. Các khoản tương đương tiền | 112 | | 247,000,000,000 | 112,000,000,000 |<br>| II. Đầu tư tài chính ngắn hạn | 120 | | 367,700,000,000 | 290,000,000,000 |<br>| 1. Chứng khoán kinh doanh | 121 | | - | - |<br>| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |<br>| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | 367,700,000,000 | 290,000,000,000 |<br>| III. Các khoản phải thu ngắn hạn | 130 | | 188,274,248,956 | 150,581,065,509 |<br>| 1. Phải thu ngắn hạn của khách hàng | 131 | 5.3 | 179,457,822,361 | 144,908,541,058 |<br>| 2. Trả trước cho người bán ngắn hạn | 132 | | 8,282,955,975 | 2,708,222,751 |<br>| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |<br>| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | - | - |<br>| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |<br>| 6. Phải thu ngắn hạn khác | 136 | | 3,049,284,350 | 5,334,450,279 |<br>| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | 5.4 | (2,515,813,730) | (2,370,148,579) |<br>| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |<br>| IV. Hàng tồn kho | 140 | | 1,221,954,515 | 810,820,692 |<br>| 1. Hàng tồn kho | 141 | | 1,221,954,515 | 810,820,692 |<br>| 2. Dự phòng giảm giá hàng tồn kho | 149 | | - | - |<br>| V. Tài sản ngắn hạn khác | 150 | | 2,692,137,539 | 3,774,831,961 |<br>| 1. Chi phí trả trước ngắn hạn | 151 | 5.8 | 390,172,604 | 1,145,073,093 |<br>| 2. Thuế GTGT được khấu trừ | 152 | | 0 | 0 |<br>| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | | 2,301,964,935 | 2,629,758,868 |<br>| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |<br>| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn của công ty tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối kỳ với đầu năm, xu hướng thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng các khoản đầu tư tài chính ngắn hạn trên tổng tài sản ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ thanh khoản của công ty dựa trên cơ cấu tài sản ngắn hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ tài sản có tính thanh khoản cao (Tiền + Tương đương tiền + Đầu tư tài chính ngắn hạn) trên tổng tài sản ngắn hạn cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn từ sự gia tăng của các khoản phải thu ngắn hạn và dự phòng phải thu khó đòi.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc tăng mạnh các khoản tương đương tiền đến khả năng sinh lời của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: BẢNG CÂN ĐỐI KẾ TOÁN (Phần B - Tài sản dài hạn)<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|:-------------------------------------------|:------|:------------|:------------|:------------|<br>| B. TÀI SẢN DÀI HẠN | 200 | | 711,386,384,981 | 731,353,867,990 |<br>| I. Các khoản phải thu dài hạn | 210 | | - | - |<br>| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |<br>| 2. Trả trước cho người bán dài hạn | 212 | | - | - |<br>| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |<br>| 4. Phải thu nội bộ dài hạn | 214 | | - | - |<br>| 5. Phải thu về cho vay dài hạn | 215 | | - | - |<br>| 6. Phải thu dài hạn khác | 216 | | - | - |<br>| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |<br>| II. Tài sản cố định | 220 | | 360,033,790,938 | 389,117,812,345 |<br>| 1. Tài sản cố định hữu hình | 221 | 5.6 | 358,031,775,360 | 386,641,705,074 |<br>| - Nguyên giá | 222 | | 956,002,130,841 | 946,734,409,767 |<br>| - Giá trị hao mòn lũy kế | 223 | | (597,970,355,481) | (560,092,704,693) |<br>| 2. Tài sản cố định thuê tài chính | 224 | | - | - |<br>| - Nguyên giá | 225 | | - | - |<br>| - Giá trị hao mòn lũy kế | 226 | | - | - |<br>| 3. Tài sản cố định vô hình | 227 | 5.7 | 2,002,015,578 | 2,476,107,271 |<br>| - Nguyên giá | 228 | | 7,639,774,168 | 7,552,674,168 |<br>| - Giá trị hao mòn lũy kế | 229 | | (5,637,758,590) | (5,076,566,897) |<br>| III. Bất động sản đầu tư | 230 | | - | - |<br>| - Nguyên giá | 231 | | - | - |<br>| - Giá trị hao mòn lũy kế | 232 | | - | - |<br>| IV. Tài sản dở dang dài hạn | 240 | 5.5 | 235,792,114,554 | 234,028,684,606 |<br>| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |<br>| 2. Chi phí xây dựng cơ bản dở dang | 242 | | 235,792,114,554 | 234,028,684,606 |<br>| V. Đầu tư tài chính dài hạn | 250 | 5.2 | 70,965,000,000 | 62,565,000,000 |<br>| 1. Đầu tư vào các công ty con | 251 | | - | - |<br>| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | | 15,165,000,000 | 15,165,000,000 |<br>| 3. Đầu tư góp vốn vào đơn vị khác | 253 | | 55,800,000,000 | 47,400,000,000 |<br>| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | - | - |<br>| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | - | - |<br>| VI. Tài sản dài hạn khác | 260 | | 44,595,479,489 | 45,642,371,039 |<br>| 1. Chi phí trả trước dài hạn | 261 | 5.8 | 44,595,479,489 | 45,642,371,039 |<br>| 2. Tài sản thuế thu nhập hoãn lại | 262 | | - | - |<br>| 3. Tài sản dài hạn khác | 268 | | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của công ty tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí xây dựng cơ bản dở dang cuối kỳ với đầu năm, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ đầu tư tài chính dài hạn trên tổng tài sản dài hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản dài hạn của công ty và ý nghĩa của nó đối với hoạt động sản xuất kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm giá trị tài sản cố định hữu hình đến khả năng sản xuất của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu chi phí xây dựng cơ bản dở dang tiếp tục tăng mà không đưa vào sử dụng kịp thời.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược đầu tư của công ty dựa trên cơ cấu tài sản dài hạn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: BẢNG CÂN ĐỐI KẾ TOÁN (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|:-------------------------------------------|:------|:------------|:------------|:------------|<br>| TỔNG CỘNG TÀI SẢN | 270 | | 1,588,771,100,336 | 1,359,305,854,962 |<br>| NGUỒN VỐN | 500 | | | |<br>| C. NỢ PHẢI TRẢ | 300 | | 435,890,050,861 | 358,844,022,366 |<br>| I. Nợ ngắn hạn | 310 | | 359,539,127,286 | 270,613,098,791 |<br>| 1. Phải trả người bán ngắn hạn | 311 | 5.9 | 120,452,038,985 | 80,652,007,137 |<br>| 2. Người mua trả tiền trước ngắn hạn | 312 | | 593,603,777 | 601,445,526 |<br>| 3. Thuế và các khoản phải nộp Nhà nước | 313 | 5.10 | 61,481,337,119 | 21,356,897,091 |<br>| 4. Phải trả người lao động | 314 | 5.11 | 27,683,185,163 | 27,095,330,000 |<br>| 5. Chi phí phải trả ngắn hạn | 315 | | 9,671,845,186 | 11,193,696,913 |<br>| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |<br>| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |<br>| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | 4,077,034,844 | 1,096,192,918 |<br>| 9. Phải trả ngắn hạn khác | 319 | 5.12 | 4,364,008,758 | 4,785,230,947 |<br>| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | 5.13 | 62,852,903,584 | 67,152,827,643 |<br>| 11. Dự phòng phải trả ngắn hạn | 321 | 5.14 | 23,704,773,716 | 14,960,000,000 |<br>| 12. Quỹ khen thưởng, phúc lợi | 322 | 5.15 | 44,658,396,154 | 41,719,470,616 |<br>| 13. Quỹ bình ổn giá | 323 | | - | - |<br>| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |<br>| II. Nợ dài hạn | 330 | | 76,350,923,575 | 88,230,923,575 |<br>| 1. Phải trả người bán dài hạn | 331 | | - | - |<br>| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |<br>| 3. Chi phí phải trả dài hạn | 333 | | - | - |<br>| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |<br>| 5. Phải trả nội bộ dài hạn | 335 | | - | - |<br>| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |<br>| 7. Phải trả dài hạn khác | 337 | 5.12 | 19,569,590,242 | 19,569,590,242 |<br>| 8. Vay và nợ thuê tài chính dài hạn | 338 | 5.13 | 56,781,333,333 | 68,661,333,333 |<br>| 9. Trái phiếu chuyển đổi | 339 | | - | - |<br>| 10. Cổ phiếu ưu đãi | 340 | | - | - |<br>| 11. Thuế thu nhập hoãn lại phải trả | 341 | | - | - |<br>| 12. Dự phòng phải trả dài hạn | 342 | | - | - |<br>| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |<br>| D. VỐN CHỦ SỞ HỮU | 400 | | 1,152,881,049,475 | 1,000,461,832,596 |<br>| I. Vốn chủ sở hữu | 410 | 5.16.1 | 1,152,881,049,475 | 1,000,461,832,596 |<br>| 1. Vốn góp của chủ sở hữu | 411 | | 370,439,080,000 | 370,439,080,000 |<br>| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 370,439,080,000 | 370,439,080,000 |<br>| - Cổ phiếu ưu đãi | 411b | | - | - |<br>| 2. Thặng dư vốn cổ phần | 412 | | 74,434,806,545 | 74,434,806,545 |<br>| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |<br>| 4. Vốn khác của chủ sở hữu | 414 | | - | - |<br>| 5. Cổ phiếu quỹ | 415 | | - | - |<br>| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |<br>| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |<br>| 8. Quỹ đầu tư phát triển | 418 | | 346,375,113,541 | 346,375,113,541 |<br>| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | - | - |<br>| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | 0 | 0 |<br>| 11. Lợi nhuận sau thuế chưa phân phối | 421 | | 361,632,049,389 | 209,212,832,510 |<br>| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 101,234,244,110 | 76,899,736,338 |<br>| - LNST chưa phân phối kỳ này | 421b | | 260,397,805,279 | 132,313,096,172 |<br>| 12. Nguồn vốn đầu tư XDCB | 422 | | - | - |<br>| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |<br>| 1. Nguồn kinh phí | 431 | | - | - |<br>| 2. Nguồn kinh phí đã hình thành TSCĐ | 432 | | - | - |<br>| TỔNG CỘNG NGUỒN VỐN | 440 | | 1,588,771,100,336 | 1,359,305,854,962 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối kỳ tại ngày 30/09/2024 của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu cuối kỳ của công ty là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ ngắn hạn cuối kỳ với đầu năm, xu hướng thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ nợ phải trả trên tổng nguồn vốn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá cơ cấu vốn của công ty (nợ và vốn chủ sở hữu) có hợp lý và an toàn không?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối kỳ và so sánh với đầu năm.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính nếu công ty tiếp tục phụ thuộc nhiều vào nợ ngắn hạn để tài trợ hoạt động.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của lợi nhuận sau thuế chưa phân phối tăng lên đến tình hình tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: BÁO CÁO LƯU CHUYỂN TIỀN TỆ (Theo phương pháp trực tiếp)<br>Loại nội dung: Bảng<br>| Chỉ Tiêu | Mã số | Thuyết minh | Kỳ này | Kỳ trước |<br>|:-----------------------------------------------------|:------|:------------|:---------------|:---------------|<br>| I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG SẢN XUẤT, KINH DOANH | 0 | | | |<br>| 1. Tiền thu từ bán hàng, cung cấp dịch vụ và doanh thu khác | 01 | | 1,008,302,289,031 | 872,599,319,275 |<br>| 2. Tiền chi trả cho người cung cấp hàng hóa và dịch vụ | 02 | | (517,312,695,916) | (471,203,906,413) |<br>| 3. Tiền chi trả cho người lao động | 03 | | (62,577,526,000) | (58,886,471,000) |<br>| 4. Tiền lãi vay đã trả | 04 | | (5,444,812,753) | (8,765,568,291) |<br>| 5. Thuế TNDN đã nộp | 05 | | (36,874,427,361) | (29,159,467,642) |<br>| 6. Tiền thu khác từ hoạt động kinh doanh | 06 | | 10,434,828,366 | 9,983,404,101 |<br>| 7. Tiền chi khác từ hoạt động kinh doanh | 07 | | (74,966,365,568) | (56,659,053,880) |<br>| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | | 321,561,289,799 | 257,908,256,150 |<br>| II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | 200 | | | |<br>| 1. Tiền chi để mua sắm, XD TSCĐ và các tài sản dài hạn khác | 21 | | (16,698,870,531) | (16,943,622,792) |<br>| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác | 22 | | 0 | 158,181,818 |<br>| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | | (367,700,000,000) | (285,000,000,000) |<br>| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | | 290,000,000,000 | 125,000,000,000 |<br>| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | | (8,400,000,000) | 0 |<br>| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | | 0 | 0 |<br>| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | | 17,295,823,185 | 17,800,563,146 |<br>| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | | (85,503,047,346) | (158,984,877,828) |<br>| III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | 300 | | | |<br>| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | | 0 | 0 |<br>| 2. Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu quỹ | 32 | | 0 | 0 |<br>| 3. Tiền thu từ đi vay | 33 | 7.1 | 144,037,156,052 | 184,613,096,284 |<br>| 4. Tiền trả nợ gốc vay | 34 | 7.2 | (160,217,080,111) | (260,691,986,636) |<br>| 5. Tiền trả nợ thuê tài chính | 35 | | 0 | 0 |<br>| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | | (85,167,212,860) | (55,748,764,550) |<br>| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | | (101,347,136,919) | (131,827,654,902) |<br>| Lưu chuyển tiền thuần trong kỳ | 50 | | 134,711,105,534 | (32,904,276,580) |<br>| Tiền và tương đương tiền đầu kỳ | 60 | | 182,785,268,810 | 230,685,109,096 |<br>| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | | 0 | 0 |<br>| Tiền và tương đương tiền cuối kỳ | 70 | 5.1 | 317,496,374,344 | 197,780,832,516 |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động đầu tư kỳ này với kỳ trước, có sự thay đổi đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tiền thu từ đi vay trên tổng tiền thu từ hoạt động tài chính kỳ này là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tự chủ về tài chính của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính dòng tiền tự do (Free Cash Flow) của công ty trong kỳ này dựa trên dữ liệu báo cáo lưu chuyển tiền tệ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc chi tiền cho vay và mua công cụ nợ lớn đến dòng tiền đầu tư của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của việc tăng trả cổ tức đến dòng tiền từ hoạt động tài chính trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP<br>Loại nội dung: Text<br>Hình thức sở hữu vốn<br>Công ty Cổ phần Cảng Đồng Nai dưới đây gọi tắt là Công ty trước đây là một doanh nghiệp Nhà nước. Ngày 24 tháng 08 năm 2005, Công ty được chuyển đổi thành công ty cổ phần có tên gọi là Công ty Cổ phần Cảng Đồng Nai theo Giấy Chứng nhận đăng ký doanh nghiệp số 3600334112 ngày 04 tháng 01 năm 2006 do Sở Kế Hoạch và Đầu Tư tỉnh Đồng Nai cấp và các Giấy chứng nhận thay đổi sau đó với lần thay đổi gần đây nhất là vào ngày 19 tháng 03 năm 2016.<br><br>Ngày 04 tháng 08 năm 2011, Công ty chính thức được cấp phép đăng ký giao dịch chứng khoán tại Sở giao dịch chứng khoán Thành phố Hồ Chí Minh theo Quyết định số 118/2011/QĐ-SGDHCM ngày 04 tháng 08 năm 2011 của Sở giao dịch chứng khoán Thành phố Hồ Chí Minh. Ngày 26 tháng 10 năm 2011, Công ty chính thức được niêm yết giao dịch chứng khoán tại Sở giao dịch chứng khoán Thành phố Hồ Chí Minh theo Thông báo số 867/2011/TB-SGDHCM ngày 12 tháng 10 năm 2011 của Sở giao dịch chứng khoán Thành phố Hồ Chí Minh.<br><br>Vốn pháp định là 6.000.000.000 VND.<br>Vốn điều lệ theo Giấy chứng nhận đăng ký doanh nghiệp là 370.439.080.000 VND.<br>Trụ sở chính đăng ký hoạt động kinh doanh của Công ty được đặt tại 1BD3, Khu phố Bình Dương, Phường Long Bình Tân, Thành phố Biên Hoà, Tỉnh Đồng Nai, Việt Nam.<br><br>Lĩnh vực kinh doanh<br>Kinh doanh dịch vụ cảng biển.<br><br>Ngành nghề kinh doanh<br>Theo Giấy chứng nhận đăng ký doanh nghiệp, ngành nghề kinh doanh chính của Công ty là:<br> - Kho bãi và lưu giữ hàng hoá<br> - Hoạt động dịch vụ hỗ trợ trực tiếp cho vận tải đường thủy<br> - Bảo dưỡng, sửa chữa ô tô và xe có động cơ khác<br> - Hoạt động dịch vụ hỗ trợ khác liên quan đến vận tải<br> - Bốc xếp hàng hóa Chi tiết: Bốc xếp hàng hóa cảng biển<br> - Vận tải hàng hóa bằng đường bộ<br> - Vận tải hàng hóa ven biển và viễn dương<br> - Bán buôn nhiên liệu rắn, lỏng, khí và các sản phẩm liên quan Chi tiết: Bán buôn xăng dầu và các sản phẩm liên quan<br> - Bán buôn nông lâm sản nguyên liệu trừ gỗ, tre, nứa và động vật sống Chi tiết: Bán buôn thóc, ngô và các loại ngũ cốc khác, bán buôn nông, lâm sản, nguyên liệu khác trừ gỗ, tre, nứa<br> - Vận tải hành khách đường bộ trong nội thành, ngoại thành trừ vận tải bằng xe buýt Chi tiết: Vận tải hành khách bằng taxi<br> - Hoạt động vui chơi giải trí khác chưa được phân vào đâu<br> - Bán buôn vật liệu, thiết bị lắp đặt khác trong xây dựng Chi tiết: Bán buôn gạch xây, ngói, đá, cát, sỏi<br> - Xây dựng công trình kỹ thuật dân dụng khác<br> - Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê<br> - Vận tải hàng hóa đường sắt chỉ hoạt động khi có đủ điều kiện theo quy định của pháp luật<br> - Hoạt động dịch vụ hỗ trợ trực tiếp cho vận tải đường sắt và đường bộ chỉ hoạt động khi có đủ điều kiện theo quy định của pháp luật<br> - Vận tải hàng hóa đường thủy nội địa chỉ hoạt động khi có đủ điều kiện theo quy định của pháp luật.",
+    "questions": [
+      {
+        "question": "Công ty Cổ phần Cảng Đồng Nai được niêm yết giao dịch chứng khoán tại Sở giao dịch chứng khoán Thành phố Hồ Chí Minh vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn điều lệ hiện tại của Công ty là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Kể tên 3 ngành nghề kinh doanh chính của Công ty Cổ phần Cảng Đồng Nai.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Mô tả trụ sở chính đăng ký hoạt động kinh doanh của Công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đa dạng hóa ngành nghề kinh doanh của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc niêm yết chứng khoán đối với hoạt động và huy động vốn của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa trên các ngành nghề kinh doanh, xác định các rủi ro và cơ hội tiềm năng của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Liệt kê các dịch vụ vận tải mà Công ty Cổ phần Cảng Đồng Nai đang cung cấp.",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - Cấu trúc doanh nghiệp và Cơ sở lập báo cáo<br>Loại nội dung: Text và Bảng<br>Chu kỳ sản xuất, kinh doanh thông thường<br>Chu kỳ sản xuất kinh doanh thông thường của Công ty là 12 tháng.<br><br>Cấu trúc doanh nghiệp<br>Tại Ngày 30 tháng 09 năm 2024, Công ty có các công ty liên kết như sau:<br>| Tên | Địa chỉ | Tỷ lệ quyền biểu quyết | Tỷ lệ vốn góp | Tỷ lệ lợi ích |<br>|:------------------------------------|:----------------------------------------------------------|:-----------------------|:--------------|:--------------|<br>| Công ty Cổ phần Cảng Long Thành | Cảng Gò Dầu A, Khu công Nghiệp Gò Dầu, Xã Phước Thái, Thành phố Biên Hòa, Tỉnh Đồng Nai | 30 | 30 | 30 |<br>| Công ty Cổ phần Dịch Vụ Cảng Đồng Nai | Phường Long Bình Tân, Thành phố Biên Hòa, Tỉnh Đồng Nai | 45 | 45 | 45 |<br><br>CƠ SỞ LẬP BÁO CÁO TÀI CHÍNH, KỲ KẾ TOÁN VÀ ĐƠN VỊ TIỀN TỆ<br>2.1 Cơ sở lập báo cáo tài chính<br>Báo cáo tài chính kèm theo được trình bày bằng Đồng Việt Nam, theo nguyên tắc giá gốc và phù hợp với các Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định hiện hành khác về kế toán tại Việt Nam.<br><br>2.2 Giả định về tính hoạt động liên tục<br>Khả năng hoạt động liên tục của Công ty phụ thuộc vào các hoạt động có lãi và việc tiếp tục tài trợ của các chủ đầu tư trong tương lai. Vào ngày lập báo cáo này không có lý do nào để Ban Tổng Giám đốc Công ty tin rằng các chủ đầu tư sẽ không tiếp tục tài trợ để Công ty có thể hoạt động liên tục trong tương lai. Do vậy, các báo cáo tài chính cho kỳ kế toán kết thúc tại Ngày 30 tháng 09 năm 2024 vẫn được soạn thảo trên cơ sở Công ty sẽ tiếp tục hoạt động liên tục.<br><br>2.3 Kỳ kế toán năm<br>Kỳ kế toán năm của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc ngày 31 tháng 12.<br><br>2.4 Đơn vị tiền tệ sử dụng trong kế toán<br>Đơn vị tiền tệ sử dụng trong ghi chép kế toán là Đồng Việt Nam.<br><br>CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG<br>3.1 Chế độ kế toán áp dụng<br>Công ty áp dụng các Chuẩn mực kế toán Việt Nam và Chế độ kế toán doanh nghiệp Việt Nam.<br><br>3.2 Tuyên bố về việc tuân thủ các Chuẩn mực kế toán Việt Nam và Chế độ kế toán doanh nghiệp Việt Nam<br>Công ty tuân thủ các Chuẩn mực kế toán Việt Nam và Chế độ kế toán doanh nghiệp Việt Nam để soạn thảo và trình bày các báo cáo tài chính cho kỳ kế toán kết thúc tại Ngày 30 tháng 09 năm 2024.",
+    "questions": [
+      {
+        "question": "Chu kỳ sản xuất kinh doanh thông thường của Công ty là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tên một công ty liên kết của Công ty Cổ phần Cảng Đồng Nai là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Kỳ kế toán năm của Công ty bắt đầu và kết thúc vào ngày nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đơn vị tiền tệ sử dụng trong ghi chép kế toán của Công ty là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự phù hợp của các chuẩn mực và chế độ kế toán mà Công ty đang áp dụng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của giả định hoạt động liên tục trong việc lập báo cáo tài chính của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa trên cấu trúc doanh nghiệp, xác định rủi ro và lợi ích khi Công ty nắm giữ tỷ lệ quyền biểu quyết nhất định tại các công ty liên kết.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nêu rõ nguyên tắc lập báo cáo tài chính của Công ty Cổ phần Cảng Đồng Nai.",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (Phần 1)<br>Loại nội dung: Text<br>CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU<br>4.1 Ngoại tệ<br>Các loại tỷ giá hối đoái áp dụng trong kế toán<br> - Tỷ giá áp dụng trong kế toán là tỷ giá của Ngân hàng Thương mại cổ phần Sài Gòn - Hà Nội<br> - Tỷ giá áp dụng khi ghi nhận và đánh giá lại tài sản là tỷ giá mua ngoại tệ<br> - Tỷ giá áp dụng khi ghi nhận và đánh giá lại nợ phải trả là tỷ giá bán ngoại tệ<br> - Các loại tỷ giá áp dụng trong giao dịch khác là tỷ giá bán ngoại tệ<br>Các nghiệp vụ phát sinh bằng ngoại tệ được hạch toán theo tỷ giá hối đoái giao dịch thực tế vào ngày phát sinh nghiệp vụ. Các khoản chênh lệch tỷ giá phát sinh trong quá trình thanh toán được ghi nhận trong báo cáo kết quả hoạt động kinh doanh trong kỳ. Số dư các khoản mục tiền, nợ phải thu, nợ phải trả có gốc ngoại tệ, ngoại trừ số dư các khoản trả trước cho người bán bằng ngoại tệ, số dư chi phí trả trước bằng ngoại tệ và số dư doanh thu nhận trước bằng ngoại tệ, được chuyển đổi sang đồng tiền hạch toán theo tỷ giá hối đoái giao dịch thực tế vào ngày lập bảng cân đối kế toán. Chênh lệch tỷ giá hối đoái phát sinh do đánh giá lại số dư ngoại tệ cuối kỳ sau khi bù trừ tăng giảm được hạch toán vào kết quả kinh doanh trong kỳ.<br><br>4.2 Các ước tính kế toán<br>Việc lập báo cáo tài chính yêu cầu Ban Tổng Giám đốc phải có những ước tính và giả định có ảnh hưởng đến các số liệu về tài sản, nợ phải trả và việc trình bày các tài sản và nợ tiềm tàng tại Ngày 30 tháng 09 năm 2024 cũng như các khoản doanh thu, chi phí cho kỳ kế toán kết thúc vào Ngày 30 tháng 09 năm 2024. Mặc dù các ước tính kế toán được lập bằng tất cả sự hiểu biết của Ban Tổng Giám đốc, số thực tế phát sinh có thể khác với các ước tính, giả định đặt ra.<br><br>4.3 Tiền và các khoản tương đương tiền<br>Tiền và các khoản tương đương tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng, tiền đang chuyển, các khoản đầu tư ngắn hạn có thời hạn thu hồi không quá 3 tháng kể từ ngày đầu tư, có tính thanh khoản cao, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có nhiều rủi ro trong việc chuyển đổi thành tiền tại thời điểm báo cáo.<br>Các khoản tương đương tiền được xác định phù hợp với Chuẩn mực kế toán Báo cáo lưu chuyển tiền tệ.<br><br>4.4 Đầu tư tài chính<br>Đầu tư vào công ty liên kết<br>Khoản đầu tư được phân loại là đầu tư vào công ty liên kết khi Công ty nắm giữ trực tiếp hoặc gián tiếp từ 20% đến dưới 50% quyền biểu quyết của bên nhận đầu tư mà không có thỏa thuận khác.<br>Các khoản đầu tư vào công ty liên kết được phản ánh theo giá gốc, bao gồm giá mua và các chi phí liên quan trực tiếp đến việc đầu tư nếu có. Trường hợp đầu tư bằng tài sản phi tiền tệ, giá phí của các khoản đầu tư được ghi nhận theo giá trị hợp lý của tài sản phi tiền tệ tại thời điểm phát sinh.<br>Cổ tức, lợi nhuận được chia cho giai đoạn sau ngày đầu tư được ghi nhận vào doanh thu hoạt động tài chính theo giá trị hợp lý tại ngày được quyền nhận.",
+    "questions": [
+      {
+        "question": "Tỷ giá áp dụng khi ghi nhận và đánh giá lại nợ phải trả là loại tỷ giá nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản đầu tư ngắn hạn được coi là tương đương tiền có thời hạn thu hồi tối đa là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Theo chính sách kế toán, các khoản chênh lệch tỷ giá phát sinh trong quá trình thanh toán được ghi nhận ở đâu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân loại khoản đầu tư vào công ty liên kết dựa trên tỷ lệ quyền biểu quyết là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro của các ước tính kế toán đối với độ tin cậy của báo cáo tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của biến động tỷ giá hối đoái đến kết quả kinh doanh và bảng cân đối kế toán của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nêu những yếu tố cấu thành khoản 'Tiền và các khoản tương đương tiền' theo chính sách kế toán của Công ty.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích cách Công ty ghi nhận cổ tức và lợi nhuận từ các khoản đầu tư tài chính.",
+        "difficulty": "Medium_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (Phần 2)<br>Loại nội dung: Text<br>Đầu tư khác<br>Khoản đầu tư được phân loại là đầu tư khác là các khoản đầu tư ngoài các khoản đầu tư vào công ty con, đầu tư vào công ty liên doanh, và đầu tư vào công ty liên kết.<br>Các khoản đầu tư khác được phản ánh theo giá gốc, bao gồm giá mua và các chi phí liên quan trực tiếp đến việc đầu tư nếu có. Trường hợp đầu tư bằng tài sản phi tiền tệ, giá phí của các khoản đầu tư được ghi nhận theo giá trị hợp lý của tài sản phi tiền tệ tại thời điểm phát sinh.<br>Cổ tức, lợi nhuận được chia cho giai đoạn sau ngày đầu tư được ghi nhận vào doanh thu hoạt động tài chính theo giá trị hợp lý tại ngày được quyền nhận.<br><br>Phương pháp lập dự phòng tổn thất đầu tư tài chính<br>Đối với các khoản đầu tư tài chính dài hạn<br>Dự phòng tổn thất đầu tư tài chính dài hạn được trích lập phù hợp với hướng dẫn tại Thông tư số 48/2019/TT-BTC ngày 08 tháng 08 năm 2019. Theo đó, Công ty được yêu cầu trích lập dự phòng tổn thất đầu tư tài chính dài hạn nếu tổ chức kinh tế mà Công ty đang đầu tư bị lỗ trừ trường hợp lỗ theo kế hoạch theo phương án kinh doanh trước khi đầu tư với mức trích tối đa cho mỗi khoản đầu tư bằng số vốn đã đầu tư.<br>Đối với các khoản đầu tư khác<br>Dự phòng giảm giá các khoản đầu tư khác được lập khi giá trị thuần có thể thực hiện được của các khoản đầu tư này giảm xuống thấp hơn giá gốc, việc trích lập phù hợp với hướng dẫn tại Thông tư số 48/2019/TT-BTC ngày 08 tháng 08 năm 2019 (Thông tư 48).<br><br>4.5 Các khoản phải thu<br>Nguyên tắc ghi nhận<br>Các khoản nợ phải thu bao gồm các khoản phải thu khách hàng và phải thu khác được trình bày theo giá trị ghi sổ của các khoản phải thu khách hàng và phải thu khác sau khi cấn trừ với các khoản dự phòng được lập cho các khoản nợ phải thu khó đòi.<br>Nguyên tắc dự phòng phải thu khó đòi<br>Dự phòng nợ phải thu khó đòi được lập cho các khoản nợ phải thu quá hạn thanh toán hoặc các khoản nợ có bằng chứng chắc chắn là không thu được. Dự phòng phải thu khó đòi được trích lập phù hợp với hướng dẫn tại Thông tư số 48/2019/TT-BTC ngày 08 tháng 08 năm 2019 của Bộ Tài chính.<br>Tăng hoặc giảm số dư tài khoản dự phòng phải thu khó đòi được hạch toán vào chi phí quản lý doanh nghiệp trên báo cáo kết quả hoạt động kinh doanh.<br><br>4.6 Tài sản cố định hữu hình<br>Tài sản cố định hữu hình được thể hiện theo nguyên giá trừ đi giá trị hao mòn lũy kế.<br>Nguyên tắc ghi nhận và xác định giá trị ban đầu<br>Nguyên giá tài sản cố định hữu hình bao gồm giá mua và toàn bộ các chi phí liên quan trực tiếp đến việc đưa tài sản vào trạng thái sẵn sàng sử dụng. Trường hợp mua tài sản cố định được kèm thêm, thiết bị, phụ tùng thay thế thì xác định và ghi nhận riêng thiết bị, phụ tùng thay thế theo giá trị hợp lý và được trừ khỏi nguyên giá tài sản cố định hữu hình.<br>Nguyên giá tài sản cố định hữu hình do các nhà thầu xây dựng bao gồm giá trị công trình hoàn thành bàn giao, các chi phí liên quan trực tiếp khác và thuế trước bạ nếu có.<br>Phương pháp khấu hao<br>Nguyên giá tài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng trong suốt thời gian hữu dụng dự tính của tài sản.<br>Thời gian khấu hao ước tính cho một số nhóm tài sản như sau:<br> - Nhà cửa, vật kiến trúc: 05 - 40 năm<br> - Máy móc thiết bị: 05-15 năm<br> - Phương tiện vận tải truyền dẫn: 06-10 năm",
+    "questions": [
+      {
+        "question": "Dự phòng tổn thất đầu tư tài chính dài hạn được trích lập theo Thông tư nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản nợ phải thu được trình bày theo giá trị nào trên báo cáo tài chính?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu một nguyên tắc để trích lập dự phòng nợ phải thu khó đòi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Thời gian khấu hao ước tính cho máy móc thiết bị là bao nhiêu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ thận trọng trong chính sách lập dự phòng tổn thất đầu tư tài chính của Công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ảnh hưởng của chính sách khấu hao tài sản cố định hữu hình đến lợi nhuận và giá trị tài sản trên báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích sự khác biệt giữa \"đầu tư khác\" và \"đầu tư vào công ty liên kết\" theo chính sách kế toán của Công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Khi nào dự phòng giảm giá các khoản đầu tư khác được lập?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (Phần 3)<br>Loại nội dung: Text<br> - Thiết bị, dụng cụ quản lý: 03-08 năm<br>Từ năm 2012, Công ty áp dụng phương pháp khấu hao theo khối lượng sản phẩm đối với 02 cẩu Liebherr.<br><br>4.7 Tài sản cố định vô hình<br>Tài sản cố định vô hình được thể hiện theo nguyên giá trừ đi giá trị hao mòn lũy kế.<br>Nguyên tắc ghi nhận và xác định giá trị ban đầu<br>Nguyên giá là toàn bộ các chi phí mà doanh nghiệp bỏ ra để có được tài sản cố định vô hình tính đến thời điểm đưa tài sản đó vào trạng thái sử dụng theo dự tính.<br>Nguyên tắc kế toán các tài sản cố định vô hình<br>Quyền sử dụng đất<br>Quyền sử dụng đất được trình bày theo nguyên giá trừ giá trị hao mòn lũy kế. Quyền sử dụng đất được khấu hao theo phương pháp đường thẳng dựa trên thời gian sử dụng lô đất.<br>Phần mềm máy vi tính<br>Phần mềm máy vi tính không phải là cấu phần không thể thiếu của phần cứng thì được ghi nhận như tài sản cố định vô hình và được khấu hao theo thời gian sử dụng hữu ích từ 03 - 08 năm.<br>Khi thanh lý bán tài sản vô hình, chênh lệch giữa tiền thu thuần từ việc bán tài sản với giá trị còn lại của tài sản vô hình được ghi nhận vào kết quả hoạt động kinh doanh trong năm.<br><br>4.8 Chi phí trả trước<br>Chi phí trả trước được phân loại là chi phí trả trước ngắn hạn và chi phí trả trước dài hạn theo kỳ hạn gốc và chủ yếu là chi phí liên quan đến tiền thuê đất trả trước. Các khoản này được phân bổ trong thời gian trả trước của chi phí hoặc trong khoảng thời gian mà lợi ích kinh tế được dự kiến tạo ra.<br>Các loại chi phí sau đây được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh:<br> - Tiền thuê đất được phân bổ theo thời hạn thuê từ 10 - 50 năm<br> - Chi phí mua bảo hiểm được phân bổ trong vòng 1 năm<br> - Chi phí sửa chữa tài sản cố định phát sinh một lần có giá trị lớn doanh nghiệp không thực hiện trích trước chi phí sửa chữa lớn tài sản cố định được phân bổ<br> - Chi phí đào tạo, quảng cáo được phân bổ.<br><br>4.9 Nợ phải trả<br>Nợ phải trả được phân loại là phải trả người bán và phải trả khác theo nguyên tắc: Phải trả người bán là khoản phải trả có tính chất thương mại phát sinh từ giao dịch mua bán hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập với người mua. Các khoản phải trả còn lại được phân loại là phải trả khác.<br>Các khoản nợ phải trả được theo dõi theo kỳ hạn gốc, kỳ hạn còn lại tại thời điểm báo cáo, theo nguyên tệ và theo từng đối tượng.<br>Nợ phải trả được ghi nhận không thấp hơn nghĩa vụ phải thanh toán.<br><br>4.10 Chi phí đi vay<br>Nguyên tắc vốn hóa chi phí đi vay<br>Chi phí đi vay liên quan trực tiếp đến việc mua, đầu tư xây dựng hoặc sản xuất những tài sản cần một thời gian tương đối dài để hoàn thành đưa vào sử dụng hoặc kinh doanh được vốn hóa vào nguyên giá tài sản cho đến khi tài sản đó được đưa vào sử dụng hoặc kinh doanh.<br>Các khoản thu nhập phát sinh từ việc đầu tư tạm thời các khoản vay được ghi giảm nguyên giá tài sản có liên quan.<br>Tất cả các chi phí lãi vay khác được ghi nhận vào báo cáo kết quả hoạt động kinh doanh khi phát sinh.",
+    "questions": [
+      {
+        "question": "Công ty áp dụng phương pháp khấu hao nào đối với 02 cẩu Liebherr từ năm 2012?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian sử dụng hữu ích ước tính để khấu hao phần mềm máy vi tính là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu một loại chi phí được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Theo chính sách của Công ty, khi nào chi phí đi vay được vốn hóa vào nguyên giá tài sản?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự khác biệt trong chính sách kế toán giữa tài sản cố định hữu hình và vô hình, đặc biệt là quyền sử dụng đất.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc vốn hóa chi phí đi vay đến nguyên giá tài sản và báo cáo kết quả hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro phát sinh nếu Công ty không phân loại nợ phải trả một cách chính xác theo kỳ hạn và đối tượng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giá trị của tài sản cố định vô hình được thể hiện như thế nào trên báo cáo tài chính?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (Phần 4)<br>Loại nội dung: Text<br>4.11 Chi phí phải trả và dự phòng phải trả<br>Chi phí phải trả<br>Các khoản chi phí phải trả được ghi nhận cho giá trị phải trả trong tương lai liên quan đến hàng hóa, dịch vụ đã nhận được từ người bán trong kỳ báo cáo nhưng thực tế chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán, được ghi nhận vào chi phí sản xuất, kinh doanh của kỳ báo cáo.<br>Dự phòng phải trả<br>Một khoản dự phòng phải trả được ghi nhận nếu, do kết quả của một sự kiện trong quá khứ, Công ty có nghĩa vụ pháp lý hiện tại hoặc liên đới có thể ước tính một cách đáng tin cậy, và chắc chắn sẽ làm giảm sút các lợi ích kinh tế trong tương lai để thanh toán các khoản nợ phải trả do nghĩa vụ đó. Dự phòng phải trả không được ghi nhận cho các khoản lỗ hoạt động trong tương lai.<br>Dự phòng phải trả được tính trên cơ sở các khoản chi phí dự tính phải thanh toán nghĩa vụ nợ. Nếu ảnh hưởng về giá trị thời gian của tiền là trọng yếu thì dự phòng được tính trên cơ sở giá trị hiện tại với tỷ lệ chiết khấu trước thuế và phản ánh những đánh giá trên thị trường hiện tại về giá trị thời gian của tiền và rủi ro cụ thể của khoản nợ đó. Giá trị tăng lên do ảnh hưởng của yếu tố thời gian được ghi nhận là chi phí đi vay.<br><br>4.12 Vốn chủ sở hữu<br>Vốn đầu tư của chủ sở hữu<br>Vốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.<br>Thặng dư vốn cổ phần<br>Thặng dư vốn cổ phần được ghi nhận theo phần chênh lệch giữa giá phát hành và mệnh giá cổ phiếu, chênh lệch giữa giá mua lại cổ phiếu quỹ và giá tái phát hành cổ phiếu quỹ.<br>Cổ tức<br>Cổ tức được ghi nhận là một khoản phải trả vào ngày công bố cổ tức.<br>Phân phối lợi nhuận<br>Lợi nhuận thuần sau thuế thu nhập doanh nghiệp có thể được phân phối cho các cổ đông sau khi được Đại hội cổ đông thông qua và sau khi đã trích lập các quỹ dự phòng theo Điều lệ Công ty và các quy định của pháp luật Việt Nam.<br><br>4.13 Doanh thu, thu nhập khác<br>Doanh thu cung cấp dịch vụ<br>Doanh thu về cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp giao dịch về cung cấp dịch vụ liên quan đến nhiều kỳ thì doanh thu được ghi nhận trong kỳ theo kết quả phần công việc hoàn thành vào ngày lập bảng cân đối kế toán của kỳ đó.<br><br>4.14 Giá vốn<br>Giá vốn cung cấp dịch vụ là tổng chi phí phát sinh của dịch vụ cung cấp trong kỳ theo nguyên tắc phù hợp với doanh thu.<br><br>4.15 Chi phí tài chính<br>Chi phí tài chính phản ánh trong kỳ chủ yếu là chi phí lãi vay và lỗ tỷ giá hối đoái.",
+    "questions": [
+      {
+        "question": "Khi nào một khoản dự phòng phải trả được ghi nhận?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thặng dư vốn cổ phần được ghi nhận dựa trên cơ sở nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu một nguyên tắc để ghi nhận doanh thu cung cấp dịch vụ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí tài chính chủ yếu phản ánh những khoản mục nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ minh bạch của chính sách ghi nhận chi phí phải trả và dự phòng phải trả của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích mối quan hệ giữa chính sách phân phối lợi nhuận và quyền lợi của các cổ đông.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không ghi nhận dự phòng phải trả cho các khoản lỗ hoạt động trong tương lai đến độ tin cậy của báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Khoản chi phí phải trả được ghi nhận khi nào?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (Phần 5)<br>Loại nội dung: Text<br>4.16 Chi phí bán hàng và chi phí quản lý doanh nghiệp<br>Chi phí bán hàng phản ánh các chi phí thực tế phát sinh trong quá trình cung cấp dịch vụ, bao gồm các chi phí quảng cáo, hoa hồng bán hàng.<br>Chi phí quản lý doanh nghiệp phản ánh các chi phí quản lý chung của doanh nghiệp gồm các chi phí về lương nhân viên bộ phận quản lý doanh nghiệp (tiền lương, tiền công, các khoản phụ cấp,...), bảo hiểm xã hội, bảo hiểm y tế, kinh phí công đoàn, bảo hiểm thất nghiệp của nhân viên quản lý doanh nghiệp; chi phí đồ dùng văn phòng, khấu hao TSCĐ dùng cho quản lý doanh nghiệp; tiền thuê đất, thuê mặt bằng; khoản lập dự phòng phải thu khó đòi; dịch vụ mua ngoài (điện, nước, điện thoại, fax, bảo hiểm tài sản, cháy nổ...); chi phí bằng tiền khác (tiếp khách, hội nghị khách hàng).<br><br>4.17 Thuế<br>Thuế thu nhập doanh nghiệp<br>Chi phí thuế thu nhập doanh nghiệp (TNDN) hiện hành<br>Chi phí thuế TNDN hiện hành được xác định trên cơ sở thu nhập tính thuế và thuế suất thuế TNDN trong năm hiện hành là 20%.<br>Ưu đãi, miễn giảm thuế<br>Công ty được hưởng thuế suất thuế TNDN ưu đãi 10% cho thu nhập từ hoạt động kinh doanh chính (cảng biển) trong thời hạn 12 năm kể từ năm 2009 và được giảm 50% số thuế phải nộp từ hoạt động kinh doanh chính trong thời hạn 8 năm kể từ năm 2009. Chính sách thuế ưu đãi áp dụng đối với Công ty đã được cơ quan thuế chấp nhận trong các biên bản quyết toán thuế gần đây.<br>Thuế giá trị gia tăng<br>Thuế giá trị gia tăng của các hàng hóa và dịch vụ do Công ty cung cấp được tính theo các mức thuế như sau:<br> - Dịch vụ cung cấp cho tàu ngoài nước: 0%<br> - Thu tiền nước: 5%<br> - Các dịch vụ khác: 10%<br>Các loại thuế khác<br>Áp dụng theo các luật thuế hiện hành tại Việt Nam.<br>Các báo cáo thuế của Công ty sẽ chịu sự kiểm tra của cơ quan thuế. Do việc áp dụng luật và các quy định về thuế đối với nhiều loại giao dịch khác nhau có thể được giải thích theo nhiều cách khác nhau, dẫn đến số thuế được trình bày trên báo cáo tài chính có thể bị thay đổi theo quyết định cuối cùng của cơ quan thuế.<br><br>4.18 Lãi trên cổ phiếu<br>Lãi cơ bản trên cổ phiếu được tính bằng cách chia lợi nhuận sau thuế của Công ty sau khi trích quỹ khen thưởng, phúc lợi cho tổng số bình quân số cổ phiếu phổ thông lưu hành trong kỳ, không bao gồm số cổ phiếu được Công ty mua lại và giữ làm cổ phiếu ngân quỹ.<br><br>4.19 Lãi suy giảm trên cổ phiếu<br>Lãi suy giảm trên cổ phiếu được tính bằng cách chia lợi nhuận sau thuế của Công ty sau khi trích quỹ khen thưởng, phúc lợi cho tổng số bình quân số cổ phiếu phổ thông lưu hành trong kỳ và tổng số cổ phiếu phổ thông dự kiến được phát hành thêm, không bao gồm số cổ phiếu được Công ty mua lại và giữ làm cổ phiếu ngân quỹ.",
+    "questions": [
+      {
+        "question": "Thuế suất thuế TNDN hiện hành của Công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mức thuế GTGT áp dụng cho dịch vụ cung cấp cho tàu ngoài nước là bao nhiêu phần trăm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu hai loại chi phí được bao gồm trong chi phí quản lý doanh nghiệp.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chính sách ưu đãi thuế TNDN mà Công ty được hưởng là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của các chính sách ưu đãi thuế đến lợi nhuận ròng của Công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích sự khác biệt giữa lãi cơ bản trên cổ phiếu và lãi suy giảm trên cổ phiếu, và ý nghĩa của chúng đối với nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro về thuế mà Công ty có thể đối mặt do sự kiểm tra của cơ quan thuế.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Liệt kê các chi phí bán hàng được phản ánh trong báo cáo.",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.1 & 5.2)<br>Loại nội dung: Text và Bảng<br>5.1 Tiền và các khoản tương đương tiền<br>| Khoản mục | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-------------------------------|:-------------------------|:-------------------------|<br>| Tiền mặt | 626,747,531 | 1,872,241,764 |<br>| Tiền gửi ngân hàng không kỳ hạn | 69,869,626,813 | 68,913,027,046 |<br>| Các khoản tương đương tiền | 247,000,000,000 | 112,000,000,000 |<br>| Cộng | 317,496,374,344 | 182,785,268,810 |<br>Các khoản tương đương tiền là các khoản tiền gửi có kỳ hạn từ 1-3 tháng với lãi suất từ ... (Xem tiếp trang sau)<br><br>5.2 Các khoản đầu tư tài chính<br>Đầu tư góp vốn vào công ty liên kết và đơn vị khác được chi tiết như sau:<br>| Khoản mục | Giá gốc Tại ngày 30/09/2024 (VND) | Giá trị hợp lý Tại ngày 30/09/2024 (VND) | Dự phòng Tại ngày 30/09/2024 (VND) | Giá gốc Tại ngày 01/01/2024 (VND) | Giá trị hợp lý Tại ngày 01/01/2024 (VND) | Dự phòng Tại ngày 01/01/2024 (VND) |<br>|:-------------------------------------------|:-------------------------------|:-------------------------------|:----------------------------|:-------------------------------|:-------------------------------|:----------------------------|<br>| **Đầu tư vào công ty liên kết** | | | | | | |<br>| Công ty Cổ phần Cảng Long Thành(a) | 1,665,000,000 | 0 | 0 | 1,665,000,000 | 0 | 0 |<br>| Công ty Cổ phần Dịch vụ Cảng Đồng Nai(b) | 13,500,000,000 | 0 | 0 | 13,500,000,000 | 0 | 0 |<br>| Cộng | 15,165,000,000 | 0 | 0 | 15,165,000,000 | 0 | 0 |<br>| **Đầu tư vào đơn vị khác** | | | | | | |<br>| Công ty Cổ phần Sonadezi Châu Đức(c) | 15,400,000,000 | 47,439,000,000 | 7,000,000,000 | 37,464,000,000 | 0 | 0 |<br>| Công ty CP Sonadezi Bình Thuận(d) | 40,400,000,000 | 0 | 0 | 40,400,000,000 | 0 | 0 |<br>| Cộng | 55,800,000,000 | 47,439,000,000 | 7,000,000,000 | 47,400,000,000 | 37,464,000,000 | 0 |<br>a Khoản đầu tư này chiếm 30% vốn điều lệ của Công ty Cổ phần Cảng Long Thành, một công ty thành lập và hoạt động tại Việt Nam. Hoạt động chính của Công ty Cổ phần Cảng Long Thành là kinh doanh khai thác cầu cảng, khai thác kho tàng bến bãi, bốc xếp và vận tải hàng hóa bằng ô tô trong và ngoài cảng và các dịch vụ của ngành hàng hải, dịch vụ sửa chữa phương tiện bốc xếp, vận tải, tàu lai dắt, vận chuyển hàng hóa đường thủy, đường bộ, cung cấp nhiên liệu xăng, dầu, dầu nhờn các loại, đại lý và dịch vụ khai thác hàng hải.<br>b Khoản đầu tư này chiếm 45% vốn điều lệ của Công ty Cổ phần Dịch vụ Cảng Đồng Nai, một công ty thành lập và hoạt động tại Việt Nam. Hoạt động chính của Công ty Cổ phần Dịch vụ Cảng Đồng Nai là cho thuê máy móc thiết bị xây dựng, cho thuê container, kho bãi và lưu giữ hàng hóa, xây dựng công trình công nghiệp, đường thủy, bến cảng và các công trình trên sông, đường hầm, nạo vét sông.<br>c Khoản đầu tư này chiếm 0,7% vốn điều lệ của Công ty Cổ phần Sonadezi Châu Đức, một công ty thành lập và hoạt động tại Việt Nam. Hoạt động chính của Công ty Cổ phần Sonadezi Châu Đức là cho thuê đất và mặt bằng, tư vấn thiết kế, quy hoạch, lập dự án đầu tư, tư vấn quản lý dự án, giám sát, thẩm định, kiểm định công trình xây dựng dân dụng, công nghiệp, giao thông, kinh doanh công trình kết cấu hạ tầng.<br>d Khoản đầu tư này chiếm 10.1% vốn điều lệ của Công ty CP Sonadezi Bình Thuận.<br>Tại ngày báo cáo, Công ty chưa xác định được giá trị hợp lý của các khoản đầu tư này để thuyết minh trong báo cáo tài chính bởi vì không có giá niêm yết trên thị trường và Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán Doanh nghiệp Việt Nam hiện chưa có hướng dẫn về cách tính giá trị hợp lý sử dụng các kỹ thuật định giá.",
+    "questions": [
+      {
+        "question": "Tổng tiền và các khoản tương đương tiền tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hoạt động chính của Công ty Cổ phần Cảng Long Thành là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tiền mặt cuối kỳ với đầu năm, xu hướng thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ vốn góp của Công ty Cổ phần Cảng Đồng Nai vào Công ty Cổ phần Dịch vụ Cảng Đồng Nai là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng thanh khoản của công ty dựa trên cơ cấu tiền và các khoản tương đương tiền.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro khi Công ty chưa xác định được giá trị hợp lý của các khoản đầu tư tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của các khoản đầu tư vào công ty liên kết đến tình hình tài chính của Công ty Cảng Đồng Nai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giá trị gốc khoản đầu tư vào Công ty Cổ phần Sonadezi Châu Đức tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.3 & 5.4)<br>Loại nội dung: Bảng<br>5.3 Phải thu ngắn hạn của khách hàng<br>| Khoản mục | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-------------------------------------------------------|:-------------------------|:-------------------------|<br>| Phải thu của khách hàng cung cấp dịch vụ | | |<br>| Công ty TNHH MTV Tân Cảng - Cái mép Thị Vải | 10,255,261,161 | 11,929,581,496 |<br>| Maersk Line AS | 11,317,531,693 | 24,121,318,712 |<br>| Công ty TNHH Cảng Quốc Tế Tân Cảng - Cái Mép | 27,286,416,818 | 19,545,099,345 |<br>| MSC MEDITERRANEAN SHIPPING COMPANY S.A | 33,895,447,501 | 18,145,678,522 |<br>| CMACGM SA CO CMACGM VIET NAM JSC | 32,002,305,372 | 21,016,691,008 |<br>| Tập đoàn CN than khoáng sản Việt Nam | 10,499,344,846 | 5,258,479,369 |<br>| Công Ty TNHH Xếp Dỡ Hàng Hóa Thiên Ân | 5,082,073,920 | 5,385,298,372 |<br>| Các khách hàng khác | 49,049,104,477 | 39,411,814,264 |<br>| Phải thu khách hàng là các bên liên quan (xem thêm mục 9) | 70,336,573 | 94,579,970 |<br>| Cộng | 179,457,822,361 | 144,908,541,058 |<br><br>5.4 Nợ xấu<br>| Khoản mục | Giá gốc Tại ngày 30/09/2024 (VND) | Dự phòng Tại ngày 30/09/2024 (VND) | Giá trị có thể thu hồi Tại ngày 30/09/2024 (VND) | Giá gốc Tại ngày 01/01/2024 (VND) | Dự phòng Tại ngày 01/01/2024 (VND) | Giá trị có thể thu hồi Tại ngày 01/01/2024 (VND) |<br>|:--------------------------------------------------------------------------------------------------|:-------------------------------|:----------------------------|:------------------------------------|:-------------------------------|:----------------------------|:------------------------------------|<br>| Tổng giá trị các khoản phải thu, cho vay quá hạn thanh toán hoặc chưa quá hạn nhưng khó có khả năng thu hồi | 2,744,739,267 | 2,515,813,730 | 228,925,537 | 2,417,702,785 | 2,370,148,579 | 47,554,206 |<br>| Cộng | 2,744,739,267 | 2,515,813,730 | 228,925,537 | 2,417,702,785 | 2,370,148,579 | 47,554,206 |<br>Các khoản dự phòng nợ phải thu khó đòi được lập cho các khoản nợ phải thu quá hạn thanh toán, phù hợp với hướng dẫn tại Thông tư số 48/2019/TT-BTC ngày 08/08/2019 của Bộ Tài chính.",
+    "questions": [
+      {
+        "question": "Tổng phải thu ngắn hạn của khách hàng tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty TNHH Cảng Quốc Tế Tân Cảng - Cái Mép nợ công ty bao nhiêu tại ngày 30/09/2024?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng giá trị nợ xấu cuối kỳ với đầu năm, xu hướng thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ lệ dự phòng trên tổng giá trị nợ xấu tại ngày 30/09/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro tín dụng của công ty dựa trên số liệu các khoản phải thu khách hàng và nợ xấu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng nợ xấu đến khả năng thu hồi công nợ và lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của biến động trong các khoản phải thu khách hàng lớn đến dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nêu tên một khách hàng có khoản phải thu lớn nhất của Công ty tại ngày 30/09/2024.",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.5 & 5.6)<br>Loại nội dung: Bảng<br>5.5 Chi phí xây dựng cơ bản dở dang<br>| Khoản mục | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-----------------------------------------------------------|:-------------------------|:-------------------------|<br>| Chi phí đền bù mở rộng cảng Đồng Nai giai đoạn 2 (9 ha) | 65,984,124,425 | 65,984,124,425 |<br>| Chi phí đầu tư hạ tầng khu tái định cư phục vụ dự Án mở rộng cảng đồng nai giai đoạn 2 | 52,586,971,360 | 52,586,971,360 |<br>| Chi phí đền bù mở rộng cảng Đồng Nai giai đoạn 2B | 113,187,064,000 | 113,187,064,000 |<br>| Công trình khác | 4,033,954,769 | 2,270,524,821 |<br>| Cộng | 235,792,114,554 | 234,028,684,606 |<br><br>5.6 Tăng, giảm tài sản cố định hữu hình<br>| Khoản mục | Nhà cửa, vật kiến trúc (VND) | Máy móc, thiết bị (VND) | Phương tiện vận tải, truyền dẫn (VND) | Thiết bị, dụng cụ quản lý (VND) | Tài sản cố định hữu hình khác (VND) | Cộng (VND) |<br>|:--------------------------------------|:-----------------------------|:----------------------|:------------------------------------|:----------------------------------|:-----------------------------------|:-----------|<br>| **Nguyên giá** | | | | | | |<br>| Tại ngày 01/01/2024 | 738,828,037,090 | 115,885,667,754 | 67,832,414,728 | 8,878,134,976 | 15,310,155,219 | 946,734,409,767 |<br>| Mua trong 9 tháng đầu năm 2024 | - | 1,779,065,235 | - | - | - | 1,779,065,235 |<br>| Đầu tư XDCB hoàn thành trong 9 tháng đầu năm 2024 | 6,097,244,037 | 721,001,738 | 156,058,000 | 514,352,064 | 7,488,655,839 |<br>| Giảm khác | - | - | - | - | - | - |<br>| Tại ngày 30/09/2024 | 744,925,281,127 | 116,606,669,492 | 67,988,472,728 | 10,657,200,211 | 15,824,507,283 | 956,002,130,841 |<br>| **Giá trị hao mòn lũy kế** | | | | | | |<br>| Tại ngày 01/01/2024 | 395,294,831,248 | 87,742,643,693 | 59,053,908,816 | 8,057,590,478 | 9,943,730,458 | 560,092,704,693 |<br>| Khấu hao trong 9 tháng đầu năm 2024 | 28,081,082,991 | 5,533,278,268 | 2,232,797,840 | 545,545,351 | 1,484,946,338 | 37,877,650,788 |<br>| Giảm khác | - | - | - | - | - | - |<br>| Tại ngày 30/09/2024 | 423,375,914,239 | 93,275,921,961 | 61,286,706,656 | 8,603,135,829 | 11,428,676,796 | 597,970,355,481 |<br>| **Giá trị còn lại** | | | | | | |<br>| Tại ngày 01/01/2024 | 343,533,205,842 | 28,143,024,061 | 8,778,505,912 | 820,544,498 | 5,366,424,761 | 386,641,705,074 |<br>| Tại ngày 30/09/2024 | 321,549,366,888 | 23,330,747,531 | 6,701,766,072 | 2,054,064,382 | 4,395,830,487 | 358,031,775,360 |<br>Giá trị còn lại cuối kỳ của TSCĐ hữu hình đã dùng thế chấp, cầm cố, đảm bảo cho các khoản vay là 114,896,422,241 VND (xem thêm mục 5.13).<br>Nguyên giá của TSCĐ hữu hình tại ngày 30/09/2024 đã khấu hao hết nhưng vẫn còn sử dụng là 226,063,773,332 VND.",
+    "questions": [
+      {
+        "question": "Tổng chi phí xây dựng cơ bản dở dang tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá tài sản cố định hữu hình tại ngày 30/09/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí đền bù mở rộng cảng Đồng Nai giai đoạn 2B cuối kỳ với đầu năm, có thay đổi không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giá trị khấu hao tài sản cố định hữu hình trong 9 tháng đầu năm 2024 là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hoàn thành và sử dụng hiệu quả các công trình xây dựng cơ bản dở dang của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của tài sản cố định hữu hình đã khấu hao hết nhưng vẫn còn sử dụng đến hiệu quả hoạt động và báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro liên quan đến việc thế chấp tài sản cố định hữu hình để đảm bảo các khoản vay.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nêu tổng giá trị tài sản cố định hữu hình đã dùng thế chấp, cầm cố, đảm bảo cho các khoản vay.",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.7 & 5.8)<br>Loại nội dung: Bảng<br>5.7 Tăng, giảm tài sản cố định vô hình<br>| Khoản mục | Phần mềm kế toán, bản quyền (VND) | Quyền sử dụng đất (VND) | Cộng (VND) |<br>|:--------------------------------------|:---------------------------------|:-----------------------|:-----------|<br>| **Nguyên giá** | | | |<br>| Tại ngày 01/01/2024 | 1,818,363,207 | 5,734,310,961 | 7,552,674,168 |<br>| Mua trong 9 tháng đầu năm 2024 | 0 | 87,100,000 | 87,100,000 |<br>| Tại ngày 30/09/2024 | 1,818,363,207 | 5,821,410,961 | 7,639,774,168 |<br>| **Giá trị hao mòn lũy kế** | | | |<br>| Tại ngày 01/01/2024 | 0 | 5,076,566,897 | 5,076,566,897 |<br>| Khấu hao trong 9 tháng đầu năm 2024 | 0 | 561,191,693 | 561,191,693 |<br>| Tăng khác | 0 | 0 | 0 |<br>| Giảm khác | 0 | 0 | 0 |<br>| Tại ngày 30/09/2024 | 0 | 5,637,758,590 | 5,637,758,590 |<br>| **Giá trị còn lại** | | | |<br>| Tại ngày 01/01/2024 | 1,818,363,207 | 657,744,064 | 2,476,107,271 |<br>| Tại ngày 30/09/2024 | 1,818,363,207 | 183,652,371 | 2,002,015,578 |<br>Giá trị còn lại cuối kỳ của TSCĐ vô hình đã dùng thế chấp, cầm cố, đảm bảo cho các khoản vay là 17,849,382 VND (xem thêm mục 5.13).<br><br>5.8 Chi phí trả trước<br>| Khoản mục | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-------------------------------------------------------------|:-------------------------|:-------------------------|<br>| **Ngắn hạn** | | |<br>| Công cụ dụng cụ xuất dùng | 0 | 862,556,093 |<br>| Chi phí trả trước ngắn hạn khác | 390,172,604 | 282,511,619 |<br>| Cộng | 390,172,604 | 1,145,073,093 |<br>| **Dài hạn** | | |<br>| Tiền thuê đất trả trước | 36,486,394,540 | 37,457,059,156 |<br>| Chi phí bồi thường giải phóng mặt bằng không được khấu trừ vào tiền thuê đất | 7,949,557,700 | 8,101,460,078 |<br>| Chi phí trả trước dài hạn khác | 159,527,249 | 83,851,805 |<br>| Cộng | 44,595,479,489 | 45,642,371,039 |<br>Tiền thuê đất trả trước là khoản tiền Công ty đã ứng ra để đền bù khu đất 3 ha, khu đất 42,776,8 m2 và khu đất 158.584,8 m2, số tiền này được cấn trừ vào tiền thuê đất hàng năm mà Công ty phải nộp cho Ngân sách nhà nước (Cục thuế Tỉnh Đồng Nai). Ngày 24/09/2015, Cục thuế Tỉnh Đồng Nai có Thông báo số 687/TB.CT.QLCKTTD và 120/TB.CT.QLCKTTD cho phép Công ty Cổ phần Cảng Đồng Nai quy đổi số tiền còn phải cấn trừ còn lại tương ứng với thời gian hoàn thành nghĩa vụ nộp tiền thuê đất đến hết thời hạn thuê đất.",
+    "questions": [
+      {
+        "question": "Nguyên giá tài sản cố định vô hình tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của quyền sử dụng đất tại ngày 30/09/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng chi phí trả trước ngắn hạn cuối kỳ với đầu năm, có sự thay đổi đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khấu hao tài sản cố định vô hình trong 9 tháng đầu năm 2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ ảnh hưởng của các chi phí trả trước dài hạn, đặc biệt là tiền thuê đất, đến tình hình tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro liên quan đến tài sản cố định vô hình được thế chấp cho các khoản vay.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc khấu hao quyền sử dụng đất đến lợi nhuận của công ty trong tương lai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nêu tên các khoản mục cấu thành chi phí trả trước dài hạn.",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.9 - 5.12)<br>Loại nội dung: Bảng<br>5.9 Phải trả người bán ngắn hạn<br>| Khoản mục | Giá trị Tại ngày 30/09/2024 (VND) | Số có khả năng trả nợ Tại ngày 30/09/2024 (VND) | Giá trị Tại ngày 01/01/2024 (VND) | Số có khả năng trả nợ Tại ngày 01/01/2024 (VND) |<br>|:-------------------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|<br>| Phải trả cho người bán | | | | |<br>| Công Ty TNHH Dịch Vụ Xếp Dỡ Hiệp Phước | 16,051,093,907 | 16,051,093,907 | - | - |<br>| Công Ty TNHH Dịch Vụ Bốc Xếp Bình Khánh | 32,229,083,020 | 32,229,083,020 | - | - |<br>| Công Ty TNHH Dịch Vụ Hàng Hải HPS Marine | 26,247,223,455 | 26,247,223,455 | 14,958,250,010 | 14,958,250,010 |<br>| Phải trả cho các đối tượng khác | 42,350,316,801 | 42,350,316,801 | 37,556,730,424 | 37,556,730,424 |<br>| Phải trả cho các bên liên quan (xem thêm mục 9) | 19,625,415,709 | 19,625,415,709 | 12,085,932,796 | 12,085,932,796 |<br>| Cộng | 120,452,038,985 | 120,452,038,985 | 80,652,007,137 | 80,652,007,137 |<br><br>5.10 Thuế và các khoản phải thu/phải nộp Nhà nước<br>| Khoản mục thuế | Phải thu Tại ngày 01/01/2024 (VND) | Phải nộp Tại ngày 01/01/2024 (VND) | Phải nộp Trong 9 tháng đầu năm 2024 (VND) | Đã nộp Trong 9 tháng đầu năm 2024 (VND) | Phải thu Tại ngày 30/09/2024 (VND) | Phải nộp Tại ngày 30/09/2024 (VND) |<br>|:-------------------------------------|:------------------------------------|:---------------------------------|:------------------------------------|:---------------------------------|:------------------------------------|:---------------------------------|<br>| Thuế giá trị gia tăng | 2,882,739,442 | 0 | 33,428,359,273 | 18,007,198,635 | 18,303,900,080 | 0 |<br>| Thuế thu nhập cá nhân | 0 | 1,147,700,000 | 5,419,028,670 | 6,419,450,670 | 0 | 147,278,000 |<br>| Thuế thu nhập doanh nghiệp | 0 | 17,326,457,649 | 62,578,128,751 | 36,874,427,361 | 0 | 43,030,159,039 |<br>| Tiền thuê đất | 2,629,758,868 | 0 | 7,826,844,894 | 7,499,050,961 | 2,301,964,935 | 0 |<br>| Thuế tiền sử dụng đất phi nông nghiệp | 0 | 0 | 413,002,504 | 413,002,504 | 0 | 0 |<br>| Các loại thuế khác | 0 | 33,287,717 | 0 | 0 | 0 | 33,287,717 |<br>| Cộng | 2,629,758,868 | 21,356,897,091 | 109,698,651,809 | 69,246,417,848 | 2,301,964,935 | 61,481,337,119 |<br><br>5.11 Phải trả người lao động<br>Là khoản tiền lương còn lại của quỹ lương năm 2024 phải trả cho cán bộ, công nhân viên.<br><br>5.12 Phải trả khác<br>| Khoản mục | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-----------------------------------------------------------|:-------------------------|:-------------------------|<br>| **Ngắn hạn** | | |<br>| Phải trả khác cho các bên liên quan (Xem mục 9) | 428,268 | 0 |<br>| Cổ tức, lợi nhuận phải trả | 220,072,915 | 186,297,375 |<br>| Các khoản phải trả, phải nộp khác | 4,143,935,843 | 4,598,505,304 |<br>| Cộng | 4,364,008,758 | 4,785,230,947 |<br>| **Dài hạn** | | |<br>| Phải trả công ty CP Kinh doanh khí hóa lỏng miền nam tiền hỗ trợ giải phóng mặt bằng cho người dân | 16,530,632,897 | 16,530,632,897 |<br>| Các khoản phải trả, phải nộp khác | 3,038,957,345 | 3,038,957,345 |<br>| Cộng | 19,569,590,242 | 19,569,590,242 |",
+    "questions": [
+      {
+        "question": "Tổng phải trả người bán ngắn hạn tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thuế thu nhập doanh nghiệp phải nộp tại ngày 30/09/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng phải trả người bán ngắn hạn cuối kỳ với đầu năm, xu hướng thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng các khoản phải trả ngắn hạn khác tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng thanh toán các khoản nợ ngắn hạn của công ty dựa trên số liệu phải trả người bán và thuế phải nộp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng các khoản phải trả cho các bên liên quan đến tính độc lập tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu khoản phải trả công ty CP Kinh doanh khí hóa lỏng miền nam không được thanh toán đúng hạn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nêu tên một công ty mà Công ty Cổ phần Cảng Đồng Nai có khoản phải trả người bán ngắn hạn lớn tại ngày 30/09/2024.",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.13 - 5.15)<br>Loại nội dung: Text và Bảng<br>5.13 Vay và nợ thuê tài chính<br>Các khoản vay được chi tiết như sau:<br>| Khoản mục | Giá trị Tại ngày 30/09/2024 (VND) | Số có khả năng trả nợ Tại ngày 30/09/2024 (VND) | Tăng Trong 9 tháng đầu năm 2024 (VND) | Giảm Trong 9 tháng đầu năm 2024 (VND) | Giá trị Tại ngày 01/01/2024 (VND) | Số có khả năng trả nợ Tại ngày 01/01/2024 (VND) |<br>|:--------------------------|:-------------------------------|:-------------------------------|:------------------------------------|:------------------------------------|:-------------------------------|:-------------------------------|<br>| Vay ngắn hạn | 62,852,903,584 | 62,852,903,584 | 155,917,156,052 | 160,217,080,111 | 67,152,827,643 | 67,152,827,643 |<br>| Vay dài hạn | 56,781,333,333 | 56,781,333,333 | 0 | 11,880,000,000 | 68,661,333,333 | 68,661,333,333 |<br>| Tổng cộng | 119,634,236,917 | 119,634,236,917 | 155,917,156,052 | 172,097,080,111 | 135,814,160,976 | 135,814,160,976 |<br>Điều khoản và điều kiện của các khoản vay ngắn hạn hiện còn số dư như sau:<br>| Loại tiền | Lãi suất | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-----------------------------------|:---------|:-------------------------|:-------------------------|<br>| **Vay ngắn hạn** | | | |<br>| Ngân hàng TMCP Ngoại Thương Việt Nam | VND (4 năm) | 37,300,718,396 (a) | 0 |<br>| Ngân hàng TNHH MTV Shinhan Việt Nam | VND (4-5 năm) | 0 | 32,903,584 |<br>| **Vay dài hạn đến hạn trả** | | | |<br>| Quỹ Đầu Tư Phát Triển | VND (7.0 năm) | 7,875,000,000 (b) | 16,592,109,247 |<br>| Ngân hàng TMCP Công Thương Việt Nam | VND (6.6-7 năm) | 9,945,000,000 (c) | 13,260,000,000 |<br>| Cộng | | 62,852,903,584 | 67,152,827,643 |<br>Điều khoản và điều kiện của các khoản vay dài hạn hiện còn số dư như sau:<br>| Loại tiền | Lãi suất | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-----------------------------------|:---------|:-------------------------|:-------------------------|<br>| **Khoản vay dài hạn** | | | |<br>| Quỹ Đầu Tư Phát Triển | VND (7.0 năm) | 32,525,000,000 (b) | 37,775,000,000 |<br>| Ngân hàng TMCP Công Thương Việt Nam | VND (6.6 - 7.2 năm) | 24,256,333,333 (c) | 30,886,333,333 |<br>| Cộng | | 56,781,333,333 | 68,661,333,333 |<br>Thông tin về tài sản cầm cố, thế chấp đảm bảo cho các khoản vay như sau:<br>a Khoản vay không có tài sản đảm bảo.<br>b Khoản vay được đảm bảo bằng:<br> - Bến tàu 30.000 DWT<br> - 2 cẩu Libebherr<br> - Hợp đồng thế chấp tài sản số 33/2014.HĐTCTD ngày 24/12/2014<br>c Khoản vay được đảm bảo bằng tất cả các khoản lợi thu được từ việc kinh doanh, khai thác giá trị quyền sử dụng đất hoặc hạ tầng kỹ thuật trên đất, các khoản lợi thu được từ việc kinh doanh, khai thác bãi hoặc hạ tầng kỹ thuật trên bãi, quyền nhận tiền từ hợp đồng, quyền đòi nợ, quyền được nhận số tiền bảo hiểm, quyền nhận các khoản tiền bồi thường phạt vi phạm,... và tất cả các quyền và lợi ích phát sinh từ hợp đồng thuê quyền sử dụng đất 157,544,4 m2 tại xã Phước Thái, huyện Long Thành, tỉnh Đồng Nai và bãi cấp phối sỏi đỏ 7,15 ha và 2,17 ha thuộc dự án Cảng Gò Dầu B giai đoạn 2 tại Xã Phước Thái, Huyện Long Thành, Tỉnh Đồng Nai (Hợp đồng thế chấp tài sản số 01/CĐN2015/HĐTC, Hợp đồng thế chấp tài sản 02/CĐN2017/HĐTC ngày 29 tháng 09 năm 2017).<br>Giá trị còn lại của các khoản tài sản cầm cố thế chấp là 114,914,271,623 VND (xem thêm mục 5.6).<br><br>5.14 Dự phòng phải trả<br>Là khoản trích quỹ dự phòng tiền lương cho năm 2024 được tính trên 17% quỹ tiền lương thực hiện của năm 2023 và chi phí sửa chữa tài sản cố định.<br><br>5.15 Quỹ khen thưởng phúc lợi<br>| Khoản mục | VND |<br>|:-----------------------|:-------------------------|<br>| Tại ngày 01/01/2024 | 41,719,470,616 |<br>| Chi trong kỳ | (19,856,674,462) |<br>| Trích lập trong kỳ | 22,777,600,000 |<br>| Tăng khác | 18,000,000 |<br>| Tại ngày 30/09/2024 | 44,658,396,154 |",
+    "questions": [
+      {
+        "question": "Tổng vay và nợ thuê tài chính tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư quỹ khen thưởng phúc lợi tại ngày 30/09/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản vay ngắn hạn cuối kỳ với đầu năm, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các tài sản được dùng để đảm bảo cho khoản vay từ Quỹ Đầu Tư Phát Triển.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro thanh toán nợ của công ty dựa trên cơ cấu các khoản vay ngắn hạn và dài hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc thế chấp nhiều loại tài sản để đảm bảo các khoản vay đến khả năng linh hoạt tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro liên quan đến chi phí sửa chữa tài sản cố định trong việc trích lập dự phòng phải trả.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Khoản vay từ Ngân hàng TMCP Ngoại Thương Việt Nam có tài sản đảm bảo không?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.16)<br>Loại nội dung: Bảng<br>5.16 Vốn chủ sở hữu<br>5.16.1 Bảng đối chiếu biến động của vốn chủ sở hữu<br>| Các khoản mục thuộc vốn chủ sở hữu | Vốn góp của chủ sở hữu (VND) | Thặng dư vốn cổ phần (VND) | Quỹ đầu tư phát triển (VND) | Quỹ khác thuộc vốn chủ sở hữu (VND) | Lợi nhuận sau thuế chưa phân phối (VND) | Cộng (VND) |<br>|:------------------------------------------------|:-----------------------------|:----------------------|:---------------------------|:------------------------------------|:-----------------------------------|:-----------|<br>| Tại ngày 01/01/2023 | 185,219,540,000 | 74,434,806,545 | 413,784,974,541 | 0 | 154,502,189,338 | 827,941,510,424 |<br>| Lãi trong năm 2023 | 0 | 0 | 0 | 0 | 294,575,464,772 | 294,575,464,772 |<br>| Tăng vốn trong năm 2023 | 185,219,540,000 | 0 | 0 | 0 | 0 | 185,219,540,000 |<br>| Trích quỹ đầu tư phát triển | 0 | 0 | (117,809,679,000) | 0 | 117,809,679,000 | 0 |<br>| Trích quỹ khen thưởng phúc lợi | 0 | 0 | 0 | 0 | (17,917,692,000) | (17,917,692,000) |<br>| Trích quỹ thưởng cá nhân đơn vị hữu quan | 0 | 0 | 0 | 0 | (1,000,000,000) | (1,000,000,000) |<br>| Trích quỹ chi công tác xã hội | 0 | 0 | 0 | 0 | (2,341,299,000) | (2,341,299,000) |<br>| Trích quỹ khen thưởng ban điều hành | 0 | 0 | 0 | 0 | (777,600,000) | (777,600,000) |<br>| Chia cổ tức | 0 | 0 | 0 | 0 | (100,018,551,600) | (100,018,551,600) |<br>| Tăng/giảm khác | 0 | 0 | 0 | 0 | 0 | 0 |<br>| Tại ngày 31/12/2023 | 370,439,080,000 | 74,434,806,545 | 346,375,113,541 | 0 | 209,212,832,510 | 1,000,461,832,596 |<br>| Tại ngày 01/01/2024 | 370,439,080,000 | 74,434,806,545 | 346,375,113,541 | 0 | 209,212,832,510 | 1,000,461,832,596 |<br>| Lãi trong 9 tháng đầu năm 2024 | 0 | 0 | 0 | 0 | 260,397,805,279 | 260,397,805,279 |<br>| Trích quỹ khen thưởng phúc lợi | 0 | 0 | 0 | 0 | (18,054,758,000) | (18,054,758,000) |<br>| Trích quỹ thưởng cá nhân, đơn vị hữu quan | 0 | 0 | 0 | 0 | (1,000,000,000) | (1,000,000,000) |<br>| Trích quỹ chi công tác xã hội | 0 | 0 | 0 | 0 | (2,945,242,000) | (2,945,242,000) |<br>| Trích quỹ khen thưởng ban điều hành | 0 | 0 | 0 | 0 | (777,600,000) | (777,600,000) |<br>| Chia cổ tức | 0 | 0 | 0 | 0 | (85,200,988,400) | (85,200,988,400) |<br>| Tại ngày 30/09/2024 | 370,439,080,000 | 74,434,806,545 | 346,375,113,541 | 0 | 361,632,049,389 | 1,152,881,049,475 |",
+    "questions": [
+      {
+        "question": "Tổng vốn chủ sở hữu tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối tại ngày 30/09/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền cổ tức đã chia trong 9 tháng đầu năm 2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh Quỹ đầu tư phát triển tại ngày 01/01/2024 và 30/09/2024, có sự thay đổi nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của lợi nhuận sau thuế chưa phân phối và tác động của nó đến vốn chủ sở hữu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản trích lập quỹ (khen thưởng, phúc lợi, công tác xã hội) đến khả năng phân phối lợi nhuận cho cổ đông.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của việc tăng vốn trong năm 2023 đến cơ cấu vốn chủ sở hữu của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Vốn góp của chủ sở hữu tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN (5.16.2 - 5.16.5)<br>Loại nội dung: Bảng<br>5.16.2 Cổ phiếu<br>| Khoản mục | Tại ngày 30/09/2024 | Tại ngày 01/01/2024 |<br>|:---------------------------------------------|:--------------------|:--------------------|<br>| Số lượng cổ phiếu phổ thông đăng ký phát hành | 37,043,908 | 37,043,908 |<br>| Số lượng cổ phiếu phổ thông đã bán ra công chúng | 37,043,908 | 37,043,908 |<br>| Số lượng cổ phiếu phổ thông đang lưu hành | 37,043,908 | 37,043,908 |<br>Mệnh giá cổ phần đang lưu hành: 10.000 VND/cổ phần.<br><br>5.16.3 Lãi cơ bản và suy giảm trên cổ phiếu<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-------------------------------------------------|:-------------------|:-------------------|<br>| Lợi nhuận sau thuế thu nhập doanh nghiệp của công ty | 260,397,805,279 | 214,481,124,629 |<br>| Trích quỹ khen thưởng và phúc lợi | (20,102,710,568) | (16,579,390,934) |<br>| Lợi nhuận để tính lãi suy giảm trên cổ phiếu | 240,295,094,711 | 197,901,733,695 |<br>| Tổng số bình quân số cổ phiếu phổ thông lưu hành trong năm | 37,043,908 | 37,043,908 |<br>| Lãi cơ bản và suy giảm trên cổ phiếu | 6,487 | 5,342 |<br><br>5.16.4 Các quỹ của doanh nghiệp<br>| Khoản mục | Quỹ đầu tư phát triển (VND) | Quỹ khác thuộc vốn chủ sở hữu (VND) |<br>|:--------------------------------------|:---------------------------|:------------------------------------|<br>| Tại ngày 01/01/2024 | 346,375,113,541 | 0 |<br>| Trích trong 9 tháng đầu năm 2024 | 0 | 0 |<br>| Giảm trong 9 tháng đầu năm 2024 | 0 | 0 |<br>| Tại ngày 30/09/2024 | 346,375,113,541 | 0 |<br><br>5.16.5 Các khoản mục ngoài bảng cân đối kế toán<br>| Khoản mục | Tại ngày 30/09/2024 | Tại ngày 01/01/2024 |<br>|:---------------------|:--------------------|:--------------------|<br>| Ngoại tệ các loại USD | 190,650.28 | 102,659.6 |",
+    "questions": [
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lãi cơ bản và suy giảm trên cổ phiếu trong 9 tháng năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận sau thuế TNDN của công ty trong 9 tháng năm 2024 với 9 tháng năm 2023, có sự tăng trưởng không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Mệnh giá cổ phần đang lưu hành của Công ty là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình tài chính của công ty dựa trên số lượng cổ phiếu đang lưu hành và lãi trên cổ phiếu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của biến động số dư ngoại tệ đến tình hình tài chính của công ty, dù các khoản mục này nằm ngoài bảng cân đối kế toán.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo triển vọng tăng trưởng của Công ty dựa trên lãi cơ bản trên cổ phiếu trong các kỳ tiếp theo.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giá trị quỹ đầu tư phát triển tại ngày 30/09/2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BÁO CÁO KẾT QUẢ KINH DOANH (6.1 - 6.4)<br>Loại nội dung: Bảng<br>6 THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BÁO CÁO KẾT QUẢ KINH DOANH<br>6.1 Doanh thu cung cấp dịch vụ<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-----------------------------------|:-------------------|:-------------------|<br>| Doanh thu cung cấp dịch vụ | 965,111,245,128 | 827,674,143,131 |<br>| Doanh thu đối với các bên liên quan (xem thêm mục 9) | 2,945,075,817 | 4,681,433,161 |<br>| Cộng | 968,056,320,945 | 832,355,576,292 |<br><br>6.2 Giá vốn<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-------------------------------|:-------------------|:-------------------|<br>| Giá vốn của dịch vụ đã cung cấp | 597,501,172,025 | 525,134,005,533 |<br>| Cộng | 597,501,172,025 | 525,134,005,533 |<br><br>6.3 Doanh thu hoạt động tài chính<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:---------------------------|:-------------------|:-------------------|<br>| Cổ tức, lợi nhuận được chia | 3,565,987,500 | 2,590,987,500 |<br>| Lãi tiền gửi, tiền cho vay | 11,393,574,397 | 13,694,932,407 |<br>| Lãi chênh lệch tỷ giá đã thực hiện | 1,922,616 | 0 |<br>| Cộng | 14,961,484,513 | 16,285,919,907 |<br><br>6.4 Chi phí tài chính<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:---------------------------|:-------------------|:-------------------|<br>| Chi phí lãi vay | 5,192,556,150 | 8,391,715,983 |<br>| Lỗ chênh lệch tỷ giá đã thực hiện | 27,099,005 | 0 |<br>| Cộng | 5,219,655,155 | 8,391,715,983 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu cung cấp dịch vụ trong 9 tháng năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá vốn của dịch vụ đã cung cấp trong 9 tháng năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu hoạt động tài chính trong 9 tháng năm 2024 với cùng kỳ năm 2023, có sự thay đổi nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ chi phí lãi vay trên tổng chi phí tài chính trong 9 tháng năm 2024 là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của doanh thu đối với các bên liên quan và ý nghĩa của nó.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của lãi chênh lệch tỷ giá và lỗ chênh lệch tỷ giá đến doanh thu và chi phí tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự thay đổi trong doanh thu cung cấp dịch vụ và giá vốn đến lợi nhuận gộp của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Các khoản mục chính cấu thành doanh thu hoạt động tài chính là gì?",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BÁO CÁO KẾT QUẢ KINH DOANH (6.5 - 6.9)<br>Loại nội dung: Bảng<br>6.5 Chi phí bán hàng<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:---------------------------|:-------------------|:-------------------|<br>| Chi phí hoa hồng | 6,611,011,533 | 8,223,773,042 |<br>| Chi phí nhân viên | 3,868,098,633 | 3,682,019,265 |<br>| Chi phí bằng tiền khác | 4,412,024,720 | 1,332,792,257 |<br>| Cộng | 14,891,134,886 | 13,238,584,564 |<br><br>6.6 Chi phí quản lý doanh nghiệp<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:---------------------------------------|:-------------------|:-------------------|<br>| Chi phí nhân viên quản lý | 19,691,596,302 | 17,596,822,728 |<br>| Thuế, phí, lệ phí | 8,384,735,613 | 5,544,994,558 |<br>| Khấu hao tài sản cố định | 525,453,987 | 731,124,184 |<br>| Chi phí dự phòng các khoản phải thu khó đòi | 145,665,151 | 28,791,514 |<br>| Chi phí dịch vụ mua ngoài | 2,907,701,416 | 3,036,137,620 |<br>| Chi phí khác bằng tiền | 11,118,571,719 | 10,136,995,903 |<br>| Cộng | 42,773,724,188 | 37,017,283,479 |<br><br>6.7 Thu nhập khác<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-----------------------------------|:-------------------|:-------------------|<br>| Thu thanh lý TSCĐ | 0 | 158,181,818 |<br>| Phí chia sẻ ứng cứu tràn dầu | 56,000,000 | 91,316,000 |<br>| Thu nhập khác | 460,715,405 | 1,187,259,481 |<br>| Cộng | 516,715,405 | 1,436,757,299 |<br><br>6.8 Chi phí sản xuất kinh doanh theo yếu tố<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-------------------------------------------------|:-------------------|:-------------------|<br>| Chi phí nguyên liệu, vật liệu | 11,858,269,010 | 8,246,521,046 |<br>| Chi phí nhân công | 79,179,565,190 | 71,451,340,336 |<br>| Chi phí khấu hao tài sản cố định | 38,438,842,481 | 42,266,859,298 |<br>| Chi phí dự phòng các khoản phải thu khó đòi | 145,665,151 | 28,791,514 |<br>| Chi phí trích trước sửa chữa lớn tài sản cố định | 10,000,000,000 | 10,000,000,000 |<br>| Chi phí dịch vụ mua ngoài | 473,132,399,861 | 407,259,650,598 |<br>| Chi phí khác bằng tiền | 42,411,289,406 | 36,194,293,812 |<br>| Cộng | 655,166,031,099 | 575,389,873,576 |<br><br>6.9 Chi phí thuế thu nhập doanh nghiệp hiện hành<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-----------------------------------------------------|:-------------------|:-------------------|<br>| Chi phí thuế TNDN tạm tính trong kỳ | 62,523,736,022 | 49,356,268,775 |<br>| Điều chỉnh chi phí thuế TNDN của năm trước vào chi phí thuế TNDN hiện hành kỳ này | 54,392,729 | 43,423,000 |<br>| Tổng chi phí thuế TNDN hiện hành | 62,578,128,751 | 49,399,691,975 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí bán hàng trong 9 tháng năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí quản lý doanh nghiệp trong 9 tháng năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí nhân viên quản lý trong 9 tháng năm 2024 với cùng kỳ năm 2023, có sự thay đổi đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Thu nhập khác của công ty trong 9 tháng năm 2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý chi phí bán hàng và chi phí quản lý doanh nghiệp của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của chi phí dịch vụ mua ngoài tăng mạnh đến tổng chi phí sản xuất kinh doanh theo yếu tố.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro về thuế nếu các khoản điều chỉnh chi phí thuế TNDN của năm trước không được chấp nhận.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Chi phí nguyên liệu, vật liệu trong 9 tháng năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BÁO CÁO LƯU CHUYỂN TIỀN TỆ (7), BÁO CÁO BỘ PHẬN (8) và THÔNG TIN VỀ CÁC BÊN LIÊN QUAN (9)<br>Loại nội dung: Text và Bảng<br>7 THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BÁO CÁO LƯU CHUYỂN TIỀN TỆ<br>7.1 Số tiền đi vay thực thu trong kỳ<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-----------------------------------|:-------------------|:-------------------|<br>| Tiền thu từ đi vay theo khế ước thông thường | 144,037,156,052 | 184,613,096,284 |<br><br>7.2 Số tiền đã thực trả gốc vay trong kỳ<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-----------------------------------|:-------------------|:-------------------|<br>| Tiền trả nợ gốc vay theo khế ước thông thường | 160,217,080,111 | 260,691,986,636 |<br><br>8 BÁO CÁO BỘ PHẬN<br>Công ty không trình bày báo cáo bộ phận theo lĩnh vực kinh doanh vì Công ty chỉ có hoạt động trong lĩnh vực kinh doanh dịch vụ cảng biển và báo cáo tài chính đã phản ánh đầy đủ các thông tin theo lĩnh vực kinh doanh.<br>Công ty không có báo cáo bộ phận theo khu vực địa lý vì hoạt động của Công ty chủ yếu là dịch vụ cảng biển tại khu vực Đồng Nai, do đó không có sự khác nhau về rủi ro và lợi ích kinh tế theo khu vực địa lý cần thiết phải thuyết minh.<br><br>9 THÔNG TIN VỀ CÁC BÊN LIÊN QUAN<br>Danh sách các bên liên quan:<br>| Tên | Mối quan hệ |<br>|:--------------------------------------------|:--------------|<br>| 1. Tổng Công ty Cổ phần Phát Triển Khu Công Nghiệp | Công ty mẹ |<br>| 2. Công ty Cổ phần Cảng Long Thành | Công ty liên kết |<br>| 3. Công ty Cổ phần Dịch Vụ Cảng Đồng Nai | Công ty liên kết |<br>| 4. Tổng Công Ty Cổ Phần Đường Sông Miền Nam | Nhà đầu tư có ảnh hưởng đáng kể |<br>| 5. Công ty CP Cấp nước Đồng Nai | Công ty cùng tập đoàn |<br>| 6. Công ty CP Sonadezi Long Bình | Công ty cùng tập đoàn |<br>| 7. Công ty CP Môi trường Sonadezi | Công ty cùng tập đoàn |<br>| 8. Công ty CP Dịch vụ Sonadezi | Công ty cùng tập đoàn |<br>| 9. Công ty CP Sonadezi Châu Đức | Công ty cùng tập đoàn |<br>| 10. Công ty CP Sơn Đồng Nai | Công ty cùng tập đoàn |<br>| 11. Công ty CP Tiếp vận số 1 Đồng Nai | Công ty có cùng nhân sự quản lý chủ chốt |<br>| 12. Hội đồng quản trị và Ban Tổng Giám đốc và Ban Kiểm Soát | Nhân sự quản lý chủ chốt |",
+    "questions": [
+      {
+        "question": "Số tiền đi vay thực thu trong 9 tháng năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mối quan hệ của Tổng Công ty Cổ phần Phát Triển Khu Công Nghiệp với Công ty là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh số tiền trả nợ gốc vay trong 9 tháng năm 2024 với cùng kỳ năm 2023, có sự giảm đáng kể không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu lý do Công ty không trình bày báo cáo bộ phận theo lĩnh vực kinh doanh.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của Công ty vào các khoản vay thông thường và tác động của nó đến dòng tiền.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn khi có nhiều bên liên quan trong hoạt động kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có báo cáo bộ phận theo khu vực địa lý đến khả năng đánh giá hiệu quả kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Liệt kê 3 công ty liên kết của Công ty Cổ phần Cảng Đồng Nai.",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: CÔNG TY CỔ PHẦN CẢNG ĐỒNG NAI<br>Mã cổ phiếu: Không có<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024, phát hành tháng 10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: THUYẾT MINH BÁO CÁO TÀI CHÍNH - THÔNG TIN VỀ CÁC BÊN LIÊN QUAN (9) và CÁC SỰ KIỆN SAU NGÀY KẾT THÚC NĂM TÀI CHÍNH (10)<br>Loại nội dung: Text và Bảng<br>Tại ngày lập bảng cân đối kế toán, số dư phải thu phải trả với các bên liên quan như sau:<br>| Khoản mục | Tại ngày 30/09/2024 (VND) | Tại ngày 01/01/2024 (VND) |<br>|:-------------------------------------------|:-------------------------|:-------------------------|<br>| **Phải thu** | | |<br>| Công ty Cổ phần Dịch vụ Cảng Đồng Nai | 27,678,553 | 82,120,226 |<br>| Công ty CP Cảng Long Thành | 42,658,020 | 12,459,744 |<br>| Công ty CP Tiếp vận số 1 Đồng Nai | 0 | 0 |<br>| Cộng (xem thêm mục 5.3) | 70,336,573 | 94,579,970 |<br>| **Phải trả** | | |<br>| Công ty Cổ phần Dịch vụ Cảng Đồng Nai | 10,967,522,409 | 6,368,516,672 |<br>| Công ty CP Tiếp vận số 1 Đồng Nai | 8,460,172,540 | 5,559,371,324 |<br>| Công ty CP Sonadezi Long Bình | 173,517,960 | 140,548,800 |<br>| Công ty CP Môi trường Sonadezi | 24,202,800 | 17,496,000 |<br>| Cộng (xem thêm mục 5.9) | 19,625,415,709 | 12,085,932,796 |<br>| **Phải trả khác (xem thêm mục 5.12)** | | |<br>| Công ty CP Sonadezi An Bình | 428,268 | 0 |<br>Trong 9 tháng năm 2024, Công ty đã có các giao dịch chủ yếu với các bên liên quan như sau:<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:-----------------------------------|:-------------------|:-------------------|<br>| **Cung cấp dịch vụ** | | |<br>| Công ty Cổ phần Cảng Long Thành | 432,339,240 | 486,344,461 |<br>| Công ty Cổ phần Dịch vụ Cảng Đồng Nai | 625,806,877 | 576,733,503 |<br>| Công ty CP Tiếp vận số 1 Đồng Nai | 1,882,494,516 | 3,618,355,197 |<br>| Công ty CP Đường Sông Miền Nam | 0 | 4,185,184 |<br>| Công ty CP Sơn Đồng Nai | 0 | 250,000 |<br>| Cộng (xem thêm mục 6.1) | 2,945,075,817 | 4,681,433,161 |<br>| **Thu nhập khác (Thu nhập từ chia sẻ sự cố tràn dầu)** | | |<br>| Công ty Cổ phần Cảng Long Thành | 56,000,000 | 91,316,000 |<br>| Cộng | 56,000,000 | 91,316,000 |<br>| **Mua dịch vụ** | | |<br>| Công ty Cổ phần Dịch vụ Cảng Đồng Nai | 46,247,816,315 | 50,612,030,083 |<br>| Công ty Cổ phần Cảng Long Thành | 0 | 7,516,000 |<br>| Công ty CP Tiếp vận số 1 Đồng Nai | 38,259,262,800 | 59,528,325,850 |<br>| Tổng công ty CP Đường Sông Miền Nam (Sowatco) | 666,667 | 9,990,905 |<br>| **Các công ty cùng tập đoàn** | | |<br>| Công ty CP Cấp Nước Đồng Nai | 454,146,420 | 450,385,520 |<br>| Công ty CP Sonadezi Long Bình | 1,554,741,000 | 1,541,391,000 |<br>| Công ty CP Môi Trường Sonadezi | 172,200,000 | 143,618,500 |<br>| Công ty CP Dịch vụ Sonadezi | 14,000,000 | 14,000,000 |<br>| Cộng | 86,710,349,202 | 112,299,741,858 |<br>| **Cổ tức, lợi nhuận được chia** | | |<br>| Kỳ này (VND) | Kỳ trước (VND) |<br>|:------------------------------------|:---------------|:---------------|<br>| Công Ty CP Dịch Vụ Cảng Đồng Nai | 1,510,987,500 | 1,080,000,000 |<br>| Công Ty CP Cảng Long Thành | 1,215,000,000 | 1,510,987,500 |<br>| Công Ty CP Sonadezi Châu Đức | 840,000,000 | 0 |<br>| Cộng | 3,565,987,500 | 2,590,987,500 |<br>| **Cổ tức đã chia** | | |<br>| Kỳ này (VND) | Kỳ trước (VND) |<br>|:-------------------------------------------------|:---------------|:---------------|<br>| Tổng công ty Cổ Phần Phát triển Khu công nghiệp | 43,452,612,000 | 28,338,660,000 |<br>| Công Ty CP Cảng Long Thành | 1,217,160,000 | 793,800,000 |<br>| Tổng Công ty Cổ Phần Đường Sông Miền Nam | 17,250,000,000 | 11,250,000,000 |<br>| Ban Tổng Giám Đốc | 279,680,000 | 204,900,000 |<br>| Cộng | 62,199,452,000 | 40,587,360,000 |<br>Thù lao của Hội đồng quản trị, ban kiểm soát, thu nhập của Ban Tổng Giám đốc, và các nhân viên quản lý chủ chốt khác được hưởng trong năm như sau:<br>| Khoản mục | 9 tháng 2024 (VND) | 9 tháng 2023 (VND) |<br>|:---------------------------------|:-------------------|:-------------------|<br>| Thù lao và thu nhập | 7,159,713,000 | 5,952,418,000 |<br><br>10 CÁC SỰ KIỆN SAU NGÀY KẾT THÚC NĂM TÀI CHÍNH<br>Không có các sự kiện quan trọng nào xảy ra sau ngày kết thúc kỳ kế toán đến ngày phát hành báo cáo tài chính.",
+    "questions": [
+      {
+        "question": "Tổng các khoản phải thu từ các bên liên quan tại ngày 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền Công ty đã chia cổ tức cho Tổng công ty Cổ Phần Phát triển Khu công nghiệp trong 9 tháng 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu cung cấp dịch vụ cho Công ty CP Tiếp vận số 1 Đồng Nai trong 9 tháng năm 2024 với 9 tháng năm 2023.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Thù lao và thu nhập của Hội đồng quản trị, ban kiểm soát, Ban Tổng Giám đốc trong 9 tháng 2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ ảnh hưởng của các giao dịch với bên liên quan đến hoạt động kinh doanh và tình hình tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn từ các khoản phải trả và phải thu lớn với các bên liên quan.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có sự kiện quan trọng nào sau ngày kết thúc năm tài chính đến niềm tin của nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nêu tên các công ty mà Công ty Cổ phần Cảng Đồng Nai đã mua dịch vụ trong 9 tháng năm 2024.",
+        "difficulty": "Easy_NER"
+      }
+    ]
+  }
+]

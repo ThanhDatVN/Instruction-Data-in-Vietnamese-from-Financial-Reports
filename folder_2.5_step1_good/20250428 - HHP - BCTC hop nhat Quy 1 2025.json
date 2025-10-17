@@ -1,0 +1,788 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Tại ngày 31 tháng 3 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 1.250.646.076.587 | 1.158.650.865.171 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.1 | 17.955.108.186 | 16.524.916.087 |\n| 1. Tiền | 111 | | 17.955.108.186 | 16.524.916.087 |\n| 2. Các khoản tương đương tiền | 112 | | - | - |\n| II. Đầu tư tài chính ngắn hạn | 120 | | 198.707.548.086 | 207.081.538.034 |\n| 1. Chứng khoán kinh doanh | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | V.2a | 198.707.548.086 | 207.081.538.034 |\n| III. Các khoản phải thu ngắn hạn | 130 | | 614.187.743.205 | 536.869.515.306 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | V.3 | 314.641.605.265 | 276.521.995.795 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | V.4 | 222.612.231.263 | 197.574.781.138 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |\n| 6. Phải thu ngắn hạn khác | 136 | V.5a | 76.933.906.677 | 62.772.738.373 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | | - | - |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho | 140 | | 363.896.330.999 | 353.559.429.789 |\n| 1. Hàng tồn kho | 141 | V.6 | 363.896.330.999 | 353.559.429.789 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | - | - |\n| V. Tài sản ngắn hạn khác | 150 | | 55.899.346.111 | 44.615.465.955 |\n| 1. Chi phí trả trước ngắn hạn | 151 | V.7a | 3.656.698.053 | 3.272.597.935 |\n| 2. Thuế giá trị gia tăng được khấu trừ | 152 | | 52.242.648.058 | 41.109.701.095 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | V.14 | - | 233.166.925 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã số của mục 'Tiền và các khoản tương đương tiền' là bao nhiêu?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối kỳ với đầu năm, xu hướng thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản 'Đầu tư nắm giữ đến ngày đáo hạn' đã thay đổi như thế nào giữa số cuối kỳ và số đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ thanh khoản ngắn hạn của công ty dựa trên cơ cấu tài sản ngắn hạn hiện tại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ trọng 'Các khoản phải thu ngắn hạn của khách hàng' so với tổng tài sản ngắn hạn cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro nếu có sự sụt giảm đáng kể trong các khoản phải thu ngắn hạn và tác động của nó đến hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Tại ngày 31 tháng 3 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| B. TÀI SẢN DÀI HẠN | 200 | | 1.816.782.430.925 | 1.716.230.692.996 |\n| I. Các khoản phải thu dài hạn | 210 | | 1.692.833.325 | 1.979.312.800 |\n| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | | - | - |\n| 6. Phải thu dài hạn khác | 216 | V.5b | 1.692.833.325 | 1.979.312.800 |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |\n| II. Tài sản cố định | 220 | | 1.475.455.139.604 | 220.661.816.155 |\n| 1. Tài sản cố định hữu hình | 221 | V.8 | 1.395.550.759.395 | 137.070.551.640 |\n| - Nguyên giá | 222 | | 1.524.739.207.408 | 251.903.295.266 |\n| - Giá trị hao mòn lũy kế | 223 | | (129.188.448.013) | (114.832.743.626) |\n| 2. Tài sản cố định thuê tài chính | 224 | V.9 | 78.760.043.577 | 82.386.699.640 |\n| - Nguyên giá | 225 | | 81.496.835.079 | 83.382.506.631 |\n| - Giá trị hao mòn lũy kế | 226 | | (2.736.791.502) | (995.806.991) |\n| 3. Tài sản cố định vô hình | 227 | V.10 | 1.144.336.632 | 1.204.564.875 |\n| - Nguyên giá | 228 | | 1.204.564.875 | 1.204.564.875 |\n| - Giá trị hao mòn lũy kế | 229 | | (60.228.243) | - |\n| III. Bất động sản đầu tư | 230 | | - | - |\n| - Nguyên giá | 231 | | - | - |\n| - Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | V.11 | 253.721.008.094 | 1.408.217.497.835 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | | 253.721.008.094 | 1.408.217.497.835 |\n| V. Đầu tư tài chính dài hạn | 250 | V.2b | 39.748.090.219 | 39.748.090.219 |\n| 1. Đầu tư vào công ty con | 251 | | - | - |\n| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | | 39.448.090.219 | 39.448.090.219 |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | | 300.000.000 | 300.000.000 |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | - | - |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | - | - |\n| VI. Tài sản dài hạn khác | 260 | | 46.165.359.683 | 45.623.975.987 |\n| 1. Chi phí trả trước dài hạn | 261 | V.7b | 45.839.511.845 | 45.326.071.721 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | | 325.847.838 | 297.904.266 |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | - | - |\n| 4. Tài sản dài hạn khác | 268 | | - | - |\n| 5. Lợi thế thương mại | 269 | | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | | 3.067.428.507.512 | 2.874.881.558.167 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí xây dựng cơ bản dở dang cuối kỳ so với đầu năm, sự thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tài sản cố định (bao gồm hữu hình, thuê tài chính, vô hình) trên tổng tài sản dài hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tập trung vốn vào tài sản cố định hữu hình của công ty và ý nghĩa của nó.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm mạnh trong chi phí xây dựng cơ bản dở dang đến chiến lược đầu tư dài hạn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu các khoản phải thu dài hạn tiếp tục giảm trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Tại ngày 31 tháng 3 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| C. NỢ PHẢI TRẢ | 300 | | 1.973.273.962.986 | 1.842.541.647.857 |\n| I. Nợ ngắn hạn | 310 | | 1.022.832.457.562 | 994.247.675.817 |\n| 1. Phải trả người bán ngắn hạn | 311 | V.12 | 52.411.770.806 | 69.584.407.349 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | V.13 | 3.454.086.663 | 518.780.698 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V.14 | 9.422.663.529 | 7.903.974.342 |\n| 4. Phải trả người lao động | 314 | | 1.548.540.493 | 1.780.856.460 |\n| 5. Chi phí phải trả ngắn hạn | 315 | V.15 | 6.200.514.646 | 1.055.268.184 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9. Phải trả ngắn hạn khác | 319 | V.16 | 11.355.603.165 | 4.110.408.654 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | V.17a | 925.517.569.201 | 895.940.971.071 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | V.18 | 12.921.709.059 | 13.353.009.059 |\n| 13. Quỹ bình ổn giá | 323 | | - | - |\n| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |\n| II. Nợ dài hạn | 330 | | 950.441.505.424 | 848.293.972.040 |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7. Phải trả dài hạn khác | 337 | | - | - |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | V.17b | 950.441.505.424 | 848.293.972.040 |\n| 9. Trái phiếu chuyển đổi | 339 | | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | | 1.094.154.544.526 | 1.032.339.910.310 |\n| I. Vốn chủ sở hữu | 410 | V.19 | 1.094.154.544.526 | 1.032.339.910.310 |\n| 1. Vốn góp của chủ sở hữu | 411 | | 865.543.430.000 | 865.543.430.000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 865.543.430.000 | 865.543.430.000 |\n| - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | | - | - |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | | - | - |\n| 5. Cổ phiếu quỹ | 415 | | - | - |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 8. Quỹ đầu tư phát triển | 418 | | 7.522.689.196 | 7.522.689.196 |\n| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | - | - |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | - | - |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | | 63.146.615.063 | 51.509.824.324 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 51.509.824.324 | 32.821.474.390 |\n| - LNST chưa phân phối kỳ này | 421b | | 11.636.790.739 | 18.688.349.933 |\n| 12. Nguồn vốn đầu tư xây dựng cơ bản | 422 | | - | - |\n| 13. Lợi ích cổ đông không kiểm soát | 429 | | 157.941.810.267 | 107.763.966.790 |\n| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |\n| 1. Nguồn kinh phí | 431 | | - | - |\n| 2. Nguồn kinh phí đã hình thành tài sản cố định | 432 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 3.067.428.507.512 | 2.874.881.558.167 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị vốn góp của chủ sở hữu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận sau thuế chưa phân phối cuối kỳ này so với cuối kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ nợ ngắn hạn trên tổng nợ phải trả cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi của nợ dài hạn so với đầu năm và ý nghĩa của sự thay đổi này.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính hệ số nợ trên vốn chủ sở hữu (Debt-to-Equity Ratio) cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng 'Lợi ích cổ đông không kiểm soát' đến cấu trúc vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Năm nay | Năm trước |\n|---|---|---|---|---|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | V.L.1 | 655.697.238.599 | 411.662.992.555 |\n| 2. Các khoản giảm trừ doanh thu | 02 | | 10.018.100 | - |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | 655.687.220.499 | 411.662.992.555 |\n| 4. Giá vốn hàng bán | 11 | V.I.2 | 622.028.487.508 | 398.969.444.624 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 33.658.732.991 | 12.693.547.931 |\n| 6. Doanh thu hoạt động tài chính | 21 | V.I.3 | 2.979.348.413 | 1.481.752.289 |\n| 7. Chi phí tài chính | 22 | V.I.4 | 17.306.905.518 | 5.414.747.227 |\n| Trong đó: chi phí lãi vay | 23 | | 17.148.490.756 | 5.403.757.727 |\n| 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết | 24 | | - | - |\n| 9. Chi phí bán hàng | 25 | V.I.5 | 1.135.726.825 | 508.391.931 |\n| 10. Chi phí quản lý doanh nghiệp | 26 | V.I.6 | 1.985.069.157 | 931.268.615 |\n| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 16.210.379.904 | 7.320.892.447 |\n| 12. Thu nhập khác | 31 | V.I.7 | 236.421.007 | 25.933.197 |\n| 13. Chi phí khác | 32 | V.I.8 | 261.375.973 | 1.916.616 |\n| 14. Lợi nhuận khác | 40 | | (24.954.966) | 24.016.581 |\n| 15. Tổng lợi nhuận kế toán trước thuế | 50 | | 16.185.424.938 | 7.344.909.028 |\n| 16. Chi phí thuế thu nhập doanh nghiệp hiện hành | 51 | V.I.9 | 3.398.734.294 | 1.481.826.969 |\n| 17. Chi phí thuế thu nhập doanh nghiệp hoãn lại | 52 | V.I.10 | 27.943.572 | - |\n| 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 12.814.634.216 | 5.863.082.059 |\n| 19. Lợi nhuận sau thuế của công ty mẹ | 61 | | 11.636.790.739 | 5.418.690.711 |\n| 20. Lợi nhuận sau thuế của cổ đông không kiểm soát | 62 | | 1.177.843.477 | 444.391.348 |\n| 21. Lãi cơ bản/suy giảm trên cổ phiếu | 70 | V.I.11 | 134 | 47 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Lợi nhuận thuần từ hoạt động kinh doanh' năm nay so với năm trước. Công ty đã cải thiện hay suy giảm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ chi phí tài chính trên doanh thu thuần năm nay là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của 'Lợi nhuận khác' và tác động của nó đến tổng lợi nhuận kế toán trước thuế.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận ròng (Net Profit Margin) năm nay.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro từ việc chi phí lãi vay tăng mạnh so với năm trước.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động kinh doanh chính của công ty dựa trên lợi nhuận thuần từ hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất (Theo phương pháp gián tiếp)\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Năm nay | Năm trước |\n|---|---|---|---|---|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | | |\n| 1. Lợi nhuận trước thuế | 01 | | 16.185.424.938 | 7.344.909.028 |\n| 2. Điều chỉnh cho các khoản: | | | | |\n| - Khấu hao tài sản cố định và bất động sản đầu tư | 02 | | 16.156.917.141 | 5.169.969.995 |\n| - Các khoản dự phòng | 03 | | - | - |\n| - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | | 840.125.192 | 10.989.500 |\n| - Lãi, lỗ từ hoạt động đầu tư | 05 | | 1.316.478.522 | 1.481.752.289 |\n| - Chi phí lãi vay | 06 | | 17.148.490.756 | 5.403.757.727 |\n| - Các khoản điều chỉnh khác | 07 | | - | - |\n| 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 08 | | 47.334.229.121 | 16.447.873.961 |\n| - Tăng, giảm các khoản phải thu | 09 | | 88.546.104.860 | 120.322.839.357 |\n| - Tăng, giảm hàng tồn kho | 10 | | 10.336.901.210 | 6.956.312.892 |\n| - Tăng, giảm các khoản phải trả | 11 | | (11.563.264.165) | 84.431.169.833 |\n| - Tăng, giảm chi phí trả trước | 12 | | 897.540.242 | 1.306.206.939 |\n| - Tăng, giảm chứng khoán kinh doanh | 13 | | - | - |\n| - Tiền lãi vay đã trả | 14 | | (16.821.219.812) | (5.427.387.864) |\n| - Thuế thu nhập doanh nghiệp đã nộp | 15 | | - | (350.000.000) |\n| - Tiền thu khác từ hoạt động kinh doanh | 16 | | - | - |\n| - Tiền chi khác cho hoạt động kinh doanh | 17 | | (431.300.000) | (188.210.000) |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | | 58.135.572.838 | 202.534.252.924 |\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | | |\n| 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | 21 | | (131.125.693.160) | (25.820.703.190) |\n| 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | 22 | | - | - |\n| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | | (36.150.000.000) | (12.035.000.000) |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | | 44.835.302.000 | - |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | | - | - |\n| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | | - | - |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | | 867.769.718 | 1.374.698.060 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | | (121.572.621.442) | (36.481.005.130) |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | | - | 49.000.000.000 |\n| 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | 32 | | - | - |\n| 3. Tiền thu từ đi vay | 33 | | 602.405.515.704 | 401.543.898.989 |\n| 4. Tiền trả nợ gốc vay | 34 | | (467.768.726.733) | (154.745.386.338) |\n| 5. Tiền trả nợ gốc thuê tài chính | 35 | | (2.912.657.457) | (4.850.624.225) |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | | - | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | | 131.724.131.514 | 290.947.888.426 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | | 1.015.937.234 | 2.932.630.372 |\n| Tiền và tương đương tiền đầu năm | 60 | V.1 | 16.524.916.087 | 13.149.106.683 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | | 414.254.865 | 10.989.500 |\n| Tiền và tương đương tiền cuối kỳ | 70 | V.1 | 17.955.108.186 | 16.070.747.555 |\nNgười lập biểu Kế toán trưởng Tổng Giám đốc\nNguyễn Thảo Phương Bùi Thị Giang Trần Thị Thu Phương",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác' năm nay so với năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động tài chính năm nay thay đổi như thế nào so với năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tự tài trợ của công ty dựa trên dòng tiền từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng mạnh 'Tiền chi để mua sắm, xây dựng tài sản cố định' đến dòng tiền đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro thanh khoản nếu dòng tiền từ hoạt động kinh doanh tiếp tục giảm mạnh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Đặc điểm hoạt động của Công ty)\nLoại nội dung: Text\nI. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA CÔNG TY\n1. Hình thức sở hữu vốn: Công ty cổ phần.\n2. Khái quát về công ty\nCông ty Cổ phần HHP GLOBAL tên cũ là Công ty cổ phần Giấy Hoàng Hà Hải Phòng hoạt động theo Giấy chứng nhận đăng ký kinh doanh số 0201282851 ngày 05 tháng 11 năm 2012 do Sở Kế hoạch và Đầu tư thành phố Hải Phòng cấp.\nTrong quá trình hoạt động Công ty đã 14 lần thay đổi đăng ký kinh doanh. Giấy đăng ký kinh doanh thay đổi lần 14 được Sở Kế hoạch và Đầu tư Thành phố Hải Phòng cấp ngày 21 tháng 05 năm 2024.\nVốn điều lệ theo giấy chứng nhận đăng ký kinh doanh lần thứ 14: 865.543.430.000 VND.\nVốn điều lệ thực góp tại thời điểm ngày 31 tháng 12 năm 2024: 865.543.430.000 VND.\nTrụ sở hoạt động:\nĐịa chỉ: số 194 đường Kiều Hạ, Phường Đông Hải 2, Quận Hải An, Thành phố Hải Phòng, Việt Nam\nĐiện thoại: 02253 246 789\nEmail: info@hhpglobaljsc.com\nWebsite: https://hhpglobaljsc.com\nMã số thuế: 0201282851\n3. Lĩnh vực kinh doanh: Sản xuất, thương mại\n4. Ngành nghề kinh doanh chính: Sản xuất giấy bao bì carton. Chi tiết: Sản xuất giấy bao bì carton từ nguyên liệu chính là giấy phế liệu.\n5. Chu kỳ sản xuất, kinh doanh thông thường: Chu kỳ sản xuất kinh doanh thông thường của công ty không quá 12 tháng.\n6. Danh sách các công ty con được hợp nhất:\n| Tên công ty | Địa chỉ trụ sở chính | Ngành nghề kinh doanh | Tỷ lệ vốn góp thực tế | Tỷ lệ theo Giấy CNĐKKD |\n|---|---|---|---|---|\n| Công ty Cổ phần Giấy Hoàng Hà Hà Nam | KCN Đồng Văn 1, thị trấn Đồng Văn, huyện Duy Tiên, tỉnh Hà Nam | Sản xuất giấy | 52,75% | 52,75% |\n| Công ty Cổ phần Đầu tư 3C Pro | 771 Quang Trung, Phường Phú La, Quận Hà Đông, Tp.Hà Nội | Sản xuất gia công, sản xuất giấy vệ sinh, sản xuất gia công sản phẩm giấy dân dụng và kinh doanh các sản phẩm liên quan về giấy | 80% | 80% |\n| Công ty Cổ phần Năng lượng Xanh HHP | Lô CN2 Cụm Công nghiệp Thị trấn Tiên Lãng, Huyện Tiên Lãng, Tp.Hải Phòng, Việt Nam | Sản xuất thùng, bể chứa và dụng cụ chứa đựng bằng kim loại; Sản xuất phân phối hơi nước | 51% | 51% |\n| Công ty Cổ phần Giấy Hoàng Hà Phú Yên | Lô E8 Khu công nghiệp Đông Bắc Sông Cầu, Xã Xuân Hải, Thị xã Sông Cầu, Tỉnh Phú Yên, Việt Nam. | Sản xuất giấy bao bì carton | 51% | 51% |\nHiện tại các Công ty con đang hoạt động bình thường.\n7. Công ty liên kết được phản ánh trong BCTC hợp nhất theo phương pháp vốn chủ:\n| Tên công ty | Địa chỉ trụ sở chính | Ngành nghề kinh doanh | Tỷ lệ vốn góp thực tế | Tỷ lệ theo Giấy CNĐKKD |\n|---|---|---|---|---|\n| Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà | Lô 3, tổ 40, Trung tâm nhà hát kịch, Phường Trung Hòa, Quận Cầu Giấy, Thành Phố Hà Nội | Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê | 30% | 30% |\nHiện tại Công ty liên kết đang hoạt động bình thường.\n8. Nhân viên: Tại ngày 31 tháng 03 năm 2025 công ty có 253 nhân viên đang làm việc, số đầu năm là 254 nhân viên.\nII. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Năm tài chính: Năm tài chính của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.\n2. Đơn vị tiền tệ sử dụng trong kế toán: Đơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND) do việc thu, chi chủ yếu được thực hiện bằng đơn vị tiền tệ VND.\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chuẩn mực và chế độ kế toán áp dụng: Công ty áp dụng các chuẩn mực kế toán, Chế độ kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014, Thông tư số 53/2016/TT-BTC năm 2016 sửa đổi, bổ sung Thông tư số 200/2014/TT-BTC, Thông tư số 202/2014/TT-BTC ngày 22/12/2014 của Bộ trưởng Bộ Tài chính cũng như các thông tư hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập Báo cáo tài chính.\n2. Tuyên bố về việc tuân thủ chuẩn mực kế toán và chế độ kế toán Việt Nam: Ban Tổng Giám đốc đảm bảo đã tuân thủ yêu cầu của các chuẩn mực kế toán, Chế độ kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014, Thông tư số 53/2016/TT-BTC năm 2016 sửa đổi, bổ sung Thông tư số 200/2014/TT-BTC, Thông tư số 202/2014/TT-BTC ngày 22/12/2014 của Bộ trưởng Bộ Tài chính cũng như các thông tư hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập Báo cáo tài chính.",
+    "questions": [
+      {
+        "question": "Tên cũ của Công ty Cổ phần HHP GLOBAL là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty có bao nhiêu công ty con được hợp nhất?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng nhân viên của công ty tại ngày 31 tháng 03 năm 2025 là bao nhiêu?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Vốn điều lệ thực góp của công ty tại ngày 31 tháng 12 năm 2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Ngành nghề kinh doanh chính của Công ty Cổ phần HHP GLOBAL là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tuân thủ các chuẩn mực và chế độ kế toán của công ty dựa trên tuyên bố của Ban Tổng Giám đốc.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của các công ty con trong cơ cấu hoạt động kinh doanh của HHP GLOBAL.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Các chính sách kế toán áp dụng)\nLoại nội dung: Text\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở lập Báo cáo tài chính hợp nhất\nBáo cáo tài chính hợp nhất được lập trên cơ sở kế toán dồn tích trừ các thông tin liên quan đến các luồng tiền.\nBáo cáo tài chính hợp nhất bao gồm Báo cáo tài chính của Công ty Cổ phần HHP GLOBAL (công ty mẹ) và công ty con. Công ty con là đơn vị chịu sự kiểm soát của công ty mẹ. Sự kiểm soát tồn tại khi công ty mẹ có khả năng trực tiếp hay gián tiếp chi phối các chính sách tài chính và hoạt động của công ty con để thu được các lợi ích kinh tế từ các hoạt động này. Khi đánh giá quyền kiểm soát có tính đến quyền biểu quyết tiềm năng hiện đang có hiệu lực hay sẽ được chuyển đổi.\nKết quả hoạt động kinh doanh của các công ty con được mua lại hoặc bán đi trong năm được trình bày trong Báo cáo kết quả hoạt động kinh doanh hợp nhất từ ngày mua hoặc cho đến ngày bán khoản đầu tư ở công ty con đó.\nTrong trường hợp chính sách kế toán của công ty con khác với chính sách kế toán của áp dụng thống nhất trong Công ty thì Báo cáo tài chính hợp nhất của công ty con sẽ có những điều chỉnh thích hợp trước khi sử dụng cho việc lập Báo cáo tài chính hợp nhất.\nSố dư các tài khoản trên Bảng cân đối kế toán giữa các công ty trong cùng Tập đoàn, các giao dịch nội bộ, các khoản lãi nội bộ chưa thực hiện phát sinh từ các giao dịch này được loại trừ khi lập Báo cáo tài chính hợp nhất. Các khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ cũng được loại bỏ trừ khi chi phí tạo nên khoản lỗ đó không thể thu hồi được.\nLợi ích của cổ đông thiểu số thể hiện phần lợi nhuận và tài sản thuần của công ty con không nắm giữ bởi các cổ đông của công ty mẹ và được trình bày ở mục riêng trên Báo cáo kết quả hoạt động kinh doanh hợp nhất và Bảng cân đối kế toán hợp nhất. Lợi ích của cổ đông thiểu số bao gồm giá trị các lợi ích của cổ đông thiểu số tại ngày hợp nhất kinh doanh ban đầu và phần lợi ích của cổ đông thiểu số trong biến động của vốn chủ sở hữu kể từ ngày hợp nhất kinh doanh. Các khoản lỗ tương ứng với phần vốn của cổ đông thiểu số vượt quá phần vốn của họ trong vốn chủ sở hữu của công ty con được tính giảm vào phần lợi ích của Tập đoàn trừ khi cổ đông thiểu số có nghĩa vụ ràng buộc và có khả năng bù đắp khoản lỗ đó.\n2. Hợp nhất kinh doanh\nViệc hợp nhất kinh doanh được kế toán theo phương pháp mua. Giá phí hợp nhất kinh doanh bao gồm giá trị hợp lý tại ngày diễn ra trao đổi của các tài sản đem trao đổi, các khoản nợ phải trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do Tập đoàn phát hành để đổi lấy quyền kiểm soát bên bị mua cộng với các chi phí liên quan trực tiếp đến việc hợp nhất kinh doanh. Tài sản đã mua, nợ phải trả có thể xác định được và những khoản nợ tiềm tàng phải gánh chịu trong hợp nhất kinh doanh được ghi nhận theo giá trị hợp lý tại ngày hợp nhất kinh doanh.\nChênh lệch giữa giá phí hợp nhất kinh doanh với phần sở hữu của bên mua (Công ty) trong giá trị hợp lý thuần của tài sản, nợ phải trả có thể xác định được và các khoản nợ tiềm tàng đã ghi nhận của bên bị mua tại ngày mua được ghi nhận là lợi thế thương mại. Nếu giá phí hợp nhất kinh doanh thấp hơn giá trị hợp lý thuần của tài sản, nợ phải trả có thể xác định được và các khoản nợ tiềm tàng đã ghi nhận của bên bị mua, phần chênh lệch được ghi nhận vào kết quả hoạt động kinh doanh trong kỳ phát sinh nghiệp vụ mua.\n3. Các nghiệp vụ bằng ngoại tệ\nTỷ giá giao dịch thực tế đối với các giao dịch bằng ngoại tệ phát sinh trong năm:\n- Tỷ giá giao dịch thực tế khi mua bán ngoại tệ là tỷ giá được quy định trong hợp đồng mua, bán ngoại tệ giữa Công ty và ngân hàng thương mại.\n- Tỷ giá khi góp vốn hoặc nhận góp vốn là tỷ giá mua ngoại tệ của ngân hàng nơi Công ty mở tài khoản để nhận vốn của nhà đầu tư tại ngày góp vốn.\n- Tỷ giá khi ghi nhận nợ phải thu là tỷ giá mua của ngân hàng thương mại nơi Công ty chỉ định khách hàng thanh toán tại thời điểm giao dịch phát sinh.\n- Tỷ giá khi ghi nhận nợ phải trả là tỷ giá bán của ngân hàng thương mại nơi Công ty dự kiến giao dịch tại thời điểm giao dịch phát sinh.\n- Tỷ giá khi mua sắm tài sản hoặc thanh toán ngay bằng ngoại tệ là tỷ giá mua của ngân hàng thương mại nơi Công ty thực hiện thanh toán.\nTỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại thời điểm lập Báo cáo tài chính:\n- Đối với khoản mục phân loại là tài sản áp dụng tỷ giá mua ngoại tệ.\n- Đối với tiền gửi ngoại tệ áp dụng tỷ giá mua của chính ngân hàng nơi Công ty mở tài khoản ngoại tệ.\n- Đối với khoản mục phân loại là nợ phải trả áp dụng tỷ giá bán ngoại tệ của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.\nTất cả các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ cuối năm được hạch toán vào kết quả hoạt động kinh doanh của kỳ kế toán.\n4. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng không kỳ hạn, vàng tiền tệ sử dụng với các chức năng cất trữ giá trị không bao gồm các loại vàng được phân loại là hàng tồn kho sử dụng với mục đích là nguyên vật liệu để sản xuất sản phẩm hoặc hàng hóa để bán.\nCác khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày mua, dễ dàng chuyển đổi thành một lượng tiền xác định cũng như không có nhiều rủi ro trong việc chuyển đổi thành tiền.\n5. Các khoản đầu tư tài chính\nCác khoản đầu tư nắm giữ đến ngày đáo hạn:\nKhoản đầu tư được phân loại là nắm giữ đến ngày đáo hạn khi công ty có ý định và khả năng giữ đến ngày đáo hạn. Các khoản đầu tư nắm giữ đến ngày đáo hạn bao gồm các khoản tiền gửi ngân hàng có kỳ hạn (bao gồm cả các loại tín phiếu, kỳ phiếu, trái phiếu, cổ phiếu ưu đãi bên phát hành bắt buộc phải mua lại tại một thời điểm nhất định trong tương lai) và các khoản cho vay nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ và các khoản đầu tư nắm giữ đến ngày đáo hạn khác.\nCác khoản đầu tư nắm giữ đến ngày đáo hạn được ghi nhận ban đầu theo giá gốc bao gồm giá mua và các chi phí liên quan đến giao dịch mua các khoản đầu tư. Sau khi ghi nhận ban đầu, các khoản đầu tư này được ghi nhận theo giá trị có thể thu hồi. Thu nhập lãi từ các khoản đầu tư nắm giữ đến ngày đáo hạn sau ngày mua được ghi nhận trên Báo cáo kết quả hoạt động kinh doanh trên cơ sở dự thu. Lãi được hưởng trước khi công ty nắm giữ được ghi giảm trừ vào giá gốc tại thời điểm mua.\nKhi có các bằng chứng chắc chắn cho thấy một phần hoặc toàn bộ khoản đầu tư có thể không thu hồi được và số tổn thất được xác định một cách đáng tin cậy thì tổn thất được ghi nhận vào chi phí tài chính trong năm và giảm trừ trực tiếp giá trị đầu tư.\nCác khoản đầu tư vào công ty liên doanh, liên kết:\nCông ty liên doanh là doanh nghiệp được thành lập trên cơ sở thỏa thuận trên hợp đồng mà theo đó công ty và các bên tham gia thực hiện hoạt động kinh tế trên cơ sở đồng kiểm soát. Đồng kiểm soát được hiểu là việc đưa ra các quyết định mang tính chiến lược liên quan đến các chính sách hoạt động và tài chính của công ty liên doanh phải có sự đồng thuận của các bên tham gia liên doanh.\nCông ty liên kết là doanh nghiệp mà công ty có ảnh hưởng đáng kể nhưng không có quyền kiểm soát đối với các chính sách tài chính và hoạt động. Ảnh hưởng đáng kể thể hiện ở quyền tham gia vào việc đưa ra các quyết định về chính sách tài chính và hoạt động của doanh nghiệp nhận đầu tư nhưng không kiểm soát các chính sách này.\nCác khoản đầu tư vào công ty con, công ty liên doanh, liên kết được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc khoản góp vốn cộng các chi phí liên quan trực tiếp đến việc đầu tư. Trường hợp đầu tư bằng tài sản phi tiền tệ, giá phí khoản đầu tư được ghi nhận theo giá trị hợp lý của tài sản phi tiền tệ tại thời điểm phát sinh.\nCổ tức và lợi nhuận của các kỳ trước khi khoản đầu tư được mua được hạch toán giảm giá trị của chính khoản đầu tư đó. Cổ tức và lợi nhuận của các kỳ sau khi khoản đầu tư được mua được ghi nhận doanh thu. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được theo mệnh giá.\nDự phòng tổn thất cho các khoản đầu tư vào công ty con, công ty liên doanh, liên kết được trích lập khi công ty con, công ty liên doanh, liên kết bị lỗ với mức trích lập bằng chênh lệch giữa vốn góp thực tế của các bên tại công ty con, công ty liên doanh, liên kết và vốn chủ sở hữu thực có nhân với tỷ lệ góp vốn của công ty so với tổng số vốn góp thực tế của các bên tại công ty con, công ty liên doanh, liên kết. Nếu công ty con, công ty liên doanh, liên kết là đối tượng lập Báo cáo tài chính hợp nhất thì căn cứ để xác định dự phòng tổn thất là Báo cáo tài chính hợp nhất.\nTăng, giảm số dự phòng tổn thất đầu tư vào công ty con, công ty liên doanh, liên kết cần phải trích lập tại ngày kết thúc năm tài chính được ghi nhận vào chi phí tài chính.",
+    "questions": [
+      {
+        "question": "Cơ sở lập báo cáo tài chính hợp nhất của công ty là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Theo chính sách của công ty, các khoản tương đương tiền có thời hạn thu hồi hoặc đáo hạn tối đa là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty xác định tỷ giá khi ghi nhận nợ phải thu bằng cách nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xử lý các khoản lỗ nội bộ chưa thực hiện phát sinh từ các giao dịch giữa các công ty trong cùng tập đoàn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích sự khác biệt giữa công ty liên doanh và công ty liên kết theo định nghĩa của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc áp dụng phương pháp mua trong hợp nhất kinh doanh đến báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích cách công ty xử lý chênh lệch tỷ giá hối đoái và ảnh hưởng của nó đến kết quả hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Các chính sách kế toán áp dụng tiếp theo)\nLoại nội dung: Text\nCác khoản đầu tư vào công cụ vốn của đơn vị khác:\nĐầu tư vào công cụ vốn của đơn vị khác bao gồm các khoản đầu tư công cụ vốn nhưng công ty không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư. Các khoản đầu tư vào công cụ vốn của đơn vị khác được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc khoản góp vốn cộng các chi phí trực tiếp liên quan đến hoạt động đầu tư. Cổ tức và lợi nhuận của các kỳ trước khi khoản đầu tư được mua được hạch toán giảm giá trị của chính khoản đầu tư đó. Cổ tức và lợi nhuận của các kỳ sau khi khoản đầu tư được mua được ghi nhận doanh thu. Cổ tức được nhận bằng cổ phiếu được ghi nhận theo mệnh giá trừ công ty nhà nước thực hiện theo quy định hiện hành của pháp luật.\nDự phòng tổn thất cho các khoản đầu tư vào công cụ vốn của đơn vị khác được trích lập như sau:\n- Đối với khoản đầu tư vào cổ phiếu niêm yết hoặc giá trị hợp lý khoản đầu tư được xác định tin cậy, việc lập dự phòng dựa trên giá trị thị trường của cổ phiếu.\n- Đối với khoản đầu tư không xác định được giá trị hợp lý tại thời điểm báo cáo, việc lập dự phòng được thực hiện căn cứ vào khoản lỗ của bên được đầu tư với mức trích lập bằng chênh lệch giữa vốn góp thực tế của các bên tại đơn vị khác và vốn chủ sở hữu thực có nhân với tỷ lệ góp vốn của Công ty so với tổng số vốn góp thực tế của các bên tại đơn vị khác.\nTăng, giảm số dự phòng tổn thất đầu tư vào công cụ vốn của đơn vị khác cần phải trích lập tại ngày kết thúc năm tài chính kế toán được ghi nhận vào chi phí tài chính.\n6. Các khoản phải thu\nCác khoản nợ phải thu được trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi.\nViệc phân loại các khoản phải thu là phải thu khách hàng và phải thu khác được thực hiện theo nguyên tắc sau:\n- Phải thu của khách hàng phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch bao gồm cả các khoản phải thu về tiền bán hàng xuất khẩu ủy thác cho đơn vị khác.\n- Phải thu khác phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua – bán.\nDự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào tuổi nợ quá hạn của các khoản nợ hoặc dự kiến mức tổn thất có thể xảy ra, cụ thể như sau:\n- Đối với nợ phải thu quá hạn thanh toán:\n+ 30% giá trị đối với khoản nợ phải thu quá hạn từ 6 tháng đến dưới 1 năm.\n+ 50% giá trị đối với khoản nợ phải thu quá hạn từ 1 năm đến dưới 2 năm.\n+ 70% giá trị đối với khoản nợ phải thu quá hạn từ 2 năm đến dưới 3 năm.\n+ 100% giá trị đối với khoản nợ phải thu từ 3 năm trở lên.\n- Đối với nợ phải thu chưa quá hạn thanh toán nhưng khó có khả năng thu hồi căn cứ vào dự kiến mức tổn thất để lập dự phòng.\n7. Hàng tồn kho\nHàng tồn kho được ghi nhận theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được.\nGiá gốc hàng tồn kho được xác định như sau:\n- Nguyên vật liệu, hàng hóa bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\n- Thành phẩm bao gồm chi phí nguyên vật liệu, nhân công trực tiếp và chi phí sản xuất chung cố định được phân bổ dựa trên mức độ hoạt động bình thường (chi phí quyền sử dụng đất, các chi phí trực tiếp và các chi phí chung có liên quan phát sinh trong quá trình đầu tư xây dựng thành phẩm bất động sản).\n- Chi phí sản xuất kinh doanh dở dang chỉ bao gồm chi phí nguyên vật liệu chính hoặc yếu tố chi phí khác cho phù hợp.\nGiá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong kỳ sản xuất, kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng.\nGiá trị hàng tồn kho được tính theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.\n8. Chi phí trả trước\nChi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán. Chi phí trả trước của công ty bao gồm các chi phí sau: Chi phí trả trước ghi nhận chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động SXKD của nhiều kỳ kế toán và việc kết chuyển các khoản chi phí này vào chi phí SXKD của các kỳ kế toán sau.\nCông cụ, dụng cụ: Các công cụ, dụng cụ đã đưa vào sử dụng được phân bổ vào chi phí theo phương pháp đường thẳng với thời gian phân bổ không quá 03 năm.\nTiền thuê đất trả trước: Tiền thuê đất trả trước thể hiện khoản tiền thuê đất đã trả cho phần đất Công ty đang sử dụng. Tiền thuê đất trả trước được phân bổ vào chi phí theo phương pháp đường thẳng tương ứng với thời gian thuê.\n9. Tài sản cố định hữu hình\nTài sản cố định hữu hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí phát sinh không thỏa mãn điều kiện trên được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ.\nKhi tài sản cố định hữu hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong năm.\nTài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính, số năm khấu hao của các loại tài sản cố định hữu hình như sau:\n| Tài sản cố định | Số năm |\n|---|---|\n| Nhà cửa, vật kiến trúc | 10-45 |\n| Máy móc và thiết bị | 05-15 |\n| Phương tiện vận tải, truyền dẫn | 02-10 |\n10. Tài sản cố định thuê tài chính\nThuê tài sản được phân loại là thuê tài chính nếu phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu tài sản thuộc về người đi thuê. Tài sản cố định thuê tài chính được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định thuê tài chính là giá thấp hơn giữa giá trị hợp lý của tài sản thuê tại thời điểm khởi đầu của hợp đồng thuê và giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu. Tỷ lệ chiết khấu để tính giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu cho việc thuê tài sản là lãi suất ngầm định trong hợp đồng thuê tài sản hoặc lãi suất ghi trong hợp đồng. Trong trường hợp không thể xác định được lãi suất ngầm định trong hợp đồng thuê thì sử dụng lãi suất tiền vay tại thời điểm khởi đầu việc thuê tài sản.\nTài sản cố định thuê tài chính được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính. Trong trường hợp không chắc chắn công ty sẽ có quyền sở hữu tài sản khi hết hạn hợp đồng thuê thì tài sản cố định sẽ được khấu hao theo thời gian ngắn hơn giữa thời gian thuê và thời gian hữu dụng ước tính, số năm khấu hao của các loại tài sản cố định thuê tài chính như sau:\n| Loại tài sản cố định | Số năm |\n|---|---|\n| Máy móc thiết bị | 06-15 |\n11. Tài sản cố định vô hình\nTài sản cố định vô hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định vô hình bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Chi phí liên quan đến tài sản cố định vô hình phát sinh sau khi ghi nhận ban đầu được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ trừ khi các chi phí này gắn liền với một tài sản cố định vô hình cụ thể và làm tăng lợi ích kinh tế từ các tài sản này.\nKhi tài sản cố định vô hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong năm.\nTài sản cố định vô hình của Công ty bao gồm: Chương trình phần mềm. Chi phí liên quan đến các chương trình phần mềm máy tính không phải là một bộ phận gắn kết với phần cứng có liên quan được vốn hoá. Nguyên giá của phần mềm máy tính là toàn bộ các chi phí mà Công ty đã chi ra tính đến thời điểm đưa phần mềm vào sử dụng. Phần mềm máy tính được khấu hao theo phương pháp đường thẳng.\n12. Chi phí xây dựng cơ bản dở dang\nChi phí xây dựng cơ bản dở dang phản ánh các chi phí liên quan trực tiếp (bao gồm cả chi phí lãi vay có liên quan phù hợp với chính sách kế toán của công ty) đến các tài sản đang trong quá trình xây dựng, máy móc thiết bị đang lắp đặt để phục vụ cho mục đích sản xuất, cho thuê và quản lý cũng như chi phí liên quan đến việc sửa chữa tài sản cố định đang thực hiện. Các tài sản này được ghi nhận theo giá gốc và không được tính khấu hao.\n13. Các khoản nợ phải trả và chi phí phải trả\nCác khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả. Việc phân loại các khoản phải trả là phải trả người bán, chi phí phải trả, phải trả nội bộ và phải trả khác được thực hiện theo nguyên tắc sau:\n- Phải trả người bán phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập công ty, bao gồm cả các khoản phải trả khi nhập khẩu thông qua người nhận ủy thác.\n- Chi phí phải trả phản ánh các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước.\n- Phải trả khác phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.\n14. Nguyên tắc ghi nhận vay và nợ phải trả thuê tài chính\nCông ty phải theo dõi chi tiết kỳ hạn phải trả của các khoản vay, nợ thuê tài chính. Các khoản có thời gian trả nợ hơn 12 tháng kể từ thời điểm lập Báo cáo tài chính, kế toán trình bày là vay và nợ thuê tài chính dài hạn. Các khoản đến hạn trả trong vòng 12 tháng tiếp theo kể từ thời điểm lập Báo cáo tài chính, kế toán trình bày là vay và nợ thuê tài chính ngắn hạn để có kế hoạch chi trả.\nĐối với khoản nợ thuê tài chính, tổng số nợ thuê phản ánh vào bên Có của tài khoản 341 là tổng số tiền phải trả được tính bằng giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu hoặc giá trị hợp lý của tài sản thuê.\n15. Vốn chủ sở hữu\nVốn góp của chủ sở hữu: Vốn góp của chủ sở hữu được ghi nhận theo số vốn thực tế đã góp của các cổ đông.\nThặng dư vốn cổ phần: Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu, phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn. Chi phí trực tiếp liên quan đến việc phát hành bổ sung cổ phiếu và tái phát hành cổ phiếu quỹ được ghi giảm thặng dư vốn cổ phần.\nVốn khác của chủ sở hữu: Vốn khác được hình thành do bổ sung từ kết quả hoạt động kinh doanh, đánh giá lại tài sản và giá trị còn lại giữa giá trị hợp lý của các tài sản được tặng, biếu, tài trợ sau khi trừ các khoản thuế phải nộp nếu có liên quan đến các tài sản này.\nCổ phiếu quỹ: Khi mua lại cổ phiếu do Công ty phát hành, khoản tiền trả bao gồm cả các chi phí liên quan đến giao dịch được ghi nhận là cổ phiếu quỹ và được phản ánh là một khoản giảm trừ trong vốn chủ sở hữu. Khi tái phát hành, chênh lệch giữa giá tái phát hành và giá sổ sách của cổ phiếu quỹ được ghi vào khoản mục Thặng dư vốn cổ phần.\n16. Phân phối lợi nhuận\nLợi nhuận sau thuế thu nhập doanh nghiệp được phân phối cho cổ đông sau khi đã trích lập các quỹ theo Điều lệ của công ty cũng như các quy định của pháp luật và đã được Đại hội đồng cổ đông phê duyệt.\nViệc phân phối lợi nhuận cho cổ đông được cân nhắc đến các khoản mục phi tiền tệ nằm trong lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến luồng tiền và khả năng chi trả cổ tức như lãi do đánh giá lại tài sản mang đi góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác.\nCổ tức được ghi nhận là nợ phải trả khi được Đại hội đồng cổ đông phê duyệt.",
+    "questions": [
+      {
+        "question": "Công ty phân loại các khoản phải thu của khách hàng dựa trên nguyên tắc nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian phân bổ tối đa của công cụ, dụng cụ đã đưa vào sử dụng là bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu các điều kiện để chi phí phát sinh sau ghi nhận ban đầu được ghi tăng nguyên giá tài sản cố định hữu hình.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty lập dự phòng cho các khoản đầu tư vào công cụ vốn của đơn vị khác khi không xác định được giá trị hợp lý.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích sự khác biệt trong cách ghi nhận cổ tức và lợi nhuận tùy thuộc vào thời điểm trước hay sau khi khoản đầu tư được mua.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của chính sách ghi nhận nợ thuê tài chính dài hạn và ngắn hạn đến báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích các yếu tố ảnh hưởng đến quyết định phân phối lợi nhuận cho cổ đông của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Ghi nhận doanh thu và chi phí)\nLoại nội dung: Text\n17. Ghi nhận doanh thu và thu nhập\nDoanh thu bán hàng hóa, thành phẩm: Doanh thu bán hàng hóa, thành phẩm được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại sản phẩm, hàng hóa đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại sản phẩm, hàng hóa (trừ trường hợp khách hàng có quyền trả lại hàng hóa dưới hình thức đổi lại để lấy hàng hóa, dịch vụ khác).\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.\nDoanh thu cung cấp dịch vụ: Doanh thu của giao dịch cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp dịch vụ được thực hiện trong nhiều kỳ thì doanh thu được ghi nhận trong kỳ được căn cứ vào kết quả phần công việc đã hoàn thành vào ngày kết thúc kỳ kế toán. Kết quả của giao dịch cung cấp dịch vụ được xác định khi thỏa mãn tất cả các điều kiện sau:\n- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại dịch vụ đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại dịch vụ đã cung cấp.\n- Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n- Xác định được phần công việc đã hoàn thành vào ngày kết thúc năm tài chính.\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\nTiền lãi: Tiền lãi được ghi nhận trên cơ sở dồn tích, được xác định trên số dư các tài khoản tiền gửi và lãi suất thực tế từng kỳ.\nCổ tức và lợi nhuận được chia: Cổ tức và lợi nhuận được chia được ghi nhận khi công ty được quyền nhận cổ tức hoặc lợi nhuận từ việc góp vốn. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được theo mệnh giá.\n18. Giá vốn hàng bán\nGiá vốn hàng bán trong năm được ghi nhận phù hợp với doanh thu phát sinh trong kỳ và đảm bảo tuân thủ nguyên tắc thận trọng.\nĐối với chi phí nguyên vật liệu trực tiếp tiêu hao vượt mức bình thường, chi phí nhân công, chi phí sản xuất chung cố định không phân bổ vào giá trị sản phẩm nhập kho, kế toán phải tính ngay vào giá vốn hàng bán sau khi trừ đi các khoản bồi thường, nếu có (kể cả khi sản phẩm, hàng hóa chưa được xác định là tiêu thụ).\n19. Chi phí đi vay\nChi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay. Chi phí đi vay được ghi nhận vào chi phí khi phát sinh. Trường hợp chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán thì chi phí đi vay này được vốn hóa. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng. Các khoản thu nhập phát sinh từ việc đầu tư tạm thời các khoản vay được ghi giảm nguyên giá tài sản có liên quan.\nĐối với các khoản vốn vay chung trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang thì chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong năm, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể.\n20. Nguyên tắc kế toán chi phí bán hàng và chi phí quản lý doanh nghiệp\nChi phí bán hàng phản ánh các chi phí thực tế phát sinh trong quá trình bán sản phẩm, hàng hóa, cung cấp dịch vụ, bao gồm các chi phí chào hàng, giới thiệu sản phẩm, quảng cáo sản phẩm, hoa hồng bán hàng, chi phí bảo hành sản phẩm, hàng hóa (trừ hoạt động xây lắp), chi phí bảo quản, đóng gói, vận chuyển...\nChi phí quản lý doanh nghiệp phản ánh các chi phí quản lý chung của doanh nghiệp gồm các chi phí về lương nhân viên bộ phận quản lý doanh nghiệp (tiền lương, tiền công, các khoản phụ cấp,... bảo hiểm xã hội, bảo hiểm y tế, kinh phí công đoàn, bảo hiểm thất nghiệp của nhân viên quản lý doanh nghiệp), chi phí vật liệu văn phòng, công cụ lao động, khấu hao TSCĐ dùng cho quản lý doanh nghiệp (tiền thuê đất, thuế môn bài, khoản lập dự phòng phải thu khó đòi), dịch vụ mua ngoài (điện, nước, điện thoại, fax, bảo hiểm tài sản, cháy nổ...), chi phí bằng tiền khác (tiếp khách, hội nghị khách hàng....).\n21. Thuế thu nhập doanh nghiệp\nChi phí thuế thu nhập doanh nghiệp bao gồm thuế thu nhập DN hiện hành và thuế thu nhập DN hoãn lại. Thuế thu nhập hiện hành là khoản thuế được tính dựa trên thu nhập tính thuế. Thu nhập tính thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán, các chi phí không được trừ cũng như điều chỉnh các khoản thu nhập không phải chịu thuế và các khoản lỗ được chuyển.\nThuế thu nhập doanh nghiệp hoãn lại là khoản thuế thu nhập doanh nghiệp sẽ phải nộp hoặc sẽ được hoàn lại do chênh lệch tạm thời giữa giá trị ghi sổ của tài sản và nợ phải trả cho mục đích lập Báo cáo tài chính và cơ sở tính thuế thu nhập. Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế. Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ này.\nGiá trị ghi sổ của tài sản thuế thu nhập hoãn lại được xem xét lại vào ngày kết thúc năm tài chính và sẽ được ghi giảm đến mức đảm bảo chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng. Các tài sản thuế thu nhập doanh nghiệp hoãn lại chưa được ghi nhận trước đây được xem xét lại vào ngày kết thúc năm tài chính và được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế để có thể sử dụng các tài sản thuế thu nhập hoãn lại chưa ghi nhận này.\nTài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho năm tài sản được thu hồi hay nợ phải trả được thanh toán dựa trên các mức thuế suất có hiệu lực tại ngày kết thúc năm tài chính. Thuế thu nhập hoãn lại được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh và chỉ ghi trực tiếp vào vốn chủ sở hữu khi khoản thuế đó liên quan đến các khoản mục được ghi thẳng vào vốn chủ sở hữu.\nTài sản thuế thu nhập hoãn lại và nợ thuế thu nhập hoãn lại phải trả được bù trừ khi:\n- Công ty có quyền hợp pháp được bù trừ giữa tài sản thuế thu nhập hiện hành với thuế thu nhập hiện hành phải nộp và\n- Các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả này liên quan đến thuế thu nhập doanh nghiệp được quản lý bởi cùng một cơ quan thuế đối với cùng một đơn vị chịu thuế hoặc\n- Công ty dự định thanh toán thuế thu nhập hiện hành phải trả và tài sản thuế thu nhập hiện hành trên cơ sở thuần hoặc thu hồi tài sản đồng thời với việc thanh toán nợ phải trả trong từng kỳ tương lai khi các khoản trọng yếu của thuế thu nhập hoãn lại phải trả hoặc tài sản thuế thu nhập hoãn lại được thanh toán hoặc thu hồi.",
+    "questions": [
+      {
+        "question": "Nêu một trong các điều kiện để công ty ghi nhận doanh thu bán hàng hóa, thành phẩm.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí thuế thu nhập doanh nghiệp bao gồm những loại thuế nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Trường hợp nào chi phí đi vay được vốn hóa thay vì ghi nhận vào chi phí phát sinh?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt giữa thuế thu nhập hiện hành và thuế thu nhập hoãn lại theo chính sách kế toán của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích các yếu tố cấu thành chi phí quản lý doanh nghiệp và cách chúng được ghi nhận.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ thận trọng trong chính sách ghi nhận giá vốn hàng bán của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích các điều kiện để công ty được bù trừ tài sản thuế thu nhập hoãn lại và nợ thuế thu nhập hoãn lại phải trả.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Công cụ tài chính và rủi ro)\nLoại nội dung: Text\n22. Công cụ tài chính\ni. Tài sản tài chính\nPhân loại tài sản tài chính: Công ty phân loại các tài sản tài chính thành các nhóm: tài sản tài chính được ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh, các khoản đầu tư nắm giữ đến ngày đáo hạn, các khoản cho vay và phải thu, tài sản tài chính sẵn sàng để bán. Việc phân loại các tài sản tài chính này phụ thuộc vào bản chất và mục đích của tài sản tài chính và được quyết định tại thời điểm ghi nhận ban đầu.\nTài sản tài chính được ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh: Tài sản tài chính được phân loại là ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh nếu được nắm giữ để kinh doanh hoặc được xếp vào nhóm phản ánh theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh tại thời điểm ghi nhận ban đầu.\nTài sản tài chính được phân loại vào nhóm chứng khoán nắm giữ để kinh doanh nếu:\n- Được mua hoặc tạo ra chủ yếu cho mục đích bán lại trong thời gian ngắn.\n- Công ty có ý định nắm giữ nhằm mục đích thu lợi ngắn hạn.\n- Công cụ tài chính phái sinh (ngoại trừ các công cụ tài chính phái sinh được xác định là một hợp đồng bảo lãnh tài chính hoặc một công cụ phòng ngừa rủi ro hiệu quả).\nCác khoản đầu tư nắm giữ đến ngày đáo hạn: Các khoản đầu tư nắm giữ đến ngày đáo hạn là các tài sản tài chính phi phái sinh với các khoản thanh toán cố định hoặc có thể xác định và có kỳ đáo hạn cố định mà Công ty có ý định và có khả năng giữ đến ngày đáo hạn.\nCác khoản cho vay và phải thu: Các khoản cho vay và phải thu là các tài sản tài chính phi phái sinh với các khoản thanh toán cố định hoặc có thể xác định và không được niêm yết trên thị trường.\nTài sản tài chính sẵn sàng để bán: Tài sản tài chính sẵn sàng để bán là các tài sản tài chính phi phái sinh được xác định là sẵn sàng để bán hoặc không được phân loại là các tài sản tài chính ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh, các khoản đầu tư giữ đến ngày đáo hạn hoặc các khoản cho vay và phải thu.\nGiá trị ghi sổ ban đầu của tài sản tài chính: Các tài sản tài chính được ghi nhận tại ngày mua và dừng ghi nhận tại ngày bán. Tại thời điểm ghi nhận lần đầu, tài sản tài chính được xác định theo giá mua/chi phí phát hành cộng các chi phí phát sinh khác liên quan trực tiếp đến việc mua, phát hành tài sản tài chính đó.\nii. Nợ phải trả tài chính\nCông ty phân loại nợ phải trả tài chính thành các nhóm: Nợ phải trả tài chính được ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh, các khoản nợ phải trả tài chính được xác định theo giá trị phân bổ. Việc phân loại các khoản nợ tài chính phụ thuộc vào bản chất và mục đích của khoản nợ tài chính và được quyết định tại thời điểm ghi nhận ban đầu.\nNợ phải trả tài chính được ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh: Nợ phải trả tài chính được phân loại là ghi nhận theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh nếu được nắm giữ để kinh doanh hoặc được xếp vào nhóm phản ánh theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh tại thời điểm ghi nhận ban đầu.\nNợ phải trả tài chính được phân loại vào nhóm chứng khoán nắm giữ để kinh doanh nếu:\n- Được phát hành hoặc tạo ra chủ yếu cho mục đích mua lại trong thời gian ngắn.\n- Công ty có ý định nắm giữ nhằm mục đích thu lợi ngắn hạn.\n- Công cụ tài chính phái sinh (ngoại trừ các công cụ tài chính phái sinh được xác định là một hợp đồng bảo lãnh tài chính hoặc một công cụ phòng ngừa rủi ro hiệu quả).\nCác khoản nợ phải trả tài chính được xác định theo giá trị phân bổ: Nợ phải trả tài chính được xác định theo giá trị phân bổ được xác định bằng giá trị ghi nhận ban đầu của nợ phải trả tài chính trừ đi các khoản hoàn trả gốc, cộng hoặc trừ các khoản phân bổ lũy kế tính theo phương pháp lãi suất thực tế của phần chênh lệch giữa giá trị ghi nhận ban đầu và giá trị đáo hạn, trừ đi các khoản giảm trừ trực tiếp hoặc thông qua việc sử dụng một tài khoản dự phòng do giảm giá trị hoặc do không thể thu hồi.\nPhương pháp lãi suất thực tế là phương pháp tính toán giá trị phân bổ của một hoặc một nhóm nợ phải trả tài chính và phân bổ thu nhập lãi hoặc chi phí lãi trong kỳ có liên quan. Lãi suất thực tế là lãi suất chiết khấu các luồng tiền ước tính sẽ chi trả hoặc nhận được trong tương lai trong suốt vòng đời dự kiến của công cụ tài chính hoặc ngắn hơn, nếu cần thiết, trở về giá trị ghi sổ hiện tại thuần của nợ phải trả tài chính.\nGiá trị ghi sổ ban đầu của nợ phải trả tài chính: Tại thời điểm ghi nhận lần đầu, các khoản nợ phải trả tài chính được xác định theo giá phát hành cộng các chi phí phát sinh liên quan trực tiếp đến việc phát hành nợ tài chính đó.\niii. Công cụ vốn chủ sở hữu\nCông cụ vốn chủ sở hữu là hợp đồng chứng tỏ được những lợi ích còn lại về tài sản của Công ty sau khi trừ đi toàn bộ nghĩa vụ.\n23. Bên liên quan\nCác bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung. Trong việc xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được chú trọng nhiều hơn hình thức pháp lý. Giao dịch với các bên có liên quan trong kỳ được trình bày ở thuyết minh số V.III.1.",
+    "questions": [
+      {
+        "question": "Công ty phân loại tài sản tài chính thành những nhóm nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công cụ vốn chủ sở hữu được định nghĩa là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Theo chính sách của công ty, các khoản đầu tư nắm giữ đến ngày đáo hạn có đặc điểm gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xác định giá trị ghi sổ ban đầu của nợ phải trả tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích các điều kiện để một tài sản tài chính được phân loại vào nhóm chứng khoán nắm giữ để kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc phân loại công cụ tài chính đối với việc trình bày báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích các tiêu chí xác định bên liên quan và tại sao bản chất mối quan hệ quan trọng hơn hình thức pháp lý.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Tiền và Đầu tư tài chính)\nLoại nội dung: Bảng\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n1. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền mặt | 10.429.341.475 | 10.124.964.247 |\n| Tiền gửi ngân hàng không kỳ hạn | 7.525.766.711 | 6.399.957.840 |\n| Cộng | 17.955.108.186 | 16.524.916.087 |\n2. Đầu tư tài chính\na. Đầu tư tài chính ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Dự phòng | Giá trị | Dự phòng |\n|---|---|---|---|---|\n| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam | - | - | 2.400.120.000 | - |\n| Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Tiên Sơn (1) | 115.304.668.055 | - | 115.304.668.055 | - |\n| Ngân hàng FIRST BANK Comperial Bank, LTD. - Chi nhánh thành phố Hà Nội (2) | 26.670.807.563 | - | 26.468.605.321 | - |\n| Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh Hồ Chí Minh (3) | 15.328.947.104 | - | 15.149.903.562 | - |\n| Ngân hàng TNHH MTV Woori Việt Nam CN Phú Mỹ Hưng (4) | 11.870.000.000 | - | 11.870.000.000 | - |\n| Ngân hàng Huanan Commercial Bank - Chi nhánh Hồ Chí Minh (5) | 19.030.000.000 | - | 19.030.000.000 | - |\n| Ngân hàng Thương mại cổ phần Tiên Phong (6) | 6.335.000.000 | - | 12.770.000.000 | - |\n| Ngân hàng Thương mại cổ phần Việt Nam Thịnh Vượng (7) | 4.168.125.364 | - | 4.088.241.096 | - |\n| Cộng | 198.707.548.086 | - | 207.081.538.034 | - |\n(1) Là khoản tiền gửi tiết kiệm thời hạn 06 tháng và 12 tháng tại Ngân hàng TMCP Công Thương - Chi nhánh Tiên Sơn, tổng số tiền 115.304.668.055 VND, hiện đang được thế chấp tại Ngân hàng TMCP Công Thương - Chi nhánh Tiên Sơn.\n(2) Là khoản tiền gửi tiết kiệm thời hạn 06 tháng tại Ngân hàng FIRST BANK Comperial Bank, LTD. - Chi nhánh thành phố Hà Nội, tổng số tiền 26.670.807.563 VND, hiện đang được thế chấp tại Ngân hàng FIRST BANK Comperial Bank, LTD. - Chi nhánh thành phố Hà Nội.\n(3) Là khoản tiền gửi tiết kiệm thời hạn 06 tháng tại Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh Hồ Chí Minh, tổng số tiền 15.328.947.104 VND, hiện đang được thế chấp tại Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh Hồ Chí Minh.\n(4) Là khoản tiền gửi tiết kiệm thời hạn 12 tháng tại Woori bank Việt Nam - CN Phú Mỹ Hưng, tổng số tiền 11.870.000.000 VND, hiện đang được thế chấp tại Woori bank Việt Nam - CN Phú Mỹ Hưng.\n(5) Là khoản tiền gửi tiết kiệm thời hạn 12 tháng tại Ngân hàng Huanan Commercial - CN TP.Hồ Chí Minh, tổng số tiền 19.030.000.000 VND, hiện đang được thế chấp tại Ngân hàng Huanan - CN Hồ Chí Minh.\n(6) Là khoản tiền gửi tiết kiệm thời hạn 06 tháng và 12 tháng tại Ngân hàng TMCP Tiên Phong, tổng số tiền 6.335.000.000 VND, hiện đang được thế chấp tại Ngân hàng Tiên Phong.\n(7) Là khoản tiền gửi tiết kiệm thời hạn 06 tháng tại Ngân hàng Thương mại cổ phần Việt Nam Thịnh Vượng, tổng số tiền 4.168.125.364 VND, hiện đang được thế chấp tại Ngân hàng Thương mại cổ phần Việt Nam Thịnh Vượng.\nb. Đầu tư tài chính dài hạn\n| Chỉ tiêu | Số cuối kỳ | Dự phòng | Giá trị | Dự phòng |\n|---|---|---|---|---|\n| Đầu tư vào công ty liên doanh, liên kết | 39.448.090.219 | - | 39.448.090.219 | - |\n| Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà (a) | 39.448.090.219 | - | 39.448.090.219 | - |\n| Công ty Cổ phần Giấy Hoàng Hà Phú Yên | - | - | - | - |\n| Đầu tư góp vốn vào đơn vị khác | 300.000.000 | - | 300.000.000 | - |\n| Công ty Cổ phần Verig Holdings (b) | 300.000.000 | - | 300.000.000 | - |\n| Đầu tư nắm giữ đến ngày đáo hạn | - | - | - | - |\n| Trái phiếu | - | - | - | - |\n| Cộng | 39.748.090.219 | - | 39.748.090.219 | - |\n(a) Theo giấy chứng nhận Đăng ký doanh nghiệp số 0108828180 thay đổi lần thứ nhất do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp ngày 18 tháng 12 năm 2019. Công ty Cổ phần HHP GLOBAL nắm giữ 3.000.000 cổ phiếu, tương đương 30% vốn điều lệ của Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà. Chi tiết: Giá gốc khoản đầu tư là 30.000.000.000 VND. Lãi phát sinh do hợp nhất theo phương pháp vốn chủ là 9.448.090.219 VND.\n(b) Theo giấy chứng nhận Đăng ký doanh nghiệp số 0108771752 lần đầu do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp ngày 28 tháng 12 năm 2023, Công ty Cổ phần HHP GLOBAL cam kết đầu tư vào Công ty Cổ phần Verig Holdings là 300.000.000 VND, tương đương 0,6% vốn điều lệ. Tại thời điểm ngày 31 tháng 12 năm 2024 Công ty đã góp đủ vốn theo cam kết.",
+    "questions": [
+      {
+        "question": "Tổng số tiền gửi ngân hàng không kỳ hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tỷ lệ vốn điều lệ của Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà mà HHP GLOBAL nắm giữ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng 'Đầu tư tài chính ngắn hạn' cuối kỳ với đầu năm. Sự thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích lý do tại sao nhiều khoản tiền gửi tiết kiệm ngắn hạn lại đang được thế chấp tại ngân hàng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích cấu trúc các khoản đầu tư tài chính dài hạn của công ty và ý nghĩa của việc không có đầu tư nắm giữ đến ngày đáo hạn trong danh mục này.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro thanh khoản tiềm ẩn khi một lượng lớn tiền gửi tiết kiệm được dùng làm tài sản thế chấp.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích hiệu quả của khoản đầu tư vào Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà dựa trên giá gốc và lãi phát sinh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Phải thu và Hàng tồn kho)\nLoại nội dung: Bảng\n3. Phải thu ngắn hạn của khách hàng\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải thu các khách hàng khác | 276.521.995.795 | 276.521.995.795 |\n| Công ty Cổ phần Sản Xuất và Thương Mại PP | 25.305.764.148 | - |\n| Jinhong Industrial HongKong Co.,Limited | 21.952.460.009 | 31.978.865.453 |\n| Công ty TNHH Bao bì Packco Việt Nam | 10.459.197.576 | - |\n| Công ty Cổ phần Giấy Từ Châu | 8.500.001.650 | 16.874.740.738 |\n| Công ty Cổ phần Sản xuất Giấy Mỹ Hương | 3.038.682.804 | 1.954.659.444 |\n| Các khách hàng khác | 245.385.499.078 | 225.713.730.160 |\n| Cộng | 314.641.605.265 | 276.521.995.795 |\n4. Trả trước cho người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước cho người bán khác | 197.574.781.138 | 197.574.781.138 |\n| Nanjing Chengxin Import and Export Co.,Ltd | 2.910.610.923 | - |\n| Sumec Hongkong Company Limited | 128.720.485.002 | - |\n| Công ty Cổ phần Đầu tư và Xây dựng Thiên Danh An | 19.164.338.032 | - |\n| Công ty TNHH Vương An Phú | 2.626.032.492 | 380.673.414 |\n| Các nhà cung cấp khác | 217.075.587.848 | 49.309.284.690 |\n| Cộng | 222.612.231.263 | 197.574.781.138 |\n5. Phải thu khác\na. Phải thu ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Dự phòng | Giá trị | Dự phòng |\n|---|---|---|---|---|\n| Phải thu các bên liên quan | - | - | 5.000.000.000 | - |\n| Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà - Ký cược, ký quỹ | - | - | 5.000.000.000 | - |\n| Phải thu các tổ chức và cá nhân khác | 57.772.738.373 | - | 57.772.738.373 | - |\n| Tạm ứng | 23.416.128.931 | - | 22.407.002.479 | - |\n| Ký cược, ký quỹ | 40.342.114.493 | - | 19.588.000.000 | - |\n| Tiền bồi thường bảo hiểm | 8.221.033.148 | - | 5.597.750.458 | - |\n| Lãi tiền gửi dự thu | 3.731.890.454 | - | 3.594.493.702 | - |\n| Các khoản phải thu ngắn hạn khác | 1.222.739.651 | - | 6.585.491.734 | - |\n| Cộng | 76.933.906.677 | - | 62.772.738.373 | - |\nb. Phải thu dài hạn khác\n| Chỉ tiêu | Số cuối kỳ | Dự phòng | Giá trị | Dự phòng |\n|---|---|---|---|---|\n| Tiền đặt cọc thuê tài chính | 1.692.833.325 | - | 1.979.312.800 | - |\n| Cộng | 1.692.833.325 | - | 1.979.312.800 | - |\n6. Hàng tồn kho\n| Chỉ tiêu | Số cuối kỳ | Dự phòng | Giá trị | Dự phòng |\n|---|---|---|---|---|\n| Nguyên liệu, vật liệu | 117.571.281.335 | - | 153.108.577.155 | - |\n| Công cụ, dụng cụ | 4.388.423.374 | - | 2.838.834.451 | - |\n| Chi phí sản xuất, kinh doanh dở dang | 1.483.453.448 | - | 10.176.620.138 | - |\n| Thành phẩm | 34.322.006.829 | - | 20.036.612.353 | - |\n| Hàng hóa | 206.131.166.013 | - | 167.398.785.692 | - |\n| Cộng | 363.896.330.999 | - | 353.559.429.789 | - |\nTại thời điểm lập Báo cáo tài chính, hàng tồn kho của công ty không bị suy giảm về chất lượng và công ty cũng không gặp biến động xấu về giá trị thị trường.",
+    "questions": [
+      {
+        "question": "Tổng các khoản phải thu ngắn hạn của khách hàng cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị hàng hóa tồn kho cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản 'Trả trước cho người bán ngắn hạn' cuối kỳ với đầu năm và nêu sự thay đổi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Nguyên liệu, vật liệu' trong hàng tồn kho đã thay đổi như thế nào từ đầu năm đến cuối kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá chất lượng các khoản phải thu ngắn hạn khác của công ty dựa trên cơ cấu hiện tại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro liên quan đến sự gia tăng đáng kể của các khoản 'Trả trước cho người bán ngắn hạn'.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tình hình quản lý hàng tồn kho của công ty dựa trên thông tin về chất lượng và giá trị thị trường.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Chi phí trả trước và TSCĐ)\nLoại nội dung: Bảng\n7. Chi phí trả trước\na. Chi phí trả trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Chi phí CCDC xuất dùng | 1.870.230.426 | 2.412.482.496 |\n| Các chi phí trả trước ngắn hạn khác | 1.786.467.627 | 860.115.439 |\n| Cộng | 3.656.698.053 | 3.272.597.935 |\nb. Chi phí trả trước dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền thuê đất trả trước 1 lần | 43.618.870.625 | 43.618.870.625 |\n| Công cụ dụng cụ | 1.896.124.808 | 1.458.221.921 |\n| Các chi phí trả trước dài hạn khác | 324.516.412 | 248.979.175 |\n| Cộng | 45.839.511.845 | 45.326.071.721 |\nLà tiền thuê đất trả trước một lần tại:\n- Lô đất CN2, Cụm Công nghiệp thị trấn Tiên Lãng theo quyết định thuê đất số 3874/QĐ-UBND ngày 24 tháng 12 năm 2020. Thời hạn thuê đất đến 17/7/2070, tổng số tiền thuê đất cho cả thời gian thuê là 52.458.653.000 VND. Công ty được miễn tiền thuê đất đến hết tháng 06/2029 theo quyết định số 4128/QĐ-CTHPH ngày 21 tháng 10 năm 2021 của Cục thuế Hải Phòng, tổng số tiền được miễn là 8.917.971.000 VND. Số tiền thuê đất còn lại là 43.540.682.000 VND được phân bổ vào chi phí kể từ tháng 07/2029 đến hết thời gian thuê.\n- Lô đất E8 - KCN Đông Bắc Sông Cầu - KV1, thị xã Sông Cầu, Tỉnh Phú Yên. Thời hạn thuê đất kể từ ngày 11/09/2020 đến hết ngày 14/8/2057 theo hợp đồng thuê lại quyền sử dụng đất gắn với kết cấu hạ tầng số 104/HĐTLĐDBSC ký ngày 11/09/2020 với Trung tâm dịch vụ công ích và phụ lục hợp đồng cho thuê lại đất số 118/104/PLHĐ ký ngày 17/11/2022.\n8. Tăng, giảm tài sản cố định hữu hình\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|---|---|---|---|---|---|\n| Nguyên giá | | | | | |\n| Số đầu năm | 24.452.234.395 | 215.788.734.507 | 10.870.898.212 | 791.428.152 | 251.903.295.266 |\n| Mua trong năm | - | 210.470.000 | 10.185.185 | - | 220.655.185 |\n| Đầu tư XDCB hoàn thành | 435.791.898.073 | 836.916.877.403 | - | - | 1.272.708.775.476 |\n| Mua lại TSCĐ thuê tài chính | - | - | - | - | - |\n| Thanh lý, nhượng bán | - | (93.518.519) | - | - | (93.518.519) |\n| Số cuối kỳ | 460.244.132.468 | 1.052.916.081.910 | 10.787.564.878 | 791.428.152 | 1.524.739.207.408 |\n| Trong đó: Đã khấu hao hết nhưng vẫn còn sử dụng | 998.774.737 | 16.011.056.249 | 5.115.231.292 | 193.786.152 | 22.318.848.430 |\n| Giá trị hao mòn | | | | | |\n| Số đầu năm | 13.414.786.560 | 94.263.538.260 | 6.398.505.007 | 755.913.799 | 114.832.743.626 |\n| Khấu hao trong năm | 2.087.044.963 | 12.183.541.977 | 170.540.115 | 8.095.851 | 14.449.222.906 |\n| Mua lại TSCĐ thuê tài chính | - | - | - | - | - |\n| Thanh lý, nhượng bán | - | (93.518.519) | - | - | (93.518.519) |\n| Số cuối kỳ | 15.501.831.523 | 106.447.080.237 | 6.475.526.603 | 764.009.650 | 129.188.448.013 |\n| Giá trị còn lại | | | | | |\n| Số đầu năm | 11.037.447.835 | 121.525.196.247 | 4.472.393.205 | 35.514.353 | 137.070.551.640 |\n| Số cuối kỳ | 444.742.300.945 | 946.469.001.673 | 4.312.038.275 | 27.418.502 | 1.395.550.759.395 |\nMột số tài sản cố định đang được thế chấp để đảm bảo cho khoản vay của Ngân hàng TMCP Tiên Phong, Ngân hàng TMCP Công Thương Việt Nam và Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - chi nhánh Thành Đô. Giá trị sổ sách của tài sản thế chấp tại ngày kết thúc năm tài chính có nguyên giá và giá trị còn lại lần lượt là 1.360.490.743.148 VND và 62.930.265.081 VND (số đầu năm là 87.781.967.672 VND và 52.108.243.249 VND).",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Các chi phí trả trước ngắn hạn khác' cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản 'Đầu tư XDCB hoàn thành' đã tăng nguyên giá tài sản cố định hữu hình bao nhiêu trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc miễn tiền thuê đất đến chi phí trả trước dài hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn khi một lượng lớn tài sản cố định đang được thế chấp cho các khoản vay.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc tài sản cố định đã khấu hao hết nhưng vẫn còn sử dụng đến báo cáo tài chính trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - TSCĐ và nợ phải trả)\nLoại nội dung: Bảng\n9. Tăng, giảm tài sản cố định thuê tài chính\n| Chỉ tiêu | Nguyên giá | Giá trị hao mòn | Giá trị còn lại |\n|---|---|---|---|\n| Số đầu năm | 83.382.506.631 | 995.806.991 | 82.386.699.640 |\n| Thuê tài chính trong năm | - | - | - |\n| Khấu hao trong kỳ | - | 1.767.174.394 | (1.767.174.394) |\n| Thanh lý, nhượng bán | (1.885.671.552) | (26.189.883) | (1.911.861.435) |\n| Số cuối kỳ | 81.496.835.079 | 2.736.791.502 | 78.760.043.577 |\n10. Tăng, giảm tài sản cố định vô hình\nTài sản cố định vô hình tại đơn vị là hệ thống phần mềm.\n11. Chi phí xây dựng cơ bản dở dang\n| Chỉ tiêu | Số đầu năm | Tăng do hợp nhất | Chi phí phát sinh trong kỳ | Kết chuyển vào TSCĐ trong kỳ | Số cuối kỳ |\n|---|---|---|---|---|---|\n| Xây dựng cơ bản dở dang | 1.408.217.497.835 | 384.657.535 | 118.596.943.270 | 1.272.708.775.476 | 253.721.008.094 |\n| Dự án Di dời, mở rộng nhà máy Giấy Hoàng Hà (1) | 1.269.620.167.544 | 8.704.680.419 | - | 1.272.708.775.476 | 5.616.072.487 |\n| Dự án Nhà máy sản xuất giấy Phú Yên (2) | 138.597.330.291 | 384.657.535 | 109.892.262.851 | - | 248.104.935.607 |\n| Cộng | 1.408.217.497.835 | 384.657.535 | 118.596.943.270 | 1.272.708.775.476 | 253.721.008.094 |\n(1) Là chi phí đầu tư xây dựng Dự án di dời, mở rộng nhà máy Giấy Hoàng Hà tại cụm Công nghiệp thị trấn Tiên Lãng, huyện Tiên Lãng, thành phố Hải Phòng của Công ty mẹ. Ngày 04 tháng 02 năm 2025, nhà máy mới đã kết thúc quá trình vận hành thử nghiệm và chính thức đi vào hoạt động nên giá trị TSCĐ đã kết chuyển trong kỳ là 1.274.097.061.465 đồng (chưa bao gồm thuế GTGT). Chi phí xây dựng cơ bản dở dang cuối kỳ còn lại 5.616.072.487 đồng là giá trị dở dang của phần ép cọc hạng mục nhà kho số 09 (hạng mục này hiện đang chờ điều chỉnh quy hoạch để mở rộng diện tích, nâng số tầng cao, điều chỉnh công năng nhằm tối ưu diện tích sử dụng đất cho nhà máy).\n(2) Là chi phí đầu tư xây dựng dự án Nhà máy sản xuất giấy tại lô đất E8, KCN Đông Bắc Sông Cầu - KV1, thị xã Sông Cầu, Tỉnh Phú Yên của Công ty con - Công ty CP giấy Hoàng Hà Phú Yên. Công trình dự kiến hoàn thành, chuyển sang giai đoạn vận hành thử nghiệm vào cuối năm 2025.\nToàn bộ giá trị tài sản và hệ thống dây chuyền, máy móc thiết bị thuộc 2 dự án trên được sử dụng để thế chấp cho khoản vay của Công ty mẹ và Công ty con tại Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Tiên Sơn.\n12. Phải trả người bán ngắn hạn\n| Chỉ tiêu | Giá trị | Số có khả năng trả nợ | Giá trị | Số có khả năng trả nợ |\n|---|---|---|---|---|\n| Phải trả các nhà cung cấp khác | 52.411.770.806 | 52.411.770.806 | 69.584.407.349 | 69.584.407.349 |\n| Công ty Cổ phần Năng lượng Tái tạo Thành Thắng | 5.485.344.831 | 5.485.344.831 | 6.204.026.309 | 6.204.026.309 |\n| Công ty TNHH Tư vấn sản xuất Giấy Hoàng Hà | 4.061.634.364 | 4.061.634.364 | - | - |\n| Công ty TNHH Việt Cường | 3.052.699.164 | 3.052.699.164 | - | - |\n| Công ty TNHH Công nghệ sạch | 53.879.723 | 53.879.723 | 1.724.316.501 | 1.724.316.501 |\n| Các nhà cung cấp khác | 42.810.911.888 | 42.810.911.888 | 58.603.365.375 | 58.603.365.375 |\n| Cộng | 52.411.770.806 | 52.411.770.806 | 69.584.407.349 | 69.584.407.349 |\n13. Người mua trả tiền trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước của các khách hàng khác | 3.454.086.663 | 518.780.698 |\n| Công ty TNHH Thương mại Thúy Hương | 2.121.141.465 | - |\n| Wenzhou Fanwei new materials Co., LTD | 60.393.544 | - |\n| Công ty TNHH Xuất nhập khẩu Thuận Phát | - | 448.774.144 |\n| Các khách hàng khác | 1.272.551.654 | 70.006.554 |\n| Cộng | 3.454.086.663 | 518.780.698 |",
+    "questions": [
+      {
+        "question": "Giá trị còn lại của tài sản cố định thuê tài chính cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng số tiền phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Dự án Di dời, mở rộng nhà máy Giấy Hoàng Hà đã kết chuyển bao nhiêu chi phí xây dựng cơ bản vào TSCĐ trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh khoản 'Người mua trả tiền trước ngắn hạn' cuối kỳ với đầu năm và nêu sự thay đổi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình phát triển của dự án Nhà máy sản xuất giấy Phú Yên dựa trên chi phí xây dựng dở dang cuối kỳ và kế hoạch hoàn thành.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc toàn bộ giá trị tài sản và hệ thống dây chuyền, máy móc thiết bị thuộc 2 dự án lớn đang được thế chấp cho khoản vay.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro và cơ hội từ sự thay đổi trong cơ cấu phải trả người bán ngắn hạn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Thuế và chi phí phải trả)\nLoại nội dung: Bảng\n14. Thuế và các khoản phải nộp nhà nước\n| Chỉ tiêu | Số đầu năm | Phải nộp | Phải thu | Tăng do hợp nhất | Đã nộp | Số cuối kỳ |\n|---|---|---|---|---|---|---|\n| Thuế GTGT hàng bán nội địa | 2.313.655.684 | - | - | 15.868.557.538 | 16.027.400.810 | 2.154.812.412 |\n| Thuế GTGT hàng nhập khẩu | - | 233.166.925 | - | 2.913.967.424 | 2.680.800.499 | - |\n| Thuế xuất, nhập khẩu | - | - | - | - | - | - |\n| Thuế thu nhập doanh nghiệp | 5.527.468.658 | - | - | 3.398.734.294 | 1.954.211.835 | 6.971.991.117 |\n| Thuế thu nhập cá nhân | 62.850.000 | - | - | 115.150.000 | 116.500.000 | 61.500.000 |\n| Thuế tài nguyên | - | - | - | 54.360.000 | 54.360.000 | - |\n| Phí, lệ phí và các khoản phải nộp khác | - | - | - | 193.596.623 | 13.596.623 | 180.000.000 |\n| Cộng | 7.903.974.342 | 233.166.925 | - | 22.544.365.879 | 20.792.509.767 | 9.422.663.529 |\nQuyết toán thuế của Công ty sẽ chịu sự kiểm tra của Cơ quan thuế. Do việc áp dụng Luật và các quy định về thuế đối với nhiều loại giao dịch khác nhau có thể được giải thích theo nhiều cách khác nhau, số thuế được trình bày trên Báo cáo tài chính hợp nhất có thể bị thay đổi theo quyết định của Cơ quan thuế.\nThuế giá trị gia tăng: Công ty nộp thuế giá trị gia tăng theo phương pháp khấu trừ. Thuế suất thuế giá trị gia tăng cho hàng xuất khẩu là 0%, hàng tiêu thụ trong nước 8% và 10%, nước là 5%.\nThuế xuất, nhập khẩu: Công ty kê khai và nộp theo thông báo của Hải quan.\nThuế thu nhập doanh nghiệp: Công ty phải nộp thuế thu nhập doanh nghiệp với thuế suất 20%.\nCác loại thuế khác: Công ty kê khai và nộp theo quy định.\n15. Chi phí phải trả ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Chi phí lãi vay phải trả | 1.382.539.128 | 1.055.268.184 |\n| Các chi phí phải trả ngắn hạn khác | 4.817.975.518 | - |\n| Cộng | 6.200.514.646 | 1.055.268.184 |\n16. Phải trả ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | - | 553.500.000 |\n| Thù lao hội đồng quản trị và ban kiểm soát | - | 553.500.000 |\n| Phải trả các đơn vị và cá nhân khác | 11.355.603.165 | 3.556.908.654 |\n| Kinh phí công đoàn | 646.552.111 | 567.218.761 |\n| Bảo hiểm xã hội | 435.871.755 | 60.077.564 |\n| Bảo hiểm y tế | 71.776.104 | - |\n| Bảo hiểm thất nghiệp | 34.186.020 | - |\n| Phải trả tiền thanh toán LC | 8.394.066.380 | - |\n| Các khoản phải trả ngắn hạn khác | 1.773.150.795 | 2.929.612.329 |\n| Cộng | 11.355.603.165 | 4.110.408.654 |",
+    "questions": [
+      {
+        "question": "Tổng thuế và các khoản phải nộp nhà nước cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thuế suất thuế thu nhập doanh nghiệp mà công ty phải nộp là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Chi phí lãi vay phải trả' cuối kỳ với đầu năm. Sự thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự thay đổi trong khoản 'Phải trả các bên liên quan' từ đầu năm đến cuối kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc 'Quyết toán thuế của Công ty sẽ chịu sự kiểm tra của Cơ quan thuế' đến báo cáo tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh toán nếu khoản 'Phải trả tiền thanh toán LC' tiếp tục tăng nhanh trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản 'Phải trả ngắn hạn khác' và ý nghĩa của sự biến động này.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Vay và nợ thuê tài chính ngắn hạn)\nLoại nội dung: Bảng\n17. Vay và nợ thuê tài chính\na. Vay và nợ thuê tài chính ngắn hạn\n| Chỉ tiêu | Số cuối kỳ (Giá trị) | Số cuối kỳ (Số có khả năng trả nợ) | Số đầu năm (Giá trị) | Số đầu năm (Số có khả năng trả nợ) |\n|---|---|---|---|---|\n| Vay và nợ thuê tài chính ngắn hạn phải trả các tổ chức và cá nhân khác | 828.866.939.373 | 828.866.939.373 | 800.290.341.243 | 800.290.341.243 |\n| Ngân hàng TMCP Công thương Việt Nam - Chi nhánh Tiên Sơn (1) | 440.281.331.028 | 440.281.331.028 | 512.028.079.032 | 512.028.079.032 |\n| Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Thành Công (2) | 19.999.017.515 | 19.999.017.515 | 19.975.976.323 | 19.975.976.323 |\n| Ngân hàng FIRST BANK Comperial Bank, LTD. - Chi nhánh thành phố Hà Nội (3) | 99.713.150.679 | 99.713.150.679 | 99.487.273.076 | 99.487.273.076 |\n| Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh TP. Hồ Chí Minh (4) | 41.887.045.107 | 41.887.045.107 | 47.712.798.116 | 47.712.798.116 |\n| Ngân hàng TNHH MTV Woori Việt Nam - Chi nhánh Phú Mỹ Hưng (5) | 22.572.535.656 | 22.572.535.656 | 22.649.504.299 | 22.649.504.299 |\n| Ngân hàng TMCP Tiên Phong - Chi nhánh Hoàn Kiếm (6) | 3.664.554.681 | 3.664.554.681 | 39.010.032.922 | 39.010.032.922 |\n| Ngân hàng Huanan Commercial Bank - Chi nhánh Hồ Chí Minh (7) | 62.375.375.009 | 62.375.375.009 | 62.558.319.253 | 62.558.319.253 |\n| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam Chi nhánh Thành Đô (8) | 61.423.059.297 | 61.423.059.297 | 61.459.228.623 | 61.459.228.623 |\n| Ngân hàng TMCP Hàng Hải Việt Nam | - | - | - | - |\n| Ngân hàng TMCP Việt Nam Thịnh Vượng (9) | 5.430.000.000 | 5.430.000.000 | 6.930.000.000 | 6.930.000.000 |\n| Vay dài hạn đến hạn trả xem thuyết minh số V.17b | 85.000.000.000 | 85.000.000.000 | 84.000.000.000 | 84.000.000.000 |\n| Nợ thuê tài chính đến hạn trả xem thuyết minh số V.17b | 11.650.629.828 | 11.650.629.828 | 11.650.629.828 | 11.650.629.828 |\n| Cộng | 925.517.569.201 | 925.517.569.201 | 895.940.971.071 | 895.940.971.071 |\n(1) Là khoản vay Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Tiên Sơn theo:\n- Thỏa thuận cấp tín dụng số 01/2024/TTCTD/NHCT284/HHPGLOBAL ngày 09/04/2024; Hợp đồng cho vay hạn mức số 01/2024/HĐCVHM/NHCT284/HHPGLOBAL ngày 09/04/2024 với hạn mức tín dụng là 250.000.000.000 đồng; Văn bản sửa đổi, bổ sung Hợp đồng cho vay hạn mức số 01/2024/HĐCVSDĐBS/NHCT284/HHP GLOBAL ngày 09/07/2024 tăng Hạn mức tín dụng thành 400.000.000.000 đồng. Thời hạn duy trì hạn mức từ ngày 09/04/2024 đến hết ngày 09/04/2025. Mục đích vay vốn để bổ sung vốn lưu động phục vụ hoạt động sản xuất kinh doanh giấy bao bì và các sản phẩm liên quan thuộc ngành giấy. Lãi suất cho vay được quy định theo từng khế ước nhận nợ. Khoản vay được đảm bảo bởi:\n- Hợp đồng thế chấp quyền tài sản số 01/2023/HĐBĐ/NHCT284/QTS/HHP GLOBAL ngày 09/04/2024. Tài sản thế chấp là toàn bộ các Quyền đòi nợ luân chuyển của Công ty đối với các bên có nghĩa vụ thanh toán trong quá trình kinh doanh hình thành từ vốn vay do Ngân hàng tài trợ.\n- Hợp đồng thế chấp hàng hóa số 02/2024/HĐBĐ/NHCT284/HTK/HHP GLOBAL ngày 09/04/2024. Tài sản thế chấp là hàng tồn kho luân chuyển hình thành từ nguồn vốn vay của Ngân hàng tài trợ.\n- Hợp đồng thế chấp tài sản gắn liền với đất số 01/2024/HĐBĐ/NHCT284/TSGLVĐ/HHP/KIEUHA ngày 28/04/2024. Tài sản thế chấp là Quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất số CK926926 do Sở Tài Nguyên và Môi trường thành phố Hải Phòng cấp ngày 26/04/2018 tại số 194 đường Kiều Hạ, phường Đông Hải 2, quận Hải An, thành phố Hải Phòng.\n- Hợp đồng thế chấp quyền tài sản số 01/2024/HĐBĐ/NHCT284/QTSDA/HHP ngày 09/08/2024. Tài sản thế chấp là toàn bộ các quyền, lợi ích gắn liền hoặc phát sinh từ dự án Di dời, mở rộng nhà máy giấy Hoàng Hà, tại Cụm công nghiệp thị trấn Tiên Lãng, huyện Tiên Lãng, thành phố Hải Phòng.\n- Văn bản sửa đổi, bổ sung Hợp đồng quyền thế chấp tài sản số 01/2024/VBSDBS/HĐBĐ/NHCT284/QTS/HHP ngày 26/09/2024 thống nhất định giá giá trị của quyền đòi nợ luân chuyển là 330.000.000.000 đồng. Đồng thời đảm bảo giá trị hàng tồn kho luân chuyển và Quyền đòi nợ luân chuyển tại mọi thời điểm tối thiểu là 400.000.000.000 đồng.\n- Văn bản sửa đổi, bổ sung Hợp đồng quyền thế chấp hàng hóa số 01/2024/VBSDBS/HĐBĐ/NHCT284/HTK/HHP ngày 26/09/2024 thống nhất định giá hàng tồn kho luân chuyển là 70.000.000.000 đồng. Đồng thời đảm bảo giá trị Hàng tồn kho luân chuyển và Quyền đòi nợ luân chuyển tại mọi thời điểm là 400.000.000.000 đồng.\n- Các hợp đồng cầm cố tiền gửi có kỳ hạn được ký giữa Công ty Cổ phần HHP GLOBAL và ngân hàng TMCP Công thương Việt Nam - CN Tiên Sơn.\n- Hợp đồng cho vay hạn mức số 01/2024/HĐCVHM/NHCT284/PHU YEN ngày 31/07/2024 giữa Công ty Cổ Phần Giấy Hoàng Hà Phú Yên và Ngân hàng TMCP Công Thương Việt Nam - CN Tiên Sơn, hạn mức tín dụng là 40 tỷ đồng, mục đích vay vốn để bổ sung vốn lưu động phục vụ hoạt động sản xuất kinh doanh. Lãi suất cho vay được quy định theo từng khế ước nhận nợ. Tài sản đảm bảo cho khoản vay là các bất động sản của công ty CP Tập Đoàn Đầu Tư Hoàng Hà tại Dự án xây dựng nhà ở thương mại tại Phường Anh Dũng, Phường Hưng Đạo, Quận Dương Kinh, TP Hải Phòng cụ thể như sau: Các Giấy chứng nhận Quyền sử dụng đất, Quyền sở hữu nhà ở và tài sản khác gắn liền với đất số DE 995644, DE 995645, DG 836024, DG 836025, DG 836026, DG 836027, DG 836028, DG 836031, DG 836097, DG 836098, DG 836099, DG 836100 do Sở tài nguyên và môi trường thành phố Hải Phòng cấp ngày 17 tháng 06 năm 2022 cho Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà.\n- Hợp đồng tín dụng hạn mức số 01/2025/HĐCVHM/NHCT284/3C ngày 26/02/2025, hạn mức tín dụng ngắn hạn tối đa là 65.000.000.000 đồng, hạn mức tín dụng ngắn hạn này đã bao gồm toàn bộ dư nợ ngắn hạn và số dư LC, lãi vay được quy định trên từng khế ước nhận nợ, tài sản đảm bảo là sổ tiết kiệm có kỳ hạn mở tại Ngân hàng Vietinbank - Chi nhánh Tiên Sơn của Công ty.\n(2) Là khoản vay Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Thành Công theo Hợp đồng cho vay theo hạn mức số 0124HM14185005 ký ngày 11/01/2024. Hạn mức cho vay không vượt quá 20.000.000.000 VND và phụ lục hợp đồng số 01 ngày 10/01/2025 thời gian duy trì hạn mức đến hết ngày 11/04/2025. Lãi suất vay được xác định tại thời điểm giải ngân vốn vay theo từng thông báo lãi suất cho vay của Ngân hàng trong từng thời kỳ và được ghi trên từng Giấy nhận nợ. Thời hạn Cho vay của mỗi khoản nợ tối đa là 06 tháng và được ghi trên từng giấy nhận nợ. Mục đích sử dụng vốn vay là tài trợ các nhu cầu tín dụng ngắn hạn hợp pháp, hợp lý, hợp lệ phục vụ sản xuất kinh doanh của Công ty nhưng không bao gồm nhu cầu ngắn hạn phục vụ cho các hoạt động đầu tư tài sản cố định. Tài sản đảm bảo khoản vay bao gồm:\n- Nhà kho và văn phòng làm việc hình thành trên đất của Công ty TNHH tư vấn sản xuất giấy Hoàng Hà, Giấy chứng nhận ĐKKD số 0101149782 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp, đăng ký lần đầu ngày 14/06/2001, đăng ký thay đổi lần thứ 3 ngày 29/12/2017 theo Giấy chứng nhận Quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất số CE 792947 do Sở tài nguyên và Môi trường Thành phố Hải Phòng cấp ngày 29/11/2016.\n- Thế chấp bất động sản theo giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền trên đất số BD 772273 số vào sổ cấp GCN CH0053146902010/QĐUBND quận Đống Đa cấp ngày 24/12/2010 địa chỉ tại số 40 ngõ 69 phố Chùa Láng, phường Láng Thượng, quận Đống Đa, Hà Nội, theo hợp đồng thế chấp số 3819.2020/HĐTC ngày 24/09/2020 và các phụ lục sửa đổi kèm theo.\n- Thế chấp hàng hóa luân chuyển và quyền đòi nợ phát sinh từ hợp đồng kinh doanh thương mại theo hợp đồng thế chấp số 01/2019/HĐTCTSBĐS ngày 20/06/2019 và hợp đồng sửa đổi bổ sung kèm theo ký giữa khách hàng và ngân hàng.\n(3) Là khoản vay Ngân hàng FIRST BANK Comperial Bank, LTD. - Chi nhánh thành phố Hà Nội theo:\n- Hợp đồng cấp tín dụng hạn mức số 30240118 ngày 26 tháng 11 năm 2024. Hạn mức tín dụng 80 tỷ VND. Mục đích chi dùng khoản tín dụng được cấp để nhập khẩu và/hoặc mua nội địa nguyên vật liệu, hàng hóa nhằm phục vụ hoạt động sản xuất kinh doanh. Thời hạn cho vay đối với khoản ứng vay được cấp dưới hình thức Chuyển trả theo chứng từ nhập khẩu, chấp nhận trả tiền đổi lấy chứng từ mua trong nước. Thư tín dụng trả ngay là 180 ngày kể từ ngày tiếp theo ngày góp vốn. Khoản vay được đảm bảo bằng các tài sản/biện pháp sau:\n- Bảo lãnh cá nhân do bà Trần Thị Thu Phương và ông Nguyễn Vinh Quang ký phát cho ngân hàng hưởng lợi.\n- Tiền gửi tài khoản Công ty cung cấp khoản tiền bằng 20% số tiền khi giải ngân dưới hình thức tiền gửi tài khoản để đảm bảo khi vay.\n- Bất động sản (Quyền sử dụng đất, và Nhà ở có Giấy tờ hợp lệ thuộc Quyền sở hữu của bà Trần Thị Thu Phương và ông Nguyễn Trần Nhật Đức, được liệt kê trong danh mục các hạng mục công trình theo hợp đồng thế chấp tài sản số LURBD 11208 được bên vay ký kết ngày 10/11/2023 và các văn bản sửa đổi, bổ sung, thế chấp cho Ngân hàng First Commercial Bank, LTD. Thành phố Hà Nội hưởng lợi).\n- Hợp đồng tín dụng hạn mức số 30240051 ngày 31/07/2024, hạn mức tín dụng ngắn hạn tối đa là 30.000.000.000 đồng, thời hạn cấp hạn mức là 01 năm kể từ ngày 25/06/2024, lãi vay được quy định trên từng khế ước nhận nợ, tài sản đảm bảo là các sổ tiết kiệm có kỳ hạn mở tại Ngân hàng First Commercial Bank, Ltd. - Chi nhánh thành phố Hà Nội.\n(4) Là khoản vay ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh TP. Hồ Chí Minh theo hợp đồng tín dụng số 130004184791 ngày 09/02/2023. Giá trị hạn mức tín dụng là 2.000.000 USD, thời hạn duy trì hạn mức gia hạn theo Thỏa thuận số 03 đến ngày 09/08/2025. Mục đích vay để bổ sung vốn lưu động phục vụ sản xuất kinh doanh giấy Kraft, kinh doanh bột giấy, giấy phế liệu, giấy nguyên liệu. Thời hạn cho vay đối với mỗi khoản vay không quá 06 tháng và được quy định cụ thể tại từng đơn rút vốn vay kiêm khế ước nhận nợ. Lãi suất vay theo thông báo của Ngân hàng tại từng đơn rút vốn vay kiêm khế ước nhận nợ điều chỉnh ba tháng một lần trong suốt thời hạn vay. Điều kiện sử dụng hạn mức tín dụng là hoàn tất các thủ tục thế chấp tài khoản tiền gửi trước giải ngân. Giá trị gốc của tài khoản tiền gửi phải luôn bằng ít nhất 30% tổng dư nợ tại bất kỳ thời điểm nào.\n(5) Là khoản vay Ngân hàng TNHH MTV Woori Việt Nam - Chi nhánh Phú Mỹ Hưng theo hợp đồng cho vay hạn mức số VN123003865WBVN2024202 ký ngày 22/04/2024. Hạn mức tín dụng được cấp là 23.000.000.000 VND, mục đích vay để bổ sung vốn lưu động, thời gian duy trì hạn mức đến 21 tháng 4 năm 2025, thời hạn vay của mỗi khoản vay không quá 06 tháng. Khoản vay được đảm bảo bằng tiền gửi có kỳ hạn của Công ty tại ngân hàng và được bảo lãnh bởi cá nhân bà Trần Thị Thu Phương, Tổng Giám đốc Công ty.\n(6) Là khoản vay Ngân hàng TMCP Tiên Phong - Chi nhánh Hoàn Kiếm theo Hợp đồng cấp tín dụng hạn mức số 652024HDTDDDO ký ngày 05/03/2024. Hạn mức tín dụng được cấp là 100.000.000.000 VND (trong đó Hạn mức cho vay 100.000.000.000 VND, hạn mức LC 100.000.000.000 VND, hạn mức bảo lãnh 30.000.000.000 VND). Thời hạn sử dụng hạn mức tín dụng trong vòng 12 tháng kể từ ngày ký hợp đồng. Mục đích sử dụng vốn vay: Bổ sung vốn lưu động phục vụ hoạt động sản xuất kinh doanh giấy Kraft. Thời hạn mỗi khoản vay không vượt quá 6 tháng, lãi suất được quy định cụ thể tại từng văn bản nhận nợ. Khoản vay được đảm bảo bởi:\n- Hợp đồng thế chấp tài sản số 672024HDBDDDO ngày 05/03/2024. Tài sản đảm bảo là toàn bộ quyền đòi số nợ gốc, nợ lãi, tiền phạt, bồi thường thiệt hại phát sinh từ hợp đồng, dự án, các khoản phải thu, các quyền lợi khác nếu có hình thành từ vốn vay và tương đương vay.\n- Hợp đồng thế chấp tài sản số 652024HDBDDDO ngày 05/03/2024. Tài sản đảm bảo là Hàng hóa là bột giấy, giấy cuộn, giấy Kraft, giấy sóng..., đặt tại kho Lô CN2, cụm công nghiệp thị trấn Tiên Lãng, huyện Tiên Lãng (đã, đang và sẽ hình thành trong hoạt động kinh doanh sản xuất giấy của Công ty).\n- Hợp đồng thế chấp tài sản số 1132024HDBDDDO ngày 12/04/2024. Tài sản bảo đảm là xe ô tô Hyundai biển kiểm soát 15K-284.81 thuộc sở hữu của Công ty theo Giấy chứng nhận đăng ký xe ô tô số 15077777 do Công an Thành phố Hải Phòng cấp ngày 31/01/2024. Giá trị tài sản đảm bảo là 1.377.000.000 VND.\n- Hợp đồng thế chấp tài sản số 1142024HDBDDDO ngày 12/04/2024. Tài sản bảo đảm là xe ô tô Ford biển kiểm soát 15K-286.42 thuộc sở hữu của Công ty theo Giấy chứng nhận đăng ký xe ô tô số 15077605 do Công an Thành phố Hải Phòng cấp ngày 29/12/2023. Giá trị tài sản đảm bảo là 921.000.000 VND.\n- Hợp đồng cầm cố tài sản số 802024HDBDDDO ngày 15/03/2024, Hợp đồng cầm cố tài sản số 882024HDBDDDO ngày 22/03/2024, Hợp đồng cầm cố tài sản số 982024HDBDDDO ngày 27/03/2024. Tài sản đảm bảo là các khoản tiền gửi của Công ty tại Ngân hàng tổng giá trị 6.435.000.000 VND.\n(7) Là khoản vay Ngân hàng Hua Nan Commercial bank, LTD. - Chi nhánh thành phố Hồ Chí Minh theo Hợp đồng tín dụng số HNHCMCFLS392024 ngày 28/05/2024. Hạn mức tín dụng là 2.500.000 USD, thời gian duy trì hạn mức là 12 tháng kể từ ngày 07/05/2024. Mục đích vay: Tài trợ cho việc mở tín dụng chứng từ LC để nhập khẩu nguyên vật liệu và linh kiện phục vụ sản xuất và tài trợ ngắn hạn cho việc mua sắm nguyên vật liệu hoặc các yêu cầu về vốn lưu động khác. Khoản vay được đảm bảo bởi:\n- Hợp đồng đảm bảo bằng chứng chỉ tiền gửi có kỳ hạn số HNHCMCTD62024 ngày 28/05/2024.\n- Hợp đồng bảo lãnh cá nhân ký kết giữa Ngân hàng và bà Trần Thị Thu Phương.\n- Hợp đồng bảo lãnh cá nhân ký kết giữa Ngân hàng và ông Nguyễn Vinh Quang.\n- Hợp đồng bảo lãnh liên đới ký kết giữa Ngân hàng và bà Trần Thị Thu Phương và ông Nguyễn Vinh Quang.",
+    "questions": [
+      {
+        "question": "Tổng vay và nợ thuê tài chính ngắn hạn phải trả các tổ chức và cá nhân khác cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hạn mức tín dụng của khoản vay từ Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Tiên Sơn đã tăng lên bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mục đích sử dụng vốn vay từ Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Thành Công là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các tài sản đảm bảo cho khoản vay từ Ngân hàng TMCP Tiên Phong - Chi nhánh Hoàn Kiếm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro tín dụng của công ty dựa trên các tài sản đảm bảo cho khoản vay từ Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Tiên Sơn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích các điều kiện để sử dụng hạn mức tín dụng từ Ngân hàng TNHH MTV Shinhan Việt Nam - Chi nhánh TP. Hồ Chí Minh.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của các khoản vay ngắn hạn lớn và nhiều tài sản thế chấp đến khả năng mở rộng kinh doanh trong tương lai của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Vay và nợ thuê tài chính dài hạn)\nLoại nội dung: Bảng\n(8) Là khoản vay Ngân hàng TMCP Đầu tư và phát triển Việt Nam - Chi nhánh Thành Đô theo Hợp đồng Tín dụng Hạn mức số 02/2024/422422/HĐTD ký ngày 18/12/2024, hạn mức tín dụng ngắn hạn tối đa là 71 tỷ đồng, hạn mức tín dụng ngắn hạn này đã bao gồm toàn bộ dư bảo lãnh, dư nợ ngắn hạn, mở LC theo Hợp đồng tín dụng hạn mức số 01/2024/422422/HĐTD ngày 23/02/2024, thời hạn cấp hạn mức từ ngày ký hợp đồng đến hết ngày 31/10/2025. Mục đích vay: bổ sung vốn lưu động, bảo lãnh, mở LC. Lãi vay được quy định trên từng khế ước nhận nợ, tài sản đảm bảo bao gồm:\n- Tài sản của bên thứ ba là thẻ tiết kiệm có kỳ hạn số AAB2359716 tại ngân hàng BIDV, chi nhánh Thành Đô của ông Trần Kim Gia theo hợp đồng cầm cố số 01/2021/422422/HĐBĐ ngày 30/06/2021. Giá trị của tài sản là 5.209.973.530 VND.\n- Toàn bộ máy móc cho phần hình thành bột lưới dài của Công ty Cổ phần Giấy Hoàng Hà Hà Nam theo hợp đồng thế chấp tài sản số 03/2021/422422/HĐBĐ ngày 15/05/2021. Tổng giá trị của tài sản thế chấp là 4.200.000.000 VND.\n- Dây chuyền nhựa của Công ty Cổ phần Giấy Hoàng Hà Hà Nam theo hợp đồng thế chấp tài sản số 01/2021/422422/HĐBĐ ngày 02/02/2021. Giá trị của tài sản là 22.057.000.000 VND.\n- Quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất tại căn hộ chung cư số 407 dự án Ecohome Phúc Lợi, Phường Phúc Lợi, Quận Long Biên, TP Hà Nội, theo Giấy chứng nhận Quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất số CO 885678, số vào sổ cấp GCN CS49024 do Sở tài nguyên và môi trường TP Hà Nội cấp ngày 26/09/2018, đứng tên chủ sở hữu là Ông Trần Kim Gia và bà Nguyễn Thanh Hương.\n- Tài sản của bên thứ ba là 300.000 cổ phiếu (mệnh giá 10.000 VND/cổ phiếu) của Công ty Cổ phần HHP GLOBAL thuộc quyền sở hữu của Ông Trần Kim Gia theo hợp đồng thế chấp cổ phiếu niêm yết số 04/2019/422422/HĐBĐ ngày 11 tháng 7 năm 2019. Giá trị của tài sản là 3.000.000.000 VND.\n- Bộ tài sản bao gồm: Hệ thống xử lý nước thải, Trạm điện, Phương tiện vận tải, thiết bị đo đạc, các MMTB khác, Dây chuyền xeo giấy của Công ty Cổ phần Giấy Hoàng Hà Hà Nam theo hợp đồng thế chấp chung số 02/2019/422422/HĐBĐ ngày 28/05/2019. Tổng giá trị của tài sản là 35.373.000.000 VND.\n- Hệ thống máy xuống nhiên liệu (gồm Máy cào nhiên liệu, khung giá trọn bộ, hệ thống điều khiển bằng điện, hệ thống phanh, hệ thống bánh tỳ chống đập ngang hai bên) của công ty cổ phần Giấy Hoàng Hà Hà Nam theo hợp đồng thế chấp tài sản số 01/2022/422422/HĐBĐ ngày 28/07/2022. Tổng giá trị tài sản là 4.850.000.000VND.\n- Máy ép cột dây tự động của công ty cổ phần Giấy Hoàng Hà Hà Nam theo hợp đồng thế chấp tài sản số 01/2022/422422/HĐBĐ ngày 28/07/2022. Tổng giá trị tài sản là 5.820.000.000VND.\n(9) Là khoản vay Ngân hàng TMCP Thịnh Vượng (VPBank) theo hợp đồng cho vay số 01/VPB/HOANGHAHN ngày 30/01/2024 với hạn mức cho vay 4 tỷ đồng. Thời hạn duy trì hạn mức tín dụng là 12 tháng kể từ ngày ký hợp đồng. Mục đích vay để bổ sung vốn lưu động vào hoạt động sản xuất kinh doanh của doanh nghiệp. Hợp đồng được đảm bảo một phần bằng hợp đồng tiền gửi có kỳ hạn.\nChi tiết phát sinh về các khoản vay ngắn hạn trong năm như sau:\n| Chỉ tiêu | Số đầu năm | Số tiền vay phát sinh trong kỳ | Kết chuyển từ vay và nợ dài hạn | Số tiền vay đã trả trong kỳ | Số cuối kỳ |\n|---|---|---|---|---|---|\n| Vay ngắn hạn ngân hàng | 800.290.341.243 | 471.740.165.943 | - | 443.163.567.813 | 828.866.939.373 |\n| Vay ngắn hạn các cá nhân | - | - | - | - | - |\n| Vay dài hạn đến hạn trả | 84.000.000.000 | - | 22.000.000.000 | 21.000.000.000 | 85.000.000.000 |\n| Nợ thuê tài chính đến hạn trả | 11.650.629.828 | - | 2.912.657.457 | 2.912.657.457 | 11.650.629.828 |\n| Cộng | 895.940.971.071 | 471.740.165.943 | 24.912.657.457 | 467.076.225.270 | 925.517.569.201 |\nb. Vay và nợ thuê tài chính dài hạn\n| Chỉ tiêu | Số cuối kỳ (Giá trị) | Số cuối kỳ (Số có khả năng trả nợ) | Số đầu năm (Giá trị) | Số đầu năm (Số có khả năng trả nợ) |\n|---|---|---|---|---|\n| Vay dài hạn | 911.595.804.562 | 911.595.804.562 | 806.535.613.721 | 806.535.613.721 |\n| Ngân hàng TMCP Công thương Việt Nam - Chi nhánh Tiên Sơn (10) | 630.000.000.000 | 630.000.000.000 | 652.000.000.000 | 652.000.000.000 |\n| Ngân hàng TMCP Công thương Việt Nam - Chi nhánh Tiên Sơn (11) | 226.595.804.562 | 226.595.804.562 | 154.535.613.721 | 154.535.613.721 |\n| Vay dài hạn các cá nhân (14) | 55.000.000.000 | 55.000.000.000 | - | - |\n| Nợ thuê tài chính | 38.845.700.862 | 38.845.700.862 | 41.758.358.319 | 41.758.358.319 |\n| Công ty TNHH MTV Cho thuê tài chính Ngân hàng TMCP Ngoại Thương Việt Nam (12) | 36.980.341.691 | 36.980.341.691 | 34.868.777.741 | 34.868.777.741 |\n| Công ty Cho thuê Tài chính TNHH MTV Quốc tế Chailease (13) | 3.976.923.121 | 3.976.923.121 | 4.778.016.628 | 4.778.016.628 |\n| Cộng | 950.441.505.424 | 950.441.505.424 | 848.293.972.040 | 848.293.972.040 |\n(10) Là khoản vay ngân hàng TMCP Công thương Việt Nam - Chi nhánh Tiên Sơn theo hợp đồng cho vay dự án đầu tư số 01/2024/HĐDCVDADDT/NHCT284/DU AN HHP ngày 11 tháng 07 năm 2024, Hạn mức tín dụng của khoản vay là 745.202.000.000đ với thời hạn là 84 tháng được tính từ ngày tiếp theo của ngày Bên cho vay giải ngân khoản nợ đầu tiên. Mục đích cho vay: tái tài trợ toàn bộ dư nợ gốc vay tại Ngân hàng TMCP Bảo Việt - CN Hải Phòng để thanh toán các khoản chi phí hợp lý, hợp lệ, hợp pháp đầu tư Dự án di dời, mở rộng nhà máy giấy Hoàng Hà. Tài sản đảm bảo cho khoản vay bao gồm:\n- Toàn bộ dự án nhà máy giấy Hoàng Hà Hải Phòng (Bao gồm giá trị quyền sử dụng đất, giá trị tài sản trên đất và hệ thống dây chuyền, máy móc thiết bị hình thành trong tương lai tại dự án Nhà máy Giấy Hoàng Hà, cụm công nghiệp thị trấn Tiên Lãng, Thành Phố Hải Phòng).\n- Hai triệu cổ phiếu HHP của bà Trần Thị Thu Phương.",
+    "questions": [
+      {
+        "question": "Tổng vay và nợ thuê tài chính dài hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hạn mức tín dụng ngắn hạn tối đa từ Ngân hàng TMCP Đầu tư và phát triển Việt Nam - Chi nhánh Thành Đô là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mục đích vay từ Ngân hàng TMCP Thịnh Vượng (VPBank) là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các tài sản đảm bảo cho khoản vay dự án đầu tư từ Ngân hàng TMCP Công thương Việt Nam - Chi nhánh Tiên Sơn (10).",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi của 'Vay dài hạn các cá nhân' từ đầu năm đến cuối kỳ và ý nghĩa của nó đối với cơ cấu nguồn vốn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích mức độ rủi ro khi các tài sản quan trọng của công ty (dự án nhà máy giấy, cổ phiếu HHP) được sử dụng làm tài sản đảm bảo cho các khoản vay lớn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc tái tài trợ dư nợ gốc vay tại Ngân hàng TMCP Bảo Việt đến tình hình tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Vay và nợ thuê tài chính dài hạn tiếp theo)\nLoại nội dung: Bảng\n(11) Là khoản vay Ngân hàng TMCP Công thương Việt Nam - Chi nhánh Tiên Sơn theo Hợp đồng cho vay dự án đầu tư số 01/2024/HĐCVDADT/NHCT284/PHU YEN ngày 06/06/2024. Hạn mức cho vay là 600.000.000.000 VND, thời hạn duy trì hạn mức đến ngày 31/12/2025. Mục đích vay: Thanh toán các chi phí đầu tư hợp pháp của Dự án Nhà máy sản xuất giấy tại Lô E8, Khu công nghiệp Đông Bắc Sông Cầu - Khu vực 1, xã Xuân Hải, thị xã Sông Cầu, tỉnh Phú Yên. Lãi suất cho vay được quy định tại từng Giấy nhận nợ. Cấp tín dụng có bảo đảm một phần bằng tài sản. Tài sản bảo đảm là:\n- Toàn bộ dự án nhà máy giấy Hoàng Hà Phú Yên (Bao gồm tài sản gắn liền với đất và hệ thống dây chuyền, máy móc thiết bị hình thành trong tương lai/đã hình thành của nhà máy giấy Hoàng Hà Phú Yên).\n- Các tài sản khác đủ điều kiện thế chấp nếu có.\n- Nhận thế chấp bổ sung: Toàn bộ các quyền, lợi ích gắn liền hoặc phát sinh từ Dự án (bao gồm nhưng không giới hạn quyền thụ hưởng số tiền bảo hiểm, quyền đòi nợ và thụ hưởng số tiền đòi nợ...). phát sinh từ các Hợp đồng mua bán, góp vốn, hợp tác kinh doanh, cho thuê của Dự án nếu có; Hợp đồng thi công xây dựng, cung cấp dịch vụ, mua sắm trang thiết bị của Dự án và các Hợp đồng khác có liên quan đến Dự án nếu có; lợi tức thu được từ việc kinh doanh, khai thác giá trị của quyền sử dụng đất hoặc tài sản gắn liền với đất của Dự án.\n(12) Là khoản nợ thuê tài chính với Công ty TNHH MTV Cho thuê tài chính Ngân hàng TMCP Ngoại Thương Việt Nam theo các hợp đồng cho thuê tài chính sau:\n- Hợp đồng cho thuê tài chính số 42.22.19/CTTC ký ngày 22 tháng 12 năm 2022. Tài sản thuê tài chính là lò hơi tầng sôi công suất 38.5 tấn thuộc dự án nhà máy giấy Hoàng Hà công suất 100.000 tấn/năm tại cụm công nghiệp thị trấn Tiên lãng, tổng giá trị tài sản cho thuê là 46.860.000.000 VND đã bao gồm VAT. Số tiền cho thuê là 35.145.000.000 VND, thời gian cho thuê là 84 tháng, thời gian ân hạn 12 tháng.\n- Hợp đồng cho thuê tài chính số 42.2306/CTTC ký ngày 09 tháng 10 năm 2023. Tài sản thuê tài chính là 12 xe nâng thương hiệu UNICARRIERS và LIUGONG, tổng giá trị tài sản cho thuê là 10.880.892.000 VND đã bao gồm VAT. Số tiền cho thuê là 9.067.410.000 VND, thời gian cho thuê là 60 tháng, thời gian ân hạn 3 tháng.\n- Hợp đồng cho thuê tài chính số 42.23.07/CTTC ký ngày 09 tháng 10 năm 2023. Tài sản thuê tài chính là hệ thống điện mặt trời áp mái, tổng giá trị tài sản cho thuê là 15.792.379.704 VND đã bao gồm VAT. Số tiền cho thuê là 11.844.284.778 VND, thời gian cho thuê là 72 tháng, thời gian ân hạn 3 tháng.\n- Hợp đồng cho thuê tài chính số 42.23.08/CTTC ký ngày 10 tháng 10 năm 2023. Tài sản thuê tài chính là bàn cân điện tử 80 tấn, tổng giá trị tài sản cho thuê là 927.234.000 VND đã bao gồm VAT. Số tiền cho thuê là 741.787.200 VND, thời gian cho thuê là 48 tháng, thời gian ân hạn 3 tháng.\n(13) Là khoản nợ thuê tài chính với Công ty Cho thuê Tài chính TNHH MTV Quốc tế Chailease theo các hợp đồng cho thuê tài chính sau:\n- Hợp đồng cho thuê tài chính số B2309019P2 ký ngày 28 tháng 09 năm 2023. Tài sản thuê tài chính là hệ thống điều hòa, quạt gió, tổng giá trị tài sản cho thuê là 4.267.191.642 VND đã bao gồm VAT. Số tiền cho thuê là 3.285.737.564 VND, thời gian cho thuê là 60 tháng.\n- Hợp đồng cho thuê tài chính số B2310414P2 ký ngày 28 tháng 11 năm 2023. Tài sản thuê tài chính là hệ thống bơm tuần hoàn tái sử dụng, tổng giá trị tài sản cho thuê là 2.246.329.227 VND đã bao gồm VAT. Số tiền cho thuê là 2.021.696.304 VND, thời gian cho thuê là 60 tháng.\n- Hợp đồng cho thuê tài chính số C2310413P2 ký ngày 25 tháng 12 năm 2023. Tài sản thuê tài chính là dây chuyền nghiền rác, tổng giá trị tài sản cho thuê là 3.228.145.360 VND đã bao gồm VAT. Số tiền cho thuê là 2.905.330.824 VND, thời gian cho thuê là 60 tháng.\n(14) Là khoản vay dài hạn các cá nhân theo Hợp đồng số 01.25/HĐVV ngày 14/02/2025; Hợp đồng số 02.25/HĐVV ngày 15/03/2025; Hợp đồng số 03.25/HĐVV ngày 31/03/2025.\nChi tiết phát sinh vay và nợ thuê tài chính dài hạn trong năm như sau:\n| Chỉ tiêu | Số đầu năm | Số tiền vay phát sinh trong kỳ | Số tiền vay đã trả trong kỳ | Kết chuyển sang vay và nợ ngắn hạn | Số cuối kỳ |\n|---|---|---|---|---|---|\n| Vay dài hạn ngân hàng | 806.535.613.721 | 127.060.190.841 | - | 22.000.000.000 | 911.595.804.562 |\n| Nợ thuê tài chính | 41.758.358.319 | - | 2.912.657.457 | - | 38.845.700.862 |\n| Cộng | 848.293.972.040 | 127.060.190.841 | 2.912.657.457 | 22.000.000.000 | 950.441.505.424 |\n18. Quỹ khen thưởng phúc lợi\n| Chỉ tiêu | Số đầu năm | Tăng do trích lập từ lợi nhuận | Chi quỹ trong kỳ | Số cuối kỳ |\n|---|---|---|---|---|\n| Quỹ khen thưởng | 6.985.537.709 | - | 265.700.000 | 6.719.837.709 |\n| Quỹ phúc lợi | 6.367.471.350 | - | 165.600.000 | 6.201.871.350 |\n| Cộng | 13.353.009.059 | - | 431.300.000 | 12.921.709.059 |",
+    "questions": [
+      {
+        "question": "Hạn mức cho vay của Dự án Nhà máy sản xuất giấy tại Lô E8, KCN Đông Bắc Sông Cầu là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền vay dài hạn ngân hàng cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Nợ thuê tài chính' cuối kỳ với đầu năm. Sự thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các tài sản đảm bảo cho khoản vay dự án Nhà máy sản xuất giấy Hoàng Hà Phú Yên.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào nợ thuê tài chính dựa trên các hợp đồng thuê tài chính đã ký kết.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc phát sinh các khoản vay dài hạn từ cá nhân đến cấu trúc nợ của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược sử dụng các khoản vay dài hạn để tài trợ dự án của công ty và rủi ro tiềm ẩn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Vốn chủ sở hữu và Ngoại tệ)\nLoại nội dung: Bảng\n19. Vốn chủ sở hữu\na. Bảng đối chiếu biến động của vốn chủ sở hữu\n| Chỉ tiêu | Vốn góp của chủ sở hữu | Quỹ đầu tư phát triển | Lợi nhuận sau thuế chưa phân phối | Lợi ích cổ đông không kiểm soát | Cộng |\n|---|---|---|---|---|---|\n| Số dư đầu năm nay | 865.543.430.000 | 7.522.689.196 | 51.509.824.324 | 107.763.966.790 | 1.032.339.910.310 |\n| Lợi nhuận trong kỳ này | - | - | 11.636.790.739 | 1.177.843.477 | 12.814.634.216 |\n| Tăng vốn tại Công ty con | - | - | - | 49.000.000.000 | 49.000.000.000 |\n| Số dư cuối kỳ này | 865.543.430.000 | 7.522.689.196 | 63.146.615.063 | 157.941.810.267 | 1.094.154.544.526 |\nb. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Số lượng cổ phiếu đăng ký phát hành | 86.554.343 | 86.554.343 |\n| Số lượng cổ phiếu đã phát hành/bán ra công chúng | 86.554.343 | 86.554.343 |\n| - Cổ phiếu phổ thông | 86.554.343 | 86.554.343 |\n| - Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu được mua lại | - | - |\n| - Cổ phiếu phổ thông | - | - |\n| - Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu đang lưu hành | 86.554.343 | 86.554.343 |\n| - Cổ phiếu phổ thông | 86.554.343 | 86.554.343 |\n| - Cổ phiếu ưu đãi | - | - |\n| Mệnh giá cổ phiếu đang lưu hành | 10.000 VND | - |\n20. Các khoản mục ngoài Bảng Cân đối kế toán hợp nhất\nA. Ngoại tệ các loại\n| Chỉ tiêu | Số cuối năm | Số đầu năm |\n|---|---|---|\n| Dollar Mỹ (USD) | 26.234,51 | 571,91 |\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT\n1. Doanh thu\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Doanh thu bán hàng hóa | 457.391.706.740 | 396.987.368.436 |\n| Doanh thu bán thành phẩm | 183.080.576.239 | 14.372.955.900 |\n| Doanh thu khác | 15.224.955.620 | 302.668.219 |\n| Cộng | 655.697.238.599 | 411.662.992.555 |\n2. Các khoản giảm trừ doanh thu\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Hàng bán bị trả lại | 10.018.100 | - |\n| Cộng | 10.018.100 | - |",
+    "questions": [
+      {
+        "question": "Tổng vốn chủ sở hữu cuối kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Lợi nhuận sau thuế chưa phân phối' cuối kỳ này với 'Số dư đầu năm nay'.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Lợi ích cổ đông không kiểm soát' đã tăng bao nhiêu trong kỳ này?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá ý nghĩa của việc mệnh giá cổ phiếu đang lưu hành là 10.000 VND.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc 'Tăng vốn tại Công ty con' đến tổng vốn chủ sở hữu.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự biến động tỷ giá Dollar Mỹ (USD) đến hoạt động kinh doanh quốc tế của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Giá vốn, Doanh thu tài chính, Chi phí tài chính)\nLoại nội dung: Bảng\n3. Giá vốn hàng bán\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Giá vốn của hàng hóa đã bán | 449.987.684.485 | 386.895.536.465 |\n| Giá vốn của thành phẩm đã bán | 157.478.261.450 | 11.866.509.079 |\n| Giá vốn khác | 14.562.541.573 | 207.399.080 |\n| Cộng | 622.028.487.508 | 398.969.444.624 |\n4. Doanh thu hoạt động tài chính\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Lãi tiền gửi, cho vay | 1.967.437.426 | 1.242.174.727 |\n| Lãi chênh lệch tỷ giá phát sinh | 128.354.615 | 239.577.562 |\n| Lãi chênh lệch tỷ giá đánh giá lại | 883.556.372 | - |\n| Cộng | 2.979.348.413 | 1.481.752.289 |\n5. Chi phí tài chính\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Chi phí lãi vay | 17.148.490.756 | 5.403.757.727 |\n| Lỗ chênh lệch tỷ giá phát sinh | - | 114.983.582 |\n| Lỗ chênh lệch tỷ giá đánh giá lại | 43.431.180 | 10.989.500 |\n| Cộng | 17.306.905.518 | 5.414.747.227 |\n6. Chi phí bán hàng\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Chi phí cho nhân viên | 379.534.348 | 151.946.993 |\n| Chi phí dụng cụ, đồ dùng | - | 5.792.409 |\n| Chi phí khấu hao tài sản cố định | 45.138.020 | 63.209.424 |\n| Chi phí dịch vụ mua ngoài | 711.054.457 | 200.102.926 |\n| Các chi phí khác | - | 87.340.179 |\n| Cộng | 1.135.726.825 | 508.391.931 |\n7. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Chi phí cho nhân viên | 1.056.902.194 | 238.500.258 |\n| Chi phí đồ dùng văn phòng | 98.786.288 | 114.089.279 |\n| Chi phí khấu hao tài sản cố định | 271.734.429 | 182.546.781 |\n| Thuế, phí và lệ phí | 271.301.531 | 152.921.383 |\n| Chi phí dịch vụ mua ngoài | 271.041.146 | 36.028.326 |\n| Các chi phí khác | 15.303.569 | 207.182.588 |\n| Cộng | 1.985.069.157 | 931.268.615 |\n8. Thu nhập khác\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Tiền bồi thường | - | 131.683.200 |\n| Lãi từ giao dịch mua rẻ | - | 25.933.197 |\n| Thu nhập khác | 104.737.807 | - |\n| Cộng | 236.421.007 | 25.933.197 |\n9. Chi phí khác\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Thuế bị phạt, bị truy thu | 199.971.141 | 1.916.616 |\n| Chi phí khác | 61.404.832 | - |\n| Cộng | 261.375.973 | 1.916.616 |\n10. Chi phí thuế thu nhập doanh nghiệp hiện hành\nThuế thu nhập doanh nghiệp phải nộp trong kỳ được dự tính như sau:\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Tổng lợi nhuận kế toán trước thuế | 16.709.800.333 | 7.344.909.028 |\n| Các khoản điều chỉnh tăng, giảm lợi nhuận kế toán để xác định lợi nhuận chịu thuế thu nhập doanh nghiệp | | |\n| Các khoản điều chỉnh tăng | 283.871.141 | 90.159.018 |\n| Tiền truy thu thuế, phạt thuế | 283.871.141 | 1.916.616 |\n| Điều chỉnh tăng do hợp nhất | - | 88.242.402 |\n| Các khoản điều chỉnh giảm | - | - |\n| Lãi/lỗ trong công ty liên kết | - | 25.933.197 |\n| Điều chỉnh giảm do hợp nhất | - | - |\n| Thu nhập chịu thuế | 16.993.671.474 | 7.409.134.849 |\n| Thu nhập tính thuế | 16.993.671.474 | 7.409.134.849 |\n| Thuế suất thuế thu nhập doanh nghiệp | 20% | 20% |\n| Thuế thu nhập doanh nghiệp phải nộp | 3.398.734.294 | 1.481.826.969 |\n| Điều chỉnh thuế thu nhập doanh nghiệp phải nộp của các năm trước | - | - |\n| Chi phí thuế TNDN hiện hành | 3.398.734.294 | 1.481.826.969 |",
+    "questions": [
+      {
+        "question": "Tổng giá vốn hàng bán năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng doanh thu hoạt động tài chính năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Chi phí lãi vay' năm nay so với năm trước. Sự thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ chi phí quản lý doanh nghiệp trên tổng doanh thu thuần năm nay là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của 'Lãi chênh lệch tỷ giá đánh giá lại' và tác động của nó đến doanh thu hoạt động tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản 'Tiền truy thu thuế, phạt thuế' đến chi phí thuế TNDN hiện hành của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý chi phí bán hàng và chi phí quản lý doanh nghiệp của công ty qua các năm.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin bổ sung - Lãi cơ bản trên cổ phiếu và Thông tin khác)\nLoại nội dung: Bảng\n11. Lãi cơ bản/suy giảm trên cổ phiếu\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp | 11.636.790.739 | 5.418.690.711 |\n| Các khoản điều chỉnh tăng, giảm lợi nhuận kế toán để xác định lợi nhuận phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | - | - |\n| Lợi nhuận tính lãi cơ bản/suy giảm trên cổ phiếu | 11.636.790.739 | 5.418.690.711 |\n| Số lượng bình quân gia quyền của cổ phiếu phổ thông đang lưu hành trong năm | 86.554.343 | 66.054.343 |\n| Lãi cơ bản/suy giảm trên cổ phiếu | 134 | 82 |\nCổ phiếu phổ thông đang lưu hành bình quân trong năm được tính như sau:\n| Chỉ tiêu | 31/03/2025 | 31/03/2024 |\n|---|---|---|\n| Cổ phiếu phổ thông đang lưu hành đầu năm | 86.554.343 | 62.023.810 |\n| Ảnh hưởng của cổ phiếu phổ thông phát hành năm 2023 thu bằng tiền | - | - |\n| Ảnh hưởng của cổ phiếu phổ thông phát hành năm 2024 thu bằng tiền | - | - |\n| Ảnh hưởng của cổ phiếu phổ thông phát hành để trả cổ tức | - | 4.030.533 |\n| Cổ phiếu phổ thông đang lưu hành bình quân trong năm | 86.554.343 | 66.054.343 |\nVII. NHỮNG THÔNG TIN KHÁC\n1. Thông tin về các bên liên quan\nCác bên liên quan với Công ty bao gồm các thành viên quản lý chủ chốt, các cá nhân có liên quan với các thành viên quản lý chủ chốt và các bên liên quan khác.\nA. Giao dịch với các thành viên quản lý chủ chốt và các cá nhân có liên quan\nCác thành viên quản lý chủ chốt gồm các thành viên Hội đồng quản trị và các thành viên Ban điều hành (Ban Tổng Giám đốc, kế toán trưởng). Các cá nhân có liên quan với các thành viên quản lý chủ chốt là các thành viên mật thiết trong gia đình các thành viên quản lý chủ chốt.\nCác bên liên quan với Công ty gồm:\n| Bên liên quan | Mối quan hệ |\n|---|---|\n| Bà Nguyễn Thị Thu Thủy | Chủ tịch HĐQT |\n| Bà Trần Thị Thu Phương | Tổng Giám Đốc Công ty |\n| Ông Bùi Minh Đức | Thành viên Hội đồng quản trị |\n| Ông Nguyễn Minh Tú | Thành viên Hội đồng quản trị |\nGiao dịch với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt\nCác nghiệp vụ chính phát sinh trong năm giữa Công ty với các bên liên quan khác như sau:\n| Chỉ tiêu | 31/12/2025 | 31/12/2024 |\n|---|---|---|\n| Bà Nguyễn Thị Thu Thủy |\n| Nhận tiền góp vốn | 25.000.000.000 | - |\n| Cổ tức được hưởng | 2.838.020.000 | - |\n| Bà Trần Thị Thu Phương |\n| Nhận tiền góp vốn | 30.000.000.000 | - |\n| Cổ tức được hưởng | 3.417.330.000 | - |\nCam kết bảo lãnh:\nBà Trần Thị Thu Phương dùng quyền sử dụng đất thuộc sở hữu của mình để bảo đảm cho khoản vay của Công ty tại Ngân hàng TMCP Công thương Việt Nam - Chi nhánh Tiên Sơn, Ngân hàng FIRST BANK Comperial Bank, LTD. - Chi nhánh thành phố Hà Nội, cụ thể:\n| Thông tin | Diện tích | Địa chỉ | Thuộc sở hữu | Giá trị TSĐB |\n|---|---|---|---|---|\n| GCN số CV 316697, số vào sổ cấp GCN CH 12544 do UBND TP Chí Linh, tỉnh Hải Dương cấp ngày 09/06/2009 | 156m2 | Phường Cộng Hòa, thành phố Chí Linh, tỉnh Hải Dương | Bà Trần Thị Thu Phương | 3.000.000.000 VND |\n| GCN số BV 467332, số vào sổ cấp GCN CH 01264 do UBND quận Hà Đông, TP. Hà Nội cấp ngày 17/10/2014 | 113,4m2 | Tiểu khu đô thị mới Vạn Phúc, phường Vạn Phúc, quận Hà Đông, TP. Hà Nội | Bà Trần Thị Thu Phương và ông Nguyễn Trần Nhật Đức | 14.360.570.000 VND |\nNgoài ra, Bà Trần Thị Thu Phương và ông Nguyễn Vinh Quang còn ký phát hành bảo lãnh cá nhân để bảo đảm cho khoản vay của Công ty tại các ngân hàng: Ngân hàng FIRST BANK Comperial Bank, LTD. - Chi nhánh thành phố Hà Nội; Ngân hàng TNHH MTV Woori Việt Nam - Chi nhánh Phú Mỹ Hưng; Ngân hàng Hua Nan Commercial bank, LTD. - Chi nhánh thành phố Hồ Chí Minh.\nB. Giao dịch với các bên liên quan khác\nCác bên liên quan khác với Công ty bao gồm các công ty con, các công ty liên kết, cơ sở kinh doanh đồng kiểm soát, các cá nhân có quyền trực tiếp hoặc gián tiếp biểu quyết ở Công ty và các thành viên mật thiết trong gia đình của họ, các doanh nghiệp do các cá nhân viên quản lý chủ chốt và các cá nhân có quyền trực tiếp hoặc gián tiếp biểu quyết của Công ty và các thành viên mật thiết trong gia đình của họ. Bên liên quan: Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà, Mối quan hệ: Công ty liên kết.\nCác khoản công nợ phải thu không có bảo đảm và sẽ được thanh toán bằng tiền. Không có khoản dự phòng phải thu khó đòi nào được lập cho các khoản nợ phải thu từ các bên liên quan. Tại ngày kết thúc năm tài chính, công nợ với các bên liên quan được trình bày tại thuyết minh V.4, V.5..",
+    "questions": [
+      {
+        "question": "Lợi nhuận tính lãi cơ bản trên cổ phiếu năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ai là Tổng Giám đốc của công ty?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh 'Lãi cơ bản/suy giảm trên cổ phiếu' năm nay với năm trước. Sự thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các thành viên quản lý chủ chốt của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đóng góp vốn của Bà Nguyễn Thị Thu Thủy và Bà Trần Thị Thu Phương trong năm 2025.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính mà Bà Trần Thị Thu Phương đang gánh chịu thông qua các cam kết bảo lãnh cá nhân.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của các giao dịch với bên liên quan (ví dụ Công ty Cổ phần Tập đoàn Đầu tư Hoàng Hà) đến báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Thông tin về bộ phận và Rủi ro)\nLoại nội dung: Text\n2. Thông tin về bộ phận\nThông tin bộ phận được trình bày theo lĩnh vực kinh doanh và khu vực địa lý. Báo cáo bộ phận chính yếu là theo lĩnh vực kinh doanh dựa trên cơ cấu tổ chức và quản lý nội bộ và hệ thống Báo cáo tài chính nội bộ của Công ty do các hoạt động kinh doanh của Công ty được tổ chức và quản lý theo tính chất của sản phẩm và dịch vụ do Công ty cung cấp với mỗi một bộ phận là một đơn vị kinh doanh cung cấp các sản phẩm khác nhau và phục vụ cho các thị trường khác nhau do rủi ro và tỷ suất sinh lời của Công ty bị tác động chủ yếu bởi những khác biệt về sản phẩm và dịch vụ Công ty cung cấp.\nA. Thông tin về lĩnh vực kinh doanh\nCông ty có các lĩnh vực kinh doanh chính sau: Lĩnh vực sản xuất giấy, lĩnh vực thương mại và lĩnh vực khác.\nThông tin về kết quả kinh doanh của bộ phận theo lĩnh vực kinh doanh của Công ty như sau:\n| Chỉ tiêu | Lĩnh vực thương mại | Lĩnh vực sản xuất | Lĩnh vực khác | Cộng |\n|---|---|---|---|---|\n| Doanh thu thuần về bán hàng và cung cấp dịch vụ ra bên ngoài | 483.436.743.790 | 157.025.521.089 | 15.224.955.620 | 655.687.220.499 |\n| Tổng doanh thu thuần về bán hàng và cung cấp dịch vụ | 483.436.743.790 | 157.025.521.089 | 15.224.955.620 | 655.687.220.499 |\n| Chi phí theo bộ phận | 473.544.359.813 | 133.921.586.122 | 14.562.541.573 | 622.028.487.508 |\n| Kết quả kinh doanh theo bộ phận | 9.892.383.977 | 23.103.934.967 | 662.414.047 | 33.658.732.991 |\n| Các chi phí không phân bổ theo bộ phận | - | - | - | 3.120.795.982 |\n| Lợi nhuận từ hoạt động kinh doanh | - | - | - | 30.537.937.009 |\n| Doanh thu hoạt động tài chính | - | - | - | 2.979.348.413 |\n| Lãi/lỗ trong công ty liên kết | - | - | - | - |\n| Chi phí tài chính | - | - | - | 17.306.905.518 |\n| Thu nhập khác | - | - | - | 236.421.007 |\n| Chi phí khác | - | - | - | 261.375.973 |\n| Chi phí thuế thu nhập doanh nghiệp hiện hành | - | - | - | 3.398.734.294 |\n| Chi phí thuế thu nhập doanh nghiệp hoãn lại | - | - | - | 27.943.572 |\n| Lợi nhuận sau thuế thu nhập doanh nghiệp | - | - | - | 12.814.634.216 |\nB. Thông tin về khu vực địa lý\nHầu hết hoạt động của Công ty diễn ra trên lãnh thổ Việt Nam do đó Công ty không lập báo cáo bộ phận theo khu vực địa lý.\n3. Giá trị hợp lý của tài sản và nợ phải trả tài chính\n| Chỉ tiêu | Số cuối kỳ (Giá trị sổ sách) | Số đầu năm (Giá trị sổ sách) | Số cuối kỳ (Giá trị hợp lý) | Số đầu năm (Giá trị hợp lý) |\n|---|---|---|---|---|\n| Tài sản tài chính | | | | |\n| Tiền và các khoản tương đương tiền | 17.955.108.186 | 16.524.916.087 | 17.955.108.186 | 16.524.916.087 |\n| Các khoản đầu tư nắm giữ đến ngày đáo hạn | 198.707.548.086 | 207.081.538.034 | 198.707.548.086 | 207.081.538.034 |\n| Phải thu khách hàng | 314.641.605.265 | 276.521.995.795 | 314.641.605.265 | 276.521.995.795 |\n| Các khoản phải thu khác | 78.626.740.002 | 64.752.051.173 | 78.626.740.002 | 64.752.051.173 |\n| Tài sản tài chính sẵn sàng để bán | 39.748.090.219 | 39.748.090.219 | 39.748.090.219 | 39.748.090.219 |\n| Cộng | 649.679.091.758 | 604.628.591.308 | 649.679.091.758 | 604.628.591.308 |\n| Nợ phải trả tài chính | | | | |\n| Vay và nợ | 1.875.959.074.625 | 1.744.234.943.111 | 1.875.959.074.625 | 1.744.234.943.111 |\n| Phải trả người bán | 52.411.770.806 | 69.584.407.349 | 52.411.770.806 | 69.584.407.349 |\n| Các khoản phải trả khác | 19.104.658.304 | 6.946.533.298 | 19.104.658.304 | 6.946.533.298 |\n| Cộng | 1.947.475.503.735 | 1.820.765.883.758 | 1.947.475.503.735 | 1.820.765.883.758 |\nGiá trị hợp lý của các tài sản tài chính và nợ phải trả tài chính được phản ánh theo giá trị mà công cụ tài chính có thể được chuyển đổi trong một giao dịch hiện tại giữa các bên có đầy đủ hiểu biết và mong muốn giao dịch.\nCông ty sử dụng phương pháp và giả định sau để ước tính giá trị hợp lý:\n- Giá trị hợp lý của tiền và các khoản tương đương tiền, phải thu khách hàng, cho vay, các khoản phải thu khác, vay, phải trả người bán và các khoản phải trả khác ngắn hạn tương đương giá trị sổ sách đã trừ dự phòng cho phần ước tính có khả năng không thu hồi được của các khoản mục này do có kỳ hạn ngắn.\n- Giá trị hợp lý của các khoản cho vay, phải thu khách hàng, các khoản phải thu khác, vay, phải trả người bán và các khoản phải trả khác dài hạn, các khoản đầu tư nắm giữ đến ngày đáo hạn chưa niêm yết trên thị trường chứng khoán và không có giá giao dịch do 3 công ty chứng khoán công bố được ước tính bằng cách chiết khấu dòng tiền với lãi suất áp dụng cho các khoản nợ có đặc điểm và thời gian đáo hạn còn lại tương tự.\n4. Rủi ro tín dụng\nRủi ro tín dụng là rủi ro mà một bên tham gia trong hợp đồng không có khả năng thực hiện được nghĩa vụ của mình dẫn đến tổn thất về tài chính cho Công ty. Công ty có các rủi ro tín dụng từ các hoạt động kinh doanh chủ yếu đối với các khoản phải thu khách hàng và hoạt động tài chính (tiền gửi ngân hàng, cho vay và các công cụ tài chính khác).\nPhải thu khách hàng: Công ty giảm thiểu rủi ro tín dụng bằng cách chỉ giao dịch với các đơn vị có khả năng tài chính tốt, yêu cầu mở thư tín dụng đối với các đơn vị giao dịch lần đầu hay chưa có thông tin về khả năng tài chính và nhân viên kế toán công nợ thường xuyên theo dõi nợ phải thu để đôn đốc thu hồi. Trên cơ sở này và khoản phải thu của Công ty liên quan đến nhiều khách hàng khác nhau nên rủi ro tín dụng không tập trung vào một khách hàng nhất định.\nTiền gửi ngân hàng: Phần lớn tiền gửi ngân hàng của Công ty được gửi tại các ngân hàng lớn, có uy tín ở Việt Nam. Công ty nhận thấy mức độ tập trung rủi ro tín dụng đối với tiền gửi ngân hàng là thấp.",
+    "questions": [
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp của công ty là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các lĩnh vực kinh doanh chính của công ty là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Kết quả kinh doanh theo bộ phận' của lĩnh vực thương mại và lĩnh vực sản xuất.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty sử dụng phương pháp và giả định nào để ước tính giá trị hợp lý của các khoản phải thu khách hàng ngắn hạn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tập trung rủi ro tín dụng của công ty đối với tiền gửi ngân hàng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích cách công ty giảm thiểu rủi ro tín dụng đối với các khoản phải thu khách hàng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động của các lĩnh vực kinh doanh dựa trên kết quả kinh doanh theo bộ phận và đề xuất cải thiện.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần HHP GLOBAL\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I\nThời gian: Quý I năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất (Rủi ro thanh khoản, Rủi ro thị trường và Thông tin chung)\nLoại nội dung: Text\n5. Rủi ro thanh khoản\nRủi ro thanh khoản là rủi ro Công ty gặp khó khăn khi thực hiện nghĩa vụ tài chính do thiếu tiền. Ban Tổng Giám đốc chịu trách nhiệm cao nhất trong quản lý rủi ro thanh khoản. Rủi ro thanh khoản của Công ty chủ yếu phát sinh từ việc các tài sản tài chính và nợ phải trả tài chính có các thời điểm đáo hạn lệch nhau.\nCông ty quản lý rủi ro thanh khoản thông qua việc duy trì một lượng tiền và các khoản tương đương tiền phù hợp và các khoản vay ở mức mà Ban Tổng Giám đốc cho là đủ để đáp ứng nhu cầu hoạt động của Công ty nhằm giảm thiểu ảnh hưởng của những biến động về luồng tiền.\nThời hạn thanh toán của các khoản nợ phải trả tài chính dựa trên các khoản thanh toán dự kiến theo hợp đồng chưa được chiết khấu như sau:\n| Chỉ tiêu | Từ 1 năm trở xuống | Trên 1 năm đến 5 năm | Trên 5 năm | Cộng |\n|---|---|---|---|---|\n| Số cuối kỳ | | | | |\n| Vay và nợ | 925.517.569.201 | 758.441.505.424 | 192.000.000.000 | 1.875.959.074.625 |\n| Phải trả người bán | 52.411.770.806 | - | - | 52.411.770.806 |\n| Các khoản phải trả khác | 19.104.658.304 | - | - | 19.104.658.304 |\n| Cộng | 997.033.998.311 | 758.441.505.424 | 192.000.000.000 | 1.947.475.503.735 |\n| Số đầu năm | | | | |\n| Vay và nợ | 895.940.971.071 | 656.293.972.040 | 192.000.000.000 | 1.744.234.943.111 |\n| Phải trả người bán | 69.584.407.349 | - | - | 69.584.407.349 |\n| Các khoản phải trả khác | 6.946.533.298 | - | - | 6.946.533.298 |\n| Cộng | 972.471.911.718 | 656.293.972.040 | 192.000.000.000 | 1.820.765.883.758 |\nCông ty cho rằng mức độ tập trung rủi ro đối với việc trả nợ là thấp. Công ty có khả năng thanh toán các khoản nợ đến hạn từ dòng tiền từ hoạt động kinh doanh và tiền thu từ các tài sản tài chính đáo hạn.\n6. Rủi ro thị trường\nRủi ro thị trường là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của giá thị trường. Rủi ro thị trường bao gồm 3 loại: rủi ro ngoại tệ, rủi ro lãi suất và rủi ro về giá khác. Các phân tích về độ nhạy trình bày dưới đây được lập trên cơ sở giá trị các khoản nợ thuần, tỷ lệ giữa các khoản nợ có lãi suất cố định và các khoản nợ có lãi suất thả nổi là không thay đổi.\nRủi ro ngoại tệ: Rủi ro ngoại tệ là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của tỷ giá hối đoái.\nRủi ro lãi suất: Rủi ro lãi suất là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của lãi suất thị trường. Rủi ro lãi suất của Công ty chủ yếu liên quan đến tiền và các khoản vay. Công ty quản lý rủi ro lãi suất bằng cách phân tích tình hình thị trường để có được các lãi suất có lợi nhất và vẫn nằm trong giới hạn quản lý rủi ro của mình.\nRủi ro về giá khác: Rủi ro về giá khác là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của giá thị trường ngoài thay đổi của lãi suất và tỷ giá hối đoái.\n7. Thông tin về hoạt động liên tục\nBáo cáo tài chính hợp nhất này được lập trên cơ sở hoạt động liên tục.\n8. Các sự kiện quan trọng phát sinh sau ngày khóa sổ kế toán lập Báo cáo tài chính hợp nhất\nBan Tổng giám đốc Công ty khẳng định không có sự kiện nào quan trọng phát sinh sau ngày 31 tháng 12 năm 2024 cho đến thời điểm lập báo cáo này mà chưa được xem xét điều chỉnh số liệu hoặc công bố trong Báo cáo tài chính hợp nhất.\n9. Số liệu so sánh\nSố liệu so sánh là số liệu trên Báo cáo tài chính hợp nhất năm 2024 đã được kiểm toán bởi Công ty TNHH Kiểm toán Nhân Tâm Việt.\nLập ngày 28 tháng 04 năm 2025\nNgười lập biểu Kế toán trưởng Tổng Giám đốc\nNguyễn Thảo Phương Bùi Thị Giang Trần Thị Thu Phương",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả tài chính có thời hạn từ 1 năm trở xuống cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Rủi ro thị trường bao gồm những loại rủi ro nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng 'Vay và nợ' có thời hạn trên 1 năm đến 5 năm cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Ai là người chịu trách nhiệm cao nhất trong quản lý rủi ro thanh khoản của công ty?",
+        "difficulty": "Medium_NER"
+      },
+      {
+        "question": "Đánh giá khả năng thanh toán các khoản nợ đến hạn của công ty dựa trên các nguồn lực được nêu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược quản lý rủi ro lãi suất của công ty và hiệu quả của nó.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của rủi ro ngoại tệ đến các luồng tiền và giá trị hợp lý của công cụ tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+Dưới đây là danh sách dữ liệu huấn luyện (instruction data) được tạo theo yêu cầu:
+
+```json
+[
+  {
+    "instruction": "Tên đầy đủ của công ty phát hành báo cáo là gì?",
+    "input": "1",
+    "output": "Tên đầy đủ của công ty phát hành báo cáo là Công ty Cổ phần Đầu tư và Thương mại DIC."
+  },
+  {
+    "instruction": "Mã cổ phiếu của công ty là gì?",
+    "input": "1",
+    "output": "Mã cổ phiếu của công ty là DIC."
+  },
+  {
+    "instruction": "Loại báo cáo tài chính được công bố là gì?",
+    "input": "1",
+    "output": "Loại báo cáo tài chính được công bố là Công bố thông tin Báo cáo tài chính riêng đã kiểm toán thường niên."
+  },
+  {
+    "instruction": "Ý kiến của kiểm toán viên về báo cáo tài chính năm 2024 là gì?",
+    "input": "1",
+    "output": "Ý kiến của kiểm toán viên về báo cáo tài chính năm 2024 là Từ chối (Disclaimer of audit opinion)."
+  },
+  {
+    "instruction": "Việc kiểm toán viên đưa ra ý kiến không phải là chấp nhận toàn phần có phải là một dấu hiệu rủi ro tài chính không?",
+    "input": "1",
+    "output": "Có, việc kiểm toán viên đưa ra ý kiến không phải là chấp nhận toàn phần, đặc biệt là 'Từ chối đưa ra ý kiến kiểm toán' (Disclaimer of audit opinion), là một dấu hiệu rủi ro tài chính nghiêm trọng. Điều này cho thấy kiểm toán viên không thể thu thập đủ bằng chứng để hình thành ý kiến về tính trung thực và hợp lý của báo cáo tài chính, làm giảm đáng kể độ tin cậy của thông tin tài chính được công bố."
+  },
+  {
+    "instruction": "Phân tích tác động tiềm ẩn của việc kiểm toán từ chối đưa ra ý kiến đối với niềm tin của nhà đầu tư và khả năng huy động vốn của công ty.",
+    "input": "1",
+    "output": "Việc kiểm toán từ chối đưa ra ý kiến có tác động tiêu cực nghiêm trọng đến niềm tin của nhà đầu tư và khả năng huy động vốn của công ty.
+        *   **Niềm tin của nhà đầu tư:** Khi kiểm toán viên từ chối đưa ra ý kiến, nhà đầu tư sẽ không có cơ sở để tin tưởng vào tính trung thực, hợp lý của các số liệu tài chính được công bố. Điều này làm gia tăng sự không chắc chắn, gây hoài nghi về tình hình tài chính thực sự của công ty, dẫn đến việc họ có thể rút vốn hoặc không đầu tư thêm vào cổ phiếu của công ty.
+        *   **Khả năng huy động vốn:** Các tổ chức tài chính, ngân hàng và các nhà đầu tư tiềm năng thường yêu cầu báo cáo tài chính được kiểm toán với ý kiến chấp nhận toàn phần để đánh giá rủi ro và ra quyết định cho vay/đầu tư. Ý kiến từ chối sẽ khiến công ty gặp rất nhiều khó khăn trong việc tiếp cận các nguồn vốn vay hoặc phát hành cổ phiếu mới, buộc công ty phải chấp nhận chi phí vốn cao hơn hoặc hoàn toàn không thể huy động được vốn, ảnh hưởng nghiêm trọng đến các kế hoạch mở rộng và hoạt động kinh doanh trong tương lai."
+  },
+  {
+    "instruction": "Công ty kiểm toán nào đã thực hiện kiểm toán báo cáo tài chính này?",
+    "input": "2",
+    "output": "Công ty kiểm toán đã thực hiện kiểm toán báo cáo tài chính này là CÔNG TY TNHH DỊCH VỤ TƯ VẤN TÀI CHÍNH KẾ TOÁN VÀ KIỂM TOÁN PHÍA NAM (AASCS)."
+  },
+  {
+    "instruction": "Kiểm toán viên đã từ chối đưa ra ý kiến về những báo cáo tài chính nào?",
+    "input": "2",
+    "output": "Kiểm toán viên đã từ chối đưa ra ý kiến kiểm toán về Báo cáo tài chính riêng của Công ty Cổ phần Đầu tư và Thương mại DIC cho năm tài chính kết thúc ngày 31 tháng 12 năm 2024, cũng như về Báo cáo tài chính riêng và Báo cáo lưu chuyển tiền tệ riêng cho cùng năm tài chính."
+  },
+  {
+    "instruction": "Tại sao kiểm toán viên từ chối đưa ra ý kiến về báo cáo tài chính?",
+    "input": "2",
+    "output": "Kiểm toán viên từ chối đưa ra ý kiến vì không thể thu thập đầy đủ bằng chứng kiểm toán thích hợp làm cơ sở cho ý kiến kiểm toán, do các vấn đề liên quan đến việc chưa nhận được thư xác nhận cho nhiều khoản mục phải thu/phải trả, không thể đánh giá khả năng thu hồi các khoản đầu tư, không thể chứng kiến kiểm kê hàng tồn kho và xác định giá trị thuần có thể thực hiện được của hàng tồn kho, thiếu thông tin về tiến độ dự án đầu tư vào Công ty Cổ phần Xi măng Yên Mao, ghi nhận doanh thu dịch vụ cho kỳ sau và chưa thanh toán chi phí lãi vay ngân hàng, cùng với thiếu bằng chứng về các khoản phải thu/phải trả khác của Công ty TNHH Đầu tư Khoáng sản BMC."
+  },
+  {
+    "instruction": "Những khoản mục nào có vấn đề liên quan đến xác nhận của kiểm toán viên?",
+    "input": "2",
+    "output": "Các khoản mục có vấn đề liên quan đến xác nhận của kiểm toán viên bao gồm:
+        - Các khoản phải thu khách hàng ngắn hạn là 301 tỷ VND.
+        - Các khoản trả trước của khách hàng ngắn hạn là 270 tỷ VND.
+        - Các khoản tạm ứng và phải thu khác ngắn hạn tổng cộng 227.627.728.734 VND (trong đó Tạm ứng được xác nhận là 34% và Các khoản phải thu khác là 68%).
+        - Các khoản phải trả người bán ngắn hạn là 96.125.581.885 VND.
+        - Các khoản trả trước cho người bán ngắn hạn 85 tỷ VND.
+        - Các khoản phải trả ngắn hạn khác là 42 tỷ VND.
+        - Khoản hợp tác đầu tư với Công ty TNHH Phát triển Công nghiệp, trị giá 31 tỷ VND.
+        - Khoản đầu tư 32,8 tỷ VND vào Công ty Cổ phần Xi măng Yên Mao."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính liên quan đến khoản phải thu từ Tập đoàn Điện lực Việt Nam (EVN) và diễn biến vụ kiện.",
+    "input": "2",
+    "output": "Rủi ro tài chính ban đầu liên quan đến khoản phải thu 59 tỷ VND từ Tập đoàn Điện lực Việt Nam (EVN) là đáng kể do khoản này chưa được xác nhận và công ty phải khởi kiện ra tòa. Vụ kiện yêu cầu EVN hoàn trả tổng số tiền lên đến 208.169.609.834 VND, cho thấy mức độ tranh chấp lớn và tiềm ẩn tổn thất đáng kể nếu công ty thua kiện hoặc không thể thu hồi.
+        Tuy nhiên, diễn biến vụ kiện cho thấy Tòa án Nhân dân tỉnh Bà Rịa – Vũng Tàu đã thụ lý và ra quyết định xét xử sơ thẩm vào ngày 24 tháng 7 năm 2023. Quan trọng hơn, thông tin nêu rõ rằng 'hiện tại, Tập đoàn Điện lực Việt Nam (EVN) cũng đã tuân thủ theo phán quyết của tòa án.' Điều này cho thấy rủi ro pháp lý đã giảm đáng kể, và có khả năng công ty sẽ thu hồi được khoản phải thu này theo quyết định của tòa án, dù không thể xác định chính xác số tiền đã được tuân thủ hoặc thời gian thu hồi từ dữ liệu này."
+  },
+  {
+    "instruction": "Đánh giá mức độ đáng tin cậy của báo cáo tài chính khi kiểm toán viên từ chối đưa ra ý kiến.",
+    "input": "2",
+    "output": "Mức độ đáng tin cậy của báo cáo tài chính khi kiểm toán viên từ chối đưa ra ý kiến là **rất thấp**, gần như không thể tin cậy được.
+        Việc kiểm toán viên từ chối đưa ra ý kiến (Disclaimer of audit opinion) có nghĩa là họ không thể thu thập đủ bằng chứng kiểm toán thích hợp để hình thành một ý kiến về việc liệu báo cáo tài chính có được trình bày trung thực và hợp lý trên các khía cạnh trọng yếu hay không. Những lý do được nêu, như việc thiếu thư xác nhận cho các khoản mục trọng yếu (phải thu, phải trả, đầu tư), không thể chứng kiến kiểm kê hàng tồn kho, và thiếu đánh giá khả năng thu hồi, cho thấy các thông tin cốt lõi của bảng cân đối kế toán và kết quả hoạt động kinh doanh có thể chứa đựng sai sót trọng yếu hoặc không thể kiểm chứng.
+        Do đó, người đọc báo cáo tài chính, bao gồm nhà đầu tư, chủ nợ, và các bên liên quan khác, không nên dựa vào các số liệu trong báo cáo này để đưa ra quyết định kinh tế, vì chúng có thể không phản ánh đúng tình hình tài chính và kết quả hoạt động thực tế của công ty."
+  },
+  {
+    "instruction": "Vốn điều lệ của Công ty Cổ phần Đầu tư và Thương mại DIC là bao nhiêu VND?",
+    "input": "3",
+    "output": "Vốn điều lệ của Công ty Cổ phần Đầu tư và Thương mại DIC là 265.858.400.000 VND."
+  },
+  {
+    "instruction": "Hoạt động kinh doanh chính của công ty bao gồm những gì?",
+    "input": "3",
+    "output": "Hoạt động kinh doanh chính của công ty bao gồm:
+        - Xây dựng và lắp đặt các công trình dân dụng, công nghiệp, giao thông, thủy lợi, hệ thống cấp thoát nước, xử lý môi trường, đường dây tải điện và trạm biến áp, cũng như các dự án hạ tầng khu công nghiệp và đô thị.
+        - Kinh doanh vật liệu xây dựng và thiết bị phục vụ xây dựng.
+        - Khai thác và chế biến khoáng sản làm vật liệu xây dựng, cũng như khai thác và vận chuyển đất, cát phục vụ san lấp mặt bằng.
+        - Kinh doanh nông sản, thực phẩm và hàng thủ công mỹ nghệ.
+        - Môi giới bất động sản, dịch vụ nhà ở, kinh doanh nhà ở và cho thuê kho bãi, văn phòng, nhà xưởng.
+        - Vận chuyển hàng hóa bằng ô tô và đường thủy.
+        - Sản xuất vật liệu xây dựng để trang trí nội thất, gạch màu không sản xuất tại trụ sở chính, sản xuất và chế biến gỗ và sản phẩm gỗ không chế biến tại trụ sở chính, kinh doanh gỗ trồng hoặc gỗ nhập khẩu.
+        - Gia công cơ khí và sản xuất các sản phẩm cơ khí không chế biến tại trụ sở chính, kinh doanh, xây dựng và lắp đặt hệ thống điều hòa không khí.
+        - Đầu tư phát triển các khu công nghiệp, hạ tầng đô thị, khu công nghiệp, khu chế xuất và khu công nghệ cao.
+        - Sản xuất vôi, xi măng và thạch cao, cũng như sản xuất bê tông."
+  },
+  {
+    "instruction": "Công ty có bao nhiêu công ty con và công ty liên kết theo mô hình hoạt động?",
+    "input": "3",
+    "output": "Theo mô hình hoạt động, công ty có 3 công ty con (Công ty Cổ phần Thương mại và Vận tải Minh Phong, Công ty Cổ phần Công nghệ Cao DIC, Công ty Cổ phần Năng lượng

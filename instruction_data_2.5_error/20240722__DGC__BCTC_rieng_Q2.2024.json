@@ -1,0 +1,686 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty là gì?",
+      "Báo cáo này là báo cáo tài chính cho giai đoạn nào?",
+      "Báo cáo lưu chuyển tiền tệ nằm ở trang nào của báo cáo tài chính này?",
+      "Ban Giám đốc trình bày báo cáo của mình trên những trang nào?",
+      "Bản thuyết minh Báo cáo tài chính bao gồm từ trang mấy đến trang mấy?",
+      "Tổng số trang của báo cáo tài chính là bao nhiêu?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Mục lục\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nMỤC LỤC\nTrang\n1. Mục lục 1\n2. Báo cáo của Ban Giám đốc 2-4\n3. Bảng cân đối kế toán tại ngày 30 tháng 6 năm 2024 5-8\n4. Báo cáo kết quả hoạt động kinh doanh quý II năm 2024 9\n5. Báo cáo lưu chuyển tiền tệ quý II năm 2024 10-11\n6. Bản thuyết minh Báo cáo tài chính quý II năm 2024 12-31",
+    "output": [
+      "Tên đầy đủ của công ty là Công ty Cổ phần Tập đoàn Hóa chất Đức Giang.",
+      "Báo cáo này là báo cáo tài chính riêng Quý II/2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024.",
+      "Báo cáo lưu chuyển tiền tệ nằm ở trang 10-11 của báo cáo tài chính này.",
+      "Ban Giám đốc trình bày báo cáo của mình trên các trang từ 2 đến 4.",
+      "Bản thuyết minh Báo cáo tài chính bao gồm từ trang 12 đến trang 31.",
+      "Tổng số trang của báo cáo tài chính là 31 trang."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Địa chỉ trụ sở chính của Công ty Cổ phần Tập đoàn Hóa chất Đức Giang là gì?",
+      "Mã số thuế của công ty là gì?",
+      "Công ty được đổi tên từ công ty nào?",
+      "Công ty có các chi nhánh trực thuộc nào và địa chỉ của chúng?",
+      "Năm thành lập của công ty (theo Giấy chứng nhận đăng ký kinh doanh) là khi nào?",
+      "Dựa trên địa chỉ trụ sở và các chi nhánh, nhận định về phạm vi hoạt động của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo của Ban Giám đốc (Khái quát về Công ty)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nBÁO CÁO CỦA BAN GIÁM ĐỐC\nBan Giám đốc Công ty trình bày báo cáo của mình cùng với Báo cáo tài chính Quý II cho năm tài chính kết thúc ngày 31 tháng 12 năm 2024.\nKhái quát về Công ty\nCông ty Cổ phần Tập đoàn Hóa chất Đức Giang được đổi tên từ Công ty cổ phần Bột giặt và Hóa chất Đức Giang là công ty cổ phần hoạt động theo Giấy chứng nhận đăng ký kinh doanh số 0103003850 ngày 05 tháng 3 năm 2004 do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp.\nTrụ sở hoạt động\nĐịa chỉ: Số 18 ngõ 44, phố Đức Giang, phường Thượng Thanh, Quận Long Biên, thành phố Hà Nội.\nĐiện thoại: 043 827 1620\nFax: 043 827 1068\nEmail: cbtt.dqcducqianqchem.vn\nMã số thuế: 0101452588\nCác đơn vị trực thuộc\nTên đơn vị Địa chỉ\nChi nhánh Bình Dương Công ty cổ phần Tập đoàn Khu công nghiệp Đồng An, xã Bình Hòa, thị xã Thuận An, Hóa chất Đức Giang tỉnh Bình Dương, Việt Nam\nChi nhánh Hưng Yên Công ty cổ phần Tập đoàn Lô đất L4, Khu công nghiệp Dệt may Phố Nối B, xã Dị Sử, Hóa chất Đức Giang huyện Mỹ Hào, tỉnh Hưng Yên",
+    "output": [
+      "Địa chỉ trụ sở chính của Công ty Cổ phần Tập đoàn Hóa chất Đức Giang là Số 18 ngõ 44, phố Đức Giang, phường Thượng Thanh, Quận Long Biên, thành phố Hà Nội.",
+      "Mã số thuế của công ty là 0101452588.",
+      "Công ty được đổi tên từ Công ty cổ phần Bột giặt và Hóa chất Đức Giang.",
+      "Công ty có hai chi nhánh trực thuộc:\\n- Chi nhánh Bình Dương: Khu công nghiệp Đồng An, xã Bình Hòa, thị xã Thuận An, tỉnh Bình Dương, Việt Nam.\\n- Chi nhánh Hưng Yên: Lô đất L4, Khu công nghiệp Dệt may Phố Nối B, xã Dị Sử, huyện Mỹ Hào, tỉnh Hưng Yên.",
+      "Năm thành lập của công ty (theo Giấy chứng nhận đăng ký kinh doanh) là năm 2004.",
+      "Dựa trên địa chỉ trụ sở chính tại Hà Nội và các chi nhánh tại Bình Dương và Hưng Yên, Công ty Cổ phần Tập đoàn Hóa chất Đức Giang có phạm vi hoạt động rộng khắp, bao phủ cả miền Bắc và miền Nam Việt Nam, cho thấy sự hiện diện trên quy mô quốc gia trong các khu vực kinh tế trọng điểm."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Một trong những ngành nghề kinh doanh chính của công ty là gì?",
+      "Công ty có kinh doanh bất động sản không?",
+      "Tình hình tài chính của công ty được trình bày ở những trang nào trong báo cáo?",
+      "Công ty có hoạt động trong lĩnh vực sản xuất dầu mỏ tinh chế không?",
+      "Ban Giám đốc có công bố sự kiện phát sinh sau ngày 30/06/2024 không?",
+      "Đánh giá mức độ đa dạng hóa hoạt động kinh doanh của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo của Ban Giám đốc (Hoạt động kinh doanh và Tình hình tài chính)\nLoại nội dung: Text\nHoạt động kinh doanh của Công ty theo Giấy chứng nhận đăng ký doanh nghiệp là:\n- Vận tải bằng đường bộ\n- Bán buôn thực phẩm, chi tiết bán buôn phụ gia thực phẩm\n- Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê, chi tiết cho thuê nhà xưởng\n- Bán buôn nhiên liệu rắn, lỏng, khí và các sản phẩm liên quan, chi tiết buôn bán các mặt hàng nhiên liệu khoáng, dầu khoáng và các sản phẩm chưng cất từ chúng các chất chứa bi tum các loại sáp khoáng chất\n- Sản xuất sản phẩm dầu mỏ tinh chế chi tiết sản xuất các mặt hàng nhiên liệu khoáng, dầu khoáng và các sản phẩm chưng cất từ chúng các chất chứa bi tum các loại sáp khoáng chất\n- Bán buôn máy móc, thiết bị và phụ tùng máy khác, chi tiết buôn bán máy móc, thiết bị điện và các linh kiện của chúng, vật liệu điện, dụng cụ cơ khí\n- Sản xuất thiết bị điện khác, chi tiết sản xuất máy móc, thiết bị điện và các linh kiện của chúng, vật liệu điện\nTình hình tài chính và hoạt động kinh doanh\nTình hình tài chính tại thời điểm ngày 30 tháng 6 năm 2024, kết quả hoạt động kinh doanh và lưu chuyển tiền tệ Quý II kết thúc ngày 30 tháng 06 năm 2024 của Công ty được trình bày trong Báo cáo tài chính đính kèm báo cáo này từ trang 5 đến trang 31.\nSự kiện phát sinh sau ngày kết thúc năm tài chính\nBan Giám đốc Công ty khẳng định không có sự kiện nào phát sinh sau ngày 30 tháng 06 năm 2024 cho đến thời điểm lập báo cáo này mà chưa được xem xét điều chỉnh số liệu hoặc công bố trong Báo cáo tài chính.",
+    "output": [
+      "Một trong những ngành nghề kinh doanh chính của công ty là vận tải bằng đường bộ.",
+      "Có, công ty có kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê, chi tiết cho thuê nhà xưởng.",
+      "Tình hình tài chính của công ty được trình bày trong Báo cáo tài chính đính kèm báo cáo này từ trang 5 đến trang 31.",
+      "Có, công ty có hoạt động trong lĩnh vực sản xuất sản phẩm dầu mỏ tinh chế, chi tiết sản xuất các mặt hàng nhiên liệu khoáng, dầu khoáng và các sản phẩm chưng cất từ chúng các chất chứa bi tum các loại sáp khoáng chất.",
+      "Không, Ban Giám đốc Công ty khẳng định không có sự kiện nào phát sinh sau ngày 30 tháng 06 năm 2024 cho đến thời điểm lập báo cáo này mà chưa được xem xét điều chỉnh số liệu hoặc công bố trong Báo cáo tài chính.",
+      "Công ty có mức độ đa dạng hóa hoạt động kinh doanh khá cao, bao gồm vận tải đường bộ, bán buôn thực phẩm (phụ gia), kinh doanh bất động sản (cho thuê nhà xưởng), bán buôn và sản xuất nhiên liệu khoáng, dầu mỏ tinh chế, bán buôn máy móc thiết bị, và sản xuất thiết bị điện khác. Điều này cho thấy công ty không chỉ tập trung vào một lĩnh vực cốt lõi mà còn mở rộng sang nhiều ngành nghề khác nhau để phân tán rủi ro và tìm kiếm cơ hội tăng trưởng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Ai là Chủ tịch Hội đồng quản trị của công ty?",
+      "Tổng Giám đốc của công ty là ai và ông ấy được bổ nhiệm vào ngày nào?",
+      "Có bao nhiêu thành viên trong Hội đồng quản trị?",
+      "Ban Giám đốc chịu trách nhiệm chính về việc gì trong báo cáo tài chính?",
+      "Theo báo cáo, Báo cáo tài chính đã được lập tuân thủ các chuẩn mực kế toán nào?",
+      "Đánh giá vai trò của Ban Giám đốc trong việc đảm bảo tính trung thực và hợp lý của báo cáo tài chính.",
+      "Phân tích tầm quan trọng của hệ thống kiểm soát nội bộ mà Ban Giám đốc phải thiết lập."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo của Ban Giám đốc (Cơ cấu quản lý và Trách nhiệm Ban Giám đốc)\nLoại nội dung: Text\nHội đồng quản trị và Ban điều hành, quản lý\nHội đồng quản trị và Ban Giám đốc của Công ty trong năm và cho đến thời điểm lập báo cáo này bao gồm:\n| Hội đồng quản trị |\n|---|---|\n| Họ và tên | Chức vụ | Ngày bổ nhiệm | Ngày miễn nhiệm |\n| Ông Đào Hữu Huyền | Chủ tịch | 4 tháng 4 năm 2015 | - |\n| Ông Đào Hữu Duy Anh | Thành viên | 4 tháng 4 năm 2015 | - |\n| Ông Nguyễn Văn Quang | Thành viên | 4 tháng 4 năm 2015 | - |\n| Ông Phạm Văn Hùng | Thành viên | 29 tháng 3 năm 2019 | - |\n| Ông Lưu Bách Đạt | Thành viên | 29 tháng 3 năm 2022 | - |\nBan kiểm soát\n| Họ và tên | Chức vụ | Ngày bổ nhiệm | Ngày miễn nhiệm |\n|---|---|\n| Ông Nguyễn Văn Kiên | Trưởng ban | 4 tháng 4 năm 2015 | - |\n| Bà Phạm Thị Thoa | Thành viên | 29 tháng 3 năm 2019 | - |\n| Ông Vũ Văn Ngọ | Thành viên | 5 tháng 4 năm 2018 | - |\nBan Giám đốc\n| Họ và tên | Chức vụ | Ngày bổ nhiệm | Ngày miễn nhiệm |\n|---|---|\n| Ông Đào Hữu Duy Anh | Tổng Giám đốc | 12 tháng 3 năm 2020 | - |\n| Ông Phạm Văn Hùng | Phó Tổng Giám đốc | 02 tháng 02 năm 2015 | - |\n| Ông Lưu Bách Đạt | Phó Tổng Giám đốc | 07 tháng 03 năm 2022 | - |\nTrách nhiệm của Ban Giám đốc\nBan Giám đốc chịu trách nhiệm lập Báo cáo tài chính phản ánh trung thực và hợp lý tình hình tài chính, kết quả hoạt động kinh doanh và lưu chuyển tiền tệ của Công ty. Trong việc lập Báo cáo tài chính này, Ban Giám đốc phải:\n- Chọn lựa các chính sách kế toán thích hợp và áp dụng các chính sách này một cách nhất quán\n- Thực hiện các xét đoán và các ước tính một cách thận trọng\n- Nêu rõ các chuẩn mực kế toán áp dụng cho Công ty có được tuân thủ hay không và tất cả những sai lệch trọng yếu so với những chuẩn mực này đã được trình bày và giải thích trong Báo cáo tài chính\n- Lập Báo cáo tài chính trên cơ sở hoạt động liên tục trừ trường hợp không thể giả định rằng Công ty sẽ tiếp tục hoạt động liên tục\n- Thiết lập và thực hiện hệ thống kiểm soát nội bộ một cách hữu hiệu để đảm bảo việc lập và trình bày Báo cáo tài chính không có sai sót trọng yếu do gian lận hoặc nhầm lẫn.\nBan Giám đốc đảm bảo rằng Công ty đã tuân thủ các yêu cầu nêu trên khi lập Báo cáo tài chính các số kế toán thích hợp được lưu giữ đầy đủ để phản ánh tại bất kỳ thời điểm nào, với mức độ chính xác hợp lý tình hình tài chính của Công ty và Báo cáo tài chính được lập tuân thủ các chuẩn mực kế toán và Chế độ Kế toán Doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC về hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính.\nBan Giám đốc Công ty cũng chịu trách nhiệm bảo vệ an toàn tài sản của Công ty và do đó đã thực hiện các biện pháp thích hợp để ngăn chặn và phát hiện các hành vi gian lận và các vi phạm khác.\nPhê duyệt Báo cáo tài chính\nBan Giám đốc phê duyệt Báo cáo tài chính đính kèm. Báo cáo tài chính đã phản ánh trung thực và hợp lý tình hình tài chính của Công ty Cổ phần Tập đoàn Hóa chất Đức Giang tại thời điểm ngày 30 tháng 6 năm 2024, cũng như kết quả kinh doanh và các luồng lưu chuyển tiền tệ Quý II năm 2024, phù hợp với các chuẩn mực kế toán và Chế độ Kế toán Doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC về hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính.\nMặt Ban Giám đốc.\nGiám đốc\nĐào Hữu Duy Anh\nLập ngày 22 tháng 7 năm 2024",
+    "output": [
+      "Chủ tịch Hội đồng quản trị của công ty là Ông Đào Hữu Huyền.",
+      "Tổng Giám đốc của công ty là Ông Đào Hữu Duy Anh, được bổ nhiệm vào ngày 12 tháng 3 năm 2020.",
+      "Có 5 thành viên trong Hội đồng quản trị.",
+      "Ban Giám đốc chịu trách nhiệm chính về việc lập Báo cáo tài chính phản ánh trung thực và hợp lý tình hình tài chính, kết quả hoạt động kinh doanh và lưu chuyển tiền tệ của Công ty. Đồng thời, Ban Giám đốc phải lựa chọn và áp dụng các chính sách kế toán thích hợp, thực hiện các xét đoán và ước tính thận trọng, tuân thủ chuẩn mực kế toán, lập Báo cáo tài chính trên cơ sở hoạt động liên tục và thiết lập hệ thống kiểm soát nội bộ hiệu quả để ngăn chặn sai sót trọng yếu.",
+      "Theo báo cáo, Báo cáo tài chính đã được lập tuân thủ các chuẩn mực kế toán và Chế độ Kế toán Doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC về hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính.",
+      "Vai trò của Ban Giám đốc là trung tâm và rất quan trọng trong việc đảm bảo tính trung thực và hợp lý của báo cáo tài chính. Họ chịu trách nhiệm trực tiếp trong việc lập báo cáo, lựa chọn và áp dụng các chính sách kế toán, đưa ra các ước tính và xét đoán một cách thận trọng, đồng thời tuân thủ các chuẩn mực kế toán hiện hành. Hơn nữa, việc thiết lập và thực hiện hệ thống kiểm soát nội bộ hữu hiệu để ngăn chặn gian lận và sai sót trọng yếu cho thấy sự cam kết của Ban Giám đốc đối với độ tin cậy của thông tin tài chính.",
+      "Hệ thống kiểm soát nội bộ mà Ban Giám đốc phải thiết lập có tầm quan trọng sống còn. Mục đích chính của nó là đảm bảo việc lập và trình bày Báo cáo tài chính không có sai sót trọng yếu do gian lận hoặc nhầm lẫn. Điều này không chỉ giúp bảo vệ tài sản của Công ty mà còn nâng cao độ tin cậy và uy tín của thông tin tài chính đối với các bên liên quan, từ đó tăng cường niềm tin của nhà đầu tư và hỗ trợ quá trình ra quyết định hiệu quả."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn cuối kỳ là bao nhiêu VND?",
+      "Số tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+      "Giá trị hàng tồn kho cuối kỳ là bao nhiêu VND?",
+      "So sánh các khoản phải thu ngắn hạn của khách hàng cuối kỳ và đầu năm.",
+      "Tỷ trọng đầu tư tài chính ngắn hạn trên tổng tài sản ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+      "Đánh giá biến động đáng kể của tiền và các khoản tương đương tiền giữa đầu năm và cuối kỳ.",
+      "Phân tích tác động của sự thay đổi trong 'Trả trước cho người bán ngắn hạn' đến dòng tiền của công ty.",
+      "Tính toán sự thay đổi tổng Tài sản ngắn hạn từ đầu năm đến cuối quý II."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nBẢNG CÂN ĐỐI KẾ TOÁN\nDạng đầy đủ\nTại ngày 30 tháng 06 năm 2024\nĐơn vị tính: VND\n| Mã số | Thuyết minh | Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| 100 | | **A. TÀI SẢN NGẮN HẠN** | **2.297.392.561.928** | **3.076.838.340.480** |\n| 110 | V.1 | I. Tiền và các khoản tương đương tiền | 7.248.867.050 | 953.586.361.543 |\n| 111 | | 1. Tiền | 7.248.867.050 | 6.086.361.543 |\n| 112 | | 2. Các khoản tương đương tiền | - | 947.500.000.000 |\n| 120 | | II. Đầu tư tài chính ngắn hạn | 2.142.117.487.671 | 1.982.617.069.999 |\n| 121 | | 1. Chứng khoán kinh doanh | - | - |\n| 122 | | 2. Dự phòng giảm giá chứng khoán kinh doanh | - | - |\n| 123 | V.2 | 3. Đầu tư nắm giữ đến ngày đáo hạn | 2.142.117.487.671 | 1.982.617.069.999 |\n| 130 | | III. Các khoản phải thu ngắn hạn | 96.665.613.796 | 89.036.853.582 |\n| 131 | V.3 | 1. Phải thu ngắn hạn của khách hàng | 41.393.410.833 | 17.309.890.089 |\n| 132 | V.4 | 2. Trả trước cho người bán ngắn hạn | 3.040.134.487 | 8.968.467.050 |\n| 133 | | 3. Phải thu nội bộ ngắn hạn | - | - |\n| 134 | | 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | - | - |\n| 135 | V.5 | 5. Phải thu về cho vay ngắn hạn | - | - |\n| 136 | V.6 | 6. Phải thu ngắn hạn khác | 52.232.068.476 | 62.758.496.443 |\n| 137 | V.7 | 7. Dự phòng phải thu ngắn hạn khó đòi | - | - |\n| 139 | | 8. Tài sản thiếu chờ xử lý | - | - |\n| 140 | | IV. Hàng tồn kho | 49.777.293.793 | 49.887.018.729 |\n| 141 | V.8 | 1. Hàng tồn kho | 49.777.293.793 | 49.887.018.729 |\n| 149 | | 2. Dự phòng giảm giá hàng tồn kho | - | - |\n| 150 | | V. Tài sản ngắn hạn khác | 1.583.299.618 | 1.711.036.627 |\n| 151 | V.9a | 1. Chi phí trả trước ngắn hạn | 1.583.299.618 | 1.678.586.372 |\n| 152 | | 2. Thuế giá trị gia tăng được khấu trừ | - | 32.450.255 |\n| 153 | | 3. Thuế và các khoản khác phải thu Nhà nước | - | - |\n| 154 | | 4. Giao dịch mua bán lại trái phiếu Chính phủ | - | - |\n| 155 | | 5. Tài sản ngắn hạn khác | - | - |",
+    "output": [
+      "Tổng tài sản ngắn hạn cuối kỳ là 2.297.392.561.928 VND.",
+      "Số tiền và các khoản tương đương tiền cuối kỳ là 7.248.867.050 VND.",
+      "Giá trị hàng tồn kho cuối kỳ là 49.777.293.793 VND.",
+      "Các khoản phải thu ngắn hạn của khách hàng cuối kỳ là 41.393.410.833 VND, tăng đáng kể so với 17.309.890.089 VND vào đầu năm.",
+      "Tỷ trọng đầu tư tài chính ngắn hạn trên tổng tài sản ngắn hạn cuối kỳ là khoảng 93,24% (2.142.117.487.671 VND / 2.297.392.561.928 VND * 100%).",
+      "Tiền và các khoản tương đương tiền đã giảm cực kỳ mạnh từ 953.586.361.543 VND vào đầu năm xuống chỉ còn 7.248.867.050 VND vào cuối kỳ. Sự sụt giảm này chủ yếu do các khoản tương đương tiền (tiền gửi ngân hàng có kỳ hạn không quá 3 tháng) từ 947.500.000.000 VND đã về 0 VND. Đây là một biến động rất đáng kể, cho thấy công ty đã sử dụng hoặc tái cơ cấu một lượng lớn tiền mặt và các khoản tương đương tiền, điều này có thể ảnh hưởng lớn đến thanh khoản và khả năng đáp ứng các nghĩa vụ ngắn hạn nếu không có nguồn bù đắp.",
+      "Khoản 'Trả trước cho người bán ngắn hạn' đã giảm từ 8.968.467.050 VND vào đầu năm xuống 3.040.134.487 VND vào cuối kỳ. Sự giảm này cho thấy công ty đã không còn duy trì các khoản trả trước lớn cho nhà cung cấp, hoặc các dịch vụ/hàng hóa đã được nhận. Về mặt dòng tiền, điều này có tác động tích cực trong kỳ vì công ty không phải chi tiền trả trước nhiều như trước, hoặc đã nhận lại tiền từ các khoản trả trước, qua đó giúp tăng dòng tiền hoạt động.",
+      "Sự thay đổi tổng Tài sản ngắn hạn từ đầu năm đến cuối quý II là 2.297.392.561.928 VND (cuối kỳ) - 3.076.838.340.480 VND (đầu năm) = -779.445.778.552 VND. Tổng tài sản ngắn hạn đã giảm 779.445.778.552 VND."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn cuối kỳ là bao nhiêu VND?",
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+      "Số tiền đầu tư vào công ty con cuối kỳ là bao nhiêu VND?",
+      "So sánh tổng tài sản dài hạn cuối kỳ với đầu năm.",
+      "Tính tỷ lệ hao mòn lũy kế của tài sản cố định hữu hình cuối kỳ.",
+      "Đánh giá mức độ đầu tư vào tài sản cố định và ảnh hưởng của nó đến khả năng sinh lời dài hạn.",
+      "Phân tích biến động của chi phí trả trước dài hạn và tác động của nó đến dòng tiền.",
+      "Làm thế nào để các khoản phải thu dài hạn khác tăng lên từ đầu năm đến cuối kỳ?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nBảng cân đối kế toán quý II tiếp theo\n| Mã số | Thuyết minh | Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| 200 | | **B. TÀI SẢN DÀI HẠN** | **5.370.398.403.393** | **5.099.679.613.891** |\n| 210 | | I. Các khoản phải thu dài hạn | 6.996.859.984 | 5.724.645.692 |\n| 211 | | 1. Phải thu dài hạn của khách hàng | - | - |\n| 212 | | 2. Trả trước cho người bán dài hạn | - | - |\n| 213 | | 3. Vốn kinh doanh ở đơn vị trực thuộc | - | - |\n| 214 | | 4. Phải thu nội bộ dài hạn | - | - |\n| 215 | | 5. Phải thu về cho vay dài hạn | - | - |\n| 216 | | 6. Phải thu dài hạn khác | 6.996.859.984 | 5.724.645.692 |\n| 219 | | 7. Dự phòng phải thu dài hạn khó đòi | - | - |\n| 220 | | II. Tài sản cố định | 161.756.199.411 | 178.382.794.290 |\n| 221 | V.10 | 1. Tài sản cố định hữu hình | 161.756.199.411 | 178.382.794.290 |\n| 222 | | - Nguyên giá | 387.091.251.948 | 382.924.760.769 |\n| 223 | | - Giá trị hao mòn lũy kế | 225.335.052.537 | 204.541.966.479 |\n| 224 | | 2. Tài sản cố định thuê tài chính | - | - |\n| 225 | | - Nguyên giá | - | - |\n| 226 | | - Giá trị hao mòn lũy kế | - | - |\n| 227 | | 3. Tài sản cố định vô hình | - | - |\n| 228 | | - Nguyên giá | 265.000.000 | 265.000.000 |\n| 229 | | - Giá trị hao mòn lũy kế | 265.000.000 | 265.000.000 |\n| 230 | | III. Bất động sản đầu tư | - | - |\n| 231 | | - Nguyên giá | - | - |\n| 232 | | - Giá trị hao mòn lũy kế | - | - |\n| 240 | | IV. Tài sản dở dang dài hạn | - | - |\n| 241 | | 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | - | - |\n| 242 | V.11 | 2. Chi phí xây dựng cơ bản dở dang | - | - |\n| 250 | V.2 | V. Đầu tư tài chính dài hạn | 5.084.952.700.800 | 4.784.952.700.800 |\n| 251 | | 1. Đầu tư vào công ty con | 5.084.952.700.800 | 4.784.952.700.800 |\n| 252 | | 2. Đầu tư vào công ty liên doanh, liên kết | - | - |\n| 253 | | 3. Đầu tư góp vốn vào đơn vị khác | - | - |\n| 254 | | 4. Dự phòng đầu tư tài chính dài hạn | - | - |\n| 255 | | 5. Đầu tư nắm giữ đến ngày đáo hạn | - | - |\n| 260 | | VI. Tài sản dài hạn khác | 116.692.643.198 | 130.619.473.109 |\n| 261 | V.9b | 1. Chi phí trả trước dài hạn | 116.692.643.198 | 130.619.473.109 |\n| 262 | | 2. Tài sản thuế thu nhập hoãn lại | - | - |\n| 263 | | 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | - | - |\n| 268 | | 4. Tài sản dài hạn khác | - | - |\n| 269 | | 5. Lợi thế thương mại | - | - |\n| 270 | | **TỔNG CỘNG TÀI SẢN** | **7.667.790.965.321** | **8.176.517.954.371** |",
+    "output": [
+      "Tổng tài sản dài hạn cuối kỳ là 5.370.398.403.393 VND.",
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là 387.091.251.948 VND.",
+      "Số tiền đầu tư vào công ty con cuối kỳ là 5.084.952.700.800 VND.",
+      "Tổng tài sản dài hạn cuối kỳ là 5.370.398.403.393 VND, tăng so với 5.099.679.613.891 VND vào đầu năm.",
+      "Tỷ lệ hao mòn lũy kế của tài sản cố định hữu hình cuối kỳ là khoảng 58,21% (225.335.052.537 VND / 387.091.251.948 VND * 100%).",
+      "Mặc dù nguyên giá tài sản cố định hữu hình có tăng nhẹ từ đầu năm (382 tỷ lên 387 tỷ VND), giá trị còn lại của tài sản cố định hữu hình lại giảm (từ 178 tỷ xuống 161 tỷ VND), cho thấy mức độ hao mòn hoặc thanh lý tài sản vượt quá mức đầu tư mới vào tài sản hữu hình trực tiếp. Tuy nhiên, khoản mục đầu tư tài chính dài hạn, đặc biệt là đầu tư vào công ty con, lại tăng đáng kể (từ 4.784 tỷ lên 5.084 tỷ VND). Điều này chỉ ra công ty đang tập trung vào đầu tư mở rộng thông qua các công ty con hơn là tài sản cố định hữu hình trực tiếp. Ảnh hưởng đến khả năng sinh lời dài hạn sẽ phụ thuộc vào hiệu quả hoạt động và đóng góp lợi nhuận từ các công ty con này.",
+      "Chi phí trả trước dài hạn giảm từ 130.619.473.109 VND vào đầu năm xuống 116.692.643.198 VND vào cuối kỳ. Sự giảm này chủ yếu phản ánh việc các chi phí đã được trả trước trong quá khứ nay đang được phân bổ dần vào chi phí sản xuất kinh doanh trong kỳ theo nguyên tắc kế toán dồn tích. Điều này không trực tiếp tác động đến dòng tiền trong kỳ này (vì tiền đã được chi trả từ các kỳ trước), mà thay vào đó ảnh hưởng đến báo cáo kết quả hoạt động kinh doanh thông qua việc ghi nhận chi phí trong kỳ.",
+      "Thông tin về nguyên nhân cụ thể dẫn đến việc các khoản phải thu dài hạn khác tăng lên không có trong dữ liệu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Medium_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả cuối kỳ là bao nhiêu VND?",
+      "Tổng vốn chủ sở hữu cuối kỳ là bao nhiêu VND?",
+      "Phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+      "So sánh nợ ngắn hạn cuối kỳ với đầu năm, thay đổi như thế nào?",
+      "Quỹ đầu tư phát triển tăng hay giảm so với đầu năm?",
+      "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối quý II/2024.",
+      "Đánh giá khả năng thanh toán nợ ngắn hạn của công ty dựa trên số liệu.",
+      "Phân tích tác động của sự giảm mạnh trong 'Phải trả ngắn hạn khác' đến cơ cấu nợ của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nBảng cân đối kế toán quý II tiếp theo\n| Mã số | Thuyết minh | Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| 300 | | **C. NỢ PHẢI TRẢ** | **463.460.580.009** | **1.496.793.428.579** |\n| 310 | | I. Nợ ngắn hạn | 463.460.580.009 | 1.496.793.428.579 |\n| 311 | V.12 | 1. Phải trả người bán ngắn hạn | 14.450.683.995 | 9.875.915.427 |\n| 312 | V.13 | 2. Người mua trả tiền trước ngắn hạn | 465.048.895 | 202.283.270 |\n| 313 | V.14 | 3. Thuế và các khoản phải nộp Nhà nước | 42.534.980.175 | 28.814.807.554 |\n| 314 | | 4. Phải trả người lao động | 19.225.741.714 | 25.852.155.999 |\n| 315 | V.15 | 5. Chi phí phải trả ngắn hạn | - | - |\n| 316 | | 6. Phải trả nội bộ ngắn hạn | - | - |\n| 317 | | 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | - | - |\n| 318 | | 8. Doanh thu chưa thực hiện ngắn hạn | - | - |\n| 319 | V.16 | 9. Phải trả ngắn hạn khác | 3.189.927.158 | 1.142.546.779.534 |\n| 320 | | 10. Vay và nợ thuê tài chính ngắn hạn | - | - |\n| 321 | | 11. Dự phòng phải trả ngắn hạn | - | - |\n| 322 | V.17 | 12. Quỹ khen thưởng, phúc lợi | 383.594.198.072 | 289.501.486.795 |\n| 323 | | 13. Quỹ bình ổn giá | - | - |\n| 324 | | 14. Giao dịch mua bán lại trái phiếu Chính phủ | - | - |\n| 330 | | II. Nợ dài hạn | - | - |\n| 331 | | 1. Phải trả người bán dài hạn | - | - |\n| 332 | | 2. Người mua trả tiền trước dài hạn | - | - |\n| 333 | | 3. Chi phí phải trả dài hạn | - | - |\n| 334 | | 4. Phải trả nội bộ về vốn kinh doanh | - | - |\n| 335 | | 5. Phải trả nội bộ dài hạn | - | - |\n| 336 | | 6. Doanh thu chưa thực hiện dài hạn | - | - |\n| 337 | | 7. Phải trả dài hạn khác | - | - |\n| 338 | | 8. Vay và nợ thuê tài chính dài hạn | - | - |\n| 339 | | 9. Trái phiếu chuyển đổi | - | - |\n| 340 | | 10. Cổ phiếu ưu đãi | - | - |\n| 341 | | 11. Thuế thu nhập hoãn lại phải trả | - | - |\n| 342 | | 12. Dự phòng phải trả dài hạn | - | - |\n| 343 | | 13. Quỹ phát triển khoa học và công nghệ | - | - |\n| 400 | | **D. NGUỒN VỐN CHỦ SỞ HỮU** | **7.204.330.385.312** | **6.679.724.525.792** |\n| 410 | V.18 | I. Vốn chủ sở hữu | 7.204.330.385.312 | 6.679.724.525.792 |\n| 411 | | 1. Vốn góp của chủ sở hữu | 3.797.792.860.000 | 3.797.792.860.000 |\n| 411a | | Cổ phiếu phổ thông có quyền biểu quyết | 3.797.792.860.000 | 3.797.792.860.000 |\n| 411b | | Cổ phiếu ưu đãi | - | - |\n| 412 | | 2. Thặng dư vốn cổ phần | 1.786.667.372.400 | 1.786.667.372.400 |\n| 413 | | 3. Quyền chọn chuyển đổi trái phiếu | - | - |\n| 414 | | 4. Vốn khác của chủ sở hữu | - | - |\n| 415 | | 5. Cổ phiếu quỹ | 8.730.000 | 8.730.000 |\n| 416 | | 6. Chênh lệch đánh giá lại tài sản | - | - |\n| 417 | | 7. Chênh lệch tỷ giá hối đoái | - | - |\n| 418 | | 8. Quỹ đầu tư phát triển | 1.302.085.758.333 | 865.777.128.989 |\n| 419 | | 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | - | - |\n| 420 | | 10. Quỹ khác thuộc vốn chủ sở hữu | - | - |\n| 421 | | 11. Lợi nhuận sau thuế chưa phân phối | 317.793.124.579 | 229.495.894.403 |\n| 421a | | LNST chưa phân phối lũy kế đến cuối kỳ trước | 46.787.827.007 | - |\n| 421b | | LNST chưa phân phối kỳ này | 271.005.297.572 | 229.495.894.403 |\n| 422 | | 12. Nguồn vốn đầu tư xây dựng cơ bản | - | - |\n| 429 | | 13. Lợi ích cổ đông không kiểm soát | - | - |\n| 430 | | II. Nguồn kinh phí và quỹ khác | - | - |\n| 431 | | 1. Nguồn kinh phí | - | - |\n| 432 | | 2. Nguồn kinh phí đã hình thành tài sản cố định | - | - |\n| 440 | | **TỔNG CỘNG NGUỒN VỐN** | **7.667.790.965.321** | **8.176.517.954.371** |\n\n7 năm 2024\nNgười lập biểu Kế toán trưởng Tổng Giám đốc\nHoàng Thúy Hà Đào Thị Mai Đào Hữu Duy Anh",
+    "output": [
+      "Tổng nợ phải trả cuối kỳ là 463.460.580.009 VND.",
+      "Tổng vốn chủ sở hữu cuối kỳ là 7.204.330.385.312 VND.",
+      "Phải trả người bán ngắn hạn cuối kỳ là 14.450.683.995 VND.",
+      "Nợ ngắn hạn cuối kỳ là 463.460.580.009 VND, giảm rất mạnh so với 1.496.793.428.579 VND vào đầu năm.",
+      "Quỹ đầu tư phát triển cuối kỳ là 1.302.085.758.333 VND, tăng so với 865.777.128.989 VND vào đầu năm.",
+      "Hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối quý II/2024 là khoảng 0,0643 (463.460.580.009 VND / 7.204.330.385.312 VND).",
+      "Dựa trên số liệu, nợ ngắn hạn cuối kỳ là 463.460.580.009 VND. So với tổng tài sản ngắn hạn cuối kỳ là 2.297.392.561.928 VND (từ chunk 5), tỷ lệ tài sản ngắn hạn trên nợ ngắn hạn là rất cao (khoảng 4,96 lần). Điều này cho thấy khả năng thanh toán nợ ngắn hạn của công ty là rất tốt, công ty có đủ tài sản lưu động để đáp ứng các nghĩa vụ nợ ngắn hạn của mình một cách dễ dàng.",
+      "Khoản 'Phải trả ngắn hạn khác' đã giảm cực kỳ mạnh từ 1.142.546.779.534 VND vào đầu năm xuống chỉ còn 3.189.927.158 VND vào cuối kỳ. Đây là nguyên nhân chính dẫn đến sự sụt giảm đáng kể của tổng nợ ngắn hạn của công ty. Tác động của sự giảm này là rất tích cực, làm cho cơ cấu nợ của công ty trở nên lành mạnh hơn, giảm áp lực tài chính ngắn hạn và cải thiện đáng kể vị thế thanh khoản. Việc giảm nợ ngắn hạn lớn như vậy cho thấy công ty đã giải quyết được một khoản nợ đáng kể."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong Quý II năm nay là bao nhiêu VND?",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế từ đầu năm đến cuối kỳ năm nay là bao nhiêu VND?",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ Quý II năm nay so với Quý II năm trước thay đổi như thế nào?",
+      "So sánh doanh thu hoạt động tài chính lũy kế năm nay với năm trước.",
+      "Tính tỷ suất lợi nhuận sau thuế trên doanh thu thuần lũy kế năm nay.",
+      "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên lợi nhuận gộp và lợi nhuận thuần từ hoạt động kinh doanh trong Quý II năm nay.",
+      "Phân tích nguyên nhân và tác động của sự giảm mạnh trong Doanh thu hoạt động tài chính lũy kế năm nay so với năm trước."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nBÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH\nQuý II năm 2024\n| STT | Mã số | Thuyết minh | Chỉ tiêu | Quý II - Năm nay | Quý II - Năm trước | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|---|---|---|---|---|\n| 1 | VI.1 | | Doanh thu bán hàng và cung cấp dịch vụ | 205.778.324.887 | 192.570.056.232 | 365.656.327.841 | 391.160.623.988 |\n| 2 | | | Các khoản giảm trừ doanh thu | - | - | - | - |\n| 3 | | | Doanh thu thuần về bán hàng và cung cấp dịch vụ | 205.778.324.887 | 192.570.056.232 | 365.656.327.841 | 391.160.623.988 |\n| 4 | VI.2 | | Giá vốn hàng bán | 114.314.158.275 | 115.850.305.343 | 212.880.077.130 | 230.511.098.673 |\n| 5 | | | Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 91.464.166.612 | 76.719.750.889 | 152.776.250.711 | 160.649.525.315 |\n| 6 | VI.3 | | Doanh thu hoạt động tài chính | 183.341.897.834 | 460.513.952.256 | 654.345.878.877 | 927.448.643.066 |\n| 7 | VI.4 | | Chi phí tài chính | 111.396.432 | 76.731.225 | 164.567.190 | 250.011.426 |\n| 8 | | | Trong đó: chi phí lãi vay | - | - | - | - |\n| 9 | VI.5 | | Chi phí bán hàng | 23.885.682.311 | 21.810.288.451 | 43.343.428.392 | 47.169.864.690 |\n| 10 | VI.6 | | Chi phí quản lý doanh nghiệp | 11.426.729.343 | 9.833.881.588 | 21.647.408.428 | 20.347.910.908 |\n| 11 | | | Lợi nhuận thuần từ hoạt động kinh doanh | 239.382.256.360 | 505.512.801.881 | 741.966.725.578 | 1.020.330.381.357 |\n| 12 | VI.7 | | Thu nhập khác | - | 545.454.546 | 1.788.153.319 | 577.754.126 |\n| 13 | VI.8 | | Chi phí khác | - | - | 420.000.000 | - |\n| 14 | | | Lợi nhuận khác | - | 545.454.546 | 1.368.153.319 | 577.754.126 |\n| 15 | | | Tổng lợi nhuận kế toán trước thuế | 239.382.256.360 | 506.058.256.427 | 743.334.878.897 | 1.020.908.135.483 |\n| 16 | V.14 | | Chi phí thuế thu nhập doanh nghiệp hiện hành | 19.563.440.125 | 16.073.339.831 | 32.329.581.214 | 31.465.985.291 |\n| 17 | | | Chi phí thuế thu nhập doanh nghiệp hoãn lại | - | - | - | - |\n| 18 | | | Lợi nhuận sau thuế thu nhập doanh nghiệp | 219.818.816.235 | 489.984.916.596 | 711.005.297.683 | 989.442.150.192 |\n| 19 | VI.9 | | Lãi cơ bản trên cổ phiếu | - | - | - | - |\n| 20 | VI.9 | | Lãi suy giảm trên cổ phiếu | - | - | - | - |\n\n2024\nNgười lập biểu Kế toán trưởng Tổng Giám đốc\nHoàng Thúy Hà Đào Thị Mai Đào Hữu Duy Anh\nBáo cáo với Bản thuyết minh Báo cáo tài chính",
+    "output": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong Quý II năm nay là 205.778.324.887 VND.",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế từ đầu năm đến cuối kỳ năm nay là 711.005.297.683 VND.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ Quý II năm nay là 91.464.166.612 VND, tăng so với 76.719.750.889 VND của Quý II năm trước.",
+      "Doanh thu hoạt động tài chính lũy kế năm nay là 654.345.878.877 VND, giảm so với 927.448.643.066 VND của năm trước.",
+      "Tỷ suất lợi nhuận sau thuế trên doanh thu thuần lũy kế năm nay là khoảng 194,44% (711.005.297.683 VND / 365.656.327.841 VND * 100%).",
+      "Trong Quý II năm nay, lợi nhuận gộp về bán hàng và cung cấp dịch vụ của công ty đạt 91.464.166.612 VND, cao hơn so với 76.719.750.889 VND của Quý II năm trước, cho thấy hiệu quả hoạt động kinh doanh cốt lõi (sau giá vốn) đã được cải thiện. Tuy nhiên, lợi nhuận thuần từ hoạt động kinh doanh trong Quý II năm nay là 239.382.256.360 VND, thấp hơn nhiều so với 505.512.801.881 VND của Quý II năm trước. Sự sụt giảm này chủ yếu do doanh thu hoạt động tài chính giảm đáng kể, mặc dù hoạt động kinh doanh cốt lõi có vẻ tích cực, nhưng tổng thể hiệu quả kinh doanh đã bị ảnh hưởng bởi mảng tài chính.",
+      "Doanh thu hoạt động tài chính lũy kế năm nay giảm mạnh từ 927.448.643.066 VND của năm trước xuống 654.345.878.877 VND. Dữ liệu trong chunk này không cung cấp chi tiết nguyên nhân cụ thể của sự giảm này. Tuy nhiên, tác động của nó là đáng kể, làm giảm đáng kể tổng lợi nhuận của công ty và là yếu tố chính khiến lợi nhuận thuần từ hoạt động kinh doanh giảm sút so với năm trước, bất chấp sự cải thiện của lợi nhuận gộp. Điều này cho thấy sự thay đổi lớn trong các nguồn thu từ hoạt động tài chính của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lợi nhuận trước thuế lũy kế năm nay là bao nhiêu VND?",
+      "Tiền và tương đương tiền cuối kỳ năm nay là bao nhiêu VND?",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh năm nay là bao nhiêu VND?",
+      "So sánh lưu chuyển tiền thuần từ hoạt động kinh doanh năm nay và năm trước.",
+      "So sánh tiền chi để mua sắm tài sản cố định năm nay và năm trước.",
+      "Đánh giá mức độ ảnh hưởng của hoạt động đầu tư đến lưu chuyển tiền tệ của công ty trong năm nay.",
+      "Phân tích nguyên nhân khiến lưu chuyển tiền thuần từ hoạt động tài chính âm.",
+      "Tính toán sự thay đổi ròng về tiền và tương đương tiền trong năm nay."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nBÁO CÁO LƯU CHUYỂN TIỀN TỆ\nDạng đầy đủ\nTheo phương pháp gián tiếp\nQuý II năm 2024\nĐơn vị tính: VND\n| Mã số | Thuyết minh | CHỈ TIÊU | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|---|---|\n| | | **I. Lưu chuyển tiền từ hoạt động kinh doanh** | | |\n| 01 | | 1. Lợi nhuận trước thuế | 743.334.878.786 | 1.020.908.135.483 |\n| | | 2. Điều chỉnh cho các khoản | | |\n| 02 | V.10 | - Khấu hao tài sản cố định và bất động sản đầu tư | 20.793.086.058 | 22.252.010.880 |\n| 03 | | - Các khoản dự phòng | - | - |\n| 04 | VI.3 | - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 30.217.336 | 522.200 |\n| 05 | VI.3 | - Lãi, lỗ từ hoạt động đầu tư | 654.305.271.612 | 927.955.258.164 |\n| 06 | VI.4 | - Chi phí lãi vay | - | - |\n| 07 | | - Các khoản điều chỉnh khác | - | - |\n| 08 | | 5. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 109.852.910.568 | 115.205.410.399 |\n| 09 | | - Tăng, giảm các khoản phải thu | 32.110.008.218 | 4.334.795.713 |\n| 10 | | - Tăng, giảm hàng tồn kho | 109.724.936 | 9.852.647.644 |\n| 11 | | - Tăng, giảm các khoản phải trả | 6.725.335.759 | 9.042.327.715 |\n| 12 | | - Tăng, giảm chi phí trả trước | 14.022.116.665 | 23.061.208.039 |\n| 13 | | - Tăng, giảm chứng khoán kinh doanh | - | - |\n| 14 | | - Tiền lãi vay đã trả | - | - |\n| 15 | V.14 | - Thuế thu nhập doanh nghiệp đã nộp | 28.226.195.236 | 3.421.245.665 |\n| 16 | V.17 | - Tiền thu khác từ hoạt động kinh doanh | 80.000.000.000 | - |\n| 17 | V.17 | - Tiền chi khác cho hoạt động kinh doanh | 11.256.492.000 | 8.801.916.731 |\n| 20 | | Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20.882.607.526 | 111.483.276.396 |\n| | | **II. Lưu chuyển tiền từ hoạt động đầu tư** | | |\n| 21 | | 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | 257.425.491.179 | 12.623.277.827 |\n| 22 | | 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | - | 545.454.546 |\n| 23 | | 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 751.345.917.808 | 1.112.900.000.000 |\n| 24 | | 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 622.787.069.999 | 855.658.178.082 |\n| 25 | | 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 46.741.000.000 | 134.857.878.400 |\n| 26 | | 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | - | - |\n| 27 | | 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 646.605.185.716 | 888.794.405.160 |\n| 30 | | Lưu chuyển tiền thuần từ hoạt động đầu tư | 213.879.846.728 | 484.616.881.561 |\n| | | **III. Lưu chuyển tiền từ hoạt động tài chính** | | |\n| 31 | | 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | - | - |\n| 32 | | 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | - | - |\n| 33 | | 3. Tiền thu từ đi vay | - | - |\n| 34 | | 4. Tiền trả nợ gốc vay | - | - |\n| 35 | | 5. Tiền trả nợ gốc thuê tài chính | - | - |\n| 36 | | 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 1.139.335.239.000 | 1.519.113.652.000 |\n| 40 | | Lưu chuyển tiền thuần từ hoạt động tài chính | -1.139.335.239.000 | -1.519.113.652.000 |\n| 50 | | Lưu chuyển tiền thuần trong năm | -946.337.999.798 | -923.013.494.043 |\n| 60 | V.1 | Tiền và tương đương tiền đầu kỳ | 953.586.361.543 | 926.367.818.818 |\n| 61 | | Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 505.305 | - |\n| 70 | V.1 | Tiền và tương đương tiền cuối kỳ | 7.248.867.050 | 3.354.324.775 |\n\nLập ngày 22 tháng 7 năm 2024\nNgười lập biểu Kế toán trưởng Tổng Giám đốc\nHoàng Thúy Hà Đào Thị Mai Đào Hữu Duy Anh",
+    "output": [
+      "Lợi nhuận trước thuế lũy kế năm nay là 743.334.878.786 VND.",
+      "Tiền và tương đương tiền cuối kỳ năm nay là 7.248.867.050 VND.",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh năm nay là 20.882.607.526 VND.",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh năm nay là 20.882.607.526 VND, giảm mạnh so với 111.483.276.396 VND của năm trước.",
+      "Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác năm nay là 257.425.491.179 VND, tăng rất mạnh so với 12.623.277.827 VND của năm trước.",
+      "Hoạt động đầu tư có ảnh hưởng đáng kể và tích cực đến lưu chuyển tiền tệ của công ty trong năm nay, với lưu chuyển tiền thuần từ hoạt động đầu tư đạt 213.879.846.728 VND. Mặc dù công ty đã chi rất nhiều tiền để mua sắm tài sản cố định (257 tỷ VND), nhưng các khoản thu từ hoạt động đầu tư như tiền thu hồi cho vay, bán lại công cụ nợ (622 tỷ VND) và tiền thu lãi cho vay, cổ tức (646 tỷ VND) đã bù đắp và tạo ra dòng tiền dương lớn. Điều này cho thấy công ty đang có khả năng tạo ra tiền từ các khoản đầu tư của mình, giúp hỗ trợ cho các hoạt động khác.",
+      "Lưu chuyển tiền thuần từ hoạt động tài chính âm (-1.139.335.239.000 VND) chủ yếu do công ty đã chi trả một lượng lớn cổ tức, lợi nhuận cho chủ sở hữu trong năm nay với số tiền lên đến 1.139.335.239.000 VND. Điều này cho thấy công ty đang thực hiện các cam kết phân phối lợi nhuận cho cổ đông, dẫn đến dòng tiền ra đáng kể từ hoạt động tài chính.",
+      "Sự thay đổi ròng về tiền và tương đương tiền trong năm nay là -946.337.999.798 VND (Tiền và tương đương tiền cuối kỳ 7.248.867.050 VND - Tiền và tương đương tiền đầu kỳ 953.586.361.543 VND + Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ 505.305 VND)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty Cổ phần Tập đoàn Hóa chất Đức Giang hoạt động dưới hình thức sở hữu vốn nào?",
+      "Có bao nhiêu nhân viên đang làm việc tại công ty vào ngày 30 tháng 6 năm 2024?",
+      "Năm tài chính của công ty bắt đầu và kết thúc vào ngày nào?",
+      "Kể tên 3 công ty con mà Công ty Cổ phần Tập đoàn Hóa chất Đức Giang sở hữu 100% tỷ lệ lợi ích.",
+      "Tỷ lệ vốn góp gián tiếp của Công ty trong Công ty cổ phần Phốt Pho Apatit Việt Nam là bao nhiêu?",
+      "Đơn vị tiền tệ sử dụng trong kế toán của Công ty là gì?",
+      "Phân tích sự đa dạng về hoạt động kinh doanh của các công ty con và chi nhánh trực thuộc.",
+      "Đánh giá sự thay đổi số lượng nhân viên từ cuối năm trước đến cuối quý II năm nay và các ý nghĩa tiềm tàng."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (I. Đặc điểm hoạt động của Công ty)\nLoại nội dung: Text và Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH\nQuý II năm 2024\nI. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA CÔNG TY\n1. Hình thức sở hữu vốn: Công ty cổ phần\n2. Lĩnh vực kinh doanh: Sản xuất\n3. Ngành nghề kinh doanh chính:\n- Vận tải hàng hóa bằng đường bộ\n- Cho thuê nhà xưởng\n- Sản xuất và buôn bán các mặt hàng nhiên liệu khoáng, dầu khoáng và các sản phẩm chưng cất từ chúng\n- Sản xuất và buôn bán nguyên vật liệu và các mặt hàng hóa chất\n4. Chu kỳ sản xuất, kinh doanh thông thường\nChu kỳ sản xuất kinh doanh thông thường của Công ty mẹ không quá 12 tháng.\n5. Cấu trúc công ty\nCông ty con\n| Tên công ty | Địa chỉ trụ sở chính | Hoạt động kinh doanh chính | Tỷ lệ lợi ích - Số cuối kỳ | Tỷ lệ lợi ích - Số đầu năm | Tỷ lệ quyền biểu quyết - Số cuối kỳ | Tỷ lệ quyền biểu quyết - Số đầu năm |\n|---|---|---|---|---|---|---|\n| Công ty TNHH MTV Hóa chất Đức Giang Lào Cai | Khu Công nghiệp Tằng Loỏng, huyện Bảo Thắng, tỉnh Lào Cai | Sản xuất, buôn bán nguyên vật liệu và các mặt hàng hóa chất | 100,00 | 100,00 | 100,00 | 100,00 |\n| Công ty TNHH MTV Hóa chất Đức Giang Đình Vũ | Lô CN5.3K, khu công nghiệp Đình Vũ, phường Đông Hải 2, quận Hải An, khu kinh tế Đình Vũ – Cát Hải, Thành phố Hải Phòng. | Kho bãi và lưu giữ hàng hóa | 100,00 | 100,0 | 100,0 | 100,0 |\n| Công ty TNHH MTV Thể thao Hóa chất Đức Giang | Số 18/44 Đức Giang, Long Biên, Hà nội | Quảng cáo, tuyên truyền hình ảnh.... | 100,00 | 100,0 | 100,0 | 100,0 |\n| Công ty TNHH MTV Hóa chất Đức Giang Đắk Nông | Khu Công nghiệp Tâm Thắng, xã Tâm Thắng, Huyện Cư Jút, tỉnh Đắk Nông | Sản xuất hóa chất cơ bản chi tiết Sản xuất nguyên liệu và các mặt hàng hóa chất, trừ các hóa chất Nhà nước cấm | 100,00 | 100,0 | 100,0 | 100,0 |\n| Công ty TNHH MTV Đức Giang Nghi Sơn | Số 15, Khu kinh tế Nghi Sơn, xã Tân Trường, Thị xã Nghi Sơn, tỉnh Thanh Hóa | Sản xuất hóa chất cơ bản chi tiết Sản xuất nguyên liệu và các mặt hàng hóa chất, trừ các hóa chất Nhà nước cấm | 100,00 | 100,0 | 100,0 | 100,0 |\n| Công ty TNHH MTV Bất Động Sản Đức Giang | Số 18/44 Đức Giang, Long Biên, Hà nội | Kinh doanh bất động sản | 100,00 | 100,0 | 100,0 | 100,0 |\n| Công ty CP Phốt pho Apatit Việt Nam | Tằng Loỏng, huyện Bảo Thắng, tỉnh Lào Cai | Sản xuất, buôn bán nguyên vật liệu và các mặt hàng hóa chất | 51,00 | 51,0 | 51,0 | 51,0 |\n| Công ty Cổ phần ắc quy Tia Sáng | Đại lộ Tôn Đức Thắng, xã An Đồng, huyện An Dương, thành phố Hải Phòng. | Sản xuất ắc quy các loại | 51,00 | 51,0 | 51,0 | 51,0 |\n| CÔNG TY TNHH MỘT THÀNH VIÊN PHỐT PHO 6 | Tằng Loỏng, huyện Bảo Thăng, tỉnh Lào Cai | Sản xuất, buôn bán nguyên vật liệu và các mặt hàng hóa chất | 51,00 | 51,0 | 51,0 | 51,0 |\n- Tỷ lệ vốn góp gián tiếp của Công ty trong Công ty cổ phần Phốt Pho Apatit Việt Nam là 51% do tỷ lệ vốn góp của Công ty TNHH MTV Hóa chất Đức Giang Lào Cai trong công ty CP Phốt pho Apatit Việt Nam là 51%.\nCác đơn vị phụ thuộc không có tư cách pháp nhân hạch toán phụ thuộc\nCông ty có đơn vị trực thuộc không có tư cách pháp nhân hạch toán phụ thuộc là Chi nhánh Bình Dương, địa chỉ tại Khu Công nghiệp Đồng An, xã Bình Hòa, thị xã Thuận An, tỉnh Bình Dương. Chi nhánh Hưng Yên, địa chỉ ô đất L4, Khu công nghiệp Dệt may Phố Nối B, xã Dị Sử, huyện Mỹ Hào, tỉnh Hưng Yên.\n6. Nhân viên\nTại ngày 30 tháng 6 năm 2024 Công ty có 316 nhân viên đang làm việc tại ngày 31 tháng 12 năm 2023 là 317 nhân viên.\nII. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Năm tài chính\nNăm tài chính của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.\n2. Đơn vị tiền tệ sử dụng trong kế toán\nĐơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND).",
+    "output": [
+      "Công ty Cổ phần Tập đoàn Hóa chất Đức Giang hoạt động dưới hình thức công ty cổ phần.",
+      "Có 316 nhân viên đang làm việc tại công ty vào ngày 30 tháng 6 năm 2024.",
+      "Năm tài chính của công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.",
+      "Ba công ty con mà Công ty Cổ phần Tập đoàn Hóa chất Đức Giang sở hữu 100% tỷ lệ lợi ích là:\\n1. Công ty TNHH MTV Hóa chất Đức Giang Lào Cai\\n2. Công ty TNHH MTV Hóa chất Đức Giang Đình Vũ\\n3. Công ty TNHH MTV Thể thao Hóa chất Đức Giang",
+      "Tỷ lệ vốn góp gián tiếp của Công ty trong Công ty cổ phần Phốt Pho Apatit Việt Nam là 51%.",
+      "Đơn vị tiền tệ sử dụng trong kế toán của Công ty là Đồng Việt Nam (VND).",
+      "Công ty Cổ phần Tập đoàn Hóa chất Đức Giang thể hiện sự đa dạng đáng kể trong hoạt động kinh doanh thông qua các công ty con và chi nhánh trực thuộc. Các công ty con hoạt động trong nhiều lĩnh vực như sản xuất, buôn bán nguyên vật liệu và hóa chất (Hóa chất Đức Giang Lào Cai, Hóa chất Đức Giang Đắk Nông, Đức Giang Nghi Sơn, Phốt pho Apatit Việt Nam, PHỐT PHO 6), kho bãi và lưu giữ hàng hóa (Hóa chất Đức Giang Đình Vũ), quảng cáo, tuyên truyền hình ảnh (Thể thao Hóa chất Đức Giang), kinh doanh bất động sản (Bất Động Sản Đức Giang) và sản xuất ắc quy (ắc quy Tia Sáng). Các chi nhánh Bình Dương và Hưng Yên mở rộng phạm vi địa lý. Sự đa dạng này cho thấy công ty không chỉ tập trung vào lĩnh vực hóa chất cốt lõi mà còn mở rộng sang các ngành nghề khác, có thể nhằm đa dạng hóa nguồn doanh thu, tận dụng các chuỗi giá trị liên quan hoặc khai thác các cơ hội thị trường mới.",
+      "Số lượng nhân viên của công ty chỉ giảm nhẹ từ 317 người vào ngày 31 tháng 12 năm 2023 xuống còn 316 người vào ngày 30 tháng 6 năm 2024. Đây là một biến động rất nhỏ và không đáng kể, không cho thấy bất kỳ ý nghĩa tiềm tàng lớn nào về sự thay đổi cơ cấu nhân sự, chiến lược kinh doanh hay quy mô hoạt động của công ty. Có thể đây chỉ là sự biến động nhân sự thông thường."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty áp dụng Chế độ Kế toán Doanh nghiệp Việt Nam theo Thông tư nào?",
+      "Cơ sở lập Báo cáo tài chính của công ty là gì?",
+      "Chênh lệch tỷ giá phát sinh trong năm từ các giao dịch bằng ngoại tệ được ghi nhận vào đâu?",
+      "Tỷ giá nào được sử dụng để xác định các giao dịch bằng ngoại tệ đối với nợ phải thu?",
+      "Khi nào các khoản ngoại tệ gửi ngân hàng được đánh giá lại theo tỷ giá mua ngoại tệ của ngân hàng?",
+      "Phân tích tầm quan trọng của việc tuân thủ các chuẩn mực và chế độ kế toán đối với tính minh bạch của báo cáo tài chính."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (III. Chuẩn mực và Chế độ Kế toán áp dụng & IV. Các Chính sách Kế toán áp dụng - Giao dịch ngoại tệ)\nLoại nội dung: Text\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chuẩn mực và chế độ kế toán áp dụng\nCông ty áp dụng Chế độ Kế toán Doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC về hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính.\n2. Tuyên bố về việc tuân thủ chuẩn mực kế toán và chế độ kế toán\nBan Giám đốc đảm bảo đã tuân thủ yêu cầu của các chuẩn mực kế toán và Chế độ Kế toán Doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC về hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính.\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở lập Báo cáo tài chính\nBáo cáo tài chính được lập trên cơ sở kế toán dồn tích trừ các thông tin liên quan đến các luồng tiền.\n2. Các giao dịch bằng ngoại tệ\nCác giao dịch phát sinh bằng ngoại tệ được chuyển đổi theo tỷ giá tại ngày phát sinh giao dịch, số dư các khoản mục tiền tệ có gốc ngoại tệ cuối năm được quy đổi theo tỷ giá tại ngày kết thúc năm tài chính.\nChênh lệch tỷ giá phát sinh trong năm từ các giao dịch bằng ngoại tệ của các khoản mục tiền tệ có gốc ngoại tệ và chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ cuối năm sau khi bù trừ chênh lệch tăng và chênh lệch giảm được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính.\nTỷ giá sử dụng để quy đổi các giao dịch phát sinh bằng ngoại tệ là tỷ giá thực tế tại thời điểm phát sinh giao dịch của ngân hàng thương mại nơi Công ty có giao dịch phát sinh. Tỷ giá giao dịch thực tế đối với các giao dịch bằng ngoại tệ được xác định như sau:\n- Đối với hợp đồng mua bán ngoại tệ (hợp đồng mua bán ngoại tệ giao ngay, hợp đồng kỳ hạn, hợp đồng tương lai, hợp đồng quyền chọn, hợp đồng hoán đổi tỷ giá) ký kết trong hợp đồng mua, bán ngoại tệ giữa Công ty và ngân hàng.\n- Đối với nợ phải thu: tỷ giá mua của ngân hàng thương mại nơi Công ty chỉ định khách hàng thanh toán tại thời điểm giao dịch phát sinh.\n- Đối với nợ phải trả: tỷ giá bán của ngân hàng thương mại nơi Công ty dự kiến giao dịch tại thời điểm giao dịch phát sinh.\n- Đối với các giao dịch mua sắm tài sản hoặc các khoản chi phí được thanh toán ngay bằng ngoại tệ không qua các tài khoản phải trả: tỷ giá mua của ngân hàng thương mại nơi Công ty thực hiện thanh toán.\nTỷ giá sử dụng để đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán được xác định theo nguyên tắc sau:\n- Đối với các khoản ngoại tệ gửi ngân hàng: tỷ giá mua ngoại tệ của ngân hàng nơi Công ty mở tài khoản ngoại tệ.\n- Đối với các khoản mục tiền tệ có gốc ngoại tệ được phân loại là tài sản khác: tỷ giá mua ngoại tệ của Ngân hàng Ngoại thương Sở giao dịch Hà Nội (Ngân hàng Công ty thường xuyên có giao dịch).\n- Đối với các khoản mục tiền tệ có gốc ngoại tệ được phân loại là nợ phải trả: tỷ giá bán ngoại tệ của Ngân hàng Ngoại thương Sở giao dịch (Ngân hàng Công ty thường xuyên có giao dịch).",
+    "output": [
+      "Công ty áp dụng Chế độ Kế toán Doanh nghiệp Việt Nam theo Thông tư số 200/2014/TT-BTC về hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính.",
+      "Cơ sở lập Báo cáo tài chính của công ty là kế toán dồn tích, trừ các thông tin liên quan đến các luồng tiền.",
+      "Chênh lệch tỷ giá phát sinh trong năm từ các giao dịch bằng ngoại tệ của các khoản mục tiền tệ có gốc ngoại tệ và chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ cuối năm sau khi bù trừ chênh lệch tăng và chênh lệch giảm được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính.",
+      "Đối với nợ phải thu, tỷ giá được sử dụng là tỷ giá mua của ngân hàng thương mại nơi Công ty chỉ định khách hàng thanh toán tại thời điểm giao dịch phát sinh.",
+      "Các khoản ngoại tệ gửi ngân hàng được đánh giá lại theo tỷ giá mua ngoại tệ của ngân hàng nơi Công ty mở tài khoản ngoại tệ tại ngày kết thúc kỳ kế toán.",
+      "Việc tuân thủ các chuẩn mực và chế độ kế toán (như Thông tư số 200/2014/TT-BTC) là cực kỳ quan trọng đối với tính minh bạch của báo cáo tài chính. Nó đảm bảo rằng thông tin tài chính được trình bày một cách nhất quán, có thể so sánh được và đáng tin cậy. Điều này giúp các nhà đầu tư, chủ nợ, cơ quan quản lý và các bên liên quan khác có thể hiểu rõ tình hình tài chính, kết quả hoạt động kinh doanh của công ty và đưa ra các quyết định sáng suốt. Sự tuân thủ này củng cố niềm tin vào tính hợp lệ và trung thực của dữ liệu tài chính, làm tăng trách nhiệm giải trình của doanh nghiệp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Làm thế nào để các khoản cho vay được xác định trong báo cáo tài chính?",
+      "Khi nào dự phòng tổn thất cho các khoản đầu tư vào công ty con, công ty liên kết được trích lập?",
+      "Các khoản đầu tư vào công ty con, công ty liên kết được ghi nhận ban đầu theo nguyên tắc nào?",
+      "Phải thu của khách hàng được phân loại dựa trên tiêu chí nào?",
+      "Tỷ lệ trích lập dự phòng cho khoản nợ phải thu quá hạn từ 2 năm đến dưới 3 năm là bao nhiêu?",
+      "Phân tích ý nghĩa của việc trích lập dự phòng phải thu khó đòi đối với sức khỏe tài chính của công ty.",
+      "Đánh giá sự khác biệt trong cách Công ty xử lý cổ tức nhận được từ các khoản đầu tư tùy thuộc vào thời điểm mua khoản đầu tư."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (IV. Các Chính sách Kế toán áp dụng - Đầu tư tài chính và Phải thu)\nLoại nội dung: Text\n3. Các khoản đầu tư tài chính\nCác khoản cho vay\nCác khoản cho vay được xác định theo giá gốc trừ các khoản dự phòng phải thu khó đòi. Dự phòng phải thu khó đòi của các khoản cho vay được lập căn cứ vào dự kiến mức tổn thất có thể xảy ra.\nCác khoản đầu tư vào công ty con, công ty liên kết\nCông ty con\nCông ty con là doanh nghiệp chịu sự kiểm soát của Công ty. Việc kiểm soát đạt được khi Công ty có khả năng kiểm soát các chính sách tài chính và hoạt động của doanh nghiệp nhận đầu tư nhằm thu được lợi ích kinh tế từ các hoạt động của doanh nghiệp đó.\nCông ty liên kết\nCông ty liên kết là doanh nghiệp mà Công ty có ảnh hưởng đáng kể nhưng không có quyền kiểm soát đối với các chính sách tài chính và hoạt động. Ảnh hưởng đáng kể thể hiện ở quyền tham gia vào việc đưa ra các quyết định về chính sách tài chính và hoạt động của doanh nghiệp nhận đầu tư nhưng không kiểm soát các chính sách này.\nCác khoản đầu tư vào công ty con, công ty liên kết được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc khoản góp vốn cộng các chi phí liên quan trực tiếp đến việc đầu tư. Trường hợp đầu tư bằng tài sản phi tiền tệ, giá phí khoản đầu tư được ghi nhận theo giá trị hợp lý của tài sản phi tiền tệ tại thời điểm phát sinh.\nCổ tức và lợi nhuận của các kỳ trước khi khoản đầu tư được mua được hạch toán giảm giá trị của chính khoản đầu tư đó. Cổ tức và lợi nhuận của các kỳ sau khi khoản đầu tư được mua được ghi nhận doanh thu. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được được ghi nhận theo mệnh giá.\nDự phòng tổn thất cho các khoản đầu tư vào công ty con, liên kết được trích lập khi công ty con, công ty liên kết bị lỗ với mức trích lập bằng chênh lệch giữa vốn góp thực tế của các bên tại công ty con, công ty liên kết và vốn chủ sở hữu thực có nhân với tỷ lệ góp vốn của Công ty so với tổng số vốn góp thực tế của các bên tại công ty con, công ty liên kết. Nếu công ty con, công ty liên kết là đối tượng lập Báo cáo tài chính hợp nhất thì căn cứ để xác định dự phòng tổn thất là Báo cáo tài chính hợp nhất.\nTăng, giảm số dự phòng tổn thất đầu tư vào công ty con, công ty liên kết cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí tài chính.\n4. Các khoản phải thu\nCác khoản nợ phải thu được trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi.\nViệc phân loại các khoản phải thu là phải thu khách hàng, phải thu nội bộ và phải thu khác được thực hiện theo nguyên tắc sau:\n- Phải thu của khách hàng: phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua – bán giữa Công ty và người mua là đơn vị độc lập với Công ty, bao gồm cả các khoản phải thu về tiền bán hàng xuất khẩu ủy thác cho đơn vị khác.\n- Phải thu khác: phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua – bán.\nDự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào tuổi nợ quá hạn của các khoản nợ hoặc dự kiến mức tổn thất có thể xảy ra, cụ thể như sau:\n- Đối với nợ phải thu quá hạn thanh toán:\n  - 30% giá trị đối với khoản nợ phải thu quá hạn từ trên 6 tháng đến dưới 1 năm.\n  - 50% giá trị đối với khoản nợ phải thu quá hạn từ 1 năm đến dưới 2 năm.\n  - 70% giá trị đối với khoản nợ phải thu quá hạn từ 2 năm đến dưới 3 năm.\n  - 100% giá trị đối với khoản nợ phải thu quá hạn từ 3 năm trở lên.\n- Đối với nợ phải thu chưa quá hạn thanh toán nhưng khó có khả năng thu hồi: căn cứ vào dự kiến mức tổn thất để lập dự phòng.",
+    "output": [
+      "Các khoản cho vay được xác định theo giá gốc trừ các khoản dự phòng phải thu khó đòi. Dự phòng phải thu khó đòi của các khoản cho vay được lập căn cứ vào dự kiến mức tổn thất có thể xảy ra.",
+      "Dự phòng tổn thất cho các khoản đầu tư vào công ty con, công ty liên kết được trích lập khi công ty con, công ty liên kết bị lỗ. Mức trích lập bằng chênh lệch giữa vốn góp thực tế của các bên tại công ty con, công ty liên kết và vốn chủ sở hữu thực có nhân với tỷ lệ góp vốn của Công ty so với tổng số vốn góp thực tế của các bên.",
+      "Các khoản đầu tư vào công ty con, công ty liên kết được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc khoản góp vốn cộng các chi phí liên quan trực tiếp đến việc đầu tư. Trường hợp đầu tư bằng tài sản phi tiền tệ, giá phí khoản đầu tư được ghi nhận theo giá trị hợp lý của tài sản phi tiền tệ tại thời điểm phát sinh.",
+      "Phải thu của khách hàng được phân loại dựa trên tính chất thương mại, phản ánh các khoản phải thu phát sinh từ giao dịch mua – bán giữa Công ty và người mua là đơn vị độc lập với Công ty, bao gồm cả các khoản phải thu về tiền bán hàng xuất khẩu ủy thác cho đơn vị khác.",
+      "Tỷ lệ trích lập dự phòng cho khoản nợ phải thu quá hạn từ 2 năm đến dưới 3 năm là 70% giá trị.",
+      "Việc trích lập dự phòng phải thu khó đòi có ý nghĩa quan trọng đối với sức khỏe tài chính của công ty. Đây là một chính sách kế toán thận trọng, giúp báo cáo tài chính phản ánh trung thực hơn giá trị thực của các khoản phải thu bằng cách ghi nhận trước các tổn thất tiềm tàng có thể xảy ra. Điều này giảm thiểu rủi ro làm sai lệch lợi nhuận và vốn chủ sở hữu, cung cấp cái nhìn thực tế hơn về tài sản và khả năng thanh khoản của công ty. Nó cũng giúp quản lý có cái nhìn rõ ràng hơn về chất lượng các khoản phải thu và có kế hoạch phù hợp để quản lý rủi ro tín dụng.",
+      "Công ty xử lý cổ tức nhận được từ các khoản đầu tư một cách khác biệt tùy thuộc vào thời điểm mua khoản đầu tư. Cổ tức và lợi nhuận của các kỳ trước khi khoản đầu tư được mua sẽ được hạch toán giảm giá trị của chính khoản đầu tư đó, coi như một khoản hoàn vốn hoặc giảm giá mua. Ngược lại, cổ tức và lợi nhuận của các kỳ sau khi khoản đầu tư được mua được ghi nhận là doanh thu. Sự khác biệt này là phù hợp với chuẩn mực kế toán, đảm bảo rằng chỉ lợi nhuận phát sinh trong giai đoạn công ty thực sự sở hữu và hưởng lợi từ khoản đầu tư mới được ghi nhận là thu nhập."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Giá gốc của hàng tồn kho bao gồm những chi phí nào?",
+      "Phương pháp tính giá gốc hàng tồn kho của công ty là gì?",
+      "Thời gian phân bổ chi phí công cụ, dụng cụ là bao lâu?",
+      "Khi nào các chi phí phát sinh sau ghi nhận ban đầu của tài sản cố định được ghi tăng nguyên giá?",
+      "Dự phòng giảm giá hàng tồn kho được ghi nhận vào đâu?",
+      "Phân tích tác động của phương pháp khấu hao đường thẳng đến báo cáo tài chính của công ty.",
+      "Đánh giá rủi ro liên quan đến hàng tồn kho nếu giá trị thuần có thể thực hiện được thấp hơn giá gốc."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (IV. Các Chính sách Kế toán áp dụng - Hàng tồn kho, Chi phí trả trước, TSCĐ)\nLoại nội dung: Text\n5. Hàng tồn kho\nHàng tồn kho được xác định trên cơ sở giá gốc. Giá gốc hàng tồn kho bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\nGiá gốc hàng tồn kho được xác định như sau:\n- Nguyên vật liệu, hàng hóa: bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\n- Thành phẩm: bao gồm chi phí nguyên vật liệu, nhân công trực tiếp và chi phí sản xuất chung có liên quan trực tiếp được phân bổ dựa trên mức độ hoạt động bình thường.\nGiá gốc của hàng tồn kho được tính theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.\nGiá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong kỳ sản xuất, kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng.\nDự phòng giảm giá hàng tồn kho được lập cho từng mặt hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào giá vốn hàng bán.\n6. Chi phí trả trước\nChi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán. Chi phí trả trước của Công ty bao gồm các chi phí sau:\n- Công cụ, dụng cụ: Các công cụ, dụng cụ đã đưa vào sử dụng được phân bổ vào chi phí theo phương pháp đường thẳng với thời gian phân bổ không quá 2 năm.\n- Chi phí sửa chữa tài sản cố định: Chi phí sửa chữa tài sản phát sinh một lần có giá trị lớn được phân bổ vào chi phí theo phương pháp đường thẳng trong 2 năm.\n7. Tài sản cố định hữu hình\nTài sản cố định hữu hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí không thỏa mãn điều kiện trên được ghi nhận ngay vào chi phí sản xuất, kinh doanh trong kỳ.\nKhi tài sản cố định hữu hình được bán hay thanh lý, nguyên giá và khấu hao lũy kế được xóa sổ và bất kỳ khoản lãi lỗ nào phát sinh do việc thanh lý đều được tính vào thu nhập hay chi phí trong năm.\nTài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính. Số năm khấu hao của các loại tài sản cố định hữu hình như sau:\n| Loại tài sản cố định | Số năm |\n|---|---|\n| Nhà cửa, vật kiến trúc | 6-25 |\n| Máy móc và thiết bị | 2-10 |\n| Phương tiện vận tải, truyền dẫn | 5-8 |\n| Thiết bị, dụng cụ quản lý | 3-6 |\n| Tài sản cố định khác | 3 |",
+    "output": [
+      "Giá gốc hàng tồn kho bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.",
+      "Phương pháp tính giá gốc hàng tồn kho của công ty là bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.",
+      "Thời gian phân bổ chi phí công cụ, dụng cụ không quá 2 năm.",
+      "Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó.",
+      "Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào giá vốn hàng bán.",
+      "Phương pháp khấu hao đường thẳng phân bổ chi phí tài sản cố định một cách đều đặn trong suốt thời gian hữu dụng ước tính. Tác động của nó đến báo cáo tài chính bao gồm:\\n-   **Báo cáo kết quả kinh doanh:** Chi phí khấu hao hàng kỳ sẽ ổn định, giúp lợi nhuận kế toán và các chỉ số tài chính dễ dự đoán hơn.\\n-   **Bảng cân đối kế toán:** Giá trị còn lại của tài sản cố định giảm đều mỗi kỳ.\\n-   **Báo cáo lưu chuyển tiền tệ (phương pháp gián tiếp):** Khấu hao là một khoản chi phí không bằng tiền, do đó sẽ được cộng ngược lại vào lợi nhuận trước thuế để điều chỉnh ra dòng tiền từ hoạt động kinh doanh. Phương pháp này đơn giản, dễ áp dụng nhưng có thể không phản ánh chính xác mô hình tiêu hao lợi ích kinh tế của tài sản.",
+      "Nếu giá trị thuần có thể thực hiện được (giá bán ước tính trừ chi phí hoàn thành và tiêu thụ) thấp hơn giá gốc, công ty sẽ phải đối mặt với rủi ro tổn thất. Khi đó, công ty phải trích lập dự phòng giảm giá hàng tồn kho. Điều này sẽ làm giảm lợi nhuận (ghi nhận vào giá vốn hàng bán) và giảm giá trị tài sản trên bảng cân đối kế toán, phản ánh một sự suy giảm giá trị của tài sản. Rủi ro này thường xuất phát từ việc hàng tồn kho bị lỗi thời, hư hỏng, hoặc do sự sụt giảm giá thị trường, ảnh hưởng tiêu cực đến sức khỏe tài chính và hiệu quả hoạt động của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Các khoản nợ phải trả và chi phí phải trả được ghi nhận như thế nào?",
+      "Khi nào doanh thu bán hàng hóa, thành phẩm được ghi nhận?",
+      "Chi phí đi vay của công ty bao gồm những gì?",
+      "Công ty phân loại các bên liên quan dựa trên tiêu chí nào?",
+      "Khi nào các tài sản tài chính và nợ phải trả tài chính được bù trừ với nhau và trình bày giá trị thuần trên Bảng cân đối kế toán?",
+      "Phân tích tác động của các yếu tố phi tiền tệ đến việc phân phối lợi nhuận cho cổ đông.",
+      "Đánh giá sự cần thiết của báo cáo theo bộ phận đối với việc phân tích hiệu quả hoạt động của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (IV. Các Chính sách Kế toán áp dụng - Nợ phải trả, Vốn CSH, Doanh thu, Chi phí)\nLoại nội dung: Text\n8. Các khoản nợ phải trả và chi phí phải trả\nCác khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả.\nViệc phân loại các khoản phải trả là phải trả người bán, chi phí phải trả và phải trả khác được thực hiện theo nguyên tắc sau:\n- Phải trả người bán: phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập với Công ty, bao gồm cả các khoản phải trả khi nhập khẩu thông qua người nhận ủy thác.\n- Chi phí phải trả: phản ánh các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước.\n- Phải trả khác: phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.\n9. Vốn chủ sở hữu\n- Vốn góp của chủ sở hữu: Vốn đầu tư của chủ sở hữu được ghi nhận theo số thực tế đã đầu tư của các cổ đông.\n- Thặng dư vốn cổ phần: Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu, phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn. Chi phí trực tiếp liên quan đến việc phát hành bổ sung cổ phiếu và tái phát hành cổ phiếu quỹ được ghi giảm thặng dư vốn cổ phần.\n- Cổ phiếu quỹ: Khi mua lại cổ phiếu do Công ty phát hành, khoản tiền trả bao gồm cả các chi phí liên quan đến giao dịch được ghi nhận là cổ phiếu quỹ và được phản ánh là một khoản giảm trừ trong vốn chủ sở hữu. Khi tái phát hành, chênh lệch giữa giá tái phát hành và giá sổ sách của cổ phiếu quỹ được ghi vào khoản mục Thặng dư vốn cổ phần.\n10. Phân phối lợi nhuận\nLợi nhuận sau thuế thu nhập doanh nghiệp được phân phối cho các cổ đông sau khi đã trích lập các quỹ theo Điều lệ của Công ty cũng như các quy định của pháp luật và đã được Đại hội đồng cổ đông phê duyệt.\nViệc phân phối lợi nhuận cho các cổ đông được cân nhắc đến các khoản mục phi tiền tệ nằm trong lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến luồng tiền và khả năng chi trả cổ tức/lợi nhuận như lãi do đánh giá lại tài sản mang đi góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác.\n11. Ghi nhận doanh thu và thu nhập\nDoanh thu bán hàng hóa, thành phẩm\nDoanh thu bán hàng hóa, thành phẩm được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát.\n- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại sản phẩm, hàng hóa, đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại sản phẩm, hàng hóa trừ trường hợp khách hàng.\n- Công ty đã hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.\nDoanh thu cung cấp dịch vụ\nDoanh thu cung cấp dịch vụ được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại dịch vụ đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại dịch vụ đã cung cấp.\n- Công ty đã hoặc sẽ thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n- Xác định được phần công việc đã hoàn thành vào thời điểm báo cáo.\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\nTrường hợp dịch vụ được thực hiện trong nhiều kỳ thì doanh thu được ghi nhận trong kỳ được căn cứ vào kết quả phần công việc đã hoàn thành vào ngày kết thúc kỳ kế toán.\n- Tiền lãi: Tiền lãi được ghi nhận trên cơ sở thời gian và lãi suất thực tế từng kỳ.\n- Cổ tức và lợi nhuận được chia: Cổ tức và lợi nhuận được chia được ghi nhận khi Công ty được quyền nhận cổ tức hoặc lợi nhuận từ việc góp vốn. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được..\n12. Các khoản giảm trừ doanh thu\nCác khoản giảm trừ doanh thu bao gồm, giảm giá hàng bán, phát sinh cùng kỳ tiêu thụ sản phẩm, hàng hóa, dịch vụ được điều chỉnh giảm doanh thu của kỳ phát sinh.\n13. Chi phí đi vay\nChi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay.\nChi phí đi vay được ghi nhận vào chi phí khi phát sinh.\n14. Các khoản chi phí\nChi phí là những khoản làm giảm lợi ích kinh tế được ghi nhận tại thời điểm giao dịch phát sinh hoặc khi có khả năng tương đối chắc chắn sẽ phát sinh trong tương lai không phân biệt đã chi tiền hay chưa.\nCác khoản chi phí và khoản doanh thu do nó tạo ra phải được ghi nhận đồng thời theo nguyên tắc phù hợp.\nTrong trường hợp nguyên tắc phù hợp xung đột với nguyên tắc thận trọng, chi phí được ghi nhận căn cứ vào bản chất và quy định của các chuẩn mực kế toán để đảm bảo phản ánh giao dịch một cách trung thực, hợp lý.\n15. Thuế thu nhập doanh nghiệp\nChi phí thuế thu nhập doanh nghiệp là thuế thu nhập hiện hành, là khoản thuế được tính dựa trên thu nhập tính thuế. Thu nhập tính thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán, các chi phí không được trừ cũng như điều chỉnh các khoản thu nhập không phải chịu thuế và các khoản lỗ được chuyển.\n16. Bên liên quan\nCác bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung.\nTrong việc xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được chú trọng nhiều hơn hình thức pháp lý.\n17. Báo cáo theo bộ phận\nBộ phận theo lĩnh vực kinh doanh là một phần có thể xác định riêng biệt tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ và có rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh khác.\nBộ phận theo khu vực địa lý là một phần có thể xác định riêng biệt tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ trong phạm vi một môi trường kinh tế cụ thể và có rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh trong các môi trường kinh tế khác.\n18. Công cụ tài chính\nTài sản tài chính\nViệc phân loại các tài sản tài chính này phụ thuộc vào bản chất và mục đích của tài sản tài chính và được quyết định tại thời điểm ghi nhận ban đầu. Các tài sản tài chính của Công ty gồm tiền và các khoản tương đương tiền, các khoản phải thu khách hàng, phải thu khác, các khoản cho vay.\nTại thời điểm ghi nhận ban đầu, các tài sản tài chính được ghi nhận theo giá gốc cộng các chi phí giao dịch có liên quan trực tiếp đến tài sản tài chính đó.\nNợ phải trả tài chính\nViệc phân loại các khoản nợ tài chính phụ thuộc vào bản chất và mục đích của khoản nợ tài chính và được quyết định tại thời điểm ghi nhận ban đầu. Nợ phải trả tài chính của Công ty gồm các khoản phải trả người bán, vay và nợ, các khoản phải trả khác.\nTại thời điểm ghi nhận lần đầu các khoản nợ phải trả tài chính được ghi nhận ban đầu theo giá gốc trừ các chi phí giao dịch có liên quan trực tiếp đến nợ phải trả tài chính đó.\nBù trừ các công cụ tài chính\nCác tài sản tài chính và nợ phải trả tài chính chỉ được bù trừ với nhau và trình bày giá trị thuần trên Bảng cân đối kế toán khi và chỉ khi Công ty:\n- Có quyền hợp pháp để bù trừ giá trị đã được ghi nhận và\n- Có dự định thanh toán trên cơ sở thuần hoặc ghi nhận tài sản và thanh toán nợ phải trả cùng một thời điểm.",
+    "output": [
+      "Các khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả.",
+      "Doanh thu bán hàng hóa, thành phẩm được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\\n- Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.\\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát.\\n- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại sản phẩm, hàng hóa, đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại sản phẩm, hàng hóa trừ trường hợp khách hàng.\\n- Công ty đã hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\\n- Xác định được chi phí liên quan đến giao dịch bán hàng.",
+      "Chi phí đi vay của công ty bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay.",
+      "Công ty phân loại các bên liên quan dựa trên khả năng một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung, đồng thời chú trọng bản chất của mối quan hệ hơn hình thức pháp lý.",
+      "Các tài sản tài chính và nợ phải trả tài chính chỉ được bù trừ với nhau và trình bày giá trị thuần trên Bảng cân đối kế toán khi và chỉ khi Công ty:\\n- Có quyền hợp pháp để bù trừ giá trị đã được ghi nhận và\\n- Có dự định thanh toán trên cơ sở thuần hoặc ghi nhận tài sản và thanh toán nợ phải trả cùng một thời điểm.",
+      "Các yếu tố phi tiền tệ như lãi do đánh giá lại tài sản hoặc chênh lệch tỷ giá hối đoái có thể làm tăng lợi nhuận sau thuế chưa phân phối trên báo cáo tài chính, nhưng không tạo ra dòng tiền thực tế. Khi phân phối lợi nhuận cho cổ đông, việc cân nhắc các khoản mục phi tiền tệ này là cần thiết vì nếu công ty phân phối cổ tức dựa trên lợi nhuận kế toán cao nhưng thiếu dòng tiền mặt tương ứng, có thể dẫn đến áp lực thanh khoản. Tác động là làm nổi bật sự khác biệt giữa lợi nhuận kế toán và khả năng chi trả cổ tức thực tế, buộc công ty phải cân bằng giữa việc giữ lại tiền để tái đầu tư và chi trả cho cổ đông.",
+      "Báo cáo theo bộ phận là cần thiết để phân tích hiệu quả hoạt động của công ty một cách toàn diện. Nó cung cấp cái nhìn sâu sắc về từng lĩnh vực kinh doanh hoặc khu vực địa lý riêng biệt, giúp các nhà đầu tư và quản lý hiểu rõ hơn về nguồn gốc lợi nhuận, rủi ro và cơ hội của từng mảng hoạt động. Điều này hỗ trợ việc đánh giá hiệu suất, phân bổ nguồn lực hiệu quả và đưa ra các quyết định chiến lược phù hợp với đặc thù của từng bộ phận, đặc biệt khi rủi ro và tỷ suất sinh lời bị tác động chủ yếu bởi sự khác biệt về sản phẩm và dịch vụ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số tiền mặt cuối quý là bao nhiêu VND?",
+      "Tổng cộng tiền và các khoản tương đương tiền đầu năm là bao nhiêu VND?",
+      "Công ty TNHH MTV Hóa chất Đức Giang Đắk Nông có giá gốc đầu tư cuối kỳ là bao nhiêu VND?",
+      "So sánh Tiền gửi ngân hàng cuối quý với đầu năm.",
+      "Khoản đầu tư nắm giữ đến ngày đáo hạn là gì?",
+      "Phân tích sự thay đổi trong tổng vốn đầu tư vào công ty con giữa đầu năm và cuối kỳ.",
+      "Đánh giá mức độ rủi ro thanh khoản của công ty dựa trên cơ cấu tiền và các khoản tương đương tiền."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (V. Thông tin bổ sung Bảng CĐKT - Tiền và Đầu tư tài chính)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN\n1. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | Số cuối quý | Số đầu năm |\n|---|---|---|\n| Tiền mặt | 2.178.111.677 | 813.531.145 |\n| Tiền gửi ngân hàng | 5.070.755.373 | 5.272.830.398 |\n| Các khoản tương đương tiền (Tiền gửi ngân hàng có kỳ hạn không quá 3 tháng) | - | 947.500.000.000 |\n| **Cộng** | **7.248.867.050** | **953.586.361.543** |\n2. Các khoản đầu tư tài chính\nCác khoản đầu tư tài chính của Công ty bao gồm đầu tư nắm giữ đến ngày đáo hạn và đầu tư góp vốn vào đơn vị khác. Thông tin về các khoản đầu tư tài chính của Công ty như sau:\n2a. Đầu tư nắm giữ đến ngày đáo hạn\nLà khoản tiền gửi có kỳ hạn từ 6 đến 12 tháng, có giá trị ghi sổ bằng giá gốc.\n2b. Đầu tư góp vốn vào đơn vị khác\n| Chỉ tiêu | Số cuối kỳ - Giá gốc | Số cuối kỳ - Dự phòng | Số cuối kỳ - Giá trị hợp lý | Số đầu năm - Giá gốc | Số đầu năm - Dự phòng | Số đầu năm - Giá trị hợp lý |\n|---|---|---|---|---|---|---|\n| Đầu tư vào công ty con | 5.084.952.700.800 | - | 5.084.952.700.800 | 4.784.952.700.800 | - | 4.784.952.700.800 |\n| Công ty TNHH MTV Hóa chất Đức Giang - Lào Cai | 2.785.094.822.400 | - | 2.785.094.822.400 | 2.785.094.822.400 | - | 2.785.094.822.400 |\n| Công ty TNHH MTV Hóa chất Đức Giang - Đình Vũ | 60.000.000.000 | - | 60.000.000.000 | 60.000.000.000 | - | 60.000.000.000 |\n| Công ty TNHH MTV Thể thao Hóa chất Đức Giang | 5.000.000.000 | - | 5.000.000.000 | 5.000.000.000 | - | 5.000.000.000 |\n| Công ty TNHH MTV Đức Giang Nghi Sơn | 1.000.000.000.000 | - | 1.000.000.000.000 | 1.000.000.000.000 | - | 1.000.000.000.000 |\n| Công ty TNHH MTV Bất Động Sản Đức Giang | 500.000.000.000 | - | 500.000.000.000 | 500.000.000.000 | - | 500.000.000.000 |\n| Công ty TNHH MTV Hóa chất Đức Giang Đắk Nông | 600.000.000.000 | - | 600.000.000.000 | 300.000.000.000 | - | 300.000.000.000 |\n| Công ty Cổ Phần ắc Quy Tia Sáng | 134.857.878.400 | - | 134.857.878.400 | 134.857.878.400 | - | 134.857.878.400 |\n| **Cộng** | **5.084.952.700.800** | **-** | **5.084.952.700.800** | **4.784.952.700.800** | **-** | **4.784.952.700.800** |\nTình hình hoạt động của các công ty con\ni. Theo Giấy chứng nhận đăng ký doanh nghiệp sửa đổi số 5300299830 ngày 01 tháng 10 năm 2018, Công ty đang sở hữu 100% vốn điều lệ tương đương 997.854.630.000 đồng của Công ty TNHH MTV Hóa chất Đức Giang - Lào Cai. Giá gốc khoản đầu tư của Công ty vào Công ty TNHH MTV Hóa chất Đức Giang - Lào Cai là 2.785.094.822.400 VND. Tại ngày kết thúc kỳ kế toán, Công ty đã đầu tư đủ theo đăng ký, không thay đổi so với số đầu năm.\nii. Tại ngày kết thúc kỳ kế toán, Công ty sở hữu 100% vốn điều lệ của Công ty TNHH MTV Hóa chất Đức Giang - Đình Vũ, tương ứng số vốn góp 60.000.000.000 VND. Ngày 17 tháng 05 năm 2019, Công ty con đã chuyển đổi hình thức sở hữu từ Công ty cổ phần sang Công ty TNHH MTV theo Giấy chứng nhận đăng ký kinh doanh sửa đổi số 0201306816.\niii. Theo Giấy chứng nhận đăng ký doanh nghiệp số 01090787678 ngày 30 tháng 01 năm 2020, Công ty đang sở hữu 100% vốn điều lệ tương đương 5 tỷ đồng của Công ty TNHH MTV Thể thao Hóa chất Đức Giang. Tại ngày kết thúc kỳ kế toán, Công ty đã đầu tư đủ theo đăng ký.\niv. Theo Giấy chứng nhận đăng ký doanh nghiệp số 2802846993 ngày 14 tháng 5 năm 2020, Công ty đang sở hữu 100% vốn điều lệ tương đương 1.000 tỷ đồng của Công ty TNHH MTV Hóa chất Đức Giang Nghi Sơn. Tại ngày kết thúc kỳ kế toán, Công ty đã đầu tư đủ số tiền 1.000 tỷ đồng.\nv. Theo Giấy chứng nhận đăng ký doanh nghiệp số 0109516875 ngày 01 tháng 02 năm 2021, Công ty đang sở hữu 100% vốn điều lệ tương đương 500 tỷ đồng của Công ty TNHH MTV Bất Động Sản Đức Giang. Tại ngày kết thúc kỳ kế toán, Công ty đã đầu tư đủ số tiền 500 tỷ đồng.",
+    "output": [
+      "Số tiền mặt cuối quý là 2.178.111.677 VND.",
+      "Tổng cộng tiền và các khoản tương đương tiền đầu năm là 953.586.361.543 VND.",
+      "Công ty TNHH MTV Hóa chất Đức Giang Đắk Nông có giá gốc đầu tư cuối kỳ là 600.000.000.000 VND.",
+      "Tiền gửi ngân hàng cuối quý là 5.070.755.373 VND, giảm so với 5.272.830.398 VND vào đầu năm.",
+      "Khoản đầu tư nắm giữ đến ngày đáo hạn là khoản tiền gửi có kỳ hạn từ 6 đến 12 tháng, có giá trị ghi sổ bằng giá gốc.",
+      "Tổng vốn đầu tư vào công ty con đã tăng từ 4.784.952.700.800 VND vào đầu năm lên 5.084.952.700.800 VND vào cuối kỳ, tức là tăng thêm 300 tỷ VND. Sự thay đổi này chủ yếu đến từ việc tăng vốn đầu tư vào Công ty TNHH MTV Hóa chất Đức Giang Đắk Nông, từ 300.000.000.000 VND lên 600.000.000.000 VND. Điều này cho thấy công ty mẹ tiếp tục củng cố và mở rộng hoạt động thông qua các công ty con, có thể nhằm khai thác các cơ hội phát triển hoặc tăng cường năng lực sản xuất trong lĩnh vực liên quan đến Đắk Nông.",
+      "Mức độ rủi ro thanh khoản của công ty đã tăng lên đáng kể. Vào đầu năm, tổng tiền và các khoản tương đương tiền là rất cao (953.586.361.543 VND), phần lớn là các khoản tương đương tiền (tiền gửi ngân hàng có kỳ hạn không quá 3 tháng). Tuy nhiên, đến cuối kỳ, tổng số này giảm mạnh xuống chỉ còn 7.248.867.050 VND, với khoản tương đương tiền không còn. Sự sụt giảm cực đoan này cho thấy công ty đã sử dụng một lượng lớn tiền mặt hoặc chuyển sang các khoản đầu tư ít thanh khoản hơn, điều này có thể làm tăng rủi ro trong việc đáp ứng các nghĩa vụ thanh toán ngắn hạn nếu không có nguồn tiền khác để bù đắp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu bán hàng hóa từ DLC lũy kế năm nay là bao nhiêu VND?",
+      "Số tiền phải thu ngắn hạn từ Công ty TNHH MTV Hóa chất Đức Giang Lào Cai cuối kỳ là bao nhiêu VND?",
+      "DLC đã chuyển trả tiền cổ tức cho DGC lũy kế năm nay là bao nhiêu?",
+      "So sánh tổng phải thu ngắn hạn khách hàng cuối kỳ và đầu năm.",
+      "Giao dịch bán hàng và cung cấp dịch vụ với Công ty TNHH MTV Hóa Chất Đức Giang - Đình Vũ có sự thay đổi như thế nào giữa năm nay và năm trước?",
+      "Đánh giá mức độ phụ thuộc của công ty vào các bên liên quan thông qua các giao dịch mua bán hàng hóa và dịch vụ.",
+      "Phân tích biến động của 'Trả trước cho người bán khác' và các nhà cung cấp chính liên quan.",
+      "Giải thích sự biến động lớn của khoản 'Trả trước cho người bán khác' từ đầu năm đến cuối kỳ."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (V. Thông tin bổ sung Bảng CĐKT - Giao dịch với công ty con, Phải thu, Trả trước)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nGiao dịch với các công ty con và công ty liên kết\nCác giao dịch trọng yếu giữa Công ty với các công ty con và công ty liên kết như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Công ty TNHH MTV Hóa chất Đức Giang Lào Cai (DLC) | | |\n| Mua hàng từ DLC | 2.115.097.716 | 1.990.266.895 |\n| Thuế GTGT đầu vào | 160.735.119 | 199.026.690 |\n| Doanh thu bán hàng hóa | 219.646.512.395 | 254.306.120.191 |\n| Cước vận chuyển, cung cấp dịch vụ | 32.623.084.410 | 34.726.439.092 |\n| Thuế GTGT đầu ra | 14.506.675.258 | 17.686.982.070 |\n| Chuyển trả tiền hàng cho DLC | 25.600.000.000 | - |\n| DLC chuyển trả tiền hàng | 267.170.000.000 | 308.598.900.000 |\n| DLC chuyển trả tiền cổ tức cho DGC | 600.000.000.000 | 860.000.000.000 |\n| Công ty TNHH MTV Hóa Chất Đức Giang - Đình Vũ | | |\n| Bán hàng và cung cấp dịch vụ | 1.896.978 | 3.534.151 |\n| Thuế GTGT hàng bán | 189.698 | 353.416 |\n| DDC chuyển trả tiền cổ tức cho DGC | 7.000.000.000 | - |\n| Công ty TNHH Thể thao Hóa chất Đức Giang | | |\n| Bán hàng và cung cấp dịch vụ | 1.163.616 | 11.192.946 |\n| Thuế GTGT hàng bán | 116.362 | 1.119.293 |\n3. Phải thu ngắn hạn khách hàng\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải thu các bên liên quan | 37.146.666.330 | 13.699.773.250 |\n| Công ty TNHH MTV Hóa chất Đức Giang Lào Cai | 36.490.012.879 | 13.568.525.458 |\n| Công ty Cổ Phần Phốt Pho Apatit Việt nam | - | 470.520.687 |\n| Công ty Cổ Phần ắc Quy Tia Sáng | 186.132.764 | 131.247.792 |\n| Phải thu các khách hàng khác | 4.246.744.503 | 3.610.116.839 |\n| Công ty TNHH FrieslandCampina Hà Nam | 54.130.200 | 114.105.000 |\n| CÔNG TY CỔ PHẦN MC - BIFI BAUCHEMIE | 1.593.738.470 | 439.129.630 |\n| Các đối tượng khác | 2.598.875.833 | 3.056.882.209 |\n| **Cộng** | **41.393.410.833** | **17.309.890.089** |\n4. Trả trước cho người bán\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước cho bên liên quan | - | - |\n| Trả trước cho người bán khác | 3.040.134.487 | 8.968.467.050 |\n| Công ty TNHH Thu phí tự động VETC | 496.079.286 | 323.252.558 |\n| Công ty TNHH đầu tư và phát triển Nam Kiên | - | 4.570.000.000 |\n| SUZHOU TONG DA MACHINERY CO., LTD | - | 2.522.069.415 |\n| Các nhà cung cấp khác | 2.544.055.201 | 1.553.145.077 |\n| **Cộng** | **3.040.134.487** | **8.968.467.050** |",
+    "output": [
+      "Doanh thu bán hàng hóa từ DLC lũy kế năm nay là 219.646.512.395 VND.",
+      "Số tiền phải thu ngắn hạn từ Công ty TNHH MTV Hóa chất Đức Giang Lào Cai cuối kỳ là 36.490.012.879 VND.",
+      "DLC đã chuyển trả tiền cổ tức cho DGC lũy kế năm nay là 600.000.000.000 VND.",
+      "Tổng phải thu ngắn hạn khách hàng cuối kỳ là 41.393.410.833 VND, tăng đáng kể so với 17.309.890.089 VND vào đầu năm.",
+      "Giao dịch bán hàng và cung cấp dịch vụ với Công ty TNHH MTV Hóa Chất Đức Giang - Đình Vũ năm nay là 1.896.978 VND, giảm so với 3.534.151 VND của năm trước.",
+      "Công ty có mức độ phụ thuộc đáng kể vào các bên liên quan, đặc biệt là Công ty TNHH MTV Hóa chất Đức Giang Lào Cai (DLC). DLC là nguồn cung cấp đáng kể (mua hàng 2.115 tỷ VND) và là khách hàng lớn (doanh thu bán hàng hóa 219.646 tỷ VND, cước vận chuyển 32.623 tỷ VND). Ngoài ra, DLC còn chuyển trả một lượng lớn cổ tức cho DGC (600 tỷ VND). Các giao dịch với các bên liên quan khác như Đình Vũ hay Thể thao Hóa chất Đức Giang có quy mô nhỏ hơn. Mức độ phụ thuộc này có thể tạo ra rủi ro tập trung nếu hoạt động của các công ty con gặp khó khăn, nhưng cũng thể hiện sự tích hợp theo chiều dọc hoặc ngang trong nhóm, tận dụng lợi thế quy mô và mối quan hệ nội bộ.",
+      "Khoản 'Trả trước cho người bán khác' đã giảm mạnh từ 8.968.467.050 VND vào đầu năm xuống còn 3.040.134.487 VND vào cuối kỳ. Sự biến động này chủ yếu do các khoản trả trước cho Công ty TNHH đầu tư và phát triển Nam Kiên và SUZHOU TONG DA MACHINERY CO., LTD đã không còn số dư cuối kỳ, cho thấy các hợp đồng hoặc đơn hàng đã hoàn tất, và hàng hóa/dịch vụ tương ứng đã được nhận hoặc các khoản trả trước đã được quyết toán. Điều này giúp cải thiện dòng tiền của công ty trong kỳ do giảm nhu cầu chi trả trước.",
+      "Sự biến động lớn của khoản 'Trả trước cho người bán khác' từ đầu năm (8.968.467.050 VND) đến cuối kỳ (3.040.134.487 VND) chủ yếu do việc các khoản trả trước lớn cho Công ty TNHH đầu tư và phát triển Nam Kiên (4.570.000.000 VND) và SUZHOU TONG DA MACHINERY CO., LTD (2.522.069.415 VND) đã được quyết toán hoặc sử dụng hết trong kỳ. Điều này có nghĩa là các hàng hóa hoặc dịch vụ mà công ty đã trả tiền trước đã được nhận, hoặc các hợp đồng liên quan đã hoàn thành, dẫn đến việc chuyển đổi từ khoản trả trước thành tài sản (như hàng tồn kho hoặc tài sản cố định) hoặc chi phí."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải thu ngắn hạn khác cuối kỳ là bao nhiêu VND?",
+      "Giá trị nguyên liệu, vật liệu tồn kho cuối kỳ là bao nhiêu VND?",
+      "Tổng chi phí trả trước dài hạn cuối kỳ là bao nhiêu VND?",
+      "So sánh dự thu lãi tiền gửi cuối kỳ với đầu năm, thay đổi như thế nào?",
+      "Chi phí trả trước ngắn hạn bao gồm những loại chi phí nào?",
+      "Đánh giá mức độ biến động của các khoản phải thu ngắn hạn khác và tác động tiềm ẩn đến thanh khoản.",
+      "Phân tích sự thay đổi trong chi phí trả trước khai trường và ý nghĩa của nó.",
+      "Tính toán tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn (dựa trên thông tin từ chunk 5 và 17)."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (V. Thông tin bổ sung Bảng CĐKT - Phải thu khác, Hàng tồn kho, Chi phí trả trước)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\n5. Phải thu khác\na. Ngắn hạn\n| Chỉ tiêu | Số cuối kỳ - Giá trị | Số cuối kỳ - Dự phòng | Số đầu năm - Giá trị | Số đầu năm - Dự phòng |\n|---|---|---|---|---|\n| Phải thu các bên liên quan | - | - | - | - |\n| Phải thu các tổ chức và cá nhân khác | 52.232.068.476 | - | 62.758.496.443 | - |\n| Tạm ứng | 13.131.571.932 | - | 417.515.932 | - |\n| Ký cược, ký quỹ | 31.750.000 | - | 31.750.000 | - |\n| Dự thu lãi tiền gửi | 39.049.321.544 | - | 62.290.805.511 | - |\n| Các khoản phải thu ngắn hạn khác | 19.425.000 | - | 18.425.000 | - |\n| **Cộng** | **52.232.068.476** | **-** | **62.758.496.443** | **-** |\nb. Dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Quỹ bảo vệ Môi trường tỉnh Lào Cai | 6.996.859.984 | 5.724.645.692 |\n| **Cộng** | **6.996.859.984** | **5.724.645.692** |\n6. Hàng tồn kho\n| Chỉ tiêu | Số cuối kỳ - Giá gốc | Số cuối kỳ - Dự phòng | Số đầu năm - Giá gốc | Số đầu năm - Dự phòng |\n|---|---|---|---|---|\n| Nguyên liệu, vật liệu | 21.002.024.041 | - | 21.647.142.885 | - |\n| Công cụ, dụng cụ | 156.158.263 | - | 50.651.863 | - |\n| Thành phẩm | 28.619.111.489 | - | 28.189.223.981 | - |\n| **Cộng** | **49.777.293.793** | **-** | **49.887.018.729** | **-** |\n7. Chi phí trả trước\n7a. Chi phí trả trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phí bảo hiểm, thiết bị định vị, phí đường bộ | 255.480.851 | 317.710.012 |\n| Chi phí sửa chữa xe | 1.327.818.767 | 1.360.876.360 |\n| Chi phí vận chuyển | - | - |\n| **Cộng** | **1.583.299.618** | **1.678.586.372** |\n7b. Chi phí trả trước dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Chi phí thuê đất tại Bình Dương | 24.749.999.980 | 25.249.999.984 |\n| Chi phí trả trước khai trường | 68.957.631.774 | 81.994.461.681 |\n| Chi phí thuê đất KCN Phố nối | 22.985.011.444 | 23.375.011.444 |\n| **Cộng** | **116.692.643.198** | **130.619.473.109** |",
+    "output": [
+      "Tổng phải thu ngắn hạn khác cuối kỳ là 52.232.068.476 VND.",
+      "Giá trị nguyên liệu, vật liệu tồn kho cuối kỳ là 21.002.024.041 VND.",
+      "Tổng chi phí trả trước dài hạn cuối kỳ là 116.692.643.198 VND.",
+      "Dự thu lãi tiền gửi cuối kỳ là 39.049.321.544 VND, giảm so với 62.290.805.511 VND vào đầu năm.",
+      "Chi phí trả trước ngắn hạn bao gồm phí bảo hiểm, thiết bị định vị, phí đường bộ và chi phí sửa chữa xe.",
+      "Tổng phải thu ngắn hạn khác giảm từ 62.758.496.443 VND vào đầu năm xuống 52.232.068.476 VND vào cuối kỳ. Sự giảm này chủ yếu do 'Dự thu lãi tiền gửi' giảm đáng kể, có thể do các khoản lãi đã được thu trong kỳ, hoặc số dư tiền gửi sinh lãi giảm. Tuy nhiên, 'Tạm ứng' lại tăng mạnh từ 417.515.932 VND lên 13.131.571.932 VND. Mặc dù tổng thể phải thu giảm có thể giải phóng tiền mặt, sự gia tăng lớn của tạm ứng lại tạo ra một khoản phải thu cần được hoàn trả hoặc quyết toán, có thể ảnh hưởng đến dòng tiền nếu quá trình này chậm trễ, tiềm ẩn rủi ro về thanh khoản nếu các khoản tạm ứng không được quản lý hiệu quả.",
+      "Chi phí trả trước khai trường giảm từ 81.994.461.681 VND vào đầu năm xuống 68.957.631.774 VND vào cuối kỳ. Sự thay đổi này có ý nghĩa rằng một phần của chi phí khai trường đã được phân bổ (ghi nhận là chi phí) vào kết quả hoạt động kinh doanh trong kỳ kế toán. Đây là quá trình ghi nhận chi phí theo nguyên tắc phù hợp, khi lợi ích kinh tế của chi phí trả trước được tiêu thụ. Nó ảnh hưởng đến lợi nhuận của công ty trong kỳ thông qua việc tăng chi phí ghi nhận.",
+      "Tổng hàng tồn kho cuối kỳ (Chunk 17): 49.777.293.793 VND.\\nTổng tài sản ngắn hạn cuối kỳ (Chunk 5): 2.297.392.561.928 VND.\\nTỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn cuối kỳ là khoảng 2,17% (49.777.293.793 VND / 2.297.392.561.928 VND * 100%)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+      "Tổng khấu hao tài sản cố định hữu hình tăng trong kỳ là bao nhiêu VND?",
+      "Số phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+      "So sánh giá trị còn lại của Máy móc và thiết bị cuối kỳ với đầu năm.",
+      "Phải trả các bên liên quan tăng hay giảm so với đầu năm?",
+      "Đánh giá mức độ đầu tư mới vào tài sản cố định hữu hình trong kỳ.",
+      "Phân tích sự biến động của phải trả nhà cung cấp khác và tác động của nó đến dòng tiền.",
+      "Tính toán tỷ lệ hao mòn lũy kế trên nguyên giá của Nhà cửa, vật kiến trúc cuối kỳ."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (V. Thông tin bổ sung Bảng CĐKT - Tăng, giảm tài sản cố định hữu hình, vô hình, Phải trả người bán ngắn hạn)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\n8. Tăng, giảm tài sản cố định hữu hình\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|---|---|---|---|---|---|\n| **Nguyên giá** | | | | | |\n| Số đầu năm | 82.665.695.834 | 151.996.882.891 | 147.464.414.558 | 797.767.486 | 382.924.760.769 |\n| Tăng trong kỳ do mua mới | - | 2.880.127.543 | 1.286.363.636 | - | 4.166.491.179 |\n| Giảm do góp vốn vào cty con | - | - | - | - | 253.259.000.000 |\n| Tăng trong kỳ do mua mới | - | - | - | - | 253.259.000.000 |\n| **Số cuối kỳ** | **82.665.695.834** | **154.877.010.434** | **148.750.778.194** | **797.767.486** | **387.091.251.948** |\n| **Giá trị hao mòn** | | | | | |\n| Số đầu năm | 30.246.646.166 | 101.328.742.537 | 72.435.066.350 | 531.511.426 | 204.541.966.479 |\n| Tăng do khấu hao trong kỳ | 1.886.609.667 | 5.363.304.002 | 13.518.411.999 | 24.760.390 | 20.793.086.058 |\n| Giảm trong kỳ do thanh lý | - | - | - | - | - |\n| **Số cuối kỳ** | **32.133.255.833** | **106.692.046.539** | **85.953.478.349** | **556.271.816** | **225.335.052.537** |\n| **Giá trị còn lại** | | | | | |\n| Số đầu năm | 52.419.049.668 | 50.668.140.354 | 75.029.348.208 | 266.256.060 | 178.382.794.290 |\n| **Số cuối kỳ** | **50.532.440.001** | **48.184.963.895** | **62.797.299.845** | **241.495.670** | **161.756.199.411** |\n9. Tài sản cố định vô hình\n| Chỉ tiêu | Nguyên giá | Hao mòn lũy kế | Giá trị còn lại |\n|---|---|---|---|\n| Số đầu năm | 265.000.000 | 265.000.000 | - |\n| Khấu hao trong năm | - | - | - |\n| **Số cuối kỳ** | **265.000.000** | **265.000.000** | **-** |\n10. Phải trả người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | 4.925.666.971 | 3.790.175.250 |\n| Công ty cổ phần ắc quy tia sáng | - | 26.283.225 |\n| Công ty Cổ Phần Phốt Pho Apatit Việt nam | - | 38.610.000 |\n| Công ty TNHH Văn Minh | 4.899.383.746 | 3.751.565.250 |\n| Phải trả nhà cung cấp khác | 9.525.017.024 | 6.085.740.177 |\n| Công ty TNHH MTV Anh Minh Lào Cai | 1.678.890.581 | 656.010.960 |\n| Công ty TNHH vận tải Bảo Thắng | 2.027.305.812 | 821.977.360 |\n| Công ty TNHH thương mại Quang Thành | 2.097.841.634 | 855.900.790 |\n| Các nhà cung cấp khác | 3.720.978.997 | 3.751.851.067 |\n| **Cộng** | **14.450.683.995** | **9.875.915.427** |",
+    "output": [
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là 387.091.251.948 VND.",
+      "Tổng khấu hao tài sản cố định hữu hình tăng trong kỳ là 20.793.086.058 VND.",
+      "Số phải trả người bán ngắn hạn cuối kỳ là 14.450.683.995 VND.",
+      "Giá trị còn lại của Máy móc và thiết bị cuối kỳ là 48.184.963.895 VND, giảm so với 50.668.140.354 VND vào đầu năm.",
+      "Phải trả các bên liên quan cuối kỳ là 4.925.666.971 VND, tăng so với 3.790.175.250 VND vào đầu năm.",
+      "Mức độ đầu tư mới vào tài sản cố định hữu hình trong kỳ, nếu chỉ tính các khoản 'Tăng trong kỳ do mua mới' không phải điều chuyển, là 4.166.491.179 VND. Khoản tăng khác 253.259.000.000 VND được ghi nhận cả là giảm do góp vốn và tăng do mua mới, cho thấy đây có thể là một giao dịch đặc biệt hoặc điều chuyển nội bộ hơn là đầu tư mua mới hoàn toàn. Do đó, mức độ đầu tư mua sắm tài sản cố định hữu hình mới trực tiếp trong kỳ có vẻ là không quá lớn.",
+      "Khoản 'Phải trả nhà cung cấp khác' đã tăng từ 6.085.740.177 VND vào đầu năm lên 9.525.017.024 VND vào cuối kỳ. Sự gia tăng này có tác động tích cực đến dòng tiền hoạt động của công ty trong ngắn hạn. Khi công ty nợ nhà cung cấp nhiều hơn, điều đó có nghĩa là công ty đang sử dụng vốn của nhà cung cấp để tài trợ cho hoạt động kinh doanh của mình, giúp giữ lại tiền mặt trong doanh nghiệp lâu hơn. Tuy nhiên, điều này cũng tạo ra một nghĩa vụ thanh toán trong tương lai.",
+      "Nguyên giá Nhà cửa, vật kiến trúc cuối kỳ là 82.665.695.834 VND.\\nGiá trị hao mòn lũy kế Nhà cửa, vật kiến trúc cuối kỳ là 32.133.255.833 VND.\\nTỷ lệ hao mòn lũy kế trên nguyên giá của Nhà cửa, vật kiến trúc cuối kỳ là khoảng 38,87% (32.133.255.833 VND / 82.665.695.834 VND * 100%)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số tiền người mua trả tiền trước ngắn hạn cuối kỳ là bao nhiêu VND?",
+      "Thuế suất thuế thu nhập doanh nghiệp của công ty là bao nhiêu?",
+      "Tổng cộng Quỹ khen thưởng, phúc lợi cuối kỳ là bao nhiêu VND?",
+      "So sánh Thuế thu nhập doanh nghiệp còn phải nộp năm nay với năm trước.",
+      "Các khoản điều chỉnh tăng lợi nhuận kế toán để tính thuế năm nay là bao nhiêu?",
+      "Giải thích sự giảm mạnh của khoản 'Cổ tức, lợi nhuận phải trả' từ đầu năm đến cuối kỳ.",
+      "Đánh giá tác động của việc 'Điều chuyển quỹ cho công ty' từ Quỹ khen thưởng, phúc lợi.",
+      "Tính toán tổng số thuế và các khoản phải nộp Nhà nước đã nộp trong kỳ."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (V. Thông tin bổ sung Bảng CĐKT - Người mua trả tiền trước, Thuế và các khoản phải nộp Nhà nước, Quỹ khen thưởng, phúc lợi)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\n11. Người mua trả tiền trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước của các bên có liên quan | - | - |\n| Trả trước của các khách hàng khác | 465.048.895 | 202.283.270 |\n| Các khách hàng khác | 465.048.895 | 202.283.270 |\n| **Cộng** | **465.048.895** | **202.283.270** |\n12. Thuế và các khoản phải nộp Nhà nước\n| Chỉ tiêu | Số đầu năm | Số phát sinh trong kỳ - Phải nộp | Số phát sinh trong kỳ - Phải thu | Số đã nộp | Số cuối kỳ - Phải nộp | Số cuối kỳ - Phải thu | Thuế được hoàn |\n|---|---|---|---|---|---|---|---|\n| Thuế GTGT đầu ra phải nộp | - | 193.291.108 | 11.577.601.646 | 8.557.869.818 | 3.213.022.936 | - | - |\n| Thuế GTGT hàng nhập khẩu | - | 1.717.780.768 | - | 1.717.780.768 | - | - | - |\n| Thuế xuất, nhập khẩu | - | 22.154.736 | - | 22.154.736 | - | - | - |\n| Thuế thu nhập doanh nghiệp | 25.908.852.409 | 32.329.581.214 | - | 28.226.195.236 | 30.012.238.387 | - | - |\n| Thuế thu nhập cá nhân | 1.513.782.517 | 46.681.038.054 | - | 47.822.486.162 | 372.334.409 | - | - |\n| Các loại thuế khác | 1.198.881.520 | 33.326.682.984 | - | 25.246.488.161 | 9.279.076.343 | - | - |\n| Thuế nhà đất, tiền thuê đất | - | 2.989.955.481 | - | 3.331.647.381 | - | 341.691.900 | - |\n| **Cộng** | **28.814.807.554** | **128.644.794.883** | **11.577.601.646** | **114.924.622.262** | **42.534.980.175** | **341.691.900** | **-** |\nThuế giá trị gia tăng\nCông ty nộp thuế giá trị gia tăng theo phương pháp khấu trừ với thuế suất 8%, 5%, 10%.\nThuế xuất, nhập khẩu\nCông ty kê khai và nộp theo thông báo của Hải quan.\nThuế thu nhập doanh nghiệp\nCông ty phải nộp thuế thu nhập doanh nghiệp cho các khoản thu nhập tính thuế với thuế suất 20%.\nThuế thu nhập doanh nghiệp phải nộp trong năm được dự tính như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Tổng lợi nhuận kế toán trước thuế | 743.334.878.897 | 1.020.908.135.483 |\n| Các khoản điều chỉnh tăng, giảm lợi nhuận kế toán để | 8.639.093.149 | 5.141.916.973 |\n| Các khoản điều chỉnh tăng | 8.639.093.149 | 5.141.916.973 |\n| Các khoản điều chỉnh giảm | - | - |\n| Thu nhập chịu thuế | 751.973.972.046 | 1.026.050.052.456 |\n| Thu nhập được miễn thuế | 601.912.780.112 | 868.720.126.000 |\n| Lỗ các năm trước được chuyển | - | - |\n| Thu nhập tính thuế | 150.061.191.934 | 157.329.926.456 |\n| Thuế suất thuế thu nhập doanh nghiệp | 20% | 20% |\n| Thuế thu nhập doanh nghiệp còn phải nộp | 32.329.581.214 | 31.465.985.291 |\nTiền thuê đất\nCông ty phải nộp tiền thuê đất đối với diện tích 54.312m2 và 1.739,8m2 đất đang sử dụng với mức thuê lần lượt là 4.376.551.228 VND/năm và 70.416.665 VND/năm theo quy định tại thông báo của cơ quan thuế.\nCác loại thuế khác\nCông ty kê khai và nộp theo quy định.\n13. Phải trả ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên có liên quan | - | - |\n| Phải trả các đơn vị và cá nhân khác | 3.189.927.158 | 1.142.546.779.534 |\n| Bảo hiểm xã hội, BHYT, BHTN | - | - |\n| Kinh phí công đoàn | 255.087.478 | 303.344.718 |\n| Tiền nhận đặt cọc xe | 2.839.385.791 | 2.832.885.791 |\n| Cổ tức, lợi nhuận phải trả | - | 1.139.335.239.000 |\n| Phải trả, phải nộp khác | 95.453.889 | 75.310.025 |\n| **Cộng** | **3.189.927.158** | **1.142.546.779.534** |\n14. Quỹ khen thưởng, phúc lợi\n| Chỉ tiêu | Quỹ khen thưởng, phúc lợi | Tổng cộng |\n|---|---|---|\n| Số đầu năm | 289.501.486.795 | 289.501.486.795 |\n| Trích quỹ từ lợi nhuận | 185.349.203.277 | 185.349.203.277 |\n| Chi quỹ trong kỳ | 11.256.492.000 | 11.256.492.000 |\n| Điều chuyển quỹ cho công ty | 80.000.000.000 | 80.000.000.000 |\n| **Số cuối kỳ** | **383.594.198.072** | **383.594.198.072** |",
+    "output": [
+      "Số tiền người mua trả tiền trước ngắn hạn cuối kỳ là 465.048.895 VND.",
+      "Thuế suất thuế thu nhập doanh nghiệp của công ty là 20%.",
+      "Tổng cộng Quỹ khen thưởng, phúc lợi cuối kỳ là 383.594.198.072 VND.",
+      "Thuế thu nhập doanh nghiệp còn phải nộp năm nay là 32.329.581.214 VND, tăng so với 31.465.985.291 VND của năm trước.",
+      "Các khoản điều chỉnh tăng lợi nhuận kế toán để tính thuế năm nay là 8.639.093.149 VND.",
+      "Khoản 'Cổ tức, lợi nhuận phải trả' đã giảm mạnh từ 1.139.335.239.000 VND vào đầu năm xuống còn 0 VND vào cuối kỳ. Sự giảm này cho thấy công ty đã thực hiện chi trả toàn bộ số cổ tức, lợi nhuận phải trả cho các chủ sở hữu trong kỳ. Đây là một hoạt động tài chính quan trọng, làm giảm tiền mặt của công ty và hoàn thành nghĩa vụ phân phối lợi nhuận cho cổ đông.",
+      "Việc điều chuyển 80.000.000.000 VND từ Quỹ khen thưởng, phúc lợi 'cho công ty' có tác động làm giảm số dư của quỹ này. Mặc dù không làm thay đổi tổng vốn chủ sở hữu của công ty (vì quỹ này là một phần của vốn chủ sở hữu), nhưng nó cho thấy sự tái phân bổ nguồn lực nội bộ. Khoản tiền này có thể được sử dụng cho các mục đích hoạt động, đầu tư, hoặc tăng cường vốn lưu động của công ty. Tác động cụ thể sẽ phụ thuộc vào việc sử dụng khoản tiền điều chuyển này, nhưng nhìn chung, nó phản ánh một quyết định quản lý tài chính để tối ưu hóa việc sử dụng vốn.",
+      "Tổng số thuế và các khoản phải nộp Nhà nước đã nộp trong kỳ là 114.924.622.262 VND."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn chủ sở hữu cuối năm nay là bao nhiêu VND?",
+      "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là bao nhiêu?",
+      "Mệnh giá cổ phiếu đang lưu hành là bao nhiêu VND?",
+      "Số dư quỹ đầu tư phát triển đầu năm nay là bao nhiêu?",
+      "So sánh Lợi nhuận sau thuế chưa phân phối cuối năm nay và số dư cuối năm trước.",
+      "Tính tỷ lệ tăng trưởng của Quỹ đầu tư phát triển từ đầu năm đến cuối năm nay.",
+      "Phân tích tác động của việc trích lập các quỹ từ lợi nhuận đến vốn chủ sở hữu.",
+      "Đánh giá ảnh hưởng của việc không có phát hành thêm cổ phiếu hoặc chia cổ tức bằng cổ phiếu trong năm nay."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (V. Thông tin bổ sung Bảng CĐKT - Vốn chủ sở hữu, Cổ phiếu)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\n15. Vốn chủ sở hữu\nBảng đối chiếu biến động của vốn chủ sở hữu\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Thặng dư vốn cổ phần | Cổ phiếu quỹ | Quỹ đầu tư phát triển | Lợi nhuận sau thuế chưa phân phối | Cộng |\n|---|---|---|---|---|---|---|\n| Số đầu năm trước | 1.710.805.560.000 | 1.786.667.372.400 | 8.730.000 | 597.813.550.169 | 229.964.281.056 | 4.325.242.033.625 |\n| Chia cổ tức bằng cổ phiếu | 2.001.615.170.000 | - | - | - | - | 2.001.615.170.000 |\n| Phát hành Esop | 85.372.130.000 | - | - | - | - | 85.372.130.000 |\n| Lợi nhuận trong năm trước | - | - | - | - | 2.093.952.489.195 | 2.093.952.489.195 |\n| Trích lập các quỹ trong năm trước | - | - | - | 272.222.282.033 | 575.307.223.848 | 303.084.941.815 |\n| Chi quỹ đầu tư phát triển | - | - | - | 4.258.703.213 | - | 4.258.703.213 |\n| Chia cổ tức bằng tiền | - | - | - | - | 1.519.113.652.000 | 1.519.113.652.000 |\n| Số dư cuối năm trước | 3.797.792.860.000 | 1.786.667.372.400 | 8.730.000 | 865.777.128.989 | 229.495.894.403 | 6.679.724.525.792 |\n| **Số dư đầu năm nay** | **3.797.792.860.000** | **1.786.667.372.400** | **8.730.000** | **865.777.128.989** | **229.495.894.403** | **6.679.724.525.792** |\n| Trả cổ tức bằng cổ phiếu | - | - | - | - | - | - |\n| Phát hành Esop | - | - | - | - | - | - |\n| Trích lập các quỹ | - | - | - | 437.358.864.119 | 185.349.203.277 | 622.708.067.396 |\n| Chi quỹ trong năm | - | - | - | 1.050.234.775 | - | 1.050.234.775 |\n| Lợi nhuận trong năm nay | - | - | - | - | 711.005.297.683 | 711.005.297.683 |\n| Chia cổ tức năm nay | - | - | - | - | - | - |\n| Giảm khác | - | - | - | - | 111 | 111 |\n| **Số dư cuối năm nay** | **3.797.792.860.000** | **1.786.667.372.400** | **8.730.000** | **1.302.085.758.333** | **317.793.124.579** | **7.204.330.385.312** |\n18. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Số lượng cổ phiếu đăng ký phát hành | 379.779.286 | 379.779.286 |\n| Số lượng cổ phiếu đã phát hành | 379.779.286 | 379.779.286 |\n| Cổ phiếu phổ thông | 379.779.286 | 379.779.286 |\n| Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu được mua lại | 873 | 873 |\n| Cổ phiếu phổ thông | 873 | 873 |\n| Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu đang lưu hành | 379.778.413 | 379.778.413 |\n| Cổ phiếu phổ thông | 379.778.413 | 379.778.413 |\n| Cổ phiếu ưu đãi | - | - |\n| Mệnh giá cổ phiếu đang lưu hành | 10.000 VND | - |\n\n26\nBản thuyết minh này là một bộ phận hợp thành và phải được đọc cùng với Báo cáo tài chính",
+    "output": [
+      "Tổng vốn chủ sở hữu cuối năm nay là 7.204.330.385.312 VND.",
+      "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là 379.778.413 cổ phiếu.",
+      "Mệnh giá cổ phiếu đang lưu hành là 10.000 VND.",
+      "Số dư quỹ đầu tư phát triển đầu năm nay là 865.777.128.989 VND.",
+      "Lợi nhuận sau thuế chưa phân phối cuối năm nay là 317.793.124.579 VND, tăng so với 229.495.894.403 VND của số dư cuối năm trước.",
+      "Số dư Quỹ đầu tư phát triển cuối năm nay là 1.302.085.758.333 VND.\\nSố dư Quỹ đầu tư phát triển đầu năm nay là 865.777.128.989 VND.\\nTỷ lệ tăng trưởng của Quỹ đầu tư phát triển từ đầu năm đến cuối năm nay là khoảng 50,39% ((1.302.085.758.333 - 865.777.128.989) / 865.777.128.989 * 100%).",
+      "Việc trích lập các quỹ từ lợi nhuận, bao gồm Quỹ đầu tư phát triển và các quỹ khác từ lợi nhuận sau thuế chưa phân phối, không làm thay đổi tổng vốn chủ sở hữu của công ty. Thay vào đó, nó là một hoạt động tái cơ cấu nội bộ trong vốn chủ sở hữu, chuyển một phần lợi nhuận giữ lại từ khoản mục 'Lợi nhuận sau thuế chưa phân phối' sang các quỹ có mục đích sử dụng cụ thể. Tác động của việc này là thể hiện chính sách của công ty trong việc giữ lại lợi nhuận để phục vụ mục tiêu tái đầu tư và phát triển dài hạn, thay vì phân phối hoàn toàn cho cổ đông, qua đó củng cố cơ sở vốn cho các hoạt động tương lai.",
+      "Việc không có phát hành thêm cổ phiếu hoặc chia cổ tức bằng cổ phiếu trong năm nay có các ảnh hưởng sau:\\n-   **Đối với Vốn chủ sở hữu và Cổ đông:** Vốn đầu tư của chủ sở hữu và thặng dư vốn cổ phần không thay đổi, tránh được sự pha loãng quyền sở hữu của các cổ đông hiện hữu. Các cổ đông không nhận được thêm cổ phiếu mới.\\n-   **Đối với Huy động vốn:** Công ty không huy động thêm vốn từ thị trường vốn chủ sở hữu thông qua việc phát hành mới.\\n-   **Đối với Chính sách phân phối lợi nhuận:** Điều này ngụ ý rằng công ty đang ưu tiên giữ lại lợi nhuận để trích lập các quỹ phục vụ cho mục đích đầu tư và phát triển nội bộ, hoặc có thể chi trả cổ tức bằng tiền mặt (nếu có)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí bán hàng lũy kế năm nay là bao nhiêu VND?",
+      "Lợi nhuận tính lãi cơ bản trên cổ phiếu lũy kế năm nay là bao nhiêu VND?",
+      "Lãi cơ bản trên cổ phiếu lũy kế năm nay là bao nhiêu VND?",
+      "So sánh chi phí quản lý doanh nghiệp lũy kế năm nay và năm trước.",
+      "Thu nhập khác lũy kế năm nay tăng hay giảm so với năm trước?",
+      "Phân tích các yếu tố chính đóng góp vào chi phí bán hàng và sự thay đổi của chúng.",
+      "Giải thích lý do công ty không trình bày chỉ tiêu 'Lãi cơ bản trên cổ phiếu' trên báo cáo tài chính riêng.",
+      "Đánh giá mức độ hiệu quả trong việc kiểm soát chi phí quản lý doanh nghiệp của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (VI. Thông tin bổ sung Báo cáo KQKD - Chi phí tài chính, bán hàng, QLDN, thu nhập khác, chi phí khác, Lãi cơ bản trên cổ phiếu)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\n4. Chi phí tài chính\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Chi phí lãi vay | - | - |\n| Lỗ chênh lệch tỷ giá đã thực hiện | 134.349.854 | 249.489.226 |\n| Lỗ chênh lệch tỷ giá chưa thực hiện | 30.217.336 | 522.200 |\n| **Cộng** | **164.567.190** | **250.011.426** |\n5. Chi phí bán hàng\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Chi phí nhân viên | 6.690.416.933 | 6.398.139.669 |\n| Chi phí vật liệu, bao bì | 70.626.167 | 39.319.533 |\n| Chi phí dụng cụ, đồ dùng | 57.397.271 | 144.334.441 |\n| Chi phí khấu hao TSCĐ | 312.238.476 | 329.742.416 |\n| Chi phí dịch vụ mua ngoài | 35.851.844.542 | 40.077.185.983 |\n| Chi phí bằng tiền khác | 360.905.003 | 181.142.648 |\n| **Cộng** | **43.343.428.392** | **47.169.864.690** |\n6. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Chi phí nhân viên quản lý | 11.326.109.800 | 10.852.087.403 |\n| Chi phí vật liệu quản lý | 366.865.153 | 270.238.710 |\n| Chi phí khấu hao TSCĐ | 3.395.659.824 | 3.358.304.901 |\n| Thuế, phí và lệ phí | 3.382.927.352 | 3.338.110.493 |\n| Chi phí dịch vụ mua ngoài | 1.535.541.707 | 1.354.315.851 |\n| Chi phí bằng tiền khác | 1.640.304.592 | 1.174.853.550 |\n| **Cộng** | **21.647.408.428** | **20.347.910.908** |\n7. Thu nhập khác\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Thu nhập khác | 1.788.153.319 | 577.754.126 |\n| **Cộng** | **1.788.153.319** | **577.754.126** |\n8. Chi phí khác\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Chi phí khác | 420.000.000 | - |\n| **Cộng** | **420.000.000** | **-** |\n9. Lãi cơ bản trên cổ phiếu\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này |\n|---|---|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp | 711.005.297.683 |\n| Các khoản điều chỉnh tăng, giảm lợi nhuận kế toán để xác định lợi nhuận phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 42.660.317.861 |\n| Trích quỹ khen thưởng, phúc lợi | 42.660.317.861 |\n| Lợi nhuận tính lãi cơ bản trên cổ phiếu | 668.344.979.822 |\n| Số lượng bình quân gia quyền của cổ phiếu phổ thông đang lưu hành trong kỳ | 379.778.413 |\n| **Lãi cơ bản trên cổ phiếu** | **1.760** |\nCông ty không tính chỉ tiêu này trên Báo cáo tài chính riêng vì theo quy định tại chuẩn mực kế toán số 30 về Lãi trên cổ phiếu yêu cầu trường hợp Công ty phải lập cả Báo cáo tài chính riêng và Báo cáo tài chính hợp nhất thì chỉ phải trình bày thông tin về lãi trên cổ phiếu theo quy định của chuẩn mực này trên Báo cáo tài chính hợp nhất.",
+    "output": [
+      "Tổng chi phí bán hàng lũy kế năm nay là 43.343.428.392 VND.",
+      "Lợi nhuận tính lãi cơ bản trên cổ phiếu lũy kế năm nay là 668.344.979.822 VND.",
+      "Lãi cơ bản trên cổ phiếu lũy kế năm nay là 1.760 VND.",
+      "Chi phí quản lý doanh nghiệp lũy kế năm nay là 21.647.408.428 VND, tăng so với 20.347.910.908 VND của năm trước.",
+      "Thu nhập khác lũy kế năm nay là 1.788.153.319 VND, tăng so với 577.754.126 VND của năm trước.",
+      "Tổng chi phí bán hàng lũy kế năm nay là 43.343.428.392 VND, giảm so với 47.169.864.690 VND của năm trước. Yếu tố chính đóng góp vào chi phí bán hàng là 'Chi phí dịch vụ mua ngoài', chiếm tỷ trọng lớn nhất và đã giảm đáng kể từ 40.077.185.983 VND năm trước xuống 35.851.844.542 VND năm nay. Sự giảm này là nguyên nhân chính cho sự sụt giảm tổng chi phí bán hàng. Trong khi đó, 'Chi phí nhân viên' có tăng nhẹ. Việc giảm chi phí dịch vụ mua ngoài cho thấy công ty đã có những biện pháp kiểm soát chi phí hiệu quả hơn trong hoạt động bán hàng, có thể thông qua tối ưu hóa hợp đồng hoặc điều chỉnh chiến lược bán hàng.",
+      "Công ty không trình bày chỉ tiêu 'Lãi cơ bản trên cổ phiếu' trên báo cáo tài chính riêng vì theo quy định tại Chuẩn mực kế toán số 30 về Lãi trên cổ phiếu, trong trường hợp công ty phải lập cả Báo cáo tài chính riêng và Báo cáo tài chính hợp nhất, chỉ tiêu này chỉ cần được trình bày trên Báo cáo tài chính hợp nhất.",
+      "Chi phí quản lý doanh nghiệp lũy kế năm nay tăng nhẹ từ 20.347.910.908 VND lên 21.647.408.428 VND, tương ứng với mức tăng khoảng 6.48%. Mức tăng này không quá lớn. Các yếu tố như chi phí nhân viên quản lý, chi phí vật liệu quản lý, thuế, phí và lệ phí, chi phí dịch vụ mua ngoài, và chi phí bằng tiền khác đều có sự tăng nhẹ. Dựa trên dữ liệu, có thể đánh giá rằng công ty duy trì được sự kiểm soát tương đối ổn định đối với chi phí quản lý, mặc dù có sự tăng trưởng nhẹ. Tuy nhiên, để đánh giá hiệu quả toàn diện, cần xem xét thêm tỷ lệ tăng trưởng này so với quy mô hoạt động hoặc doanh thu của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu thuần từ hoạt động kinh doanh theo khu vực trong nước lũy kế năm nay là bao nhiêu VND?",
+      "Doanh thu từ lĩnh vực sản xuất lũy kế năm nay là bao nhiêu VND?",
+      "Giá trị hàng hóa mua vào từ Công ty TNHH Văn Minh lũy kế năm nay là bao nhiêu VND?",
+      "Công ty có phát sinh giao dịch với bên liên quan nào khác ngoài các công ty con và liên doanh, liên kết không?",
+      "So sánh doanh thu từ lĩnh vực thương mại lũy kế năm nay với năm trước.",
+      "Đánh giá mức độ tập trung doanh thu theo khu vực địa lý của công ty.",
+      "Phân tích mối quan hệ và các giao dịch với Công ty TNHH Văn Minh có thể ảnh hưởng đến công ty mẹ như thế nào.",
+      "Công ty có bất kỳ sự kiện trọng yếu nào phát sinh sau ngày kết thúc kỳ kế toán không?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn Hóa chất Đức Giang\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2024\nThời gian: Quý II 2024, kết thúc ngày 30/06/2024, lập ngày 22/07/2024, cho năm tài chính kết thúc 31/12/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bản thuyết minh Báo cáo tài chính (VII. Những thông tin khác - Giao dịch bên liên quan, Báo cáo bộ phận, Sự kiện phát sinh sau ngày kết thúc kỳ kế toán)\nLoại nội dung: Text và Bảng\nCÔNG TY CỔ PHẦN TẬP ĐOÀN HÓA CHẤT ĐỨC GIANG\nVII. NHỮNG THÔNG TIN KHÁC\n1. Giao dịch và số dư với các bên liên quan\nCác bên liên quan với Công ty bao gồm các thành viên quản lý chủ chốt, các cá nhân có liên quan với các thành viên quản lý chủ chốt và các bên liên quan khác.\n1a. Giao dịch và số dư với các bên liên quan khác\nCác bên liên quan khác với Công ty gồm:\n| Bên liên quan khác | Mối quan hệ |\n|---|---|\n| Công ty TNHH MTV Hóa chất Đức Giang Lào Cai | Công ty con |\n| Công ty TNHH MTV Hóa Chất Đức Giang Đình Vũ | Công ty con |\n| Công ty Cổ phần Phốt pho Apatit Việt Nam | Bên liên quan của Chủ tịch HĐQT |\n| Công ty TNHH Văn Minh | Giám đốc Công ty TNHH Văn Minh là vợ của Chủ tịch HĐQT Công ty Cổ phần Tập đoàn Hóa chất Đức Giang |\nGiao dịch với các bên liên quan khác\nGiao dịch phát sinh với các công ty con và công ty liên doanh, liên kết đã được trình bày ở thuyết minh số V.2c. Công ty không phát sinh giao dịch với các công ty con và công ty liên doanh, liên kết. Các giao dịch phát sinh giữa Công ty với các bên liên quan khác không phải là Công ty con và Công ty liên kết như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Công ty TNHH Văn Minh | | |\n| Trả tiền hàng | 29.824.322.181 | 25.302.589.490 |\n| Giá trị hàng hóa mua vào | 47.975.376.492 | 46.285.951.117 |\n| Thuế GTGT hàng hóa mua vào | 4.265.150.052 | 4.584.746.586 |\n2. Báo cáo bộ phận\nThông tin bộ phận được trình bày theo lĩnh vực kinh doanh và khu vực địa lý. Báo cáo bộ phận chính yếu là theo lĩnh vực kinh doanh dựa trên cơ cấu tổ chức và quản lý nội bộ và hệ thống Báo cáo tài chính nội bộ của Công ty do các hoạt động kinh doanh của Công ty được tổ chức và quản lý theo tính chất của sản phẩm và dịch vụ, do rủi ro và tỷ suất sinh lời của Công ty bị tác động chủ yếu bởi những khác biệt về sản phẩm và dịch vụ Công ty cung cấp.\n2a. Thông tin về khu vực địa lý\nHoạt động của Công ty được phân bổ chủ yếu ở khu vực trong nước và khu vực ngoài nước.\nThông tin về kết quả kinh doanh, tài sản cố định và các tài sản dài hạn khác và giá trị các khoản chi phí lớn không bằng tiền của bộ phận theo khu vực địa lý của Công ty như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay - Khu vực trong nước | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay - Khu vực ngoài nước | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay - Các khoản loại trừ | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay - Cộng |\n|---|---|---|---|---|\n| Doanh thu thuần về bán hàng và cung cấp dịch vụ ra bên ngoài | 365.656.327.841 | - | - | 365.656.327.841 |\n| Tổng doanh thu thuần về bán hàng và cung cấp dịch vụ | 365.656.327.841 | - | - | 365.656.327.841 |\n| Kết quả kinh doanh theo bộ phận | 152.776.250.711 | - | - | 152.776.250.711 |\n| Các chi phí không phân bổ theo bộ phận | - | - | - | 64.990.836.820 |\n| Lợi nhuận từ hoạt động kinh doanh | - | - | - | 87.785.413.891 |\n| Doanh thu hoạt động tài chính | - | - | - | 654.345.878.877 |\n| Chi phí tài chính | - | - | - | 164.567.190 |\n| Thu nhập khác | - | - | - | 1.788.153.319 |\n| Chi phí khác | - | - | - | 420.000.000 |\n| Chi phí thuế thu nhập doanh nghiệp hiện hành | - | - | - | 32.329.581.214 |\n| Chi phí thuế thu nhập doanh nghiệp hoãn lại | - | - | - | - |\n| Lợi nhuận sau thuế thu nhập | - | - | - | 711.005.297.683 |\n| Tổng chi phí đã phát sinh để mua tài sản cố định và các tài sản dài hạn khác | 5.270.424.217 | - | - | 5.270.424.217 |\n| Tổng chi phí khấu hao và phân bổ chi phí trả trước dài hạn | 20.793.086.058 | - | - | 20.793.086.058 |\n2a. Thông tin về lĩnh vực kinh doanh\nCông ty có các lĩnh vực kinh doanh chính sau:\n- Lĩnh vực sản xuất là hoạt động sản xuất Tẩy rửa, HCTK, vỏ can...\n- Lĩnh vực thương mại bán H2SO4, ...\nChi tiết doanh thu thuần về bán hàng và cung cấp dịch vụ ra bên ngoài theo lĩnh vực kinh doanh của công ty như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này - Năm nay | Lũy kế từ đầu năm đến cuối kỳ này - Năm trước |\n|---|---|---|\n| Lĩnh vực sản xuất | 323.433.555.521 | 347.247.042.736 |\n| Lĩnh vực thương mại | 42.222.772.320 | 43.913.581.252 |\n| **Cộng** | **365.656.327.841** | **391.160.623.988** |\n3. Sự kiện phát sinh sau ngày kết thúc kỳ kế toán\nKhông có sự kiện trọng yếu nào khác phát sinh sau ngày kết thúc năm tài chính cần phải điều chỉnh số liệu hoặc công bố trên báo cáo tài chính.\nLập ngày 22 tháng 7 năm 2024\nNgười lập biểu Kế toán trưởng Tổng Giám đốc\nHoàng Thúy Hà Đào Thị Mai Đào Hữu Duy Anh",
+    "output": [
+      "Tổng doanh thu thuần từ hoạt động kinh doanh theo khu vực trong nước lũy kế năm nay là 365.656.327.841 VND.",
+      "Doanh thu từ lĩnh vực sản xuất lũy kế năm nay là 323.433.555.521 VND.",
+      "Giá trị hàng hóa mua vào từ Công ty TNHH Văn Minh lũy kế năm nay là 47.975.376.492 VND.",
+      "Có, công ty có phát sinh giao dịch với Công ty TNHH Văn Minh, mà Giám đốc Công ty TNHH Văn Minh là vợ của Chủ tịch HĐQT Công ty Cổ phần Tập đoàn Hóa chất Đức Giang.",
+      "Doanh thu từ lĩnh vực thương mại lũy kế năm nay là 42.222.772.320 VND, giảm so với 43.913.581.252 VND của năm trước.",
+      "Dựa trên báo cáo bộ phận theo khu vực địa lý, toàn bộ doanh thu thuần về bán hàng và cung cấp dịch vụ ra bên ngoài lũy kế năm nay của công ty (365.656.327.841 VND) đều đến từ khu vực trong nước, trong khi khu vực ngoài nước ghi nhận doanh thu là 0 VND. Điều này cho thấy công ty có mức độ tập trung doanh thu hoàn toàn vào thị trường nội địa. Đây là một rủi ro tiềm tàng nếu thị trường trong nước suy giảm hoặc cạnh tranh gia tăng, đồng thời cũng có thể là cơ hội nếu công ty có kế hoạch mở rộng hoạt động ra thị trường quốc tế.",
+      "Mối quan hệ giữa Công ty Cổ phần Tập đoàn Hóa chất Đức Giang và Công ty TNHH Văn Minh là mối quan hệ bên liên quan do Giám đốc Công ty TNHH Văn Minh là vợ của Chủ tịch HĐQT Công ty mẹ. Công ty mẹ có giao dịch mua hàng hóa từ Công ty TNHH Văn Minh với giá trị đáng kể (47.975.376.492 VND lũy kế năm nay). Mối quan hệ này có thể ảnh hưởng đến công ty mẹ theo các cách sau:\\n-   **Rủi ro xung đột lợi ích:** Có thể phát sinh các giao dịch không hoàn toàn dựa trên cơ sở thị trường, tiềm ẩn rủi ro về giá cả hoặc điều khoản không tối ưu cho công ty mẹ.\\n-   **Tính minh bạch:** Mặc dù được công bố, các giao dịch này vẫn đòi hỏi sự giám sát chặt chẽ để đảm bảo tính công bằng và minh bạch.\\n-   **Ảnh hưởng đến hiệu quả:** Nếu Công ty TNHH Văn Minh là nhà cung cấp quan trọng, chất lượng và chi phí từ họ sẽ ảnh hưởng trực tiếp đến chuỗi cung ứng và hiệu quả hoạt động của công ty mẹ.\\nNhìn chung, đây là một mối quan hệ cần được quản lý thận trọng để tránh các tác động tiêu cực tiềm ẩn.",
+      "Không có sự kiện trọng yếu nào khác phát sinh sau ngày kết thúc năm tài chính cần phải điều chỉnh số liệu hoặc công bố trên báo cáo tài chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Easy_QA"
+    ]
+  }
+]

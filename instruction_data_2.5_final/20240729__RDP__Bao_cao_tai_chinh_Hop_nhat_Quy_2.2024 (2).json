@@ -1,0 +1,785 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty công bố thông tin là gì?",
+      "Mã chứng khoán của Công ty Cổ phần Rạng Đông Holding là gì?",
+      "Báo cáo này thuộc loại báo cáo nào và cho kỳ hạn nào?",
+      "Thông tin được công bố vào ngày nào?",
+      "Ai là người thực hiện công bố thông tin cho báo cáo này?",
+      "Mục đích của việc công bố thông tin này là gì theo các quy định hiện hành?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Công bố thông tin và Giới thiệu chung\nLoại nội dung: Text\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nTp. Hồ Chí Minh, ngày 29 tháng 07 năm 2024\n\nCÔNG BỐ THÔNG TIN\n\nKính gửi: Ủy ban Chứng khoán Nhà nước\nSở Giao dịch Chứng khoán Thành phố Hồ Chí Minh\n\nThực hiện theo quy định của Luật Chứng khoán hiện hành, Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán và Quy chế Công bố thông tin tại Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh theo Quyết định số 340/QĐ-SGDHCM ngày 19/08/2016, nay Công ty Cổ phần Rạng Đông Holding thông báo như sau:\n\n1. Tên tổ chức: CÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n2. Mã chứng khoán: RDP\n3. Trụ sở chính: 190 Lạc Long Quân, Phường 3, Quận 11, Tp. Hồ Chí Minh\n4. Điện thoại: 84-028 39692272/39696642 - Fax: 84-028 39692843\n5. Loại công bố thông tin: Định kỳ\n6. Người thực hiện công bố thông tin: Ông Bùi Đắc Thiện\n7. Nội dung công bố thông tin: Báo cáo tài chính Hợp nhất Quý II/2024\n8. Thông tin này đã được công bố trên trang thông tin điện tử của Công ty cổ phần Rạng Đông Holding vào ngày 29/07/2024 tại đường dẫn: http://rangdongholding.com.vn/quan-he-co-dong\n\nChúng tôi xin cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố.\n\nĐại diện tổ chức\nNgười được ủy quyền công bố thông tin: Ông Bùi Đắc Thiện\n\nNơi nhận:\n- Như nơi gửi\n- Lưu.\n\nTài liệu đính kèm:\nBáo cáo tài chính Hợp nhất Quý II/2024",
+    "output": [
+      "Tên đầy đủ của công ty công bố thông tin là Công ty Cổ phần Rạng Đông Holding.",
+      "Mã chứng khoán của Công ty Cổ phần Rạng Đông Holding là RDP.",
+      "Báo cáo này thuộc loại Báo cáo tài chính Hợp nhất Quý II/2024, cho kỳ kế toán từ 01/01/2024 đến 30/06/2024.",
+      "Thông tin được công bố vào ngày 29/07/2024.",
+      "Người thực hiện công bố thông tin cho báo cáo này là Ông Bùi Đắc Thiện.",
+      "Mục đích của việc công bố thông tin này là thực hiện theo quy định của Luật Chứng khoán hiện hành, Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán và Quy chế Công bố thông tin tại Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh theo Quyết định số 340/QĐ-SGDHCM ngày 19/08/2016."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty Cổ phần Rạng Đông Holding trước đây có tên là gì?",
+      "Năm tài chính của công ty kết thúc vào ngày nào?",
+      "Nêu 3 hoạt động kinh doanh chính của Công ty Cổ phần Rạng Đông Holding.",
+      "Trụ sở chính của công ty đặt tại đâu?",
+      "Có sự kiện trọng yếu nào xảy ra sau ngày khóa sổ kế toán được đề cập trong báo cáo không?",
+      "Đánh giá mức độ đa dạng hóa ngành nghề kinh doanh của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo của Ban Tổng Giám đốc (Khái quát & Hoạt động chính)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBÁO CÁO CỦA BAN TỔNG GIÁM ĐỐC\n\nBan Tổng Giám Đốc Công ty Cổ phần Rạng Đông Holding (sau đây gọi tắt là Công ty) trình bày Báo cáo của mình và Báo cáo tài chính của Công ty cho năm tài chính kết thúc ngày 30/06/2024.\n\nKhái quát\nCông ty cổ phần Rạng Đông Holding trước đây là Công ty cổ phần Nhựa Rạng Đông đã được đổi lại tên thành Công ty cổ phần Rạng Đông Holding theo giấy chứng nhận đăng ký doanh nghiệp thay đổi lần thứ 14 ngày 03/06/2019, là công ty cổ phần được chuyển đổi từ Doanh nghiệp Nhà nước là Công ty Nhựa Rạng Đông theo Quyết định số 157/2004/QĐ-BCN ngày 6 tháng 12 năm 2004 của Bộ Trưởng Bộ Công nghiệp. Công ty hoạt động theo Giấy Chứng nhận đăng ký kinh doanh số 0300384357 ngày 28 tháng 03 năm 2005, và các giấy đăng ký kinh doanh sửa đổi bổ sung kèm theo.\n\nHoạt động chính của Công ty là Sản xuất, mua bán hàng nhựa gia dụng, kỹ thuật màng nhựa, giả da, tôn, ván nhựa, ống nhựa, bao bì in tráng ghép, vật liệu xây dựng, chai nhựa, áo mưa, cặp, túi xách (không sản xuất vật liệu xây dựng, tái chế phế thải, sản xuất nhựa tổng hợp, thuộc da tại trụ sở). Chế tạo máy móc, thiết bị ngành nhựa (không gia công cơ khí tại trụ sở). Xây dựng dân dụng, công nghiệp. San lấp mặt bằng. Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê. Cho thuê văn phòng. Kinh doanh khách sạn, nhà hàng (không kinh doanh khách sạn, nhà hàng tại trụ sở). Mua bán nguyên vật liệu, hóa chất ngành nhựa (trừ hóa chất có tính độc hại mạnh). Môi giới bất động sản. Kinh doanh nhà. Mua bán hàng gia dụng. Mua bán phế liệu nhựa (không mua bán tại trụ sở). Vận tải hàng hóa bằng đường bộ (trừ hóa lỏng khí để vận chuyển).\n\nTrụ sở chính của Công ty tại 190 Lạc Long Quân, Phường 3, Quận 11, Thành phố Hồ Chí Minh.\nCác sự kiện sau ngày khóa sổ kế toán lập báo cáo tài chính\nKhông có sự kiện trọng yếu nào xảy ra sau ngày khóa sổ kế toán lập Báo cáo tài chính đòi hỏi được điều chỉnh hay công bố trên Báo cáo tài chính.",
+    "output": [
+      "Công ty Cổ phần Rạng Đông Holding trước đây có tên là Công ty cổ phần Nhựa Rạng Đông.",
+      "Năm tài chính của công ty (cho báo cáo này) kết thúc vào ngày 30/06/2024.",
+      "Ba hoạt động kinh doanh chính của Công ty Cổ phần Rạng Đông Holding là: Sản xuất, mua bán hàng nhựa gia dụng, kỹ thuật màng nhựa; Kinh doanh bất động sản, quyền sử dụng đất; Xây dựng dân dụng, công nghiệp.",
+      "Trụ sở chính của công ty đặt tại 190 Lạc Long Quân, Phường 3, Quận 11, Thành phố Hồ Chí Minh.",
+      "Không có sự kiện trọng yếu nào xảy ra sau ngày khóa sổ kế toán lập Báo cáo tài chính đòi hỏi được điều chỉnh hay công bố trên Báo cáo tài chính.",
+      "Dựa trên danh sách các hoạt động chính, Công ty Cổ phần Rạng Đông Holding có mức độ đa dạng hóa ngành nghề kinh doanh rất cao, bao gồm sản xuất nhựa, chế tạo máy móc, xây dựng, san lấp mặt bằng, kinh doanh bất động sản, cho thuê văn phòng, kinh doanh khách sạn, nhà hàng, mua bán nguyên vật liệu, môi giới bất động sản, và vận tải hàng hóa. Điều này cho thấy công ty không phụ thuộc vào một ngành nghề duy nhất."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Ai là Chủ tịch Hội đồng quản trị của Công ty Cổ phần Rạng Đông Holding?",
+      "Ai là Tổng Giám đốc của công ty?",
+      "Nêu một trong những cam kết của Ban Tổng Giám đốc khi lập báo cáo tài chính.",
+      "Theo báo cáo, Ban Tổng Giám đốc phải tuân thủ những yêu cầu nào trong quá trình lập Báo cáo tài chính?",
+      "Tại sao việc đảm bảo an toàn tài sản và ngăn chặn gian lận là trách nhiệm của Ban Tổng Giám đốc?",
+      "Việc lập báo cáo tài chính trên cơ sở hoạt động kinh doanh liên tục có ý nghĩa gì đối với nhà đầu tư?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo của Ban Tổng Giám đốc (Thành viên & Trách nhiệm)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBÁO CÁO CỦA BAN TỔNG GIÁM ĐỐC tiếp theo\n\nCác thành viên của Hội đồng quản trị, Ban Tổng Giám đốc trong năm và đến ngày lập báo cáo này như sau:\n\nHội đồng quản trị\nÔng Hồ Đức Lam - Chủ tịch\nÔng Hồ Đức Dũng - Thành viên\nÔng Bùi Đắc Thiện - Thành viên\nÔng Hồ Văn Tuyên - Thành viên\nÔng Nguyễn Trần Vinh - Thành viên\n\nBan Tổng Giám đốc\nÔng Hà Thanh Thiên - Tổng Giám đốc\nÔng Trần Minh Dũng - Phó Tổng Giám Đốc\n\nNgười đại diện theo pháp luật\nNgười đại diện theo pháp luật của Công ty trong năm và vào ngày lập báo cáo này là ông Hà Thanh Thiên - Tổng Giám Đốc\n\nCông bố trách nhiệm của Ban Tổng Giám Đốc đối với báo cáo tài chính hợp nhất\nBan Tổng Giám Đốc Công ty chịu trách nhiệm về việc lập Báo cáo tài chính phản ánh trung thực, hợp lý tình hình hoạt động, kết quả hoạt động kinh doanh và tình hình lưu chuyển tiền tệ của Công ty trong năm. Trong quá trình lập Báo cáo tài chính, Ban Tổng Giám Đốc Công ty cam kết đã tuân thủ các yêu cầu sau:\n- Lựa chọn các chính sách kế toán thích hợp và áp dụng các chính sách này một cách nhất quán.\n- Đưa ra các đánh giá và dự đoán hợp lý và thận trọng.\n- Lập và trình bày các báo cáo tài chính trên cơ sở tuân thủ các chuẩn mực kế toán, chế độ kế toán và các quy định có liên quan hiện hành.\n- Lập các báo cáo tài chính dựa trên cơ sở hoạt động kinh doanh liên tục, trừ trường hợp không thể cho rằng Công ty sẽ tiếp tục hoạt động kinh doanh.\n\nBan Tổng Giám Đốc Công ty đảm bảo rằng các sổ kế toán được lưu giữ để phản ánh tình hình tài chính của Công ty, với mức độ trung thực, hợp lý tại bất cứ thời điểm nào và đảm bảo rằng Báo cáo tài chính tuân thủ các quy định hiện hành của Nhà nước. Đồng thời có trách nhiệm trong việc bảo đảm an toàn tài sản của Công ty và thực hiện các biện pháp thích hợp để ngăn chặn, phát hiện các hành vi gian lận và các vi phạm khác.\n\nBan Tổng Giám Đốc Công ty cam kết rằng Báo cáo tài chính đã phản ánh trung thực và hợp lý tình hình tài chính của Công ty tại thời điểm ngày 30 tháng 06 năm 2024, kết quả hoạt động kinh doanh và tình hình lưu chuyển tiền tệ cho năm tài chính kết thúc cùng ngày, phù hợp với chuẩn mực, chế độ kế toán doanh nghiệp Việt Nam và tuân thủ các quy định hiện hành có liên quan.",
+    "output": [
+      "Ông Hồ Đức Lam là Chủ tịch Hội đồng quản trị của Công ty Cổ phần Rạng Đông Holding.",
+      "Ông Hà Thanh Thiên là Tổng Giám đốc của công ty.",
+      "Một trong những cam kết của Ban Tổng Giám đốc khi lập báo cáo tài chính là lựa chọn các chính sách kế toán thích hợp và áp dụng các chính sách này một cách nhất quán.",
+      "Trong quá trình lập Báo cáo tài chính, Ban Tổng Giám đốc Công ty cam kết đã tuân thủ các yêu cầu sau:\\n- Lựa chọn các chính sách kế toán thích hợp và áp dụng các chính sách này một cách nhất quán.\\n- Đưa ra các đánh giá và dự đoán hợp lý và thận trọng.\\n- Lập và trình bày các báo cáo tài chính trên cơ sở tuân thủ các chuẩn mực kế toán, chế độ kế toán và các quy định có liên quan hiện hành.\\n- Lập các báo cáo tài chính dựa trên cơ sở hoạt động kinh doanh liên tục, trừ trường hợp không thể cho rằng Công ty sẽ tiếp tục hoạt động kinh doanh.",
+      "Việc đảm bảo an toàn tài sản và ngăn chặn gian lận là trách nhiệm của Ban Tổng Giám đốc vì họ có trách nhiệm chung trong việc lập Báo cáo tài chính phản ánh trung thực, hợp lý tình hình hoạt động, kết quả kinh doanh và tình hình lưu chuyển tiền tệ của công ty. Để làm được điều đó, cần phải đảm bảo các sổ kế toán phản ánh đúng tình hình tài chính và thực hiện các biện pháp kiểm soát nội bộ để bảo vệ tài sản và chống lại các hành vi gian lận.",
+      "Việc lập báo cáo tài chính trên cơ sở hoạt động kinh doanh liên tục có ý nghĩa quan trọng đối với nhà đầu tư, ngụ ý rằng công ty được giả định sẽ tiếp tục hoạt động và thực hiện các cam kết trong tương lai gần mà không có ý định hoặc cần phải giải thể, hoặc cắt giảm đáng kể quy mô hoạt động. Đối với nhà đầu tư, điều này mang lại sự tin tưởng vào tính bền vững của doanh nghiệp và khả năng sinh lời lâu dài, đồng thời ảnh hưởng đến cách định giá tài sản (giá trị hoạt động thay vì giá trị thanh lý)."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn vào ngày 30/06/2024 là bao nhiêu?",
+      "Khoản mục 'Tiền và các khoản tương đương tiền' thay đổi như thế nào từ 01/01/2024 đến 30/06/2024?",
+      "So sánh giá trị 'Hàng tồn kho' (trước dự phòng) vào 30/06/2024 và 01/01/2024.",
+      "Tỷ trọng của 'Các khoản phải thu ngắn hạn' trên 'Tổng tài sản ngắn hạn' vào 30/06/2024 là bao nhiêu?",
+      "Đánh giá mức độ biến động của các khoản đầu tư tài chính ngắn hạn trong kỳ.",
+      "Phân tích tác động của việc giảm 'Dự phòng các khoản phải thu khó đòi' đến chất lượng tài sản của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 30/06/2024 | 01/01/2024 |\n|:---|:---|:---|:---|:---|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 1,350,109,317,968 | 1,475,538,088,893 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.01 | 21,157,777,042 | 31,711,503,071 |\n| 1. Tiền | 111 | | 21,157,777,042 | 31,711,503,071 |\n| 2. Các khoản tương đương tiền | 112 | | - | - |\n| II. Các khoản đầu tư tài chính ngắn hạn | 120 | | 40,960,227,301 | 65,313,510,795 |\n| 1. Chứng khoán kinh doanh | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | 40,960,227,301 | 65,313,510,795 |\n| III. Các khoản phải thu ngắn hạn | 130 | | 477,880,498,763 | 507,960,140,829 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | V.03 | 326,446,205,448 | 376,212,202,961 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | | 58,279,972,177 | 49,564,966,545 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch HĐXD | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | 63,147,217,128 | 84,071,000,045 |\n| 6. Các khoản phải thu khác | 136 | V.04a | 90,961,099,396 | 75,634,314,650 |\n| 7. Dự phòng các khoản phải thu khó đòi | 137 | V.05 | 60,953,995,386 | 77,522,343,372 |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho | 140 | V.06 | 781,464,521,813 | 839,261,777,733 |\n| 1. Hàng tồn kho | 141 | | 817,510,977,034 | 875,308,232,954 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | 36,046,455,221 | 36,046,455,221 |\n| V. Tài sản ngắn hạn khác | 150 | | 28,646,293,049 | 31,291,156,465 |\n| 1. Chi phí trả trước ngắn hạn | 151 | V.11a | 5,414,856,076 | 8,002,543,957 |\n| 2. Thuế GTGT được khấu trừ | 152 | | 23,122,018,411 | 22,677,081,046 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | V.14 | 109,418,562 | 611,531,462 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+    "output": [
+      "Tổng tài sản ngắn hạn vào ngày 30/06/2024 là 1.350.109.317.968 VND.",
+      "Khoản mục 'Tiền và các khoản tương đương tiền' giảm từ 31.711.503.071 VND vào 01/01/2024 xuống 21.157.777.042 VND vào 30/06/2024, tức là giảm 10.553.726.029 VND.",
+      "Giá trị 'Hàng tồn kho' (Mã 141) vào 30/06/2024 là 817.510.977.034 VND, và vào 01/01/2024 là 875.308.232.954 VND. Như vậy, giá trị này đã giảm 57.797.255.920 VND trong kỳ.",
+      "Vào 30/06/2024, 'Các khoản phải thu ngắn hạn' là 477.880.498.763 VND và 'Tổng tài sản ngắn hạn' là 1.350.109.317.968 VND. Tỷ trọng là 477.880.498.763 / 1.350.109.317.968 ≈ 35.39%.",
+      "Các khoản đầu tư tài chính ngắn hạn đã giảm từ 65.313.510.795 VND vào 01/01/2024 xuống 40.960.227.301 VND vào 30/06/2024. Đây là mức giảm đáng kể (khoảng 24.353.283.494 VND tương đương ~37.29%), cho thấy công ty đã rút bớt hoặc thanh lý một phần lớn các khoản đầu tư tài chính ngắn hạn trong kỳ, có thể để tạo ra dòng tiền hoặc tái cơ cấu danh mục đầu tư.",
+      "Khoản 'Dự phòng các khoản phải thu khó đòi' đã giảm từ 77.522.343.372 VND vào 01/01/2024 xuống 60.953.995.386 VND vào 30/06/2024. Việc giảm này có tác động tích cực đến chất lượng tài sản của công ty. Nó ngụ ý rằng công ty đã thu hồi được một số khoản phải thu trước đây được coi là khó đòi, hoặc đã đánh giá lại và nhận thấy rủi ro đối với các khoản phải thu đã giảm, từ đó làm tăng giá trị có thể thu hồi của các khoản phải thu và cải thiện chất lượng danh mục tài sản của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn của công ty vào ngày 30/06/2024 là bao nhiêu?",
+      "Giá trị còn lại của tài sản cố định hữu hình vào ngày 30/06/2024 là bao nhiêu?",
+      "So sánh tổng tài sản dài hạn vào 30/06/2024 và 01/01/2024, thay đổi như thế nào?",
+      "Phần trăm giảm giá trị tài sản cố định thuê tài chính trong kỳ là bao nhiêu?",
+      "Đánh giá mức độ phụ thuộc của công ty vào tài sản cố định hữu hình trong cơ cấu tài sản dài hạn.",
+      "Phân tích tác động của sự gia tăng 'Chi phí xây dựng cơ bản dở dang' đến triển vọng đầu tư dài hạn của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | 30/06/2024 | 01/01/2024 |\n|:---|:---|:---|:---|:---|\n| B. TÀI SẢN DÀI HẠN | 200 | | 645,759,087,642 | 668,745,947,894 |\n| I. Các khoản phải thu dài hạn | 210 | V.04b | 7,939,213,657 | 6,546,795,706 |\n| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | | - | - |\n| 6. Phải thu dài hạn khác | 216 | | 7,939,213,657 | 6,546,795,706 |\n| II. Tài sản cố định | 220 | | 543,490,922,312 | 574,849,827,295 |\n| 1. Tài sản cố định hữu hình | 221 | V.07 | 475,702,480,256 | 495,118,681,374 |\n| - Nguyên giá | 222 | | 1,064,711,816,898 | 1,059,263,764,162 |\n| - Giá trị hao mòn lũy kế | 223 | | (589,009,336,642) | (564,145,082,788) |\n| 2. Tài sản cố định thuê tài chính | 224 | V.10 | 52,420,978,358 | 64,071,191,439 |\n| - Nguyên giá | 225 | | 67,898,198,908 | 79,626,559,904 |\n| - Giá trị hao mòn lũy kế | 226 | | (15,477,220,550) | (15,555,368,465) |\n| 3. Tài sản cố định vô hình | 227 | V.08 | 15,367,463,698 | 15,659,954,482 |\n| - Nguyên giá | 228 | | 21,973,007,526 | 21,973,007,526 |\n| - Giá trị hao mòn lũy kế | 229 | | (6,605,543,828) | (6,313,053,044) |\n| III. Bất động sản đầu tư | 230 | | - | - |\n| 1. Nguyên giá | 231 | | - | - |\n| 2. Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | | 7,430,188,551 | 6,155,188,551 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | V.09 | 7,430,188,551 | 6,155,188,551 |\n| V. Đầu tư tài chính dài hạn | 250 | V.02 | 16,718,591,408 | 16,718,591,408 |\n| 1. Đầu tư vào công ty con | 251 | | - | - |\n| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | | 5,349,286,352 | 5,349,286,352 |\n| 3. Đầu tư vốn vào đơn vị khác | 253 | | 12,000,397,920 | 12,000,397,920 |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | 631,092,864 | 631,092,864 |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | - | - |\n| VI. Tài sản dài hạn khác | 260 | | 70,180,171,714 | 64,475,544,934 |\n| 1. Chi phí trả trước dài hạn | 261 | V.11b | 69,446,482,434 | 63,741,855,654 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | V.22 | 733,689,280 | 733,689,280 |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | - | - |\n| 4. Tài sản dài hạn khác | 268 | | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | | 1,995,868,405,610 | 2,144,284,036,787 |",
+    "output": [
+      "Tổng tài sản dài hạn của công ty vào ngày 30/06/2024 là 645.759.087.642 VND.",
+      "Giá trị còn lại của tài sản cố định hữu hình vào ngày 30/06/2024 là 475.702.480.256 VND.",
+      "Tổng tài sản dài hạn vào 30/06/2024 là 645.759.087.642 VND, so với 668.745.947.894 VND vào 01/01/2024. Như vậy, tổng tài sản dài hạn đã giảm 22.986.860.252 VND.",
+      "Giá trị tài sản cố định thuê tài chính giảm từ 64.071.191.439 VND vào 01/01/2024 xuống 52.420.978.358 VND vào 30/06/2024, tức là giảm 11.650.213.081 VND. Phần trăm giảm là (11.650.213.081 / 64.071.191.439) * 100% ≈ 18.18%.",
+      "Vào ngày 30/06/2024, giá trị còn lại của tài sản cố định hữu hình là 475.702.480.256 VND, trong khi tổng tài sản dài hạn là 645.759.087.642 VND. Tỷ trọng tài sản cố định hữu hình chiếm khoảng 73.67% tổng tài sản dài hạn. Điều này cho thấy công ty có mức độ phụ thuộc rất cao vào tài sản cố định hữu hình trong cơ cấu tài sản dài hạn, phản ánh mô hình kinh doanh có tính chất thâm dụng vốn.",
+      "'Chi phí xây dựng cơ bản dở dang' đã tăng từ 6.155.188.551 VND vào 01/01/2024 lên 7.430.188.551 VND vào 30/06/2024. Sự gia tăng này là một tín hiệu tích cực đối với triển vọng đầu tư dài hạn của công ty. Nó cho thấy công ty đang tiếp tục đầu tư vào việc mở rộng, nâng cấp cơ sở hạ tầng hoặc xây dựng các dự án mới, điều này có thể góp phần tăng năng lực sản xuất, cải thiện hiệu quả hoạt động và tạo ra nguồn doanh thu trong tương lai, từ đó hỗ trợ cho sự phát triển dài hạn của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả của công ty vào ngày 30/06/2024 là bao nhiêu?",
+      "Giá trị 'Vốn đầu tư của chủ sở hữu' vào ngày 30/06/2024 là bao nhiêu?",
+      "So sánh 'Vay và nợ thuê tài chính ngắn hạn' giữa 30/06/2024 và 01/01/2024.",
+      "Tính tỷ lệ 'Nợ ngắn hạn' trên 'Tổng nợ phải trả' vào ngày 30/06/2024.",
+      "Đánh giá mức độ đòn bẩy tài chính của công ty dựa trên cơ cấu nợ và vốn chủ sở hữu.",
+      "Phân tích tác động của việc giảm 'Lợi nhuận sau thuế chưa phân phối' đến khả năng chi trả cổ tức trong tương lai."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | TM | 30/06/2024 | 01/01/2024 |\n|:---|:---|:---|:---|:---|\n| C. NỢ PHẢI TRẢ | 300 | | 1,716,562,284,338 | 1,800,427,375,261 |\n| I. Nợ ngắn hạn | 310 | | 1,515,530,374,108 | 1,597,379,671,531 |\n| 1. Phải trả cho người bán ngắn hạn | 311 | V.15 | 291,048,575,706 | 292,192,429,590 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | | 14,592,660,761 | 3,731,426,718 |\n| 3. Thuế và các khoản phải nộp nhà nước | 313 | V.16 | 13,919,395,461 | 14,871,262,206 |\n| 4. Phải trả người lao động | 314 | | 4,286,002,005 | 6,709,758,399 |\n| 5. Chi phí phải trả ngắn hạn | 315 | V.12 | 15,318,272,082 | 6,393,925,123 |\n| 6. Phải trả ngắn hạn khác | 319 | V.13 | 141,871,280,739 | 101,478,907,999 |\n| 7. Vay và nợ thuê tài chính ngắn hạn | 320 | V.14a | 1,034,395,982,876 | 1,171,766,607,018 |\n| 8. Qũy khen thưởng, phúc lợi | 322 | | 98,204,478 | 235,354,478 |\n| II. Nợ dài hạn | 330 | | 201,031,910,230 | 203,047,703,730 |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 3. Phải trả dài hạn khác | 337 | V.14b | 1,000,000,000 | 1,000,000,000 |\n| 4. Vay và nợ thuê tài chính dài hạn | 338 | V.23 | 197,857,937,087 | 199,873,730,587 |\n| 5. Thuế thu nhập hoãn lại phải trả | 341 | | 2,173,973,143 | 2,173,973,143 |\n| 6. Dự phòng phải trả dài hạn | 342 | | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | | 279,306,121,272 | 343,856,661,526 |\n| I. Vốn chủ sở hữu | 410 | V.17 | 279,306,121,272 | 343,856,661,526 |\n| 1. Vốn đầu tư của chủ sở hữu | 411 | | 490,698,030,000 | 490,698,030,000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 490,698,030,000 | 490,698,030,000 |\n| - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | | 25,616,970,000 | 25,616,970,000 |\n| 3. Vốn khác của chủ sở hữu | 414 | | 1,912,212,955 | 1,912,212,955 |\n| 4. Cổ phiếu quỹ | 415 | | - | - |\n| 5. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 6. Quỹ đầu tư phát triển | 418 | | 2,998,449,697 | 2,998,449,697 |\n| 7. Lợi nhuận sau thuế chưa phân phối | 421 | | 266,458,750,593 | 205,778,024,699 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 205,778,024,699 | 70,946,135,321 |\n| - LNST chưa phân phối kỳ này | 421b | | 60,680,725,894 | 134,831,889,378 |\n| - LNST năm nay theo KQKD | | | 60,680,725,894 | - |\n| - LNST năm nay do tăng tỷ lệ cổ phần công ty con | | | - | - |\n| 8. Lợi ích của cổ đông không kiểm soát | 429 | | 24,539,209,213 | 28,409,023,573 |\n| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |\n| 1. Nguồn kinh phí sự nghiệp | 431 | | - | - |\n| 2. Nguồn kinh phí hình thành TSCĐ | 432 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 1,995,868,405,610 | 2,144,284,036,787 |",
+    "output": [
+      "Tổng nợ phải trả của công ty vào ngày 30/06/2024 là 1.716.562.284.338 VND.",
+      "Giá trị 'Vốn đầu tư của chủ sở hữu' vào ngày 30/06/2024 là 490.698.030.000 VND.",
+      "'Vay và nợ thuê tài chính ngắn hạn' vào 30/06/2024 là 1.034.395.982.876 VND, so với 1.171.766.607.018 VND vào 01/01/2024. Khoản mục này đã giảm 137.370.624.142 VND trong kỳ.",
+      "Vào ngày 30/06/2024, 'Nợ ngắn hạn' là 1.515.530.374.108 VND và 'Tổng nợ phải trả' là 1.716.562.284.338 VND. Tỷ lệ là 1.515.530.374.108 / 1.716.562.284.338 ≈ 88.29%.",
+      "Vào ngày 30/06/2024, tổng nợ phải trả của công ty là 1.716.562.284.338 VND, trong khi vốn chủ sở hữu là 279.306.121.272 VND. Tỷ lệ nợ phải trả trên vốn chủ sở hữu là khoảng 6.15 lần, và tỷ lệ nợ phải trả trên tổng nguồn vốn là khoảng 86.01%. Điều này cho thấy công ty có mức độ đòn bẩy tài chính rất cao, phụ thuộc nhiều vào vốn vay để tài trợ cho hoạt động kinh doanh, tiềm ẩn rủi ro tài chính lớn nếu khả năng sinh lời hoặc dòng tiền không ổn định.",
+      "Khoản mục 'Lợi nhuận sau thuế chưa phân phối kỳ này' (Mã 421b) đã giảm từ 134.831.889.378 VND (kỳ 01/01/2024 đến 30/06/2024 của năm trước) xuống 60.680.725.894 VND (kỳ 01/01/2024 đến 30/06/2024 của năm nay). Sự giảm này làm giảm nguồn lợi nhuận có sẵn để phân phối dưới dạng cổ tức. Do đó, khả năng chi trả cổ tức của công ty trong tương lai có thể bị hạn chế, hoặc công ty có thể phải xem xét giữ lại lợi nhuận để tái đầu tư hoặc củng cố tài chính thay vì chia cho cổ đông."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ của công ty trong Quý II/2024 là bao nhiêu?",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý II/2024 là bao nhiêu?",
+      "So sánh 'Tổng lợi nhuận kế toán trước thuế' từ 01/01/2024 đến 30/06/2024 với cùng kỳ năm trước.",
+      "Tỷ suất lợi nhuận gộp trong Quý II/2024 là bao nhiêu?",
+      "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên xu hướng lợi nhuận gộp và lợi nhuận thuần.",
+      "Phân tích tác động của 'Chi phí tài chính' lên 'Lợi nhuận sau thuế thu nhập doanh nghiệp' trong Quý II/2024."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Quý II/2024 | Quý II/2023 | Từ 01/01/2024 đến 30/06/2024 | Từ 01/01/2023 đến 30/06/2023 |\n|:---|:---|:---|:---|:---|:---|:---|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | VI.01 | 255,315,708,242 | 776,816,414,697 | 765,909,510,294 | 1,361,611,597,690 |\n| 2. Các khoản giảm trừ doanh thu | 02 | VI.02 | 8,760,589,782 | 576,197,155 | 13,203,916,825 | 4,553,361,648 |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | 246,555,118,460 | 776,240,217,542 | 752,705,593,469 | 1,357,058,236,042 |\n| 4. Giá vốn hàng bán | 11 | VI.03 | 245,029,304,498 | 697,822,845,636 | 730,506,267,859 | 1,220,059,148,227 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 1,525,813,962 | 78,417,371,906 | 22,199,325,610 | 136,999,087,815 |\n| 6. Doanh thu hoạt động tài chính | 21 | VI.04 | 2,529,033,303 | 5,501,721,672 | 3,845,831,034 | 6,954,042,074 |\n| 7. Chi phí tài chính | 22 | VI.05 | 25,919,820,155 | 38,825,304,699 | 53,246,456,249 | 69,282,952,333 |\n| Trong đó: Lãi vay phải trả | 23 | | 25,333,883,463 | 35,956,801,940 | 52,400,840,230 | 65,384,751,358 |\n| 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết | | | 340,967,180 | 340,967,180 | - | - |\n| 9. Chi phí bán hàng | 24 | VI.08b | 9,992,209,594 | 9,878,950,560 | 15,242,352,685 | 16,906,471,825 |\n| 10. Chi phí quản lý doanh nghiệp | 25 | VI.08a | 32,947,395,951 | 18,698,041,069 | 21,068,787,872 | 38,950,500,098 |\n| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 64,804,578,435 | 16,175,830,070 | 63,512,440,162 | 18,472,238,453 |\n| 12. Thu nhập khác | 31 | VI.06 | 150,456,601 | 309,176,307 | 702,405,933 | 1,792,875,428 |\n| 13. Chi phí khác | 32 | VI.07 | 1,003,747,694 | 861,088,613 | 1,740,506,025 | 1,518,639,653 |\n| 14. Lợi nhuận khác | 40 | | 853,291,093 | 551,912,306 | 1,038,100,092 | 274,235,775 |\n| 15. Tổng lợi nhuận kế toán trước thuế | 50 | | 65,657,869,528 | 15,623,917,764 | 64,550,540,254 | 18,746,474,228 |\n| 16. Chi phí thuế thu nhập hiện hành | 51 | VI.10 | 5,100,297,735 | 7,635,533,863 | - | - |\n| 17. Chi phí thuế thu nhập hoãn lại | 52 | | 87,140,332 | 87,140,332 | - | - |\n| 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 65,657,869,528 | 10,436,479,697 | 64,550,540,254 | 11,023,800,033 |\n| 19. Lợi nhuận sau thuế của Công ty mẹ | 61 | | 61,790,692,005 | 6,001,981,734 | 60,680,725,894 | 6,354,373,936 |\n| 20. Lợi nhuận sau thuế của Cổ đông không kiểm soát | 62 | | 3,867,177,523 | 4,434,497,963 | 3,869,814,360 | 4,669,426,097 |",
+    "output": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ của công ty trong Quý II/2024 là 246.555.118.460 VND.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý II/2024 là 1.525.813.962 VND.",
+      "'Tổng lợi nhuận kế toán trước thuế' từ 01/01/2024 đến 30/06/2024 là 64.550.540.254 VND, so với 18.746.474.228 VND của cùng kỳ năm trước (01/01/2023 đến 30/06/2023). Như vậy, lợi nhuận trước thuế đã tăng 45.804.066.026 VND.",
+      "Trong Quý II/2024, lợi nhuận gộp là 1.525.813.962 VND và doanh thu thuần về bán hàng và cung cấp dịch vụ là 246.555.118.460 VND. Tỷ suất lợi nhuận gộp là (1.525.813.962 / 246.555.118.460) * 100% ≈ 0.62%.",
+      "Trong Quý II/2024, lợi nhuận gộp về bán hàng và cung cấp dịch vụ giảm mạnh từ 78.417.371.906 VND (Quý II/2023) xuống còn 1.525.813.962 VND, cho thấy hiệu quả hoạt động kinh doanh cốt lõi suy giảm đáng kể. Tuy nhiên, lợi nhuận thuần từ hoạt động kinh doanh lại tăng mạnh từ 16.175.830.070 VND (Quý II/2023) lên 64.804.578.435 VND (Quý II/2024). Sự tương phản này cho thấy rằng, mặc dù biên lợi nhuận từ bán hàng giảm, công ty đã có những điều chỉnh hiệu quả ở các khoản mục chi phí hoạt động (chi phí bán hàng, chi phí quản lý doanh nghiệp) hoặc có sự đóng góp từ các hoạt động khác (như doanh thu/chi phí tài chính, lợi nhuận khác) để thúc đẩy lợi nhuận thuần.",
+      "Trong Quý II/2024, chi phí tài chính là 25.919.820.155 VND, trong đó lãi vay phải trả chiếm 25.333.883.463 VND. Khoản chi phí tài chính này là một yếu tố đáng kể làm giảm lợi nhuận trước thuế của công ty. Với tổng lợi nhuận kế toán trước thuế là 65.657.869.528 VND, nếu chi phí tài chính thấp hơn, lợi nhuận trước thuế và do đó lợi nhuận sau thuế thu nhập doanh nghiệp (65.657.869.528 VND) sẽ cao hơn tương ứng. Điều này cho thấy gánh nặng lãi vay và các chi phí tài chính khác đang ảnh hưởng đáng kể đến khả năng sinh lời ròng của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "Tổng 'Tiền và tương đương tiền tồn cuối kỳ' vào 30/06/2024 là bao nhiêu?",
+      "So sánh 'Tiền thu từ đi vay' giữa kỳ 01/01/2024-30/06/2024 và cùng kỳ năm trước.",
+      "Tính lưu chuyển tiền thuần từ hoạt động đầu tư trong kỳ 01/01/2024 đến 30/06/2024.",
+      "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+      "Phân tích tác động của việc 'Lưu chuyển tiền thuần từ hoạt động tài chính' âm đến cơ cấu tài chính của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Từ 01/01/2024 đến 30/06/2024 | Từ 01/01/2023 đến 30/06/2023 |\n|:---|:---|:---|:---|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | |\n| 1. Lợi nhuận trước thuế | 1 | 64,550,540,254 | 18,746,474,228 |\n| 2. Điều chỉnh các khoản | | | |\n| Khấu hao tài sản cố định | 2 | 26,935,333,810 | 29,164,400,147 |\n| Các khoản dự phòng | 3 | 16,568,347,986 | - |\n| Lãi, lỗ chênh lệch tỷ giá hối đoái chưa thực hiện | 4 | 31,216,048 | - |\n| Lãi, lỗ từ hoạt động đầu tư | 5 | 3,319,952,251 | 4,143,877,417 |\n| Chi phí lãi vay | 6 | 52,400,840,250 | 65,384,751,358 |\n| 3. Lợi nhuận/lỗ từ hoạt động kinh doanh trước những thay đổi vốn lưu động | 8 | 109,151,748,316 | 5,071,450,383 |\n| Tăng, giảm các khoản phải thu | 9 | 45,312,747,636 | 22,493,114,708 |\n| Tăng, giảm hàng tồn kho | 10 | 57,797,255,920 | 29,095,660,228 |\n| Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế thu nhập doanh nghiệp phải nộp | 11 | 54,044,375,219 | 49,845,259,177 |\n| Tăng, giảm chi phí trả trước | 12 | 3,116,938,899 | 5,534,640,484 |\n| Tiền lãi vay đã trả | 13 | 46,480,085,633 | 66,509,740,727 |\n| Thuế thu nhập doanh nghiệp đã nộp | 14 | 1,334,174,482 | 2,490,292,059 |\n| Tiền thu khác từ hoạt động kinh doanh | 15 | 3,002,575,012 | - |\n| Tiền chi khác từ hoạt động kinh doanh | 16 | 2,133,332,300 | - |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 102,020,972,090 | 2,443,642,357 |\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | |\n| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | 21 | 780,650,652 | - |\n| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các TS dài hạn khác | 22 | 118,913,468 | 11,217,843,373 |\n| 3. Tiền chi cho vay | 23 | - | 27,495,844,622 |\n| 4. Tiền thu hồi cho vay | 24 | - | 52,147,044,422 |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | - | 20,000,000,000 |\n| 6. Tiền thu hồi đầu tư, góp vốn vào đơn vị khác | 26 | 24,353,283,494 | - |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 2,339,522,561 | 665,621,207 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | 26,811,719,523 | 15,754,013,728 |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | - | - |\n| 2. Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu | 32 | - | - |\n| 3. Tiền thu từ đi vay | 33 | 672,907,290,541 | 1,198,950,849,069 |\n| 4. Tiền trả nợ gốc vay | 34 | 812,293,708,183 | 1,222,171,475,977 |\n| 5. Tiền chi trả nợ thuê tài chính | 35 | 17,301,986,409 | - |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | - | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | (139,386,417,642) | (40,522,613,317) |\n| Lưu chuyển tiền thuần trong kỳ | 50 | 10,553,726,029 | (22,324,957,232) |\n| Tiền và tương đương tiền tồn đầu kỳ | 60 | 31,711,503,071 | 50,759,793,735 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | - | - |\n| Tiền và tương đương tiền tồn cuối kỳ | 70 | 21,157,777,042 | 28,434,836,503 |\n\nThành phố Hồ Chí Minh, Ngày 26 tháng 07 năm 2024\nNgười lập biểu: Hồ Thị Vân (Kế Toán Trưởng)\nTổng Giám Đốc: Hà Thanh Thiên",
+    "output": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ 01/01/2024 đến 30/06/2024 là 102.020.972.090 VND.",
+      "Tổng 'Tiền và tương đương tiền tồn cuối kỳ' vào 30/06/2024 là 21.157.777.042 VND.",
+      "'Tiền thu từ đi vay' trong kỳ 01/01/2024 đến 30/06/2024 là 672.907.290.541 VND, thấp hơn so với 1.198.950.849.069 VND của cùng kỳ năm trước (01/01/2023 đến 30/06/2023), tức giảm 526.043.558.528 VND.",
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư trong kỳ 01/01/2024 đến 30/06/2024 là 26.811.719.523 VND.",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh của công ty trong kỳ 01/01/2024 đến 30/06/2024 là 102.020.972.090 VND. Đây là một con số dương và tăng trưởng mạnh so với cùng kỳ năm trước (2.443.642.357 VND). Điều này cho thấy công ty có khả năng tạo ra một lượng tiền mặt đáng kể từ các hoạt động cốt lõi của mình, phản ánh khả năng tự tài trợ rất tốt. Công ty có thể sử dụng dòng tiền này để tài trợ cho các hoạt động đầu tư, trả nợ hoặc chi trả cổ tức mà không cần phụ thuộc quá nhiều vào nguồn vốn bên ngoài, cải thiện sự vững chắc tài chính.",
+      "'Lưu chuyển tiền thuần từ hoạt động tài chính' trong kỳ 01/01/2024 đến 30/06/2024 là âm 139.386.417.642 VND. Điều này chủ yếu là do công ty đã trả nợ gốc vay (812.293.708.183 VND) và chi trả nợ thuê tài chính (17.301.986.409 VND) nhiều hơn số tiền thu từ đi vay (672.907.290.541 VND). Tác động tích cực là việc giảm nợ giúp cải thiện cơ cấu tài chính bằng cách giảm gánh nặng nợ, giảm chi phí lãi vay trong tương lai và tăng cường sự ổn định tài chính. Tuy nhiên, nếu dòng tiền âm này quá lớn mà không có dòng tiền mạnh từ hoạt động kinh doanh hoặc đầu tư để bù đắp, nó có thể gây áp lực lên thanh khoản ngắn hạn. Trong trường hợp này, dòng tiền dương mạnh từ hoạt động kinh doanh (102 tỷ VND) đã giúp bù đắp phần nào, cho thấy công ty đang chủ động giảm bớt nợ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty Cổ phần Rạng Đông Holding có bao nhiêu công ty con được hợp nhất vào ngày 30/06/2024?",
+      "Tỷ lệ sở hữu của Công ty CP Nhựa Rạng Đông Long An là bao nhiêu?",
+      "Ngành nghề kinh doanh chính của Công ty CP Rạng Đông Films là gì?",
+      "Chu kỳ sản xuất kinh doanh thông thường của công ty là bao lâu?",
+      "Nêu lý do báo cáo tài chính của công ty có thể so sánh được với năm trước.",
+      "Đánh giá mức độ kiểm soát của Rạng Đông Holding đối với Công ty CP Tiếp vận Song Dũng dựa trên tỷ lệ sở hữu."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Đặc điểm hoạt động\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT\n\nI. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP\n1. Hình thức sở hữu vốn\nCông ty cổ phần Rạng Đông Holding trước đây là Công ty cổ phần Nhựa Rạng Đông đã được đổi lại tên thành Công ty cổ phần Rạng Đông Holding theo giấy chứng nhận đăng ký doanh nghiệp thay đổi lần thứ 14 ngày 03/06/2019, là công ty cổ phần được hoạt động theo Giấy Chứng nhận đăng ký doanh nghiệp số 0300384357 đăng ký lần đầu ngày 28 tháng 03 năm 2005 và Giấy chứng nhận đăng ký doanh nghiệp thay đổi bổ sung kèm theo.\n\nTrụ sở chính của Công ty tại 190 Lạc Long Quân, Phường 3, Quận 11, Thành phố Hồ Chí Minh.\n\n2. Lĩnh vực kinh doanh\nLĩnh vực kinh doanh của Công ty là sản xuất, thương mại, dịch vụ.\n\n3. Ngành nghề kinh doanh\nHoạt động chính của Công ty là Sản xuất, mua bán hàng nhựa gia dụng, kỹ thuật màng nhựa, giả da, tôn, ván nhựa, ống nhựa, bao bì in tráng ghép, vật liệu xây dựng, chai nhựa, áo mưa, cặp, túi xách (không sản xuất vật liệu xây dựng, tái chế phế thải, sản xuất nhựa tổng hợp, thuộc da tại trụ sở). Chế tạo máy móc, thiết bị ngành nhựa (không gia công cơ khí tại trụ sở). Xây dựng dân dụng, công nghiệp. San lấp mặt bằng. Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê. Cho thuê văn phòng. Kinh doanh khách sạn, nhà hàng (không kinh doanh khách sạn, nhà hàng tại trụ sở). Mua bán nguyên vật liệu, hóa chất ngành nhựa (trừ hóa chất có tính độc hại mạnh). Môi giới bất động sản. Kinh doanh nhà. Mua bán hàng gia dụng. Mua bán phế liệu nhựa (không mua bán tại trụ sở). Vận tải hàng hóa bằng đường bộ (trừ hóa lỏng khí để vận chuyển).\n\n4. Chu kỳ sản xuất, kinh doanh thông thường\nChu kỳ sản xuất, kinh doanh thông thường của Công ty là trong vòng 12 tháng.\n\n5. Cấu trúc doanh nghiệp\nTổng số Công ty con tại ngày 30/06/2024 là 3 công ty.\n\nCông ty con được hợp nhất như sau:\n| Tên Công ty | Địa chỉ | Ngành nghề kinh doanh chính | Tỷ lệ sở hữu | Tỷ lệ lợi ích |\n|:---|:---|:---|:---|:---|\n| Công ty CP Nhựa Rạng Đông Long An | KCN Tân Đô, Xã Đức Hòa Hạ, Huyện Đức Hòa, Tỉnh Long An | Sản xuất sản phẩm từ nhựa | 95.0 | 95.0 |\n| Công ty CP Trading Rạng Đông | 190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM | Bán buôn chuyên doanh khác | 84.3 | 84.3 |\n| Công ty CP Rạng Đông Films | 63 Võ Văn Bích, xã Tân Thạnh Đông, huyện Củ Chi, TP.HCM | Sản xuất sản phẩm từ Plastic | 97.7 | 97.7 |\n\nTổng số Công ty liên kết tại ngày 30/06/2024 là 01 công ty.\nCông ty liên kết được hợp nhất theo phương pháp vốn chủ sở hữu như sau:\n| Tên Công ty | Địa chỉ | Ngành nghề kinh doanh chính | Tỷ lệ sở hữu | Tỷ lệ lợi ích |\n|:---|:---|:---|:---|:---|\n| Công ty CP Tiếp vận Song Dũng | 190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM | Vận tải, dịch vụ hỗ trợ khác liên quan đến vận tải | 45 | 45 |\n\n6. Tuyên bố về khả năng so sánh thông tin trên báo cáo tài chính\nTrong năm công ty không có thay đổi về chính sách kế toán so với năm trước nên không có ảnh hưởng đến khả năng so sánh của các thông tin trên báo cáo tài chính.",
+    "output": [
+      "Công ty Cổ phần Rạng Đông Holding có 3 công ty con được hợp nhất vào ngày 30/06/2024.",
+      "Tỷ lệ sở hữu của Công ty CP Nhựa Rạng Đông Long An là 95.0%.",
+      "Ngành nghề kinh doanh chính của Công ty CP Rạng Đông Films là Sản xuất sản phẩm từ Plastic.",
+      "Chu kỳ sản xuất kinh doanh thông thường của công ty là trong vòng 12 tháng.",
+      "Lý do báo cáo tài chính của công ty có thể so sánh được với năm trước là vì trong năm công ty không có thay đổi về chính sách kế toán so với năm trước.",
+      "Dựa trên tỷ lệ sở hữu là 45%, Rạng Đông Holding có mức độ kiểm soát ở dạng \\ảnh hưởng đáng kể\\ đối với Công ty CP Tiếp vận Song Dũng, chứ không phải là kiểm soát hoàn toàn. Mặc dù có khả năng tác động đến các quyết định tài chính và hoạt động, tỷ lệ này thường không đủ để công ty mẹ chi phối mọi quyết định mà không cần sự đồng thuận từ các cổ đông khác, do đó Công ty CP Tiếp vận Song Dũng được phân loại là công ty liên kết."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Kỳ kế toán năm của công ty bắt đầu và kết thúc vào ngày nào?",
+      "Đơn vị tiền tệ sử dụng trong kế toán của công ty là gì?",
+      "Công ty áp dụng chế độ kế toán nào?",
+      "Trong báo cáo tài chính hợp nhất, khi nào công ty mẹ được coi là có quyền kiểm soát công ty con?",
+      "Giải thích cách các giao dịch nội bộ được xử lý trong quá trình lập Báo cáo tài chính hợp nhất.",
+      "Phân tích ý nghĩa của 'Lợi ích của cổ đông không kiểm soát' trong Báo cáo tài chính hợp nhất."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Kỳ kế toán, Chuẩn mực và chính sách kế toán\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nII. KỲ KẾ TOÁN, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Kỳ kế toán\nKỳ kế toán năm của Công ty bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.\n\n2. Đơn vị tiền tệ sử dụng trong kế toán\nĐơn vị tiền tệ sử dụng trong ghi chép kế toán là đồng Việt Nam (VND).\n\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chế độ kế toán áp dụng\nCông ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài Chính hướng dẫn chế độ kế toán doanh nghiệp Việt Nam và Thông tư số 202/2014/TT-BTC ngày 22/12/2014 Hướng dẫn phương pháp lập và trình bày Báo cáo tài chính hợp nhất.\n\n2. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán\nCông ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các báo cáo tài chính được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện chuẩn mực và Chế độ kế toán hiện hành đang áp dụng.\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở hợp nhất\nBáo cáo tài chính hợp nhất bao gồm Báo cáo tài chính của Công Ty cổ Phần Rạng Đông Holding (công ty mẹ) và các công ty con.\nCác công ty con là các đơn vị do Công ty mẹ kiểm soát. Sự kiểm soát tồn tại khi công ty mẹ có quyền chi phối các chính sách tài chính và hoạt động của một đơn vị để thu lại lợi ích kinh tế từ các hoạt động này. Khi đánh giá quyền kiểm soát có tính đến quyền biểu quyết tiềm năng hiện đang có hiệu lực hay sẽ được chuyển đổi.\nTrong trường hợp chính sách kế toán của công ty con khác với chính sách kế toán áp dụng thống nhất trong tập đoàn thì Báo cáo tài chính của công ty con sẽ có những điều chỉnh thích hợp trước khi sử dụng cho việc lập Báo cáo tài chính hợp nhất.\nSố dư các tài khoản trên Bảng cân đối kế toán giữa các công ty trong cùng Tập đoàn, các giao dịch nội bộ, các khoản lãi nội bộ chưa thực hiện phát sinh từ các giao dịch hủy này được loại trừ khi lập Báo cáo tài chính hợp nhất. Các khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ cũng được loại bỏ trừ khi chi phí tạo nên khoản lỗ đó không thể thu hồi được.\nLợi ích của cổ đông không kiểm soát thể hiện phần lợi nhuận và tài sản thuần của công ty con không nắm giữ bởi các cổ đông của công ty mẹ và được trình bày ở mục riêng trên Báo cáo kết quả hoạt động kinh doanh hợp nhất và Bảng cân đối kế toán hợp nhất. Lợi ích cổ đông không kiểm soát bao gồm giá trị các lợi ích của cổ đông không kiểm soát tại ngày hợp nhất kinh doanh ban đầu và phần lợi ích của cổ đông không kiểm soát trong biến động của vốn chủ sở hữu kể từ ngày hợp nhất kinh doanh. Các khoản lỗ tương ứng với phần vốn của cổ đông không kiểm soát vượt quá phần vốn của họ trong vốn chủ sở hữu của công ty con được tính giảm vào phần lợi ích của Tập Đoàn trừ khi cổ đông không kiểm soát có nghĩa vụ ràng buộc và có khả năng bù đắp khoản lỗ đó.",
+    "output": [
+      "Kỳ kế toán năm của Công ty bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.",
+      "Đơn vị tiền tệ sử dụng trong kế toán của công ty là đồng Việt Nam (VND).",
+      "Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC và Thông tư số 202/2014/TT-BTC ngày 22/12/2014 của Bộ Tài Chính.",
+      "Trong báo cáo tài chính hợp nhất, công ty mẹ được coi là có quyền kiểm soát công ty con khi công ty mẹ có quyền chi phối các chính sách tài chính và hoạt động của một đơn vị để thu lại lợi ích kinh tế từ các hoạt động này.",
+      "Trong quá trình lập Báo cáo tài chính hợp nhất, số dư các tài khoản trên Bảng cân đối kế toán giữa các công ty trong cùng Tập đoàn, các giao dịch nội bộ và các khoản lãi nội bộ chưa thực hiện phát sinh từ các giao dịch này sẽ được loại trừ. Các khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ cũng được loại bỏ trừ khi chi phí tạo nên khoản lỗ đó không thể thu hồi được.",
+      "'Lợi ích của cổ đông không kiểm soát' trong Báo cáo tài chính hợp nhất thể hiện phần lợi nhuận và tài sản thuần của công ty con không do các cổ đông của công ty mẹ nắm giữ. Mục này được trình bày riêng biệt trên Báo cáo kết quả hoạt động kinh doanh hợp nhất và Bảng cân đối kế toán hợp nhất. Ý nghĩa của nó là cung cấp cái nhìn minh bạch về phần sở hữu của các bên thứ ba trong các công ty con thuộc tập đoàn, giúp nhà đầu tư đánh giá chính xác hơn phần lợi nhuận và tài sản thực sự thuộc về công ty mẹ và các cổ đông của nó, cũng như nhận diện rủi ro khi phần lỗ của cổ đông không kiểm soát vượt quá vốn của họ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Theo chính sách kế toán, tiền và tương đương tiền bao gồm những gì?",
+      "Khi nào các khoản đầu tư chứng khoán được phân loại là tài sản ngắn hạn?",
+      "Các nghiệp vụ kinh tế phát sinh bằng ngoại tệ được quy đổi theo tỷ giá nào?",
+      "Chênh lệch tỷ giá hối đoái được xử lý như thế nào trong báo cáo tài chính?",
+      "Đánh giá tầm quan trọng của việc áp dụng nhất quán chính sách tỷ giá hối đoái đối với độ tin cậy của báo cáo tài chính.",
+      "Phân tích tác động của việc phân loại đầu tư tài chính sang ngắn hạn hoặc dài hạn đối với thanh khoản và rủi ro của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Chính sách kế toán (tiếp theo)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG (tiếp theo)\n2. Các loại tỷ giá hối đoái áp dụng trong kế toán\nCác nghiệp vụ kinh tế phát sinh bằng ngoại tệ được quy đổi ra đồng Việt Nam theo tỷ giá giao dịch thực tế tại thời điểm phát sinh nghiệp vụ.\nTỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại thời điểm lập Báo cáo tài chính là tỷ giá công bố của ngân hàng thương mại nơi doanh nghiệp thường xuyên có giao dịch theo nguyên tắc:\n- Tỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ được phân loại là tài sản là tỷ giá mua ngoại tệ của ngân hàng thương mại nơi doanh nghiệp thường xuyên có giao dịch tại thời điểm lập Báo cáo tài chính. Đối với các khoản ngoại tệ gửi ngân hàng thì tỷ giá thực tế khi đánh giá lại là tỷ giá mua của chính ngân hàng nơi doanh nghiệp mở tài khoản ngoại tệ.\n- Tỷ giá giao dịch thực tế khi đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ được phân loại là nợ phải trả là tỷ giá bán ngoại tệ của ngân hàng thương mại tại thời điểm lập Báo cáo tài chính hợp nhất.\nChênh lệch tỷ giá thực tế phát sinh trong năm và chênh lệch tỷ giá do đánh giá lại số dư các khoản mục tiền tệ tại thời điểm cuối năm được kết chuyển vào doanh thu hoặc chi phí tài chính trong năm.\n\n3. Nguyên tắc ghi nhận các khoản tiền và các khoản tương đương tiền\nTiền và tương đương tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng, các khoản đầu tư ngắn hạn không quá 3 tháng có khả năng chuyển đổi dễ dàng thành tiền và không có nhiều rủi ro trong chuyển đổi thành tiền kể từ ngày mua khoản đầu tư đó tại thời điểm báo cáo.\n\n4. Nguyên tắc kế toán các khoản đầu tư tài chính\nĐầu tư vào công cụ vốn của đơn vị khác\nĐầu tư vào công cụ vốn của đơn vị khác phản ánh các khoản đầu tư công cụ vốn nhưng Công ty không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư. Khoản đầu tư vào công cụ vốn các đơn vị khác được phản ánh theo nguyên giá trừ các khoản dự phòng giảm giá đầu tư.\nCác khoản đầu tư chứng khoán tại thời điểm báo cáo, nếu:\n- Có thời hạn thu hồi vốn dưới 1 năm/1 chu kỳ kinh doanh được phân loại là tài sản ngắn hạn.\n- Có thời hạn thu hồi vốn trên 1 năm/1 chu kỳ kinh doanh được phân loại là tài sản dài hạn.\nDự phòng giảm giá đầu tư là số chênh lệch giữa giá gốc của các khoản đầu tư được hạch toán trên sổ kế toán lớn hơn giá trị thị trường của chúng tại thời điểm lập dự phòng.",
+    "output": [
+      "Theo chính sách kế toán, tiền và tương đương tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng, các khoản đầu tư ngắn hạn không quá 3 tháng có khả năng chuyển đổi dễ dàng thành tiền và không có nhiều rủi ro trong chuyển đổi thành tiền kể từ ngày mua khoản đầu tư đó tại thời điểm báo cáo.",
+      "Các khoản đầu tư chứng khoán được phân loại là tài sản ngắn hạn khi có thời hạn thu hồi vốn dưới 1 năm/1 chu kỳ kinh doanh tại thời điểm báo cáo.",
+      "Các nghiệp vụ kinh tế phát sinh bằng ngoại tệ được quy đổi ra đồng Việt Nam theo tỷ giá giao dịch thực tế tại thời điểm phát sinh nghiệp vụ.",
+      "Chênh lệch tỷ giá thực tế phát sinh trong năm và chênh lệch tỷ giá do đánh giá lại số dư các khoản mục tiền tệ tại thời điểm cuối năm được kết chuyển vào doanh thu hoặc chi phí tài chính trong năm.",
+      "Việc áp dụng nhất quán chính sách tỷ giá hối đoái là cực kỳ quan trọng đối với độ tin cậy của báo cáo tài chính. Nó đảm bảo rằng các giao dịch và số dư có gốc ngoại tệ được ghi nhận và đánh giá một cách đồng bộ qua các kỳ, từ đó giúp báo cáo tài chính có tính so sánh cao. Nếu chính sách không nhất quán, các chỉ tiêu như doanh thu, chi phí, tài sản và nợ phải trả có thể bị sai lệch, làm giảm tính chính xác và độ tin cậy của thông tin tài chính, gây khó khăn cho việc phân tích và ra quyết định của các bên liên quan.",
+      "Việc phân loại đầu tư tài chính thành ngắn hạn (dưới 1 năm/1 chu kỳ kinh doanh) hoặc dài hạn (trên 1 năm/1 chu kỳ kinh doanh) có tác động đáng kể: \\n-   **Thanh khoản:** Đầu tư ngắn hạn đóng góp vào khả năng thanh khoản của công ty, giúp công ty dễ dàng chuyển đổi thành tiền mặt để đáp ứng các nghĩa vụ tài chính ngắn hạn. Ngược lại, đầu tư dài hạn có tính thanh khoản thấp hơn và không sẵn có để chi trả các khoản cấp bách. \\n-   **Rủi ro:** Đầu tư ngắn hạn thường mang rủi ro thị trường thấp hơn do thời gian nắm giữ ngắn. Đầu tư dài hạn có thể tiềm ẩn rủi ro thị trường và lãi suất cao hơn. Việc phân loại đúng giúp phản ánh chính xác khả năng của công ty trong việc đáp ứng các nhu cầu vốn và mức độ rủi ro liên quan đến các khoản đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Khi nào một khoản phải thu được coi là không thể thu hồi và bị xóa sổ?",
+      "Công ty xác định giá trị hàng tồn kho theo phương pháp nào?",
+      "Nêu một yếu tố căn cứ để lập dự phòng các khoản phải thu khó đòi.",
+      "Giải thích nguyên tắc ghi nhận giá gốc hàng tồn kho.",
+      "Thời gian khấu hao ước tính cho máy móc thiết bị là bao nhiêu?",
+      "Phân tích rủi ro tiềm ẩn nếu dự phòng giảm giá hàng tồn kho không được lập chính xác."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Chính sách kế toán (tiếp theo)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG (tiếp theo)\n5. Nguyên tắc kế toán nợ phải thu\nCác khoản phải thu thể hiện giá trị ghi sổ của các khoản phải thu khách hàng gồm các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch bán hàng hóa, cung cấp dịch vụ và các khoản phải thu khác không có tính chất thương mại, không liên quan đến giao dịch bán hàng hóa và cung cấp dịch vụ.\nDự phòng các khoản phải thu khó đòi được lập cho từng khoản phải thu căn cứ vào thời gian quá hạn trả nợ gốc theo cam kết nợ ban đầu (không tính đến gia hạn nợ giữa các bên), hoặc căn cứ vào mức tổn thất dự kiến có thể xảy ra. Các khoản phải thu được xác định là không thể thu hồi sẽ được xóa sổ.\nCác khoản phải thu được phân loại ngắn hạn và dài hạn trên bảng cân đối kế toán căn cứ theo kỳ hạn còn lại của các khoản phải thu tại ngày của bảng cân đối kế toán.\n\n6. Nguyên tắc ghi nhận hàng tồn kho\nHàng tồn kho được tính theo giá gốc. Giá gốc hàng tồn kho bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\nGiá trị hàng tồn kho được xác định theo phương pháp bình quân gia quyền.\nHàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên.\nDự phòng giảm giá hàng tồn kho được lập vào thời điểm cuối năm là số chênh lệch giữa giá gốc của hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được của chúng. Khi xác định khối lượng hàng tồn kho bị giảm giá cần phải trích lập dự phòng, kế toán phải loại trừ khối lượng hàng tồn kho đã ký được hợp đồng tiêu thụ có giá trị thuần có thể thực hiện được không thấp hơn giá trị ghi sổ nhưng chưa chuyển giao cho khách hàng nếu có bằng chứng chắc chắn về việc khách hàng sẽ không từ bỏ thực hiện hợp đồng.\n\n7. Nguyên tắc ghi nhận và khấu hao tài sản cố định\nTài sản cố định hữu hình và tài sản cố định vô hình được ghi nhận theo giá gốc. Trong quá trình sử dụng, tài sản cố định hữu hình và tài sản cố định vô hình được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại.\nTài sản cố định thuê tài chính được ghi nhận nguyên giá theo giá trị hợp lý hoặc giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu (không bao gồm thuế GTGT) và các chi phí trực tiếp phát sinh ban đầu liên quan đến tài sản cố định thuê tài chính. Trong quá trình sử dụng, tài sản cố định thuê tài chính được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại.\nKhấu hao được trích theo phương pháp đường thẳng. Thời gian khấu hao được ước tính như sau:\n- Nhà xưởng và vật kiến trúc: 15-50 năm\n- Máy móc thiết bị: 05 - 15 năm\n- Phương tiện vận tải: 06 - 08 năm\n- Thiết bị quản lý: 03 - 05 năm\n- Quyền sử dụng đất: 45 - 49 năm\n- Phần mềm quản lý: 05-10 năm",
+    "output": [
+      "Một khoản phải thu được coi là không thể thu hồi và bị xóa sổ khi các khoản phải thu đó được xác định là không thể thu hồi.",
+      "Công ty xác định giá trị hàng tồn kho theo phương pháp bình quân gia quyền.",
+      "Một yếu tố căn cứ để lập dự phòng các khoản phải thu khó đòi là thời gian quá hạn trả nợ gốc theo cam kết nợ ban đầu (không tính đến gia hạn nợ giữa các bên).",
+      "Nguyên tắc ghi nhận giá gốc hàng tồn kho là giá gốc bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại của chúng.",
+      "Thời gian khấu hao ước tính cho máy móc thiết bị là từ 05 đến 15 năm.",
+      "Nếu dự phòng giảm giá hàng tồn kho không được lập chính xác, đặc biệt là khi nó bị đánh giá thấp, sẽ có những rủi ro tiềm ẩn sau:\\n-   **Thổi phồng tài sản:** Giá trị hàng tồn kho trên bảng cân đối kế toán sẽ cao hơn giá trị thuần có thể thực hiện được, làm sai lệch tổng giá trị tài sản của công ty.\\n-   **Lợi nhuận ảo:** Chi phí giá vốn hàng bán sẽ bị đánh giá thấp trong kỳ, dẫn đến lợi nhuận gộp và lợi nhuận thuần bị thổi phồng, không phản ánh đúng kết quả kinh doanh thực tế.\\n-   **Quyết định kinh doanh sai lệch:** Ban quản lý và nhà đầu tư có thể đưa ra các quyết định dựa trên thông tin không chính xác về hiệu suất và giá trị tài sản, dẫn đến phân bổ nguồn lực không hiệu quả hoặc đánh giá sai về triển vọng của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Chi phí trả trước ngắn hạn được ghi nhận như thế nào?",
+      "Khi nào chi phí đi vay được vốn hóa vào giá trị tài sản?",
+      "Nguyên tắc ghi nhận vốn đầu tư của chủ sở hữu là gì?",
+      "Nêu hai điều kiện để doanh thu bán hàng được ghi nhận.",
+      "Giải thích mục đích của việc trích trước chi phí phải trả.",
+      "Phân tích tầm quan trọng của việc xác định đúng thời điểm ghi nhận doanh thu đối với tính chính xác của báo cáo kết quả kinh doanh."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Chính sách kế toán (tiếp theo)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG (tiếp theo)\n8. Nguyên tắc ghi nhận và phân bổ chi phí trả trước\nCác chi phí trả trước chỉ liên quan đến chi phí sản xuất kinh doanh năm tài chính hiện tại được ghi nhận là chi phí trả trước ngắn hạn và được tính vào chi phí sản xuất kinh doanh trong năm tài chính.\nViệc tính và phân bổ chi phí trả trước dài hạn vào chi phí sản xuất kinh doanh từng kỳ hạch toán được căn cứ vào tính chất, mức độ từng loại chi phí để chọn phương pháp và tiêu thức phân bổ hợp lý. Chi phí trả trước được phân bổ dần vào chi phí sản xuất kinh doanh theo phương pháp đường thẳng.\n\n9. Nguyên tắc ghi nhận và vốn hóa các khoản chi phí đi vay\nChi phí đi vay được ghi nhận vào chi phí sản xuất, kinh doanh trong năm khi phát sinh, trừ chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó được vốn hóa khi có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 Chi phí đi vay.\nChi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó được vốn hóa, bao gồm các khoản lãi tiền vay, phân bổ các khoản chiết khấu hoặc phụ trội khi phát hành trái phiếu, các khoản chi phí phụ phát sinh liên quan tới quá trình làm thủ tục vay.\n\n10. Nguyên tắc ghi nhận chi phí phải trả\nCác khoản chi phí thực tế chưa phát sinh nhưng được trích trước vào chi phí sản xuất, kinh doanh trong năm để đảm bảo khi chi phí phát sinh thực tế không gây đột biến cho chi phí sản xuất kinh doanh trên cơ sở đảm bảo nguyên tắc phù hợp giữa doanh thu và chi phí. Khi các chi phí đó phát sinh, nếu có chênh lệch với số đã trích, kế toán tiến hành ghi bổ sung hoặc ghi giảm chi phí tương ứng với phần chênh lệch.\n\n11. Nguyên tắc ghi nhận vốn chủ sở hữu\nVốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.\n\n12. Nguyên tắc và phương pháp ghi nhận doanh thu\nDoanh thu bán hàng\nDoanh thu bán hàng được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua.\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n- Doanh thu được xác định tương đối chắc chắn.\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.",
+    "output": [
+      "Các chi phí trả trước ngắn hạn chỉ liên quan đến chi phí sản xuất kinh doanh năm tài chính hiện tại được ghi nhận là chi phí trả trước ngắn hạn và được tính vào chi phí sản xuất kinh doanh trong năm tài chính.",
+      "Chi phí đi vay được vốn hóa vào giá trị tài sản khi chi phí đó liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang và có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 Chi phí đi vay.",
+      "Nguyên tắc ghi nhận vốn đầu tư của chủ sở hữu là được ghi nhận theo số vốn thực góp của chủ sở hữu.",
+      "Hai điều kiện để doanh thu bán hàng được ghi nhận là:\\n- Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua.\\n- Doanh thu được xác định tương đối chắc chắn.",
+      "Mục đích của việc trích trước chi phí phải trả là để ghi nhận các chi phí thực tế chưa phát sinh nhưng được dự kiến sẽ xảy ra, nhằm đảm bảo khi chi phí phát sinh thực tế không gây đột biến cho chi phí sản xuất kinh doanh trong kỳ. Điều này giúp duy trì nguyên tắc phù hợp giữa doanh thu và chi phí, làm cho báo cáo kết quả kinh doanh trở nên ổn định và chính xác hơn.",
+      "Việc xác định đúng thời điểm ghi nhận doanh thu là cực kỳ quan trọng đối với tính chính xác của báo cáo kết quả kinh doanh. Nếu doanh thu được ghi nhận sớm hoặc muộn hơn thời điểm thực tế phát sinh (khi các điều kiện ghi nhận được thỏa mãn), nó có thể làm sai lệch lợi nhuận gộp và lợi nhuận thuần của kỳ đó. Điều này ảnh hưởng trực tiếp đến việc đánh giá hiệu quả hoạt động của công ty, làm giảm độ tin cậy của thông tin tài chính cho các nhà đầu tư và các bên liên quan, và có thể dẫn đến các quyết định kinh doanh sai lầm."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Khi nào doanh thu cung cấp dịch vụ được ghi nhận nếu dịch vụ liên quan đến nhiều năm?",
+      "Cổ tức được ghi nhận khi nào?",
+      "Giá vốn hàng bán phản ánh điều gì?",
+      "Nêu các điều kiện để doanh thu hoạt động tài chính được ghi nhận.",
+      "Giải thích cách khoản dự phòng giảm giá hàng tồn kho ảnh hưởng đến giá vốn hàng bán.",
+      "Phân tích tầm quan trọng của việc xác định 'giá trị thuần có thể thực hiện được' của hàng tồn kho trong việc lập dự phòng."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Chính sách kế toán (tiếp theo)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG (tiếp theo)\nDoanh thu cung cấp dịch vụ\nDoanh thu cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp việc cung cấp dịch vụ liên quan đến nhiều năm thì doanh thu được ghi nhận trong năm theo kết quả phần công việc đã hoàn thành vào ngày lập Bảng Cân đối kế toán của năm đó. Kết quả của giao dịch cung cấp dịch vụ được xác định khi thỏa mãn các điều kiện sau:\n- Doanh thu được xác định tương đối chắc chắn.\n- Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n- Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán.\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\n\nDoanh thu hoạt động tài chính\nDoanh thu phát sinh từ tiền lãi, tiền bản quyền, cổ tức, lợi nhuận được chia và các khoản doanh thu hoạt động tài chính khác được ghi nhận khi thỏa mãn đồng thời hai (2) điều kiện sau:\n- Có khả năng thu được lợi ích kinh tế từ giao dịch đó.\n- Doanh thu được xác định tương đối chắc chắn.\nCổ tức, lợi nhuận được chia được ghi nhận khi Công ty được quyền nhận cổ tức hoặc được quyền nhận lợi nhuận từ việc góp vốn.\n\n13. Nguyên tắc kế toán giá vốn hàng bán\nGiá vốn hàng bán phản ánh trị giá vốn của sản phẩm, hàng hóa, dịch vụ bán trong kỳ.\nKhoản dự phòng giảm giá hàng tồn kho được tính vào giá vốn hàng bán trên cơ sở số lượng hàng tồn kho và phần chênh lệch giữa giá trị thuần có thể thực hiện được nhỏ hơn giá gốc hàng tồn kho. Khi xác định khối lượng hàng tồn kho bị giảm giá cần phải trích lập dự phòng, kế toán phải loại trừ khối lượng hàng tồn kho đã ký được hợp đồng tiêu thụ có giá trị thuần có thể thực hiện được không thấp hơn giá trị ghi sổ nhưng chưa chuyển giao cho khách hàng nếu có bằng chứng chắc chắn về việc khách hàng sẽ không từ bỏ thực hiện hợp đồng.",
+    "output": [
+      "Trường hợp việc cung cấp dịch vụ liên quan đến nhiều năm thì doanh thu được ghi nhận trong năm theo kết quả phần công việc đã hoàn thành vào ngày lập Bảng Cân đối kế toán của năm đó.",
+      "Cổ tức, lợi nhuận được chia được ghi nhận khi Công ty được quyền nhận cổ tức hoặc được quyền nhận lợi nhuận từ việc góp vốn.",
+      "Giá vốn hàng bán phản ánh trị giá vốn của sản phẩm, hàng hóa, dịch vụ bán trong kỳ.",
+      "Các điều kiện để doanh thu hoạt động tài chính được ghi nhận là:\\n- Có khả năng thu được lợi ích kinh tế từ giao dịch đó.\\n- Doanh thu được xác định tương đối chắc chắn.",
+      "Khoản dự phòng giảm giá hàng tồn kho được tính vào giá vốn hàng bán trên cơ sở số lượng hàng tồn kho và phần chênh lệch giữa giá trị thuần có thể thực hiện được nhỏ hơn giá gốc hàng tồn kho. Điều này có nghĩa là khi giá trị hàng tồn kho giảm so với giá gốc, khoản dự phòng được lập sẽ làm tăng giá vốn hàng bán, từ đó làm giảm lợi nhuận gộp trong kỳ.",
+      "Việc xác định 'giá trị thuần có thể thực hiện được' (Net Realizable Value - NRV) của hàng tồn kho là cực kỳ quan trọng trong việc lập dự phòng. NRV là giá bán ước tính của hàng tồn kho trong điều kiện kinh doanh bình thường, trừ đi chi phí ước tính để hoàn thành sản phẩm và chi phí ước tính để tiêu thụ sản phẩm. So sánh NRV với giá gốc giúp công ty:\\n- **Đảm bảo tính thận trọng:** Không ghi nhận hàng tồn kho với giá trị cao hơn số tiền dự kiến thu được.\\n- **Phản ánh đúng thực tế:** Đảm bảo giá trị tài sản trên bảng cân đối kế toán và giá vốn hàng bán trên báo cáo kết quả kinh doanh phản ánh sát nhất với giá trị kinh tế thực tế và khả năng thu hồi vốn, từ đó nâng cao tính chính xác của báo cáo tài chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nêu ba loại chi phí được bao gồm trong chi phí hoạt động tài chính.",
+      "Chi phí bán hàng bao gồm những loại chi phí nào?",
+      "Khi nào tài sản thuế thu nhập hoãn lại được ghi nhận?",
+      "Giải thích sự khác biệt giữa chi phí thuế thu nhập doanh nghiệp hiện hành và chi phí thuế thu nhập doanh nghiệp hoãn lại.",
+      "Phân tích tác động của chi phí quản lý doanh nghiệp đến lợi nhuận cuối cùng của công ty.",
+      "Đánh giá tầm quan trọng của việc ghi nhận chính xác chi phí thuế thu nhập doanh nghiệp đối với sự minh bạch tài chính."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Chính sách kế toán (tiếp theo)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG (tiếp theo)\n14. Nguyên tắc và phương pháp ghi nhận chi phí tài chính\nChi phí hoạt động tài chính bao gồm các khoản chi phí hoặc các khoản lỗ liên quan đến các hoạt động đầu tư tài chính, chi phí cho vay và đi vay vốn, chi phí góp vốn liên doanh, liên kết, lỗ chuyển nhượng chứng khoán ngắn hạn, chi phí giao dịch bán chứng khoán, Dự phòng giảm giá chứng khoán kinh doanh, dự phòng tổn thất đầu tư vào đơn vị khác, khoản lỗ phát sinh khi bán ngoại tệ, lỗ tỷ giá hối đoái.\n\n15. Nguyên tắc kế toán chi phí bán hàng, chi phí quản lý doanh nghiệp\nChi phí bán hàng phản ánh các chi phí thực tế phát sinh trong quá trình bán sản phẩm, hàng hóa, cung cấp dịch vụ, bao gồm các chi phí chào hàng, giới thiệu sản phẩm, quảng cáo sản phẩm, hoa hồng bán hàng, chi phí bảo hành sản phẩm, hàng hóa (trừ hoạt động xây lắp), chi phí bảo quản, đóng gói, vận chuyển,...\nChi phí quản lý doanh nghiệp phản ánh các chi phí quản lý chung của doanh nghiệp gồm các chi phí về lương nhân viên bộ phận quản lý doanh nghiệp (tiền lương, tiền công, các khoản phụ cấp,... bảo hiểm xã hội, bảo hiểm y tế, kinh phí công đoàn, bảo hiểm thất nghiệp của nhân viên quản lý doanh nghiệp); chi phí vật liệu văn phòng, công cụ lao động, khấu hao TSCĐ dùng cho quản lý doanh nghiệp; tiền thuê đất, thuế môn bài; khoản lập dự phòng phải thu khó đòi; dịch vụ mua ngoài (điện, nước, điện thoại, fax, bảo hiểm tài sản, cháy nổ...); chi phí bằng tiền khác (tiếp khách, hội nghị khách hàng...).\n\n16. Nguyên tắc và phương pháp ghi nhận chi phí thuế thu nhập doanh nghiệp hiện hành, chi phí thuế thu nhập doanh nghiệp hoãn lại\nChi phí thuế thu nhập doanh nghiệp hiện hành được xác định trên cơ sở thu nhập chịu thuế và thuế suất thuế TNDN trong năm hiện hành.\nThuế thu nhập hoãn lại phải trả phải được ghi nhận cho tất cả các khoản chênh lệch tạm thời, còn tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế trong tương lai để khấu trừ các khoản chênh lệch tạm thời.",
+    "output": [
+      "Ba loại chi phí được bao gồm trong chi phí hoạt động tài chính là: chi phí cho vay và đi vay vốn, dự phòng giảm giá chứng khoán kinh doanh, và lỗ tỷ giá hối đoái.",
+      "Chi phí bán hàng bao gồm các chi phí thực tế phát sinh trong quá trình bán sản phẩm, hàng hóa, cung cấp dịch vụ, như chi phí chào hàng, giới thiệu sản phẩm, quảng cáo, hoa hồng bán hàng, chi phí bảo hành, bảo quản, đóng gói, vận chuyển.",
+      "Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế trong tương lai để khấu trừ các khoản chênh lệch tạm thời.",
+      "Sự khác biệt giữa chi phí thuế thu nhập doanh nghiệp hiện hành và chi phí thuế thu nhập doanh nghiệp hoãn lại là:\\n- **Chi phí thuế thu nhập doanh nghiệp hiện hành:** Là khoản thuế TNDN phải nộp dựa trên thu nhập chịu thuế và thuế suất thuế TNDN trong năm hiện hành.\\n- **Chi phí thuế thu nhập doanh nghiệp hoãn lại:** Phát sinh do chênh lệch tạm thời giữa lợi nhuận kế toán và thu nhập chịu thuế, phản ánh ảnh hưởng thuế của các khoản chênh lệch này sẽ đảo ngược trong tương lai, được ghi nhận dưới dạng tài sản thuế hoặc nợ thuế hoãn lại.",
+      "Chi phí quản lý doanh nghiệp là các chi phí chung để điều hành công ty, không trực tiếp liên quan đến sản xuất hay bán hàng. Các chi phí này, như lương nhân viên quản lý, khấu hao TSCĐ dùng cho quản lý, chi phí vật liệu văn phòng, dịch vụ mua ngoài, trực tiếp làm giảm lợi nhuận trước thuế của công ty. Nếu chi phí quản lý doanh nghiệp tăng lên mà không được bù đắp bởi doanh thu hoặc hiệu quả hoạt động, nó sẽ làm giảm biên lợi nhuận và lợi nhuận cuối cùng. Ngược lại, việc kiểm soát và tối ưu hóa chi phí này có thể cải thiện đáng kể lợi nhuận ròng của công ty.",
+      "Việc ghi nhận chính xác chi phí thuế thu nhập doanh nghiệp là cực kỳ quan trọng đối với sự minh bạch tài chính. Nó đảm bảo rằng báo cáo tài chính phản ánh đúng nghĩa vụ thuế hiện hành và tiềm năng của công ty, cung cấp cái nhìn thực tế về lợi nhuận sau thuế mà công ty thực sự giữ lại. Sự chính xác này giúp các nhà đầu tư và bên liên quan đánh giá đúng chất lượng lợi nhuận, khả năng sinh lời thực tế và tuân thủ pháp luật về thuế của công ty. Sai sót trong việc này có thể làm giảm đáng kể độ tin cậy và khả năng so sánh của báo cáo tài chính."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nêu hai loại bộ phận báo cáo mà công ty có thể trình bày.",
+      "Khi nào các bên được coi là liên quan?",
+      "Nêu ba ước tính và giả định có ảnh hưởng trọng yếu trong báo cáo tài chính.",
+      "Giải thích sự khác biệt giữa bộ phận theo lĩnh vực kinh doanh và bộ phận theo khu vực địa lý.",
+      "Tại sao việc sử dụng các ước tính kế toán là cần thiết trong báo cáo tài chính?",
+      "Phân tích rủi ro tiềm tàng khi các ước tính kế toán không chính xác hoặc thay đổi đáng kể trong tương lai."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Chính sách kế toán (tiếp theo)\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG (tiếp theo)\n17. Báo cáo bộ phận\nBáo cáo theo bộ phận bao gồm bộ phận theo lĩnh vực kinh doanh hoặc một bộ phận theo khu vực địa lý.\nBộ phận theo lĩnh vực kinh doanh: Là một bộ phận có thể phân biệt được của một doanh nghiệp tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ riêng lẻ, một nhóm các sản phẩm hoặc các dịch vụ có liên quan mà bộ phận này chịu rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh khác.\nBộ phận theo khu vực địa lý: Là một bộ phận có thể phân biệt được của một doanh nghiệp tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ trong phạm vi một môi trường kinh tế cụ thể mà bộ phận này có chịu rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh trong các môi trường kinh tế khác.\n\n18. Bên liên quan\nCác bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động.\n\n19. Sử dụng các ước tính kế toán\nViệc lập báo cáo tài chính tuân thủ theo các chuẩn mực Kế toán Việt Nam, chế độ Kế toán Doanh nghiệp Việt Nam và các quy định hiện hành khác có liên quan đến lập và trình bày báo cáo tài chính yêu cầu Hội đồng Quản trị phải có những ước tính và giả định ảnh hưởng đến số liệu về công nợ, tài sản và việc trình bày các khoản công nợ và tài sản tiềm tàng tại ngày kết thúc niên độ kế toán cũng như các số liệu về doanh thu và chi phí trong suốt năm tài chính. Mặc dù các ước tính kế toán được lập bằng tất cả sự hiểu biết của Hội đồng Quản trị, số thực tế phát sinh có thể khác với các ước tính.\nCác ước tính và giả định có ảnh hưởng trọng yếu trong báo cáo tài chính bao gồm:\n- Thời gian sử dụng hữu ích của tài sản cố định.\n- Chi phí phải trả.\n- Các khoản dự phòng.\nCác ước tính và giả định thường xuyên được đánh giá dựa trên kinh nghiệm trong quá khứ và các yếu tố khác, bao gồm các giả định trong tương lai có ảnh hưởng trọng yếu tới báo cáo tài chính của Tổng Công ty và được Hội đồng Quản trị đánh giá là hợp lý.",
+    "output": [
+      "Hai loại bộ phận báo cáo mà công ty có thể trình bày là báo cáo theo bộ phận theo lĩnh vực kinh doanh hoặc báo cáo theo bộ phận theo khu vực địa lý.",
+      "Các bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động.",
+      "Ba ước tính và giả định có ảnh hưởng trọng yếu trong báo cáo tài chính là:\\n- Thời gian sử dụng hữu ích của tài sản cố định.\\n- Chi phí phải trả.\\n- Các khoản dự phòng.",
+      "- **Bộ phận theo lĩnh vực kinh doanh:** Là một bộ phận có thể phân biệt được của một doanh nghiệp tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ riêng lẻ, một nhóm các sản phẩm hoặc các dịch vụ có liên quan mà bộ phận này chịu rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh khác.\\n- **Bộ phận theo khu vực địa lý:** Là một bộ phận có thể phân biệt được của một doanh nghiệp tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ trong phạm vi một môi trường kinh tế cụ thể mà bộ phận này có chịu rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh trong các môi trường kinh tế khác.",
+      "Việc sử dụng các ước tính kế toán là cần thiết trong báo cáo tài chính vì không phải tất cả các khoản mục đều có thể được xác định chính xác tại thời điểm lập báo cáo (ví dụ: tuổi thọ tài sản cố định, khả năng thu hồi các khoản phải thu). Các ước tính và giả định này cho phép công ty hoàn thành báo cáo tài chính kịp thời, cung cấp thông tin tài chính hữu ích nhất có thể, dù vẫn có khả năng sai khác so với số liệu thực tế phát sinh trong tương lai.",
+      "Rủi ro tiềm tàng khi các ước tính kế toán không chính xác hoặc thay đổi đáng kể trong tương lai là rất lớn:\\n- **Sai lệch thông tin tài chính:** Các ước tính không chính xác có thể dẫn đến việc báo cáo tài chính không phản ánh đúng tình hình tài chính và kết quả hoạt động, làm giảm độ tin cậy và minh bạch. Ví dụ, ước tính tuổi thọ TSCĐ quá dài sẽ làm chi phí khấu hao thấp và lợi nhuận bị thổi phồng.\\n- **Quyết định sai lầm:** Nhà đầu tư và ban quản lý có thể đưa ra các quyết định dựa trên thông tin sai lệch, dẫn đến việc phân bổ vốn không hiệu quả, đánh giá sai về giá trị doanh nghiệp, hoặc đối mặt với rủi ro tài chính cao hơn.\\n- **Ảnh hưởng đến uy tín:** Nếu các ước tính sau này phải điều chỉnh đáng kể, điều đó có thể làm tổn hại niềm tin của các bên liên quan vào tính toàn vẹn của báo cáo tài chính và uy tín của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số dư tiền mặt tại quỹ vào ngày 30/06/2024 là bao nhiêu?",
+      "Công ty có khoản đầu tư nào vào Công Ty Cổ Phần Rạng Đông Healthcare không? Nếu có, giá trị bao nhiêu vào 30/06/2024?",
+      "Khoản phải thu ngắn hạn từ CÔNG TY CỔ PHẦN SỮA VIỆT NAM vào 01/01/2024 là bao nhiêu?",
+      "So sánh tổng tiền và các khoản tương đương tiền giữa 30/06/2024 và 01/01/2024.",
+      "Đánh giá sự thay đổi trong các khoản phải thu ngắn hạn từ khách hàng lớn như Công Ty CP Đầu Tư Sản Xuất Thương Mại Tín An.",
+      "Phân tích tác động của việc giảm đáng kể tiền mặt và tiền gửi ngân hàng đến thanh khoản ngắn hạn của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Tiền, Đầu tư tài chính, Phải thu khách hàng)\nLoại nội dung: Bảng và Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN\n1. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Tiền mặt | 385,182,944 | 9,830,062,300 |\n| Tiền gửi ngân hàng không kỳ hạn | 20,772,594,098 | 21,881,440,771 |\n| Cộng | 21,157,777,042 | 31,711,503,071 |\n\n2. Các khoản đầu tư tài chính ngắn hạn\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Công ty cổ phần Gò Đàng | 397,920 | 397,920 |\n| Công Ty Cổ Phần Rạng Đông Healthcare | 12,000,000,000 | 12,000,000,000 |\n| Đầu tư nắm giữ đến ngày đáo hạn (khác) | 28,959,829,381 | 53,313,112,875 |\n| Cộng | 40,960,227,301 | 65,313,510,795 |\n\n3. Các khoản phải thu khách hàng\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| CÔNG TY CỔ PHẦN SỮA VIỆT NAM | 413,983,749 | 4,978,336,158 |\n| COCA-COLA VIỆT NAM | 1,363,814,292 | 2,820,339,150 |\n| CÔNG TY TNHH FRIESLANDCAMPINA VIỆT NAM | 3,167,388,499 | 4,999,615,685 |\n| Công ty Cổ phần Uniben | 1,054,019,520 | 1,589,993,377 |\n| Công Ty CP Đầu Tư Sản Xuất Thương Mại Tín An | 0 | 6,907,680,000 |\n| Công Ty Cổ Phần NEO FLOOR | 1,613,678,737 | 8,410,111,176 |\n| Các khách hàng khác | 318,833,320,651 | 346,506,127,415 |\n| Cộng | 326,446,205,448 | 376,212,202,961 |",
+    "output": [
+      "Số dư tiền mặt tại quỹ vào ngày 30/06/2024 là 385.182.944 VND.",
+      "Có, công ty có khoản đầu tư vào Công Ty Cổ Phần Rạng Đông Healthcare với giá trị 12.000.000.000 VND vào 30/06/2024.",
+      "Khoản phải thu ngắn hạn từ CÔNG TY CỔ PHẦN SỮA VIỆT NAM vào 01/01/2024 là 4.978.336.158 VND.",
+      "Tổng tiền và các khoản tương đương tiền giảm từ 31.711.503.071 VND vào 01/01/2024 xuống 21.157.777.042 VND vào 30/06/2024, tức giảm 10.553.726.029 VND.",
+      "Khoản phải thu ngắn hạn từ Công Ty CP Đầu Tư Sản Xuất Thương Mại Tín An đã giảm từ 6.907.680.000 VND vào 01/01/2024 xuống 0 VND vào 30/06/2024. Đây là một sự thay đổi rất tích cực, cho thấy công ty đã thu hồi được toàn bộ khoản nợ từ khách hàng này, góp phần cải thiện dòng tiền và chất lượng tài sản ngắn hạn của công ty.",
+      "Việc giảm đáng kể tổng \\Tiền và các khoản tương đương tiền\\ từ 31.711.503.071 VND xuống 21.157.777.042 VND (giảm hơn 10 tỷ VND) có tác động tiêu cực đến thanh khoản ngắn hạn của công ty. Mặc dù công ty vẫn còn một lượng tiền mặt và tiền gửi đáng kể, sự sụt giảm này làm giảm khả năng sẵn có của tiền mặt để đáp ứng các nghĩa vụ thanh toán ngắn hạn đột xuất, chi trả các khoản nợ đến hạn, hoặc tận dụng các cơ hội đầu tư tức thời. Điều này đòi hỏi công ty phải quản lý dòng tiền chặt chẽ hơn để đảm bảo duy trì đủ nguồn lực thanh khoản."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng các khoản phải thu ngắn hạn khác vào 30/06/2024 là bao nhiêu?",
+      "Giá trị gốc nợ xấu của Công ty TNHH MTV Hoàng Quỳnh vào 30/06/2024 là bao nhiêu?",
+      "Tổng giá gốc hàng tồn kho vào 30/06/2024 là bao nhiêu?",
+      "So sánh 'Tạm ứng' giữa 30/06/2024 và 01/01/2024.",
+      "Đánh giá sự thay đổi trong dự phòng nợ xấu của Công ty TNHH MTV Hoàng Quỳnh.",
+      "Phân tích tác động của biến động trong các khoản phải thu và hàng tồn kho đến thanh khoản và rủi ro hoạt động của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Phải thu khác, Nợ xấu, Hàng tồn kho)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (tiếp theo)\n4. Các khoản phải thu khác\na. Ngắn hạn\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Tạm ứng | 4,840,780,519 | 15,040,859,663 |\n| Ký quỹ ký cược | - | 3,524,152,463 |\n| Lãi tiền gửi và cho vay | 9,569,674,562 | 5,955,085,983 |\n| Các khoản phải thu ngắn hạn khác | 76,550,644,315 | 56,323,258,129 |\n| Cộng | 90,961,099,396 | 75,634,314,650 |\n\nb. Dài hạn khác\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Ký quỹ, ký cược dài hạn | 7,871,783,407 | 5,488,138,246 |\n| Các khoản phải thu dài hạn khác | 67,430,250 | - |\n| Cộng | 7,939,213,657 | 6,546,795,706 |\n\n5. Nợ xấu\n| Chỉ tiêu | Giá gốc 30/06/2024 | Dự phòng 30/06/2024 | Giá trị có thể thu hồi 30/06/2024 | Giá gốc 01/01/2024 | Dự phòng 01/01/2024 | Giá trị có thể thu hồi 01/01/2024 |\n|:---|:---|:---|:---|:---|:---|:---|\n| Wujiang Yige Import Export Co., Ltd | 966,438,659 | 966,438,659 | 0 | 966,438,659 | 966,438,659 | 0 |\n| Công ty TNHH MTV Hoàng Quỳnh | 129,171,188,933 | 17,493,058,092 | 111,678,130,841 | 129,171,188,933 | 44,412,618,609 | 84,758,570,324 |\n| Công ty TNHH Đầu tư Sản xuất Thương mại Dịch vụ Minh Phát Đạt | 40,553,600,803 | 12,166,080,241 | 28,387,520,562 | 40,553,600,803 | 12,166,080,241 | 28,387,520,562 |\n| Công ty TNHH MTV Sản xuất Thương mại Dịch vụ Ánh Hồng | 21,797,973,708 | 6,539,392,112 | 15,258,581,596 | 21,797,973,708 | 6,539,392,112 | 15,258,581,596 |\n| Các đối tượng khác | 59,987,556,727 | 13,437,813,751 | 46,549,742,976 | 76,555,904,713 | 13,437,813,751 | 63,118,090,962 |\n| Cộng | 252,476,758,830 | 50,602,782,855 | 201,873,975,975 | 278,045,106,816 | 77,522,343,372 | 200,522,763,444 |\n\n6. Hàng tồn kho\n| Chỉ tiêu | Giá gốc 30/06/2024 | Dự phòng 30/06/2024 | Giá gốc 01/01/2024 | Dự phòng 01/01/2024 |\n|:---|:---|:---|:---|:---|\n| Hàng mua đang đi đường | - | - | - | - |\n| Nguyên liệu, vật liệu | 578,079,327,086 | 36,046,455,221 | 619,676,276,605 | 36,046,455,221 |\n| Công cụ, dụng cụ | 5,433,905,102 | - | 5,815,896,574 | - |\n| Chi phí sản xuất kinh doanh dở dang | 116,963,945,661 | - | 116,427,026,040 | - |\n| Thành phẩm | 46,961,128,946 | - | 65,637,979,247 | - |\n| Hàng hóa | 70,072,670,239 | - | 67,751,054,488 | - |\n| Cộng | 817,510,977,034 | 36,046,455,221 | 875,308,232,954 | 36,046,455,221 |",
+    "output": [
+      "Tổng các khoản phải thu ngắn hạn khác vào 30/06/2024 là 90.961.099.396 VND.",
+      "Giá trị gốc nợ xấu của Công ty TNHH MTV Hoàng Quỳnh vào 30/06/2024 là 129.171.188.933 VND.",
+      "Tổng giá gốc hàng tồn kho vào 30/06/2024 là 817.510.977.034 VND.",
+      "Khoản 'Tạm ứng' giảm từ 15.040.859.663 VND vào 01/01/2024 xuống 4.840.780.519 VND vào 30/06/2024, tức là giảm 10.200.079.144 VND.",
+      "Dự phòng nợ xấu của Công ty TNHH MTV Hoàng Quỳnh đã giảm đáng kể từ 44.412.618.609 VND vào 01/01/2024 xuống 17.493.058.092 VND vào 30/06/2024 (giảm 26.919.560.517 VND). Đây là một tín hiệu tích cực, cho thấy công ty có thể đã thu hồi được một phần các khoản nợ khó đòi từ đối tác này hoặc đã đánh giá lại và nhận thấy rủi ro tín dụng đã giảm, từ đó cải thiện chất lượng của khoản phải thu và giá trị có thể thu hồi.",
+      "Biến động trong các khoản phải thu và hàng tồn kho có tác động hỗn hợp:\\n- **Khoản phải thu:** Tổng giá gốc nợ xấu và dự phòng nợ xấu giảm cho thấy công ty đã có những nỗ lực trong việc quản lý và thu hồi nợ, cải thiện chất lượng tài sản. Tuy nhiên, \\Các khoản phải thu ngắn hạn khác\\ lại tăng từ 75.634.314.650 VND lên 90.961.099.396 VND, cần được theo dõi.\\n- **Hàng tồn kho:** Tổng giá gốc hàng tồn kho giảm từ 875.308.232.954 VND xuống 817.510.977.034 VND. Việc này có thể là do công ty bán được hàng, giảm áp lực lưu giữ và chi phí liên quan, đồng thời giải phóng vốn, tác động tích cực đến thanh khoản.\\n- **Tác động tổng thể:** Nhìn chung, sự giảm của hàng tồn kho và các nỗ lực quản lý nợ xấu có thể cải thiện thanh khoản và giảm rủi ro hoạt động liên quan đến hàng tồn kho và tín dụng khách hàng. Tuy nhiên, cần phân tích kỹ hơn sự gia tăng của các khoản phải thu ngắn hạn khác để có cái nhìn toàn diện hơn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nguyên giá tài sản cố định hữu hình vào ngày 30/06/2024 là bao nhiêu?",
+      "Giá trị hao mòn lũy kế của 'Máy móc thiết bị' vào ngày 30/06/2024 là bao nhiêu?",
+      "Số tăng trong kỳ của nguyên giá tài sản cố định hữu hình do 'Đầu tư XDCB hoàn thành' là bao nhiêu?",
+      "So sánh 'Giá trị còn lại' của 'Nhà cửa, vật kiến trúc' giữa đầu năm và cuối kỳ.",
+      "Tính tổng số tiền khấu hao tài sản cố định hữu hình trong kỳ.",
+      "Phân tích tác động của các giao dịch tăng/giảm tài sản cố định hữu hình đến năng lực sản xuất của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Tăng giảm TSCĐ hữu hình)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Q.11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (tiếp theo)\n7. Tăng, giảm tài sản cố định hữu hình (Đơn vị tính: VND)\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|:---|:---|:---|:---|:---|:---|\n| Nguyên giá | | | | | |\n| Số dư đầu năm | 379,373,343,119 | 599,301,019,591 | 45,597,979,432 | 34,991,422,020 | 1,059,263,764,162 |\n| Số tăng trong kỳ | - | 5,591,221,803 | 8,482,183,193 | - | 14,073,404,996 |\n| Mua sắm mới | - | - | - | - | - |\n| Đầu tư XDCB hoàn thành | - | 2,091,848,361 | 200,000,000 | - | 2,291,848,361 |\n| Tăng từ TSCĐ thuê tài chính | - | 3,499,373,442 | 8,282,183,193 | - | 11,781,556,635 |\n| Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | 8,213,521,120 | 313,636,000 | 98,195,140 | 8,625,352,260 |\n| Thanh lý, nhượng bán | - | 1,221,799,900 | 313,636,000 | 62,650,000 | 1,598,085,900 |\n| Giảm khác | - | 6,991,721,220 | - | 35,545,140 | 7,027,266,360 |\n| Số dư cuối kỳ | 379,373,343,119 | 596,678,720,274 | 53,766,526,625 | 34,893,226,880 | 1,064,711,816,898 |\n| Giá trị hao mòn lũy kế | | | | | |\n| Số dư đầu năm | 100,709,698,734 | 410,740,910,605 | 28,505,410,037 | 24,189,063,412 | 564,145,082,788 |\n| Số tăng trong kỳ | 5,584,012,567 | 14,456,421,595 | 6,142,716,151 | 537,840,628 | 26,720,990,941 |\n| Khấu hao trong kỳ | 5,584,012,567 | 12,945,822,972 | 2,241,428,818 | 537,840,628 | 21,309,104,985 |\n| Tăng từ TSCĐ thuê tài chính | - | 1,510,598,623 | 3,901,287,333 | - | 5,411,885,956 |\n| Tăng khác | - | - | - | - | - |\n| Số giảm trong kỳ | - | 1,446,799,900 | 311,742,047 | 98,195,140 | 1,856,737,087 |\n| Bao gồm: Thanh lý, nhượng bán | - | 1,221,799,900 | 311,742,047 | 62,650,000 | 1,596,191,947 |\n| Giảm khác | - | 225,000,000 | - | 35,545,140 | 260,545,140 |\n| Số dư cuối kỳ | 106,293,711,301 | 423,750,532,300 | 34,336,384,141 | 24,628,708,900 | 589,009,336,642 |\n| Giá trị còn lại | | | | | |\n| Tại ngày đầu năm | 278,663,644,385 | 188,560,108,986 | 17,092,569,395 | 10,802,358,608 | 495,118,681,374 |\n| Tại ngày cuối kỳ | 273,079,631,818 | 172,928,187,974 | 19,430,142,484 | 10,264,517,980 | 475,702,480,356 |",
+    "output": [
+      "Tổng nguyên giá tài sản cố định hữu hình vào ngày 30/06/2024 là 1.064.711.816.898 VND.",
+      "Giá trị hao mòn lũy kế của 'Máy móc thiết bị' vào ngày 30/06/2024 là 423.750.532.300 VND.",
+      "Số tăng trong kỳ của nguyên giá tài sản cố định hữu hình do 'Đầu tư XDCB hoàn thành' là 2.291.848.361 VND.",
+      "'Giá trị còn lại' của 'Nhà cửa, vật kiến trúc' giảm từ 278.663.644.385 VND vào đầu năm xuống 273.079.631.818 VND vào cuối kỳ, tức là giảm 5.584.012.567 VND.",
+      "Tổng số tiền khấu hao tài sản cố định hữu hình trong kỳ là 21.309.104.985 VND.",
+      "Các giao dịch tăng/giảm tài sản cố định hữu hình cho thấy công ty đang điều chỉnh và đầu tư vào năng lực sản xuất:\\n- **Số tăng:** Nguyên giá tăng ròng 14.073.404.996 VND, chủ yếu từ 'Đầu tư XDCB hoàn thành' (2.291.848.361 VND) và 'Tăng từ TSCĐ thuê tài chính' (11.781.556.635 VND), tập trung vào máy móc thiết bị và phương tiện vận tải. Điều này cho thấy công ty đang mở rộng hoặc nâng cấp công nghệ, cải thiện hiệu suất vận chuyển.\\n- **Số giảm:** Có 8.625.352.260 VND giảm, bao gồm thanh lý, nhượng bán và giảm khác. Việc này có thể là loại bỏ các tài sản cũ, kém hiệu quả để tối ưu hóa.\\n**Tác động:** Với mức tăng ròng trong nguyên giá, công ty đang củng cố và nâng cao năng lực sản xuất. Việc đầu tư vào máy móc thiết bị mới có thể giúp tăng sản lượng, giảm chi phí sản xuất và nâng cao chất lượng sản phẩm, từ đó hỗ trợ cho sự phát triển của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Giá trị còn lại của tài sản cố định vô hình vào ngày 30/06/2024 là bao nhiêu?",
+      "Tổng chi phí xây dựng cơ bản dở dang vào 30/06/2024 là bao nhiêu?",
+      "Chi phí trả trước ngắn hạn cho 'Công cụ, dụng cụ chờ phân bổ' vào 30/06/2024 là bao nhiêu?",
+      "So sánh 'Giá trị còn lại' của tài sản cố định thuê tài chính giữa đầu năm và cuối năm.",
+      "Giải thích sự biến động của 'Chi phí trả trước dài hạn khác' trong kỳ.",
+      "Đánh giá tác động của việc giảm 'Nguyên giá' tài sản cố định thuê tài chính đến khả năng mở rộng hoạt động của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Tăng giảm TSCĐ vô hình, Chi phí XDCB dở dang, Tăng giảm TSCĐ thuê tài chính, Chi phí trả trước)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (tiếp theo)\n8. Tăng giảm tài sản cố định vô hình (Đơn vị tính: VND)\n| Chỉ tiêu | Quyền sử dụng đất | Hệ thống quản lý mạng, máy tính | Phần mềm ISO và khác | Cộng |\n|:---|:---|:---|:---|:---|\n| Nguyên giá | | | | |\n| Số dư đầu năm | 17,395,343,946 | 527,213,580 | 4,050,450,000 | 21,973,007,526 |\n| Số tăng trong kỳ | - | - | - | - |\n| Đầu tư XDCB hoàn thành | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - |\n| Số dư cuối kỳ | 17,395,343,946 | 527,213,580 | 4,050,450,000 | 21,973,007,526 |\n| Giá trị hao mòn lũy kế | | | | |\n| Số dư đầu năm | 4,003,389,464 | 1,782,450,000 | 527,213,580 | 6,313,053,044 |\n| Tăng trong kỳ | 179,090,784 | - | 113,400,000 | 292,490,784 |\n| Khấu hao trong kỳ | 179,090,784 | - | 113,400,000 | 292,490,784 |\n| Tăng khác | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - |\n| Số dư cuối kỳ | 4,182,480,248 | 1,782,450,000 | 640,613,580 | 6,605,543,828 |\n| Giá trị còn lại | | | | |\n| Tại ngày đầu năm | 13,750,136,050 | 2,524,675,000 | 15,659,954,482 | - |\n| Tại ngày cuối kỳ | 13,212,863,698 | 3,409,836,420 | 15,367,463,698 | - |\n\n9. Chi phí xây dựng cơ bản dở dang\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Xây dựng cơ bản dở dang | 3,701,254,400 | 3,701,254,400 |\n| Mua 02 lô đất tại xã Tân Thạnh Đông, Củ Chi | 3,701,254,400 | 3,701,254,400 |\n| Xây dựng cơ bản dở dang khác | - | 2,487,982,433 |\n| Mua sắm tài sản cố định | 3,728,934,151 | 2,453,934,151 |\n| Cộng | 7,430,188,551 | 6,155,188,551 |\n\n10. Tăng, giảm tài sản cố định thuê tài chính (Đơn vị tính: VND)\n| Chỉ tiêu | Máy móc thiết bị |\n|:---|:---|\n| Nguyên giá | |\n| Số dư đầu năm | 79,626,559,904 |\n| Số tăng trong năm | - |\n| Số giảm trong năm | 11,728,360,996 |\n| Thanh lý, nhượng bán | 11,728,360,996 |\n| Số dư cuối năm | 67,898,198,908 |\n| Giá trị hao mòn lũy kế | |\n| Số dư đầu năm | 15,555,368,465 |\n| Khấu hao trong năm | 5,333,738,041 |\n| Số giảm trong năm | 5,411,885,956 |\n| Thanh lý, nhượng bán | 5,411,885,956 |\n| Số dư cuối năm | 15,477,220,550 |\n| Giá trị còn lại | |\n| Tại ngày đầu năm | 64,071,191,439 |\n| Tại ngày cuối năm | 52,420,978,358 |\n\n11. Chi phí trả trước\na. Chi phí trả trước ngắn hạn\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Công cụ, dụng cụ chờ phân bổ | 1,432,435,343 | 8,002,543,957 |\n| Chi phí bảo hiểm | - | - |\n| Chi phí trả trước ngắn hạn khác | 3,982,420,733 | - |\n| Cộng | 5,414,856,076 | 8,002,543,957 |\n\nb. Chi phí trả trước dài hạn\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Công cụ, dụng cụ | 7,019,044,949 | 10,118,771,120 |\n| Chi phí thuê đất | 46,242,444,986 | 46,934,351,893 |\n| Chi phí trả trước dài hạn khác | 16,184,992,499 | 6,688,732,641 |\n| Cộng | 69,446,482,434 | 63,741,855,654 |",
+    "output": [
+      "Giá trị còn lại của tài sản cố định vô hình vào ngày 30/06/2024 là 15.367.463.698 VND.",
+      "Tổng chi phí xây dựng cơ bản dở dang vào 30/06/2024 là 7.430.188.551 VND.",
+      "Chi phí trả trước ngắn hạn cho 'Công cụ, dụng cụ chờ phân bổ' vào 30/06/2024 là 1.432.435.343 VND.",
+      "'Giá trị còn lại' của tài sản cố định thuê tài chính giảm từ 64.071.191.439 VND vào đầu năm xuống 52.420.978.358 VND vào cuối năm (30/06/2024), tức là giảm 11.650.213.081 VND.",
+      "'Chi phí trả trước dài hạn khác' đã tăng đáng kể từ 6.688.732.641 VND vào 01/01/2024 lên 16.184.992.499 VND vào 30/06/2024, tức là tăng 9.496.259.858 VND. Sự gia tăng này có thể cho thấy công ty đã thực hiện các khoản chi trả trước lớn cho các dự án hoặc dịch vụ có lợi ích trong nhiều kỳ kế toán tương lai, ngoài các khoản thuê đất hoặc công cụ dụng cụ thông thường. Đây có thể là các khoản đầu tư vào các tài sản vô hình khác hoặc các chi phí phát triển dài hạn nhằm mục đích chiến lược.",
+      "Nguyên giá tài sản cố định thuê tài chính đã giảm từ 79.626.559.904 VND vào đầu năm xuống 67.898.198.908 VND, chủ yếu do thanh lý, nhượng bán. Việc giảm này có thể có hai tác động:\\n- **Tiêu cực:** Nếu công ty không thay thế các tài sản đã thanh lý bằng các tài sản mới, nó có thể hạn chế khả năng mở rộng hoạt động hoặc duy trì năng lực sản xuất hiện tại.\\n- **Tích cực:** Nếu việc thanh lý là một phần của chiến lược tái cấu trúc để loại bỏ các tài sản kém hiệu quả và thay thế bằng tài sản tốt hơn (có thể là mua hoặc thuê vận hành), thì khả năng mở rộng không bị ảnh hưởng tiêu cực mà có thể được tối ưu hóa. Tuy nhiên, dựa trên dữ liệu, việc giảm nguyên giá này cho thấy một sự thu hẹp về quy mô tài sản thuê tài chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng 'Chi phí phải trả ngắn hạn' vào 30/06/2024 là bao nhiêu?",
+      "Giá trị 'Vay ngắn hạn' vào 30/06/2024 là bao nhiêu?",
+      "Khoản 'Kinh phí công đoàn' vào 30/06/2024 là bao nhiêu?",
+      "So sánh tổng 'Vay và nợ thuê tài chính ngắn hạn' giữa 30/06/2024 và 01/01/2024.",
+      "Giải thích sự thay đổi lớn trong 'Chi phí phải trả khác' từ đầu năm đến cuối quý.",
+      "Phân tích rủi ro thanh khoản của công ty dựa trên cơ cấu 'Vay và nợ thuê tài chính ngắn hạn' hiện tại."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Chi phí phải trả, Phải trả khác, Vay và nợ thuê tài chính)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (tiếp theo)\n12. Chi phí phải trả (Ngắn hạn)\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Trích trước chi phí lãi vay | 6,288,750,534 | - |\n| Chi phí phải trả khác | 15,220,435,991 | 105,174,589 |\n| Cộng | 15,318,272,082 | 6,393,925,123 |\n\n13. Phải trả khác\nPhải trả ngắn hạn khác\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Kinh phí công đoàn | 1,771,647,397 | 1,739,026,311 |\n| Bảo hiểm xã hội, y tế, thất nghiệp | 127,692,817 | 27,689,867 |\n| Cổ tức phải trả | - | 125,025,324 |\n| Phải trả các ngân hàng khoản | - | 15,589,064,020 |\n| Phải trả khác | 139,971,940,525 | 83,998,102,477 |\n| Cộng | 141,871,280,739 | 101,478,907,999 |\n\n14. Vay và nợ thuê tài chính\na. Vay và nợ thuê tài chính ngắn hạn\n| Chỉ tiêu | Giá trị 30/06/2024 | Số có khả năng Trả nợ 30/06/2024 | Tăng trong kỳ | Giảm trong kỳ | Giá trị 01/01/2024 | Số có khả năng Trả nợ 01/01/2024 |\n|:---|:---|:---|:---|:---|:---|:---|\n| Vay ngắn hạn | 1,026,050,777,457 | 1,026,050,777,457 | 672,898,050,992 | 801,112,051,424 | 1,154,264,777,889 | 1,154,264,777,889 |\n| Nợ thuê tài chính | 8,345,205,419 | 8,345,205,419 | 9,239,549 | 9,165,863,259 | 17,501,829,129 | 17,501,829,129 |\n| Cộng | 1,034,395,982,876 | 1,034,395,982,876 | 672,907,290,541 | 810,277,914,683 | 1,171,766,607,018 | 1,171,766,607,018 |\n\nb. Vay và nợ thuê tài chính dài hạn\n| Chỉ tiêu | Giá trị 30/06/2024 | Số có khả năng Trả nợ 30/06/2024 | Tăng trong kỳ | Giảm trong kỳ | Giá trị 01/01/2024 | Số có khả năng Trả nợ 01/01/2024 |\n|:---|:---|:---|:---|:---|:---|:---|\n| Vay dài hạn ngân hàng | 176,515,944,016 | 176,515,944,016 | - | 923,231,000 | 177,439,175,016 | 177,439,175,016 |\n| Nợ thuê tài chính | 21,341,993,071 | 21,341,993,071 | - | 1,092,562,500 | 22,434,555,571 | 22,434,555,571 |\n| Cộng | 197,857,937,087 | 197,857,937,087 | - | 2,015,793,500 | 199,873,730,587 | 199,873,730,587 |",
+    "output": [
+      "Tổng 'Chi phí phải trả ngắn hạn' vào 30/06/2024 là 15.318.272.082 VND.",
+      "Giá trị 'Vay ngắn hạn' vào 30/06/2024 là 1.026.050.777.457 VND.",
+      "Khoản 'Kinh phí công đoàn' vào 30/06/2024 là 1.771.647,397 VND.",
+      "Tổng 'Vay và nợ thuê tài chính ngắn hạn' giảm từ 1.171.766.607.018 VND vào 01/01/2024 xuống 1.034.395.982.876 VND vào 30/06/2024, tức là giảm 137.370.624.142 VND.",
+      "'Chi phí phải trả khác' đã tăng đột biến từ 105.174.589 VND vào 01/01/2024 lên 15.220.435.991 VND vào 30/06/2024. Sự thay đổi lớn này chủ yếu do sự xuất hiện của khoản 'Trích trước chi phí lãi vay' với giá trị 6.288.750.534 VND vào 30/06/2024. Ngoài ra, khoản 'Phải trả khác' cũng tăng đáng kể từ 83.998.102.477 VND lên 139.971.940.525 VND. Điều này phản ánh các nghĩa vụ chi phí mà công ty đã phát sinh nhưng chưa đến hạn thanh toán hoặc chưa được ghi nhận vào các tài khoản phải trả cụ thể khác.",
+      "Với 'Vay và nợ thuê tài chính ngắn hạn' ở mức 1.034.395.982.876 VND vào 30/06/2024, công ty đối mặt với rủi ro thanh khoản đáng kể. Mặc dù khoản này đã giảm so với đầu năm, nhưng quy mô tuyệt đối vẫn rất lớn, chiếm phần lớn trong tổng nợ phải trả. Điều này đòi hỏi công ty phải có đủ dòng tiền từ hoạt động kinh doanh hoặc khả năng tái tài trợ hiệu quả để đáp ứng các nghĩa vụ nợ đến hạn trong vòng một năm tới. Nếu không, công ty có thể gặp khó khăn trong việc thanh toán các khoản nợ này, gây áp lực lên tình hình tài chính và hoạt động."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải trả người bán ngắn hạn vào 30/06/2024 là bao nhiêu?",
+      "Số dư 'Thuế thu nhập doanh nghiệp' phải nộp vào 30/06/2024 là bao nhiêu?",
+      "Công ty có khoản phải trả cho 'SOJITZ PLANET CORPORATION' là bao nhiêu vào 30/06/2024?",
+      "So sánh tổng số thuế và các khoản phải nộp nhà nước giữa 01/01/2024 và 30/06/2024.",
+      "Giải thích sự biến động của 'Thuế GTGT hàng nhập khẩu' (cả phải nộp và phải thu) trong kỳ.",
+      "Phân tích tác động của sự gia tăng 'Phải trả người bán ngắn hạn' đến dòng tiền và quản lý vốn lưu động của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Phải trả người bán, Thuế và các khoản phải nộp Nhà nước)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (tiếp theo)\n15. Phải trả người bán (Đơn vị tính: VND)\na. Các khoản phải trả cho người bán ngắn hạn\n| Chỉ tiêu | Giá trị 30/06/2024 | Số có khả năng trả nợ 30/06/2024 | Giá trị 01/01/2024 | Số có khả năng trả nợ 01/01/2024 |\n|:---|:---|:---|:---|:---|\n| Công ty TNHH TMDV Hiệp Vương | 3,135,276,188 | 3,135,276,188 | 4,233,561,834 | 4,233,561,834 |\n| Công ty TNHH Trần Family | 2,344,964,649 | 2,344,964,649 | 1,099,735,016 | 1,099,735,016 |\n| Công ty TNHH Nhựa Đông Nam | - | - | - | - |\n| CHAIN DA INTERNATIONAL CO., LIMITED | - | - | - | - |\n| CHEMBÚD CORPORATION | - | - | - | - |\n| ZHEJIANG HENGDIAN APELOA IMP. AND EXP. | 2,730,672,000 | 2,730,672,000 | - | - |\n| SOJITZ PLANET CORPORATION | 156,937,500,000 | 156,937,500,000 | 156,937,500,000 | 156,937,500,000 |\n| Đối tượng phải trả khác | 125,900,162,869 | 125,900,162,869 | 129,921,632,740 | 129,921,632,740 |\n| Cộng | 291,048,575,706 | 291,048,575,706 | 292,192,429,590 | 292,192,429,590 |\n\n16. Thuế và các khoản phải nộp Nhà nước (Đơn vị tính: VND)\na. Phải nộp\n| Chỉ tiêu | 01/01/2024 | Số phải nộp trong kỳ | Số đã nộp trong kỳ | 30/06/2024 |\n|:---|:---|:---|:---|:---|\n| Thuế GTGT hàng nhập khẩu | 603,185,499 | 35,049,016,272 | 34,912,885,298 | 739,316,473 |\n| Thuế GTGT hàng bán nội địa | - | 2,879,086,070 | 2,879,086,070 | - |\n| Thuế nhập khẩu | - | - | - | - |\n| Thuế thu nhập doanh nghiệp | 8,478,034,895 | - | 1,334,174,482 | 7,143,860,413 |\n| Thuế thu nhập cá nhân | 270,641,147 | 331,643,240 | 501,250,051 | 101,034,336 |\n| Thuế tài nguyên | 64,000 | 112,000 | 160,000 | 16,000 |\n| Thuế nhà đất, tiền thuê đất | 5,519,336,665 | 5,998,865,250 | 5,583,873,676 | 5,934,328,239 |\n| Các loại thuế khác | - | 3,840,000 | 3,000,000 | 840,000 |\n| Cộng | 14,871,262,206 | 44,262,562,832 | 45,214,429,577 | 13,919,395,461 |\n\nb. Phải thu\n| Chỉ tiêu | 01/01/2024 | Số phải nộp trong kỳ | Số đã nộp trong kỳ | 30/06/2024 |\n|:---|:---|:---|:---|:---|\n| Thuế GTGT hàng nhập khẩu | 280,370,334 | 4,113,549,328 | 3,901,002,735 | 67,823,741 |\n| Thuế Nhập khẩu | 331,161,128 | 1,232,636,715 | 942,346,658 | 40,871,071 |\n| Các loại thuế khác | - | 3,000,000 | 3,723,750 | 723,750 |\n| Cộng | 611,531,462 | 5,349,186,043 | 4,847,073,143 | 109,418,562 |",
+    "output": [
+      "Tổng phải trả người bán ngắn hạn vào 30/06/2024 là 291.048.575.706 VND.",
+      "Số dư 'Thuế thu nhập doanh nghiệp' phải nộp vào 30/06/2024 là 7.143.860.413 VND.",
+      "Công ty có khoản phải trả cho 'SOJITZ PLANET CORPORATION' là 156.937.500.000 VND vào 30/06/2024.",
+      "Tổng số thuế và các khoản phải nộp nhà nước (phần phải nộp) giảm từ 14.871.262.206 VND vào 01/01/2024 xuống 13.919.395.461 VND vào 30/06/2024, tức giảm 951.866.745 VND.",
+      "Trong kỳ, 'Thuế GTGT hàng nhập khẩu phải nộp' tăng từ 603.185.499 VND lên 739.316.473 VND, sau khi công ty đã nộp 34.912.885.298 VND. Điều này cho thấy hoạt động nhập khẩu tiếp tục diễn ra. Trong khi đó, 'Thuế GTGT hàng nhập khẩu phải thu' giảm từ 280.370.334 VND xuống 67.823.741 VND, sau khi đã nộp 3.901.002.735 VND và phát sinh thêm 4.113.549.328 VND. Sự biến động này phản ánh quá trình liên tục phát sinh và khấu trừ thuế GTGT liên quan đến hoạt động nhập khẩu của công ty.",
+      "Thông tin trong bảng cho thấy 'Phải trả người bán ngắn hạn' thực tế đã giảm nhẹ từ 292.192.429.590 VND (01/01/2024) xuống 291.048.575.706 VND (30/06/2024), chứ không phải gia tăng. Tuy nhiên, nếu giả định rằng nó có xu hướng gia tăng, tác động sẽ là:\\n- **Dòng tiền:** Một sự gia tăng 'Phải trả người bán ngắn hạn' sẽ cho phép công ty giữ lại tiền mặt lâu hơn, cải thiện dòng tiền hoạt động trong ngắn hạn vì công ty chưa phải thanh toán ngay cho các nhà cung cấp. Đây là một hình thức tài trợ tín dụng thương mại ngắn hạn không lãi suất.\\n- **Quản lý vốn lưu động:** Điều này có thể là một chiến lược quản lý vốn lưu động hiệu quả, giúp công ty có thêm vốn để đầu tư hoặc đáp ứng các nhu cầu khác. Tuy nhiên, nếu gia tăng quá mức mà không có khả năng thanh toán rõ ràng, nó có thể ảnh hưởng đến mối quan hệ với nhà cung cấp và rủi ro tín dụng của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Vốn đầu tư của chủ sở hữu vào cuối kỳ là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối vào cuối kỳ là bao nhiêu?",
+      "Tổng vốn chủ sở hữu vào cuối kỳ (30/06/2024) là bao nhiêu?",
+      "So sánh 'Lợi ích cổ đông không kiểm soát' giữa cuối năm trước và cuối kỳ.",
+      "Giải thích tác động của 'Biến động do thay đổi tỷ lệ sở hữu công ty con' đến tổng vốn chủ sở hữu.",
+      "Phân tích xu hướng biến động của 'Lợi nhuận sau thuế chưa phân phối' và ý nghĩa của nó đối với sức khỏe tài chính của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Vốn chủ sở hữu)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (tiếp theo)\n17. VỐN CHỦ SỞ HỮU (Đơn vị tính: VND)\na. Bảng đối chiếu biến động của vốn chủ sở hữu\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Thặng dư vốn cổ phần | Vốn khác của chủ sở hữu | Quỹ đầu tư phát triển | Lợi ích cổ đông không kiểm soát | Lợi nhuận sau thuế chưa phân phối | Tổng cộng |\n|:---|:---|:---|:---|:---|:---|:---|:---|\n| Số dư đầu năm trước | 490,698,030,000 | 25,616,970,000 | 1,912,212,955 | 2,998,449,697 | 230,185,580,236 | 70,946,135,321 | 680,465,107,567 |\n| Tăng vốn trong năm trước | - | - | - | - | - | - | - |\n| Lãi trong năm trước | - | - | - | - | 4,141,042,612 | 142,559,903,429 | 146,700,946,041 |\n| Biến động do thay đổi tỷ lệ sở hữu công ty con | - | - | - | - | (7,728,014,051) | - | (7,728,014,051) |\n| Chia cổ tức năm trước từ lợi nhuận | - | - | - | - | 4,907,500,000 | - | 4,907,500,000 |\n| Phát hành cổ phiếu cho cán bộ công nhân viên | - | - | - | - | - | - | - |\n| Tăng giảm khác năm trước | - | - | - | - | - | - | - |\n| Số dư cuối năm trước | 490,698,030,000 | 25,616,970,000 | 1,912,212,955 | 2,998,449,697 | 28,409,023,573 | 205,778,024,699 | 343,856,661,526 |\n| Điều chỉnh trong kỳ theo Thông tư 200 | - | - | - | - | - | - | - |\n| Lãi trong kỳ | - | - | - | - | 3,869,814,360 | 60,680,725,894 | 64,550,540,254 |\n| Chia cổ tức từ lợi nhuận | - | - | - | - | - | - | - |\n| Tăng giảm do tăng tỷ lệ cổ phần công ty con | - | - | - | - | (7,739,628,720) | - | (7,739,628,720) |\n| Số dư cuối kỳ | 490,698,030,000 | 25,616,970,000 | 1,912,212,955 | 2,998,449,697 | 24,539,209,213 | 266,458,750,593 | 279,306,121,272 |",
+    "output": [
+      "Vốn đầu tư của chủ sở hữu vào cuối kỳ là 490.698.030.000 VND.",
+      "Lợi nhuận sau thuế chưa phân phối vào cuối kỳ là 266.458.750.593 VND.",
+      "Tổng vốn chủ sở hữu vào cuối kỳ (30/06/2024) là 279.306.121.272 VND.",
+      "'Lợi ích cổ đông không kiểm soát' giảm từ 28.409.023.573 VND vào cuối năm trước xuống 24.539.209.213 VND vào cuối kỳ (30/06/2024), tức giảm 3.869.814.360 VND.",
+      "'Biến động do thay đổi tỷ lệ sở hữu công ty con' đã làm giảm tổng vốn chủ sở hữu của công ty mẹ 7.739.628.720 VND. Điều này có thể xảy ra khi công ty mẹ bán một phần cổ phần của các công ty con hoặc khi các công ty con phát hành thêm cổ phiếu cho các cổ đông không kiểm soát, làm giảm tỷ lệ sở hữu của công ty mẹ trong các công ty con và do đó giảm phần vốn chủ sở hữu được ghi nhận cho công ty mẹ từ các công ty con đó.",
+      "Lợi nhuận sau thuế chưa phân phối đã tăng từ 205.778.024.699 VND vào cuối năm trước lên 266.458.750.593 VND vào cuối kỳ 30/06/2024. Xu hướng tăng này là tích cực và có ý nghĩa quan trọng đối với sức khỏe tài chính của công ty:\\n- **Củng cố vốn chủ sở hữu:** Việc giữ lại lợi nhuận giúp tăng cường vốn chủ sở hữu, làm cho bảng cân đối kế toán vững chắc hơn và giảm phụ thuộc vào vốn vay.\\n- **Khả năng tái đầu tư:** Lợi nhuận chưa phân phối là nguồn vốn nội bộ quan trọng có thể được sử dụng để tài trợ cho các dự án đầu tư, mở rộng hoạt động hoặc nghiên cứu phát triển mà không phải huy động vốn từ bên ngoài.\\n- **Linh hoạt tài chính:** Cho thấy công ty có khả năng sinh lời và quản lý tốt dòng tiền, tạo sự linh hoạt trong việc đưa ra các quyết định tài chính như chia cổ tức trong tương lai hoặc đối phó với các thách thức kinh tế."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn đầu tư của chủ sở hữu vào 30/06/2024 là bao nhiêu?",
+      "Số lượng cổ phiếu phổ thông đang lưu hành vào 30/06/2024 là bao nhiêu?",
+      "Mệnh giá cổ phiếu đang lưu hành của công ty là bao nhiêu?",
+      "Có sự thay đổi nào về vốn góp của chủ sở hữu trong kỳ không?",
+      "Đánh giá mức độ ổn định của vốn điều lệ và số lượng cổ phiếu lưu hành của công ty.",
+      "Phân tích tầm quan trọng của thông tin về cổ phiếu đang lưu hành và mệnh giá đối với nhà đầu tư."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Bảng cân đối kế toán (Vốn chủ sở hữu chi tiết, Cổ tức, Cổ phiếu)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (tiếp theo)\n17. VỐN CHỦ SỞ HỮU (Đơn vị tính: VND) (tiếp theo)\nb. Chi tiết vốn đầu tư của chủ sở hữu\n| Chỉ tiêu | 01/01/2024 (VND) | Tỷ lệ (%) | 30/06/2024 (VND) | Tỷ lệ (%) |\n|:---|:---|:---|:---|:---|\n| Các cổ đông | 490,698,030,000 | 100 | 490,698,030,000 | 100 |\n| Cộng | 490,698,030,000 | 100 | 490,698,030,000 | 100 |\n\nc. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Vốn góp đầu năm | 490,698,030,000 | 490,698,030,000 |\n| Vốn góp tăng trong kỳ | - | - |\n| Vốn góp cuối kỳ | 490,698,030,000 | 490,698,030,000 |\n| Cổ tức, lợi nhuận đã chia bằng cổ phiếu | - | - |\n| Nhận vốn góp các cổ đông không kiểm soát | - | - |\n\nd. Cổ phiếu\n| Chỉ tiêu | 30/06/2024 | 01/01/2024 |\n|:---|:---|:---|\n| Số lượng cổ phiếu đăng ký phát hành | 49,069,803 | 49,069,803 |\n| Số lượng cổ phiếu đã bán ra công chúng | 49,069,803 | 49,069,803 |\n| Cổ phiếu phổ thông | 49,069,803 | 49,069,803 |\n| Số lượng cổ phiếu đang lưu hành | 49,069,803 | 49,069,803 |\n| Cổ phiếu phổ thông | 49,069,803 | 49,069,803 |\n| Mệnh giá cổ phiếu đang lưu hành | 10,000 đồng/cổ phiếu | 10,000 đồng/cổ phiếu |",
+    "output": [
+      "Tổng vốn đầu tư của chủ sở hữu vào 30/06/2024 là 490.698.030.000 VND.",
+      "Số lượng cổ phiếu phổ thông đang lưu hành vào 30/06/2024 là 49.069.803 cổ phiếu.",
+      "Mệnh giá cổ phiếu đang lưu hành của công ty là 10.000 đồng/cổ phiếu.",
+      "Theo báo cáo, không có sự thay đổi nào về vốn góp của chủ sở hữu trong kỳ. Vốn góp đầu năm và cuối kỳ đều là 490.698.030.000 VND, và không có khoản vốn góp tăng trong kỳ.",
+      "Dựa trên thông tin, vốn góp của chủ sở hữu duy trì ở mức 490.698.030.000 VND và số lượng cổ phiếu phổ thông đang lưu hành ổn định ở 49.069.803 cổ phiếu từ 01/01/2024 đến 30/06/2024. Điều này cho thấy mức độ ổn định cao của vốn điều lệ và số lượng cổ phiếu lưu hành của công ty trong kỳ, không có các đợt phát hành thêm hoặc mua lại cổ phiếu quỹ, phản ánh sự nhất quán trong cấu trúc vốn của doanh nghiệp.",
+      "Thông tin về cổ phiếu đang lưu hành và mệnh giá là rất quan trọng đối với nhà đầu tư vì:\\n- **Đánh giá quy mô và giá trị:** Số lượng cổ phiếu đang lưu hành nhân với giá thị trường sẽ xác định vốn hóa thị trường, giúp nhà đầu tư đánh giá quy mô tương đối của công ty.\\n- **Phân tích hiệu suất:** Các chỉ số tài chính quan trọng như Lợi nhuận trên mỗi cổ phiếu (EPS) và Giá trị sổ sách trên mỗi cổ phiếu (BVPS) được tính dựa trên số lượng cổ phiếu lưu hành.\\n- **Tính thanh khoản:** Số lượng cổ phiếu lưu hành ảnh hưởng đến tính thanh khoản của cổ phiếu trên thị trường chứng khoán.\\n- **Mệnh giá:** Mệnh giá là giá trị danh nghĩa và là cơ sở tính toán vốn điều lệ. Mặc dù không trực tiếp phản ánh giá thị trường, nó cần thiết để hiểu cấu trúc vốn và các quy định pháp lý liên quan đến cổ phiếu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu bán hàng thành phẩm, hàng hóa từ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "Tổng các khoản giảm trừ doanh thu từ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "Giá vốn hàng bán từ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "So sánh 'Doanh thu thuần về bán hàng và cung cấp dịch vụ' giữa hai kỳ.",
+      "Tính tỷ lệ 'Chiết khấu thương mại' trên 'Doanh thu bán hàng và cung cấp dịch vụ' từ 01/01/2024 đến 30/06/2024.",
+      "Phân tích tác động của sự gia tăng 'Giảm giá hàng bán' và 'Hàng bán bị trả lại' đến doanh thu thuần của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Báo cáo kết quả hoạt động kinh doanh (Doanh thu bán hàng & dịch vụ, Các khoản giảm trừ, Doanh thu thuần, Giá vốn)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH\n1. Doanh thu bán hàng và cung cấp dịch vụ\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Doanh thu bán hàng thành phẩm, hàng hóa | 761,721,867,317 | 1,355,907,836,944 |\n| Doanh thu cung cấp dịch vụ | 4,187,642,977 | 5,703,760,746 |\n| Cộng | 765,909,510,294 | 1,361,611,597,690 |\n\n2. Các khoản giảm trừ doanh thu\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Chiết khấu thương mại | 1,682,317,010 | 2,091,955,294 |\n| Giảm giá hàng bán | 9,388,028,565 | 2,871,043,800 |\n| Hàng bán bị trả lại | 1,723,932,966 | - |\n| Cộng | 12,794,278,541 | 4,962,999,094 |\n\n3. Doanh thu thuần về bán hàng và cung cấp dịch vụ\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Doanh thu bán hàng và cung cấp dịch vụ | 752,705,593,469 | 1,357,058,236,042 |\n| Cộng | 752,705,593,469 | 1,357,058,236,042 |\n\n4. Giá vốn hàng bán\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Giá vốn của thành phẩm, hàng hóa, dịch vụ | 730,506,267,859 | 1,220,059,148,227 |\n| Cộng | 730,506,267,859 | 1,220,059,148,227 |",
+    "output": [
+      "Doanh thu bán hàng thành phẩm, hàng hóa từ 01/01/2024 đến 30/06/2024 là 761.721.867.317 VND.",
+      "Tổng các khoản giảm trừ doanh thu từ 01/01/2024 đến 30/06/2024 là 12.794.278.541 VND.",
+      "Giá vốn hàng bán từ 01/01/2024 đến 30/06/2024 là 730.506.267.859 VND.",
+      "'Doanh thu thuần về bán hàng và cung cấp dịch vụ' từ 01/01/2024 đến 30/06/2024 là 752.705.593.469 VND, thấp hơn đáng kể so với 1.357.058.236.042 VND của cùng kỳ năm trước (01/01/2023 đến 30/06/2023). Như vậy, doanh thu thuần đã giảm 604.352.642.573 VND.",
+      "Trong kỳ từ 01/01/2024 đến 30/06/2024, 'Chiết khấu thương mại' là 1.682.317.010 VND và 'Doanh thu bán hàng và cung cấp dịch vụ' (trước giảm trừ) là 765.909.510.294 VND. Tỷ lệ này là (1.682.317.010 / 765.909.510.294) * 100% ≈ 0.22%.",
+      "Trong kỳ 01/01/2024 đến 30/06/2024, 'Giảm giá hàng bán' tăng từ 2.871.043.800 VND lên 9.388.028.565 VND và 'Hàng bán bị trả lại' tăng từ 0 VND lên 1.723.932.966 VND so với cùng kỳ năm trước. Sự gia tăng đáng kể của cả hai khoản mục này, vốn là các khoản giảm trừ doanh thu, có tác động tiêu cực trực tiếp đến doanh thu thuần của công ty. Chúng làm giảm lượng doanh thu thực tế mà công ty ghi nhận, từ đó ảnh hưởng đến lợi nhuận gộp và lợi nhuận cuối cùng. Điều này có thể là dấu hiệu của các vấn đề về chất lượng sản phẩm, chính sách bán hàng hoặc áp lực cạnh tranh trên thị trường."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu hoạt động tài chính từ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "Chi phí lãi vay trong kỳ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "Thu nhập từ 'Lãi thanh lý tài sản cố định' trong kỳ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "So sánh 'Lỗ chênh lệch tỷ giá' trong 'Chi phí tài chính' giữa hai kỳ báo cáo.",
+      "Đánh giá sự thay đổi của 'Các khoản nộp phạt' trong 'Chi phí khác' giữa hai kỳ.",
+      "Phân tích tác động tổng thể của 'Chi phí tài chính' và 'Doanh thu hoạt động tài chính' đến lợi nhuận của công ty trong kỳ gần nhất."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Báo cáo kết quả hoạt động kinh doanh (Doanh thu tài chính, Chi phí tài chính, Thu nhập khác, Chi phí khác, Chi phí bán hàng & QLDN)\nLoại nội dung: Bảng\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH (tiếp theo)\n5. Doanh thu hoạt động tài chính\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Lãi tiền gửi, tiền cho vay | 3,319,952,251 | 4,548,661,001 |\n| Lãi chênh lệch tỷ giá | 521,482,753 | 2,359,886,182 |\n| Khác | 4,396,030 | 45,494,891 |\n| Cộng | 3,845,831,034 | 6,954,042,074 |\n\n6. Chi phí tài chính\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Chi phí lãi vay | 52,400,840,250 | 65,384,751,358 |\n| Lỗ chênh lệch tỷ giá | 552,698,801 | 3,898,200,975 |\n| Chi phí tài chính khác | 292,917,198 | - |\n| Cộng | 53,246,456,249 | 69,282,952,333 |\n\n7. Thu nhập khác\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Lãi thanh lý tài sản cố định | 118,913,468 | - |\n| Thu từ các khoản vi phạm hợp đồng | - | 432,364,368 |\n| Thu khác | 583,492,465 | 1,360,511,060 |\n| Cộng | 702,405,933 | 1,792,875,428 |\n\n8. Chi phí khác\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Thanh lý tài sản cố định | 1,893,953 | 102,481,203 |\n| Các khoản nộp phạt | 1,547,788,804 | 523,810,211 |\n| Chi phí khác | 190,823,268 | 892,348,239 |\n| Cộng | 1,740,506,025 | 1,518,639,653 |",
+    "output": [
+      "Tổng doanh thu hoạt động tài chính từ 01/01/2024 đến 30/06/2024 là 3.845.831.034 VND.",
+      "Chi phí lãi vay trong kỳ 01/01/2024 đến 30/06/2024 là 52.400.840.250 VND.",
+      "Thu nhập từ 'Lãi thanh lý tài sản cố định' trong kỳ 01/01/2024 đến 30/06/2024 là 118.913.468 VND.",
+      "'Lỗ chênh lệch tỷ giá' trong 'Chi phí tài chính' giảm từ 3.898.200.975 VND trong kỳ 01/01/2023 đến 30/06/2023 xuống 552.698.801 VND trong kỳ 01/01/2024 đến 30/06/2024, tức là giảm 3.345.502.174 VND.",
+      "'Các khoản nộp phạt' trong 'Chi phí khác' đã tăng đáng kể từ 523.810.211 VND trong kỳ 01/01/2023 đến 30/06/2023 lên 1.547.788.804 VND trong kỳ 01/01/2024 đến 30/06/2024, tức tăng khoảng 1.023.978.593 VND (gần 195.49%). Sự gia tăng này là một tín hiệu tiêu cực, cho thấy công ty có thể đã đối mặt với nhiều vi phạm hoặc lỗi hơn trong kỳ này, dẫn đến các khoản chi phí phát sinh ngoài dự kiến và ảnh hưởng trực tiếp đến lợi nhuận ròng.",
+      "Trong kỳ 01/01/2024 đến 30/06/2024, doanh thu hoạt động tài chính là 3.845.831.034 VND và chi phí tài chính là 53.246.456.249 VND. Tác động ròng từ hoạt động tài chính là khoản lỗ 49.400.625.215 VND. Điều này cho thấy chi phí tài chính (chủ yếu là chi phí lãi vay) cao hơn rất nhiều so với doanh thu từ hoạt động tài chính, tạo ra một gánh nặng đáng kể lên lợi nhuận của công ty. Khoản lỗ ròng này trực tiếp làm giảm lợi nhuận trước thuế và sau thuế của công ty, phản ánh chi phí tài trợ vốn đang là một yếu tố tiêu cực lớn đối với khả năng sinh lời tổng thể."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí bán hàng từ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "Chi phí nguyên vật liệu, công cụ dụng cụ trong kỳ gần nhất là bao nhiêu?",
+      "Thuế suất thuế thu nhập doanh nghiệp hiện hành là bao nhiêu phần trăm?",
+      "So sánh 'Chi phí tiền lương' trong 'Chi phí quản lý doanh nghiệp' giữa hai kỳ.",
+      "Đánh giá tác động của 'Điều chỉnh giảm dự phòng phải thu khó đòi' đến 'Chi phí quản lý doanh nghiệp' trong kỳ gần nhất.",
+      "Phân tích mối quan hệ giữa 'Tổng lợi nhuận kế toán trước thuế' và 'Chi phí thuế TNDN hiện hành' trong kỳ gần nhất."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho Báo cáo kết quả hoạt động kinh doanh (Chi phí bán hàng, Chi phí quản lý doanh nghiệp, Chi phí sản xuất kinh doanh theo yếu tố, Chi phí thuế TNDN)\nLoại nội dung: Bảng và Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH (tiếp theo)\n9. Chi phí bán hàng và quản lý doanh nghiệp\na. Chi phí bán hàng\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Chi phí tiền lương | 2,452,813,478 | 3,609,726,605 |\n| Chi phí dịch vụ mua ngoài | 12,156,842,674 | 12,023,418,579 |\n| Chi phí khấu hao TSCĐ | 207,634,693 | 422,299,482 |\n| Các khoản chi phí bán hàng khác | 425,061,840 | 851,027,159 |\n| Cộng | 15,242,352,685 | 16,906,471,825 |\n\nb. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Chi phí tiền lương | 14,013,471,607 | 17,237,918,027 |\n| Chi phí dụng cụ, vật tư quản lý | 452,021,535 | 862,379,083 |\n| Chi phí khấu hao | 5,619,548,217 | 3,523,802,083 |\n| Chi phí thuế, phí, lệ phí | 6,279,942,296 | 6,032,419,186 |\n| Chi phí dịch vụ mua ngoài | 6,982,470,959 | 5,071,676,455 |\n| Chi phí bằng tiền khác | 4,289,681,244 | 6,222,305,264 |\n| Điều chỉnh giảm dự phòng phải thu khó đòi | 16,568,347,986 | - |\n| Cộng | 21,068,787,872 | 38,950,500,098 |\n\n10. Chi phí sản xuất kinh doanh theo yếu tố\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Chi phí nguyên vật liệu, công cụ dụng cụ | 269,613,458,913 | 277,952,019,498 |\n| Chi phí nhân công | 49,191,086,441 | 51,780,090,990 |\n| Chi phí khấu hao TSCĐ | 26,935,333,810 | 29,164,400,147 |\n| Chi phí dịch vụ mua ngoài | 40,681,258,357 | 41,511,488,119 |\n| Chi phí khác bằng tiền | 13,621,551,152 | 13,759,142,578 |\n| Cộng | 400,042,688,672 | 414,167,141,332 |\n\n11. Chi phí thuế thu nhập doanh nghiệp hiện hành\nThuế thu nhập doanh nghiệp phải nộp được xác định với thuế suất là 20% trên thu nhập chịu thuế.\nBảng tính thuế thu nhập doanh nghiệp hiện hành\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Tổng lợi nhuận kế toán trước thuế | 64,550,540,254 | 18,746,474,228 |\n| Chi phí thuế TNDN từ lợi nhuận chịu thuế kỳ này | 7,635,533,863 | - |\n| Chi phí thuế TNDN hiện hành | 7,635,533,863 | - |",
+    "output": [
+      "Tổng chi phí bán hàng từ 01/01/2024 đến 30/06/2024 là 15.242.352.685 VND.",
+      "Chi phí nguyên vật liệu, công cụ dụng cụ trong kỳ gần nhất (01/01/2024 đến 30/06/2024) là 269.613.458.913 VND.",
+      "Thuế suất thuế thu nhập doanh nghiệp hiện hành là 20% trên thu nhập chịu thuế.",
+      "'Chi phí tiền lương' trong 'Chi phí quản lý doanh nghiệp' giảm từ 17.237.918.027 VND (01/01/2023 đến 30/06/2023) xuống 14.013.471.607 VND (01/01/2024 đến 30/06/2024), tức là giảm 3.224.446.420 VND.",
+      "Trong kỳ 01/01/2024 đến 30/06/2024, khoản 'Điều chỉnh giảm dự phòng phải thu khó đòi' với giá trị 16.568.347.986 VND đã được ghi nhận trong 'Chi phí quản lý doanh nghiệp'. Khoản này có tác động tích cực đáng kể, làm giảm tổng chi phí quản lý doanh nghiệp. Nếu không có điều chỉnh này, chi phí quản lý doanh nghiệp sẽ cao hơn 16.568.347.986 VND, làm cho lợi nhuận trước thuế của công ty thấp hơn. Việc này phản ánh sự cải thiện trong chất lượng các khoản phải thu hoặc việc thu hồi nợ, gián tiếp góp phần nâng cao lợi nhuận của công ty trong kỳ.",
+      "Trong kỳ 01/01/2024 đến 30/06/2024, 'Tổng lợi nhuận kế toán trước thuế' là 64.550.540.254 VND và 'Chi phí thuế TNDN hiện hành' là 7.635.533.863 VND. Với thuế suất danh nghĩa 20%, chi phí thuế TNDN tính toán sẽ là 12.910.108.051 VND (64.550.540.254 * 20%). Tuy nhiên, chi phí thuế TNDN hiện hành thực tế thấp hơn đáng kể (7.635.533.863 VND). Mối quan hệ này cho thấy công ty có thể đã được hưởng các ưu đãi thuế, có các khoản thu nhập được miễn thuế hoặc các khoản chi phí được khấu trừ không được tính vào lợi nhuận kế toán, dẫn đến thuế suất hiệu quả thấp hơn thuế suất danh nghĩa. Điều này có tác động tích cực đến lợi nhuận sau thuế của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng thu nhập của Ban Tổng Giám Đốc từ 01/01/2024 đến 30/06/2024 là bao nhiêu?",
+      "Tại sao công ty không trình bày báo cáo bộ phận theo lĩnh vực kinh doanh?",
+      "Tổng giá trị tài sản tài chính vào 30/06/2024 là bao nhiêu?",
+      "So sánh tổng giá trị công nợ tài chính giữa 30/06/2024 và 31/12/2022.",
+      "Đánh giá mức độ minh bạch của công ty về thông tin giá trị hợp lý của công cụ tài chính.",
+      "Phân tích tác động của việc giảm 'Tiền và các khoản tương đương tiền' và 'Phải thu khách hàng và phải thu khác' đến sức khỏe tài chính tổng thể của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Những thông tin khác (Bên liên quan, Báo cáo bộ phận, Công cụ tài chính, Tài sản đảm bảo, Rủi ro, Số liệu so sánh)\nLoại nội dung: Bảng và Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nVII. NHỮNG THÔNG TIN KHÁC\n1. Thông tin về các bên liên quan\nTrong kỳ, Công ty phát sinh các nghiệp vụ với các bên liên quan. Các nghiệp vụ chủ yếu như sau:\nThu nhập của Ban Tổng Giám Đốc trong kỳ như sau:\n| Chỉ tiêu | Từ 01/01/2024 đến 30/06/2024 (VND) | Từ 01/01/2023 đến 30/06/2023 (VND) |\n|:---|:---|:---|\n| Lương, thưởng, thù lao và các khoản phúc lợi khác | 899,227,899 | 1,416,787,600 |\n| Cộng | 899,227,899 | 1,416,787,600 |\n\n2. Thông tin báo cáo bộ phận\nHoạt động kinh doanh chính của Công ty là sản xuất kinh doanh các sản phẩm dân dụng từ chất dẻo, do đó Công ty không trình bày báo cáo bộ phận theo lĩnh vực kinh doanh đồng thời công ty cũng không lập báo cáo bộ phận theo khu vực địa lý do Công ty hoạt động chủ yếu trong khu vực địa lý Việt Nam.\n\n3. Công cụ tài chính\nGiá trị sổ sách\n| Chỉ tiêu | 30/06/2024 (VND) | 31/12/2022 (VND) |\n|:---|:---|:---|\n| Tài sản tài chính | | |\n| Tiền và các khoản tương đương tiền | 21,157,777,042 | 31,711,503,071 |\n| Phải thu khách hàng và phải thu khác | 488,493,735,629 | 542,464,313,362 |\n| Đầu tư tài chính | 16,718,591,408 | 16,718,591,408 |\n| Cộng | 526,370,104,079 | 590,894,407,841 |\n| Công nợ tài chính | | |\n| Phải trả người bán và phải trả khác | 433,919,856,445 | 394,671,337,589 |\n| Chi phí phải trả | 15,318,272,082 | 6,393,925,123 |\n| Các khoản vay | 1,232,253,919,963 | 1,371,640,337,605 |\n| Cộng | 1,681,492,048,490 | 1,772,705,600,317 |\nCông ty chưa đánh giá giá trị hợp lý của tài sản tài chính và công nợ tài chính tại ngày kết thúc kỳ kế toán do các quy định hiện hành của chế độ kế toán Việt Nam chưa có các hướng dẫn cụ thể về việc xác định giá trị hợp lý của các tài sản tài chính và công nợ tài chính.",
+    "output": [
+      "Tổng thu nhập của Ban Tổng Giám Đốc (Lương, thưởng, thù lao và các khoản phúc lợi khác) từ 01/01/2024 đến 30/06/2024 là 899.227.899 VND.",
+      "Công ty không trình bày báo cáo bộ phận theo lĩnh vực kinh doanh vì hoạt động kinh doanh chính của Công ty là sản xuất kinh doanh các sản phẩm dân dụng từ chất dẻo, được coi là hoạt động chính yếu.",
+      "Tổng giá trị tài sản tài chính vào 30/06/2024 là 526.370.104.079 VND.",
+      "Tổng giá trị công nợ tài chính vào 30/06/2024 là 1.681.492.048.490 VND, so với 1.772.705.600.317 VND vào 31/12/2022. Như vậy, tổng công nợ tài chính đã giảm 91.213.551.827 VND.",
+      "Công ty tuyên bố chưa đánh giá giá trị hợp lý của tài sản tài chính và công nợ tài chính do thiếu hướng dẫn cụ thể từ chế độ kế toán Việt Nam. Điều này cho thấy mức độ minh bạch của công ty về thông tin giá trị hợp lý của công cụ tài chính còn hạn chế. Mặc dù lý do được đưa ra là tuân thủ quy định hiện hành, nhưng việc thiếu thông tin này có thể làm cho nhà đầu tư và các bên liên quan khó đánh giá chính xác giá trị thực và rủi ro của các công cụ tài chính trong bối cảnh thị trường biến động, từ đó giảm tính toàn diện của báo cáo tài chính.",
+      "Việc giảm 'Tiền và các khoản tương đương tiền' (từ 31.7 tỷ xuống 21.1 tỷ VND) và 'Phải thu khách hàng và phải thu khác' (từ 542.4 tỷ xuống 488.4 tỷ VND) có tác động quan trọng đến sức khỏe tài chính tổng thể của công ty. Sự sụt giảm của tiền và tương đương tiền trực tiếp làm giảm thanh khoản tức thì, có thể gây áp lực trong việc đáp ứng các nghĩa vụ ngắn hạn. Trong khi đó, việc giảm các khoản phải thu có thể được coi là tích cực nếu do công ty thu hồi nợ hiệu quả, giúp chuyển đổi tài sản thành tiền mặt, nhưng cũng có thể là dấu hiệu của việc giảm doanh số bán hàng. Tổng hợp lại, sự giảm này cho thấy một xu hướng giảm các tài sản có tính thanh khoản cao, cần được theo dõi kỹ lưỡng trong bối cảnh tổng công nợ tài chính vẫn ở mức cao."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị tài sản đảm bảo thế chấp vào 30/06/2024 là bao nhiêu?",
+      "Rủi ro tín dụng là gì?",
+      "Rủi ro thị trường bao gồm những loại nào?",
+      "Tại sao công ty không có rủi ro tập trung về tín dụng theo báo cáo?",
+      "Đánh giá chiến lược quản lý rủi ro thanh khoản của công ty.",
+      "Phân tích mối liên hệ giữa các rủi ro tín dụng, thanh khoản và thị trường trong bối cảnh hoạt động kinh doanh của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Rạng Đông Holding\nMã cổ phiếu: RDP\nLoại báo cáo: Báo cáo tài chính Hợp nhất Quý II/2024\nThời gian: Ngày công bố 29/07/2024, Kỳ kế toán 01/01/2024 đến 30/06/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Những thông tin khác (Tài sản đảm bảo, Rủi ro, Số liệu so sánh)\nLoại nội dung: Bảng và Text\nCÔNG TY CỔ PHẦN RẠNG ĐÔNG HOLDING\n190 Lạc Long Quân, Phường 3, Quận 11, TP. HCM\n\nBẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT tiếp theo\n\nVII. NHỮNG THÔNG TIN KHÁC (tiếp theo)\n4. Tài sản đảm bảo\nGiá trị còn lại của tài sản đảm bảo thế chấp cho đơn vị khác vào ngày 01/01/2024 và ngày 30/06/2024 như sau:\n| Chỉ tiêu | 30/06/2024 (VND) | 01/01/2024 (VND) |\n|:---|:---|:---|\n| Hàng tồn kho - Nguyên vật liệu - Thành phẩm | 588,994,000,811 | 649,267,800,631 |\n| TSCĐ hữu hình - Máy móc thiết bị | 596,678,720,274 | 599,301,019,591 |\n| Cộng | 1,185,672,721,085 | 1,248,568,820,222 |\n\n5. Rủi ro tín dụng\nRủi ro tín dụng là rủi ro mà đối tác sẽ không thực hiện các nghĩa vụ của mình theo quy định của một công cụ tài chính hoặc hợp đồng khách hàng, dẫn đến tổn thất về tài chính. Công ty có rủi ro tín dụng từ các hoạt động kinh doanh của mình chủ yếu đối với các khoản phải thu khách hàng và từ hoạt động tài chính của mình bao gồm cả tiền gửi ngân hàng và các công cụ tài chính khác.\nViệc quản lý rủi ro tín dụng khách hàng của Công ty dựa trên các chính sách, thủ tục và quy trình kiểm soát của Công ty có liên quan đến việc quản lý rủi ro tín dụng khách hàng.\nCác khoản phải thu khách hàng chưa trả thường xuyên được theo dõi. Các phân tích về khả năng lập dự phòng được thực hiện tại ngày lập báo cáo trên cơ sở từng khách hàng đối với các khách hàng lớn. Trên cơ sở này, Công ty không có rủi ro tập trung về tín dụng.\n\n6. Rủi ro thanh khoản\nRủi ro thanh khoản là rủi ro Công ty gặp khó khăn trong việc đáp ứng các nghĩa vụ tài chính do tình trạng thiếu vốn. Rủi ro thanh khoản của Công ty phát sinh chủ yếu do không tương xứng trong các kỳ hạn của tài sản tài chính và các khoản phải trả tài chính.\nCông ty giám sát rủi ro thanh khoản bằng việc duy trì tỷ lệ tiền mặt và các khoản tương đương tiền ở mức mà Ban Giám đốc cho là đủ để hỗ trợ tài chính cho các hoạt động kinh doanh của Công ty và để giảm thiểu ảnh hưởng của những thay đổi các luồng tiền.\n\n7. Rủi ro thị trường\nRủi ro thị trường là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của giá thị trường. Rủi ro thị trường bao gồm 3 loại: Rủi ro ngoại tệ, rủi ro lãi suất và rủi ro về giá khác.\n\n8. Số liệu so sánh\nSố liệu so sánh là số liệu trên Báo cáo tài chính hợp nhất cho năm tài chính kết thúc ngày 31 tháng 12 năm 2023 đã được Công ty TNHH Dịch vụ Tư vấn Tài chính Kế toán và Kiểm toán Nam Việt (AASCN) kiểm toán soát xét và báo cáo tài chính hợp nhất Quý II/2023.",
+    "output": [
+      "Tổng giá trị tài sản đảm bảo thế chấp vào 30/06/2024 là 1.185.672.721.085 VND.",
+      "Rủi ro tín dụng là rủi ro mà đối tác sẽ không thực hiện các nghĩa vụ của mình theo quy định của một công cụ tài chính hoặc hợp đồng khách hàng, dẫn đến tổn thất về tài chính.",
+      "Rủi ro thị trường bao gồm 3 loại: Rủi ro ngoại tệ, rủi ro lãi suất và rủi ro về giá khác.",
+      "Theo báo cáo, công ty không có rủi ro tập trung về tín dụng vì các khoản phải thu khách hàng chưa trả thường xuyên được theo dõi và các phân tích về khả năng lập dự phòng được thực hiện trên cơ sở từng khách hàng đối với các khách hàng lớn.",
+      "Chiến lược quản lý rủi ro thanh khoản của công ty là giám sát rủi ro bằng cách duy trì tỷ lệ tiền mặt và các khoản tương đương tiền ở mức mà Ban Giám đốc cho là đủ để hỗ trợ tài chính cho các hoạt động kinh doanh và giảm thiểu ảnh hưởng của những thay đổi các luồng tiền. Chiến lược này tập trung vào việc duy trì sự linh hoạt về tiền mặt. Mặc dù việc định nghĩa \\đủ\\ có tính chủ quan, nhưng việc chủ động giám sát và duy trì mức thanh khoản là một yếu tố cần thiết và tích cực trong quản lý rủi ro.",
+      "Trong bối cảnh hoạt động kinh doanh của công ty, các rủi ro tín dụng, thanh khoản và thị trường có mối liên hệ chặt chẽ:\\n- **Rủi ro tín dụng** (đối tác không thực hiện nghĩa vụ) trực tiếp ảnh hưởng đến **thanh khoản** của công ty, vì nếu các khoản phải thu không được thu hồi, dòng tiền sẽ bị ảnh hưởng. Nếu thanh khoản suy giảm, công ty có thể phải vay mượn thêm hoặc thanh lý tài sản.\\n- **Rủi ro thị trường** (ngoại tệ, lãi suất, giá) có thể tác động đến lợi nhuận và dòng tiền. Ví dụ, sự tăng lãi suất có thể làm tăng chi phí lãi vay, ảnh hưởng đến lợi nhuận và khả năng thanh toán (thanh khoản). Biến động tỷ giá có thể ảnh hưởng đến giá vốn hàng nhập khẩu và doanh thu xuất khẩu, từ đó ảnh hưởng đến lợi nhuận và dòng tiền. Những tác động này sau đó có thể làm gia tăng áp lực lên khả năng công ty duy trì thanh khoản hoặc khả năng trả nợ (rủi ro tín dụng của chính công ty)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  }
+]

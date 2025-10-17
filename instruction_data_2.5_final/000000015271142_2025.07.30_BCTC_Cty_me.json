@@ -1,0 +1,698 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty là gì?",
+      "Mã số thuế của VNT LOGISTICS JSC là bao nhiêu?",
+      "Địa chỉ trụ sở chính của công ty nằm ở đâu?",
+      "Báo cáo tài chính này bao gồm những loại báo cáo nào?",
+      "Đánh giá mức độ minh bạch của báo cáo tài chính này dựa trên thông tin chung được cung cấp.",
+      "Theo mục lục, thuyết minh báo cáo tài chính chiếm bao nhiêu trang trong tổng số báo cáo?",
+      "Khi nào báo cáo tài chính Quý II/2025 của công ty được phát hành?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thông tin chung và Mục lục\nLoại nội dung: Text\nCÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG (VNT LOGISTICS JSC)\nĐịa chỉ: số 2 Bích Câu, P. Ô Chợ Dừa, TP. Hà Nội\nMã số thuế (MST): 0101352858\n\nMỤC LỤC:\n- Bảng cân đối kế toán ngày 30 tháng 06 năm 2025 (Trang 1-6)\n- Báo cáo kết quả hoạt động kinh doanh cho kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025 (Trang 7-10)\n- Báo cáo lưu chuyển tiền tệ cho kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025 (Trang 11-13)\n- Thuyết minh báo cáo tài chính (Trang 14-38)",
+    "output": [
+      "CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG.",
+      "0101352858.",
+      "Số 2 Bích Câu, P. Ô Chợ Dừa, TP. Hà Nội.",
+      "- Bảng cân đối kế toán ngày 30 tháng 06 năm 2025 (Trang 1-6)\\n- Báo cáo kết quả hoạt động kinh doanh cho kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025 (Trang 7-10)\\n- Báo cáo lưu chuyển tiền tệ cho kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025 (Trang 11-13)\\n- Thuyết minh báo cáo tài chính (Trang 14-38).",
+      "Báo cáo tài chính này chưa được kiểm toán ('Ý kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)'). Điều này làm giảm mức độ minh bạch và độ tin cậy của thông tin so với một báo cáo đã có ý kiến kiểm toán, vì các số liệu chưa được một bên độc lập xác nhận.",
+      "Thuyết minh báo cáo tài chính chiếm từ trang 14 đến trang 38.",
+      "Báo cáo được phát hành ngày 21 tháng 07 năm 2025."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Medium_QA",
+      "Easy_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn cuối quý II/2025 của công ty là bao nhiêu?",
+      "Số tiền mặt cuối quý II/2025 là bao nhiêu?",
+      "Khoản mục 'Tiền và các khoản tương đương tiền' đã thay đổi như thế nào từ đầu năm đến cuối quý II/2025?",
+      "Tỷ trọng các khoản phải thu ngắn hạn trên tổng tài sản ngắn hạn cuối quý II/2025 là bao nhiêu phần trăm?",
+      "Đánh giá mức độ rủi ro tín dụng của công ty dựa trên số liệu dự phòng phải thu ngắn hạn khó đòi.",
+      "Nếu công ty muốn cải thiện khả năng thanh toán ngay lập tức, nên tập trung vào khoản mục tài sản ngắn hạn nào?",
+      "Phân tích tác động của sự sụt giảm trong 'Các khoản tương đương tiền' đến thanh khoản tổng thể của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối quý | Số đầu năm |\n|:----------------------------------------------------------|:-------|:------------|:------------------|:------------------|\n| A. TÀI SẢN NGẮN HẠN (CURRENT ASSETS) | 100 | | 352,340,982,053 | 351,253,217,335 |\n| I. Tiền và các khoản tương đương tiền (Cash and cash equivalents) | 110 | 5.1 | 148,486,095,328 | 152,283,296,513 |\n| 1. Tiền (Cash) | 111 | | 68,839,963,328 | 44,914,402,013 |\n| 2. Các khoản tương đương tiền (Cash equivalents) | 112 | | 79,646,132,000 | 107,368,894,500 |\n| II. Các khoản đầu tư tài chính ngắn hạn (Current financial Investments) | 120 | 5.2 | 47,820,000,000 | 46,975,500,000 |\n| 1. Chứng khoán kinh doanh (Trading securities) | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh (Provision for the diminution in value of Trading securities) | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn (Investments held to maturity) | 123 | | 47,820,000,000 | 46,975,500,000 |\n| III. Các khoản phải thu ngắn hạn (Current account receivables) | 130 | | 154,159,141,475 | 148,373,885,746 |\n| 1. Phải thu ngắn hạn của khách hàng (Trade receivables) | 131 | 5.3 | 150,555,473,037 | 143,573,462,125 |\n| 2. Trả trước cho người bán ngắn hạn (Advances to suppliers) | 132 | | 5,204,308,810 | 4,877,693,564 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch HĐXD | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |\n| 6. Các khoản phải thu khác (Other current receivables) | 136 | 5.4 | 4,975,282,864 | 5,930,162,163 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi (Provision for doubtful debts) | 137 | 5.5 | (6,575,923,236) | (6,007,432,106) |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho (Inventory) | 140 | | - | - |\n| 1. Hàng tồn kho | 141 | | - | - |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | - | - |\n| V. Tài sản ngắn hạn khác (Other current assets) | 150 | | 1,875,745,250 | 3,620,535,076 |\n| 1. Chi phí trả trước ngắn hạn (Current prepayments) | 151 | 5.9 | 1,851,898,538 | 1,890,564,903 |\n| 2. Thuế GTGT được khấu trừ (Value added tax deductible) | 152 | | - | - |\n| 3. Thuế và các khoản khác phải thu Nhà nước (Taxes and other accounts receivable from the State) | 153 | | 23,846,712 | 1,729,970,173 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ (Purchase transactions in government bonds) | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác (Other current assets) | 155 | | - | - |",
+    "output": [
+      "352,340,982,053 VND.",
+      "68,839,963,328 VND.",
+      "Khoản mục 'Tiền và các khoản tương đương tiền' đã giảm từ 152,283,296,513 VND (Số đầu năm) xuống còn 148,486,095,328 VND (Số cuối quý), giảm 3,797,201,185 VND.",
+      "Các khoản phải thu ngắn hạn cuối quý là 154,159,141,475 VND. Tổng tài sản ngắn hạn cuối quý là 352,340,982,053 VND. Tỷ trọng là (154,159,141,475 / 352,340,982,053) * 100% ≈ 43.75%.",
+      "Số liệu dự phòng phải thu ngắn hạn khó đòi cuối quý II/2025 là (6,575,923,236) VND, tăng so với (6,007,432,106) VND đầu năm. Sự gia tăng của khoản dự phòng này cho thấy công ty nhận thấy rủi ro tín dụng đối với các khoản phải thu đã tăng lên, có thể báo hiệu khả năng một số khoản nợ khó đòi sẽ không thu được, làm tăng rủi ro tín dụng chung.",
+      "Để cải thiện khả năng thanh toán ngay lập tức, công ty nên tập trung vào việc quản lý hiệu quả khoản mục 'Tiền và các khoản tương đương tiền' (cuối quý là 148,486,095,328 VND) và đẩy mạnh thu hồi 'Các khoản phải thu ngắn hạn' (cuối quý là 154,159,141,475 VND) để chuyển đổi chúng thành tiền mặt nhanh chóng.",
+      "Sự sụt giảm của 'Các khoản tương đương tiền' từ 107,368,894,500 VND (đầu năm) xuống 79,646,132,000 VND (cuối quý) cho thấy một phần lớn tài sản có tính thanh khoản cao đã được sử dụng hoặc chuyển đổi. Điều này làm giảm khả năng sẵn có của tiền mặt để đáp ứng các nghĩa vụ ngắn hạn đột xuất, ảnh hưởng tiêu cực đến thanh khoản tổng thể của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn cuối quý II/2025 là bao nhiêu?",
+      "Giá trị còn lại của tài sản cố định hữu hình cuối quý II/2025 là bao nhiêu VND?",
+      "So sánh tổng tài sản dài hạn cuối quý với đầu năm, sự thay đổi là bao nhiêu?",
+      "Tỷ lệ đầu tư tài chính dài hạn trên tổng tài sản dài hạn cuối quý II/2025 là bao nhiêu?",
+      "Đánh giá mức độ tập trung đầu tư của công ty vào các công ty con, liên kết và liên doanh.",
+      "Phân tích tác động của việc giảm tài sản cố định hữu hình đến năng lực sản xuất kinh doanh của công ty.",
+      "Nếu các khoản đầu tư tài chính dài hạn gặp rủi ro giảm giá, điều này sẽ ảnh hưởng như thế nào đến tổng tài sản của công ty?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối quý | Số đầu năm |\n|:----------------------------------------------------------|:-------|:------------|:------------------|:------------------|\n| B. TÀI SẢN DÀI HẠN (NONCURRENT ASSETS) | 200 | | 381,981,763,051 | 383,589,626,074 |\n| I. Các khoản phải thu dài hạn (Noncurrent account receivables) | 210 | | - | - |\n| 1. Phải thu dài hạn của khách hàng (Longterm receivables of customers) | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn (Prepayments for longterm suppliers) | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc (Capital in units attached) | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn (Longterm intercompany receivables) | 214 | | - | - |\n| 5. Phải thu về cho vay dài hạn (Loan receivables longterm) | 215 | | - | - |\n| 6. Phải thu dài hạn khác (Other noncurrent receivables) | 216 | 5.4 | - | - |\n| 7. Dự phòng phải thu dài hạn khó đòi (Provision for doubtful longterm receivables) | 219 | | - | - |\n| II. Tài sản cố định (Fixed assets) | 220 | | 21,964,650,697 | 23,547,719,734 |\n| 1. Tài sản cố định hữu hình (Tangible fixed assets) | 221 | 5.7 | 20,969,701,471 | 22,544,612,386 |\n| - Nguyên giá (Cost) | 222 | | 102,842,061,106 | 103,498,843,160 |\n| - Giá trị hao mòn lũy kế (Accumulated depreciation) | 223 | | (81,872,359,635) | (80,954,230,774) |\n| 2. Tài sản cố định thuê tài chính (Fixed assets Finance lease) | 224 | | - | - |\n| - Nguyên giá | 225 | | - | - |\n| - Giá trị hao mòn lũy kế | 226 | | - | - |\n| 3. Tài sản cố định vô hình (Intangible fixed assets) | 227 | 5.8 | 994,949,226 | 1,003,107,348 |\n| - Nguyên giá (Cost) | 228 | | 3,524,823,186 | 3,524,823,186 |\n| - Giá trị hao mòn lũy kế (Accumulated amortisation) | 229 | | (2,529,873,960) | (2,521,715,838) |\n| III. Bất động sản đầu tư (Real Estate Investments) | 230 | | - | - |\n| - Nguyên giá | 231 | | - | - |\n| - Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV. Tài sản dở dang dài hạn (Noncurrent assets in progress) | 240 | 5.6 | 740,928,990 | 740,928,990 |\n| 1. Chi phí SX, KD dở dang dài hạn | 241 | | - | - |\n| 4. Chi phí xây dựng cơ bản dở dang (Construction in progress) | 242 | | 740,928,990 | 740,928,990 |\n| V. Đầu tư tài chính dài hạn (Longterm financial investments) | 250 | 5.2 | 359,210,290,000 | 359,210,290,000 |\n| 1. Đầu tư vào công ty con (Investment in subsidiaries) | 251 | | 24,000,000,000 | 24,000,000,000 |\n| 2. Đầu tư vào công ty liên kết, liên doanh (Investments in associated companies and joint ventures) | 252 | | 310,765,050,000 | 310,765,050,000 |\n| 3. Đầu tư góp vốn vào đơn vị khác (Equity investments in other entities) | 253 | | 23,445,240,000 | 23,445,240,000 |\n| 4. Dự phòng đầu tư tài chính dài hạn (Provision for longterm financial investments) | 254 | | - | - |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn (Investments held to maturity) | 255 | | 1,000,000,000 | 1,000,000,000 |\n| VI. Tài sản dài hạn khác (Other noncurrent assets) | 260 | | 65,893,364 | 90,687,350 |\n| 1. Chi phí trả trước dài hạn (Noncurrent prepayments) | 261 | 5.9 | 65,893,364 | 90,687,350 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | | - | - |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | - | - |\n| 4. Tài sản dài hạn khác (Other longterm assets) | 268 | | - | - |\n| TỔNG CỘNG TÀI SẢN (TOTAL ASSETS) | 270 | | 734,322,745,104 | 734,842,843,409 |",
+    "output": [
+      "381,981,763,051 VND.",
+      "20,969,701,471 VND.",
+      "Tổng tài sản dài hạn cuối quý là 381,981,763,051 VND, đầu năm là 383,589,626,074 VND. Sự thay đổi là giảm 1,607,863,023 VND.",
+      "Đầu tư tài chính dài hạn cuối quý là 359,210,290,000 VND. Tổng tài sản dài hạn cuối quý là 381,981,763,051 VND. Tỷ lệ là (359,210,290,000 / 381,981,763,051) * 100% ≈ 94.02%.",
+      "Công ty có mức độ tập trung đầu tư rất cao vào các công ty con và liên kết, với tổng giá trị là 334,765,050,000 VND (24,000,000,000 VND vào công ty con và 310,765,050,000 VND vào công ty liên kết, liên doanh) trên tổng đầu tư tài chính dài hạn 359,210,290,000 VND. Điều này cho thấy chiến lược mở rộng và kiểm soát thông qua các đơn vị thành viên là trọng tâm chính trong các khoản đầu tư dài hạn.",
+      "Giá trị tài sản cố định hữu hình giảm từ 22,544,612,386 VND (đầu năm) xuống 20,969,701,471 VND (cuối quý). Sự giảm này có thể chỉ ra việc thanh lý tài sản cũ, ít hiệu quả hoặc ít đầu tư mới vào cơ sở vật chất. Điều này có thể ảnh hưởng đến năng lực sản xuất kinh doanh nếu sự giảm này không đi kèm với việc nâng cấp công nghệ hoặc tối ưu hóa hoạt động. Nếu là do khấu hao và không có tái đầu tư tương xứng, nó có thể báo hiệu sự suy giảm về khả năng tạo ra doanh thu trong tương lai.",
+      "Với khoảng 94.02% tổng tài sản dài hạn là đầu tư tài chính dài hạn (359,210,290,000 VND trên 381,981,763,051 VND), nếu các khoản đầu tư này gặp rủi ro giảm giá, tổng tài sản của công ty sẽ bị ảnh hưởng rất nghiêm trọng. Một sự giảm giá đáng kể có thể dẫn đến việc phải trích lập dự phòng, làm giảm giá trị tài sản ròng và vốn chủ sở hữu, từ đó ảnh hưởng tiêu cực đến sức khỏe tài chính và niềm tin của nhà đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả cuối quý II/2025 của công ty là bao nhiêu?",
+      "Giá trị vốn chủ sở hữu cuối quý II/2025 là bao nhiêu VND?",
+      "Khoản mục 'Vay và nợ thuê tài chính ngắn hạn' đã thay đổi như thế nào từ đầu năm đến cuối quý II/2025?",
+      "Tỷ lệ Nợ phải trả trên tổng nguồn vốn cuối quý II/2025 là bao nhiêu phần trăm?",
+      "Đánh giá sự an toàn tài chính của công ty dựa trên cơ cấu giữa nợ phải trả và vốn chủ sở hữu.",
+      "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) của công ty vào cuối quý II/2025.",
+      "Phân tích tác động của sự giảm 'Lợi nhuận sau thuế chưa phân phối kỳ này' đến khả năng chi trả cổ tức trong tương lai."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối quý | Số đầu năm |\n|:-------------------------------------------------------------|:-------|:------------|:------------------|:------------------|\n| A. NỢ PHẢI TRẢ (LIABILITIES) | 300 | | 337,041,594,581 | 344,759,100,792 |\n| I. Nợ ngắn hạn (Current liabilities) | 310 | | 336,365,244,581 | 344,082,750,792 |\n| 1. Phải trả người bán ngắn hạn (Trade payables) | 311 | 5.10 | 103,870,015,668 | 91,825,173,319 |\n| 2. Người mua trả tiền trước ngắn hạn (Advances from customers) | 312 | | - | - |\n| 3. Thuế và các khoản phải nộp Nhà nước (Taxes and amounts payable to the state budget) | 313 | 5.11 | 4,445,128,238 | 3,870,777,392 |\n| 4. Phải trả người lao động (Payables to employees) | 314 | | 4,000,000,000 | 7,498,293,361 |\n| 5. Chi phí phải trả ngắn hạn (Accrued expenses) | 315 | 5.12 | 17,378,498,295 | 10,680,444,329 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7. Phải trả theo tiến độ kế hoạch HĐXD | 317 | | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9. Phải trả ngắn hạn khác (Other current payables) | 319 | 5.13 | 985,776,530 | 1,047,662,444 |\n| 10. Vay và nợ thuê tài chính ngắn hạn (Borrowings and finance lease liabilities Shortterm) | 320 | | 205,685,825,850 | 229,160,399,947 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |\n| 12. Quỹ khen thưởng phúc lợi | 322 | | - | - |\n| 13. Quỹ bình ổn giá | 323 | | - | - |\n| 14. Giao dịch mua bán lại trái phiếu CP | 324 | | - | - |\n| II. Nợ dài hạn (Longterm liabilities) | 330 | | 676,350,000 | 676,350,000 |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7. Phải trả dài hạn khác | 337 | | 676,350,000 | 676,350,000 |\n| 8. Vay và nợ thuê tài chính dài hạn (Borrowings and finance lease liabilities Longterm) | 338 | | - | - |\n| 9. Trái phiếu chuyển đổi | 339 | | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |\n| B. VỐN CHỦ SỞ HỮU (OWNERS EQUITY) | 400 | | 397,281,150,523 | 390,083,742,617 |\n| I. Vốn chủ sở hữu (Equity) | 410 | 5.14.1 | 397,281,150,523 | 390,083,742,617 |\n| 1. Vốn đầu tư của chủ sở hữu (Owners contributed capital) | 411 | 5.14.2 | 166,994,970,000 | 166,994,970,000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết (Ordinary shares carrying voting rights) | 411a | | 166,994,970,000 | 166,994,970,000 |\n| - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2. Thặng dư vốn cổ phần (Share premium) | 412 | | 57,826,051,991 | 57,826,051,991 |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |\n| 4. Cổ phiếu quỹ (Treasury shares) | 415 | | (817,208,082) | (817,208,082) |\n| 5. Chênh lệch đánh giá lại tài sản | 416 | | - | - |\n| 6. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 7. Quỹ đầu tư phát triển (Investment and development fund) | 418 | 5.14.5 | 9,400,293,842 | 9,400,293,842 |\n| 8. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | - | - |\n| 9. Quỹ khác thuộc vốn chủ sở hữu (Other reserves) | 420 | 5.14.5 | 12,000,000,000 | 12,000,000,000 |\n| 10. Lợi nhuận sau thuế chưa phân phối (Retained earnings) | 421 | | 151,877,042,772 | 144,679,634,866 |\n| - LNST chưa PP lũy kế đến cuối kỳ trước (Beginning accumulated retained earnings) | 421a | | 144,679,634,866 | 110,822,395,810 |\n| - LNST chưa PP kỳ này (Ending accumulated retained earnings) | 421b | | 7,197,407,906 | 33,857,239,056 |\n| 11. Nguồn vốn đầu tư XDCB | 422 | | - | - |\n| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |\n| 1. Nguồn kinh phí | 431 | | - | - |\n| 2. Nguồn kinh phí đã hình thành TSCĐ | 432 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN (TOTAL RESOURCES) | 440 | | 734,322,745,104 | 734,842,843,409 |",
+    "output": [
+      "337,041,594,581 VND.",
+      "397,281,150,523 VND.",
+      "Khoản mục 'Vay và nợ thuê tài chính ngắn hạn' đã giảm từ 229,160,399,947 VND (Số đầu năm) xuống còn 205,685,825,850 VND (Số cuối quý II/2025), giảm 23,474,574,097 VND.",
+      "Tổng nợ phải trả cuối quý là 337,041,594,581 VND. Tổng nguồn vốn cuối quý là 734,322,745,104 VND. Tỷ lệ là (337,041,594,581 / 734,322,745,104) * 100% ≈ 45.90%.",
+      "Cuối quý II/2025, tỷ lệ nợ phải trả trên tổng nguồn vốn là khoảng 45.90%, trong khi vốn chủ sở hữu chiếm khoảng 54.10% (397,281,150,523 VND trên 734,322,745,104 VND). Cơ cấu này cho thấy công ty chủ yếu được tài trợ bởi vốn chủ sở hữu, với một phần đáng kể là nợ. Mặc dù tỷ lệ nợ dưới 50% có thể được coi là tương đối an toàn, sự phụ thuộc vào nợ ngắn hạn (336,365,244,581 VND) vẫn cần được quản lý cẩn thận để đảm bảo khả năng thanh toán.",
+      "Tổng nợ phải trả cuối quý II/2025 là 337,041,594,581 VND. Vốn chủ sở hữu cuối quý II/2025 là 397,281,150,523 VND. Hệ số D/E = 337,041,594,581 / 397,281,150,523 ≈ 0.848.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này (mã số 421b) là 7,197,407,906 VND, giảm đáng kể so với 33,857,239,056 VND đầu năm. Sự sụt giảm này trực tiếp làm giảm phần lợi nhuận có sẵn để phân phối cho cổ đông dưới dạng cổ tức. Nếu xu hướng này tiếp tục, khả năng chi trả cổ tức bằng tiền mặt trong tương lai của công ty sẽ bị hạn chế, có thể ảnh hưởng đến sự hài lòng của cổ đông và niềm tin của nhà đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong kỳ này là bao nhiêu?",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp trong kỳ trước là bao nhiêu?",
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ đã thay đổi như thế nào so với kỳ trước?",
+      "Tỷ suất lợi nhuận gộp trong kỳ này là bao nhiêu?",
+      "Đánh giá xu hướng biến động lợi nhuận từ hoạt động kinh doanh giữa kỳ này và kỳ trước.",
+      "Phân tích các yếu tố chính đã ảnh hưởng đến sự sụt giảm lợi nhuận sau thuế của công ty trong kỳ này so với kỳ trước.",
+      "Dự báo lợi nhuận sau thuế nếu xu hướng chi phí lãi vay và chi phí quản lý doanh nghiệp tiếp tục tăng."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Báo cáo kết quả hoạt động kinh doanh (Kỳ này vs Kỳ trước)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Kỳ này (Current period) | Kỳ trước (Previous period) |\n|:----------------------------------------------------------|:-------|:------------|:------------------------|:------------------------|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ (Revenue) | 01 | 6.1 | 262,771,461,888 | 288,771,793,919 |\n| 2. Các khoản giảm trừ | 02 | | - | - |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ (Net revenue) | 10 | | 262,771,461,888 | 288,771,793,919 |\n| 4. Giá vốn hàng bán (Cost of sales) | 11 | 6.2 | 250,929,109,901 | 271,229,253,344 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ (Gross profit) | 20 | | 11,842,351,987 | 17,542,540,575 |\n| 6. Doanh thu hoạt động tài chính (Financial income) | 21 | 6.3 | 2,817,485,804 | 3,095,698,030 |\n| 7. Chi phí tài chính (Financial expense) | 22 | 6.4 | 3,266,770,808 | 3,489,574,413 |\n| Trong đó: Chi phí lãi vay (In which: Interest expense) | 23 | | 3,147,671,150 | 3,110,346,404 |\n| 8. Chi phí bán hàng | 25 | | - | - |\n| 9. Chi phí quản lý doanh nghiệp (General and administration expense) | 26 | 6.5 | 5,575,803,460 | 5,389,437,866 |\n| 10. Lợi nhuận thuần từ hoạt động kinh doanh (Operating profit/loss) | 30 | | 5,817,263,523 | 11,759,226,326 |\n| 11. Thu nhập khác (Other income) | 31 | 6.6 | 91,376,862 | 30,728,908 |\n| 12. Chi phí khác (Other expense) | 32 | | 10,000,716 | 3,179,494 |\n| 13. Lợi nhuận khác (Net other income/loss) | 40 | | 81,376,146 | 27,549,414 |\n| 14. Tổng lợi nhuận kế toán trước thuế (Accounting profit/loss before tax) | 50 | | 5,898,639,669 | 11,786,775,740 |\n| 15. Chi phí thuế TNDN hiện hành (Current corporate Income tax expense) | 51 | 6.8 | 1,181,055,751 | 2,152,788,925 |\n| 16. Chi phí thuế TNDN hoãn lại | 52 | | - | - |\n| 17. Lợi nhuận sau thuế thu nhập doanh nghiệp (Net profit/loss after tax) | 60 | | 4,717,583,918 | 9,633,986,815 |\n| 18. Lãi cơ bản trên cổ phiếu | 70 | | - | - |\n| 19. Lãi suy giảm trên cổ phiếu | 71 | | - | - |",
+    "output": [
+      "262,771,461,888 VND.",
+      "9,633,986,815 VND.",
+      "Doanh thu thuần kỳ này là 262,771,461,888 VND, kỳ trước là 288,771,793,919 VND. Doanh thu thuần giảm 26,000,332,031 VND.",
+      "Lợi nhuận gộp kỳ này là 11,842,351,987 VND. Doanh thu thuần kỳ này là 262,771,461,888 VND. Tỷ suất lợi nhuận gộp = (11,842,351,987 / 262,771,461,888) * 100% ≈ 4.51%.",
+      "Lợi nhuận thuần từ hoạt động kinh doanh (Operating profit/loss) của kỳ này là 5,817,263,523 VND, giảm đáng kể so với kỳ trước là 11,759,226,326 VND. Xu hướng này cho thấy hiệu quả hoạt động kinh doanh chính của công ty đang suy giảm.",
+      "Lợi nhuận sau thuế giảm từ 9,633,986,815 VND (kỳ trước) xuống 4,717,583,918 VND (kỳ này). Các yếu tố chính ảnh hưởng bao gồm:\\n- Doanh thu thuần giảm từ 288,771,793,919 VND xuống 262,771,461,888 VND.\\n- Lợi nhuận gộp giảm từ 17,542,540,575 VND xuống 11,842,351,987 VND.\\n- Chi phí tài chính tăng nhẹ, chủ yếu do chi phí lãi vay tăng từ 3,110,346,404 VND lên 3,147,671,150 VND.\\n- Chi phí quản lý doanh nghiệp tăng từ 5,389,437,866 VND lên 5,575,803,460 VND.\\nSự kết hợp của doanh thu giảm, lợi nhuận gộp giảm và chi phí tăng đã gây áp lực lớn lên lợi nhuận sau thuế.",
+      "Nếu chi phí lãi vay và chi phí quản lý doanh nghiệp tiếp tục tăng trong khi doanh thu thuần và lợi nhuận gộp không có sự cải thiện hoặc tiếp tục giảm, lợi nhuận sau thuế của công ty sẽ tiếp tục chịu áp lực giảm. Điều này có thể dẫn đến lợi nhuận ròng thấp hơn nữa, ảnh hưởng tiêu cực đến khả năng tích lũy vốn và phân phối lợi nhuận."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu thuần lũy kế năm nay đến 30/06/2025 là bao nhiêu?",
+      "Lợi nhuận sau thuế lũy kế năm trước đến 30/06/2024 là bao nhiêu?",
+      "So sánh Lợi nhuận gộp lũy kế năm nay với năm trước, thay đổi bao nhiêu?",
+      "Tỷ suất lợi nhuận sau thuế trên doanh thu thuần lũy kế năm nay là bao nhiêu?",
+      "Đánh giá xu hướng hiệu quả hoạt động kinh doanh của công ty trong dài hạn dựa trên dữ liệu lũy kế.",
+      "Phân tích nguyên nhân chính dẫn đến sự suy giảm của 'Lợi nhuận thuần từ hoạt động kinh doanh' lũy kế năm nay so với năm trước.",
+      "Dự báo tác động của việc tăng 'Chi phí lãi vay' đến lợi nhuận sau thuế lũy kế trong tương lai."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Báo cáo kết quả hoạt động kinh doanh (Lũy kế)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Lũy kế Năm nay (Accumulated current period) | Lũy kế Năm trước (Accumulated previous period) |\n|:-------------------------------------------------------------|:-------|:------------|:-----------------------------------------|:------------------------------------------|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ (Revenue) | 01 | 6.1 | 500,867,152,835 | 460,665,778,232 |\n| 2. Các khoản giảm trừ | 02 | | - | - |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ (Net revenue) | 10 | | 500,867,152,835 | 460,665,778,232 |\n| 4. Giá vốn hàng bán (Cost of sales) | 11 | 6.2 | 478,642,386,552 | 437,187,407,415 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ (Gross profit) | 20 | | 22,224,766,283 | 23,478,370,817 |\n| 6. Doanh thu hoạt động tài chính (Financial income) | 21 | 6.3 | 3,872,885,879 | 6,151,650,970 |\n| 7. Chi phí tài chính (Financial expense) | 22 | 6.4 | 6,364,904,310 | 5,696,559,622 |\n| Trong đó: Chi phí lãi vay (In which: Interest expense) | 23 | | 6,187,887,160 | 5,295,702,542 |\n| 8. Chi phí bán hàng | 25 | | - | - |\n| 9. Chi phí quản lý doanh nghiệp (General and administration expense) | 26 | 6.5 | 11,091,568,344 | 10,681,042,699 |\n| 10. Lợi nhuận thuần từ hoạt động kinh doanh (Operating profit/loss) | 30 | | 8,641,179,508 | 13,252,419,466 |\n| 11. Thu nhập khác (Other income) | 31 | 6.6 | 633,839,925 | 646,388,005 |\n| 12. Chi phí khác (Other expense) | 32 | | 10,003,176 | 3,179,494 |\n| 13. Lợi nhuận khác (Net other income/loss) | 40 | | 623,836,749 | 643,208,511 |\n| 14. Tổng lợi nhuận kế toán trước thuế (Accounting profit/loss before tax) | 50 | | 9,265,016,257 | 13,895,627,977 |\n| 15. Chi phí thuế TNDN hiện hành (Current corporate income tax expense) | 51 | 6.8 | 2,067,608,351 | 2,576,894,514 |\n| 16. Chi phí thuế TNDN hoãn lại | 52 | | - | - |\n| 17. Lợi nhuận sau thuế thu nhập doanh nghiệp (Net profit/loss after tax) | 60 | | 7,197,407,906 | 11,318,733,463 |\n| 18. Lãi cơ bản trên cổ phiếu | 70 | | - | - |\n| 19. Lãi suy giảm trên cổ phiếu | 71 | | - | - |",
+    "output": [
+      "500,867,152,835 VND.",
+      "11,318,733,463 VND.",
+      "Lợi nhuận gộp lũy kế năm nay là 22,224,766,283 VND, lũy kế năm trước là 23,478,370,817 VND. Lợi nhuận gộp giảm 1,253,604,534 VND.",
+      "Lợi nhuận sau thuế lũy kế năm nay là 7,197,407,906 VND. Doanh thu thuần lũy kế năm nay là 500,867,152,835 VND. Tỷ suất = (7,197,407,906 / 500,867,152,835) * 100% ≈ 1.44%.",
+      "Dữ liệu lũy kế cho thấy Doanh thu thuần có tăng (từ 460,665,778,232 VND lên 500,867,152,835 VND), nhưng Lợi nhuận gộp lại giảm (từ 23,478,370,817 VND xuống 22,224,766,283 VND). Đồng thời, Lợi nhuận thuần từ hoạt động kinh doanh và Lợi nhuận sau thuế đều giảm đáng kể. Điều này cho thấy mặc dù doanh thu tăng, hiệu quả hoạt động kinh doanh chính của công ty đang suy giảm trong dài hạn, có thể do giá vốn tăng nhanh hơn doanh thu hoặc chi phí hoạt động tăng.",
+      "Lợi nhuận thuần từ hoạt động kinh doanh lũy kế năm nay giảm từ 13,252,419,466 VND (năm trước) xuống 8,641,179,508 VND (năm nay). Các nguyên nhân chính có thể bao gồm:\\n- Giảm lợi nhuận gộp từ 23,478,370,817 VND xuống 22,224,766,283 VND.\\n- Doanh thu hoạt động tài chính giảm từ 6,151,650,970 VND xuống 3,872,885,879 VND.\\n- Chi phí tài chính tăng từ 5,696,559,622 VND lên 6,364,904,310 VND, chủ yếu do chi phí lãi vay tăng.\\n- Chi phí quản lý doanh nghiệp tăng từ 10,681,042,699 VND lên 11,091,568,344 VND.\\nSự kết hợp của lợi nhuận gộp và doanh thu tài chính giảm, cùng với chi phí tài chính và quản lý tăng, đã gây ra sự sụt giảm này.",
+      "Chi phí lãi vay lũy kế năm nay là 6,187,887,160 VND, tăng so với 5,295,702,542 VND năm trước. Nếu xu hướng tăng của chi phí lãi vay tiếp tục, nó sẽ làm tăng chi phí tài chính tổng thể của công ty. Điều này trực tiếp làm giảm lợi nhuận trước thuế và do đó làm giảm lợi nhuận sau thuế lũy kế, ảnh hưởng tiêu cực đến khả năng sinh lời và tài chính tổng thể của công ty trong tương lai."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động sản xuất kinh doanh lũy kế kỳ này là bao nhiêu?",
+      "Tiền và tương đương tiền cuối kỳ này là bao nhiêu VND?",
+      "So sánh 'Tiền thu từ đi vay' lũy kế kỳ này với kỳ trước, sự thay đổi là bao nhiêu?",
+      "Khoản mục 'Lãi, lỗ từ hoạt động đầu tư' đã thay đổi như thế nào giữa hai kỳ?",
+      "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động sản xuất kinh doanh.",
+      "Phân tích tác động của việc 'Tăng, giảm các khoản phải thu' đến lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế kỳ này.",
+      "Dựa trên báo cáo lưu chuyển tiền tệ, công ty đang tập trung vào loại hoạt động nào để tạo ra tiền?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Báo cáo lưu chuyển tiền tệ (Phương pháp gián tiếp)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Lũy kế Kỳ này (Accumulated current period) | Lũy kế Kỳ trước (Accumulated previous period) |\n|:-----------------------------------------------------------------|:-------|:------------|:-----------------------------------------|:------------------------------------------|\n| I. LƯU CHUYỂN TIỀN TỆ TỪ HOẠT ĐỘNG SẢN XUẤT KINH DOANH (CASH FLOWS FROM OPERATING ACTIVITIES) | | | | |\n| 1. Lợi nhuận trước thuế (Net profit/loss before tax) | 01 | | 9,265,016,257 | 13,895,627,977 |\n| 2. Điều chỉnh cho các khoản (Adjustment for) | | | | |\n| Khấu hao tài sản cố định (Depreciation and amortisation) | 02 | | 1,709,659,037 | 1,857,238,056 |\n| Các khoản dự phòng (Provisions) | 03 | | 568,491,130 | 1,195,327,354 |\n| Lãi, lỗ chênh lệch tỷ giá hối đoái chưa thực hiện (Unrealised foreign exchange gains/losses) | 04 | | 1,641,794,585 | 1,070,218,779 |\n| Lãi, lỗ từ hoạt động đầu tư (Gains/losses from investment) | 05 | | 1,671,993,045 | 3,143,900,335 |\n| Chi phí lãi vay (Interest expense) | 06 | | 6,187,887,160 | 5,295,702,542 |\n| Các khoản điều chỉnh khác | 07 | | - | - |\n| 3. Lợi nhuận từ hoạt động kinh doanh trước những thay đổi vốn lưu động (Operating profit/loss before adjustments to working capital) | 08 | | 14,417,265,954 | 15,639,122,107 |\n| Tăng, giảm các khoản phải thu (Increase or decrease in accounts receivables) | 09 | | (9,069,212,716) | (90,130,158,719) |\n| Tăng, giảm hàng tồn kho | 10 | | - | - |\n| Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế TNDN phải nộp (Increase or decrease in accounts payables excluding interest expense and CIT payable) | 11 | | (3,057,003,879) | 29,921,118,457 |\n| Tăng giảm chi phí trả trước (Increase or decrease prepaid expenses) | 12 | | 63,460,351 | (680,869,293) |\n| Tăng giảm chứng khoán kinh doanh | 13 | | - | - |\n| Tiền lãi vay đã trả (Interest paid) | 14 | | (6,187,887,160) | (5,295,702,542) |\n| Tiền thuế thu nhập doanh nghiệp đã nộp (CIT paid) | 15 | | (2,912,162,893) | (238,364,533) |\n| Tiền thu khác từ hoạt động kinh doanh | 16 | | - | - |\n| Tiền chi khác từ hoạt động kinh doanh | 17 | | - | - |\n| Lưu chuyển tiền thuần từ hoạt động sản xuất, kinh doanh (Net cash inflows/outflows from operating activities) | 20 | | (17,506,892,847) | 109,265,352,851 |\n| II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ (CASH FLOW FROM INVESTING ACTIVITIES) | | | | |\n| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác (Purchase of fixed assets and other longterm assets) | 21 | | (126,590,000) | (181,818,182) |\n| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác (Proceeds from disposals of fixed assets and other longterm assets) | 22 | | 433,352,694 | 224,889,242 |\n| 3. Tiền chi cho vay, mua các công cụ nợ của các đơn vị khác (Loans to other entities and payments for purchase of debt instruments of other entities) | 23 | | (500,000,000) | - |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác (Repayment from borrowers and proceeds from sales of debts instruments of other entities.) | 24 | | 10,944,824,800 | - |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác (Investments in other entities) | 25 | | - | - |\n| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác (Proceeds from sales of investments in other entities) | 26 | | - | - |\n| 7. Tiền lãi cho vay, cổ tức và lợi nhuận được chia (Interest and dividends received) | 27 | | 717,965,832 | 1,567,007,618 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư (Net cash inflows/outflows from investing activities) | 30 | | 524,728,526 | 12,554,903,478 |\n| III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH (CASH FLOW FROM FINANCING ACTIVITIES) | | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu (Proceeds from issuing stocks and capital contribution from owners) | 31 | | - | - |\n| 2. Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành (Cash paid for equity holders, repurchase shares now issued) | 32 | | - | - |\n| 3. Tiền thu từ đi vay (Proceeds from borrowings) | 33 | | 277,322,283,464 | 410,057,037,687 |\n| 4. Tiền chi trả nợ gốc vay (Repayments of borrowings) | 34 | | (300,796,857,561) | (318,318,314,897) |\n| 5. Tiền chi trả nợ gốc thuê tài chính | 35 | | - | - |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu (Dividends paid) | 36 | | - | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính (Net cash from financing activities) | 40 | | (23,474,574,097) | 91,738,722,790 |\n| Lưu chuyển tiền thuần trong kỳ (Net increase/decrease in cash) | 50 | | (5,442,952,724) | 4,971,726,583 |\n| Tiền và tương đương tiền đầu kỳ (Cash and cash equivalents at beginning of period) | 60 | | 152,283,296,513 | 86,673,459,849 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ (Impact of exchange rate fluctuation) | 61 | | (1,645,751,539) | (1,190,589,460) |\n| Tiền và tương đương tiền cuối kỳ (Cash and cash equivalents at end of period) | 70 | | 148,486,095,328 | 82,892,322,726 |",
+    "output": [
+      "(17,506,892,847) VND.",
+      "148,486,095,328 VND.",
+      "'Tiền thu từ đi vay' lũy kế kỳ này là 277,322,283,464 VND, kỳ trước là 410,057,037,687 VND. Số tiền thu từ đi vay đã giảm 132,734,754,223 VND.",
+      "Khoản mục 'Lãi, lỗ từ hoạt động đầu tư' lũy kế kỳ này là 1,671,993,045 VND, lũy kế kỳ trước là 3,143,900,335 VND. Khoản mục này đã giảm 1,471,907,290 VND.",
+      "Lưu chuyển tiền thuần từ hoạt động sản xuất kinh doanh lũy kế kỳ này là âm (-17,506,892,847 VND). Điều này cho thấy hoạt động kinh doanh cốt lõi của công ty không tạo ra đủ tiền để trang trải chi phí hoạt động, mà thậm chí còn tiêu tốn tiền. Khả năng tự tài trợ từ hoạt động kinh doanh là kém, công ty đang phải dựa vào các hoạt động khác (đầu tư, tài chính) để bù đắp dòng tiền thiếu hụt, hoặc đang giảm số dư tiền mặt.",
+      "Khoản mục 'Tăng, giảm các khoản phải thu' lũy kế kỳ này là (9,069,212,716) VND, cho thấy các khoản phải thu đã tăng lên. Việc tăng các khoản phải thu có nghĩa là công ty đã bán hàng nhưng chưa thu được tiền, làm giảm dòng tiền vào từ hoạt động kinh doanh. Điều này góp phần vào việc lưu chuyển tiền thuần từ hoạt động sản xuất kinh doanh bị âm, cho thấy công ty đang gặp khó khăn trong việc chuyển doanh thu thành tiền mặt.",
+      "Báo cáo cho thấy lưu chuyển tiền thuần từ hoạt động sản xuất kinh doanh là âm (-17,506,892,847 VND), lưu chuyển tiền thuần từ hoạt động tài chính cũng âm (-23,474,574,097 VND), và lưu chuyển tiền thuần từ hoạt động đầu tư là dương nhưng nhỏ (524,728,526 VND). Tổng lưu chuyển tiền thuần trong kỳ là âm (-5,442,952,724 VND). Điều này cho thấy công ty không tạo ra tiền từ bất kỳ hoạt động nào một cách bền vững trong kỳ này, thậm chí còn tiêu tiền tổng thể. Trong kỳ trước, hoạt động sản xuất kinh doanh và hoạt động tài chính là hai nguồn tạo tiền chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Vốn điều lệ của Công ty Cổ phần Giao nhận Vận tải Ngoại thương là bao nhiêu?",
+      "Công ty được thành lập theo quyết định nào và vào ngày nào?",
+      "Lĩnh vực kinh doanh chính của công ty là gì?",
+      "Liệt kê ít nhất ba ngành nghề kinh doanh chính của công ty.",
+      "Công ty có bao nhiêu chi nhánh được đề cập trong báo cáo?",
+      "Đánh giá mức độ đa dạng hóa ngành nghề kinh doanh của công ty.",
+      "Phân tích lợi ích và rủi ro của việc công ty con Hanotrans có cùng địa chỉ giao dịch với công ty mẹ.",
+      "Chu kỳ sản xuất, kinh doanh thông thường của công ty kéo dài bao lâu?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Đặc điểm hoạt động của doanh nghiệp\nLoại nội dung: Text\n1. Đặc điểm hoạt động của doanh nghiệp (General Information of Enterprise)\n\n1.1. Hình thức sở hữu vốn (Structure of ownership)\nCông ty Cổ phần Giao nhận Vận Tải Ngoại Thương (VNT Logistics JSC) được thành lập theo Quyết định số 1685/2002/QĐ-BTM ngày 30 tháng 12 năm 2002 của Bộ trưởng Bộ Thương mại. Giấy chứng nhận đăng ký kinh doanh công ty cổ phần lần đầu số 0103002086 ngày 07 tháng 04 năm 2003 và đăng ký thay đổi lần 2 ngày 23 tháng 08 năm 2005, do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp. Lần thay đổi gần đây nhất là vào ngày 17 tháng 01 năm 2025.\nVốn điều lệ của Công ty là 166.994.970.000 đồng.\n\n1.2. Lĩnh vực kinh doanh (Business Scope)\nCông ty Cổ phần Giao nhận Vận tải Ngoại thương kinh doanh trong lĩnh vực Giao nhận vận chuyển và Logistics.\n\n1.3. Ngành nghề kinh doanh (Business lines of the company)\nKinh doanh các dịch vụ về giao nhận, vận tải hàng hóa xuất nhập khẩu: bốc xếp, giao nhận, vận chuyển hàng siêu trường, siêu trọng, hàng quá khổ, quá tải.\nĐại lý giao nhận cho các hãng giao nhận và vận tải nước ngoài.\nMôi giới thuê và cho thuê tàu cho các chủ hàng và chủ tàu trong và ngoài nước.\nKinh doanh vận tải hàng hóa nội địa và quá cảnh.\nKinh doanh cho thuê văn phòng làm việc, kho bãi theo quy định của pháp luật.\nKinh doanh xuất nhập khẩu trực tiếp và nhận ủy thác xuất nhập khẩu.\nDịch vụ thương mại và dịch vụ có liên quan đến giao nhận vận chuyển hàng hóa xuất nhập khẩu: thủ tục hải quan, tái chế, bao bì, kiểm kiện hàng hóa xuất nhập khẩu.\nKinh doanh vận tải hàng hóa đa phương thức.\nTổ chức hội chợ triển lãm, hội nghị, hội thảo, trưng bày, giới thiệu sản phẩm hàng hóa.\nKinh doanh siêu thị, trung tâm thương mại.\nMôi giới hàng hải.\nĐại lý tàu biển.\n\n1.4. Chu kỳ sản xuất, kinh doanh thông thường (Production and Operating cycle)\nChu kỳ kinh doanh thông thường là 1 năm, từ ngày 01/01 đến ngày 31/12 hàng năm.\n\n1.5. Đặc điểm hoạt động của doanh nghiệp trong năm tài chính có ảnh hưởng đến Báo cáo tài chính\n(Characteristics of the operation in the fiscal year that affect the financial statements)\n\n1.6. Cấu trúc doanh nghiệp (Enterprise Structure)\nTrụ sở chính tại số 2 Bích Câu, Phường Ô Chợ Dừa, Thành phố Hà Nội.\nVNT Logistics JSC có các chi nhánh sau:\n- Chi nhánh Hải Phòng, đặt tại 208 Đường Chùa Vẽ, Phường Đông Hải, Thành phố Hải Phòng.\n- Ngày 03 tháng 06 năm 2019, Công ty mở chi nhánh Hồ Chí Minh đặt tại địa chỉ Tầng 5, Khu B Tòa nhà Waseco, số 10 Phổ Quang, Phường Tân Sơn Hòa, TP Hồ Chí Minh.\n- Ngày 08 tháng 06 năm 2022, Công ty mở chi nhánh Bắc Ninh đặt tại địa chỉ Tầng 6 tòa nhà VNPT, số 33 Lý Thái Tổ, Phường Kinh Bắc, Tỉnh Bắc Ninh.\nNgoài ra, Công ty còn đầu tư 100% vốn thành lập công ty con là Công ty TNHH Giao nhận Vận tải Hà Thành (Hanotrans). Hanotrans có cùng địa chỉ giao dịch với Công ty.\nHiện nay, Hanotrans có các chi nhánh sau:\n- Chi nhánh Hải Phòng, đặt tại 208 Đường Chùa Vẽ, Phường Đông Hải, Thành phố Hải Phòng.\n- Chi nhánh Hồ Chí Minh, đặt tại Tầng 5, Khu B Tòa nhà Waseco, số 10 Phổ Quang, Phường Tân Sơn Hòa, TP Hồ Chí Minh.\n\n1.7. Thông tin trên Báo cáo tài chính có khả năng so sánh được (Comparable information in financial statements)",
+    "output": [
+      "166.994.970.000 đồng.",
+      "Công ty được thành lập theo Quyết định số 1685/2002/QĐ-BTM ngày 30 tháng 12 năm 2002 của Bộ trưởng Bộ Thương mại.",
+      "Giao nhận vận chuyển và Logistics.",
+      "Ba ngành nghề kinh doanh chính của công ty là: Kinh doanh các dịch vụ về giao nhận, vận tải hàng hóa xuất nhập khẩu; Đại lý giao nhận cho các hãng giao nhận và vận tải nước ngoài; và Môi giới thuê và cho thuê tàu cho các chủ hàng và chủ tàu trong và ngoài nước.",
+      "Công ty có 3 chi nhánh được đề cập: Chi nhánh Hải Phòng, Chi nhánh Hồ Chí Minh, và Chi nhánh Bắc Ninh.",
+      "Công ty có mức độ đa dạng hóa ngành nghề kinh doanh tương đối rộng trong lĩnh vực Logistics và vận tải, bao gồm giao nhận, vận tải xuất nhập khẩu, vận tải nội địa và quá cảnh, đại lý giao nhận, môi giới thuê/cho thuê tàu, cho thuê văn phòng/kho bãi, kinh doanh xuất nhập khẩu trực tiếp/ủy thác, dịch vụ thương mại liên quan, vận tải đa phương thức, tổ chức hội chợ/triển lãm, kinh doanh siêu thị/trung tâm thương mại, môi giới hàng hải và đại lý tàu biển. Điều này cho thấy công ty không chỉ tập trung vào một dịch vụ cốt lõi mà còn mở rộng sang nhiều mảng hỗ trợ và liên quan.",
+      "Lợi ích của việc công ty con Hanotrans có cùng địa chỉ giao dịch với công ty mẹ có thể bao gồm:\\n- Tiết kiệm chi phí: Giảm chi phí thuê mặt bằng, quản lý văn phòng.\\n- Hiệu quả hoạt động: Dễ dàng phối hợp, trao đổi thông tin và quản lý giữa công ty mẹ và con.\\n- Tận dụng nguồn lực: Chia sẻ cơ sở hạ tầng, nhân sự, và các dịch vụ hành chính.\\nRủi ro có thể bao gồm:\\n- Nhầm lẫn danh tính: Có thể gây nhầm lẫn cho khách hàng hoặc đối tác về pháp nhân.\\n- Rủi ro pháp lý/tài chính: Khó khăn trong việc tách bạch rõ ràng trách nhiệm pháp lý và tài chính giữa hai đơn vị, đặc biệt trong trường hợp xảy ra sự cố.\\n- Rủi ro hoạt động: Nếu có sự cố tại địa điểm chung, cả hai công ty có thể bị ảnh hưởng đồng thời.",
+      "Chu kỳ kinh doanh thông thường là 1 năm, từ ngày 01/01 đến ngày 31/12 hàng năm."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Easy_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Kỳ kế toán của công ty bắt đầu và kết thúc vào ngày nào hàng năm?",
+      "Đơn vị tiền tệ sử dụng trong kế toán của công ty là gì?",
+      "Công ty áp dụng chế độ và hình thức kế toán nào?",
+      "Theo nguyên tắc kế toán của công ty, các khoản tương đương tiền được xác định như thế nào?",
+      "Giải thích cách công ty xử lý chênh lệch tỷ giá hối đoái phát sinh trong kỳ và vào ngày khóa sổ.",
+      "Đánh giá tác động của nguyên tắc lập dự phòng phải thu khó đòi đến báo cáo tài chính của công ty.",
+      "Nguyên tắc ghi nhận tiền và các khoản tương đương tiền của công ty có phù hợp với chuẩn mực kế toán quốc tế không?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Kỳ kế toán, Đơn vị tiền tệ và Chuẩn mực kế toán\nLoại nội dung: Text\n2. Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán (Financial year, currency unit used in accounting)\n\n2.1. Kỳ kế toán (Financial year)\nKỳ kế toán bắt đầu từ ngày 01 tháng 01 đến ngày 31 tháng 12 hàng năm.\n\n2.2. Đơn vị tiền tệ sử dụng trong kế toán (Currency unit used in accounting)\nĐơn vị tiền tệ sử dụng trong ghi chép kế toán là Đồng Việt Nam (VND).\n\n3. Chuẩn mực và chế độ kế toán áp dụng (Accounting Standards and Regulations applied)\n\n3.1. Chế độ kế toán áp dụng (Accounting Regulations applied)\nCông ty áp dụng Chuẩn mực và Chế độ kế toán Việt Nam.\n\n3.2. Hình thức kế toán áp dụng (Form of accounting)\nCông ty áp dụng hình thức kế toán là Nhật ký chung.\n\n3.3. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán (Declaration on compliance with Accounting Standard and Regime)\nCông ty tuân thủ Chuẩn mực và Chế độ kế toán Việt Nam để soạn thảo và trình bày các báo cáo tài chính cho kỳ kế toán kết thúc vào ngày 30 tháng 06 năm 2025.\n\n4. Các chính sách kế toán áp dụng (Accounting policies applied)\n\n4.1. Nguyên tắc ghi nhận tiền và các khoản tương đương tiền (Principles for recognizing cash and cash equivalents)\nNguyên tắc xác định các khoản tương đương tiền (Cash equivalents)\nTiền bao gồm tiền tại quỹ, tiền đang chuyển và các khoản ký gửi không kỳ hạn. Tương đương tiền là các khoản đầu tư ngắn hạn không quá 3 tháng, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.\nNguyên tắc chuyển đổi các đồng tiền khác ra đồng tiền sử dụng trong kế toán (Principles of convert other currencies into the currency used in accounting)\nCác nghiệp vụ phát sinh bằng ngoại tệ được hạch toán theo tỷ giá hối đoái vào ngày phát sinh nghiệp vụ. Các khoản mục tiền và công nợ có gốc ngoại tệ được chuyển đổi sang đồng tiền hạch toán theo tỷ giá hối đoái vào ngày lập bảng cân đối kế toán.\nCác khoản chênh lệch tỷ giá phát sinh trong quá trình thanh toán được ghi nhận trong báo cáo kết quả hoạt động kinh doanh trong kỳ. Các khoản chênh lệch tỷ giá do đánh giá lại số dư vào ngày khóa sổ năm tài chính được ghi nhận theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính.\n\n4.2. Nguyên tắc ghi nhận các khoản phải thu thương mại và phải thu khác (Principles for recognizing trade receivables and others)\nCác khoản phải thu thương mại và phải thu khác thể hiện giá trị có thể thực hiện được theo dự kiến.\nNguyên tắc dự phòng phải thu khó đòi (Provision for doubtful debts)\nDự phòng phải thu khó đòi được lập cho các khoản nợ phải thu quá hạn thanh toán hoặc các khoản nợ có bằng chứng chắc chắn là không thu được.",
+    "output": [
+      "Kỳ kế toán bắt đầu từ ngày 01 tháng 01 đến ngày 31 tháng 12 hàng năm.",
+      "Đồng Việt Nam (VND).",
+      "Công ty áp dụng Chuẩn mực và Chế độ kế toán Việt Nam và hình thức kế toán là Nhật ký chung.",
+      "Tương đương tiền là các khoản đầu tư ngắn hạn không quá 3 tháng, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.",
+      "Các khoản chênh lệch tỷ giá phát sinh trong quá trình thanh toán được ghi nhận trong báo cáo kết quả hoạt động kinh doanh trong kỳ. Các khoản chênh lệch tỷ giá do đánh giá lại số dư vào ngày khóa sổ năm tài chính được ghi nhận theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính.",
+      "Nguyên tắc lập dự phòng phải thu khó đòi cho các khoản nợ phải thu quá hạn hoặc có bằng chứng chắc chắn là không thu được có tác động tích cực đến sự thận trọng của báo cáo tài chính. Việc lập dự phòng giúp phản ánh đúng hơn giá trị thực của các khoản phải thu có thể thu hồi, tránh việc thổi phồng tài sản. Tuy nhiên, nó cũng có thể làm giảm lợi nhuận ròng và giá trị tài sản nếu công ty có nhiều khoản nợ khó đòi, đồng thời cung cấp cái nhìn thực tế hơn về rủi ro tín dụng của công ty.",
+      "Nguyên tắc xác định tương đương tiền là các khoản đầu tư ngắn hạn không quá 3 tháng, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền. Nguyên tắc này phù hợp với định nghĩa về tiền và các khoản tương đương tiền trong các chuẩn mực kế toán quốc tế như IAS 7 (Báo cáo lưu chuyển tiền tệ), nơi tiền và các khoản tương đương tiền được định nghĩa là tiền mặt tại quỹ, tiền gửi không kỳ hạn và các khoản đầu tư ngắn hạn, có tính thanh khoản cao, dễ dàng chuyển đổi thành một lượng tiền xác định và có rủi ro thay đổi giá trị không đáng kể."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Phương pháp khấu hao tài sản cố định mà công ty áp dụng là gì?",
+      "Thời gian khấu hao ước tính cho máy móc thiết bị là bao nhiêu?",
+      "Khi nào doanh thu từ cung cấp dịch vụ được công ty ghi nhận?",
+      "So sánh nguyên tắc ghi nhận tài sản cố định hữu hình và vô hình của công ty.",
+      "Nguyên tắc ghi nhận các khoản đầu tư vào công ty con theo phương pháp giá gốc có ý nghĩa gì đối với báo cáo tài chính hợp nhất?",
+      "Phân tích tác động của việc trích quỹ lương trong phạm vi được duyệt của Hội đồng quản trị đến chi phí nhân sự của công ty.",
+      "Đánh giá mức độ tuân thủ các chuẩn mực kế toán quốc tế của công ty dựa trên các chính sách ghi nhận tài sản và doanh thu được trình bày."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Chính sách kế toán (TSCĐ, Đầu tư tài chính, Doanh thu)\nLoại nội dung: Text\n4.3. Nguyên tắc ghi nhận và khấu hao tài sản cố định (Principles for recognizing and depreciating fixed assets)\nNguyên tắc ghi nhận nguyên giá tài sản cố định hữu hình (Tangible fixed assets are stated at cost)\nTài sản cố định hữu hình được xác định giá trị ban đầu theo nguyên giá. Nguyên giá là toàn bộ các chi phí mà doanh nghiệp bỏ ra để có được tài sản cố định hữu hình tính đến thời điểm đưa tài sản đó vào trạng thái sử dụng.\nNguyên tắc ghi nhận nguyên giá tài sản cố định vô hình (Intangible fixed assets are stated at cost)\nTài sản cố định vô hình được xác định giá trị ban đầu theo nguyên giá. Nguyên giá là toàn bộ các chi phí mà doanh nghiệp bỏ ra để có được tài sản cố định vô hình tính đến thời điểm đưa tài sản đó vào trạng thái sử dụng theo dự tính.\nPhương pháp khấu hao (Depreciation)\nNguyên giá tài sản cố định được khấu hao theo phương pháp đường thẳng trong suốt thời gian hữu dụng dự tính của tài sản.\nThời gian khấu hao ước tính cho một số nhóm tài sản như sau:\n- Nhà cửa, vật kiến trúc: 8-24 năm\n- Máy móc thiết bị: 3-8 năm\n- Phương tiện vận tải: 3-10 năm\n- Thiết bị văn phòng: 3-6 năm\n- Chi phí để có quyền sử dụng đất: 1-3 năm\n- Phần mềm quản lý: 3 năm\n\n4.4. Nguyên tắc ghi nhận các khoản đầu tư tài chính (Principles for recognizing financial investments)\nCác khoản đầu tư vào công ty con được ghi nhận theo phương pháp giá gốc.\n\n4.5. Nguyên tắc ghi nhận doanh thu và thu nhập tài chính (Principles for recognizing revenues and financial income)\nDoanh thu về cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy.\nCổ tức nhận được từ công ty con được ghi nhận theo nguyên tắc thực thu.\n\n4.6. Lương (Salary)\nCông ty trích quỹ lương trong phạm vi được duyệt của Hội đồng quản trị.\n\n4.7. Nguyên tắc ghi nhận vốn chủ sở hữu (Principle of recording equity)\nVốn điều lệ được ghi nhận theo mệnh giá cổ phần đóng góp từ các cổ đông.\nThặng dư vốn cổ phần được ghi nhận từ lãi phát hành cổ phiếu.\n\n4.8. Phân phối lợi nhuận (Profit distribution)\nLợi nhuận được phân phối theo Nghị quyết Đại hội cổ đông.\n\n4.9. Các bên liên quan (Stakeholders)\nCác bên được gọi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định tài chính và hoạt động.\n\n5. Thông tin bổ sung cho các khoản mục trình bày trên bảng cân đối kế toán (Additional information for the items presented on the balance sheet)",
+    "output": [
+      "Phương pháp đường thẳng.",
+      "3-8 năm.",
+      "Doanh thu về cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy.",
+      "Cả tài sản cố định hữu hình và vô hình đều được xác định giá trị ban đầu theo nguyên giá. Nguyên giá là toàn bộ các chi phí mà doanh nghiệp bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sử dụng. Đối với tài sản cố định vô hình, là 'theo dự tính'.",
+      "Nguyên tắc ghi nhận các khoản đầu tư vào công ty con theo phương pháp giá gốc có nghĩa là khoản đầu tư được ghi nhận bằng chi phí ban đầu, và không điều chỉnh theo sự thay đổi của vốn chủ sở hữu tại công ty con sau ngày mua. Tuy nhiên, trong báo cáo tài chính hợp nhất, các khoản đầu tư vào công ty con sẽ được hợp nhất toàn bộ theo nguyên tắc hợp nhất kinh doanh, loại bỏ khoản đầu tư này để tránh ghi nhận hai lần giá trị tài sản. Phương pháp giá gốc chỉ được sử dụng trong báo cáo tài chính riêng của công ty mẹ.",
+      "Việc trích quỹ lương trong phạm vi được duyệt của Hội đồng quản trị có tác động kép. Một mặt, nó giúp công ty kiểm soát chi phí nhân sự, đảm bảo rằng khoản chi này không vượt quá ngân sách đã được phê duyệt, từ đó duy trì tính ổn định tài chính. Mặt khác, nó có thể hạn chế khả năng công ty điều chỉnh mức lương linh hoạt theo biến động thị trường hoặc hiệu suất cá nhân, có thể ảnh hưởng đến khả năng thu hút và giữ chân nhân tài, đặc biệt nếu mức duyệt thấp hơn mức cạnh tranh trên thị trường.",
+      "Dựa trên các chính sách được trình bày, công ty đang áp dụng Chuẩn mực và Chế độ kế toán Việt Nam. Các chính sách như ghi nhận TSCĐ theo nguyên giá và khấu hao đường thẳng, ghi nhận doanh thu từ dịch vụ khi kết quả giao dịch được xác định đáng tin cậy, và ghi nhận đầu tư vào công ty con theo phương pháp giá gốc (trong BCTC riêng) đều phù hợp với các nguyên tắc cơ bản của chuẩn mực kế toán quốc tế như IFRS. Tuy nhiên, để đánh giá toàn diện mức độ tuân thủ IFRS, cần xem xét chi tiết hơn các chính sách khác và các thuyết minh liên quan."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số dư tiền mặt cuối quý II/2025 của công ty là bao nhiêu?",
+      "Tiền gửi ngân hàng không kỳ hạn đầu năm là bao nhiêu?",
+      "So sánh tổng tiền và các khoản tương đương tiền cuối quý với đầu năm.",
+      "Phần trăm giảm của các khoản tương đương tiền từ đầu năm đến cuối quý là bao nhiêu?",
+      "Đánh giá khả năng thanh khoản ngắn hạn của công ty dựa trên cơ cấu tiền và các khoản tương đương tiền.",
+      "Phân tích tác động của sự sụt giảm tiền mặt và tương đương tiền đến hoạt động hàng ngày của công ty.",
+      "Dự báo rủi ro về dòng tiền nếu xu hướng giảm của các khoản tương đương tiền tiếp tục diễn ra."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Tiền và các khoản tương đương tiền\nLoại nội dung: Bảng\n5.1. Tiền và các khoản tương đương tiền (Cash and cash equivalents)\n| Chỉ tiêu | Số cuối quý (Closing) | Số đầu năm (Opening) |\n|:------------------------------------|:---------------------|:--------------------|\n| Tiền mặt (Cash in hand) | 97,231,553 | 481,553,168 |\n| Tiền gửi ngân hàng không kỳ hạn (Bank Deposits without term) | 68,742,731,775 | 44,432,848,845 |\n| Các khoản tương đương tiền (Cash equivalents) | 79,646,132,000 | 107,368,894,500 |\n| Cộng (Total) | 148,486,095,328 | 152,283,296,513 |",
+    "output": [
+      "97,231,553 VND.",
+      "44,432,848,845 VND.",
+      "Tổng tiền và các khoản tương đương tiền cuối quý là 148,486,095,328 VND, đầu năm là 152,283,296,513 VND. Khoản mục này đã giảm 3,797,201,185 VND.",
+      "Khoản tương đương tiền đầu năm là 107,368,894,500 VND. Cuối quý là 79,646,132,000 VND. Mức giảm là 27,722,762,500 VND. Phần trăm giảm = (27,722,762,500 / 107,368,894,500) * 100% ≈ 25.82%.",
+      "Mặc dù tổng tiền và các khoản tương đương tiền cuối quý là 148,486,095,328 VND, một con số đáng kể, nhưng đã giảm so với đầu năm. Đặc biệt, 'Các khoản tương đương tiền' đã giảm đáng kể (25.82%). Tuy nhiên, 'Tiền gửi ngân hàng không kỳ hạn' lại tăng đáng kể từ 44,432,848,845 VND lên 68,742,731,775 VND. Điều này cho thấy công ty đã chuyển đổi một phần tương đương tiền sang tiền gửi ngân hàng, làm tăng trực tiếp khả năng tiếp cận tiền mặt. Nhìn chung, công ty vẫn duy trì một lượng tiền mặt và tương đương tiền lớn, cho thấy khả năng thanh khoản ngắn hạn khá tốt, nhưng cần theo dõi sự biến động của các khoản tương đương tiền.",
+      "Sự sụt giảm tổng tiền và tương đương tiền từ 152,283,296,513 VND xuống 148,486,095,328 VND có thể ảnh hưởng đến khả năng đáp ứng các nhu cầu chi tiêu hàng ngày ngay lập tức như thanh toán lương, mua sắm vật tư nhỏ, hoặc các khoản nợ ngắn hạn không lường trước. Mặc dù công ty vẫn có một lượng lớn tiền gửi ngân hàng không kỳ hạn, sự giảm của các khoản tương đương tiền (được định nghĩa là đầu tư ngắn hạn không quá 3 tháng) có thể ám chỉ rằng công ty đã phải sử dụng các khoản dự trữ thanh khoản cao này, có thể gây áp lực lên quản lý dòng tiền nếu xu hướng này tiếp tục.",
+      "Nếu xu hướng giảm của các khoản tương đương tiền tiếp tục diễn ra (giảm 25.82% trong quý), rủi ro về dòng tiền của công ty sẽ tăng lên. 'Các khoản tương đương tiền' là những tài sản có tính thanh khoản cao, dễ dàng chuyển đổi thành tiền mặt. Sự sụt giảm liên tục có thể báo hiệu rằng công ty đang phải rút bớt các khoản dự trữ thanh khoản này để tài trợ cho hoạt động hoặc đầu tư, hoặc đang gặp khó khăn trong việc tạo ra tiền mặt từ hoạt động kinh doanh. Điều này có thể dẫn đến thiếu hụt tiền mặt đột ngột để chi trả các khoản nợ đến hạn, ảnh hưởng đến uy tín và khả năng hoạt động liên tục của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị đầu tư vào công ty con cuối quý II/2025 là bao nhiêu?",
+      "Công ty con Hanotrans được VNT Logistics JSC đầu tư bao nhiêu phần trăm vốn?",
+      "Công ty CP Cảng Mipec hoạt động trong lĩnh vực nào?",
+      "So sánh tổng giá trị đầu tư tài chính dài hạn cuối quý với đầu năm.",
+      "Đánh giá mức độ rủi ro của các khoản đầu tư tài chính dài hạn khi không có dự phòng được lập.",
+      "Phân tích chiến lược đầu tư của VNT Logistics JSC thông qua các khoản đầu tư vào công ty con, liên kết và đơn vị khác.",
+      "Nếu các khoản đầu tư tài chính dài hạn mang lại lợi nhuận thấp hơn kỳ vọng, điều này sẽ ảnh hưởng như thế nào đến lợi nhuận chung của công ty?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Các khoản đầu tư tài chính\nLoại nội dung: Bảng và Text\n5.2. Các khoản đầu tư tài chính (Financial Investments)\n\na. Chứng khoán kinh doanh (Trading securities)\n| Chỉ tiêu | Giá gốc (Cost) | Giá trị hợp lý (Fair value) | Dự phòng (Reserve Value) |\n|:---------------------|:---------------|:-------------------|:-------------------------|\n| Cty CP Logistics Vina Link | - | - | - |\n| Cty CP Vinafreight | - | - | - |\n| Cộng (Total) | - | - | - |\nCông ty đã xác định giá trị hợp lý của khoản đầu tư vào công ty CP Logistics Vina Link và Công ty CP Vinafreight trên cơ sở giá niêm yết trên sàn giao dịch chứng khoán và số lượng cổ phiếu mà Công ty đang nắm giữ.\n\nb. Đầu tư tài chính dài hạn được chi tiết như sau (Investments held to maturity)\n| Chỉ tiêu | Giá gốc (Cost) - Cuối quý | Giá trị ghi sổ (Book value) - Cuối quý | Dự phòng (Provision) - Cuối quý | Giá gốc (Cost) - Đầu năm | Giá trị ghi sổ (Book value) - Đầu năm | Dự phòng (Provision) - Đầu năm |\n|:----------------------------------------------------------|:-------------------------|:-----------------------------|:------------------------|:------------------------|:-----------------------------|:-----------------------|\n| Đầu tư vào công ty con (Investments in subsidiaries) | 24,000,000,000 | 24,000,000,000 | - | 24,000,000,000 | 24,000,000,000 | - |\n| Đầu tư vào công ty liên doanh, liên kết (Investments in associated companies and joint ventures)\n Công ty CP Cảng Mipec | 310,765,050,000 | 310,765,050,000 | - | 310,765,050,000 | 310,765,050,000 | - |\n| Đầu tư góp vốn vào đơn vị khác (Equity investments in other entities)\n Công ty TNHH Mitsui Soko Việt Nam | 2,260,000,000 | 2,260,000,000 | - | 2,260,000,000 | 2,260,000,000 | - |\n Công ty CP dịch vụ Logistics Thăng Long | 21,185,240,000 | 21,185,240,000 | - | 21,185,240,000 | 21,185,240,000 | - |\n| Đầu tư nắm giữ đến ngày đáo hạn (Investments held to maturity) | 1,000,000,000 | 1,000,000,000 | - | 1,000,000,000 | 1,000,000,000 | - |\n\n*   Tóm tắt tình hình hoạt động của Công ty con, công ty liên doanh, liên kết trong kỳ\n*   Thông tin về công ty con\n    *   Công ty con là công ty TNHH Giao nhận Vận tải Hà thành (Hanotrans), được đầu tư 100% vốn từ công ty CP GNVT Ngoại thương.\n    *   Công ty con hoạt động trong lĩnh vực ngành nghề tương tự công ty mẹ.\n*   Thông tin về công ty liên kết\n    *   Tên Công ty: Công ty cổ phần Cảng Mipec.\n    *   Hoạt động trong lĩnh vực: Cảng biển, Logistics.\n*   Các giao dịch trọng yếu giữa doanh nghiệp và công ty con, liên doanh, liên kết trong kỳ",
+    "output": [
+      "24,000,000,000 VND.",
+      "100% vốn.",
+      "Cảng biển, Logistics.",
+      "Tổng giá trị đầu tư tài chính dài hạn cuối quý là 359,210,290,000 VND. Tổng giá trị đầu tư tài chính dài hạn đầu năm cũng là 359,210,290,000 VND. Không có sự thay đổi.",
+      "Việc không có dự phòng nào được lập cho các khoản đầu tư tài chính dài hạn cho thấy ban lãnh đạo công ty tin rằng giá trị ghi sổ của các khoản đầu tư này không bị suy giảm hoặc rủi ro giảm giá là không đáng kể. Tuy nhiên, nếu giá trị thị trường hoặc hiệu quả hoạt động của các công ty được đầu tư giảm sút mà không có dự phòng, điều này tạo ra một rủi ro tiềm tàng. Báo cáo có thể không phản ánh đầy đủ rủi ro mất giá tài sản, và nếu rủi ro này xảy ra, nó sẽ ảnh hưởng trực tiếp và đáng kể đến vốn chủ sở hữu và lợi nhuận của công ty.",
+      "Chiến lược đầu tư của VNT Logistics JSC thể hiện sự tập trung vào việc mở rộng và củng cố vị thế trong lĩnh vực cốt lõi (logistics và cảng biển) thông qua:\\n- Kiểm soát hoàn toàn: Đầu tư 100% vốn vào công ty con Hanotrans, đảm bảo kiểm soát toàn diện và tích hợp hoạt động.\\n- Liên kết chiến lược: Đầu tư đáng kể vào Công ty CP Cảng Mipec (310,765,050,000 VND), một công ty hoạt động trong lĩnh vực cảng biển và Logistics, cho thấy ý định tận dụng sức mạnh tổng hợp và mở rộng chuỗi giá trị.\\n- Hợp tác đa dạng: Đầu tư vào các đơn vị khác như Công ty TNHH Mitsui Soko Việt Nam và Công ty CP dịch vụ Logistics Thăng Long, có thể nhằm mục đích đa dạng hóa đối tác hoặc tiếp cận các phân khúc thị trường/khách hàng khác.\\nTổng thể, chiến lược này cho thấy công ty đang xây dựng một hệ sinh thái logistics mạnh mẽ thông qua cả sở hữu trực tiếp và hợp tác chiến lược.",
+      "Với tổng đầu tư tài chính dài hạn lên đến 359,210,290,000 VND, nếu các khoản đầu tư này mang lại lợi nhuận thấp hơn kỳ vọng (ví dụ, cổ tức thấp hơn, hoặc phải ghi nhận lỗ từ công ty liên kết theo phương pháp vốn chủ sở hữu nếu có), điều này sẽ trực tiếp làm giảm doanh thu hoạt động tài chính hoặc thậm chí gây ra lỗ tài chính. Từ đó, lợi nhuận trước thuế và lợi nhuận sau thuế của công ty sẽ bị ảnh hưởng tiêu cực, làm giảm khả năng sinh lời tổng thể và có thể ảnh hưởng đến khả năng phân phối cổ tức của công ty mẹ."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải thu ngắn hạn của khách hàng cuối quý II/2025 là bao nhiêu?",
+      "Khách hàng nào có khoản phải thu lớn nhất cuối quý II/2025?",
+      "So sánh tổng các khoản phải thu khác ngắn hạn cuối quý với đầu năm.",
+      "Tỷ lệ phải thu ngắn hạn của khách hàng trên tổng tài sản ngắn hạn cuối quý là bao nhiêu?",
+      "Đánh giá rủi ro thu hồi nợ từ các khách hàng lớn có biến động đáng kể trong khoản phải thu.",
+      "Phân tích tác động của việc không có các khoản phải thu dài hạn đối với chiến lược quản lý vốn lưu động của công ty.",
+      "Nếu công ty muốn giảm rủi ro về các khoản phải thu, chiến lược nào nên được ưu tiên?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Phải thu của khách hàng và Phải thu khác\nLoại nội dung: Bảng và Text\n5.3. Phải thu của khách hàng (Receivables from customers)\n\na. Phải thu của khách hàng ngắn hạn (Shortterm receivables from customers)\n| Khách hàng | Số cuối quý (Closing) | Số đầu năm (Opening) |\n|:-----------------------------------------------------|:---------------------|:--------------------|\n| CÔNG TY TNHH SJ LOGISTICS VIỆT NAM | 27,120,071,563 | 10,458,498,317 |\n| CÔNG TY TNHH GIAO VẬN CPS | 10,506,430,263 | - |\n| CÔNG TY CỔ PHẦN HỢP KIM SẮT TÂN AN | 8,483,584,830 | 7,219,560,159 |\n| CÔNG TY TNHH TIẾP VẬN KCL | 3,537,125,888 | 3,319,688,828 |\n| CÔNG TY CỔ PHẦN CƠ ĐIỆN LUYỆN KIM THÁI NGUYÊN | 2,430,331,993 | 11,367,227,927 |\n| Chi nhánh Công ty cổ phần Quốc tế Logistics Hoàng Hà | 1,608,843,623 | 13,336,294,138 |\n| Các khoản phải thu khách hàng khác (Other receivables from customers) | 96,869,084,877 | 97,872,192,756 |\n| Cộng (Total) | 150,555,473,037 | 143,573,462,125 |\n\nb. Phải thu khách hàng dài hạn: Không có\n\n5.4. Phải thu khác (Other receivables)\n\na. Ngắn hạn (Short term)\n| Chỉ tiêu | Giá trị (Value) - Cuối quý | Dự phòng (Provision) - Cuối quý | Giá trị (Value) - Đầu năm | Dự phòng (Provision) - Đầu năm |\n|:--------------------------------|:-------------------------|:-------------------------|:------------------------|:------------------------|\n| Ký cược, ký quỹ (Collateral, deposit) | 1,755,745,000 | - | 2,209,745,000 | - |\n| Tạm ứng (Advance) | 1,709,733,928 | - | 1,879,947,328 | - |\n| Phải thu khác (Other receivables) | 1,509,803,936 | - | 1,840,469,835 | - |\n| Cộng (Total) | 4,975,282,864 | - | 5,930,162,163 | - |\n\nb. Dài hạn (Longterm): Không có\n\n5.5. Tài sản thiếu chờ xử lý: Không có",
+    "output": [
+      "150,555,473,037 VND.",
+      "CÔNG TY TNHH SJ LOGISTICS VIỆT NAM với 27,120,071,563 VND.",
+      "Tổng các khoản phải thu khác ngắn hạn cuối quý là 4,975,282,864 VND. Đầu năm là 5,930,162,163 VND. Khoản mục này đã giảm 954,879,299 VND.",
+      "Phải thu ngắn hạn của khách hàng cuối quý là 150,555,473,037 VND. Tổng tài sản ngắn hạn cuối quý là 352,340,982,053 VND (từ Chunk 2). Tỷ lệ là (150,555,473,037 / 352,340,982,053) * 100% ≈ 42.73%.",
+      "Trong số các khách hàng lớn, khoản phải thu từ CÔNG TY TNHH SJ LOGISTICS VIỆT NAM tăng đáng kể từ 10,458,498,317 VND lên 27,120,071,563 VND. Sự tăng đột biến này cần được xem xét kỹ lưỡng về rủi ro tập trung và khả năng thanh toán của khách hàng. Trong khi đó, các khoản phải thu từ CÔNG TY CỔ PHẦN CƠ ĐIỆN LUYỆN KIM THÁI NGUYÊN và Chi nhánh Công ty cổ phần Quốc tế Logistics Hoàng Hà giảm đáng kể là tín hiệu tích cực. Nhìn chung, rủi ro thu hồi nợ có thể tăng lên đối với CÔNG TY TNHH SJ LOGISTICS VIỆT NAM do khoản phải thu tăng vọt, đòi hỏi quản lý tín dụng chặt chẽ hơn.",
+      "Việc không có các khoản phải thu dài hạn (phải thu khách hàng dài hạn và phải thu khác dài hạn đều bằng 0) có tác động tích cực đến chiến lược quản lý vốn lưu động của công ty. Điều này cho thấy công ty tập trung vào các giao dịch ngắn hạn và có chính sách tín dụng chặt chẽ, hoặc các điều khoản thanh toán ngắn gọn với khách hàng và các đối tác. Điều này giúp tối ưu hóa chu kỳ chuyển đổi tiền mặt, giảm thiểu vốn bị chiếm dụng trong các khoản phải thu kéo dài, từ đó cải thiện thanh khoản và hiệu quả sử dụng vốn lưu động tổng thể. Tuy nhiên, nó cũng có thể hạn chế khả năng thực hiện các dự án hoặc hợp đồng lớn đòi hỏi thời gian thu hồi vốn lâu hơn.",
+      "Để giảm rủi ro về các khoản phải thu, công ty nên ưu tiên các chiến lược sau:\\n1. Chính sách tín dụng chặt chẽ hơn: Đánh giá kỹ lưỡng khả năng tín dụng của khách hàng trước khi cấp tín dụng.\\n2. Đẩy mạnh quy trình thu hồi nợ: Thiết lập quy trình thu hồi nợ hiệu quả, bao gồm việc gửi nhắc nhở, đàm phán và áp dụng các biện pháp pháp lý nếu cần thiết.\\n3. Đa dạng hóa khách hàng: Tránh tập trung quá nhiều khoản phải thu vào một số khách hàng lớn để giảm rủi ro tập trung.\\n4. Theo dõi và phân tích định kỳ: Liên tục theo dõi tuổi nợ và phân tích xu hướng thanh toán của khách hàng để phát hiện sớm các vấn đề tiềm ẩn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá gốc nợ xấu cuối quý II/2025 là bao nhiêu?",
+      "Giá trị có thể thu hồi từ các khách hàng khác cuối quý là bao nhiêu?",
+      "Khoản mục 'Xây dựng cơ bản dở dang' cuối quý II/2025 là bao nhiêu?",
+      "So sánh giá trị có thể thu hồi của nợ xấu cuối quý với đầu năm.",
+      "Tỷ lệ thu hồi nợ xấu cuối quý là bao nhiêu phần trăm trên tổng giá gốc nợ xấu?",
+      "Đánh giá mức độ hiệu quả của công ty trong việc quản lý và thu hồi nợ xấu.",
+      "Phân tích rủi ro tài chính của công ty khi giá trị nợ xấu tăng nhưng khả năng thu hồi thấp."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Nợ xấu và Tài sản dở dang dài hạn\nLoại nội dung: Bảng\n5.6. Nợ xấu (Bad debts)\n| Chỉ tiêu | Giá gốc (Cost) - Cuối quý | Giá trị có thể thu hồi (Recoverable value) - Cuối quý | Giá gốc (Cost) - Đầu năm | Giá trị có thể thu hồi (Recoverable value) - Đầu năm |\n|:----------------------------------------------------------|:-------------------------|:---------------------------------------|:------------------------|:---------------------------------------|\n| Công ty TNHH MTV Chế tạo thiết bị và đóng tàu Hải Phòng | - | - | 5,300,180,797 | 0 |\n| Công ty TNHH Thương Mại Đầu tư Nhật Phương | 5,300,180,797 | 0 | - | - |\n| Các khách hàng khác (Other customers) | 3,910,211,197 | 2,634,468,758 | 1,963,722,952 | 1,256,471,643 |\n| Cộng (Total) | 9,210,391,994 | 2,634,468,758 | 7,263,903,749 | 1,256,471,643 |\n\n5.7. Hàng tồn kho: Không có\n\n5.8. Tài sản dở dang dài hạn (Unfinished longterm assets)\n| Chỉ tiêu | Số cuối quý (Closing) | Số đầu năm (Opening) |\n|:-----------------------------------------------------------|:---------------------|:--------------------|\n| Xây dựng cơ bản dở dang (Construction in progress) | 740,928,990 | 740,928,990 |\n| Chi tiết các công trình chiếm từ 10% tổng giá trị XDCB | | |\n| Mua sắm | - | - |\n| XDCB Construction costs: Khảo sát trụ sở số 2 Bích Câu | 671,589,990 | 671,589,990 |\n| Công trình khác | 69,339,000 | 69,339,000 |\n| Cộng (Total) | 740,928,990 | 740,928,990 |",
+    "output": [
+      "9,210,391,994 VND.",
+      "2,634,468,758 VND.",
+      "740,928,990 VND.",
+      "Giá trị có thể thu hồi của nợ xấu cuối quý là 2,634,468,758 VND, đầu năm là 1,256,471,643 VND. Giá trị có thể thu hồi đã tăng 1,378,000,115 VND.",
+      "Giá trị có thể thu hồi cuối quý là 2,634,468,758 VND. Tổng giá gốc nợ xấu cuối quý là 9,210,391,994 VND. Tỷ lệ thu hồi = (2,634,468,758 / 9,210,391,994) * 100% ≈ 28.60%.",
+      "Tổng giá gốc nợ xấu đã tăng từ 7,263,903,749 VND lên 9,210,391,994 VND. Mặc dù giá trị có thể thu hồi cũng tăng từ 1,256,471,643 VND lên 2,634,468,758 VND, tỷ lệ thu hồi nợ xấu trên giá gốc cuối quý là khoảng 28.60%, cao hơn so với đầu năm (khoảng 17.30%). Điều này cho thấy công ty đã có một số cải thiện trong việc thu hồi nợ xấu hoặc đã đánh giá lại khả năng thu hồi. Tuy nhiên, với một lượng nợ xấu lớn và tỷ lệ thu hồi vẫn dưới 30%, mức độ hiệu quả vẫn còn hạn chế và cần nỗ lực nhiều hơn trong quản lý và thu hồi nợ.",
+      "Khi giá trị nợ xấu tăng (từ 7,263,903,749 VND lên 9,210,391,994 VND) trong khi khả năng thu hồi vẫn còn thấp (28.60% cuối quý), công ty đối mặt với rủi ro tài chính đáng kể:\\n- Ảnh hưởng đến dòng tiền: Nợ xấu không thu hồi được ảnh hưởng trực tiếp đến dòng tiền vào từ hoạt động kinh doanh.\\n- Ảnh hưởng đến lợi nhuận và vốn chủ sở hữu: Công ty có thể phải trích lập dự phòng lớn hơn, làm giảm lợi nhuận và vốn chủ sở hữu.\\n- Ảnh hưởng đến uy tín: Tỷ lệ nợ xấu cao có thể làm giảm uy tín tín dụng của công ty.\\n- Gánh nặng quản lý: Việc quản lý và theo dõi nợ xấu tốn kém nguồn lực và thời gian."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nguyên giá tài sản cố định hữu hình cuối quý là bao nhiêu?",
+      "Giá trị khấu hao trong quý của 'Máy móc thiết bị' là bao nhiêu?",
+      "So sánh giá trị còn lại của 'Nhà cửa vật kiến trúc' tại đầu quý và cuối quý.",
+      "Tỷ lệ khấu hao trong quý trên tổng nguyên giá đầu quý của tài sản cố định hữu hình là bao nhiêu?",
+      "Đánh giá mức độ đầu tư và tái đầu tư vào tài sản cố định hữu hình trong quý này.",
+      "Phân tích tác động của việc có nguyên giá TSCĐ đã khấu hao hết nhưng vẫn còn sử dụng đến hiệu quả hoạt động của công ty.",
+      "Dự báo rủi ro về chi phí bảo trì và thay thế nếu giá trị còn lại của các tài sản tiếp tục giảm nhanh."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Tăng, giảm tài sản cố định hữu hình\nLoại nội dung: Bảng\n5.9. Tăng, giảm tài sản cố định hữu hình (Increase or decrease in tangible fixed assets)\n| Chỉ tiêu | Nhà cửa vật kiến trúc (Architectural Buildings) | Máy móc thiết bị (Machinery and equipment) | Phương tiện vận tải truyền dẫn (Vehicles Transport) | Thiết bị dụng cụ quản lý (Management tools and equipment) | TSCĐ khác (Other fixed assets) | Tổng cộng (Total) |\n|:------------------------------------|:----------------------------------------|:--------------------------------------|:-----------------------------------------------|:------------------------------------------------|:------------------------------------|:---------------------|\n| Nguyên giá (Cost) | | | | | | |\n| Số dư đầu quý (Opening balance) | 53,028,328,868 | 9,831,237,165 | 38,610,605,901 | 423,201,226 | 855,470,000 | 102,748,843,160 |\n| Đầu tư XDCB hoàn thành | - | 126,590,000 | - | - | - | 126,590,000 |\n| Thanh lý, nhượng bán | - | (33,372,054) | - | - | - | (33,372,054) |\n| Số dư cuối quý (Closing balance) | 53,154,918,868 | 9,797,865,111 | 38,610,605,901 | 423,012,600 | 855,470,000 | 102,842,061,106 |\n| Giá trị hao mòn lũy kế (Accumulated depreciation) | | | | | | |\n| Số dư đầu quý (Opening balance) | 32,134,430,752 | 9,221,330,860 | 38,414,853,897 | 445,225,986 | 855,470,000 | 81,071,311,495 |\n| Khấu hao trong quý (Depreciation during the quarter) | 689,575,316 | 134,477,451 | 7,575,759 | 2,791,668 | - | 834,420,194 |\n| Thanh lý, nhượng bán | - | (33,372,054) | - | - | - | (33,372,054) |\n| Số dư cuối quý (Closing balance) | 32,824,006,068 | 9,322,436,257 | 38,422,429,656 | 448,017,654 | 855,470,000 | 81,872,359,635 |\n| Giá trị còn lại (Residual value) | | | | | | |\n| Tại ngày đầu quý (At the opening day) | 20,893,898,116 | 609,906,305 | 195,752,004 | 22,024,760 | - | 21,677,531,665 |\n| Tại ngày cuối quý (At the closing day) | 20,330,912,800 | 475,428,854 | 188,176,245 | 24,816,428 | - | 20,969,701,471 |\n\n*   Giá trị còn lại cuối kỳ của TSCĐ hữu hình dùng để thế chấp, cầm cố đảm bảo khoản vay: Không có\n*   Nguyên giá TSCĐ cuối năm đã khấu hao hết nhưng vẫn còn sử dụng: 52,126,170,888\n*   Nguyên giá TSCĐ cuối năm chờ thanh lý: Không có\n*   Các cam kết về việc mua, bán TSCĐ hữu hình có giá trị lớn trong tương lai: Không có\n*   Các thay đổi khác về TSCĐ hữu hình: Không có",
+    "output": [
+      "102,842,061,106 VND.",
+      "134,477,451 VND.",
+      "Giá trị còn lại của 'Nhà cửa vật kiến trúc' tại đầu quý là 20,893,898,116 VND. Tại cuối quý là 20,330,912,800 VND. Giá trị còn lại đã giảm 562,985,316 VND.",
+      "Tổng khấu hao trong quý là 834,420,194 VND. Tổng nguyên giá đầu quý là 102,748,843,160 VND. Tỷ lệ khấu hao = (834,420,194 / 102,748,843,160) * 100% ≈ 0.81%.",
+      "Trong quý này, công ty có đầu tư XDCB hoàn thành 126,590,000 VND (chủ yếu vào Máy móc thiết bị) và thanh lý, nhượng bán tài sản trị giá 33,372,054 VND. Mức đầu tư mới này là khá nhỏ so với tổng nguyên giá tài sản cố định hữu hình (trên 100 tỷ VND). Điều này cho thấy công ty không có các khoản đầu tư lớn vào mở rộng hoặc nâng cấp đáng kể tài sản cố định hữu hình trong quý, mà chủ yếu duy trì tài sản hiện có và thực hiện khấu hao định kỳ.",
+      "Việc có nguyên giá TSCĐ đã khấu hao hết nhưng vẫn còn sử dụng (52,126,170,888 VND) có tác động tích cực đến hiệu quả hoạt động của công ty. Điều này có nghĩa là công ty vẫn có thể sử dụng các tài sản này để tạo ra doanh thu mà không phải gánh chịu chi phí khấu hao trên báo cáo kết quả kinh doanh. Điều này giúp giảm chi phí hoạt động, tăng lợi nhuận gộp và lợi nhuận thuần, nâng cao hiệu quả sử dụng vốn và tối ưu hóa tài nguyên. Tuy nhiên, cần lưu ý đến chi phí bảo trì có thể tăng lên hoặc rủi ro về công nghệ lỗi thời của các tài sản này.",
+      "Nếu giá trị còn lại của các tài sản tiếp tục giảm nhanh (do khấu hao hoặc thanh lý) mà không có sự tái đầu tư đáng kể, đặc biệt là với tài sản đã khấu hao hết nhưng vẫn sử dụng, công ty sẽ đối mặt với rủi ro về chi phí bảo trì và thay thế tăng lên. Các tài sản cũ thường đòi hỏi chi phí bảo dưỡng cao hơn và có thể kém hiệu quả hơn, dẫn đến tăng chi phí hoạt động. Về lâu dài, điều này có thể yêu cầu một khoản đầu tư lớn để thay thế toàn bộ tài sản, gây áp lực lên dòng tiền và lợi nhuận trong tương lai."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nguyên giá tài sản cố định vô hình cuối quý là bao nhiêu?",
+      "Giá trị còn lại của 'Quyền sử dụng đất' cuối quý là bao nhiêu?",
+      "Khoản 'Chi phí trả trước dài hạn' đã thay đổi như thế nào từ đầu năm đến cuối quý?",
+      "Tỷ lệ khấu hao trong quý trên nguyên giá đầu quý của tài sản cố định vô hình là bao nhiêu?",
+      "Đánh giá mức độ quan trọng của tài sản cố định vô hình đối với hoạt động của công ty dựa trên số liệu.",
+      "Phân tích ý nghĩa của việc giá trị còn lại cuối kỳ của TSCĐ vô hình được dùng để thế chấp, cầm cố đảm bảo khoản vay.",
+      "Dự báo tác động của việc các tài sản cố định vô hình đã khấu hao hết nhưng vẫn còn sử dụng đến báo cáo tài chính trong tương lai."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Tăng giảm tài sản cố định vô hình và các tài sản khác\nLoại nội dung: Bảng và Text\n5.10. Tăng giảm tài sản cố định vô hình (Increase and decrease in intangible fixed assets)\n| Chỉ tiêu | Quyền sử dụng đất (Land use right) | Phần mềm máy tính (Computer software) | TSCĐ vô hình khác (Other intangible fixed assets) | Tổng cộng (Total) |\n|:-----------------------------------|:------------------------------------|:--------------------------------------|:------------------------------------------------|:---------------------|\n| Nguyên giá (Cost) | | | | |\n| Số dư đầu quý (Opening Balance) | 2,642,410,677 | 882,412,509 | - | 3,524,823,186 |\n| Mua trong quý | - | - | - | - |\n| Tăng khác | - | - | - | - |\n| Điều chỉnh giảm | - | - | - | - |\n| Giảm khác | - | - | - | - |\n| Số dư cuối quý (Closing balance) | 2,642,410,677 | 882,412,509 | - | 3,524,823,186 |\n| Giá trị hao mòn lũy kế (Accumulated depreciation) | | | | |\n| Số dư đầu quý (Opening Balance) | 1,643,382,390 | 882,412,509 | - | 2,525,794,899 |\n| Khấu hao trong quý (Depreciation during the quarter) | 4,079,061 | - | - | 4,079,061 |\n| Tăng khác | - | - | - | - |\n| Thanh lý, nhượng bán | - | - | - | - |\n| Giảm khác | - | - | - | - |\n| Số dư cuối quý (Closing balance) | 1,647,461,451 | 882,412,509 | - | 2,529,873,960 |\n| Giá trị còn lại (Residual value) | | | | |\n| Tại ngày đầu kỳ (At the opening day) | 999,028,287 | - | - | 999,028,287 |\n| Tại ngày cuối kỳ (At the closing day) | 994,949,226 | - | - | 994,949,226 |\n\n*   Giá trị còn lại cuối kỳ của TSCĐ vô hình dùng để thế chấp, cầm cố đảm bảo khoản vay: Không có\n*   Nguyên giá TSCĐ cuối năm đã khấu hao hết nhưng vẫn còn sử dụng: 2,313,963,578\n*   Thuyết minh số liệu và giải trình khác:\n    *   Giá trị còn lại cuối kỳ của TSCĐ hữu hình là 0 VNĐ và TS vô hình 6,158,890,008 VNĐ đã được dùng thế chấp, cầm cố, đảm bảo cho các khoản vay.\n\n5.11. Tăng, giảm tài sản cố định thuê tài chính: Không có\n5.12. Tăng, giảm tài sản Bất động sản đầu tư: Không có\n\n5.13. Chi phí trả trước (Prepaid expenses)\n| Chỉ tiêu | Số cuối quý (Closing) | Số đầu năm (Opening) |\n|:---------------------------------------|:---------------------|:--------------------|\n| Dài hạn (Long term) | | |\n| Công cụ, dụng cụ xuất dùng (Tools and instruments used) | 65,893,364 | 90,687,350 |\n\n5.14. Tài sản khác (Other assets)\n| Chỉ tiêu | Số cuối quý (Closing) | Số đầu năm (Opening) |\n|:--------------|:---------------------|:--------------------|\n| a. Ngắn hạn | Theo từng khoản mục | Theo từng khoản mục |\n| b. Dài hạn | Theo từng khoản mục | Theo từng khoản mục |\n| Cộng (Total) | - | - |",
+    "output": [
+      "3,524,823,186 VND.",
+      "994,949,226 VND.",
+      "Khoản 'Chi phí trả trước dài hạn' (Công cụ, dụng cụ xuất dùng) cuối quý là 65,893,364 VND, đầu năm là 90,687,350 VND. Khoản này đã giảm 24,793,986 VND.",
+      "Khấu hao trong quý của tài sản cố định vô hình là 4,079,061 VND. Nguyên giá đầu quý là 3,524,823,186 VND. Tỷ lệ khấu hao = (4,079,061 / 3,524,823,186) * 100% ≈ 0.12%.",
+      "Dựa trên số liệu, tài sản cố định vô hình của công ty có tổng nguyên giá là 3,524,823,186 VND, với 'Quyền sử dụng đất' chiếm phần lớn (2,642,410,677 VND). Mức độ khấu hao trong quý khá thấp (0.12%). Điều này cho thấy tài sản cố định vô hình, đặc biệt là quyền sử dụng đất, là một phần quan trọng trong cấu trúc tài sản của công ty, có thể là cơ sở hoạt động hoặc lợi thế cạnh tranh về vị trí. Tuy nhiên, phần mềm máy tính đã khấu hao hết và không có sự đầu tư mới trong quý cho thấy công ty đang duy trì chứ không mở rộng đáng kể về công nghệ hoặc các tài sản vô hình khác.",
+      "Việc giá trị còn lại cuối kỳ của TSCĐ vô hình (6,158,890,008 VNĐ theo thuyết minh) được dùng để thế chấp, cầm cố đảm bảo khoản vay có ý nghĩa rằng công ty đã tận dụng các tài sản vô hình có giá trị (như quyền sử dụng đất, thương hiệu, v.v.) để huy động vốn. Đây là một cách để tăng cường khả năng tiếp cận tín dụng, tuy nhiên cũng có rủi ro. Nếu công ty không thể trả nợ, các tài sản này có thể bị tịch biên, ảnh hưởng nghiêm trọng đến hoạt động kinh doanh và khả năng duy trì hoạt động lâu dài của công ty, đặc biệt nếu đó là các tài sản cốt lõi như quyền sử dụng đất cho trụ sở chính hoặc kho bãi.",
+      "Tương tự như TSCĐ hữu hình đã khấu hao hết, việc các TSCĐ vô hình (ví dụ Phần mềm máy tính đã khấu hao hết) vẫn còn sử dụng có nghĩa là công ty không còn phải ghi nhận chi phí khấu hao cho các tài sản này trên báo cáo kết quả kinh doanh. Điều này sẽ giúp cải thiện lợi nhuận (do chi phí thấp hơn). Tuy nhiên, về mặt dài hạn, nếu không có đầu tư mới vào các tài sản vô hình quan trọng như phần mềm, công nghệ, hoặc quyền sở hữu trí tuệ, công ty có thể đối mặt với rủi ro tụt hậu về công nghệ hoặc mất đi lợi thế cạnh tranh, ảnh hưởng đến khả năng tạo doanh thu và lợi nhuận trong tương lai."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng dư nợ vay ngắn hạn hiện tại của công ty đến 30/06/2025 là bao nhiêu?",
+      "Ngân hàng nào công ty có dư nợ vay ngắn hạn lớn nhất?",
+      "So sánh tổng giá trị vay ngắn hạn cuối quý với đầu năm, sự thay đổi là bao nhiêu?",
+      "Tính tỷ lệ dư nợ vay ngắn hạn trên tổng hạn mức vay ngắn hạn của công ty.",
+      "Đánh giá rủi ro thanh khoản của công ty dựa trên cơ cấu và số dư các khoản vay ngắn hạn.",
+      "Phân tích tác động của biến động lãi suất thị trường đến chi phí tài chính của công ty, đặc biệt với các khoản vay ngắn hạn.",
+      "Nếu công ty không thể trả nợ các khoản vay ngắn hạn đúng hạn, hậu quả tài chính sẽ như thế nào?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Vay và nợ thuê tài chính\nLoại nội dung: Bảng\n5.15. Vay và nợ thuê tài chính (Loans and finance lease liabilities)\n| Chỉ tiêu | Giá trị (Value) - Cuối quý | Số có khả năng trả nợ (Ability to repay) - Cuối quý | Tăng (Increase) | Giảm (Decrease) | Giá trị (Value) - Đầu năm | Số có khả năng trả nợ (Ability to repay) - Đầu năm |\n|:----------------------------------------------|:-------------------------|:---------------------------------------|:----------------|:----------------|:------------------------|:---------------------------------------|\n| a. Vay ngắn hạn (Shortterm Loans) | 205,685,825,850 | 205,685,825,850 | 277,322,283,464 | 300,796,857,561 | 229,160,399,947 | 229,160,399,947 |\n| b. Vay dài hạn | - | - | - | - | - | - |\n| Cộng (Total) | 205,685,825,850 | 205,685,825,850 | 277,322,283,464 | 300,796,857,561 | 229,160,399,947 | 229,160,399,947 |\n\nChi tiết vay ngắn hạn:\n| Ngân hàng | Hạn mức (VNĐ) | Lãi suất (%) | Dư nợ hiện tại đến 30/06/2025 |\n|:----------------|:-----------------------|:-------------|:-------------------------------|\n| BIDV Thanh Xuân | 200,000,000,000 | 6.75 | 110,416,941,175 |\n| VCB Nam Hà Nội | 30,000,000,000 | 4.96 | 26,570,361,603 |\n| Agribank | 28,900,000,000 | 5.50 | 22,575,633,812 |\n| Shinhan bank | 23,000,000,000 | 4.5 | - |\n| Vietinbank | 70,000,000,000 | 5.80 | 46,122,889,260 |\n| MBBank | 50,000,000,000 | 6.00 | - |\n| Cộng (Total) | 401,900,000,000 | | 205,685,825,850 |",
+    "output": [
+      "205,685,825,850 VND.",
+      "BIDV Thanh Xuân với 110,416,941,175 VND.",
+      "Tổng giá trị vay ngắn hạn cuối quý là 205,685,825,850 VND. Đầu năm là 229,160,399,947 VND. Khoản vay ngắn hạn đã giảm 23,474,574,097 VND.",
+      "Tổng dư nợ hiện tại là 205,685,825,850 VND. Tổng hạn mức vay là 401,900,000,000 VND. Tỷ lệ = (205,685,825,850 / 401,900,000,000) * 100% ≈ 51.18%.",
+      "Công ty có tổng dư nợ vay ngắn hạn là 205,685,825,850 VND, chiếm phần lớn trong tổng nợ phải trả. Mặc dù công ty đã giảm được dư nợ vay ngắn hạn so với đầu năm và chỉ sử dụng khoảng 51.18% hạn mức vay, nhưng việc phụ thuộc nhiều vào vay ngắn hạn vẫn tiềm ẩn rủi ro thanh khoản. Các khoản vay này thường có lãi suất biến đổi và kỳ hạn thanh toán nhanh, đòi hỏi công ty phải có dòng tiền mạnh để trả nợ. Nếu dòng tiền từ hoạt động kinh doanh không ổn định, công ty có thể gặp khó khăn trong việc đáo hạn các khoản vay này, dẫn đến rủi ro thanh khoản. Tuy nhiên, việc có hạn mức chưa sử dụng đáng kể có thể là một đệm an toàn.",
+      "Với tổng dư nợ vay ngắn hạn là 205,685,825,850 VND, công ty sẽ chịu tác động đáng kể từ biến động lãi suất thị trường. Hầu hết các khoản vay ngắn hạn thường có lãi suất thả nổi hoặc được xem xét điều chỉnh định kỳ. Nếu lãi suất thị trường tăng, chi phí lãi vay của công ty sẽ tăng theo, trực tiếp làm tăng chi phí tài chính và giảm lợi nhuận trước thuế. Ngược lại, nếu lãi suất giảm, chi phí tài chính sẽ giảm và lợi nhuận sẽ được hưởng lợi. Với mức độ nợ ngắn hạn hiện tại, công ty cần có chiến lược quản lý rủi ro lãi suất phù hợp.",
+      "Nếu công ty không thể trả nợ các khoản vay ngắn hạn đúng hạn, hậu quả tài chính sẽ rất nghiêm trọng:\\n- Phạt lãi quá hạn: Công ty sẽ phải chịu lãi suất phạt, làm tăng thêm gánh nặng chi phí tài chính.\\n- Ảnh hưởng đến xếp hạng tín dụng: Uy tín của công ty với các ngân hàng và tổ chức tài chính sẽ giảm sút, gây khó khăn rất lớn trong việc tiếp cận các khoản vay mới hoặc tái cơ cấu nợ trong tương lai.\\n- Thế chấp/cầm cố bị xử lý: Nếu các khoản vay có tài sản thế chấp (ví dụ như TSCĐ hữu hình hoặc vô hình đã được thuyết minh trong chunk 16), ngân hàng có quyền xử lý các tài sản này để thu hồi nợ, ảnh hưởng trực tiếp đến hoạt động kinh doanh cốt lõi của công ty.\\n- Khả năng phá sản: Trong trường hợp xấu nhất, việc không thể thanh toán nợ có thể dẫn đến việc tuyên bố phá sản hoặc tái cơ cấu bắt buộc."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị phải trả người bán ngắn hạn cuối quý II/2025 là bao nhiêu?",
+      "Số dư thuế thu nhập doanh nghiệp phải nộp cuối quý là bao nhiêu?",
+      "So sánh tổng phải trả người bán ngắn hạn cuối quý với đầu năm.",
+      "Khoản mục 'Phải trả cho các đối tượng khác' trong phải trả người bán đã thay đổi như thế nào từ đầu năm đến cuối quý?",
+      "Đánh giá mức độ tuân thủ nghĩa vụ thuế của công ty dựa trên số liệu về thuế phải nộp và đã nộp.",
+      "Phân tích rủi ro thanh toán nếu công ty có các khoản phải trả người bán lớn mà không có kế hoạch thanh toán rõ ràng.",
+      "Dự báo tác động của việc tăng số dư thuế thu nhập doanh nghiệp phải nộp đến dòng tiền hoạt động của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Phải trả người bán và Thuế phải nộp Nhà nước\nLoại nội dung: Bảng\n5.16. Phải trả người bán (Trade creditors)\n| Chỉ tiêu | Giá trị (Value) - Cuối quý | Số có khả năng trả nợ (Ability to repay) - Cuối quý | Giá trị (Value) - Đầu năm | Số có khả năng trả nợ (Ability to repay) - Đầu năm |\n|:----------------------------------------------------------|:-------------------------|:---------------------------------------|:------------------------|:---------------------------------------|\n| a. Các khoản phải trả người bán ngắn hạn (Shortterm Trade creditors) | | | | |\n| VĂN PHÒNG BÁN VÉ HÃNG HÀNG KHÔNG KOREAN AIR TẠI TP. HÀ NỘI | 5,726,125,870 | 5,726,125,870 | - | - |\n| CÔNG TY CỔ PHẦN THƯƠNG MẠI VẬN TẢI SAFACO | 915,682,400 | 915,682,400 | 1,689,789,600 | 1,689,789,600 |\n| Phải trả cho các đối tượng khác | 97,228,207,398 | 97,228,207,398 | 90,135,383,719 | 90,135,383,719 |\n| b. Các khoản phải trả người bán dài hạn: Không có | | | | |\n| Cộng (Total) | 103,870,015,668 | 103,870,015,668 | 91,825,173,319 | 91,825,173,319 |\n| c. Phải trả cho người bán là các bên liên quan: Không có | | | | |\n\n5.17. Thuế và các khoản phải nộp nhà nước (Taxes and amounts payable to the State)\n| Chỉ tiêu | Số đầu quý (Opening) | Số phải nộp trong quý (Payables during quarter) | Số đã thực nộp trong quý (Net payables during quarter) | Số cuối quý (Closing) |\n|:------------------------------------------|:---------------------|:-----------------------------------|:------------------------------------------|:---------------------|\n| a. Phải nộp (Amounts payable) | | | | |\n| Thuế thu nhập doanh nghiệp (CIT) | 886,552,600 | 1,181,055,751 | - | 2,067,608,351 |\n| Thuế GTGT (VAT) | 534,143,627 | 1,343,890,707 | 20,044 | 1,878,014,290 |\n| Thuế thu nhập cá nhân (PIT) | 370,349,136 | 1,141,506,573 | 1,036,196,824 | 475,658,885 |\n| Thuế TNCN CB CNV | 69,997,551 | 456,854,871 | 406,052,660 | 120,799,762 |\n| Thuế khấu trừ | 300,351,585 | 684,651,702 | 630,144,164 | 354,859,123 |\n| Các loại thuế khác (Other taxes) | 8,019,180 | - | - | 8,019,180 |\n| Thuế nhà đất, tiền thuê đất | - | - | - | - |\n| Thuế bảo vệ môi trường và các loại thuế khác | - | - | - | - |\n| Cộng (Total) | 3,870,777,392 | 3,674,472,211 | 1,044,236,048 | 4,421,281,526 |\n| b. Thuế GTGT được khấu trừ (VAT deductible) | | | | |\n| Thuế cước | - | - | - | - |\n| Thuế TNCN | 27,109,423 | - | - | 27,109,423 |",
+    "output": [
+      "103,870,015,668 VND.",
+      "2,067,608,351 VND.",
+      "Tổng phải trả người bán ngắn hạn cuối quý là 103,870,015,668 VND. Đầu năm là 91,825,173,319 VND. Khoản này đã tăng 12,044,842,349 VND.",
+      "Khoản mục 'Phải trả cho các đối tượng khác' cuối quý là 97,228,207,398 VND. Đầu năm là 90,135,383,719 VND. Khoản này đã tăng 7,092,823,679 VND.",
+      "Số liệu cho thấy công ty có các khoản thuế phải nộp Nhà nước và đã thực nộp một phần trong quý.\\n- Thuế TNDN: Số phải nộp cuối quý là 2,067,608,351 VND, tăng so với đầu quý và không có số đã thực nộp trong quý. Điều này có thể báo hiệu khoản thuế TNDN cho quý này hoặc từ các kỳ trước chưa được thanh toán.\\n- Thuế GTGT: Số phải nộp cuối quý là 1,878,014,290 VND, với một số tiền nhỏ đã thực nộp (20,044 VND).\\n- Thuế TNCN: Có số tiền đáng kể đã thực nộp trong quý (1,036,196,824 VND) so với số phải nộp.\\nNhìn chung, công ty có thực hiện nghĩa vụ thuế, tuy nhiên, việc số dư thuế TNDN và GTGT phải nộp tăng đáng kể và số tiền đã nộp trong quý là rất thấp hoặc bằng không đối với các loại thuế này có thể là một dấu hiệu công ty đang có sự chậm trễ hoặc chưa hoàn thành đầy đủ nghĩa vụ thuế cho kỳ này, cần được xem xét kỹ lưỡng về sự tuân thủ.",
+      "Các khoản phải trả người bán ngắn hạn tăng đáng kể lên 103,870,015,668 VND cuối quý. Nếu công ty không có kế hoạch thanh toán rõ ràng hoặc không có đủ dòng tiền để đáp ứng các khoản nợ này, sẽ phát sinh nhiều rủi ro:\\n- Mất uy tín với nhà cung cấp: Có thể dẫn đến việc nhà cung cấp yêu cầu thanh toán trước hoặc áp dụng các điều khoản tín dụng chặt chẽ hơn, ảnh hưởng đến chuỗi cung ứng.\\n- Áp lực dòng tiền: Buộc công ty phải huy động thêm vốn ngắn hạn, có thể làm tăng chi phí lãi vay hoặc giảm khả năng thanh toán các nghĩa vụ khác.\\n- Rủi ro kiện tụng: Nếu các khoản nợ quá hạn kéo dài, có thể dẫn đến tranh chấp pháp lý và các chi phí liên quan.\\nViệc khoản 'Phải trả cho các đối tượng khác' chiếm phần lớn trong phải trả người bán và có xu hướng tăng cũng cần được theo dõi sát sao.",
+      "Số dư thuế thu nhập doanh nghiệp (TNDN) phải nộp cuối quý là 2,067,608,351 VND, tăng từ 886,552,600 VND đầu quý. Nếu số dư này tiếp tục tăng hoặc phải được thanh toán trong quý tới, nó sẽ tạo ra một áp lực đáng kể lên dòng tiền hoạt động của công ty. Tiền mặt sẽ phải được sử dụng để thanh toán nghĩa vụ thuế này thay vì tài trợ cho hoạt động kinh doanh hoặc đầu tư khác. Điều này có thể làm giảm lượng tiền mặt sẵn có, ảnh hưởng đến khả năng thanh toán các khoản nợ ngắn hạn khác và khả năng tự tài trợ của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí phải trả ngắn hạn cuối quý II/2025 là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối cuối quý II/2025 là bao nhiêu?",
+      "So sánh tổng 'Chi phí phải trả' cuối quý với đầu năm.",
+      "Mức tăng của 'Lãi quý này' trong phần lợi nhuận sau thuế chưa phân phối từ đầu quý này đến cuối quý này là bao nhiêu?",
+      "Đánh giá mức độ biến động của vốn chủ sở hữu trong quý dựa trên các khoản mục được trình bày.",
+      "Phân tích tác động của các khoản 'Chi phí phải trả' đến khả năng thanh toán ngắn hạn của công ty.",
+      "Dự báo rủi ro về nguồn vốn nếu công ty tiếp tục có lợi nhuận sau thuế chưa phân phối tăng chậm hoặc giảm."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Chi phí phải trả, Phải trả khác và Vốn chủ sở hữu\nLoại nội dung: Bảng\n5.18. Chi phí phải trả (Accrued expenses)\n| Chỉ tiêu | Số cuối quý (Closing) | Số đầu năm (Opening) |\n|:----------------------------|:---------------------|:--------------------|\n| Ngắn hạn (Short term) | 17,378,498,295 | 10,680,444,329 |\n| Dài hạn (Long term) | - | - |\n| Các khoản trích trước khác | - | - |\n| Cộng (Total) | 17,378,498,295 | 10,680,444,329 |\n\n5.19. Phải trả khác (Other payables)\n| Chỉ tiêu | Số cuối quý (Closing) | Số đầu năm (Opening) |\n|:-------------------------------------|:---------------------|:--------------------|\n| Nhận ký quỹ, ký cược ngắn hạn (Mortgages, collateral, deposits) | 890,368,009 | 910,903,944 |\n| Nhận ký quỹ, ký cược dài hạn | 676,350,000 | 676,350,000 |\n| Cổ tức, lợi nhuận phải trả | - | - |\n| Các khoản phải trả, phải nộp khác (Other payables) | 95,408,521 | 136,758,500 |\n| Cộng (Total) | 1,662,126,530 | 1,724,012,444 |\n\n5.20. Doanh thu chưa thực hiện: Không có\n5.21. Trái phiếu phát hành: Không có\n5.22. Cổ phiếu ưu đãi phân loại là nợ phải trả: Không có\n5.23. Dự phòng phải trả: Không có\n5.24. Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả: Không có\n\n5.25. Vốn chủ sở hữu (Equity)\n\na. Bảng đối chiếu biến động của vốn chủ sở hữu (Reference Table of equity volatility)\n| Các khoản mục thuộc vốn chủ sở hữu (Items under equity) | Vốn góp của CSH (Equity capital) | Thặng dư vốn CP (Equity Surplus) | Cổ phiếu quỹ (Treasury shares) | Quyền chọn chuyển đổi trái phiếu | Lợi nhuận sau thuế chưa phân phối (Profit after tax undistributed) | Cộng (Total) |\n|:----------------------------------------------------------|:-----------------------------------|:---------------------------------|:--------------------------------|:---------------------------------|:-------------------------------------------------------------------|:---------------------|\n| Số dư đầu quý trước 01.01.2025 (Opening balance of previous quarter) | 166,994,970,000 | 57,826,051,991 | 1,349,185,562 | 531,977,480 | 166,079,928,708 | 390,083,742,617 |\n| Trái phiếu chuyển đổi | - | - | - | - | - | - |\n| Lãi quý này (Earnings from this quarter) | - | - | - | - | 2,479,823,988 | 2,479,823,988 |\n| Trích quỹ KTPL | - | - | - | - | - | - |\n| Chi thù lao HĐQTBKS | - | - | - | - | - | - |\n| Số dư đầu quý này (Opening Balance) | 166,994,970,000 | 57,826,051,991 | 1,349,185,562 | 531,977,480 | 168,559,752,696 | 392,563,566,605 |\n| Lãi quý này (Earnings from this quarter) | - | - | - | - | 4,717,583,918 | 4,717,583,918 |\n| Trích quỹ KTPL | - | - | - | - | - | - |\n| Chi thù lao HĐQTBKS | - | - | - | - | - | - |\n| Số dư cuối Quý 2.2025 (Closing Balance of Quarter 2.2025) | 166,994,970,000 | 57,826,051,991 | 1,349,185,562 | 531,977,480 | 173,277,336,614 | 397,281,150,523 |",
+    "output": [
+      "17,378,498,295 VND.",
+      "173,277,336,614 VND.",
+      "Tổng 'Chi phí phải trả' cuối quý là 17,378,498,295 VND. Đầu năm là 10,680,444,329 VND. Khoản này đã tăng 6,698,053,966 VND.",
+      "Lãi quý này ở số dư đầu quý này là 2,479,823,988 VND. Lãi quý này ở số dư cuối quý này là 4,717,583,918 VND. Mức tăng là 2,237,760,000 VND.",
+      "Vốn chủ sở hữu tổng cộng tăng từ 392,563,566,605 VND (số dư đầu quý này) lên 397,281,150,523 VND (cuối quý 2.2025), tăng 4,717,583,918 VND. Biến động chính đến từ khoản 'Lãi quý này' trong lợi nhuận sau thuế chưa phân phối (tăng 4,717,583,918 VND). Các khoản mục khác như Vốn góp của CSH, Thặng dư vốn CP, Cổ phiếu quỹ, Quyền chọn chuyển đổi trái phiếu không có biến động trong quý này. Điều này cho thấy sự tăng trưởng của vốn chủ sở hữu chủ yếu đến từ lợi nhuận được giữ lại trong kỳ.",
+      "Các khoản 'Chi phí phải trả ngắn hạn' tăng đáng kể từ 10,680,444,329 VND (đầu năm) lên 17,378,498,295 VND (cuối quý). Đây là những nghĩa vụ mà công ty đã phát sinh nhưng chưa thanh toán, và sẽ phải thanh toán trong ngắn hạn. Sự gia tăng này làm tăng tổng nợ ngắn hạn và tạo áp lực lên khả năng thanh toán ngắn hạn của công ty. Nếu công ty không quản lý hiệu quả dòng tiền hoặc nếu các chi phí này tăng nhanh hơn khả năng tạo tiền mặt, khả năng đáp ứng các nghĩa vụ tài chính ngắn hạn có thể bị ảnh hưởng.",
+      "Lợi nhuận sau thuế chưa phân phối là một nguồn vốn nội bộ quan trọng để tái đầu tư và tăng trưởng. Mặc dù lợi nhuận sau thuế chưa phân phối cuối quý tăng lên 173,277,336,614 VND (từ lãi quý này), nếu tốc độ tăng trưởng này chậm lại hoặc lợi nhuận sau thuế chưa phân phối giảm trong tương lai, công ty sẽ đối mặt với rủi ro về nguồn vốn. Công ty sẽ có ít vốn hơn để tài trợ cho các dự án mở rộng, đầu tư mới, hoặc đối phó với những khó khăn tài chính. Điều này có thể buộc công ty phải tìm kiếm nguồn vốn bên ngoài (vay nợ hoặc phát hành thêm cổ phiếu), có thể làm tăng chi phí tài chính hoặc pha loãng quyền sở hữu của cổ đông hiện tại."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn góp của chủ sở hữu cuối quý II/2025 là bao nhiêu?",
+      "Tổ chức nào góp vốn lớn nhất vào công ty?",
+      "Số lượng cổ phiếu phổ thông đang lưu hành cuối quý là bao nhiêu?",
+      "So sánh tỷ lệ vốn góp của Công ty CP Transimex cuối quý với đầu năm.",
+      "Đánh giá mức độ tập trung sở hữu vốn của công ty dựa trên danh sách các cổ đông chính.",
+      "Phân tích tác động của việc không có cổ tức, lợi nhuận đã chia trong quý này đến tâm lý nhà đầu tư và giá cổ phiếu.",
+      "Mệnh giá cổ phiếu đang lưu hành của công ty là bao nhiêu?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Chi tiết góp vốn chủ sở hữu và các giao dịch liên quan\nLoại nội dung: Bảng và Text\nb. Chi tiết góp vốn chủ sở hữu (Equity contribution in details)\n| Chỉ tiêu | Số cuối quý (Closing) | Tỷ lệ (%) - Cuối quý | Số đầu năm (Opening) | Tỷ lệ (%) - Đầu năm |\n|:----------------------------------------------------------|:---------------------|:--------------------|:---------------------|:-------------------|\n| Vốn góp của Công ty CP Vinafreight | 41,537,040,000 | 24.87 | 41,537,040,000 | 24.87 |\n| Vốn góp của Công ty CP Transimex | 37,171,700,000 | 22.26 | 36,369,640,000 | 21.78 |\n| Vốn góp Công ty Cổ phần VNT Holdings | 27,780,000,000 | 16.64 | 27,780,000,000 | 16.64 |\n| Vốn góp của Lionas Fund Co.,Ltd | 17,136,000,000 | 10.26 | 17,136,000,000 | 10.26 |\n| Vốn góp của Công ty CP Giao nhận Kho vận Ngoại thương Việt Nam | 12,623,100,000 | 7.56 | 12,623,100,000 | 7.56 |\n| Ông Nguyễn Xuân Hùng | - | - | - | - |\n| Bà Lê Thùy Linh | 9,500,000,000 | 5.69 | 9,500,000,000 | 5.69 |\n| Vốn góp của các đối tượng khác (Paidin capital of other object) | 21,247,130,000 | 12.72 | 22,049,190,000 | 13.20 |\n| Cộng (Total) | 166,994,970,000 | 100.00 | 166,994,970,000 | 100 |\n\nc. Các giao dịch về vốn chủ sở hữu và phân phối cổ tức, chia lợi nhuận (Transactions in equity and distribution of dividends, profit sharing)\n| Chỉ tiêu | Quý này năm nay (This year) | Quý này năm trước (Previous year) |\n|:-------------------------------------------------------|:----------------------------|:---------------------------------|\n| Vốn đầu tư của CSH (Equity) | | |\n| Vốn góp đầu quý (Paidin capital at beginning of quarter) | 166,994,970,000 | 166,994,970,000 |\n| Vốn góp tăng trong quý | - | - |\n| Vốn góp giảm trong quý | - | - |\n| Vốn góp cuối quý (Paidin capital at end of the quarter) | 166,994,970,000 | 166,994,970,000 |\n| Cổ tức lợi nhuận đã chia (Dividends Profit shared) | - | - |\n\nd. Cổ phiếu (Shares)\n| Chỉ tiêu | Cuối quý (Closing) | Đầu quý (Opening) |\n|:-------------------------------------------------|:-------------------|:-----------------|\n| Số lượng CP phổ thông đăng ký phát hành | 16,699,497 | 16,699,497 |\n| Số lượng CP phổ thông đã bán ra công chúng | 16,699,497 | 16,699,497 |\n| Số lượng CP phổ thông được mua lại | - | - |\n| Cổ phiếu quỹ (Treasury shares) | 55,400 | 55,400 |\n| Số lượng cổ phiếu đang lưu hành (Number of shares outstanding) | 16,644,097 | 16,644,097 |\nMệnh giá cổ phiếu đang lưu hành là 10.000đ/CP.\n\ng. Thu nhập và chi phí, lãi hoặc lỗ được ghi nhận trực tiếp vào vốn CSH theo quy định của các chuẩn mực kế toán cụ thể.",
+    "output": [
+      "166,994,970,000 VND.",
+      "Công ty CP Vinafreight với 41,537,040,000 VND (24.87%).",
+      "16,644,097 cổ phiếu.",
+      "Tỷ lệ vốn góp của Công ty CP Transimex cuối quý là 22.26%. Đầu năm là 21.78%. Tỷ lệ này đã tăng 0.48%.",
+      "Dựa trên danh sách, có 5 tổ chức và 1 cá nhân được liệt kê là các cổ đông lớn, với tổng tỷ lệ sở hữu khoảng 80.08% (24.87 + 22.26 + 16.64 + 10.26 + 7.56 + 5.69). Điều này cho thấy mức độ tập trung sở hữu vốn là khá cao, với một số cổ đông chiến lược nắm giữ quyền kiểm soát đáng kể. Việc sở hữu tập trung có thể mang lại sự ổn định trong ra quyết định nhưng cũng có thể dẫn đến việc các cổ đông nhỏ hơn ít có tiếng nói hơn.",
+      "Việc không có cổ tức hoặc lợi nhuận đã chia trong quý này có thể có tác động tiêu cực đến tâm lý nhà đầu tư, đặc biệt là những người đầu tư tìm kiếm thu nhập. Nhà đầu tư có thể coi đây là dấu hiệu của việc công ty ưu tiên tái đầu tư hoặc đang gặp khó khăn về dòng tiền. Điều này có thể dẫn đến sự thất vọng, giảm nhu cầu mua cổ phiếu và gây áp lực giảm giá cổ phiếu trên thị trường nếu kỳ vọng về cổ tức không được đáp ứng. Tuy nhiên, nếu công ty có chiến lược tăng trưởng rõ ràng và sử dụng lợi nhuận giữ lại hiệu quả, một số nhà đầu tư có thể chấp nhận điều này.",
+      "Mệnh giá cổ phiếu đang lưu hành là 10.000đ/CP."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Easy_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số lượng USD cuối quý II/2025 là bao nhiêu?",
+      "Doanh thu cung cấp dịch vụ trong Quý II/2025 là bao nhiêu?",
+      "Tổng giá vốn hàng bán trong Quý II/2025 là bao nhiêu?",
+      "So sánh 'Chi phí nhân công' trong giá vốn hàng bán giữa Quý II/2025 và Quý II/2024.",
+      "Tỷ lệ 'Chi phí dịch vụ mua ngoài' trên tổng giá vốn hàng bán trong Quý II/2025 là bao nhiêu?",
+      "Đánh giá mức độ phụ thuộc của công ty vào các dịch vụ mua ngoài dựa trên số liệu giá vốn hàng bán.",
+      "Phân tích tác động của biến động tỷ giá hối đoái đến doanh thu và chi phí của công ty, đặc biệt là với USD.",
+      "Dự báo ảnh hưởng của sự sụt giảm doanh thu cung cấp dịch vụ đến lợi nhuận gộp trong quý tới nếu giá vốn không đổi."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Các khoản mục ngoài Bảng cân đối kế toán\nLoại nội dung: Bảng và Text\n5.26. Chênh lệch đánh giá lại tài sản: Không có\n5.27. Chênh lệch tỷ giá: Không có\n5.28. Nguồn kinh phí: Không có\n\n5.29. Các khoản mục ngoài Bảng cân đối kế toán (Items outside the balance sheet)\n\na. Tài sản thuê ngoài: Không có\nb. Tài sản nhận giữ hộ: Không có\nc. Ngoại tệ các loại (Foreign currencies)\n| Ngoại tệ | Cuối quý (Closing) | Đầu năm (Opening) |\n|:---------|:-------------------|:------------------|\n| USD | 3,613,070.20 | 3,418,271.01 |\n| SGD | 680.86 | 680.86 |\n| EUR | 685.19 | 684.21 |\n\nd. Kim khí quý, đá quý: Không có\ne. Các thông tin khác về khoản mục ngoài BCĐKT: Không có\n\n6. Thông tin bổ sung cho các khoản mục trình bày trong báo cáo kết quả kinh doanh (Additional information for items presented in the income statement)\n\n6.1. Doanh thu bán hàng và cung cấp dịch vụ (Revenue from sales and service provider)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------------------------|:-----------|:-----------|\n| Doanh thu cung cấp dịch vụ | 262,771,461,888 | 288,771,793,919 |\n| Doanh thu với các bên liên quan | - | - |\n\n6.2. Giá vốn hàng bán (Cost of goods sold)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------------------------|:-----------|:-----------|\n| Chi phí nhân công (Labor costs) | 11,484,206,194 | 11,111,361,913 |\n| Chi phí công cụ dụng cụ (Tools and supplies) | 26,097,874 | 33,999,875 |\n| Chi phí khấu hao (Depreciation of fixed assets) | 779,689,414 | 777,094,248 |\n| Chi phí dịch vụ mua ngoài (Cost of hired services) | 235,841,875,548 | 256,015,263,852 |\n| Chi phí bằng tiền khác (Other expenses in cash) | 2,797,240,871 | 3,291,533,456 |\n| Cộng (Total) | 250,929,109,901 | 271,229,253,344 |",
+    "output": [
+      "3,613,070.20 USD.",
+      "262,771,461,888 VND.",
+      "250,929,109,901 VND.",
+      "'Chi phí nhân công' trong giá vốn hàng bán Quý II/2025 là 11,484,206,194 VND. Quý II/2024 là 11,111,361,913 VND. Chi phí nhân công đã tăng 372,844,281 VND.",
+      "'Chi phí dịch vụ mua ngoài' trong Quý II/2025 là 235,841,875,548 VND. Tổng giá vốn hàng bán là 250,929,109,901 VND. Tỷ lệ = (235,841,875,548 / 250,929,109,901) * 100% ≈ 94.00%.",
+      "Dựa trên số liệu giá vốn hàng bán Quý II/2025, 'Chi phí dịch vụ mua ngoài' chiếm tỷ trọng rất lớn, khoảng 94.00% (235,841,875,548 VND trên 250,929,109,901 VND) tổng giá vốn hàng bán. Điều này cho thấy công ty có mức độ phụ thuộc cực kỳ cao vào các nhà cung cấp dịch vụ bên ngoài để thực hiện các hoạt động cốt lõi của mình. Mức độ phụ thuộc này có thể giảm chi phí cố định nhưng lại làm tăng rủi ro về chi phí biến đổi, chất lượng dịch vụ, và sự gián đoạn chuỗi cung ứng nếu có vấn đề với các nhà cung cấp bên ngoài.",
+      "Công ty nắm giữ ngoại tệ như USD (3,613,070.20 USD cuối quý), SGD, EUR. Với hoạt động giao nhận vận tải ngoại thương, công ty chắc chắn có các giao dịch liên quan đến ngoại tệ. Biến động tỷ giá hối đoái, đặc biệt là của USD, sẽ có tác động đáng kể:\\n- Doanh thu và Chi phí: Nếu công ty có doanh thu bằng ngoại tệ và chi phí bằng VND, việc tỷ giá ngoại tệ tăng so với VND sẽ làm tăng doanh thu quy đổi. Ngược lại, nếu chi phí bằng ngoại tệ, việc tỷ giá tăng sẽ làm tăng chi phí quy đổi.\\n- Lãi/Lỗ chênh lệch tỷ giá: Việc đánh giá lại số dư ngoại tệ vào cuối kỳ có thể phát sinh lãi hoặc lỗ chênh lệch tỷ giá, ảnh hưởng trực tiếp đến doanh thu hoặc chi phí tài chính (như đã thấy trong chunk 5 mục 6, 7). Với lượng USD đáng kể, công ty tiềm ẩn rủi ro hoặc cơ hội từ biến động tỷ giá, cần có chiến lược phòng ngừa rủi ro tỷ giá nếu cần.",
+      "Doanh thu cung cấp dịch vụ trong Quý II/2025 là 262,771,461,888 VND. Nếu doanh thu này tiếp tục sụt giảm trong quý tới và giá vốn hàng bán vẫn giữ nguyên hoặc không giảm tương ứng, lợi nhuận gộp của công ty sẽ bị ảnh hưởng tiêu cực. Cụ thể, lợi nhuận gộp sẽ giảm theo mức giảm của doanh thu, làm giảm khả năng trang trải các chi phí hoạt động khác và ultimately làm giảm lợi nhuận ròng của công ty. Với tỷ suất lợi nhuận gộp hiện tại (khoảng 4.51%), bất kỳ sự sụt giảm doanh thu nào cũng sẽ nhanh chóng ăn mòn lợi nhuận."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu hoạt động tài chính trong Quý II/2025 là bao nhiêu?",
+      "Lãi tiền vay trong Quý II/2025 là bao nhiêu?",
+      "So sánh 'Lãi tiền gửi ngân hàng' giữa Quý II/2025 và Quý II/2024.",
+      "Tỷ lệ 'Chi phí nhân viên' trên tổng chi phí quản lý doanh nghiệp trong Quý II/2025 là bao nhiêu?",
+      "Đánh giá mức độ hiệu quả của việc quản lý chi phí tài chính và chi phí quản lý doanh nghiệp của công ty.",
+      "Phân tích tác động của sự thay đổi trong 'Lỗ chênh lệch tỷ giá hối đoái' đến lợi nhuận của công ty giữa hai quý.",
+      "Dự báo ảnh hưởng của xu hướng tăng 'Chi phí dự phòng' đến lợi nhuận ròng của công ty trong tương lai."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Doanh thu và Chi phí hoạt động tài chính\nLoại nội dung: Bảng\n6.3. Doanh thu hoạt động tài chính (Revenue from financial activities)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------------------------|:-----------|:-----------|\n| Lợi nhuận được chia | - | 530,817,000 |\n| Cổ tức VNL | - | 530,817,000 |\n| Lãi tiền gửi ngân hàng (Interest on bank deposits) | 658,733,868 | 1,099,770,922 |\n| Lãi chênh lệch tỷ giá hối đoái (Interest on exchange rate differences) | 2,158,751,936 | 1,465,110,108 |\n| Cộng (Total) | 2,817,485,804 | 3,095,698,030 |\n\n6.4. Chi phí tài chính (Revenue from financial operations)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------------------------|:-----------|:-----------|\n| Lỗ chênh lệch tỷ giá hối đoái (Gains from foreign exchange differences) | 119,099,658 | 379,228,009 |\n| Lãi tiền vay (Interest on loans) | 3,147,671,150 | 3,110,346,404 |\n| Cộng (Total) | 3,266,770,808 | 3,489,574,413 |\n\n6.5. Chi phí quản lý doanh nghiệp (General and administration expense)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------------------------|:-----------|:-----------|\n| Chi phí nhân viên (Staff costs) | 3,254,239,117 | 3,139,002,842 |\n| Chi phí đồ dùng văn phòng (Office supplies) | 5,068,182 | 8,885,454 |\n| Chi phí khấu hao (Depreciation of fixed assets) | 58,809,841 | 147,695,271 |\n| Thuế, phí và lệ phí (Taxes, fees and duty) | 8,019,180 | 535,757,247 |\n| Chi phí dự phòng (Redundancy costs) | 611,376,197 | 154,449,848 |\n| Chi phí bằng tiền khác (Other cash costs) | 1,638,290,943 | 1,403,647,204 |\n| Cộng (Total) | 5,575,803,460 | 5,389,437,866 |",
+    "output": [
+      "2,817,485,804 VND.",
+      "3,147,671,150 VND.",
+      "'Lãi tiền gửi ngân hàng' Quý II/2025 là 658,733,868 VND. Quý II/2024 là 1,099,770,922 VND. Lãi tiền gửi ngân hàng đã giảm 441,037,054 VND.",
+      "'Chi phí nhân viên' trong Quý II/2025 là 3,254,239,117 VND. Tổng chi phí quản lý doanh nghiệp là 5,575,803,460 VND. Tỷ lệ = (3,254,239,117 / 5,575,803,460) * 100% ≈ 58.36%.",
+      "Về chi phí tài chính, tổng chi phí trong Quý II/2025 là 3,266,770,808 VND, giảm so với kỳ trước (3,489,574,413 VND), nhưng chi phí lãi vay lại tăng nhẹ. Điều này cho thấy công ty đã giảm lỗ chênh lệch tỷ giá nhưng lãi vay vẫn là gánh nặng lớn. Về chi phí quản lý doanh nghiệp, tổng chi phí tăng từ 5,389,437,866 VND (Quý II/2024) lên 5,575,803,460 VND (Quý II/2025), chủ yếu do chi phí nhân viên và chi phí dự phòng tăng đáng kể. Nhìn chung, việc quản lý chi phí đang có một số thách thức. Chi phí lãi vay vẫn cao và chi phí quản lý doanh nghiệp đang có xu hướng tăng, đặc biệt là chi phí nhân viên và dự phòng, cho thấy cần có biện pháp kiểm soát chặt chẽ hơn để tối ưu hóa hiệu quả hoạt động.",
+      "'Lỗ chênh lệch tỷ giá hối đoái' trong Quý II/2025 là 119,099,658 VND, giảm đáng kể so với 379,228,009 VND trong Quý II/2024. Sự giảm này có tác động tích cực đến lợi nhuận của công ty. Lỗ chênh lệch tỷ giá là một chi phí tài chính, do đó việc giảm lỗ này trực tiếp làm giảm tổng chi phí tài chính. Điều này giúp cải thiện lợi nhuận trước thuế và lợi nhuận sau thuế của công ty trong quý này so với kịch bản nếu lỗ tỷ giá vẫn duy trì ở mức cao như quý trước.",
+      "'Chi phí dự phòng' trong chi phí quản lý doanh nghiệp đã tăng đáng kể từ 154,449,848 VND (Quý II/2024) lên 611,376,197 VND (Quý II/2025). Nếu xu hướng tăng này tiếp tục, nó sẽ làm tăng tổng chi phí quản lý doanh nghiệp. Chi phí dự phòng là một khoản chi phí được ghi nhận để đối phó với các rủi ro hoặc nghĩa vụ tiềm ẩn (ví dụ: dự phòng phải thu khó đòi, dự phòng bảo hành). Sự gia tăng liên tục của khoản mục này cho thấy công ty đang đối mặt với nhiều rủi ro hơn hoặc đang thận trọng hơn trong việc ghi nhận các khoản lỗ tiềm năng. Dù là nguyên nhân nào, việc tăng chi phí dự phòng trực tiếp làm giảm lợi nhuận trước thuế và do đó làm giảm lợi nhuận ròng của công ty trong tương lai."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng thu nhập khác trong Quý II/2025 là bao nhiêu?",
+      "Lợi nhuận sau thuế trong Quý II/2025 là bao nhiêu?",
+      "So sánh 'Lợi nhuận kế toán trước thuế' giữa Quý II/2025 và Quý II/2024.",
+      "Tỷ lệ 'Chi phí dịch vụ mua ngoài' trên tổng chi phí sản xuất kinh doanh theo yếu tố trong Quý II/2025 là bao nhiêu?",
+      "Đánh giá mức độ hiệu quả trong quản lý chi phí không được trừ của công ty.",
+      "Phân tích nguyên nhân và tác động của sự thay đổi đáng kể trong 'Chi phí thuế, phí và lệ phí' giữa hai quý.",
+      "Nếu công ty có kế hoạch giảm 'Chi phí dịch vụ mua ngoài' trong quý tới, điều này có thể ảnh hưởng như thế nào đến chi phí sản xuất kinh doanh tổng thể?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN GIAO NHẬN VẬN TẢI NGOẠI THƯƠNG\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính Quý II/2025\nThời gian: Kỳ kế toán kết thúc ngày 30 tháng 06 năm 2025, Phát hành ngày 21 tháng 07 năm 2025\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh báo cáo tài chính - Thu nhập và Chi phí khác, Thuế TNDN và Chi phí sản xuất kinh doanh theo yếu tố\nLoại nội dung: Bảng và Text\n6.6. Thu nhập khác (Other earnings)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------|:-----------|:-----------|\n| Thu nhập khác | 91,376,862 | 30,728,908 |\n\n6.7. Chi phí khác (Other expenses)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------|:-----------|:-----------|\n| Chi phí khác | 10,000,716 | 3,179,494 |\n\n6.8. Chi phí thuế thu nhập doanh nghiệp hiện hành và lợi nhuận sau thuế (Current Corporate income tax and profit after tax)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:----------------------------------------------------------|:-----------|:-----------|\n| Lợi nhuận kế toán trước thuế (Profit before tax) | 5,898,639,669 | 11,786,775,740 |\n| Lãi được chia | - | 530,817,000 |\n| Lãi chênh lệch tỷ giá các khoản tiền tệ có gốc ngoại tệ | 509,993,612 | - |\n| Chi phí không được trừ (Nondeductible expenses) | 261,111,826 | 17,979,496 |\n| Lợi nhuận tính thuế (CIT taxable profits) | 6,159,751,495 | 10,763,944,624 |\n| Chi phí thuế TNDN hiện hành (Corporate income tax payable) | 1,231,950,299 | 2,152,788,925 |\n| Điều chỉnh tính lại thuế TNDN | 50,894,548 | - |\n| Lợi nhuận sau thuế (Profit after tax) | 4,717,583,918 | 9,633,986,815 |\n\n6.9. Chi phí sản xuất kinh doanh theo yếu tố (Cost of production and business as factors)\n| Chỉ tiêu | Quý 2.2025 | Quý 2.2024 |\n|:---------------------------------------|:-----------|:-----------|\n| Chi phí nhân công (Labor costs) | 14,738,445,311 | 14,250,364,755 |\n| Chi phí công cụ dụng cụ (Tools and supplies) | 31,166,056 | 42,885,329 |\n| Chi phí khấu hao tài sản cố định (Depreciation of fixed assets) | 838,499,255 | 924,789,519 |\n| Chi phí thuế, phí, lệ phí (Taxes, fees and duty) | 8,019,180 | 535,757,247 |\n| Chi phí dự phòng (Redundancy costs) | 611,376,197 | 154,449,848 |\n| Chi phí dịch vụ mua ngoài (Cost of hired services) | 235,841,875,548 | 256,015,263,852 |\n| Chi phí khác bằng tiền (Other expenses in cash) | 4,435,531,814 | 4,695,180,660 |\n| Tổng cộng (Total) | 256,504,913,361 | 276,618,691,210 |\n\n7. Các sự kiện sau ngày kết thúc niên độ (Events after the balance sheet date): Không có",
+    "output": [
+      "91,376,862 VND.",
+      "4,717,583,918 VND.",
+      "'Lợi nhuận kế toán trước thuế' Quý II/2025 là 5,898,639,669 VND. Quý II/2024 là 11,786,775,740 VND. Lợi nhuận kế toán trước thuế đã giảm 5,888,136,071 VND.",
+      "'Chi phí dịch vụ mua ngoài' trong Quý II/2025 là 235,841,875,548 VND. Tổng chi phí sản xuất kinh doanh theo yếu tố là 256,504,913,361 VND. Tỷ lệ = (235,841,875,548 / 256,504,913,361) * 100% ≈ 91.94%.",
+      "Chi phí không được trừ của công ty trong Quý II/2025 là 261,111,826 VND, tăng đáng kể so với 17,979,496 VND trong Quý II/2024. Sự gia tăng này là một dấu hiệu của việc quản lý chi phí kém hiệu quả đối với các khoản không được khấu trừ khi tính thuế TNDN. Các chi phí này làm tăng lợi nhuận tính thuế nhưng không tạo ra lợi ích kinh tế cho công ty trong việc giảm thuế, do đó trực tiếp làm tăng gánh nặng thuế và giảm lợi nhuận sau thuế. Công ty cần xem xét lại và tối ưu hóa các khoản chi phí này để cải thiện hiệu quả tài chính.",
+      "'Chi phí thuế, phí và lệ phí' trong chi phí sản xuất kinh doanh theo yếu tố đã giảm rất mạnh từ 535,757,247 VND (Quý II/2024) xuống 8,019,180 VND (Quý II/2025). Nguyên nhân có thể do thay đổi trong quy định thuế, giảm các hoạt động kinh doanh phát sinh thuế/phí, hoặc tối ưu hóa các khoản thuế/phí phải nộp. Tác động chính là giảm tổng chi phí sản xuất kinh doanh, giúp cải thiện lợi nhuận gộp và lợi nhuận thuần từ hoạt động kinh doanh. Điều này là một dấu hiệu tích cực về hiệu quả quản lý chi phí hoặc hưởng lợi từ chính sách.",
+      "Chi phí dịch vụ mua ngoài chiếm tỷ trọng rất lớn (khoảng 91.94%) trong tổng chi phí sản xuất kinh doanh theo yếu tố. Do đó, nếu công ty có kế hoạch giảm 'Chi phí dịch vụ mua ngoài' trong quý tới, điều này có thể có tác động đáng kể đến chi phí sản xuất kinh doanh tổng thể:\\n- Giảm tổng chi phí: Nếu việc giảm chi phí dịch vụ mua ngoài được thực hiện thành công, tổng chi phí sản xuất kinh doanh sẽ giảm đáng kể.\\n- Tăng lợi nhuận: Việc giảm chi phí sẽ trực tiếp làm tăng lợi nhuận gộp và lợi nhuận ròng của công ty.\\n- Rủi ro: Tuy nhiên, việc giảm chi phí dịch vụ mua ngoài cũng có thể đi kèm với rủi ro về chất lượng dịch vụ, khả năng hoạt động bị gián đoạn nếu các nhà cung cấp bị cắt giảm không đáp ứng được yêu cầu, hoặc cần đầu tư vào năng lực nội bộ để thay thế dịch vụ bên ngoài, dẫn đến tăng các chi phí khác như nhân công hoặc khấu hao."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  }
+]

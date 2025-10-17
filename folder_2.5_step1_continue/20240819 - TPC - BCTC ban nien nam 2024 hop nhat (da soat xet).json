@@ -1,0 +1,864 @@
+[
+    {
+        "chunk_id": "1",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Thông tin chung và Mục lục\nLoại nội dung: Text\n\nCÔNG TY CỔ PHẦN NHỰA TÂN ĐẠI HƯNG\nChuyên sản xuất bao PP dệt, túi siêu thị, vải địa kỹ thuật\nVăn Phòng: 414 Lầu 5 Lũy Bán Bích, P. Hòa Thạnh, Q. Tân Phú, TP. Hồ Chí Minh\nĐT: 84.8 3.9737277, 3.9737278, 3.9737276 Fax: 84.8 3.9737279\nNhà Máy: C11 - C15 Cụm CN nhựa Đức Hòa Hạ, Huyện Đức Hòa, Tỉnh Long An\nĐT: 84 072.3779328 Fax: 84 072.3779255\nISO 9001:2008\nEmail: tdhplastic@gmail.com Website: www.tandaihungplastic.com\n\nSỐ 24/A2024/CVTDH TP.HCM, ngày 19 tháng 8 năm 2024\nKính gửi Ủy ban Chứng khoán Nhà nước\nSở Giao dịch Chứng khoán TP.HCM\nTên công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nĐịa chỉ: 414 Lầu 5 Lũy Bán Bích, P. Hòa Thạnh, Q. Tân Phú, TP.HCM\nĐiện thoại: 84.28 39737277 Fax: 84.28 39737279\nMã chứng khoán: TPC\nSàn niêm yết: Sở Giao dịch Chứng khoán TP.HCM (HOSE)\nNgười thực hiện công bố thông tin: Tôn Thị Hồng Minh - P.Chủ tịch HĐQT kiêm P. Tổng giám đốc\nLoại thông tin công bố: Định kỳ - Báo cáo tài chính bán niên 2024 hợp nhất đã soát xét. CV 24/2024 Giải trình chênh lệch kết quả kinh doanh BCTC bán niên 2024 hợp nhất.\nThông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 19/8/2024 tại đường dẫn http://tandaihungplastic.com.\nChúng tôi cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố.\nNơi nhận: Như kính gửi, Lưu VP, TCKT.\n\nBÁO CÁO TÀI CHÍNH HỢP NHẤT GIỮA NIÊN ĐỘ\n6 THÁNG ĐẦU CỦA NĂM TÀI CHÍNH KẾT THÚC NGÀY 31 THÁNG 12 NĂM 2024\nCÔNG TY CỔ PHẦN NHỰA TÂN ĐẠI HƯNG\nMỤC LỤC\n1. Mục lục\n2. Báo cáo của Ban Tổng Giám đốc\n3. Báo cáo soát xét thông tin tài chính giữa niên độ\n4. Bảng cân đối kế toán hợp nhất giữa niên độ tại ngày 30 tháng 6 năm 2024\n5. Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024\n6. Báo cáo lưu chuyển tiền tệ hợp nhất giữa niên độ 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024\n7. Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024\n8. Phụ lục",
+        "questions": [
+            {
+                "question": "Tên đầy đủ của công ty là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Mã cổ phiếu của Công ty Cổ phần Nhựa Tân Đại Hưng là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Địa chỉ văn phòng chính của công ty nằm ở đâu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Loại báo cáo tài chính được công bố là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Báo cáo tài chính này được công bố vào ngày nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Người thực hiện công bố thông tin có chức vụ gì trong công ty?",
+                "difficulty": "Medium_NER"
+            },
+            {
+                "question": "Đánh giá mức độ minh bạch của công ty dựa trên thông tin công bố.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Thông tin nào trong mục lục cho thấy báo cáo này là hợp nhất?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Việc công bố thông tin trên trang điện tử của công ty vào ngày 19/8/2024 có ý nghĩa gì đối với tính kịp thời của thông tin?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Nếu có mâu thuẫn giữa thông tin trên báo cáo và thông tin trên trang điện tử, bên nào có tính pháp lý cao hơn theo cam kết của công ty?",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "2",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Báo cáo của Ban Tổng Giám đốc (Khái quát về Công ty)\nLoại nội dung: Text\n\nCÔNG TY CỔ PHẦN NHỰA TÂN ĐẠI HƯNG\nBÁO CÁO CỦA BAN TỔNG GIÁM ĐỐC\nBan Tổng Giám đốc Công ty Cổ phần Nhựa Tân Đại Hưng (sau đây gọi tắt là Công ty) trình bày báo cáo của mình cùng với Báo cáo tài chính hợp nhất giữa niên độ 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024, bao gồm Báo cáo tài chính giữa niên độ của Công ty và công ty con (gọi chung là Tập đoàn).\n\nKhái quát về Công ty\nCông ty Cổ phần Nhựa Tân Đại Hưng hoạt động theo Giấy chứng nhận đăng ký doanh nghiệp số 0302760102, đăng ký lần đầu ngày 22 tháng 4 năm 2002 và đăng ký thay đổi lần thứ 11 ngày 22 tháng 6 năm 2020 do Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh cấp.\n\nTrụ sở chính\nĐịa chỉ: 414 Lầu 5 Lũy Bán Bích, Phường Hòa Thạnh, Quận Tân Phú, TP. Hồ Chí Minh.\nĐiện thoại: 84 - 28 39 737 277 - 39 737 278\nFax: 84 - 28 39 737 279 - 39 737 276\nHoạt động kinh doanh chính của Công ty là:\n- Sản xuất, chế biến sản phẩm cao su (không hoạt động tại trụ sở)\n- Sản xuất bao bì nhựa PP, PE, PET (trừ tái chế phế thải, trừ sản xuất xốp cách nhiệt sử dụng ga R141b, sử dụng polyol trộn sẵn HCFC-141b)\n- Mua bán bao bì nhựa PP, PE, PET, mua bán sản phẩm nhựa, nguyên liệu nhựa, bột màu\n- Mua bán máy móc, thiết bị và phụ tùng ngành nông lâm nghiệp\n- Mua bán máy móc, thiết bị và phụ tùng ngành công nghiệp\n- Xây dựng công trình công ích khác (chưa được phân loại)\n- Xây dựng công trình thủy (đập và đê).",
+        "questions": [
+            {
+                "question": "Công ty Cổ phần Nhựa Tân Đại Hưng được cấp giấy chứng nhận đăng ký doanh nghiệp lần đầu vào ngày nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Hoạt động kinh doanh chính của Công ty là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Có bao nhiêu lần Công ty thay đổi đăng ký doanh nghiệp cho đến ngày 22 tháng 6 năm 2020?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Nêu một hoạt động kinh doanh đã được đăng ký nhưng không hoạt động tại trụ sở chính.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích mức độ đa dạng hóa ngành nghề kinh doanh của Công ty dựa trên các hoạt động được liệt kê.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá rủi ro pháp lý hoặc hoạt động khi Công ty đăng ký ngành nghề nhưng không hoạt động tại trụ sở.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Liệt kê các loại hình bao bì nhựa mà Công ty sản xuất và kinh doanh.",
+                "difficulty": "Easy_NER"
+            }
+        ]
+    },
+    {
+        "chunk_id": "3",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Báo cáo của Ban Tổng Giám đốc (Hội đồng quản trị, Ban điều hành, Kiểm toán viên và Trách nhiệm)\nLoại nội dung: Text\n\nHội đồng quản trị và Ban điều hành, quản lý<br>Các thành viên Hội đồng quản trị và Ban điều hành, quản lý của Công ty trong kỳ và cho đến thời điểm lập báo cáo này bao gồm:\n\nHội đồng quản trị\n| Họ và tên | Chức vụ | Ngày bổ nhiệm |\n|---|---|---|\n| Bà Phạm Đỗ Diễm Hương | Chủ tịch | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Ông Phạm Trung Cang | Phó Chủ tịch thường trực | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Ông Phạm Văn Mẹo | Phó Chủ tịch | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Bà Tôn Thị Hồng Minh | Phó Chủ tịch | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Bà Nguyễn Thị Thanh Loan | Thành viên | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Ông Trần Hữu Vinh | Thành viên | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Bà Danh Thúy Oanh | Thành viên | Bổ nhiệm ngày 26 tháng 4 năm 2021 |\n| Bà Phạm Thị Trúc Ngân | Thành viên | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Ông Huỳnh Minh Việt | Thành viên | Bổ nhiệm ngày 22 tháng 5 năm 2020 |\n\nBan kiểm soát\n| Họ và tên | Chức vụ | Ngày bổ nhiệm |\n|---|---|---|\n| Ông Lâm Nguyễn Quốc Nghĩa | Trưởng ban | Tái bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Bà Lê Thị Minh Trí | Ủy viên | Tái bổ nhiệm ngày 22 tháng 5 năm 2020 |\n| Ông Nguyễn Khánh Luân | Ủy viên | Bổ nhiệm ngày 26 tháng 4 năm 2023 |\n\nBan Tổng Giám đốc\n| Họ và tên | Chức vụ | Ngày bổ nhiệm |\n|---|---|---|\n| Ông Phạm Văn Mẹo | Tổng Giám đốc | Bổ nhiệm ngày 22 tháng 6 năm 2020 |\n| Bà Tôn Thị Hồng Minh | Phó Tổng Giám đốc | Bổ nhiệm ngày 27 tháng 4 năm 2016 |\n\nĐại diện theo pháp luật<br>Người đại diện theo pháp luật của Công ty trong kỳ và cho đến thời điểm lập báo cáo này là ông Phạm Văn Mẹo - Tổng Giám đốc (bổ nhiệm ngày 22 tháng 6 năm 2020).<br>Ông Phạm Văn Mẹo đã ủy quyền cho Bà Tôn Thị Hồng Minh - Phó Tổng Giám đốc ký Báo cáo tài chính hợp nhất giữa niên độ 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024 theo Giấy ủy quyền số 01/2020/UQTDH ngày 23 tháng 6 năm 2020.\n\nKiểm toán viên<br>Công ty TNHH Kiểm toán và Tư vấn Ac đã được chỉ định soát xét Báo cáo tài chính hợp nhất giữa niên độ 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024 của Tập đoàn.\n\nTrách nhiệm của Ban Tổng Giám đốc<br>Ban Tổng Giám đốc chịu trách nhiệm lập Báo cáo tài chính hợp nhất giữa niên độ phản ánh trung thực và hợp lý tình hình tài chính hợp nhất, kết quả hoạt động kinh doanh hợp nhất và lưu chuyển tiền tệ hợp nhất của Tập đoàn trong kỳ. Trong việc lập Báo cáo tài chính hợp nhất giữa niên độ này, Ban Tổng Giám đốc phải:<br>- Chọn lựa các chính sách kế toán thích hợp và áp dụng các chính sách này một cách nhất quán.<br>- Thực hiện các xét đoán và các ước tính một cách hợp lý và thận trọng.<br>- Nêu rõ các Chuẩn mực kế toán áp dụng cho Tập đoàn có được tuân thủ hay không và tất cả các sai lệch trọng yếu đã được trình bày và giải thích trong Báo cáo tài chính hợp nhất giữa niên độ.<br>- Lập Báo cáo tài chính hợp nhất giữa niên độ trên cơ sở hoạt động liên tục (trừ trường hợp không thể cho rằng Tập đoàn sẽ tiếp tục hoạt động liên tục).<br>- Thiết lập và thực hiện hệ thống kiểm soát nội bộ một cách hữu hiệu nhằm hạn chế rủi ro có sai sót trọng yếu do gian lận hoặc nhầm lẫn trong việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.\nBan Tổng Giám đốc đảm bảo các sổ kế toán thích hợp được lưu giữ đầy đủ để phản ánh tình hình tài chính của Tập đoàn với mức độ chính xác hợp lý tại bất kỳ thời điểm nào và các sổ sách kế toán tuân thủ chế độ kế toán áp dụng. Ban Tổng Giám đốc cũng chịu trách nhiệm quản lý các tài sản của Tập đoàn và do đó đã thực hiện các biện pháp thích hợp để ngăn chặn và phát hiện các hành vi gian lận và các vi phạm khác.\nBan Tổng Giám đốc cam kết đã tuân thủ các yêu cầu nêu trên trong việc lập Báo cáo tài chính hợp nhất giữa niên độ.",
+        "questions": [
+            {
+                "question": "Ai là Chủ tịch Hội đồng quản trị của Công ty?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Ông Phạm Văn Mẹo giữ chức vụ gì trong Ban Tổng Giám đốc?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Công ty TNHH Kiểm toán và Tư vấn Ac được chỉ định làm gì cho báo cáo tài chính này?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Trách nhiệm chính của Ban Tổng Giám đốc trong việc lập báo cáo tài chính là gì?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tầm quan trọng của hệ thống kiểm soát nội bộ được Ban Tổng Giám đốc thiết lập.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Vì sao Bà Tôn Thị Hồng Minh là người ký báo cáo tài chính dù ông Phạm Văn Mẹo là người đại diện theo pháp luật?",
+                "difficulty": "Hard_QA"
+            },
+            {
+                "question": "Phân tích tác động của việc áp dụng các chính sách kế toán không nhất quán đến độ tin cậy của báo cáo tài chính.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "4",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Báo cáo soát xét thông tin tài chính giữa niên độ\nLoại nội dung: Text\n\nPhê duyệt Báo cáo tài chính<br>Ban Tổng Giám đốc phê duyệt Báo cáo tài chính hợp nhất giữa niên độ đính kèm. Báo cáo tài chính hợp nhất giữa niên độ đã phản ánh trung thực và hợp lý tình hình tài chính hợp nhất của Tập đoàn tại thời điểm ngày 30 tháng 6 năm 2024, cũng như kết quả hoạt động kinh doanh hợp nhất và tình hình lưu chuyển tiền tệ hợp nhất 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024, phù hợp với các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.<br>Thay mặt Ban Tổng Giám đốc,<br>Tôn Thị Hồng Minh<br>Phó Tổng Giám đốc<br>Ngày 16 tháng 8 năm 2024\n\nAC AUDITING AND CONSULTING CO., LTD. trading as Baker Tilly AC\n\nSỐ 1.129/24/TC/AC\nBÁO CÁO SOÁT XÉT THÔNG TIN TÀI CHÍNH GIỮA NIÊN ĐỘ\nKính gửi: CÁC CỔ ĐÔNG, HỘI ĐỒNG QUẢN TRỊ VÀ BAN TỔNG GIÁM ĐỐC CÔNG TY CỔ PHẦN NHỰA TÂN ĐẠI HƯNG\nChúng tôi đã thực hiện công việc soát xét Báo cáo tài chính hợp nhất giữa niên độ kèm theo của Công ty cổ phần Nhựa Tân Đại Hưng (sau đây gọi tắt là Công ty) và công ty con (gọi chung là Tập đoàn), được lập ngày 16 tháng 8 năm 2024, từ trang 06 đến trang 36, bao gồm Bảng cân đối kế toán hợp nhất giữa niên độ tại ngày 30 tháng 6 năm 2024, Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ, Báo cáo lưu chuyển tiền tệ hợp nhất giữa niên độ 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024 và Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ.\n\nTrách nhiệm của Ban Tổng Giám đốc<br>Ban Tổng Giám đốc Công ty chịu trách nhiệm về lập và trình bày trung thực và hợp lý Báo cáo tài chính hợp nhất giữa niên độ của Tập đoàn theo các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ và chịu trách nhiệm về kiểm soát nội bộ mà Ban Tổng Giám đốc xác định là cần thiết để đảm bảo cho việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ không có sai sót trọng yếu do gian lận hoặc nhầm lẫn.\n\nTrách nhiệm của Kiểm toán viên<br>Trách nhiệm của chúng tôi là đưa ra kết luận về Báo cáo tài chính hợp nhất giữa niên độ dựa trên kết quả soát xét của chúng tôi. Chúng tôi đã thực hiện công việc soát xét theo Chuẩn mực Việt Nam về hợp đồng dịch vụ soát xét số 2410 - Soát xét thông tin tài chính giữa niên độ do kiểm toán viên độc lập của đơn vị thực hiện.<br>Công việc soát xét thông tin tài chính giữa niên độ bao gồm việc thực hiện các cuộc phỏng vấn, chủ yếu là phỏng vấn những người chịu trách nhiệm về các vấn đề tài chính kế toán, và thực hiện thủ tục phân tích và các thủ tục soát xét khác. Một cuộc soát xét về cơ bản có phạm vi hẹp hơn một cuộc kiểm toán được thực hiện theo các Chuẩn mực Kiểm toán Việt Nam và do vậy không cho phép chúng tôi đạt được sự đảm bảo rằng chúng tôi sẽ nhận biết được tất cả các vấn đề trọng yếu có thể được phát hiện trong một cuộc kiểm toán. Theo đó, chúng tôi không đưa ra ý kiến kiểm toán.\n\nKết luận của Kiểm toán viên<br>Căn cứ trên kết quả soát xét của chúng tôi, chúng tôi không thấy có vấn đề gì khiến chúng tôi cho rằng Báo cáo tài chính hợp nhất giữa niên độ đính kèm không phản ánh trung thực và hợp lý, trên các khía cạnh trọng yếu, tình hình tài chính hợp nhất của Tập đoàn tại ngày 30 tháng 6 năm 2024, cũng như kết quả hoạt động kinh doanh hợp nhất và tình hình lưu chuyển tiền tệ hợp nhất 6 tháng đầu của năm tài chính kết thúc ngày 31 tháng 12 năm 2024, phù hợp với các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.\nTP. Hồ Chí Minh, ngày 16 tháng 8 năm 2024",
+        "questions": [
+            {
+                "question": "Báo cáo soát xét được lập vào ngày nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Kiểm toán viên đã thực hiện công việc soát xét theo chuẩn mực nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu một khác biệt cơ bản giữa công việc soát xét và công việc kiểm toán.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Ý kiến kết luận của kiểm toán viên về báo cáo tài chính hợp nhất giữa niên độ là gì?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ đảm bảo mà một báo cáo soát xét cung cấp so với một báo cáo kiểm toán đầy đủ.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích ý nghĩa của câu 'không thấy có vấn đề gì khiến chúng tôi cho rằng Báo cáo tài chính hợp nhất giữa niên độ đính kèm không phản ánh trung thực và hợp lý'.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Liệt kê các thành phần chính của Báo cáo tài chính hợp nhất giữa niên độ được soát xét.",
+                "difficulty": "Easy_NER"
+            }
+        ]
+    },
+    {
+        "chunk_id": "5",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bảng cân đối kế toán hợp nhất giữa niên độ (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n\n| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 238.867.735.654 | 239.356.462.445 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.1 | 16.463.980.484 | 10.979.746.628 |\n| 1. Tiền | 111 | | 16.463.980.484 | 6.979.746.628 |\n| 2. Các khoản tương đương tiền | 112 | | - | 4.000.000.000 |\n| II. Đầu tư tài chính ngắn hạn | 120 | | 79.675.000.000 | 78.000.000.000 |\n| 1. Chứng khoán kinh doanh | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | V.2a | 79.675.000.000 | 78.000.000.000 |\n| III. Các khoản phải thu ngắn hạn | 130 | | 79.103.827.822 | 84.058.363.650 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | V.3 | 76.070.851.309 | 80.653.025.486 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | V.4 | 200.542.975 | 98.091.006 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |\n| 6. Phải thu ngắn hạn khác | 136 | V.5 | 2.832.433.538 | 3.307.247.158 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | | - | - |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho | 140 | | 51.367.459.868 | 50.121.240.416 |\n| 1. Hàng tồn kho | 141 | V.6 | 51.367.459.868 | 50.121.240.416 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | - | - |\n| V. Tài sản ngắn hạn khác | 150 | | 12.257.467.480 | 16.197.111.751 |\n| 1. Chi phí trả trước ngắn hạn | 151 | V.7a | 599.992.402 | 216.578.021 |\n| 2. Thuế giá trị gia tăng được khấu trừ | 152 | | 11.141.869.849 | 15.922.081.547 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | V.12 | 515.605.229 | 58.452.183 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+        "questions": [
+            {
+                "question": "Tổng tài sản ngắn hạn tại ngày 30 tháng 6 năm 2024 là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Số dư tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản mục nào trong tài sản ngắn hạn giảm đáng kể nhất so với đầu năm?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ trọng hàng tồn kho trong tổng tài sản ngắn hạn cuối kỳ là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá sự thay đổi trong cấu trúc tài sản ngắn hạn giữa cuối kỳ và đầu năm.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của sự giảm sút các khoản phải thu ngắn hạn của khách hàng đến dòng tiền của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Nếu các khoản đầu tư tài chính ngắn hạn chủ yếu là tiền gửi có kỳ hạn, điều này nói lên điều gì về chiến lược quản lý vốn của công ty?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính toán sự biến động của thuế GTGT được khấu trừ và giải thích tiềm năng của sự biến động này.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "6",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bảng cân đối kế toán hợp nhất giữa niên độ (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n\n| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| B. TÀI SẢN DÀI HẠN | 200 | | 211.555.738.061 | 222.554.741.268 |\n| I. Các khoản phải thu dài hạn | 210 | | - | - |\n| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | | - | - |\n| 6. Phải thu dài hạn khác | 216 | | - | - |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |\n| II. Tài sản cố định | 220 | | 201.238.654.665 | 211.637.657.872 |\n| 1. Tài sản cố định hữu hình | 221 | V.8 | 172.360.654.665 | 182.279.657.872 |\n| - Nguyên giá | 222 | | 327.760.012.335 | 335.731.950.658 |\n| - Giá trị hao mòn lũy kế | 223 | | 155.399.357.670 | 153.452.292.786 |\n| 2. Tài sản cố định thuê tài chính | 224 | | - | - |\n| - Nguyên giá | 225 | | - | - |\n| - Giá trị hao mòn lũy kế | 226 | | - | - |\n| 3. Tài sản cố định vô hình | 227 | V.9 | 28.878.000.000 | 29.358.000.000 |\n| - Nguyên giá | 228 | | 33.364.800.000 | 33.364.800.000 |\n| - Giá trị hao mòn lũy kế | 229 | | 4.486.800.000 | 4.006.800.000 |\n| III. Bất động sản đầu tư | 230 | | - | - |\n| - Nguyên giá | 231 | | - | - |\n| - Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | | - | - |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | | - | - |\n| V. Đầu tư tài chính dài hạn | 250 | | 8.000.347.397 | 8.000.347.397 |\n| 1. Đầu tư vào công ty con | 251 | | - | - |\n| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | | - | - |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | V.2b | 347.397 | 347.397 |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | - | - |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | V.2a | 8.000.000.000 | 8.000.000.000 |\n| VI. Tài sản dài hạn khác | 260 | | 2.316.735.999 | 2.916.735.999 |\n| 1. Chi phí trả trước dài hạn | 261 | V.7b | 2.316.735.999 | 2.916.735.999 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | V.10 | - | - |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | - | - |\n| 4. Tài sản dài hạn khác | 268 | | - | - |\n| 5. Lợi thế thương mại | 269 | | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | | 450.423.473.715 | 461.911.203.713 |",
+        "questions": [
+            {
+                "question": "Tổng tài sản dài hạn của Tập đoàn tại ngày 30 tháng 6 năm 2024 là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Sự thay đổi về nguyên giá tài sản cố định hữu hình giữa đầu năm và cuối kỳ là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ lệ tài sản cố định vô hình trên tổng tài sản dài hạn cuối kỳ là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ đầu tư vào tài sản dài hạn của công ty trong kỳ.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc không có các khoản phải thu dài hạn đến chiến lược kinh doanh của Tập đoàn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích ý nghĩa của sự sụt giảm trong tài sản dài hạn khác, đặc biệt là chi phí trả trước dài hạn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính toán tỷ lệ hao mòn lũy kế của tài sản cố định hữu hình cuối kỳ và đầu năm để đánh giá mức độ khấu hao của tài sản.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "7",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bảng cân đối kế toán hợp nhất giữa niên độ (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n\n| CHỈ TIÊU | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| C. NỢ PHẢI TRẢ | 300 | | 156.192.221.494 | 174.752.762.325 |\n| I. Nợ ngắn hạn | 310 | | 156.192.221.494 | 174.752.762.325 |\n| 1. Phải trả người bán ngắn hạn | 311 | V.11 | 25.050.925.897 | 36.338.841.014 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | | 143.603.902 | 131.932.880 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V.12 | 18.350.428 | - |\n| 4. Phải trả người lao động | 314 | V.13 | 8.082.296.596 | 9.811.087.827 |\n| 5. Chi phí phải trả ngắn hạn | 315 | V.14 | 1.186.226.421 | 1.033.739.479 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9. Phải trả ngắn hạn khác | 319 | V.15 | 3.380.859.285 | 3.605.140.235 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | V.16 | 118.329.958.965 | 123.832.020.890 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | | - | - |\n| 13. Quỹ bình ổn giá | 323 | | - | - |\n| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |\n| II. Nợ dài hạn | 330 | | - | - |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7. Phải trả dài hạn khác | 337 | | - | - |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | | - | - |\n| 9. Trái phiếu chuyển đổi | 339 | | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | | 294.231.252.221 | 287.158.441.388 |\n| I. Vốn chủ sở hữu | 410 | | 294.231.252.221 | 287.158.441.388 |\n| 1. Vốn góp của chủ sở hữu | 411 | V.17 | 244.305.960.000 | 244.305.960.000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 244.305.960.000 | 244.305.960.000 |\n| - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | V.17 | 82.683.222.451 | 82.683.222.451 |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | | - | - |\n| 5. Cổ phiếu quỹ | 415 | V.17 | (24.593.180.860) | (24.593.180.860) |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 8. Quỹ đầu tư phát triển | 418 | | - | - |\n| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | - | - |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | - | - |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | V.17 | (8.164.749.370) | (15.237.560.203) |\n| - Lợi nhuận sau thuế chưa phân phối lũy kế đến cuối kỳ trước | 421a | | (15.237.560.203) | (15.237.560.203) |\n| - Lợi nhuận sau thuế chưa phân phối kỳ này | 421b | | 7.072.810.833 | - |\n| 12. Nguồn vốn đầu tư xây dựng cơ bản | 422 | | - | - |\n| 13. Lợi ích cổ đông không kiểm soát | 429 | | - | - |\n| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |\n| 1. Nguồn kinh phí | 431 | | - | - |\n| 2. Nguồn kinh phí đã hình thành tài sản cố định | 432 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 450.423.473.715 | 461.911.203.713 |\n\nTP. Hồ Chí Minh, ngày 16 tháng 8 năm 2024\n| Người lập | Kế toán trưởng | Phó Tổng Giám đốc |\n|---|---|---|\n| Hồ Nhật Minh | Nguyễn Văn Trình | Tôn Thị Hồng Minh |",
+        "questions": [
+            {
+                "question": "Tổng nợ phải trả của Tập đoàn tại ngày 30 tháng 6 năm 2024 là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tổng vốn chủ sở hữu cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh vay và nợ thuê tài chính ngắn hạn giữa cuối kỳ và đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tính tỷ lệ nợ phải trả trên tổng nguồn vốn cuối kỳ của Tập đoàn.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá khả năng thanh toán nợ ngắn hạn của công ty dựa trên cơ cấu nợ ngắn hạn.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích ý nghĩa của việc lợi nhuận sau thuế chưa phân phối của công ty là số âm.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 30 tháng 6 năm 2024 và đánh giá rủi ro tài chính của công ty.",
+                "difficulty": "Hard_QA"
+            },
+            {
+                "question": "Việc không có nợ dài hạn nói lên điều gì về chiến lược tài trợ dài hạn của công ty?",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "8",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ\nLoại nội dung: Bảng\n\n| CHỈ TIÊU | Mã số | Thuyết minh | Năm nay | Năm trước |\n|---|---|---|---|---|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | VI.1 | 203.552.813.284 | 280.525.032.848 |\n| 2. Các khoản giảm trừ doanh thu | 02 | | - | - |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | 203.552.813.284 | 280.525.032.848 |\n| 4. Giá vốn hàng bán | 11 | VI.2 | 184.514.975.673 | 304.365.539.385 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 19.037.837.611 | (23.840.506.537) |\n| 6. Doanh thu hoạt động tài chính | 21 | VI.3 | 2.938.212.888 | 3.971.350.569 |\n| 7. Chi phí tài chính | 22 | VI.4 | 2.265.831.883 | 6.204.511.059 |\n| Trong đó: chi phí lãi vay | 23 | | 2.263.831.883 | 5.883.977.974 |\n| 8. Phần lãi hoặc lỗ trong công ty liên doanh, liên kết | 24 | | - | - |\n| 9. Chi phí bán hàng | 25 | VI.5 | 7.112.940.573 | 7.144.342.864 |\n| 10. Chi phí quản lý doanh nghiệp | 26 | VI.6 | 7.539.269.449 | 10.424.235.056 |\n| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 5.058.008.594 | (43.642.244.947) |\n| 12. Thu nhập khác | 31 | VI.7 | 2.040.537.010 | 319.727.280 |\n| 13. Chi phí khác | 32 | VI.8 | 25.734.771 | 2.803.856.411 |\n| 14. Lợi nhuận khác | 40 | | 2.014.802.239 | (2.484.129.131) |\n| 15. Tổng lợi nhuận kế toán trước thuế | 50 | | 7.072.810.833 | (46.126.374.078) |\n| 16. Chi phí thuế thu nhập doanh nghiệp hiện hành | 51 | V.12 | - | 3.800.997.600 |\n| 17. Chi phí thuế thu nhập doanh nghiệp hoãn lại | 52 | | - | - |\n| 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 7.072.810.833 | (49.927.371.678) |\n| 19. Lợi nhuận sau thuế của công ty mẹ | 61 | | 7.072.810.833 | (49.927.371.678) |\n| 20. Lợi nhuận sau thuế của cổ đông không kiểm soát | 62 | | - | - |\n| 21. Lãi cơ bản trên cổ phiếu | 70 | VI.9a | 314 | (2.217) |\n| 22. Lãi suy giảm trên cổ phiếu | 71 | VI.9a | 314 | (2.217) |",
+        "questions": [
+            {
+                "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lợi nhuận sau thuế của công ty mẹ năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh doanh thu thuần năm nay với năm trước, thay đổi như thế nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Biên lợi nhuận gộp năm nay là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá sự cải thiện đáng kể trong lợi nhuận từ hoạt động kinh doanh so với năm trước.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích các yếu tố chính đã đóng góp vào sự thay đổi từ lỗ sang lãi trong tổng lợi nhuận kế toán trước thuế.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích tác động của sự giảm chi phí tài chính và chi phí quản lý doanh nghiệp đến kết quả kinh doanh của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính toán chỉ số EPS (lãi cơ bản trên cổ phiếu) cho năm nay và so sánh với năm trước. Ý nghĩa của sự thay đổi này là gì?",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "9",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất giữa niên độ (Phần I - Lưu chuyển tiền từ hoạt động kinh doanh)\nLoại nội dung: Bảng\n\n| CHỈ TIÊU | Mã số | Thuyết minh | Năm nay | Năm trước |\n|---|---|---|---|---|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | | |\n| 1. Lợi nhuận trước thuế | 01 | | 7.072.810.833 | (46.126.374.078) |\n| 2. Điều chỉnh cho các khoản | | | | |\n| - Khấu hao tài sản cố định và bất động sản đầu tư | 02 | V.8, V.9 | 9.564.315.524 | 9.115.879.488 |\n| - Các khoản dự phòng | 03 | | - | - |\n| - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | VI.3, VI.4 | 200.008.743 | 55.835.218 |\n| - Lãi, lỗ từ hoạt động đầu tư | 05 | VI.3, VI.7 | (4.601.647.040) | (4.045.183.422) |\n| - Chi phí lãi vay | 06 | VI.4 | 2.263.831.883 | 5.883.977.974 |\n| - Các khoản điều chỉnh khác | 07 | | - | - |\n| 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 08 | | 14.099.302.457 | (35.227.535.256) |\n| - Tăng, giảm các khoản phải thu | 09 | | 9.235.434.571 | (21.687.206.670) |\n| - Tăng, giảm hàng tồn kho | 10 | | 1.246.219.452 | (123.987.123.946) |\n| - Tăng, giảm các khoản phải trả | 11 | | 1.572.278.906 | 18.730.895.242 |\n| - Tăng, giảm chi phí trả trước | 12 | | (216.585.619) | (321.901.825) |\n| - Tăng, giảm chứng khoán kinh doanh | 13 | | - | - |\n| - Tiền lãi vay đã trả | 14 | V.14, VI.4 | (2.263.831.883) | (6.119.060.854) |\n| - Thuế thu nhập doanh nghiệp đã nộp | 15 | V.12 | (500.000.000) | (7.399.952.199) |\n| - Tiền thu khác từ hoạt động kinh doanh | 16 | | - | - |\n| - Tiền chi khác cho hoạt động kinh doanh | 17 | | - | - |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | | 17.968.992.406 | (78.518.788.890) |",
+        "questions": [
+            {
+                "question": "Lợi nhuận trước thuế của Tập đoàn năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giải thích tại sao khấu hao tài sản cố định lại là một khoản điều chỉnh tăng trong lưu chuyển tiền tệ.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "So sánh lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động giữa năm nay và năm trước.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá chất lượng lợi nhuận của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh so với lợi nhuận trước thuế.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của sự thay đổi trong các khoản phải thu và hàng tồn kho đến dòng tiền từ hoạt động kinh doanh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Xác định các yếu tố chính đã chuyển dòng tiền từ hoạt động kinh doanh của công ty từ âm sang dương so với năm trước.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính toán và giải thích sự khác biệt giữa chi phí lãi vay và tiền lãi vay đã trả trong kỳ này.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "10",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất giữa niên độ (Phần II - Lưu chuyển tiền từ hoạt động đầu tư và Phần III - Lưu chuyển tiền từ hoạt động tài chính)\nLoại nội dung: Bảng\n\n| CHỈ TIÊU | Mã số | Thuyết minh | Năm nay | Năm trước |\n|---|---|---|---|---|\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | | |\n| 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | 21 | V.8, V.11 | (11.076.200.000) | - |\n| 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | 22 | V.8, VI.7 | 2.934.545.453 | 319.727.273 |\n| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | V.2a | (5.675.000.000) | (38.000.000.000) |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | V.2a | 4.000.000.000 | 51.000.000.000 |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | | - | - |\n| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | | - | - |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | V.5, VI.3 | 3.033.628.174 | 4.124.461.632 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | | (6.783.026.373) | 17.444.188.905 |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | | - | - |\n| 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | 32 | | - | - |\n| 3. Tiền thu từ đi vay | 33 | V.16 | 180.131.928.455 | 204.623.383.267 |\n| 4. Tiền trả nợ gốc vay | 34 | V.16 | (185.895.384.206) | (299.966.248.789) |\n| 5. Tiền trả nợ gốc thuê tài chính | 35 | | - | - |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | | - | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | | (5.763.455.751) | (95.342.865.522) |\n| Lưu chuyển tiền thuần trong kỳ | 50 | | 5.422.510.282 | (620.112.273) |\n| Tiền và tương đương tiền đầu năm | 60 | V.1 | 10.979.746.628 | 11.653.619.367 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | | 61.723.574 | 84.363.927 |\n| Tiền và tương đương tiền cuối kỳ | 70 | V.1 | 16.463.980.484 | 12.358.095.567 |",
+        "questions": [
+            {
+                "question": "Tổng tiền chi để mua sắm tài sản cố định năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lưu chuyển tiền thuần từ hoạt động tài chính năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh tiền thu từ thanh lý tài sản cố định năm nay và năm trước.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi lớn trong lưu chuyển tiền thuần từ hoạt động đầu tư giữa hai kỳ.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá chiến lược tài trợ của công ty dựa trên lưu chuyển tiền từ hoạt động tài chính.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Giải thích tác động của việc không có hoạt động phát hành cổ phiếu hoặc trả lại vốn góp cho chủ sở hữu trong dòng tiền từ hoạt động tài chính.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Phân tích mối quan hệ giữa lưu chuyển tiền thuần trong kỳ và sự thay đổi trong tiền và tương đương tiền cuối kỳ.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính toán tỷ lệ tiền thu từ đi vay so với tiền trả nợ gốc vay trong năm nay và năm trước, và rút ra nhận định về quản lý nợ của công ty.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "11",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Đặc điểm hoạt động, Năm tài chính, Đơn vị tiền tệ, Chuẩn mực và Chế độ kế toán áp dụng)\nLoại nội dung: Text\n\nI. ĐẶC ĐIỂM HOẠT ĐỘNG\n1. Hình thức sở hữu vốn<br>Công ty Cổ phần Nhựa Tân Đại Hưng (sau đây gọi tắt là Công ty hay Công ty mẹ) là công ty cổ phần.\n2. Lĩnh vực kinh doanh<br>Lĩnh vực kinh doanh của Công ty là sản xuất công nghiệp và kinh doanh thương mại.\n3. Ngành nghề kinh doanh<br>Hoạt động kinh doanh chính của Công ty là: Sản xuất, chế biến sản phẩm cao su (không hoạt động tại trụ sở); Sản xuất bao bì nhựa PP, PE, PET (trừ tái chế phế thải, trừ sản xuất xốp cách nhiệt sử dụng ga R141b, sử dụng polyol trộn sẵn HCFC-141b); Mua bán bao bì nhựa PP, PE, PET; Mua bán sản phẩm nhựa, nguyên liệu nhựa, bột màu.\n4. Chu kỳ sản xuất, kinh doanh thông thường<br>Chu kỳ sản xuất kinh doanh thông thường của Công ty không quá 12 tháng.\n5. Đặc điểm hoạt động của Tập đoàn trong kỳ có ảnh hưởng đến Báo cáo tài chính hợp nhất giữa niên độ<br>Doanh thu kỳ này của Tập đoàn giảm so với cùng kỳ năm trước do thị trường xuất khẩu sang Châu Âu gặp khó khăn bởi nhiều yếu tố tác động. Tuy nhiên, trong kỳ Tập đoàn thực hiện cắt giảm các khoản chi phí và thực hiện thanh lý, nhượng bán một số tài sản cố định làm cho lợi nhuận kỳ này của Tập đoàn tăng.\n6. Cấu trúc Tập đoàn<br>Tập đoàn bao gồm Công ty mẹ và 01 công ty con chịu sự kiểm soát của Công ty mẹ.<br>Công ty chỉ đầu tư vào công ty con là Công ty TNHH TĐH có trụ sở chính tại C11 - C15, Cụm công nghiệp nhựa Đức Hòa Hạ, Huyện Đức Hòa, Tỉnh Long An. Hoạt động kinh doanh chính của công ty con này là sản xuất các sản phẩm bao bì nhựa. Tại ngày kết thúc kỳ kế toán, tỷ lệ lợi ích và tỷ lệ quyền biểu quyết của Công ty tại công ty con này là 100%.<br>Trong kỳ, Tập đoàn không phát sinh việc mua thêm, thanh lý hay thoái vốn tại công ty con.\n7. Tuyên bố về khả năng so sánh thông tin trên Báo cáo tài chính hợp nhất<br>Các số liệu tương ứng của kỳ trước so sánh được với số liệu của kỳ này.\n8. Nhân viên<br>Tại ngày kết thúc kỳ kế toán, Tập đoàn có 361 nhân viên đang làm việc tại các công ty trong Tập đoàn (số đầu năm là 419 nhân viên).\n\nII. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Năm tài chính<br>Năm tài chính của Tập đoàn bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.\n2. Đơn vị tiền tệ sử dụng trong kế toán<br>Đơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND) do phần lớn các nghiệp vụ được thực hiện bằng đơn vị tiền tệ VND.\n\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chế độ kế toán áp dụng<br>Tập đoàn áp dụng các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014, Thông tư số 53/2016/TT-BTC ngày 21 tháng 3 năm 2016 hướng dẫn Chế độ Kế toán doanh nghiệp, Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 hướng dẫn lập và trình bày Báo cáo tài chính hợp nhất và các thông tư khác hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.\n2. Tuyên bố về việc tuân thủ chuẩn mực kế toán và chế độ kế toán<br>Ban Tổng Giám đốc đảm bảo đã tuân thủ yêu cầu của các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014, Thông tư số 53/2016/TT-BTC ngày 21 tháng 3 năm 2016, Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 cũng như các thông tư khác hướng dẫn thực hiện chuẩn mực kế toán của Bộ Tài chính trong việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.",
+        "questions": [
+            {
+                "question": "Công ty Cổ phần Nhựa Tân Đại Hưng thuộc hình thức sở hữu vốn nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Công ty con của Tập đoàn là gì và hoạt động kinh doanh chính của nó là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Năm tài chính của Tập đoàn bắt đầu và kết thúc vào ngày nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Đơn vị tiền tệ sử dụng trong kế toán của Tập đoàn là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giải thích nguyên nhân doanh thu kỳ này của Tập đoàn giảm so với cùng kỳ năm trước.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "So sánh số lượng nhân viên của Tập đoàn tại cuối kỳ kế toán so với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tầm quan trọng của việc tuân thủ các Chuẩn mực và Chế độ Kế toán Việt Nam đối với độ tin cậy của báo cáo tài chính.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích chiến lược của Tập đoàn khi cắt giảm chi phí và thanh lý tài sản để tăng lợi nhuận trong bối cảnh doanh thu giảm.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Xác định các Thông tư chính mà Tập đoàn áp dụng trong việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Việc tỷ lệ lợi ích và quyền biểu quyết của Công ty mẹ tại công ty con là 100% có ý nghĩa gì đối với việc hợp nhất báo cáo tài chính?",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "12",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Cơ sở lập & hợp nhất)\nLoại nội dung: Text\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở lập Báo cáo tài chính hợp nhất<br>Báo cáo tài chính hợp nhất giữa niên độ được lập trên cơ sở kế toán dồn tích (trừ các thông tin liên quan đến các luồng tiền).\n2. Cơ sở hợp nhất<br>Báo cáo tài chính hợp nhất giữa niên độ bao gồm Báo cáo tài chính giữa niên độ của công ty mẹ và Báo cáo tài chính giữa niên độ của công ty con. Công ty con là đơn vị chịu sự kiểm soát của công ty mẹ. Sự kiểm soát tồn tại khi công ty mẹ có khả năng trực tiếp hay gián tiếp chi phối các chính sách tài chính và hoạt động của công ty con để thu được các lợi ích kinh tế từ các hoạt động này. Khi xác định quyền kiểm soát có tính đến quyền biểu quyết tiềm năng phát sinh từ các quyền chọn mua hoặc các công cụ nợ và công cụ vốn có thể chuyển đổi thành cổ phiếu phổ thông tại ngày kết thúc kỳ kế toán.<br>Kết quả hoạt động kinh doanh của các công ty con được mua lại hoặc bán đi trong kỳ được trình bày trong Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ từ ngày mua hoặc cho đến ngày bán khoản đầu tư ở công ty con đó.<br>Báo cáo tài chính giữa niên độ của công ty mẹ và công ty con sử dụng để hợp nhất được lập cho cùng một kỳ kế toán và áp dụng các chính sách kế toán thống nhất cho các giao dịch và sự kiện cùng loại trong những hoàn cảnh tương tự. Trong trường hợp chính sách kế toán của công ty con khác với chính sách kế toán áp dụng thống nhất trong Tập đoàn thì Báo cáo tài chính của công ty con sẽ có những điều chỉnh thích hợp trước khi sử dụng cho việc lập Báo cáo tài chính hợp nhất giữa niên độ.<br>Số dư các tài khoản trên Bảng cân đối kế toán giữa các công ty trong cùng Tập đoàn, các giao dịch nội bộ, các khoản lãi nội bộ chưa thực hiện phát sinh từ các giao dịch này phải được loại trừ hoàn toàn. Các khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ cũng được loại bỏ (trừ khi chi phí tạo nên khoản lỗ đó không thể thu hồi được).",
+        "questions": [
+            {
+                "question": "Báo cáo tài chính hợp nhất giữa niên độ được lập trên cơ sở kế toán nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khi nào một công ty được coi là công ty con của công ty mẹ?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Những yếu tố nào được tính đến khi xác định quyền kiểm soát của công ty mẹ?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích quy tắc xử lý các giao dịch nội bộ và các khoản lãi/lỗ nội bộ chưa thực hiện trong báo cáo hợp nhất.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tại sao việc áp dụng chính sách kế toán thống nhất giữa công ty mẹ và công ty con là quan trọng trong báo cáo hợp nhất?",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc mua lại hoặc bán đi công ty con trong kỳ đến Báo cáo kết quả hoạt động kinh doanh hợp nhất.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Nếu một công ty con có chính sách kế toán khác với chính sách chung của Tập đoàn, Tập đoàn sẽ xử lý như thế nào để lập báo cáo hợp nhất?",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "13",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Giao dịch bằng ngoại tệ và Tiền và các khoản tương đương tiền)\nLoại nội dung: Text\n\n3. Các giao dịch bằng ngoại tệ<br>Các giao dịch phát sinh bằng ngoại tệ được chuyển đổi theo tỷ giá tại ngày phát sinh giao dịch, số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán được quy đổi theo tỷ giá tại ngày này.<br>Chênh lệch tỷ giá phát sinh trong kỳ từ các giao dịch bằng ngoại tệ được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính. Chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán sau khi bù trừ chênh lệch tăng và chênh lệch giảm được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính.<br>Tỷ giá sử dụng để quy đổi các giao dịch phát sinh bằng ngoại tệ là tỷ giá giao dịch thực tế tại thời điểm phát sinh giao dịch. Tỷ giá giao dịch thực tế là tỷ giá xấp xỉ với tỷ giá mua bán chuyển khoản trung bình của ngân hàng thương mại nơi Tập đoàn thường xuyên có giao dịch. Tỷ giá xấp xỉ không vượt quá 1% so với tỷ giá mua bán chuyển khoản trung bình. Tỷ giá mua bán chuyển khoản trung bình được xác định hàng tháng trên cơ sở trung bình cộng giữa tỷ giá mua và tỷ giá bán chuyển khoản hàng ngày của ngân hàng thương mại nơi Tập đoàn thường xuyên có giao dịch.<br>Tỷ giá sử dụng để đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán là tỷ giá mua bán chuyển khoản trung bình của ngân hàng thương mại nơi Tập đoàn thường xuyên có giao dịch.\n\n4. Tiền và các khoản tương đương tiền<br>Tiền bao gồm tiền mặt và tiền gửi ngân hàng không kỳ hạn. Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi không quá 03 tháng kể từ ngày đầu tư, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có rủi ro trong việc chuyển đổi thành tiền tại thời điểm báo cáo.",
+        "questions": [
+            {
+                "question": "Các giao dịch phát sinh bằng ngoại tệ được chuyển đổi theo tỷ giá nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Chênh lệch tỷ giá phát sinh từ các giao dịch bằng ngoại tệ được ghi nhận vào đâu trên báo cáo tài chính?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tiền và các khoản tương đương tiền bao gồm những gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Tiêu chí để xác định các khoản tương đương tiền là gì?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tác động của biến động tỷ giá hối đoái đến báo cáo kết quả hoạt động kinh doanh của Tập đoàn.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Tại sao việc sử dụng tỷ giá mua bán chuyển khoản trung bình của ngân hàng là quan trọng trong việc quy đổi ngoại tệ?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ rủi ro tỷ giá mà công ty phải đối mặt dựa trên chính sách kế toán ngoại tệ hiện tại.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "14",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Các khoản đầu tư tài chính)\nLoại nội dung: Text\n\n5. Các khoản đầu tư tài chính<br>Các khoản đầu tư tài chính của Tập đoàn bao gồm đầu tư nắm giữ đến ngày đáo hạn và đầu tư vào công cụ vốn của đơn vị khác.\n\nCác khoản đầu tư nắm giữ đến ngày đáo hạn<br>Khoản đầu tư được phân loại là nắm giữ đến ngày đáo hạn khi Tập đoàn có ý định và khả năng giữ đến ngày đáo hạn. Các khoản đầu tư nắm giữ đến ngày đáo hạn của Tập đoàn chỉ có các khoản tiền gửi ngân hàng có kỳ hạn và trái phiếu được nắm giữ đến ngày đáo hạn với mục đích thu lãi hàng kỳ.<br>Các khoản đầu tư nắm giữ đến ngày đáo hạn được ghi nhận ban đầu theo giá gốc. Sau khi ghi nhận ban đầu, các khoản đầu tư này được ghi nhận theo giá trị có thể thu hồi. Thu nhập lãi từ các khoản đầu tư nắm giữ đến ngày đáo hạn sau ngày mua được ghi nhận trên Báo cáo kết quả hoạt động kinh doanh trên cơ sở dự thu. Lãi được hưởng trước khi Tập đoàn nắm giữ được ghi giảm trừ vào giá gốc tại thời điểm mua.<br>Khi có các bằng chứng chắc chắn cho thấy một phần hoặc toàn bộ khoản đầu tư có thể không thu hồi được và số tổn thất được xác định một cách đáng tin cậy thì tổn thất được ghi nhận vào chi phí tài chính trong kỳ và giảm trừ trực tiếp giá trị đầu tư.\n\nCác khoản đầu tư vào công cụ vốn của đơn vị khác<br>Đầu tư vào công cụ vốn của đơn vị khác bao gồm các khoản đầu tư công cụ vốn nhưng Tập đoàn không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư.<br>Các khoản đầu tư vào công cụ vốn của đơn vị khác được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc khoản góp vốn cộng các chi phí trực tiếp liên quan đến hoạt động đầu tư. Cổ tức và lợi nhuận của các kỳ trước khi khoản đầu tư được mua được hạch toán giảm giá trị của chính khoản đầu tư đó. Cổ tức và lợi nhuận của các kỳ sau khi khoản đầu tư được mua được ghi nhận doanh thu.<br>Dự phòng tổn thất cho các khoản đầu tư vào công cụ vốn của đơn vị khác được trích lập như sau:<br>- Đối với khoản đầu tư vào cổ phiếu niêm yết hoặc giá trị hợp lý khoản đầu tư được xác định tin cậy, việc lập dự phòng dựa trên giá trị thị trường của cổ phiếu.<br>- Đối với khoản đầu tư không xác định được giá trị hợp lý tại thời điểm báo cáo, việc lập dự phòng được thực hiện căn cứ vào khoản lỗ của bên được đầu tư với mức trích lập bằng chênh lệch giữa vốn đầu tư thực tế của các chủ sở hữu và vốn chủ sở hữu tại ngày kết thúc kỳ kế toán nhân với tỷ lệ vốn điều lệ của Tập đoàn so với tổng vốn điều lệ thực góp tại đơn vị khác.<br>Tăng, giảm số dự phòng tổn thất đầu tư vào công cụ vốn của đơn vị khác cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí tài chính.",
+        "questions": [
+            {
+                "question": "Có bao nhiêu loại khoản đầu tư tài chính của Tập đoàn?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Các khoản đầu tư nắm giữ đến ngày đáo hạn được ghi nhận ban đầu theo giá trị nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khi nào một khoản đầu tư được phân loại là nắm giữ đến ngày đáo hạn?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích cách hạch toán cổ tức và lợi nhuận từ các khoản đầu tư vào công cụ vốn của đơn vị khác.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ thận trọng của Tập đoàn trong việc trích lập dự phòng tổn thất cho các khoản đầu tư tài chính.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc không thể xác định giá trị hợp lý cho khoản đầu tư không niêm yết đến việc trích lập dự phòng.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích cách Tập đoàn ghi nhận tổn thất đối với các khoản đầu tư nắm giữ đến ngày đáo hạn.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "15",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Các khoản phải thu và Hàng tồn kho)\nLoại nội dung: Text\n\n6. Các khoản phải thu<br>Các khoản nợ phải thu được trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi. Việc phân loại các khoản phải thu là phải thu khách hàng và phải thu khác được thực hiện theo nguyên tắc sau:<br>- Phải thu của khách hàng phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua - bán giữa Tập đoàn và người mua là đơn vị độc lập với Tập đoàn, bao gồm cả các khoản phải thu về tiền bán hàng xuất khẩu ủy thác cho đơn vị khác.<br>- Phải thu khác phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua - bán.<br>Dự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào dự kiến mức tổn thất có thể xảy ra.<br>Tăng, giảm số dư dự phòng nợ phải thu khó đòi cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí quản lý doanh nghiệp.\n\n7. Hàng tồn kho<br>Hàng tồn kho được ghi nhận theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được.\nGiá gốc hàng tồn kho được xác định như sau:<br>- Nguyên vật liệu, hàng hóa bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.<br>- Thành phẩm bao gồm chi phí nguyên vật liệu, nhân công trực tiếp và chi phí sản xuất chung có liên quan trực tiếp được phân bổ dựa trên mức độ hoạt động bình thường.<br>- Chi phí sản xuất kinh doanh dở dang bao gồm chi phí nguyên vật liệu chính, chi phí nhân công, chi phí sản xuất chung và những chi phí liên quan trực tiếp khác.<br>Giá gốc của hàng tồn kho được tính theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.\nGiá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong kỳ sản xuất, kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng.<br>Dự phòng giảm giá hàng tồn kho được lập cho từng mặt hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào giá vốn hàng bán.",
+        "questions": [
+            {
+                "question": "Các khoản nợ phải thu được trình bày theo giá trị nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Hàng tồn kho được ghi nhận theo nguyên tắc nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Sự khác biệt giữa phải thu khách hàng và phải thu khác là gì?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích cách xác định giá gốc hàng tồn kho của Tập đoàn.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ thận trọng của chính sách trích lập dự phòng phải thu khó đòi và dự phòng giảm giá hàng tồn kho của Tập đoàn.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của phương pháp tính giá hàng tồn kho bình quân gia quyền đến báo cáo tài chính trong môi trường giá cả biến động.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích ý nghĩa của việc ghi nhận tăng, giảm dự phòng phải thu khó đòi vào chi phí quản lý doanh nghiệp và dự phòng giảm giá hàng tồn kho vào giá vốn hàng bán.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "16",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Chi phí trả trước và Tài sản cố định hữu hình)\nLoại nội dung: Text\n\n8. Chi phí trả trước<br>Chi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán. Chi phí trả trước của Tập đoàn là chi phí nghiên cứu, phát triển sản phẩm mới và được phân bổ vào chi phí theo phương pháp đường thẳng trong 05 năm.\n\n9. Tài sản cố định hữu hình<br>Tài sản cố định hữu hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà Tập đoàn phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí phát sinh không thỏa mãn điều kiện trên được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ.<br>Khi tài sản cố định hữu hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ.<br>Tài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính. Số năm khấu hao của các loại tài sản cố định hữu hình như sau:\n\n| Loại tài sản cố định | Số năm |\n|---|---|\n| Nhà cửa, vật kiến trúc | 05 - 34 |\n| Máy móc và thiết bị | 02 - 12 |\n| Phương tiện vận tải, truyền dẫn | 03 - 10 |\n| Thiết bị, dụng cụ quản lý | 03 - 10 |",
+        "questions": [
+            {
+                "question": "Chi phí trả trước của Tập đoàn chủ yếu là loại chi phí gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Phương pháp và thời gian phân bổ chi phí nghiên cứu, phát triển sản phẩm mới là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nguyên giá tài sản cố định hữu hình bao gồm những chi phí nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khi nào chi phí phát sinh sau ghi nhận ban đầu được ghi tăng nguyên giá tài sản cố định?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tác động của phương pháp khấu hao đường thẳng đến báo cáo tài chính của công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích rủi ro tài chính nếu thời gian hữu dụng ước tính của tài sản cố định không chính xác.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Làm thế nào để xác định lãi hoặc lỗ khi thanh lý tài sản cố định hữu hình?",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "17",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Tài sản cố định vô hình)\nLoại nội dung: Text và Bảng\n\n10. Tài sản cố định vô hình<br>Tài sản cố định vô hình được thể hiện theo nguyên giá trừ hao mòn lũy kế.<br>Nguyên giá tài sản cố định vô hình bao gồm toàn bộ các chi phí mà Tập đoàn phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Chi phí liên quan đến tài sản cố định vô hình phát sinh sau khi ghi nhận ban đầu được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ trừ khi các chi phí này gắn liền với một tài sản cố định vô hình cụ thể và làm tăng lợi ích kinh tế từ các tài sản này.<br>Khi tài sản cố định vô hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ.<br>Tài sản cố định vô hình của Tập đoàn bao gồm:\n\nQuyền sử dụng đất<br>Quyền sử dụng đất là toàn bộ các chi phí thực tế Tập đoàn đã chi ra có liên quan trực tiếp tới đất sử dụng, bao gồm tiền chi ra để có quyền sử dụng đất, chi phí cho đền bù, giải phóng mặt bằng, san lấp mặt bằng, lệ phí trước bạ,... Quyền sử dụng đất được khấu hao theo thời gian giao đất 34 năm 03 tháng.\n\nChương trình phần mềm máy tính<br>Chi phí liên quan đến các chương trình phần mềm máy tính không phải là một bộ phận gắn kết với phần cứng có liên quan được vốn hóa. Nguyên giá của phần mềm máy tính là toàn bộ các chi phí mà Tập đoàn đã chi ra tính đến thời điểm đưa phần mềm vào sử dụng. Phần mềm máy tính được khấu hao theo phương pháp đường thẳng trong 02 năm.\n\n| Chương trình | Quyền | phần mềm |\n|---|---|---|\n| sử dụng đất | máy tính | Cộng |\n| **Nguyên giá** | | |\n| Số đầu năm | 33.200.000.000 | 164.800.000 |\n| Số cuối kỳ | 33.200.000.000 | 164.800.000 |\n| **Trong đó** | | |\n| Đã khấu hao hết nhưng vẫn còn sử dụng | - | 164.800.000 |\n| **Giá trị hao mòn** | | |\n| Số đầu năm | 3.842.000.000 | 164.800.000 |\n| Khấu hao trong kỳ | 480.000.000 | - |\n| Số cuối kỳ | 4.322.000.000 | 164.800.000 |\n| **Giá trị còn lại** | | |\n| Số đầu năm | 29.358.000.000 | - |\n| Số cuối kỳ | 28.878.000.000 | - |",
+        "questions": [
+            {
+                "question": "Tài sản cố định vô hình của Tập đoàn bao gồm những loại tài sản nào?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Thời gian khấu hao của quyền sử dụng đất là bao lâu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nguyên giá của quyền sử dụng đất tại cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khi nào chi phí liên quan đến tài sản cố định vô hình được vốn hóa?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tác động của việc phần mềm máy tính đã khấu hao hết nhưng vẫn còn sử dụng đến hiệu quả hoạt động của công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích sự khác biệt trong cách xác định và xử lý chi phí giữa quyền sử dụng đất và chương trình phần mềm máy tính.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Tính toán tổng nguyên giá và tổng giá trị hao mòn lũy kế của tài sản cố định vô hình tại cuối kỳ.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "18",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Nợ phải trả và Chi phí phải trả, Vốn chủ sở hữu)\nLoại nội dung: Text\n\n11. Các khoản nợ phải trả và chi phí phải trả<br>Các khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả.<br>Việc phân loại các khoản phải trả là phải trả người bán, chi phí phải trả và phải trả khác được thực hiện theo nguyên tắc sau:<br>- Phải trả người bán phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập với Tập đoàn, bao gồm cả các khoản phải trả khi nhập khẩu thông qua người nhận ủy thác.<br>- Chi phí phải trả phản ánh các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước.<br>- Phải trả khác phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.<br>Các khoản nợ phải trả và chi phí phải trả được phân loại ngắn hạn và dài hạn trên Bảng cân đối kế toán hợp nhất giữa niên độ căn cứ theo kỳ hạn còn lại tại ngày kết thúc kỳ kế toán.\n\n12. Vốn chủ sở hữu<br>Vốn góp của chủ sở hữu<br>Vốn góp của chủ sở hữu được ghi nhận theo số vốn thực tế đã góp của các cổ đông của Công ty.\n\nThặng dư vốn cổ phần<br>Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu hoặc phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn. Chi phí trực tiếp liên quan đến việc phát hành bổ sung cổ phiếu và tái phát hành cổ phiếu quỹ được ghi giảm thặng dư vốn cổ phần.\n\nCổ phiếu quỹ<br>Khi mua lại cổ phiếu do Công ty phát hành, khoản tiền trả bao gồm cả các chi phí liên quan đến giao dịch được ghi nhận là cổ phiếu quỹ và được phản ánh là một khoản giảm trừ trong vốn chủ sở hữu. Khi tái phát hành, chênh lệch giữa giá tái phát hành và giá sổ sách của cổ phiếu quỹ được ghi vào khoản mục Thặng dư vốn cổ phần.",
+        "questions": [
+            {
+                "question": "Chi phí phải trả được ghi nhận dựa trên cơ sở nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Các khoản nợ phải trả và chi phí phải trả được phân loại ngắn hạn và dài hạn dựa trên tiêu chí nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giải thích sự khác biệt giữa phải trả người bán và chi phí phải trả.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Thặng dư vốn cổ phần được ghi nhận từ những nguồn nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tác động của việc mua lại cổ phiếu quỹ đến vốn chủ sở hữu của công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích cách các chi phí trực tiếp liên quan đến phát hành cổ phiếu ảnh hưởng đến thặng dư vốn cổ phần.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích cách hạch toán chênh lệch khi tái phát hành cổ phiếu quỹ.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "19",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Phân phối lợi nhuận và Ghi nhận doanh thu và thu nhập)\nLoại nội dung: Text\n\n13. Phân phối lợi nhuận<br>Lợi nhuận sau thuế thu nhập doanh nghiệp được phân phối cho các cổ đông sau khi đã trích lập các quỹ theo Điều lệ của Công ty cũng như các quy định của pháp luật và đã được Đại hội đồng cổ đông phê duyệt.<br>Việc phân phối lợi nhuận cho các cổ đông được cân nhắc đến các khoản mục phi tiền tệ nằm trong lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến luồng tiền và khả năng chi trả cổ tức như lãi do đánh giá lại tài sản mang đi góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác.<br>Cổ tức được ghi nhận là nợ phải trả khi được Đại hội đồng cổ đông phê duyệt và khi có quyết định chi trả cổ tức của Hội đồng quản trị.\n\n14. Ghi nhận doanh thu và thu nhập<br>Doanh thu bán hàng hóa, thành phẩm<br>Doanh thu bán hàng hóa, thành phẩm được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:<br>- Tập đoàn đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.<br>- Tập đoàn đã không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.<br>- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại sản phẩm, hàng hóa đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại sản phẩm, hàng hóa (trừ trường hợp khách hàng có quyền trả lại hàng hóa dưới hình thức đổi lại để lấy hàng hóa, dịch vụ khác).<br>- Tập đoàn đã hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.<br>- Xác định được chi phí liên quan đến giao dịch bán hàng.\n\nDoanh thu cung cấp dịch vụ<br>Doanh thu cung cấp dịch vụ được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:<br>- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại dịch vụ đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại dịch vụ đã cung cấp.<br>- Tập đoàn đã hoặc sẽ thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.<br>- Xác định được phần công việc đã hoàn thành vào thời điểm báo cáo.<br>- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.<br>Trường hợp dịch vụ được thực hiện trong nhiều năm thì doanh thu được ghi nhận trong kỳ được căn cứ vào kết quả phần công việc đã hoàn thành vào ngày kết thúc kỳ kế toán.\n\nDoanh thu cho thuê tài sản hoạt động<br>Doanh thu cho thuê tài sản hoạt động được ghi nhận theo phương pháp đường thẳng trong suốt thời gian cho thuê. Tiền cho thuê nhận trước của nhiều kỳ được phân bổ vào doanh thu phù hợp với thời gian cho thuê.\n\nTiền lãi<br>Tiền lãi được ghi nhận trên cơ sở thời gian và lãi suất thực tế từng kỳ.\n\nCổ tức và lợi nhuận được chia<br>Cổ tức và lợi nhuận được chia được ghi nhận khi Tập đoàn đã được quyền nhận cổ tức hoặc lợi nhuận từ việc góp vốn. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được.",
+        "questions": [
+            {
+                "question": "Lợi nhuận sau thuế được phân phối cho cổ đông sau khi hoàn thành những bước nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khi nào cổ tức được ghi nhận là nợ phải trả?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu hai điều kiện để ghi nhận doanh thu từ bán hàng hóa, thành phẩm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích cách Tập đoàn ghi nhận doanh thu cung cấp dịch vụ được thực hiện trong nhiều năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ thận trọng của chính sách ghi nhận doanh thu bán hàng của Tập đoàn, đặc biệt là các điều kiện về chuyển giao rủi ro và quyền sở hữu.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của các khoản mục phi tiền tệ trong lợi nhuận sau thuế chưa phân phối đến khả năng chi trả cổ tức bằng tiền mặt của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "So sánh cách ghi nhận cổ tức bằng tiền và cổ tức bằng cổ phiếu, và giải thích ý nghĩa của sự khác biệt này.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "20",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Chi phí đi vay, Các khoản chi phí, Thuế thu nhập doanh nghiệp)\nLoại nội dung: Text\n\n15. Chi phí đi vay<br>Chi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay.<br>Chi phí đi vay được ghi nhận vào chi phí khi phát sinh. Trường hợp chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán thì chi phí đi vay này được tính vào giá trị của tài sản đó. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng. Các khoản thu nhập phát sinh từ việc đầu tư tạm thời các khoản vay được ghi giảm nguyên giá tài sản có liên quan.<br>Đối với các khoản vốn vay chung trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang thì chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể.\n\n16. Các khoản chi phí<br>Chi phí là những khoản làm giảm lợi ích kinh tế được ghi nhận tại thời điểm giao dịch phát sinh hoặc khi có khả năng tương đối chắc chắn sẽ phát sinh trong tương lai (không phân biệt đã chi tiền hay chưa). Các khoản chi phí và khoản doanh thu do nó tạo ra phải được ghi nhận đồng thời theo nguyên tắc phù hợp. Trong trường hợp nguyên tắc phù hợp xung đột với nguyên tắc thận trọng, chi phí được ghi nhận căn cứ vào bản chất và quy định của các chuẩn mực kế toán để đảm bảo phản ánh giao dịch một cách trung thực, hợp lý.\n\n17. Thuế thu nhập doanh nghiệp<br>Chi phí thuế thu nhập doanh nghiệp bao gồm thuế thu nhập hiện hành và thuế thu nhập hoãn lại.\n\nThuế thu nhập hiện hành<br>Thuế thu nhập hiện hành là khoản thuế được tính dựa trên thu nhập tính thuế. Thu nhập tính thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán, các chi phí không được trừ cũng như điều chỉnh các khoản thu nhập không phải chịu thuế và các khoản lỗ được chuyển.",
+        "questions": [
+            {
+                "question": "Chi phí đi vay bao gồm những khoản mục nào?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Khi nào chi phí đi vay được vốn hóa vào giá trị tài sản?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Thuế thu nhập hiện hành được tính dựa trên cơ sở nào?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giải thích nguyên tắc phù hợp trong ghi nhận chi phí và doanh thu.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá sự thận trọng của Tập đoàn trong việc ghi nhận chi phí trong trường hợp nguyên tắc phù hợp xung đột với nguyên tắc thận trọng.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc vốn hóa chi phí đi vay đối với tài sản dở dang và báo cáo kết quả hoạt động kinh doanh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích cách thu nhập tính thuế được xác định khi có chênh lệch tạm thời và các chi phí không được trừ.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "21",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Thuế thu nhập doanh nghiệp (tiếp theo) và Bên liên quan)\nLoại nội dung: Text\n\nThuế thu nhập hoãn lại<br>Thuế thu nhập hoãn lại là khoản thuế thu nhập doanh nghiệp sẽ phải nộp hoặc sẽ được hoàn lại do chênh lệch tạm thời giữa giá trị ghi sổ của tài sản và nợ phải trả cho mục đích lập Báo cáo tài chính và cơ sở tính thuế thu nhập. Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế. Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ này.<br>Giá trị ghi sổ của tài sản thuế thu nhập doanh nghiệp hoãn lại được xem xét lại vào ngày kết thúc kỳ kế toán và sẽ được ghi giảm đến mức đảm bảo chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng. Các tài sản thuế thu nhập doanh nghiệp hoãn lại chưa được ghi nhận trước đây được xem xét lại vào ngày kết thúc kỳ kế toán và được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế để có thể sử dụng các tài sản thuế thu nhập hoãn lại chưa ghi nhận này.<br>Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho năm tài sản được thu hồi hay nợ phải trả được thanh toán dựa trên các mức thuế suất có hiệu lực tại ngày kết thúc kỳ kế toán. Thuế thu nhập hoãn lại được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh và chỉ ghi trực tiếp vào vốn chủ sở hữu khi khoản thuế đó liên quan đến các khoản mục được ghi thẳng vào vốn chủ sở hữu.<br>Tài sản thuế thu nhập hoãn lại và nợ thuế thu nhập hoãn lại phải trả được bù trừ khi:<br>- Tập đoàn có quyền hợp pháp được bù trừ giữa tài sản thuế thu nhập hiện hành với thuế thu nhập hiện hành phải nộp và<br>- Các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả này liên quan đến thuế thu nhập doanh nghiệp được quản lý bởi cùng một cơ quan thuế<br>- Đối với cùng một đơn vị chịu thuế hoặc<br>- Tập đoàn dự định thanh toán thuế thu nhập hiện hành phải trả và tài sản thuế thu nhập hiện hành trên cơ sở thuần hoặc thu hồi tài sản đồng thời với việc thanh toán nợ phải trả trong từng kỳ tương lai khi các khoản trọng yếu của thuế thu nhập hoãn lại phải trả hoặc tài sản thuế thu nhập hoãn lại được thanh toán hoặc thu hồi.\n\n18. Bên liên quan<br>Các bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung. Trong việc xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được chú trọng nhiều hơn hình thức pháp lý.",
+        "questions": [
+            {
+                "question": "Thuế thu nhập hoãn lại là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khi nào tài sản thuế thu nhập hoãn lại được ghi nhận?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Nêu hai điều kiện để tài sản thuế thu nhập hoãn lại và nợ thuế thu nhập hoãn lại phải trả được bù trừ.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích định nghĩa về 'bên liên quan' theo chính sách kế toán của Tập đoàn.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ ảnh hưởng của thuế suất dự tính trong tương lai đến việc xác định giá trị tài sản và nợ thuế thu nhập hoãn lại.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích rủi ro tài chính phát sinh từ các giao dịch với bên liên quan nếu bản chất của mối quan hệ không được đánh giá đúng mức.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích trường hợp thuế thu nhập hoãn lại được ghi nhận trực tiếp vào vốn chủ sở hữu thay vì Báo cáo kết quả hoạt động kinh doanh.",
+                "difficulty": "Hard_QA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "22",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (Chính sách kế toán áp dụng - Báo cáo theo bộ phận)\nLoại nội dung: Text\n\n19. Báo cáo theo bộ phận<br>Bộ phận theo lĩnh vực kinh doanh là một phần có thể xác định riêng biệt tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ và có rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh khác.<br>Bộ phận theo khu vực địa lý là một phần có thể xác định riêng biệt tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ trong phạm vi một môi trường kinh tế cụ thể và có rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh trong các môi trường kinh tế khác.<br>Thông tin bộ phận được lập và trình bày phù hợp với chính sách kế toán áp dụng cho việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ của Tập đoàn.",
+        "questions": [
+            {
+                "question": "Có bao nhiêu loại bộ phận được báo cáo theo chính sách kế toán của Tập đoàn?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Thế nào là bộ phận theo lĩnh vực kinh doanh?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Điểm khác biệt chính giữa bộ phận theo lĩnh vực kinh doanh và bộ phận theo khu vực địa lý là gì?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Việc lập và trình bày thông tin bộ phận phù hợp với chính sách kế toán chung của Tập đoàn có ý nghĩa gì?",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tầm quan trọng của việc báo cáo theo bộ phận đối với các nhà đầu tư và nhà quản lý.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá khả năng phân tích rủi ro và lợi ích kinh tế riêng biệt của từng bộ phận kinh doanh của Tập đoàn dựa trên định nghĩa này.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "23",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (V.1 Tiền và V.2 Các khoản đầu tư tài chính - text)\nLoại nội dung: Text và Bảng\n\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT GIỮA NIÊN ĐỘ\n1. Tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền mặt | 599.349.920 | 531.534.818 |\n| Tiền gửi ngân hàng | 15.864.630.564 | 6.448.211.810 |\n| Các khoản tương đương tiền | | |\n| Tiền gửi ngân hàng có kỳ hạn gốc không quá 03 tháng | - | 4.000.000.000 |\n| **Cộng** | **16.463.980.484** | **10.979.746.628** |\n\n2. Các khoản đầu tư tài chính<br>Các khoản đầu tư tài chính của Tập đoàn bao gồm đầu tư nắm giữ đến ngày đáo hạn và đầu tư góp vốn vào đơn vị khác.",
+        "questions": [
+            {
+                "question": "Số dư tiền mặt cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tổng cộng tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "So sánh số dư tiền gửi ngân hàng cuối kỳ so với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Các khoản đầu tư tài chính của Tập đoàn bao gồm những gì?",
+                "difficulty": "Medium_NER"
+            },
+            {
+                "question": "Đánh giá sự thay đổi trong cơ cấu tiền và các khoản tương đương tiền của Tập đoàn giữa cuối kỳ và đầu năm.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc không còn các khoản tương đương tiền là tiền gửi ngân hàng có kỳ hạn gốc không quá 03 tháng đến thanh khoản của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích ý nghĩa của sự tăng trưởng đáng kể trong tiền gửi ngân hàng cuối kỳ.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "24",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (V.2 Các khoản đầu tư tài chính - tables)\nLoại nội dung: Bảng\n\n2a. Đầu tư nắm giữ đến ngày đáo hạn\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Giá trị ghi sổ (Số cuối kỳ) | Giá gốc (Số đầu năm) | Giá trị ghi sổ (Số đầu năm) |\n|---|---|---|---|---|\n| Ngắn hạn | 79.675.000.000 | 79.675.000.000 | 78.000.000.000 | 78.000.000.000 |\n| Tiền gửi có kỳ hạn | 79.675.000.000 | 79.675.000.000 | 78.000.000.000 | 78.000.000.000 |\n| Dài hạn | 8.000.000.000 | 8.000.000.000 | 8.000.000.000 | 8.000.000.000 |\n| Trái phiếu | 8.000.000.000 | 8.000.000.000 | 8.000.000.000 | 8.000.000.000 |\n| **Cộng** | **87.675.000.000** | **87.675.000.000** | **86.000.000.000** | **86.000.000.000** |\n\nTrong đó, một số khoản tiền gửi có kỳ hạn trên 06 tháng đến dưới 01 năm trị giá là 74.000.000.000 VND được thế chấp để đảm bảo khoản vay tại Ngân hàng TMCP Á Châu - Chi nhánh TP. Hồ Chí Minh (xem thuyết minh số V.16).\n\n2b. Đầu tư góp vốn vào đơn vị khác\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá gốc (Số đầu năm) | Dự phòng (Số đầu năm) |\n|---|---|---|---|---|\n| Ngân hàng TMCP Á Châu | 198.949 | - | 198.949 | - |\n| Ngân hàng TMCP Xuất nhập khẩu Việt Nam | 148.448 | - | 148.448 | - |\n| **Cộng** | **347.397** | **-** | **347.397** | **-** |\n\nGiá trị hợp lý<br>Tập đoàn chưa xác định giá trị hợp lý của các khoản đầu tư không có giá niêm yết do chưa có hướng dẫn cụ thể về việc xác định giá trị hợp lý.",
+        "questions": [
+            {
+                "question": "Tổng giá trị gốc của các khoản đầu tư nắm giữ đến ngày đáo hạn tại cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Những khoản mục nào được sử dụng để thế chấp khoản vay tại Ngân hàng TMCP Á Châu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh tổng giá trị các khoản đầu tư nắm giữ đến ngày đáo hạn ngắn hạn và dài hạn.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Giải thích lý do Tập đoàn chưa xác định được giá trị hợp lý cho các khoản đầu tư không có giá niêm yết.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá rủi ro thanh khoản liên quan đến việc thế chấp các khoản tiền gửi có kỳ hạn.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc không có dự phòng cho các khoản đầu tư góp vốn vào đơn vị khác đối với báo cáo tài chính.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá chiến lược đầu tư tài chính của công ty dựa trên tỷ trọng của các khoản đầu tư nắm giữ đến ngày đáo hạn so với đầu tư góp vốn vào đơn vị khác.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "25",
+        "content": "Công ty: Công ty Cổ phần Nhựa Tân Đại Hưng\nMã cổ phiếu: TPC\nLoại báo cáo: Báo cáo tài chính hợp nhất giữa niên độ đã soát xét\nThời gian: 6 tháng đầu năm tài chính 2024, kết thúc ngày 30 tháng 6 năm 2024\nÝ kiến kiểm toán: Kết luận soát xét chấp nhận toàn phần\n\nSection: Bản thuyết minh Báo cáo tài chính hợp nhất giữa niên độ (V.3 Phải thu ngắn hạn của khách hàng, V.4 Trả trước cho người bán ngắn hạn, V.5 Phải thu ngắn hạn khác)\nLoại nội dung: Bảng\n\n3. Phải thu ngắn hạn của khách hàng\n| Khách hàng | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Công ty Cổ phần Eco Thái Mỹ | 21.373.500.000 | - |\n| Top Road Import and Export Corp | 10.669.833.432 | 12.346.108.954 |\n| Aqua Dam Inc | 5.347.260.270 | - |\n| Công ty Cổ phần Chăn nuôi C.P Việt Nam | 3.795.301.094 | 29.673.500.000 |\n| Nordic Way Group AS | 2.044.317.644 | 3.365.937.373 |\n| Các khách hàng khác | 32.840.638.869 | 35.267.479.159 |\n| **Cộng** | **76.070.851.309** | **80.653.025.486** |\n\n4. Trả trước cho người bán ngắn hạn\n| Nhà cung cấp | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Công ty TNHH Sản xuất và Thương mại Quốc tế Trường Sinh | - | 8.000.000 |\n| Các nhà cung cấp khác | 200.542.975 | 90.091.006 |\n| **Cộng** | **200.542.975** | **98.091.006** |\n\n5. Phải thu ngắn hạn khác\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị (Số đầu năm) | Dự phòng (Số đầu năm) |\n|---|---|---|---|---|\n| Tiền lãi có kỳ hạn dự thu | 1.673.361.096 | - | 2.115.200.000 | - |\n| Tạm ứng | 670.500.000 | - | 941.300.000 | - |\n| Ký quỹ, đặt cọc ngắn hạn | 22

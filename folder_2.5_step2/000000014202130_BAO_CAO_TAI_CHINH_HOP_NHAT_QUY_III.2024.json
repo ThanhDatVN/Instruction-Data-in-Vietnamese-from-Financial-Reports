@@ -1,0 +1,68 @@
+Đây là dữ liệu huấn luyện instruction-output được tạo ra dựa trên các chunk và câu hỏi đã cung cấp:
+
+```json
+[
+  {
+    "instruction": "Tổng tài sản của Ngân hàng TMCP Kiên Long tại ngày 30/09/2024 là bao nhiêu?",
+    "input": "1",
+    "output": "Tổng tài sản của Ngân hàng TMCP Kiên Long tại ngày 30/09/2024 là 91.827.176 triệu đồng."
+  },
+  {
+    "instruction": "Giá trị Tiền gửi tại ngân hàng nhà nước tại cuối Quý III/2024 là bao nhiêu?",
+    "input": "1",
+    "output": "Giá trị Tiền gửi tại ngân hàng nhà nước tại cuối Quý III/2024 là 2.428.866 triệu đồng."
+  },
+  {
+    "instruction": "So sánh khoản Cho vay khách hàng ròng (sau dự phòng) giữa ngày 30/09/2024 và 31/12/2023. Thay đổi như thế nào?",
+    "input": "1",
+    "output": "Khoản Cho vay khách hàng ròng (sau dự phòng) tại ngày 30/09/2024 là 58.441.111 triệu đồng (59.275.018 - 833.907), so với 51.159.819 triệu đồng (51.783.052 - 623.233) tại ngày 31/12/2023. Khoản này đã tăng 7.281.292 triệu đồng."
+  },
+  {
+    "instruction": "Tính tỷ lệ Tài sản cố định hữu hình trên tổng Tài sản cố định tại ngày 30/09/2024.",
+    "input": "1",
+    "output": "Tại ngày 30/09/2024, Tài sản cố định hữu hình là 587.895 triệu đồng và Tài sản cố định vô hình là 786.250 triệu đồng, tổng Tài sản cố định là 1.374.145 triệu đồng. Tỷ lệ Tài sản cố định hữu hình trên tổng Tài sản cố định là (587.895 / 1.374.145) * 100% = 42.78%."
+  },
+  {
+    "instruction": "Đánh giá mức độ tăng trưởng của các khoản cho vay khách hàng và dự phòng rủi ro cho vay khách hàng. Điều này có ý nghĩa gì đối với chất lượng tín dụng của ngân hàng?",
+    "input": "1",
+    "output": "Khoản Cho vay khách hàng ròng tăng từ 51.159.819 triệu đồng tại 31/12/2023 lên 58.441.111 triệu đồng tại 30/09/2024, tức là tăng 14.23%. Dự phòng rủi ro cho vay khách hàng tăng từ (623.233) triệu đồng tại 31/12/2023 lên (833.907) triệu đồng tại 30/09/2024, tức là tăng 33.81%. Mức tăng của dự phòng rủi ro (33.81%) cao hơn đáng kể so với mức tăng của cho vay khách hàng (14.23%). Điều này có ý nghĩa là ngân hàng đang thận trọng hơn trong việc đánh giá rủi ro tín dụng hoặc chất lượng tín dụng có dấu hiệu suy giảm, đòi hỏi phải trích lập dự phòng nhiều hơn để bù đắp các khoản nợ tiềm ẩn rủi ro."
+  },
+  {
+    "instruction": "Phân tích cơ cấu tài sản của ngân hàng. Đâu là tài sản chiếm tỷ trọng lớn nhất và điều này phản ánh chiến lược kinh doanh gì?",
+    "input": "1",
+    "output": "Tại ngày 30/09/2024, tổng tài sản của Ngân hàng là 91.827.176 triệu đồng. Trong đó, tài sản chiếm tỷ trọng lớn nhất là Cho vay khách hàng ròng (sau dự phòng) với 58.441.111 triệu đồng (tức 63.64% tổng tài sản). Các khoản mục đáng chú ý khác bao gồm Tiền, vàng gửi tại các TCTD khác và cho vay các TCTD khác (19.266.938 triệu đồng, chiếm 20.98%) và Tài sản Có khác (5.929.652 triệu đồng, chiếm 6.46%).\n\nViệc Cho vay khách hàng chiếm tỷ trọng lớn nhất (hơn 63%) phản ánh chiến lược kinh doanh cốt lõi của ngân hàng là tập trung vào hoạt động cấp tín dụng để tạo ra thu nhập từ lãi suất. Điều này cho thấy ngân hàng đang nỗ lực mở rộng danh mục cho vay để thúc đẩy tăng trưởng doanh thu và lợi nhuận từ hoạt động ngân hàng truyền thống."
+  },
+  {
+    "instruction": "Dựa vào dữ liệu, đánh giá khả năng thanh khoản ngắn hạn của ngân hàng bằng cách tính toán hệ số thanh toán hiện hành (current ratio), giả sử tất cả các khoản tiền gửi và cho vay TCTD khác là ngắn hạn.",
+    "input": "1",
+    "output": "Thông tin không có trong dữ liệu. Dữ liệu trong chunk chỉ cung cấp chi tiết về tài sản. Để tính hệ số thanh toán hiện hành, cần có thông tin về nợ ngắn hạn, vốn không được cung cấp trong chunk này."
+  },
+  {
+    "instruction": "Với sự gia tăng của dự phòng rủi ro cho vay khách hàng, những rủi ro tiềm ẩn nào có thể ảnh hưởng đến kết quả hoạt động kinh doanh của ngân hàng trong tương lai?",
+    "input": "1",
+    "output": "Dự phòng rủi ro cho vay khách hàng của ngân hàng đã tăng từ (623.233) triệu đồng tại 31/12/2023 lên (833.907) triệu đồng tại 30/09/2024. Sự gia tăng này cho thấy những rủi ro tiềm ẩn sau:\n\n1.  **Giảm lợi nhuận:** Việc trích lập dự phòng rủi ro là một khoản chi phí, sự gia tăng này sẽ trực tiếp làm giảm lợi nhuận trước thuế của ngân hàng.\n2.  **Suy giảm chất lượng tài sản:** Sự tăng dự phòng có thể là dấu hiệu cho thấy chất lượng danh mục cho vay đang xấu đi, có nhiều khoản nợ có nguy cơ khó đòi hoặc mất vốn. Điều này có thể dẫn đến việc phải xóa nợ trong tương lai, gây tổn thất trực tiếp.\n3.  **Tăng áp lực vốn:** Khi chất lượng tài sản suy giảm và dự phòng tăng, có thể gây áp lực lên yêu cầu vốn, đòi hỏi ngân hàng phải tăng vốn hoặc hạn chế tăng trưởng tín dụng để duy trì tỷ lệ an toàn vốn.\n4.  **Ảnh hưởng đến niềm tin nhà đầu tư:** Sự gia tăng đáng kể của dự phòng rủi ro có thể khiến nhà đầu tư lo ngại về sức khỏe tài chính và khả năng quản lý rủi ro của ngân hàng, ảnh hưởng tiêu cực đến giá cổ phiếu.\n5.  **Hạn chế khả năng mở rộng kinh doanh:** Ngân hàng có thể trở nên thận trọng hơn trong việc cấp tín dụng, dẫn đến tốc độ tăng trưởng cho vay chậm lại và ảnh hưởng đến doanh thu lãi trong tương lai."
+  },
+  {
+    "instruction": "Tổng nợ phải trả của Ngân hàng TMCP Kiên Long tại ngày 30/09/2024 là bao nhiêu?",
+    "input": "2",
+    "output": "Tổng nợ phải trả của Ngân hàng TMCP Kiên Long tại ngày 30/09/2024 là 85.494.854 triệu đồng."
+  },
+  {
+    "instruction": "Vốn điều lệ của ngân hàng tại ngày 30/09/2024 là bao nhiêu?",
+    "input": "2",
+    "output": "Vốn điều lệ của ngân hàng tại ngày 30/09/2024 là 3.652.819 triệu đồng."
+  },
+  {
+    "instruction": "Khoản mục Tiền gửi của khách hàng đã thay đổi như thế nào từ 31/12/2023 đến 30/09/2024?",
+    "input": "2",
+    "output": "Khoản mục Tiền gửi của khách hàng đã tăng từ 56.897.722 triệu đồng tại 31/12/2023 lên 60.041.114 triệu đồng tại 30/09/2024, tức là tăng 3.143.392 triệu đồng."
+  },
+  {
+    "instruction": "Tính tỷ lệ Lợi nhuận chưa phân phối trên Vốn chủ sở hữu tại ngày 30/09/2024.",
+    "input": "2",
+    "output": "Tại ngày 30/09/2024, Lợi nhuận chưa phân phối là 2.131.768 triệu đồng và Tổng Vốn và các quỹ (Vốn chủ sở hữu) là 6.332.322 triệu đồng. Tỷ lệ Lợi nhuận chưa phân phối trên Vốn chủ sở hữu là (2.131.768 / 6.332.322) * 100% = 33.67%."
+  },
+  {
+    "instruction": "Đánh giá sự thay đổi trong cơ cấu nguồn vốn (nợ so với vốn chủ sở hữu) của ngân hàng giữa hai kỳ báo cáo.",
+    "input": "2",
+    "output": "Tại ngày 30/09/2024:\n- Tổng Nợ phải trả: 85.494.854 triệu đồng (chiếm 93.10% tổng nguồn vốn).\n- Tổng Vốn chủ sở hữu: 6.332.322 triệu đồng (chiếm 6.90% tổng nguồn vốn).\n\nTại ngày 31/12/2023:\n- Tổng Nợ phải trả: 81.215.044 triệu đồng (chiếm 93.38% tổng nguồn vốn).\n- Tổng Vốn chủ sở hữu: 5.757.558 triệu đồng (chiếm 6.62% tổng nguồn vốn).\n\nĐánh giá:\nNgân hàng duy trì một cơ cấu nguồn vốn với tỷ lệ nợ rất cao (trên 93%) và vốn chủ sở hữu ở mức thấp (dưới 7%) ở cả hai kỳ. So với cuối năm 2023, tỷ trọng nợ giảm nhẹ từ 93.38% xuống 93.10%, và tỷ trọng vốn chủ sở hữu tăng nhẹ từ 6.62% lên 6.90%. Sự thay đổi này cho thấy ngân hàng có một chút cải thiện về cơ cấu vốn, với việc tăng nhẹ tỷ trọng vốn chủ sở hữu. Tuy nhiên, ngân hàng vẫn phụ thuộc phần lớn vào nợ phải trả để tài trợ hoạt động, điều

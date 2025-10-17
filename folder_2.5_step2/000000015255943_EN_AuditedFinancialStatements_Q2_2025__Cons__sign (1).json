@@ -1,0 +1,914 @@
+```json
+[
+  {
+    "instruction": "Tổng tài sản ngắn hạn của Vietravel vào ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "1",
+    "output": "Tổng tài sản ngắn hạn của Vietravel vào ngày 30/06/2025 là 2,211,094,018,021 VND."
+  },
+  {
+    "instruction": "Mã cổ phiếu của công ty là gì?",
+    "input": "1",
+    "output": "Mã cổ phiếu của công ty là VTR."
+  },
+  {
+    "instruction": "So sánh Tiền và các khoản tương đương tiền cuối quý và đầu năm. Thay đổi bao nhiêu?",
+    "input": "1",
+    "output": "Tiền và các khoản tương đương tiền cuối quý (30/06/2025) là 207,366,280,769 VND. Số đầu năm (01/01/2025) là 116,856,560,614 VND. Khoản mục này đã tăng 90,509,720,155 VND."
+  },
+  {
+    "instruction": "Tỷ trọng của các khoản phải thu ngắn hạn trên tổng tài sản ngắn hạn cuối quý II/2025 là bao nhiêu?",
+    "input": "1",
+    "output": "Tổng tài sản ngắn hạn cuối quý II/2025 là 2,211,094,018,021 VND. Các khoản phải thu ngắn hạn cuối quý II/2025 là 1,553,928,245,442 VND. Tỷ trọng của các khoản phải thu ngắn hạn trên tổng tài sản ngắn hạn là 1,553,928,245,442 / 2,211,094,018,021 ≈ 70.28%."
+  },
+  {
+    "instruction": "Đánh giá mức độ thanh khoản của công ty dựa trên số liệu Tiền và các khoản tương đương tiền.",
+    "input": "1",
+    "output": "Tiền và các khoản tương đương tiền của công ty đã tăng đáng kể từ 116,856,560,614 VND vào đầu năm lên 207,366,280,769 VND vào cuối quý II/2025. Sự gia tăng này cho thấy mức độ thanh khoản của công ty đã được cải thiện, có nhiều tiền mặt và tài sản có tính thanh khoản cao hơn để đáp ứng các nghĩa vụ ngắn hạn và tận dụng cơ hội kinh doanh."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của việc giảm mạnh Các khoản phải thu ngắn hạn từ đầu năm đến cuối quý.",
+    "input": "1",
+    "output": "Các khoản phải thu ngắn hạn đã giảm mạnh từ 2,048,313,627,545 VND vào đầu năm xuống còn 1,553,928,245,442 VND vào cuối quý II/2025. Mức giảm này (khoảng 494 tỷ VND) có thể xuất phát từ việc công ty đã đẩy mạnh thu hồi công nợ từ khách hàng hoặc giảm lượng bán chịu. Tác động tích cực là giúp cải thiện dòng tiền hoạt động và giảm rủi ro nợ khó đòi. Tuy nhiên, nếu nguyên nhân là do giảm doanh số bán chịu, nó cũng có thể ảnh hưởng đến khả năng cạnh tranh hoặc sự linh hoạt trong chính sách tín dụng với khách hàng."
+  },
+  {
+    "instruction": "Nếu công ty có kế hoạch mở rộng đầu tư tài chính ngắn hạn, yếu tố nào trong tài sản ngắn hạn sẽ bị ảnh hưởng nhiều nhất?",
+    "input": "1",
+    "output": "Nếu công ty có kế hoạch mở rộng đầu tư tài chính ngắn hạn, khoản mục \"Tiền và các khoản tương đương tiền\" (Mã số 110) và \"Các khoản đầu tư tài chính ngắn hạn\" (Mã số 120) sẽ bị ảnh hưởng nhiều nhất. Cụ thể, Tiền và các khoản tương đương tiền có thể giảm đi để tài trợ cho các khoản đầu tư mới, trong khi Các khoản đầu tư tài chính ngắn hạn (như Chứng khoán kinh doanh, Đầu tư nắm giữ đến ngày đáo hạn) sẽ tăng lên. Việc này có thể ảnh hưởng đến khả năng thanh khoản tức thời nhưng có thể mang lại lợi nhuận cao hơn trong tương lai nếu các khoản đầu tư thành công."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn của Vietravel vào ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "2",
+    "output": "Tổng tài sản dài hạn của Vietravel vào ngày 30/06/2025 là 555,524,669,192 VND."
+  },
+  {
+    "instruction": "Giá trị tài sản cố định hữu hình cuối quý II/2025 là bao nhiêu VND?",
+    "input": "2",
+    "output": "Giá trị tài sản cố định hữu hình cuối quý II/2025 là 5,041,716,447 VND."
+  },
+  {
+    "instruction": "So sánh giá trị Lợi thế thương mại cuối quý với đầu năm. Thay đổi như thế nào?",
+    "input": "2",
+    "output": "Giá trị Lợi thế thương mại cuối quý (30/06/2025) là 360,813,000 VND. Giá trị đầu năm (01/01/2025) là 481,084,000 VND. Lợi thế thương mại đã giảm 120,271,000 VND."
+  },
+  {
+    "instruction": "Đánh giá sự thay đổi trong cơ cấu tài sản dài hạn, đặc biệt là sự tăng trưởng của Đầu tư tài chính dài hạn.",
+    "input": "2",
+    "output": "Tổng tài sản dài hạn của công ty đã tăng mạnh từ 129,654,722,243 VND đầu năm lên 555,524,669,192 VND cuối quý II/2025. Sự tăng trưởng này chủ yếu do sự tăng đột biến của Đầu tư tài chính dài hạn, từ 4,509,540,413 VND lên 405,685,200,413 VND, đặc biệt là khoản mục Đầu tư vào công ty con (399,881,280,000 VND mới được ghi nhận). Ngoài ra, Tài sản dở dang dài hạn cũng tăng từ 82,309,855,537 VND lên 107,956,557,798 VND. Sự thay đổi này cho thấy công ty đang tập trung vào mở rộng hoạt động kinh doanh thông qua các công ty con và đầu tư vào các dự án dài hạn, thay đổi đáng kể cơ cấu tài sản dài hạn theo hướng tăng trưởng đầu tư."
+  },
+  {
+    "instruction": "Xác định các khoản mục chính cấu thành Tài sản dở dang dài hạn của công ty.",
+    "input": "2",
+    "output": "Các khoản mục chính cấu thành Tài sản dở dang dài hạn của công ty là Chi phí sản xuất, kinh doanh dở dang dài hạn và Chi phí xây dựng cơ bản dở dang. Tuy nhiên, theo dữ liệu, chỉ có Chi phí xây dựng cơ bản dở dang có số liệu (107,956,557,798 VND vào 30/06/2025)."
+  },
+  {
+    "instruction": "Phân tích tác động của việc tăng mạnh Tài sản dở dang dài hạn đến hiệu quả sử dụng vốn của công ty.",
+    "input": "2",
+    "output": "Tài sản dở dang dài hạn của Vietravel đã tăng mạnh từ 82,309,855,537 VND vào đầu năm lên 107,956,557,798 VND vào cuối quý II/2025. Sự gia tăng này cho thấy công ty đang triển khai nhiều dự án đầu tư hoặc xây dựng. Tác động ban đầu là vốn bị chiếm dụng trong các dự án chưa hoàn thành, chưa tạo ra doanh thu hoặc lợi nhuận, có thể làm giảm hiệu quả sử dụng vốn và lợi suất đầu tư trong ngắn hạn. Tuy nhiên, nếu các dự án này hoàn thành đúng tiến độ và đi vào hoạt động hiệu quả, chúng sẽ góp phần tăng cường năng lực sản xuất kinh doanh và tạo ra lợi nhuận trong tương lai."
+  },
+  {
+    "instruction": "Dự báo rủi ro tiềm ẩn từ việc gia tăng các khoản đầu tư vào công ty con và các đơn vị khác trong bối cảnh hiện tại.",
+    "input": "2",
+    "output": "Việc Đầu tư tài chính dài hạn tăng đột biến, đặc biệt là \"Đầu tư vào công ty con\" từ 0 VND lên 399,881,280,000 VND, cùng với sự gia tăng của \"Đầu tư góp vốn vào đơn vị khác\" có thể mang lại rủi ro đáng kể. Rủi ro tiềm ẩn bao gồm: (1) Rủi ro hoạt động: nếu các công ty con và đơn vị đầu tư không hoạt động hiệu quả, có thể ảnh hưởng tiêu cực đến lợi nhuận hợp nhất của Tập đoàn. (2) Rủi ro thanh khoản: các khoản đầu tư dài hạn làm giảm lượng tiền mặt và tài sản ngắn hạn, có thể gây áp lực lên khả năng thanh toán ngắn hạn. (3) Rủi ro định giá: giá trị của các khoản đầu tư này có thể biến động, đặc biệt nếu không có thị trường giao dịch công khai hoặc việc đánh giá giá trị gặp khó khăn. (4) Rủi ro quản lý: việc mở rộng nhiều công ty con, đơn vị khác đòi hỏi năng lực quản lý và kiểm soát lớn hơn, nếu không hiệu quả có thể dẫn đến thất thoát."
+  },
+  {
+    "instruction": "Tổng nợ phải trả của Vietravel vào ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "3",
+    "output": "Tổng nợ phải trả của Vietravel vào ngày 30/06/2025 là 2,291,235,492,923 VND."
+  },
+  {
+    "instruction": "Vốn chủ sở hữu của công ty cuối quý II/2025 là bao nhiêu VND?",
+    "input": "3",
+    "output": "Vốn chủ sở hữu của công ty cuối quý II/2025 là 475,383,194,290 VND."
+  },
+  {
+    "instruction": "So sánh Vay và nợ thuê tài chính ngắn hạn cuối quý với đầu năm. Thay đổi bao nhiêu?",
+    "input": "3",
+    "output": "Vay và nợ thuê tài chính ngắn hạn cuối quý (30/06/2025) là 817,420,883,813 VND. Số đầu năm (01/01/2025) là 882,415,637,929 VND. Khoản mục này đã giảm 64,994,754,116 VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ Nợ dài hạn trên tổng Nợ phải trả cuối quý II/2025.",
+    "input": "3",
+    "output": "Nợ dài hạn cuối quý II/2025 là 52,944,553,948 VND. Tổng nợ phải trả cuối quý II/2025 là 2,291,235,492,923 VND. Tỷ lệ Nợ dài hạn trên tổng Nợ phải trả là 52,944,553,948 / 2,291,235,492,923 ≈ 2.31%."
+  },
+  {
+    "instruction": "Đánh giá mức độ phụ thuộc của công ty vào nợ ngắn hạn so với nợ dài hạn.",
+    "input": "3",
+    "output": "Dựa trên số liệu cuối quý II/2025, Nợ ngắn hạn là 2,238,290,938,975 VND và Nợ dài hạn là 52,944,553,948 VND. Công ty phụ thuộc rất lớn vào nợ ngắn hạn, chiếm phần lớn trong tổng nợ phải trả. Điều này cho thấy công ty chủ yếu sử dụng các nguồn tài trợ ngắn hạn để tài trợ cho hoạt động kinh doanh, có thể tạo áp lực lên khả năng thanh khoản và rủi ro tái cấp vốn nếu dòng tiền không ổn định hoặc các khoản vay ngắn hạn không thể tái tục dễ dàng."
+  },
+  {
+    "instruction": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) vào ngày 30/06/2025.",
+    "input": "3",
+    "output": "Tổng nợ phải trả vào ngày 30/06/2025 là 2,291,235,492,923 VND. Vốn chủ sở hữu vào ngày 30/06/2025 là 475,383,194,290 VND. Hệ số nợ trên vốn chủ sở hữu (D/E ratio) là 2,291,235,492,923 / 475,383,194,290 ≈ 4.82."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính tiềm ẩn từ sự biến động của Lợi nhuận sau thuế chưa phân phối lũy kế.",
+    "input": "3",
+    "output": "Lợi nhuận sau thuế chưa phân phối lũy kế đến cuối kỳ trước đã tăng đáng kể từ 1,254,693,208 VND (đầu năm 2025) lên 32,181,803,085 VND (cuối quý II/2025), và Lợi nhuận sau thuế chưa phân phối kỳ này là 8,161,326,636 VND. Tổng Lợi nhuận sau thuế chưa phân phối là 40,343,129,721 VND. Mặc dù sự gia tăng lợi nhuận giữ lại là tích cực, nhưng nếu có sự biến động mạnh (ví dụ, sụt giảm) trong các kỳ tiếp theo, có thể ảnh hưởng đến khả năng công ty giữ lại vốn để tái đầu tư hoặc chi trả cổ tức cho cổ đông. Sự phụ thuộc vào lợi nhuận giữ lại để tăng vốn chủ sở hữu cũng đặt ra rủi ro nếu hoạt động kinh doanh không bền vững."
+  },
+  {
+    "instruction": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vietravel trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "4",
+    "output": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vietravel trong 6 tháng đầu năm 2025 là 3,319,423,631,122 VND."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế của cổ đông công ty mẹ trong 6 tháng đầu năm 2025 là bao nhiêu?",
+    "input": "4",
+    "output": "Lợi nhuận sau thuế của cổ đông công ty mẹ trong 6 tháng đầu năm 2025 là 8,161,326,636 VND."
+  },
+  {
+    "instruction": "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa 6 tháng đầu năm 2025 và 2024. Mức tăng/giảm là bao nhiêu?",
+    "input": "4",
+    "output": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là 206,608,341,634 VND. Trong 6 tháng đầu năm 2024 là 203,122,173,008 VND. Mức tăng là 3,486,168,626 VND."
+  },
+  {
+    "instruction": "Tỷ lệ Chi phí quản lý doanh nghiệp trên Doanh thu thuần năm 2025 là bao nhiêu?",
+    "input": "4",
+    "output": "Chi phí quản lý doanh nghiệp trong 6 tháng đầu năm 2025 là 141,244,474,343 VND. Doanh thu thuần về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là 3,319,423,631,122 VND. Tỷ lệ Chi phí quản lý doanh nghiệp trên Doanh thu thuần là 141,244,474,343 / 3,319,423,631,122 ≈ 4.26%."
+  },
+  {
+    "instruction": "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên Lợi nhuận thuần từ hoạt động kinh doanh giữa hai kỳ.",
+    "input": "4",
+    "output": "Lợi nhuận thuần từ hoạt động kinh doanh của công ty trong 6 tháng đầu năm 2025 là 1,722,033,702 VND, giảm đáng kể so với 12,571,946,886 VND của 6 tháng đầu năm 2024. Điều này cho thấy hiệu quả hoạt động kinh doanh cốt lõi của công ty đã suy giảm mạnh trong kỳ này. Mặc dù Doanh thu thuần có tăng nhẹ, nhưng sự gia tăng của Giá vốn hàng bán, Chi phí tài chính và Chi phí quản lý doanh nghiệp có thể là những yếu tố chính gây áp lực lên lợi nhuận thuần từ hoạt động kinh doanh."
+  },
+  {
+    "instruction": "Phân tích các yếu tố chính dẫn đến sự sụt giảm của Lợi nhuận sau thuế thu nhập doanh nghiệp trong kỳ này so với kỳ trước.",
+    "input": "4",
+    "output": "Lợi nhuận sau thuế thu nhập doanh nghiệp đã giảm từ 18,989,653,013 VND (6 tháng đầu năm 2024) xuống còn 6,981,522,612 VND (6 tháng đầu năm 2025). Các yếu tố chính dẫn đến sự sụt giảm này bao gồm: (1) Lợi nhuận thuần từ hoạt động kinh doanh giảm mạnh từ 12,571,946,886 VND xuống 1,722,033,702 VND, chủ yếu do Chi phí tài chính tăng từ (35,605,040,155) VND lên (51,429,043,855) VND và Chi phí quản lý doanh nghiệp tăng từ (136,866,538,668) VND lên (141,244,474,343) VND. (2) Mặc dù Doanh thu hoạt động tài chính có tăng và Chi phí bán hàng giảm, nhưng không đủ để bù đắp sự tăng lên của các chi phí khác. (3) Lợi nhuận khác cũng giảm từ 11,707,046,360 VND xuống 8,510,840,730 VND. Tất cả các yếu tố này đã góp phần làm giảm Tổng lợi nhuận kế toán trước thuế và kéo theo giảm Lợi nhuận sau thuế."
+  },
+  {
+    "instruction": "Dự báo tác động của Chi phí lãi vay tăng lên đến lợi nhuận của công ty trong các quý tiếp theo.",
+    "input": "4",
+    "output": "Chi phí lãi vay của công ty đã tăng từ 30,543,370,429 VND trong 6 tháng đầu năm 2024 lên 34,392,427,918 VND trong 6 tháng đầu năm 2025. Nếu xu hướng tăng này tiếp diễn trong các quý tiếp theo, chi phí lãi vay cao hơn sẽ làm giảm lợi nhuận thuần từ hoạt động kinh doanh của công ty, từ đó kéo theo giảm tổng lợi nhuận kế toán trước thuế và lợi nhuận sau thuế. Điều này có thể ảnh hưởng tiêu cực đến khả năng sinh lời và khả năng chi trả cổ tức, đồng thời làm tăng áp lực tài chính cho công ty."
+  },
+  {
+    "instruction": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "5",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 là 242,384,860,074 VND."
+  },
+  {
+    "instruction": "Tổng tiền chi trả cho người lao động trong 6 tháng đầu năm 2025 là bao nhiêu?",
+    "input": "5",
+    "output": "Tổng tiền chi trả cho người lao động trong 6 tháng đầu năm 2025 là 95,849,722,104 VND."
+  },
+  {
+    "instruction": "So sánh Lưu chuyển tiền thuần từ hoạt động đầu tư giữa 6 tháng đầu năm 2025 và 2024. Sự thay đổi này có ý nghĩa gì?",
+    "input": "5",
+    "output": "Lưu chuyển tiền thuần từ hoạt động đầu tư trong 6 tháng đầu năm 2025 là 379,647,171,864 VND, tăng mạnh so với mức âm (2,994,182,526) VND trong 6 tháng đầu năm 2024. Sự thay đổi đáng kể này có ý nghĩa rằng công ty đã có những hoạt động thu tiền ròng rất lớn từ đầu tư, chủ yếu từ \"Tiền thu hồi đầu tư góp vốn vào đơn vị khác\" (484,500,000,000 VND). Điều này cho thấy công ty đã thoái vốn hoặc thu hồi các khoản đầu tư, tạo ra một lượng tiền mặt đáng kể từ hoạt động đầu tư, trái ngược hoàn toàn với việc chi tiền ròng cho đầu tư trong kỳ trước."
+  },
+  {
+    "instruction": "Phân tích sự thay đổi trong Lưu chuyển tiền thuần từ hoạt động tài chính giữa hai kỳ báo cáo.",
+    "input": "5",
+    "output": "Lưu chuyển tiền thuần từ hoạt động tài chính đã chuyển từ dương 177,654,731,781 VND trong 6 tháng đầu năm 2024 sang âm (46,330,118,289) VND trong 6 tháng đầu năm 2025. Sự thay đổi này chủ yếu do \"Tiền trả nợ gốc vay\" đã tăng mạnh từ (858,300,120,481) VND lên (1,263,196,184,274) VND, vượt xa so với mức tăng của \"Tiền vay và các khoản nợ phải trả khác\" (từ 1,035,954,852,262 VND lên 1,216,893,566,308 VND). Điều này cho thấy trong kỳ 2025, công ty đã chi trả nợ gốc vay nhiều hơn đáng kể so với việc đi vay mới, dẫn đến dòng tiền ròng âm từ hoạt động tài chính."
+  },
+  {
+    "instruction": "Liệt kê các hoạt động chính đóng góp vào dòng tiền từ hoạt động đầu tư trong 6 tháng đầu năm 2025.",
+    "input": "5",
+    "output": "Các hoạt động chính đóng góp vào dòng tiền từ hoạt động đầu tư trong 6 tháng đầu năm 2025 bao gồm: Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác (33,305,958,804 VND), Tiền chi cho vay, mua các công cụ nợ của đơn vị khác (71,400,000,000 VND), Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác (650,000,000 VND), Tiền chi đầu tư góp vốn vào đơn vị khác (1,294,380,000 VND), Tiền thu hồi đầu tư góp vốn vào đơn vị khác (484,500,000,000 VND) và Tiền thu lãi tiền cho vay, cổ tức và lợi nhuận được chia (497,510,668 VND)."
+  },
+  {
+    "instruction": "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+    "input": "5",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vietravel trong 6 tháng đầu năm 2025 là 242,384,860,074 VND, tăng đáng kể so với 134,373,158,729 VND trong cùng kỳ năm 2024. Dòng tiền dương và tăng trưởng từ hoạt động kinh doanh cho thấy công ty có khả năng tạo ra tiền mặt từ hoạt động cốt lõi của mình, đây là một dấu hiệu tích cực về khả năng tự tài trợ. Điều này giúp công ty có nguồn lực để tài trợ cho các hoạt động đầu tư và tài chính mà không quá phụ thuộc vào các nguồn bên ngoài, mặc dù vẫn có các hoạt động đầu tư và tài chính lớn."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính khi công ty có dòng tiền âm từ hoạt động tài chính trong kỳ này.",
+    "input": "5",
+    "output": "Dòng tiền thuần từ hoạt động tài chính của công ty trong 6 tháng đầu năm 2025 là âm (46,330,118,289) VND. Mặc dù điều này cho thấy công ty đã trả nợ gốc vay nhiều hơn so với việc vay mới, điều này có thể là tích cực nếu công ty đang giảm đòn bẩy tài chính. Tuy nhiên, rủi ro tiềm ẩn xuất hiện nếu việc trả nợ này làm cạn kiệt nguồn tiền mặt hoặc nếu công ty cần vốn cho các hoạt động đầu tư hoặc kinh doanh nhưng lại không thể huy động dễ dàng từ các hoạt động tài chính (ví dụ, khó khăn trong việc vay mới). Nếu dòng tiền hoạt động kinh doanh không đủ bù đắp, công ty có thể đối mặt với áp lực thanh khoản."
+  },
+  {
+    "instruction": "Vốn điều lệ của Công ty Cổ phần Du lịch VIETRAVEL là bao nhiêu VND?",
+    "input": "6",
+    "output": "Vốn điều lệ của Công ty Cổ phần Du lịch VIETRAVEL là 292.390.900.000 VND (Hai trăm chín mươi hai tỷ ba trăm chín mươi triệu chín trăm nghìn đồng)."
+  },
+  {
+    "instruction": "Mã cổ phiếu của công ty là gì và được niêm yết trên sàn nào?",
+    "input": "6",
+    "output": "Mã cổ phiếu của công ty là VTR và được niêm yết trên sàn UPCoM."
+  },
+  {
+    "instruction": "Nêu 3 ngành nghề kinh doanh chính của Công ty mẹ.",
+    "input": "6",
+    "output": "Ba ngành nghề kinh doanh chính của Công ty mẹ là: Du lịch trong nước và quốc tế, Đại lý thu đổi ngoại tệ và Dịch vụ thu và chi trả ngoại tệ, và Quảng cáo thương mại."
+  },
+  {
+    "instruction": "Giải thích lý do Công ty Cổ phần Dịch vụ Vận tải Thế giới không được hợp nhất trong báo cáo tài chính hợp nhất giữa niên độ.",
+    "input": "6",
+    "output": "Công ty Cổ phần Dịch vụ Vận tải Thế giới không được hợp nhất trong báo cáo tài chính hợp nhất giữa niên độ vì Công ty mẹ mới chuyển nhượng vốn đầu tư hoặc mới thành lập nên chưa góp vốn. Cụ thể, Vietravel đã ký hợp đồng nhận chuyển nhượng cổ phần vào ngày 30 tháng 6 năm 2024."
+  },
+  {
+    "instruction": "Đánh giá mức độ kiểm soát của Vietravel đối với các công ty con được hợp nhất dựa trên tỷ lệ góp vốn và quyền biểu quyết.",
+    "input": "6",
+    "output": "Dựa trên bảng Cơ cấu Tập đoàn, Vietravel nắm giữ quyền kiểm soát cao đối với các công ty con được hợp nhất. Hầu hết các công ty con như Indochina Heritage Travel Company Limited, An Incentives SARL, Viet Nam Travel and Marketing Transports Joint Stock Company (U.S.A.), Viet Nam Travel and Marketing Transports Private Limited (Singapore), và Vietravel Hue One Member Limited Company đều có tỷ lệ góp vốn và tỷ lệ quyền biểu quyết là 100%. Đối với Sapphire Island Travel and Trading Investment Joint Stock Company và Viet Bees Events Media Joint Stock Company, tỷ lệ này là 51%. Điều này cho thấy Vietravel có quyền kiểm soát tuyệt đối hoặc đa số đối với các công ty con này, cho phép hợp nhất đầy đủ vào báo cáo tài chính."
+  },
+  {
+    "instruction": "Phân tích chiến lược mở rộng thị trường của Vietravel thông qua các công ty con và công ty liên kết ở nước ngoài.",
+    "input": "6",
+    "output": "Vietravel đang theo đuổi chiến lược mở rộng thị trường quốc tế thông qua việc thành lập và góp vốn vào các công ty con và liên kết ở nước ngoài. Các công ty con được hợp nhất bao gồm các đơn vị hoạt động du lịch ở Campuchia (Indochina Heritage Travel), Úc (Vietravel Australia), Pháp (An Incentives SARL), Hoa Kỳ (Viet Nam Travel and Marketing Transports Joint Stock Company) và Singapore (Viet Nam Travel and Marketing Transports Private Limited). Điều này cho thấy công ty đang xây dựng mạng lưới hoạt động trực tiếp tại các thị trường trọng điểm để phục vụ du lịch quốc tế và nội địa. Các công ty liên kết ở Thái Lan (Viet Nam Travel and Marketing Transports Co., Ltd.) cũng thể hiện sự hiện diện ở các thị trường lân cận. Chiến lược này giúp Vietravel tăng cường khả năng tiếp cận khách hàng quốc tế, đa dạng hóa nguồn doanh thu và mở rộng ảnh hưởng thương hiệu trên toàn cầu."
+  },
+  {
+    "instruction": "Dự báo tác động của việc không hợp nhất một số công ty con đến tính chính xác và đầy đủ của báo cáo tài chính hợp nhất.",
+    "input": "6",
+    "output": "Việc không hợp nhất một số công ty con như Trip U Travel Service Limited Liability Company, World Transportation Services Joint Stock Company và Cultural Development - Import - Export Joint Stock Company (do mới chuyển nhượng vốn đầu tư hoặc chưa góp vốn) có thể ảnh hưởng đến tính chính xác và đầy đủ của báo cáo tài chính hợp nhất. Cụ thể: (1) Tính đầy đủ: Báo cáo sẽ không phản ánh toàn bộ tài sản, nợ phải trả, vốn chủ sở hữu, doanh thu và chi phí của toàn bộ Tập đoàn, đặc biệt là các hoạt động kinh doanh của các công ty con này. (2) Tính chính xác: Các giao dịch nội bộ giữa Công ty mẹ và các công ty con không được hợp nhất sẽ không được loại trừ, có thể dẫn đến việc báo cáo các khoản phải thu/phải trả hoặc doanh thu/chi phí bị thổi phồng. (3) Khả năng so sánh: Việc thiếu thông tin về các công ty này có thể làm giảm khả năng so sánh hiệu suất và tình hình tài chính tổng thể của Tập đoàn."
+  },
+  {
+    "instruction": "Số lượng nhân viên của Vietravel tại ngày 30/06/2025 là bao nhiêu?",
+    "input": "7",
+    "output": "Tại ngày 30/06/2025, Tập đoàn có 1.185 nhân viên."
+  },
+  {
+    "instruction": "Niên độ kế toán của công ty kết thúc vào ngày nào hàng năm?",
+    "input": "7",
+    "output": "Niên độ kế toán của công ty kết thúc vào ngày 31 tháng 12 hàng năm."
+  },
+  {
+    "instruction": "Tập đoàn áp dụng các Thông tư nào của Bộ Tài chính để lập báo cáo tài chính hợp nhất?",
+    "input": "7",
+    "output": "Tập đoàn áp dụng Chuẩn mực kế toán Việt Nam, Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014, Thông tư số 53/2016/TT-BTC ngày 21 tháng 3 năm 2016 (sửa đổi, bổ sung Thông tư số 200/2014/TT-BTC), và Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 hướng dẫn lập và trình bày báo cáo tài chính hợp nhất, cùng các thông tư khác có liên quan của Bộ Tài chính."
+  },
+  {
+    "instruction": "Giải thích cách Lợi thế thương mại được ghi nhận ban đầu và sau ghi nhận ban đầu.",
+    "input": "7",
+    "output": "Lợi thế thương mại được ghi nhận ban đầu theo giá gốc là phần chênh lệch giữa giá phí hợp nhất kinh doanh so với phần lợi ích của Tập đoàn trong giá trị hợp lý thuần của các tài sản, nợ phải trả và nợ tiềm tàng có thể xác định được của bên bị mua. Nếu giá phí hợp nhất kinh doanh thấp hơn giá trị hợp lý thuần của tài sản thuần của công ty con được mua, khoản chênh lệch được ghi nhận trực tiếp vào báo cáo kết quả kinh doanh hợp nhất. Sau ghi nhận ban đầu, lợi thế thương mại được xác định theo nguyên giá trừ đi mọi khoản phân bổ lũy kế và được phân bổ theo phương pháp đường thẳng trong thời gian mười (10) năm."
+  },
+  {
+    "instruction": "Đánh giá tác động của chính sách loại trừ lợi nhuận chưa thực hiện từ các giao dịch nội bộ đối với lợi nhuận hợp nhất của Tập đoàn.",
+    "input": "7",
+    "output": "Chính sách loại trừ toàn bộ các giao dịch nội bộ và không bao gồm lợi nhuận chưa thực hiện (trừ khi chi phí không thể thu hồi được) là phù hợp với nguyên tắc kế toán hợp nhất. Tác động của chính sách này là đảm bảo rằng lợi nhuận hợp nhất của Tập đoàn chỉ phản ánh lợi nhuận từ các giao dịch với các bên ngoài Tập đoàn, tránh tình trạng lợi nhuận bị phóng đại do các giao dịch nội bộ giữa các đơn vị thành viên. Điều này giúp báo cáo tài chính hợp nhất thể hiện một cách trung thực và chính xác hơn hiệu quả hoạt động thực tế của toàn bộ Tập đoàn như một thực thể kinh tế duy nhất."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của việc duy trì sự nhất quán trong chính sách kế toán giữa Công ty mẹ và các công ty con khi lập báo cáo hợp nhất.",
+    "input": "7",
+    "output": "Việc duy trì sự nhất quán trong chính sách kế toán giữa Công ty mẹ và các công ty con là vô cùng quan trọng khi lập báo cáo tài chính hợp nhất. Điều này đảm bảo rằng các thông tin tài chính từ các đơn vị thành viên được tổng hợp và trình bày trên cùng một cơ sở, giúp báo cáo hợp nhất có tính đáng tin cậy và khả năng so sánh cao. Nếu các chính sách kế toán khác nhau được áp dụng, sẽ cần các điều chỉnh phức tạp, dễ dẫn đến sai sót và làm giảm tính minh bạch, gây khó khăn cho việc phân tích và đánh giá tình hình tài chính thực sự của Tập đoàn. Chính sách này giúp tạo ra một bức tranh tài chính thống nhất và minh bạch về toàn bộ Tập đoàn."
+  },
+  {
+    "instruction": "Giả sử có một khoản lỗ chưa thực hiện từ giao dịch nội bộ, khi nào khoản lỗ này sẽ không được loại trừ?",
+    "input": "7",
+    "output": "Khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ sẽ không được loại trừ nếu chi phí không thể thu hồi được."
+  },
+  {
+    "instruction": "Theo chính sách kế toán, các khoản tương đương tiền được định nghĩa như thế nào?",
+    "input": "8",
+    "output": "Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có tính thanh khoản cao với thời gian đáo hạn ban đầu nhỏ hơn ba tháng kể từ ngày đầu tư, có khả năng chuyển đổi dễ dàng thành tiền mặt với số lượng xác định và ít chịu rủi ro thay đổi giá trị tại ngày lập bảng cân đối kế toán."
+  },
+  {
+    "instruction": "Khi ngoại tệ gửi tại ngân hàng, tỷ giá nào được sử dụng để quy đổi sang VND tại cuối kỳ?",
+    "input": "8",
+    "output": "Khi ngoại tệ gửi tại ngân hàng, tỷ giá mua của các ngân hàng nơi các công ty trong Tập đoàn mở tài khoản ngoại tệ được sử dụng để quy đổi sang VND tại cuối kỳ."
+  },
+  {
+    "instruction": "Giải thích cách hạch toán thu nhập lãi từ các khoản đầu tư nắm giữ đến ngày đáo hạn.",
+    "input": "8",
+    "output": "Thu nhập lãi từ các khoản đầu tư nắm giữ đến ngày đáo hạn sau ngày mua được ghi nhận vào báo cáo kết quả kinh doanh trên cơ sở ước tính. Thu nhập trước khi Tập đoàn sở hữu được khấu trừ vào giá gốc tại thời điểm mua."
+  },
+  {
+    "instruction": "Khi có bằng chứng chắc chắn về việc khoản đầu tư nắm giữ đến ngày đáo hạn có thể không thu hồi được, công ty sẽ hạch toán như thế nào?",
+    "input": "8",
+    "output": "Khi có bằng chứng chắc chắn về một phần hoặc toàn bộ khoản đầu tư nắm giữ đến ngày đáo hạn có thể không thu hồi được và có thiệt hại có thể đo lường đáng tin cậy, khoản lỗ được ghi nhận vào chi phí tài chính trong kỳ và giảm trực tiếp giá trị khoản đầu tư."
+  },
+  {
+    "instruction": "Phân tích tác động của biến động tỷ giá hối đoái đến báo cáo kết quả kinh doanh của công ty.",
+    "input": "8",
+    "output": "Biến động tỷ giá hối đoái có tác động trực tiếp đến báo cáo kết quả kinh doanh của công ty thông qua việc ghi nhận chênh lệch tỷ giá. Các khoản chênh lệch tỷ giá phát sinh từ các giao dịch bằng ngoại tệ trong kỳ và do đánh giá lại các khoản mục gốc ngoại tệ tại cuối kỳ sẽ được ghi nhận vào doanh thu hoạt động tài chính (nếu là lãi) hoặc chi phí tài chính (nếu là lỗ). Do đó, nếu VND giảm giá so với các đồng tiền mà công ty có tài sản bằng ngoại tệ, sẽ phát sinh lãi tỷ giá và làm tăng doanh thu tài chính; ngược lại, nếu VND tăng giá hoặc công ty có nợ phải trả bằng ngoại tệ, có thể phát sinh lỗ tỷ giá và làm tăng chi phí tài chính, ảnh hưởng trực tiếp đến lợi nhuận của công ty."
+  },
+  {
+    "instruction": "Đánh giá sự khác biệt trong hạch toán chênh lệch tỷ giá hối đoái phát sinh từ giao dịch ngoại tệ và từ chuyển đổi báo cáo tài chính của công ty con.",
+    "input": "8",
+    "output": "Có sự khác biệt rõ ràng trong hạch toán chênh lệch tỷ giá: (1) Từ giao dịch ngoại tệ: Các khoản chênh lệch tỷ giá phát sinh từ các giao dịch bằng ngoại tệ khác ngoài VND trong kỳ và do đánh giá lại các khoản mục gốc ngoại tệ tại cuối kỳ được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính trong báo cáo kết quả kinh doanh. (2) Từ chuyển đổi báo cáo tài chính của công ty con: Chênh lệch tỷ giá hối đoái phát sinh từ việc chuyển đổi báo cáo tài chính của công ty con (được phân bổ cho Công ty mẹ và cổ đông không kiểm soát) không được ghi nhận vào báo cáo kết quả kinh doanh mà được trình bày dưới mục \"Chênh lệch tỷ giá hối đoái\" trong khoản mục vốn chủ sở hữu trên bảng cân đối kế toán hợp nhất. Điều này phản ánh rằng các chênh lệch này là do thay đổi giá trị sổ sách khi hợp nhất chứ không phải là lãi/lỗ từ hoạt động kinh doanh thực tế."
+  },
+  {
+    "instruction": "Giả sử Tập đoàn mua một công ty liên kết mới, những yếu tố nào sẽ được bao gồm trong giá trị ghi sổ ban đầu của khoản đầu tư này theo phương pháp vốn chủ sở hữu?",
+    "input": "8",
+    "output": "Theo phương pháp vốn chủ sở hữu, khi Tập đoàn mua một công ty liên kết mới, giá trị ghi sổ ban đầu của khoản đầu tư sẽ bao gồm giá gốc cộng với các thay đổi sau khi mua trong phần tài sản thuần của công ty liên kết. Ngoài ra, lợi thế thương mại phát sinh khi mua công ty liên kết cũng được bao gồm trong giá trị ghi sổ của khoản đầu tư và không được phân bổ."
+  },
+  {
+    "instruction": "Các khoản đầu tư góp vốn vào đơn vị khác được ghi nhận ban đầu theo nguyên tắc nào?",
+    "input": "9",
+    "output": "Các khoản đầu tư góp vốn vào đơn vị khác được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc vốn góp cộng với các chi phí trực tiếp liên quan đến khoản đầu tư."
+  },
+  {
+    "instruction": "Khi nào cổ tức nhận được từ các khoản đầu tư góp vốn vào đơn vị khác được ghi nhận vào doanh thu?",
+    "input": "9",
+    "output": "Cổ tức và lợi nhuận của kỳ sau sau khi các khoản đầu tư góp vốn vào đơn vị khác được mua sẽ được ghi nhận vào doanh thu."
+  },
+  {
+    "instruction": "Giải thích sự khác biệt giữa các khoản phải thu thương mại và các khoản phải thu khác.",
+    "input": "9",
+    "output": "Sự khác biệt giữa các khoản phải thu thương mại và các khoản phải thu khác là: Các khoản phải thu thương mại phản ánh bản chất của các khoản phải thu phát sinh từ các giao dịch thương mại với việc mua bán giữa Tập đoàn và khách hàng (một đơn vị độc lập đối với Tập đoàn). Còn các khoản phải thu khác phản ánh bản chất của các khoản phải thu phát sinh từ các giao dịch phi thương mại và không liên quan đến các giao dịch mua bán."
+  },
+  {
+    "instruction": "Theo chính sách kế toán của Tập đoàn, dự phòng giảm giá hàng tồn kho được xác định như thế nào?",
+    "input": "9",
+    "output": "Dự phòng giảm giá hàng tồn kho được lập cho từng mặt hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Việc tăng hoặc giảm số dư dự phòng giảm giá hàng tồn kho được trích lập vào cuối kỳ tài chính và được ghi nhận vào giá vốn hàng bán."
+  },
+  {
+    "instruction": "Đánh giá tầm quan trọng của việc lập dự phòng giảm giá các khoản đầu tư đối với sự ổn định tài chính của công ty.",
+    "input": "9",
+    "output": "Việc lập dự phòng giảm giá các khoản đầu tư là rất quan trọng đối với sự ổn định tài chính của công ty. Nó giúp Tập đoàn phản ánh một cách thận trọng và trung thực giá trị thực tế của các khoản đầu tư trên bảng cân đối kế toán. Bằng cách trích lập dự phòng cho các khoản đầu tư có rủi ro giảm giá (dưới giá thị trường hoặc giá trị hợp lý), công ty sẽ tránh được việc ghi nhận quá cao tài sản và làm sai lệch bức tranh tài chính. Điều này giúp bảo vệ vốn chủ sở hữu, đảm bảo tính bền vững và khả năng chống chịu rủi ro của công ty trước các biến động của thị trường hoặc hiệu quả hoạt động của các đơn vị được đầu tư."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính khi công ty không thể xác định được giá trị hợp lý của các khoản đầu tư để trích lập dự phòng.",
+    "input": "9",
+    "output": "Khi công ty không thể xác định được giá trị hợp lý của các khoản đầu tư để trích lập dự phòng, sẽ có rủi ro tài chính đáng kể. Thứ nhất, báo cáo tài chính có thể không phản ánh đúng giá trị thực của tài sản, dẫn đến việc trình bày sai lệch về tình hình tài chính của Tập đoàn. Thứ hai, dự phòng được trích lập dựa trên khoản lỗ ước tính của khoản đầu tư (tỷ lệ chênh lệch giữa vốn thực tế và tỷ lệ vốn chủ sở hữu nhân với vốn góp) có thể không đủ để bù đắp các khoản lỗ thực tế nếu giá trị hợp lý thực sự giảm mạnh. Điều này có thể gây ra những cú sốc tài chính bất ngờ khi các khoản lỗ được hiện thực hóa, ảnh hưởng đến lợi nhuận và vốn chủ sở hữu của công ty."
+  },
+  {
+    "instruction": "Dự báo tác động của việc tăng đột biến các khoản phải thu khó đòi đến báo cáo kết quả kinh doanh và bảng cân đối kế toán.",
+    "input": "9",
+    "output": "Nếu các khoản phải thu khó đòi tăng đột biến, sẽ có tác động tiêu cực đáng kể đến báo cáo kết quả kinh doanh và bảng cân đối kế toán. Trên báo cáo kết quả kinh doanh, việc tăng dự phòng nợ phải thu khó đòi sẽ được ghi nhận là chi phí quản lý doanh nghiệp, làm giảm lợi nhuận của công ty trong kỳ. Trên bảng cân đối kế toán, các khoản phải thu sẽ bị giảm giá trị do dự phòng, làm giảm tổng tài sản và vốn chủ sở hữu của công ty. Điều này cho thấy rủi ro tín dụng cao, ảnh hưởng đến khả năng thu hồi vốn và khả năng sinh lời trong tương lai."
+  },
+  {
+    "instruction": "Các loại chi phí trả trước được đề cập trong chính sách kế toán của công ty là gì?",
+    "input": "10",
+    "output": "Các loại chi phí trả trước được đề cập là Chi phí tour và Chi phí công cụ dụng cụ."
+  },
+  {
+    "instruction": "Thời gian phân bổ tối đa cho chi phí công cụ dụng cụ là bao nhiêu tháng?",
+    "input": "10",
+    "output": "Thời gian phân bổ tối đa cho chi phí công cụ dụng cụ là không quá 36 tháng."
+  },
+  {
+    "instruction": "Giải thích nguyên tắc ghi nhận ban đầu và sau ghi nhận ban đầu đối với tài sản cố định hữu hình.",
+    "input": "10",
+    "output": "Nguyên tắc ghi nhận ban đầu đối với tài sản cố định hữu hình là theo nguyên giá, bao gồm giá mua và bất kỳ chi phí trực tiếp nào có thể quy được để đưa tài sản vào trạng thái sẵn sàng sử dụng và địa điểm cho mục đích sử dụng dự kiến. Sau ghi nhận ban đầu, tài sản cố định hữu hình được ghi nhận theo nguyên giá trừ hao mòn lũy kế. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được vốn hóa nếu chắc chắn mang lại lợi ích kinh tế trong tương lai; nếu không, chúng được ghi nhận là chi phí sản xuất kinh doanh trong kỳ."
+  },
+  {
+    "instruction": "Chính sách kế toán đối với Quyền sử dụng đất khác biệt như thế nào so với các tài sản cố định vô hình khác như Bằng sáng chế?",
+    "input": "10",
+    "output": "Chính sách kế toán đối với Quyền sử dụng đất khác biệt ở chỗ Quyền sử dụng đất không xác định thời hạn thì không được phân bổ (khấu hao), trong khi Bằng sáng chế được phân bổ theo phương pháp đường thẳng trong vòng 04 năm. Quyền sử dụng đất phản ánh tất cả các chi phí thực tế liên quan đến đất, còn Bằng sáng chế bao gồm giá mua, thuế không hoàn lại và phí đăng ký."
+  },
+  {
+    "instruction": "Đánh giá tác động của phương pháp khấu hao đường thẳng đến giá trị tài sản và lợi nhuận của công ty.",
+    "input": "10",
+    "output": "Phương pháp khấu hao đường thẳng có tác động đến giá trị tài sản và lợi nhuận của công ty bằng cách phân bổ chi phí tài sản cố định đều đặn trong suốt thời gian sử dụng ước tính của chúng. Điều này giúp ổn định chi phí khấu hao hàng kỳ, làm cho lợi nhuận được báo cáo ít biến động hơn so với các phương pháp khấu hao nhanh. Đối với giá trị tài sản, phương pháp này làm giảm giá trị ghi sổ của tài sản một cách tuyến tính. Tuy nhiên, nó có thể không phản ánh đúng mức độ hao mòn hoặc mức độ sử dụng tài sản trong những kỳ đầu khi tài sản thường tạo ra nhiều lợi ích hơn, hoặc không phản ánh được giá trị thị trường của tài sản."
+  },
+  {
+    "instruction": "Phân tích rủi ro tiềm ẩn nếu có sự chậm trễ đáng kể trong việc hoàn thành các dự án Xây dựng cơ bản dở dang.",
+    "input": "10",
+    "output": "Nếu có sự chậm trễ đáng kể trong việc hoàn thành các dự án Xây dựng cơ bản dở dang, công ty sẽ đối mặt với một số rủi ro tiềm ẩn. Thứ nhất, vốn của công ty sẽ bị chiếm dụng trong thời gian dài hơn, làm giảm hiệu quả sử dụng vốn và tăng chi phí cơ hội. Thứ hai, các dự án này chưa thể tạo ra doanh thu hoặc lợi nhuận như kế hoạch, ảnh hưởng đến kết quả kinh doanh trong ngắn hạn và trung hạn. Thứ ba, chi phí có thể phát sinh thêm do chậm trễ (ví dụ: chi phí quản lý dự án, chi phí lãi vay nếu có), làm tăng tổng vốn đầu tư và giảm lợi nhuận dự kiến. Cuối cùng, việc chậm trễ có thể ảnh hưởng đến uy tín và khả năng cạnh tranh của công ty trên thị trường nếu các dự án là chiến lược quan trọng."
+  },
+  {
+    "instruction": "Trong trường hợp nào, chi phí sửa chữa tài sản cố định sẽ được vốn hóa thay vì ghi nhận là chi phí trong kỳ?",
+    "input": "10",
+    "output": "Chi phí sửa chữa tài sản cố định sẽ được vốn hóa (tức là ghi nhận vào tài sản cố định) nếu các chi phí này chắc chắn sẽ mang lại lợi ích kinh tế trong tương lai do việc sử dụng các tài sản này. Ngược lại, nếu không đáp ứng điều kiện này, chúng sẽ được ghi nhận là chi phí sản xuất kinh doanh trong kỳ."
+  },
+  {
+    "instruction": "Cổ tức được ghi nhận là nợ phải trả khi nào?",
+    "input": "11",
+    "output": "Cổ tức được ghi nhận là nợ phải trả khi được Đại hội đồng cổ đông phê duyệt."
+  },
+  {
+    "instruction": "Nêu một trong các điều kiện để doanh thu từ bán hàng hóa được ghi nhận.",
+    "input": "11",
+    "output": "Một trong các điều kiện để doanh thu từ bán hàng hóa được ghi nhận là Tập đoàn đã chuyển giao cho người mua những rủi ro và lợi ích đáng kể gắn liền với quyền sở hữu hàng hóa."
+  },
+  {
+    "instruction": "Giải thích cách phân loại giữa Phải trả người bán và Chi phí phải trả.",
+    "input": "11",
+    "output": "Phải trả người bán phản ánh bản chất của các khoản phải trả phát sinh từ các giao dịch thương mại với việc mua hàng hóa, dịch vụ, tài sản giữa Tập đoàn và người bán độc lập. Chi phí phải trả phản ánh các khoản phải trả cho hàng hóa và dịch vụ đã nhận từ người bán hoặc đã cung cấp cho người mua nhưng chưa được thanh toán do chưa có hóa đơn hoặc hồ sơ thanh toán không đầy đủ, và các khoản phải trả cho người lao động bao gồm lương, chi phí sản xuất, chi phí bán hàng phải trích trước."
+  },
+  {
+    "instruction": "Trình bày cách thức hạch toán Thặng dư vốn cổ phần khi phát hành bổ sung hoặc tái phát hành cổ phiếu quỹ.",
+    "input": "11",
+    "output": "Thặng dư vốn cổ phần được ghi nhận theo chênh lệch giữa giá phát hành và mệnh giá khi phát hành bổ sung hoặc chênh lệch giữa giá tái phát hành và giá trị ghi sổ thuần của cổ phiếu quỹ. Các chi phí trực tiếp liên quan đến việc phát hành bổ sung và tái phát hành cổ phiếu quỹ được ghi nhận là giảm thặng dư vốn cổ phần."
+  },
+  {
+    "instruction": "Đánh giá sự linh hoạt của chính sách ghi nhận doanh thu từ cung cấp dịch vụ khi giao dịch phân bổ cho nhiều kỳ.",
+    "input": "11",
+    "output": "Chính sách ghi nhận doanh thu từ cung cấp dịch vụ khi giao dịch phân bổ cho nhiều kỳ là linh hoạt và phù hợp với nguyên tắc kế toán dồn tích. Việc ghi nhận doanh thu theo tỷ lệ hoàn thành của giao dịch tại ngày lập bảng cân đối kế toán giúp phản ánh doanh thu và chi phí một cách tương ứng với lợi ích kinh tế đã được chuyển giao trong kỳ. Điều này đảm bảo rằng báo cáo kết quả kinh doanh không bị lệch lạc bởi thời điểm thu tiền mà phản ánh đúng hiệu suất hoạt động theo từng giai đoạn hoàn thành dịch vụ, mang lại cái nhìn chính xác hơn về tình hình kinh doanh của công ty."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của việc xác định đáng tin cậy chi phí phát sinh khi ghi nhận doanh thu từ bán hàng hóa.",
+    "input": "11",
+    "output": "Việc xác định đáng tin cậy chi phí phát sinh là một điều kiện quan trọng để ghi nhận doanh thu từ bán hàng hóa. Điều này đảm bảo nguyên tắc phù hợp (matching principle) được tuân thủ, tức là doanh thu và chi phí tạo ra doanh thu đó được ghi nhận trong cùng kỳ kế toán. Nếu chi phí không thể xác định đáng tin cậy, doanh thu có thể bị ghi nhận mà không có chi phí tương ứng hoặc chi phí bị ước tính sai lệch, dẫn đến lợi nhuận bị phóng đại hoặc đánh giá thấp. Điều này ảnh hưởng đến tính chính xác của báo cáo kết quả kinh doanh và khả năng đưa ra quyết định dựa trên thông tin tài chính."
+  },
+  {
+    "instruction": "Nêu các trường hợp mà Lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến dòng tiền và khả năng chi trả cổ tức.",
+    "input": "11",
+    "output": "Lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến dòng tiền và khả năng chi trả cổ tức trong các trường hợp có các khoản mục phi tiền tệ trong lợi nhuận đó, như lợi nhuận từ đánh giá lại tài sản góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác."
+  },
+  {
+    "instruction": "Chi phí đi vay bao gồm những gì và được ghi nhận khi nào?",
+    "input": "12",
+    "output": "Chi phí đi vay bao gồm lãi và các chi phí khác phát sinh trực tiếp liên quan đến các khoản vay. Chi phí này được ghi nhận là chi phí khi phát sinh."
+  },
+  {
+    "instruction": "Thế nào là thu nhập chịu thuế khác với lợi nhuận kế toán?",
+    "input": "12",
+    "output": "Thu nhập chịu thuế khác với lợi nhuận kế toán là do các điều chỉnh chênh lệch tạm thời giữa kế toán và thuế, các chi phí không được khấu trừ cũng như thu nhập được điều chỉnh không chịu thuế và các khoản lỗ được chuyển sang."
+  },
+  {
+    "instruction": "Nêu 3 loại tài sản tài chính của Tập đoàn.",
+    "input": "12",
+    "output": "Ba loại tài sản tài chính của Tập đoàn là: tiền và các khoản tương đương tiền, các khoản đầu tư, và các khoản phải thu thương mại."
+  },
+  {
+    "instruction": "Giải thích sự khác biệt trong cách xác định giá trị ban đầu của tài sản tài chính và nợ phải trả tài chính.",
+    "input": "12",
+    "output": "Tại thời điểm ghi nhận ban đầu, tài sản tài chính được xác định theo giá gốc cộng với các chi phí trực tiếp phát sinh trong quá trình mua lại, phát hành các tài sản tài chính đó. Trong khi đó, nợ phải trả tài chính (trừ các khoản nợ liên quan đến thuê tài chính mua và trái phiếu chuyển đổi) được xác định theo giá gốc trừ đi các chi phí trực tiếp phát sinh trong quá trình phát hành các khoản nợ phải trả đó."
+  },
+  {
+    "instruction": "Đánh giá tầm quan trọng của phương pháp lãi suất thực tế trong việc xác định giá trị nợ phải trả tài chính.",
+    "input": "12",
+    "output": "Phương pháp lãi suất thực tế đóng vai trò quan trọng trong việc xác định giá trị đã phân bổ của nợ phải trả tài chính. Nó không chỉ tính toán chi phí lãi vay trong kỳ một cách chính xác hơn mà còn phân bổ lãi suất một cách hệ thống trong suốt thời gian dự kiến của công cụ tài chính. Điều này giúp báo cáo tài chính phản ánh đúng chi phí tài chính thực tế mà Tập đoàn phải chịu, đặc biệt đối với các khoản nợ có cấu trúc phức tạp hoặc chi phí phát hành đáng kể, từ đó nâng cao tính minh bạch và độ tin cậy của thông tin tài chính về các nghĩa vụ nợ."
+  },
+  {
+    "instruction": "Phân tích các điều kiện để tài sản tài chính và nợ phải trả tài chính được bù trừ và trình bày số thuần trên bảng cân đối kế toán.",
+    "input": "12",
+    "output": "Để tài sản tài chính và nợ phải trả tài chính được bù trừ và trình bày số thuần trên bảng cân đối kế toán, Tập đoàn phải đồng thời đáp ứng hai điều kiện sau: (1) Có quyền pháp lý để bù trừ các giá trị đã được ghi nhận. (2) Để bù trừ trên cơ sở hoặc để thực hiện tài sản và thanh toán nợ phải trả đồng thời. Nếu một trong hai điều kiện này không được thỏa mãn, tài sản tài chính và nợ phải trả tài chính phải được trình bày riêng biệt."
+  },
+  {
+    "instruction": "Dự báo tác động của một khoản lỗ không thể thu hồi được đối với giá trị đã phân bổ của nợ phải trả tài chính.",
+    "input": "12",
+    "output": "Nếu có một khoản lỗ không thể thu hồi được (cho suy giảm giá trị), điều này sẽ làm giảm trực tiếp giá trị đã phân bổ của nợ phải trả tài chính. Theo định nghĩa, giá trị đã phân bổ được đo lường tại thời điểm ghi nhận ban đầu trừ đi các khoản thanh toán gốc, cộng hoặc trừ đi các khoản phân bổ lũy kế và trừ đi các khoản khấu trừ trực tiếp hoặc thông qua việc sử dụng tài khoản dự phòng cho suy giảm giá trị hoặc không thể thu hồi được. Do đó, một khoản lỗ không thể thu hồi được sẽ làm giảm giá trị ghi sổ của nợ phải trả tài chính trên bảng cân đối kế toán."
+  },
+  {
+    "instruction": "Lãi cơ bản trên cổ phiếu được tính như thế nào?",
+    "input": "13",
+    "output": "Số lãi cơ bản trên mỗi cổ phiếu được tính bằng cách chia lợi nhuận thuần trong kỳ thuộc về các cổ đông phổ thông sau khi trừ đi việc trích lập quỹ khen thưởng và phúc lợi, cho số lượng bình quân gia quyền của cổ phiếu phổ thông đang lưu hành trong kỳ."
+  },
+  {
+    "instruction": "Nêu 3 bên liên quan của Tập đoàn Vietravel.",
+    "input": "13",
+    "output": "Ba bên liên quan của Tập đoàn Vietravel là: Vietravel Corporation Joint Stock Company (Cổ đông lớn), Trip U Travel Service Limited Liability Company (Công ty con), và Ban Tổng Giám đốc, Hội đồng Quản trị (Thành viên quản lý chủ chốt)."
+  },
+  {
+    "instruction": "So sánh Tiền gửi ngân hàng cuối quý với đầu năm. Thay đổi bao nhiêu?",
+    "input": "13",
+    "output": "Tiền gửi ngân hàng cuối quý (30/06/2025) là 179,343,524,306 VND. Số đầu năm (01/01/2025) là 89,457,626,453 VND. Tiền gửi ngân hàng đã tăng 89,885,897,853 VND."
+  },
+  {
+    "instruction": "Phân biệt Phân đoạn kinh doanh và Phân đoạn địa lý theo chính sách kế toán của Tập đoàn.",
+    "input": "13",
+    "output": "Phân đoạn kinh doanh là một bộ phận có thể phân biệt của một doanh nghiệp tham gia vào việc cung cấp một sản phẩm hoặc dịch vụ riêng lẻ hoặc một nhóm các sản phẩm hoặc dịch vụ liên quan và chịu các rủi ro và lợi tức khác với các phân đoạn kinh doanh khác. Phân đoạn địa lý là một bộ phận có thể phân biệt của một doanh nghiệp tham gia vào việc cung cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể và chịu các rủi ro và lợi tức khác với các bộ phận hoạt động trong các môi trường kinh tế khác."
+  },
+  {
+    "instruction": "Đánh giá sự thay đổi trong cấu trúc các khoản phải thu ngắn hạn khác từ đầu năm đến cuối quý.",
+    "input": "13",
+    "output": "Các khoản phải thu ngắn hạn khác đã giảm đáng kể từ 1,068,407,705,656 VND vào đầu năm xuống còn 698,506,819,627 VND vào cuối quý. Sự thay đổi này chủ yếu do giảm Phải thu từ Công ty Cổ phần Vietravel Corporation (từ 522,726,761,264 VND xuống 926,196,111,797 VND) và giảm Tạm ứng cho nhân viên (từ 66,494,096,915 VND lên 83,378,411,030 VND). Cần lưu ý là Phải thu từ Công ty Cổ phần Vietravel Corporation trong dữ liệu có vẻ đã được đọc ngược (tăng thay vì giảm so với tổng số). Nếu nhìn vào từng mục cụ thể, có sự tăng của một số khoản (Tạm ứng cho nhân viên) nhưng tổng thể vẫn giảm. Sự giảm tổng thể này cho thấy công ty đã thu hồi được một phần đáng kể các khoản phải thu không thuộc hoạt động thương mại thông thường, có thể cải thiện dòng tiền."
+  },
+  {
+    "instruction": "Phân tích rủi ro khi có sự tăng mạnh các khoản phải thu dài hạn khác và tiềm năng thu hồi các khoản này.",
+    "input": "13",
+    "output": "Các khoản phải thu dài hạn khác đã tăng từ 8,220,806,665 VND vào đầu năm lên 9,576,298,553 VND vào cuối quý. Mặc dù mức tăng này không quá đột biến so với tài sản của công ty, nhưng nếu không được quản lý tốt, các khoản phải thu dài hạn có thể tiềm ẩn rủi ro thanh khoản. Tiềm năng thu hồi các khoản này cần được đánh giá kỹ lưỡng, đặc biệt là các khoản tiền gửi liên quan đến thuê văn phòng hoặc thực hiện dự án đầu tư. Nếu các bên đối tác gặp khó khăn tài chính hoặc dự án bị hủy bỏ, khả năng thu hồi các khoản này có thể bị ảnh hưởng, dẫn đến tổn thất cho công ty. Rủi ro này tuy nhỏ ở hiện tại nhưng cần được theo dõi sát sao."
+  },
+  {
+    "instruction": "Dự báo tác động của việc tăng số dư Tạm ứng cho nhân viên đến dòng tiền hoạt động của công ty.",
+    "input": "13",
+    "output": "Số dư Tạm ứng cho nhân viên đã tăng từ 66,494,096,915 VND vào đầu năm lên 83,378,411,030 VND vào cuối quý. Việc tăng tạm ứng cho nhân viên có nghĩa là công ty đã chi thêm tiền mặt cho mục đích này. Điều này sẽ làm giảm dòng tiền thuần từ hoạt động kinh doanh (tiền chi khác từ hoạt động kinh doanh) trong kỳ, vì tiền mặt đã được sử dụng để tài trợ cho các khoản tạm ứng này thay vì được giữ lại hoặc sử dụng cho các mục đích khác. Nếu xu hướng này tiếp tục, nó có thể gây áp lực lên khả năng quản lý dòng tiền của công ty nếu không được bù đắp bởi các nguồn thu tiền khác."
+  },
+  {
+    "instruction": "Tổng dự phòng nợ ngắn hạn khó đòi của Vietravel tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "14",
+    "output": "Tổng dự phòng nợ ngắn hạn khó đòi của Vietravel tại ngày 30/06/2025 là 16,649,880,961 VND."
+  },
+  {
+    "instruction": "Trong danh sách nợ ngắn hạn khó đòi, khoản phải thu thương mại của Công ty Cổ phần Hưng Thịnh Phát đã quá hạn bao nhiêu năm?",
+    "input": "14",
+    "output": "Khoản phải thu thương mại của Công ty Cổ phần Hưng Thịnh Phát đã quá hạn Hơn 3 năm."
+  },
+  {
+    "instruction": "So sánh chi phí tour trả trước ngắn hạn cuối quý với đầu năm. Thay đổi bao nhiêu?",
+    "input": "14",
+    "output": "Chi phí tour trả trước ngắn hạn cuối quý (30/06/2025) là 383,710,416,520 VND. Số đầu năm (01/01/2025) là 324,198,410,019 VND. Khoản mục này đã tăng 59,512,006,501 VND."
+  },
+  {
+    "instruction": "Phân tích sự biến động của dự phòng nợ ngắn hạn khó đòi giữa năm 2025 và 2024.",
+    "input": "14",
+    "output": "Dự phòng nợ ngắn hạn khó đòi có số dư đầu kỳ năm 2025 là 11,381,818,206 VND. Trong kỳ, công ty đã trích lập thêm 5,527,311,105 VND và xóa sổ 259,248,350 VND, dẫn đến số dư cuối kỳ là 16,649,880,961 VND. So với số liệu đầu kỳ năm 2024 (11,381,818,206 VND), số dư cuối kỳ năm 2025 đã tăng lên đáng kể, chủ yếu do việc trích lập dự phòng tăng mạnh trong kỳ. Điều này cho thấy công ty đang thận trọng hơn trong việc đánh giá khả năng thu hồi các khoản nợ hoặc số lượng nợ khó đòi đã tăng lên."
+  },
+  {
+    "instruction": "Đánh giá mức độ rủi ro tín dụng của công ty dựa trên số liệu dự phòng nợ ngắn hạn khó đòi.",
+    "input": "14",
+    "output": "Dựa trên số liệu dự phòng nợ ngắn hạn khó đòi, công ty có một mức độ rủi ro tín dụng nhất định. Tổng giá gốc các khoản phải thu ngắn hạn khó đòi là 22,148,832,359 VND, trong khi dự phòng là 16,649,880,961 VND, cho thấy khoảng 75% các khoản nợ này đã được dự phòng. Điều này phản ánh sự thận trọng trong kế toán. Tuy nhiên, việc có một danh mục lớn các khoản nợ quá hạn (đặc biệt là hơn 3 năm, với nhiều khoản được dự phòng 100%) cho thấy công ty đã phải đối mặt với các vấn đề thu hồi nợ đáng kể. Mức độ trích lập dự phòng cao giúp giảm thiểu tác động đến lợi nhuận, nhưng bản thân sự tồn tại của các khoản nợ khó đòi này vẫn là một rủi ro về dòng tiền và chất lượng tài sản."
+  },
+  {
+    "instruction": "Phân tích tác động của việc tăng đột biến các khoản chi phí trả trước ngắn hạn đến dòng tiền hoạt động của công ty.",
+    "input": "14",
+    "output": "Chi phí trả trước ngắn hạn của Vietravel đã tăng đột biến từ 341,652,050,732 VND vào đầu năm lên 427,163,789,665 VND vào cuối quý. Sự gia tăng này chủ yếu do \"Chi phí tour\" tăng từ 324,198,410,019 VND lên 383,710,416,520 VND. Việc tăng các khoản chi phí trả trước có nghĩa là công ty đã chi tiền mặt cho các dịch vụ hoặc hàng hóa sẽ được sử dụng trong các kỳ kế toán sau. Điều này làm giảm dòng tiền hoạt động trong kỳ hiện tại. Mặc dù các chi phí này sẽ được phân bổ và ghi nhận vào chi phí trong tương lai, nhưng trong ngắn hạn, nó gây ra một lượng tiền mặt đáng kể bị chiếm dụng, có thể ảnh hưởng đến khả năng thanh khoản nếu công ty không có đủ nguồn tiền mặt khác để bù đắp."
+  },
+  {
+    "instruction": "Dự báo rủi ro về khả năng thu hồi các khoản phải thu đã quá hạn hơn 3 năm và ảnh hưởng của chúng đến lợi nhuận.",
+    "input": "14",
+    "output": "Các khoản phải thu đã quá hạn hơn 3 năm (ví dụ: từ Công ty Cổ phần Hưng Thịnh Phát, Chengdu News International Travel Agency Co., Ltd., v.v.) có khả năng thu hồi rất thấp. Thực tế, nhiều khoản trong số này đã được dự phòng 100% trong dữ liệu. Rủi ro lớn nhất là việc công ty có thể phải thực hiện xóa sổ các khoản nợ này, mặc dù đã có dự phòng. Nếu có các khoản nợ quá hạn trên 3 năm mà chưa được dự phòng đầy đủ, việc xóa sổ chúng sẽ trực tiếp làm giảm lợi nhuận trong kỳ xóa sổ. Đối với các khoản đã dự phòng, việc xóa sổ không ảnh hưởng thêm đến lợi nhuận nhưng cho thấy chất lượng tài sản không tốt và việc sử dụng vốn chưa hiệu quả trong quá khứ."
+  },
+  {
+    "instruction": "Nguyên giá tài sản cố định hữu hình của Vietravel tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "15",
+    "output": "Nguyên giá tài sản cố định hữu hình của Vietravel tại ngày 30/06/2025 là 203,852,962,579 VND."
+  },
+  {
+    "instruction": "Tổng khấu hao trong kỳ đối với tài sản cố định hữu hình là bao nhiêu VND?",
+    "input": "15",
+    "output": "Tổng khấu hao trong kỳ đối với tài sản cố định hữu hình là 2,400,722,438 VND."
+  },
+  {
+    "instruction": "So sánh giá trị còn lại thuần của Phương tiện vận tải giữa ngày 01/01/2025 và 30/06/2025. Giải thích sự thay đổi.",
+    "input": "15",
+    "output": "Giá trị còn lại thuần của Phương tiện vận tải tại ngày 01/01/2025 là 1,659,573,596 VND. Tại ngày 30/06/2025 là 745,839,444 VND. Giá trị này đã giảm 913,734,152 VND. Sự thay đổi này được giải thích bởi khoản khấu hao trong kỳ của Phương tiện vận tải là 913,734,152 VND, trong khi nguyên giá không thay đổi."
+  },
+  {
+    "instruction": "Loại tài sản cố định hữu hình nào có mức tăng nguyên giá trong kỳ lớn nhất?",
+    "input": "15",
+    "output": "Loại tài sản cố định hữu hình có mức tăng nguyên giá trong kỳ lớn nhất là \"Tài sản cố định hữu hình khác\" với 742,723,827 VND."
+  },
+  {
+    "instruction": "Đánh giá hiệu quả quản lý và sử dụng tài sản cố định hữu hình của công ty dựa trên số liệu tăng giảm và khấu hao.",
+    "input": "15",
+    "output": "Dựa trên số liệu, nguyên giá tài sản cố định hữu hình của công ty tăng nhẹ (1,516,183,827 VND trong kỳ), chủ yếu từ \"Thiết bị văn phòng\" và \"Tài sản cố định hữu hình khác\", cho thấy có sự đầu tư vào nâng cấp hoặc bổ sung tài sản. Tuy nhiên, không có hoạt động thanh lý, nhượng bán trong kỳ, có thể cho thấy công ty vẫn đang duy trì các tài sản hiện có hoặc chưa có kế hoạch thanh lý. Khấu hao lũy kế tăng đều đặn theo khấu hao trong kỳ (2,400,722,438 VND), dẫn đến giá trị còn lại thuần của tài sản giảm từ 5,926,255,058 VND xuống 5,041,716,447 VND. Điều này phản ánh việc sử dụng tài sản và ghi nhận hao mòn theo kế toán. Để đánh giá hiệu quả, cần so sánh lợi nhuận tạo ra từ các tài sản này, nhưng dữ liệu hiện tại chỉ cung cấp thông tin về biến động tài sản."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không có hoạt động thanh lý, nhượng bán tài sản cố định trong kỳ đến cơ cấu tài sản và dòng tiền của công ty.",
+    "input": "15",
+    "output": "Việc không có hoạt động thanh lý, nhượng bán tài sản cố định trong kỳ có tác động: (1) Cơ cấu tài sản: Công ty tiếp tục giữ lại các tài sản cũ, có thể đã khấu hao gần hết nhưng vẫn còn hữu dụng. Điều này có thể giữ cho nguyên giá tài sản không bị giảm nhưng cũng không tạo ra dòng tiền từ việc thoái vốn. (2) Dòng tiền: Không có hoạt động thanh lý, nhượng bán đồng nghĩa với việc không có dòng tiền thu về từ việc bán các tài sản này. Điều này có thể ảnh hưởng đến khả năng tạo ra tiền mặt từ hoạt động đầu tư, đặc biệt nếu công ty cần vốn để tái đầu tư hoặc thanh toán các nghĩa vụ khác. Nếu các tài sản này đã cũ và kém hiệu quả, việc giữ lại chúng có thể làm tăng chi phí bảo trì và giảm hiệu suất hoạt động."
+  },
+  {
+    "instruction": "Dự báo rủi ro về khả năng giảm giá trị tài sản cố định hữu hình nếu mức khấu hao trong kỳ tiếp tục duy trì hoặc tăng.",
+    "input": "15",
+    "output": "Nếu mức khấu hao trong kỳ tiếp tục duy trì hoặc tăng, giá trị còn lại thuần của tài sản cố định hữu hình sẽ tiếp tục giảm. Điều này có nghĩa là công ty đang liên tục ghi nhận chi phí hao mòn tài sản vào báo cáo kết quả kinh doanh. Về rủi ro: (1) Giá trị ghi sổ: Giá trị tài sản trên bảng cân đối kế toán sẽ giảm dần, có thể ảnh hưởng đến tổng giá trị tài sản ròng của công ty. (2) Khả năng tái đầu tư: Nếu tài sản khấu hao nhanh mà không có kế hoạch đầu tư thay thế hiệu quả, năng lực sản xuất kinh doanh có thể bị ảnh hưởng. (3) Chi phí: Mức khấu hao cao có thể làm giảm lợi nhuận kế toán, mặc dù đây là chi phí phi tiền mặt. Điều này có thể ảnh hưởng đến chỉ số sinh lời và khả năng thu hút nhà đầu tư. Cần đánh giá xem mức khấu hao có phù hợp với tuổi thọ và mức độ sử dụng thực tế của tài sản hay không."
+  },
+  {
+    "instruction": "Tổng nguyên giá tài sản cố định vô hình của Vietravel tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "16",
+    "output": "Tổng nguyên giá tài sản cố định vô hình của Vietravel tại ngày 30/06/2025 là 41,735,314,384 VND."
+  },
+  {
+    "instruction": "Giá trị còn lại thuần của Quyền sử dụng đất tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "16",
+    "output": "Giá trị còn lại thuần của Quyền sử dụng đất tại ngày 30/06/2025 là 6,974,774,000 VND."
+  },
+  {
+    "instruction": "So sánh khấu hao trong kỳ của Phần mềm máy tính và Tài sản cố định vô hình khác. Nhận xét về sự khác biệt.",
+    "input": "16",
+    "output": "Khấu hao trong kỳ của Phần mềm máy tính là 0 VND, trong khi của Tài sản cố định vô hình khác là 933,842,694 VND. Sự khác biệt này cho thấy trong 6 tháng đầu năm 2025, công ty không phát sinh khấu hao cho Phần mềm máy tính hoặc đã khấu hao hết, trong khi vẫn tiếp tục khấu hao đáng kể cho các loại tài sản cố định vô hình khác (như quyền thuê, tên miền, v.v.). Điều này có thể phản ánh tuổi thọ hoặc chính sách phân bổ khác nhau giữa các loại tài sản vô hình."
+  },
+  {
+    "instruction": "Dự án nào có mức tăng lớn nhất trong Xây dựng cơ bản dở dang trong kỳ?",
+    "input": "16",
+    "output": "Dự án có mức tăng lớn nhất trong Xây dựng cơ bản dở dang trong kỳ là \"Dự án 01 Nguyễn Huệ\" với mức tăng 26,131,070,261 VND."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc chuyển đổi Phần mềm bán tour Trip U từ xây dựng cơ bản dở dang sang tài sản cố định.",
+    "input": "16",
+    "output": "Việc chuyển đổi Phần mềm bán tour Trip U từ xây dựng cơ bản dở dang (908,100,000 VND) sang tài sản cố định có tác động tích cực. Điều này cho thấy dự án phần mềm đã hoàn thành và sẵn sàng đi vào sử dụng. Tác động là: (1) Từ tài sản dở dang sang tài sản cố định: Giá trị tài sản sẽ chuyển từ khoản mục Xây dựng cơ bản dở dang sang Tài sản cố định vô hình (hoặc hữu hình nếu là một phần của hệ thống lớn). (2) Bắt đầu khấu hao: Khi trở thành tài sản cố định, phần mềm sẽ bắt đầu được khấu hao, ghi nhận chi phí vào báo cáo kết quả kinh doanh trong các kỳ tới. (3) Tăng năng lực hoạt động: Việc hoàn thành và đưa phần mềm vào sử dụng có thể cải thiện hiệu quả hoạt động, nâng cao chất lượng dịch vụ hoặc tăng năng lực cạnh tranh của công ty."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính nếu Dự án 01 Nguyễn Huệ tiếp tục tăng vốn đầu tư mà không có kế hoạch hoàn thành cụ thể.",
+    "input": "16",
+    "output": "Dự án 01 Nguyễn Huệ có mức tăng vốn đầu tư đáng kể trong kỳ (26,131,070,261 VND) và số dư cuối kỳ lớn (97,035,540,141 VND). Nếu dự án này tiếp tục tăng vốn đầu tư mà không có kế hoạch hoàn thành cụ thể hoặc thời gian hoàn thành bị kéo dài, sẽ có những rủi ro tài chính nghiêm trọng: (1) Chiếm dụng vốn: Một lượng vốn lớn bị kẹt trong tài sản dở dang, không tạo ra doanh thu hay lợi nhuận, làm giảm hiệu quả sử dụng vốn của công ty. (2) Chi phí phát sinh: Các chi phí liên quan đến dự án (lãi vay, chi phí quản lý) có thể tiếp tục tăng, làm giảm lợi nhuận. (3) Rủi ro về tính khả thi: Nếu dự án kéo dài, các yếu tố thị trường, công nghệ hoặc quy hoạch có thể thay đổi, làm giảm tính khả thi hoặc lợi nhuận tiềm năng của dự án. (4) Áp lực dòng tiền: Công ty có thể cần tiếp tục chi tiền cho dự án, gây áp lực lên dòng tiền và khả năng thanh khoản."
+  },
+  {
+    "instruction": "Giải thích lý do tại sao Nguyên giá của tài sản cố định vô hình không thay đổi trong kỳ trong khi Khấu hao lũy kế vẫn tăng.",
+    "input": "16",
+    "output": "Nguyên giá của tài sản cố định vô hình không thay đổi trong kỳ (tại ngày 01/01/2025 và 30/06/2025 đều là 41,735,314,384 VND) cho thấy công ty không có hoạt động mua sắm hoặc nhượng bán, thanh lý tài sản cố định vô hình mới trong kỳ này. Tuy nhiên, Khấu hao lũy kế vẫn tăng (từ 28,688,360,764 VND lên 29,870,844,298 VND) là do công ty tiếp tục thực hiện ghi nhận chi phí khấu hao cho các tài sản vô hình hiện có trong kỳ, phân bổ giá trị của chúng vào chi phí hoạt động theo thời gian sử dụng ước tính."
+  },
+  {
+    "instruction": "Tổng giá trị đầu tư vào công ty con tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "17",
+    "output": "Tổng giá trị đầu tư vào công ty con tại ngày 30/06/2025 là 399,881,280,000 VND."
+  },
+  {
+    "instruction": "Tỷ lệ vốn điều lệ của Vietravel tại Công ty TNHH Du lịch và Tiếp thị Vận tải Việt Nam là bao nhiêu?",
+    "input": "17",
+    "output": "Tỷ lệ vốn điều lệ của Vietravel tại Công ty TNHH Du lịch và Tiếp thị Vận tải Việt Nam là 49.00%."
+  },
+  {
+    "instruction": "So sánh giá gốc đầu tư vào Công ty Cổ phần Du lịch Sài Gòn Việt Nam giữa đầu năm và cuối quý.",
+    "input": "17",
+    "output": "Giá gốc đầu tư vào Công ty Cổ phần Du lịch Sài Gòn Việt Nam tại ngày 01/01/2025 là 525,000,000 VND và tại ngày 30/06/2025 cũng là 525,000,000 VND. Giá gốc không thay đổi trong kỳ."
+  },
+  {
+    "instruction": "Giải thích tại sao Tập đoàn không có thông tin về giá trị hợp lý của các khoản đầu tư vào công ty liên kết và các đơn vị khác.",
+    "input": "17",
+    "output": "Tập đoàn không có thông tin về giá trị hợp lý của các khoản đầu tư vào công ty liên kết và các đơn vị khác có thể là do các khoản đầu tư này không được niêm yết trên thị trường chứng khoán công khai, hoặc không có đủ dữ liệu thị trường đáng tin cậy để xác định giá trị hợp lý một cách khách quan. Điều này thường xảy ra với các khoản đầu tư vào các công ty tư nhân hoặc các đơn vị có quy mô nhỏ, không có giao dịch thường xuyên trên thị trường."
+  },
+  {
+    "instruction": "Đánh giá mức độ tập trung rủi ro trong các khoản đầu tư vào công ty con và công ty liên kết.",
+    "input": "17",
+    "output": "Mức độ tập trung rủi ro trong các khoản đầu tư của Vietravel vào công ty con và công ty liên kết có vẻ khá cao. Đối với công ty con, giá trị đầu tư lớn vào Công ty Cổ phần Dịch vụ Vận tải Thế giới (103,083,480,000 VND) và Công ty Cổ phần Phát triển Văn hóa - Xuất Nhập Khẩu (296,797,800,000 VND) cho thấy sự phụ thuộc vào hiệu quả hoạt động của các đơn vị này. Tương tự, Đầu tư góp vốn vào đơn vị khác cũng có một khoản lớn vào Công ty Cổ phần Hàng không Du lịch Việt Nam (178,137,140,000 VND), với dự phòng tương ứng 178,137,140,000 VND, cho thấy rủi ro suy giảm giá trị đáng kể. Việc không có thông tin về giá trị hợp lý cũng làm tăng rủi ro về tính minh bạch và khả năng đánh giá chính xác giá trị thực của các khoản đầu tư này."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không có phần lãi hoặc lỗ trong công ty liên kết trong kỳ này đến báo cáo kết quả kinh doanh hợp nhất.",
+    "input": "17",
+    "output": "Trong 6 tháng đầu năm 2025, báo cáo cho thấy không có \"Lãi lỗ của công ty liên kết\" được ghi nhận. Điều này có nghĩa là phần lãi hoặc lỗ sau khi mua của các công ty liên kết không được phản ánh vào báo cáo kết quả kinh doanh hợp nhất của Tập đoàn trong kỳ này. Tác động là làm giảm tính đầy đủ của báo cáo kết quả kinh doanh, vì nó không bao gồm đóng góp (tích cực hoặc tiêu cực) từ các hoạt động của các công ty liên kết. Nếu các công ty liên kết này có lãi lớn, lợi nhuận hợp nhất của Tập đoàn sẽ bị đánh giá thấp hơn giá trị thực tế. Ngược lại, nếu có lỗ, lợi nhuận sẽ bị đánh giá cao hơn. Điều này có thể ảnh hưởng đến cái nhìn tổng thể về hiệu quả kinh doanh của Tập đoàn."
+  },
+  {
+    "instruction": "Dự báo rủi ro về khả năng suy giảm giá trị các khoản đầu tư vào đơn vị khác nếu dự phòng đã trích lập không đủ.",
+    "input": "17",
+    "output": "Dự phòng đã trích lập cho khoản đầu tư vào Công ty Cổ phần Hàng không Du lịch Việt Nam là 178,137,140,000 VND, bằng đúng giá gốc. Điều này cho thấy công ty đã đánh giá rất cao rủi ro suy giảm giá trị của khoản đầu tư này. Nếu dự phòng này được cho là không đủ (ví dụ, khoản đầu tư mất giá hơn nữa), công ty sẽ phải trích lập thêm dự phòng, điều này sẽ làm giảm lợi nhuận trong kỳ và tiếp tục giảm giá trị ghi sổ của tài sản. Rủi ro tiềm ẩn là nếu tình hình của công ty được đầu tư xấu đi đáng kể, và dự phòng hiện tại không phản ánh hết mức độ tổn thất, Tập đoàn có thể phải đối mặt với các khoản lỗ lớn hơn trong tương lai, ảnh hưởng đến vốn chủ sở hữu và uy tín tài chính."
+  },
+  {
+    "instruction": "Giá trị còn lại thuần của Lợi thế thương mại tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "18",
+    "output": "Giá trị còn lại thuần của Lợi thế thương mại tại ngày 30/06/2025 là 360,813,000 VND."
+  },
+  {
+    "instruction": "Tổng khoản Phải trả người bán ngắn hạn của Vietravel tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "18",
+    "output": "Tổng khoản Phải trả người bán ngắn hạn của Vietravel tại ngày 30/06/2025 là 754,779,820,028 VND."
+  },
+  {
+    "instruction": "So sánh tổng Người mua trả tiền trước ngắn hạn cuối quý với đầu năm. Thay đổi bao nhiêu?",
+    "input": "18",
+    "output": "Tổng Người mua trả tiền trước ngắn hạn cuối quý (30/06/2025) là 482,962,769,708 VND. Số đầu năm (01/01/2025) là 328,900,639,363 VND. Khoản mục này đã tăng 154,062,130,345 VND."
+  },
+  {
+    "instruction": "Giải thích nguyên nhân của sự giảm giá trị còn lại thuần của Lợi thế thương mại trong kỳ.",
+    "input": "18",
+    "output": "Giá trị còn lại thuần của Lợi thế thương mại đã giảm từ 481,084,000 VND (đầu năm) xuống 360,813,000 VND (cuối quý). Nguyên nhân của sự giảm này là do công ty đã ghi nhận \"Khấu hao trong kỳ\" là 120,271,000 VND cho Lợi thế thương mại liên quan đến An Incentives SARL."
+  },
+  {
+    "instruction": "Đánh giá sự thay đổi trong cấu trúc các khoản Phải trả người bán ngắn hạn, đặc biệt là sự gia tăng đáng kể của khoản 'Các nhà cung cấp khác'.",
+    "input": "18",
+    "output": "Khoản Phải trả người bán ngắn hạn đã tăng đáng kể từ 473,895,706,094 VND vào đầu năm lên 754,779,820,028 VND vào cuối quý. Sự gia tăng này chủ yếu đến từ \"Các nhà cung cấp khác\" với mức tăng từ 100,914,678,657 VND lên 522,186,775,545 VND. Đồng thời, một số khoản phải trả từ các nhà cung cấp cụ thể như Siam Brothers Enterprise Co., Ltd và Beijing Cosmos Travel International Co., Ltd lại giảm. Sự gia tăng mạnh mẽ của khoản \"Các nhà cung cấp khác\" cho thấy công ty đã tăng cường mua hàng hóa hoặc dịch vụ từ nhiều nhà cung cấp nhỏ lẻ hoặc mới hơn, hoặc các giao dịch với các nhà cung cấp lớn đã được cơ cấu lại. Điều này có thể làm tăng áp lực thanh toán trong ngắn hạn nếu dòng tiền không đủ để đáp ứng."
+  },
+  {
+    "instruction": "Phân tích tác động của việc tăng Người mua trả tiền trước ngắn hạn đến dòng tiền và nghĩa vụ của công ty.",
+    "input": "18",
+    "output": "Việc Người mua trả tiền trước ngắn hạn tăng từ 328,900,639,363 VND lên 482,962,769,708 VND là một tín hiệu tích cực cho dòng tiền của công ty. Điều này cho thấy công ty đã nhận được nhiều tiền mặt hơn từ khách hàng cho các sản phẩm hoặc dịch vụ sẽ được cung cấp trong tương lai. Tác động là: (1) Cải thiện dòng tiền: Tiền nhận trước giúp tăng dòng tiền hoạt động, cung cấp nguồn vốn không cần vay nợ. (2) Tăng nghĩa vụ: Khoản này đồng thời là một nghĩa vụ ngắn hạn, thể hiện cam kết của công ty phải cung cấp hàng hóa/dịch vụ cho khách hàng trong tương lai. Việc tăng khoản này đòi hỏi công ty phải có năng lực và kế hoạch để thực hiện nghĩa vụ đó. Nếu không, có thể phát sinh rủi ro về uy tín và pháp lý."
+  },
+  {
+    "instruction": "Dự báo rủi ro về khả năng thanh toán các khoản phải trả người bán ngắn hạn nếu doanh thu của công ty giảm sút.",
+    "input": "18",
+    "output": "Nếu doanh thu của công ty giảm sút, khả năng thanh toán các khoản phải trả người bán ngắn hạn (đã tăng lên đáng kể) sẽ gặp rủi ro. Doanh thu giảm có thể dẫn đến giảm dòng tiền từ hoạt động kinh doanh, làm hạn chế khả năng công ty sử dụng tiền mặt để thanh toán các nghĩa vụ ngắn hạn. Điều này có thể gây ra áp lực thanh khoản, buộc công ty phải tìm kiếm nguồn tài trợ bên ngoài (vay nợ) hoặc đàm phán lại các điều khoản thanh toán với nhà cung cấp, ảnh hưởng đến uy tín và quan hệ kinh doanh. Trong trường hợp xấu nhất, công ty có thể đối mặt với nguy cơ vỡ nợ ngắn hạn."
+  },
+  {
+    "instruction": "Thuế suất thuế thu nhập doanh nghiệp mà Vietravel phải nộp là bao nhiêu?",
+    "input": "19",
+    "output": "Thuế suất thuế thu nhập doanh nghiệp mà Vietravel phải nộp là 20%."
+  },
+  {
+    "instruction": "Tổng thuế GTGT được khấu trừ tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "19",
+    "output": "Tổng thuế GTGT được khấu trừ tại ngày 30/06/2025 là 639,003,922 VND."
+  },
+  {
+    "instruction": "So sánh tổng Phải nộp Nhà nước cuối quý với đầu năm. Giải thích sự thay đổi đáng kể của Thuế GTGT và Thuế TNDN.",
+    "input": "19",
+    "output": "Tổng Phải nộp Nhà nước cuối quý (30/06/2025) là 17,571,134,349 VND, giảm đáng kể so với đầu năm (01/01/2025) là 67,759,090,691 VND. Sự thay đổi đáng kể này chủ yếu đến từ: (1) Thuế GTGT: Khoản phải nộp giảm mạnh từ 41,237,557,040 VND xuống 9,820,744,899 VND, có thể do công ty đã thực hiện thanh toán các nghĩa vụ thuế GTGT hoặc doanh thu chịu thuế GTGT giảm, hoặc thuế GTGT đầu vào được khấu trừ tăng. (2) Thuế thu nhập doanh nghiệp: Khoản phải nộp cũng giảm mạnh từ 19,921,459,246 VND xuống 3,443,377,527 VND, điều này phù hợp với sự sụt giảm lợi nhuận trước thuế của công ty trong kỳ như đã thấy trong Báo cáo kết quả kinh doanh."
+  },
+  {
+    "instruction": "Nêu các loại thuế suất GTGT áp dụng cho các dịch vụ khác nhau của Tập đoàn.",
+    "input": "19",
+    "output": "Các loại thuế suất GTGT áp dụng cho các dịch vụ khác nhau của Tập đoàn là: Dịch vụ du lịch trong nước và các dịch vụ nội địa khác có thuế suất 8% - 10%. Vé máy bay đi nước ngoài có thuế suất 0%."
+  },
+  {
+    "instruction": "Đánh giá mức độ tuân thủ nghĩa vụ thuế của công ty dựa trên số liệu về thuế và các khoản phải nộp Nhà nước.",
+    "input": "19",
+    "output": "Dựa trên số liệu, công ty có vẻ tuân thủ nghĩa vụ thuế của mình. Các khoản phải thu Nhà nước và phải nộp Nhà nước được trình bày rõ ràng, cho thấy công ty đã thực hiện kê khai và có các nghĩa vụ thuế nhất định. Sự giảm mạnh của các khoản phải nộp thuế GTGT và TNDN cuối quý so với đầu năm có thể là do công ty đã hoàn thành việc nộp các khoản thuế trong kỳ hoặc do kết quả kinh doanh giảm sút, dẫn đến nghĩa vụ thuế TNDN thấp hơn. Điều này không nhất thiết phản ánh việc không tuân thủ mà có thể là kết quả của hoạt động kinh doanh và chu kỳ thanh toán thuế. Tuy nhiên, việc đánh giá đầy đủ cần thông tin chi tiết hơn về các kỳ thuế và các khoản thanh toán thực tế."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính phát sinh từ sự chênh lệch lớn giữa Phải thu và Phải nộp thuế GTGT cuối quý.",
+    "input": "19",
+    "output": "Tại cuối quý, công ty có \"Thuế GTGT được khấu trừ\" là 639,003,922 VND (Phải thu), trong khi \"Phải nộp Thuế GTGT\" là 9,820,744,899 VND. Ngoài ra, trong mục \"Thuế và các khoản khác phải thu Nhà nước\", Thuế GTGT phải thu là 1,025,388,555 VND. Tổng phải thu về thuế GTGT là khoảng 1,664,392,477 VND (639,003,922 + 1,025,388,555). Có một sự chênh lệch đáng kể giữa số thuế GTGT phải thu và phải nộp. Rủi ro tài chính phát sinh nếu công ty không thể nhanh chóng thu hồi hoặc khấu trừ hết số thuế GTGT được khấu trừ (phải thu) trong khi vẫn phải thanh toán số thuế GTGT phải nộp. Điều này có thể gây áp lực lên dòng tiền ngắn hạn của công ty, vì một lượng tiền mặt bị chiếm dụng trong các khoản thuế phải thu chờ hoàn hoặc khấu trừ. Nếu quy trình hoàn thuế chậm trễ, công ty có thể cần nguồn vốn khác để đáp ứng nghĩa vụ thanh toán."
+  },
+  {
+    "instruction": "Dự báo tác động của việc tăng Các khoản phải trả ngắn hạn khác đến khả năng quản lý dòng tiền của công ty.",
+    "input": "19",
+    "output": "Các khoản phải trả ngắn hạn khác đã tăng từ 147,270,343,509 VND vào đầu năm lên 150,400,909,497 VND vào cuối quý. Mặc dù mức tăng không quá lớn, nhưng nếu xu hướng này tiếp tục, nó sẽ làm tăng thêm nghĩa vụ thanh toán ngắn hạn của công ty. Tác động đến khả năng quản lý dòng tiền là: (1) Áp lực thanh khoản: Công ty cần phải có đủ tiền mặt để chi trả các khoản này trong thời gian ngắn, gây áp lực lên dòng tiền. (2) Phụ thuộc vào dòng tiền hoạt động: Nếu dòng tiền từ hoạt động kinh doanh không ổn định, việc có nhiều khoản phải trả ngắn hạn khác có thể dẫn đến rủi ro thanh toán. (3) Chi phí cơ hội: Tiền mặt được sử dụng để thanh toán các khoản này sẽ không thể dùng cho các hoạt động đầu tư hoặc các mục đích sinh lời khác. Do đó, việc quản lý chặt chẽ và tối ưu hóa các khoản phải trả này là cần thiết để đảm bảo dòng tiền được sử dụng hiệu quả."
+  },
+  {
+    "instruction": "Tổng vay và nợ thuê tài chính ngắn hạn của Vietravel tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "20",
+    "output": "Tổng vay và nợ thuê tài chính ngắn hạn của Vietravel tại ngày 30/06/2025 là 817,420,883,813 VND."
+  },
+  {
+    "instruction": "Nêu tên 3 ngân hàng mà Vietravel có khoản vay ngắn hạn.",
+    "input": "20",
+    "output": "Ba ngân hàng mà Vietravel có khoản vay ngắn hạn là: Ngân hàng TMCP Công Thương Việt Nam, Ngân hàng TMCP Đầu tư và Phát triển Việt Nam, và Ngân hàng TMCP Quân đội."
+  },
+  {
+    "instruction": "So sánh tổng khoản vay ngắn hạn từ Ngân hàng TMCP Quân đội cuối quý với đầu năm. Thay đổi bao nhiêu?",
+    "input": "20",
+    "output": "Khoản vay ngắn hạn từ Ngân hàng TMCP Quân đội cuối quý (30/06/2025) là 99,993,510,305 VND. Số đầu năm (01/01/2025) là 49,968,969,177 VND. Khoản vay này đã tăng 50,024,541,128 VND."
+  },
+  {
+    "instruction": "Mục đích chính của hầu hết các khoản vay ngắn hạn là gì?",
+    "input": "20",
+    "output": "Mục đích chính của hầu hết các khoản vay ngắn hạn là Hỗ trợ vốn lưu động."
+  },
+  {
+    "instruction": "Đánh giá mức độ phụ thuộc của công ty vào các khoản vay ngắn hạn từ ngân hàng.",
+    "input": "20",
+    "output": "Với tổng vay và nợ thuê tài chính ngắn hạn là 817,420,883,813 VND tại ngày 30/06/2025, công ty có mức độ phụ thuộc đáng kể vào các khoản vay ngắn hạn từ ngân hàng. Hầu hết các khoản vay này đều nhằm mục đích hỗ trợ vốn lưu động. Mặc dù các khoản vay ngắn hạn giúp đáp ứng nhu cầu vốn nhanh chóng, nhưng sự phụ thuộc lớn này có thể tạo ra rủi ro thanh khoản nếu công ty không thể tái cấp vốn hoặc thanh toán đúng hạn, đặc biệt khi các khoản vay này không có điều kiện bảo đảm, làm tăng rủi ro cho các ngân hàng cho vay và cho chính công ty."
+  },
+  {
+    "instruction": "Phân tích rủi ro thanh khoản nếu công ty không thể tái cấp vốn hoặc thanh toán các khoản vay ngắn hạn đúng hạn, đặc biệt khi không có tài sản bảo đảm.",
+    "input": "20",
+    "output": "Việc hầu hết các khoản vay ngắn hạn của Vietravel không có điều kiện bảo đảm tiềm ẩn rủi ro thanh khoản đáng kể. Nếu công ty không thể tái cấp vốn các khoản vay này hoặc không có đủ dòng tiền để thanh toán đúng hạn, hậu quả có thể nghiêm trọng: (1) Khó khăn tài chính: Thiếu hụt tiền mặt để chi trả các khoản vay đến hạn có thể dẫn đến vỡ nợ ngắn hạn. (2) Tăng chi phí vay: Nếu công ty vẫn có thể vay, các ngân hàng có thể yêu cầu lãi suất cao hơn do rủi ro tăng lên hoặc yêu cầu tài sản bảo đảm. (3) Ảnh hưởng uy tín: Việc không thể thanh toán nợ đúng hạn sẽ làm tổn hại nghiêm trọng đến uy tín tín dụng của công ty, gây khó khăn cho việc huy động vốn trong tương lai. (4) Giới hạn hoạt động: Các hạn chế về vốn có thể làm gián đoạn hoạt động kinh doanh, cản trở các kế hoạch mở rộng hoặc duy trì hoạt động bình thường."
+  },
+  {
+    "instruction": "Dự báo tác động của việc thay đổi lãi suất trên thị trường đến chi phí tài chính của công ty với cơ cấu vay ngắn hạn hiện tại.",
+    "input": "20",
+    "output": "Với cơ cấu vay ngắn hạn đáng kể (hơn 800 tỷ VND) và hầu hết các khoản vay đều có lãi suất \"Theo kỳ phiếu\" (cho thấy có thể điều chỉnh linh hoạt theo thị trường), công ty sẽ chịu tác động trực tiếp từ sự thay đổi lãi suất trên thị trường. Nếu lãi suất thị trường tăng, chi phí lãi vay của công ty sẽ tăng lên, làm giảm lợi nhuận thuần từ hoạt động kinh doanh và tổng lợi nhuận sau thuế. Ngược lại, nếu lãi suất giảm, chi phí lãi vay sẽ giảm, có lợi cho lợi nhuận. Do đó, công ty có nguy cơ bị ảnh hưởng bởi biến động lãi suất, và cần có chiến lược quản lý rủi ro lãi suất phù hợp."
+  },
+  {
+    "instruction": "Tổng các khoản vay dài hạn của Vietravel tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "21",
+    "output": "Tổng các khoản vay dài hạn của Vietravel tại ngày 30/06/2025 là 51,839,853,948 VND."
+  },
+  {
+    "instruction": "Mục đích chính của khoản vay dài hạn từ Ngân hàng TMCP Công Thương Việt Nam là gì?",
+    "input": "21",
+    "output": "Mục đích chính của khoản vay dài hạn từ Ngân hàng TMCP Công Thương Việt Nam là Đầu tư vào dự án “Xây dựng chuỗi dịch vụ du lịch và dịch vụ hỗ trợ du lịch quy mô quốc tế tại Thành phố Huế”."
+  },
+  {
+    "instruction": "So sánh khoản vay dài hạn từ Ngân hàng TMCP Công Thương Việt Nam cuối quý với đầu năm. Thay đổi bao nhiêu?",
+    "input": "21",
+    "output": "Khoản vay dài hạn từ Ngân hàng TMCP Công Thương Việt Nam cuối quý (30/06/2025) là 40,756,513,948 VND. Số đầu năm (01/01/2025) là 21,189,379,798 VND. Khoản vay này đã tăng 19,567,134,150 VND."
+  },
+  {
+    "instruction": "Giải thích sự thay đổi trong tổng các khoản vay ngắn hạn từ đầu năm đến cuối quý.",
+    "input": "21",
+    "output": "Tổng các khoản vay ngắn hạn đã giảm từ 882,415,637,929 VND vào ngày 01/01/2025 xuống 817,420,883,813 VND vào ngày 30/06/2025, giảm 64,994,754,116 VND. Sự thay đổi này là do trong kỳ, công ty đã vay thêm 1,197,326,432,158 VND nhưng đồng thời đã thanh toán một lượng lớn nợ vay là 1,262,321,186,274 VND, dẫn đến số dư cuối kỳ giảm so với đầu kỳ."
+  },
+  {
+    "instruction": "Đánh giá hiệu quả của việc quản lý nợ dài hạn của công ty dựa trên biến động trong kỳ.",
+    "input": "21",
+    "output": "Nợ dài hạn của công ty đã tăng đáng kể từ 33,147,717,798 VND lên 51,839,853,948 VND, chủ yếu do việc vay thêm 19,567,134,150 VND từ Ngân hàng TMCP Công Thương Việt Nam để đầu tư vào dự án tại Huế. Đồng thời, công ty cũng đã thanh toán 874,998,000 VND các khoản vay dài hạn từ cá nhân khác. Việc tăng nợ dài hạn để tài trợ cho các dự án đầu tư lớn có tài sản bảo đảm là một chiến lược hợp lý cho mục đích phát triển dài hạn. Tuy nhiên, hiệu quả quản lý nợ dài hạn sẽ phụ thuộc vào khả năng sinh lời của dự án được đầu tư và khả năng tạo ra dòng tiền để trả nợ theo đúng kế hoạch (thời hạn vay 120 tháng, lãi suất 7.5%/năm). Hiện tại, việc tăng nợ cho đầu tư là một dấu hiệu của sự mở rộng, nhưng cần theo dõi chặt chẽ hiệu quả của dự án để đảm bảo khả năng trả nợ."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính của công ty liên quan đến tài sản bảo đảm của khoản vay dài hạn từ Ngân hàng TMCP Công Thương Việt Nam.",
+    "input": "21",
+    "output": "Khoản vay dài hạn từ Ngân hàng TMCP Công Thương Việt Nam (110 tỷ VND) được bảo đảm bằng quyền sử dụng đất và toàn bộ công trình gắn liền với đất của Dự án tại Huế, cùng với các quyền tài sản và lợi ích khác liên quan đến Dự án, với tổng giá trị thế chấp lớn (162,424,000,000 VND và 180,000,000,000 VND). Rủi ro tài chính tiềm ẩn nằm ở chỗ nếu công ty không thể hoàn thành dự án hoặc dự án không hoạt động hiệu quả như kỳ vọng, không tạo ra đủ dòng tiền để trả nợ, ngân hàng có thể thực hiện quyền xử lý tài sản bảo đảm. Điều này có thể dẫn đến mất tài sản quan trọng cho công ty và gây ra tổn thất lớn về vốn. Ngoài ra, việc định giá tài sản bảo đảm có thể biến động theo thị trường bất động sản, ảnh hưởng đến khả năng xử lý nếu xảy ra rủi ro."
+  },
+  {
+    "instruction": "Dự báo tác động của việc không có hoạt động chuyển nợ dài hạn sang ngắn hạn trong kỳ đối với kế hoạch trả nợ của công ty.",
+    "input": "21",
+    "output": "Trong kỳ này, không có hoạt động \"Chuyển sang vay ngắn hạn\" từ nợ dài hạn. Điều này có nghĩa là các khoản nợ dài hạn của công ty vẫn giữ nguyên tính chất dài hạn theo kế hoạch ban đầu và chưa đến kỳ đáo hạn để chuyển sang thành phần ngắn hạn. Tác động của việc này đối với kế hoạch trả nợ là: (1) Ổn định kế hoạch: Kế hoạch trả nợ dài hạn của công ty không bị xáo trộn, công ty không phải đối mặt với áp lực trả nợ ngay lập tức đối với các khoản vay này. (2) Giảm áp lực thanh khoản: Việc không có nợ dài hạn chuyển thành ngắn hạn giúp giảm áp lực lên dòng tiền ngắn hạn của công ty. (3) Duy trì cơ cấu vốn: Cơ cấu vốn dài hạn được duy trì, giúp công ty có thời gian để sử dụng vốn hiệu quả cho các dự án đầu tư dài hơi mà không lo lắng về việc tái cấp vốn quá sớm. Tuy nhiên, công ty vẫn cần chuẩn bị cho việc trả nợ dài hạn khi chúng đến hạn trong các kỳ sau."
+  },
+  {
+    "instruction": "Tổng vốn chủ sở hữu của Vietravel tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "22",
+    "output": "Tổng vốn chủ sở hữu của Vietravel tại ngày 30/06/2025 là 475,383,194,290 VND."
+  },
+  {
+    "instruction": "Vốn đầu tư của chủ sở hữu tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "22",
+    "output": "Vốn đầu tư của chủ sở hữu tại ngày 30/06/2025 là 292,390,900,000 VND."
+  },
+  {
+    "instruction": "So sánh Lợi nhuận giữ lại giữa ngày 01/01/2025 và 30/06/2025. Thay đổi như thế nào?",
+    "input": "22",
+    "output": "Lợi nhuận giữ lại tại ngày 01/01/2025 là 34,843,045,001 VND. Tại ngày 30/06/2025 là 40,343,129,721 VND. Lợi nhuận giữ lại đã tăng 5,500,084,720 VND."
+  },
+  {
+    "instruction": "Tỷ lệ sở hữu của Công ty Cổ phần Vietravel Corporation trong công ty là bao nhiêu phần trăm?",
+    "input": "22",
+    "output": "Tỷ lệ sở hữu của Công ty Cổ phần Vietravel Corporation trong công ty là 14.29%."
+  },
+  {
+    "instruction": "Đánh giá sự thay đổi trong cấu trúc vốn chủ sở hữu của công ty từ năm 2024 đến giữa năm 2025.",
+    "input": "22",
+    "output": "Tổng vốn chủ sở hữu của công ty đã tăng từ 470,113,748,407 VND vào đầu năm 2025 lên 475,383,194,290 VND vào ngày 30/06/2025. Sự thay đổi này chủ yếu do \"Lợi nhuận giữ lại\" tăng lên đáng kể (từ 34,843,045,001 VND lên 40,343,129,721 VND) nhờ \"Lãi/lỗ trong năm\" (8,161,326,636 VND), mặc dù có trừ đi \"Thù lao của Ban Tổng Giám đốc\" (1,500,000,000 VND). \"Chênh lệch tỷ giá hối đoái\" cũng tăng nhẹ. Trong khi đó, \"Vốn đầu tư của chủ sở hữu\", \"Thặng dư vốn cổ phần\", \"Cổ phiếu quỹ\" và \"Quỹ đầu tư phát triển\" không thay đổi trong kỳ này. \"Lợi ích cổ đông không kiểm soát\" giảm mạnh. Nhìn chung, công ty đang tăng cường vốn chủ sở hữu thông qua lợi nhuận giữ lại thay vì phát hành thêm cổ phiếu mới."
+  },
+  {
+    "instruction": "Phân tích tác động của việc thay đổi thành viên quản lý chủ chốt đến các điều chỉnh trong vốn chủ sở hữu.",
+    "input": "22",
+    "output": "Thông tin trong chunk không trực tiếp đề cập đến việc thay đổi thành viên quản lý chủ chốt dẫn đến các điều chỉnh trong vốn chủ sở hữu. Tuy nhiên, bảng \"Lịch trình so sánh thay đổi vốn chủ sở hữu\" có dòng \"Thù lao của Ban Tổng Giám đốc\" được ghi nhận là khoản giảm trừ lợi nhuận giữ lại (1,500,000,000 VND trong 6 tháng đầu năm 2025). Mặc dù không nói rõ về sự thay đổi thành viên, nhưng việc chi trả thù lao cho Ban Tổng Giám đốc là một chi phí phát sinh từ hoạt động quản lý, và việc ghi nhận nó làm giảm lợi nhuận giữ lại sẽ ảnh hưởng trực tiếp đến vốn chủ sở hữu. Nếu có sự thay đổi lớn trong cơ cấu Ban Tổng Giám đốc, các chính sách thù lao có thể thay đổi, từ đó ảnh hưởng đến mức độ và tần suất các khoản giảm trừ vốn chủ sở hữu này trong tương lai."
+  },
+  {
+    "instruction": "Dự báo rủi ro liên quan đến sự sụt giảm lợi ích cổ đông không kiểm soát và ảnh hưởng của nó đến cấu trúc sở hữu của Tập đoàn.",
+    "input": "22",
+    "output": "Lợi ích cổ đông không kiểm soát đã giảm đáng kể từ 1,165,943,390 VND vào đầu năm 2025 xuống 31,538,666 VND vào ngày 30/06/2025, chủ yếu do \"Lãi/lỗ trong năm\" là (1,179,804,024) VND. Sự sụt giảm mạnh này cho thấy các công ty con mà Tập đoàn không sở hữu 100% đã hoạt động không hiệu quả hoặc gặp lỗ lớn trong kỳ, hoặc có thể đã có hoạt động thoái vốn các công ty con. Rủi ro tiềm ẩn là nếu tình trạng lỗ này tiếp diễn, nó có thể ảnh hưởng đến tổng lợi nhuận hợp nhất của Tập đoàn. Về cấu trúc sở hữu, sự giảm sút này cho thấy phần sở hữu của các cổ đông không kiểm soát trong các công ty con đang giảm giá trị, có thể dẫn đến việc Tập đoàn tăng tỷ lệ sở hữu hoặc thanh lý các khoản đầu tư kém hiệu quả, từ đó thay đổi cơ cấu sở hữu tổng thể của Tập đoàn."
+  },
+  {
+    "instruction": "Số lượng cổ phiếu phổ thông đang lưu hành của Vietravel là bao nhiêu?",
+    "input": "23",
+    "output": "Số lượng cổ phiếu phổ thông đang lưu hành của Vietravel là 28,658,247 cổ phiếu."
+  },
+  {
+    "instruction": "Doanh thu từ cung cấp dịch vụ du lịch trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "23",
+    "output": "Doanh thu từ cung cấp dịch vụ du lịch trong 6 tháng đầu năm 2025 là 3,260,163,914,175 VND."
+  },
+  {
+    "instruction": "So sánh Lãi chênh lệch tỷ giá hối đoái trong Doanh thu hoạt động tài chính giữa 6 tháng đầu năm 2025 và 2024.",
+    "input": "23",
+    "output": "Lãi chênh lệch tỷ giá hối đoái trong Doanh thu hoạt động tài chính trong 6 tháng đầu năm 2025 là 5,876,927,340 VND. Trong 6 tháng đầu năm 2024 là 3,114,186,278 VND. Khoản mục này đã tăng 2,762,741,062 VND."
+  },
+  {
+    "instruction": "Mệnh giá của cổ phiếu đang lưu hành là bao nhiêu?",
+    "input": "23",
+    "output": "Mệnh giá của cổ phiếu đang lưu hành là 10.000 VND."
+  },
+  {
+    "instruction": "Đánh giá mức độ biến động của các loại ngoại tệ mà công ty nắm giữ giữa đầu năm và cuối quý.",
+    "input": "23",
+    "output": "Công ty nắm giữ nhiều loại ngoại tệ như USD, EUR, JPY, SGD, AUD. Từ đầu năm (01/01/2025) đến cuối quý (30/06/2025), số dư các loại ngoại tệ này có sự biến động. USD và JPY tăng đáng kể, trong khi EUR giảm mạnh và AUD giảm nhẹ. SGD có mức tăng nhỏ. Sự biến động này cho thấy công ty có hoạt động giao dịch hoặc nhận thanh toán bằng nhiều loại ngoại tệ khác nhau. Việc nắm giữ các loại ngoại tệ này phơi bày công ty trước rủi ro tỷ giá hối đoái, có thể tạo ra lãi hoặc lỗ khi quy đổi sang VND, ảnh hưởng đến doanh thu và chi phí tài chính như đã thấy trong mục 6.3 và 6.4."
+  },
+  {
+    "instruction": "Phân tích tác động của sự gia tăng Chi phí lãi vay và Lỗ chênh lệch tỷ giá hối đoái đến Chi phí tài chính tổng thể của công ty.",
+    "input": "23",
+    "output": "Sự gia tăng của Chi phí lãi vay (từ 30,543,370,429 VND lên 34,392,427,918 VND) và Lỗ chênh lệch tỷ giá hối đoái (từ 5,061,669,726 VND lên 17,036,615,937 VND) đã khiến tổng Chi phí tài chính của công ty tăng mạnh từ 35,605,040,155 VND trong 6 tháng đầu năm 2024 lên 51,429,043,855 VND trong 6 tháng đầu năm 2025. Tác động là làm giảm lợi nhuận thuần từ hoạt động kinh doanh và lợi nhuận sau thuế của công ty. Cụ thể, chi phí lãi vay tăng cho thấy gánh nặng nợ lớn hơn, trong khi lỗ tỷ giá tăng đột biến cho thấy công ty đã chịu thiệt hại đáng kể do biến động tỷ giá hối đoái. Cả hai yếu tố này đều góp phần gây áp lực lên khả năng sinh lời của công ty."
+  },
+  {
+    "instruction": "Dự báo rủi ro liên quan đến sự phụ thuộc của công ty vào doanh thu từ cung cấp dịch vụ du lịch.",
+    "input": "23",
+    "output": "Doanh thu từ cung cấp dịch vụ du lịch chiếm phần lớn trong tổng doanh thu thuần của công ty (3,260,163,914,175 VND trên tổng 3,319,423,631,122 VND trong 6 tháng đầu năm 2025). Sự phụ thuộc cao này tiềm ẩn rủi ro đáng kể. Ngành du lịch rất nhạy cảm với các yếu tố bên ngoài như tình hình kinh tế, dịch bệnh, thiên tai, chính sách du lịch, và ổn định chính trị. Nếu có bất kỳ yếu tố tiêu cực nào tác động đến ngành du lịch, doanh thu của công ty có thể sụt giảm nghiêm trọng, ảnh hưởng trực tiếp đến lợi nhuận và khả năng hoạt động. Việc đa dạng hóa nguồn doanh thu hoặc có chiến lược ứng phó rủi ro hiệu quả là cần thiết để giảm thiểu sự phụ thuộc này."
+  },
+  {
+    "instruction": "Tổng Chi phí bán hàng trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "24",
+    "output": "Tổng Chi phí bán hàng trong 6 tháng đầu năm 2025 là 20,388,438,555 VND."
+  },
+  {
+    "instruction": "Lãi cơ bản trên mỗi cổ phiếu trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "24",
+    "output": "Lãi cơ bản trên mỗi cổ phiếu trong 6 tháng đầu năm 2025 là 285 VND/cổ phiếu."
+  },
+  {
+    "instruction": "So sánh Chi phí hoa hồng trong Chi phí bán hàng giữa 6 tháng đầu năm 2025 và 2024. Nhận xét về sự thay đổi.",
+    "input": "24",
+    "output": "Chi phí hoa hồng trong 6 tháng đầu năm 2025 là 5,997,569,075 VND. Trong 6 tháng đầu năm 2024 là 10,381,075,752 VND. Chi phí hoa hồng đã giảm đáng kể 4,383,506,677 VND. Sự giảm này có thể do công ty đã thay đổi chính sách hoa hồng, tối ưu hóa các kênh bán hàng hoặc hiệu quả hơn trong việc đạt được doanh số mà không cần chi nhiều hoa hồng, hoặc doanh số từ các kênh chịu hoa hồng giảm."
+  },
+  {
+    "instruction": "Khoản mục nào có sự biến động lớn nhất trong Thu nhập khác giữa hai kỳ?",
+    "input": "24",
+    "output": "Khoản mục có sự biến động lớn nhất trong Thu nhập khác giữa hai kỳ là \"Hoa hồng nhận được từ nhà cung cấp\", đã giảm từ 13,081,758,997 VND trong 6 tháng đầu năm 2024 xuống còn 3,270,128,396 VND trong 6 tháng đầu năm 2025, giảm 9,811,630,601 VND."
+  },
+  {
+    "instruction": "Đánh giá hiệu quả quản lý chi phí hoạt động của công ty dựa trên xu hướng của Chi phí quản lý doanh nghiệp.",
+    "input": "24",
+    "output": "Chi phí quản lý doanh nghiệp đã tăng từ 136,866,538,668 VND trong 6 tháng đầu năm 2024 lên 141,244,474,343 VND trong 6 tháng đầu năm 2025. Mặc dù doanh thu thuần có tăng nhẹ, nhưng sự gia tăng này của chi phí quản lý cho thấy công ty chưa thực sự hiệu quả trong việc kiểm soát các chi phí hành chính và quản lý. Đặc biệt, \"Chi phí khác\" trong quản lý doanh nghiệp tăng từ 80,179,855,736 VND lên 92,275,686,729 VND. \"Chi phí khấu hao tài sản cố định\" lại giảm đáng kể. Nếu chi phí quản lý doanh nghiệp tiếp tục tăng cao hơn tốc độ tăng trưởng doanh thu, nó có thể ảnh hưởng tiêu cực đến biên lợi nhuận và khả năng sinh lời của công ty."
+  },
+  {
+    "instruction": "Phân tích tác động của việc giảm Lợi nhuận sau thuế đến Lãi cơ bản trên cổ phiếu và tâm lý nhà đầu tư.",
+    "input": "24",
+    "output": "Lợi nhuận sau thuế đã giảm mạnh từ 19,288,990,538 VND (6 tháng đầu năm 2024) xuống 8,161,326,636 VND (6 tháng đầu năm 2025), kéo theo Lãi cơ bản trên cổ phiếu giảm từ 673 VND/cổ phiếu xuống 285 VND/cổ phiếu. Tác động của việc này là: (1) Lãi cơ bản trên cổ phiếu thấp hơn sẽ làm giảm sức hấp dẫn của cổ phiếu đối với nhà đầu tư, đặc biệt là những người tìm kiếm tăng trưởng lợi nhuận. (2) Tâm lý nhà đầu tư: Việc sụt giảm lợi nhuận và EPS thường dẫn đến tâm lý tiêu cực trên thị trường, có thể gây áp lực giảm giá cổ phiếu. Nhà đầu tư có thể lo ngại về hiệu quả hoạt động và triển vọng tương lai của công ty. Điều này có thể ảnh hưởng đến khả năng huy động vốn của công ty thông qua thị trường chứng khoán nếu cần thiết."
+  },
+  {
+    "instruction": "Dự báo rủi ro tài chính nếu các khoản chi phí không liên quan đến hoạt động chính (Chi phí khác) tiếp tục gia tăng.",
+    "input": "24",
+    "output": "Khoản \"Chi phí khác\" trong mục Chi phí khác đã tăng từ 470,216,312 VND (6 tháng đầu năm 2024) lên 1,170,968,760 VND (6 tháng đầu năm 2025), và đặc biệt, \"Tiền phạt thuế\" đã giảm mạnh từ 1,948,087,339 VND xuống 10,538,802 VND. Nếu các khoản chi phí khác (ngoại trừ tiền phạt thuế) tiếp tục gia tăng mà không có sự giải thích rõ ràng hoặc không liên quan trực tiếp đến việc tạo ra doanh thu, công ty sẽ đối mặt với rủi ro tài chính. Các chi phí này có thể là chi phí bất thường, không lặp lại hoặc chi phí không hiệu quả, làm giảm lợi nhuận mà không mang lại giá trị gia tăng. Nếu chúng tăng liên tục, công ty có thể khó kiểm soát chi phí, ảnh hưởng đến khả năng sinh lời bền vững và niềm tin của nhà đầu tư vào quản lý tài chính."
+  },
+  {
+    "instruction": "Tổng chi phí sản xuất kinh doanh theo yếu tố trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "25",
+    "output": "Tổng chi phí sản xuất kinh doanh theo yếu tố trong 6 tháng đầu năm 2025 là 3,373,422,484,819 VND."
+  },
+  {
+    "instruction": "Tổng thù lao của Ban Tổng Giám đốc trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "25",
+    "output": "Tổng thù lao của Ban Tổng Giám đốc trong 6 tháng đầu năm 2025 là 750,000,000 VND (150,000,000 VND x 5 thành viên)."
+  },
+  {
+    "instruction": "So sánh Chi phí dịch vụ bên ngoài giữa 6 tháng đầu năm 2025 và 2024. Sự thay đổi có ý nghĩa gì?",
+    "input": "25",
+    "output": "Chi phí dịch vụ bên ngoài trong 6 tháng đầu năm 2025 là 3,086,818,042,725 VND, tăng so với 3,023,896,202,466 VND trong 6 tháng đầu năm 2024. Mức tăng là 62,921,840,259 VND. Sự thay đổi này có ý nghĩa rằng công ty có thể đang mở rộng hoạt động hoặc ngày càng phụ thuộc vào các dịch vụ từ bên ngoài (ví dụ: thuê ngoài, dịch vụ vận chuyển, dịch vụ hỗ trợ du lịch). Mặc dù điều này có thể giúp công ty linh hoạt hơn và giảm chi phí cố định, nhưng cũng cần quản lý chặt chẽ để đảm bảo hiệu quả chi phí và chất lượng dịch vụ được duy trì."
+  },
+  {
+    "instruction": "Nêu 3 giao dịch quan trọng giữa Vietravel và Công ty Cổ phần Hàng không Du lịch Việt Nam trong 6 tháng đầu năm 2025.",
+    "input": "25",
+    "output": "Ba giao dịch quan trọng giữa Vietravel và Công ty Cổ phần Hàng không Du lịch Việt Nam trong 6 tháng đầu năm 2025 là: Cung cấp dịch vụ (1,354,863,229 VND), Mua dịch vụ (39,958,374,720 VND), và Cho vay (70,000,000,000 VND)."
+  },
+  {
+    "instruction": "Đánh giá mức độ minh bạch của các giao dịch với các bên liên quan dựa trên thông tin được công bố.",
+    "input": "25",
+    "output": "Thông tin được công bố về các giao dịch và số dư với các bên liên quan khá chi tiết, bao gồm danh sách các bên liên quan, các khoản thù lao của Ban Tổng Giám đốc, và các giao dịch quan trọng (cung cấp/mua dịch vụ, trả hộ, cho vay, nhận chuyển nhượng cổ phiếu). Điều này cho thấy mức độ minh bạch tương đối cao trong việc công bố thông tin về các mối quan hệ và giao dịch với các bên liên quan. Việc liệt kê cụ thể các giao dịch giúp nhà đầu tư và các bên liên quan hiểu rõ hơn về cách các hoạt động nội bộ và với các đối tác chiến lược được thực hiện, mặc dù cần thêm bối cảnh để đánh giá liệu các giao dịch này có được thực hiện theo nguyên tắc thị trường hay không."
+  },
+  {
+    "instruction": "Phân tích rủi ro tiềm ẩn khi Chi phí khác theo yếu tố tăng đột biến và tác động của nó đến lợi nhuận của công ty.",
+    "input": "25",
+    "output": "Chi phí khác theo yếu tố đã tăng đột biến từ 43,038,450,073 VND trong 6 tháng đầu năm 2024 lên 133,041,551,267 VND trong 6 tháng đầu năm 2025. Sự gia tăng mạnh này tiềm ẩn rủi ro đáng kể. \"Chi phí khác\" thường là các chi phí không thuộc các yếu tố sản xuất kinh doanh chính (nhân viên, khấu hao, dịch vụ bên ngoài). Việc tăng đột biến này có thể cho thấy công ty đã phát sinh các chi phí bất thường, không lặp lại hoặc các chi phí không hiệu quả trong kỳ. Tác động trực tiếp là làm giảm lợi nhuận của công ty, gây áp lực lên biên lợi nhuận. Nếu không có giải thích rõ ràng và nếu xu hướng này tiếp tục, nó có thể báo hiệu các vấn đề về quản lý chi phí, rủi ro hoạt động hoặc các sự kiện bất lợi khác ảnh hưởng đến hiệu quả tài chính dài hạn của công ty."
+  },
+  {
+    "instruction": "Dự báo tác động của các giao dịch mua/bán dịch vụ lớn với Công ty Cổ phần Dịch vụ Vận tải Thế giới đến kết quả kinh doanh của Vietravel.",
+    "input": "25",
+    "output": "Công ty Cổ phần Dịch vụ Vận tải Thế giới là một bên liên quan có các giao dịch lớn với Vietravel, đặc biệt là \"Mua dịch vụ\" với giá trị 751,971,859,407 VND trong 6 tháng đầu năm 2025, tăng từ 717,483,289,265 VND trong năm 2024. Việc mua dịch vụ với số lượng lớn này từ một bên liên quan có thể tác động đáng kể đến kết quả kinh doanh của Vietravel. Nếu các dịch vụ này được mua với giá cạnh tranh và cần thiết cho hoạt động kinh doanh cốt lõi (ví dụ: vận tải du lịch, vé máy bay), nó có thể hỗ trợ doanh thu và hoạt động của Vietravel. Tuy nhiên, nếu giá mua không tối ưu hoặc có sự thiên vị trong giao dịch, nó có thể làm tăng chi phí của Vietravel một cách không cần thiết, làm giảm lợi nhuận gộp và lợi nhuận sau thuế. Ngược lại, việc cung cấp dịch vụ (2,949,408,395 VND) có thể tạo ra doanh thu. Mức độ tác động phụ thuộc vào điều khoản của các giao dịch này."
+  },
+  {
+    "instruction": "Các khoản phải thu khác từ Công ty TNHH Du lịch và Tiếp thị Vận tải Việt Nam tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "26",
+    "output": "Các khoản phải thu khác từ Công ty TNHH Du lịch và Tiếp thị Vận tải Việt Nam tại ngày 30/06/2025 là 5,088,472,525 VND."
+  },
+  {
+    "instruction": "Tổng Tạm ứng cho nhà cung cấp từ Công ty Cổ phần Dịch vụ Vận tải Thế giới tại ngày 30/06/2025 là bao nhiêu VND?",
+    "input": "26",
+    "output": "Tổng Tạm ứng cho nhà cung cấp từ Công ty Cổ phần Dịch vụ Vận tải Thế giới tại ngày 30/06/2025 là 165,746,230,706 VND."
+  },
+  {
+    "instruction": "So sánh các khoản phải thu thương mại từ Công ty Cổ phần Phát triển Văn hóa - Xuất Nhập Khẩu giữa cuối quý và đầu năm. Thay đổi bao nhiêu?",
+    "input": "26",
+    "output": "Các khoản phải thu thương mại từ Công ty Cổ phần Phát triển Văn hóa - Xuất Nhập Khẩu cuối quý (30/06/2025) là 149,376,500 VND. Số đầu năm (01/01/2025) là 93,948,500 VND. Khoản mục này đã tăng 55,428,000 VND."
+  },
+  {
+    "instruction": "Lĩnh vực hoạt động chính của Tập đoàn là gì và chủ yếu ở đâu?",
+    "input": "26",
+    "output": "Lĩnh vực hoạt động chính của Tập đoàn là dịch vụ du lịch, chủ yếu tại Việt Nam."
+  },
+  {
+    "instruction": "Đánh giá sự gia tăng đáng kể của khoản Phải thu liên quan đến chuyển nhượng đầu tư từ Công ty Cổ phần Vietravel Corporation.",
+    "input": "26",
+    "output": "Khoản Phải thu liên quan đến chuyển nhượng đầu tư từ Công ty Cổ phần Vietravel Corporation đã tăng đáng kể từ 0 VND vào đầu năm lên 845,086,266,657 VND vào cuối quý. Đây là một khoản phải thu rất lớn và có ý nghĩa quan trọng. Sự gia tăng này cho thấy Vietravel đã thực hiện một giao dịch chuyển nhượng đầu tư lớn với công ty mẹ của mình (hoặc một công ty liên quan trực tiếp đến Vietravel Corporation) và đang chờ thu tiền. Mặc dù nó tạo ra một tài sản trên bảng cân đối kế toán, nhưng cần phải xem xét kỹ khả năng thu hồi của khoản này. Nếu việc thu hồi gặp chậm trễ hoặc khó khăn, nó có thể ảnh hưởng nghiêm trọng đến dòng tiền và khả năng thanh khoản của công ty."
+  },
+  {
+    "instruction": "Phân tích rủi ro tài chính của các giao dịch tạm ứng cho nhà cung cấp, đặc biệt là khi các khoản này tăng lên đáng kể.",
+    "input": "26",
+    "output": "Các giao dịch tạm ứng cho nhà cung cấp (ví dụ: từ Công ty Cổ phần Dịch vụ Vận tải Thế giới, Công ty Cổ phần Hàng không Du lịch Việt Nam, Công ty Cổ phần Phát triển Văn hóa - Xuất Nhập Khẩu) cho thấy công ty đã chi tiền mặt để đặt cọc hoặc trả trước cho các dịch vụ/hàng hóa sẽ nhận được trong tương lai. Khi các khoản tạm ứng này tăng lên đáng kể (ví dụ: Tạm ứng cho nhà cung cấp từ Công ty Cổ phần Dịch vụ Vận tải Thế giới tăng từ 151,053,898,062 VND lên 165,746,230,706 VND), rủi ro tài chính phát sinh: (1) Chiếm dụng vốn: Một lượng tiền mặt lớn bị giam giữ, làm giảm dòng tiền hoạt động và khả năng sử dụng vốn cho các mục đích khác. (2) Rủi ro không thực hiện được hợp đồng: Nếu nhà cung cấp không thực hiện đúng cam kết (giao hàng chậm, chất lượng kém, phá sản), công ty có thể khó thu hồi lại khoản tạm ứng hoặc bị ảnh hưởng đến hoạt động kinh doanh. (3) Rủi ro quan hệ bên liên quan: Với các tạm ứng lớn cho các bên liên quan, cần đảm bảo các giao dịch này được thực hiện theo nguyên tắc thị trường để tránh xung đột lợi ích hoặc tiềm ẩn thất thoát."
+  },
+  {
+    "instruction": "Dự báo tác động của việc không có sự kiện quan trọng nào sau ngày lập bảng cân đối kế toán đến niềm tin của nhà đầu tư.",
+    "input": "26",
+    "output": "Việc không có sự kiện quan trọng nào phát sinh sau ngày lập bảng cân đối kế toán cần điều chỉnh hoặc thuyết minh là một tín hiệu tích cực. Điều này có nghĩa là không có biến cố bất ngờ (như thiên tai, thay đổi chính sách lớn, phá sản, kiện tụng lớn, v.v.) xảy ra ngay sau kỳ báo cáo mà có thể ảnh hưởng đáng kể đến tình hình tài chính của công ty. Tác động đến niềm tin của nhà đầu tư là củng cố sự ổn định và tính dự đoán của hoạt động kinh doanh. Nó cho thấy không có những rủi ro lớn tiềm ẩn chưa được công bố, giúp nhà đầu tư cảm thấy an tâm hơn về thông tin tài chính hiện tại và triển vọng ngắn hạn của công ty."
+  }
+]
+```

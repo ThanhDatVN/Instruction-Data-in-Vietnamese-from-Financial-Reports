@@ -1,0 +1,1001 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty là gì?",
+      "Mã cổ phiếu của công ty là gì?",
+      "Ngày công bố thông tin bất thường này là khi nào?",
+      "Nội dung chính của thông tin công bố là gì?",
+      "Ngoài báo cáo tài chính, công ty còn công bố tài liệu nào khác?",
+      "Cơ quan nào nhận báo cáo này?"
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Công bố thông tin bất thường (Kèm Báo cáo tài chính riêng quý II/2025)\nThời gian: Phát hành ngày 25 tháng 07 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Công bố thông tin bất thường\nLoại nội dung: Text\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>Độc lập - Tự do - Hạnh phúc<br>Số W2025GELEXCBTT Hà Nội, ngày 25 tháng 07 năm 2025<br>CÔNG BỐ THÔNG TIN BẤT THƯỜNG<br>Kính gửi: Ủy ban Chứng khoán Nhà nước<br>Sở Giao dịch Chứng khoán TP Hồ Chí Minh<br>1. Tên tổ chức: Công ty Cổ phần Tập đoàn GELEX<br>Mã chứng khoán: GEX<br>Địa chỉ: số 52 phố Lê Đại Hành, phường Lê Đại Hành, quận Hai Bà Trưng, thành phố Hà Nội, Việt Nam<br>Điện thoại liên hệ: 024 397262456 Fax: 024 39726282<br>Email: gelex@gelex.vn<br>2. Nội dung thông tin công bố:<br>Công ty Cổ phần Tập đoàn GELEX (GELEX) trân trọng công bố Báo cáo tài chính riêng Quý 2 năm 2025 và Văn bản giải trình biến động lợi nhuận sau thuế trên Báo cáo tài chính Quý 2/2025 so với Quý 2/2024.<br>3. Thông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 25/07/2025 tại đường dẫn https://gelex.vn/doccatbaocaotaichinh<br>Chúng tôi xin cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố.\nNgười ủy quyền công bố thông tin: Lê Tuấn Anh",
+    "output": [
+      "Công ty Cổ phần Tập đoàn GELEX",
+      "GEX",
+      "Ngày 25 tháng 07 năm 2025",
+      "Công ty Cổ phần Tập đoàn GELEX công bố Báo cáo tài chính riêng Quý 2 năm 2025 và Văn bản giải trình biến động lợi nhuận sau thuế trên Báo cáo tài chính Quý 2/2025 so với Quý 2/2024.",
+      "Ngoài Báo cáo tài chính riêng Quý 2 năm 2025, công ty còn công bố Văn bản giải trình biến động lợi nhuận sau thuế trên Báo cáo tài chính Quý 2/2025 so với Quý 2/2024.",
+      "Ủy ban Chứng khoán Nhà nước và Sở Giao dịch Chứng khoán TP Hồ Chí Minh."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_NER"
+    ]
+  },
+  {
+    "instruction": [
+      "Lợi nhuận sau thuế của báo cáo tài chính riêng Quý 2/2025 là bao nhiêu?",
+      "Lợi nhuận sau thuế của báo cáo tài chính hợp nhất Quý 2/2024 là bao nhiêu tỷ đồng?",
+      "Tỷ lệ biến động lợi nhuận sau thuế của báo cáo tài chính riêng so với cùng kỳ năm trước là bao nhiêu phần trăm?",
+      "Nguyên nhân chính dẫn đến biến động lợi nhuận sau thuế trên Báo cáo tài chính riêng Quý 2/2025 là gì?",
+      "Phân tích sự khác biệt về nguyên nhân biến động lợi nhuận giữa báo cáo riêng và hợp nhất.",
+      "Đánh giá mức độ bền vững của lợi nhuận tăng trưởng dựa trên các nguyên nhân được giải trình."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Giải trình biến động lợi nhuận sau thuế (Kèm Báo cáo tài chính riêng quý II/2025)\nThời gian: Phát hành ngày 25 tháng 07 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Giải trình biến động lợi nhuận sau thuế\nLoại nội dung: Bảng và Text\nCăn cứ Thông tư 96/2020/TT-BTC ngày 16 tháng 11 năm 2020 của Bộ Tài chính về việc hướng dẫn công bố thông tin trên thị trường chứng khoán, và căn cứ kết quả sản xuất kinh doanh Quý 2/2025 của Công ty Cổ phần Tập đoàn GELEX, Công ty Cổ phần Tập đoàn GELEX (mã chứng khoán GEX) giải trình biến động lợi nhuận sau thuế thu nhập doanh nghiệp so với cùng kỳ Quý 2/2024 như sau:\n\n| STT | Chỉ tiêu | ĐVT | Báo cáo riêng | Báo cáo hợp nhất |\n|-----|----------|-----|--------------|------------------|\n| 1 | Lợi nhuận sau thuế Quý 2/2025 | Tỷ đồng | 488,6 | 1.205,1 |\n| 2 | Lợi nhuận sau thuế Quý 2/2024 | Tỷ đồng | 52,2 | 1.102,5 |\n| 3 | Biến động so với cùng kỳ năm trước | Tỷ đồng | 436,4 | 102,6 |\n| 4 | Tỷ lệ biến động so với cùng kỳ năm trước | % | 836 | 9,3 |\n\nI. Báo cáo tài chính riêng:\nLợi nhuận sau thuế thu nhập doanh nghiệp Quý 2/2025 trên Báo cáo tài chính riêng tăng 836%, tương ứng tăng 436,4 tỷ đồng so với cùng kỳ năm trước, chủ yếu đến từ doanh thu hoạt động tài chính là khoản cổ tức nhận được từ công ty con.\n\nII. Báo cáo tài chính hợp nhất:\nLợi nhuận sau thuế thu nhập doanh nghiệp Quý 2/2025 trên Báo cáo tài chính hợp nhất tăng 9,3%, tương ứng tăng 102,5 tỷ đồng so với cùng kỳ năm trước, chủ yếu đến từ sự tăng trưởng lợi nhuận gộp về bán hàng và cung cấp dịch vụ tăng 837,8 tỷ đồng so với cùng kỳ năm trước. Tuy nhiên, doanh thu hoạt động tài chính giảm 739,1 tỷ đồng chủ yếu do trong Quý 2/2024 ghi nhận lãi từ thoái các dự án năng lượng tái tạo.\nTrân trọng báo cáo.\nPHÓ TỔNG GIÁM ĐỐC\nLê Tuấn Anh",
+    "output": [
+      "488,6 Tỷ đồng",
+      "1.102,5 Tỷ đồng",
+      "836%",
+      "Nguyên nhân chính là từ doanh thu hoạt động tài chính, cụ thể là khoản cổ tức nhận được từ công ty con.",
+      "Trên báo cáo tài chính riêng, lợi nhuận sau thuế Quý 2/2025 tăng chủ yếu do doanh thu hoạt động tài chính từ khoản cổ tức nhận được từ công ty con. Ngược lại, trên báo cáo tài chính hợp nhất, lợi nhuận tăng chủ yếu do sự tăng trưởng lợi nhuận gộp về bán hàng và cung cấp dịch vụ, mặc dù doanh thu hoạt động tài chính giảm do trong Quý 2/2024 có ghi nhận lãi từ thoái các dự án năng lượng tái tạo.",
+      "Trên báo cáo riêng, lợi nhuận tăng trưởng mạnh (836%) chủ yếu từ cổ tức công ty con, đây là khoản thu nhập mang tính chất tài chính và có thể không phản ánh hoạt động kinh doanh cốt lõi bền vững nếu không có kế hoạch nhận cổ tức đều đặn hoặc tăng trưởng hoạt động của công ty con. Trên báo cáo hợp nhất, lợi nhuận tăng trưởng ít hơn (9,3%) nhưng đến từ lợi nhuận gộp về bán hàng và cung cấp dịch vụ, cho thấy sự cải thiện từ hoạt động kinh doanh chính có thể bền vững hơn. Tuy nhiên, việc giảm doanh thu hoạt động tài chính trên báo cáo hợp nhất do không còn các khoản lãi thoái vốn lớn như năm trước cũng cần được xem xét."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Trụ sở chính của Công ty GELEX đặt ở đâu?",
+      "Kỳ kế toán mà Báo cáo của Ban Tổng Giám đốc trình bày là từ khi nào đến khi nào?",
+      "Công ty Cổ phần Tập đoàn GELEX được thành lập dựa trên quyết định nào?",
+      "Công ty được cấp Giấy chứng nhận đăng ký kinh doanh lần đầu vào ngày nào và do cơ quan nào cấp?",
+      "Vai trò của Ban Tổng Giám đốc trong việc trình bày báo cáo tài chính là gì?",
+      "Đánh giá tầm quan trọng của các thông tin lịch sử thành lập công ty đối với nhà đầu tư."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Phát hành tháng 07 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Mục lục và Báo cáo của Ban Tổng Giám đốc\nLoại nội dung: Bảng và Text\nCÔNG TY CỔ PHẦN TẬP ĐOÀN GELEX<br>Số 52 Phố Lê Đại Hành, Phường Hai Bà Trưng, Thành phố Hà Nội<br>NỘI DUNG<br>| Trang |\n|---------------|\n| Báo cáo của Ban Tổng Giám đốc | 02-03 |\n| Bảng cân đối kế toán riêng | 04-05 |\n| Báo cáo kết quả hoạt động kinh doanh riêng | 06 |\n| Báo cáo lưu chuyển tiền tệ riêng | 07-08 |\n| Thuyết minh Báo cáo tài chính riêng | 09-36 |\n\nBÁO CÁO CỦA BAN TỔNG GIÁM ĐỐC<br>Ban Tổng Giám đốc Công ty cổ phần Tập đoàn GELEX (sau đây gọi tắt là Công ty) trình bày Báo cáo này và báo cáo tài chính riêng của Công ty cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025.<br>Công ty<br>Công ty Cổ phần Tập đoàn GELEX tiền thân là Công ty Thiết bị Kỹ thuật Điện, được thành lập theo Quyết định số 1120/QĐ-TCCBĐT của Bộ trưởng Bộ Công nghiệp nặng (nay là Bộ Công thương). Sau đó, Công ty được cổ phần hóa theo Quyết định số 1422/QĐ-TTg ngày 10 tháng 8 năm 2010 của Thủ tướng Chính phủ, và hoạt động theo Giấy chứng nhận đăng ký kinh doanh lần đầu số 0100100512 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày 01 tháng 12 năm 2010. Công ty cũng được cấp các Giấy chứng nhận đăng ký doanh nghiệp sửa đổi sau này, với lần sửa đổi gần nhất là lần thứ 18 ngày 09 tháng 6 năm 2025.<br>Trụ sở chính của Công ty được đặt tại số 52 Phố Lê Đại Hành, Phường Hai Bà Trưng, Thành phố Hà Nội.",
+    "output": [
+      "Số 52 Phố Lê Đại Hành, Phường Hai Bà Trưng, Thành phố Hà Nội.",
+      "Kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025.",
+      "Công ty được thành lập theo Quyết định số 1120/QĐ-TCCBĐT của Bộ trưởng Bộ Công nghiệp nặng (nay là Bộ Công thương) và được cổ phần hóa theo Quyết định số 1422/QĐ-TTg ngày 10 tháng 8 năm 2010 của Thủ tướng Chính phủ.",
+      "Công ty được cấp Giấy chứng nhận đăng ký kinh doanh lần đầu số 0100100512 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày 01 tháng 12 năm 2010.",
+      "Ban Tổng Giám đốc trình bày báo cáo này và báo cáo tài chính riêng của Công ty, chịu trách nhiệm về nội dung và việc tuân thủ các quy định liên quan đến báo cáo tài chính.",
+      "Thông tin lịch sử thành lập công ty cung cấp cái nhìn về nguồn gốc, quá trình phát triển và thay đổi hình thức sở hữu (từ công ty nhà nước sang cổ phần hóa), giúp nhà đầu tư hiểu rõ hơn về nền tảng pháp lý và sự ổn định của công ty. Quyết định của Bộ Công nghiệp nặng và Thủ tướng Chính phủ cho thấy sự bảo trợ và quy mô ban đầu của doanh nghiệp, có thể ảnh hưởng đến nhận định về rủi ro và tiềm năng tăng trưởng."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Ai là Chủ tịch Hội đồng Quản trị của Công ty GELEX?",
+      "Ông Nguyễn Văn Tuấn giữ chức vụ gì trong Ban Tổng Giám đốc?",
+      "Ai là Thành viên độc lập của Hội đồng Quản trị được bổ nhiệm trong kỳ?",
+      "So sánh số lượng thành viên Ban Tổng Giám đốc với số lượng thành viên Hội đồng Quản trị.",
+      "Phân tích vai trò và tầm quan trọng của việc có Thành viên độc lập trong Hội đồng Quản trị.",
+      "Đánh giá ảnh hưởng của sự thay đổi nhân sự trong Hội đồng Quản trị và Ban Tổng Giám đốc đến quản trị công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Phát hành tháng 07 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo của Ban Tổng Giám đốc (Hội đồng Quản trị, Ban Tổng Giám đốc và Ủy ban Kiểm toán)\nLoại nội dung: Text\nHỘI ĐỒNG QUẢN TRỊ, BAN TỔNG GIÁM ĐỐC VÀ ỦY BAN KIỂM TOÁN<br>Các thành viên của Hội đồng Quản trị trong kỳ và tại ngày lập báo cáo này bao gồm:<br>Ông Nguyễn Trọng Hiền: Chủ tịch<br>Ông Lương Thanh Tùng: Phó chủ tịch<br>Ông Lê Bá Thọ: Phó chủ tịch<br>Ông Nguyễn Văn Tuấn: Thành viên (Từ nhiệm ngày 27/3/2025)<br>Ông Đậu Minh Lâm: Thành viên độc lập<br>Bà Nguyễn Thị Minh Giang: Thành viên độc lập (Bổ nhiệm ngày 27/3/2025)<br>Các thành viên của Ban Tổng Giám đốc trong kỳ và tại ngày lập báo cáo này bao gồm:<br>Ông Nguyễn Văn Tuấn: Tổng Giám đốc<br>Ông Nguyễn Hoàng Long: Phó Tổng Giám đốc<br>Ông Nguyễn Trọng Trung: Phó Tổng Giám đốc<br>Ông Lê Tuấn Anh: Phó Tổng Giám đốc<br>Các thành viên của Ủy ban kiểm toán trong kỳ và tại ngày lập báo cáo này bao gồm:<br>Ông Đậu Minh Lâm: Chủ tịch<br>Ông Lương Thanh Tùng: Thành viên",
+    "output": [
+      "Ông Nguyễn Trọng Hiền",
+      "Tổng Giám đốc",
+      "Bà Nguyễn Thị Minh Giang",
+      "Hội đồng Quản trị có 6 thành viên (bao gồm cả người từ nhiệm và người bổ nhiệm). Ban Tổng Giám đốc có 4 thành viên.",
+      "Thành viên độc lập trong Hội đồng Quản trị đóng vai trò quan trọng trong việc đảm bảo tính khách quan và minh bạch trong quản trị công ty. Họ thường mang lại góc nhìn độc lập, bảo vệ quyền lợi của các cổ đông nhỏ lẻ và giảm thiểu rủi ro xung đột lợi ích. Sự hiện diện của Thành viên độc lập giúp nâng cao uy tín và chuẩn mực quản trị của công ty, đồng thời cung cấp các ý kiến phản biện có giá trị cho các quyết định chiến lược.",
+      "Sự thay đổi nhân sự, với việc ông Nguyễn Văn Tuấn từ nhiệm thành viên Hội đồng Quản trị và bà Nguyễn Thị Minh Giang được bổ nhiệm làm thành viên độc lập, cùng với ông Nguyễn Văn Tuấn tiếp tục giữ chức Tổng Giám đốc, cho thấy có sự điều chỉnh trong cơ cấu quản trị. Việc bổ nhiệm thành viên độc lập mới có thể tăng cường tính độc lập và minh bạch cho Hội đồng Quản trị. Việc ông Nguyễn Văn Tuấn vẫn là Tổng Giám đốc có thể đảm bảo sự ổn định trong điều hành, nhưng cần xem xét lý do của sự thay đổi trong Hội đồng Quản trị để đánh giá tác động toàn diện."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Ai là người đại diện theo pháp luật của Công ty GELEX?",
+      "Ông Lê Tuấn Anh được ủy quyền ký báo cáo tài chính theo Giấy ủy quyền số mấy?",
+      "Ban Tổng Giám đốc cam kết tuân thủ những yêu cầu nào trong quá trình lập báo cáo tài chính riêng?",
+      "Theo ý kiến của Ban Tổng Giám đốc, báo cáo tài chính riêng phản ánh trung thực và hợp lý tình hình tài chính đến ngày nào?",
+      "Phân tích tầm quan trọng của việc Ban Tổng Giám đốc công bố trách nhiệm đối với báo cáo tài chính.",
+      "Đánh giá các rủi ro tiềm ẩn nếu các chính sách kế toán không được áp dụng nhất quán."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Phát hành tháng 07 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo của Ban Tổng Giám đốc (Người đại diện pháp luật và Trách nhiệm của Ban Tổng Giám đốc)\nLoại nội dung: Text\nNGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT<br>Người đại diện theo pháp luật của Công ty trong kỳ và vào ngày lập báo cáo này là ông Nguyễn Văn Tuấn, Tổng Giám đốc.<br>Ông Lê Tuấn Anh được ông Nguyễn Văn Tuấn ủy quyền ký Báo cáo tài chính của Công ty Cổ phần Tập đoàn GELEX theo Giấy ủy quyền số 21/2024/GELEX-GUQTGD ngày 06/06/2024.<br><br>CÔNG BỐ TRÁCH NHIỆM CỦA BAN TỔNG GIÁM ĐỐC ĐỐI VỚI BÁO CÁO TÀI CHÍNH RIÊNG<br>Ban Tổng Giám đốc Công ty chịu trách nhiệm về việc lập Báo cáo tài chính riêng phản ánh trung thực, hợp lý tình hình tài chính riêng, kết quả hoạt động kinh doanh riêng và tình hình lưu chuyển tiền tệ riêng của Công ty trong kỳ. Trong quá trình lập Báo cáo tài chính riêng, Ban Tổng Giám đốc Công ty cam kết đã tuân thủ các yêu cầu sau:<br>– Lựa chọn các chính sách kế toán thích hợp và áp dụng các chính sách này một cách nhất quán.<br>– Đưa ra các đánh giá và ước tính hợp lý và thận trọng.<br>– Nêu rõ các chuẩn mực kế toán áp dụng cho Công ty có được tuân thủ hay không và tất cả những sai lệch trọng yếu so với những chuẩn mực này đã được trình bày và giải thích trong báo cáo tài chính riêng.<br>– Lập báo cáo tài chính riêng trên cơ sở nguyên tắc hoạt động liên tục (trừ trường hợp không thể cho rằng Công ty sẽ tiếp tục hoạt động).<br>Ban Tổng Giám đốc chịu trách nhiệm đảm bảo việc các sổ sách kế toán thích hợp được lưu giữ để phản ánh tình hình tài chính riêng của Công ty, với mức độ chính xác hợp lý, tại bất kỳ thời điểm nào và đảm bảo rằng các sổ sách kế toán tuân thủ với chế độ kế toán đã được áp dụng. Ban Tổng Giám đốc cũng chịu trách nhiệm về việc quản lý các tài sản của Công ty và do đó phải thực hiện các biện pháp thích hợp để ngăn chặn và phát hiện các hành vi gian lận và những vi phạm khác.<br>Theo ý kiến của Ban Tổng Giám đốc, báo cáo tài chính riêng kèm theo phản ánh trung thực và hợp lý tình hình tài chính riêng của Công ty tại ngày 30/06/2025, kết quả hoạt động kinh doanh riêng và tình hình lưu chuyển tiền tệ riêng cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025, phù hợp với các Chuẩn mực kế toán Việt Nam, Chế độ kế toán doanh nghiệp Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày báo cáo tài chính riêng.",
+    "output": [
+      "Ông Nguyễn Văn Tuấn, Tổng Giám đốc.",
+      "Giấy ủy quyền số 21/2024/GELEX-GUQTGD ngày 06/06/2024.",
+      "Ban Tổng Giám đốc cam kết: lựa chọn các chính sách kế toán thích hợp và áp dụng nhất quán; đưa ra các đánh giá và ước tính hợp lý, thận trọng; nêu rõ các chuẩn mực kế toán áp dụng và giải thích sai lệch trọng yếu (nếu có); và lập báo cáo tài chính trên cơ sở nguyên tắc hoạt động liên tục (trừ trường hợp không thể).",
+      "Ngày 30/06/2025.",
+      "Việc Ban Tổng Giám đốc công bố trách nhiệm đối với báo cáo tài chính là yếu tố cốt lõi của quản trị công ty, khẳng định rằng các số liệu và thông tin được trình bày là trung thực, hợp lý và tuân thủ các chuẩn mực kế toán, chế độ kế toán doanh nghiệp Việt Nam. Điều này tạo niềm tin cho các nhà đầu tư và các bên liên quan, giảm thiểu rủi ro thông tin sai lệch, đồng thời thể hiện sự cam kết của Ban lãnh đạo trong việc đảm bảo tính toàn vẹn và minh bạch của thông tin tài chính.",
+      "Nếu các chính sách kế toán không được áp dụng nhất quán, có thể dẫn đến sự thiếu tin cậy và không so sánh được của báo cáo tài chính qua các kỳ. Điều này làm sai lệch hình ảnh về tình hình tài chính và kết quả hoạt động kinh doanh của công ty, gây khó khăn cho việc ra quyết định của nhà đầu tư và các bên liên quan. Ngoài ra, việc không nhất quán còn tiềm ẩn rủi ro về việc che giấu thông tin hoặc thao túng số liệu, dẫn đến các vấn đề pháp lý và mất uy tín nghiêm trọng."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn tại ngày 30/06/2025 là bao nhiêu VND?",
+      "Tiền và các khoản tương đương tiền tại ngày 01/01/2025 là bao nhiêu?",
+      "So sánh giá trị hàng tồn kho giữa cuối quý và đầu năm. Thay đổi như thế nào?",
+      "Khoản mục đầu tư tài chính ngắn hạn chiếm tỷ trọng bao nhiêu phần trăm trong tổng tài sản ngắn hạn tại 30/06/2025?",
+      "Đánh giá khả năng thanh khoản ngắn hạn của công ty dựa trên cơ cấu tài sản ngắn hạn.",
+      "Phân tích rủi ro liên quan đến sự biến động của các khoản phải thu ngắn hạn và đề xuất biện pháp quản lý."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán riêng (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | 30/06/2025 VND | 01/01/2025 VND |\n|--------|-------------|----------------|----------------|\n| TÀI SẢN | |\n| 100 | A. TÀI SẢN NGẮN HẠN | 7.319.583.613.050 | 6.562.704.387.398 |\n| 110 | I. Tiền và các khoản tương đương tiền | 755.045.678.583 | 166.077.200.003 |\n| 111 | 1. Tiền | 755.045.678.583 | 166.077.200.003 |\n| 120 | II. Đầu tư tài chính ngắn hạn | 4.990.760.895.540 | 4.523.657.452.136 |\n| 121 | 1. Chứng khoán kinh doanh | 5.012.257.655.819 | 4.547.632.976.936 |\n| 122 | 2. Dự phòng giảm giá chứng khoán kinh doanh | 21.496.760.279 | 23.975.524.800 |\n| 130 | III. Các khoản phải thu ngắn hạn | 1.089.484.087.959 | 1.296.901.014.225 |\n| 131 | 1. Phải thu ngắn hạn của khách hàng | 360.597.125.015 | 322.891.928.179 |\n| 132 | 2. Trả trước cho người bán ngắn hạn | 307.776.147.018 | 298.984.861.697 |\n| 135 | 3. Phải thu về cho vay ngắn hạn | 292.500.000.000 | 304.625.000.000 |\n| 136 | 4. Phải thu ngắn hạn khác | 142.783.611.436 | 384.572.019.859 |\n| 137 | 5. Dự phòng phải thu ngắn hạn khó đòi | 14.172.795.510 | 14.172.795.510 |\n| 140 | IV. Hàng tồn kho | 396.911.518.071 | 520.138.320.861 |\n| 141 | 1. Hàng tồn kho | 396.911.518.071 | 520.138.320.861 |\n| 150 | V. Tài sản ngắn hạn khác | 87.381.432.897 | 55.930.400.173 |\n| 151 | 1. Chi phí trả trước ngắn hạn | 7.289.037.327 | 15.291.277.467 |\n| 152 | 2. Thuế giá trị gia tăng được khấu trừ | 73.153.835.767 | 34.142.224.212 |\n| 153 | 3. Thuế và các khoản khác phải thu Nhà nước | 6.938.559.803 | 6.496.898.494 |",
+    "output": [
+      "7.319.583.613.050 VND",
+      "166.077.200.003 VND",
+      "Tại 30/06/2025, hàng tồn kho là 396.911.518.071 VND. Tại 01/01/2025, hàng tồn kho là 520.138.320.861 VND. Hàng tồn kho đã giảm 123.226.802.790 VND.",
+      "Tại 30/06/2025, Đầu tư tài chính ngắn hạn là 4.990.760.895.540 VND và Tổng tài sản ngắn hạn là 7.319.583.613.050 VND. Tỷ trọng là khoảng 68.18%.",
+      "Dựa trên cơ cấu tài sản ngắn hạn, công ty có lượng tiền và tương đương tiền tăng đáng kể từ đầu năm đến cuối quý. Khoản mục đầu tư tài chính ngắn hạn chiếm tỷ trọng lớn trong tổng tài sản ngắn hạn (khoảng 68.18%), cho thấy phần lớn tài sản ngắn hạn có khả năng chuyển đổi thành tiền nhanh chóng. Tuy nhiên, sự giảm của hàng tồn kho và các khoản phải thu ngắn hạn cũng cần được xem xét để đánh giá toàn diện khả năng thanh khoản.",
+      "Các khoản phải thu ngắn hạn của công ty giảm từ 1.296.901.014.225 VND (01/01/2025) xuống 1.089.484.087.959 VND (30/06/2025), cho thấy có thể công ty đã thu hồi được một phần các khoản nợ hoặc giảm các khoản tín dụng bán hàng. Tuy nhiên, sự biến động này vẫn tiềm ẩn rủi ro nếu các khoản phải thu khó đòi tăng lên hoặc thời gian thu hồi kéo dài ảnh hưởng đến dòng tiền. Để quản lý rủi ro này, công ty cần thường xuyên đánh giá khả năng thanh toán của khách hàng, tăng cường chính sách thu nợ, áp dụng chính sách tín dụng chặt chẽ và trích lập dự phòng đầy đủ cho các khoản phải thu có rủi ro."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn tại ngày 30/06/2025 là bao nhiêu VND?",
+      "Giá trị nguyên giá của Tài sản cố định hữu hình tại ngày 30/06/2025 là bao nhiêu?",
+      "So sánh tổng tài sản tại cuối quý và đầu năm. Thay đổi như thế nào?",
+      "Khoản mục nào trong tài sản dài hạn có giá trị lớn nhất tại ngày 30/06/2025?",
+      "Đánh giá mức độ đầu tư vào tài sản dài hạn của công ty và ý nghĩa của nó.",
+      "Phân tích tác động của sự tăng giá trị hao mòn lũy kế tài sản cố định đến tình hình tài chính của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán riêng (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | 30/06/2025 VND | 01/01/2025 VND |\n|--------|-------------|----------------|----------------|\n| 200 | B. TÀI SẢN DÀI HẠN | 12.861.161.301.318 | 12.698.224.133.419 |\n| 210 | I. Các khoản phải thu dài hạn | 1.015.694.134.247 | 1.059.882.550.247 |\n| 215 | 1. Phải thu về cho vay dài hạn | 1.000.822.486.247 | 1.045.072.486.247 |\n| 216 | 2. Phải thu dài hạn khác | 14.871.648.000 | 14.810.064.000 |\n| 220 | II. Tài sản cố định | 55.051.892.901 | 55.872.834.664 |\n| 221 | 1. Tài sản cố định hữu hình | 53.131.231.347 | 55.037.435.021 |\n| 222 | Nguyên giá | 94.358.691.490 | 92.710.632.399 |\n| 223 | Giá trị hao mòn lũy kế | 41.227.460.143 | 37.673.197.378 |\n| 227 | 2. Tài sản cố định vô hình | 1.920.661.554 | 835.399.643 |\n| 228 | Nguyên giá | 2.728.323.538 | 1.428.323.538 |\n| 229 | Giá trị hao mòn lũy kế | 807.661.984 | 592.923.895 |\n| 230 | III. Bất động sản đầu tư | 226.049.588.085 | 233.019.663.021 |\n| 231 | Nguyên giá | 367.937.084.987 | 367.937.084.987 |\n| 232 | Giá trị hao mòn lũy kế | 141.887.496.902 | 134.917.421.966 |\n| 240 | IV. Tài sản dở dang dài hạn | 1.902.747.219.014 | 1.393.925.737.633 |\n| 242 | 1. Chi phí xây dựng cơ bản dở dang | 1.902.747.219.014 | 1.393.925.737.633 |\n| 250 | V. Đầu tư tài chính dài hạn | 9.621.986.681.973 | 9.915.680.781.973 |\n| 251 | 1. Đầu tư vào công ty con | 8.958.142.976.877 | 9.251.837.076.877 |\n| 252 | 2. Đầu tư vào công ty liên doanh, liên kết | 663.843.705.096 | 663.843.705.096 |\n| 260 | VI. Tài sản dài hạn khác | 39.631.785.098 | 39.842.565.881 |\n| 261 | 1. Chi phí trả trước dài hạn | 39.631.785.098 | 39.842.565.881 |\n| 270 | TỔNG CỘNG TÀI SẢN | 20.180.744.914.368 | 19.260.928.520.817 |",
+    "output": [
+      "12.861.161.301.318 VND",
+      "94.358.691.490 VND",
+      "Tổng tài sản tại ngày 30/06/2025 là 20.180.744.914.368 VND và tại ngày 01/01/2025 là 19.260.928.520.817 VND. Tổng tài sản tăng 919.816.393.551 VND.",
+      "Khoản mục Đầu tư tài chính dài hạn với giá trị 9.621.986.681.973 VND.",
+      "Công ty có mức độ đầu tư đáng kể vào tài sản dài hạn, với tổng giá trị 12.861.161.301.318 VND tại ngày 30/06/2025, chiếm phần lớn tổng tài sản. Đặc biệt, đầu tư tài chính dài hạn (chủ yếu vào công ty con và liên doanh, liên kết) là khoản mục lớn nhất, cho thấy chiến lược tăng trưởng thông qua đầu tư vào các doanh nghiệp khác. Ngoài ra, tài sản dở dang dài hạn cũng tăng đáng kể, thể hiện công ty đang trong quá trình mở rộng hoặc phát triển các dự án lớn, điều này có thể mang lại tiềm năng tăng trưởng trong tương lai nhưng cũng đi kèm với nhu cầu vốn lớn.",
+      "Giá trị hao mòn lũy kế của tài sản cố định hữu hình và vô hình đều tăng trong kỳ. Sự tăng này phản ánh việc tài sản đang được sử dụng và khấu hao theo thời gian, dẫn đến giảm giá trị còn lại của tài sản trên bảng cân đối kế toán. Về mặt tài chính, khấu hao là chi phí không bằng tiền mặt, làm giảm lợi nhuận trước thuế và sau thuế. Tuy nhiên, nó cũng giúp giảm nghĩa vụ thuế và tạo ra dòng tiền từ hoạt động kinh doanh (qua điều chỉnh trong báo cáo lưu chuyển tiền tệ). Một mức hao mòn lũy kế cao có thể cho thấy tài sản đã cũ và cần được đầu tư mới trong tương lai, đòi hỏi kế hoạch vốn rõ ràng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả tại ngày 30/06/2025 là bao nhiêu VND?",
+      "Vốn chủ sở hữu tại ngày 01/01/2025 là bao nhiêu VND?",
+      "Khoản mục nào trong nợ ngắn hạn có giá trị lớn nhất tại ngày 30/06/2025?",
+      "So sánh lợi nhuận sau thuế chưa phân phối lũy kế đến cuối năm trước với lợi nhuận sau thuế chưa phân phối kỳ này tại 30/06/2025.",
+      "Đánh giá cơ cấu nguồn vốn của công ty, mức độ phụ thuộc vào nợ và vốn chủ sở hữu.",
+      "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 30/06/2025 và nhận xét xu hướng.",
+      "Phân tích rủi ro tài chính nếu công ty tiếp tục tăng vay ngắn hạn."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán riêng (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | 30/06/2025 VND | 01/01/2025 VND |\n|--------|-------------|----------------|----------------|\n| NGUỒN VỐN | |\n| 300 | C. NỢ PHẢI TRẢ | 9.404.538.923.542 | 8.831.208.078.774 |\n| 310 | I. Nợ ngắn hạn | 6.591.043.823.518 | 5.150.171.436.132 |\n| 311 | 1. Phải trả người bán ngắn hạn | 575.324.610.413 | 713.529.629.313 |\n| 312 | 2. Người mua trả tiền trước ngắn hạn | 203.178.358 | 193.978.358 |\n| 313 | 3. Thuế và các khoản phải nộp Nhà nước | 10.884.905.068 | 881.789.413 |\n| 314 | 4. Phải trả người lao động | 13.175.845.675 | 23.477.689.438 |\n| 315 | 5. Chi phí phải trả ngắn hạn | 11.758.910.636 | 14.505.610.065 |\n| 318 | 6. Doanh thu chưa thực hiện ngắn hạn | 16.157.347.684 | 16.035.324.998 |\n| 319 | 7. Phải trả ngắn hạn khác | 65.027.630.096 | 58.734.901.220 |\n| 320 | 8. Vay và nợ thuê tài chính ngắn hạn | 5.877.651.068.374 | 4.308.962.408.336 |\n| 322 | 9. Quỹ khen thưởng, phúc lợi | 20.860.327.214 | 13.850.104.991 |\n| 330 | II. Nợ dài hạn | 2.813.495.100.024 | 3.681.036.642.642 |\n| 336 | 1. Doanh thu chưa thực hiện dài hạn | 165.179.070.200 | 168.047.924.846 |\n| 337 | 2. Phải trả dài hạn khác | 17.289.879.105 | 17.203.072.853 |\n| 338 | 3. Vay và nợ thuê tài chính dài hạn | 2.631.026.150.719 | 3.495.785.644.943 |\n| 400 | D. VỐN CHỦ SỞ HỮU | 10.776.205.990.826 | 10.429.720.442.043 |\n| 410 | I. Vốn chủ sở hữu | 10.776.205.990.826 | 10.429.720.442.043 |\n| 411 | 1. Vốn góp của chủ sở hữu | 9.023.989.480.000 | 8.594.297.930.000 |\n| 411a | Cổ phiếu phổ thông có quyền biểu quyết | 9.023.989.480.000 | 8.594.297.930.000 |\n| 412 | 2. Thặng dư vốn cổ phần | 662.912.856.718 | 663.003.856.718 |\n| 421 | 3. Lợi nhuận sau thuế chưa phân phối | 1.089.303.654.108 | 1.172.418.655.325 |\n| 421a | LNST chưa phân phối lũy kế đến cuối năm trước | 295.822.208.825 | 1.048.920.959.438 |\n| 421b | LNST chưa phân phối kỳ này | 793.481.445.283 | 123.497.695.887 |\n| 440 | TỔNG CỘNG NGUỒN VỐN | 20.180.744.914.368 | 19.260.928.520.817 |",
+    "output": [
+      "9.404.538.923.542 VND",
+      "10.429.720.442.043 VND",
+      "Vay và nợ thuê tài chính ngắn hạn với giá trị 5.877.651.068.374 VND.",
+      "Lợi nhuận sau thuế chưa phân phối lũy kế đến cuối năm trước là 295.822.208.825 VND, còn lợi nhuận sau thuế chưa phân phối kỳ này là 793.481.445.283 VND. Khoản lợi nhuận chưa phân phối kỳ này cao hơn đáng kể so với lợi nhuận lũy kế đến cuối năm trước.",
+      "Tại ngày 30/06/2025, tổng nguồn vốn của công ty là 20.180.744.914.368 VND, trong đó nợ phải trả là 9.404.538.923.542 VND và vốn chủ sở hữu là 10.776.205.990.826 VND. Tỷ lệ nợ/tổng nguồn vốn khoảng 46.6%, cho thấy công ty vẫn có mức độ phụ thuộc vào vốn chủ sở hữu tương đối cao hơn nợ. Tuy nhiên, nợ ngắn hạn (6.591.043.823.518 VND) lớn hơn nợ dài hạn (2.813.495.100.024 VND), đặc biệt là vay và nợ thuê tài chính ngắn hạn tăng mạnh, điều này có thể tiềm ẩn rủi ro thanh khoản nếu dòng tiền không được quản lý tốt.",
+      "Tại ngày 30/06/2025:\\n- Tổng nợ phải trả: 9.404.538.923.542 VND\\n- Vốn chủ sở hữu: 10.776.205.990.826 VND\\n\\nHệ số D/E = Tổng nợ phải trả / Vốn chủ sở hữu = 9.404.538.923.542 / 10.776.205.990.826 ≈ 0.87.\\n\\nTại ngày 01/01/2025:\\n- Tổng nợ phải trả: 8.831.208.078.774 VND\\n- Vốn chủ sở hữu: 10.429.720.442.043 VND\\n\\nHệ số D/E = 8.831.208.078.774 / 10.429.720.442.043 ≈ 0.85.\\n\\nNhận xét xu hướng: Hệ số nợ trên vốn chủ sở hữu tăng nhẹ từ 0.85 lên 0.87 trong 6 tháng đầu năm 2025, cho thấy công ty có xu hướng tăng cường sử dụng nợ so với vốn chủ sở hữu để tài trợ cho hoạt động và đầu tư.",
+      "Nếu công ty tiếp tục tăng vay ngắn hạn, rủi ro tài chính chính là rủi ro thanh khoản. Vay ngắn hạn thường có kỳ hạn trả nợ nhanh, đòi hỏi công ty phải có đủ dòng tiền để đáp ứng các nghĩa vụ này. Sự gia tăng đáng kể của vay và nợ thuê tài chính ngắn hạn từ 4.308.962.408.336 VND lên 5.877.651.068.374 VND trong 6 tháng cho thấy mức độ phụ thuộc vào các nguồn tài trợ ngắn hạn cao. Nếu công ty không thể tạo ra đủ dòng tiền từ hoạt động kinh doanh hoặc không thể tái cấp vốn kịp thời, nó có thể đối mặt với áp lực tài chính nghiêm trọng, thậm chí nguy cơ mất khả năng thanh toán. Rủi ro lãi suất cũng tăng lên nếu lãi suất ngắn hạn biến động."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần bán hàng và cung cấp dịch vụ trong Quý 2/2025 là bao nhiêu VND?",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế 6 tháng đầu năm 2025 là bao nhiêu?",
+      "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa Quý 2/2025 và Quý 2/2024. Thay đổi như thế nào?",
+      "Chi phí tài chính trong 6 tháng đầu năm 2025 là bao nhiêu và bao nhiêu trong số đó là chi phí lãi vay?",
+      "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên lợi nhuận thuần từ hoạt động kinh doanh trong Quý 2/2025 so với cùng kỳ.",
+      "Phân tích tác động của sự tăng trưởng doanh thu hoạt động tài chính đến tổng lợi nhuận của công ty.",
+      "Dự báo xu hướng lợi nhuận trong các quý tiếp theo dựa trên các số liệu hiện có."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh riêng\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------|-------------|----------------|----------------|---------------------------------|---------------------------------|\n| 01 | 1. Doanh thu bán hàng và cung cấp dịch vụ | 1.375.560.973.550 | 915.925.961.952 | 2.931.894.857.962 | 1.666.093.109.221 |\n| 10 | 2. Các khoản giảm trừ doanh thu | - | - | - | - |\n| 10 | Doanh thu thuần bán hàng và cung cấp dịch vụ | 1.375.560.973.550 | 915.925.961.952 | 2.931.894.857.962 | 1.666.093.109.221 |\n| 11 | 3. Giá vốn hàng bán | 1.347.592.341.858 | 865.055.268.304 | 2.874.315.258.745 | 1.594.752.826.163 |\n| 20 | 4. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 27.968.631.692 | 50.870.693.648 | 57.579.599.217 | 71.340.283.058 |\n| 21 | 5. Doanh thu hoạt động tài chính | 634.685.880.850 | 181.532.200.520 | 1.116.049.233.457 | 438.816.757.524 |\n| 22 | 6. Chi phí tài chính | 102.153.995.427 | 137.874.529.002 | 239.452.770.753 | 235.068.887.288 |\n| 23 | Trong đó: Chi phí lãi vay | 112.407.044.320 | 97.837.319.903 | 224.125.356.683 | 185.713.447.878 |\n| 25 | 7. Chi phí bán hàng | 2.101.482.546 | 1.414.491.911 | 4.869.028.518 | 3.064.535.778 |\n| 26 | 8. Chi phí quản lý doanh nghiệp | 70.068.175.187 | 42.260.230.465 | 136.160.134.553 | 84.681.328.011 |\n| 30 | 9. Lợi nhuận thuần từ hoạt động kinh doanh | 488.330.859.382 | 50.853.642.790 | 793.146.898.850 | 187.342.289.505 |\n| 31 | 10. Thu nhập khác | 297.335.247 | 1.455.195.421 | 334.546.433 | 1.458.195.421 |\n| 32 | 11. Chi phí khác | - | 60.245.623 | - | 72.382.501 |\n| 40 | 12. Lợi nhuận khác | 297.335.247 | 1.394.949.798 | 334.546.433 | 1.385.812.920 |\n| 50 | 13. Tổng lợi nhuận kế toán trước thuế | 488.628.194.629 | 52.248.592.588 | 793.481.445.283 | 188.728.102.425 |\n| 60 | 14. Lợi nhuận sau thuế thu nhập doanh nghiệp | 488.628.194.629 | 52.248.592.588 | 793.481.445.283 | 188.728.102.425 |",
+    "output": [
+      "1.375.560.973.550 VND",
+      "793.481.445.283 VND",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý 2/2025 là 27.968.631.692 VND. Trong Quý 2/2024 là 50.870.693.648 VND. Lợi nhuận gộp đã giảm 22.902.061.956 VND.",
+      "Chi phí tài chính trong 6 tháng đầu năm 2025 là 239.452.770.753 VND, trong đó chi phí lãi vay là 224.125.356.683 VND.",
+      "Trong Quý 2/2025, lợi nhuận thuần từ hoạt động kinh doanh của công ty đạt 488.330.859.382 VND, tăng đáng kể so với 50.853.642.790 VND trong Quý 2/2024. Sự tăng trưởng này chủ yếu đến từ việc tăng mạnh doanh thu hoạt động tài chính (từ 181.532.200.520 VND lên 634.685.880.850 VND), bù đắp cho sự sụt giảm của lợi nhuận gộp về bán hàng và cung cấp dịch vụ. Điều này cho thấy hiệu quả hoạt động kinh doanh cốt lõi (từ bán hàng và dịch vụ) có thể đang suy giảm, và lợi nhuận được thúc đẩy bởi các hoạt động tài chính.",
+      "Sự tăng trưởng vượt bậc của doanh thu hoạt động tài chính từ 181.532.200.520 VND (Quý 2/2024) lên 634.685.880.850 VND (Quý 2/2025) đã có tác động rất lớn và tích cực đến tổng lợi nhuận của công ty. Khoản tăng này đã giúp chuyển lợi nhuận thuần từ hoạt động kinh doanh từ mức thấp (50.853.642.790 VND) lên mức cao (488.330.859.382 VND) trong quý. Điều này cho thấy hoạt động tài chính là động lực chính của lợi nhuận trong quý này, bù đắp cho sự giảm sút của lợi nhuận gộp từ hoạt động kinh doanh cốt lõi.",
+      "Dựa trên các số liệu hiện có, xu hướng lợi nhuận trong các quý tiếp theo có thể phụ thuộc nhiều vào khả năng duy trì doanh thu hoạt động tài chính ở mức cao. Nếu lợi nhuận gộp từ bán hàng và cung cấp dịch vụ tiếp tục giảm hoặc không tăng trưởng đáng kể, công ty sẽ cần các nguồn doanh thu tài chính mạnh mẽ để duy trì mức lợi nhuận như Quý 2/2025. Ngoài ra, việc chi phí tài chính và chi phí lãi vay tăng cũng là yếu tố cần quan tâm, có thể ảnh hưởng đến lợi nhuận nếu không được kiểm soát tốt."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lợi nhuận trước thuế trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+      "Tiền lãi vay đã trả trong 6 tháng đầu năm 2024 là bao nhiêu?",
+      "So sánh Lưu chuyển tiền thuần từ hoạt động kinh doanh giữa 6 tháng đầu năm 2025 và 2024. Thay đổi như thế nào?",
+      "Khoản mục nào có mức điều chỉnh lớn nhất trong các khoản điều chỉnh lợi nhuận trước thuế trong 6 tháng đầu năm 2025?",
+      "Đánh giá khả năng tạo tiền từ hoạt động kinh doanh của công ty trong 6 tháng đầu năm 2025.",
+      "Phân tích nguyên nhân và tác động của sự giảm mạnh lưu chuyển tiền thuần từ hoạt động kinh doanh năm 2025 so với 2024."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ riêng (Theo phương pháp gián tiếp - Phần I. Hoạt động kinh doanh)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------|-------------|---------------------------------|---------------------------------|\n| I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | |\n| 01 | 1. Lợi nhuận trước thuế | 793.481.445.283 | 188.728.102.425 |\n| 02 | 2. Điều chỉnh cho các khoản: |\n| - | Khấu hao tài sản cố định và bất động sản đầu tư | 10.739.075.790 | 10.368.837.290 |\n| 03 | Các khoản dự phòng | 2.478.764.521 | 17.582.311.154 |\n| 04 | Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 670.987.721 | 2.910.268.417 |\n| 05 | Lãi từ hoạt động đầu tư | 980.044.449.576 | 329.568.585.063 |\n| 06 | Chi phí lãi vay và phát hành trái phiếu | 225.481.348.769 | 189.592.167.240 |\n| 08 | 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 46.507.668.024 | 38.627.942.321 |\n| 09 | Tăng, giảm các khoản phải thu | 82.028.212.169 | 22.528.315.223 |\n| 10 | Tăng, giảm hàng tồn kho | 123.226.802.790 | 411.220.044.911 |\n| 11 | Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế thu nhập doanh nghiệp phải nộp | 248.451.703.671 | 30.300.583.943 |\n| 12 | Tăng, giảm chi phí trả trước | 8.213.020.923 | 10.712.171.802 |\n| 13 | Tăng, giảm chứng khoán kinh doanh | 464.624.678.883 | 126.885.346.995 |\n| 14 | Tiền lãi vay đã trả | 244.719.854.836 | 178.378.936.215 |\n| 17 | Tiền chi khác cho hoạt động kinh doanh | 10.179.777.777 | 2.228.000.000 |\n| 20 | Lưu chuyển tiền thuần từ sử dụng vào hoạt động kinh doanh | 72.056.735.599 | 444.798.132.332 |",
+    "output": [
+      "793.481.445.283 VND",
+      "178.378.936.215 VND",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 là 72.056.735.599 VND, giảm đáng kể so với 444.798.132.332 VND trong 6 tháng đầu năm 2024.",
+      "Khoản mục 'Lãi từ hoạt động đầu tư' với giá trị 980.044.449.576 VND.",
+      "Khả năng tạo tiền từ hoạt động kinh doanh của công ty trong 6 tháng đầu năm 2025 đã giảm đáng kể so với cùng kỳ năm trước. Lưu chuyển tiền thuần từ hoạt động kinh doanh chỉ đạt 72.056.735.599 VND, thấp hơn nhiều so với 444.798.132.332 VND của 6 tháng đầu năm 2024. Mặc dù lợi nhuận trước thuế tăng, nhưng các khoản điều chỉnh như lãi từ hoạt động đầu tư (giảm dòng tiền) và tăng các khoản phải trả (tăng dòng tiền) đã ảnh hưởng lớn. Đặc biệt, khoản tăng chứng khoán kinh doanh cũng là một yếu tố lớn làm giảm dòng tiền từ hoạt động này. Điều này cho thấy công ty đang gặp thách thức trong việc chuyển lợi nhuận thành tiền mặt từ hoạt động kinh doanh cốt lõi.",
+      "Sự giảm mạnh lưu chuyển tiền thuần từ hoạt động kinh doanh năm 2025 (từ 444.798.132.332 VND xuống 72.056.735.599 VND) có thể được giải thích bởi một số yếu tố chính: Mặc dù lợi nhuận trước thuế tăng cao, nhưng 'Lãi từ hoạt động đầu tư' được điều chỉnh giảm mạnh (-980 tỷ VND) do đây là khoản lãi không tạo ra tiền mặt từ hoạt động kinh doanh mà từ hoạt động đầu tư. Bên cạnh đó, 'Tăng, giảm các khoản phải thu' và 'Tăng, giảm hàng tồn kho' có ảnh hưởng tích cực nhưng không đủ để bù đắp. Quan trọng nhất, 'Tăng, giảm chứng khoán kinh doanh' từ mức tăng 126.885.346.995 VND (tạo tiền) năm 2024 thành tăng 464.624.678.883 VND (sử dụng tiền) năm 2025 cho thấy công ty đã sử dụng một lượng tiền lớn cho hoạt động này. Tác động là công ty có ít tiền mặt hơn để tái đầu tư, trả nợ hoặc chi trả cổ tức từ hoạt động kinh doanh cốt lõi, có thể gây áp lực lên thanh khoản nếu không có các nguồn tiền khác bù đắp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+      "Tiền thu từ đi vay trong 6 tháng đầu năm 2025 là bao nhiêu?",
+      "So sánh lưu chuyển tiền thuần trong kỳ giữa 6 tháng đầu năm 2025 và 2024. Thay đổi như thế nào?",
+      "Khoản mục nào gây ra dòng tiền ra lớn nhất trong hoạt động tài chính trong 6 tháng đầu năm 2025?",
+      "Đánh giá mức độ hiệu quả của các hoạt động đầu tư của công ty trong việc tạo ra dòng tiền.",
+      "Phân tích tác động của các khoản chi trả cổ tức và lợi nhuận cho chủ sở hữu đến dòng tiền từ hoạt động tài chính.",
+      "Dự báo tình hình tiền và tương đương tiền cuối kỳ nếu xu hướng hoạt động tài chính tiếp tục như hiện tại."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ riêng (Theo phương pháp gián tiếp - Phần II. Hoạt động đầu tư và III. Hoạt động tài chính)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------|-------------|---------------------------------|---------------------------------|\n| II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | |\n| 21 | 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | 413.988.459.619 | 181.733.380.314 |\n| 22 | 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | - | 2.353.177.000 |\n| 23 | 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 255.707.728.448 | 472.892.305.208 |\n| 24 | 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 312.082.728.448 | 395.250.000.000 |\n| 26 | 5. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | - | 737.800.000.000 |\n| 27 | 6. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 808.075.098.097 | 307.915.704.650 |\n| 30 | Lưu chuyển tiền thuần từ sử dụng vào hoạt động đầu tư | 1.188.261.638.478 | 50.893.196.128 |\n| III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | |\n| 31 | 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | - | 91.000.000 |\n| 33 | 2. Tiền thu từ đi vay | 5.310.250.984.635 | 3.419.066.571.999 |\n| 34 | 3. Tiền trả nợ gốc vay | 4.607.677.810.907 | 1.826.760.788.886 |\n| 36 | 4. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 429.640.532.500 | 259.000 |\n| 40 | Lưu chuyển tiền thuần từ sử dụng vào hoạt động tài chính | 272.841.641.228 | 1.592.305.524.113 |\n| 50 | Lưu chuyển tiền thuần trong kỳ | 589.046.544.107 | 1.198.400.587.909 |\n| 60 | Tiền và tương đương tiền đầu kỳ | 166.077.200.003 | 107.427.184.440 |\n| 61 | Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 78.065.527 | 14.184.808 |\n| 70 | Tiền và tương đương tiền cuối kỳ | 755.045.678.583 | 1.305.841.957.157 |",
+    "output": [
+      "1.188.261.638.478 VND",
+      "5.310.250.984.635 VND",
+      "Lưu chuyển tiền thuần trong kỳ của 6 tháng đầu năm 2025 là 589.046.544.107 VND, giảm so với 1.198.400.587.909 VND trong 6 tháng đầu năm 2024. Điều này có nghĩa là lượng tiền mặt và tương đương tiền tăng ít hơn so với cùng kỳ năm trước.",
+      "Khoản mục 'Tiền trả nợ gốc vay' với giá trị 4.607.677.810.907 VND.",
+      "Các hoạt động đầu tư của công ty trong 6 tháng đầu năm 2025 đã tạo ra dòng tiền thuần dương đáng kể là 1.188.261.638.478 VND, tăng mạnh so với 50.893.196.128 VND của cùng kỳ năm 2024. Sự hiệu quả này chủ yếu đến từ 'Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia' tăng mạnh và 'Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác' cũng đóng góp đáng kể, bù đắp cho việc tăng chi tiền để mua sắm tài sản cố định và cho vay. Điều này cho thấy hoạt động đầu tư đang là một nguồn tạo tiền mặt quan trọng cho công ty.",
+      "Trong 6 tháng đầu năm 2025, công ty đã chi trả 429.640.532.500 VND cổ tức, lợi nhuận cho chủ sở hữu, một sự gia tăng rất lớn so với 259.000 VND trong cùng kỳ năm 2024. Khoản chi trả này là một dòng tiền ra đáng kể từ hoạt động tài chính, làm giảm lưu chuyển tiền thuần từ hoạt động tài chính. Mặc dù công ty có các khoản thu từ đi vay lớn, việc chi trả cổ tức cao cho thấy công ty có đủ khả năng tài chính để thực hiện cam kết với cổ đông, nhưng đồng thời cũng làm giảm lượng tiền mặt có sẵn để tái đầu tư hoặc trả nợ khác nếu các nguồn thu không đủ lớn.",
+      "Nếu xu hướng hoạt động tài chính tiếp tục như hiện tại, với tiền thu từ đi vay lớn hơn tiền trả nợ gốc vay và chi trả cổ tức, công ty vẫn có khả năng duy trì dòng tiền dương từ hoạt động tài chính. Trong 6 tháng đầu năm 2025, dòng tiền thuần từ hoạt động tài chính là dương 272.841.641.228 VND. Kết hợp với dòng tiền dương từ hoạt động đầu tư và dòng tiền dương nhưng giảm từ hoạt động kinh doanh, tiền và tương đương tiền cuối kỳ có thể tiếp tục tăng, nhưng với tốc độ chậm hơn so với năm trước do tổng lưu chuyển tiền thuần trong kỳ đã giảm."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Hai lĩnh vực kinh doanh cốt lõi của Công ty GELEX là gì?",
+      "Đơn vị tiền tệ sử dụng trong ghi chép kế toán của Công ty là gì?",
+      "Công ty GELEX sản xuất, kinh doanh những loại thiết bị điện nào?",
+      "Chu kỳ sản xuất, kinh doanh thông thường của Công ty là bao lâu?",
+      "Các chuẩn mực kế toán Việt Nam được áp dụng dựa trên những Quyết định nào của Bộ Tài chính?",
+      "Phân tích tầm quan trọng của việc tuân thủ các chuẩn mực kế toán Việt Nam trong báo cáo tài chính.",
+      "Đánh giá mức độ đa dạng hóa lĩnh vực kinh doanh của Công ty và tiềm năng tăng trưởng."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (1. Đặc điểm hoạt động, 2. Chế độ và chính sách kế toán - Kỳ kế toán, Đơn vị tiền tệ, Chuẩn mực)\nLoại nội dung: Text\n1. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP<br>Hình thức sở hữu vốn:<br>Công ty Cổ phần Tập đoàn GELEX tiền thân là Công ty Thiết bị Kỹ thuật Điện, được thành lập theo Quyết định số 1120/QĐ-TCCBĐT của Bộ trưởng Bộ Công nghiệp nặng (nay là Bộ Công thương). Sau đó, Công ty được cổ phần hóa theo Quyết định số 1422/QĐ-TTg ngày 10 tháng 8 năm 2010 của Thủ tướng Chính phủ, và hoạt động theo Giấy chứng nhận đăng ký kinh doanh lần đầu số 0100100512 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày 01 tháng 12 năm 2010. Công ty cũng được cấp các Giấy chứng nhận đăng ký doanh nghiệp sửa đổi sau này, với lần sửa đổi gần nhất là lần thứ 18 ngày 09 tháng 6 năm 2025.<br>Trụ sở chính của Công ty được đặt tại số 52 Phố Lê Đại Hành, Phường Hai Bà Trưng, Thành phố Hà Nội.<br>Lĩnh vực kinh doanh:<br>Hoạt động chính trong kỳ hiện tại của Công ty là quản lý vốn đầu tư vào hai lĩnh vực kinh doanh cốt lõi là Sản xuất công nghiệp và Hạ tầng.<br>– Sản xuất công nghiệp: sản xuất, kinh doanh thiết bị điện bao gồm dây cáp điện, máy biến áp, động cơ điện, thiết bị đo điện (gồm công tơ điện, đồng hồ Volt-Ampe, máy biến dòng, tủ điện) và các sản phẩm khác.<br>– Hạ tầng: sản xuất, kinh doanh vật liệu xây dựng, kinh doanh bất động sản và xây dựng, sản xuất, truyền tải và phân phối điện năng (bao gồm thủy điện, điện mặt trời), Khai thác, xử lý và cung cấp nước sạch, dịch vụ khách sạn, du lịch và cho thuê văn phòng, nhà ở, nhà xưởng...<br>Chu kỳ sản xuất, kinh doanh thông thường: Chu kỳ sản xuất, kinh doanh thông thường của Công ty là 12 tháng.\n<br>2. CHẾ ĐỘ VÀ CHÍNH SÁCH KẾ TOÁN ÁP DỤNG TẠI CÔNG TY<br>2.1. Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán:<br>Kỳ kế toán năm của Công ty theo năm dương lịch bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.<br>Đơn vị tiền tệ sử dụng trong ghi chép kế toán là đồng Việt Nam (VND).<br>2.2. Chuẩn mực và Chế độ kế toán áp dụng:<br>Báo cáo tài chính riêng của Công ty được trình bày bằng đồng Việt Nam (VND) phù hợp với Chế độ kế toán doanh nghiệp Việt Nam và các Chuẩn mực kế toán Việt Nam do Bộ Tài chính ban hành theo các Quyết định số 149/2001/QĐ-BTC (Đợt 1), 165/2002/QĐ-BTC (Đợt 2), 234/2003/QĐ-BTC (Đợt 3), 12/2005/QĐ-BTC (Đợt 4) và 100/2005/QĐ-BTC (Đợt 5).",
+    "output": [
+      "Sản xuất công nghiệp và Hạ tầng.",
+      "Đồng Việt Nam (VND).",
+      "Công ty sản xuất, kinh doanh thiết bị điện bao gồm dây cáp điện, máy biến áp, động cơ điện, thiết bị đo điện (gồm công tơ điện, đồng hồ Volt-Ampe, máy biến dòng, tủ điện) và các sản phẩm khác.",
+      "Chu kỳ sản xuất, kinh doanh thông thường của Công ty là 12 tháng.",
+      "Các chuẩn mực kế toán Việt Nam được áp dụng dựa trên các Quyết định số 149/2001/QĐ-BTC (Đợt 1), 165/2002/QĐ-BTC (Đợt 2), 234/2003/QĐ-BTC (Đợt 3), 12/2005/QĐ-BTC (Đợt 4) và 100/2005/QĐ-BTC (Đợt 5) của Bộ Tài chính.",
+      "Việc tuân thủ các Chuẩn mực kế toán Việt Nam và Chế độ kế toán doanh nghiệp Việt Nam là vô cùng quan trọng để đảm bảo tính minh bạch, trung thực và hợp lý của báo cáo tài chính. Điều này giúp các nhà đầu tư, chủ nợ, cơ quan quản lý và các bên liên quan khác có thể tin tưởng vào thông tin tài chính, đưa ra các quyết định kinh tế chính xác. Đồng thời, sự tuân thủ còn giúp công ty tránh được các rủi ro pháp lý, nâng cao uy tín và tạo môi trường cạnh tranh lành mạnh trên thị trường.",
+      "Công ty Cổ phần Tập đoàn GELEX có mức độ đa dạng hóa lĩnh vực kinh doanh khá cao với hai mảng cốt lõi là Sản xuất công nghiệp và Hạ tầng. Trong Sản xuất công nghiệp, công ty tập trung vào thiết bị điện. Trong Hạ tầng, công ty tham gia vào nhiều mảng như vật liệu xây dựng, bất động sản, năng lượng (thủy điện, điện mặt trời), nước sạch, khách sạn, du lịch. Sự đa dạng hóa này giúp công ty giảm thiểu rủi ro từ một ngành cụ thể và có tiềm năng tăng trưởng từ nhiều nguồn khác nhau, đặc biệt là từ các ngành trọng yếu của nền kinh tế như năng lượng và hạ tầng. Tiềm năng tăng trưởng sẽ phụ thuộc vào khả năng quản lý và tối ưu hóa hiệu quả các mảng kinh doanh đa dạng này."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tiền và các khoản tương đương tiền bao gồm những gì?",
+      "Công ty áp dụng phương pháp nào để hạch toán hàng tồn kho?",
+      "Giá trị thuần có thể thực hiện được của hàng tồn kho được xác định như thế nào?",
+      "Khoản dự phòng giảm giá hàng tồn kho được hạch toán vào đâu trên báo cáo tài chính?",
+      "Đánh giá chính sách kế toán về tiền và tương đương tiền có đảm bảo khả năng thanh khoản cho công ty không?",
+      "Phân tích rủi ro tài chính nếu chính sách dự phòng nợ phải thu khó đòi không đủ thận trọng."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (2. Chế độ và chính sách kế toán - Tiền, Hàng tồn kho, Khoản phải thu)\nLoại nội dung: Text\n2.3. Tiền và các khoản tương đương tiền:<br>Tiền và các khoản tương đương tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng và các khoản đầu tư ngắn hạn có thời hạn gốc không quá ba tháng, có tính thanh khoản cao, có khả năng chuyển đổi dễ dàng thành các lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.<br><br>2.4. Hàng tồn kho:<br>Hàng tồn kho được ghi nhận theo giá thấp hơn giữa giá thành để đưa mỗi sản phẩm đến vị trí và điều kiện hiện tại và giá trị thuần có thể thực hiện được.<br>Giá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong điều kiện kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí bán hàng ước tính.<br>Công ty áp dụng phương pháp kê khai thường xuyên để hạch toán hàng tồn kho với giá trị được xác định như sau:<br>– Nguyên liệu, nhiên liệu, vật liệu, công cụ, dụng cụ, hàng hóa: chi phí mua theo phương pháp bình quân gia quyền.<br>– Thành phẩm và chi phí sản xuất kinh doanh dở dang: giá vốn nguyên vật liệu và lao động trực tiếp cộng chi phí sản xuất chung có liên quan được phân bổ dựa trên mức độ hoạt động bình thường theo phương pháp bình quân gia quyền.<br>Dự phòng giảm giá hàng tồn kho:<br>Dự phòng giảm giá hàng tồn kho được trích lập cho phần giá trị dự kiến bị tổn thất do các khoản suy giảm trong giá trị do giảm giá, hư hỏng, kém phẩm chất, v.v. có thể xảy ra đối với nguyên liệu, vật liệu và hàng hóa tồn kho thuộc quyền sở hữu của Công ty dựa trên bằng chứng hợp lý về sự suy giảm giá trị tại ngày kết thúc kỳ kế toán.<br>Số tăng hoặc giảm khoản dự phòng giảm giá hàng tồn kho được hạch toán vào giá vốn hàng bán trên báo cáo kết quả hoạt động kinh doanh riêng.<br><br>2.5. Các khoản phải thu:<br>Các khoản phải thu được trình bày trên báo cáo tài chính riêng theo giá trị ghi số các khoản phải thu từ khách hàng và phải thu khác sau khi cấn trừ các khoản dự phòng được lập cho các khoản phải thu khó đòi.<br>Dự phòng nợ phải thu khó đòi thể hiện phần giá trị của các khoản phải thu mà Công ty dự kiến không có khả năng thu hồi tại ngày kết thúc kỳ kế toán. Tăng hoặc giảm số dư tài khoản dự phòng được hạch toán vào chi phí quản lý doanh nghiệp trên báo cáo kết quả hoạt động kinh doanh riêng.",
+    "output": [
+      "Tiền mặt tại quỹ, tiền gửi ngân hàng và các khoản đầu tư ngắn hạn có thời hạn gốc không quá ba tháng, có tính thanh khoản cao, có khả năng chuyển đổi dễ dàng thành các lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.",
+      "Công ty áp dụng phương pháp kê khai thường xuyên để hạch toán hàng tồn kho.",
+      "Giá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong điều kiện kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí bán hàng ước tính.",
+      "Số tăng hoặc giảm khoản dự phòng giảm giá hàng tồn kho được hạch toán vào giá vốn hàng bán trên báo cáo kết quả hoạt động kinh doanh riêng.",
+      "Chính sách kế toán của công ty về tiền và các khoản tương đương tiền bao gồm tiền mặt, tiền gửi ngân hàng và các khoản đầu tư ngắn hạn có thời hạn gốc không quá ba tháng, tính thanh khoản cao. Điều này cho thấy công ty định nghĩa các khoản tương đương tiền theo hướng đảm bảo khả năng chuyển đổi nhanh chóng thành tiền mặt và ít rủi ro, qua đó hỗ trợ khả năng thanh khoản ngắn hạn. Việc này là một dấu hiệu tích cực cho quản lý thanh khoản.",
+      "Nếu chính sách dự phòng nợ phải thu khó đòi không đủ thận trọng, công ty có thể đối mặt với rủi ro tài chính đáng kể. Việc trích lập dự phòng không đầy đủ sẽ làm tăng giá trị các khoản phải thu trên bảng cân đối kế toán, làm cho tài sản công ty có vẻ lớn hơn thực tế. Khi các khoản nợ này thực sự không thể thu hồi được, công ty sẽ phải ghi nhận tổn thất lớn trong tương lai, ảnh hưởng tiêu cực đến lợi nhuận, vốn chủ sở hữu và dòng tiền. Điều này cũng làm sai lệch các chỉ số tài chính, gây hiểu lầm cho nhà đầu tư và các bên liên quan về sức khỏe tài chính thực sự của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá tài sản cố định hữu hình bao gồm những gì?",
+      "Khi nào thì một thỏa thuận thuê tài sản được phân loại là thuê tài chính?",
+      "Lãi hoặc lỗ phát sinh khi bán hay thanh lý tài sản cố định hữu hình được hạch toán vào đâu?",
+      "Nếu Công ty là bên đi thuê, các khoản tiền thuê theo hợp đồng thuê hoạt động được hạch toán như thế nào?",
+      "Đánh giá tác động của chính sách ghi nhận chi phí bảo trì, sửa chữa tài sản cố định đến lợi nhuận của công ty.",
+      "Phân tích rủi ro và lợi ích tiềm năng từ việc thuê tài chính so với thuê hoạt động cho công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (2. Chế độ và chính sách kế toán - Tài sản cố định hữu hình, Thuê tài sản)\nLoại nội dung: Text\n2.6. Tài sản cố định hữu hình:<br>Tài sản cố định hữu hình được thể hiện theo nguyên giá trừ đi giá trị hao mòn lũy kế.<br>Nguyên giá tài sản cố định hữu hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào hoạt động như dự kiến.<br>Các chi phí mua sắm, nâng cấp và đổi mới tài sản cố định được ghi tăng nguyên giá của tài sản và chi phí bảo trì, sửa chữa được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng khi phát sinh.<br>Khi tài sản cố định hữu hình được bán hay thanh lý, các khoản lãi hoặc lỗ phát sinh do thanh lý tài sản là phần chênh lệch giữa tiền thu thuần từ việc bán tài sản với giá trị còn lại của tài sản được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng.<br><br>2.7. Thuê tài sản:<br>Việc xác định một thỏa thuận có phải là thỏa thuận thuê tài sản hay không dựa trên bản chất của thỏa thuận đó tại thời điểm khởi đầu (liệu việc thực hiện thỏa thuận này có phụ thuộc vào việc sử dụng một tài sản nhất định và thỏa thuận có bao gồm điều khoản về quyền sử dụng tài sản hay không).<br>Thỏa thuận thuê tài sản được phân loại là thuê tài chính nếu theo hợp đồng thuê tài sản bên cho thuê chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu tài sản cho bên đi thuê. Tất cả các thỏa thuận thuê tài sản khác được phân loại là thuê hoạt động.<br>Trong trường hợp Công ty là bên đi thuê:<br>Các khoản tiền thuê theo hợp đồng thuê hoạt động được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng theo phương pháp đường thẳng trong thời hạn của hợp đồng thuê.<br>Trong trường hợp Công ty là bên cho thuê:<br>Tài sản theo hợp đồng cho thuê hoạt động được ghi nhận là tài sản cố định trên bảng cân đối kế toán riêng. Chi phí trực tiếp ban đầu để thương thảo thỏa thuận cho thuê hoạt động được ghi nhận vào kết quả hoạt động kinh doanh riêng khi phát sinh.<br>Thu nhập từ tiền cho thuê hoạt động được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng theo phương pháp đường thẳng trong thời gian cho thuê.",
+    "output": [
+      "Nguyên giá tài sản cố định hữu hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào hoạt động như dự kiến.",
+      "Thỏa thuận thuê tài sản được phân loại là thuê tài chính nếu theo hợp đồng thuê tài sản bên cho thuê chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu tài sản cho bên đi thuê.",
+      "Lãi hoặc lỗ phát sinh khi bán hay thanh lý tài sản cố định hữu hình được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng.",
+      "Nếu Công ty là bên đi thuê, các khoản tiền thuê theo hợp đồng thuê hoạt động được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng theo phương pháp đường thẳng trong thời hạn của hợp đồng thuê.",
+      "Chính sách của công ty ghi nhận chi phí bảo trì, sửa chữa tài sản cố định vào báo cáo kết quả hoạt động kinh doanh riêng khi phát sinh. Điều này có tác động trực tiếp làm giảm lợi nhuận trong kỳ mà chi phí đó phát sinh. Chính sách này phản ánh một cách thận trọng chi phí hoạt động thực tế và tránh làm tăng nguyên giá tài sản một cách không cần thiết. Tuy nhiên, nếu công ty có các chi phí bảo trì, sửa chữa lớn và thường xuyên, nó có thể ảnh hưởng đến sự ổn định của lợi nhuận qua các kỳ.",
+      "Nếu công ty là bên đi thuê: Thuê tài chính chuyển giao phần lớn rủi ro và lợi ích quyền sở hữu cho bên đi thuê. Lợi ích tiềm năng là công ty được sử dụng tài sản trong thời gian dài như sở hữu mà không cần bỏ ra khoản đầu tư ban đầu lớn, có thể ghi nhận tài sản và nợ trên bảng cân đối kế toán. Rủi ro là công ty phải chịu trách nhiệm về rủi ro sở hữu, tài sản và nợ phải thể hiện trên bảng cân đối kế toán, làm tăng hệ số nợ, ảnh hưởng đến khả năng vay vốn trong tương lai và các cam kết tài chính. Ngược lại, thuê hoạt động không ghi nhận tài sản và nợ trên bảng cân đối kế toán, chi phí thuê được hạch toán vào báo cáo kết quả kinh doanh, giúp công ty duy trì các chỉ số tài chính tốt hơn và linh hoạt trong việc thay đổi tài sản thuê. Rủi ro là công ty không có quyền sở hữu tài sản và lợi ích từ việc tăng giá trị tài sản."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Thời gian hữu dụng ước tính của máy móc, thiết bị là bao nhiêu năm?",
+      "Nguyên giá tài sản cố định vô hình bao gồm những gì?",
+      "Đối với bất động sản đầu tư nắm giữ chờ tăng giá trị, Công ty có trích khấu hao không?",
+      "Khi nào thì bất động sản đầu tư không còn được trình bày trong bảng cân đối kế toán riêng?",
+      "Đánh giá mức độ chi tiết và rõ ràng của các chính sách khấu hao và hao mòn tài sản của công ty.",
+      "Phân tích tác động của việc ghi nhận quyền sử dụng đất là tài sản cố định vô hình đến cấu trúc tài sản của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (2. Chế độ và chính sách kế toán - Tài sản cố định vô hình, Khấu hao và hao mòn, Bất động sản đầu tư)\nLoại nội dung: Text\n2.8. Tài sản cố định vô hình:<br>Tài sản cố định vô hình được ghi nhận theo nguyên giá trừ đi giá trị hao mòn lũy kế.<br>Nguyên giá tài sản cố định vô hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào sử dụng như dự kiến.<br>Các chi phí nâng cấp và đổi mới tài sản cố định vô hình được ghi tăng nguyên giá của tài sản và các chi phí khác được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng khi phát sinh.<br>Khi tài sản cố định vô hình được bán hay thanh lý, các khoản lãi hoặc lỗ phát sinh do thanh lý tài sản là phần chênh lệch giữa tiền thu thuần từ việc bán tài sản với giá trị còn lại của tài sản được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng.<br>Quyền sử dụng đất:<br>Tiền thuê đất trả trước cho các hợp đồng thuê đất có hiệu lực trước năm 2003 và được cấp Giấy chứng nhận quyền sử dụng đất được ghi nhận là tài sản cố định vô hình theo quy định của Thông tư số 45/2013/TT-BTC.<br><br>2.9. Khấu hao và hao mòn:<br>Khấu hao tài sản cố định hữu hình và hao mòn tài sản cố định vô hình được trích theo phương pháp khấu hao đường thẳng trong suốt thời gian hữu dụng ước tính của các tài sản như sau:<br>– Nhà cửa, vật kiến trúc: 20-50 năm<br>– Máy móc, thiết bị: 3-20 năm<br>– Phương tiện vận tải, truyền dẫn: 5-10 năm<br>– Trang thiết bị văn phòng: 3-10 năm<br>– Phần mềm máy tính: 3 năm<br><br>2.10. Bất động sản đầu tư:<br>Bất động sản đầu tư được thể hiện theo nguyên giá bao gồm cả các chi phí giao dịch liên quan trừ đi giá trị khấu hao lũy kế. Đối với bất động sản đầu tư nắm giữ chờ tăng giá trị, Công ty không trích khấu hao mà xác định tổn thất do giảm giá trị.<br>Các khoản chi phí liên quan đến bất động sản đầu tư phát sinh sau ghi nhận ban đầu được hạch toán vào giá trị còn lại của bất động sản đầu tư khi Công ty có khả năng thu được các lợi ích kinh tế trong tương lai nhiều hơn mức hoạt động được đánh giá ban đầu của bất động sản đầu tư đó.<br>Khấu hao bất động sản đầu tư được trích theo phương pháp đường thẳng trong suốt thời gian hữu dụng ước tính của các bất động sản như sau:<br>– Nhà cửa, vật kiến trúc: 50 năm<br>– Tài sản khác: 3-15 năm<br>Bất động sản đầu tư không còn được trình bày trong bảng cân đối kế toán riêng sau khi đã bán hoặc sau khi bất động sản đầu tư đã không còn được sử dụng và xét thấy không thu được lợi ích kinh tế trong tương lai từ việc thanh lý bất động sản đầu tư đó. Chênh lệch giữa tiền thu thuần từ việc bán tài sản với giá trị còn lại của bất động sản đầu tư được ghi nhận vào báo cáo kết quả hoạt động kinh doanh riêng trong kỳ.<br>Việc chuyển từ bất động sản chủ sở hữu sử dụng hoặc hàng tồn kho thành bất động sản đầu tư chỉ khi có sự thay đổi về mục đích sử dụng. Việc chuyển từ bất động sản đầu tư sang bất động sản chủ sở hữu sử dụng hay hàng tồn kho chỉ khi có sự thay đổi về mục đích sử dụng. Việc chuyển từ bất động sản đầu tư sang bất động sản chủ sở hữu sử dụng hoặc hàng tồn kho không làm thay đổi nguyên giá hay giá trị còn lại của bất động sản tại ngày chuyển đổi.",
+    "output": [
+      "3-20 năm.",
+      "Nguyên giá tài sản cố định vô hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào sử dụng như dự kiến.",
+      "Đối với bất động sản đầu tư nắm giữ chờ tăng giá trị, Công ty không trích khấu hao mà xác định tổn thất do giảm giá trị.",
+      "Bất động sản đầu tư không còn được trình bày trong bảng cân đối kế toán riêng sau khi đã bán hoặc sau khi bất động sản đầu tư đã không còn được sử dụng và xét thấy không thu được lợi ích kinh tế trong tương lai từ việc thanh lý bất động sản đầu tư đó.",
+      "Các chính sách khấu hao và hao mòn tài sản của công ty được trình bày khá chi tiết và rõ ràng. Công ty áp dụng phương pháp khấu hao đường thẳng cho cả tài sản cố định hữu hình, vô hình và bất động sản đầu tư, với khung thời gian hữu dụng ước tính cụ thể cho từng loại tài sản (ví dụ: Nhà cửa, vật kiến trúc: 20-50 năm; Máy móc, thiết bị: 3-20 năm). Việc nêu rõ nguyên tắc ghi nhận nguyên giá, chi phí liên quan và thời điểm ghi nhận lãi/lỗ khi thanh lý cũng tăng cường sự minh bạch. Đặc biệt, chính sách riêng cho bất động sản đầu tư nắm giữ chờ tăng giá trị (không trích khấu hao mà xác định tổn thất) cho thấy sự phân biệt rõ ràng trong kế toán.",
+      "Việc ghi nhận tiền thuê đất trả trước cho các hợp đồng thuê đất có hiệu lực trước năm 2003 và được cấp Giấy chứng nhận quyền sử dụng đất là tài sản cố định vô hình theo Thông tư số 45/2013/TT-BTC có tác động quan trọng đến cấu trúc tài sản của công ty. Điều này làm tăng giá trị tài sản cố định vô hình trên bảng cân đối kế toán, phản ánh giá trị kinh tế của quyền sử dụng đất mà công ty sở hữu. Thay vì được coi là chi phí trả trước, việc ghi nhận này giúp tài sản của công ty được trình bày đầy đủ hơn, đồng thời chịu khấu hao (hao mòn) theo thời gian hữu dụng, ảnh hưởng đến lợi nhuận theo từng kỳ kế toán. Nó cũng có thể làm thay đổi tỷ trọng giữa tài sản hữu hình và vô hình trong tổng tài sản."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Chi phí đi vay được vốn hóa khi nào?",
+      "Công ty hạch toán chi phí trả trước dài hạn vào đâu?",
+      "Các khoản đầu tư vào công ty con được trình bày theo phương pháp nào?",
+      "Khi nào các khoản phân phối từ công ty con được ghi vào kết quả hoạt động kinh doanh riêng?",
+      "Đánh giá mức độ thận trọng của chính sách kế toán về dự phòng giảm giá trị các khoản đầu tư.",
+      "Phân tích rủi ro và lợi ích của việc ghi nhận chi phí đi vay vào nguyên giá tài sản so với ghi nhận vào chi phí trong kỳ."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (2. Chế độ và chính sách kế toán - Chi phí đi vay, Chi phí trả trước, Khoản đầu tư)\nLoại nội dung: Text\n2.11. Chi phí đi vay:<br>Chi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay của Công ty. Chi phí đi vay được hạch toán như chi phí phát sinh trong kỳ, ngoại trừ các khoản được vốn hóa liên quan trực tiếp đến việc mua sắm, xây dựng hoặc hình thành một tài sản cụ thể cần có một thời gian đủ dài để có thể đưa vào sử dụng theo mục đích định trước hoặc để bên bán được vốn hóa vào nguyên giá của tài sản đó.<br><br>2.12. Chi phí trả trước:<br>Chi phí trả trước bao gồm các chi phí trả trước ngắn hạn hoặc chi phí trả trước dài hạn trên bảng cân đối kế toán riêng và được phân bổ trong khoảng thời gian trả trước hoặc thời gian các lợi ích kinh tế tương ứng được tạo ra từ các chi phí này.<br>Các loại chi phí sau đây được hạch toán vào chi phí trả trước dài hạn để phân bổ dần vào báo cáo kết quả hoạt động kinh doanh riêng:<br>– Chi phí trả trước về thuê cơ sở hạ tầng<br>– Công cụ, dụng cụ xuất dùng trong nhiều năm với giá trị lớn<br>– Chi phí sửa chữa tài sản cố định phát sinh lớn và<br>– Các chi phí khác.<br><br>2.13. Các khoản đầu tư:<br>Đầu tư vào công ty con:<br>Các khoản đầu tư vào công ty con mà trong đó Công ty nắm quyền kiểm soát được trình bày theo phương pháp giá gốc.<br>Các khoản phân phối mà công ty mẹ nhận được từ số lợi nhuận lũy kế của các công ty con sau ngày Công ty nắm quyền kiểm soát được ghi vào kết quả hoạt động kinh doanh riêng. Các khoản phân phối khác được xem như phần thu hồi của các khoản đầu tư và được trừ vào giá trị đầu tư.<br>Đầu tư vào các công ty liên kết:<br>Các khoản đầu tư vào các công ty liên kết mà trong đó Công ty có ảnh hưởng đáng kể được trình bày theo phương pháp giá gốc.<br>Các khoản phân phối thuần lũy kế của các công ty liên kết sau ngày Công ty có ảnh hưởng đáng kể được ghi nhận vào báo cáo kết quả hoạt động kinh doanh riêng. Các khoản phân phối khác được xem như phần thu hồi các khoản đầu tư và được trừ vào giá trị đầu tư.<br>Chứng khoán kinh doanh và đầu tư góp vốn vào đơn vị khác:<br>Chứng khoán kinh doanh và đầu tư góp vốn vào đơn vị khác được ghi nhận theo giá gốc.<br>Dự phòng giảm giá trị các khoản chứng khoán kinh doanh và các khoản đầu tư góp vốn:<br>Dự phòng được lập cho việc giảm giá trị của các khoản chứng khoán kinh doanh và các khoản đầu tư góp vốn vào ngày kết thúc kỳ kế toán theo hướng dẫn của Thông tư số 48/2019/TT-BTC. Tăng hoặc giảm số dư dự phòng được hạch toán vào chi phí tài chính trong báo cáo kết quả hoạt động kinh doanh riêng.<br>Đầu tư nắm giữ đến ngày đáo hạn:<br>Các khoản đầu tư nắm giữ đến ngày đáo hạn được ghi nhận theo giá gốc. Sau khi ghi nhận ban đầu, các khoản đầu tư này được ghi nhận theo giá trị có thể thu hồi. Các khoản suy giảm giá trị của khoản đầu tư nếu phát sinh được hạch toán vào chi phí tài chính trong năm trong báo cáo kết quả hoạt động kinh doanh và giảm trừ trực tiếp giá trị đầu tư.",
+    "output": [
+      "Chi phí đi vay được vốn hóa khi các khoản này liên quan trực tiếp đến việc mua sắm, xây dựng hoặc hình thành một tài sản cụ thể cần có một thời gian đủ dài để có thể đưa vào sử dụng theo mục đích định trước hoặc để bên bán được vốn hóa vào nguyên giá của tài sản đó.",
+      "Công ty hạch toán chi phí trả trước dài hạn vào chi phí trả trước dài hạn trên bảng cân đối kế toán riêng và được phân bổ dần vào báo cáo kết quả hoạt động kinh doanh riêng.",
+      "Các khoản đầu tư vào công ty con được trình bày theo phương pháp giá gốc.",
+      "Các khoản phân phối mà công ty mẹ nhận được từ số lợi nhuận lũy kế của các công ty con sau ngày Công ty nắm quyền kiểm soát được ghi vào kết quả hoạt động kinh doanh riêng.",
+      "Chính sách kế toán của công ty về dự phòng giảm giá trị các khoản đầu tư (chứng khoán kinh doanh và đầu tư góp vốn) được lập theo hướng dẫn của Thông tư số 48/2019/TT-BTC, và số tăng hoặc giảm dự phòng được hạch toán vào chi phí tài chính. Điều này cho thấy công ty tuân thủ quy định pháp luật và có sự thận trọng nhất định trong việc ghi nhận tổn thất tiềm năng của các khoản đầu tư. Đối với các khoản đầu tư nắm giữ đến ngày đáo hạn, công ty cũng ghi nhận theo giá trị có thể thu hồi và hạch toán suy giảm giá trị vào chi phí tài chính. Nhìn chung, chính sách này thể hiện mức độ thận trọng phù hợp với các quy định hiện hành.",
+      "Việc ghi nhận chi phí đi vay vào nguyên giá tài sản (vốn hóa) mang lại lợi ích là giảm chi phí trong kỳ phát sinh, làm tăng lợi nhuận ngắn hạn. Tài sản vốn hóa sẽ được khấu hao trong các kỳ sau, phân bổ chi phí đi vay theo thời gian sử dụng tài sản, giúp cân đối chi phí với lợi ích mà tài sản mang lại. Tuy nhiên, rủi ro tiềm ẩn là việc vốn hóa có thể làm tăng giá trị tài sản không phản ánh chính xác chi phí hoạt động thực tế nếu tài sản không tạo ra lợi ích kinh tế như dự kiến. Ngược lại, ghi nhận chi phí đi vay vào chi phí trong kỳ sẽ làm giảm lợi nhuận ngay lập tức nhưng phản ánh chính xác chi phí sử dụng vốn trong kỳ đó, giúp báo cáo tài chính minh bạch hơn về hiệu quả hoạt động hiện tại. Lựa chọn phương pháp nào sẽ ảnh hưởng đến các chỉ số tài chính và quyết định của nhà đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Khi nào Công ty ghi nhận dự phòng?",
+      "Cổ phiếu quỹ được ghi nhận như thế nào trên báo cáo tài chính?",
+      "Trợ cấp thôi việc phải trả được trích trước theo tỷ lệ nào?",
+      "Các khoản chênh lệch tỷ giá hối đoái được hạch toán vào đâu trên báo cáo tài chính?",
+      "Đánh giá mức độ rõ ràng của chính sách phân chia lợi nhuận của Công ty.",
+      "Phân tích tác động của chính sách trợ cấp thôi việc đến chi phí và dòng tiền của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (2. Chế độ và chính sách kế toán - Khoản phải trả, Trợ cấp thôi việc, Dự phòng, Ngoại tệ, Cổ phiếu quỹ, Phân chia lợi nhuận)\nLoại nội dung: Text\n2.14. Các khoản phải trả và chi phí trích trước:<br>Các khoản phải trả và chi phí trích trước được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được không phụ thuộc vào việc Công ty đã nhận được hóa đơn của nhà cung cấp hay chưa.<br><br>2.15. Trợ cấp thôi việc phải trả:<br>Trợ cấp thôi việc cho nhân viên được trích trước vào cuối mỗi kỳ báo cáo cho toàn bộ người lao động đã làm việc tại Công ty được hơn 12 tháng cho đến ngày lập bảng cân đối kế toán theo tỷ lệ một nửa mức lương bình quân tháng cho mỗi năm làm việc tính đến ngày 31 tháng 12 năm 2008 theo Luật Lao động và các văn bản hướng dẫn có liên quan. Mức lương bình quân tháng dùng để tính trợ cấp thôi việc sẽ được điều chỉnh vào cuối mỗi kỳ báo cáo theo mức lương bình quân của sáu tháng gần nhất tính đến thời điểm lập báo cáo. Tăng hoặc giảm trong khoản trích trước này (ngoại trừ phần thanh toán thực tế cho người lao động) sẽ được ghi nhận vào báo cáo kết quả kinh doanh.<br>Khoản trợ cấp thôi việc trích trước này được sử dụng để trả trợ cấp thôi việc cho người lao động khi chấm dứt hợp đồng lao động theo Điều 46 của Bộ luật Lao động.<br><br>2.16. Các khoản dự phòng:<br>Công ty ghi nhận dự phòng khi có nghĩa vụ nợ hiện tại (nghĩa vụ pháp lý hoặc nghĩa vụ liên đới) là kết quả của một sự kiện đã xảy ra trong quá khứ. Việc thanh toán nghĩa vụ nợ này có thể sẽ dẫn đến sự giảm sút về những lợi ích kinh tế và Công ty có thể đưa ra được một ước tính đáng tin cậy về giá trị của nghĩa vụ nợ đó.<br><br>2.17. Các nghiệp vụ bằng ngoại tệ:<br>Các nghiệp vụ phát sinh bằng các đơn vị tiền tệ khác với đơn vị tiền tệ kế toán của Công ty (VND) được hạch toán theo tỷ giá giao dịch thực tế vào ngày phát sinh nghiệp vụ. Tại ngày kết thúc kỳ kế toán, các khoản mục tiền tệ có gốc ngoại tệ được đánh giá lại theo tỷ giá giao dịch thực tế tại ngày của bảng cân đối kế toán riêng. Tất cả các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư tiền tệ có gốc ngoại tệ cuối kỳ được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng.<br><br>2.18. Cổ phiếu quỹ:<br>Các công cụ vốn chủ sở hữu được Công ty mua lại (cổ phiếu quỹ) được ghi nhận theo nguyên giá và trừ vào vốn chủ sở hữu. Công ty không ghi nhận các khoản lãi/lỗ khi mua, bán, tái phát hành hoặc hủy các công cụ vốn chủ sở hữu của mình.<br><br>2.19. Phân chia lợi nhuận:<br>Lợi nhuận thuần sau thuế thu nhập doanh nghiệp có thể được chia cho các cổ đông sau khi được các cấp có thẩm quyền (Đại hội đồng cổ đông) phê duyệt và sau khi đã trích lập các quỹ dự phòng theo Điều lệ của Công ty và các công ty con và các quy định của pháp luật Việt Nam. Công ty trích lập các quỹ dự phòng sau từ lợi nhuận thuần sau thuế thu nhập doanh nghiệp của Công ty theo đề nghị của Hội đồng Quản trị và được các cổ đông phê duyệt tại Đại hội đồng cổ đông thường niên: Quỹ khen thưởng, phúc lợi (được trình bày như một khoản phải trả trên bảng cân đối kế toán) và Cổ tức (ghi nhận là khoản phải trả trên Bảng Cân đối kế toán sau khi có thông báo chia cổ tức).",
+    "output": [
+      "Công ty ghi nhận dự phòng khi có nghĩa vụ nợ hiện tại (nghĩa vụ pháp lý hoặc nghĩa vụ liên đới) là kết quả của một sự kiện đã xảy ra trong quá khứ, việc thanh toán nghĩa vụ nợ này có thể sẽ dẫn đến sự giảm sút về những lợi ích kinh tế và Công ty có thể đưa ra được một ước tính đáng tin cậy về giá trị của nghĩa vụ nợ đó.",
+      "Cổ phiếu quỹ được ghi nhận theo nguyên giá và trừ vào vốn chủ sở hữu.",
+      "Trợ cấp thôi việc cho nhân viên được trích trước theo tỷ lệ một nửa mức lương bình quân tháng cho mỗi năm làm việc tính đến ngày 31 tháng 12 năm 2008 theo Luật Lao động và các văn bản hướng dẫn có liên quan.",
+      "Tất cả các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư tiền tệ có gốc ngoại tệ cuối kỳ được hạch toán vào báo cáo kết quả hoạt động kinh doanh riêng.",
+      "Chính sách phân chia lợi nhuận của Công ty được trình bày khá rõ ràng. Công ty quy định lợi nhuận thuần sau thuế có thể được chia cho cổ đông sau khi được Đại hội đồng cổ đông phê duyệt và đã trích lập các quỹ dự phòng theo Điều lệ và quy định pháp luật Việt Nam. Các quỹ dự phòng cụ thể như Quỹ khen thưởng, phúc lợi và Cổ tức được ghi nhận là khoản phải trả sau khi có thông báo chia cổ tức. Điều này cho thấy quy trình phân phối lợi nhuận được kiểm soát chặt chẽ bởi các cấp quản lý cao nhất và tuân thủ pháp luật, mang lại sự minh bạch cho cổ đông.",
+      "Chính sách trợ cấp thôi việc của công ty, bao gồm việc trích trước vào cuối mỗi kỳ báo cáo theo tỷ lệ xác định, có tác động trực tiếp đến chi phí và dòng tiền. Việc trích trước này được ghi nhận vào báo cáo kết quả kinh doanh (ngoại trừ phần thanh toán thực tế), làm tăng chi phí trong kỳ và giảm lợi nhuận. Mặc dù là chi phí không bằng tiền mặt, nó tạo ra một nghĩa vụ nợ phải trả trên bảng cân đối kế toán. Khi trợ cấp được thực trả, nó sẽ là dòng tiền ra. Chính sách này giúp công ty có sự chuẩn bị tài chính cho các nghĩa vụ thôi việc trong tương lai, nhưng cũng đòi hỏi công ty phải quản lý cẩn thận khoản dự phòng này để không ảnh hưởng quá mức đến khả năng sinh lời và thanh khoản."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Khi nào doanh thu bán hàng được ghi nhận?",
+      "Doanh thu cổ tức được ghi nhận khi nào?",
+      "Các điều kiện chung để ghi nhận doanh thu là gì?",
+      "Khi nào thuế thu nhập hiện hành được ghi nhận trực tiếp vào vốn chủ sở hữu?",
+      "Giải thích định nghĩa về bên liên quan theo chính sách kế toán của Công ty.",
+      "Phân tích tầm quan trọng của việc ghi nhận doanh thu một cách chính xác theo từng loại hoạt động.",
+      "Đánh giá rủi ro tiềm ẩn của các giao dịch với bên liên quan và cách công ty quản lý rủi ro này."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (2. Chế độ và chính sách kế toán - Ghi nhận doanh thu, Thuế, Các bên liên quan)\nLoại nội dung: Text\n2.20. Ghi nhận doanh thu:<br>Doanh thu được ghi nhận khi Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định được một cách chắc chắn. Doanh thu được xác định theo giá trị hợp lý của các khoản đã thu hoặc sẽ thu được sau khi trừ đi các khoản chiết khấu thương mại, giảm giá hàng bán và hàng bán bị trả lại. Các điều kiện ghi nhận cụ thể sau đây cũng phải được đáp ứng khi ghi nhận doanh thu:<br>Doanh thu bán hàng: được ghi nhận khi các rủi ro trọng yếu và các quyền sở hữu hàng hóa đã được chuyển sang người mua, thường là trùng với thời điểm chuyển giao hàng hóa.<br>Doanh thu cung cấp dịch vụ: Khi có thể xác định được kết quả hợp đồng một cách chắc chắn, doanh thu sẽ được ghi nhận dựa vào mức độ hoàn thành công việc.<br>Tiền lãi: được ghi nhận khi tiền lãi phát sinh trên cơ sở dồn tích có tính đến lợi tức mà tài sản đem lại.<br>Cổ tức: được ghi nhận khi quyền được nhận khoản thanh toán cổ tức của Công ty được xác lập.<br>Tiền cho thuê: được hạch toán vào kết quả hoạt động kinh doanh theo phương pháp đường thẳng trong suốt thời gian cho thuê.<br><br>2.21. Thuế:<br>Thuế thu nhập hiện hành:<br>Tài sản thuế thu nhập và thuế thu nhập phải nộp cho kỳ hiện hành và các kỳ trước được xác định bằng số tiền dự kiến được thu hồi từ hoặc phải nộp cho cơ quan thuế, dựa trên các mức thuế suất và các luật thuế có hiệu lực đến ngày kết thúc kỳ kế toán. Thuế thu nhập hiện hành được ghi nhận vào kết quả hoạt động kinh doanh (ngoại trừ trường hợp thuế thu nhập phát sinh liên quan đến một khoản mục được ghi thẳng vào vốn chủ sở hữu). Công ty chỉ được bù trừ các tài sản thuế thu nhập hiện hành và thuế thu nhập hiện hành phải nộp khi Công ty có quyền hợp pháp được bù trừ và Công ty dự định thanh toán trên cơ sở thuần.<br><br>2.22. Các bên liên quan:<br>Các bên được coi là bên liên quan của Công ty nếu một bên có khả năng, trực tiếp hoặc gián tiếp, kiểm soát bên kia hoặc gây ảnh hưởng đáng kể tới bên kia trong việc ra các quyết định tài chính và hoạt động, hoặc khi Công ty và bên kia cùng chịu sự kiểm soát chung hoặc ảnh hưởng đáng kể chung. Các bên liên quan có thể là các công ty hoặc các cá nhân, bao gồm các thành viên gia đình thân cận của các cá nhân được coi là liên quan.",
+    "output": [
+      "Doanh thu bán hàng được ghi nhận khi các rủi ro trọng yếu và các quyền sở hữu hàng hóa đã được chuyển sang người mua, thường là trùng với thời điểm chuyển giao hàng hóa.",
+      "Doanh thu cổ tức được ghi nhận khi quyền được nhận khoản thanh toán cổ tức của Công ty được xác lập.",
+      "Các điều kiện chung để ghi nhận doanh thu là: Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định được một cách chắc chắn; và doanh thu được xác định theo giá trị hợp lý của các khoản đã thu hoặc sẽ thu được sau khi trừ đi các khoản chiết khấu thương mại, giảm giá hàng bán và hàng bán bị trả lại.",
+      "Thuế thu nhập hiện hành được ghi nhận trực tiếp vào vốn chủ sở hữu trong trường hợp thuế thu nhập phát sinh liên quan đến một khoản mục được ghi thẳng vào vốn chủ sở hữu.",
+      "Các bên được coi là bên liên quan của Công ty nếu một bên có khả năng, trực tiếp hoặc gián tiếp, kiểm soát bên kia hoặc gây ảnh hưởng đáng kể tới bên kia trong việc ra các quyết định tài chính và hoạt động, hoặc khi Công ty và bên kia cùng chịu sự kiểm soát chung hoặc ảnh hưởng đáng kể chung. Các bên liên quan có thể là các công ty hoặc các cá nhân, bao gồm các thành viên gia đình thân cận của các cá nhân được coi là liên quan.",
+      "Việc ghi nhận doanh thu một cách chính xác theo từng loại hoạt động (bán hàng, cung cấp dịch vụ, tiền lãi, cổ tức, tiền cho thuê) là cực kỳ quan trọng đối với báo cáo tài chính. Nó đảm bảo rằng doanh thu được phản ánh đúng bản chất kinh tế, đúng thời điểm phát sinh và đúng giá trị. Điều này giúp các nhà phân tích và nhà đầu tư đánh giá chính xác hiệu quả hoạt động của từng mảng kinh doanh, mức độ tăng trưởng và khả năng sinh lời bền vững. Sai sót trong ghi nhận doanh thu có thể dẫn đến việc báo cáo lợi nhuận bị thổi phồng hoặc thấp hơn thực tế, gây ra thông tin sai lệch nghiêm trọng và ảnh hưởng đến quyết định kinh doanh.",
+      "Các giao dịch với bên liên quan luôn tiềm ẩn rủi ro về xung đột lợi ích và có thể không được thực hiện theo các điều kiện thị trường công bằng (arm's length). Điều này có thể dẫn đến việc chuyển dịch lợi nhuận, làm suy yếu giá trị cổ đông hoặc gây thiệt hại cho công ty. Công ty quản lý rủi ro này bằng cách định nghĩa rõ ràng về 'bên liên quan' và yêu cầu công bố các giao dịch này trong thuyết minh báo cáo tài chính. Việc công bố này giúp tăng cường tính minh bạch, cho phép các bên quan sát và đánh giá liệu các giao dịch có công bằng hay không. Tuy nhiên, để quản lý hiệu quả hơn, công ty cũng cần có các quy trình phê duyệt nội bộ chặt chẽ và đánh giá độc lập các giao dịch này."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tiền và các khoản tương đương tiền tại 30/06/2025 là bao nhiêu?",
+      "Giá gốc cổ phiếu kinh doanh tại 01/01/2025 là bao nhiêu VND?",
+      "Khoản phải thu ngắn hạn của khách hàng từ các bên liên quan tại 30/06/2025 là bao nhiêu?",
+      "So sánh dự phòng giảm giá chứng khoán kinh doanh giữa 30/06/2025 và 01/01/2025.",
+      "Đánh giá biến động của tiền gửi ngân hàng không kỳ hạn từ đầu năm đến cuối quý.",
+      "Phân tích tác động của việc giảm khoản trả trước cho người bán đến dòng tiền hoạt động."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (3. Tiền và tương đương tiền, 4. Đầu tư tài chính ngắn hạn, 5. Phải thu ngắn hạn của khách hàng, 6. Trả trước cho người bán ngắn hạn)\nLoại nội dung: Bảng\n3. TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---------------------------------|----------------|----------------|\n| Tiền mặt | 338.752.541 | 1.032.468.935 |\n| Tiền gửi ngân hàng không kỳ hạn | 754.706.926.042 | 165.044.731.068 |\n| Tổng | 755.045.678.583 | 166.077.200.003 |\n\n4. ĐẦU TƯ TÀI CHÍNH NGẮN HẠN<br>| Chỉ tiêu | 30/06/2025 VND (Giá gốc) | 30/06/2025 VND (Dự phòng) | 01/01/2025 VND (Giá gốc) | 01/01/2025 VND (Dự phòng) |\n|----------------------------|--------------------------|--------------------------|--------------------------|--------------------------|\n| Chứng khoán kinh doanh     |                          |                          |                          |                          |\n| Cổ phiếu                  | 4.621.771.597.092        | 21.496.760.279           | 4.147.632.976.936        | 23.975.524.800           |\n| Trái phiếu                 | 390.486.058.727          | -                        | 400.000.000.000          | -                        |\n| Tổng                       | 5.012.257.655.819        | 21.496.760.279           | 4.547.632.976.936        | 23.975.524.800           |\n\n5. PHẢI THU NGẮN HẠN CỦA KHÁCH HÀNG<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|----------------------------------------------|----------------|----------------|\n| Phải thu từ khách hàng                        | 12.021.584.663 | 12.143.756.957 |\n| – Công ty Cổ phần Chế tạo biến thế và Vật liệu điện Hà Nội | 5.763.936.875 | 5.763.936.875 |\n| – Công ty Cổ phần Vật tư và Xây dựng Hà Nội | 3.103.978.500 | 3.103.978.500 |\n| – Các khoản phải thu khách hàng khác          | 3.153.669.288 | 3.275.841.582 |\n| Phải thu từ các bên liên quan (Thuyết minh số 30) | 348.575.540.352 | 310.748.171.222 |\n| Tổng                                          | 360.597.125.015 | 322.891.928.179 |\n| Dự phòng phải thu khách hàng ngắn hạn khó đòi | 10.037.795.510 | 10.037.795.510 |\n\n6. TRẢ TRƯỚC CHO NGƯỜI BÁN NGẮN HẠN<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---------------------------------------------|----------------|----------------|\n| – Công ty Cổ phần Kỹ thuật Sigma            | 44.816.217.925 | 71.188.921.495 |\n| – Công ty Cổ phần Xây dựng Kinex Việt Nam   | 53.542.697.891 | 26.851.769.690 |\n| – Công ty Cổ phần Nội thất NEM              | 15.614.509.620 | 18.923.001.636 |\n| – Công ty Cổ phần Xây dựng và Thương mại TTT | 42.077.599.971 | 30.469.142.600 |\n| – Công ty TNHH Falcon Việt Nam Đại An      | 36.379.645.796 | 44.312.622.210 |\n| – Công ty Cổ phần Eurowindow                | 25.304.674.806 | 26.687.402.615 |\n| – Các khoản trả trước khác                   | 90.040.801.009 | 80.552.001.451 |\n| Tổng                                        | 307.776.147.018 | 298.984.861.697 |",
+    "output": [
+      "755.045.678.583 VND",
+      "4.147.632.976.936 VND",
+      "348.575.540.352 VND",
+      "Tại 30/06/2025, dự phòng giảm giá chứng khoán kinh doanh là 21.496.760.279 VND. Tại 01/01/2025, dự phòng là 23.975.524.800 VND. Dự phòng giảm giá chứng khoán kinh doanh đã giảm 2.478.764.521 VND.",
+      "Tiền gửi ngân hàng không kỳ hạn đã tăng mạnh từ 165.044.731.068 VND tại 01/01/2025 lên 754.706.926.042 VND tại 30/06/2025. Sự biến động này cho thấy công ty đã tăng cường giữ tiền mặt tại ngân hàng, điều này có thể xuất phát từ việc thu hồi các khoản đầu tư, hoạt động kinh doanh tạo ra dòng tiền dương hoặc các khoản vay mới. Việc tăng tiền gửi không kỳ hạn giúp tăng cường thanh khoản tức thời của công ty.",
+      "Khoản trả trước cho người bán ngắn hạn đã tăng từ 298.984.861.697 VND (01/01/2025) lên 307.776.147.018 VND (30/06/2025). Việc *tăng* khoản trả trước cho người bán có tác động làm *giảm* dòng tiền từ hoạt động kinh doanh, vì nó thể hiện việc công ty đã chi tiền để trả trước cho hàng hóa hoặc dịch vụ sẽ nhận được trong tương lai. Điều này có thể do nhu cầu mua hàng lớn hơn, đảm bảo nguồn cung hoặc tận dụng chiết khấu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải thu về cho vay ngắn hạn tại 30/06/2025 là bao nhiêu VND?",
+      "Giá gốc của hàng tồn kho tại 01/01/2025 là bao nhiêu?",
+      "Khoản phải thu về cổ tức và lợi nhuận được chia cuối quý 2/2025 so với đầu năm thay đổi như thế nào?",
+      "Dự án Tổ hợp khách sạn, dịch vụ thương mại, văn phòng cho thuê tại số 10 Trần Nguyên Hãn có chi phí xây dựng cơ bản dở dang là bao nhiêu tại 30/06/2025?",
+      "Đánh giá mức độ rủi ro của các khoản phải thu về cho vay dựa trên sự hiện diện của dự phòng.",
+      "Phân tích tác động của sự tăng đáng kể trong chi phí xây dựng cơ bản dở dang đến nhu cầu vốn của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (7. Phải thu về cho vay, 8. Phải thu khác, 9. Hàng tồn kho, 10. Chi phí xây dựng cơ bản dở dang)\nLoại nội dung: Bảng\n7. PHẢI THU VỀ CHO VAY<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---------------------------------------------|----------------|----------------|\n| Ngắn hạn                                    |                |                |\n| Phải thu về cho vay                         | 4.000.000.000  | 4.000.000.000  |\n| – Công ty Cổ phần Vật tư và Xây dựng Hà Nội | 4.000.000.000  | 4.000.000.000  |\n| Phải thu về cho vay các bên liên quan (TM số 30) | 288.500.000.000 | 300.625.000.000 |\n| Tổng ngắn hạn                               | 292.500.000.000 | 304.625.000.000 |\n| Dự phòng phải thu cho vay ngắn hạn          | 4.000.000.000  | 4.000.000.000  |\n| Dài hạn                                     |                |                |\n| Phải thu về cho vay các bên liên quan (TM số 30) | 1.000.822.486.247 | 1.045.072.486.247 |\n| Tổng dài hạn                                | 1.000.822.486.247 | 1.045.072.486.247 |\n\n8. PHẢI THU KHÁC<br>| Chỉ tiêu | 30/06/2025 VND (Giá trị) | 30/06/2025 VND (Dự phòng) | 01/01/2025 VND (Giá trị) | 01/01/2025 VND (Dự phòng) |\n|--------------------------------------|--------------------------|--------------------------|--------------------------|--------------------------|\n| Ngắn hạn                             |                          |                          |                          |                          |\n| Tạm ứng                              | 441.921.585              | -                        | 410.000.000              | -                        |\n| Ký cược, ký quỹ                      | 31.026.243.634           | -                        | 30.984.243.634           | -                        |\n| Phải thu về lãi tiền gửi, tiền cho vay | 93.962.000.997           | 135.000.000              | 110.111.899.118          | 135.000.000              |\n| Phải thu về cổ tức và lợi nhuận được chia | 14.362.400.000           | -                        | 239.995.600.000          | -                        |\n| Phải thu từ hoạt động đầu tư         | 2.200.000.000            | -                        | 3.000.000.000            | -                        |\n| Phải thu khác                        | 791.045.220              | -                        | 70.277.107               | -                        |\n| Tổng ngắn hạn                        | 142.783.611.436          | 135.000.000              | 384.572.019.859          | 135.000.000              |\n| Dài hạn                              |                          |                          |                          |                          |\n| Ký cược, ký quỹ                      | 14.871.648.000           | -                        | 14.810.064.000           | -                        |\n| Tổng dài hạn                         | 14.871.648.000           | -                        | 14.810.064.000           | -                        |\n| Trong đó: Phải thu từ các bên liên quan (TM số 30) | 93.818.099.290           | -                        | 337.751.686.478          | -                        |\n| Phải thu từ các bên khác             | 63.837.160.146           | 135.000.000              | 61.630.397.381           | 135.000.000              |\n\n9. HÀNG TỒN KHO<br>| Chỉ tiêu | 30/06/2025 VND (Giá gốc) | 30/06/2025 VND (Dự phòng) | 01/01/2025 VND (Giá gốc) | 01/01/2025 VND (Dự phòng) |\n|-------------------------|--------------------------|--------------------------|--------------------------|--------------------------|\n| Hàng mua đang đi đường  | 396.506.400.700          | -                        | 519.733.203.490          | -                        |\n| Chi phí sản xuất kinh doanh dở dang | 405.117.371              | -                        | 405.117.371              | -                        |\n| Tổng                      | 396.911.518.071          | -                        | 520.138.320.861          | -                        |\n\n10. CHI PHÍ XÂY DỰNG CƠ BẢN DỞ DANG<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|----------------------------------------------------------|----------------|----------------|\n| – Dự án Tổ hợp khách sạn, dịch vụ thương mại, văn phòng cho thuê tại số 10 Trần Nguyên Hãn | 1.890.750.059.205 | 1.391.820.336.033 |\n| – Chi phí xây dựng cơ bản dở dang khác                   | 11.997.159.809 | 2.105.401.600 |\n| Tổng                                                     | 1.902.747.219.014 | 1.393.925.737.633 |",
+    "output": [
+      "292.500.000.000 VND",
+      "520.138.320.861 VND",
+      "Khoản phải thu về cổ tức và lợi nhuận được chia tại 30/06/2025 là 14.362.400.000 VND, giảm đáng kể so với 239.995.600.000 VND tại 01/01/2025. Điều này cho thấy công ty đã thu hồi được phần lớn các khoản cổ tức và lợi nhuận được chia tính đến cuối quý.",
+      "1.890.750.059.205 VND",
+      "Các khoản phải thu về cho vay của công ty, cả ngắn hạn và dài hạn, chủ yếu liên quan đến các bên liên quan. Trong khoản phải thu về cho vay ngắn hạn, có dự phòng phải thu cho vay ngắn hạn là 4.000.000.000 VND, cho thấy công ty đã nhận diện và trích lập dự phòng cho một phần rủi ro khó đòi. Tuy nhiên, dự phòng này chỉ chiếm một tỷ lệ nhỏ so với tổng khoản phải thu cho vay ngắn hạn (292.500.000.000 VND). Đối với các khoản phải thu về cho vay dài hạn, không có thông tin về dự phòng trực tiếp trong bảng. Điều này có thể tiềm ẩn rủi ro nếu khả năng thu hồi các khoản cho vay này không được đảm bảo hoặc nếu các bên liên quan gặp khó khăn về tài chính.",
+      "Sự tăng đáng kể trong chi phí xây dựng cơ bản dở dang, đặc biệt là đối với Dự án Tổ hợp khách sạn, dịch vụ thương mại, văn phòng cho thuê tại số 10 Trần Nguyên Hãn (từ 1.391.820.336.033 VND tại 01/01/2025 lên 1.890.750.059.205 VND tại 30/06/2025), cho thấy công ty đang đẩy mạnh đầu tư vào các dự án lớn. Điều này có tác động trực tiếp làm tăng nhu cầu vốn của công ty để tài trợ cho các hoạt động xây dựng. Nhu cầu vốn này có thể được đáp ứng thông qua việc sử dụng dòng tiền từ hoạt động kinh doanh, hoạt động đầu tư (thu hồi các khoản cho vay, bán lại công cụ nợ) hoặc thông qua hoạt động tài chính (vay nợ, phát hành cổ phiếu). Nếu nguồn vốn không đủ, công ty có thể đối mặt với áp lực về tài chính, chậm trễ dự án hoặc phải tìm kiếm các nguồn tài trợ đắt đỏ hơn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nguyên giá tài sản cố định hữu hình tại cuối kỳ là bao nhiêu VND?",
+      "Giá trị hao mòn lũy kế của Nhà cửa, vật kiến trúc tại cuối kỳ là bao nhiêu?",
+      "Giá trị còn lại của Máy móc, thiết bị tại ngày đầu năm là bao nhiêu?",
+      "Tính tổng khấu hao trong kỳ cho tất cả các loại tài sản cố định hữu hình.",
+      "Đánh giá tình hình sử dụng và khấu hao tài sản cố định hữu hình của công ty.",
+      "Phân tích tác động của việc tăng tài sản cố định trong kỳ đến khả năng sinh lời của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (11. Tài sản cố định hữu hình)\nLoại nội dung: Bảng\n11. TÀI SẢN CỐ ĐỊNH HỮU HÌNH<br>| Chỉ tiêu | Nhà cửa, vật kiến trúc VND | Máy móc, thiết bị VND | Phương tiện vận tải, truyền dẫn VND | Thiết bị, dụng cụ quản lý VND | Cộng VND |\n|-------------------------------|---------------------------|-----------------------|------------------------------------|-----------------------------|---------------|\n| Nguyên giá                    |                           |                       |                                    |                             |               |\n| Số dư đầu năm                 | 51.818.813.256            | 4.647.228.414         | 23.349.844.818                     | 12.894.745.911              | 92.710.632.399 |\n| Tăng trong kỳ                 | -                         | -                     | 1.026.123.636                      | 621.935.455                 | 1.648.059.091 |\n| Số dư cuối kỳ                 | 51.818.813.256            | 4.647.228.414         | 24.375.968.454                     | 13.516.681.366              | 94.358.691.490 |\n| Trong đó: Đã khấu hao hết      | -                         | 1.309.750.406         | 2.296.720.000                      | 3.942.680.036               | 7.549.150.442 |\n| Giá trị hao mòn lũy kế        |                           |                       |                                    |                             |               |\n| Số dư đầu năm                 | 15.517.462.505            | 3.394.412.176         | 7.385.215.305                      | 11.376.107.392              | 37.673.197.378 |\n| Khấu hao trong kỳ             | 757.239.390               | 164.035.810           | 1.803.158.749                      | 829.828.816                 | 3.554.262.765 |\n| Số dư cuối kỳ                 | 16.274.701.895            | 3.558.447.986         | 9.188.374.054                      | 12.205.936.208              | 41.227.460.143 |\n| Giá trị còn lại               |                           |                       |                                    |                             |               |\n| Tại ngày đầu năm              | 36.301.350.751            | 1.252.816.238         | 15.964.629.513                     | 1.518.638.519               | 55.037.435.021 |\n| Tại ngày cuối kỳ              | 35.544.111.361            | 1.088.780.428         | 15.187.594.400                     | 1.310.745.158               | 53.131.231.347 |",
+    "output": [
+      "94.358.691.490 VND",
+      "16.274.701.895 VND",
+      "1.252.816.238 VND",
+      "Tổng khấu hao trong kỳ cho tất cả các loại tài sản cố định hữu hình là 3.554.262.765 VND.",
+      "Tổng nguyên giá tài sản cố định hữu hình của công ty tăng nhẹ trong kỳ, cho thấy có sự đầu tư bổ sung. Tuy nhiên, giá trị còn lại của hầu hết các loại tài sản (Nhà cửa, vật kiến trúc; Máy móc, thiết bị; Phương tiện vận tải, truyền dẫn; Thiết bị, dụng cụ quản lý) đều giảm trong kỳ do khấu hao. Đặc biệt, có một lượng đáng kể tài sản đã khấu hao hết (7.549.150.442 VND), cho thấy một phần tài sản cố định đang dần trở nên cũ kỹ và có thể cần được thay thế hoặc nâng cấp trong tương lai để duy trì năng lực sản xuất và hoạt động.",
+      "Việc tăng tài sản cố định hữu hình trong kỳ (tổng nguyên giá tăng 1.648.059.091 VND) thường cho thấy công ty đang đầu tư để mở rộng quy mô hoạt động hoặc nâng cấp công nghệ. Nếu các khoản đầu tư này hiệu quả, chúng có thể dẫn đến tăng năng suất, giảm chi phí hoặc tăng doanh thu trong tương lai, từ đó cải thiện khả năng sinh lời. Tuy nhiên, trong ngắn hạn, việc tăng tài sản cố định cũng đi kèm với chi phí khấu hao tăng lên (3.554.262.765 VND trong kỳ), làm giảm lợi nhuận. Ngoài ra, việc đầu tư mới cũng đòi hỏi dòng tiền lớn, có thể ảnh hưởng đến thanh khoản nếu không được quản lý tốt."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Giá trị còn lại của Tài sản cố định vô hình tại ngày 30/06/2025 là bao nhiêu VND?",
+      "Tổng khấu hao bất động sản đầu tư trong kỳ là bao nhiêu?",
+      "So sánh giá trị hao mòn lũy kế của phần mềm máy tính giữa đầu năm và cuối kỳ.",
+      "Tính tỷ lệ khấu hao trong kỳ của Nhà cửa vật kiến trúc trên tổng nguyên giá của loại tài sản này (tính theo số dư cuối kỳ).",
+      "Đánh giá mức độ đầu tư vào tài sản cố định vô hình và bất động sản đầu tư của công ty.",
+      "Phân tích tác động của sự giảm giá trị còn lại của bất động sản đầu tư đến tổng tài sản của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (12. Tài sản cố định vô hình, 13. Bất động sản đầu tư)\nLoại nội dung: Bảng\n12. TÀI SẢN CỐ ĐỊNH VÔ HÌNH<br>| Chỉ tiêu | Phần mềm máy tính VND | Tài sản cố định vô hình khác VND | Cộng VND |\n|-------------------------|-----------------------|---------------------------------|---------------|\n| Nguyên giá              |                       |                                 |               |\n| Số dư đầu năm           | 1.129.737.538         | 298.586.000                     | 1.428.323.538 |\n| Mua trong kỳ            | 1.300.000.000         | -                               | 1.300.000.000 |\n| Số dư cuối kỳ           | 2.429.737.538         | 298.586.000                     | 2.728.323.538 |\n| Trong đó: Đã hao mòn hết | 130.000.000           | -                               | 130.000.000   |\n| Giá trị hao mòn lũy kế  |                       |                                 |               |\n| Số dư đầu năm           | 485.101.167           | 107.822.728                     | 592.923.895   |\n| Hao mòn trong kỳ        | 99.973.752            | 114.764.337                     | 214.738.089   |\n| Số dư cuối kỳ           | 585.074.919           | 222.587.065                     | 807.661.984   |\n| Giá trị còn lại         |                       |                                 |               |\n| Tại ngày đầu năm        | 644.636.371           | 190.763.272                     | 835.399.643   |\n| Tại ngày cuối kỳ        | 1.844.662.619         | 75.998.935                      | 1.920.661.554 |\n\n13. BẤT ĐỘNG SẢN ĐẦU TƯ<br>| Chỉ tiêu | Nhà cửa vật kiến trúc VND | Tài sản khác VND | Cộng VND |\n|-------------------------|--------------------------|------------------|---------------|\n| Nguyên giá              |                          |                  |               |\n| Số dư đầu năm           | 261.218.328.224          | 106.718.756.763  | 367.937.084.987 |\n| Số dư cuối kỳ           | 261.218.328.224          | 106.718.756.763  | 367.937.084.987 |\n| Giá trị hao mòn lũy kế  |                          |                  |               |\n| Số dư đầu năm           | 51.076.305.518           | 83.841.116.448   | 134.917.421.966 |\n| Khấu hao trong kỳ       | 3.389.986.014            | 3.580.088.922    | 6.970.074.936 |\n| Số dư cuối kỳ           | 54.466.291.532           | 87.421.205.370   | 141.887.496.902 |\n| Giá trị còn lại         |                          |                  |               |\n| Tại ngày đầu năm        | 210.142.022.706          | 22.877.640.315   | 233.019.663.021 |\n| Tại ngày cuối kỳ        | 206.752.036.692          | 19.297.551.393   | 226.049.588.085 |",
+    "output": [
+      "1.920.661.554 VND",
+      "6.970.074.936 VND",
+      "Giá trị hao mòn lũy kế của phần mềm máy tính tại 01/01/2025 là 485.101.167 VND. Tại 30/06/2025 là 585.074.919 VND. Hao mòn lũy kế đã tăng 99.973.752 VND trong kỳ.",
+      "Khấu hao trong kỳ của Nhà cửa vật kiến trúc là 3.389.986.014 VND.\\nNguyên giá của Nhà cửa vật kiến trúc tại cuối kỳ là 261.218.328.224 VND.\\nTỷ lệ khấu hao = (3.389.986.014 / 261.218.328.224) * 100% ≈ 1.29%.",
+      "Công ty có sự đầu tư vào cả tài sản cố định vô hình và bất động sản đầu tư. Tài sản cố định vô hình tăng nguyên giá đáng kể trong kỳ (1.300.000.000 VND mua mới phần mềm máy tính), nâng giá trị còn lại lên mức cao hơn so với đầu năm, cho thấy công ty đang chú trọng đầu tư vào công nghệ và các tài sản trí tuệ. Đối với bất động sản đầu tư, nguyên giá không đổi nhưng giá trị còn lại giảm do khấu hao trong kỳ. Tổng giá trị của các khoản mục này là đáng kể so với quy mô công ty, phản ánh chiến lược đầu tư đa dạng vào cả tài sản phục vụ hoạt động sản xuất và tài sản tạo ra thu nhập từ cho thuê/đầu tư.",
+      "Giá trị còn lại của bất động sản đầu tư giảm từ 233.019.663.021 VND tại đầu năm xuống 226.049.588.085 VND tại cuối kỳ. Sự giảm này là do quá trình khấu hao trong kỳ (6.970.074.936 VND). Tác động trực tiếp là làm giảm tổng giá trị tài sản trên bảng cân đối kế toán của công ty. Mặc dù khấu hao là một chi phí không bằng tiền mặt, nó làm giảm lợi nhuận trong kỳ và ảnh hưởng đến các chỉ số tài chính liên quan đến tài sản. Nếu xu hướng giảm giá trị còn lại tiếp tục mà không có sự đầu tư bổ sung hoặc tăng giá trị thị trường, nó có thể ảnh hưởng tiêu cực đến giá trị sổ sách của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá gốc các khoản đầu tư tài chính dài hạn tại 30/06/2025 là bao nhiêu VND?",
+      "Công ty Cổ phần Hạ tầng GELEX là loại hình đầu tư gì của GELEX?",
+      "So sánh giá gốc đầu tư vào công ty con giữa 30/06/2025 và 01/01/2025.",
+      "Lý do Công ty chưa thể đánh giá giá trị hợp lý của các khoản đầu tư vào công ty con và liên kết là gì?",
+      "Đánh giá mức độ tập trung của các khoản đầu tư tài chính dài hạn của công ty.",
+      "Phân tích rủi ro liên quan đến các khoản đầu tư vào các công ty chưa niêm yết trên thị trường chứng khoán."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (14. Các khoản đầu tư tài chính dài hạn)\nLoại nội dung: Bảng và Text\n14. CÁC KHOẢN ĐẦU TƯ TÀI CHÍNH DÀI HẠN<br>| Chỉ tiêu | 30/06/2025 VND (Giá gốc) | 30/06/2025 VND (Giá trị hợp lý) | 30/06/2025 VND (Dự phòng) | 01/01/2025 VND (Giá gốc) | 01/01/2025 VND (Giá trị hợp lý) | 01/01/2025 VND (Dự phòng) |\n|--------------------------------------|--------------------------|-------------------------------|--------------------------|--------------------------|-------------------------------|--------------------------|\n| Đầu tư vào công ty con               | 8.958.142.976.877        | -                             | -                        | 9.251.837.076.877        | -                             | -                        |\n| – Công ty Cổ phần Hạ tầng GELEX      | 6.554.622.783.509        | -                             | -                        | 6.848.316.883.509        | -                             | -                        |\n| – Công ty Cổ phần Điện lực GELEX     | 2.403.520.193.368        | 23.375.571.440.000            | -                        | 2.403.520.193.368        | 8.231.849.080.000             | -                        |\n| Đầu tư vào Công ty liên kết          | 663.843.705.096          | -                             | -                        | 663.843.705.096          | -                             | -                        |\n| – Công ty TNHH Titan Corporation     | 663.843.705.096          | -                             | -                        | 663.843.705.096          | -                             | -                        |\n| Tổng                                 | 9.621.986.681.973        | -                             | -                        | 9.915.680.781.973        | -                             | -                        |\n\n* Các công ty này chưa niêm yết trên thị trường chứng khoán nên Công ty chưa thể đánh giá và thuyết minh giá trị hợp lý.\n\nThông tin các khoản đầu tư vào Công ty liên kết<br>| Tên Công ty | 30/06/2025 (Tỷ lệ lợi ích) | 30/06/2025 (Tỷ lệ biểu quyết) | 01/01/2025 (Tỷ lệ lợi ích) | 01/01/2025 (Tỷ lệ biểu quyết) | Trụ sở chính | Hoạt động chính |\n|-----------------------------|----------------------------|-------------------------------|----------------------------|-------------------------------|---------------|--------------------------|\n| Công ty TNHH Titan Corporation | 49                         | 49                            | 49                         | 49                            | Hà Nội        | Đầu tư và kinh doanh hạ tầng KCN |",
+    "output": [
+      "9.621.986.681.973 VND",
+      "Công ty con",
+      "Giá gốc đầu tư vào công ty con tại 30/06/2025 là 8.958.142.976.877 VND. Tại 01/01/2025 là 9.251.837.076.877 VND. Giá gốc đầu tư vào công ty con đã giảm 293.694.100.000 VND.",
+      "Công ty chưa thể đánh giá và thuyết minh giá trị hợp lý của các khoản đầu tư này vì các công ty này chưa niêm yết trên thị trường chứng khoán.",
+      "Các khoản đầu tư tài chính dài hạn của công ty tập trung chủ yếu vào các công ty con và công ty liên kết, đặc biệt là Công ty Cổ phần Hạ tầng GELEX và Công ty Cổ phần Điện lực GELEX chiếm tỷ trọng lớn trong đầu tư vào công ty con, cùng với Công ty TNHH Titan Corporation là công ty liên kết duy nhất được thuyết minh. Điều này cho thấy chiến lược của GELEX là kiểm soát hoặc có ảnh hưởng đáng kể đến các doanh nghiệp hoạt động trong các lĩnh vực cốt lõi (hạ tầng, điện), thay vì đa dạng hóa vào các khoản đầu tư tài chính thuần túy trên thị trường. Mức độ tập trung này có thể mang lại lợi thế về kiểm soát và tích hợp, nhưng cũng tiềm ẩn rủi ro nếu các công ty con/liên kết này gặp khó khăn.",
+      "Rủi ro chính liên quan đến các khoản đầu tư vào các công ty chưa niêm yết là thiếu thanh khoản và khó khăn trong việc xác định giá trị hợp lý. Do không có thị trường giao dịch công khai, việc chuyển đổi các khoản đầu tư này thành tiền mặt có thể khó khăn hoặc mất nhiều thời gian. Hơn nữa, việc thiếu thông tin công khai và định giá thị trường minh bạch làm tăng sự không chắc chắn về giá trị thực của các khoản đầu tư, có thể dẫn đến rủi ro định giá sai hoặc tổn thất tiềm ẩn nếu giá trị nội tại của các công ty này thấp hơn giá gốc mà GELEX đã ghi nhận. Sự biến động về giá trị (ví dụ, giá trị hợp lý của Công ty Cổ phần Điện lực GELEX tăng mạnh so với giá gốc đầu tư) cho thấy tiềm năng nhưng cũng là thách thức trong việc phản ánh chính xác vào báo cáo tài chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí trả trước ngắn hạn tại 30/06/2025 là bao nhiêu VND?",
+      "Khoản phải trả người bán ngắn hạn cho Glencore International AG tại 30/06/2025 là bao nhiêu?",
+      "Chi phí sử dụng đất, quản lý KCN, thuê nhà, thuê đất trong chi phí trả trước ngắn hạn có bao nhiêu tại 30/06/2025?",
+      "So sánh tổng phải trả người bán ngắn hạn giữa 30/06/2025 và 01/01/2025.",
+      "Đánh giá sự thay đổi trong cấu trúc chi phí trả trước của công ty và ý nghĩa của nó.",
+      "Phân tích tác động của việc giảm phải trả người bán đến dòng tiền hoạt động của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (15. Chi phí trả trước, 16. Phải trả người bán ngắn hạn)\nLoại nội dung: Bảng\n15. CHI PHÍ TRẢ TRƯỚC<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|-----------------------------------------------|----------------|----------------|\n| Ngắn hạn                                      |                |                |\n| Công cụ, dụng cụ xuất dùng                     | 101.741.040    | 43.865.877     |\n| Phí bảo lãnh phát hành                        | -              | 3.577.777.776  |\n| Chi phí trả trước liên quan đến trái phiếu     | 4.012.992.390  | 3.927.176.315  |\n| Chi phí sử dụng đất, quản lý KCN, thuê nhà, thuê đất | 1.111.970.910  | -              |\n| Chi phí trả trước ngắn hạn khác                | 3.062.332.987  | 7.742.457.499  |\n| Tổng ngắn hạn                                 | 7.289.037.327  | 15.291.277.467 |\n| Dài hạn                                       |                |                |\n| Công cụ, dụng cụ xuất dùng                     | 1.520.479.743  | 1.044.428.597  |\n| Sửa chữa và cải tạo văn phòng                 | 609.847.155    | 1.090.690.251  |\n| Xây dựng hạ tầng và san nền                   | 8.207.237.446  | 8.474.049.028  |\n| Tiền thuê đất trả trước                        | 5.718.263.550  | 5.816.731.032  |\n| Phí cam kết, bảo lãnh vay vốn                 | 14.747.924.745 | 19.993.480.353 |\n| Chi phí trả trước dài hạn khác                | 8.828.032.459  | 3.423.186.620  |\n| Tổng dài hạn                                  | 39.631.785.098 | 39.842.565.881 |\n\n16. PHẢI TRẢ NGƯỜI BÁN NGẮN HẠN<br>| Chỉ tiêu | 30/06/2025 VND (Giá trị) | 30/06/2025 VND (Số có khả năng trả nợ) | 01/01/2025 VND (Giá trị) | 01/01/2025 VND (Số có khả năng trả nợ) |\n|---------------------------------------------|--------------------------|----------------------------------------|--------------------------|----------------------------------------|\n| Ngắn hạn                                    |                          |                                        |                          |                                        |\n| Phải trả người bán                          | 574.370.755.231          | 574.370.755.231                        | 713.398.681.494          | 713.398.681.494                        |\n| – Samsung C&T Singapore PTE                 | -                        | -                                      | 151.925.110.002          | 151.925.110.002                        |\n| – Glencore International AG                 | 274.648.566.138          | 274.648.566.138                        | 344.275.027.149          | 344.275.027.149                        |\n| – Công ty Cổ phần Kỹ thuật Sigma           | 114.914.661.041          | 114.914.661.041                        | 80.924.934.054           | 80.924.934.054                         |\n| – Công ty TNHH Falcon Việt Nam Đại An      | 49.836.699.092           | 49.836.699.092                         | 18.511.290.967           | 18.511.290.967                         |\n| – Công ty Cổ phần Xây dựng Central         | 29.689.210.014           | 29.689.210.014                         | 55.816.545.585           | 55.816.545.585                         |\n| – Phải trả các đối tượng khác               | 105.281.618.946          | 105.281.618.946                        | 61.945.773.737           | 61.945.773.737                         |\n| Phải trả cho các bên liên quan (TM số 30) | 953.855.182              | 953.855.182                            | 130.947.819              | 130.947.819                            |\n| Tổng                                        | 575.324.610.413          | 575.324.610.413                        | 713.529.629.313          | 713.529.629.313                        |",
+    "output": [
+      "7.289.037.327 VND",
+      "274.648.566.138 VND",
+      "1.111.970.910 VND",
+      "Tổng phải trả người bán ngắn hạn tại 30/06/2025 là 575.324.610.413 VND. Tại 01/01/2025 là 713.529.629.313 VND. Khoản này đã giảm 138.205.018.900 VND.",
+      "Cấu trúc chi phí trả trước ngắn hạn của công ty đã thay đổi đáng kể. Tổng chi phí trả trước ngắn hạn giảm từ 15.291.277.467 VND xuống 7.289.037.327 VND, chủ yếu do việc hoàn tất Phí bảo lãnh phát hành và giảm Chi phí trả trước ngắn hạn khác. Điều này có thể cho thấy công ty đã sử dụng hết hoặc phân bổ các chi phí này vào kết quả kinh doanh. Ngược lại, chi phí trả trước dài hạn tương đối ổn định. Sự thay đổi này có ý nghĩa về việc quản lý chi phí, cho thấy công ty đang thanh toán các nghĩa vụ ngắn hạn hoặc các chi phí đã được phân bổ, giúp cải thiện dòng tiền trong tương lai nếu các khoản này không phát sinh lại.",
+      "Việc tổng phải trả người bán ngắn hạn giảm từ 713.529.629.313 VND (01/01/2025) xuống 575.324.610.413 VND (30/06/2025) có tác động làm giảm dòng tiền từ hoạt động kinh doanh. Khi khoản phải trả người bán giảm, điều đó có nghĩa là công ty đã chi tiền để thanh toán cho các nhà cung cấp nhiều hơn số tiền phải trả mới phát sinh trong kỳ. Đây là một dòng tiền ra, cho thấy công ty đang sử dụng tiền mặt để giảm bớt nghĩa vụ nợ với các nhà cung cấp, có thể ảnh hưởng đến thanh khoản ngắn hạn nếu không có nguồn tiền bù đắp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng số thuế và các khoản phải nộp Nhà nước cuối kỳ là bao nhiêu VND?",
+      "Thuế Giá trị gia tăng đã thực nộp trong kỳ là bao nhiêu VND?",
+      "Số phải thu đầu năm của Thuế Thu nhập doanh nghiệp là bao nhiêu?",
+      "So sánh tổng số phải nộp trong kỳ với số đã thực nộp trong kỳ.",
+      "Đánh giá tình hình nghĩa vụ thuế của công ty dựa trên các số liệu phải thu/phải nộp cuối kỳ.",
+      "Phân tích tác động của các khoản thuế và phải nộp nhà nước đến dòng tiền hoạt động của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (17. Thuế và các khoản phải nộp Nhà nước)\nLoại nội dung: Bảng\n17. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC<br>| Chỉ tiêu | Số phải thu đầu năm VND | Số phải nộp đầu năm VND | Số phải nộp trong kỳ VND | Số đã thực nộp trong kỳ VND | Số phải thu cuối kỳ VND | Số phải nộp cuối kỳ VND |\n|-----------------------------------|--------------------------|--------------------------|--------------------------|-----------------------------|--------------------------|--------------------------|\n| Thuế Giá trị gia tăng             | 3.671.898.247            | -                        | 291.929.977.493          | 294.044.949.894             | 5.786.870.648            | -                        |\n| Thuế Xuất khẩu, Nhập khẩu         | -                        | -                        | 246.290.850              | 246.290.850                 | -                        | -                        |\n| Thuế Thu nhập doanh nghiệp        | 1.000.000.000            | -                        | -                        | -                           | 1.000.000.000            | -                        |\n| Thuế Thu nhập cá nhân             | -                        | 646.810.381              | 29.162.277.149           | 28.839.158.745              | -                        | 969.928.785              |\n| Thuế Nhà đất, Tiền thuê đất       | 1.825.000.247            | -                        | 11.436.552.514           | -                           | 151.689.155              | 9.763.241.422            |\n| Các loại thuế khác và các khoản phải nộp khác | -                        | 234.979.032              | 3.957.639.597            | 4.040.883.768               | -                        | 151.734.861              |\n| Tổng                              | 6.496.898.494            | 881.789.413              | 336.732.737.603          | 327.171.283.257             | 6.938.559.803            | 10.884.905.068           |",
+    "output": [
+      "10.884.905.068 VND",
+      "294.044.949.894 VND",
+      "1.000.000.000 VND",
+      "Tổng số phải nộp trong kỳ là 336.732.737.603 VND. Tổng số đã thực nộp trong kỳ là 327.171.283.257 VND. Số phải nộp trong kỳ lớn hơn số đã thực nộp trong kỳ khoảng 9.561.454.346 VND.",
+      "Tại cuối kỳ 30/06/2025, công ty có số phải thu thuế Giá trị gia tăng và Thuế Thu nhập doanh nghiệp, cho thấy có thể công ty có các khoản thuế GTGT được khấu trừ hoặc nộp thừa TNDN. Tuy nhiên, công ty cũng có số phải nộp các loại thuế khác như Thuế Thu nhập cá nhân, Thuế Nhà đất, Tiền thuê đất và các loại thuế khác. Đặc biệt, khoản phải nộp cuối kỳ cho Thuế Nhà đất, Tiền thuê đất là đáng kể (9.763.241.422 VND). Nhìn chung, công ty có cả quyền lợi (phải thu) và nghĩa vụ (phải nộp) thuế, cho thấy các hoạt động tuân thủ thuế đang diễn ra, nhưng việc có các khoản phải nộp cuối kỳ đòi hỏi công ty phải có kế hoạch dòng tiền để thanh toán.",
+      "Các khoản thuế và phải nộp nhà nước có tác động lớn đến dòng tiền hoạt động của công ty. Trong kỳ, công ty đã nộp tổng cộng 327.171.283.257 VND tiền thuế và các khoản phải nộp khác. Đây là một dòng tiền ra đáng kể từ hoạt động kinh doanh. Mặc dù có các khoản thuế phải thu (như thuế GTGT được khấu trừ), nhưng tổng số tiền nộp vẫn vượt xa số tiền này, cho thấy nghĩa vụ thuế đang là một yếu tố sử dụng tiền mặt quan trọng. Việc quản lý hiệu quả các khoản thuế và tối ưu hóa các khoản khấu trừ/hoàn thuế sẽ giúp cải thiện dòng tiền từ hoạt động kinh doanh."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí phải trả ngắn hạn tại 30/06/2025 là bao nhiêu VND?",
+      "Doanh thu chưa thực hiện ngắn hạn từ cho thuê văn phòng, cơ sở hạ tầng tại 01/01/2025 là bao nhiêu?",
+      "So sánh tổng phải trả khác ngắn hạn giữa cuối quý và đầu năm. Thay đổi như thế nào?",
+      "Doanh thu chưa thực hiện dài hạn với các bên liên quan tại 30/06/2025 là bao nhiêu?",
+      "Đánh giá ý nghĩa của việc tăng khoản phải trả chi phí lãi vay ngắn hạn.",
+      "Phân tích tác động của doanh thu chưa thực hiện dài hạn đến tình hình tài chính của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (18. Chi phí phải trả ngắn hạn, 19. Doanh thu chưa thực hiện, 20. Phải trả khác)\nLoại nội dung: Bảng\n18. CHI PHÍ PHẢI TRẢ NGẮN HẠN<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|------------------------------|----------------|----------------|\n| – Chi phí lãi vay             | 9.763.910.636  | 11.442.297.793 |\n| – Chi phí phải trả khác       | 1.995.000.000  | 3.063.312.272  |\n| Tổng                         | 11.758.910.636 | 14.505.610.065 |\n\n19. DOANH THU CHƯA THỰC HIỆN<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|---------------------------------------------|----------------|----------------|\n| Ngắn hạn                                    |                |                |\n| – Doanh thu cho thuê văn phòng, cơ sở hạ tầng | 16.157.347.684 | 16.035.324.998 |\n| Tổng ngắn hạn                               | 16.157.347.684 | 16.035.324.998 |\n| Dài hạn                                     |                |                |\n| – Doanh thu cho thuê văn phòng, cơ sở hạ tầng | 165.179.070.200 | 168.047.924.846 |\n| Tổng dài hạn                                | 165.179.070.200 | 168.047.924.846 |\n| Trong đó: Doanh thu chưa thực hiện với các bên liên quan (TM số 30) | 135.053.596.018 | 136.627.169.267 |\n| Doanh thu chưa thực hiện với bên khác       | 46.282.821.866 | 47.456.080.577 |\n\n20. PHẢI TRẢ KHÁC<br>| Chỉ tiêu | 30/06/2025 VND | 01/01/2025 VND |\n|-------------------------------------------|----------------|----------------|\n| Ngắn hạn                                  |                |                |\n| BHXH, BHYT, BHTN và KPCĐ                  | 730.356.372    | 1.639.873.322  |\n| Nhận ký quỹ, ký cược ngắn hạn            | 112.744.000    | 189.641.300    |\n| Cổ tức, lợi nhuận phải trả                | 588.620.750    | 514.256.750    |\n| Nhận đặt cọc thực hiện dự án              | 10.000.000.000 | 10.000.000.000 |\n| Phải trả chi phí lãi vay                  | 53.253.087.514 | 45.916.779.932 |\n| Các khoản phải trả, phải nộp khác         | 342.821.460    | 474.349.916    |\n| Tổng ngắn hạn                             | 65.027.630.096 | 58.734.901.220 |\n| Dài hạn                                   |                |                |\n| Nhận ký quỹ, ký cược dài hạn             | 17.289.879.105 | 17.203.072.853 |\n| Tổng dài hạn                              | 17.289.879.105 | 17.203.072.853 |\n| Trong đó: Phải trả khác cho các bên liên quan (TM số 30) | 53.347.767.613 | 46.011.460.031 |\n| Phải trả các bên khác                     | 28.969.741.588 | 29.926.514.042 |",
+    "output": [
+      "11.758.910.636 VND",
+      "16.035.324.998 VND",
+      "Tổng phải trả khác ngắn hạn tại 30/06/2025 là 65.027.630.096 VND, tăng so với 58.734.901.220 VND tại 01/01/2025. Khoản này đã tăng 6.292.728.876 VND.",
+      "135.053.596.018 VND",
+      "Khoản phải trả chi phí lãi vay ngắn hạn đã tăng từ 45.916.779.932 VND (01/01/2025) lên 53.253.087.514 VND (30/06/2025). Sự tăng này có ý nghĩa rằng công ty có thể đã tích lũy thêm lãi vay phải trả trong kỳ do tăng cường vay nợ ngắn hạn hoặc lãi suất vay tăng. Điều này là một nghĩa vụ tài chính cần được thanh toán trong ngắn hạn, ảnh hưởng đến dòng tiền hoạt động. Nếu khoản này tiếp tục tăng, nó có thể báo hiệu áp lực tài chính lớn hơn về chi phí lãi vay trong tương lai, đặc biệt nếu lợi nhuận hoạt động không đủ để bù đắp.",
+      "Doanh thu chưa thực hiện dài hạn (chủ yếu từ cho thuê văn phòng, cơ sở hạ tầng) là một khoản mục nợ phải trả, thể hiện các khoản tiền công ty đã nhận nhưng chưa cung cấp dịch vụ hoặc bàn giao tài sản, do đó chưa được ghi nhận là doanh thu. Tại 30/06/2025, khoản này là 165.179.070.200 VND. Sự hiện diện của doanh thu chưa thực hiện dài hạn cho thấy công ty đã có các hợp đồng dài hạn và nhận được tiền trước, giúp cải thiện dòng tiền trong hiện tại. Tuy nhiên, khoản này sẽ dần được chuyển thành doanh thu trong các kỳ tương lai khi công ty hoàn thành nghĩa vụ. Nó không chỉ là nguồn tiền mà còn là cam kết hoạt động trong tương lai, mang lại sự ổn định về doanh thu trong dài hạn. Việc giảm nhẹ khoản này trong kỳ cho thấy một phần đã được ghi nhận thành doanh thu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị vay ngắn hạn tại 30/06/2025 là bao nhiêu VND?",
+      "Giá trị vay ngân hàng ngắn hạn tăng trong kỳ là bao nhiêu VND?",
+      "So sánh tổng vay dài hạn giữa 30/06/2025 và 01/01/2025. Thay đổi như thế nào?",
+      "Khoản vay dài hạn đến hạn trả ngân hàng tại 30/06/2025 là bao nhiêu?",
+      "Đánh giá mức độ biến động của các khoản vay ngắn hạn và dài hạn trong kỳ.",
+      "Phân tích rủi ro thanh khoản của công ty dựa trên cơ cấu vay ngắn hạn và dài hạn."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (21. Vay)\nLoại nội dung: Bảng\n21. VAY<br>| Chỉ tiêu | 01/01/2025 VND (Giá trị) | 01/01/2025 VND (Số có khả năng trả nợ) | Trong kỳ (Tăng) VND | Trong kỳ (Giảm) VND | 30/06/2025 VND (Giá trị) | 30/06/2025 VND (Số có khả năng trả nợ) |\n|---------------------------------|--------------------------|----------------------------------------|---------------------|---------------------|--------------------------|----------------------------------------|\n| a. Vay ngắn hạn                 | 4.275.642.408.336        | 4.275.642.408.336                      | 6.064.374.670.299   | 5.749.006.010.261   | 4.591.011.068.374        | 4.591.011.068.374                      |\n| Vay ngân hàng                   | 2.477.044.440.204        | 2.477.044.440.204                      | 3.270.320.856.377   | 2.973.077.810.907   | 2.774.287.485.674        | 2.774.287.485.674                      |\n| Vay đối tượng khác               | 77.274.385.432           | 77.274.385.432                         | 1.064.053.813.922   | 1.141.328.199.354   | -                        | -                                      |\n| Vay bên liên quan (TM số 30)   | 1.721.323.582.700        | 1.721.323.582.700                      | 1.730.000.000.000   | 1.634.600.000.000   | 1.816.723.582.700        | 1.816.723.582.700                      |\n| Vay dài hạn đến hạn trả         | 1.169.760.079.169        | 1.169.760.079.169                      | 2.073.320.000.000   | -                   | 3.243.080.079.169        | 3.243.080.079.169                      |\n| Vay dài hạn đến hạn trả ngân hàng | 33.320.000.000           | 33.320.000.000                         | 433.320.000.000     | -                   | 466.640.000.000          | 466.640.000.000                      |\n| Vay bên liên quan (TM số 30)   | -                        | -                                      | 820.000.000.000     | -                   | 820.000.000.000          | 820.000.000.000                      |\n| Tổng vay ngắn hạn               | 4.308.962.408.336        | 4.308.962.408.336                      | 7.317.694.670.299   | 5.749.006.010.261   | 5.877.651.068.374        | 5.877.651.068.374                      |\n| b. Vay dài hạn                  |                          |                                        |                     |                     |                          |                                        |\n| Vay ngân hàng                   | 1.539.345.565.774        | 1.539.345.565.774                      | 387.204.513.690     | 433.320.000.000     | 1.493.230.079.464        | 1.493.230.079.464                      |\n| Trái phiếu                      | 1.136.440.079.169        | 1.136.440.079.169                      | 1.355.992.086       | -                   | 1.137.796.071.255        | 1.137.796.071.255                      |\n| Vay bên liên quan (TM số 30)   | 820.000.000.000          | 820.000.000.000                        | -                   | 820.000.000.000     | -                        | -                                      |\n| Tổng vay dài hạn                | 3.495.785.644.943        | 3.495.785.644.943                      | 388.560.505.776     | 1.253.320.000.000   | 2.631.026.150.719        | 2.631.026.150.719                      |",
+    "output": [
+      "5.877.651.068.374 VND",
+      "3.270.320.856.377 VND",
+      "Tổng vay dài hạn tại 30/06/2025 là 2.631.026.150.719 VND. Tại 01/01/2025 là 3.495.785.644.943 VND. Tổng vay dài hạn đã giảm 864.759.494.224 VND.",
+      "466.640.000.000 VND",
+      "Các khoản vay của công ty có biến động đáng kể trong kỳ. Vay ngắn hạn tăng mạnh từ 4.308.962.408.336 VND lên 5.877.651.068.374 VND, chủ yếu do vay ngân hàng và vay bên liên quan tăng, cùng với một phần vay dài hạn đến hạn trả được chuyển sang ngắn hạn. Ngược lại, tổng vay dài hạn giảm đáng kể từ 3.495.785.644.943 VND xuống 2.631.026.150.719 VND, do một phần được trả và một phần chuyển thành nợ ngắn hạn. Điều này cho thấy công ty đang tái cơ cấu nợ, với xu hướng gia tăng nợ ngắn hạn và giảm nợ dài hạn, có thể gây áp lực thanh khoản trong tương lai.",
+      "Dựa trên cơ cấu vay, công ty đang đối mặt với rủi ro thanh khoản gia tăng. Vay ngắn hạn của công ty tăng đáng kể và chiếm tỷ trọng lớn trong tổng nợ (5.877.651.068.374 VND trên tổng nợ khoảng 9.404 tỷ VND). Điều này bao gồm cả một phần lớn vay dài hạn đến hạn trả được phân loại lại thành ngắn hạn. Việc phụ thuộc nhiều vào nợ ngắn hạn đòi hỏi công ty phải có khả năng tạo ra đủ tiền mặt từ hoạt động kinh doanh hoặc tiếp cận các nguồn tái cấp vốn nhanh chóng để đáp ứng các nghĩa vụ thanh toán trong vòng 12 tháng tới. Nếu dòng tiền không đủ mạnh hoặc thị trường tài chính không thuận lợi cho việc tái cấp vốn, công ty có thể gặp khó khăn trong việc thanh toán nợ đến hạn, gây áp lực lên thanh khoản và khả năng duy trì hoạt động."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Vốn đầu tư của chủ sở hữu tại cuối kỳ này là bao nhiêu VND?",
+      "Lợi nhuận thuần trong 6 tháng đầu năm 2025 là bao nhiêu?",
+      "Số lượng cổ phiếu tăng thêm để trả cổ tức năm 2024 là bao nhiêu?",
+      "Khoản trích quỹ khen thưởng phúc lợi và quỹ thưởng HĐQT và Ban điều hành năm 2025 là bao nhiêu?",
+      "Đánh giá các yếu tố ảnh hưởng đến sự biến động vốn chủ sở hữu trong kỳ kế toán từ 01/01/2025 đến 30/06/2025.",
+      "Phân tích tác động của việc trả cổ tức bằng cổ phiếu và tiền mặt đến cấu trúc vốn của công ty.",
+      "Dự báo các chính sách phân phối lợi nhuận của công ty trong tương lai dựa trên các quyết định hiện tại."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (22. Vốn chủ sở hữu - Bảng đối chiếu biến động)\nLoại nội dung: Bảng\n22. VỐN CHỦ SỞ HỮU<br>22.1 Bảng đối chiếu biến động của vốn chủ sở hữu<br>| Chỉ tiêu | Vốn đầu tư của chủ sở hữu VND | Thặng dư vốn cổ phần VND | Lợi nhuận chưa phân phối VND | Cộng VND |\n|--------------------------------------|-------------------------------|--------------------------|-------------------------------|---------------|\n| Cho kỳ kế toán từ 01/01/2024 đến 30/06/2024 |                               |                          |                               |               |\n| Số dư đầu năm                         | 8.514.957.930.000             | 663.218.256.718          | 1.052.220.959.438             | 10.230.397.146.156 |\n| Lợi nhuận thuần trong kỳ này          | -                             | -                        | 188.728.102.425               | 188.728.102.425 |\n| Trích quỹ Khen thưởng phúc lợi        | -                             | -                        | 3.300.000.000                 | 3.300.000.000 |\n| Số dư cuối kỳ trước                   | 8.514.957.930.000             | 663.218.256.718          | 1.237.649.061.863             | 10.415.825.248.581 |\n| Cho kỳ kế toán từ 01/01/2025 đến 30/06/2025 |                               |                          |                               |               |\n| Số dư đầu năm nay                     | 8.594.297.930.000             | 663.003.856.718          | 1.172.418.655.325             | 10.429.720.442.043 |\n| Lợi nhuận thuần trong kỳ này          | -                             | -                        | 793.481.445.283               | 793.481.445.283 |\n| Trả cổ tức bằng cổ phiếu (ii)         | 429.691.550.000               | 91.000.000               | -                             | 429.782.550.000 |\n| Trả cổ tức bằng tiền (iii)            | -                             | -                        | 429.714.896.500               | 429.714.896.500 |\n| Trích quỹ khen thưởng phúc lợi (i)    | -                             | -                        | 3.500.000.000                 | 3.500.000.000 |\n| Trích quỹ thường HĐQT và Ban điều hành (i) | -                             | -                        | 13.690.000.000                | 13.690.000.000 |\n| Số dư cuối kỳ này                     | 9.023.989.480.000             | 662.912.856.718          | 1.089.303.654.108             | 10.776.205.990.826 |\n\ni Công ty thực hiện trích quỹ khen thưởng phúc lợi và quỹ thưởng HĐQT và Ban Điều hành theo Nghị quyết Đại hội đồng Cổ đông thường niên năm 2025 số 02/2025/GELEX-NQĐHĐCĐ ngày 27 tháng 3 năm 2025.\nii Công ty đã hoàn tất việc phát hành cổ phiếu để trả cổ tức năm 2024 với số lượng cổ phiếu phát ra tăng thêm 42.969.155 cổ phiếu theo Nghị quyết Đại hội đồng cổ đông thường niên năm 2025 số 02/2025/GELEX-NQĐHĐCĐ ngày 27 tháng 3 năm 2025 và Nghị quyết 21/2025/GELEX-NQHĐQT ngày 22 tháng 5 năm 2025. Theo đó, số lượng cổ phiếu lưu hành của Công ty là 902.398.948 cổ phần.\niii Công ty thực hiện chi trả cổ tức bằng tiền theo Nghị quyết Đại hội đồng Cổ đông thường niên năm 2025 số 02/2025/GELEX-NQĐHĐCĐ ngày 27 tháng 3 năm 2025 và Nghị quyết số 15/2025/GELEX.NQHĐQT ngày 15 tháng 4 năm 2025.",
+    "output": [
+      "9.023.989.480.000 VND",
+      "793.481.445.283 VND",
+      "42.969.155 cổ phiếu",
+      "Quỹ khen thưởng phúc lợi là 3.500.000.000 VND và quỹ thưởng HĐQT và Ban điều hành là 13.690.000.000 VND. Tổng cộng là 17.190.000.000 VND.",
+      "Trong kỳ kế toán từ 01/01/2025 đến 30/06/2025, vốn chủ sở hữu tăng từ 10.429.720.442.043 VND lên 10.776.205.990.826 VND. Các yếu tố chính ảnh hưởng đến biến động này bao gồm: Lợi nhuận thuần trong kỳ tăng đáng kể (793.481.445.283 VND) là nguồn chính bổ sung vốn chủ sở hữu. Tuy nhiên, công ty cũng thực hiện trả cổ tức bằng cổ phiếu (429.691.550.000 VND) làm tăng vốn góp của chủ sở hữu và trả cổ tức bằng tiền (429.714.896.500 VND) làm giảm lợi nhuận chưa phân phối. Ngoài ra, việc trích lập các quỹ (khen thưởng phúc lợi, thưởng HĐQT và Ban điều hành) cũng làm giảm lợi nhuận chưa phân phối. Tổng thể, sự tăng vốn chủ sở hữu cho thấy công ty có kết quả kinh doanh tốt và có sự pha loãng vốn để chi trả cổ tức bằng cổ phiếu.",
+      "Việc trả cổ tức bằng cổ phiếu (429.691.550.000 VND) làm tăng vốn góp của chủ sở hữu và số lượng cổ phiếu lưu hành (tăng 42.969.155 cổ phiếu). Điều này giữ nguyên tổng vốn chủ sở hữu nhưng thay đổi cơ cấu, chuyển một phần lợi nhuận giữ lại thành vốn điều lệ. Tác động là làm giảm giá trị sổ sách của mỗi cổ phiếu nếu tổng giá trị công ty không tăng tương ứng, đồng thời có thể pha loãng quyền sở hữu. Ngược lại, việc trả cổ tức bằng tiền mặt (429.714.896.500 VND) trực tiếp làm giảm lợi nhuận sau thuế chưa phân phối và làm giảm tiền mặt của công ty. Cả hai hình thức đều làm giảm lợi nhuận giữ lại để tái đầu tư. Tuy nhiên, trả cổ tức bằng cổ phiếu không làm thay đổi dòng tiền, trong khi trả cổ tức bằng tiền mặt là dòng tiền ra, ảnh hưởng đến khả năng thanh khoản.",
+      "Dựa trên các quyết định hiện tại, có thể dự báo công ty sẽ tiếp tục duy trì chính sách phân phối lợi nhuận linh hoạt, kết hợp cả trả cổ tức bằng cổ phiếu và tiền mặt, phù hợp với nghị quyết của Đại hội đồng cổ đông. Việc trích lập các quỹ khen thưởng, phúc lợi và quỹ thưởng HĐQT, Ban điều hành cũng sẽ được duy trì. Xu hướng này cho thấy công ty muốn vừa giữ lại một phần lợi nhuận để củng cố vốn (qua cổ tức bằng cổ phiếu), vừa chia sẻ lợi nhuận với cổ đông bằng tiền mặt, đồng thời đảm bảo quyền lợi cho Ban lãnh đạo và nhân viên. Tuy nhiên, mức độ và tỷ lệ cụ thể sẽ phụ thuộc vào kết quả kinh doanh trong tương lai và chiến lược phát triển của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn góp của chủ sở hữu tại 30/06/2025 là bao nhiêu VND?",
+      "Số lượng cổ phiếu phổ thông đang lưu hành tại 01/01/2025 là bao nhiêu?",
+      "Mệnh giá cổ phiếu đang lưu hành của Công ty là bao nhiêu VND?",
+      "So sánh vốn góp tăng trong kỳ giữa 6 tháng đầu năm 2025 và 2024.",
+      "Đánh giá ý nghĩa của việc tăng vốn góp của chủ sở hữu trong kỳ kế toán này.",
+      "Phân tích tác động của sự thay đổi số lượng cổ phiếu lưu hành đến giá trị cổ phiếu trên thị trường."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (22. Vốn chủ sở hữu - Giao dịch về vốn và Cổ phiếu)\nLoại nội dung: Bảng\n22.2 Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận<br>| Chỉ tiêu | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|-----------------------------|---------------------------------|---------------------------------|\n| Vốn đầu tư của chủ sở hữu   | 9.023.989.480.000               | 8.514.957.930.000               |\n| Vốn góp đầu kỳ              | 8.594.297.930.000               | 8.514.957.930.000               |\n| Vốn góp tăng trong kỳ        | 429.691.550.000                 | -                               |\n| Vốn góp cuối kỳ             | 9.023.989.480.000               | 8.514.957.930.000               |\n\n22.3 Cổ phiếu<br>| Chỉ tiêu | 30/06/2025 | 01/01/2025 |\n|--------------------------------------|------------|------------|\n| Số lượng cổ phiếu đăng ký phát hành   | 902.398.948 | 859.429.793 |\n| Số lượng cổ phiếu đã bán ra công chúng | 902.398.948 | 859.429.793 |\n| – Cổ phiếu phổ thông                   | 902.398.948 | 859.429.793 |\n| Số lượng cổ phiếu đang lưu hành        | 902.398.948 | 859.429.793 |\n| – Cổ phiếu phổ thông                   | 902.398.948 | 859.429.793 |\n| Mệnh giá cổ phiếu đang lưu hành VND    | 10.000     | 10.000     |",
+    "output": [
+      "9.023.989.480.000 VND",
+      "859.429.793 cổ phiếu",
+      "10.000 VND",
+      "Vốn góp tăng trong kỳ của 6 tháng đầu năm 2025 là 429.691.550.000 VND. Trong 6 tháng đầu năm 2024, không có vốn góp tăng trong kỳ.",
+      "Việc tăng vốn góp của chủ sở hữu trong kỳ kế toán từ 01/01/2025 đến 30/06/2025 với giá trị 429.691.550.000 VND (từ việc trả cổ tức bằng cổ phiếu) có ý nghĩa quan trọng. Nó cho thấy công ty đã thực hiện tái đầu tư lợi nhuận vào vốn điều lệ, làm tăng nguồn vốn dài hạn và củng cố cơ cấu vốn chủ sở hữu. Điều này giúp tăng cường sức mạnh tài chính của công ty, giảm phụ thuộc vào nợ vay và có thể tạo điều kiện thuận lợi cho các dự án đầu tư lớn trong tương lai. Đồng thời, việc này cũng cho thấy sự tin tưởng của cổ đông vào triển vọng phát triển của công ty.",
+      "Sự thay đổi số lượng cổ phiếu lưu hành từ 859.429.793 lên 902.398.948 cổ phiếu (tăng 42.969.155 cổ phiếu) do trả cổ tức bằng cổ phiếu sẽ làm pha loãng tổng số cổ phiếu trên thị trường. Về mặt lý thuyết, nếu không có sự tăng trưởng tương ứng trong giá trị nội tại của công ty, mỗi cổ phiếu riêng lẻ sẽ có giá trị thấp hơn sau khi pha loãng. Điều này có thể dẫn đến việc giá cổ phiếu điều chỉnh giảm trên thị trường vào ngày giao dịch không hưởng quyền. Tuy nhiên, nếu thị trường đón nhận tích cực động thái này như một dấu hiệu của sự tái đầu tư lợi nhuận và tiềm năng tăng trưởng trong tương lai, giá cổ phiếu có thể không giảm mạnh hoặc thậm chí phục hồi sau đó. Nhà đầu tư cũng cần xem xét tỷ lệ pha loãng và triển vọng kinh doanh tổng thể để đánh giá tác động thực tế."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu bán hàng hóa trong Quý 2/2025 là bao nhiêu VND?",
+      "Tổng giá vốn hàng bán và dịch vụ cung cấp lũy kế 6 tháng đầu năm 2024 là bao nhiêu?",
+      "So sánh doanh thu cho thuê văn phòng trong Quý 2/2025 và Quý 2/2024. Thay đổi như thế nào?",
+      "Tỷ trọng doanh thu từ các bên liên quan so với tổng doanh thu thuần trong 6 tháng đầu năm 2025 là bao nhiêu?",
+      "Đánh giá xu hướng biến động của doanh thu và giá vốn hàng bán của công ty.",
+      "Phân tích biên lợi nhuận gộp cho từng loại hình doanh thu (hàng hóa, cho thuê, dịch vụ khác).",
+      "Dự báo tác động của sự thay đổi giá vốn lên lợi nhuận trong tương lai."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (23. Doanh thu thuần bán hàng và cung cấp dịch vụ, 24. Giá vốn hàng bán và dịch vụ cung cấp)\nLoại nội dung: Bảng\n23. DOANH THU THUẦN BÁN HÀNG VÀ CUNG CẤP DỊCH VỤ<br>| Chỉ tiêu | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------------------------------------|----------------|----------------|---------------------------------|---------------------------------|\n| Doanh thu bán hàng hóa               | 1.350.010.722.429 | 855.242.770.936 | 2.881.266.166.349 | 1.580.005.491.649 |\n| Doanh thu cho thuê văn phòng         | 20.014.881.889 | 22.627.328.389 | 39.605.019.374 | 41.770.410.966 |\n| Doanh thu cung cấp dịch vụ khác      | 5.535.369.232 | 38.055.862.627 | 11.023.672.239 | 44.317.206.606 |\n| Tổng                                 | 1.375.560.973.550 | 915.925.961.952 | 2.931.894.857.962 | 1.666.093.109.221 |\n| Trong đó: Doanh thu đối với các bên khác | 18.791.100.353 | 44.574.805.795 | 35.944.704.735 | 61.470.213.444 |\n| Doanh thu đối với bên liên quan      | 1.356.769.873.197 | 871.351.156.157 | 2.895.950.153.227 | 1.604.622.895.777 |\n\n24. GIÁ VỐN HÀNG BÁN VÀ DỊCH VỤ CUNG CẤP<br>| Chỉ tiêu | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|-----------------------------------|----------------|----------------|---------------------------------|---------------------------------|\n| Giá vốn bán hàng hóa              | 1.337.481.606.467 | 847.744.481.097 | 2.855.039.369.467 | 1.566.963.576.469 |\n| Giá vốn cho thuê văn phòng        | 7.971.019.134 | 10.806.695.748 | 15.038.418.684 | 17.664.624.322 |\n| Giá vốn cung cấp dịch vụ khác     | 2.139.716.257 | 6.504.091.459 | 4.237.470.594 | 10.124.625.372 |\n| Tổng                              | 1.347.592.341.858 | 865.055.268.304 | 2.874.315.258.745 | 1.594.752.826.163 |",
+    "output": [
+      "1.350.010.722.429 VND",
+      "1.594.752.826.163 VND",
+      "Doanh thu cho thuê văn phòng trong Quý 2/2025 là 20.014.881.889 VND. Trong Quý 2/2024 là 22.627.328.389 VND. Doanh thu cho thuê văn phòng đã giảm 2.612.446.500 VND.",
+      "Tổng doanh thu thuần bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là 2.931.894.857.962 VND. Doanh thu đối với bên liên quan là 2.895.950.153.227 VND. Tỷ trọng doanh thu từ các bên liên quan so với tổng doanh thu thuần là khoảng 98.77%.",
+      "Trong Quý 2/2025 và 6 tháng đầu năm 2025, doanh thu thuần bán hàng và cung cấp dịch vụ của công ty đều tăng đáng kể so với cùng kỳ năm trước. Doanh thu bán hàng hóa là động lực chính của sự tăng trưởng này. Tuy nhiên, doanh thu cho thuê văn phòng và cung cấp dịch vụ khác lại có xu hướng giảm. Giá vốn hàng bán và dịch vụ cung cấp cũng tăng tương ứng với doanh thu, cho thấy quy mô hoạt động mở rộng. Đáng chú ý là tỷ trọng doanh thu từ các bên liên quan chiếm phần rất lớn (gần 99%) trong tổng doanh thu thuần, điều này cho thấy sự phụ thuộc cao của công ty vào các giao dịch nội bộ.",
+      "Biên lợi nhuận gộp (Lợi nhuận gộp / Doanh thu thuần) trong Quý 2/2025 cho từng loại hình:\\n-   **Hàng hóa:** Doanh thu 1.350.010.722.429 VND, Giá vốn 1.337.481.606.467 VND. Lợi nhuận gộp hàng hóa = 12.529.115.962 VND. Biên lợi nhuận gộp hàng hóa = (12.529.115.962 / 1.350.010.722.429) * 100% ≈ 0.93%.\\n-   **Cho thuê văn phòng:** Doanh thu 20.014.881.889 VND, Giá vốn 7.971.019.134 VND. Lợi nhuận gộp cho thuê = 12.043.862.755 VND. Biên lợi nhuận gộp cho thuê = (12.043.862.755 / 20.014.881.889) * 100% ≈ 60.17%.\\n-   **Dịch vụ khác:** Doanh thu 5.535.369.232 VND, Giá vốn 2.139.716.257 VND. Lợi nhuận gộp dịch vụ = 3.395.652.975 VND. Biên lợi nhuận gộp dịch vụ = (3.395.652.975 / 5.535.369.232) * 100% ≈ 61.34%.\\n\\nNhận xét: Biên lợi nhuận gộp của hoạt động cho thuê văn phòng và cung cấp dịch vụ khác là rất cao (trên 60%), cho thấy hiệu quả tốt trong việc quản lý chi phí trực tiếp của các hoạt động này. Ngược lại, biên lợi nhuận gộp từ bán hàng hóa lại rất thấp (dưới 1%), điều này có thể chỉ ra rằng hoạt động kinh doanh hàng hóa có tính cạnh tranh cao, chi phí lớn hoặc công ty tập trung vào việc tạo doanh thu mà không đạt được lợi nhuận đáng kể trên mỗi đơn vị sản phẩm.",
+      "Nếu giá vốn hàng bán và dịch vụ cung cấp tiếp tục tăng với tốc độ tương tự hoặc nhanh hơn doanh thu, điều này sẽ tiếp tục gây áp lực lên lợi nhuận gộp và lợi nhuận thuần của công ty. Với biên lợi nhuận gộp từ hàng hóa vốn đã rất thấp, bất kỳ sự tăng giá vốn nào không đi kèm với tăng giá bán hoặc tăng doanh số đáng kể đều có thể khiến lợi nhuận gộp từ mảng này trở nên tiêu cực hoặc không đáng kể. Công ty cần kiểm soát chặt chẽ giá vốn, tối ưu hóa chuỗi cung ứng và tìm kiếm các biện pháp tăng hiệu quả hoạt động để đảm bảo lợi nhuận bền vững, đặc biệt trong bối cảnh các mảng dịch vụ và cho thuê có biên lợi nhuận tốt nhưng quy mô doanh thu nhỏ hơn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu hoạt động tài chính trong Quý 2/2025 là bao nhiêu VND?",
+      "Lãi tiền vay lũy kế 6 tháng đầu năm 2025 là bao nhiêu?",
+      "So sánh cổ tức, lợi nhuận được chia giữa Quý 2/2025 và Quý 2/2024. Thay đổi như thế nào?",
+      "Khoản mục nào có sự biến động lớn nhất trong doanh thu hoạt động tài chính trong Quý 2/2025?",
+      "Đánh giá mức độ hiệu quả của hoạt động tài chính của công ty dựa trên tỷ lệ doanh thu tài chính so với chi phí tài chính.",
+      "Phân tích rủi ro từ lỗ chênh lệch tỷ giá và lỗ kinh doanh chứng khoán đối với kết quả kinh doanh của công ty.",
+      "Dự báo tác động của lãi bán các khoản đầu tư đến doanh thu tài chính trong các quý tới."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (25. Doanh thu hoạt động tài chính, 26. Chi phí tài chính)\nLoại nội dung: Bảng\n25. DOANH THU HOẠT ĐỘNG TÀI CHÍNH<br>| Chỉ tiêu | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------------------------------------|----------------|----------------|---------------------------------|---------------------------------|\n| Lãi tiền gửi, lãi cho vay             | 33.664.838.254 | 45.375.055.036 | 55.947.349.576 | 88.118.085.284 |\n| Lãi kinh doanh chứng khoán           | 108.617.902.138 | 9.582.016.640 | 108.653.080.578 | 101.316.154.174 |\n| Lãi bán các khoản đầu tư             | 444.105.900.000 | -              | - | - |\n| Cổ tức, lợi nhuận được chia          | 479.991.200.000 | 119.997.800.000 | 479.991.200.000 | 239.995.705.000 |\n| Lãi chênh lệch tỷ giá                | 11.311.072.380 | 4.585.755.026 | 24.706.999.608 | 5.320.243.667 |\n| Lãi bán hàng trả chậm                | 915.068.492 | 443.835.617 | 1.912.328.765 | - |\n| Doanh thu hoạt động tài chính khác   | 1.100.868.078 | 1.076.505.326 | 2.200.868.078 | 2.154.240.634 |\n| Tổng                                 | 634.685.880.850 | 181.532.200.520 | 1.116.049.233.457 | 438.816.757.524 |\n\n26. CHI PHÍ TÀI CHÍNH<br>| Chỉ tiêu | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------------------------------------------|----------------|----------------|---------------------------------|---------------------------------|\n| Lãi tiền vay                               | 112.407.044.320 | 97.837.319.903 | 224.125.356.683 | 185.713.447.878 |\n| Phí UPAS, phí và lãi mua hàng trả chậm    | -              | 18.777.573.433 | - | 35.233.340.258 |\n| Lỗ kinh doanh chứng khoán                  | 3.645.649.547 | 5.915.284.220 | 7.039.659.819 | 9.336.867.317 |\n| Lỗ chênh lệch tỷ giá                       | 923.994.133 | 5.528.287.303 | 967.565.521 | 9.961.792.372 |\n| Dự phòng/Hoàn nhập dự phòng giảm giá chứng khoán kinh doanh và tổn thất đầu tư | 19.666.211.216 | 3.902.392.853 | 2.478.764.521 | 17.582.311.154 |\n| Chi phí phát hành trái phiếu phân bổ      | 677.996.043 | 1.939.359.681 | 1.355.992.086 | 3.878.719.362 |\n| Chi phí bảo lãnh, phí tư vấn định kỳ khác liên quan đến trái phiếu | 4.015.901.409 | 3.970.811.609 | 8.136.238.719 | 8.134.784.212 |\n| Chi phí tài chính khác                     | 149.621.191 | 3.500.000 | 306.722.446 | 392.247.043 |\n| Tổng                                       | 102.153.995.427 | 137.874.529.002 | 239.452.770.753 | 235.068.887.288 |",
+    "output": [
+      "634.685.880.850 VND",
+      "224.125.356.683 VND",
+      "Cổ tức, lợi nhuận được chia trong Quý 2/2025 là 479.991.200.000 VND, tăng đáng kể so với 119.997.800.000 VND trong Quý 2/2024. Khoản này đã tăng 359.993.400.000 VND.",
+      "Khoản mục 'Cổ tức, lợi nhuận được chia' tăng từ 119.997.800.000 VND (Quý 2/2024) lên 479.991.200.000 VND (Quý 2/2025), có sự biến động tăng lớn nhất.",
+      "Trong Quý 2/2025, doanh thu hoạt động tài chính là 634.685.880.850 VND, trong khi chi phí tài chính là 102.153.995.427 VND. Tỷ lệ doanh thu tài chính / chi phí tài chính ≈ 6.21 lần, cho thấy hoạt động tài chính của công ty rất hiệu quả trong quý này. Sự hiệu quả này chủ yếu đến từ các khoản cổ tức, lợi nhuận được chia và lãi bán các khoản đầu tư, bù đắp đáng kể cho chi phí lãi vay và các chi phí tài chính khác. Điều này chứng tỏ các khoản đầu tư tài chính của công ty đang tạo ra nguồn thu nhập đáng kể.",
+      "Trong Quý 2/2025, công ty ghi nhận lỗ kinh doanh chứng khoán là 3.645.649.547 VND và lỗ chênh lệch tỷ giá là 923.994.133 VND. Mặc dù các khoản lỗ này nhỏ so với tổng doanh thu và lợi nhuận tài chính, chúng vẫn tiềm ẩn rủi ro đối với kết quả kinh doanh. Lỗ kinh doanh chứng khoán cho thấy sự biến động của thị trường chứng khoán hoặc quyết định đầu tư có thể không luôn mang lại hiệu quả như mong muốn. Lỗ chênh lệch tỷ giá phát sinh từ các giao dịch ngoại tệ, cho thấy công ty có tiếp xúc với rủi ro tỷ giá. Nếu các khoản lỗ này tăng lên đáng kể trong tương lai, chúng có thể ăn mòn lợi nhuận, đặc biệt nếu doanh thu tài chính từ các nguồn khác không đủ mạnh để bù đắp. Công ty cần có các chiến lược quản lý rủi ro phù hợp cho cả hoạt động đầu tư chứng khoán và các giao dịch ngoại tệ.",
+      "Trong Quý 2/2025, công ty ghi nhận 444.105.900.000 VND từ lãi bán các khoản đầu tư, một khoản mục không xuất hiện trong Quý 2/2024 và 6 tháng đầu năm 2024. Đây là một yếu tố đóng góp rất lớn vào doanh thu hoạt động tài chính trong quý này. Tuy nhiên, lãi từ việc bán các khoản đầu tư thường mang tính chất không định kỳ và phụ thuộc vào cơ hội thị trường cũng như chiến lược thoái vốn của công ty. Do đó, khó có thể dự báo rằng khoản mục này sẽ tiếp tục tạo ra doanh thu lớn và ổn định trong các quý tới. Nếu không có các thương vụ thoái vốn tương tự, tổng doanh thu tài chính có thể giảm đáng kể trong các quý tiếp theo."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí bán hàng trong Quý 2/2025 là bao nhiêu VND?",
+      "Chi phí nhân công trong chi phí quản lý doanh nghiệp lũy kế 6 tháng đầu năm 2025 là bao nhiêu?",
+      "So sánh tổng chi phí quản lý doanh nghiệp giữa Quý 2/2025 và Quý 2/2024.",
+      "Khoản mục nào chiếm tỷ trọng lớn nhất trong Chi phí sản xuất kinh doanh theo yếu tố trong 6 tháng đầu năm 2025?",
+      "Đánh giá hiệu quả quản lý chi phí bán hàng và chi phí quản lý doanh nghiệp của công ty.",
+      "Phân tích tác động của sự tăng chi phí dịch vụ mua ngoài đến các loại chi phí khác của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (27. Chi phí bán hàng, 28. Chi phí quản lý doanh nghiệp, 29. Chi phí sản xuất kinh doanh theo yếu tố)\nLoại nội dung: Bảng\n27. CHI PHÍ BÁN HÀNG<br>| Chỉ tiêu | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|---------------------------|----------------|----------------|---------------------------------|---------------------------------|\n| Chi phí dịch vụ mua ngoài | 2.101.482.546 | 1.414.491.911 | 4.869.028.518 | 3.064.535.778 |\n| Tổng                      | 2.101.482.546 | 1.414.491.911 | 4.869.028.518 | 3.064.535.778 |\n\n28. CHI PHÍ QUẢN LÝ DOANH NGHIỆP<br>| Chỉ tiêu | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------------------------------------|----------------|----------------|---------------------------------|---------------------------------|\n| Chi phí nhân công                     | 22.554.553.817 | 18.596.140.971 | 45.300.239.373 | 32.956.269.531 |\n| Chi phí khấu hao và hao mòn tài sản cố định | 1.544.392.527 | 1.261.704.996 | 2.965.145.765 | 2.399.931.002 |\n| Thuế, phí, lệ phí                      | 100.030.030 | 114.307.422 | 168.018.537 | 130.977.014 |\n| Chi phí dịch vụ mua ngoài             | 41.422.817.525 | 16.608.830.285 | 76.599.282.756 | 37.422.324.556 |\n| Chi phí khác bằng tiền                | 4.446.381.288 | 5.679.246.791 | 11.127.448.122 | 11.771.825.908 |\n| Tổng                                 | 70.068.175.187 | 42.260.230.465 | 136.160.134.553 | 84.681.328.011 |\n\n29. CHI PHÍ SẢN XUẤT KINH DOANH THEO YẾU TỐ<br>| Chỉ tiêu | Quý 2/2025 VND | Quý 2/2024 VND | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|-----------------------------------|----------------|----------------|---------------------------------|---------------------------------|\n| Chi phí nhân công                  | 23.319.418.156 | 19.252.046.388 | 46.846.940.588 | 34.349.398.954 |\n| Chi phí khấu hao tài sản cố định | 5.427.105.634 | 5.199.040.652 | 10.739.075.790 | 10.368.837.290 |\n| Chi phí dịch vụ mua ngoài          | 47.253.911.122 | 24.053.358.856 | 88.199.235.780 | 51.257.973.915 |\n| Chi phí khác bằng tiền             | 6.279.958.212 | 14.002.812.525 | 14.519.800.191 | 21.080.652.162 |\n| Tổng                              | 82.280.393.124 | 62.507.258.421 | 160.305.052.349 | 117.056.862.321 |",
+    "output": [
+      "2.101.482.546 VND",
+      "45.300.239.373 VND",
+      "Tổng chi phí quản lý doanh nghiệp trong Quý 2/2025 là 70.068.175.187 VND, tăng đáng kể so với 42.260.230.465 VND trong Quý 2/2024. Khoản này đã tăng 27.807.944.722 VND.",
+      "Khoản mục 'Chi phí dịch vụ mua ngoài' với giá trị 88.199.235.780 VND.",
+      "Chi phí bán hàng của công ty trong Quý 2/2025 và 6 tháng đầu năm 2025 đều tăng so với cùng kỳ, cho thấy có sự gia tăng trong hoạt động bán hàng hoặc chi phí liên quan. Tuy nhiên, chi phí này tương đối nhỏ so với tổng chi phí. Ngược lại, chi phí quản lý doanh nghiệp tăng mạnh trong Quý 2/2025 và 6 tháng đầu năm 2025, đặc biệt là chi phí dịch vụ mua ngoài và chi phí nhân công. Sự gia tăng này có thể phản ánh quy mô hoạt động lớn hơn hoặc sự gia tăng trong các chi phí điều hành. Công ty cần theo dõi chặt chẽ để đảm bảo rằng sự tăng trưởng trong chi phí này là hợp lý và tương xứng với hiệu quả hoạt động, tránh làm suy giảm biên lợi nhuận.",
+      "Sự tăng mạnh của chi phí dịch vụ mua ngoài trong cả chi phí bán hàng và chi phí quản lý doanh nghiệp (từ 16.608.830.285 VND lên 41.422.817.525 VND trong Q2/2025 đối với chi phí quản lý, và từ 37.422.324.556 VND lên 76.599.282.756 VND trong 6 tháng đầu năm 2025) cho thấy công ty đang phụ thuộc nhiều hơn vào các dịch vụ từ bên ngoài. Điều này có thể giúp công ty linh hoạt hơn, giảm chi phí cố định (như lương nhân viên hoặc khấu hao tài sản) nhưng cũng có thể làm tăng chi phí biến đổi và phụ thuộc vào nhà cung cấp dịch vụ. Nếu chi phí dịch vụ mua ngoài tiếp tục tăng, nó có thể gây áp lực lên lợi nhuận, đồng thời làm giảm kiểm soát nội bộ nếu không có các thỏa thuận dịch vụ rõ ràng và quản lý nhà cung cấp hiệu quả. Điều này cũng ảnh hưởng đến cơ cấu chi phí, chuyển từ chi phí nội bộ sang chi phí thuê ngoài."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu cung cấp dịch vụ của Công ty Cổ phần Hạ tầng GELEX trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+      "Khoản cổ tức nhận được từ Công ty Cổ phần Điện lực GELEX trong 6 tháng đầu năm 2025 là bao nhiêu?",
+      "So sánh khoản đi vay của Công ty Cổ phần Hạ tầng GELEX trong 6 tháng đầu năm 2025 và 2024.",
+      "Công ty TNHH MTV Cadivi Miền Bắc và Công ty TNHH MTV Cadivi Đồng Nai có những giao dịch đáng chú ý nào liên quan đến thanh lý hợp đồng thuê cơ sở hạ tầng trong 6 tháng đầu năm 2024?",
+      "Đánh giá mức độ phụ thuộc vào giao dịch với các công ty con trong việc tạo ra doanh thu của GELEX.",
+      "Phân tích rủi ro và lợi ích từ các giao dịch đi vay và cho vay giữa GELEX và các bên liên quan."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (30. Nghiệp vụ và số dư với các bên liên quan - Giao dịch phát sinh trong kỳ - Phần 1)\nLoại nội dung: Bảng\n30. NGHIỆP VỤ VÀ SỐ DƯ VỚI CÁC BÊN LIÊN QUAN<br>Trong kỳ, Công ty có các giao dịch phát sinh trọng yếu và số dư tại ngày kết thúc kỳ kế toán với các bên liên quan như sau:<br>Giao dịch phát sinh trong kỳ<br>| Bên liên quan | Mối quan hệ | Giao dịch | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------------------------------------|--------------|-------------------------------|---------------------------------|---------------------------------|\n| Công ty Cổ phần Hạ tầng GELEX        | Công ty con  | Doanh thu cung cấp dịch vụ    | 1.097.919.200                   | 24.267.233.206                  |\n| - | - | Thu hồi gốc cho vay | - | 351.000.000.000 | \n| - | - | Lãi cho vay | - | 12.478.383.561 | \n| - | - | Đi vay | 1.350.000.000.000 | 650.000.000.000 | \n| - | - | Trả tiền vay | 1.263.000.000.000 | 150.000.000.000 | \n| - | - | Lãi đi vay | 64.807.899.365 | 45.843.561.645 | \n| Công ty TNHH Năng lượng GELEX Ninh Thuận | Công ty liên kết | Thu hồi gốc cho vay | 66.375.000.000 | 44.250.000.000 | \n| - | - | Lãi cho vay | 17.498.983.733 | 21.272.679.796 | \n| Công ty Cổ phần Điện lực GELEX | Công ty con | Doanh thu cung cấp dịch vụ | 1.381.067.820 | 2.718.801.644 | \n| - | - | Mua hàng hóa, CCDC và dịch vụ | - | 126.181.931 | \n| - | - | Thu hộ chi hộ dịch vụ phần mềm | 808.913.075 | 608.914.343 | \n| - | - | Cổ tức nhận được | 479.991.200.000 | 239.995.600.000 | \n| - | - | Cho vay | 100.000.000.000 | 400.000.000.000 | \n| - | - | Thu hồi gốc cho vay | 290.000.000.000 | - | \n| - | - | Lãi cho vay | 4.146.575.342 | 3.595.890.411 | \n| - | - | Đi vay | - | 210.000.000.000 | \n| - | - | Trả tiền vay | - | 360.000.000.000 | \n| - | - | Lãi đi vay | - | 3.161.780.822 | \n| Công ty Cổ phần Dây Cáp Điện Việt Nam | Công ty con | Doanh thu dịch vụ | 756.000.000 | 589.965.132 | \n| - | - | Mua hàng hóa và dịch vụ | 2.162.429.964 | 1.732.509.879 | \n| - | - | Thu hộ chi hộ chi phí truyền thông | 5.000.000.000 | - | \n| - | - | Thanh lý hợp đồng cho thuê cơ sở hạ tầng tiền nhận trước | - | 21.617.991.073 | \n| Công ty TNHH MTV Cadivi Miền Bắc | Công ty con | Doanh thu dịch vụ | 2.616.973.519 | 3.289.072.953 | \n| - | - | Thu trước tiền thuê CSHT | - | 130.391.755.977 | \n| Công ty TNHH MTV Cadivi Đồng Nai | Công ty con | Doanh thu bán hàng | - | 879.606.518.190 | \n| - | - | Doanh thu bán thành phẩm | - | - | \n| - | - | Doanh thu dịch vụ | 390.000.000 | 3.266.421.647 | \n| - | - | Thanh lý hợp đồng cho thuê cơ sở hạ tầng tiền nhận trước | - | 108.773.764.904 | \n| Công ty Cổ phần Thiết bị Điện | Công ty con | Doanh thu bán hàng | 104.204.591.150 | 203.436.276.885 | \n| - | - | Hàng bán trả lại | - | - | \n| - | - | Doanh thu cung cấp dịch vụ | 372.000.000 | 186.000.000 | \n| - | - | Đi vay | 300.000.000.000 | - | \n| - | - | Lãi đi vay | 452.054.795 | - | \n| Công ty Cổ phần Sản xuất máy biến áp truyền tải MEE | Công ty con | Doanh thu cung cấp dịch vụ | 72.000.000 | 36.000.000 | \n| Công ty Cổ phần Chế tạo Điện Cơ Hà Nội | Công ty con | Doanh thu bán hàng hóa | - | 5.641.862.848 | \n| - | - | Đi vay | 80.000.000.000 | - | \n| - | - | Lãi đi vay | 10.958.904 | - | \n| Công ty TNHH SASCTAMAD | Công ty liên kết | Doanh thu cung cấp dịch vụ | 634.500.000 | 634.500.000 | \n| - | - | Mua hàng hóa và dịch vụ | 4.035.286.399 | 2.129.700.708 | \n| Công ty Cổ phần Thiết bị đo điện EMIC | Công ty con | Doanh thu cung cấp dịch vụ | 6.010.925.991 | 5.914.913.551 | \n| - | - | Doanh thu bán TSCĐ | 2.260.000.000 | - |",
+    "output": [
+      "1.097.919.200 VND",
+      "479.991.200.000 VND",
+      "Trong 6 tháng đầu năm 2025, Công ty Cổ phần Hạ tầng GELEX đã đi vay 1.350.000.000.000 VND. Trong 6 tháng đầu năm 2024, khoản đi vay là 650.000.000.000 VND. Khoản đi vay đã tăng 700.000.000.000 VND.",
+      "Công ty TNHH MTV Cadivi Miền Bắc có giao dịch thu trước tiền thuê CSHT 130.391.755.977 VND trong 6 tháng đầu năm 2024. Công ty TNHH MTV Cadivi Đồng Nai có giao dịch thanh lý hợp đồng cho thuê cơ sở hạ tầng tiền nhận trước 108.773.764.904 VND trong 6 tháng đầu năm 2024.",
+      "GELEX có mức độ phụ thuộc đáng kể vào giao dịch với các công ty con để tạo ra doanh thu. Điều này được thể hiện qua các khoản doanh thu cung cấp dịch vụ cho Công ty Cổ phần Hạ tầng GELEX, Công ty Cổ phần Điện lực GELEX, Công ty Cổ phần Dây Cáp Điện Việt Nam, Công ty TNHH MTV Cadivi Miền Bắc, Công ty TNHH MTV Cadivi Đồng Nai, Công ty Cổ phần Thiết bị Điện, v.v. Ngoài ra, khoản cổ tức nhận được từ Công ty Cổ phần Điện lực GELEX cũng là một nguồn doanh thu tài chính lớn. Sự phụ thuộc này có thể mang lại sự ổn định và kiểm soát trong chuỗi giá trị, nhưng cũng tiềm ẩn rủi ro tập trung nếu các công ty con gặp khó khăn hoặc nếu các giao dịch không được thực hiện với các điều khoản thị trường công bằng.",
+      "Các giao dịch đi vay và cho vay giữa GELEX và các bên liên quan (công ty con, liên kết) mang lại cả rủi ro và lợi ích. Lợi ích là: tạo sự linh hoạt tài chính nội bộ, tối ưu hóa dòng tiền và chi phí vốn cho toàn tập đoàn, củng cố mối quan hệ và sự kiểm soát đối với các đơn vị thành viên. Ví dụ, GELEX cho các công ty con vay có thể giúp các công ty này có vốn thực hiện dự án mà không cần tìm kiếm từ bên ngoài. Rủi ro là: các giao dịch này có thể không được thực hiện theo các điều khoản thị trường công bằng, tiềm ẩn xung đột lợi ích. Nếu các bên liên quan gặp khó khăn tài chính, GELEX có thể phải gánh chịu rủi ro tín dụng đối với các khoản cho vay. Ngoài ra, việc gia tăng các khoản đi vay từ các bên liên quan cũng có thể làm tăng tổng nợ và rủi ro tài chính của GELEX. Việc cần công bố các giao dịch này trong báo cáo tài chính là để đảm bảo minh bạch, nhưng nhà đầu tư vẫn cần đánh giá kỹ lưỡng các điều khoản và mức độ rủi ro liên quan."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu bán hàng hóa của Công ty Dây đồng Việt Nam CFT trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+      "Công ty TNHH Phát điện GELEX đã đi vay bao nhiêu trong 6 tháng đầu năm 2025?",
+      "So sánh lãi cho vay từ Công ty TNHH Công Nghiệp Titan Corporation 2 Bắc Ninh giữa 6 tháng đầu năm 2025 và 2024.",
+      "Những giao dịch nào với Công ty Dây đồng Việt Nam CFT liên quan đến cho vay và thu hồi gốc cho vay trong 6 tháng đầu năm 2025?",
+      "Đánh giá sự thay đổi trong các giao dịch cho vay và đi vay của GELEX với các công ty con và liên quan.",
+      "Phân tích tác động của các giao dịch bán hàng hóa với Công ty Dây đồng Việt Nam CFT đến doanh thu và lợi nhuận của GELEX."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Cho kỳ kế toán từ ngày 01/01/2025 đến ngày 30/06/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (30. Nghiệp vụ và số dư với các bên liên quan - Giao dịch phát sinh trong kỳ - Phần 2)\nLoại nội dung: Bảng\n30. NGHIỆP VỤ VÀ SỐ DƯ VỚI CÁC BÊN LIÊN QUAN<br>Giao dịch phát sinh trong kỳ (Tiếp theo)<br>| Bên liên quan | Mối quan hệ | Giao dịch | Từ 01/01/2025 đến 30/06/2025 VND | Từ 01/01/2024 đến 30/06/2024 VND |\n|--------------------------------------|--------------|-------------------------------|---------------------------------|---------------------------------|\n| Công ty Dây đồng Việt Nam CFT       | Công ty con  | Doanh thu bán hàng hóa        | 2.777.061.575.199               | 491.320.833.726                 |\n| - | - | Doanh thu cung cấp dịch vụ | 132.000.000 | 66.000.000 | \n| - | - | Lãi bán hàng trả chậm | 443.835.617 | 1.912.328.765 | \n| - | - | Cho vay | 400.000.000.000 | 200.000.000.000 | \n| - | - | Thu hồi gốc cho vay | 200.000.000.000 | 200.000.000.000 | \n| - | - | Lãi cho vay | 3.441.095.890 | 1.068.493.151 | \n| Công ty TNHH Phát điện GELEX         | Công ty con  | Doanh thu cung cấp dịch vụ    | 606.672.040                   | 6.388.784.825                   |\n| - | - | Đi vay | 600.000.000.000 | - | \n| - | - | Trả tiền vay | 371.600.000.000 | - | \n| - | - | Lãi đi vay | 3.848.101.369 | 271.232.877 | \n| Công ty TNHH ICAPITAL                 | Bên liên quan của thành viên HĐQT | Doanh thu cung cấp dịch vụ | 187.647.983 | 188.329.936 | \n| - | - | Đặt cọc thuê văn phòng | - | 5.536.374 | \n| Công ty Cổ phần Mua Bán Điện GELEX   | Công ty con  | Doanh thu cung cấp dịch vụ    | 639.208.405                   | 637.831.560                   |\n| Công ty Cổ phần Thiết bị Công nghiệp GEIC | Bên liên quan của thành viên Ban TGĐ | Doanh thu cung cấp dịch vụ | 884.991.120 | 700.782.880 | \n| Công ty TNHH Công Nghiệp Titan Corporation 2 Bắc Ninh | Bên liên quan của thành viên Ban TGĐ | Cho vay | - | 25.703.887.125 | \n| - | - | Lãi cho vay | 14.257.014.543 | 15.717.231.779 | \n| Công ty TNHH Công Nghiệp Titan Corporation Bắc Ninh 1 | Bên liên quan của thành viên Ban TGĐ | Lãi cho vay | 5.417.840.186 | 6.051.418.180 | \n| Công ty TNHH Công Nghiệp Titan Hưng Yên | Bên liên quan của thành viên Ban TGĐ | Cho vay | 47.188.418.083 | - | \n| - | - | Thu hồi gốc cho vay | 55.707.728.448 | - | \n| - | - | Lãi cho vay | 9.646.092.257 | 6.089.249.375 | \n| Công ty TNHH Công Nghiệp Titan Corporation 3 Bắc Ninh | Bên liên quan của thành viên Ban TGĐ | Cho vay | 55.707.728.448 | - | \n| - | - | Lãi cho vay | 4.648.822.486 | - |",
+    "output": [
+      "2.777.061.575.199 VND",
+      "600.000.000.000 VND",
+      "Lãi cho vay từ Công ty TNHH Công Nghiệp Titan Corporation 2 Bắc Ninh trong 6 tháng đầu năm 2025 là 14.257.014.543 VND. Trong 6 tháng đầu năm 2024 là 15.717.231.779 VND. Lãi cho vay đã giảm 1.460.217.236 VND.",
+      "Trong 6 tháng đầu năm 2025, GELEX đã cho Công ty Dây đồng Việt Nam CFT vay 400.000.000.000 VND và thu hồi gốc cho vay 200.000.000.000 VND.",
+      "GELEX tiếp tục có nhiều giao dịch cho vay và đi vay với các công ty con và liên quan. Trong 6 tháng đầu năm 2025, có sự gia tăng đáng kể trong các khoản đi vay từ Công ty Cổ phần Hạ tầng GELEX và Công ty TNHH Phát điện GELEX. Đồng thời, GELEX cũng cho các công ty con như Công ty Dây đồng Việt Nam CFT, Công ty Cổ phần Thiết bị Điện và các công ty Titan vay. Xu hướng này cho thấy GELEX tiếp tục đóng vai trò là ngân hàng nội bộ cho các đơn vị thành viên, cung cấp vốn cho hoạt động và đầu tư của họ. Sự biến động của các khoản lãi cho vay và lãi đi vay cũng phản ánh hoạt động tài chính nội bộ sôi động.",
+      "Giao dịch bán hàng hóa với Công ty Dây đồng Việt Nam CFT có tác động rất lớn đến doanh thu của GELEX. Trong 6 tháng đầu năm 2025, doanh thu bán hàng hóa từ CFT đạt 2.777.061.575.199 VND, tăng mạnh so với 491.320.833.726 VND trong cùng kỳ năm 2024. Đây là một trong những nguồn doanh thu lớn nhất từ các bên liên quan, cho thấy sự phụ thuộc cao của GELEX vào công ty con này trong việc tạo ra doanh thu. Mặc dù thông tin cụ thể về biên lợi nhuận của giao dịch này không được nêu rõ, nhưng với quy mô doanh thu lớn như vậy, nó đóng góp đáng kể vào tổng lợi nhuận của GELEX, đặc biệt nếu biên lợi nhuận là dương. Tuy nhiên, sự phụ thuộc này cũng tiềm ẩn rủi ro nếu hoạt động kinh doanh của CFT gặp khó khăn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải thu khách hàng từ các bên liên quan tại 30/06/2025 là bao nhiêu VND?",
+      "Khoản cho vay ngắn hạn cho Công ty Dây đồng Việt Nam CFT tại 30/06/2025 là bao nhiêu?",
+      "So sánh tổng phải thu khác từ các bên liên quan giữa 30/06/2025 và 01/01/2025.",
+      "Các khoản phải thu về cho vay dài hạn từ các bên liên quan nào có giá trị lớn nhất tại 30/06/2025?",
+      "Đánh giá mức độ rủi ro tín dụng của GELEX dựa trên các khoản phải thu từ các bên liên quan.",
+      "Phân tích tác động của sự biến động các khoản phải thu lãi cho vay đến doanh thu tài chính của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (30. Nghiệp vụ và số dư với các bên liên quan - Số dư với bên liên quan - Phần 1)\nLoại nội dung: Bảng\n30. NGHIỆP VỤ VÀ SỐ DƯ VỚI CÁC BÊN LIÊN QUAN<br>Số dư với bên liên quan<br>Tại ngày kết thúc kỳ kế toán, các khoản phải thu/phải trả với các bên liên quan như sau:<br>| Bên liên quan | Mối quan hệ | Nội dung số dư | 30/06/2025 VND | 01/01/2025 VND |\n|--------------------------------------|--------------|----------------------------------|----------------|----------------|\n| Phải thu khách hàng                  |              |                                  |                |                |\n| Công ty Cổ phần Hạ tầng GELEX        | Công ty con  | Phải thu tiền cung cấp dịch vụ   | 3.373.229      | -              |\n| Công ty Cổ phần Dây Cáp Điện Việt Nam | Công ty con  | Phải thu tiền cung cấp dịch vụ   | 93.960.000     | -              |\n| Công ty TNHH MTV Cadivi miền Bắc     | Công ty con  | Phải thu tiền hàng, cung cấp dịch vụ | 62.657.055     | 46.717.895     |\n| Công ty Cổ phần Thiết bị Điện        | Công ty con  | Phải thu tiền hàng                | 66.960.000     | 147.908.900.698 |\n| Công ty Cổ phần Mua Bán Điện GELEX   | Công ty con  | Phải thu tiền cung cấp dịch vụ   | 50.002         | -              |\n| Công ty Cổ phần Thiết bị đo điện EMIC | Công ty con  | Phải thu tiền cung cấp dịch vụ   | 60.972.405     | -              |\n| Công ty Cổ phần Thiết bị Công nghiệp GEIC | Bên liên quan của thành viên Ban TGĐ | Phải thu tiền cung cấp dịch vụ | 21.660.398     | 4.325.800      |\n| Công ty Cổ phần Sản xuất máy biến áp truyền tải MEE | Công ty con | Phải thu cung cấp dịch vụ | 25.920.000     | -              |\n| Công ty Dây đồng Việt Nam CFT       | Công ty con  | Phải thu tiền hàng, cung cấp dịch vụ | 348.233.444.234 | 162.787.310.211 |\n| Công ty TNHH ICAPITAL                 | Bên liên quan thành viên HĐQT | Phải thu cung cấp dịch vụ | 1.199.059      | 916.618        |\n| Tổng phải thu khách hàng             |              |                                  | 348.575.540.352 | 310.748.171.222 |\n| Phải thu về cho vay ngắn hạn        |              |                                  |                |                |\n| Công ty Dây đồng Việt Nam CFT       | Công ty con  | Cho vay ngắn hạn                 | 200.000.000.000 | -              |\n| Công ty Cổ phần Điện lực GELEX | Công ty con | Cho vay ngắn hạn | - | 190.000.000.000 | \n| Công ty TNHH Năng lượng GELEX Ninh Thuận | Công ty liên kết | Cho vay dài hạn đến hạn thu hồi | 88.500.000.000 | 110.625.000.000 | \n| Tổng phải thu về cho vay ngắn hạn    |              |                                  | 288.500.000.000 | 300.625.000.000 |\n| Phải thu về cho vay dài hạn         |              |                                  |                |                |\n| Công ty TNHH Năng lượng GELEX Ninh Thuận | Công ty liên kết | Cho vay dài hạn | 239.375.000.000 | 283.625.000.000 | \n| Công ty TNHH Công Nghiệp Titan Hưng Yên | Bên liên quan của thành viên Ban TGĐ | Cho vay dài hạn | 194.897.402.048 | 250.605.130.496 | \n| Công ty TNHH Công Nghiệp Titan Corporation Bắc Ninh 1 | Bên liên quan của thành viên Ban TGĐ | Cho vay dài hạn | 121.394.209.160 | 121.394.209.160 | \n| Công ty TNHH Công Nghiệp Titan Corporation 2 Bắc Ninh | Bên liên quan của thành viên Ban TGĐ | Cho vay dài hạn | 319.448.146.591 | 319.448.146.591 | \n| Công ty TNHH Công Nghiệp Titan Corporation 3 Bắc Ninh | Bên liên quan của thành viên Ban TGĐ | Cho vay dài hạn | 125.707.728.448 | 70.000.000.000 | \n| Tổng phải thu về cho vay dài hạn     |              |                                  | 1.000.822.486.247 | 1.045.072.486.247 |\n| Phải thu khác                       |              |                                  |                |                |\n| Công ty Cổ phần Điện lực GELEX | Công ty con | Lãi cho vay | - | 17.644.520.546 | \n| - | - | Cổ tức | - | 239.995.600.000 | \n| Công ty Dây Đồng Việt Nam CFT       | Công ty con  | Lãi cho vay                      | 2.441.095.890 | 1.068.493.151 | \n| Công ty TNHH Năng lượng Gelex Ninh Thuận | Công ty liên kết | Lãi cho vay | - | 19.410.582.193 | \n| Công ty TNHH Công Nghiệp Titan Hưng Yên | Bên liên quan của thành viên Ban TGĐ | Lãi cho vay | 26.370.375.192 | 18.949.539.595 | \n| Công ty TNHH Công Nghiệp Titan Corporation Bắc Ninh 1 | Bên liên quan của thành viên Ban TGĐ | Lãi cho vay | 8.171.659.507 | 2.753.819.321 | \n| Công ty TNHH Công Nghiệp Titan Corporation 2 Bắc Ninh | Bên liên quan của thành viên Ban TGĐ | Lãi cho vay | 52.082.584.571 | 37.825.570.028 | \n| Công ty TNHH Công Nghiệp Titan Corporation 3 Bắc Ninh | Bên liên quan của thành viên Ban TGĐ | Lãi cho vay | 4.752.384.130 | 103.561.644 | \n| Tổng phải thu khác                  |              |                                  | 93.818.099.290 | 337.751.686.478 |",
+    "output": [
+      "348.575.540.352 VND",
+      "200.000.000.000 VND",
+      "Tổng phải thu khác từ các bên liên quan tại 30/06/2025 là 93.818.099.290 VND. Tại 01/01/2025 là 337.751.686.478 VND. Khoản này đã giảm đáng kể 243.933.587.188 VND.",
+      "Khoản phải thu về cho vay dài hạn từ Công ty TNHH Công Nghiệp Titan Corporation 2 Bắc Ninh có giá trị lớn nhất tại 30/06/2025 là 319.448.146.591 VND.",
+      "GELEX có mức độ rủi ro tín dụng đáng kể từ các khoản phải thu với các bên liên quan, đặc biệt là các khoản phải thu khách hàng và các khoản cho vay. Tổng phải thu khách hàng từ các bên liên quan đạt 348.575.540.352 VND, và tổng phải thu về cho vay (ngắn hạn và dài hạn) với các bên liên quan lên đến hơn 1.289 tỷ VND. Mặc dù các công ty này thuộc cùng hệ sinh thái hoặc có mối quan hệ quản trị, rủi ro vẫn tồn tại nếu bất kỳ bên liên quan nào gặp khó khăn tài chính. Mặc dù có một số khoản dự phòng được trích lập (ví dụ cho phải thu khách hàng), nhưng quy mô các khoản phải thu này lớn đòi hỏi GELEX phải có hệ thống quản lý rủi ro tín dụng nội bộ chặt chẽ để đảm bảo khả năng thu hồi vốn và lãi vay.",
+      "Sự biến động của các khoản phải thu lãi cho vay có tác động trực tiếp đến doanh thu hoạt động tài chính của công ty. Tổng phải thu khác, trong đó bao gồm lãi cho vay, đã giảm đáng kể từ 337.751.686.478 VND (01/01/2025) xuống 93.818.099.290 VND (30/06/2025). Sự giảm này cho thấy công ty đã thu hồi được một lượng lớn lãi cho vay trong kỳ, góp phần vào dòng tiền và doanh thu tài chính. Tuy nhiên, nếu các khoản phải thu lãi cho vay trong tương lai tiếp tục giảm hoặc các khoản cho vay không tạo ra đủ lãi suất, doanh thu tài chính của công ty có thể bị ảnh hưởng tiêu cực, làm giảm tổng lợi nhuận."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải trả người bán cho các bên liên quan tại 30/06/2025 là bao nhiêu VND?",
+      "Khoản vay ngắn hạn từ Công ty Cổ phần Hạ tầng GELEX tại 30/06/2025 là bao nhiêu?",
+      "Có sự kiện phát sinh nào sau ngày kết thúc kỳ kế toán yêu cầu điều chỉnh báo cáo tài chính không?",
+      "Số liệu so sánh trên Bảng Cân đối kế toán tại ngày 30 tháng 6 năm 2025 dựa trên báo cáo nào?",
+      "Đánh giá mức độ rủi ro liên quan đến các khoản vay từ các bên liên quan của GELEX.",
+      "Phân tích tác động của các giao dịch thuê văn phòng giữa GELEX và các bên liên quan đến doanh thu chưa thực hiện.",
+      "Giải thích tầm quan trọng của việc công bố các giao dịch với bên liên quan trong báo cáo tài chính."
+    ],
+    "input": "Công ty: Công ty Cổ phần Tập đoàn GELEX\nMã cổ phiếu: GEX\nLoại báo cáo: Báo cáo tài chính riêng Quý II/2025\nThời gian: Tại ngày 30 tháng 06 năm 2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính riêng (30. Nghiệp vụ và số dư với các bên liên quan - Số dư với bên liên quan - Phần 2, 31. Những sự kiện phát sinh sau ngày kết thúc kỳ kế toán, 32. Số liệu so sánh)\nLoại nội dung: Bảng và Text\n30. NGHIỆP VỤ VÀ SỐ DƯ VỚI CÁC BÊN LIÊN QUAN<br>Số dư với bên liên quan (Tiếp theo)<br>| Bên liên quan | Mối quan hệ | Nội dung số dư | 30/06/2025 VND | 01/01/2025 VND |\n|--------------------------------------|--------------|----------------------------------|----------------|----------------|\n| Phải trả người bán                   |              |                                  |                |                |\n| Công ty Cổ phần Điện lực GELEX | Công ty con | Mua dịch vụ | 217.051.682 | 0 | \n| Công ty TNHH S.A.S. - CTAMAD         | Công ty liên kết | Mua dịch vụ | 719.455.371 | 115.492.122 | \n| Công ty Cổ phần Dây cáp điện Việt Nam | Công ty con | Mua dịch vụ | 17.348.129 | 15.455.697 | \n| Tổng phải trả người bán              |              |                                  | 953.855.182 | 130.947.819 | \n| Doanh thu chưa thực hiện            |              |                                  |                |                |\n| Công ty Cổ phần Điện lực GELEX | Công ty con | Thuê văn phòng | 655.390.080 | 655.390.080 | \n| Công ty Cổ phần Mua Bán Điện GELEX   | Công ty con | Thuê văn phòng | 314.003.280 | - | \n| Công ty TNHH ICAPITAL                 | Bên liên quan của thành viên HĐQT | Thuê văn phòng | 86.072.817 | 86.072.817 | \n| Công ty TNHH Phát Điện GELEX         | Công ty con | Thuê văn phòng | 297.803.280 | 297.803.280 | \n| Công ty Cổ phần Thiết bị Công nghiệp GEIC | Bên liên quan của thành viên Ban TGĐ | Thuê văn phòng | 436.787.525 | - | \n| Công ty TNHH MTV Cadivi miền Bắc     | Công ty con | Thuê cơ sở hạ tầng | 133.263.539.036 | 135.587.903.090 | \n| Tổng doanh thu chưa thực hiện        |              |                                  | 135.053.596.018 | 136.627.169.267 | \n| Phải trả khác                       |              |                                  |                |                |\n| Công ty Cổ phần Thiết bị Điện        | Công ty con | Lãi đi vay | 452.054.795 | - | \n| Công ty Cổ phần Chế tạo Điện Cơ Hà Nội | Công ty con | Lãi đi vay | 10.958.904 | - | \n| Công ty Cổ phần Hạ tầng GELEX        | Công ty con | Lãi đi vay | 52.790.073.815 | 35.445.804.588 | \n| Công ty TNHH Phát Điện GELEX         | Công ty con | Lãi đi vay | - | 10.470.975.344 | \n| Công ty TNHH ICAPITAL                 | Bên liên quan của thành viên HĐQT | Đặt cọc thuê văn phòng | 94.680.099 | 94.680.099 | \n| Tổng phải trả khác                  |              |                                  | 53.347.767.613 | 46.011.460.031 | \n| Vay                                 |              |                                  |                |                |\n| Công ty TNHH Phát điện GELEX         | Công ty con | Vay ngắn hạn | - | 371.600.000.000 | \n| Công ty Cổ phần Hạ tầng GELEX        | Công ty con | Vay ngắn hạn | 2.256.723.582.700 | 1.349.723.582.700 | \n| - | - | Vay dài hạn | - | 820.000.000.000 | \n| Công ty Cổ phần Chế Tạo Điện Cơ Hà Nội | Công ty con | Vay ngắn hạn | 80.000.000.000 | - | \n| Công ty Cổ phần Thiết Bị Điện        | Công ty con | Vay ngắn hạn | 300.000.000.000 | - | \n| Tổng vay                            |              |                                  | 2.636.723.582.700 | 2.541.323.582.700 | \n\n* Giao dịch, số dư được trình bày tính đến trước thời điểm không còn là bên liên quan hoặc bắt đầu trở thành bên liên quan của Công ty.<br><br>31. NHỮNG SỰ KIỆN PHÁT SINH SAU NGÀY KẾT THÚC KỲ KẾ TOÁN<br>Không có sự kiện nào khác phát sinh sau ngày kết thúc kỳ kế toán yêu cầu phải được điều chỉnh hay trình bày trong báo cáo tài chính riêng của Công ty.<br><br>32. SỐ LIỆU SO SÁNH<br>Số liệu so sánh trên Bảng Cân đối kế toán tại ngày 30 tháng 6 năm 2025 là số liệu trên Báo cáo tài chính riêng năm 2024 đã được kiểm toán, số liệu so sánh trên Báo cáo kết quả kinh doanh riêng Quý 2/2025 và số liệu trên Báo cáo lưu chuyển tiền tệ riêng.<br>Phương Kim Trung<br>Người lập<br>Hoàng Hùng<br>Kế toán trưởng<br>Lê Tuấn Anh<br>Phó Tổng Giám đốc",
+    "output": [
+      "953.855.182 VND",
+      "2.256.723.582.700 VND",
+      "Không có sự kiện nào khác phát sinh sau ngày kết thúc kỳ kế toán yêu cầu phải được điều chỉnh hay trình bày trong báo cáo tài chính riêng của Công ty.",
+      "Số liệu so sánh trên Bảng Cân đối kế toán tại ngày 30 tháng 6 năm 2025 là số liệu trên Báo cáo tài chính riêng năm 2024 đã được kiểm toán.",
+      "GELEX có khoản vay lớn từ các bên liên quan, đặc biệt là Công ty Cổ phần Hạ tầng GELEX (2.256.723.582.700 VND vay ngắn hạn tại 30/06/2025). Mặc dù việc vay từ các công ty con có thể mang lại sự linh hoạt và điều khoản tốt hơn so với vay ngân hàng, nó cũng tiềm ẩn rủi ro nếu các công ty con này gặp khó khăn tài chính. Sự tập trung vay nợ từ một số bên liên quan cụ thể (như Hạ tầng GELEX) có thể tạo ra rủi ro hệ thống trong tập đoàn. Cần đánh giá xem các khoản vay này có được thực hiện theo nguyên tắc thị trường hay không và khả năng GELEX có thể tái cấp vốn hoặc trả nợ nếu các bên liên quan không thể gia hạn khoản vay.",
+      "Các giao dịch thuê văn phòng và cơ sở hạ tầng giữa GELEX và các bên liên quan (như Công ty Cổ phần Điện lực GELEX, Công ty TNHH MTV Cadivi miền Bắc, v.v.) đóng góp vào khoản mục Doanh thu chưa thực hiện. Khi GELEX nhận tiền thuê trước từ các bên liên quan cho các dịch vụ sẽ được cung cấp trong tương lai, khoản tiền này được ghi nhận là doanh thu chưa thực hiện trên bảng cân đối kế toán. Điều này có tác động tích cực đến dòng tiền của GELEX tại thời điểm nhận tiền, nhưng chưa được ghi nhận là doanh thu trên báo cáo kết quả kinh doanh. Khoản doanh thu chưa thực hiện dài hạn từ các bên liên quan vẫn ở mức cao (135.053.596.018 VND tại 30/06/2025), cho thấy GELEX có các hợp đồng thuê dài hạn và nguồn tiền ổn định từ các bên liên quan, đảm bảo nguồn thu trong tương lai khi các dịch vụ thuê được cung cấp.",
+      "Việc công bố các giao dịch với bên liên quan trong báo cáo tài chính là vô cùng quan trọng để đảm bảo tính minh bạch và cung cấp bức tranh đầy đủ về tình hình tài chính của công ty. Các giao dịch này thường tiềm ẩn rủi ro xung đột lợi ích và có thể không được thực hiện theo các điều kiện thị trường thông thường, điều này có thể ảnh hưởng đến lợi ích của cổ đông nhỏ và các bên liên quan khác. Bằng cách công bố chi tiết về bản chất các giao dịch, mối quan hệ giữa các bên, và giá trị giao dịch/số dư, nhà đầu tư và các nhà phân tích có thể đánh giá mức độ rủi ro tiềm ẩn, ảnh hưởng của các giao dịch này đến hiệu quả tài chính và vị thế của công ty, qua đó đưa ra quyết định đầu tư chính xác hơn và tăng cường niềm tin vào quản trị công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  }
+]

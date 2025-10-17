@@ -1,0 +1,113 @@
+Dưới đây là dữ liệu huấn luyện instruction theo định dạng JSON Lines dựa trên các chunk và câu hỏi đã cung cấp:
+
+```json
+[
+  {
+    "instruction": "Tên đầy đủ của công ty là gì?",
+    "input": "1",
+    "output": "Tên đầy đủ của công ty là Công ty Cổ phần Hàng không Vietjet."
+  },
+  {
+    "instruction": "Mã chứng khoán của công ty là gì?",
+    "input": "1",
+    "output": "Mã chứng khoán của công ty là VJC."
+  },
+  {
+    "instruction": "Báo cáo này là loại báo cáo gì và cho quý mấy năm nào?",
+    "input": "1",
+    "output": "Báo cáo này là Báo cáo tài chính Hợp nhất Quý II/2024."
+  },
+  {
+    "instruction": "Ai là Chủ tịch Hội đồng Quản trị của Công ty Vietjet?",
+    "input": "1",
+    "output": "Chủ tịch Hội đồng Quản trị của Công ty Vietjet là Bà Nguyễn Thị Phương Thảo."
+  },
+  {
+    "instruction": "Ban Điều hành Vietjet cam kết gì về thông tin công bố?",
+    "input": "1",
+    "output": "Ban Điều hành Vietjet cam kết các thông tin công bố là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố."
+  },
+  {
+    "instruction": "Ngày công bố thông tin trên website của công ty là khi nào?",
+    "input": "1",
+    "output": "Ngày công bố thông tin trên website của công ty là 30/07/2024."
+  },
+  {
+    "instruction": "Những hoạt động kinh doanh chính của Vietjet và các công ty con là gì?",
+    "input": "1",
+    "output": "Thông tin không có trong dữ liệu."
+  },
+  {
+    "instruction": "Tổng giám đốc của Công ty Cổ phần Hàng không Vietjet là ai và báo cáo này được phê duyệt vào ngày nào?",
+    "input": "1",
+    "output": "Tổng Giám đốc của Công ty Cổ phần Hàng không Vietjet là Ông Đinh Việt Phương. Báo cáo này được phê duyệt vào ngày 30 tháng 07 năm 2024."
+  },
+  {
+    "instruction": "Địa chỉ trụ sở đăng ký của Vietjet là ở đâu?",
+    "input": "1",
+    "output": "Địa chỉ trụ sở đăng ký của Vietjet là 3023 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam."
+  },
+  {
+    "instruction": "Đánh giá mức độ minh bạch của báo cáo này dựa trên thông tin về ý kiến kiểm toán.",
+    "input": "1",
+    "output": "Thông tin về ý kiến kiểm toán ghi là \"Không có\". Điều này cho thấy báo cáo tài chính hợp nhất Quý II/2024 chưa có ý kiến kiểm toán độc lập. Mặc dù Ban Điều hành cam kết báo cáo trung thực và hợp lý, việc thiếu ý kiến kiểm toán độc lập trên báo cáo quý thường là tiêu chuẩn (không phải tất cả báo cáo quý đều có kiểm toán), nhưng nó có thể được coi là mức độ minh bạch thấp hơn so với báo cáo có kiểm toán đầy đủ về mặt xác nhận độc lập."
+  },
+  {
+    "instruction": "Tổng tài sản ngắn hạn tại ngày 30.06.2024 của Vietjet là bao nhiêu VND?",
+    "input": "2",
+    "output": "Tổng tài sản ngắn hạn tại ngày 30.06.2024 của Vietjet là 42.583.421.218.201 VND."
+  },
+  {
+    "instruction": "Khoản mục 'Tiền và các khoản tương đương tiền' cuối kỳ là bao nhiêu?",
+    "input": "2",
+    "output": "Khoản mục 'Tiền và các khoản tương đương tiền' cuối kỳ (30.06.2024) là 4.105.467.069.785 VND."
+  },
+  {
+    "instruction": "So sánh 'Hàng tồn kho' tại ngày 30.06.2024 với 01.01.2024. Sự thay đổi này có ý nghĩa gì?",
+    "input": "2",
+    "output": "'Hàng tồn kho' tại ngày 30.06.2024 là 997.508.725.571 VND, tăng so với 703.384.543.264 VND tại ngày 01.01.2024. Sự thay đổi này cho thấy công ty đã tăng lượng hàng tồn kho, có thể là để chuẩn bị cho các hoạt động kinh doanh trong tương lai hoặc do nhu cầu sử dụng nguyên vật liệu, phụ tùng tăng lên."
+  },
+  {
+    "instruction": "Tỷ trọng của 'Các khoản phải thu ngắn hạn' trên tổng 'Tài sản ngắn hạn' là bao nhiêu phần trăm tại ngày 30.06.2024?",
+    "input": "2",
+    "output": "Tỷ trọng của 'Các khoản phải thu ngắn hạn' trên tổng 'Tài sản ngắn hạn' tại ngày 30.06.2024 là khoảng 85,37% (36.355.091.365.860 VND / 42.583.421.218.201 VND * 100%)."
+  },
+  {
+    "instruction": "Đánh giá mức độ thanh khoản của công ty dựa trên cơ cấu tài sản ngắn hạn.",
+    "input": "2",
+    "output": "Dựa trên cơ cấu tài sản ngắn hạn tại ngày 30.06.2024, một phần lớn tài sản ngắn hạn (khoảng 85,37%) nằm ở 'Các khoản phải thu ngắn hạn' (36.355.091.365.860 VND), trong khi 'Tiền và các khoản tương đương tiền' chiếm tỷ trọng nhỏ hơn (4.105.467.069.785 VND). Điều này cho thấy thanh khoản của công ty phụ thuộc nhiều vào khả năng thu hồi các khoản phải thu. Nếu việc thu hồi các khoản này chậm trễ, khả năng thanh toán các nghĩa vụ ngắn hạn của công ty có thể bị ảnh hưởng."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của sự giảm sút trong 'Dự phòng giảm giá chứng khoán kinh doanh'.",
+    "input": "2",
+    "output": "'Dự phòng giảm giá chứng khoán kinh doanh' giảm từ 486.450.000.000 VND tại ngày 01.01.2024 xuống còn 398.750.000.000 VND tại ngày 30.06.2024. Nguyên nhân của sự giảm sút này có thể là do giá trị thị trường của các chứng khoán kinh doanh đã tăng lên, làm giảm nhu cầu trích lập dự phòng hoặc cho phép hoàn nhập một phần dự phòng đã trích. Tác động của việc này là làm tăng giá trị thuần của 'Các khoản đầu tư tài chính ngắn hạn' và có thể góp phần vào lợi nhuận trong kỳ nếu khoản hoàn nhập được ghi nhận vào báo cáo kết quả hoạt động kinh doanh, qua đó cải thiện tình hình tài chính của công ty."
+  },
+  {
+    "instruction": "Dự báo tác động của việc tăng mạnh các khoản phải thu ngắn hạn đối với dòng tiền hoạt động kinh doanh của công ty.",
+    "input": "2",
+    "output": "Việc 'Các khoản phải thu ngắn hạn' tăng mạnh từ 34.243.067.480.800 VND lên 36.355.091.365.860 VND có nghĩa là công ty đã bán hàng hoặc cung cấp dịch vụ chịu nhiều hơn trong kỳ, nhưng chưa thu được tiền. Điều này làm tăng nhu cầu vốn lưu động và có thể tác động tiêu cực đến dòng tiền thuần từ hoạt động kinh doanh. Mặc dù doanh thu và lợi nhuận có thể tăng trên báo cáo kết quả kinh doanh (theo nguyên tắc dồn tích), nhưng thực tế dòng tiền thu về sẽ chậm hơn, buộc công ty phải tìm nguồn tài trợ khác để đáp ứng các nghĩa vụ thanh toán hoặc hoạt động hàng ngày. Nếu tình hình này kéo dài và khả năng thu hồi công nợ không hiệu quả, công ty có thể đối mặt với rủi ro thanh khoản."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn của Vietjet tại ngày 30.06.2024 là bao nhiêu VND?",
+    "input": "3",
+    "output": "Tổng tài sản dài hạn của Vietjet tại ngày 30.06.2024 là 49.171.800.733.814 VND."
+  },
+  {
+    "instruction": "Giá trị còn lại của 'Tài sản cố định hữu hình' tại ngày 30.06.2024 là bao nhiêu?",
+    "input": "3",
+    "output": "Giá trị còn lại của 'Tài sản cố định hữu hình' tại ngày 30.06.2024 là 4.973.593.702.925 VND."
+  },
+  {
+    "instruction": "So sánh 'Các khoản phải thu dài hạn' giữa hai kỳ báo cáo. Sự thay đổi này có ý nghĩa gì?",
+    "input": "3",
+    "output": "'Các khoản phải thu dài hạn' của Vietjet tăng từ 26.305.729.746.755 VND tại ngày 01.01.2024 lên 27.889.011.665.516 VND tại ngày 30.06.2024. Sự thay đổi này có thể cho thấy công ty đã mở rộng các giao dịch cho vay hoặc bán hàng trả chậm dài hạn, hoặc có các khoản phải thu khác cần thời gian dài để thu hồi. Điều này làm tăng tài sản dài hạn nhưng cũng có thể ảnh hưởng đến dòng tiền trong ngắn hạn và tăng rủi ro tín dụng nếu các khoản này không được quản lý chặt chẽ."
+  },
+  {
+    "instruction": "Tỷ lệ 'Tài sản cố định hữu hình' trên 'Tổng tài sản dài hạn' là bao nhiêu phần trăm tại ngày 30.06.2024?",
+    "input": "3",
+    "output": "Tỷ lệ 'Tài sản cố định hữu hình' trên 'Tổng tài sản dài hạn' tại ngày 30.06.2024 là khoảng 10,11% (4.973.593.702.925 VND / 49.171.800.733.814 VND * 100%)."
+  },
+  {
+    "instruction": "Đánh giá mức độ đầu tư vào tài sản dài hạn của công ty và ý nghĩa của việc này đối với hoạt động kinh doanh.",
+    "input": "3",
+    "

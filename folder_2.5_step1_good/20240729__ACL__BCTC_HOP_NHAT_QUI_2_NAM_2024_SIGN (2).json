@@ -1,0 +1,884 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 1.505.383.022.929 | 1.482.105.470.702 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.1 | 93.987.468.614 | 71.092.013.296 |\n| 1. Tiền | 111 | | 93.987.468.614 | 71.092.013.296 |\n| 2. Các khoản tương đương tiền | 112 | | - | - |\n| II. Các khoản đầu tư tài chính ngắn hạn | 120 | | - | - |\n| 1. Chứng khoán kinh doanh | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | - | - |\n| III. Các khoản phải thu ngắn hạn | 130 | | 265.908.979.129 | 221.041.322.948 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | V.3 | 263.268.723.910 | 227.928.973.324 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | V.4 | 15.907.850.465 | 6.455.461.411 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |\n| 6. Phải thu ngắn hạn khác | 136 | V.5a | 5.741.555.968 | 5.299.154.119 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | V.6 | 19.009.151.214 | 18.642.265.906 |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho | 140 | | 1.043.960.976.684 | 1.093.060.182.479 |\n| 1. Hàng tồn kho | 141 | V.7 | 1.043.960.976.684 | 1.093.060.182.479 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | - | - |\n| V. Tài sản ngắn hạn khác | 150 | | 101.525.598.502 | 96.911.951.979 |\n| 1. Chi phí trả trước ngắn hạn | 151 | V.8a | 318.887.499 | 440.055.556 |\n| 2. Thuế GTGT được khấu trừ | 152 | | 101.192.628.039 | 96.457.794.289 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | V.15 | 14.082.964 | 14.102.134 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối quý II/2024 của Công ty Cửu Long An Giang là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền và các khoản tương đương tiền của công ty là bao nhiêu vào cuối kỳ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã cổ phiếu của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối kỳ với đầu năm, sự thay đổi là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tỷ trọng các khoản phải thu ngắn hạn trong tổng tài sản ngắn hạn của công ty và ý nghĩa của nó.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích xu hướng biến động của tài sản ngắn hạn khác giữa cuối kỳ và đầu năm. Điều này nói lên điều gì về hoạt động của công ty?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| B. TÀI SẢN DÀI HẠN | 200 | | 253.204.293.349 | 267.074.703.725 |\n| I. Các khoản phải thu dài hạn | 210 | | - | - |\n| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | | - | - |\n| 6. Phải thu dài hạn khác | 216 | V.5b | - | - |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |\n| II. Tài sản cố định | 220 | | 237.301.930.030 | 250.496.126.972 |\n| 1. Tài sản cố định hữu hình | 221 | V.9 | 192.723.702.096 | 204.932.491.498 |\n| - Nguyên giá | 222 | | 688.813.043.353 | 685.960.526.421 |\n| - Giá trị hao mòn lũy kế | 223 | | 496.089.341.257 | 481.028.034.923 |\n| 2. Tài sản cố định thuê tài chính | 224 | | - | - |\n| - Nguyên giá | 225 | | - | - |\n| - Giá trị hao mòn lũy kế | 226 | | - | - |\n| 3. Tài sản cố định vô hình | 227 | V.10 | 44.578.227.934 | 45.563.635.474 |\n| - Nguyên giá | 228 | | 72.582.041.278 | 72.582.041.278 |\n| - Giá trị hao mòn lũy kế | 229 | | 28.003.813.344 | 27.018.405.804 |\n| III. Bất động sản đầu tư | 230 | | - | - |\n| - Nguyên giá | 231 | | - | - |\n| - Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | | 6.313.518.123 | 6.095.218.123 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | V.11 | 6.313.518.123 | 6.095.218.123 |\n| V. Đầu tư tài chính dài hạn | 250 | | 1.000.000.000 | 1.000.000.000 |\n| 1. Đầu tư vào công ty con | 251 | V.2 | - | - |\n| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | | - | - |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | V.2 | 3.600.000.000 | 3.600.000.000 |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | V.2 | 3.600.000.000 | 3.600.000.000 |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | 1.000.000.000 | 1.000.000.000 |\n| VI. Tài sản dài hạn khác | 260 | | 8.588.845.196 | 9.483.358.630 |\n| 1. Chi phí trả trước dài hạn | 261 | V.8b | 6.884.588.867 | 7.779.909.378 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | V.12 | 1.704.256.329 | 1.703.449.252 |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | - | - |\n| 4. Tài sản dài hạn khác | 268 | | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | | 1.758.587.316.278 | 1.749.180.174.427 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn cuối quý II/2024 của Công ty Cửu Long An Giang là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị tài sản cố định vô hình cuối kỳ so với đầu năm và cho biết sự thay đổi?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích mức độ đầu tư vào tài sản dài hạn của công ty. Điều này có ý nghĩa gì đối với chiến lược tăng trưởng dài hạn?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tỷ lệ tài sản cố định trên tổng tài sản. Tỷ lệ này cao hay thấp có thể ảnh hưởng như thế nào đến rủi ro hoạt động và khả năng sinh lời?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nếu chi phí xây dựng cơ bản dở dang tiếp tục tăng, điều này có thể ảnh hưởng như thế nào đến dòng tiền và lợi nhuận trong tương lai?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|---|---|---|---|---|\n| C. NỢ PHẢI TRẢ | 300 | | 953.959.626.178 | 950.038.273.743 |\n| I. Nợ ngắn hạn | 310 | | 953.959.626.178 | 950.038.273.743 |\n| 1. Phải trả người bán ngắn hạn | 311 | V.13a | 153.081.651.122 | 93.820.377.357 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | V.14 | 26.900.226.772 | 17.841.984.174 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V.15 | 1.195.808.176 | 4.560.522.902 |\n| 4. Phải trả người lao động | 314 | V.16 | 20.165.482.110 | 16.690.218.352 |\n| 5. Chi phí phải trả ngắn hạn | 315 | V.17 | 10.318.770.034 | 10.083.264.577 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9. Phải trả ngắn hạn khác | 319 | V.18a | 4.835.112.668 | 4.031.383.806 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | V.19a | 737.443.116.169 | 802.991.063.448 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | V.20 | 19.459.127 | 19.459.127 |\n| 13. Quỹ bình ổn giá | 323 | | - | - |\n| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |\n| II. Nợ dài hạn | 330 | | - | - |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7. Phải trả dài hạn khác | 337 | V.18b | - | - |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | V.19b | - | - |\n| 9. Trái phiếu chuyển đổi | 339 | | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | V.21 | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |\n| D. NGUỒN VỐN CHỦ SỞ HỮU | 400 | | 804.627.690.100 | 799.141.900.684 |\n| I. Vốn chủ sở hữu | 410 | | 804.627.690.100 | 799.141.900.684 |\n| 1. Vốn góp của chủ sở hữu | 411 | V.22 | 501.590.190.000 | 501.590.190.000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 501.590.190.000 | 501.590.190.000 |\n| - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | V.22 | 15.520.224.200 | 15.520.224.200 |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | | - | - |\n| 5. Cổ phiếu quỹ | 415 | | - | - |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 8. Quỹ đầu tư phát triển | 418 | V.22 | 14.880.252.832 | 14.880.252.832 |\n| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | - | - |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | - | - |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | V.22 | 272.637.023.068 | 267.151.233.652 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 267.151.233.652 | 267.151.233.652 |\n| - LNST chưa phân phối kỳ này | 421b | | 5.485.789.416 | - |\n| 12. Nguồn vốn đầu tư XDCB | 422 | | - | - |\n| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 1.758.587.316.278 | 1.749.180.174.427 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối quý II/2024 của Công ty Cửu Long An Giang là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị vốn góp của chủ sở hữu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản vay và nợ thuê tài chính ngắn hạn cuối kỳ với đầu năm. Số liệu này có ý nghĩa gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ lệ nợ ngắn hạn trên tổng nợ phải trả cuối kỳ. Tỷ lệ này cao hay thấp cho thấy điều gì về rủi ro tài chính của công ty?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích sự thay đổi trong lợi nhuận sau thuế chưa phân phối và ý nghĩa của nó đối với chính sách cổ tức và tích lũy vốn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính hệ số thanh toán hiện hành (Current Ratio) cuối kỳ dựa trên dữ liệu Nợ ngắn hạn và Tài sản ngắn hạn (từ chunk 1).",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Quý 2 năm 2024 (Năm nay) | Quý 2 năm 2023 (Năm trước) | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|---|---|---|---|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | VI.1 | 562.175.227.473 | 224.574.352.894 | 883.297.563.397 | 364.319.256.822 |\n| 2. Các khoản giảm trừ doanh thu | 02 | VI.2 | 222.303.550 | 60.271.389 | 5.261.236.948 | 94.553.778 |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | 561.952.923.923 | 224.514.081.505 | 878.036.326.449 | 364.224.703.044 |\n| 4. Giá vốn hàng bán | 11 | VI.3 | 514.427.276.570 | 184.181.546.424 | 791.246.234.423 | 297.578.521.283 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 47.525.647.353 | 40.332.535.081 | 86.790.092.026 | 66.646.181.761 |\n| 6. Doanh thu hoạt động tài chính | 21 | VI.4 | 7.133.558.342 | 701.471.559 | 10.093.935.394 | 2.182.174.582 |\n| 7. Chi phí tài chính | 22 | VI.5 | 7.909.567.482 | 14.181.720.193 | 15.566.104.156 | 23.520.933.165 |\n| Trong đó: chi phí lãi vay | 23 | | 7.780.766.778 | 13.902.368.584 | 15.238.633.916 | 22.530.483.984 |\n| 8. Chi phí bán hàng | 25 | VI.6 | 28.316.085.008 | 12.372.990.516 | 49.332.770.404 | 22.199.575.225 |\n| 9. Chi phí quản lý doanh nghiệp | 26 | VI.7 | 14.387.557.208 | 9.502.061.054 | 25.325.107.255 | 16.139.182.601 |\n| 10. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 4.045.995.997 | 4.977.234.877 | 6.660.045.605 | 6.968.665.352 |\n| 11. Thu nhập khác | 31 | VI.8 | 6.000 | - | 18.133 | 827.742.400 |\n| 12. Chi phí khác | 32 | VI.9 | 31.281.680 | 276.365.221 | 75.526.938 | 1.015.879.616 |\n| 13. Lợi nhuận khác | 40 | | 31.275.680 | 276.365.221 | 75.508.805 | 188.137.216 |\n| 14. Tổng lợi nhuận kế toán trước thuế | 50 | | 4.014.720.317 | 4.700.869.656 | 6.584.536.800 | 6.780.528.136 |\n| 15. Chi phí thuế thu nhập doanh nghiệp hiện hành | 51 | V.15 | 804.309.062 | 513.046.336 | 1.099.554.461 | 1.850.395.562 |\n| 16. Chi phí thuế thu nhập doanh nghiệp hoãn lại | 52 | VI.10 | 807.077 | 143.766.985 | 807.077 | 1.094.723.300 |\n| 17. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 3.211.218.332 | 4.331.590.305 | 5.485.789.416 | 6.024.855.874 |\n| 18. Lợi nhuận sau thuế của công ty mẹ | 60 | | 3.211.218.332 | 4.331.590.305 | 5.485.789.416 | 6.024.855.874 |\n| 19. Lợi nhuận sau thuế của cổ đông không kiểm soát | 60 | | - | - | - | - |\n| 20. Lãi cơ bản trên cổ phiếu | 70 | VI.11 | 64 | 86 | 109 | 120 |\n| 21. Lãi suy giảm trên cổ phiếu | 71 | | - | - | 109 | 120 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ lũy kế từ đầu năm đến cuối quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp của công ty mẹ trong Quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã chứng khoán của Công ty Cửu Long An Giang là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp Quý II/2024 với Quý II/2023. Tình hình kinh doanh có cải thiện không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự biến động của chi phí tài chính và chi phí lãi vay giữa các kỳ. Điều này ảnh hưởng thế nào đến lợi nhuận?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận gộp (Gross Profit Margin) lũy kế đến cuối Quý II/2024 và so sánh với cùng kỳ năm trước. Đánh giá hiệu quả hoạt động kinh doanh cốt lõi của công ty.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Dựa trên các chỉ tiêu lợi nhuận, hãy đánh giá tổng thể hiệu quả hoạt động kinh doanh của công ty trong quý II/2024 so với quý II/2023.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất\nLoại nội dung: Bảng\n| CHỈ TIÊU | Mã số | Thuyết minh | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|---|---|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | | |\n| 1. Lợi nhuận trước thuế | 01 | | 6.584.536.800 | 6.780.528.136 |\n| 2. Điều chỉnh cho các khoản | | | | |\n| - Khấu hao TSCĐ và BĐSĐT | 02 | V.9, V.10 | 16.046.713.874 | 18.509.818.839 |\n| - Các khoản dự phòng | 03 | V.2, V.6 | 366.885.308 | 8.291.400 |\n| - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục gốc ngoại tệ | 04 | VI.4 | 2.915.918.397 | 218.892.678 |\n| - Lãi, lỗ từ hoạt động đầu tư | 05 | | - | 2.352.890.789 |\n| - Chi phí lãi vay | 06 | VI.5 | 17.341.551.730 | 22.530.483.984 |\n| - Các khoản điều chỉnh khác | 07 | | - | - |\n| 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 08 | | 35.070.878.526 | 48.048.607.746 |\n| 4. Tăng, giảm các khoản phải thu | 09 | | 27.751.425.114 | 127.423.760.101 |\n| 5. Tăng, giảm hàng tồn kho | 10 | | 49.099.205.795 | - |\n| 6. Tăng, giảm các khoản phải trả (Không kể lãi vay phải trả, thuế TNDN phải nộp) | 11 | | 54.633.653.481 | 113.963.509.327 |\n| 7. Tăng, giảm chi phí trả trước | 12 | | 1.016.488.568 | 662.704.926 |\n| 8. Tăng, giảm chứng khoán kinh doanh | 13 | | - | - |\n| 9. Tiền lãi vay đã trả | 14 | | 16.454.014.784 | 21.880.741.058 |\n| 10. Thuế thu nhập doanh nghiệp đã nộp | 15 | V.15 | 4.347.392.942 | 16.450.372.438 |\n| 11. Tiền thu khác từ hoạt động kinh doanh | 16 | | - | - |\n| 12. Tiền chi khác cho hoạt động kinh doanh | 17 | | - | - |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | | 91.267.393.530 | 205.505.265.537 |\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | | |\n| 1. Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác | 21 | V.9, V.11 | 3.070.816.932 | 8.154.985.018 |\n| 2. Tiền thu từ thanh lý, nhượng bán tài sản cố định và các tài sản dài hạn khác | 22 | | - | - |\n| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | | - | - |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | | - | - |\n| 5. Tiền chi đầu tư, góp vốn vào đơn vị khác | 25 | | - | - |\n| 6. Tiền thu hồi đầu tư, góp vốn vào đơn vị khác | 26 | | - | - |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | | 249.972.975 | - |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | | 2.820.843.957 | 8.154.985.018 |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận góp vốn của chủ sở hữu | 31 | | - | - |\n| 2. Tiền trả lại góp vốn cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | 32 | | - | - |\n| 3. Tiền thu từ đi vay | 33 | VII.2 | 934.991.211.031 | 817.723.689.566 |\n| 4. Tiền trả nợ gốc vay | 34 | VII.3 | 1.000.539.158.310 | 583.211.660.792 |\n| 5. Tiền trả nợ gốc thuê tài chính | 35 | | - | - |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | V.22d | - | 17.620.639.575 |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | | 65.547.947.279 | 236.891.389.199 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | | 22.898.602.294 | 3.231.138.644 |\n| Tiền và tương đương tiền đầu kỳ | 60 | | 71.092.013.296 | 38.066.909.586 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | | 3.146.976 | 21.092.853 |\n| Tiền và tương đương tiền cuối kỳ | 70 | V.1 | 93.987.468.614 | 41.319.140.083 |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế từ đầu năm đến cuối quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền và tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty đã trả bao nhiêu tiền lãi vay lũy kế từ đầu năm đến cuối quý II/2024?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động kinh doanh giữa năm nay và năm trước. Điều này cho thấy điều gì về khả năng tạo tiền từ hoạt động cốt lõi?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự thay đổi trong lưu chuyển tiền thuần từ hoạt động đầu tư. Công ty đang mở rộng hay thu hẹp đầu tư?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá khả năng thanh toán nợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động tài chính và các khoản vay/trả nợ gốc vay.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nếu công ty tiếp tục có lưu chuyển tiền thuần từ hoạt động kinh doanh giảm mạnh như năm nay so với năm trước, những rủi ro nào có thể phát sinh?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Đặc điểm hoạt động, Năm tài chính, Chuẩn mực và Chế độ kế toán áp dụng\nLoại nội dung: Text\nI. ĐẶC ĐIỂM HOẠT ĐỘNG\n1. Hình thức sở hữu vốn\nCông ty Cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang sau đây gọi tắt là Công ty hay Công ty mẹ là công ty cổ phần.\n2. Lĩnh vực kinh doanh\nLĩnh vực kinh doanh của Công ty là sản xuất công nghiệp.\n3. Ngành nghề kinh doanh\nHoạt động kinh doanh chính của Công ty là Chế biến, bảo quản thủy sản và sản phẩm từ thủy sản; Mua bán cá và thủy sản; Nuôi trồng thủy sản; Chế biến thức ăn thủy sản; Chế biến thức ăn gia súc.\n4. Chu kỳ sản xuất, kinh doanh thông thường\nChu kỳ sản xuất kinh doanh thông thường của Công ty không quá 12 tháng.\n5. Đặc điểm hoạt động của Công ty trong kỳ có ảnh hưởng đến Báo cáo tài chính\nTheo Nghị quyết số 06/NQ/HĐQT-CLAG/2015 ngày 03 tháng 4 năm 2015 của Hội đồng quản trị, Hội đồng quản trị đã thông qua việc nhận chuyển nhượng toàn bộ phần vốn góp vào Công ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á và sau khi nhận chuyển nhượng Công ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á sẽ là Công ty con của Công ty.\n6. Cấu trúc Tập đoàn\nTập đoàn bao gồm Công ty mẹ và 01 công ty con chịu sự kiểm soát của Công ty mẹ.\n6a. Thông tin về tái cấu trúc Tập đoàn\nTrong kỳ, Tập đoàn không phát sinh việc mua thêm, thanh lý hay thoái vốn tại công ty con.\n6b. Công ty con được hợp nhất\nCông ty chỉ đầu tư vào công ty con là Công ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á có trụ sở chính tại lô B khu công nghiệp Bình Long, xã Bình Long, huyện Châu Phú, tỉnh An Giang. Hoạt động kinh doanh chính của công ty con này là chế biến, bảo quản thủy sản và sản phẩm từ thủy sản, mua bán cá và thủy sản, dịch vụ gia công thủy sản. Tại ngày kết thúc kỳ kế toán, tỷ lệ lợi ích và tỷ lệ quyền biểu quyết của Công ty tại công ty con này là 100%.\n7. Tuyên bố về khả năng so sánh thông tin trên Báo cáo tài chính\nNhư đã trình bày tại thuyết minh số III.1, từ ngày 01 tháng 01 năm 2015 Tập đoàn áp dụng Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính cũng như Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính thay thế cho phần XIII Thông tư số 161/2007/TT-BTC ngày 31 tháng 12 năm 2007 của Bộ Tài chính hướng dẫn lập và trình bày Báo cáo tài chính hợp nhất theo Chuẩn mực kế toán Việt Nam số 25 Báo cáo tài chính hợp nhất và kế toán các khoản đầu tư vào công ty con.\nNăm 2015, Tập đoàn mới bắt đầu lập trình bày Báo cáo tài chính hợp nhất do mới mua công ty con từ ngày 31 tháng 3 năm 2015.\n8. Nhân viên\nTại ngày kết thúc kỳ kế toán Công ty có 1.057 công nhân viên đang làm việc, số đầu năm là 1.322 công nhân viên.\nII. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Năm tài chính\nNăm tài chính của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.\n2. Đơn vị tiền tệ sử dụng trong kế toán\nĐơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND) do việc thu, chi chủ yếu được thực hiện bằng đơn vị tiền tệ VND.\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chế độ kế toán áp dụng\nNgày 22 tháng 12 năm 2014, Bộ Tài chính đã ban hành Thông tư số 200/2014/TT-BTC hướng dẫn Chế độ kế toán Doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính cũng như Thông tư số 202/2014/TT-BTC thay thế cho phần XIII Thông tư số 161/2007/TT-BTC ngày 31 tháng 12 năm 2007 của Bộ Tài chính hướng dẫn lập và trình bày Báo cáo tài chính hợp nhất theo Chuẩn mực kế toán Việt Nam số 25 Báo cáo tài chính hợp nhất và kế toán các khoản đầu tư vào công ty con. Các Thông tư này có hiệu lực áp dụng cho năm tài chính bắt đầu vào hoặc sau ngày 01 tháng 01 năm 2015. Tập đoàn áp dụng các Chuẩn mực kế toán, các Thông tư này và các Thông tư khác hướng dẫn thực hiện Chuẩn mực kế toán của Bộ Tài chính trong việc lập và trình bày Báo cáo tài chính hợp nhất giữa niên độ.\n2. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán\nBan Tổng Giám đốc Công ty đảm bảo đã tuân thủ yêu cầu của các Chuẩn mực kế toán, Chế độ kế toán Doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014, Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 cũng như các Thông tư khác hướng dẫn thực hiện Chuẩn mực kế toán của Bộ Tài chính trong việc lập Báo cáo tài chính hợp nhất giữa niên độ.",
+    "questions": [
+      {
+        "question": "Hoạt động kinh doanh chính của Công ty Cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty con được hợp nhất của Tập đoàn là công ty nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tính đến ngày kết thúc kỳ kế toán, số lượng công nhân viên của Công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Đơn vị tiền tệ sử dụng trong kế toán của Công ty là gì và tại sao?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích lý do tại sao Tập đoàn mới bắt đầu lập Báo cáo tài chính hợp nhất từ năm 2015.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Việc áp dụng các Thông tư mới về chế độ kế toán doanh nghiệp từ năm 2015 có ý nghĩa như thế nào đối với tính minh bạch và khả năng so sánh của báo cáo tài chính?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Các chính sách kế toán áp dụng (Phần 1)\nLoại nội dung: Text\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở lập Báo cáo tài chính hợp nhất\nBáo cáo tài chính hợp nhất được lập trên cơ sở kế toán dồn tích trừ các thông tin liên quan đến các luồng tiền.\n2. Cơ sở hợp nhất\nBáo cáo tài chính hợp nhất giữa niên độ bao gồm Báo cáo tài chính giữa niên độ của Công ty mẹ và Báo cáo tài chính giữa niên độ của công ty con.\nCông ty con là đơn vị chịu sự kiểm soát của Công ty mẹ. Sự kiểm soát tồn tại khi Công ty mẹ có khả năng trực tiếp hay gián tiếp chi phối các chính sách tài chính và hoạt động của công ty con để thu được các lợi ích kinh tế từ các hoạt động này. Khi xác định quyền kiểm soát có tính đến quyền biểu quyết tiềm năng phát sinh từ các quyền chọn mua hoặc các công cụ nợ và công cụ vốn có thể chuyển đổi thành cổ phiếu phổ thông tại ngày kết thúc kỳ kế toán.\nKết quả hoạt động kinh doanh của các công ty con được mua lại hoặc bán đi trong kỳ được trình bày trong Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ từ ngày mua hoặc cho đến ngày bán khoản đầu tư ở công ty con đó.\nBáo cáo tài chính giữa niên độ của công ty mẹ và công ty con sử dụng để hợp nhất được lập cho cùng một kỳ kế toán và áp dụng các chính sách kế toán thống nhất cho các giao dịch và sự kiện cùng loại trong những hoàn cảnh tương tự. Trong trường hợp chính sách kế toán của công ty con khác với chính sách kế toán áp dụng thống nhất trong Tập đoàn thì Báo cáo tài chính của công ty con sẽ có những điều chỉnh thích hợp trước khi sử dụng cho việc lập Báo cáo tài chính hợp nhất giữa niên độ.\nSố dư các tài khoản trên Bảng cân đối kế toán giữa các công ty trong cùng Tập đoàn, các giao dịch nội bộ, các khoản lãi nội bộ chưa thực hiện phát sinh từ các giao dịch này phải được loại trừ hoàn toàn. Các khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ cũng được loại bỏ, trừ khi chi phí tạo nên khoản lỗ đó không thể thu hồi được và được trình bày ở khoản mục riêng trên Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ và trên Bảng cân đối kế toán hợp nhất giữa niên độ thuộc phần vốn chủ sở hữu. Lợi ích của cổ đông không kiểm soát bao gồm giá trị các lợi ích của cổ đông không kiểm soát tại ngày hợp nhất kinh doanh ban đầu và phần lợi ích của cổ đông không kiểm soát trong biến động của vốn chủ sở hữu kể từ ngày hợp nhất kinh doanh. Các khoản lỗ phát sinh tại công ty con được phân bổ tương ứng với phần sở hữu của cổ đông không kiểm soát, kể cả trường hợp số lỗ đó lớn hơn phần sở hữu của cổ đông không kiểm soát trong tài sản thuần của công ty con.\n3. Các giao dịch bằng ngoại tệ\nCác giao dịch phát sinh bằng ngoại tệ được chuyển đổi theo tỷ giá tại ngày phát sinh giao dịch, số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán được quy đổi theo tỷ giá tại ngày này.\nChênh lệch tỷ giá phát sinh trong kỳ từ các giao dịch bằng ngoại tệ được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính. Chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán sau khi bù trừ chênh lệch tăng và chênh lệch giảm được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính.\nTỷ giá sử dụng để quy đổi các giao dịch phát sinh bằng ngoại tệ là tỷ giá giao dịch thực tế tại thời điểm phát sinh giao dịch. Tỷ giá giao dịch thực tế đối với các giao dịch bằng ngoại tệ được xác định như sau:\n- Tỷ giá giao dịch thực tế khi mua bán ngoại tệ (hợp đồng mua bán ngoại tệ giao ngay, hợp đồng kỳ hạn): tỷ giá ký kết trong hợp đồng mua, bán ngoại tệ giữa Tập đoàn và ngân hàng.\n- Đối với nợ phải thu: tỷ giá mua của ngân hàng thương mại nơi Công ty chỉ định khách hàng thanh toán tại thời điểm giao dịch phát sinh.\n- Đối với nợ phải trả: tỷ giá bán của ngân hàng thương mại nơi Công ty dự kiến giao dịch tại thời điểm giao sinh.\n- Đối với các giao dịch mua sắm tài sản hoặc các khoản chi phí được thanh toán ngay bằng ngoại tệ không qua các tài khoản phải trả: tỷ giá mua của ngân hàng thương mại nơi Tập đoàn thực hiện thanh toán.\nTỷ giá sử dụng để đánh giá lại số dư các khoản mục tiền tệ có gốc ngoại tệ tại ngày kết thúc kỳ kế toán được xác định theo nguyên tắc sau:\n- Đối với các khoản ngoại tệ gửi ngân hàng: tỷ giá mua ngoại tệ của ngân hàng nơi Tập đoàn mở tài khoản ngoại tệ.\n- Đối với các khoản mục tiền tệ có gốc ngoại tệ được phân loại là tài sản khác: tỷ giá mua ngoại tệ của Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh An Giang (Ngân hàng Tập đoàn thường xuyên có giao dịch).\n- Đối với các khoản mục tiền tệ có gốc ngoại tệ được phân loại là nợ phải trả: tỷ giá bán ngoại tệ của Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh An Giang (Ngân hàng Tập đoàn thường xuyên có giao dịch).\n4. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt, tiền gửi ngân hàng không kỳ hạn. Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi không quá 3 tháng kể từ ngày đầu tư, có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có rủi ro trong việc chuyển đổi thành tiền tại thời điểm báo cáo.",
+    "questions": [
+      {
+        "question": "Báo cáo tài chính hợp nhất được lập trên cơ sở kế toán nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty con được định nghĩa như thế nào trong báo cáo này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào thì các khoản lỗ chưa thực hiện từ giao dịch nội bộ được loại bỏ khỏi báo cáo hợp nhất?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chênh lệch tỷ giá phát sinh từ giao dịch bằng ngoại tệ được ghi nhận vào đâu trong báo cáo tài chính?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc áp dụng chính sách kế toán thống nhất cho công ty con và công ty mẹ trong việc lập báo cáo hợp nhất.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Giải thích các nguyên tắc xác định tỷ giá hối đoái cho nợ phải thu và nợ phải trả bằng ngoại tệ. Tại sao lại có sự khác biệt?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích các tiêu chí để một khoản đầu tư ngắn hạn được coi là tương đương tiền. Điều này ảnh hưởng như thế nào đến khả năng thanh khoản của công ty?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Các chính sách kế toán áp dụng (Phần 2)\nLoại nội dung: Text\n5. Các khoản đầu tư tài chính\nCác khoản đầu tư vào công cụ vốn của đơn vị khác\nĐầu tư vào công cụ vốn của đơn vị khác bao gồm các khoản đầu tư công cụ vốn nhưng Công ty không có quyền kiểm soát, đồng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên được đầu tư.\nCác khoản đầu tư vào công cụ vốn của đơn vị khác được ghi nhận ban đầu theo giá gốc, bao gồm giá mua hoặc khoản góp vốn cộng các chi phí trực tiếp liên quan đến hoạt động đầu tư. Cổ tức và lợi nhuận của các kỳ trước khi khoản đầu tư được mua được hạch toán giảm giá trị của chính khoản đầu tư đó. Cổ tức và lợi nhuận của các kỳ sau khi khoản đầu tư được mua được ghi nhận doanh thu. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được.\nDự phòng tổn thất cho các khoản đầu tư vào công cụ vốn của đơn vị khác được trích lập như sau:\n- Đối với khoản đầu tư vào cổ phiếu niêm yết hoặc giá trị hợp lý khoản đầu tư được xác định tin cậy, việc lập dự phòng dựa trên giá trị thị trường của cổ phiếu.\n- Đối với khoản đầu tư không xác định được giá trị hợp lý tại thời điểm báo cáo, việc lập dự phòng được thực hiện căn cứ vào khoản lỗ của bên được đầu tư với mức trích lập bằng chênh lệch giữa vốn góp thực tế của các bên tại đơn vị khác và vốn chủ sở hữu thực có nhân với tỷ lệ góp vốn của Công ty so với tổng số vốn góp thực tế của các bên tại đơn vị khác.\nTăng, giảm số dự phòng tổn thất đầu tư vào công cụ vốn của đơn vị khác cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí tài chính.\n6. Các khoản phải thu\nCác khoản nợ phải thu được trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi.\nViệc phân loại các khoản phải thu là phải thu khách hàng và phải thu khác được thực hiện theo nguyên tắc sau:\n- Phải thu của khách hàng: phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua bán giữa Tập đoàn và người mua là đơn vị độc lập với Tập đoàn, bao gồm cả các khoản phải thu về tiền bán hàng xuất khẩu ủy thác cho đơn vị khác.\n- Phải thu khác: phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua - bán.\nDự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào tuổi nợ quá hạn của các khoản nợ hoặc dự kiến mức tổn thất có thể xảy ra, cụ thể như sau:\n- Đối với nợ phải thu quá hạn thanh toán:\n30% giá trị đối với khoản nợ phải thu quá hạn từ trên 06 tháng đến dưới 01 năm.\n50% giá trị đối với khoản nợ phải thu quá hạn từ 01 năm đến dưới 02 năm.\n70% giá trị đối với khoản nợ phải thu quá hạn từ 02 năm đến dưới 03 năm.\n100% giá trị đối với khoản nợ phải thu quá hạn từ 03 năm trở lên.\n- Đối với nợ phải thu chưa quá hạn thanh toán nhưng khó có khả năng thu hồi: căn cứ vào dự kiến mức tổn thất để lập dự phòng.\nTăng, giảm số dư dự phòng nợ phải thu khó đòi cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí quản lý doanh nghiệp.\n7. Hàng tồn kho\nHàng tồn kho được ghi nhận theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được.\nGiá gốc hàng tồn kho được xác định như sau:\n- Nguyên vật liệu, hàng hóa: bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\n- Thành phẩm: bao gồm chi phí nguyên vật liệu, nhân công trực tiếp và chi phí sản xuất chung có liên quan tiếp được phân bổ dựa trên mức độ hoạt động bình thường.\n- Chi phí sản xuất kinh doanh dở dang: chỉ bao gồm chi phí nguyên vật liệu chính.\nGiá gốc của hàng tồn kho được tính theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.\nGiá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong kỳ sản xuất, kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng.\nDự phòng giảm giá hàng tồn kho được lập cho từng mặt hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào giá vốn hàng bán.",
+    "questions": [
+      {
+        "question": "Công ty ghi nhận các khoản đầu tư vào công cụ vốn của đơn vị khác theo giá trị nào ban đầu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá gốc hàng tồn kho bao gồm những loại chi phí nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào thì cổ tức nhận được từ các khoản đầu tư được ghi nhận vào doanh thu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nếu một khoản nợ phải thu quá hạn 2 năm, công ty sẽ trích lập dự phòng bao nhiêu phần trăm giá trị khoản nợ đó?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của chính sách dự phòng phải thu khó đòi đối với sức khỏe tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của việc ghi nhận hàng tồn kho theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được. Điều này ảnh hưởng thế nào đến lợi nhuận và bảng cân đối kế toán?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tại sao việc tăng, giảm số dư dự phòng nợ phải thu khó đòi lại được ghi nhận vào chi phí quản lý doanh nghiệp, trong khi dự phòng giảm giá hàng tồn kho lại ghi nhận vào giá vốn hàng bán?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Các chính sách kế toán áp dụng (Phần 3)\nLoại nội dung: Text\n8. Chi phí trả trước\nChi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán. Chi phí trả trước của Tập đoàn chỉ gồm: Công cụ, dụng cụ.\nCác công cụ, dụng cụ đã đưa vào sử dụng được phân bổ vào chi phí trong năm theo phương pháp đường thẳng với thời gian phân bổ không quá 03 năm.\n9. Tài sản thuê hoạt động\nThuê tài sản được phân loại là thuê hoạt động nếu phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu tài sản thuộc về người cho thuê. Chi phí thuê hoạt động được phản ánh vào chi phí theo phương pháp đường thẳng cho suốt thời hạn thuê tài sản, không phụ thuộc vào phương thức thanh toán tiền thuê.\n10. Tài sản cố định hữu hình\nTài sản cố định hữu hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà Tập đoàn phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí phát sinh không thỏa mãn điều kiện trên được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ.\nKhi tài sản cố định hữu hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ.\nTài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính, số năm khấu hao của các loại tài sản cố định hữu hình như sau:\n| Loại tài sản cố định | Số năm |\n|---|---|\n| Nhà cửa, vật kiến trúc | 05 - 35 |\n| Máy móc và thiết bị | 05 - 15 |\n| Phương tiện vận tải, truyền dẫn | 05 - 10 |\n| Thiết bị, dụng cụ quản lý | 05 - 10 |\n11. Tài sản cố định vô hình\nTài sản cố định vô hình được thể hiện theo nguyên giá trừ hao mòn lũy kế.\nNguyên giá tài sản cố định vô hình bao gồm toàn bộ các chi phí mà Tập đoàn phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Chi phí liên quan đến tài sản cố định vô hình phát sinh sau khi ghi nhận ban đầu được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ trừ khi các chi phí này gắn liền với một tài sản cố định vô hình cụ thể và làm tăng lợi ích kinh tế từ các tài sản này.\nKhi tài sản cố định vô hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ. Tài sản cố định vô hình của Tập đoàn bao gồm:\nQuyền sử dụng đất\nQuyền sử dụng đất là toàn bộ các chi phí thực tế Tập đoàn đã chi ra có liên quan trực tiếp tới đất sử dụng, bao gồm tiền chi ra để có quyền sử dụng đất, chi phí cho đền bù, giải phóng mặt bằng, san lấp mặt bằng, lệ phí trước bạ... Quyền sử dụng đất có thời hạn được trích khấu hao theo thời hạn sử dụng, quyền sử dụng đất không xác định thời hạn không được tính khấu hao.\nChương trình phần mềm\nChi phí liên quan đến các chương trình phần mềm máy tính không phải là một bộ phận gắn kết với phần cứng có liên quan được vốn hoá. Nguyên giá của phần mềm máy tính là toàn bộ các chi phí mà Tập đoàn đã chi ra tính đến thời điểm đưa phần mềm vào sử dụng. Phần mềm máy tính được khấu hao theo phương pháp đường thẳng trong 05 năm.",
+    "questions": [
+      {
+        "question": "Các công cụ, dụng cụ đã đưa vào sử dụng được phân bổ vào chi phí trong thời gian tối đa bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá tài sản cố định hữu hình bao gồm những chi phí nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian khấu hao cho máy móc và thiết bị là bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào thì chi phí phát sinh sau ghi nhận ban đầu được ghi tăng nguyên giá tài sản cố định?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân biệt cách hạch toán chi phí sử dụng đất có thời hạn và không thời hạn. Điều này có ý nghĩa gì đối với việc đánh giá giá trị tài sản của công ty?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc áp dụng phương pháp khấu hao đường thẳng đến báo cáo tài chính của công ty. Phương pháp này có lợi hay bất lợi trong các điều kiện kinh doanh khác nhau?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "So sánh nguyên tắc ghi nhận và khấu hao tài sản cố định hữu hình và vô hình. Nêu các điểm tương đồng và khác biệt chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Các chính sách kế toán áp dụng (Phần 4)\nLoại nội dung: Text\n12. Chi phí xây dựng cơ bản dở dang\nChi phí xây dựng cơ bản dở dang phản ánh các chi phí liên quan trực tiếp (bao gồm cả chi phí lãi vay có liên quan phù hợp với chính sách kế toán của Tập đoàn) đến các tài sản đang trong quá trình xây dựng, máy móc thiết bị đang lắp đặt để phục vụ cho mục đích sản xuất cũng như chi phí liên quan đến việc sửa chữa tài sản cố định đang thực hiện. Các tài sản này được ghi nhận theo giá gốc và không được tính khấu hao.\n13. Các khoản nợ phải trả và chi phí phải trả\nCác khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả.\nViệc phân loại các khoản phải trả là phải trả người bán, chi phí phải trả và phải trả khác được thực hiện theo nguyên tắc sau:\n- Phải trả người bán: phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập với Tập đoàn, bao gồm cả các khoản phải trả khi nhập khẩu thông qua người nhận ủy thác.\n- Chi phí phải trả: phản ánh các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước.\n- Phải trả khác: phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.\n14. Vốn chủ sở hữu\nVốn góp của chủ sở hữu\nVốn góp của chủ sở hữu được ghi nhận theo số vốn thực tế đã góp của các cổ đông.\nThặng dư vốn cổ phần\nThặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu, phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn. Chi phí trực tiếp liên quan đến việc phát hành bổ sung cổ phiếu và lãi phát hành cổ phiếu quỹ được ghi giảm thặng dư vốn cổ phần.\n15. Phân phối lợi nhuận\nLợi nhuận sau thuế thu nhập doanh nghiệp được phân phối cho các cổ đông sau khi đã trích lập các quỹ theo Điều lệ của Công ty cũng như các quy định của pháp luật và đã được Đại hội đồng cổ đông phê duyệt.\nViệc phân phối lợi nhuận cho các cổ đông được cân nhắc đến các khoản mục phi tiền tệ nằm trong lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến luồng tiền và khả năng chi trả cổ tức như lãi do đánh giá lại tài sản mang đi góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác.\nCổ tức được ghi nhận là nợ phải trả khi được Đại hội đồng cổ đông phê duyệt.\n16. Ghi nhận doanh thu và thu nhập\nDoanh thu bán thành phẩm\nDoanh thu bán thành phẩm được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Tập đoàn đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.\n- Tập đoàn không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n- Doanh thu được xác định tương đối chắc chắn. Khi hợp đồng quy định người mua được quyền trả lại sản phẩm, hàng hoá, đã mua theo những điều kiện cụ thể, doanh thu chỉ được ghi nhận khi những điều kiện cụ thể đó không còn tồn tại và người mua không được quyền trả lại sản phẩm, hàng hoá trừ trường hợp khách hàng có quyền trả lại hàng hóa dưới hình thức đổi lại để lấy hàng hóa, dịch vụ khác.\n- Tập đoàn đã hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.\nTiền lãi\nTiền lãi được ghi nhận trên cơ sở thời gian và lãi suất thực tế từng kỳ.\nCổ tức và lợi nhuận được chia\nCổ tức và lợi nhuận được chia được ghi nhận khi Tập đoàn được quyền nhận cổ tức hoặc lợi nhuận từ việc góp vốn. Cổ tức được nhận bằng cổ phiếu chỉ được theo dõi số lượng cổ phiếu tăng thêm, không ghi nhận giá trị cổ phiếu nhận được.",
+    "questions": [
+      {
+        "question": "Khi nào thì chi phí xây dựng cơ bản dở dang được tính khấu hao?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thặng dư vốn cổ phần được ghi nhận dựa trên cơ sở nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào thì doanh thu bán thành phẩm được ghi nhận?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Việc phân phối lợi nhuận cho cổ đông được quyết định dựa trên những yếu tố nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt giữa 'Phải trả người bán', 'Chi phí phải trả' và 'Phải trả khác'. Tại sao lại cần phân loại như vậy?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản mục phi tiền tệ trong lợi nhuận sau thuế chưa phân phối đến khả năng chi trả cổ tức của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Các chính sách kế toán áp dụng (Phần 5)\nLoại nội dung: Text\n17. Các khoản giảm trừ doanh thu\nCác khoản giảm trừ doanh thu bao gồm giảm giá hàng bán, hàng bán bị trả lại phát sinh cùng kỳ tiêu thụ sản phẩm được điều chỉnh giảm doanh thu của kỳ phát sinh.\nTrường hợp sản phẩm đã tiêu thụ từ các năm trước, đến kỳ này mới phát sinh giảm giá hàng bán, trả lại thì được ghi giảm doanh thu theo nguyên tắc:\n- Nếu khoản giảm giá, trả lại phát sinh trước thời điểm phát hành Báo cáo tài chính giữa niên độ: ghi giảm doanh thu trên Báo cáo tài chính giữa niên độ của kỳ này.\n- Nếu khoản giảm giá, trả lại phát sinh sau thời điểm phát hành Báo cáo tài chính giữa niên độ: ghi giảm doanh thu trên Báo cáo tài chính giữa niên độ của kỳ sau.\n18. Chi phí đi vay\nChi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay.\nChi phí đi vay được ghi nhận vào chi phí khi phát sinh. Trường hợp chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán thì chi phí đi vay này được tính vào giá trị của tài sản đó. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng. Các khoản thu nhập phát sinh từ việc đầu tư tạm thời các khoản vay được ghi giảm nguyên giá tài sản có liên quan.\nĐối với các khoản vốn vay chung trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang thì chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể.\n19. Các khoản chi phí\nChi phí là những khoản làm giảm lợi ích kinh tế được ghi nhận tại thời điểm giao dịch phát sinh hoặc khi có khả năng tương đối chắc chắn sẽ phát sinh trong tương lai không phân biệt đã chi tiền hay chưa.\nCác khoản chi phí và khoản doanh thu do nó tạo ra phải được ghi nhận đồng thời theo nguyên tắc phù hợp. Trong trường hợp nguyên tắc phù hợp xung đột với nguyên tắc thận trọng, chi phí được ghi nhận căn cứ vào bản chất và quy định của các chuẩn mực kế toán để đảm bảo phản ánh giao dịch một cách trung thực, hợp lý.\n20. Thuế thu nhập doanh nghiệp\nChi phí thuế thu nhập doanh nghiệp bao gồm thuế thu nhập hiện hành và thuế thu nhập hoãn lại.\nThuế thu nhập hiện hành\nThuế thu nhập hiện hành là khoản thuế được tính dựa trên thu nhập tính thuế. Thu nhập tính thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán, các chi phí không được trừ cũng như điều chỉnh các khoản thu nhập không phải chịu thuế và các khoản lỗ được chuyển.\nThuế thu nhập hoãn lại\nThuế thu nhập hoãn lại là khoản thuế thu nhập doanh nghiệp số phải nộp hoặc số được hoàn lại do chênh lệch tạm thời giữa giá trị ghi sổ của tài sản và nợ phải trả cho mục đích lập Báo cáo tài chính và cơ sở tính thuế thu nhập. Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế. Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ này. Giá trị ghi sổ của tài sản thuế thu nhập doanh nghiệp hoãn lại được xem xét lại vào ngày kết thúc kỳ kế toán và sẽ được ghi giảm đến mức đảm bảo chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng. Các tài sản thuế thu nhập doanh nghiệp hoãn lại chưa được ghi nhận trước đây được xem xét lại vào ngày kết thúc kỳ kế toán và được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế để có thể sử dụng các tài sản thuế thu nhập hoãn lại chưa ghi nhận này.\nTài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho năm tài sản được thu hồi hay nợ phải trả được thanh toán dựa trên các mức thuế suất có hiệu lực tại ngày kết thúc kỳ kế toán. Thuế thu nhập hoãn lại được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh và chỉ ghi trực tiếp vào vốn chủ sở hữu khi khoản thuế đó liên quan đến các khoản mục được ghi thẳng vào vốn chủ sở hữu.\nTài sản thuế thu nhập hoãn lại và nợ thuế thu nhập hoãn lại phải trả được bù trừ khi:\n- Tập đoàn có quyền hợp pháp được bù trừ giữa tài sản thuế thu nhập hiện hành với thuế thu nhập hiện hành phải nộp và\n- Các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả này liên quan đến thuế thu nhập doanh nghiệp được quản lý bởi cùng một cơ quan thuế đối với cùng một đơn vị chịu thuế hoặc Tập đoàn dự định thanh toán thuế thu nhập hiện hành phải trả và tài sản thuế thu nhập hiện hành trên cơ sở thuần hoặc thu hồi tài sản đồng thời với việc thanh toán nợ phải trả trong từng kỳ tương lai khi các khoản trọng yếu của thuế thu nhập hoãn lại phải trả hoặc tài sản thuế thu nhập hoãn lại được thanh toán hoặc thu hồi.",
+    "questions": [
+      {
+        "question": "Các khoản giảm trừ doanh thu bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào thì chi phí đi vay được tính vào giá trị của tài sản?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thành phần của chi phí thuế thu nhập doanh nghiệp là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Sự khác biệt giữa thuế thu nhập hiện hành và thuế thu nhập hoãn lại là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích nguyên tắc ghi nhận các khoản chi phí và nguyên tắc phù hợp trong kế toán. Tại sao nguyên tắc thận trọng lại quan trọng khi có xung đột?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá các điều kiện để ghi nhận tài sản thuế thu nhập hoãn lại. Điều này có ý nghĩa gì đối với việc lập kế hoạch tài chính và tối ưu hóa thuế của công ty?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Trong trường hợp nào tài sản thuế thu nhập hoãn lại và nợ thuế thu nhập hoãn lại phải trả được bù trừ?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Các chính sách kế toán áp dụng (Phần 6)\nLoại nội dung: Text\n21. Bên liên quan\nCác bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung.\nTrong việc xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được chú trọng nhiều hơn hình thức pháp lý.\n22. Báo cáo theo bộ phận\nBộ phận theo lĩnh vực kinh doanh là một phần có thể xác định riêng biệt tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ và có rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh khác.\nBộ phận theo khu vực địa lý là một phần có thể xác định riêng biệt tham gia vào quá trình sản xuất hoặc cung cấp sản phẩm, dịch vụ trong phạm vi một môi trường kinh tế cụ thể và có rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh trong các môi trường kinh tế khác.\n23. Công cụ tài chính\nTài sản tài chính\nViệc phân loại các tài sản tài chính này phụ thuộc vào bản chất và mục đích của tài sản tài chính và được quyết định tại thời điểm ghi nhận ban đầu. Các tài sản tài chính của Tập đoàn gồm có tiền, các khoản phải thu khách hàng, phải thu khác và các công cụ tài chính không được niêm yết.\nTại thời điểm ghi nhận ban đầu, các tài sản tài chính được ghi nhận theo giá gốc cộng các chi phí giao dịch có liên quan trực tiếp đến tài sản tài chính đó.\nNợ phải trả tài chính\nViệc phân loại các khoản nợ tài chính phụ thuộc vào bản chất và mục đích của khoản nợ tài chính và được quyết định tại thời điểm ghi nhận ban đầu. Nợ phải trả tài chính của Tập đoàn gồm có các khoản phải trả người bán, vay và nợ, các khoản phải trả khác.\nTại thời điểm ghi nhận lần đầu, các khoản nợ phải trả tài chính được ghi nhận ban đầu theo giá gốc trừ các chi phí giao dịch có liên quan trực tiếp đến nợ phải trả tài chính đó.\nCông cụ vốn chủ sở hữu\nCông cụ vốn chủ sở hữu là hợp đồng chứng tỏ được những lợi ích còn lại về tài sản của Tập đoàn sau khi trừ đi toàn bộ nghĩa vụ.\nBù trừ các công cụ tài chính\nCác tài sản tài chính và nợ phải trả tài chính chỉ được bù trừ với nhau và trình bày giá trị thuần trên Bảng cân đối kế toán khi và chỉ khi Tập đoàn:\n- Có quyền hợp pháp để bù trừ giá trị đã được ghi nhận và\n- Có dự định thanh toán trên cơ sở thuần hoặc ghi nhận tài sản và thanh toán nợ phải trả cùng một thời điểm.",
+    "questions": [
+      {
+        "question": "Khi nào thì các bên được coi là liên quan?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các tài sản tài chính của Tập đoàn bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thế nào là công cụ vốn chủ sở hữu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phân biệt báo cáo theo bộ phận lĩnh vực kinh doanh và theo khu vực địa lý. Tại sao cần có hai cách phân loại này?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Khi nào thì các tài sản tài chính và nợ phải trả tài chính được bù trừ và trình bày giá trị thuần trên Bảng cân đối kế toán?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc xác định chính xác các bên liên quan trong báo cáo tài chính. Rủi ro nào có thể phát sinh nếu các giao dịch với bên liên quan không được tiết lộ đầy đủ?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích cách thức ghi nhận ban đầu của tài sản tài chính và nợ phải trả tài chính. Các chi phí giao dịch ảnh hưởng như thế nào đến giá trị ghi nhận?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Bảng cân đối kế toán (V.1 - V.2)\nLoại nội dung: Cả hai\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT GIỮA NIÊN ĐỘ\n1. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền mặt | 6.978.914.423 | 2.702.354.085 |\n| Tiền gửi ngân hàng không kỳ hạn | 87.008.554.191 | 68.389.659.211 |\n| Cộng | 93.987.468.614 | 71.092.013.296 |\n2. Các khoản đầu tư tài chính\nCác khoản đầu tư tài chính của Tập đoàn chỉ có đầu tư góp vốn vào đơn vị khác. Thông tin về các khoản đầu tư tài chính của Tập đoàn như sau:\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị hợp lý (Số cuối kỳ) | Giá gốc (Số đầu năm) | Dự phòng (Số đầu năm) | Giá trị hợp lý (Số đầu năm) |\n|---|---|---|---|---|---|---|\n| Đầu tư góp vốn vào đơn vị khác | 4.600.000.000 | 3.600.000.000 | 1.596.463.043 | 4.600.000.000 | 3.600.000.000 | - |\n| Ngân hàng BIDV An Giang i | - | - | - | - | - | 1.000.000.000 |\n| Ngân hàng Vietinbank An Giang ii | 1.000.000.000 | - | - | 1.000.000.000 | - | 1.000.000.000 |\n| Công ty cổ phần Tô Châu iii | 3.600.000.000 | 3.600.000.000 | 1.596.463.043 | 3.600.000.000 | 3.600.000.000 | - |\n| Cộng | 4.600.000.000 | 3.600.000.000 | 1.596.463.043 | 4.600.000.000 | 3.600.000.000 | - |\n\ni. Mua trái phiếu ngân hàng BIDV An Giang, số lượng 168 trái phiếu, mệnh giá 10.000.000 đồng/trái phiếu, thời gian 7 năm.\nii. Mua trái phiếu ngân hàng Vietinbank An Giang, số lượng 100.000 trái phiếu, mệnh giá 100.000 đồng/trái phiếu, thời gian 10 năm.\niii. Khoản đầu tư cổ phiếu tại Công ty cổ phần Tô Châu theo hợp đồng mua cổ phiếu số 12008/CLAG ngày 02/02/2008 với số lượng 1.000.000 cổ phiếu tương đương 10% vốn điều lệ, mệnh giá 10.000đ/cổ phiếu. Theo Công văn số 83/CLAG-08 ngày 27 tháng 05 năm 2008 về việc ngừng góp vốn thêm thì Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang chỉ mua 300.000 cổ phiếu, với giá mua 12.000 đ/cổ phiếu. Tại ngày kết thúc kỳ kế toán, Tập đoàn nắm giữ 3% vốn điều lệ của Công ty cổ phần Tô Châu.\nDự phòng cho các khoản đầu tư góp vốn vào đơn vị khác\nTình hình biến động dự phòng cho các khoản đầu tư góp vốn vào đơn vị khác như sau:\n| Chỉ tiêu | Năm nay | Năm trước |\n|---|---|---|\n| Số đầu năm | 3.600.000.000 | 3.600.000.000 |\n| Trích lập dự phòng bổ sung | - | - |\n| Hoàn nhập dự phòng | - | - |\n| Số cuối kỳ | 3.600.000.000 | 3.600.000.000 |\nDự phòng giảm giá khoản đầu tư vào Công ty cổ phần Tô Châu theo Thông tư 228/2009/TT-BTC ngày 07 tháng 12 năm 2009 của Bộ Tài chính dựa trên Báo cáo tài chính năm 2017.",
+    "questions": [
+      {
+        "question": "Tổng tiền mặt và tiền gửi ngân hàng không kỳ hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị gốc của khoản đầu tư vào Công ty cổ phần Tô Châu cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tập đoàn nắm giữ bao nhiêu phần trăm vốn điều lệ của Công ty cổ phần Tô Châu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị tiền gửi ngân hàng không kỳ hạn cuối kỳ so với đầu năm. Sự thay đổi này có ý nghĩa gì đối với thanh khoản của công ty?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tình hình dự phòng tổn thất cho các khoản đầu tư góp vốn. Việc không có trích lập bổ sung hoặc hoàn nhập dự phòng nói lên điều gì?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược đầu tư tài chính của Tập đoàn dựa trên các khoản đầu tư vào trái phiếu ngân hàng và cổ phiếu. Rủi ro và lợi ích tiềm năng là gì?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Bảng cân đối kế toán (V.3 - V.7)\nLoại nội dung: Cả hai\n3. Phải thu ngắn hạn của khách hàng\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải thu các bên liên quan | - | - |\n| Công ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á | - | - |\n| Trần Tuấn Nam | - | - |\n| Trần Tuấn Khanh | - | - |\n| Phải thu các khách hàng khác | 263.268.723.910 | 227.928.973.324 |\n| Nguyễn Văn Long | - | - |\n| Alliance Foods Company LLC | - | - |\n| Công ty TNHH Thủy sản Phú Sơn | - | 5.424.253.334 |\n| Comercializadora Mexico Americana s DF R L DECV | 32.318.668.186 | 22.030.324.500 |\n| Các khách hàng khác | 230.950.055.724 | 200.474.395.490 |\n| Cộng | 263.268.723.910 | 227.928.973.324 |\nMột số công nợ phải thu có tổng giá trị ghi sổ là 109.761.656.100 VND đã được dùng thế chấp để đảm bảo cho các khoản vay của các Ngân hàng (xem thuyết minh số V.19a).\n4. Trả trước cho người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước cho các bên liên quan | - | - |\n| Trả trước cho người bán khác | 15.907.850.465 | 6.455.461.411 |\n| Cty TNHH CĐL Thiên Lộc Phát | 1.908.273.442 | - |\n| Cty TNHH TMDV Chế biến và Xuất khẩu Thủy sản | - | - |\n| WEIFANG HENG AN IMPEXP CO.,LTD | - | - |\n| Cty TNHH Kiểm toán - Tư vấn Ac | - | - |\n| Cty TNHH Xây Dựng Song Thanh Tiến | 1.604.526.905 | 1.093.632.153 |\n| Các nhà cung cấp khác | 12.395.050.118 | 5.361.829.258 |\n| Cộng | 15.907.850.465 | 6.455.461.411 |\n5. Phải thu khác\n5a. Phải thu ngắn hạn khác\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị (Số đầu năm) | Dự phòng (Số đầu năm) |\n|---|---|---|---|---|\n| Phải thu các bên liên quan | - | - | - | - |\n| Phải thu các tổ chức và cá nhân khác | 5.741.555.968 | - | 5.299.154.119 | - |\n| Tiền lãi ứng trước | 619.430.200 | - | 619.430.200 | - |\n| Tạm ứng | 3.779.087.189 | - | 3.555.976.590 | - |\n| Ký cược, ký quỹ ngắn hạn | - | - | - | - |\n| Các khoản phải thu ngắn hạn khác | 1.343.038.579 | - | 1.123.747.329 | - |\n| Cộng | 5.741.555.968 | - | 5.299.154.119 | - |\n5b. Phải thu dài hạn khác\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị (Số đầu năm) | Dự phòng (Số đầu năm) |\n|---|---|---|---|---|\n| Phải thu các bên liên quan | - | - | - | - |\n| Phải thu các tổ chức khác | - | - | - | - |\n| Ký cược, ký quỹ dài hạn | - | - | - | - |\n| Cộng | - | - | - | - |\n6. Nợ xấu\n| Chỉ tiêu | Thời gian quá hạn (Số cuối kỳ) | Giá gốc (Số cuối kỳ) | Giá trị có thể thu hồi (Số cuối kỳ) | Thời gian quá hạn (Số đầu năm) | Giá gốc (Số đầu năm) | Giá trị có thể thu hồi (Số đầu năm) |\n|---|---|---|---|---|---|---|\n| Các bên liên quan | - | - | - | - | - | - |\n| Các tổ chức khác | - | 19.009.151.214 | - | - | 18.642.265.906 | - |\n| Kanpa international Sales | Trên 3 năm | 1.832.736.475 | - | Trên 3 năm | 1.749.783.250 | - |\n| Promark F.Z.E Promark General | Trên 3 năm | 387.153.743 | - | Trên 3 năm | 369.630.410 | - |\n| Maria Foods Co S.A RL | Trên 3 năm | 593.445.500 | - | Trên 3 năm | 566.585.000 | - |\n| Maria Group Co OFFShore | Trên 3 năm | 944.462.200 | - | Trên 3 năm | 901.714.000 | - |\n| Sata fish LTD | Trên 3 năm | 6.226.907.400 | - | Trên 3 năm | 6.226.907.400 | - |\n| Phải thu các tổ chức khác | Trên 3 năm | 9.024.445.896 | - | Trên 3 năm | 8.827.645.846 | - |\n| Cộng | - | 19.009.151.214 | - | - | 18.642.265.906 | - |\nTình hình biến động dự phòng nợ phải thu khó đòi như sau:\n| Chỉ tiêu | Nợ phải thu ngắn hạn |\n|---|---|\n| Số đầu năm | 18.642.265.906 |\n| Trích lập dự phòng bổ sung | 366.885.308 |\n| Hoàn nhập dự phòng | - |\n| Số cuối kỳ | 19.009.151.214 |\n7. Hàng tồn kho\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá gốc (Số đầu năm) | Dự phòng (Số đầu năm) |\n|---|---|---|---|---|\n| Nguyên liệu, vật liệu | 48.454.691.857 | - | 22.787.867.984 | - |\n| Công cụ, dụng cụ | 16.753.562.055 | - | 16.025.153.136 | - |\n| Chi phí sản xuất, kinh doanh dở dang | 156.637.124.152 | - | 311.280.653.550 | - |\n| Thành phẩm | 820.302.232.831 | - | 742.966.507.809 | - |\n| Hàng gửi đi bán | 1.813.365.789 | - | - | - |\n| Cộng | 1.043.960.976.684 | - | 1.093.060.182.479 | - |\nToàn bộ thành phẩm tồn kho có tổng giá trị ghi sổ là 840.027.322.605 VND đã được dùng thế chấp để đảm bảo cho các khoản vay của các Ngân hàng (xem thuyết minh số V.19a).",
+    "questions": [
+      {
+        "question": "Tổng giá trị phải thu ngắn hạn của khách hàng cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị nợ xấu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải thu nào được dùng để thế chấp cho các khoản vay của ngân hàng?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối kỳ với đầu năm. Sự thay đổi này có ảnh hưởng gì đến vốn lưu động của công ty?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tình hình nợ xấu của công ty. Mức độ rủi ro tín dụng hiện tại như thế nào?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản phải thu ngắn hạn khác và tác động tiềm năng của chúng đến thanh khoản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Việc sử dụng thành phẩm tồn kho để thế chấp cho các khoản vay có rủi ro tiềm ẩn nào đối với hoạt động kinh doanh của công ty?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Bảng cân đối kế toán (V.8 - V.11)\nLoại nội dung: Cả hai\n8. Chi phí trả trước\n8a. Chi phí trả trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Công cụ dụng cụ, sửa chữa | 318.887.499 | 440.055.556 |\n| Cộng | 318.887.499 | 440.055.556 |\n8b. Chi phí trả trước dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Công cụ dụng cụ, sửa chữa | 6.884.588.867 | 7.779.909.378 |\n| Cộng | 6.884.588.867 | 7.779.909.378 |\n9. Tài sản cố định hữu hình\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|---|---|---|---|---|---|\n| Nguyên giá | | | | | |\n| Số đầu năm | 236.267.712.307 | 437.071.998.411 | 9.871.491.813 | 2.749.323.890 | 685.960.526.421 |\n| Mua trong kỳ | 340.236.474 | 1.106.453.185 | 1.405.827.273 | - | 2.852.516.932 |\n| Số cuối kỳ | 236.607.948.781 | 438.178.451.596 | 11.277.319.086 | 2.749.323.890 | 688.813.043.353 |\n| Trong đó: Đã khấu hao hết nhưng vẫn còn sử dụng | 52.005.452.755 | 206.434.632.472 | 5.769.319.414 | 2.498.486.617 | 266.707.891.258 |\n| Giá trị hao mòn | | | | | |\n| Số đầu năm | 146.283.878.759 | 324.106.200.733 | 8.036.321.956 | 2.601.633.475 | 481.028.034.923 |\n| Khấu hao trong kỳ | 5.527.237.124 | 9.169.909.985 | 351.617.365 | 12.541.860 | 15.061.306.334 |\n| Số cuối kỳ | 151.811.115.883 | 333.276.110.718 | 8.387.939.321 | 2.614.175.335 | 496.089.341.257 |\n| Giá trị còn lại | | | | | |\n| Số đầu năm | 89.983.833.548 | 112.965.797.678 | 1.835.169.857 | 147.690.415 | 204.932.491.498 |\n| Số cuối kỳ | 84.796.832.898 | 104.902.340.878 | 2.889.379.765 | 135.148.555 | 192.723.702.096 |\nMột số tài sản cố định hữu hình có giá trị còn lại theo sổ sách là 144.325.419.398 VND đã được thế chấp để đảm bảo cho các khoản vay của các Ngân hàng.\n10. Tài sản cố định vô hình\n| Chỉ tiêu | Quyền sử dụng đất | Chương trình phần mềm | Cộng |\n|---|---|---|---|\n| Nguyên giá | | | |\n| Số đầu năm | 72.264.241.278 | 317.800.000 | 72.582.041.278 |\n| Mua trong kỳ | - | - | - |\n| Số cuối kỳ | 72.264.241.278 | 317.800.000 | 72.582.041.278 |\n| Giá trị hao mòn | | | |\n| Số đầu năm | 26.700.605.804 | 317.800.000 | 27.018.405.804 |\n| Khấu hao trong kỳ | 985.407.540 | - | 985.407.540 |\n| Số cuối năm | 27.686.013.344 | 317.800.000 | 28.003.813.344 |\n| Giá trị còn lại | | | |\n| Số đầu năm | 45.563.635.474 | - | 45.563.635.474 |\n| Số cuối kỳ | 44.578.227.934 | - | 44.578.227.934 |\nMột số tài sản cố định vô hình có giá trị còn lại theo sổ sách là 45.563.635.474 VND đã được thế chấp để đảm bảo cho các khoản vay của Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh An Giang.\n11. Chi phí xây dựng cơ bản dở dang\n| Chỉ tiêu | Số đầu năm | Chi phí phát sinh trong kỳ | Kết chuyển vào TSCĐ trong kỳ | Số cuối kỳ |\n|---|---|---|---|---|\n| Mua sắm tài sản cố định | - | - | - | - |\n| Xây dựng cơ bản dở dang | 6.095.218.123 | 218.300.000 | - | 6.313.518.123 |\n| Quyền khai thác đất bãi bồi vùng nuôi Mỹ Hòa Hưng | 1.744.787.500 | - | - | 1.744.787.500 |\n| Các công trình khác | 4.350.430.623 | 218.300.000 | - | 4.568.730.623 |\n| Sửa chữa lớn tài sản cố định | - | - | - | - |\n| Cộng | 6.095.218.123 | 218.300.000 | - | 6.313.518.123 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước dài hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của quyền sử dụng đất cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí trả trước ngắn hạn và dài hạn giữa cuối kỳ và đầu năm. Xu hướng thay đổi là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tình hình tài sản cố định hữu hình đã khấu hao hết nhưng vẫn còn sử dụng. Điều này có ý nghĩa gì đối với chi phí khấu hao và khả năng tái đầu tư của công ty?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tài chính khi một phần lớn tài sản cố định hữu hình và vô hình được thế chấp cho các khoản vay của ngân hàng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích sự biến động của chi phí xây dựng cơ bản dở dang. Điều này cho thấy công ty đang mở rộng hay duy trì các dự án đầu tư dài hạn như thế nào?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Bảng cân đối kế toán (V.12 - V.15)\nLoại nội dung: Cả hai\n12. Tài sản thuế thu nhập hoãn lại\nTài sản thuế thu nhập hoãn lại liên quan đến khoản chênh lệch tạm thời được khấu trừ. Chi tiết phát sinh trong kỳ như sau:\n| Chỉ tiêu | Năm nay | Năm trước |\n|---|---|---|\n| Số đầu năm | 1.437.865.616 | 1.366.606.594 |\n| Tăng do hợp nhất kinh doanh | 490.646.093 | - |\n| Ghi nhận vào kết quả kinh doanh | 253.218.719 | 1.090.759.809 |\n| Hoàn nhập trong năm | - | - |\n| Bù trừ với thuế thu nhập hoãn lại phải trả | 477.474.099 | 92.914.530 |\n| Số cuối kỳ | 1.704.256.329 | 2.364.451.873 |\nThuế suất thuế thu nhập doanh nghiệp sử dụng để xác định giá trị tài sản thuế thu nhập hoãn lại là 15%, kỳ trước thuế suất là 20%.\n13. Phải trả người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | - | - |\n| Công ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á | - | - |\n| Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long | - | - |\n| Phải trả các nhà cung cấp khác | 153.081.651.122 | 93.820.377.357 |\n| Cty TNHH Hóa Gia Khang | 961.840.000 | 2.233.033.000 |\n| Cty CP Tập Đoàn Lộc Trời CN Xí Nghiệp Bình Đức | 110.940.610 | 177.691.954 |\n| Cty TNHH SX BB TM Tân Nguyên Phước | 3.666.502.920 | 3.969.681.222 |\n| Cty Công Nghiệp Tôn Á | - | - |\n| Các nhà cung cấp khác | 148.342.367.592 | 87.439.971.181 |\n| Cộng | 153.081.651.122 | 93.820.377.357 |\n13b. Nợ quá hạn chưa thanh toán\nCông ty không có nợ quá hạn chưa thanh toán.\n14. Người mua trả tiền trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước của các bên liên quan | - | - |\n| Trần Tuấn Nam | - | - |\n| Trần Tuấn Khanh | - | - |\n| Trả trước của các khách hàng khác | 26.900.226.772 | 17.841.984.174 |\n| Cty TNHH Sản Xuất TM Nguyệt Trang | 261.092.116 | 964.126.416 |\n| LANESYNC SUPPLY CHAIN SERVICE CO., LTD | - | - |\n| Các khách hàng khác | 26.639.134.656 | 16.877.857.758 |\n| Cộng | 26.900.226.772 | 17.841.984.174 |\n15. Thuế và các khoản phải nộp Nhà nước\n| Chỉ tiêu | Số đầu năm (Phải nộp) | Số đầu năm (Phải thu) | Số phát sinh trong kỳ (Số phải nộp) | Số phát sinh trong kỳ (Số đã thực nộp) | Số cuối kỳ (Phải nộp) | Số cuối kỳ (Phải thu) |\n|---|---|---|---|---|---|---|\n| Thuế GTGT hàng bán nội địa | - | - | - | - | - | - |\n| Thuế GTGT hàng nhập khẩu | - | - | - | - | - | - |\n| Thuế xuất, nhập khẩu | - | - | - | - | - | - |\n| Thuế thu nhập doanh nghiệp | 4.279.395.360 | - | 1.099.554.461 | 4.347.392.942 | 1.031.556.879 | - |\n| Thuế thu nhập cá nhân | 11.884.264 | 14.102.134 | 102.034.865 | 102.479.412 | 11.420.547 | 14.082.964 |\n| Thuế tài nguyên | 7.103.680 | - | 40.587.480 | 40.493.520 | 7.197.640 | - |\n| Các loại thuế khác | 262.139.598 | - | 39.854.544 | 156.361.032 | 145.633.110 | - |\n| Cộng | 4.560.522.902 | 14.102.134 | 1.282.031.350 | 4.646.726.906 | 1.195.808.176 | 14.082.964 |\nThuế giá trị gia tăng\nCác Công ty trong Tập đoàn nộp thuế giá trị gia tăng theo phương pháp khấu trừ. Thuế suất thuế giá trị gia tăng như sau:\n- Hàng hóa xuất khẩu: 0%\n- Hàng hóa tiêu thụ nội địa: Không chịu thuế, 5%\n- Dịch vụ: 10%\nThuế xuất, nhập khẩu\nTập đoàn kê khai và nộp theo thông báo của Hải quan.",
+    "questions": [
+      {
+        "question": "Giá trị tài sản thuế thu nhập hoãn lại cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng số phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thuế suất thuế thu nhập doanh nghiệp được sử dụng để xác định tài sản thuế thu nhập hoãn lại năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh số dư thuế và các khoản phải nộp Nhà nước cuối kỳ và đầu năm. Điều này cho thấy điều gì về nghĩa vụ thuế của công ty?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích biến động của tài sản thuế thu nhập hoãn lại giữa các kỳ. Điều này phản ánh điều gì về các chênh lệch tạm thời được khấu trừ?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc không có nợ quá hạn chưa thanh toán đến uy tín và khả năng thanh toán của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích các mức thuế suất GTGT áp dụng cho hàng hóa xuất khẩu, tiêu thụ nội địa và dịch vụ. Tại sao có sự khác biệt này?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Bảng cân đối kế toán (V.15 tiếp theo - V.18)\nLoại nội dung: Cả hai\nThuế thu nhập doanh nghiệp\nCác công ty trong Tập đoàn được hưởng các ưu đãi về thuế thu nhập doanh nghiệp như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang\nTheo Nghị định số 12/2015/NĐ-CP ngày 12 tháng 02 năm 2015 của Chính phủ quy định chi tiết thi hành luật sửa đổi, bổ sung một số điều của các luật thuế và sửa đổi, bổ sung một số điều của các nghị định về thuế, Công ty nộp thuế thu nhập doanh nghiệp theo thuế suất 15% do Công ty hoạt động kinh doanh trong lĩnh vực thủy sản.\nNăm 2009 Công ty đã đưa vào hoạt động nhà máy chế biến thủy sản mới do đầu tư mở rộng, dự án được hưởng ưu đãi theo thuế suất 20% trong 10 năm, được miễn thuế thu nhập doanh nghiệp trong 02 năm và giảm 50% trong 05 năm tiếp theo đối với phần thu nhập tăng thêm. Năm 2015 là năm cuối cùng dự án đầu tư mở rộng được giảm 50% thuế thu nhập doanh nghiệp.\nNăm 2013 Công ty đã đưa vào hoạt động nhà máy chế biến thức ăn thủy sản, dự án được hưởng ưu đãi theo thuế suất 15% trong 12 năm, miễn thuế thu nhập doanh nghiệp trong 03 năm và giảm 50% trong 07 năm tiếp theo đối với phần thu nhập tăng thêm. Năm 2015 là năm thứ 03 dự án được miễn thuế thu nhập doanh nghiệp.\nNăm 2014 Công ty đã đưa vào hoạt động hệ thống máy móc thiết bị, nhà xưởng chế biến thủy sản mới do đầu tư mở rộng, dự án được hưởng ưu đãi theo thuế suất hiện hành, được miễn thuế thu nhập doanh nghiệp trong 02 năm và giảm 50% trong 04 năm tiếp theo đối với phần thu nhập tăng thêm. Năm 2015 là năm thứ 02 dự án đầu tư mở rộng được miễn thuế thu nhập doanh nghiệp.\nNăm 2015 Công ty đã đưa vào hoạt động hệ thống máy móc thiết bị, nhà xưởng chế biến thủy sản mới do đầu tư mở rộng, dự án được hưởng ưu đãi theo thuế suất hiện hành, được miễn thuế thu nhập doanh nghiệp trong 02 năm và giảm 50% trong 04 năm tiếp theo đối với phần thu nhập tăng thêm. Năm 2015 là năm thứ 01 dự án đầu tư mở rộng được miễn thuế thu nhập doanh nghiệp.\nTheo Luật số 71/2014/QH13 về sửa đổi, bổ sung một số điều của các luật về thuế được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khoá XIII, kỳ họp thứ 8 thông qua ngày 26 tháng 11 năm 2014 các doanh nghiệp chế biến thủy sản không thuộc địa bàn có điều kiện kinh tế - xã hội khó khăn hoặc địa bàn có điều kiện kinh tế xã hội đặc biệt khó khăn, được áp dụng thuế suất 15% từ ngày 01 tháng 01 năm 2015.\nCông ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á\nTheo Giấy chứng nhận đầu tư số 52221000013 ngày 09 tháng 02 năm 2010 do Ban Quản lý các Khu công nghiệp tỉnh An Giang cấp, Công ty nộp thuế thu nhập doanh nghiệp cho thu nhập từ hoạt động sản xuất kinh doanh chính với thuế suất 20% trong 10 năm kể từ khi dự án đi vào hoạt động, được miễn thuế trong 02 năm kể từ khi có thu nhập từ dự án và giảm 50% số thuế phải nộp trong 04 năm tiếp theo.\nNăm 2015 là năm thứ hai Công ty được giảm 50% số thuế phải nộp tính trên thu nhập tính thuế với mức thuế suất 20%.\nThuế tài nguyên\nCác công ty trong Tập đoàn phải nộp thuế tài nguyên cho hoạt động khai thác nguồn nước tự nhiên với mức 2.000 VND/m3 và 4.000 VND/m3.\nTiền thuê đất\nTập đoàn phải nộp tiền thuê đất với mức 10.500 VND/m2/năm trên diện tích đất thuê là 28.271 m2 tại Khu tiểu thủ công nghiệp Mỹ Quý, thành phố Long Xuyên, tỉnh An Giang.\nTập đoàn phải nộp tiền thuê đất đối với diện tích 31.528,8 m2 đất đang sử dụng tại Lô B, Khu công nghiệp Bình Long, xã Bình Long, huyện Châu Phú, tỉnh An Giang với mức 0,45 USD/m2/năm theo quy định tại Điều 2 hợp đồng thuê đất số 1111Đ.TĐ ngày 13 tháng 5 năm 2010. Giá tiền thuê được ổn định trong 05 năm kể từ ngày 04 tháng 5 năm 2010 đến ngày 04 tháng 5 năm 2015, hết thời hạn này, giá tiền thuê đất được tính lại theo quy định của Nghị định 142/2005/NĐ-CP ngày 14 tháng 11 năm 2005 của Chính phủ về thu tiền thuê đất, thuê mặt nước.\nCác loại thuế khác\nCông ty kê khai và nộp theo quy định.\n16. Phải trả người lao động\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền lương phải trả | 20.165.482.110 | 16.690.218.352 |\n| Cộng | 20.165.482.110 | 16.690.218.352 |\nLương tháng 03/2024\n17. Chi phí phải trả ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Chi phí lưu kho | - | - |\n| Chi phí lãi vay ngắn hạn | 2.009.265.831 | 2.436.324.034 |\n| Chi phí cước tàu và phí chứng từ | 6.284.799.350 | 3.960.546.115 |\n| Chi phí vận chuyển | 1.619.759.853 | 2.981.974.428 |\n| Các chi phí phải trả ngắn hạn khác | 404.945.000 | 704.420.000 |\n| Cộng | 10.318.770.034 | 10.083.264.577 |\n18. Phải trả khác\n18a. Phải trả ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | - | - |\n| Phải trả các đơn vị và cá nhân khác | 4.835.112.668 | 4.031.383.806 |\n| Kinh phí công đoàn | 3.644.370.133 | 3.610.145.138 |\n| Bảo hiểm xã hội | 805.043.073 | 127.006.523 |\n| Các khoản phải trả ngắn hạn khác | 385.699.462 | 294.232.145 |\n| Cổ tức còn phải trả | - | - |\n| Cộng | 4.835.112.668 | 4.031.383.806 |\n18b. Phải trả dài hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | - | - |\n| Nguyễn Thị Ngọc Bích | - | - |\n| Phải trả tiền nhận chuyển nhượng vốn | - | - |\n| Phải trả các tổ chức và cá nhân khác | - | - |\n| Cộng | - | - |\n18c. Nợ quá hạn chưa thanh toán\nCông ty không có nợ quá hạn chưa thanh toán.",
+    "questions": [
+      {
+        "question": "Thuế suất thuế thu nhập doanh nghiệp áp dụng cho Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng tiền lương phải trả người lao động cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á được miễn thuế thu nhập doanh nghiệp trong bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí lãi vay ngắn hạn cuối kỳ và đầu năm. Sự thay đổi này cho thấy điều gì về chi phí tài chính ngắn hạn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá các ưu đãi thuế thu nhập doanh nghiệp mà Công ty Cửu Long An Giang được hưởng. Những ưu đãi này có tác động như thế nào đến lợi nhuận sau thuế của công ty?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích cấu trúc các khoản phải trả ngắn hạn khác và ý nghĩa của sự biến động các khoản như bảo hiểm xã hội. Điều này có phản ánh tình hình tài chính hoặc hoạt động nào không?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa trên thông tin về tiền thuê đất, hãy tính tổng chi phí thuê đất hàng năm của Tập đoàn cho cả hai khu vực được đề cập.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Bảng cân đối kế toán (V.19 - V.21)\nLoại nội dung: Cả hai\n19. Vay\n19a. Vay ngắn hạn\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Số có khả năng trả (Số cuối kỳ) | Giá trị (Số đầu năm) | Số có khả năng trả (Số đầu năm) |\n|---|---|---|---|---|\n| Vay ngắn hạn các bên liên quan | - | - | - | - |\n| Vay ngắn hạn các tổ chức khác | 737.443.116.169 | 737.443.116.169 | 802.991.063.448 | 802.991.063.448 |\n| Vay ngắn hạn ngân hàng | 737.443.116.169 | 737.443.116.169 | 802.991.063.448 | 802.991.063.448 |\n| - Vay Công ty TNHH một thành viên Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam - Chi nhánh An Giang | - | - | - | - |\n| - Vay Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh An Giang | 318.531.774.430 | 318.531.774.430 | 330.715.789.700 | 330.715.789.700 |\n| - Vay Ngân hàng TNHH một thành viên HSBC Việt Nam | 41.500.000.000 | 41.500.000.000 | 44.400.000.000 | 44.400.000.000 |\n| - Vay Ngân hàng TMCP Xăng Dầu Petrolimex An Giang | - | - | - | - |\n| - Vay Ngân hàng TNHH Indovina - Chi nhánh Cần Thơ | 8.841.355.600 | 8.841.355.600 | 29.616.861.000 | 29.616.861.000 |\n| - Vay Ngân hàng Thương mại Cổ phần Công thương Việt Nam - Chi nhánh An Giang | 74.198.852.289 | 74.198.852.289 | 55.772.796.750 | 55.772.796.750 |\n| - Vay Ngân hàng BPCE IOM - Chi nhánh TP Hồ Chí Minh | 25.000.000.000 | 25.000.000.000 | 72.685.615.998 | 72.685.615.998 |\n| - Vay Ngân hàng TNHH MTV UOB Việt Nam | 62.371.133.850 | 62.371.133.850 | 64.800.000.000 | 64.800.000.000 |\n| - Vay Bà Trần Thị Vân Loan | 207.000.000.000 | 207.000.000.000 | 200.000.000.000 | 200.000.000.000 |\n| - Vay Bà Trần Nguyễn Thảo Nhi | - | - | 5.000.000.000 | 5.000.000.000 |\n| - Vay Bà Trần Thị Thu Vân | - | - | - | - |\n| Cộng | 737.443.116.169 | 737.443.116.169 | 802.991.063.448 | 802.991.063.448 |\ni. Khoản vay Công ty TNHH một thành viên Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam - Chi nhánh An Giang chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang vay để bổ sung vốn lưu động sản xuất kinh doanh chế biến thủy sản, nuôi trồng thủy sản và chế biến thức ăn thủy sản phục vụ cho việc nuôi trồng thủy sản với lãi suất theo từng thời điểm nhận nợ, thời hạn vay mỗi khế ước 6 tháng. Khoản vay này được đảm bảo bằng việc thế chấp nhà cửa vật kiến trúc và quyền sử dụng đất (xem thuyết minh số V.9, V.10).\nii. Khoản vay Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh An Giang chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang vay để bổ sung vốn lưu động với lãi suất thỏa thuận theo từng Hợp đồng tín dụng ngắn hạn cụ thể, thời hạn vay 06 tháng đối với sản xuất và chế biến cá, 08 tháng đối với nuôi trồng và chế biến thức ăn. Khoản vay này được đảm bảo bằng việc thế chấp quyền sử dụng đất, máy móc thiết bị (xem thuyết minh số V.9, V.10).\nCông ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á vay để bổ sung vốn lưu động với lãi suất thỏa thuận theo từng hợp đồng tín dụng ngắn hạn cụ thể. Khoản vay này được đảm bảo bằng việc thế chấp quyền sử dụng đất, máy móc thiết bị, nhà xưởng và hàng tồn kho (xem thuyết minh số V.7, V.9, V.10).\niii. Khoản vay Ngân hàng TNHH một thành viên HSBC Việt Nam chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang Vay để đáp ứng nhu cầu vốn lưu động, nhu cầu phát hành bảo lãnh và chi tiêu Công ty với lãi suất theo từng lần nhận nợ, thời hạn vay 5 tháng trên mỗi khế ước vay. Khoản vay này được đảm bảo bằng nợ phải thu và máy móc thiết bị (xem thuyết minh số V.3, V.9).\niv. Khoản vay Ngân hàng TMCP Xăng Dầu Petrolimex An Giang chi tiết như sau:\nKhoản vay Ngân hàng TMCP Xăng Dầu Petrolimex An Giang để bổ sung vốn lưu động kinh doanh, xuất khẩu cá tra với lãi suất tại thời điểm nhận nợ, thời hạn vay 8 tháng trên mỗi khế ước vay. Khoản vay này được đảm bảo bằng việc thế chấp nhà cửa vật kiến trúc và quyền sử dụng đất.\nv. Khoản vay Ngân hàng TNHH Indovina - Chi nhánh Cần Thơ chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang vay để bổ sung vốn kinh doanh với lãi suất theo từng lần nhận nợ, thời hạn vay 6 tháng trên mỗi khế ước vay. Khoản vay này được đảm bảo bằng việc thế chấp hàng tồn kho.\nvi. Khoản vay Ngân hàng Thương mại Cổ phần Công thương Việt Nam - Chi nhánh An Giang chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang vay để bổ sung vốn chế biến thủy sản xuất khẩu và nuôi cá tra với lãi suất theo từng lần nhận nợ, thời hạn vay 6 tháng đối với sản xuất, chế biến cá và 9 tháng đối với nuôi trồng và chế biến thức ăn. Khoản vay này được đảm bảo bằng việc thế chấp hàng tồn kho và phải thu, máy móc thiết bị, quyền sử dụng đất (xem thuyết minh số V.7, V.9,V.10).\nvii. Khoản vay Ngân hàng BPCE IOM - Chi nhánh Thành phố Hồ Chí Minh chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang vay để đáp ứng nhu cầu vốn lưu động với lãi suất theo từng lần nhận nợ, thời hạn vay 6 tháng trên mỗi khế ước vay. Khoản vay này được đảm bảo bằng việc thế chấp hàng tồn kho, khoản phải thu (xem thuyết minh số V.3, V.7).\nviii. Khoản vay Ngân hàng TNHH MTV UOB Việt Nam chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang vay để bổ sung vốn lưu động phục vụ hoạt động kinh doanh cá tra xuất khẩu, chiết khẩu hối phiếu với lãi suất theo từng lần nhận nợ, thời hạn vay 6 tháng trên mỗi khế ước vay. Khoản vay này được đảm bảo bằng việc thế chấp hàng tồn kho (xem thuyết minh số V.7).\nix. Khoản vay Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Long Xuyên chi tiết như sau:\nCông ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á vay để bổ sung vốn lưu động với lãi suất thỏa thuận theo từng hợp đồng tín dụng ngắn hạn cụ thể. Khoản vay này không có tài sản đảm bảo.\nChi tiết số phát sinh về các khoản vay ngắn hạn trong kỳ như sau:\n| Chỉ tiêu | Số đầu năm | Số tiền vay phát sinh trong kỳ | Chênh lệch tỷ giá cuối kỳ | Số tiền vay đã trả trong kỳ | Số cuối kỳ |\n|---|---|---|---|---|---|\n| Vay ngắn hạn ngân hàng | 802.991.063.448 | 934.991.211.031 | - | 1.000.539.158.310 | 737.443.116.169 |\n| Vay dài hạn đến hạn trả | - | - | - | - | - |\n| Cộng | 802.991.063.448 | 934.991.211.031 | - | 1.000.539.158.310 | 737.443.116.169 |\n19b. Vay dài hạn\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Số có khả năng trả (Số cuối kỳ) | Giá trị (Số đầu năm) | Số có khả năng trả (Số đầu năm) |\n|---|---|---|---|---|\n| Vay dài hạn các bên liên quan | - | - | - | - |\n| - Vay Ông Trần Tuấn Khanh | - | - | - | - |\n| - Vay Ông Trần Tuấn Nam | - | - | - | - |\n| - Vay Bà Trần Thị Vân Loan | - | - | - | - |\n| - Vay Bà Nguyễn Thị Ngọc Bích | - | - | - | - |\n| - Vay Bà Trần Thị Thu Vân | - | - | - | - |\n| Vay dài hạn các tổ chức khác | - | - | - | - |\n| - Vay Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Long Xuyên i | - | - | - | - |\n| - Vay Ngân hàng Thương mại Cổ phần Công thương Việt Nam - Chi nhánh An Giang ii | - | - | - | - |\n| - Vay Ngân hàng BIDV An Giang | - | - | - | - |\n| Cộng | - | - | - | - |\ni. Vay không có tài sản đảm bảo của các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt để bổ sung vốn lưu động mua nguyên liệu, chế biến thủy sản và chi phí nuôi cá tra với lãi suất 0%.\nii. Khoản vay Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Long Xuyên chi tiết như sau:\nCông ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á vay để bổ sung vốn trung hạn xây dựng hệ thống kho lạnh 2500 tấn với lãi suất thỏa thuận theo từng thời điểm, thời hạn vay 72 tháng kể từ ngày giải ngân đầu tiên, số tiền vay được hoàn trả hàng quý. Khoản vay này được đảm bảo bằng việc thế chấp quyền sở hữu và tài sản hình thành xây dựng kho lạnh này của Công ty TNHH một thành viên Xuất nhập khẩu Thủy sản Đông Á tại Lô B, Khu công nghiệp Bình Long, xã Bình Long, huyện Châu Phú, tỉnh An Giang (xem thuyết minh số V.9, V.10).\niii. Khoản vay Ngân hàng Thương mại Cổ phần Công thương Việt Nam - Chi nhánh An Giang chi tiết như sau:\nCông ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang vay để thanh toán các chi phí của Dự án đầu tư nhà máy chế biến thức ăn thủy sản Cửu Long An Giang giai đoạn 2 với lãi suất 10%/năm, thời hạn vay 60 tháng kể từ ngày giải ngân đầu tiên, số tiền vay được hoàn trả hàng tháng. Khoản vay này được đảm bảo bằng tài sản hình thành từ vốn vay (xem thuyết minh số V.11).\n19c. Vay quá hạn chưa thanh toán\nTập đoàn không có các khoản vay quá hạn chưa thanh toán.\n20. Quỹ khen thưởng, phúc lợi\n| Chỉ tiêu | Số đầu năm | Tăng do trích lập từ lợi nhuận | Chi quỹ trong kỳ | Số cuối kỳ |\n|---|---|---|---|---|\n| Quỹ phúc lợi | 19.459.127 | - | - | 19.459.127 |\n| Quỹ hưởng Ban quản lý, điều hành | - | - | - | - |\n| Cộng | 19.459.127 | - | - | 19.459.127 |\n21. Thuế thu nhập hoãn lại phải trả\nThuế thu nhập hoãn lại phải trả liên quan đến các khoản chênh lệch tạm thời chịu thuế. Chi tiết phát sinh như sau:\n| Chỉ tiêu | Năm nay | Năm trước |\n|---|---|---|\n| Số đầu năm | 225.062.457 | 96.878.021 |\n| Tăng do hợp nhất kinh doanh | - | - |\n| Ghi nhận vào kết quả kinh doanh | 252.411.642 | 3.963.491 |\n| Bù trừ với tài sản thuế thu nhập hoãn lại | 477.474.099 | 92.914.530 |\n| Số cuối kỳ | - | - |\nThuế suất thuế thu nhập doanh nghiệp sử dụng để xác định giá trị thuế thu nhập hoãn lại phải trả là 15%, kỳ trước thuế suất là 20%.\nThuế suất thuế thu nhập doanh nghiệp sử dụng để xác định giá trị thuế thu nhập hoãn lại phải trả Công ty con là 10%, năm trước thuế suất là 10%.",
+    "questions": [
+      {
+        "question": "Tổng số vay ngắn hạn các tổ chức khác cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư đầu năm của quỹ khen thưởng, phúc lợi là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay Bà Trần Thị Vân Loan cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng số tiền vay phát sinh trong kỳ với số tiền vay đã trả trong kỳ của vay ngắn hạn ngân hàng. Điều này nói lên điều gì về dòng tiền của công ty?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích các loại tài sản đảm bảo được sử dụng cho các khoản vay ngắn hạn của công ty. Mức độ rủi ro đối với các ngân hàng cho vay là bao nhiêu?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tình hình thuế thu nhập hoãn lại phải trả và sự biến động của nó. Thuế suất khác nhau cho công ty mẹ và công ty con ảnh hưởng như thế nào đến nghĩa vụ thuế của Tập đoàn?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "So sánh chi tiết các khoản vay dài hạn và ngắn hạn của Tập đoàn. Đâu là nguồn vốn chính và rủi ro liên quan đến cấu trúc nợ hiện tại là gì?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Bảng cân đối kế toán (V.22 - V.23)\nLoại nội dung: Cả hai\n22. Vốn chủ sở hữu\n22a. Bảng đối chiếu biến động của vốn chủ sở hữu\nThông tin về biến động của vốn chủ sở hữu được trình bày ở Phụ lục 01 đính kèm.\n22b. Chi tiết vốn góp của chủ sở hữu\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| 1. Ông Trần Văn Nhân | - | - |\n| 2. Bà Trần Thị Vân Loan | 275.000.000.000 | 262.999.500.000 |\n| 3. Ông Trần Tuấn Khanh | 13.747.590.000 | 23.747.590.000 |\n| 4. Các cổ đông khác | 212.842.600.000 | 214.843.100.000 |\n| Cộng | 501.590.190.000 | 501.590.190.000 |\n22c. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Số lượng cổ phiếu đăng ký phát hành | 50.159.019 | 50.159.019 |\n| Số lượng cổ phiếu đã phát hành | 50.159.019 | 50.159.019 |\n| Cổ phiếu phổ thông | 50.159.019 | 50.159.019 |\n| Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu được mua lại | - | - |\n| Cổ phiếu phổ thông | - | - |\n| Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu đang lưu hành | 50.159.019 | 50.159.019 |\n| Cổ phiếu phổ thông | 50.159.019 | 50.159.019 |\n| Cổ phiếu ưu đãi | - | - |\n| Mệnh giá cổ phiếu đang lưu hành | 10.000 VND |\n22d. Phân phối lợi nhuận\nTheo Nghị quyết số 01/NQĐHĐCĐ-CLAG/2023 ngày 12 tháng 4 năm 2023 của Đại hội đồng cổ đông thường niên năm 2023 đã thông qua việc sẽ giữ lại lợi nhuận năm 2022 để tăng nguồn vốn Công ty, mở rộng hoạt động sản xuất kinh doanh sau khi đã chia cổ tức 7% mệnh giá và thông qua kế hoạch chia cổ tức bằng tiền hoặc cổ phiếu năm 2023 (tỷ lệ ít nhất 5% mệnh giá).\n23. Các khoản mục ngoài Bảng cân đối kế toán hợp nhất\n23a. Tài sản thuê ngoài\nTổng số tiền thuê tối thiểu trong tương lai của các hợp đồng thuê hoạt động không thể hủy ngang theo các thời hạn như sau:\n| Chỉ tiêu | Số cuối năm | Số đầu năm |\n|---|---|---|\n| Từ 01 năm trở xuống | 582.532.440 | 296.845.500 |\n| Trên 01 năm đến 05 năm | 2.330.129.760 | 1.187.382.000 |\n| Trên 05 năm | 18.791.942.050 | 10.399.143.125 |\n| Cộng | 21.704.604.250 | 11.883.370.625 |\nTập đoàn thuê đất dưới hình thức thuê hoạt động. Các hợp đồng thuê có hiệu lực trong 50 năm và có khả năng được gia hạn thêm. Chi phí thuê được điều chỉnh tăng lên hàng năm theo giá đất do Ủy ban Nhân dân tỉnh công bố.\n23b. Ngoại tệ các loại\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Dollar Mỹ (USD) | 1.042.303,87 | 548.398,1 |\n| Euro (EUR) | 468,59 | 468,59 |\n| CNY | 5.335,00 | 5.335,00 |\n",
+    "questions": [
+      {
+        "question": "Tổng vốn góp của chủ sở hữu cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mệnh giá cổ phiếu đang lưu hành là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chính sách phân phối lợi nhuận của công ty trong năm 2023 là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích biến động tổng số tiền thuê tối thiểu trong tương lai của các hợp đồng thuê hoạt động. Điều này cho thấy điều gì về cam kết thuê tài sản của Tập đoàn?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của biến động tỷ giá hối đoái đối với các loại ngoại tệ mà Tập đoàn nắm giữ. Rủi ro nào có thể phát sinh?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tổng cam kết thuê đất của Tập đoàn từ 5 năm trở lên vào cuối năm nay và so sánh với đầu năm. Điều này ảnh hưởng như thế nào đến chi phí cố định dài hạn của công ty?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Báo cáo kết quả hoạt động kinh doanh (VI.1 - VI.5)\nLoại nội dung: Cả hai\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH GIỮA NIÊN ĐỘ\n1. Doanh thu bán hàng và cung cấp dịch vụ\n1a. Tổng doanh thu\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Doanh thu bán thành phẩm | 753.621.047.422 | 308.592.351.342 |\n| Doanh thu bán phụ phẩm | 129.676.515.975 | 55.726.905.480 |\n| Cộng | 883.297.563.397 | 364.319.256.822 |\n1b. Doanh thu bán hàng và cung cấp dịch vụ cho các bên liên quan\nTập đoàn chỉ phát sinh giao dịch bán hàng và cung cấp dịch vụ với các thành viên Hội đồng quản trị và các cá nhân có liên quan với các thành viên quản lý chủ chốt như sau:\nGiao dịch về bán hàng và cung cấp dịch vụ cho các bên liên quan không phải là công ty con như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Các thành viên Hội đồng quản trị | - | - |\n| Bán thức ăn | - | - |\n| Các cá nhân có liên quan với các thành viên quản lý chủ chốt | - | - |\n| Bán thức ăn | - | - |\n2. Các khoản giảm trừ doanh thu\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Hàng bán trả lại | 4.610.535.138 | - |\n| Chiết khấu thương mại | 139.750.000 | - |\n| Giảm giá hàng bán | 510.951.810 | 94.553.778 |\n| Cộng | 5.261.236.948 | 94.553.778 |\n3. Giá vốn hàng bán\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Giá vốn của thành phẩm đã cung cấp | 791.246.234.423 | 297.578.521.283 |\n| Cộng | 791.246.234.423 | 297.578.521.283 |\n4. Doanh thu hoạt động tài chính\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Lãi tiền gửi không kỳ hạn | 122.379.346 | 23.846.912 |\n| Lãi cho vay | 246.885.729 | - |\n| Lãi chênh lệch tỷ giá phát sinh | 9.002.715.572 | 1.925.068.635 |\n| Lãi chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | - | - |\n| Lãi bán hàng trả chậm | 721.954.747 | 233.259.035 |\n| Lãi trái phiếu | - | - |\n| Cộng | 10.093.935.394 | 2.182.174.582 |\n5. Chi phí tài chính\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|---|\n| Chi phí lãi vay | 15.238.633.916 | 22.530.483.984 |\n| Lỗ chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | - | 218.892.678 |\n| Lỗ chênh lệch tỷ giá phát sinh | 327.470.240 | 771.556.503 |\n| Dự phòng giảm giá đầu tư tài chính dài hạn | - | - |\n| Cộng | 15.566.104.156 | 23.520.933.165 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu bán thành phẩm lũy kế từ đầu năm đến cuối quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá vốn của thành phẩm đã cung cấp lũy kế từ đầu năm đến cuối quý này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí lãi vay lũy kế từ đầu năm đến cuối quý này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng doanh thu bán hàng và cung cấp dịch vụ lũy kế năm nay với năm trước. Công ty đang tăng trưởng hay giảm sút?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích các khoản giảm trừ doanh thu. Sự gia tăng của hàng bán trả lại có ý nghĩa gì đối với chất lượng sản phẩm hoặc chính sách bán hàng?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của biến động tỷ giá hối đoái (lãi/lỗ chênh lệch tỷ giá phát sinh) đến doanh thu và chi phí tài chính của công ty. Rủi ro này đang được quản lý như thế nào?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính biên lợi nhuận hoạt động tài chính (Doanh thu hoạt động tài chính / Chi phí tài chính) lũy kế năm nay và năm trước. Điều này nói lên điều gì về hiệu quả hoạt động tài chính của công ty?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Báo cáo kết quả hoạt động kinh doanh (VI.6 - VI.11)\nLoại nội dung: Cả hai\n6. Chi phí bán hàng\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Chi phí vật liệu, bao bì | 22.242.388.889 | 11.326.462.388 |\n| Phí kiểm nghiệm, phí vi sinh | 4.862.326.851 | 4.588.123.649 |\n| Phí vận chuyển, phí khác | 22.228.054.664 | 6.284.989.188 |\n| Cộng | 49.332.770.404 | 22.199.575.225 |\n7. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Chi phí cho nhân viên | 14.447.449.757 | 9.040.277.517 |\n| Chi phí đồ dùng văn phòng | 204.909.888 | 332.742.063 |\n| Chi phí khấu hao tài sản cố định | 462.144.763 | 395.294.637 |\n| Thuế, phí và lệ phí | 94.609.400 | 379.068.547 |\n| Dự phòng phải thu khó đòi | 366.885.308 | 8.291.400 |\n| Phí chứng từ | 3.074.598.512 | 2.908.280.429 |\n| Các chi phí khác | 6.674.509.627 | 3.075.228.008 |\n| Cộng | 25.325.107.255 | 16.139.182.601 |\n8. Thu nhập khác\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Xử lý nợ không phải trả | - | 827.742.400 |\n| Thu hỗ trợ | - | - |\n| Cộng | 18.133 | 827.742.400 |\n9. Chi phí khác\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Chi hỗ trợ, khác | 75.526.938 | 1.015.879.616 |\n| Cộng | 75.526.938 | 1.015.879.616 |\n10. Chi phí thuế thu nhập doanh nghiệp hoãn lại\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |\n|---|---|---|\n| Chi phí thuế thu nhập doanh nghiệp hoãn lại phát sinh từ các khoản chênh lệch tạm thời phải chịu thuế | - | - |\n| Chi phí thuế thu nhập doanh nghiệp hoãn lại phát sinh từ việc hoàn nhập tài sản thuế thu nhập hoãn lại | - | - |\n| Cộng | - | - |\n11. Lãi trên cổ phiếu\nThông tin về lãi trên cổ phiếu được trình bày trên Báo cáo tài chính hợp nhất giữa niên độ.",
+    "questions": [
+      {
+        "question": "Tổng chi phí bán hàng lũy kế từ đầu năm đến cuối quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí quản lý doanh nghiệp lũy kế từ đầu năm đến cuối quý này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thu nhập khác lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí vận chuyển, phí khác trong chi phí bán hàng giữa năm nay và năm trước. Điều này nói lên điều gì về hoạt động logistics hoặc chiến lược bán hàng?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự tăng lên đáng kể của dự phòng phải thu khó đòi trong chi phí quản lý doanh nghiệp. Điều này có thể báo hiệu rủi ro gì?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý chi phí bán hàng và chi phí quản lý doanh nghiệp của công ty qua các năm. Công ty đã tối ưu hóa các chi phí này như thế nào?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích các yếu tố chính đóng góp vào sự biến động của thu nhập khác và chi phí khác. Điều này có thể ảnh hưởng đến lợi nhuận ròng của công ty như thế nào?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên Báo cáo lưu chuyển tiền tệ (VII.1 - VII.2)\nLoại nội dung: Cả hai\nVII. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO LƯU CHUYỂN TIỀN TỆ GIỮA NIÊN ĐỘ\n1. Tiền thu từ đi vay\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này (Năm nay) | Lũy kế từ đầu năm đến cuối kỳ này (Năm trước) |\n|---|---|---|\n| Tiền thu từ đi vay theo khế ước thông thường | 934.991.211.031 | 817.723.689.566 |\n| Cộng | 934.991.211.031 | 817.723.689.566 |\n2. Tiền trả nợ gốc vay\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này (Năm nay) | Lũy kế từ đầu năm đến cuối kỳ này (Năm trước) |\n|---|---|---|\n| Tiền trả nợ gốc vay theo khế ước thông thường | 1.000.539.158.310 | 583.211.660.792 |\n| Cộng | 1.000.539.158.310 | 583.211.660.792 |",
+    "questions": [
+      {
+        "question": "Tổng tiền thu từ đi vay theo khế ước thông thường lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng tiền trả nợ gốc vay theo khế ước thông thường lũy kế năm trước là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tiền thu từ đi vay và tiền trả nợ gốc vay lũy kế năm nay. Điều này cho thấy công ty đang tăng hay giảm nợ vay ròng?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích xu hướng biến động của tiền thu từ đi vay giữa năm nay và năm trước. Điều này phản ánh điều gì về khả năng tiếp cận nguồn vốn của công ty?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro thanh khoản của công ty dựa trên sự chênh lệch giữa tiền thu từ đi vay và tiền trả nợ gốc vay. Công ty có đang phụ thuộc quá nhiều vào việc tái cấp vốn không?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Những thông tin khác (VIII.1 - VIII.2a)\nLoại nội dung: Cả hai\nVIII. NHỮNG THÔNG TIN KHÁC\n1. Nợ tiềm tàng\nNgày 31 tháng 3 năm 2014, Bộ Thương mại Mỹ (DOC) đã ra phán quyết cuối cùng của đợt rà soát hành chính thuế chống bán phá giá lần 09 (POR 9) từ ngày 01 tháng 8 năm 2011 đến ngày 31 tháng 7 năm 2012 đối với các doanh nghiệp cá tra, cá basa Việt Nam. Theo đó, sản phẩm cá tra và cá basa của Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang phải chịu mức thuế chống bán phá giá là 0,42 USD/kg khi xuất khẩu vào thị trường Mỹ.\nNgày 07 tháng 01 năm 2015, Bộ Thương mại Mỹ (DOC) đã ra phán quyết cuối cùng của đợt rà soát hành chính thuế chống bán phá giá lần 10 (POR 10) từ ngày 01 tháng 8 năm 2012 đến ngày 31 tháng 7 năm 2013 đối với các doanh nghiệp cá tra, cá basa Việt Nam. Theo đó, sản phẩm cá tra và cá basa của Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang phải chịu mức thuế chống bán phá giá là 0,97 USD/kg khi xuất khẩu vào thị trường Mỹ.\nNgày 24 tháng 03 năm 2016, Bộ Thương mại Mỹ (DOC) đã ra phán quyết cuối cùng của đợt rà soát hành chính thuế chống bán phá giá lần 11 (POR 11) từ ngày 01/8/2013 đến ngày 31/7/2014 đối với các doanh nghiệp cá tra, cá basa Việt Nam. Theo đó, sản phẩm cá tra và cá basa của Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang phải chịu mức thuế chống bán phá giá là 0,69 USD/kg khi xuất khẩu vào thị trường Mỹ.\nTập đoàn chưa xem xét đến ảnh hưởng của các vấn đề này khi lập Báo cáo tài chính giữa niên độ.\n2. Giao dịch và số dư với các bên liên quan\nCác bên liên quan với Tập đoàn bao gồm các thành viên quản lý chủ chốt, các cá nhân có liên quan với các thành viên quản lý chủ chốt và các bên liên quan khác.\n2a. Giao dịch và số dư với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt\nCác thành viên quản lý chủ chốt gồm các thành viên Hội đồng quản trị và các thành viên Ban điều hành (Ban Tổng Giám đốc, Kế toán trưởng). Các cá nhân có liên quan với các thành viên quản lý chủ chốt là các thành viên mật thiết trong gia đình các thành viên quản lý chủ chốt.\nGiao dịch với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt:\nGiao dịch về bán hàng và cung cấp dịch vụ cho các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt đã được trình bày ở thuyết minh số VI.1b. Các giao dịch khác với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này (Năm nay) | Lũy kế từ đầu năm đến cuối kỳ này (Năm trước) |\n|---|---|---|\n| Các thành viên Hội đồng quản trị | | |\n| Mua cá nguyên liệu | - | - |\n| Vay | 50.000.000.000 | 77.100.000.000 |\n| Trả nợ vay | 43.000.000.000 | 29.500.000.000 |\n| Các cá nhân có liên quan với các thành viên quản lý chủ chốt | | |\n| Mua cá nguyên liệu | - | - |\n| Vay | - | - |\n| Trả nợ vay | - | - |\nGiá hàng hóa, dịch vụ cung cấp cho các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt là giá thỏa thuận do Tập đoàn công bố trừ đi khoản chiết khấu. Việc mua hàng hóa, dịch vụ từ các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt được thực hiện theo giá thỏa thuận.\nCông nợ với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt:\nCông nợ với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt được trình bày trong các thuyết minh ở Mục V.\nCác khoản công nợ phải thu các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt không có bảo đảm và sẽ được thanh toán bằng tiền. Không có khoản dự phòng phải thu khó đòi nào được lập cho các khoản nợ phải thu các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt.\nThu nhập của các thành viên quản lý chủ chốt của Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này (Năm nay) | Lũy kế từ đầu năm đến cuối kỳ này (Năm trước) |\n|---|---|---|\n| Tiền lương, phụ cấp | 935.917.333 | 931.469.360 |\n| Cộng | 935.917.333 | 931.469.360 |",
+    "questions": [
+      {
+        "question": "Mức thuế chống bán phá giá cao nhất mà sản phẩm cá tra, cá basa của công ty phải chịu khi xuất khẩu vào thị trường Mỹ là bao nhiêu USD/kg?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tập đoàn đã vay bao nhiêu từ các thành viên Hội đồng quản trị lũy kế năm nay?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng tiền lương và phụ cấp của các thành viên quản lý chủ chốt lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích các rà soát hành chính thuế chống bán phá giá của Bộ Thương mại Mỹ đối với các sản phẩm cá tra, cá basa của Công ty. Tại sao Tập đoàn chưa xem xét ảnh hưởng của chúng?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "So sánh giao dịch vay và trả nợ vay giữa các thành viên Hội đồng quản trị năm nay và năm trước. Xu hướng này có ý nghĩa gì đối với nguồn vốn của công ty?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích các rủi ro tiềm ẩn liên quan đến việc Tập đoàn không lập dự phòng cho các khoản công nợ phải thu các thành viên quản lý chủ chốt và cá nhân liên quan.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ độc lập trong quản trị doanh nghiệp của Tập đoàn dựa trên các giao dịch với các bên liên quan và thu nhập của các thành viên quản lý chủ chốt.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Những thông tin khác (VIII.2b - VIII.5b)\nLoại nội dung: Cả hai\n2b. Giao dịch và số dư với các bên liên quan khác\nCác bên liên quan khác với Tập đoàn gồm:\n| Bên liên quan khác | Mối quan hệ |\n|---|---|\n| Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long AG | Công ty có quan hệ mật thiết với Tổng Giám đốc |\n| Công ty cổ phần Xuất nhập khẩu Thủy sản An Mỹ | Công ty có quan hệ mật thiết với Tổng Giám đốc |\nGiao dịch với các bên liên quan khác:\nTập đoàn chỉ phát sinh giao dịch với Công ty cổ phần Xuất nhập khẩu Thủy sản Cửu Long như sau:\n| Chỉ tiêu | Lũy kế từ đầu năm đến cuối kỳ này (Năm nay) | Lũy kế từ đầu năm đến cuối kỳ này (Năm trước) |\n|---|---|---|\n| Mua cá nguyên liệu | - | - |\n| Thuê gia công thức ăn thủy sản | - | - |\n| Bán phụ phẩm | - | - |\nGiá hàng hóa, dịch vụ cung cấp cho các bên liên quan khác là giá thỏa thuận do Công ty công bố trừ đi khoản chiết khấu. Việc mua hàng hóa, dịch vụ từ các bên liên quan khác được thực hiện theo giá thỏa thuận.\nCông nợ với các bên liên quan khác:\nCông nợ với các bên liên quan khác được trình bày trong các thuyết minh ở Mục V.\nCác khoản công nợ phải thu các bên liên quan khác không có bảo đảm và sẽ được thanh toán bằng tiền. Không có khoản dự phòng phải thu khó đòi nào được lập cho các khoản nợ phải thu các bên liên quan khác.\n3. Số liệu so sánh\nNhư đã trình bày tại thuyết minh số II.1.1, từ ngày 01 tháng 01 năm 2015 Công ty đã áp dụng Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính hướng dẫn Chế độ kế toán doanh nghiệp thay thế Quyết định số 15/2006/QĐ-BTC ngày 20 tháng 3 năm 2006 của Bộ trưởng Bộ Tài chính và Thông tư số 244/2009/TT-BTC ngày 31 tháng 12 năm 2009 của Bộ Tài chính. Tập đoàn đã trình bày lại các số liệu so sánh theo quy định của Chế độ kế toán doanh nghiệp mới này.\n4. Thông tin về bộ phận\nThông tin bộ phận được trình bày theo lĩnh vực kinh doanh và khu vực địa lý. Báo cáo bộ phận chính yếu là theo lĩnh vực kinh doanh do các hoạt động kinh doanh của Tập đoàn được tổ chức và quản lý theo tính chất của sản phẩm.\nThông tin về lĩnh vực kinh doanh:\nCông ty có các lĩnh vực kinh doanh chính sau:\n- Hoạt động sản xuất, chế biến thức ăn thủy sản, chế biến thủy sản.\n- Hoạt động khác bao gồm thương mại, dịch vụ.\n5. Quản lý rủi ro tài chính\nHoạt động của Tập đoàn phát sinh các rủi ro tài chính sau: rủi ro tín dụng, rủi ro thanh khoản và rủi ro thị trường. Ban Tổng Giám đốc chịu trách nhiệm trong việc thiết lập các chính sách và các kiểm soát nhằm giảm thiểu các rủi ro tài chính cũng như giám sát việc thực hiện các chính sách và các kiểm soát đã thiết lập.\n5a. Rủi ro tín dụng\nRủi ro tín dụng là rủi ro mà một bên tham gia trong hợp đồng không có khả năng thực hiện được nghĩa vụ của mình dẫn đến tổn thất về tài chính cho Tập đoàn. Tập đoàn có các rủi ro tín dụng phát sinh chủ yếu từ các khoản phải thu khách hàng, tiền gửi ngân hàng.\nPhải thu khách hàng\nTập đoàn quản lý các khoản phải thu khách hàng thông qua việc đặt ra các quy định chặt chẽ về điều kiện bán hàng, chính sách tín dụng, hạn mức nợ và thời hạn nợ một cách cụ thể. Hàng tháng Ban Tổng Giám đốc thực hiện kiểm tra việc tuân thủ quy chế bán hàng này. Ngoài ra, nhân viên phòng kế toán thường xuyên theo dõi nợ phải thu để đôn đốc thu hồi.\nTiền gửi ngân hàng\nCác khoản tiền gửi ngân hàng không có kỳ hạn của Tập đoàn được gửi tại các ngân hàng trong nước. Ban Tổng Giám đốc không nhận thấy có rủi ro tín dụng trọng yếu nào từ các khoản tiền gửi này.\nMức độ rủi ro tín dụng tối đa đối với các tài sản tài chính là giá trị ghi sổ của các tài sản tài chính (xem thuyết minh số VIII.6 về giá trị ghi sổ của các tài sản tài chính).\n5b. Rủi ro thanh khoản\nRủi ro thanh khoản là rủi ro Công ty gặp khó khăn khi thực hiện nghĩa vụ tài chính do thiếu tiền.\nRủi ro thanh khoản của Tập đoàn chủ yếu phát sinh từ việc các tài sản tài chính và nợ phải trả tài chính có các thời điểm đáo hạn lệch nhau.\nTập đoàn quản lý rủi ro thanh khoản thông qua các biện pháp: thường xuyên theo dõi các yêu cầu về thanh toán hiện tại và dự kiến trong tương lai để duy trì một lượng tiền cũng như các khoản vay ở mức phù hợp, giảm thiểu sự chênh lệch giữa các luồng tiền phát sinh thực tế với dự kiến nhằm giảm thiểu ảnh hưởng do biến động của luồng tiền.\nThời hạn thanh toán của các khoản nợ phải trả tài chính phi phái sinh (bao gồm lãi phải trả) dựa trên thời hạn thanh toán theo hợp đồng và chưa được chiết khấu như sau:\n| Chỉ tiêu | Từ 01 năm trở xuống | Trên 01 năm đến 05 năm | Trên 05 năm | Cộng |\n|---|---|---|---|---|\n| Số cuối kỳ | | | | |\n| Vay và nợ | 737.443.116.169 | - | - | 737.443.116.169 |\n| Phải trả người bán | 153.081.651.122 | - | - | 153.081.651.122 |\n| Các khoản phải trả khác | 4.835.112.668 | - | - | 4.835.112.668 |\n| Cộng | 895.359.879.959 | - | - | 895.359.879.959 |\n| Số đầu năm | | | | |\n| Vay và nợ | 802.991.063.448 | - | - | 802.991.063.448 |\n| Phải trả người bán | 93.820.377.357 | - | - | 93.820.377.357 |\n| Các khoản phải trả khác | 4.031.383.806 | - | - | 4.031.383.806 |\n| Cộng | 900.842.824.611 | - | - | 900.842.824.611 |\nBan Tổng Giám đốc cho rằng mức độ rủi ro đối với việc trả nợ là vừa phải. Tập đoàn có khả năng thanh toán các khoản nợ đến hạn từ dòng tiền từ hoạt động kinh doanh và tiền thu từ các tài sản tài chính đáo hạn. Tập đoàn có đủ khả năng tiếp cận các nguồn vốn và các khoản vay đến hạn trong vòng 12 tháng có thể được gia hạn với các bên cho vay hiện tại.",
+    "questions": [
+      {
+        "question": "Hai bên liên quan khác có quan hệ mật thiết với Tổng Giám đốc là những công ty nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các lĩnh vực kinh doanh chính của Công ty là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các loại rủi ro tài chính mà hoạt động của Tập đoàn phát sinh là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tập đoàn quản lý rủi ro tín dụng liên quan đến phải thu khách hàng bằng những biện pháp nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh tổng nợ phải trả từ 1 năm trở xuống cuối kỳ và đầu năm. Điều này có ý nghĩa gì đối với rủi ro thanh khoản của Tập đoàn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả của các biện pháp quản lý rủi ro thanh khoản của Tập đoàn. Mức độ rủi ro đối với việc trả nợ được coi là vừa phải có cơ sở vững chắc không?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc áp dụng Chế độ kế toán doanh nghiệp mới từ năm 2015 đến khả năng so sánh số liệu tài chính của Tập đoàn qua các năm.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính hợp nhất - Những thông tin khác (VIII.5c - VIII.6)\nLoại nội dung: Cả hai\n5c. Rủi ro thị trường\nRủi ro thị trường là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của giá thị trường.\nRủi ro thị trường liên quan đến hoạt động của Tập đoàn gồm rủi ro ngoại tệ, rủi ro lãi suất, rủi ro về giá chứng khoán và rủi ro giá nguyên vật liệu.\nCác phân tích về độ nhạy, các đánh giá dưới đây liên quan đến tình hình tài chính của Công ty tại ngày 31 tháng 12 năm 2023 và ngày 01 tháng 01 năm 2023 trên cơ sở giá trị nợ thuần. Mức thay đổi của tỷ giá, lãi suất, giá chứng khoán, giá nguyên vật liệu sử dụng để phân tích độ nhạy được dựa trên việc đánh giá khả năng có thể xảy ra trong vòng một năm tới với các điều kiện quan sát được của thị trường tại thời điểm hiện tại.\nRủi ro ngoại tệ\nRủi ro ngoại tệ là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của tỷ giá hối đoái.\nTập đoàn xuất khẩu sản phẩm với đồng tiền giao dịch chủ yếu là USD và EUR do vậy bị ảnh hưởng bởi sự biến động của tỷ giá hối đoái.\nTập đoàn quản lý rủi ro liên quan đến biến động của tỷ giá hối đoái bằng cách tối ưu thời hạn thanh toán các khoản nợ, dự báo tỷ giá ngoại tệ, duy trì hợp lý cơ cấu vay và nợ giữa ngoại tệ và VND, lựa chọn thời điểm mua và thanh toán các khoản ngoại tệ tại thời điểm tỷ giá thấp, sử dụng tối ưu nguồn tiền hiện có để cân bằng giữa rủi ro tỷ giá và rủi ro thanh khoản.\nTài sản/Nợ phải trả thuần có gốc ngoại tệ của Tập đoàn như sau:\n| Chỉ tiêu | Số cuối kỳ (USD) | Số cuối kỳ (EUR) | Số đầu năm (USD) | Số đầu năm (EUR) |\n|---|---|---|---|---|\n| Tiền và các khoản tương đương tiền | 1.042.303,87 | 468,59 | 609.714,93 | 468,59 |\n| Phải thu khách hàng | 5.491.269 | - | 6.043.779,60 | - |\n| Các khoản phải thu khác | - | - | - | - |\n| Vay và nợ | 1.215.300,00 | - | - | - |\n| Phải trả người bán | - | 18.255,10 | - | 18.255,10 |\n| Tài sản/Nợ phải trả thuần có gốc ngoại tệ | 6.515.317,40 | 468,59 | 6.653.494,53 | 468,59 |\nTại ngày kết thúc kỳ kế toán, với giả định các biến số khác không thay đổi, nếu tỷ giá hối đoái giữa VND và USD tăng/giảm 2% thì lợi nhuận sau thuế và vốn chủ sở hữu kỳ này của Tập đoàn sẽ tăng/giảm 2.797.032.275 VND, cùng kỳ năm trước giảm/tăng 2.312.286.464 VND do ảnh hưởng của lãi/lỗ chênh lệch tỷ giá đánh giá lại số dư có gốc ngoại tệ của các công cụ tài chính.\nRủi ro do biến động của tỷ giá hối đoái giữa VND và EUR đến lợi nhuận sau thuế và vốn chủ sở hữu của Tập đoàn là không đáng kể do nợ thuần có giá trị nhỏ.\nRủi ro lãi suất\nRủi ro lãi suất là rủi ro mà giá trị hợp lý hoặc các luồng tiền trong tương lai của công cụ tài chính sẽ biến động theo những thay đổi của lãi suất thị trường.\nRủi ro lãi suất của Tập đoàn chủ yếu liên quan đến các khoản vay có lãi suất thả nổi.\nTập đoàn quản lý rủi ro lãi suất bằng cách phân tích tình hình thị trường để đưa ra các quyết định hợp lý trong việc chọn thời điểm vay và kỳ hạn vay thích hợp nhằm có được các lãi suất có lợi nhất cũng như duy trì cơ cấu vay với lãi suất thả nổi và cố định phù hợp.\nRủi ro về giá chứng khoán\nCác chứng khoán do Công ty nắm giữ có thể bị ảnh hưởng bởi các rủi ro về giá trị tương lai của chứng khoán đầu tư. Công ty quản lý rủi ro về giá chứng khoán bằng cách thiết lập hạn mức đầu tư.\nTại ngày kết thúc kỳ kế toán, với giả định các biến số khác không thay đổi, nếu giá các chứng khoán Tập đoàn đang đầu tư tăng/giảm 10% thì lợi nhuận sau thuế và vốn chủ sở hữu kỳ này của Tập đoàn sẽ tăng/giảm 142.800.000 VND, cùng kỳ năm trước tăng/giảm 142.800.000 VND. Mức độ nhạy cảm đối với sự biến động của giá chứng khoán kỳ này không thay đổi nhiều so với cùng kỳ năm trước.\nRủi ro về giá nguyên vật liệu\nTập đoàn có rủi ro về sự biến động của giá nguyên vật liệu. Tập đoàn quản lý rủi ro về giá nguyên vật liệu bằng cách theo dõi chặt chẽ các thông tin và tình hình có liên quan của thị trường nhằm quản lý thời điểm mua hàng, kế hoạch sản xuất và mức hàng tồn kho một cách hợp lý. Bên cạnh đó, Tập đoàn đẩy mạnh phát triển vùng nuôi cá để chủ động nguồn nguyên liệu và quản lý rủi ro về giá nguyên liệu.\nTập đoàn chưa sử dụng các công cụ phái sinh đảm bảo để phòng ngừa các rủi ro về giá nguyên vật liệu.\n5. Tài sản đảm bảo\nTài sản thế chấp cho đơn vị khác\nCông ty thế chấp một khoản nợ phải thu khách hàng để đảm bảo cho khoản vay của các ngân hàng (xem thuyết minh số V.3). Giá trị sổ sách của tài sản thế chấp tại ngày kết thúc kỳ kế toán là 109.761.656.100 VND; số đầu năm là 95.476.735.303 VND.\nTài sản nhận thế chấp của đơn vị khác\nCông ty không nhận tài sản đảm bảo nào của đơn vị khác tại ngày 30 tháng 06 năm 2024 và tại ngày 01 tháng 01 năm 2024.\n6. Giá trị hợp lý của tài sản và nợ phải trả tài chính\n| Chỉ tiêu | Giá trị ghi sổ (Số cuối kỳ) | Giá trị ghi sổ (Số đầu năm) | Giá trị hợp lý (Số cuối kỳ) | Giá trị hợp lý (Số đầu năm) |\n|---|---|---|---|---|\n| Tài sản tài chính | | | | |\n| Tiền và các khoản tương đương tiền | 93.987.468.614 | 71.092.013.296 | 93.987.468.614 | 71.092.013.296 |\n| Phải thu khách hàng | 282.277.875.124 | 246.571.239.230 | 263.268.723.910 | 227.928.973.324 |\n| Các khoản phải thu khác | 5.741.555.968 | 5.299.154.119 | 5.741.555.968 | 5.299.154.119 |\n| Tài sản tài chính sẵn sàng để bán | 3.600.000.000 | 3.600.000.000 | - | - |\n| Cộng | 385.606.899.706 | 326.562.406.645 | 362.997.748.492 | 304.320.140.739 |\n| Nợ phải trả tài chính | | | | |\n| Vay và nợ | 737.443.116.169 | 802.991.063.448 | 737.443.116.169 | 802.991.063.448 |\n| Phải trả người bán | 153.081.651.122 | 93.820.377.357 | 153.081.651.122 | 93.820.377.357 |\n| Các khoản phải trả khác | 4.835.112.668 | 4.031.383.806 | 4.835.112.668 | 4.031.383.806 |\n| Cộng | 895.359.879.959 | 900.842.824.611 | 895.359.879.959 | 900.842.824.611 |\nGiá trị hợp lý của các tài sản tài chính và nợ phải trả tài chính được phản ánh theo giá trị có thể được chuyển đổi trong một giao dịch hiện tại giữa các bên có đầy đủ hiểu biết và mong muốn giao dịch.\nTập đoàn sử dụng phương pháp và giả định sau để ước tính giá trị hợp lý của các tài sản tài chính và nợ phải trả tài chính:\n- Giá trị hợp lý của tiền và các khoản tương đương tiền, phải thu khách hàng, các khoản phải thu khác, vay, phải trả người bán và các khoản phải trả khác ngắn hạn tương đương giá trị sổ sách đã trừ dự phòng cho phần ước tính có khả năng không thu hồi được của các khoản mục này do có kỳ hạn ngắn.\n- Giá trị hợp lý của các tài sản tài chính sẵn sàng để bán được niêm yết trên thị trường chứng khoán là giá giao dịch công bố tại ngày kết thúc kỳ kế toán. Đối với các tài sản tài chính sẵn sàng để bán chưa niêm yết nhưng có giá giao dịch do 3 công ty chứng khoán công bố tại ngày kết thúc kỳ kế toán thì giá trị hợp lý của các khoản đầu tư này là giá trung bình trên cơ sở giá giao dịch do 3 công ty chứng khoán công bố.",
+    "questions": [
+      {
+        "question": "Các loại rủi ro thị trường mà Tập đoàn phải đối mặt là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị ghi sổ của tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị sổ sách của tài sản thế chấp (nợ phải thu khách hàng) tại ngày kết thúc kỳ kế toán là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nếu tỷ giá hối đoái giữa VND và USD tăng/giảm 2%, lợi nhuận sau thuế của Tập đoàn sẽ thay đổi bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích cách Tập đoàn quản lý rủi ro ngoại tệ. Phương pháp này có hiệu quả như thế nào trong bối cảnh thị trường biến động?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ nhạy cảm của lợi nhuận và vốn chủ sở hữu đối với biến động giá chứng khoán. Điều này có ý nghĩa gì đối với chiến lược đầu tư và quản lý rủi ro của công ty?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "So sánh giá trị ghi sổ và giá trị hợp lý của các khoản phải thu khách hàng cuối kỳ. Giải thích lý do có sự chênh lệch (nếu có) và ý nghĩa của nó.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "26",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Phụ lục Bảng đối chiếu biến động của vốn chủ sở hữu\nLoại nội dung: Bảng\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Thặng dư vốn cổ phần | Quỹ đầu tư phát triển | Lợi nhuận sau thuế chưa phân phối | Cộng |\n|---|---|---|---|---|---|\n| Số dư đầu năm trước | 501.590.190.000 | 15.520.224.200 | 14.880.252.832 | 292.409.803.490 | 824.400.470.522 |\n| Lợi nhuận tăng trong năm trước | - | - | - | 9.852.743.462 | 9.852.743.462 |\n| Tăng vốn từ lợi nhuận năm trước | - | - | - | - | - |\n| Tăng vốn từ quỹ đầu tư phát triển | - | - | - | - | - |\n| Tăng vốn từ quỹ khen thưởng | - | - | - | - | - |\n| Chia cổ tức trong năm trước | - | - | - | 35.111.313.300 | 35.111.313.300 |\n| Trích các quỹ trong năm trước | - | - | - | - | - |\n| Phát hành cổ phiếu chuyển đổi | - | - | - | - | - |\n| Số dư cuối năm trước | 501.590.190.000 | 15.520.224.200 | 14.880.252.832 | 267.151.233.652 | 799.141.900.684 |\n| Số dư đầu năm nay | 501.590.190.000 | 15.520.224.200 | 14.880.252.832 | 267.151.233.652 | 799.141.900.684 |\n| Lợi nhuận tăng trong năm nay | - | - | - | 5.485.789.416 | 5.485.789.416 |\n| Tăng trong kỳ | - | - | - | - | - |\n| Giảm trong kỳ | - | - | - | - | - |\n| Chia cổ tức trong năm nay | - | - | - | - | - |\n| Trích các quỹ trong năm nay | - | - | - | - | - |\n| Tăng do hợp nhất | - | - | - | - | - |\n| Chi quỹ trong năm | - | - | - | - | - |\n| Số dư cuối kỳ năm nay | 501.590.190.000 | 15.520.224.200 | 14.880.252.832 | 272.637.023.068 | 804.627.690.100 |",
+    "questions": [
+      {
+        "question": "Tổng vốn chủ sở hữu cuối kỳ năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối cuối kỳ năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận tăng trong năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng vốn chủ sở hữu giữa đầu năm nay và cuối năm trước. Có sự biến động đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc chia cổ tức trong năm trước đến lợi nhuận sau thuế chưa phân phối. Chính sách cổ tức của công ty là gì?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cấu trúc vốn chủ sở hữu từ đầu năm trước đến cuối kỳ năm nay. Các yếu tố nào đóng vai trò quan trọng trong sự biến động này?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "27",
+    "content": "Công ty: Công ty CP Xuất nhập khẩu Thủy sản Cửu Long An Giang\nMã cổ phiếu: ACL\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý II/2024\nThời gian: Phát hành 29/07/2024, Quý II/2024\nÝ kiến kiểm toán: Không có\n\nSection: Giải trình chênh lệch lợi nhuận sau thuế Quý II/2024 so với Quý II/2023\nLoại nội dung: Cả hai\nCÔNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc Lập - Tự Do - Hạnh Phúc\nSố: 05/BCGTr.CLAG\nLong Xuyên, ngày 5 tháng 07 năm 2024\nKính gửi: ỦY BAN CHỨNG KHOÁN NHÀ NƯỚC\nSỞ GIAO DỊCH CHỨNG KHOÁN TP.HCM\nTên tổ chức niêm yết: CÔNG TY CP XNK THỦY SẢN CỬU LONG AN GIANG\nMã chứng khoán: ACL\nĐịa chỉ: số 90 đường Hùng Vương, KCN Mỹ Quí, TP Long Xuyên, An Giang\nGiải trình tình hình biến động lợi nhuận sau thuế Báo cáo tài chính quý 2 năm 2024 so với quý 2 năm 2023 theo Thông tư 96/2020/TT-BTC của Bộ Tài chính ban hành ngày 16/11/2020.\n| STT | Chỉ tiêu | Quý 2 năm 2024 | Quý 2 năm 2023 | Q2/2024 so với Q2/2023 |\n|---|---|---|---|---|\n| 1 | BCTC Công ty Mẹ | 1.818.017.784 | 2.869.747.371 | Giảm 36,65% |\n| 2 | BCTC Hợp nhất | 3.211.218.332 | 4.331.590.305 | Giảm 25,87% |\nNguyên nhân\n1. Lợi nhuận BCTC công ty mẹ giảm 36,65% so với cùng kỳ là do trong quý II/2024 doanh thu bán hàng và cung cấp dịch vụ tăng 151,49%, trong khi đó giá vốn hàng bán tăng 172,42%, do đó lợi nhuận gộp tăng 21,79% so với cùng kỳ.\n2. Lợi nhuận BCTC hợp nhất giảm 25,87% so với cùng kỳ là do trong quý II/2024 doanh thu bán hàng và cung cấp dịch vụ tăng 150,33%, trong khi đó giá vốn hàng bán tăng 179,30%, do đó lợi nhuận gộp tăng 17,83% so với cùng kỳ.\nTrên đây là giải trình về tình hình biến động lợi nhuận sau thuế quý II năm 2024 so với quý II năm 2023, Công ty CP XNK Thủy Sản Cửu Long An Giang kính gửi.",
+    "questions": [
+      {
+        "question": "Lợi nhuận sau thuế của Báo cáo tài chính hợp nhất trong Quý II/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phần trăm giảm lợi nhuận của Báo cáo tài chính công ty mẹ trong Quý II/2024 so với Quý II/2023 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã chứng khoán của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh sự thay đổi về lợi nhuận gộp của BCTC Công ty Mẹ và BCTC Hợp nhất trong Quý II/2024 so với Quý II/2023.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích tại sao lợi nhuận sau thuế của công ty mẹ giảm mặc dù doanh thu và lợi nhuận gộp đều tăng trong quý II/2024 so với cùng kỳ?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ ảnh hưởng của việc tăng giá vốn hàng bán đến lợi nhuận của công ty trong quý II/2024. Công ty có thể làm gì để kiểm soát yếu tố này?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích sự khác biệt về mức độ giảm lợi nhuận giữa BCTC Công ty Mẹ và BCTC Hợp nhất. Điều này nói lên điều gì về hiệu quả hoạt động của các công ty con?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

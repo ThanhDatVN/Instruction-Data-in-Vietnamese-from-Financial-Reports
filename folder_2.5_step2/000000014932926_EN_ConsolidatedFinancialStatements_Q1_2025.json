@@ -1,0 +1,839 @@
+```json
+[
+  {
+    "instruction": "Tên đầy đủ của công ty là gì?",
+    "input": "1",
+    "output": "Tên đầy đủ của công ty là CÔNG TY CỔ PHẦN VINAFREIGHT."
+  },
+  {
+    "instruction": "Mã cổ phiếu của công ty là gì?",
+    "input": "1",
+    "output": "Mã cổ phiếu của công ty là VNF."
+  },
+  {
+    "instruction": "Loại báo cáo tài chính được công bố là gì và cho quý mấy?",
+    "input": "1",
+    "output": "Loại báo cáo tài chính được công bố là Báo cáo tài chính hợp nhất và cho Quý I/2025."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong kỳ báo cáo có thay đổi từ 10% trở lên so với cùng kỳ năm trước không?",
+    "input": "1",
+    "output": "Có, lợi nhuận sau thuế thu nhập doanh nghiệp trong báo cáo kết quả kinh doanh kỳ báo cáo thay đổi từ 10% trở lên so với cùng kỳ năm trước."
+  },
+  {
+    "instruction": "Địa chỉ trụ sở chính của Công ty Vinafreight là gì?",
+    "input": "1",
+    "output": "Địa chỉ trụ sở chính của Công ty Vinafreight là Tầng 8, Tòa nhà Phú Nhuận Plaza, Số 82 Trần Huy Liệu, Phường 15, Quận Phú Nhuận, Thành phố Hồ Chí Minh, Việt Nam."
+  },
+  {
+    "instruction": "Công ty có phải giải trình gì về ý kiến kiểm toán hay lợi nhuận sau thuế thay đổi bất thường không?",
+    "input": "1",
+    "output": "Công ty phải giải trình về việc lợi nhuận sau thuế thu nhập doanh nghiệp trong báo cáo kết quả kinh doanh kỳ báo cáo thay đổi từ 10% trở lên so với cùng kỳ năm trước. Không cần giải trình về ý kiến kiểm toán hay lợi nhuận sau thuế chuyển từ lỗ sang lãi hoặc ngược lại."
+  },
+  {
+    "instruction": "Mục đích của việc công bố thông tin này là gì theo quy định hiện hành?",
+    "input": "1",
+    "output": "Mục đích của việc công bố thông tin này là thực hiện theo quy định tại Điều 14 của Thông tư số 96/2020/TT-BTC ngày 16 tháng 11 năm 2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán."
+  },
+  {
+    "instruction": "Tổng tài sản ngắn hạn của Vinafreight tại ngày 31 tháng 3 năm 2025 là bao nhiêu?",
+    "input": "2",
+    "output": "Tổng tài sản ngắn hạn của Vinafreight tại ngày 31 tháng 3 năm 2025 (Số cuối kỳ) là 481.835.262.683 VND."
+  },
+  {
+    "instruction": "Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+    "input": "2",
+    "output": "Tiền và các khoản tương đương tiền cuối kỳ là 149.363.936.229 VND."
+  },
+  {
+    "instruction": "So sánh hàng tồn kho cuối kỳ với đầu năm, sự thay đổi là bao nhiêu?",
+    "input": "2",
+    "output": "Hàng tồn kho cuối kỳ là 3.584.636.513 VND, trong khi đầu năm là 2.428.897.157 VND. Sự thay đổi là tăng 1.155.739.356 VND."
+  },
+  {
+    "instruction": "Khoản đầu tư nắm giữ đến ngày đáo hạn cuối kỳ là bao nhiêu?",
+    "input": "2",
+    "output": "Khoản đầu tư nắm giữ đến ngày đáo hạn cuối kỳ là 91.089.283.562 VND."
+  },
+  {
+    "instruction": "Phân tích biến động của các khoản phải thu ngắn hạn và dự phòng phải thu khó đòi. Điều này có ý nghĩa gì đối với rủi ro tín dụng của công ty?",
+    "input": "2",
+    "output": "Các khoản phải thu ngắn hạn giảm nhẹ từ 232.419.782.196 VND (đầu năm) xuống 232.359.123.402 VND (cuối kỳ), trong khi dự phòng phải thu khó đòi tăng từ 4.337.245.898 VND (đầu năm) lên 4.380.781.520 VND (cuối kỳ). Biến động này cho thấy công ty đang đối mặt với rủi ro tín dụng tiềm ẩn, khi dự phòng phải thu khó đòi tăng nhẹ mặc dù tổng khoản phải thu ngắn hạn giảm nhẹ. Việc tăng dự phòng cho thấy công ty đánh giá một phần các khoản nợ này có khả năng khó thu hồi hơn."
+  },
+  {
+    "instruction": "Đánh giá mức độ thanh khoản của công ty dựa trên cơ cấu tài sản ngắn hạn hiện tại.",
+    "input": "2",
+    "output": "Dựa trên cơ cấu tài sản ngắn hạn: Tiền và các khoản tương đương tiền cuối kỳ là 149.363.936.229 VND và các khoản đầu tư tài chính ngắn hạn (có thể chuyển đổi thành tiền mặt) là 93.022.260.562 VND. Tổng tài sản ngắn hạn là 481.835.262.683 VND. Với một lượng tiền mặt và đầu tư tài chính ngắn hạn đáng kể, công ty có vẻ có mức độ thanh khoản khá tốt để đáp ứng các nghĩa vụ ngắn hạn, mặc dù các khoản phải thu ngắn hạn chiếm một tỷ trọng lớn (232.359.123.402 VND)."
+  },
+  {
+    "instruction": "Tính tỷ lệ tiền và các khoản tương đương tiền trên tổng tài sản ngắn hạn cuối kỳ và đầu năm. Nhận xét về xu hướng này.",
+    "input": "2",
+    "output": "Tỷ lệ tiền và các khoản tương đương tiền trên tổng tài sản ngắn hạn:\n- Cuối kỳ: 149.363.936.229 / 481.835.262.683 ≈ 31,00%\n- Đầu năm: 223.779.134.813 / 582.910.725.772 ≈ 38,40%\n\nXu hướng này cho thấy tỷ lệ tiền và các khoản tương đương tiền trên tổng tài sản ngắn hạn của công ty đã giảm từ 38,40% xuống 31,00%. Điều này có thể cho thấy công ty đã sử dụng một phần tiền để đầu tư hoặc thanh toán các khoản nợ, hoặc có sự giảm sút trong dòng tiền khả dụng. Mặc dù có sự giảm nhưng tỷ lệ này vẫn ở mức khá cao, cho thấy công ty vẫn duy trì khả năng thanh toán tốt."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn cuối kỳ là bao nhiêu?",
+    "input": "3",
+    "output": "Tổng tài sản dài hạn cuối kỳ là 392.240.851.825 VND."
+  },
+  {
+    "instruction": "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+    "input": "3",
+    "output": "Nguyên giá tài sản cố định hữu hình cuối kỳ là 18.557.901.930 VND."
+  },
+  {
+    "instruction": "Các khoản phải thu dài hạn cuối kỳ thay đổi như thế nào so với đầu năm?",
+    "input": "3",
+    "output": "Các khoản phải thu dài hạn cuối kỳ là 8.866.673.292 VND, trong khi đầu năm là 4.341.187.023 VND. Như vậy, các khoản phải thu dài hạn đã tăng 4.525.486.269 VND."
+  },
+  {
+    "instruction": "Tỷ trọng của Đầu tư tài chính dài hạn trên tổng tài sản dài hạn là bao nhiêu phần trăm tại cuối kỳ?",
+    "input": "3",
+    "output": "Tỷ trọng của Đầu tư tài chính dài hạn trên tổng tài sản dài hạn tại cuối kỳ là:\n374.241.123.760 VND / 392.240.851.825 VND ≈ 95,41%"
+  },
+  {
+    "instruction": "Đánh giá mức độ phụ thuộc của công ty vào tài sản cố định trong cơ cấu tài sản dài hạn.",
+    "input": "3",
+    "output": "Tổng tài sản dài hạn cuối kỳ là 392.240.851.825 VND, trong đó Tài sản cố định (bao gồm hữu hình và vô hình) là 6.631.894.499 VND. Tỷ trọng của tài sản cố định trên tổng tài sản dài hạn là khoảng 1.69% (6.631.894.499 / 392.240.851.825 * 100%). Dựa trên các con số này, công ty có mức độ phụ thuộc rất thấp vào tài sản cố định trong cơ cấu tài sản dài hạn của mình. Thay vào đó, Đầu tư tài chính dài hạn chiếm tỷ trọng rất lớn (95.41%)."
+  },
+  {
+    "instruction": "Phân tích tác động của việc tăng các khoản phải thu dài hạn đến dòng tiền hoạt động của công ty.",
+    "input": "3",
+    "output": "Việc tăng các khoản phải thu dài hạn từ 4.341.187.023 VND (đầu năm) lên 8.866.673.292 VND (cuối kỳ) cho thấy công ty đã cấp tín dụng dài hạn cho các đối tác hoặc có các khoản phải thu khác cần thời gian dài để thu hồi. Điều này thường có tác động tiêu cực đến dòng tiền hoạt động của công ty trong kỳ hiện tại vì tiền chưa được thu về. Tuy nhiên, thông tin trong chunk không đủ để phân tích sâu hơn về tác động cụ thể đến dòng tiền hoạt động mà chỉ cho thấy sự gia tăng về số dư phải thu."
+  },
+  {
+    "instruction": "Đánh giá chiến lược đầu tư dài hạn của công ty dựa trên các khoản đầu tư vào công ty liên kết và góp vốn vào đơn vị khác.",
+    "input": "3",
+    "output": "Chiến lược đầu tư dài hạn của công ty thể hiện rõ sự tập trung vào các khoản đầu tư tài chính dài hạn, đặc biệt là đầu tư vào công ty liên kết và góp vốn vào đơn vị khác. Khoản đầu tư vào công ty liên kết tăng từ 338.161.220.596 VND lên 341.430.625.989 VND, và đầu tư góp vốn vào đơn vị khác tăng mạnh từ 14.057.900.327 VND lên 30.810.497.771 VND. Điều này cho thấy công ty đang tích cực mở rộng hoặc củng cố vị thế của mình thông qua việc tham gia vào các đơn vị kinh doanh khác, có thể nhằm đa dạng hóa hoạt động hoặc tạo ra lợi nhuận từ các hoạt động liên kết."
+  },
+  {
+    "instruction": "Tổng nợ phải trả cuối kỳ là bao nhiêu?",
+    "input": "4",
+    "output": "Tổng nợ phải trả cuối kỳ là 289.803.253.504 VND."
+  },
+  {
+    "instruction": "Vốn chủ sở hữu cuối kỳ là bao nhiêu VND?",
+    "input": "4",
+    "output": "Vốn chủ sở hữu cuối kỳ là 584.272.861.004 VND."
+  },
+  {
+    "instruction": "So sánh khoản vay và nợ thuê tài chính ngắn hạn cuối kỳ với đầu năm. Nhận xét về sự thay đổi này.",
+    "input": "4",
+    "output": "Khoản vay và nợ thuê tài chính ngắn hạn cuối kỳ là 10.451.066.353 VND, trong khi đầu năm là 47.824.921.508 VND. Khoản mục này đã giảm đáng kể, cho thấy công ty đã thanh toán một phần lớn nợ vay ngắn hạn hoặc tái cơ cấu nợ."
+  },
+  {
+    "instruction": "Tỷ lệ nợ ngắn hạn trên tổng nợ phải trả cuối kỳ là bao nhiêu phần trăm?",
+    "input": "4",
+    "output": "Tỷ lệ nợ ngắn hạn trên tổng nợ phải trả cuối kỳ là:\n285.365.893.740 VND / 289.803.253.504 VND ≈ 98.47%"
+  },
+  {
+    "instruction": "Đánh giá khả năng thanh toán ngắn hạn của công ty dựa trên cơ cấu nợ ngắn hạn và biến động các khoản phải trả.",
+    "input": "4",
+    "output": "Nợ ngắn hạn chiếm tỷ trọng rất lớn trong tổng nợ phải trả (98.47% cuối kỳ), cho thấy công ty chủ yếu sử dụng nguồn vốn ngắn hạn. Các khoản phải trả người bán ngắn hạn giảm đáng kể (từ 95 tỷ xuống 47 tỷ), thuế và các khoản phải nộp nhà nước cũng giảm mạnh (từ 28 tỷ xuống 10 tỷ), và vay/nợ thuê tài chính ngắn hạn giảm sâu (từ 47 tỷ xuống 10 tỷ). Mặt khác, chi phí phải trả ngắn hạn và phải trả ngắn hạn khác lại tăng. Sự giảm mạnh của nợ vay ngắn hạn và các khoản phải trả quan trọng cho thấy công ty đã chủ động giảm gánh nặng nợ ngắn hạn, cải thiện khả năng thanh toán. Tuy nhiên, sự gia tăng của chi phí phải trả và phải trả ngắn hạn khác cần được theo dõi thêm."
+  },
+  {
+    "instruction": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 31 tháng 3 năm 2025 và nhận xét về cơ cấu vốn của công ty.",
+    "input": "4",
+    "output": "Hệ số nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 31 tháng 3 năm 2025:\nTổng nợ phải trả cuối kỳ: 289.803.253.504 VND\nVốn chủ sở hữu cuối kỳ: 584.272.861.004 VND\n\nD/E Ratio = 289.803.253.504 / 584.272.861.004 ≈ 0,496\n\nNhận xét: Hệ số D/E khoảng 0,496 cho thấy công ty đang sử dụng vốn chủ sở hữu nhiều hơn vốn vay để tài trợ cho hoạt động của mình. Điều này thể hiện cơ cấu vốn tương đối an toàn, giảm thiểu rủi ro tài chính từ nợ vay và cho thấy khả năng tự chủ tài chính tốt của công ty."
+  },
+  {
+    "instruction": "Phân tích tác động của lợi nhuận sau thuế kỳ này đến lợi nhuận sau thuế chưa phân phối của công ty.",
+    "input": "4",
+    "output": "Lợi nhuận sau thuế kỳ này là 10.766.404.174 VND. Theo bảng, mục 'Lợi nhuận sau thuế chưa phân phối' bao gồm 'Lợi nhuận/lỗ lũy kế chưa phân phối đến cuối kỳ trước' và 'Lợi nhuận/lỗ sau thuế kỳ này'. Lợi nhuận sau thuế kỳ này góp phần trực tiếp vào việc tăng lợi nhuận sau thuế chưa phân phối của công ty, nếu không có các khoản phân phối khác như cổ tức hoặc trích lập quỹ. Cụ thể, 'Lợi nhuận sau thuế chưa phân phối' cuối kỳ là 200.509.830.287 VND, trong đó có sự đóng góp của lợi nhuận kỳ này."
+  },
+  {
+    "instruction": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong Quý I/2025 là bao nhiêu?",
+    "input": "5",
+    "output": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong Quý I/2025 là 310.827.951.527 VND."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế của cổ đông công ty mẹ trong Quý I/2025 là bao nhiêu VND?",
+    "input": "5",
+    "output": "Lợi nhuận sau thuế của cổ đông công ty mẹ trong Quý I/2025 là 10.766.404.174 VND."
+  },
+  {
+    "instruction": "So sánh lợi nhuận từ hoạt động kinh doanh Quý I/2025 với Quý I/2024. Mức tăng trưởng là bao nhiêu?",
+    "input": "5",
+    "output": "Lợi nhuận từ hoạt động kinh doanh Quý I/2025 là 16.717.073.032 VND, trong khi Quý I/2024 là 10.325.488.327 VND. Mức tăng trưởng là (16.717.073.032 - 10.325.488.327) / 10.325.488.327 * 100% ≈ 61,89%."
+  },
+  {
+    "instruction": "Chi phí tài chính và chi phí lãi vay có biến động như thế nào giữa hai quý?",
+    "input": "5",
+    "output": "Chi phí tài chính trong Quý I/2025 là 2.917.513.789 VND, tăng so với 1.671.292.992 VND trong Quý I/2024. Chi phí lãi vay trong Quý I/2025 là 244.972.108 VND, giảm so với 397.562.810 VND trong Quý I/2024. Điều này cho thấy tổng chi phí tài chính tăng nhưng chi phí lãi vay lại giảm."
+  },
+  {
+    "instruction": "Phân tích hiệu quả hoạt động kinh doanh của công ty dựa trên lợi nhuận gộp và lợi nhuận từ hoạt động kinh doanh.",
+    "input": "5",
+    "output": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ của công ty giảm nhẹ từ 28.183.114.113 VND (Quý I/2024) xuống 27.432.530.996 VND (Quý I/2025). Tuy nhiên, lợi nhuận từ hoạt động kinh doanh lại tăng mạnh từ 10.325.488.327 VND (Quý I/2024) lên 16.717.073.032 VND (Quý I/2025). Điều này cho thấy mặc dù lợi nhuận từ hoạt động cốt lõi (bán hàng và dịch vụ) có xu hướng giảm về biên gộp, nhưng công ty đã quản lý tốt hơn các chi phí hoạt động hoặc có sự tăng trưởng đáng kể từ doanh thu hoạt động tài chính (tăng từ 2.393.555.730 VND lên 6.897.803.158 VND) và phần lãi trong công ty liên kết, liên doanh (dù có giảm nhưng vẫn đóng góp)."
+  },
+  {
+    "instruction": "Tính biên lợi nhuận ròng (Net Profit Margin) của công ty trong Quý I/2025 và Quý I/2024. Đánh giá xu hướng này.",
+    "input": "5",
+    "output": "Biên lợi nhuận ròng (Net Profit Margin) = Lợi nhuận sau thuế thu nhập doanh nghiệp / Doanh thu thuần về bán hàng và cung cấp dịch vụ:\n\n- Quý I/2025: 12.010.427.973 VND / 310.827.951.527 VND ≈ 3,86%\n- Quý I/2024: 7.966.498.914 VND / 303.783.814.752 VND ≈ 2,62%\n\nXu hướng này cho thấy biên lợi nhuận ròng của công ty đã tăng từ 2,62% trong Quý I/2024 lên 3,86% trong Quý I/2025. Điều này là một dấu hiệu tích cực, cho thấy công ty đã cải thiện hiệu quả hoạt động và quản lý chi phí, dẫn đến việc tạo ra nhiều lợi nhuận hơn từ mỗi đồng doanh thu thuần."
+  },
+  {
+    "instruction": "Đánh giá mức độ đóng góp của các công ty liên kết, liên doanh vào tổng lợi nhuận của công ty trong Quý I/2025 so với Quý I/2024.",
+    "input": "5",
+    "output": "Phần lãi/lỗ trong công ty liên kết, liên doanh trong Quý I/2025 là 3.321.679.007 VND, giảm đáng kể so với 7.467.361.063 VND trong Quý I/2024. Điều này cho thấy mức độ đóng góp của các công ty liên kết, liên doanh vào tổng lợi nhuận của Vinafreight đã giảm trong Quý I/2025 so với cùng kỳ năm trước. Mặc dù vẫn là một khoản lãi, sự sụt giảm này có thể ảnh hưởng đến kết quả kinh doanh hợp nhất của công ty."
+  },
+  {
+    "instruction": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ này là bao nhiêu?",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ này là 56.849.566.270 VND."
+  },
+  {
+    "instruction": "Tiền và tương đương tiền cuối kỳ là bao nhiêu VND?",
+    "input": "6",
+    "output": "Tiền và tương đương tiền cuối kỳ là 149.363.936.229 VND."
+  },
+  {
+    "instruction": "So sánh lưu chuyển tiền thuần từ hoạt động đầu tư kỳ này và kỳ trước. Có sự thay đổi đáng kể nào không?",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động đầu tư kỳ này là 19.896.766.612 VND, trong khi kỳ trước là 14.013.465.332 VND. Có sự thay đổi đáng kể, lưu chuyển tiền thuần từ hoạt động đầu tư đã tăng khoảng 5.88 tỷ VND trong kỳ này."
+  },
+  {
+    "instruction": "Khoản chi cho vay, mua các công cụ nợ của đơn vị khác trong kỳ này là bao nhiêu?",
+    "input": "6",
+    "output": "Khoản chi cho vay, mua các công cụ nợ của đơn vị khác trong kỳ này là 14.780.712.329 VND."
+  },
+  {
+    "instruction": "Đánh giá khả năng tạo ra tiền từ hoạt động kinh doanh của công ty dựa trên con số lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ này là 56.849.566.270 VND, cho thấy công ty có khả năng tạo ra một lượng tiền mặt đáng kể từ các hoạt động kinh doanh cốt lõi của mình. So với kỳ trước (6.236.240.000 VND), khả năng tạo tiền từ hoạt động kinh doanh đã tăng trưởng mạnh, đây là một dấu hiệu rất tích cực về sức khỏe tài chính và khả năng tự chủ vốn của công ty."
+  },
+  {
+    "instruction": "Phân tích các yếu tố chính gây ra sự thay đổi lớn trong lưu chuyển tiền thuần từ hoạt động tài chính giữa kỳ này và kỳ trước.",
+    "input": "6",
+    "output": "Lưu chuyển tiền thuần từ hoạt động tài chính chuyển từ dương 11.180.291.323 VND (kỳ trước) sang âm (37.373.855.155) VND (kỳ này). Sự thay đổi lớn này chủ yếu do:\n- **Tiền vay ngắn hạn, dài hạn nhận được**: Giảm mạnh từ 86.378.434.635 VND (kỳ trước) xuống 35.940.066.353 VND (kỳ này).\n- **Tiền chi trả nợ gốc vay**: Tăng nhẹ từ 75.198.143.312 VND (kỳ trước) lên 73.313.921.508 VND (kỳ này).\n\nSự kết hợp giữa việc nhận được ít tiền vay hơn và vẫn duy trì mức chi trả nợ gốc vay cao đã dẫn đến lưu chuyển tiền thuần từ hoạt động tài chính trở thành dòng tiền âm, cho thấy công ty đã giảm đáng kể việc vay nợ hoặc tập trung vào việc thanh toán nợ trong kỳ này."
+  },
+  {
+    "instruction": "Dự báo tác động của việc thu hồi cho vay và bán lại các công cụ nợ của đơn vị khác đến dòng tiền tổng thể của công ty trong các kỳ tới.",
+    "input": "6",
+    "output": "Trong kỳ này, công ty đã thu hồi 45.476.000.000 VND từ cho vay và bán lại các công cụ nợ của đơn vị khác, trong khi kỳ trước không có khoản thu này. Nếu công ty tiếp tục có các hoạt động thu hồi cho vay hoặc bán lại các công cụ nợ tương tự trong các kỳ tới, điều này sẽ có tác động tích cực đến dòng tiền từ hoạt động đầu tư, và do đó, làm tăng dòng tiền tổng thể của công ty. Tuy nhiên, việc duy trì mức thu hồi cao này phụ thuộc vào chiến lược đầu tư và cơ cấu các khoản cho vay/công cụ nợ của công ty."
+  },
+  {
+    "instruction": "Công ty Cổ phần Vinafreight được thành lập theo Giấy chứng nhận đăng ký doanh nghiệp số bao nhiêu và vào ngày nào?",
+    "input": "7",
+    "output": "Công ty Cổ phần Vinafreight được thành lập theo Giấy chứng nhận đăng ký doanh nghiệp (ERC) số 0302511219 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 14 tháng 01 năm 2002."
+  },
+  {
+    "instruction": "Lĩnh vực hoạt động chính của công ty là gì?",
+    "input": "7",
+    "output": "Lĩnh vực hoạt động chính của Công ty là dịch vụ logistics và vận tải hàng hóa."
+  },
+  {
+    "instruction": "Kể tên các công ty con của Tập đoàn Vinafreight và tỷ lệ nắm giữ của công ty mẹ.",
+    "input": "7",
+    "output": "Các công ty con của Tập đoàn Vinafreight và tỷ lệ nắm giữ của công ty mẹ là:\n- SFS Vietnam Global Logistics Company Limited: 100,00%\n- Vector Aviation Co., Ltd.: 90,00%\n- Vietnam Xue Hang Logistics Company Limited: 51,00%"
+  },
+  {
+    "instruction": "Tính đến ngày 31 tháng 12 năm 2024, công ty có quyền biểu quyết tại Công ty TNHH Đầu tư Phát triển Thương mại Viet Way là bao nhiêu?",
+    "input": "7",
+    "output": "Tính đến ngày 31 tháng 12 năm 2024, quyền biểu quyết của Công ty tại Công ty TNHH Đầu tư Phát triển Thương mại Viet Way cao hơn 50%."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của các hoạt động kinh doanh chính đối với doanh thu của công ty.",
+    "input": "7",
+    "output": "Các hoạt động kinh doanh chính của công ty bao gồm cung cấp dịch vụ vận tải hàng hóa xuất nhập khẩu, đại lý giao nhận cho các hãng vận tải nước ngoài, dịch vụ thủ tục hải quan và các dịch vụ liên quan đến giao nhận và vận chuyển hàng hóa xuất nhập khẩu, kinh doanh hàng hóa xuất nhập khẩu bán lẻ, thu gom CFS, kinh doanh kho bãi để bảo quản hàng hóa xuất nhập khẩu theo quy định của pháp luật. Các hoạt động này là xương sống tạo nên doanh thu cốt lõi của công ty trong lĩnh vực logistics và vận tải, đóng vai trò quan trọng trong việc định hình vị thế và tạo ra lợi nhuận cho Vinafreight."
+  },
+  {
+    "instruction": "Đánh giá mức độ kiểm soát của Vinafreight đối với các công ty con dựa trên tỷ lệ nắm giữ vốn.",
+    "input": "7",
+    "output": "Dựa trên tỷ lệ nắm giữ vốn, Vinafreight có mức độ kiểm soát cao đối với các công ty con:\n- SFS Vietnam Global Logistics Company Limited: 100,00%\n- Vector Aviation Co., Ltd.: 90,00%\n- Vietnam Xue Hang Logistics Company Limited: 51,00%\nVới tỷ lệ nắm giữ từ 51% trở lên, Vinafreight có quyền chi phối các quyết định tài chính và hoạt động của các công ty này, đảm bảo quyền kiểm soát trong hoạt động kinh doanh của tập đoàn."
+  },
+  {
+    "instruction": "Liệt kê các công ty liên kết của Vinafreight và tỷ lệ sở hữu của Vinafreight tại mỗi công ty.",
+    "input": "7",
+    "output": "Các công ty liên kết của Vinafreight và tỷ lệ sở hữu của Vinafreight tại mỗi công ty là:\n- Vina Trans Đà Nẵng: 27,89%\n- Công ty Cổ phần Logistics VNT: 24,96%\n- Tổng công ty Dịch vụ Logistics Thăng Long: 22,96%\n- Công ty Cổ phần Cảng Mipec: 21,33%\n- Tổng công ty Logistics Vĩnh Lộc: 20%"
+  },
+  {
+    "instruction": "Kỳ kế toán của công ty là từ khi nào đến khi nào?",
+    "input": "8",
+    "output": "Kỳ kế toán của Công ty là từ ngày 01 tháng 01 đến ngày 31 tháng 12 hàng năm."
+  },
+  {
+    "instruction": "Đơn vị tiền tệ kế toán chính của công ty là gì và tại sao?",
+    "input": "8",
+    "output": "Đơn vị tiền tệ kế toán chính của công ty là Đồng Việt Nam (VND) vì các giao dịch của Công ty chủ yếu được thực hiện bằng VND."
+  },
+  {
+    "instruction": "Công ty áp dụng chế độ kế toán nào để lập báo cáo tài chính?",
+    "input": "8",
+    "output": "Công ty áp dụng Chuẩn mực và Chế độ Kế toán Việt Nam, được ban hành cùng với Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 cũng như các Thông tư khác hướng dẫn thực hiện Chuẩn mực Kế toán Việt Nam của Bộ Tài chính trong việc lập và trình bày Báo cáo tài chính."
+  },
+  {
+    "instruction": "Khi nào một doanh nghiệp được coi là công ty con của Công ty Mẹ theo chính sách kế toán của Vinafreight?",
+    "input": "8",
+    "output": "Một doanh nghiệp được coi là công ty con của Công ty Mẹ khi Công ty Mẹ có quyền trực tiếp hoặc gián tiếp chi phối các chính sách tài chính và hoạt động của công ty con để thu được lợi ích kinh tế từ các hoạt động của công ty con. Quyền biểu quyết tiềm năng phát sinh từ các quyền chọn hoặc các công cụ nợ và vốn có thể chuyển đổi thành cổ phiếu phổ thông tại ngày bảng cân đối kế toán cũng phải được xem xét."
+  },
+  {
+    "instruction": "Giải thích cách xử lý các giao dịch nội bộ và lợi nhuận/lỗ chưa thực hiện giữa Công ty Mẹ và các công ty con trong báo cáo hợp nhất.",
+    "input": "8",
+    "output": "Trong báo cáo tài chính hợp nhất, các số dư nội bộ trong Bảng cân đối kế toán và các giao dịch nội bộ cũng như lợi nhuận chưa thực hiện phát sinh từ các giao dịch này phải được loại trừ hoàn toàn. Các khoản lỗ chưa thực hiện phát sinh từ các giao dịch nội bộ cũng được loại trừ trừ khi chi phí không thể thu hồi được."
+  },
+  {
+    "instruction": "Phân tích tác động của việc phân bổ lỗ cho cổ đông không kiểm soát khi lỗ lớn hơn lợi ích của họ.",
+    "input": "8",
+    "output": "Chính sách kế toán của Vinafreight quy định rằng các khoản lỗ phát sinh tại các công ty con được phân bổ đều cho tỷ lệ sở hữu của các cổ đông không kiểm soát, ngay cả khi các khoản lỗ đó cao hơn lợi ích mà các cổ đông này nắm giữ trong tài sản thuần của các công ty con. Điều này có tác động là lợi ích của cổ đông không kiểm soát có thể giảm xuống dưới 0, và phần lỗ vượt quá sẽ tiếp tục được ghi nhận làm giảm lợi ích của họ trong tương lai, hoặc được coi là một khoản nợ tiềm tàng mà công ty mẹ có thể phải gánh chịu."
+  },
+  {
+    "instruction": "Đánh giá sự tuân thủ các chuẩn mực kế toán của công ty có ảnh hưởng như thế nào đến độ tin cậy của báo cáo tài chính?",
+    "input": "8",
+    "output": "Tổng Giám đốc của Công ty Cổ phần Vinafreight đảm bảo tuân thủ tất cả các yêu cầu của Chuẩn mực và Chế độ Kế toán Việt Nam, được ban hành cùng với Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 cũng như các Thông tư khác hướng dẫn thực hiện Chuẩn mực Kế toán Việt Nam của Bộ Tài chính. Sự tuân thủ này là yếu tố then chốt, góp phần tăng cường độ tin cậy và minh bạch của báo cáo tài chính, giúp người đọc (nhà đầu tư, chủ nợ, v.v.) có thể đưa ra các quyết định dựa trên thông tin chính xác và phù hợp với quy định pháp luật."
+  },
+  {
+    "instruction": "Chênh lệch tỷ giá hối đoái phát sinh từ các giao dịch bằng ngoại tệ được ghi nhận vào đâu trong báo cáo tài chính?",
+    "input": "9",
+    "output": "Chênh lệch tỷ giá hối đoái phát sinh từ các giao dịch bằng ngoại tệ trong năm được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính. Chênh lệch tỷ giá hối đoái do đánh giá lại số dư cuối kỳ của các khoản mục tiền tệ có gốc ngoại tệ sau khi bù trừ lãi chênh lệch với lỗ chênh lệch cũng được ghi nhận vào doanh thu hoạt động tài chính hoặc chi phí tài chính."
+  },
+  {
+    "instruction": "Định nghĩa về 'Tiền và các khoản tương đương tiền' của công ty là gì?",
+    "input": "9",
+    "output": "Tiền bao gồm tiền mặt và tiền gửi không kỳ hạn tại ngân hàng. Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn đáo hạn không quá 3 tháng kể từ ngày đầu tư và dễ dàng chuyển đổi thành tiền mặt, và không có nhiều rủi ro trong việc chuyển đổi thành tiền mặt tại ngày bảng cân đối kế toán."
+  },
+  {
+    "instruction": "Khi nào Tập đoàn cho rằng họ có ảnh hưởng đáng kể đối với một công ty liên kết?",
+    "input": "9",
+    "output": "Tập đoàn thường cho rằng họ có ảnh hưởng đáng kể đối với một công ty liên kết nếu họ nắm giữ hơn 20% quyền biểu quyết."
+  },
+  {
+    "instruction": "Tỷ giá hối đoái được sử dụng để chuyển đổi các khoản phải thu ngoại tệ được xác định như thế nào?",
+    "input": "9",
+    "output": "Tỷ giá hối đoái được sử dụng để chuyển đổi các khoản phải thu ngoại tệ là tỷ giá mua tại thời điểm giao dịch của ngân hàng thương mại nơi Công ty chỉ định khách hàng thanh toán."
+  },
+  {
+    "instruction": "Đánh giá rủi ro liên quan đến các khoản đầu tư nắm giữ đến ngày đáo hạn nếu có bằng chứng về khả năng không thu hồi được.",
+    "input": "9",
+    "output": "Theo chính sách kế toán của công ty, khi có bằng chứng đáng tin cậy cho thấy một phần hoặc toàn bộ khoản đầu tư nắm giữ đến ngày đáo hạn không thể thu hồi được và khoản lỗ được xác định đáng tin cậy, khoản lỗ đó được ghi nhận là chi phí tài chính trong năm trong khi giá trị khoản đầu tư được ghi giảm. Điều này cho thấy công ty có quy trình để nhận diện và ghi nhận rủi ro mất mát từ các khoản đầu tư này, nhằm phản ánh chính xác giá trị tài sản và chi phí trong báo cáo tài chính."
+  },
+  {
+    "instruction": "Phân tích cách phương pháp vốn chủ sở hữu ảnh hưởng đến giá trị ghi sổ của khoản đầu tư vào công ty liên kết và lợi nhuận của Tập đoàn.",
+    "input": "9",
+    "output": "Theo phương pháp vốn chủ sở hữu, khoản đầu tư vào công ty liên kết được ghi nhận trên bảng cân đối kế toán hợp nhất theo giá gốc cộng với những thay đổi sau khi mua lại trong phần tài sản thuần của Tập đoàn tại các công ty liên kết. Lợi nhuế thương mại phát sinh khi mua lại công ty liên kết được bao gồm trong giá trị ghi sổ của khoản đầu tư và phải chịu đánh giá suy giảm giá trị hàng năm. Báo cáo kết quả hoạt động kinh doanh hợp nhất phản ánh phần kết quả hoạt động sau khi mua lại của công ty liên kết. Cổ tức/lợi nhuận được chia từ công ty liên kết làm giảm giá trị ghi sổ của khoản đầu tư. Phương pháp này đảm bảo rằng giá trị ghi sổ của khoản đầu tư phản ánh chính xác phần vốn chủ sở hữu của Tập đoàn trong công ty liên kết, đồng thời lợi nhuận của Tập đoàn được điều chỉnh theo phần lãi hoặc lỗ của công ty liên kết."
+  },
+  {
+    "instruction": "Khi nào công ty lập dự phòng giảm giá các khoản đầu tư?",
+    "input": "10",
+    "output": "Dự phòng giảm giá khoản đầu tư được lập khi có bằng chứng đáng tin cậy về sự giảm giá trị của các khoản đầu tư đó tại ngày bảng cân đối kế toán."
+  },
+  {
+    "instruction": "Phải thu thương mại và phải thu khác được phân loại dựa trên nguyên tắc nào?",
+    "input": "10",
+    "output": "Việc phân loại các khoản phải thu thành phải thu thương mại và phải thu khác được thực hiện theo các nguyên tắc:\n- Phải thu thương mại phản ánh các khoản phải thu có tính chất thương mại phát sinh từ các giao dịch mua bán giữa Công ty và khách hàng độc lập với Công ty.\n- Phải thu khác phản ánh các khoản phải thu không có tính chất thương mại và không liên quan đến các giao dịch mua bán."
+  },
+  {
+    "instruction": "Thời gian khấu hao của nhà cửa và vật kiến trúc của công ty là bao nhiêu năm?",
+    "input": "10",
+    "output": "Thời gian khấu hao của nhà cửa và vật kiến trúc của công ty là 15 năm."
+  },
+  {
+    "instruction": "Nêu các mốc tỷ lệ dự phòng cho các khoản nợ quá hạn từ hơn 6 tháng đến hơn 3 năm.",
+    "input": "10",
+    "output": "Các mốc tỷ lệ dự phòng cho các khoản nợ quá hạn như sau:\n- 30% giá trị các khoản nợ quá hạn từ hơn 6 tháng đến dưới 1 năm.\n- 50% giá trị các khoản nợ quá hạn từ 1 năm đến dưới 2 năm.\n- 70% giá trị các khoản nợ quá hạn từ 2 năm đến dưới 3 năm.\n- 100% giá trị các khoản nợ quá hạn từ hơn 3 năm."
+  },
+  {
+    "instruction": "Phân tích tác động của việc ghi nhận tăng/giảm dự phòng nợ khó đòi vào chi phí quản lý doanh nghiệp.",
+    "input": "10",
+    "output": "Các khoản tăng/giảm trong dự phòng bắt buộc cho các khoản nợ khó đòi tại ngày bảng cân đối kế toán được ghi nhận vào chi phí quản lý doanh nghiệp. Việc này có tác động trực tiếp làm tăng chi phí quản lý doanh nghiệp khi dự phòng tăng lên (nghĩa là công ty ước tính có nhiều khoản nợ khó đòi hơn), làm giảm lợi nhuận. Ngược lại, nếu dự phòng giảm xuống, nó sẽ làm giảm chi phí quản lý doanh nghiệp, góp phần tăng lợi nhuận. Điều này phản ánh sự thận trọng trong việc đánh giá khả năng thu hồi các khoản phải thu và ảnh hưởng trực tiếp đến kết quả hoạt động kinh doanh của công ty."
+  },
+  {
+    "instruction": "Đánh giá sự khác biệt trong nguyên tắc vốn hóa giữa tài sản cố định hữu hình và vô hình, và tác động của chúng đến báo cáo tài chính.",
+    "input": "10",
+    "output": "Nguyên tắc vốn hóa giữa tài sản cố định hữu hình và vô hình có sự tương đồng ở việc ghi nhận theo giá gốc bao gồm tất cả các chi phí để đưa tài sản vào trạng thái sẵn sàng sử dụng. Tuy nhiên, đối với tài sản cố định hữu hình, các chi phí phát sinh sau ghi nhận ban đầu chỉ được vốn hóa nếu mang lại lợi ích kinh tế tương lai rõ ràng, còn đối với tài sản cố định vô hình (ví dụ phần mềm máy tính), các chi phí phát sinh sau đó thường được ghi nhận vào chi phí hoạt động trong năm nếu không liên quan đến một tài sản cụ thể hoặc không rõ ràng mang lại lợi ích tương lai.\n\nTác động đến báo cáo tài chính là việc vốn hóa sẽ làm tăng giá trị tài sản trên bảng cân đối kế toán và giảm chi phí trong kỳ phát sinh (do chi phí được phân bổ dần qua khấu hao). Ngược lại, việc ghi nhận vào chi phí hoạt động ngay lập tức sẽ làm giảm lợi nhuận trong kỳ đó. Sự khác biệt này ảnh hưởng đến cả giá trị tài sản, lợi nhuận, và các chỉ số tài chính dựa trên chúng."
+  },
+  {
+    "instruction": "Làm thế nào để xác định giá gốc của tài sản cố định hữu hình và vô hình, và khi nào các chi phí phát sinh sau đó được vốn hóa?",
+    "input": "10",
+    "output": "Giá gốc của tài sản cố định hữu hình và vô hình bao gồm tất cả các chi phí mà Công ty đã trả để đưa tài sản vào trạng thái sẵn sàng sử dụng cho mục đích dự kiến.\n\nCác chi phí phát sinh sau khi ghi nhận ban đầu sẽ được vốn hóa (tức là đưa vào giá gốc) nếu:\n- Đối với tài sản cố định hữu hình: có thể chứng minh rõ ràng rằng chi phí đó đã mang lại lợi ích kinh tế trong tương lai dự kiến thu được từ việc sử dụng các tài sản này.\n- Đối với tài sản cố định vô hình: các chi phí này liên quan đến một tài sản cố định vô hình cụ thể và mang lại lợi ích kinh tế trong tương lai dự kiến thu được từ việc sử dụng các tài sản này."
+  },
+  {
+    "instruction": "Công ty phân loại các khoản phải trả người bán, chi phí trích trước và phải trả khác dựa trên nguyên tắc nào?",
+    "input": "11",
+    "output": "Công ty phân loại các khoản phải trả người bán, chi phí trích trước và phải trả khác dựa trên các nguyên tắc sau:\n- **Phải trả người bán**: Phản ánh các khoản phải trả có tính chất thương mại phát sinh từ việc mua hàng hóa, dịch vụ hoặc tài sản, trong đó người bán là một đơn vị độc lập với Công ty.\n- **Chi phí trích trước**: Phản ánh các chi phí cho hàng hóa, dịch vụ đã nhận từ nhà cung cấp hoặc đã cung cấp cho khách hàng nhưng chưa được thanh toán, lập hóa đơn hoặc thiếu chứng từ kế toán và tài liệu hỗ trợ, lương nghỉ phép phải trả cho nhân viên và các khoản trích trước chi phí hoạt động.\n- **Phải trả khác**: Phản ánh các khoản phải trả không có tính chất thương mại và không liên quan đến việc mua bán hàng hóa hoặc cung cấp dịch vụ."
+  },
+  {
+    "instruction": "Khi nào doanh thu từ việc cung cấp dịch vụ được công ty ghi nhận?",
+    "input": "11",
+    "output": "Doanh thu từ việc cung cấp dịch vụ được công ty ghi nhận khi tất cả các điều kiện sau được thỏa mãn:\n1. Số tiền doanh thu có thể được xác định một cách đáng tin cậy. (Nếu hợp đồng quy định người mua có quyền trả lại dịch vụ, doanh thu chỉ được ghi nhận khi điều kiện này không còn tồn tại).\n2. Công ty đã nhận được hoặc có thể sẽ nhận được các lợi ích kinh tế liên quan đến việc cung cấp dịch vụ.\n3. Giai đoạn hoàn thành của giao dịch tại cuối kỳ báo cáo có thể được xác định một cách đáng tin cậy.\n4. Các chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch có thể được xác định một cách đáng tin cậy.\n\nTrong trường hợp dịch vụ được cung cấp trong nhiều kỳ kế toán, việc xác định doanh thu được thực hiện trên cơ sở khối lượng công việc đã hoàn thành tại ngày bảng cân đối kế toán."
+  },
+  {
+    "instruction": "Tiền lãi được ghi nhận theo nguyên tắc nào?",
+    "input": "11",
+    "output": "Tiền lãi được ghi nhận dựa trên kỳ hạn và lãi suất thực tế áp dụng trong từng kỳ cụ thể."
+  },
+  {
+    "instruction": "Các khoản giảm trừ doanh thu được xử lý như thế nào nếu phát sinh sau khi báo cáo tài chính đã được phát hành?",
+    "input": "11",
+    "output": "Nếu các khoản giảm trừ doanh thu (chiết khấu dịch vụ) phát sinh sau khi báo cáo tài chính của năm trước đã được phát hành, doanh thu sẽ được ghi giảm trên Báo cáo tài chính của năm tiếp theo."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc phân phối lợi nhuận phi tiền tệ đến dòng tiền và quyết định của Hội đồng thành viên.",
+    "input": "11",
+    "output": "Việc phân phối lợi nhuận cho các thành viên được thực hiện có xem xét đến các khoản mục phi tiền tệ trong lợi nhuận giữ lại như lợi nhuận do đánh giá lại tài sản góp vốn, lợi nhuận do đánh giá lại các khoản mục tiền tệ, công cụ tài chính và các khoản mục phi tiền tệ khác. Điều này có tác động quan trọng đến dòng tiền vì các khoản lợi nhuận phi tiền tệ không đại diện cho tiền mặt thực tế sẵn có. Do đó, Hội đồng thành viên phải cân nhắc kỹ lưỡng để đảm bảo rằng việc phân phối lợi nhuận không làm ảnh hưởng đến khả năng thanh khoản của công ty. Việc công bố cổ tức/lợi nhuận dưới dạng phi tiền tệ hoặc dựa trên các yếu tố phi tiền tệ đòi hỏi sự quản lý dòng tiền cẩn thận để tránh thiếu hụt tiền mặt khi thực hiện chi trả."
+  },
+  {
+    "instruction": "Phân tích cách các chính sách ghi nhận doanh thu có thể ảnh hưởng đến kết quả kinh doanh và tính minh bạch của báo cáo tài chính.",
+    "input": "11",
+    "output": "Chính sách ghi nhận doanh thu của công ty, bao gồm các điều kiện cụ thể để ghi nhận doanh thu cung cấp dịch vụ (xác định đáng tin cậy, lợi ích kinh tế, giai đoạn hoàn thành, chi phí xác định đáng tin cậy), có ảnh hưởng trực tiếp đến kết quả kinh doanh. Nếu các điều kiện này được áp dụng một cách nghiêm ngặt, nó sẽ đảm bảo rằng doanh thu được ghi nhận phù hợp với thực tế kinh tế, góp phần tăng tính minh bạch và độ tin cậy của báo cáo tài chính. Việc xác định doanh thu dựa trên khối lượng công việc đã hoàn thành cho dịch vụ nhiều kỳ cũng giúp phân bổ doanh thu một cách hợp lý qua các kỳ. Tuy nhiên, nếu việc ước tính các điều kiện (như khả năng xác định đáng tin cậy, lợi ích kinh tế, giai đoạn hoàn thành) không chính xác, nó có thể dẫn đến việc ghi nhận doanh thu quá sớm hoặc quá muộn, làm sai lệch kết quả kinh doanh và giảm tính minh bạch."
+  },
+  {
+    "instruction": "Mô tả cơ sở phân loại các khoản phải trả thành ngắn hạn và dài hạn trong Bảng cân đối kế toán hợp nhất.",
+    "input": "11",
+    "output": "Các khoản phải trả và chi phí trích trước được phân loại là các khoản mục ngắn hạn và dài hạn trong Bảng cân đối kế toán hợp nhất trên cơ sở thời hạn còn lại của chúng tại ngày bảng cân đối kế toán."
+  },
+  {
+    "instruction": "Khi nào chi phí đi vay được vốn hóa vào giá gốc của tài sản?",
+    "input": "12",
+    "output": "Chi phí đi vay được vốn hóa vào giá gốc của tài sản trong các trường hợp sau:\n- Khi chi phí đi vay trực tiếp liên quan đến việc xây dựng hoặc sản xuất một tài sản dở dang, mất một khoảng thời gian đáng kể (trên 12 tháng) để sẵn sàng cho mục đích sử dụng dự kiến hoặc bán tài sản.\n- Trong phạm vi các khoản vay đặc biệt phục vụ cho mục đích xây dựng tài sản cố định và bất động sản đầu tư, chi phí đi vay đủ điều kiện để vốn hóa ngay cả khi thời gian xây dựng dưới 12 tháng.\n- Trong trường hợp các khoản vay chung được sử dụng một phần cho việc mua lại, xây dựng hoặc sản xuất một tài sản dở dang, các chi phí đủ điều kiện để vốn hóa sẽ được xác định bằng cách áp dụng tỷ lệ vốn hóa vào chi phí lũy kế trung bình cho việc xây dựng hoặc sản xuất tài sản đó."
+  },
+  {
+    "instruction": "Thuế thu nhập hiện hành được xác định như thế nào?",
+    "input": "12",
+    "output": "Thuế thu nhập hiện hành là số tiền thuế được tính dựa trên thu nhập chịu thuế. Thu nhập chịu thuế khác với lợi nhuận kế toán do các điều chỉnh của chênh lệch tạm thời giữa số liệu thuế và kế toán, các chi phí không được khấu trừ cũng như các khoản thu nhập không chịu thuế và lỗ được chuyển sang."
+  },
+  {
+    "instruction": "Khi nào tài sản thuế thu nhập hoãn lại được ghi nhận?",
+    "input": "12",
+    "output": "Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi có đảm bảo về khả năng có được thu nhập chịu thuế trong tương lai để sử dụng các chênh lệch tạm thời được khấu trừ."
+  },
+  {
+    "instruction": "Nêu các điều kiện để công ty được bù trừ tài sản thuế hoãn lại và nợ thuế hoãn lại.",
+    "input": "12",
+    "output": "Công ty sẽ bù trừ tài sản thuế hoãn lại và nợ thuế hoãn lại nếu:\n1. Công ty có quyền hợp pháp để bù trừ tài sản thuế thu nhập hiện hành với nợ thuế thu nhập hiện hành và\n2. Tài sản thuế thu nhập hoãn lại và nợ thuế thu nhập hoãn lại có liên quan đến thuế thu nhập doanh nghiệp thuộc sự quản lý của một cơ quan thuế hoặc\n3. Của cùng một đối tượng chịu thuế thu nhập doanh nghiệp hoặc\n4. Công ty có ý định thanh toán nợ thuế thu nhập hiện hành và tài sản thuế thu nhập hiện hành trên cơ sở thuần hoặc thu hồi tài sản thuế và thanh toán nợ thuế đồng thời trong mỗi kỳ tương lai trong phạm vi mà phần lớn các khoản nợ thuế thu nhập hoãn lại hoặc tài sản thuế thu nhập hoãn lại được thanh toán hoặc thu hồi."
+  },
+  {
+    "instruction": "Phân tích nguyên tắc phù hợp và nguyên tắc thận trọng trong ghi nhận chi phí, và khi nào chúng có thể xung đột.",
+    "input": "12",
+    "output": "Công ty ghi nhận chi phí và doanh thu tương ứng đồng thời theo nguyên tắc phù hợp, nghĩa là chi phí được ghi nhận trong cùng kỳ với doanh thu mà nó tạo ra. Tuy nhiên, trong trường hợp nguyên tắc phù hợp xung đột với nguyên tắc thận trọng, chi phí được ghi nhận dựa trên bản chất và quy định của các chuẩn mực kế toán để đảm bảo các giao dịch được phản ánh một cách công bằng và trung thực. Sự xung đột có thể xảy ra khi nguyên tắc phù hợp yêu cầu hoãn ghi nhận chi phí để phù hợp với doanh thu tương lai, nhưng nguyên tắc thận trọng lại đòi hỏi ghi nhận ngay lập tức chi phí hoặc lỗ tiềm tàng để không làm lạc quan quá mức kết quả kinh doanh. Trong trường hợp này, nguyên tắc thận trọng sẽ được ưu tiên để đảm bảo báo cáo tài chính không bị thổi phồng về lợi nhuận."
+  },
+  {
+    "instruction": "Đánh giá tác động của việc vốn hóa chi phí đi vay đến giá trị tài sản và lợi nhuận của công ty.",
+    "input": "12",
+    "output": "Việc vốn hóa chi phí đi vay có tác động làm tăng giá trị ghi sổ của tài sản (đặc biệt là tài sản dở dang hoặc tài sản cố định/bất động sản đầu tư đang được xây dựng) trên bảng cân đối kế toán. Thay vì được ghi nhận là chi phí trong kỳ phát sinh, chi phí đi vay được chuyển vào giá gốc của tài sản và sẽ được phân bổ dần thông qua khấu hao trong suốt thời gian sử dụng hữu ích của tài sản đó. Điều này có tác động làm tăng lợi nhuận trong các kỳ hiện tại (do chi phí không được ghi nhận ngay) và làm giảm lợi nhuận trong các kỳ tương lai (do chi phí khấu hao tăng lên). Nó cũng có thể làm cho các tài sản trên bảng cân đối kế toán có vẻ lớn hơn, nhưng có thể che giấu chi phí tài chính thực tế trong ngắn hạn."
+  },
+  {
+    "instruction": "Giải thích sự khác biệt giữa thu nhập chịu thuế và lợi nhuận kế toán.",
+    "input": "12",
+    "output": "Thu nhập chịu thuế là cơ sở để tính thuế thu nhập hiện hành và khác với lợi nhuận kế toán. Sự khác biệt này phát sinh do các điều chỉnh của chênh lệch tạm thời giữa số liệu thuế và kế toán, các chi phí không được khấu trừ (theo quy định thuế), cũng như các khoản thu nhập không chịu thuế và lỗ được chuyển sang. Lợi nhuận kế toán được xác định theo chuẩn mực kế toán, trong khi thu nhập chịu thuế được xác định theo luật thuế, do đó có thể có những khoản mục được ghi nhận khác nhau giữa hai hệ thống."
+  },
+  {
+    "instruction": "Khi nào một bên được xem là bên liên quan của công ty?",
+    "input": "13",
+    "output": "Một bên được coi là bên liên quan của Công ty trong trường hợp bên đó có khả năng kiểm soát Công ty hoặc gây ảnh hưởng trọng yếu đến các quyết định tài chính cũng như hoạt động của Công ty. Một bên cũng được coi là bên liên quan của Công ty trong trường hợp bên đó chịu sự kiểm soát chung hoặc chịu ảnh hưởng trọng yếu chung. Khi xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được tập trung hơn hình thức pháp lý của nó."
+  },
+  {
+    "instruction": "Tổng tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu?",
+    "input": "13",
+    "output": "Tổng tiền và các khoản tương đương tiền cuối kỳ là 149.363.936.229 VND."
+  },
+  {
+    "instruction": "Công ty đang nắm giữ những mã chứng khoán kinh doanh nào và với giá trị hợp lý là bao nhiêu?",
+    "input": "13",
+    "output": "Công ty đang nắm giữ các mã chứng khoán kinh doanh sau với giá trị hợp lý cuối kỳ:\n- Searefico Joint Stock Company (SFR): 129.740.000 VND\n- Da Nang Port Joint Stock Company (CDN): 731.300.000 VND\n- Dong Nai Port Joint Stock Company (PDN): 1.336.500.000 VND"
+  },
+  {
+    "instruction": "So sánh tổng các khoản đầu tư ngắn hạn cuối kỳ với đầu năm. Có sự thay đổi đáng kể nào không?",
+    "input": "13",
+    "output": "Tổng các khoản đầu tư ngắn hạn cuối kỳ là 93.022.260.562 VND, giảm so với 121.784.571.233 VND vào đầu năm. Có sự thay đổi đáng kể, tổng đầu tư ngắn hạn đã giảm khoảng 28.76 tỷ VND."
+  },
+  {
+    "instruction": "Đánh giá chiến lược quản lý tiền mặt và đầu tư ngắn hạn của công ty dựa trên cơ cấu tiền gửi và các khoản tương đương tiền.",
+    "input": "13",
+    "output": "Chiến lược quản lý tiền mặt và đầu tư ngắn hạn của công ty cho thấy sự ưu tiên thanh khoản, với tiền mặt và tiền gửi không kỳ hạn chiếm một phần đáng kể (112.363.936.229 VND) trong tổng tiền và các khoản tương đương tiền cuối kỳ là 149.363.936.229 VND. Ngoài ra, công ty cũng duy trì các khoản tương đương tiền dưới dạng tiền gửi ngân hàng có kỳ hạn gốc dưới 03 tháng (37.000.000.000 VND). Các khoản đầu tư ngắn hạn chủ yếu là đầu tư nắm giữ đến ngày đáo hạn (tiền gửi ngân hàng có kỳ hạn gốc 06 - 12 tháng). Xu hướng giảm của tổng tiền và các khoản tương đương tiền (từ 223 tỷ xuống 149 tỷ) cũng như tổng đầu tư ngắn hạn (từ 121 tỷ xuống 93 tỷ) cho thấy công ty có thể đang sử dụng tiền cho các hoạt động khác hoặc tái cơ cấu danh mục đầu tư ngắn hạn."
+  },
+  {
+    "instruction": "Phân tích rủi ro tiềm ẩn từ các khoản đầu tư vào công ty liên kết và góp vốn vào đơn vị khác.",
+    "input": "13",
+    "output": "Các khoản đầu tư vào công ty liên kết và góp vốn vào đơn vị khác chiếm tỷ trọng lớn trong tổng tài sản dài hạn (374.241.123.760 VND). Rủi ro tiềm ẩn bao gồm:\n- **Rủi ro tài chính**: Hiệu quả hoạt động của các công ty liên kết và đơn vị góp vốn sẽ ảnh hưởng trực tiếp đến lợi nhuận và giá trị khoản đầu tư của Vinafreight. Nếu các đơn vị này hoạt động kém hiệu quả hoặc thua lỗ, Vinafreight sẽ phải ghi nhận phần lỗ tương ứng.\n- **Rủi ro kiểm soát**: Mặc dù có ảnh hưởng đáng kể (thường trên 20% quyền biểu quyết đối với công ty liên kết), Vinafreight không có quyền kiểm soát tuyệt đối, dẫn đến khả năng các quyết định kinh doanh không hoàn toàn theo định hướng của Vinafreight.\n- **Rủi ro thanh khoản**: Các khoản đầu tư này thường là dài hạn và khó chuyển đổi thành tiền mặt nhanh chóng, có thể ảnh hưởng đến thanh khoản của công ty nếu cần vốn đột xuất."
+  },
+  {
+    "instruction": "Tính tỷ lệ đầu tư nắm giữ đến ngày đáo hạn (ngắn hạn) trên tổng đầu tư tài chính ngắn hạn. Xu hướng này cho thấy điều gì?",
+    "input": "13",
+    "output": "Tỷ lệ đầu tư nắm giữ đến ngày đáo hạn (ngắn hạn) trên tổng đầu tư tài chính ngắn hạn:\n- Cuối kỳ: 91.089.283.562 / 93.022.260.562 ≈ 97,92%\n- Đầu năm: 121.784.571.233 / 121.784.571.233 = 100% (vì đầu năm chỉ có khoản này)\n\nXu hướng này cho thấy công ty vẫn duy trì tỷ trọng rất cao các khoản đầu tư nắm giữ đến ngày đáo hạn (nghĩa là tiền gửi ngân hàng có kỳ hạn gốc 06-12 tháng) trong danh mục đầu tư tài chính ngắn hạn. Điều này cho thấy chiến lược đầu tư ngắn hạn của công ty thiên về sự an toàn và ổn định, tập trung vào các khoản sinh lời cố định, có thời gian đáo hạn xác định rõ ràng, thay vì các công cụ có biến động giá cao như chứng khoán kinh doanh (chỉ xuất hiện vào cuối kỳ với tỷ trọng nhỏ)."
+  },
+  {
+    "instruction": "Tổng giá trị đầu tư vào công ty liên kết cuối kỳ là bao nhiêu?",
+    "input": "14",
+    "output": "Tổng giá trị đầu tư vào công ty liên kết cuối kỳ là 341.430.625.989 VND."
+  },
+  {
+    "instruction": "Vinafreight có bao nhiêu phần trăm sở hữu tại Công ty Cổ phần Cảng Mipec?",
+    "input": "14",
+    "output": "Vinafreight có 21,33% sở hữu tại Công ty Cổ phần Cảng Mipec."
+  },
+  {
+    "instruction": "Khoản tăng trong kỳ của giá gốc đầu tư vào công ty liên kết Vina Trans Đà Nẵng là bao nhiêu?",
+    "input": "14",
+    "output": "Khoản tăng trong kỳ của giá gốc đầu tư vào công ty liên kết Vina Trans Đà Nẵng là 8.344.800.000 VND."
+  },
+  {
+    "instruction": "So sánh tổng giá trị đầu tư góp vốn vào đơn vị khác cuối kỳ với đầu năm. Nhận xét về sự thay đổi.",
+    "input": "14",
+    "output": "Tổng giá trị đầu tư góp vốn vào đơn vị khác cuối kỳ là 30.810.497.771 VND, trong khi đầu năm là 14.057.900.327 VND. Khoản mục này đã tăng đáng kể, gần gấp đôi, cho thấy công ty đã tăng cường đầu tư vào các đơn vị khác trong kỳ."
+  },
+  {
+    "instruction": "Đánh giá chiến lược đầu tư của công ty vào các đơn vị liên kết và đơn vị khác dựa trên sự biến động các khoản đầu tư này.",
+    "input": "14",
+    "output": "Chiến lược đầu tư của công ty vào các đơn vị liên kết cho thấy sự ổn định về tỷ lệ sở hữu nhưng biến động về giá trị ghi sổ ròng (có thể do lãi/lỗ được phân bổ). Công ty có khoản tăng đáng kể về giá gốc đầu tư vào Vina Trans Đà Nẵng. Đồng thời, công ty cũng mở rộng đầu tư góp vốn vào đơn vị khác, đặc biệt là vào Logistics Vinalink Joint Stock Company (tăng từ 3.620.745.000 VND lên 20.920.062.444 VND). Sự tăng trưởng trong cả đầu tư liên kết và góp vốn vào đơn vị khác cho thấy chiến lược mở rộng và đa dạng hóa hoạt động kinh doanh, tìm kiếm cơ hội sinh lời từ các đối tác hoặc lĩnh vực mới."
+  },
+  {
+    "instruction": "Phân tích tác động của cổ tức được chia và trích lập quỹ từ các công ty liên kết đến phần lãi/lỗ lũy kế sau khi mua lại của Vinafreight.",
+    "input": "14",
+    "output": "Cổ tức được chia (1.753.715.600 VND) và trích lập quỹ (69.271.496 VND) từ các công ty liên kết có tác động làm giảm phần lãi/lỗ lũy kế sau khi mua lại của Vinafreight. Mặc dù công ty liên kết tạo ra lợi nhuận (Phần lãi/lỗ sau khi mua lại của các công ty liên kết trong kỳ là 3.252.407.511 VND), nhưng việc chia cổ tức và trích lập quỹ làm giảm phần lợi nhuận giữ lại, dẫn đến phần lãi/lỗ lũy kế cuối kỳ thấp hơn so với tổng lợi nhuận được phân bổ trong kỳ nếu không có các khoản này."
+  },
+  {
+    "instruction": "Liệt kê các khoản đầu tư nắm giữ đến ngày đáo hạn dài hạn cuối kỳ.",
+    "input": "14",
+    "output": "Các khoản đầu tư nắm giữ đến ngày đáo hạn dài hạn cuối kỳ bao gồm: Tiền gửi ngân hàng có kỳ hạn gốc trên 12 tháng với giá trị 2.000.000.000 VND."
+  },
+  {
+    "instruction": "Tổng các khoản phải thu ngắn hạn của khách hàng cuối kỳ là bao nhiêu?",
+    "input": "15",
+    "output": "Tổng các khoản phải thu ngắn hạn của khách hàng cuối kỳ là 118.922.959.089 VND."
+  },
+  {
+    "instruction": "Khoản phải thu từ bên liên quan cuối kỳ là bao nhiêu VND?",
+    "input": "15",
+    "output": "Khoản phải thu từ bên liên quan cuối kỳ là 206.007.636 VND."
+  },
+  {
+    "instruction": "Dự phòng phải thu khó đòi đã thay đổi như thế nào trong kỳ này?",
+    "input": "15",
+    "output": "Dự phòng phải thu khó đòi đã tăng từ 3.996.472.617 VND (số đầu năm) lên 4.380.781.520 VND (số cuối kỳ), với khoản trích lập bổ sung là 384.308.903 VND trong kỳ này."
+  },
+  {
+    "instruction": "Giá trị của hàng tồn kho cuối kỳ là bao nhiêu?",
+    "input": "15",
+    "output": "Giá trị của hàng tồn kho cuối kỳ là 3.584.636.513 VND."
+  },
+  {
+    "instruction": "Đánh giá mức độ rủi ro tín dụng của công ty dựa trên biến động của các khoản phải thu từ khách hàng và dự phòng phải thu khó đòi.",
+    "input": "15",
+    "output": "Tổng các khoản phải thu ngắn hạn của khách hàng tăng nhẹ từ 114.225.161.101 VND (đầu năm) lên 118.922.959.089 VND (cuối kỳ). Đồng thời, dự phòng phải thu khó đòi cũng tăng từ 3.996.472.617 VND lên 4.380.781.520 VND với 384.308.903 VND trích lập bổ sung. Việc tăng cả các khoản phải thu và dự phòng phải thu khó đòi cho thấy công ty đang đối mặt với rủi ro tín dụng tiềm ẩn. Mặc dù doanh số có thể tăng, nhưng một phần các khoản phải thu có khả năng trở thành nợ khó đòi cũng gia tăng, đòi hỏi công ty phải quản lý chặt chẽ hơn chính sách tín dụng và thu hồi nợ."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của sự gia tăng đáng kể của khoản 'Khác' trong phải thu dài hạn khác từ đầu năm đến cuối kỳ.",
+    "input": "15",
+    "output": "Khoản 'Khác' trong phải thu dài hạn khác đã gia tăng đáng kể từ 2.738.400 VND (đầu năm) lên 7.780.168.000 VND (cuối kỳ). Sự gia tăng này có thể xuất phát từ nhiều nguyên nhân như các khoản cho vay dài hạn mới, các giao dịch phức tạp không thuộc các phân loại phải thu khác hoặc các khoản phải thu đặc biệt. Tác động của nó là làm tăng tổng tài sản dài hạn nhưng cũng có thể tiềm ẩn rủi ro nếu tính thanh khoản hoặc khả năng thu hồi của các khoản 'Khác' này không rõ ràng. Thông tin chi tiết hơn về bản chất của khoản 'Khác' này là cần thiết để đánh giá tác động đầy đủ."
+  },
+  {
+    "instruction": "Tính tỷ lệ tăng trưởng của hàng tồn kho từ đầu năm đến cuối kỳ và phân tích ý nghĩa của nó.",
+    "input": "15",
+    "output": "Giá trị hàng tồn kho cuối kỳ là 3.584.636.513 VND, và đầu năm là 2.428.897.157 VND.\nTỷ lệ tăng trưởng = (3.584.636.513 - 2.428.897.157) / 2.428.897.157 * 100% ≈ 47,57%\n\nSự tăng trưởng hàng tồn kho đáng kể (khoảng 47,57%) cho thấy công ty có thể đang chuẩn bị cho nhu cầu thị trường tăng cao hoặc có sự thay đổi trong chuỗi cung ứng. Tuy nhiên, nếu tốc độ tăng trưởng doanh số không tương xứng, điều này có thể dẫn đến rủi ro tồn kho ứ đọng, tăng chi phí lưu kho và giảm hiệu quả sử dụng vốn."
+  },
+  {
+    "instruction": "Tổng giá trị ghi sổ ròng của tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+    "input": "16",
+    "output": "Tổng giá trị ghi sổ ròng của tài sản cố định hữu hình cuối kỳ là 6.370.494.499 VND."
+  },
+  {
+    "instruction": "Nguyên giá của thiết bị văn phòng được mua mới trong kỳ là bao nhiêu VND?",
+    "input": "16",
+    "output": "Nguyên giá của thiết bị văn phòng được mua mới trong kỳ là 598.676.500 VND."
+  },
+  {
+    "instruction": "So sánh khấu hao lũy kế của phương tiện vận tải cuối kỳ với đầu năm. Nhận xét về sự thay đổi.",
+    "input": "16",
+    "output": "Khấu hao lũy kế của phương tiện vận tải cuối kỳ là 5.901.351.529 VND, trong khi đầu năm là 5.751.319.605 VND. Khấu hao lũy kế đã tăng 150.031.924 VND trong kỳ, phản ánh việc ghi nhận chi phí khấu hao cho phương tiện vận tải trong năm."
+  },
+  {
+    "instruction": "Tỷ lệ tài sản đã khấu hao hết trên tổng nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+    "input": "16",
+    "output": "Tổng tài sản đã khấu hao hết cuối kỳ là 6.481.274.872 VND.\nTổng nguyên giá tài sản cố định hữu hình cuối kỳ là 18.557.901.930 VND.\nTỷ lệ = 6.481.274.872 / 18.557.901.930 * 100% ≈ 34,92%."
+  },
+  {
+    "instruction": "Đánh giá chính sách đầu tư và khấu hao tài sản cố định hữu hình của công ty dựa trên các biến động trong kỳ.",
+    "input": "16",
+    "output": "Trong kỳ, công ty đã mua mới thiết bị văn phòng trị giá 598.676.500 VND và hoàn thành xây dựng 45.909.091 VND, cho thấy có sự đầu tư vào tài sản cố định. Chi phí khấu hao trong năm là 392.457.257 VND. Tỷ lệ tài sản đã khấu hao hết trên tổng nguyên giá tài sản cố định hữu hình cuối kỳ là 34,92%, cho thấy một phần đáng kể tài sản đã hoàn thành việc khấu hao. Chính sách khấu hao đường thẳng được áp dụng đều đặn qua các năm. Nhìn chung, công ty tiếp tục duy trì và nâng cấp tài sản cố định, đồng thời quản lý khấu hao một cách nhất quán."
+  },
+  {
+    "instruction": "Phân tích tác động của việc tài sản đã khấu hao hết nhưng vẫn còn được sử dụng đối với hiệu quả hoạt động và dòng tiền của công ty.",
+    "input": "16",
+    "output": "Tài sản đã khấu hao hết nhưng vẫn còn được sử dụng (Tổng cộng 6.481.274.872 VND đã khấu hao hết) có tác động tích cực đến hiệu quả hoạt động và dòng tiền của công ty. Về hiệu quả hoạt động, khi tài sản đã khấu hao hết, công ty sẽ không còn phải ghi nhận chi phí khấu hao cho các tài sản này trong Báo cáo kết quả kinh doanh, giúp tăng lợi nhuận. Về dòng tiền, việc không phát sinh chi phí khấu hao đồng nghĩa với việc không có dòng tiền ra liên quan đến khấu hao, và nếu tài sản vẫn hoạt động hiệu quả, nó tiếp tục tạo ra doanh thu mà không phải gánh thêm chi phí đầu tư ban đầu đã được phân bổ hết. Điều này giúp cải thiện lợi nhuận và dòng tiền tự do, có thể dùng để tái đầu tư hoặc phân phối cho cổ đông."
+  },
+  {
+    "instruction": "Tính tỷ lệ khấu hao trong năm trên nguyên giá tài sản cố định hữu hình của từng loại tài sản. Loại tài sản nào có tốc độ khấu hao nhanh nhất?",
+    "input": "16",
+    "output": "Tỷ lệ khấu hao trong năm trên nguyên giá tài sản cố định hữu hình của từng loại tài sản:\n- **Nhà cửa và vật kiến trúc**: Khấu hao trong năm 127.270.371 VND / Nguyên giá cuối kỳ 7.091.625.550 VND ≈ 1,79%\n- **Phương tiện vận tải**: Khấu hao trong năm 150.031.924 VND / Nguyên giá cuối kỳ 7.889.906.328 VND ≈ 1,90%\n- **Thiết bị văn phòng**: Khấu hao trong năm 115.154.962 VND / Nguyên giá cuối kỳ 3.576.370.052 VND ≈ 3,22%\n\nLoại tài sản có tốc độ khấu hao nhanh nhất trong năm hiện tại là **Thiết bị văn phòng** với tỷ lệ khoảng 3,22%."
+  },
+  {
+    "instruction": "Tổng giá trị ghi sổ ròng của tài sản cố định vô hình cuối kỳ là bao nhiêu?",
+    "input": "17",
+    "output": "Tổng giá trị ghi sổ ròng của tài sản cố định vô hình cuối kỳ là 261.400.000 VND."
+  },
+  {
+    "instruction": "Giá trị khấu hao trong năm của phần mềm máy tính là bao nhiêu VND?",
+    "input": "17",
+    "output": "Giá trị khấu hao trong năm của phần mềm máy tính là 22.500.000 VND."
+  },
+  {
+    "instruction": "So sánh khoản phải trả người bán ngắn hạn cuối kỳ với đầu năm. Nhận xét về sự thay đổi.",
+    "input": "17",
+    "output": "Khoản phải trả người bán ngắn hạn cuối kỳ là 47.249.722.413 VND, giảm đáng kể so với 95.292.785.307 VND vào đầu năm. Sự thay đổi này cho thấy công ty đã thanh toán một lượng lớn các khoản nợ phải trả cho người bán hoặc giảm mua hàng/dịch vụ tín dụng, điều này có thể cải thiện vị thế thanh khoản và quản lý vốn lưu động."
+  },
+  {
+    "instruction": "Công ty có bất kỳ khoản phải trả người bán quá hạn nào không?",
+    "input": "17",
+    "output": "Không, công ty không có các khoản phải trả người bán quá hạn."
+  },
+  {
+    "instruction": "Đánh giá hiệu quả sử dụng tài sản cố định vô hình của công ty dựa trên tỷ lệ khấu hao trong năm và giá trị ghi sổ ròng.",
+    "input": "17",
+    "output": "Tài sản cố định vô hình của công ty chủ yếu là phần mềm máy tính. Giá trị khấu hao trong năm là 22.500.000 VND và giá trị ghi sổ ròng cuối kỳ là 261.400.000 VND. Tỷ lệ khấu hao trong năm trên nguyên giá (2.850.272.679 VND) là khoảng 0.79%. Tỷ lệ khấu hao này tương đối nhỏ, cho thấy phần mềm máy tính vẫn còn trong giai đoạn sử dụng hữu ích hoặc có tuổi thọ dài. Việc duy trì giá trị ghi sổ ròng cho thấy công ty vẫn đang khai thác lợi ích từ tài sản này, và không có dấu hiệu suy giảm giá trị đáng kể trong kỳ."
+  },
+  {
+    "instruction": "Phân tích tác động của sự giảm mạnh trong khoản phải trả các nhà cung cấp khác đến dòng tiền và mối quan hệ với nhà cung cấp.",
+    "input": "17",
+    "output": "Khoản phải trả các nhà cung cấp khác đã giảm mạnh từ 94.964.719.511 VND (đầu năm) xuống 46.564.940.831 VND (cuối kỳ). Sự giảm này có tác động trực tiếp làm giảm dòng tiền ra khỏi hoạt động kinh doanh (nếu là tiền mặt chi trả) trong kỳ hiện tại. Điều này có thể do công ty đã thanh toán nhiều hơn cho nhà cung cấp hoặc giảm lượng mua hàng/dịch vụ tín dụng. Về mối quan hệ với nhà cung cấp, việc thanh toán nhanh hơn có thể củng cố mối quan hệ, nhưng nếu là do giảm mua hàng, nó có thể ảnh hưởng đến quy mô kinh doanh hoặc khả năng duy trì các điều khoản tín dụng ưu đãi trong tương lai."
+  },
+  {
+    "instruction": "Tính tỷ lệ khấu hao lũy kế trên nguyên giá tài sản cố định vô hình cuối kỳ. Con số này cho thấy điều gì về tuổi thọ của tài sản?",
+    "input": "17",
+    "output": "Khấu hao lũy kế tài sản cố định vô hình cuối kỳ là 2.588.872.679 VND.\nNguyên giá tài sản cố định vô hình cuối kỳ là 2.850.272.679 VND.\nTỷ lệ khấu hao lũy kế trên nguyên giá = 2.588.872.679 / 2.850.272.679 * 100% ≈ 90,83%.\n\nCon số 90,83% này cho thấy phần lớn tài sản cố định vô hình (phần mềm máy tính) đã được khấu hao. Điều này ngụ ý rằng tài sản này đã gần hết tuổi thọ hữu ích theo kế toán của công ty hoặc đã được sử dụng trong một thời gian dài. Công ty có thể cần xem xét đầu tư vào các tài sản vô hình mới trong tương lai gần để duy trì hoặc nâng cao năng lực hoạt động."
+  },
+  {
+    "instruction": "Tổng số thuế thu nhập doanh nghiệp phải nộp cuối kỳ là bao nhiêu?",
+    "input": "18",
+    "output": "Tổng số thuế thu nhập doanh nghiệp phải nộp cuối kỳ là 5.240.213.084 VND."
+  },
+  {
+    "instruction": "Tổng chi phí phải trả ngắn hạn cuối kỳ là bao nhiêu VND?",
+    "input": "18",
+    "output": "Tổng chi phí phải trả ngắn hạn cuối kỳ là 48.981.344.753 VND."
+  },
+  {
+    "instruction": "So sánh khoản cổ tức phải trả ngắn hạn cuối kỳ với đầu năm. Điều này nói lên điều gì về chính sách cổ tức của công ty?",
+    "input": "18",
+    "output": "Khoản cổ tức phải trả ngắn hạn cuối kỳ là 47.573.820.000 VND, tăng rất mạnh so với 588.820.551 VND vào đầu năm. Sự gia tăng đáng kể này cho thấy công ty đã công bố một khoản cổ tức lớn trong kỳ hiện tại, thể hiện một chính sách cổ tức hào phóng hơn hoặc phản ánh kết quả kinh doanh tốt đã được quyết định phân phối cho cổ đông."
+  },
+  {
+    "instruction": "Khoản tăng trong năm của thuế GTGT đầu ra là bao nhiêu?",
+    "input": "18",
+    "output": "Thông tin về khoản tăng trong năm của thuế GTGT đầu ra không được trình bày trực tiếp trong chunk, mà chỉ có Số đầu năm, Giảm trong năm, Số cuối kỳ Phải nộp và Số cuối kỳ Phải thu. Để tính khoản tăng, cần biết số tiền phát sinh trong năm, mà dữ liệu này không có trong bảng."
+  },
+  {
+    "instruction": "Đánh giá khả năng quản lý nghĩa vụ thuế của công ty dựa trên số liệu về thuế và các khoản phải nộp nhà nước.",
+    "input": "18",
+    "output": "Dựa trên số liệu, công ty có các khoản thuế phải nộp và phải thu từ nhà nước. Thuế thu nhập doanh nghiệp phải nộp cuối kỳ là 5.240.213.084 VND, giảm đáng kể so với số đầu năm 27.351.455.882 VND do khoản giảm trong năm lớn (15.547.625.448 VND), có thể là do nộp thuế. Các khoản phải nộp khác như thuế GTGT đầu ra và thuế thu nhập cá nhân cũng có sự biến động. Nhìn chung, công ty có vẻ chủ động trong việc thanh toán các nghĩa vụ thuế, thể hiện qua việc giảm số dư phải nộp TNDN. Tuy nhiên, các khoản phải thu cũng khá đáng kể, cho thấy công ty cũng có các khoản được khấu trừ hoặc hoàn lại."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của sự thay đổi đáng kể trong khoản 'Khác' thuộc chi phí phải trả ngắn hạn đến chi phí hoạt động của công ty.",
+    "input": "18",
+    "output": "Khoản 'Khác' thuộc chi phí phải trả ngắn hạn đã tăng đột biến từ 1.272.624.141 VND (đầu năm) lên 36.214.123.727 VND (cuối kỳ). Sự gia tăng đáng kể này có thể do các chi phí chưa được ghi nhận vào tài khoản cụ thể, các nghĩa vụ phát sinh bất thường, hoặc sự thay đổi trong cấu trúc chi phí. Tác động của nó là làm tăng tổng chi phí phải trả ngắn hạn của công ty, tạo ra một áp lực thanh toán lớn hơn trong tương lai gần. Nếu không được quản lý tốt, điều này có thể ảnh hưởng tiêu cực đến dòng tiền và khả năng thanh khoản ngắn hạn của công ty."
+  },
+  {
+    "instruction": "Làm thế nào để các khoản thu/chi hộ cho đại lý vận tải ảnh hưởng đến dòng tiền của công ty?",
+    "input": "18",
+    "output": "Các khoản thu/chi hộ cho đại lý vận tải (Pan và Vietway) là những giao dịch mà công ty thực hiện thay mặt cho các đại lý. Khi công ty thu hộ, dòng tiền vào sẽ tăng nhưng không phải là doanh thu của công ty, mà là nghĩa vụ phải trả lại. Khi công ty chi hộ, dòng tiền ra sẽ tăng nhưng không phải là chi phí hoạt động, mà là khoản phải thu lại. Những giao dịch này ảnh hưởng đến dòng tiền nhưng không ảnh hưởng trực tiếp đến lợi nhuận của công ty. Tuy nhiên, quy mô lớn của các khoản này (ví dụ, 'Thu/chi hộ cho đại lý vận tải (Pan)' giảm từ 96.718.524.153 VND xuống 17.748.724.327 VND) cho thấy công ty đóng vai trò quan trọng trong việc quản lý dòng tiền cho các đối tác này."
+  },
+  {
+    "instruction": "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là bao nhiêu?",
+    "input": "19",
+    "output": "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là 10.451.066.353 VND."
+  },
+  {
+    "instruction": "Số dư quỹ khen thưởng, phúc lợi cuối kỳ là bao nhiêu VND?",
+    "input": "19",
+    "output": "Số dư quỹ khen thưởng, phúc lợi cuối kỳ là 4.403.641.850 VND."
+  },
+  {
+    "instruction": "Công ty đã sử dụng bao nhiêu tiền từ quỹ khen thưởng, phúc lợi trong kỳ này?",
+    "input": "19",
+    "output": "Công ty đã sử dụng 3.687.057.708 VND từ quỹ khen thưởng, phúc lợi trong kỳ này."
+  },
+  {
+    "instruction": "Khoản vay ngắn hạn từ ngân hàng đã tăng hay giảm trong kỳ này và với số tiền là bao nhiêu?",
+    "input": "19",
+    "output": "Khoản vay ngắn hạn từ ngân hàng đã giảm trong kỳ này. Số dư đầu năm là 47.824.921.508 VND và số cuối kỳ là 10.451.066.353 VND. Công ty đã giảm nợ vay 37.373.855.155 VND (do tăng trong năm là 35.940.066.353 VND và giảm trong năm là 73.313.921.508 VND)."
+  },
+  {
+    "instruction": "Đánh giá tình hình quản lý nợ ngắn hạn của công ty. Liệu việc giảm nợ vay ngân hàng có phải là một dấu hiệu tích cực không?",
+    "input": "19",
+    "output": "Tình hình quản lý nợ ngắn hạn của công ty cho thấy sự cải thiện đáng kể. Khoản vay ngắn hạn từ ngân hàng đã giảm mạnh từ 47.824.921.508 VND xuống 10.451.066.353 VND. Điều này là một dấu hiệu rất tích cực, cho thấy công ty đã chủ động giảm bớt gánh nặng nợ vay, giảm chi phí lãi vay và tăng cường sức khỏe tài chính ngắn hạn. Việc này giúp cải thiện khả năng thanh toán và giảm rủi ro về thanh khoản, cho phép công ty có thêm sự linh hoạt tài chính."
+  },
+  {
+    "instruction": "Phân tích sự biến động của quỹ khen thưởng, phúc lợi trong kỳ và tác động của nó đến lợi ích nhân viên và quản lý.",
+    "input": "19",
+    "output": "Quỹ khen thưởng, phúc lợi có số dư đầu năm là 6.790.600.543 VND, được trích lập thêm 1.300.099.015 VND từ lợi nhuận và sử dụng 3.687.057.708 VND trong năm, dẫn đến số dư cuối kỳ là 4.403.641.850 VND. Sự biến động này cho thấy công ty tiếp tục duy trì việc trích lập quỹ từ lợi nhuận để phục vụ các hoạt động khen thưởng và phúc lợi cho nhân viên và quản lý. Mức sử dụng quỹ khá lớn (gần bằng số trích lập và một phần của số dư đầu năm) phản ánh các hoạt động chi trả cho lợi ích nhân viên đã được thực hiện. Điều này có tác động tích cực đến tinh thần và sự gắn bó của nhân viên, nhưng cũng cần cân đối với tình hình tài chính chung của công ty."
+  },
+  {
+    "instruction": "Tính tỷ lệ trích lập từ lợi nhuận vào quỹ khen thưởng, phúc lợi so với tổng quỹ đầu năm và nhận xét về xu hướng này qua các kỳ.",
+    "input": "19",
+    "output": "Tỷ lệ trích lập từ lợi nhuận vào quỹ khen thưởng, phúc lợi so với tổng quỹ đầu năm:\n- Kỳ này: 1.300.099.015 VND / 6.790.600.543 VND ≈ 19,14%\n- Kỳ trước: 2.497.117.715 VND / 11.158.157.835 VND ≈ 22,38%\n\nXu hướng này cho thấy cả số tiền trích lập và tỷ lệ trích lập từ lợi nhuận vào quỹ khen thưởng, phúc lợi so với tổng quỹ đầu năm đều có xu hướng giảm giữa hai kỳ. Điều này có thể phản ánh sự thay đổi trong chính sách phân phối lợi nhuận, mức lợi nhuận trong kỳ hoặc nhu cầu quản lý quỹ. Mặc dù vẫn có trích lập, nhưng việc giảm tỷ lệ này cần được xem xét trong bối cảnh lợi ích của người lao động và chính sách phát triển của công ty."
+  },
+  {
+    "instruction": "Tổng vốn chủ sở hữu cuối kỳ hiện tại là bao nhiêu?",
+    "input": "20",
+    "output": "Tổng vốn chủ sở hữu cuối kỳ hiện tại là 563.585.658.159 VND."
+  },
+  {
+    "instruction": "Khoản lợi nhuận ròng trong năm hiện tại là bao nhiêu VND?",
+    "input": "20",
+    "output": "Khoản lợi nhuận ròng trong năm hiện tại là 10.766.404.174 VND."
+  },
+  {
+    "instruction": "Số cổ tức đã công bố trong năm hiện tại là bao nhiêu?",
+    "input": "20",
+    "output": "Số cổ tức đã công bố trong năm hiện tại là 47.573.820.000 VND."
+  },
+  {
+    "instruction": "So sánh lợi nhuận sau thuế chưa phân phối cuối kỳ hiện tại với cuối năm trước. Điều gì đã xảy ra?",
+    "input": "20",
+    "output": "Lợi nhuận sau thuế chưa phân phối cuối kỳ hiện tại là 200.509.830.287 VND, trong khi cuối năm trước là 238.617.345.128 VND. Lợi nhuận sau thuế chưa phân phối đã giảm đáng kể (khoảng 38,1 tỷ VND). Điều này xảy ra do khoản cổ tức đã công bố trong năm hiện tại (47.573.820.000 VND) và trích lập quỹ (1.300.099.015 VND) lớn hơn lợi nhuận ròng trong năm (10.766.404.174 VND)."
+  },
+  {
+    "instruction": "Đánh giá chính sách phân phối lợi nhuận của công ty dựa trên khoản cổ tức đã công bố và trích lập quỹ trong năm hiện tại.",
+    "input": "20",
+    "output": "Trong năm hiện tại, công ty đã công bố cổ tức 47.573.820.000 VND và trích lập quỹ 1.300.099.015 VND, trong khi lợi nhuận ròng trong năm là 10.766.404.174 VND. Điều này cho thấy công ty có chính sách phân phối lợi nhuận khá hào phóng, khi khoản cổ tức đã công bố và trích lập quỹ vượt xa lợi nhuận ròng kiếm được trong năm hiện tại. Để bù đắp, công ty đã sử dụng lợi nhuận sau thuế chưa phân phối từ các kỳ trước, dẫn đến sự sụt giảm đáng kể của mục này."
+  },
+  {
+    "instruction": "Phân tích tác động của sự thay đổi vốn chủ sở hữu đến sức khỏe tài chính tổng thể của công ty.",
+    "input": "20",
+    "output": "Tổng vốn chủ sở hữu của công ty đã giảm từ 601.693.173.000 VND (đầu năm hiện tại) xuống 563.585.658.159 VND (cuối kỳ hiện tại). Sự giảm này chủ yếu do khoản cổ tức lớn đã công bố và trích lập quỹ vượt quá lợi nhuận ròng trong năm. Mặc dù vốn điều lệ và thặng dư vốn cổ phần vẫn ổn định, sự sụt giảm lợi nhuận sau thuế chưa phân phối cho thấy công ty đang dùng các khoản lợi nhuận tích lũy để chi trả. Điều này có thể ảnh hưởng đến khả năng tái đầu tư nội bộ và có thể được nhìn nhận là một dấu hiệu thận trọng về sức khỏe tài chính nếu xu hướng này tiếp diễn, hoặc là một phần của chính sách tối đa hóa giá trị cho cổ đông trong một giai đoạn nhất định."
+  },
+  {
+    "instruction": "Cổ đông lớn nhất của công ty là ai và họ nắm giữ bao nhiêu phần trăm vốn góp?",
+    "input": "20",
+    "output": "Cổ đông lớn nhất của công ty là Tổng công ty Transimex, nắm giữ 61,01% vốn góp."
+  },
+  {
+    "instruction": "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là bao nhiêu?",
+    "input": "21",
+    "output": "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là 31.700.380 cổ phiếu."
+  },
+  {
+    "instruction": "Mệnh giá của mỗi cổ phiếu đang lưu hành là bao nhiêu VND?",
+    "input": "21",
+    "output": "Mệnh giá của mỗi cổ phiếu đang lưu hành là 10.000 VND."
+  },
+  {
+    "instruction": "Lãi cơ bản trên mỗi cổ phiếu trong năm hiện tại là bao nhiêu?",
+    "input": "21",
+    "output": "Lãi cơ bản trên mỗi cổ phiếu trong năm hiện tại là 340 VND/cổ phiếu."
+  },
+  {
+    "instruction": "So sánh lợi nhuận sau thuế phân bổ cho cổ phiếu phổ thông trong năm hiện tại với năm trước. Có sự cải thiện nào không?",
+    "input": "21",
+    "output": "Lợi nhuận sau thuế phân bổ cho cổ phiếu phổ thông trong năm hiện tại là 10.766.404.174 VND, tăng so với 6.133.252.455 VND của năm trước. Có sự cải thiện đáng kể về lợi nhuận phân bổ cho cổ phiếu phổ thông."
+  },
+  {
+    "instruction": "Đánh giá tác động của số lượng cổ phiếu quỹ đến tổng số cổ phiếu đang lưu hành và quyền biểu quyết của cổ đông.",
+    "input": "21",
+    "output": "Số lượng cổ phiếu quỹ là 15.500 cổ phiếu. Số lượng cổ phiếu đăng ký phát hành và đã bán ra công chúng là 31.715.880 cổ phiếu. Khi công ty mua lại cổ phiếu làm cổ phiếu quỹ, những cổ phiếu này sẽ không còn quyền biểu quyết và không được tính vào số lượng cổ phiếu đang lưu hành. Do đó, cổ phiếu quỹ làm giảm tổng số cổ phiếu đang lưu hành xuống còn 31.700.380 cổ phiếu (31.715.880 - 15.500), đồng thời làm giảm tổng quyền biểu quyết của thị trường, có thể tập trung quyền biểu quyết vào các cổ đông còn lại. Tuy nhiên, với 15.500 cổ phiếu quỹ trên tổng số hơn 31 triệu cổ phiếu, tác động này là rất nhỏ."
+  },
+  {
+    "instruction": "Phân tích xu hướng tăng trưởng của lợi nhuận trên mỗi cổ phiếu và tác động của nó đến nhà đầu tư.",
+    "input": "21",
+    "output": "Lãi cơ bản trên mỗi cổ phiếu đã tăng từ 193 VND/cổ phiếu trong năm trước lên 340 VND/cổ phiếu trong năm hiện tại. Đây là một xu hướng tăng trưởng tích cực, cho thấy công ty đã tạo ra nhiều lợi nhuận hơn trên mỗi cổ phiếu đang lưu hành. Tác động của xu hướng này đến nhà đầu tư là rất tích cực, vì nó thường báo hiệu khả năng sinh lời tốt hơn và có thể dẫn đến việc tăng giá cổ phiếu hoặc tăng cổ tức trong tương lai, làm tăng giá trị khoản đầu tư của họ."
+  },
+  {
+    "instruction": "Giải thích ý nghĩa của 'Lợi ích cổ đông không kiểm soát' và sự biến động của nó trong năm hiện tại.",
+    "input": "21",
+    "output": "'Lợi ích cổ đông không kiểm soát' (Non-controlling interests) là phần vốn chủ sở hữu trong một công ty con mà không thuộc về công ty mẹ (tức là phần vốn của các cổ đông thiểu số). Nó phản ánh quyền lợi của các cổ đông không kiểm soát trong tài sản thuần và kết quả hoạt động của các công ty con. Trong năm hiện tại, 'Lợi ích cổ đông không kiểm soát' tăng từ 19.443.179.046 VND (số đầu năm) lên 20.687.202.845 VND (số cuối kỳ), chủ yếu do phần lợi nhuận trong năm là 1.244.023.799 VND được phân bổ cho các cổ đông này. Điều này cho thấy các công ty con có cổ đông không kiểm soát đã hoạt động có lãi và phần lợi nhuận đó được phân bổ tăng thêm vào lợi ích của họ."
+  },
+  {
+    "instruction": "Tổng doanh thu bán hàng và cung cấp dịch vụ trong năm hiện tại là bao nhiêu?",
+    "input": "22",
+    "output": "Tổng doanh thu bán hàng và cung cấp dịch vụ trong năm hiện tại là 316.567.093.624 VND."
+  },
+  {
+    "instruction": "Doanh thu từ bán vé máy bay trong năm hiện tại là bao nhiêu VND?",
+    "input": "22",
+    "output": "Doanh thu từ bán vé máy bay trong năm hiện tại là 98.268.245.621 VND."
+  },
+  {
+    "instruction": "So sánh chi phí dịch vụ bên ngoài trong năm hiện tại với năm trước. Nhận xét về sự thay đổi.",
+    "input": "22",
+    "output": "Chi phí dịch vụ bên ngoài trong năm hiện tại là 89.375.813.078 VND, giảm đáng kể so với 263.268.166.093 VND của năm trước. Đây là một sự giảm rất lớn, cho thấy công ty đã cắt giảm đáng kể hoặc tái cơ cấu việc sử dụng các dịch vụ từ bên ngoài."
+  },
+  {
+    "instruction": "Doanh thu lãi từ hoạt động tài chính trong năm hiện tại là bao nhiêu?",
+    "input": "22",
+    "output": "Doanh thu lãi từ hoạt động tài chính trong năm hiện tại là 244.972.108 VND."
+  },
+  {
+    "instruction": "Phân tích sự thay đổi trong cơ cấu doanh thu của công ty giữa năm hiện tại và năm trước. Điều này nói lên điều gì về chiến lược kinh doanh?",
+    "input": "22",
+    "output": "Cơ cấu doanh thu của công ty có sự thay đổi đáng kể:\n- **Cung cấp dịch vụ vận tải quốc tế**: Giảm từ 176.613.669.545 VND (năm trước) xuống 166.134.405.462 VND (năm hiện tại).\n- **Cung cấp dịch vụ giao nhận vận tải**: Giảm mạnh từ 129.264.635.522 VND (năm trước) xuống 39.822.179.523 VND (năm hiện tại).\n- **Bán vé máy bay và Cung cấp các dịch vụ khác**: Là các nguồn doanh thu mới trong năm hiện tại (98.268.245.621 VND và 12.342.263.018 VND tương ứng), không có trong năm trước.\n\nĐiều này nói lên rằng công ty đang thực hiện một chiến lược tái cơ cấu hoặc đa dạng hóa mạnh mẽ các hoạt động kinh doanh. Có sự dịch chuyển từ việc tập trung vào dịch vụ giao nhận vận tải sang các mảng mới như bán vé máy bay và các dịch vụ khác, trong khi dịch vụ vận tải quốc tế vẫn duy trì nhưng có phần giảm. Sự thay đổi này có thể nhằm khai thác các cơ hội thị trường mới hoặc giảm thiểu rủi ro từ các mảng kinh doanh truyền thống."
+  },
+  {
+    "instruction": "Đánh giá tác động của lãi/lỗ chênh lệch tỷ giá hối đoái đến doanh thu và chi phí tài chính của công ty.",
+    "input": "22",
+    "output": "Lãi chênh lệch tỷ giá hối đoái đã tăng từ 1.365.621.062 VND (năm trước) lên 2.672.541.681 VND (năm hiện tại), góp phần làm tăng doanh thu hoạt động tài chính. Ngược lại, lỗ chênh lệch tỷ giá hối đoái cũng tăng mạnh từ 2.885.105.788 VND (năm trước) lên 9.415.748.574 VND (năm hiện tại), làm tăng đáng kể chi phí tài chính. Điều này cho thấy công ty đang chịu ảnh hưởng lớn từ biến động tỷ giá hối đoái, với tác động tiêu cực (lỗ lớn hơn lãi) đến kết quả tài chính tổng thể trong năm hiện tại. Sự biến động này có thể tạo ra rủi ro cho lợi nhuận của công ty nếu không có các biện pháp phòng ngừa rủi ro tỷ giá hiệu quả."
+  },
+  {
+    "instruction": "Tính tỷ lệ giá vốn hàng bán trên doanh thu thuần trong năm hiện tại và năm trước. Xu hướng này có ý nghĩa gì đối với hiệu quả hoạt động của công ty?",
+    "input": "22",
+    "output": "Tỷ lệ giá vốn hàng bán trên doanh thu thuần:\n- Năm hiện tại: 283.395.420.531 VND (Giá vốn) / 310.827.951.527 VND (Doanh thu thuần) ≈ 91,17%\n- Năm trước: 275.600.700.639 VND (Giá vốn) / 303.783.814.752 VND (Doanh thu thuần) ≈ 90,72%\n\nXu hướng này cho thấy tỷ lệ giá vốn hàng bán trên doanh thu thuần đã tăng nhẹ từ 90,72% lên 91,17%. Điều này có nghĩa là công ty phải chi nhiều hơn cho giá vốn để tạo ra mỗi đồng doanh thu thuần, dẫn đến biên lợi nhuận gộp giảm nhẹ. Đây có thể là một dấu hiệu tiêu cực đối với hiệu quả hoạt động, cho thấy chi phí đầu vào có thể đã tăng hoặc khả năng kiểm soát giá vốn của công ty đã giảm, ảnh hưởng đến khả năng tạo lợi nhuận từ hoạt động kinh doanh cốt lõi."
+  },
+  {
+    "instruction": "Tổng chi phí bán hàng trong năm hiện tại là bao nhiêu?",
+    "input": "23",
+    "output": "Tổng chi phí bán hàng trong năm hiện tại là 6.515.269.688 VND."
+  },
+  {
+    "instruction": "Chi phí nhân công trong chi phí quản lý doanh nghiệp năm hiện tại là bao nhiêu VND?",
+    "input": "23",
+    "output": "Chi phí nhân công trong chi phí quản lý doanh nghiệp năm hiện tại là 2.402.358.372 VND."
+  },
+  {
+    "instruction": "So sánh chi phí quản lý doanh nghiệp trong năm hiện tại với năm trước. Nhận xét về sự tăng trưởng.",
+    "input": "23",
+    "output": "Chi phí quản lý doanh nghiệp trong năm hiện tại là 4.858.798.638 VND, tăng so với 4.498.789.615 VND của năm trước. Mức tăng trưởng là (4.858.798.638 - 4.498.789.615) / 4.498.789.615 * 100% ≈ 7,99%. Đây là mức tăng trưởng khá đáng kể, chủ yếu do sự tăng lên của dự phòng phải thu khó đòi và các chi phí khác."
+  },
+  {
+    "instruction": "Ai là Chủ tịch Hội đồng quản trị của công ty?",
+    "input": "23",
+    "output": "Ông Nguyễn Bích Lan là Chủ tịch Hội đồng quản trị (HĐQT) của công ty."
+  },
+  {
+    "instruction": "Phân tích sự biến động của dự phòng phải thu khó đòi trong chi phí quản lý doanh nghiệp và tác động của nó đến lợi nhuận.",
+    "input": "23",
+    "output": "Dự phòng phải thu khó đòi trong chi phí quản lý doanh nghiệp đã tăng rất mạnh từ 53.427.878 VND (năm trước) lên 661.640.809 VND (năm hiện tại). Sự gia tăng này có tác động tiêu cực trực tiếp đến lợi nhuận của công ty, vì nó là một khoản chi phí làm giảm lợi nhuận. Điều này phản ánh sự thận trọng hơn trong việc đánh giá khả năng thu hồi các khoản nợ hoặc cho thấy chất lượng các khoản phải thu đã xấu đi, tiềm ẩn rủi ro tín dụng cao hơn cho công ty."
+  },
+  {
+    "instruction": "Đánh giá các rủi ro tiềm ẩn phát sinh từ các giao dịch với các bên liên quan dựa trên danh sách các bên được công bố.",
+    "input": "23",
+    "output": "Danh sách các bên liên quan của công ty rất đa dạng, bao gồm công ty mẹ, các công ty con, công ty liên kết, các tổ chức liên quan đến cá nhân nội bộ, và các nhà quản lý chủ chốt. Rủi ro tiềm ẩn phát sinh từ các giao dịch này có thể bao gồm:\n- **Rủi ro xung đột lợi ích**: Các giao dịch có thể không được thực hiện trên cơ sở các điều kiện thị trường công bằng (arm's length principle), có khả năng ưu tiên lợi ích của bên liên quan hơn là lợi ích của công ty.\n- **Rủi ro minh bạch**: Các giao dịch này cần được công bố rõ ràng để đảm bảo tính minh bạch, nhưng bản chất của mối quan hệ có thể làm mờ đi các chi tiết quan trọng.\n- **Rủi ro tài chính**: Các khoản vay mượn, mua bán dịch vụ với bên liên quan có thể không phản ánh đúng giá trị thị trường, dẫn đến lợi nhuận bị ảnh hưởng hoặc rủi ro tài chính tăng lên. Tuy nhiên, chunk không cung cấp đủ thông tin để định lượng các rủi ro này mà chỉ liệt kê các bên và mối quan hệ."
+  },
+  {
+    "instruction": "Chi phí khấu hao/phân bổ tài sản cố định trong chi phí quản lý doanh nghiệp năm hiện tại là bao nhiêu?",
+    "input": "23",
+    "output": "Chi phí khấu hao/phân bổ tài sản cố định trong chi phí quản lý doanh nghiệp năm hiện tại là 221.167.160 VND."
+  },
+  {
+    "instruction": "Tổng công ty Transimex đã cho vay bao nhiêu tiền cho Vinafreight trong năm hiện tại?",
+    "input": "24",
+    "output": "Thông tin trong bảng chỉ cho thấy Tổng công ty Transimex đã 'Cho vay' 50.000.000.000 VND. Không nêu rõ là cho Vinafreight vay hay Vinafreight cho Tổng công ty Transimex vay. Tuy nhiên, trong phần 'Phải thu về cho vay ngắn hạn (Từ các bên liên quan)', có ghi 'Tổng công ty Transimex: 50.000.000.000 VND' ở cả năm hiện tại và năm trước, điều này ngụ ý đây là khoản mà Vinafreight cho Transimex vay."
+  },
+  {
+    "instruction": "Tổng số phụ cấp của thành viên HĐQT và BKS trong năm hiện tại là bao nhiêu?",
+    "input": "24",
+    "output": "Tổng số phụ cấp của thành viên HĐQT và BKS trong năm hiện tại là 250.000.005 VND."
+  },
+  {
+    "instruction": "So sánh lương của Chủ tịch HĐQT trong năm hiện tại và năm trước. Có sự thay đổi nào không?",
+    "input": "24",
+    "output": "Lương của Chủ tịch HĐQT Ông Nguyễn Bích Lan trong năm hiện tại là 213.597.675 VND, giảm so với 233.222.463 VND của năm trước. Có sự giảm nhẹ trong lương của Chủ tịch HĐQT."
+  },
+  {
+    "instruction": "Tổng các khoản phải trả người bán ngắn hạn từ các bên liên quan cuối kỳ là bao nhiêu?",
+    "input": "24",
+    "output": "Tổng các khoản phải trả người bán ngắn hạn từ các bên liên quan cuối kỳ là 762.831.582 VND."
+  },
+  {
+    "instruction": "Đánh giá mức độ độc lập tài chính của công ty dựa trên các giao dịch cho vay và mua/bán dịch vụ với Tổng công ty Transimex.",
+    "input": "24",
+    "output": "Vinafreight có các giao dịch đáng kể với Tổng công ty Transimex, bao gồm khoản cho vay 50.000.000.000 VND (hiện tại và năm trước), mua dịch vụ 1.453.695.865 VND (năm hiện tại), và cung cấp dịch vụ 1.092.056.365 VND (năm hiện tại). Ngoài ra, Tổng công ty Transimex là cổ đông lớn nhất của Vinafreight (61,01% vốn góp theo Chunk 20). Việc có một khoản cho vay lớn từ Vinafreight cho Transimex và các giao dịch mua/bán dịch vụ hai chiều cho thấy mối quan hệ tài chính và hoạt động rất chặt chẽ giữa hai bên. Điều này có thể làm giảm mức độ độc lập tài chính của Vinafreight, vì các quyết định tài chính và kinh doanh có thể bị ảnh hưởng bởi lợi ích của công ty mẹ. Cần theo dõi chặt chẽ để đảm bảo các giao dịch này được thực hiện trên cơ sở công bằng và vì lợi ích của tất cả cổ đông."
+  },
+  {
+    "instruction": "Phân tích tác động của việc các thành viên HĐQT/BKS từ nhiệm đến cơ cấu quản trị và hiệu quả hoạt động của công ty.",
+    "input": "24",
+    "output": "Việc một số thành viên HĐQT (Bà Lê Hoàng Như Uyên, Ông Nguyễn Ngọc Nhiên) và BKS (Ông Nguyễn Hải Nhật, Bà Phan Phương Tuyền) từ nhiệm cho thấy có sự thay đổi trong cơ cấu quản trị của công ty. Điều này có thể dẫn đến việc thay thế bằng các cá nhân mới với tầm nhìn và kinh nghiệm khác, có khả năng ảnh hưởng đến định hướng chiến lược và phong cách quản lý. Tác động đến hiệu quả hoạt động có thể là tích cực nếu những thay đổi này mang lại sự đổi mới và hiệu quả hơn, hoặc tiêu cực nếu sự ổn định bị ảnh hưởng hoặc nếu các thành viên mới không thể nhanh chóng thích nghi. Tuy nhiên, thông tin trong chunk không đủ để đánh giá cụ thể tác động đến hiệu quả hoạt động."
+  },
+  {
+    "instruction": "Tính tổng lương và phụ cấp của Chủ tịch HĐQT trong năm hiện tại. Số tiền này là bao nhiêu?",
+    "input": "24",
+    "output": "Tổng lương và phụ cấp của Chủ tịch HĐQT Ông Nguyễn Bích Lan trong năm hiện tại là:\nLương: 213.597.675 VND\nPhụ cấp: 33.333.333 VND\nTổng cộng: 213.597.675 + 33.333.333 = 246.931.008 VND."
+  }
+]
+```

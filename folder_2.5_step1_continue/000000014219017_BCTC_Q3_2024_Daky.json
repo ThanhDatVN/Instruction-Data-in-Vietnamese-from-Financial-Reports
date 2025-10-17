@@ -1,0 +1,802 @@
+[
+    {
+        "chunk_id": "1",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Số cuối kỳ | Số đầu năm |\n|:-----------------------------------------------|:-------|:-----------------|:--------------|\n| A. TÀI SẢN NGẮN HẠN | 100 | 438,459,390,243 | 426,761,675,125 |\n| I. Tiền và các khoản tương đương tiền | 110 | 134,657,428,530 | 158,894,860,735 |\n| 1. Tiền | 111 | 34,657,428,530 | 110,344,860,735 |\n| 2. Các khoản tương đương tiền | 112 | 100,000,000,000 | 48,550,000,000 |\n| II. Đầu tư tài chính ngắn hạn | 120 | 102,000,000,000 | 90,000,000,000 |\n| 1. Chứng khoán kinh doanh | 121 | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | 102,000,000,000 | 90,000,000,000 |\n| III. Các khoản phải thu ngắn hạn | 130 | 126,939,613,314 | 101,865,003,986 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | 115,334,481,004 | 73,597,404,975 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | 1,383,062,720 | 4,465,623,520 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | - | - |\n| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | - | - |\n| 6. Phải thu ngắn hạn khác | 136 | 28,297,130,826 | 42,367,036,727 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | 18,075,061,236 | 18,565,061,236 |\n| 8. Tài sản thiếu chờ xử lý | 139 | - | - |\n| IV. Hàng tồn kho | 140 | 71,532,896,905 | 68,960,216,159 |\n| 1. Hàng tồn kho | 141 | 71,532,896,905 | 68,960,216,159 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | - | - |\n| V. Tài sản ngắn hạn khác | 150 | 3,329,451,494 | 7,041,594,245 |\n| 1. Chi phí trả trước ngắn hạn | 151 | 2,616,206,403 | 6,452,300,599 |\n| 2. Thuế giá trị gia tăng được khấu trừ | 152 | 20,779,337 | 2,498,542 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | 692,465,754 | 586,795,104 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | - | - |",
+        "questions": [
+            {
+                "question": "Tổng tài sản ngắn hạn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản mục Tiền cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Tiền và các khoản tương đương tiền cuối kỳ với đầu năm, thay đổi như thế nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ trọng Đầu tư tài chính ngắn hạn trên tổng Tài sản ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá sự biến động của các khoản phải thu ngắn hạn từ đầu năm đến cuối kỳ.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Tính hệ số thanh toán hiện hành (Current Ratio) dựa trên thông tin Tài sản ngắn hạn và giả định Nợ ngắn hạn từ Bảng cân đối kế toán.",
+                "difficulty": "Hard_QA"
+            },
+            {
+                "question": "Phân tích rủi ro thanh khoản nếu các khoản phải thu ngắn hạn khó đòi không được xử lý hiệu quả.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá tác động của sự thay đổi trong cơ cấu tài sản ngắn hạn đến hoạt động kinh doanh của công ty.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "2",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Số cuối kỳ | Số đầu năm |\n|:------------------------------------------------|:-------|:-----------------|:--------------|\n| B. TÀI SẢN DÀI HẠN | 200 | 839,083,359,077 | 892,081,091,924 |\n| I. Các khoản phải thu dài hạn | 210 | 15,000,000 | 100,000,000 |\n| 1. Phải thu dài hạn của khách hàng | 211 | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | - | - |\n| 6. Phải thu dài hạn khác | 216 | 15,000,000 | 100,000,000 |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | - | - |\n| II. Tài sản cố định | 220 | 750,902,089,066 | 826,679,266,664 |\n| 1. Tài sản cố định hữu hình | 221 | 743,914,610,314 | 819,482,856,912 |\n| - Nguyên giá | 222 | 3,520,681,412,449 | 3,540,948,701,072 |\n| - Giá trị hao mòn lũy kế | 223 | 2,776,766,802,135 | 2,721,465,844,160 |\n| 2. Tài sản cố định thuê tài chính | 224 | - | - |\n| - Nguyên giá | 225 | - | - |\n| - Giá trị hao mòn lũy kế | 226 | - | - |\n| 3. Tài sản cố định vô hình | 227 | 6,987,478,752 | 7,196,409,752 |\n| - Nguyên giá | 228 | 9,402,021,630 | 9,402,021,630 |\n| - Giá trị hao mòn lũy kế | 229 | 2,414,542,878 | 2,205,611,878 |\n| III. Bất động sản đầu tư | 230 | - | - |\n| - Nguyên giá | 231 | - | - |\n| - Giá trị hao mòn lũy kế | 232 | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | - | - |\n| 1. Chi phí sản xuất kinh doanh dở dang dài hạn | 241 | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | - | - |\n| V. Đầu tư tài chính dài hạn | 250 | 753,000,000 | 753,000,000 |\n| 1. Đầu tư vào công ty con | 251 | - | - |\n| 2. Đầu tư vào công ty liên kết, liên doanh | 252 | - | - |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | 753,000,000 | 753,000,000 |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | - | - |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | - | - |\n| VI. Tài sản dài hạn khác | 260 | 87,413,270,011 | 64,548,825,260 |\n| 1. Chi phí trả trước dài hạn | 261 | 87,413,270,011 | 64,548,825,260 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | - | - |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | - | - |\n| 4. Tài sản dài hạn khác | 268 | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | 1,277,542,749,320 | 1,318,842,767,049 |",
+        "questions": [
+            {
+                "question": "Tổng tài sản dài hạn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị còn lại của Tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Nguyên giá Tài sản cố định hữu hình cuối kỳ và đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ lệ khấu hao lũy kế của Tài sản cố định vô hình trên nguyên giá của nó cuối kỳ là bao nhiêu phần trăm?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ biến động của Tài sản dài hạn từ đầu năm đến cuối kỳ.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của sự giảm các khoản phải thu dài hạn đến cơ cấu tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá hiệu quả sử dụng tài sản cố định dựa trên tỷ lệ giữa nguyên giá và giá trị hao mòn lũy kế.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo ảnh hưởng của xu hướng giảm Tài sản dài hạn đến khả năng đầu tư và phát triển tương lai của công ty.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "3",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Số cuối kỳ | Số đầu năm |\n|:----------------------------------------------------|:-------|:-----------------|:--------------|\n| C. NỢ PHẢI TRẢ | 300 | 767,425,442,368 | 884,231,123,159 |\n| I. Nợ ngắn hạn | 310 | 409,126,014,495 | 482,533,262,396 |\n| 1. Phải trả người bán ngắn hạn | 311 | 68,984,584,222 | 71,653,270,939 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | 2,254,962,546 | 1,706,651,466 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | 63,398,596,729 | 42,285,214,955 |\n| 4. Phải trả người lao động | 314 | 131,575,597,687 | 144,882,067,957 |\n| 5. Chi phí phải trả ngắn hạn | 315 | 27,949,233,718 | 27,468,597,403 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | - | - |\n| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | 31,041,969,526 | 84,485,287,338 |\n| 9. Phải trả ngắn hạn khác | 319 | 31,017,461,407 | 30,782,807,787 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | 52,807,608,660 | 79,173,364,551 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | - | - |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | 96,000,000 | 96,000,000 |\n| 13. Quỹ bình ổn giá | 323 | - | - |\n| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | - | - |\n| II. Nợ dài hạn | 330 | 358,299,427,873 | 401,697,860,763 |\n| 1. Phải trả người bán dài hạn | 331 | - | - |\n| 2. Người mua trả trước tiền dài hạn | 332 | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | - | - |\n| 7. Phải trả dài hạn khác | 337 | - | 3,792,726,400 |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | 358,299,427,873 | 397,905,134,363 |\n| 9. Trái phiếu chuyển đổi | 339 | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | 510,117,306,952 | 434,611,643,890 |\n| I. Vốn chủ sở hữu | 410 | 510,117,306,952 | 434,611,643,890 |\n| 1. Vốn góp của chủ sở hữu | 411 | 800,589,700,000 | 800,589,700,000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | 800,589,700,000 | 800,589,700,000 |\n| - Cổ phiếu ưu đãi | 411b | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | - | - |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | - | - |\n| 5. Cổ phiếu quỹ | 415 | - | - |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | - | - |\n| 8. Quỹ đầu tư phát triển | 418 | 3,012,266,363 | 3,012,266,363 |\n| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | - | - |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | - | - |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | 293,484,659,411 | 368,990,322,473 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | 368,990,322,473 | 383,056,591,512 |\n| - LNST chưa phân phối kỳ này | 421b | 75,505,663,062 | 14,066,269,039 |\n| 12. Nguồn vốn đầu tư xây dựng cơ bản | 422 | - | - |\n| II. Nguồn kinh phí và quỹ khác | 430 | - | - |\n| 1. Nguồn kinh phí | 431 | - | - |\n| 2. Nguồn kinh phí đã hình thành tài sản cố định | 432 | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | 1,277,542,749,320 | 1,318,842,767,049 |",
+        "questions": [
+            {
+                "question": "Tổng nợ phải trả cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Vốn chủ sở hữu cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Nợ ngắn hạn cuối kỳ với đầu năm, thay đổi như thế nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ lệ Nợ phải trả trên Tổng nguồn vốn cuối kỳ là bao nhiêu phần trăm?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá sự thay đổi trong khoản mục Lợi nhuận sau thuế chưa phân phối kỳ này so với đầu năm.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối kỳ.",
+                "difficulty": "Hard_QA"
+            },
+            {
+                "question": "Phân tích rủi ro tài chính khi Doanh thu chưa thực hiện ngắn hạn giảm mạnh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ phụ thuộc vào các khoản vay và nợ thuê tài chính dài hạn trong cơ cấu nguồn vốn.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "4",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Kỳ này năm nay | Lũy kế từ đầu năm | Kỳ này năm trước | Lũy kế từ đầu năm |\n|:-----------------------------------------------------|:-------|:-------------------|:--------------------|:-------------------|:-------------------|\n| Doanh thu bán hàng và cung cấp dịch vụ | 01 | 782,346,449,408 | 2,271,936,479,901 | 637,016,669,328 | 1,895,117,184,093 |\n| Các khoản giảm trừ doanh thu | 02 | - | 128,160,546 | - | - |\n| Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | 782,346,449,408 | 2,271,808,319,355 | 637,016,669,328 | 1,895,117,184,093 |\n| Giá vốn hàng bán | 11 | 682,538,002,255 | 2,025,992,291,879 | 527,070,451,693 | 1,631,481,205,369 |\n| Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | 99,808,447,153 | 245,816,027,476 | 109,946,217,635 | 263,635,978,724 |\n| Doanh thu hoạt động tài chính | 21 | 2,373,834,255 | 5,558,323,524 | 3,308,482,510 | 7,630,544,731 |\n| Chi phí tài chính | 22 | 8,227,442,763 | 25,444,819,265 | 11,875,557,476 | 38,915,874,727 |\n| Trong đó: Chi phí lãi vay | 23 | 8,227,058,723 | 25,444,435,225 | 11,875,557,476 | 38,913,463,981 |\n| Chi phí bán hàng | 24 | 49,691,532,938 | 139,297,193,861 | 39,901,551,043 | 114,319,903,298 |\n| Chi phí quản lý doanh nghiệp | 25 | 12,536,592,593 | 35,339,240,517 | 9,730,655,779 | 28,912,478,687 |\n| Lợi nhuận thuần từ hoạt động kinh doanh | 30 | 31,726,713,114 | 51,293,097,357 | 51,746,935,847 | 89,118,266,743 |\n| Thu nhập khác | 31 | 3,494,771,395 | 24,295,190,767 | 2,397,740,596 | 9,342,007,876 |\n| Chi phí khác | 32 | 68,525,872 | 82,625,062 | 19,430,000 | 643,393,246 |\n| Lợi nhuận khác | 40 | 3,426,245,523 | 24,212,565,705 | 2,378,310,596 | 8,698,614,630 |\n| Tổng lợi nhuận kế toán trước thuế | 50 | 35,152,958,637 | 75,505,663,062 | 54,125,246,443 | 97,816,881,373 |\n| Chi phí thuế TNDN hiện hành | 51 | - | - | - | - |\n| Chi phí thuế TNDN hoãn lại | 52 | - | - | - | - |\n| Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | 35,152,958,637 | 75,505,663,062 | 54,125,246,443 | 97,816,881,373 |",
+        "questions": [
+            {
+                "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ lũy kế từ đầu năm là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ kỳ này năm nay là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Lợi nhuận thuần từ hoạt động kinh doanh lũy kế năm nay với năm trước.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ suất lợi nhuận gộp (Gross Profit Margin) lũy kế từ đầu năm năm nay là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi trong chi phí tài chính lũy kế từ đầu năm giữa năm nay và năm trước.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá mức độ hiệu quả hoạt động kinh doanh của công ty dựa trên lợi nhuận thuần từ hoạt động kinh doanh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Xác định các yếu tố chính gây ra sự sụt giảm Lợi nhuận sau thuế lũy kế từ đầu năm so với năm trước.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo xu hướng lợi nhuận của công ty dựa trên các chỉ số hiện tại và rủi ro tiềm ẩn.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "5",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ\nLoại nội dung: Bảng\n| Chỉ tiêu | Mã số | Kỳ này năm nay | Lũy kế từ đầu năm | Kỳ này năm trước | Lũy kế từ đầu năm |\n|:-------------------------------------------------------------------|:-------|:-------------------|:--------------------|:-------------------|:-------------------|\n| I. Lưu chuyển tiền từ hoạt động sản xuất kinh doanh | | | | | |\n| 1. Lợi nhuận trước thuế | 01 | 35,152,958,637 | 75,505,663,062 | 54,125,246,443 | 97,816,881,373 |\n| 2. Điều chỉnh cho các khoản | | | | | |\n| - Khấu hao TSCĐ và BĐS đầu tư | 02 | 26,863,365,252 | 80,857,360,010 | 25,097,541,455 | 76,199,864,693 |\n| - Các khoản dự phòng | 03 | 140,000,000 | 980,000,000 | - | - |\n| - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | 187,400 | 45,600 | 143,000 | 25,661,576 |\n| - Lãi, lỗ từ hoạt động đầu tư | 05 | 5,853,224,468 | 9,862,219,768 | 8,570,280,406 | 31,286,505,902 |\n| - Chi phí lãi vay | 06 | 8,227,058,723 | 25,444,435,225 | 11,875,557,476 | 38,913,463,981 |\n| - Các khoản điều chỉnh khác | 07 | - | - | 64,529,970,744 | 172,925,284,129 |\n| 3. Lợi nhuận kinh doanh trước những thay đổi vốn lưu động | 08 | 82,528,207,968 | 18,669,365,721 | - | - |\n| - Tăng, giảm các khoản phải thu | 09 | 145,050,453,887 | 24,517,890,123 | 5,642,993,258 | 977,238,898 |\n| - Tăng, giảm hàng tồn kho | 10 | 71,532,896,905 | 2,572,680,746 | 124,360,370 | 242,183,220 |\n| - Tăng, giảm các khoản phải trả | 11 | 71,882,506,293 | 20,105,617,927 | 31,055,286,296 | 50,168,658,640 |\n| - Tăng, giảm chi phí trả trước | 12 | 157,686,236 | 38,056,701,110 | - | - |\n| - Tăng, giảm chứng khoán kinh doanh | 13 | - | - | - | - |\n| - Tiền lãi vay đã trả | 14 | 8,466,785,850 | 26,391,523,569 | 12,443,064,200 | 39,730,976,412 |\n| - Thuế TNDN đã nộp | 15 | - | - | - | - |\n| - Tiền thu khác từ hoạt động kinh doanh | 16 | - | - | - | - |\n| - Tiền chi khác cho hoạt động kinh doanh | 17 | - | - | - | - |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 88,795,345,841 | 101,492,106,508 | 95,373,076,436 | 92,504,786,347 |\n| II. Lưu chuyển từ hoạt động đầu tư | | | | | |\n| 1. Tiền chi mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | 21 | - | 4,750,000 | - | 4,750,000 |\n| 2. Tiền thu thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác | 22 | 530,000,000 | 1,567,300,000 | - | 1,600,000 |\n| 3. Tiền chi cho vay và mua các công cụ nợ của đơn vị khác | 23 | 220,000,000,000 | 494,000,000,000 | 125,000,000,000 | 275,000,000,000 |\n| 4. Tiền thu hồi cho vay, bán lại công cụ nợ của đơn vị khác | 24 | 242,000,000,000 | 430,550,000,000 | 65,000,000,000 | 190,000,000,000 |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | - | - | - | - |\n| 6. Tiền thu hồi đầu tư vốn vào đơn vị khác | 26 | - | - | - | - |\n| 7. Thu lãi tiền cho vay, cổ tức và lợi nhuận được chia | 27 | 899,366,685 | 2,129,328,068 | 515,165,909 | 1,284,701,301 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | 23,424,616,685 | 59,758,121,932 | 59,484,834,091 | 83,716,898,699 |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | - | - | - | - |\n| 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu đã phát hành | 32 | - | - | - | - |\n| 3. Tiền thu từ đi vay | 33 | - | - | - | - |\n| 4. Tiền trả nợ gốc vay | 34 | 25,119,196,602 | 65,971,462,381 | 32,001,221,229 | 71,777,914,656 |\n| 5. Tiền trả nợ gốc thuê tài chính | 35 | - | - | - | - |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | - | - | - | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | 25,119,196,602 | 65,971,462,381 | 32,001,221,229 | 71,777,914,656 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | 90,489,925,758 | 24,237,477,805 | 3,887,021,116 | 62,990,027,008 |\n| Tiền và tương đương tiền đầu kỳ | 60 | 225,147,541,688 | 158,894,860,735 | 84,648,103,754 | 151,499,633,302 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | 187,400 | 45,600 | 143,000 | 25,661,576 |\n| Tiền và tương đương tiền cuối kỳ | 70 | 134,657,428,530 | 134,657,428,530 | 88,535,267,870 | 88,535,267,870 |\n\nNgười lập biểu\nKế toán trưởng\nTổng giám đốc",
+        "questions": [
+            {
+                "question": "Lợi nhuận trước thuế lũy kế từ đầu năm là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh kỳ này năm nay là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Lưu chuyển tiền thuần từ hoạt động đầu tư lũy kế từ đầu năm nay với năm trước.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khoản Tiền trả nợ gốc vay lũy kế từ đầu năm nay và năm trước có xu hướng như thế nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích tác động của việc Tăng, giảm các khoản phải thu đến Lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh so với các hoạt động khác.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo tác động của việc giảm tiền và tương đương tiền cuối kỳ đến khả năng thanh toán ngắn hạn của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Phân tích rủi ro liên quan đến các khoản tiền chi cho vay và mua các công cụ nợ của đơn vị khác.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "6",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính (Thông tin chung)\nLoại nội dung: Text\nTHUYẾT MINH BÁO CÁO TÀI CHÍNH\nTại ngày 30 tháng 9 năm 2024\n\nI. Đặc điểm hoạt động của doanh nghiệp\n1. Hình thức sở hữu vốn: Công ty cổ phần\n2. Lĩnh vực kinh doanh chủ yếu: Thương mại, dịch vụ\n3. Ngành nghề kinh doanh chính: Dịch vụ vận tải hành khách, hàng hóa bằng đường sắt\n4. Chu kỳ sản xuất, kinh doanh thông thường: Năm theo lịch dương\n5. Đặc điểm hoạt động của doanh nghiệp trong năm tài chính có ảnh hưởng đến báo cáo tài chính: Không có thông tin cụ thể.\n6. Cấu trúc doanh nghiệp: Danh sách các Chi nhánh.\n1. Chi nhánh Đoàn tiếp viên đường sắt Hà Nội\n2. Chi nhánh toa xe Vinh\n3. Chi nhánh toa xe Hàng\n4. Chi nhánh vận tải đường sắt Hà Nội\n5. Chi nhánh vận tải đường sắt Đông Anh\n6. Chi nhánh vận tải đường sắt Hải Phòng\n7. Chi nhánh vận tải đường sắt Lào Cai\n8. Chi nhánh vận tải đường sắt Vinh\n9. Chi nhánh vận tải đường sắt Huế\n10. Chi nhánh vận tải đường sắt Phía Nam\n11. Chi nhánh dịch vụ vận tải Đa phương thức.\n12. Cơ quan Công ty\n7. Tuyên bố về khả năng so sánh thông tin trên BCTC: có so sánh được, nếu không so sánh được phải nêu rõ lý do như vì chuyển đổi hình thức sở hữu, chia tách, sáp nhập, nêu độ dài về kỳ so sánh... (Không có thông tin cụ thể về việc không so sánh được)\n\nII. Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán\n1. Kỳ kế toán năm: Bắt đầu từ ngày 01 tháng 01 và kết thúc ngày 31 tháng 12 hằng năm\n2. Đơn vị tiền tệ sử dụng trong kế toán: Đồng Việt Nam (VND)\n\nIII. Chuẩn mực và chế độ kế toán áp dụng\n3. Chế độ kế toán áp dụng: Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính\n4. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán: Công ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các báo cáo tài chính được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện chuẩn mực và Chế độ kế toán hiện hành.\n- Quyết định số 149/2001/QĐ-BTC ngày 31/12/2001 về việc ban hành bốn Chuẩn mực kế toán VN (Đợt 1)\n- Quyết định số 165/2002/QĐ-BTC ngày 31/12/2002 về việc ban hành sáu Chuẩn mực kế toán VN (Đợt 2)\n- Quyết định số 234/2003/QĐ-BTC ngày 31/12/2003 về việc ban hành sáu Chuẩn mực kế toán VN (Đợt 3)\n- Quyết định số 12/2005/QĐ-BTC ngày 15/02/2005 về việc ban hành sáu Chuẩn mực kế toán VN (Đợt 4) và\n- Quyết định số 100/2005/QĐ-BTC ngày 28/12/2005 về việc ban hành bốn Chuẩn mực kế toán VN (Đợt 5).",
+        "questions": [
+            {
+                "question": "Ngành nghề kinh doanh chính của Công ty Cổ phần Vận tải Đường sắt Hà Nội là gì?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số nào?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Liệt kê các chi nhánh của công ty.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Nêu rõ các Chuẩn mực kế toán Việt Nam (VAS) đã được công ty áp dụng.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích ý nghĩa của việc tuân thủ các Chuẩn mực và Chế độ kế toán đối với tính minh bạch của báo cáo tài chính.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá mức độ phức tạp trong hoạt động kinh doanh của công ty dựa trên số lượng chi nhánh và ngành nghề kinh doanh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Nếu công ty có sự thay đổi lớn trong cấu trúc doanh nghiệp, điều đó sẽ ảnh hưởng như thế nào đến khả năng so sánh thông tin tài chính qua các kỳ?",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo các rủi ro có thể phát sinh nếu công ty không tuân thủ đầy đủ các chuẩn mực kế toán hiện hành.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "7",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Tiền, Đầu tư tài chính, Phải thu khách hàng)\nLoại nội dung: Bảng\nVI. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán\n01. Tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:---------------------|:-----------------|:--------------|\n| Tiền mặt tại quỹ | 1,337,788,931 | 1,416,749,615 |\n| Tiền gửi ngân hàng | 33,318,807,999 | 108,928,111,120 |\n| Tiền đang chuyển | 831,600 | 0 |\n| Tổng | 34,657,428,530 | 110,344,860,735 |\n\n02a. Các khoản đầu tư tài chính\nb. Đầu tư nắm giữ đến ngày đáo hạn\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Giá trị ghi sổ (Số cuối kỳ) | Giá gốc (Số đầu năm) | Giá trị ghi sổ (Số đầu năm) |\n|:-------------------|:----------------------|:---------------------------|:---------------------|:---------------------------|\n| Ngắn hạn | 202,000,000,000 | 0 | 138,550,000,000 | 0 |\n| Tiền gửi có kỳ hạn | 202,000,000,000 | 0 | 138,550,000,000 | 0 |\n| Tổng | 202,000,000,000 | - | 138,550,000,000 | - |\n\nc. Đầu tư góp vốn vào đơn vị khác (chi tiết theo từng khoản đầu tư theo tỷ lệ vốn nắm giữ và tỷ lệ quyền biểu quyết)\n| Chỉ tiêu | Giá gốc (Số cuối kỳ) | Giá trị hợp lý (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá gốc (Số đầu năm) | Giá trị hợp lý (Số đầu năm) | Dự phòng (Số đầu năm) |\n|:-----------------------|:---------------------|:--------------------------|:-----------------------|:---------------------|:--------------------------|:-----------------------|\n| Đầu tư vào đơn vị khác | 753,000,000 | 0 | 0 | 753,000,000 | 0 | 0 |\n| Tổng | 753,000,000 | - | - | 753,000,000 | - | - |\n\n03. Phải thu của khách hàng\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:-------------------------------------------|:-----------------|:--------------|\n| a. Phải thu của khách hàng ngắn hạn | 115,334,481,004 | 73,597,404,975 |\n| Trong đó:\n| 1. Công ty TNHH MTV LOGISTICS VIETTEL | 54,982,164,558 | 14,024,709,822 |\n| 2. Công ty CP VTĐS Sài Gòn | 14,719,019,302 | 0 |\n| 3. Những Khách hàng có số dư < 10% tổng số dư | 45,633,297,144 | 59,572,695,153 |\n| c. Phải thu của khách hàng là các bên liên quan | 14,737,163,302 | 94,053,208 |\n| Trong đó:\n| 1. Công ty CP VTĐS Sài Gòn | 14,719,019,302 | 0 |\n| 2. Công ty CP VTĐS Sài Gòn - CNKT ĐS Miền Bắc | 18,144,000 | 9,072,000 |\n| 3. Tổng công ty ĐSVN - CN Xí nghiệp đầu máy Vinh | 70,385,760 | - |\n| 4. Tổng công ty ĐSVN - CN Xí nghiệp đầu máy Hà Nội | 8,910,000 | - |\n| 5. Công ty CP VTĐS Sài Gòn - CN Toa xe Đà Nẵng | 5,685,448 | - |",
+        "questions": [
+            {
+                "question": "Tổng Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị gốc Đầu tư nắm giữ đến ngày đáo hạn ngắn hạn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Tiền gửi ngân hàng cuối kỳ với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khoản Phải thu của khách hàng ngắn hạn từ Công ty TNHH MTV LOGISTICS VIETTEL cuối kỳ là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi trong các khoản phải thu của khách hàng là các bên liên quan.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá mức độ rủi ro liên quan đến các khoản phải thu từ khách hàng, đặc biệt là từ các bên liên quan.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo tác động của sự biến động mạnh trong tiền gửi ngân hàng đến thanh khoản của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Giải thích lý do tại sao Giá trị ghi sổ của Đầu tư nắm giữ đến ngày đáo hạn ngắn hạn lại bằng 0, trong khi Giá gốc có giá trị.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "8",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Phải thu khác, Hàng tồn kho, Chi phí trả trước)\nLoại nội dung: Bảng\n04. Phải thu khác\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị (Số đầu năm) | Dự phòng (Số đầu năm) |\n|:---------------------------------------|:---------------------|:-----------------------|:---------------------|:-----------------------|\n| 4a. Ngắn hạn | 54,798,572,163 | 0 | 57,984,881,147 | 0 |\n| - Phải thu người lao động | 0 | 0 | 169,759,000 | 0 |\n| - Ký cược, ký quỹ | 2,340,720,000 | 0 | 1,140,720,000 | 0 |\n| - Phải thu khác | 52,457,852,163 | 0 | 56,674,402,147 | 0 |\n| Trong đó:\n| 1. Phải thu khác - Ngắn hạn | 51,481,892,797 | 0 | 56,041,661,841 | 0 |\n| 2. Phải trả phải nộp khác - Ngắn hạn | 0 | 0 | 40,399,520 | 0 |\n| 3. Tạm ứng - Ngắn hạn | 975,959,366 | 0 | 585,159,198 | 0 |\n| 4. Kinh phí Công đoàn | 0 | 0 | 2,618,874 | 0 |\n| 5. Bảo hiểm xã hội | 0 | 0 | 4,562,714 | 0 |\n| 4b. Dài hạn | 15,000,000 | 0 | 100,000,000 | 0 |\n| - Ký cược, ký quỹ | 15,000,000 | 0 | 100,000,000 | 0 |\n| Tổng | 54,813,572,163 | - | 58,084,881,147 | - |\n\n07. Hàng tồn kho\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Dự phòng (Số cuối kỳ) | Giá trị (Số đầu năm) | Dự phòng (Số đầu năm) |\n|:---------------------------------------|:---------------------|:-----------------------|:---------------------|:-----------------------|\n| Nguyên liệu, vật liệu | 67,599,151,362 | 0 | 65,518,393,005 | 0 |\n| Công cụ, dụng cụ | 606,422,788 | 0 | 1,071,985,954 | 0 |\n| Chi phí sản xuất kinh doanh dở dang | 2,192,093,915 | 0 | 1,539,720,810 | 0 |\n| Thành phẩm | 878,845,932 | 0 | 574,535,037 | 0 |\n| Hàng hóa | 256,382,908 | 0 | 255,581,353 | 0 |\n| Tổng | 71,532,896,905 | - | 68,960,216,159 | - |\n\n09. Tăng, giảm tài sản cố định hữu hình có biểu chi tiết kèm theo.\n10. Tăng, giảm tài sản cố định vô hình có biểu chi tiết kèm theo.\n\n13. Chi phí trả trước\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:-----------------------------------------------------|:-----------------|:--------------|\n| 13a. Chi phí trả trước ngắn hạn | 2,616,206,403 | 6,452,300,599 |\n| Trong đó:\n| 1. Chi phí được phân bổ theo doanh thu nhận trước | 1,255,106,606 | 4,126,228,201 |\n| 2. Chi phí trả trước khác | 1,361,099,797 | 2,326,072,398 |\n| 13b. Chi phí trả trước dài hạn | 87,413,270,011 | 64,548,825,260 |\n| Trong đó:\n| 1. Chi phí trả trước SCL TSCĐ | 79,551,994,335 | 57,679,794,133 |\n| 10. Chi phí trả trước dài hạn khác | 7,861,275,676 | 6,869,031,127 |",
+        "questions": [
+            {
+                "question": "Tổng Phải thu khác ngắn hạn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị Nguyên liệu, vật liệu trong Hàng tồn kho cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Chi phí trả trước ngắn hạn cuối kỳ với đầu năm, thay đổi như thế nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự biến động của khoản mục Ký cược, ký quỹ (ngắn hạn và dài hạn).",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ hiệu quả của việc quản lý hàng tồn kho dựa trên sự thay đổi của các chỉ tiêu trong Hàng tồn kho.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích rủi ro tiềm ẩn từ sự giảm sút các khoản phải thu khác trong kỳ.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá tác động của Chi phí trả trước dài hạn tăng mạnh đến tình hình tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo ảnh hưởng của sự biến động các khoản phải thu người lao động và bảo hiểm xã hội đến quản lý nguồn nhân lực và tài chính.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "9",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Tăng, giảm Tài sản cố định vô hình - Quý 3)\nLoại nội dung: Bảng\nTSVH Quý 3 năm 2024\n| STT | Chỉ tiêu | Quyền sử dụng đất | Quyền phát hành | Bản quyền | Nhãn hiệu HH | Phần mềm VT | Giấy Nhượng quyền | TSCĐ khác | Tổng cộng |\n|:----|:-----------------------------|:-------------------|:-----------------|:-----------|:-------------|:------------|:------------------|:-----------|:-------------|\n| 1 | I. Nguyên giá TSCĐ vô hình | - | - | - | - | - | - | - | - |\n| 2 | 1. Số dư đầu kỳ | 8,416,285,868 | 0 | 0 | 0 | 838,735,762 | 0 | 147,000,000 | 9,402,021,630 |\n| 3 | Tăng trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 4 | Mua sắm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 5 | XDCB hoàn thành | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 6 | Nâng cấp, cải tạo | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 7 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 8 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 9 | Giảm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 10 | Thanh lý, nhượng bán | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 11 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 12 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 13 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 14 | 1. Số dư cuối kỳ | 8,416,285,868 | 0 | 0 | 0 | 838,735,762 | 0 | 147,000,000 | 9,402,021,630 |\n| 15 | II. Giá trị đã hao mòn lũy kế | - | - | - | - | - | - | - | - |\n| 16 | 1. Số dư đầu kỳ | 1,597,270,878 | 0 | 0 | 0 | 600,120,000 | 0 | 147,000,000 | 2,344,390,878 |\n| 17 | Tăng trong kỳ | 42,365,000 | 0 | 0 | 0 | 27,787,000 | 0 | 0 | 70,152,000 |\n| 18 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 19 | Trích KHCB trong kỳ | 42,365,000 | 0 | 0 | 0 | 27,787,000 | 0 | 0 | 70,152,000 |\n| 20 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 21 | Giảm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 22 | Thanh lý, nhượng bán | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 23 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 24 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 25 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 26 | 1. Số dư cuối kỳ | 1,639,635,878 | 0 | 0 | 0 | 627,907,000 | 0 | 147,000,000 | 2,414,542,878 |\n| 27 | III. Giá trị còn lại của TSCĐ vô hình | - | - | - | - | - | - | - | - |\n| 28 | 1. Tại ngày đầu kỳ | 6,819,014,990 | 0 | 0 | 0 | 238,615,762 | 0 | 0 | 7,057,630,752 |\n| 29 | 2. Tại ngày cuối kỳ | 6,776,649,990 | 0 | 0 | 0 | 210,828,762 | 0 | 0 | 6,987,478,752 |",
+        "questions": [
+            {
+                "question": "Nguyên giá TSCĐ vô hình cuối quý 3 năm 2024 là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị đã hao mòn lũy kế của TSCĐ vô hình cuối quý 3 năm 2024 là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Giá trị còn lại của TSCĐ vô hình tại ngày đầu kỳ và cuối kỳ quý 3 năm 2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khoản mục 'Phần mềm VT' có sự thay đổi như thế nào trong Nguyên giá và Giá trị đã hao mòn lũy kế trong quý 3 năm 2024?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tác động của việc không có phát sinh tăng/giảm Nguyên giá TSCĐ vô hình trong kỳ đến cơ cấu tài sản của công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích hiệu quả sử dụng tài sản vô hình dựa trên tỷ lệ hao mòn lũy kế và nguyên giá.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo xu hướng đầu tư vào tài sản vô hình của công ty trong tương lai dựa trên dữ liệu quý 3 năm 2024.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá rủi ro tài chính nếu giá trị hao mòn lũy kế của quyền sử dụng đất tiếp tục tăng mà không có sự tăng tương ứng của nguyên giá.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "10",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Tăng, giảm Tài sản cố định vô hình - 9 tháng)\nLoại nội dung: Bảng\nTSVH 9 tháng năm 2024\n| STT | Chỉ tiêu | Quyền sử dụng đất | Quyền phát hành | Bản quyền | Nhãn hiệu HH | Phần mềm VT | Giấy Nhượng quyền | TSCĐ khác | Tổng cộng |\n|:----|:-----------------------------|:-------------------|:-----------------|:-----------|:-------------|:------------|:------------------|:-----------|:-------------|\n| 1 | I. Nguyên giá TSCĐ vô hình | - | - | - | - | - | - | - | - |\n| 2 | 1. Số dư đầu kỳ | 8,416,285,868 | 0 | 0 | 0 | 838,735,762 | 0 | 147,000,000 | 9,402,021,630 |\n| 3 | Tăng trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 4 | Mua sắm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 5 | XDCB hoàn thành | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 6 | Nâng cấp, cải tạo | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 7 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 8 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 9 | Giảm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 10 | Thanh lý, nhượng bán | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 11 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 12 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 13 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 14 | 1. Số dư cuối kỳ | 8,416,285,868 | 0 | 0 | 0 | 838,735,762 | 0 | 147,000,000 | 9,402,021,630 |\n| 15 | II. Giá trị đã hao mòn lũy kế | - | - | - | - | - | - | - | - |\n| 16 | 1. Số dư đầu kỳ | 1,513,461,878 | 0 | 0 | 0 | 545,150,000 | 0 | 147,000,000 | 2,205,611,878 |\n| 17 | Tăng trong kỳ | 126,174,000 | 0 | 0 | 0 | 82,757,000 | 0 | 0 | 208,931,000 |\n| 18 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 19 | Trích KHCB trong kỳ | 126,174,000 | 0 | 0 | 0 | 82,757,000 | 0 | 0 | 208,931,000 |\n| 20 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 21 | Giảm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 22 | Thanh lý, nhượng bán | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 23 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 24 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 25 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 26 | 1. Số dư cuối kỳ | 1,639,635,878 | 0 | 0 | 0 | 627,907,000 | 0 | 147,000,000 | 2,414,542,878 |\n| 27 | III. Giá trị còn lại của TSCĐ vô hình | - | - | - | - | - | - | - | - |\n| 28 | 1. Tại ngày đầu kỳ | 6,902,823,990 | 0 | 0 | 0 | 293,585,762 | 0 | 0 | 7,196,409,752 |\n| 29 | 2. Tại ngày cuối kỳ | 6,776,649,990 | 0 | 0 | 0 | 210,828,762 | 0 | 0 | 6,987,478,752 |",
+        "questions": [
+            {
+                "question": "Tổng Nguyên giá TSCĐ vô hình 9 tháng đầu năm là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị đã hao mòn lũy kế của Quyền sử dụng đất 9 tháng đầu năm là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Giá trị còn lại của TSCĐ vô hình 9 tháng đầu năm với quý 3.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Mức tăng của Giá trị đã hao mòn lũy kế trong kỳ 9 tháng đầu năm là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá ý nghĩa của việc không có sự biến động trong Nguyên giá TSCĐ vô hình trong 9 tháng đầu năm.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc Trích khấu hao cơ bản (KHCB) trong kỳ đến Giá trị còn lại của TSCĐ vô hình.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo rủi ro về mặt công nghệ hoặc pháp lý nếu công ty không có các khoản tăng trong phần mềm hoặc giấy nhượng quyền.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá chiến lược đầu tư vào tài sản vô hình của công ty dựa trên số liệu 9 tháng đầu năm.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "11",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Tăng, giảm Tài sản cố định hữu hình - Quý 3)\nLoại nội dung: Bảng\nTSHH Quý 3 năm 2024\n| STT | Chỉ tiêu | Nhà cửa, VKT | Máy móc Thiết bị | Phương tiện vận tải, vật tư | Thiết bị và DCQL | TSCĐ khác | Tổng cộng |\n|:----|:-----------------------------|:---------------|:-------------------|:---------------------------|:-----------------|:-----------|:-------------|\n| 1 | I. Nguyên giá TSCĐ hữu hình | - | - | - | - | - | - |\n| 2 | 1. Số dư đầu kỳ | 106,557,534,629 | 258,520,461,096 | 3,146,691,717,434 | 8,328,579,189 | 30,000,000 | 3,520,128,292,348 |\n| 3 | Tăng trong kỳ | 0 | 252,364,545 | 300,755,556 | 0 | 0 | 553,120,101 |\n| 4 | Mua sắm trong kỳ | 0 | 252,364,545 | 300,755,556 | 0 | 0 | 553,120,101 |\n| 5 | XDCB hoàn thành | 0 | 0 | 0 | 0 | 0 | 0 |\n| 6 | Nâng cấp, cải tạo | 0 | 0 | 0 | 0 | 0 | 0 |\n| 7 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 8 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 9 | Giảm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 |\n| 10 | Thanh lý, nhượng bán | 0 | 0 | 0 | 0 | 0 | 0 |\n| 11 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 12 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 |\n| 13 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 14 | 1. Số dư cuối kỳ | 106,557,534,629 | 258,772,825,641 | 3,146,992,472,990 | 8,328,579,189 | 30,000,000 | 3,520,681,412,449 |\n| 15 | II. Giá trị đã hao mòn lũy kế | - | - | - | - | - | - |\n| 16 | 1. Số dư đầu kỳ | 84,467,902,008 | 248,523,807,460 | 2,409,315,633,317 | 7,636,246,098 | 30,000,000 | 2,749,973,588,883 |\n| 17 | Tăng trong kỳ | 857,938,152 | 1,014,210,364 | 24,858,270,736 | 62,794,000 | 0 | 26,793,213,252 |\n| 18 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 19 | Trích KHCB trong kỳ | 857,938,152 | 1,014,210,364 | 24,858,270,736 | 62,794,000 | 0 | 26,793,213,252 |\n| 20 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 21 | Giảm trong kỳ | 0 | 0 | 0 | 0 | 0 | 0 |\n| 22 | Thanh lý, nhượng bán | 0 | 0 | 0 | 0 | 0 | 0 |\n| 23 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 24 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 |\n| 25 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 26 | 1. Số dư cuối kỳ | 85,325,840,160 | 249,538,017,824 | 2,434,173,904,053 | 7,699,040,098 | 30,000,000 | 2,776,766,802,135 |\n| 27 | III. Giá trị còn lại của TSCĐ hữu hình | - | - | - | - | - | - |\n| 28 | 1. Tại ngày đầu kỳ | 22,089,632,621 | 9,996,653,636 | 737,376,084,117 | 692,333,091 | 0 | 770,154,703,465 |\n| 29 | 2. Tại ngày cuối kỳ | 21,231,694,469 | 9,234,807,817 | 712,818,568,937 | 629,539,091 | 0 | 743,914,610,314 |",
+        "questions": [
+            {
+                "question": "Tổng Nguyên giá TSCĐ hữu hình cuối quý 3 năm 2024 là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Giá trị còn lại của Phương tiện vận tải, vật tư cuối quý 3 là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Nguyên giá của Nhà cửa, vật kiến trúc đầu kỳ và cuối kỳ quý 3 năm 2024.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tổng Giá trị đã hao mòn lũy kế của TSCĐ hữu hình tăng bao nhiêu trong quý 3 năm 2024?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ đầu tư vào Tài sản cố định hữu hình trong quý 3 năm 2024.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc giảm Giá trị còn lại của TSCĐ hữu hình đến khả năng sản xuất của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo rủi ro về mặt vận hành nếu các khoản giảm trong TSCĐ hữu hình không được thay thế hoặc nâng cấp kịp thời.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá hiệu quả quản lý tài sản cố định hữu hình dựa trên số liệu tăng/giảm và khấu hao trong quý.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "12",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Tăng, giảm Tài sản cố định hữu hình - 9 tháng)\nLoại nội dung: Bảng\nTSHH 9 tháng năm 2024\n| STT | Chỉ tiêu | Nhà cửa, VKT | Máy móc Thiết bị | Phương tiện vận tải, vật tư | Thiết bị và DCQL | TSCĐ khác | Tổng cộng |\n|:----|:-----------------------------|:---------------|:-------------------|:---------------------------|:-----------------|:-----------|:-------------|\n| 1 | I. Nguyên giá TSCĐ hữu hình | - | - | - | - | - | - |\n| 2 | 1. Số dư đầu kỳ | 110,444,562,629 | 258,520,461,096 | 3,164,112,298,158 | 7,841,379,189 | 30,000,000 | 3,540,948,701,072 |\n| 3 | Tăng trong kỳ | 0 | 252,364,545 | 4,371,242,964 | 487,200,000 | 0 | 5,110,807,509 |\n| 4 | Mua sắm trong kỳ | 0 | 252,364,545 | 4,371,242,964 | 487,200,000 | 0 | 5,110,807,509 |\n| 5 | XDCB hoàn thành | 0 | 0 | 0 | 0 | 0 | 0 |\n| 6 | Nâng cấp, cải tạo | 0 | 0 | 0 | 0 | 0 | 0 |\n| 7 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 8 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 9 | Giảm trong kỳ | 3,887,028,000 | 0 | 21,491,068,132 | 0 | 0 | 25,378,096,132 |\n| 10 | Thanh lý, nhượng bán | 3,887,028,000 | 0 | 21,491,068,132 | 0 | 0 | 25,378,096,132 |\n| 11 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 12 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 |\n| 13 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 14 | 1. Số dư cuối kỳ | 106,557,534,629 | 258,772,825,641 | 3,146,992,472,990 | 8,328,579,189 | 30,000,000 | 3,520,681,412,449 |\n| 15 | II. Giá trị đã hao mòn lũy kế | - | - | - | - | - | - |\n| 16 | 1. Số dư đầu kỳ | 86,631,363,076 | 246,464,000,405 | 2,380,790,196,581 | 7,550,284,098 | 30,000,000 | 2,721,465,844,160 |\n| 17 | Tăng trong kỳ | 2,581,505,084 | 3,074,017,419 | 74,844,150,507 | 148,756,000 | 0 | 80,648,429,010 |\n| 18 | Nhận về từ nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 19 | Trích KHCB trong kỳ | 2,581,505,084 | 3,074,017,419 | 74,844,150,507 | 148,756,000 | 0 | 80,648,429,010 |\n| 20 | Tăng khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 21 | Giảm trong kỳ | 3,887,028,000 | 0 | 21,460,443,035 | 0 | 0 | 25,347,471,035 |\n| 22 | Thanh lý, nhượng bán | 3,887,028,000 | 0 | 21,460,443,035 | 0 | 0 | 25,347,471,035 |\n| 23 | Bàn giao đi trong nội bộ Công ty | 0 | 0 | 0 | 0 | 0 | 0 |\n| 24 | Phá dỡ, tháo bỏ một phần | 0 | 0 | 0 | 0 | 0 | 0 |\n| 25 | Giảm khác | 0 | 0 | 0 | 0 | 0 | 0 |\n| 26 | 1. Số dư cuối kỳ | 85,325,840,160 | 249,538,017,824 | 2,434,173,904,053 | 7,699,040,098 | 30,000,000 | 2,776,766,802,135 |\n| 27 | III. Giá trị còn lại của TSCĐ hữu hình | - | - | - | - | - | - |\n| 28 | 1. Tại ngày đầu kỳ | 23,813,199,553 | 12,056,460,691 | 783,322,101,577 | 291,095,091 | 0 | 819,482,856,912 |\n| 29 | 2. Tại ngày cuối kỳ | 21,231,694,469 | 9,234,807,817 | 712,818,568,937 | 629,539,091 | 0 | 743,914,610,314 |",
+        "questions": [
+            {
+                "question": "Tổng Nguyên giá TSCĐ hữu hình cuối kỳ 9 tháng đầu năm là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản mục 'Máy móc Thiết bị' có sự biến động tăng trong kỳ Nguyên giá là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Nguyên giá TSCĐ hữu hình đầu kỳ và cuối kỳ 9 tháng đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tổng giá trị giảm trong kỳ của Nguyên giá TSCĐ hữu hình là bao nhiêu trong 9 tháng đầu năm?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích xu hướng của các khoản tăng và giảm trong Nguyên giá TSCĐ hữu hình trong 9 tháng đầu năm.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá tác động của việc thanh lý, nhượng bán TSCĐ hữu hình đến cơ cấu tài sản và năng lực sản xuất của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo rủi ro về chi phí bảo trì và sửa chữa nếu tỷ lệ khấu hao của các loại TSCĐ hữu hình tiếp tục tăng nhanh.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá hiệu quả của việc quản lý vòng đời tài sản cố định hữu hình của công ty.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "13",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Vay và nợ thuê tài chính)\nLoại nội dung: Bảng\n15. Vay và nợ thuê tài chính\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Khả năng trả (Số cuối kỳ) | Tăng (Trong năm) | Giảm (Trong năm) | Giá trị (Số đầu năm) | Khả năng trả (Số đầu năm) |\n|:------------------------------------------------|:---------------------|:--------------------------|:-----------------|:-----------------|:---------------------|:--------------------------|\n| 15a. Vay ngắn hạn | 52,807,608,660 | 0 | 39,605,706,490 | 65,971,462,381 | 79,173,364,551 | 0 |\n| 15b. Vay dài hạn | 358,299,427,873 | 0 | 0 | 39,605,706,490 | 397,905,134,363 | 0 |\n| Trong đó:\n| 1. Mua mới 30 Toa xe khách chạy tuyến HNV 06 | 118,674,378,000 | 0 | 0 | 12,276,669,000 | 130,951,047,000 | 0 |\n| 2. Đầu tư mới 30 Toa xe khách tuyến HN - Tp.HCM 06 | 115,262,738,000 | 0 | 0 | 10,806,000,000 | 126,068,738,000 | 0 |\n| 3. Dự án nâng cấp, cải tạo 30 Toa xe khách 06 | 25,036,943,041 | 0 | 0 | 5,371,155,000 | 30,408,098,041 | 0 |\n| 4. Dự án Hoán cải, nâng cấp 45 Toa xe khách 06 | 37,600,958,362 | 0 | 0 | 6,635,463,235 | 44,236,421,597 | 0 |\n| 5. Đầu tư mới 100 toa xe H 06 | 61,724,410,470 | 0 | 0 | 4,516,419,255 | 66,240,829,725 | 0 |\n| Tổng | 411,107,036,533 | 0 | 39,605,706,490 | 105,577,168,871 | 477,078,498,914 | 0 |",
+        "questions": [
+            {
+                "question": "Tổng vay ngắn hạn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản vay dài hạn cho Dự án Đầu tư mới 30 Toa xe khách tuyến HN - Tp.HCM cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh tổng vay và nợ thuê tài chính cuối kỳ với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Mức giảm của vay ngắn hạn trong năm là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích các khoản vay dài hạn chính của công ty và mục đích của chúng.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá rủi ro tài chính của công ty dựa trên cơ cấu vay ngắn hạn và dài hạn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo tác động của việc giảm nợ dài hạn đến chi phí lãi vay và lợi nhuận của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá chiến lược quản lý nợ của công ty dựa trên sự biến động của các khoản vay trong năm.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "14",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Phải trả người bán ngắn hạn)\nLoại nội dung: Bảng\n16. Phải trả người bán\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Có khả năng trả nợ (Số cuối kỳ) | Giá trị (Số đầu năm) | Có khả năng trả nợ (Số đầu năm) |\n|:-------------------------------------------|:---------------------|:-----------------------------|:---------------------|:-----------------------------|\n| 16a. Các khoản phải trả người bán ngắn hạn | 95,486,025,559 | 87,101,356,359 | 71,653,270,939 | 71,653,270,939 |\n| Trong đó:\n| 1. Công ty TNHH vận tải Thuận Việt | 11,286,275,361 | 8,210,056,090 | 8,210,056,090 | 8,210,056,090 |\n| 2. Công ty CP VTĐS Hà Nội - CN Phía Nam | 1,143,440,020 | 1,121,464,960 | 1,121,464,960 | 1,121,464,960 |\n| 3. Công ty CP tập đoàn Dương Đông | 11,331,838,762 | 2,787,658,930 | 2,787,658,930 | 2,787,658,930 |\n| 4. Công ty CP VTĐS Hà Nội - CN VTĐS Hà Nội | 252,998,960 | 1,495,739,520 | 1,495,739,520 | 1,495,739,520 |\n| 5. Tổng công ty Đường sắt Việt Nam | 23,621,288,829 | 12,261,445,966 | 12,261,445,966 | 12,261,445,966 |\n| 6. Ga Sóng Thần | 5,695,241,400 | 2,810,214,560 | 2,810,214,560 | 2,810,214,560 |\n| 7. Công ty CP VTĐS Sài Gòn - XN Toa xe Sài Gòn | 2,821,872,053 | 2,084,149,091 | 2,084,149,091 | 2,084,149,091 |\n| 8. Ga Yên Viên | 18,099,672,237 | 6,754,918,020 | 6,754,918,020 | 6,754,918,020 |\n| 9. Những Khách hàng có số dư < 10% tổng số dư | 21,233,397,937 | 49,575,709,222 | 49,575,709,222 | 49,575,709,222 |",
+        "questions": [
+            {
+                "question": "Tổng các khoản phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản phải trả cho Tổng công ty Đường sắt Việt Nam cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh khoản phải trả người bán ngắn hạn cho Công ty TNHH vận tải Thuận Việt cuối kỳ với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ lệ các khoản phải trả người bán ngắn hạn có khả năng trả nợ trên tổng phải trả ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi trong khoản phải trả người bán ngắn hạn cho Ga Yên Viên giữa cuối kỳ và đầu năm.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá rủi ro thanh toán của công ty dựa trên sự biến động của các khoản phải trả người bán ngắn hạn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo tác động của việc tăng các khoản phải trả người bán đến dòng tiền hoạt động của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ tập trung của các khoản phải trả người bán theo các đối tượng chính.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "15",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Phải trả người bán là các bên liên quan - Phần 1)\nLoại nội dung: Bảng\n16d. Phải trả người bán là các bên liên quan\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Giá trị (Số đầu năm) |\n|:----------------------------------------------------|:---------------------|:---------------------|\n| Tổng phải trả người bán là các bên liên quan | 27,906,595,132 | 23,046,740,037 |\n| Trong đó:\n| 1. Tổng công ty ĐSVN - CNKT Đường sắt Nghệ Tĩnh | 34,454,867 | 61,212,410 |\n| 2. Tổng công ty ĐSVN - CNKT Đường sắt Hà Nội | 49,313,120 | - |\n| 3. Tổng công ty ĐSVN - CNKT Đường sắt Hà Lạng | 11,145,600 | 11,664,000 |\n| 4. Tổng công ty ĐSVN - CNKT Đường sắt Hà Thái Hải | 61,144,140 | 8,097,738 |\n| 5. Tổng công ty ĐSVN - CNKT Đường sắt Thừa Thiên Huế | 56,968,794 | - |\n| 6. Tổng công ty Đường sắt Việt Nam | 23,621,288,829 | 12,261,445,966 |\n| 7. Tổng công ty ĐSVN - XN Đầu máy Vinh | 17,668,374 | - |\n| 8. Công ty CP VTĐS Sài Gòn - XN toa xe Sài Gòn | 130,700,520 | - |\n| 9. Tổng công ty ĐSVN - CNKT Đường sắt Hà Nội | 34,181,627 | 214,035,149 |\n| 10. Công ty CP VTĐS Sài Gòn - XN Toa xe Đà Nẵng | 652,211,574 | - |\n| 11. Công ty Xe lửa Gia Lâm | 142,274,169 | - |",
+        "questions": [
+            {
+                "question": "Tổng phải trả người bán là các bên liên quan cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản phải trả cho Tổng công ty Đường sắt Việt Nam cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh khoản phải trả cho Tổng công ty ĐSVN - CNKT Đường sắt Nghệ Tĩnh cuối kỳ với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Các khoản phải trả cho Công ty CP VTĐS Sài Gòn - XN toa xe Sài Gòn đã thay đổi như thế nào từ đầu năm đến cuối kỳ?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá mức độ tập trung của các khoản phải trả cho các bên liên quan.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của sự biến động các khoản phải trả người bán liên quan đến tính độc lập tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo rủi ro về mặt quản trị và thanh toán nếu các khoản phải trả cho các bên liên quan tiếp tục tăng.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá chiến lược đàm phán với các bên liên quan dựa trên dữ liệu phải trả hiện tại.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "16",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Phải trả người bán là các bên liên quan - Phần 2)\nLoại nội dung: Bảng\n16d. Phải trả người bán là các bên liên quan (tiếp theo)\n| Chỉ tiêu | Giá trị (Số cuối kỳ) | Giá trị (Số đầu năm) |\n|:----------------------------------------------------|:---------------------|:---------------------|\n| 12. Tổng công ty ĐSVN - CNKT Đường sắt Hà Thái Hải | 47,545,612 | 17,826,208 |\n| 13. Công ty CP VTĐS Sài Gòn | 6,708,964,855 | - |\n| 14. XN Toa xe Sài Gòn | 5,750,874 | - |\n| 15. Công ty CP Xe Lửa Gia Lâm | 88,665,300 | 196,572,500 |\n| 16. Công ty CP Đường sắt Thanh Hoá | 124,000,200 | - |\n| 17. Trường Cao Đẳng Đường sắt | 5,200,000 | - |\n| 18. Công ty CP Xe lửa Dĩ An | 544,970,255 | - |\n| 19. Công ty CP Thông tin tín hiệu Đường sắt Hà Nội | 147,000,000 | 147,000,000 |\n| 20. Tổng công ty ĐS VN - XN đầu máy Hà Nội | 22,773,709 | 447,153,890 |\n| 21. Công ty CP VTĐS Sài Gòn - XN Toa xe Sài Gòn | 2,821,872,053 | 2,084,149,091 |\n| 22. Công ty CP VTĐS Sài Gòn - XN Toa xe Đà Nẵng | 17,109,612 | - |\n| 23. Tổng công ty ĐSVN - XN Đầu Máy Sài Gòn | 158,974,133 | - |",
+        "questions": [
+            {
+                "question": "Khoản phải trả cho Công ty CP VTĐS Sài Gòn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Tên một bên liên quan có khoản phải trả giảm từ đầu năm đến cuối kỳ là gì?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh khoản phải trả cho Công ty CP Xe Lửa Gia Lâm cuối kỳ với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khoản phải trả cho Tổng công ty ĐS VN - XN đầu máy Hà Nội đã thay đổi như thế nào?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tác động của việc phát sinh các khoản phải trả mới cho các bên liên quan như Công ty CP VTĐS Sài Gòn trong kỳ.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích mức độ tín nhiệm giữa công ty và các bên liên quan dựa trên dữ liệu phải trả.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo rủi ro về mặt cạnh tranh hoặc đối tác nếu công ty tiếp tục phụ thuộc vào một số bên liên quan lớn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá ảnh hưởng của việc các khoản phải trả cho các trường đào tạo (Trường Cao Đẳng Đường sắt) đến chiến lược phát triển nguồn nhân lực.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "17",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Thuế và các khoản phải nộp, Chi phí phải trả, Phải trả khác, Doanh thu chưa thực hiện)\nLoại nội dung: Bảng\n17. Thuế và các khoản phải nộp nhà nước\n| Chỉ tiêu | Số đầu năm | Phát sinh phải nộp | Phát sinh đã nộp | Số cuối kỳ |\n|:----------------------------------------|:------------|:-------------------|:-----------------|:------------|\n| 17a. Số phải nộp | | | | |\n| Thuế giá trị gia tăng | 4,846,667,298 | 46,882,711,318 | 34,490,106,452 | 17,239,272,164 |\n| Thuế thu nhập cá nhân | 32,760,431 | 1,610,685,476 | 1,608,103,673 | 35,342,234 |\n| Thuế nhà đất và tiền thuê đất | 33,046,299,093 | 10,000,471,478 | 1,388,174,259 | 41,658,596,312 |\n| Các loại thuế khác | 20,822,628 | - | 20,822,628 | - |\n| Phí, lệ phí và các khoản phải nộp | 4,359,488,133 | 130,711,710,497 | 130,605,812,611 | 4,465,386,019 |\n| Tổng | 42,285,214,955 | 189,226,401,397 | 168,113,019,623 | 63,398,596,729 |\n| 17b. Số phải thu | | | | |\n| Thuế giá trị gia tăng | 17,223,174 | 101,101,765 | 277,619,947 | 193,741,356 |\n| Thuế thu nhập doanh nghiệp | 406,303,028 | 0 | 0 | 406,303,028 |\n| Thuế thu nhập cá nhân | 163,268,902 | 1,308,231,609 | 1,237,384,077 | 92,421,370 |\n| Tổng | 586,795,104 | 1,409,333,374 | 1,515,004,024 | 692,465,754 |",
+        "questions": [
+            {
+                "question": "Tổng Thuế và các khoản phải nộp Nhà nước cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản Phát sinh phải nộp Thuế giá trị gia tăng là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh số phải nộp Thuế nhà đất và tiền thuê đất cuối kỳ với số đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Tỷ lệ Thuế thu nhập cá nhân đã nộp trên Phát sinh phải nộp là bao nhiêu phần trăm?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tình hình nghĩa vụ thuế của công ty dựa trên sự biến động của các khoản phải nộp và phải thu thuế.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích rủi ro tài chính nếu các khoản Phát sinh phải nộp thuế tăng nhanh mà Phát sinh đã nộp không theo kịp.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo tác động của sự thay đổi trong Thuế thu nhập doanh nghiệp phải thu đến dòng tiền trong tương lai.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá hiệu quả của quản lý thuế và các khoản phải nộp/phải thu Nhà nước của công ty.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "18",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Chi phí phải trả, Phải trả khác, Doanh thu chưa thực hiện)\nLoại nội dung: Bảng\n18. Chi phí phải trả\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:-----------------------------------------------------|:-----------------|:--------------|\n| 18a. Ngắn hạn | 27,949,233,718 | 27,468,597,403 |\n| Trong đó:\n| 1. Lãi vay các dự án phải trả - Ngắn hạn 06 | 2,038,181,900 | 2,985,270,244 |\n| 2. Chi phí phải trả ngắn hạn khác - chưa có hóa đơn | 25,063,529,389 | 23,542,247,652 |\n| Tổng | 27,949,233,718 | 27,468,597,403 |\n\n19. Phải trả khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:-----------------------------------|:-----------------|:--------------|\n| 19a. Ngắn hạn | 31,018,267,367 | 30,784,103,787 |\n| Bảo hiểm xã hội | 55,660,788 | 0 |\n| Bảo hiểm y tế | 9,822,492 | 0 |\n| Bảo hiểm thất nghiệp | 4,365,552 | 0 |\n| Nhận ký quỹ, ký cược ngắn hạn | 4,440,451,400 | 1,111,223,117 |\n| Các khoản phải trả, phải nộp khác | 26,507,967,135 | 29,672,880,670 |\n| 19b. Dài hạn | 0 | 3,792,726,400 |\n| Nhận ký quỹ, ký cược dài hạn | 0 | 3,792,726,400 |\n\n20. Doanh thu chưa thực hiện\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:------------------------------------|:-----------------|:--------------|\n| 20a. Ngắn hạn | 31,041,969,526 | 84,485,287,338 |\n| Trong đó:\n| 1. Dịch vụ hỗ trợ vận tải | 5,143,526 | 3,208,338 |\n| 2. Vận tải | 30,784,826,000 | 84,482,079,000 |",
+        "questions": [
+            {
+                "question": "Tổng Chi phí phải trả ngắn hạn cuối kỳ là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Khoản Nhận ký quỹ, ký cược ngắn hạn cuối kỳ là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Doanh thu chưa thực hiện ngắn hạn cuối kỳ với đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khoản Lãi vay các dự án phải trả ngắn hạn đã thay đổi như thế nào từ đầu năm đến cuối kỳ?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tác động của việc giảm mạnh Doanh thu chưa thực hiện ngắn hạn đến tình hình tài chính của công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích rủi ro liên quan đến các khoản phải trả ngắn hạn khác chưa có hóa đơn.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo ảnh hưởng của sự biến động trong các khoản Nhận ký quỹ, ký cược đến dòng tiền hoạt động của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ linh hoạt trong quản lý nợ của công ty dựa trên cơ cấu Chi phí phải trả và Phải trả khác.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "19",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Vốn chủ sở hữu - Bảng đối chiếu biến động)\nLoại nội dung: Bảng\n25. Vốn chủ sở hữu\n25a. Bảng đối chiếu biến động của vốn chủ sở hữu\n| Chỉ tiêu | Vốn góp của CSH | Thặng dư vốn CP | Quyền chọn chuyển đổi trái phiếu | Vốn khác của CSH | Chênh lệch tỷ giá | LNST chưa phân phối và các quỹ |\n|:---------------------------------------|:-------------------|:-----------------|:---------------------------------|:-------------------|:-----------------|:-----------------------------------|\n| Số dư đầu năm trước | 800,589,700,000 | - | - | - | - | 380,044,325,149 |\n| Tăng vốn kỳ này năm trước | - | - | - | - | - | - |\n| Lãi kỳ này năm trước | - | - | - | - | - | - |\n| Tăng khác kỳ này năm trước | - | - | - | - | - | - |\n| Giảm vốn kỳ này năm trước | - | - | - | - | - | - |\n| Lỗ kỳ này năm trước | - | - | - | - | - | - |\n| Giảm khác kỳ này năm trước | - | - | - | - | - | - |\n| Số dư cuối kỳ này năm trước | 800,589,700,000 | - | - | - | - | 380,044,325,149 |\n| Số dư đầu năm nay | 800,589,700,000 | - | - | - | - | 365,978,056,110 |\n| Tăng vốn kỳ này năm nay | - | - | - | - | - | - |\n| Lãi kỳ này năm nay | - | - | - | - | - | 89,571,932,101 |\n| Tăng khác kỳ này năm nay | - | - | - | - | 420,400 | - |\n| Giảm vốn kỳ này năm nay | - | - | - | - | - | - |\n| Lỗ kỳ này năm nay | - | - | - | - | - | 14,066,269,039 |\n| Giảm khác kỳ này năm nay | - | - | - | - | 420,400 | - |\n| Số dư cuối kỳ năm nay | 800,589,700,000 | - | - | - | - | 290,472,393,048 |",
+        "questions": [
+            {
+                "question": "Vốn góp của chủ sở hữu đầu năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Lợi nhuận sau thuế chưa phân phối và các quỹ cuối kỳ năm nay là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Số dư đầu năm nay và Số dư cuối kỳ năm nay của Vốn góp của chủ sở hữu.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khoản Lãi kỳ này năm nay đã ảnh hưởng như thế nào đến LNST chưa phân phối và các quỹ?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích biến động chính trong Vốn chủ sở hữu giữa đầu năm và cuối kỳ năm nay.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá tác động của Chênh lệch tỷ giá trong kỳ đến Vốn chủ sở hữu.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo rủi ro nếu Lợi nhuận sau thuế chưa phân phối tiếp tục giảm trong các kỳ tới.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ ổn định của vốn chủ sở hữu của công ty dựa trên bảng đối chiếu biến động.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "20",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Bảng cân đối kế toán (Vốn chủ sở hữu, Cổ phiếu, Quỹ)\nLoại nội dung: Bảng\n25c. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận\n| Chỉ tiêu | Năm nay | Năm trước |\n|:-----------------------------------|:----------|:----------|\n| Vốn đầu tư của chủ sở hữu | 0 | 0 |\n| Vốn góp đầu năm | 800,589,700,000 | 800,589,700,000 |\n| Vốn góp tăng trong năm | 0 | 0 |\n| Vốn góp giảm trong năm | 0 | 0 |\n| Vốn góp cuối năm | 800,589,700,000 | 800,589,700,000 |\n| Cổ tức, lợi nhuận đã chia | 0 | 0 |\n\n25d. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:------------------------------------|:-----------------|:--------------|\n| Số lượng cổ phiếu đăng ký phát hành | 80,058,970 | 80,058,970 |\n| Số lượng cổ phiếu đã bán ra công chúng | 80,058,970 | 80,058,970 |\n| Cổ phiếu phổ thông | 80,058,970 | 80,058,970 |\n| Số lượng cổ phiếu đang lưu hành | 80,058,970 | 80,058,970 |\n| Cổ phiếu phổ thông | 80,058,970 | 80,058,970 |\n| Mệnh giá cổ phiếu đang lưu hành | 10,000 đồng/CP | - |\n\n25e. Các quỹ của doanh nghiệp\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:-----------------------|:-----------------|:--------------|\n| Quỹ đầu tư phát triển | 3,012,266,363 | 3,012,266,363 |",
+        "questions": [
+            {
+                "question": "Vốn góp cuối năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Mệnh giá cổ phiếu đang lưu hành là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "Số lượng cổ phiếu đã bán ra công chúng cuối kỳ là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "So sánh Quỹ đầu tư phát triển cuối kỳ và đầu năm.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Đánh giá tình hình phát hành và lưu hành cổ phiếu của công ty.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Phân tích tác động của việc không có cổ tức, lợi nhuận được chia trong năm đến nhà đầu tư và chính sách tài chính của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo ảnh hưởng của việc không có sự biến động về vốn góp và số lượng cổ phiếu đến khả năng huy động vốn của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá mức độ ổn định của chính sách vốn của công ty dựa trên các giao dịch về vốn và các quỹ.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "21",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng 10 năm 2024, Quý III và 9 tháng đầu năm 2024\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo kết quả hoạt động kinh doanh (Tổng doanh thu bán hàng và cung cấp dịch vụ - Phần 1)\nLoại nội dung: Bảng\nVII. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh\n1. Tổng doanh thu bán hàng và cung cấp dịch vụ (Mã số 01)\n| Chỉ tiêu | Năm nay | Năm trước |\n|:-------------------------------------------|:--------------------|:--------------------|\n| a. Doanh thu | 2,271,808,319,355 | 1,895,117,184,093 |\n| Doanh thu cung cấp dịch vụ | 2,271,534,702,512 | 1,894,709,864,949 |\n| Doanh thu khác | 273,616,843 | 407,319,144 |\n| b. Doanh thu đối với các bên liên quan chi tiết từng đối tượng. | 69,431,686,426 | 64,613,279,068 |\n| Trong đó:\n| 1. Tổng công ty ĐS Việt Nam - XN Đầu máy Vinh | 130,140,000 | 391,032,000 |\n| 2. Tổng công ty ĐS Việt Nam - XN đầu máy Sài Gòn | 0 | 19,200,000 |\n| 3. Công ty CP VTĐS Sài Gòn - CN VTĐS Sài Gòn | 58,500,000 | 58,500,000 |\n| 4. Công ty CP Xe lửa Gia Lâm | 1,645,649,921 | 8,134,000 |\n| 5. Công ty CP VTĐS Sài Gòn - ĐTV ĐS Phương Nam | 4,800,000 | 10,181,818 |\n| 6. Công ty CP VTĐS Sài Gòn | 48,450,262,000 | 46,932,921,000 |\n| 7. Công ty CP VTĐS Sài Gòn - XN Toa xe Đà Nẵng | 250,745,890 | 0 |\n| 8. Công ty CP VTĐS Sài Gòn - XN Toa xe Đà Nẵng (tiếp theo) | 0 | 12,539,915 |\n| 9. Tổng công ty ĐS Việt Nam - XN đầu máy Hà Nội | 21,125,000 | 17,500,000 |\n| 10. Công ty CP VTĐS Sài Gòn - XN toa xe Sài Gòn | 12,219,118,806 | 10,283,006,605 |",
+        "questions": [
+            {
+                "question": "Tổng Doanh thu bán hàng và cung cấp dịch vụ năm nay là bao nhiêu VND?",
+                "difficulty": "Easy_QA"
+            },
+            {
+                "question": "Doanh thu cung cấp dịch vụ năm trước là bao nhiêu?",
+                "difficulty": "Easy_NER"
+            },
+            {
+                "question": "So sánh Doanh thu đối với các bên liên quan năm nay với năm trước.",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Khoản Doanh thu từ Công ty CP VTĐS Sài Gòn năm nay là bao nhiêu?",
+                "difficulty": "Medium_QA"
+            },
+            {
+                "question": "Phân tích sự thay đổi trong doanh thu từ Tổng công ty ĐS Việt Nam - XN Đầu máy Vinh giữa năm nay và năm trước.",
+                "difficulty": "Medium_SA"
+            },
+            {
+                "question": "Đánh giá mức độ phụ thuộc vào các bên liên quan trong việc tạo ra doanh thu của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Dự báo tác động của sự biến động doanh thu từ các bên liên quan đến tổng doanh thu của công ty.",
+                "difficulty": "Hard_SA"
+            },
+            {
+                "question": "Đánh giá chiến lược bán hàng và cung cấp dịch vụ của công ty dựa trên cơ cấu doanh thu từ các đối tượng khác nhau.",
+                "difficulty": "Hard_SA"
+            }
+        ]
+    },
+    {
+        "chunk_id": "22",
+        "content": "Công ty: Công ty Cổ phần Vận tải Đường sắt Hà Nội\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý III và 9 tháng đầu năm 2024\nThời gian: Ngày 22 tháng

@@ -1,0 +1,854 @@
+```json
+[
+  {
+    "instruction": "Tên đầy đủ của Công ty là gì?",
+    "input": "1",
+    "output": "Tên đầy đủ của Công ty là Công ty Cổ phần Cán thép Thái Trung."
+  },
+  {
+    "instruction": "Mã cổ phiếu của Công ty là gì?",
+    "input": "1",
+    "output": "Mã cổ phiếu của Công ty là TTS."
+  },
+  {
+    "instruction": "Báo cáo tài chính này thuộc loại báo cáo nào?",
+    "input": "1",
+    "output": "Báo cáo tài chính này thuộc loại Báo cáo tài chính riêng bán niên 2025."
+  },
+  {
+    "instruction": "Báo cáo tài chính bán niên 2025 được công bố vào ngày nào?",
+    "input": "1",
+    "output": "Báo cáo tài chính bán niên 2025 được công bố vào ngày 07 tháng 8 năm 2025."
+  },
+  {
+    "instruction": "Công ty có công bố báo cáo tài chính hợp nhất không?",
+    "input": "1",
+    "output": "Không, Công ty không công bố báo cáo tài chính hợp nhất. Mục \"Báo cáo tài chính riêng\" được đánh dấu chọn trong nội dung công bố thông tin."
+  },
+  {
+    "instruction": "Tổ chức kiểm toán đã đưa ra ý kiến chấp nhận toàn phần hay không?",
+    "input": "1",
+    "output": "Có, báo cáo tài chính đã nhận được ý kiến chấp nhận toàn phần (có đoạn nhấn mạnh)."
+  },
+  {
+    "instruction": "Website chính thức của Công ty là gì?",
+    "input": "1",
+    "output": "Website chính thức của Công ty là www.ttr.com.vn."
+  },
+  {
+    "instruction": "Có sự thay đổi lớn về lợi nhuận sau thuế trong kỳ báo cáo so với cùng kỳ năm trước không?",
+    "input": "1",
+    "output": "Không, không có sự thay đổi lớn về lợi nhuận sau thuế thu nhập doanh nghiệp từ 10% trở lên so với báo cáo cùng kỳ năm trước, theo thông tin đã công bố (mục \"Không\" được đánh dấu)."
+  },
+  {
+    "instruction": "Tên đầy đủ của công ty là gì?",
+    "input": "2",
+    "output": "Tên đầy đủ của công ty là Công ty Cổ phần Cán thép Thái Trung."
+  },
+  {
+    "instruction": "Trụ sở chính của Công ty đặt ở đâu?",
+    "input": "2",
+    "output": "Trụ sở chính của Công ty đặt tại Phường Gia Sàng, Tỉnh Thái Nguyên, Việt Nam."
+  },
+  {
+    "instruction": "Ai là Chủ tịch Hội đồng quản trị của Công ty?",
+    "input": "2",
+    "output": "Ông Hoàng Danh Sơn là Chủ tịch Hội đồng quản trị của Công ty."
+  },
+  {
+    "instruction": "Ai là Tổng Giám đốc và người đại diện pháp luật của Công ty?",
+    "input": "2",
+    "output": "Ông Trần Tuấn là Tổng Giám đốc và người đại diện pháp luật của Công ty."
+  },
+  {
+    "instruction": "Công ty TNHH Hãng Kiểm toán AASC có vai trò gì đối với báo cáo này?",
+    "input": "2",
+    "output": "Công ty TNHH Hãng Kiểm toán AASC đã thực hiện soát xét Báo cáo tài chính bán niên cho Công ty."
+  },
+  {
+    "instruction": "Ông Trần Quốc Hùng được bổ nhiệm vào vị trí Phó Tổng Giám đốc khi nào?",
+    "input": "2",
+    "output": "Ông Trần Quốc Hùng được bổ nhiệm vào vị trí Phó Tổng Giám đốc vào ngày 06 tháng 5 năm 2025."
+  },
+  {
+    "instruction": "Ban Giám đốc có trách nhiệm gì trong việc lập Báo cáo tài chính bán niên?",
+    "input": "3",
+    "output": "Ban Giám đốc chịu trách nhiệm về việc lập Báo cáo tài chính bán niên phản ánh trung thực và hợp lý tình hình tài chính của Công ty, kết quả hoạt động và lưu chuyển tiền tệ trong kỳ. Các trách nhiệm bao gồm xây dựng và duy trì hệ thống kiểm soát nội bộ, lựa chọn và áp dụng chính sách kế toán phù hợp, đưa ra các xét đoán và ước tính hợp lý, tuân thủ chuẩn mực kế toán và pháp luật liên quan, và lập báo cáo trên cơ sở hoạt động liên tục."
+  },
+  {
+    "instruction": "Công ty có tuân thủ các quy định về công bố thông tin trên thị trường chứng khoán không?",
+    "input": "3",
+    "output": "Có, Ban Giám đốc cam kết rằng Công ty tuân thủ Nghị định số 155/2020/NĐ-CP và không vi phạm các nghĩa vụ công bố thông tin theo quy định tại Thông tư số 96/2020/TT-BTC và Thông tư số 68/2024/TT-BTC."
+  },
+  {
+    "instruction": "Cuộc soát xét của kiểm toán viên có cung cấp ý kiến kiểm toán đầy đủ không?",
+    "input": "3",
+    "output": "Không, cuộc soát xét thông tin tài chính bán niên có phạm vi nhỏ hơn đáng kể so với một cuộc kiểm toán. Do đó, kiểm toán viên không đưa ra ý kiến kiểm toán đầy đủ, mà chỉ đưa ra kết luận dựa trên cuộc soát xét."
+  },
+  {
+    "instruction": "Theo kết luận của kiểm toán viên, Báo cáo tài chính bán niên có phản ánh trung thực và hợp lý tình hình tài chính của Công ty không?",
+    "input": "3",
+    "output": "Có, theo kết luận của kiểm toán viên, không có vấn đề gì khiến họ tin rằng các Báo cáo tài chính bán niên kèm theo không phản ánh trung thực và hợp lý, trên tất cả các khía cạnh trọng yếu, tình hình tài chính của Công ty."
+  },
+  {
+    "instruction": "Nêu mục đích của việc soát xét thông tin tài chính bán niên.",
+    "input": "3",
+    "output": "Mục đích của việc soát xét thông tin tài chính bán niên là để kiểm toán viên đưa ra kết luận về các báo cáo tài chính bán niên dựa trên các thủ tục phỏng vấn, áp dụng các thủ tục phân tích và soát xét khác. Cuộc soát xét nhằm xác định liệu có bất kỳ vấn đề gì khiến kiểm toán viên tin rằng báo cáo tài chính không phản ánh trung thực và hợp lý hay không."
+  },
+  {
+    "instruction": "Đánh giá mức độ đảm bảo của thông tin tài chính từ một cuộc soát xét so với một cuộc kiểm toán.",
+    "input": "3",
+    "output": "Mức độ đảm bảo của thông tin tài chính từ một cuộc soát xét thấp hơn đáng kể so với một cuộc kiểm toán. Một cuộc soát xét chỉ bao gồm các thủ tục phỏng vấn và áp dụng các thủ tục phân tích và soát xét khác, trong khi một cuộc kiểm toán có phạm vi rộng hơn và sâu hơn. Do đó, cuộc soát xét không cung cấp sự đảm bảo rằng kiểm toán viên sẽ nhận biết được tất cả các vấn đề trọng yếu có thể được xác định trong một cuộc kiểm toán, và kiểm toán viên không đưa ra ý kiến kiểm toán đầy đủ."
+  },
+  {
+    "instruction": "Tại ngày 30 tháng 6 năm 2025, tổng tài sản ngắn hạn của Công ty là bao nhiêu?",
+    "input": "4",
+    "output": "Tại ngày 30 tháng 6 năm 2025, tổng tài sản ngắn hạn của Công ty là 495.637.589.584 VND."
+  },
+  {
+    "instruction": "Tiền và các khoản tương đương tiền tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "4",
+    "output": "Tiền và các khoản tương đương tiền tại ngày 30 tháng 6 năm 2025 là 439.403.363 VND."
+  },
+  {
+    "instruction": "Khoản mục nào trong tài sản ngắn hạn giảm nhiều nhất về giá trị tuyệt đối từ 01/01/2025 đến 30/06/2025?",
+    "input": "4",
+    "output": "Khoản mục giảm nhiều nhất về giá trị tuyệt đối là \"Các khoản phải thu ngắn hạn\", giảm từ 572.548.447.612 VND (01/01/2025) xuống 462.572.226.208 VND (30/06/2025), tức là giảm 109.976.221.404 VND."
+  },
+  {
+    "instruction": "Tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu?",
+    "input": "4",
+    "output": "Tỷ lệ hàng tồn kho trên tổng tài sản ngắn hạn tại ngày 30 tháng 6 năm 2025 là khoảng 6,24% (30.904.193.354 VND / 495.637.589.584 VND)."
+  },
+  {
+    "instruction": "Dựa trên Bảng cân đối kế toán, nêu các chỉ số tài chính cho thấy Công ty đang đối mặt với rủi ro hoạt động liên tục.",
+    "input": "4",
+    "output": "Dựa trên Bảng cân đối kế toán và đoạn nhấn mạnh, các chỉ số tài chính cho thấy Công ty đang đối mặt với rủi ro hoạt động liên tục là: nợ ngắn hạn (mã số 310) đã vượt quá tài sản ngắn hạn (mã số 100) là 339,67 tỷ VND; nợ phải trả cao hơn 2,72 lần vốn chủ sở hữu; và lỗ lũy kế (mã số 421) là 201,1 tỷ VND, tương đương 39,59% vốn chủ sở hữu (mã số 411)."
+  },
+  {
+    "instruction": "Phân tích tác động của việc giảm tài sản ngắn hạn đến khả năng thanh khoản của Công ty.",
+    "input": "4",
+    "output": "Việc tổng tài sản ngắn hạn giảm từ 608.360.900.973 VND tại 01/01/2025 xuống còn 495.637.589.584 VND tại 30/06/2025, đặc biệt là sự giảm mạnh của các khoản phải thu ngắn hạn (hơn 109 tỷ VND), có tác động tiêu cực đến khả năng thanh khoản của Công ty. Khi tài sản ngắn hạn giảm, khả năng Công ty chuyển đổi các tài sản này thành tiền mặt để đáp ứng các nghĩa vụ tài chính ngắn hạn cũng giảm theo. Điều này, cùng với việc nợ ngắn hạn vượt quá tài sản ngắn hạn là 339,67 tỷ VND, cho thấy Công ty đang đối mặt với nguy cơ thiếu hụt tiền mặt để thanh toán các khoản nợ đến hạn, làm tăng rủi ro về khả năng thanh toán và duy trì hoạt động."
+  },
+  {
+    "instruction": "Tổng tài sản dài hạn của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu?",
+    "input": "5",
+    "output": "Tổng tài sản dài hạn của Công ty tại ngày 30 tháng 6 năm 2025 là 646.570.312.303 VND."
+  },
+  {
+    "instruction": "Giá trị còn lại của tài sản cố định hữu hình tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "5",
+    "output": "Giá trị còn lại của tài sản cố định hữu hình tại ngày 30 tháng 6 năm 2025 là 622.106.833.708 VND."
+  },
+  {
+    "instruction": "Tài sản cố định vô hình có sự thay đổi nào từ đầu năm đến cuối quý 2 năm 2025?",
+    "input": "5",
+    "output": "Tài sản cố định vô hình có nguyên giá tăng từ 246.000.000 VND tại 01/01/2025 lên 596.000.000 VND tại 30/06/2025, tức là tăng 350.000.000 VND. Giá trị hao mòn lũy kế cũng tăng từ 246.000.000 VND lên 253.292.487 VND."
+  },
+  {
+    "instruction": "So sánh nguyên giá và giá trị hao mòn lũy kế của tài sản cố định hữu hình giữa hai thời điểm.",
+    "input": "5",
+    "output": "Nguyên giá tài sản cố định hữu hình tăng từ 1.258.722.041.923 VND tại 01/01/2025 lên 1.258.876.499.603 VND tại 30/06/2025 (tăng 154.457.680 VND). Giá trị hao mòn lũy kế tài sản cố định hữu hình tăng từ 601.917.984.927 VND tại 01/01/2025 lên 636.769.665.895 VND tại 30/06/2025 (tăng 34.851.680.968 VND)."
+  },
+  {
+    "instruction": "Đánh giá mức độ đầu tư vào tài sản dài hạn của Công ty trong 6 tháng đầu năm 2025.",
+    "input": "5",
+    "output": "Trong 6 tháng đầu năm 2025, tổng tài sản dài hạn của Công ty giảm từ 680.272.184.215 VND xuống 646.570.312.303 VND, tức là giảm khoảng 33,7 tỷ VND. Sự giảm này chủ yếu do tài sản cố định hữu hình giảm (khấu hao vượt mức mua sắm và thanh lý). Tuy nhiên, có sự tăng nhẹ trong tài sản cố định vô hình và chi phí trả trước dài hạn. Nhìn chung, mức độ đầu tư vào tài sản dài hạn của Công ty trong kỳ là không đáng kể, thậm chí có xu hướng giảm ròng, cho thấy Công ty chưa tập trung mạnh vào việc mở rộng năng lực sản xuất hoặc đổi mới tài sản cố định."
+  },
+  {
+    "instruction": "Phân tích tác động của việc giảm tài sản dài hạn đến khả năng sản xuất và hoạt động của Công ty.",
+    "input": "5",
+    "output": "Việc tổng tài sản dài hạn giảm từ 680.272.184.215 VND xuống 646.570.312.303 VND, chủ yếu do giảm giá trị còn lại của tài sản cố định hữu hình, có thể tác động tiêu cực đến khả năng sản xuất và hoạt động của Công ty. Sự giảm này cho thấy Công ty có thể không đầu tư đủ để duy trì hoặc mở rộng công suất hiện tại, hoặc đang thanh lý tài sản mà không thay thế tương xứng. Điều này có thể dẫn đến việc lạc hậu về công nghệ, giảm hiệu suất hoạt động, tăng chi phí bảo trì cho máy móc cũ, và cuối cùng ảnh hưởng đến năng lực cạnh tranh và khả năng tạo ra doanh thu trong dài hạn. Tuy nhiên, nếu sự giảm này là do tài sản đã khấu hao hết nhưng vẫn hoạt động tốt, thì tác động tiêu cực có thể được giảm thiểu trong ngắn hạn."
+  },
+  {
+    "instruction": "Dựa vào thông tin tài sản dài hạn, đánh giá chiến lược sử dụng vốn của Công ty.",
+    "input": "5",
+    "output": "Dựa vào thông tin tài sản dài hạn, chiến lược sử dụng vốn của Công ty trong 6 tháng đầu năm 2025 dường như rất thận trọng và ít ưu tiên đầu tư mở rộng tài sản cố định hữu hình mới. Tổng tài sản dài hạn giảm đáng kể (khoảng 33,7 tỷ VND), cho thấy không có các dự án đầu tư lớn vào cơ sở vật chất. Thay vào đó, Công ty có thể đang tập trung vào việc duy trì hoạt động hiện tại, quản lý và sử dụng hiệu quả các tài sản hiện có cho đến khi chúng hết khấu hao. Điều này có thể phản ánh một chiến lược nhằm bảo toàn vốn và giảm gánh nặng đầu tư trong bối cảnh kinh tế hoặc tình hình tài chính có yếu tố không chắc chắn, tập trung vào việc tối ưu hóa hiệu quả từ các tài sản đã có thay vì mở rộng."
+  },
+  {
+    "instruction": "Tổng nợ phải trả của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu?",
+    "input": "6",
+    "output": "Tổng nợ phải trả của Công ty tại ngày 30 tháng 6 năm 2025 là 835.310.704.453 VND."
+  },
+  {
+    "instruction": "Vốn chủ sở hữu của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "6",
+    "output": "Vốn chủ sở hữu của Công ty tại ngày 30 tháng 6 năm 2025 là 306.897.197.434 VND."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế chưa phân phối của Công ty tại cuối kỳ này là bao nhiêu?",
+    "input": "6",
+    "output": "Lợi nhuận sau thuế chưa phân phối của Công ty tại cuối kỳ này là -201.102.804.033 VND (lỗ lũy kế)."
+  },
+  {
+    "instruction": "So sánh tổng nợ ngắn hạn giữa ngày 30/06/2025 và 01/01/2025, thay đổi như thế nào?",
+    "input": "6",
+    "output": "Tổng nợ ngắn hạn tại ngày 30/06/2025 là 835.310.704.453 VND, so với 983.373.219.143 VND tại ngày 01/01/2025. Nợ ngắn hạn đã giảm 148.062.514.690 VND."
+  },
+  {
+    "instruction": "Tính tỷ lệ nợ phải trả trên vốn chủ sở hữu tại ngày 30 tháng 6 năm 2025.",
+    "input": "6",
+    "output": "Tỷ lệ nợ phải trả trên vốn chủ sở hữu tại ngày 30 tháng 6 năm 2025 là 835.310.704.453 VND / 306.897.197.434 VND ≈ 2,72 lần."
+  },
+  {
+    "instruction": "Đánh giá rủi ro tài chính của Công ty dựa trên cơ cấu nợ và vốn chủ sở hữu hiện tại.",
+    "input": "6",
+    "output": "Dựa trên cơ cấu nợ và vốn chủ sở hữu, Công ty đang đối mặt với rủi ro tài chính cao. Tỷ lệ nợ phải trả trên vốn chủ sở hữu là khoảng 2,72 lần, cho thấy Công ty phụ thuộc rất nhiều vào vốn vay để tài trợ cho hoạt động. Mặc dù tổng nợ ngắn hạn có giảm so với đầu kỳ, nhưng sự hiện diện của lỗ lũy kế (-201.102.804.033 VND) cho thấy Công ty đã tích lũy thua lỗ, làm suy yếu vốn chủ sở hữu. Cơ cấu tài chính này đặt ra áp lực lớn về khả năng thanh toán nợ và duy trì hoạt động, đồng thời có thể hạn chế khả năng huy động vốn mới từ thị trường chứng khoán hoặc các tổ chức tín dụng."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của lỗ lũy kế đến tình hình tài chính của Công ty.",
+    "input": "6",
+    "output": "Lỗ lũy kế của Công ty tại cuối kỳ là -201.102.804.033 VND. Nguyên nhân chính của lỗ lũy kế là do hoạt động kinh doanh trong các kỳ trước không tạo ra đủ lợi nhuận để bù đắp chi phí và các khoản lỗ phát sinh, dẫn đến việc tích lũy các khoản lỗ qua nhiều năm. Tác động của lỗ lũy kế đến tình hình tài chính của Công ty là rất nghiêm trọng: nó làm giảm vốn chủ sở hữu của Công ty, khiến cơ cấu vốn mất cân đối (tỷ lệ nợ trên vốn chủ sở hữu cao), và có thể ảnh hưởng đến khả năng tiếp cận nguồn vốn mới. Lỗ lũy kế cũng là một yếu tố không chắc chắn trọng yếu gây nghi ngờ về khả năng hoạt động liên tục của Công ty, vì nó thể hiện sự thiếu bền vững trong việc tạo ra lợi nhuận."
+  },
+  {
+    "instruction": "Tổng doanh thu thuần về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là bao nhiêu?",
+    "input": "7",
+    "output": "Tổng doanh thu thuần về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là 3.127.945.686.875 VND."
+  },
+  {
+    "instruction": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "7",
+    "output": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong 6 tháng đầu năm 2025 là 1.637.331.389 VND."
+  },
+  {
+    "instruction": "So sánh lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa 6 tháng đầu năm 2025 và 2024.",
+    "input": "7",
+    "output": "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là 20.888.972.645 VND, thấp hơn so với 35.030.994.519 VND trong 6 tháng đầu năm 2024. Điều này cho thấy hiệu quả biên lợi nhuận gộp của Công ty đã giảm sút."
+  },
+  {
+    "instruction": "Chi phí tài chính và chi phí lãi vay có xu hướng thay đổi như thế nào giữa hai kỳ báo cáo?",
+    "input": "7",
+    "output": "Chi phí tài chính giảm từ 16.738.080.840 VND trong 6 tháng đầu năm 2024 xuống 11.647.431.591 VND trong 6 tháng đầu năm 2025. Chi phí lãi vay cũng giảm từ 16.677.489.847 VND trong 6 tháng đầu năm 2024 xuống 11.647.431.591 VND trong 6 tháng đầu năm 2025. Cả hai khoản mục này đều có xu hướng giảm."
+  },
+  {
+    "instruction": "Tính tỷ suất lợi nhuận sau thuế (Net Profit Margin) cho 6 tháng đầu năm 2025 và 2024. Nhận xét về sự thay đổi.",
+    "input": "7",
+    "output": "Tỷ suất lợi nhuận sau thuế:\n- **6 tháng đầu năm 2025**: (1.637.331.389 VND / 3.127.945.686.875 VND) * 100% ≈ 0,052%\n- **6 tháng đầu năm 2024**: (9.935.650.398 VND / 2.620.377.399.935 VND) * 100% ≈ 0,379%\n\nNhận xét: Tỷ suất lợi nhuận sau thuế của Công ty đã giảm đáng kể từ khoảng 0,379% trong 6 tháng đầu năm 2024 xuống còn khoảng 0,052% trong 6 tháng đầu năm 2025. Sự thay đổi này cho thấy hiệu quả hoạt động của Công ty trong việc chuyển doanh thu thành lợi nhuận đã giảm sút nghiêm trọng trong kỳ hiện tại."
+  },
+  {
+    "instruction": "Phân tích tác động của chi phí khác tăng đột biến đến tổng lợi nhuận kế toán trước thuế.",
+    "input": "7",
+    "output": "Trong 6 tháng đầu năm 2025, chi phí khác là 381.969.760 VND, tăng đột biến so với 22.599.943 VND trong 6 tháng đầu năm 2024. Sự tăng này đã khiến \"Lợi nhuận khác\" chuyển từ dương (549.186.620 VND) sang âm (-359.359.533 VND). Điều này trực tiếp làm giảm tổng lợi nhuận kế toán trước thuế của Công ty, từ 12.430.920.233 VND trong 6 tháng đầu năm 2024 xuống còn 2.150.811.676 VND trong 6 tháng đầu năm 2025. Tác động là rất tiêu cực, vì chi phí khác tăng cao đã ăn mòn một phần đáng kể lợi nhuận từ hoạt động kinh doanh, làm suy yếu đáng kể khả năng tạo lợi nhuận chung của Công ty."
+  },
+  {
+    "instruction": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "8",
+    "output": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 là 58.203.564.605 VND."
+  },
+  {
+    "instruction": "Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+    "input": "8",
+    "output": "Tiền và các khoản tương đương tiền cuối kỳ là 439.403.363 VND."
+  },
+  {
+    "instruction": "Lưu chuyển tiền từ hoạt động đầu tư trong 6 tháng đầu năm 2025 là dương hay âm?",
+    "input": "8",
+    "output": "Lưu chuyển tiền từ hoạt động đầu tư trong 6 tháng đầu năm 2025 là âm, với giá trị -513.654.251 VND."
+  },
+  {
+    "instruction": "So sánh lưu chuyển tiền thuần từ hoạt động tài chính giữa 6 tháng đầu năm 2025 và 2024.",
+    "input": "8",
+    "output": "Lưu chuyển tiền thuần từ hoạt động tài chính trong 6 tháng đầu năm 2025 là -58.067.336.785 VND, trong khi cùng kỳ năm 2024 là -17.440.515.294 VND. Lưu chuyển tiền thuần từ hoạt động tài chính trong kỳ hiện tại âm nhiều hơn đáng kể so với cùng kỳ năm trước."
+  },
+  {
+    "instruction": "Đánh giá khả năng tạo tiền từ hoạt động kinh doanh của Công ty trong 6 tháng đầu năm 2025 so với cùng kỳ năm trước.",
+    "input": "8",
+    "output": "Khả năng tạo tiền từ hoạt động kinh doanh của Công ty trong 6 tháng đầu năm 2025 đã cải thiện đáng kể so với cùng kỳ năm trước. Lưu chuyển tiền thuần từ hoạt động kinh doanh đạt 58.203.564.605 VND trong 6 tháng đầu năm 2025, tăng mạnh so với 12.887.908.123 VND trong 6 tháng đầu năm 2024. Mặc dù lợi nhuận trước thuế giảm, sự gia tăng dòng tiền từ hoạt động kinh doanh cho thấy Công ty đã quản lý hiệu quả hơn các khoản mục vốn lưu động như phải thu và phải trả, góp phần tạo ra lượng tiền mặt tốt hơn từ các hoạt động cốt lõi."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân chính dẫn đến lưu chuyển tiền thuần âm trong kỳ báo cáo.",
+    "input": "8",
+    "output": "Nguyên nhân chính dẫn đến lưu chuyển tiền thuần âm trong kỳ báo cáo (-477.426.431 VND) là do dòng tiền âm rất lớn từ hoạt động tài chính (-58.067.336.785 VND) đã bù trừ và vượt qua dòng tiền dương từ hoạt động kinh doanh (58.203.564.605 VND). Trong hoạt động tài chính, Công ty đã chi trả nợ gốc vay (-401.817.960.177 VND) nhiều hơn đáng kể so với số tiền thu từ đi vay (343.750.623.392 VND). Điều này cho thấy áp lực trả nợ vay là yếu tố chủ yếu làm giảm tiền và các khoản tương đương tiền của Công ty trong kỳ."
+  },
+  {
+    "instruction": "Vốn điều lệ đăng ký và thực góp của Công ty là bao nhiêu VND?",
+    "input": "9",
+    "output": "Vốn điều lệ đăng ký và thực góp của Công ty đều là 508.000.001.467 VND."
+  },
+  {
+    "instruction": "Lĩnh vực kinh doanh chính của Công ty là gì?",
+    "input": "9",
+    "output": "Lĩnh vực kinh doanh chính của Công ty là sản xuất sắt và thép (lĩnh vực sản xuất công nghiệp)."
+  },
+  {
+    "instruction": "Lỗ lũy kế của Công ty tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "9",
+    "output": "Lỗ lũy kế của Công ty tại ngày 30 tháng 6 năm 2025 là 201,1 tỷ VND."
+  },
+  {
+    "instruction": "Nêu những yếu tố tài chính chính gây ra nghi ngờ về khả năng hoạt động liên tục của Công ty.",
+    "input": "9",
+    "output": "Những yếu tố tài chính chính gây ra nghi ngờ về khả năng hoạt động liên tục của Công ty là: lỗ lũy kế 201,1 tỷ VND, tổng nợ phải trả cao hơn 2,72 lần vốn chủ sở hữu, và nợ ngắn hạn vượt quá tài sản ngắn hạn là 339,67 tỷ VND."
+  },
+  {
+    "instruction": "Ai là khách hàng và nhà cung cấp chủ chốt hỗ trợ Công ty trong hoạt động kinh doanh?",
+    "input": "9",
+    "output": "Tổng Công ty Cổ phần Gang thép Thái Nguyên là khách hàng và nhà cung cấp chủ chốt hỗ trợ Công ty trong hoạt động kinh doanh."
+  },
+  {
+    "instruction": "Đánh giá lý do Ban Giám đốc vẫn tin rằng giả định hoạt động liên tục là phù hợp, mặc dù có các vấn đề tài chính nêu trên.",
+    "input": "9",
+    "output": "Mặc dù Công ty đối mặt với các vấn đề tài chính nghiêm trọng như lỗ lũy kế, nợ cao hơn vốn chủ sở hữu và nợ ngắn hạn vượt quá tài sản ngắn hạn, Ban Giám đốc vẫn tin rằng giả định hoạt động liên tục là phù hợp. Lý do được đưa ra là Công ty nhận được sự hỗ trợ quan trọng từ Tổng Công ty Cổ phần Gang thép Thái Nguyên, vừa là khách hàng chủ chốt vừa là nhà cung cấp nguyên vật liệu chính với các điều khoản thanh toán ưu đãi, giúp giảm áp lực vốn lưu động và cải thiện kết quả kinh doanh (lỗ lũy kế giảm). Ngoài ra, Công ty còn nhận được hạn mức tín dụng hàng năm từ Ngân hàng TMCP Đầu tư và Phát triển Việt Nam, đảm bảo đủ vốn lưu động cho hoạt động."
+  },
+  {
+    "instruction": "Phân tích tầm quan trọng của mối quan hệ với Tổng Công ty Cổ phần Gang thép Thái Nguyên đối với Công ty.",
+    "input": "9",
+    "output": "Mối quan hệ với Tổng Công ty Cổ phần Gang thép Thái Nguyên có tầm quan trọng sống còn đối với Công ty. Tổng Công ty này đóng vai trò kép là khách hàng chủ chốt (mua số lượng lớn hàng hóa) và nhà cung cấp nguyên vật liệu chính với các điều khoản thanh toán ưu đãi. Sự hỗ trợ này là yếu tố then chốt giúp Công ty giảm áp lực vốn lưu động, cải thiện kết quả sản xuất kinh doanh (giảm lỗ lũy kế), và duy trì khả năng hoạt động. Nếu không có mối quan hệ này, Công ty có thể gặp khó khăn nghiêm trọng trong việc tìm kiếm cả đầu vào và đầu ra cho hoạt động sản xuất, làm tăng rủi ro về khả năng hoạt động liên tục."
+  },
+  {
+    "instruction": "Công ty áp dụng kỳ kế toán hàng năm như thế nào?",
+    "input": "10",
+    "output": "Kỳ kế toán hàng năm của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12."
+  },
+  {
+    "instruction": "Công ty áp dụng hệ thống chuẩn mực kế toán nào?",
+    "input": "10",
+    "output": "Công ty áp dụng Chuẩn mực kế toán Việt Nam và Chế độ kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC và Thông tư số 53/2016/TT-BTC."
+  },
+  {
+    "instruction": "Nêu ít nhất ba ước tính kế toán có ảnh hưởng trọng yếu đến Báo cáo tài chính bán niên.",
+    "input": "10",
+    "output": "Ba ước tính kế toán có ảnh hưởng trọng yếu đến Báo cáo tài chính bán niên là: Dự phòng nợ phải thu khó đòi, Dự phòng phải trả, Ước tính phân bổ chi phí trả trước."
+  },
+  {
+    "instruction": "Công ty đo lường tài sản tài chính và nợ phải trả tài chính sau ghi nhận ban đầu như thế nào?",
+    "input": "10",
+    "output": "Công ty không định giá lại tài sản tài chính và nợ phải trả tài chính theo giá trị hợp lý vào cuối kỳ kế toán. Thay vào đó, chúng được xác định bằng giá mua/chi phí phát hành cộng với các chi phí khác liên quan trực tiếp đến việc mua và phát hành các tài sản/khoản nợ đó tại thời điểm ghi nhận ban đầu."
+  },
+  {
+    "instruction": "Các khoản phải thu được phân loại thành ngắn hạn hay dài hạn dựa trên yếu tố nào?",
+    "input": "10",
+    "output": "Các khoản phải thu được phân loại thành ngắn hạn hoặc dài hạn trên báo cáo tài chính bán niên theo thời hạn còn lại của chúng tại ngày báo cáo."
+  },
+  {
+    "instruction": "Thảo luận về các điều kiện để lập dự phòng nợ phải thu khó đòi.",
+    "input": "10",
+    "output": "Dự phòng nợ phải thu khó đòi được lập cho các khoản phải thu quá hạn theo hợp đồng kinh tế, hợp đồng cho vay, cam kết hợp đồng hoặc hối phiếu. Ngoài ra, dự phòng cũng được lập cho các khoản phải thu chưa đến hạn nhưng khó có khả năng thu hồi. Cụ thể, dự phòng cho các khoản nợ quá hạn được dựa trên ngày đáo hạn quy định trong hợp đồng bán hàng ban đầu (không bao gồm việc tái cơ cấu nợ), và trong trường hợp các khoản nợ chưa đến hạn nhưng con nợ đang phá sản, giải thể, mất tích, bỏ trốn hoặc có ước tính các khoản lỗ có thể xảy ra."
+  },
+  {
+    "instruction": "Giải thích cách Công ty xác định giá trị hàng tồn kho và dự phòng giảm giá hàng tồn kho.",
+    "input": "10",
+    "output": "Công ty ghi nhận hàng tồn kho ban đầu theo giá gốc, bao gồm giá mua, chi phí chế biến và các chi phí khác phát sinh để đưa hàng tồn kho đến địa điểm và trạng thái hiện tại. Sau ghi nhận ban đầu, tại ngày báo cáo, hàng tồn kho được trình bày theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được. Giá trị thuần có thể thực hiện được ước tính dựa trên giá bán của hàng tồn kho trừ đi chi phí ước tính để hoàn thành sản phẩm và chi phí ước tính cần thiết cho việc tiêu thụ chúng. Giá gốc hàng tồn kho được tính theo phương pháp bình quân gia quyền. Dự phòng giảm giá hàng tồn kho được lập vào cuối kỳ dựa trên phần chênh lệch giữa giá gốc của hàng tồn kho và giá trị thuần có thể thực hiện được của chúng."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không định giá lại công cụ tài chính theo giá trị hợp lý đến thông tin trên Báo cáo tài chính.",
+    "input": "10",
+    "output": "Việc Công ty không định giá lại tài sản tài chính và nợ phải trả tài chính theo giá trị hợp lý vào cuối kỳ kế toán có thể ảnh hưởng đến tính minh bạch và độ tin cậy của thông tin trên Báo cáo tài chính. Cụ thể, thông tin về giá trị thực của các công cụ tài chính có thể không được phản ánh kịp thời theo biến động thị trường, dẫn đến việc các nhà đầu tư và các bên liên quan khó đánh giá chính xác rủi ro thị trường và giá trị thực của các tài sản cũng như nghĩa vụ tài chính. Điều này có thể làm giảm khả năng so sánh báo cáo của Công ty với các đơn vị khác áp dụng chuẩn mực định giá theo giá trị hợp lý, và tiềm ẩn rủi ro về việc đánh giá sai lệch tình hình tài chính thực tế của Công ty."
+  },
+  {
+    "instruction": "Công ty áp dụng phương pháp khấu hao nào cho máy móc thiết bị liên quan trực tiếp đến sản xuất?",
+    "input": "11",
+    "output": "Công ty áp dụng phương pháp khấu hao theo sản lượng cho máy móc thiết bị liên quan trực tiếp đến sản xuất, bao gồm hệ thống dây chuyền cán thép, hệ thống cẩu trục, v.v."
+  },
+  {
+    "instruction": "Thời gian sử dụng hữu ích ước tính cho nhà cửa, vật kiến trúc là bao lâu?",
+    "input": "11",
+    "output": "Thời gian sử dụng hữu ích ước tính cho nhà cửa, vật kiến trúc là từ 05 đến 50 năm."
+  },
+  {
+    "instruction": "Các điều kiện nào cần được thỏa mãn để ghi nhận doanh thu từ bán hàng?",
+    "input": "11",
+    "output": "Các điều kiện cần được thỏa mãn để ghi nhận doanh thu từ bán hàng là: phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm, hàng hóa đã được chuyển giao cho người mua; và Công ty không còn nắm giữ quyền quản lý hàng hóa như chủ sở hữu hàng hóa, hoặc quyền kiểm soát hàng hóa."
+  },
+  {
+    "instruction": "Chi phí đi vay được ghi nhận vào chi phí hoạt động hay được vốn hóa trong trường hợp nào?",
+    "input": "11",
+    "output": "Chi phí đi vay được ghi nhận vào chi phí hoạt động trong kỳ. Tuy nhiên, nếu chi phí đi vay liên quan trực tiếp đến việc xây dựng hoặc sản xuất tài sản dở dang và đáp ứng đủ các điều kiện theo Chuẩn mực kế toán số 16 Chi phí đi vay, thì chi phí đó sẽ được vốn hóa vào giá gốc tài sản. Đối với các khoản vay phục vụ xây dựng tài sản cố định, bất động sản đầu tư, tiền lãi được vốn hóa ngay cả khi thời gian xây dựng dưới 12 tháng."
+  },
+  {
+    "instruction": "Phân tích cách Công ty xác định lãi cơ bản trên cổ phiếu.",
+    "input": "11",
+    "output": "Thông tin chi tiết về cách Công ty xác định lãi cơ bản trên cổ phiếu không có trong chunk này. Chunk 11 tập trung vào các chính sách kế toán khác như TSCĐ, thuê hoạt động, chi phí trả trước, các khoản phải trả, vay, chi phí đi vay, chi phí phải trả, dự phòng phải trả, vốn chủ sở hữu, doanh thu, giá vốn, chi phí tài chính, thuế TNDN, các bên liên quan, và thông tin bộ phận. Do đó, thông tin về xác định lãi cơ bản trên cổ phiếu không có trong dữ liệu này."
+  },
+  {
+    "instruction": "Giải thích định nghĩa về 'bên liên quan' theo chính sách kế toán của Công ty.",
+    "input": "11",
+    "output": "Theo chính sách kế toán của Công ty, các bên được coi là 'bên liên quan' nếu bên đó có khả năng kiểm soát hoặc ảnh hưởng đáng kể đến bên kia trong việc ra quyết định về các chính sách và hoạt động tài chính. Định nghĩa này bao gồm: các công ty (công ty mẹ, con, liên kết) có quyền kiểm soát hoặc thuộc quyền kiểm soát chung; các cá nhân nắm giữ quyền biểu quyết có ảnh hưởng đáng kể, nhân sự quản lý chủ chốt và thành viên thân thiết trong gia đình họ; và các doanh nghiệp mà các cá nhân này có ảnh hưởng đáng kể. Công ty xem xét bản chất của mối quan hệ hơn là hình thức pháp lý."
+  },
+  {
+    "instruction": "Đánh giá các trường hợp chi phí trả trước được phân bổ vào kết quả hoạt động kinh doanh.",
+    "input": "11",
+    "output": "Các chi phí trả trước được phân bổ vào kết quả hoạt động kinh doanh trong các kỳ kế toán tiếp theo khi chúng liên quan đến kết quả hoạt động của nhiều kỳ. Việc phân bổ được thực hiện dựa trên bản chất của chi phí và lựa chọn phương pháp, tiêu chí phân bổ hợp lý. Cụ thể:\n- **Công cụ, dụng cụ**: có nguyên giá dưới 30 triệu VND, được phân bổ theo phương pháp đường thẳng trong thời gian từ 03 đến 36 tháng.\n- **Chi phí vật liệu phụ dùng cho sản xuất**: được phân bổ theo định mức tiêu hao kỹ thuật và kinh tế.\n- **Các chi phí trả trước khác**: được ghi nhận theo giá gốc và phân bổ theo phương pháp đường thẳng theo các phương pháp và tiêu chí phân bổ hợp lý.\nViệc này giúp Công ty phản ánh chính xác chi phí vào đúng kỳ mà lợi ích kinh tế của chúng được tiêu thụ."
+  },
+  {
+    "instruction": "Tổng tiền và các khoản tương đương tiền tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "12",
+    "output": "Tổng tiền và các khoản tương đương tiền tại ngày 30 tháng 6 năm 2025 là 439.403.363 VND."
+  },
+  {
+    "instruction": "Khoản phải thu ngắn hạn của khách hàng từ các bên liên quan tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "12",
+    "output": "Khoản phải thu ngắn hạn của khách hàng từ các bên liên quan tại ngày 30 tháng 6 năm 2025 là 460.794.242.875 VND."
+  },
+  {
+    "instruction": "Giá trị hàng tồn kho cuối kỳ là bao nhiêu VND?",
+    "input": "12",
+    "output": "Giá trị hàng tồn kho cuối kỳ (tại 30/06/2025) là 30.904.193.354 VND."
+  },
+  {
+    "instruction": "So sánh giá trị phải thu ngắn hạn của khách hàng giữa ngày 30/06/2025 và 01/01/2025.",
+    "input": "12",
+    "output": "Giá trị phải thu ngắn hạn của khách hàng đã giảm từ 571.589.187.601 VND tại ngày 01/01/2025 xuống còn 460.968.523.828 VND tại ngày 30/06/2025. Sự giảm này tương đương 110.620.663.773 VND."
+  },
+  {
+    "instruction": "Các khoản phải thu khó đòi có được dự phòng đầy đủ không?",
+    "input": "12",
+    "output": "Có, các khoản phải thu khó đòi có vẻ đã được dự phòng đầy đủ. Tại ngày 30/06/2025, tổng nguyên giá của nợ phải thu khó đòi là 174.280.953 VND, và khoản dự phòng tương ứng trong phải thu ngắn hạn của khách hàng cũng là 174.280.953 VND (cho mục Khách hàng khác). Cột \"Giá trị có thể thu hồi\" của nợ phải thu khó đòi là '-', cho thấy toàn bộ các khoản này đã được dự phòng."
+  },
+  {
+    "instruction": "Phân tích biến động của hàng tồn kho và ảnh hưởng của nó đến hoạt động kinh doanh của Công ty.",
+    "input": "12",
+    "output": "Hàng tồn kho của Công ty giảm từ 32.483.062.090 VND tại 01/01/2025 xuống còn 30.904.193.354 VND tại 30/06/2025, tức là giảm khoảng 1,58 tỷ VND. Sự biến động này chủ yếu nằm ở nguyên vật liệu và công cụ, dụng cụ. Việc giảm hàng tồn kho có thể cho thấy hiệu quả trong quản lý hàng tồn kho, giảm chi phí lưu kho và nguy cơ lỗi thời. Mặt khác, nếu mức giảm này quá nhanh hoặc do nhu cầu sản xuất cao hơn, nó có thể tiềm ẩn rủi ro thiếu hụt nguyên vật liệu cho hoạt động sản xuất trong tương lai. Tuy nhiên, sự xuất hiện của chi phí sản xuất kinh doanh dở dang tại cuối kỳ cho thấy hoạt động sản xuất vẫn đang được duy trì."
+  },
+  {
+    "instruction": "Đánh giá rủi ro tín dụng của Công ty dựa trên cơ cấu các khoản phải thu.",
+    "input": "12",
+    "output": "Dựa trên cơ cấu các khoản phải thu, Công ty có rủi ro tín dụng rất cao do sự tập trung đáng kể vào một bên liên quan. Khoản phải thu ngắn hạn của khách hàng từ các bên liên quan, đặc biệt là Tổng Công ty Cổ phần Gang thép Thái Nguyên, chiếm tới 460.794.242.875 VND trên tổng số 460.968.523.828 VND tại ngày 30/06/2025. Sự phụ thuộc gần như hoàn toàn vào một khách hàng duy nhất tạo ra rủi ro tín dụng tập trung nghiêm trọng. Nếu bên liên quan này gặp khó khăn tài chính hoặc thay đổi chính sách thanh toán, Công ty sẽ chịu ảnh hưởng rất lớn đến dòng tiền và khả năng thu hồi công nợ. Mặc dù các khoản phải thu khó đòi khác đã được dự phòng đầy đủ, nhưng quy mô của khoản phải thu từ bên liên quan không có dự phòng cụ thể, làm tăng tính dễ tổn thương của Công ty."
+  },
+  {
+    "instruction": "Tổng nguyên giá tài sản cố định hữu hình tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "13",
+    "output": "Tổng nguyên giá tài sản cố định hữu hình tại ngày 30 tháng 6 năm 2025 là 1.258.876.499.603 VND."
+  },
+  {
+    "instruction": "Khoản mục tài sản cố định hữu hình nào có giá trị còn lại lớn nhất tại ngày 30 tháng 6 năm 2025?",
+    "input": "13",
+    "output": "Khoản mục tài sản cố định hữu hình có giá trị còn lại lớn nhất tại ngày 30 tháng 6 năm 2025 là Máy móc, thiết bị với 421.083.810.232 VND."
+  },
+  {
+    "instruction": "Giá trị tài sản cố định hữu hình được mua sắm trong kỳ là bao nhiêu VND?",
+    "input": "13",
+    "output": "Giá trị tài sản cố định hữu hình được mua sắm trong kỳ là 264.554.000 VND."
+  },
+  {
+    "instruction": "So sánh khấu hao lũy kế của máy móc, thiết bị giữa số dư đầu kỳ và cuối kỳ.",
+    "input": "13",
+    "output": "Khấu hao lũy kế của máy móc, thiết bị tăng từ 449.938.849.674 VND tại số dư đầu kỳ lên 475.993.722.374 VND tại số dư cuối kỳ. Mức tăng trong kỳ là 26.054.872.700 VND."
+  },
+  {
+    "instruction": "Tổng giá trị tài sản cố định hữu hình được dùng làm tài sản thế chấp là bao nhiêu VND?",
+    "input": "13",
+    "output": "Tổng giá trị còn lại của tài sản cố định hữu hình được dùng làm tài sản thế chấp cho các khoản vay tại cuối kỳ là 621.279.542.472 VND."
+  },
+  {
+    "instruction": "Đánh giá mức độ đầu tư và thoái vốn vào tài sản cố định hữu hình trong kỳ.",
+    "input": "13",
+    "output": "Trong kỳ, Công ty đã có một khoản đầu tư nhỏ vào tài sản cố định hữu hình thông qua mua sắm trị giá 264.554.000 VND (chủ yếu là máy móc, thiết bị). Đồng thời, có hoạt động thoái vốn thông qua thanh lý, nhượng bán thiết bị quản lý trị giá 110.096.320 VND. Khấu hao trong kỳ là 34.961.777.288 VND. Mức đầu tư ròng (mua sắm trừ thanh lý) là rất thấp so với tổng quy mô tài sản và khấu hao, cho thấy Công ty chủ yếu đang duy trì và khấu hao tài sản hiện có, ít có sự mở rộng đáng kể hoặc thay thế tài sản lớn trong 6 tháng đầu năm 2025."
+  },
+  {
+    "instruction": "Phân tích ý nghĩa của việc có tài sản cố định đã khấu hao hết nhưng vẫn còn sử dụng.",
+    "input": "13",
+    "output": "Việc Công ty có tài sản cố định hữu hình đã khấu hao hết (nguyên giá 21.637.514.206 VND) nhưng vẫn đang được sử dụng có hai ý nghĩa chính. Một mặt, nó cho thấy Công ty đang khai thác tối đa tuổi thọ hữu ích của tài sản, có thể giúp giảm chi phí đầu tư mới và tối ưu hóa hiệu quả sử dụng vốn. Điều này có thể dẫn đến việc giảm chi phí khấu hao trong báo cáo kết quả kinh doanh. Mặt khác, nó cũng tiềm ẩn rủi ro về hiệu suất và công nghệ. Các tài sản cũ có thể kém hiệu quả hơn, tiêu tốn nhiều năng lượng hơn, dễ hỏng hóc hơn, hoặc không đáp ứng các tiêu chuẩn sản xuất hiện đại, có thể làm tăng chi phí bảo trì và ảnh hưởng đến năng lực cạnh tranh trong dài hạn."
+  },
+  {
+    "instruction": "Nguyên giá của tài sản cố định vô hình là bao nhiêu VND?",
+    "input": "14",
+    "output": "Nguyên giá của tài sản cố định vô hình là 596.000.000 VND."
+  },
+  {
+    "instruction": "Khấu hao lũy kế của tài sản cố định vô hình tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "14",
+    "output": "Khấu hao lũy kế của tài sản cố định vô hình tại ngày 30 tháng 6 năm 2025 là 253.292.487 VND."
+  },
+  {
+    "instruction": "Tổng chi phí trả trước ngắn hạn cuối kỳ là bao nhiêu VND?",
+    "input": "14",
+    "output": "Tổng chi phí trả trước ngắn hạn cuối kỳ (tại 30/06/2025) là 1.721.766.659 VND."
+  },
+  {
+    "instruction": "So sánh tổng chi phí trả trước dài hạn giữa ngày 30/06/2025 và 01/01/2025.",
+    "input": "14",
+    "output": "Tổng chi phí trả trước dài hạn tại ngày 30/06/2025 là 24.120.771.082 VND, tăng so với 23.468.127.219 VND tại ngày 01/01/2025. Mức tăng là 652.643.863 VND."
+  },
+  {
+    "instruction": "Nêu ví dụ về vật liệu phụ dùng cho sản xuất của Công ty.",
+    "input": "14",
+    "output": "Ví dụ về vật liệu phụ dùng cho sản xuất của Công ty là trục cán, con lăn và lưỡi cắt."
+  },
+  {
+    "instruction": "Phân tích sự biến động của các khoản chi phí trả trước ngắn hạn và dài hạn, có ý nghĩa gì đối với hoạt động của Công ty?",
+    "input": "14",
+    "output": "Sự biến động của các khoản chi phí trả trước ngắn hạn và dài hạn có ý nghĩa khác nhau đối với hoạt động của Công ty. Chi phí trả trước ngắn hạn giảm đáng kể từ 2.412.561.477 VND xuống 1.721.766.659 VND, chủ yếu do giảm phụ tùng thay thế, vật liệu sửa chữa và phí bảo hiểm. Điều này có thể cho thấy việc sử dụng hoặc phân bổ nhanh hơn các chi phí này, hoặc giảm mua sắm. Ngược lại, chi phí trả trước dài hạn tăng từ 23.468.127.219 VND lên 24.120.771.082 VND, chủ yếu do sự gia tăng của vật liệu phụ dùng cho sản xuất. Việc tăng chi phí trả trước dài hạn này có thể phản ánh một sự đầu tư vào nguyên vật liệu quan trọng cho hoạt động sản xuất cốt lõi trong tương lai hoặc một sự thay đổi trong chu kỳ mua sắm để đảm bảo nguồn cung. Nhìn chung, sự giảm ở các khoản ngắn hạn có thể giúp cải thiện dòng tiền trong ngắn hạn, trong khi sự tăng ở các khoản dài hạn, đặc biệt là vật liệu phụ, cho thấy Công ty vẫn đang duy trì và đầu tư cho hoạt động sản xuất chính."
+  },
+  {
+    "instruction": "Đánh giá mức độ hiệu quả của việc phân bổ chi phí trả trước dài hạn dựa trên thông tin được cung cấp.",
+    "input": "14",
+    "output": "Dựa trên thông tin được cung cấp, Công ty phân bổ chi phí trả trước dài hạn, bao gồm vật liệu phụ dùng cho sản xuất (như trục cán, con lăn, lưỡi cắt) trong thời gian trên 12 tháng. Phương pháp phân bổ này, cùng với việc áp dụng phương pháp đường thẳng cho các chi phí trả trước khác, cho thấy một cách tiếp cận có hệ thống và phù hợp với nguyên tắc kế toán về phù hợp giữa chi phí và doanh thu. Tuy nhiên, để đánh giá mức độ hiệu quả chi tiết, cần có thêm thông tin về các 'phương pháp và tiêu chí phân bổ hợp lý' được áp dụng, cũng như sự so sánh giữa thời gian phân bổ ước tính và tuổi thọ thực tế của các tài sản/chi phí này. Hiện tại, thông tin cho thấy Công ty có một khuôn khổ để phân bổ, nhưng không đủ để đưa ra kết luận sâu về tối ưu hóa chi phí."
+  },
+  {
+    "instruction": "Tổng phải trả người bán ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "15",
+    "output": "Tổng phải trả người bán ngắn hạn tại ngày 30 tháng 6 năm 2025 là 548.410.549.587 VND."
+  },
+  {
+    "instruction": "Khoản phải trả người bán ngắn hạn cho các bên liên quan là bao nhiêu VND tại cuối kỳ?",
+    "input": "15",
+    "output": "Khoản phải trả người bán ngắn hạn cho các bên liên quan là 521.041.339.998 VND tại cuối kỳ (30/06/2025)."
+  },
+  {
+    "instruction": "Tổng thuế và các khoản phải nộp nhà nước cuối kỳ là bao nhiêu VND?",
+    "input": "15",
+    "output": "Tổng thuế và các khoản phải nộp nhà nước cuối kỳ (tại 30/06/2025) là 8.306.681.819 VND."
+  },
+  {
+    "instruction": "Khoản thuế nào có số dư phải trả cuối kỳ lớn nhất?",
+    "input": "15",
+    "output": "Khoản thuế có số dư phải trả cuối kỳ lớn nhất là Thuế GTGT với 7.600.591.144 VND."
+  },
+  {
+    "instruction": "So sánh khoản phải trả người bán ngắn hạn giữa các bên liên quan và các bên khác.",
+    "input": "15",
+    "output": "Khoản phải trả người bán ngắn hạn cho các bên liên quan là 521.041.339.998 VND tại 30/06/2025, trong khi khoản phải trả người bán ngắn hạn cho các bên khác là 27.369.209.589 VND. Như vậy, khoản phải trả cho các bên liên quan lớn hơn rất nhiều (gấp khoảng 19 lần) so với các bên khác."
+  },
+  {
+    "instruction": "Phân tích rủi ro tiềm ẩn liên quan đến các khoản quyết toán thuế của Công ty.",
+    "input": "15",
+    "output": "Công ty lưu ý rằng các khoản quyết toán thuế có thể bị kiểm tra bởi các cơ quan thuế và việc áp dụng các luật và quy định về thuế có thể bị diễn giải khác nhau. Rủi ro tiềm ẩn ở đây là các số liệu đã báo cáo có thể thay đổi sau khi có quyết định cuối cùng của cơ quan thuế. Điều này có thể dẫn đến việc Công ty phải đối mặt với các khoản truy thu thuế, tiền phạt hoặc lãi chậm nộp, ảnh hưởng tiêu cực đến dòng tiền, lợi nhuận và uy tín. Việc này cũng tạo ra sự không chắc chắn trong việc dự báo nghĩa vụ thuế trong tương lai."
+  },
+  {
+    "instruction": "Đánh giá sự biến động của Thuế GTGT và Thuế TNDN từ đầu kỳ đến cuối kỳ.",
+    "input": "15",
+    "output": "Đối với Thuế GTGT, số dư phải trả giảm từ 9.206.731.152 VND (đầu kỳ) xuống 7.600.591.144 VND (cuối kỳ). Trong kỳ, phát sinh 8.731.937.384 VND và đã nộp 10.338.077.392 VND. Đối với Thuế TNDN, số dư phải trả giảm từ 3.531.867.721 VND (đầu kỳ) xuống 513.480.287 VND (cuối kỳ). Trong kỳ, phát sinh 513.480.287 VND và đã nộp 3.531.867.721 VND. Nhìn chung, cả hai loại thuế đều cho thấy Công ty đã chủ động thanh toán các nghĩa vụ thuế hiện hành và từ kỳ trước, dẫn đến giảm đáng kể số dư phải trả cuối kỳ, đặc biệt là Thuế TNDN. Điều này phản ánh việc tuân thủ và quản lý tốt nghĩa vụ thuế trong kỳ báo cáo."
+  },
+  {
+    "instruction": "Tổng chi phí phải trả ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "16",
+    "output": "Tổng chi phí phải trả ngắn hạn tại ngày 30 tháng 6 năm 2025 là 315.918.619 VND."
+  },
+  {
+    "instruction": "Vay và nợ thuê tài chính ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "16",
+    "output": "Vay và nợ thuê tài chính ngắn hạn tại ngày 30 tháng 6 năm 2025 là 272.148.596.482 VND."
+  },
+  {
+    "instruction": "Các khoản phải trả ngắn hạn khác có sự thay đổi như thế nào từ đầu năm đến cuối quý 2 năm 2025?",
+    "input": "16",
+    "output": "Các khoản phải trả ngắn hạn khác tăng từ 244.640.919 VND tại ngày 01/01/2025 lên 417.258.301 VND tại ngày 30/06/2025, tức là tăng 172.617.382 VND."
+  },
+  {
+    "instruction": "So sánh tổng số dư đầu kỳ của vay và nợ thuê tài chính với số dư cuối kỳ.",
+    "input": "16",
+    "output": "Tổng số dư đầu kỳ của vay và nợ thuê tài chính là 412.439.220.324 VND, trong khi số dư cuối kỳ là 296.371.883.539 VND. Tổng vay và nợ thuê tài chính đã giảm 116.067.336.785 VND trong kỳ."
+  },
+  {
+    "instruction": "Phân tích sự tăng giảm của vay ngắn hạn và ảnh hưởng của nó đến tình hình tài chính của Công ty.",
+    "input": "16",
+    "output": "Vay ngắn hạn của Công ty đã giảm từ 330.215.933.267 VND tại đầu kỳ xuống 272.148.596.482 VND tại cuối kỳ. Trong kỳ, Công ty đã thu từ đi vay 343.750.623.392 VND nhưng đã chi trả nợ gốc vay lớn hơn nhiều, lên tới 401.817.960.177 VND. Sự giảm ròng này (hơn 58 tỷ VND) cho thấy Công ty đang tích cực giảm bớt gánh nặng nợ ngắn hạn, hoặc gặp khó khăn trong việc tái tài trợ các khoản vay đến hạn. Mặc dù giảm nợ có thể là tín hiệu tích cực về quản lý rủi ro, nhưng việc chi trả nợ gốc vay vượt xa tiền thu từ đi vay tạo áp lực lớn lên dòng tiền của Công ty, đặc biệt nếu nguồn tiền từ hoạt động kinh doanh không đủ để bù đắp, có thể ảnh hưởng đến khả năng thanh khoản."
+  },
+  {
+    "instruction": "Đánh giá mức độ phụ thuộc của Công ty vào vay ngắn hạn so với vay dài hạn.",
+    "input": "16",
+    "output": "Dựa trên thông tin, Công ty vẫn phụ thuộc rất lớn vào vay ngắn hạn. Tại ngày 30/06/2025, vay ngắn hạn chiếm 272.148.596.482 VND trong tổng nợ vay, trong khi phần nợ dài hạn đến hạn trả chỉ là 24.223.287.057 VND. Điều này cho thấy phần lớn nghĩa vụ nợ của Công ty là ngắn hạn, đòi hỏi Công ty phải có khả năng tạo ra dòng tiền mạnh mẽ hoặc liên tục tái tài trợ để đáp ứng các nghĩa vụ thanh toán trong thời gian ngắn. Mức độ phụ thuộc cao vào vay ngắn hạn làm tăng rủi ro thanh khoản và dễ bị ảnh hưởng bởi biến động lãi suất hoặc khả năng tiếp cận tín dụng ngắn hạn."
+  },
+  {
+    "instruction": "Dự phòng phải trả ngắn hạn tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "17",
+    "output": "Dự phòng phải trả ngắn hạn tại ngày 30 tháng 6 năm 2025 là 500.000.000 VND, dành cho chi phí sửa chữa tài sản cố định."
+  },
+  {
+    "instruction": "Tổng vốn chủ sở hữu cuối kỳ này là bao nhiêu VND?",
+    "input": "17",
+    "output": "Tổng vốn chủ sở hữu cuối kỳ này (30/06/2025) là 306.897.197.434 VND."
+  },
+  {
+    "instruction": "Công ty mẹ của Công ty Cổ phần Cán thép Thái Trung là ai và tỷ lệ sở hữu là bao nhiêu?",
+    "input": "17",
+    "output": "Công ty mẹ của Công ty Cổ phần Cán thép Thái Trung là Tổng Công ty Cổ phần Gang thép Thái Nguyên, với tỷ lệ sở hữu 93,68%."
+  },
+  {
+    "instruction": "Giá trị lợi nhuận giữ lại đã điều chỉnh đầu kỳ hiện tại là bao nhiêu VND?",
+    "input": "17",
+    "output": "Giá trị lợi nhuận giữ lại đã điều chỉnh đầu kỳ hiện tại là -202.740.135.422 VND."
+  },
+  {
+    "instruction": "Số lượng cổ phiếu phổ thông đang lưu hành của Công ty là bao nhiêu?",
+    "input": "17",
+    "output": "Số lượng cổ phiếu phổ thông đang lưu hành của Công ty là 50.800.000 cổ phiếu."
+  },
+  {
+    "instruction": "Phân tích các điều chỉnh hồi tố thuế TNDN và GTGT đã ảnh hưởng đến lợi nhuận giữ lại trong quá khứ như thế nào?",
+    "input": "17",
+    "output": "Các điều chỉnh hồi tố chi phí thuế TNDN và GTGT trong các năm 2021, 2022 và 2023 đã ảnh hưởng tiêu cực đến lợi nhuận giữ lại trong quá khứ của Công ty. Cụ thể, việc ghi nhận bổ sung các khoản chi phí thuế này (tổng cộng 700.756.734 VND) đã làm tăng chi phí và giảm lợi nhuận ròng của các kỳ tương ứng. Kết quả là lợi nhuận giữ lại đã điều chỉnh lũy kế đến cuối kỳ trước đã giảm từ -213.262.148.025 VND (số liệu cũ) xuống -213.962.904.759 VND (số liệu đã điều chỉnh), và ảnh hưởng tương tự đến lợi nhuận giữ lại đầu kỳ hiện tại. Điều này làm sâu sắc thêm tình trạng lỗ lũy kế của Công ty và có thể làm giảm nguồn vốn tự có để tái đầu tư hoặc bù đắp các khoản lỗ khác."
+  },
+  {
+    "instruction": "Đánh giá mức độ tập trung sở hữu vốn của Công ty dựa trên chi tiết vốn đầu tư của chủ sở hữu.",
+    "input": "17",
+    "output": "Mức độ tập trung sở hữu vốn của Công ty là cực kỳ cao. Tổng Công ty Cổ phần Gang thép Thái Nguyên chiếm tới 93,68% tổng vốn đầu tư của chủ sở hữu. Công ty TNHH Thương mại và Xây dựng Hà Nam chiếm 4,77% và các cổ đông khác chỉ chiếm 1,55%. Điều này cho thấy Tổng Công ty Cổ phần Gang thép Thái Nguyên có quyền kiểm soát tuyệt đối Công ty Cổ phần Cán thép Thái Trung. Mức độ tập trung sở hữu cao có thể mang lại sự ổn định trong quản trị và ra quyết định, nhưng cũng tiềm ẩn rủi ro về xung đột lợi ích và giảm khả năng bảo vệ quyền lợi của các cổ đông thiểu số."
+  },
+  {
+    "instruction": "Công ty thuê đất để làm gì và thời hạn thuê là bao lâu?",
+    "input": "18",
+    "output": "Công ty đã ký hợp đồng thuê đất với Sở Tài nguyên và Môi trường tỉnh Thái Nguyên cho một thửa đất thuộc phường Cam Giá, thành phố Thái Nguyên cho mục đích sản xuất kinh doanh. Thời hạn thuê là 49 năm, từ năm 2008 đến năm 2057."
+  },
+  {
+    "instruction": "Số lượng phôi thép nhận giữ hộ tại ngày 30 tháng 6 năm 2025 là bao nhiêu tấn?",
+    "input": "18",
+    "output": "Số lượng phôi thép nhận giữ hộ tại ngày 30 tháng 6 năm 2025 là 28.249,197 tấn."
+  },
+  {
+    "instruction": "Tổng doanh thu từ bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "18",
+    "output": "Tổng doanh thu từ bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là 3.127.945.686.875 VND."
+  },
+  {
+    "instruction": "Doanh thu từ các bên liên quan chiếm bao nhiêu phần trăm tổng doanh thu trong 6 tháng đầu năm 2025?",
+    "input": "18",
+    "output": "Doanh thu từ các bên liên quan chiếm 100% tổng doanh thu từ bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 (3.127.945.686.875 VND từ Tổng Công ty Cổ phần Gang thép Thái Nguyên trên tổng doanh thu 3.127.945.686.875 VND)."
+  },
+  {
+    "instruction": "So sánh chi phí tài chính giữa 6 tháng đầu năm 2025 và 2024.",
+    "input": "18",
+    "output": "Chi phí tài chính trong 6 tháng đầu năm 2025 là 11.647.431.591 VND, thấp hơn so với 16.738.080.840 VND trong 6 tháng đầu năm 2024. Chi phí tài chính đã giảm khoảng 5,09 tỷ VND."
+  },
+  {
+    "instruction": "Đánh giá mức độ phụ thuộc của Công ty vào giao dịch với các bên liên quan dựa trên doanh thu và giá vốn hàng bán.",
+    "input": "18",
+    "output": "Mức độ phụ thuộc của Công ty vào giao dịch với các bên liên quan là cực kỳ cao. Doanh thu từ các bên liên quan (đặc biệt là Tổng Công ty Cổ phần Gang thép Thái Nguyên) chiếm 100% tổng doanh thu bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025. Tương tự, phần lớn giá vốn hàng bán cũng là mua từ bên liên quan (2.897.665.467.204 VND). Sự phụ thuộc gần như tuyệt đối này tạo ra rủi ro tập trung rất lớn. Hoạt động kinh doanh của Công ty sẽ bị ảnh hưởng nghiêm trọng bởi bất kỳ thay đổi nào trong chính sách hoặc tình hình tài chính của bên liên quan này, làm tăng tính dễ tổn thương và thiếu đa dạng hóa đối tác kinh doanh."
+  },
+  {
+    "instruction": "Phân tích tác động của việc giảm lãi tiền vay đến kết quả hoạt động tài chính của Công ty.",
+    "input": "18",
+    "output": "Việc giảm lãi tiền vay từ 16.677.489.847 VND trong 6 tháng đầu năm 2024 xuống còn 11.647.431.591 VND trong 6 tháng đầu năm 2025 có tác động tích cực đáng kể đến kết quả hoạt động tài chính của Công ty. Lãi tiền vay là một khoản mục chính trong chi phí tài chính, do đó, sự giảm này trực tiếp làm giảm tổng chi phí tài chính và góp phần cải thiện lợi nhuận thuần từ hoạt động kinh doanh. Mức giảm hơn 5 tỷ VND chi phí lãi vay đã giúp Công ty tiết kiệm một khoản đáng kể, đặc biệt trong bối cảnh lợi nhuận gộp có xu hướng giảm, giúp hạn chế sự suy giảm lợi nhuận tổng thể."
+  },
+  {
+    "instruction": "Tổng chi phí bán hàng trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "19",
+    "output": "Tổng chi phí bán hàng trong 6 tháng đầu năm 2025 là 143.667.462 VND."
+  },
+  {
+    "instruction": "Khoản mục nào có chi phí quản lý doanh nghiệp lớn nhất trong 6 tháng đầu năm 2025?",
+    "input": "19",
+    "output": "Khoản mục có chi phí quản lý doanh nghiệp lớn nhất trong 6 tháng đầu năm 2025 là Chi phí nhân công với 3.006.898.246 VND."
+  },
+  {
+    "instruction": "Chi phí khác tăng hay giảm trong 6 tháng đầu năm 2025 so với cùng kỳ năm trước?",
+    "input": "19",
+    "output": "Chi phí khác tăng đáng kể trong 6 tháng đầu năm 2025 (381.969.760 VND) so với cùng kỳ năm trước (22.599.943 VND)."
+  },
+  {
+    "instruction": "Nêu các nguồn thu nhập khác của Công ty trong 6 tháng đầu năm 2024.",
+    "input": "19",
+    "output": "Các nguồn thu nhập khác của Công ty trong 6 tháng đầu năm 2024 bao gồm: Lãi từ thanh lý, nhượng bán tài sản cố định (337.500 VND), Thu nhập giảm tiền thuê đất năm 2023 theo quy định (74.727.517 VND), Thu nhập từ thu hồi phế liệu thép (426.495.000 VND), và các khoản khác (70.226.546 VND)."
+  },
+  {
+    "instruction": "Phân tích nguyên nhân và tác động của sự tăng đáng kể của khoản 'Tiền phạt' trong chi phí khác.",
+    "input": "19",
+    "output": "Khoản \"Tiền phạt\" trong chi phí khác đã tăng đột biến từ 428.943 VND trong 6 tháng đầu năm 2024 lên 371.589.760 VND trong 6 tháng đầu năm 2025. Nguyên nhân có thể do Công ty vi phạm các quy định pháp luật, hợp đồng hoặc các quy định khác dẫn đến bị xử phạt. Tác động của sự tăng này là rất tiêu cực: nó trực tiếp làm tăng chi phí hoạt động, khiến lợi nhuận khác chuyển từ dương sang âm, và cuối cùng làm giảm tổng lợi nhuận kế toán trước thuế. Khoản tiền phạt lớn này cũng có thể là dấu hiệu của các vấn đề trong tuân thủ hoặc quản lý hoạt động, có thể ảnh hưởng đến uy tín và các mối quan hệ của Công ty."
+  },
+  {
+    "instruction": "So sánh cơ cấu chi phí quản lý doanh nghiệp giữa hai kỳ để nhận xét về hiệu quả hoạt động.",
+    "input": "19",
+    "output": "Khi so sánh cơ cấu chi phí quản lý doanh nghiệp giữa hai kỳ, tổng chi phí quản lý tăng nhẹ từ 6.296.631.601 VND (2024) lên 6.588.602.132 VND (2025). Mặc dù chi phí nhân công tăng đáng kể (từ 2.580.043.609 VND lên 3.006.898.246 VND), Công ty đã kiểm soát và giảm được chi phí dịch vụ thuê ngoài (từ 978.293.250 VND xuống 911.878.188 VND) và các chi phí khác bằng tiền (từ 1.800.896.179 VND xuống 1.567.140.507 VND). Điều này cho thấy Công ty có nỗ lực trong việc tối ưu hóa và kiểm soát các khoản mục chi phí khác để bù đắp cho sự gia tăng của chi phí nhân công, phản ánh một mức độ hiệu quả nhất định trong quản lý chi phí hành chính."
+  },
+  {
+    "instruction": "Thu nhập chịu thuế của Công ty trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "20",
+    "output": "Thu nhập chịu thuế của Công ty trong 6 tháng đầu năm 2025 là 2.567.401.436 VND."
+  },
+  {
+    "instruction": "Lãi cơ bản trên cổ phiếu trong 6 tháng đầu năm 2025 là bao nhiêu?",
+    "input": "20",
+    "output": "Lãi cơ bản trên cổ phiếu trong 6 tháng đầu năm 2025 là 32 VND."
+  },
+  {
+    "instruction": "Tổng chi phí sản xuất kinh doanh theo khoản mục trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "20",
+    "output": "Tổng chi phí sản xuất kinh doanh theo khoản mục trong 6 tháng đầu năm 2025 là 3.113.794.323.824 VND."
+  },
+  {
+    "instruction": "Chi phí lãi vay không được khấu trừ vượt 30% EBITDA của năm 2023 là bao nhiêu VND?",
+    "input": "20",
+    "output": "Chi phí lãi vay không được khấu trừ vượt 30% EBITDA của năm 2023 là 11.175.152.287 VND."
+  },
+  {
+    "instruction": "Tại sao Công ty không ghi nhận tài sản thuế thu nhập hoãn lại liên quan đến chi phí lãi vay không được khấu trừ?",
+    "input": "20",
+    "output": "Công ty không ghi nhận tài sản thuế thu nhập hoãn lại liên quan đến chi phí lãi vay không được khấu trừ vì Hội đồng quản trị đánh giá rằng khả năng Công ty có thể chuyển các chi phí lãi vay không được khấu trừ này sang các năm tiếp theo là không chắc chắn."
+  },
+  {
+    "instruction": "Phân tích tác động của các khoản chi phí không được khấu trừ đến chi phí thuế TNDN hiện hành của Công ty.",
+    "input": "20",
+    "output": "Các khoản chi phí không được khấu trừ có tác động tiêu cực đến chi phí thuế TNDN hiện hành của Công ty. Trong 6 tháng đầu năm 2025, Công ty có lợi nhuận trước thuế là 2.150.811.676 VND, nhưng do có khoản chi phí không được khấu trừ (416.589.760 VND), thu nhập chịu thuế đã tăng lên 2.567.401.436 VND. Điều này dẫn đến việc Công ty phải nộp một khoản thuế TNDN hiện hành cao hơn (513.480.287 VND) so với mức có thể có nếu tất cả chi phí đều được khấu trừ. Tác động là làm giảm lợi nhuận sau thuế của Công ty và ảnh hưởng đến dòng tiền dùng để nộp thuế."
+  },
+  {
+    "instruction": "Đánh giá khả năng Công ty bù trừ các khoản chi phí lãi vay không được khấu trừ vào thu nhập chịu thuế trong tương lai.",
+    "input": "20",
+    "output": "Khả năng Công ty bù trừ các khoản chi phí lãi vay không được khấu trừ vào thu nhập chịu thuế trong tương lai là không chắc chắn theo đánh giá của Hội đồng quản trị. Công ty đã có các khoản chi phí lãi vay không được khấu trừ lũy kế từ năm 2021 đến 2024 (tổng cộng hơn 31 tỷ VND). Mặc dù các khoản này có thể được chuyển sang tối đa 05 năm liên tiếp, nhưng sự không chắc chắn từ phía Hội đồng quản trị cho thấy có thể Công ty lo ngại về khả năng tạo ra đủ lợi nhuận chịu thuế trong tương lai để sử dụng hết các khoản bù trừ này, hoặc có thể có rủi ro từ việc kiểm tra và phê duyệt của cơ quan thuế. Nếu không thể bù trừ, các khoản chi phí này sẽ trở thành chi phí thực tế không được giảm trừ thuế, tiếp tục ảnh hưởng tiêu cực đến hiệu quả tài chính của Công ty."
+  },
+  {
+    "instruction": "So sánh cơ cấu chi phí sản xuất kinh doanh theo khoản mục giữa hai kỳ, nhận xét về sự thay đổi.",
+    "input": "20",
+    "output": "Khi so sánh cơ cấu chi phí sản xuất kinh doanh giữa hai kỳ, tổng chi phí sản xuất kinh doanh tăng đáng kể từ 2.591.762.221.809 VND (2024) lên 3.113.794.323.824 VND (2025). Sự thay đổi đáng chú ý nhất là:\n- **Nguyên vật liệu**: Tăng mạnh từ 2.527.619.139.787 VND lên 3.048.277.894.377 VND, phản ánh sự gia tăng trong hoạt động sản xuất hoặc giá nguyên vật liệu.\n- **Chi phí dịch vụ thuê ngoài**: Giảm mạnh từ 11.712.528.152 VND xuống 3.781.908.451 VND, cho thấy Công ty đã giảm đáng kể việc sử dụng dịch vụ bên ngoài hoặc đã chuyển đổi phương thức thực hiện.\n- **Chi phí nhân công và Khấu hao**: Có sự tăng nhẹ, phù hợp với sự phát triển và khấu hao tài sản.\n\nNhận xét: Cơ cấu chi phí cho thấy Công ty đang mở rộng hoạt động sản xuất hoặc chịu chi phí nguyên vật liệu cao hơn, nhưng đồng thời cũng đang nỗ lực tối ưu hóa chi phí bằng cách giảm chi phí dịch vụ thuê ngoài. Mặc dù tổng chi phí tăng, nhưng sự thay đổi trong cấu trúc cho thấy Công ty đang có những điều chỉnh trong quản lý hoạt động để thích ứng với tình hình kinh doanh."
+  },
+  {
+    "instruction": "Nêu ba loại rủi ro tài chính chính mà Công ty phải đối mặt.",
+    "input": "21",
+    "output": "Ba loại rủi ro tài chính chính mà Công ty phải đối mặt là rủi ro thị trường, rủi ro tín dụng và rủi ro thanh khoản."
+  },
+  {
+    "instruction": "Giá trị các khoản phải thu thương mại, phải thu khác tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "21",
+    "output": "Giá trị các khoản phải thu thương mại, phải thu khác tại ngày 30 tháng 6 năm 2025 là 461.053.048.890 VND."
+  },
+  {
+    "instruction": "Tổng các khoản vay và nợ có kỳ hạn đến 1 năm tại ngày 30 tháng 6 năm 2025 là bao nhiêu VND?",
+    "input": "21",
+    "output": "Tổng các khoản vay và nợ có kỳ hạn đến 1 năm tại ngày 30 tháng 6 năm 2025 là 272.148.596.482 VND."
+  },
+  {
+    "instruction": "Công ty quản lý rủi ro lãi suất bằng cách nào?",
+    "input": "21",
+    "output": "Công ty quản lý rủi ro lãi suất bằng cách phân tích tình hình cạnh tranh thị trường để đạt được lãi suất có lợi cho mục đích hoạt động, đặc biệt đối với các khoản tiền gửi, các khoản vay và nợ phải chịu lãi suất thả nổi."
+  },
+  {
+    "instruction": "So sánh tổng tài sản tài chính có kỳ hạn đến 1 năm giữa hai thời điểm báo cáo.",
+    "input": "21",
+    "output": "Tổng tài sản tài chính có kỳ hạn đến 1 năm tại ngày 30/06/2025 là 461.313.778.715 VND, thấp hơn so với 572.513.591.221 VND tại ngày 01/01/2025. Tài sản tài chính ngắn hạn đã giảm 111.199.812.506 VND."
+  },
+  {
+    "instruction": "Đánh giá rủi ro thanh khoản của Công ty dựa trên cơ cấu ngày đáo hạn của nợ tài chính.",
+    "input": "21",
+    "output": "Dựa trên cơ cấu ngày đáo hạn của nợ tài chính, Công ty đang đối mặt với rủi ro thanh khoản đáng kể. Tại ngày 30/06/2025, tổng các khoản nợ tài chính đến hạn trong vòng 1 năm là 821.292.322.989 VND, bao gồm các khoản vay và nợ, phải trả thương mại và chi phí phải trả. Trong khi đó, tổng tài sản tài chính có kỳ hạn đến 1 năm (có thể chuyển thành tiền mặt để thanh toán nợ) chỉ là 461.313.778.715 VND. Khoảng cách lớn này cho thấy Công ty có thể gặp khó khăn trong việc huy động đủ tiền mặt để đáp ứng các nghĩa vụ thanh toán ngắn hạn, làm tăng áp lực lên khả năng duy trì hoạt động liên tục, mặc dù Công ty tin rằng rủi ro có thể kiểm soát được."
+  },
+  {
+    "instruction": "Phân tích chiến lược quản lý rủi ro tín dụng của Công ty dựa trên thông tin được cung cấp.",
+    "input": "21",
+    "output": "Chiến lược quản lý rủi ro tín dụng của Công ty tập trung vào việc giám sát các khoản phải thu thương mại và các hoạt động tài chính. Công ty nhận thức được rủi ro tổn thất tài chính nếu đối tác không thực hiện nghĩa vụ hợp đồng. Bảng phân tích kỳ hạn cho thấy tất cả các khoản phải thu thương mại và phải thu khác đều có kỳ hạn đến 1 năm. Tuy nhiên, thông tin cụ thể về các biện pháp quản lý rủi ro như chính sách cấp tín dụng, giới hạn tín dụng, theo dõi công nợ, hoặc cơ chế dự phòng chi tiết không được nêu rõ trong chunk này. Do đó, mặc dù Công ty nhận diện rủi ro, nhưng chiến lược cụ thể để chủ động giảm thiểu rủi ro tín dụng vẫn chưa được thể hiện đầy đủ, ngoại trừ việc quản lý chung để đảm bảo cân bằng giữa chi phí rủi ro và chi phí quản lý."
+  },
+  {
+    "instruction": "Công ty có bất kỳ sự kiện quan trọng nào xảy ra sau ngày báo cáo tài chính không?",
+    "input": "22",
+    "output": "Không có sự kiện quan trọng nào xảy ra sau ngày báo cáo mà cần điều chỉnh hoặc thuyết minh trong Báo cáo tài chính bán niên."
+  },
+  {
+    "instruction": "Doanh thu từ Tổng Công ty Cổ phần Gang thép Thái Nguyên trong 6 tháng đầu năm 2025 là bao nhiêu VND?",
+    "input": "22",
+    "output": "Doanh thu từ Tổng Công ty Cổ phần Gang thép Thái Nguyên trong 6 tháng đầu năm 2025 là 3.127.945.686.875 VND."
+  },
+  {
+    "instruction": "Ông Trần Quốc Hùng nhận bao nhiêu thu nhập trong 6 tháng đầu năm 2025?",
+    "input": "22",
+    "output": "Ông Trần Quốc Hùng nhận 20.050.000 VND thu nhập trong 6 tháng đầu năm 2025."
+  },
+  {
+    "instruction": "Có sự điều chỉnh hồi tố nào đối với các khoản mục trên bảng cân đối kế toán bán niên không?",
+    "input": "22",
+    "output": "Có, có sự điều chỉnh hồi tố đối với các khoản mục trên bảng cân đối kế toán bán niên, cụ thể là \"Thuế và các khoản phải nộp Nhà nước\" và \"Lợi nhuận sau thuế chưa phân phối\" (bao gồm lợi nhuận sau thuế chưa phân phối lũy kế đến cuối kỳ trước)."
+  },
+  {
+    "instruction": "Các khoản bổ sung chi phí thuế TNDN và GTGT trong năm 2021, 2022 và 2023 có tổng giá trị bao nhiêu?",
+    "input": "22",
+    "output": "Các khoản bổ sung chi phí thuế TNDN và GTGT trong năm 2021, 2022 và 2023 có tổng giá trị là 700.756.734 VND (164.834.349 VND + 15.564.606 VND cho năm 2021; 274.222.134 VND cho năm 2022; 246.135.645 VND cho năm 2023)."
+  },
+  {
+    "instruction": "Phân tích tác động của các giao dịch với bên liên quan (doanh thu, mua hàng) đến hoạt động kinh doanh của Công ty.",
+    "input": "22",
+    "output": "Các giao dịch với bên liên quan, đặc biệt là Tổng Công ty Cổ phần Gang thép Thái Nguyên, có tác động chi phối và tạo ra sự phụ thuộc rất lớn đối với hoạt động kinh doanh của Công ty. Doanh thu từ bên liên quan này chiếm 100% tổng doanh thu bán hàng và cung cấp dịch vụ, và việc mua hàng từ bên liên quan cũng chiếm phần lớn giá vốn hàng bán. Điều này tạo ra một mô hình kinh doanh tích hợp chặt chẽ với công ty mẹ, mang lại sự ổn định về nguồn cung và đầu ra. Tuy nhiên, rủi ro tập trung là rất cao; bất kỳ thay đổi nào trong mối quan hệ hoặc tình hình tài chính của Tổng Công ty Cổ phần Gang thép Thái Nguyên đều sẽ có ảnh hưởng trực tiếp và nghiêm trọng đến Công ty, làm tăng tính dễ tổn thương và thiếu đa dạng hóa đối tác kinh doanh."
+  },
+  {
+    "instruction": "Đánh giá ý nghĩa của các điều chỉnh hồi tố đối với thông tin tài chính so sánh của Công ty.",
+    "input": "22",
+    "output": "Các điều chỉnh hồi tố, đặc biệt là các khoản bổ sung chi phí thuế TNDN và GTGT từ các năm trước (tổng cộng 700.756.734 VND), có ý nghĩa quan trọng trong việc tăng tính chính xác và tin cậy của thông tin tài chính so sánh. Việc điều chỉnh này cho thấy các báo cáo tài chính trước đó có thể đã không phản ánh đầy đủ nghĩa vụ thuế, dẫn đến việc phải điều chỉnh giảm lợi nhuận sau thuế chưa phân phối lũy kế và tăng các khoản phải nộp nhà nước. Điều này giúp các bên liên quan có cái nhìn chân thực hơn về hiệu quả tài chính và nghĩa vụ của Công ty trong quá khứ, nhưng cũng là một dấu hiệu của sự thiếu ổn định hoặc sai sót trong quy trình kế toán hoặc tuân thủ thuế trước đó."
+  },
+  {
+    "instruction": "Ngân hàng nào đã cung cấp các khoản vay ngắn hạn này?",
+    "input": "23",
+    "output": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Thái Nguyên đã cung cấp các khoản vay ngắn hạn này."
+  },
+  {
+    "instruction": "Mục đích chính của các khoản vay ngắn hạn là gì?",
+    "input": "23",
+    "output": "Mục đích chính của các khoản vay ngắn hạn là bổ sung vốn lưu động."
+  },
+  {
+    "instruction": "Lãi suất áp dụng cho các khoản vay ngắn hạn này là bao nhiêu?",
+    "input": "23",
+    "output": "Lãi suất áp dụng cho các khoản vay ngắn hạn này là 7,0%/năm."
+  },
+  {
+    "instruction": "Khoản vay ngắn hạn lớn nhất trong phần này có giá trị bao nhiêu VND và được ký vào ngày nào?",
+    "input": "23",
+    "output": "Khoản vay ngắn hạn lớn nhất trong phần này là 65.000.000.000 VND (STT 8), được ký vào ngày 03/03/2025."
+  },
+  {
+    "instruction": "Tất cả các khoản vay ngắn hạn trong phần này đều có bảo đảm hay không?",
+    "input": "23",
+    "output": "Không, tất cả các khoản vay ngắn hạn trong phần này đều \"Không có bảo đảm\"."
+  },
+  {
+    "instruction": "Đánh giá rủi ro liên quan đến thời hạn vay ngắn hạn và mục đích vay để bổ sung vốn lưu động.",
+    "input": "23",
+    "output": "Các khoản vay này đều có thời hạn 5 tháng và mục đích là bổ sung vốn lưu động, điều này tiềm ẩn rủi ro thanh khoản đáng kể. Với thời hạn vay rất ngắn, Công ty sẽ phải liên tục tái tài trợ các khoản nợ này hoặc phải tạo ra đủ dòng tiền từ hoạt động kinh doanh trong một thời gian ngắn. Nếu không thể làm được điều đó, Công ty sẽ đối mặt với nguy cơ thiếu hụt tiền mặt để thanh toán nợ. Việc vay để bổ sung vốn lưu động là cần thiết nhưng với quy mô lớn và thời hạn ngắn, nó cho thấy sự căng thẳng về vốn và yêu cầu quản lý dòng tiền rất chặt chẽ để tránh rủi ro vỡ nợ ngắn hạn."
+  },
+  {
+    "instruction": "Phân tích tác động của việc không có bảo đảm đối với các khoản vay ngắn hạn này từ góc độ của người cho vay.",
+    "input": "23",
+    "output": "Từ góc độ của người cho vay (Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Thái Nguyên), việc tất cả các khoản vay ngắn hạn này đều \"Không có bảo đảm\" làm tăng đáng kể rủi ro tín dụng. Điều này có nghĩa là trong trường hợp Công ty không thể thanh toán nợ, ngân hàng sẽ không có tài sản cụ thể để thu hồi, mà phải dựa hoàn toàn vào khả năng tạo ra dòng tiền và tài sản chung của Công ty. Điều này thường đòi hỏi người cho vay phải có niềm tin cao vào uy tín và khả năng thanh toán của khách hàng, hoặc mối quan hệ lâu dài với khách hàng. Tuy nhiên, nó cũng có thể dẫn đến việc ngân hàng áp dụng các điều khoản chặt chẽ hơn trong tương lai hoặc yêu cầu lãi suất cao hơn để bù đắp rủi ro."
+  },
+  {
+    "instruction": "Khoản vay ngắn hạn nào có số dư cuối kỳ lớn nhất trong các khoản từ STT 19 đến 45?",
+    "input": "24",
+    "output": "Khoản vay ngắn hạn có số dư cuối kỳ lớn nhất trong các khoản từ STT 19 đến 45 là 8.587.790.504 VND (STT 29), được ký vào ngày 29/04/2025."
+  },
+  {
+    "instruction": "Các khoản vay ngắn hạn này được dùng để làm gì?",
+    "input": "24",
+    "output": "Các khoản vay ngắn hạn này được dùng để bổ sung vốn lưu động."
+  },
+  {
+    "instruction": "Tổng số dư cuối kỳ của tất cả các khoản vay ngắn hạn liệt kê trong Phụ lục 01 là bao nhiêu VND?",
+    "input": "24",
+    "output": "Tổng số dư cuối kỳ của tất cả các khoản vay ngắn hạn liệt kê trong Phụ lục 01 là 247.925.309.425 VND."
+  },
+  {
+    "instruction": "Tổng hạn mức tín dụng của các hợp đồng này là bao nhiêu VND?",
+    "input": "24",
+    "output": "Tổng hạn mức tín dụng của các hợp đồng này là 250.000.000.000 VND."
+  },
+  {
+    "instruction": "So sánh lãi suất và thời hạn vay giữa các khoản vay ngắn hạn được liệt kê.",
+    "input": "24",
+    "output": "Tất cả các khoản vay ngắn hạn được liệt kê trong Phụ lục 01 đều có cùng lãi suất là 7,0%/năm và thời hạn vay là 5 tháng."
+  },
+  {
+    "instruction": "Phân tích tác động của việc sử dụng hạn mức tín dụng gần tối đa đến tình hình thanh khoản của Công ty.",
+    "input": "24",
+    "output": "Việc Công ty đã sử dụng 247.925.309.425 VND trên tổng hạn mức tín dụng 250.000.000.000 VND, tức là gần như tối đa hạn mức, có tác động tiêu cực đáng kể đến tình hình thanh khoản. Khi hạn mức tín dụng gần cạn, Công ty có rất ít khả năng tiếp cận thêm nguồn vốn vay ngắn hạn trong trường hợp cần thiết, ví dụ như để đáp ứng các nhu cầu vốn lưu động bất ngờ, thanh toán các khoản nợ đến hạn, hoặc đối phó với các cú sốc tài chính. Điều này cho thấy Công ty đang trong tình trạng căng thẳng về vốn, phải dựa vào nguồn vay bên ngoài ở mức cao nhất có thể để duy trì hoạt động, làm tăng rủi ro về khả năng thanh toán và sự phụ thuộc vào ngân hàng cho vay."
+  },
+  {
+    "instruction": "Tổng số dư cuối kỳ của các khoản vay dài hạn là bao nhiêu VND?",
+    "input": "25",
+    "output": "Tổng số dư cuối kỳ của các khoản vay dài hạn là 24.223.287.057 VND."
+  },
+  {
+    "instruction": "Mục đích vay của tất cả các khoản vay dài hạn này là gì?",
+    "input": "25",
+    "output": "Mục đích vay của tất cả các khoản vay dài hạn này là Đầu tư dự án Nhà máy cán thép Thái Trung."
+  },
+  {
+    "instruction": "Thời hạn vay của các khoản vay dài hạn này là bao nhiêu tháng?",
+    "input": "25",
+    "output": "Thời hạn vay của các khoản vay dài hạn này là 192 tháng."
+  },
+  {
+    "instruction": "Khoản vay dài hạn nào có số dư lớn nhất tại ngày 30 tháng 6 năm 2025 và từ ngân hàng nào?",
+    "input": "25",
+    "output": "Khoản vay dài hạn có số dư lớn nhất tại ngày 30 tháng 6 năm 2025 là 10.629.369.951 VND từ Ngân hàng TMCP Đầu tư và Phát triển Việt Nam – Chi nhánh Thái Nguyên."
+  },
+  {
+    "instruction": "Các khoản vay dài hạn này có được bảo đảm bằng tài sản không?",
+    "input": "25",
+    "output": "Có, các khoản vay dài hạn này đều có tài sản bảo đảm."
+  },
+  {
+    "instruction": "Phân tích tác động của lãi suất 9,00% đối với chi phí tài chính của Công ty.",
+    "input": "25",
+    "output": "Lãi suất 9,00% áp dụng cho các khoản vay dài hạn là một chi phí tài chính đáng kể đối với Công ty. Mặc dù các khoản vay này được sử dụng cho mục đích đầu tư dự án Nhà máy cán thép Thái Trung, mức lãi suất này vẫn làm tăng gánh nặng chi phí lãi vay hàng năm của Công ty. Trong bối cảnh Công ty đang đối mặt với lỗ lũy kế và lợi nhuận sau thuế thấp (như đã thấy trong các phần báo cáo khác), chi phí lãi vay cao sẽ tiếp tục ăn mòn lợi nhuận và làm suy yếu khả năng sinh lời tổng thể. Tuy nhiên, nếu dự án đầu tư mang lại hiệu quả cao trong tương lai, thì chi phí này có thể được bù đắp bằng lợi ích kinh tế thu được."
+  },
+  {
+    "instruction": "Đánh giá mức độ rủi ro liên quan đến các khoản vay dài hạn đến hạn trả trong vòng 12 tháng.",
+    "input": "25",
+    "output": "Tất cả các khoản vay dài hạn của Công ty, với tổng số dư cuối kỳ là 24.223.287.057 VND, đều được ghi nhận là \"Số đến hạn trả trong vòng 12 tháng\". Điều này cho thấy toàn bộ nghĩa vụ nợ dài hạn đã chuyển thành nghĩa vụ thanh toán ngắn hạn. Mức độ rủi ro thanh khoản liên quan là rất cao, vì Công ty phải huy động một lượng tiền đáng kể để thanh toán trong thời gian ngắn. Mặc dù các khoản vay này có tài sản bảo đảm, nhưng áp lực dòng tiền để đáp ứng nghĩa vụ này là đáng kể, đặc biệt khi xem xét tình hình tài chính tổng thể của Công ty (ví dụ như lỗ lũy kế, nợ ngắn hạn vượt quá tài sản ngắn hạn). Công ty sẽ cần phải có kế hoạch tái tài trợ hoặc tạo ra dòng tiền mạnh mẽ để tránh nguy cơ vỡ nợ."
+  }
+]
+```

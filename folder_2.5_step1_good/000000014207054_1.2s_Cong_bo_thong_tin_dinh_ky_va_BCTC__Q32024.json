@@ -1,0 +1,962 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Công bố thông tin định kỳ và Tổng quan báo cáo\nLoại nội dung: Text\nCÔNG BỐ THÔNG TIN ĐỊNH KỲ BÁO CÁO TÀI CHÍNH\nKính gửi Sở Giao dịch Chứng khoán Hà Nội\nThực hiện quy định tại khoản 3 Điều 14 Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán, Công ty Cổ phần Cấp thoát nước Bến Tre thực hiện công bố thông tin báo cáo tài chính (BCTC) quý 3 năm 2024 với Sở Giao dịch Chứng khoán Hà Nội như sau:\n1. Tên tổ chức: CÔNG TY CỔ PHẦN CÁP THOÁT NƯỚC BẾN TRE\n Mã chứng khoán: NBT\n Địa chỉ: 103 Nguyễn Huệ, Phường An Hội, TP.Bến Tre, Tỉnh Bến Tre\n Điện thoại liên hệ: 0275 3.825.727 Fax: 0275 3.827.781\n Email: capnuocbentreyahoo.com Website: www.bewaco.vn\n2. Nội dung thông tin công bố:\n BCTC quý 3 năm 2024\n [X] BCTC riêng (Công ty không có công ty con và đơn vị kế toán cấp trên có đơn vị trực thuộc)\n [ ] BCTC hợp nhất (Công ty có công ty con)\n [ ] BCTC tổng hợp (Công ty có đơn vị kế toán trực thuộc tổ chức bộ máy kế toán riêng).\n Các trường hợp thuộc diện phải giải trình nguyên nhân:\n Tổ chức kiểm toán đưa ra ý kiến không phải là ý kiến chấp nhận toàn phần đối với BCTC\n [ ] Có [X] Không\n Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch trước và sau kiểm toán từ 5% trở lên, chuyển từ lỗ sang lãi hoặc ngược lại\n [ ] Có [X] Không\n Lợi nhuận sau thuế thu nhập doanh nghiệp tại báo cáo kết quả kinh doanh của kỳ báo cáo thay đổi từ 10% trở lên so với báo cáo cùng kỳ năm trước\n [X] Có [ ] Không\nVăn bản giải trình trong trường hợp tích có: [X] Có [ ] Không\nLợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này hoặc ngược lại\n [ ] Có [X] Không\nThông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 19/10/2024 tại đường dẫn https://bewaco.vn/quanhecodong\n\nDOANH NGHIỆP: CTY CỔ PHẦN CẤP THOÁT NƯỚC BẾN TRE\nĐỊA CHỈ: 103 Nguyễn Huệ - P.An Hội - Tp.Bến Tre, Bến Tre\nĐIỆN THOẠI: 0275.3829.499\nFAX: 0275.3827.781\nBÁO CÁO TÀI CHÍNH\nQuý 3 năm 2024\n- Bảng cân đối kế toán Mẫu số B01-DN\n- Báo cáo Kết quả kinh doanh Mẫu số B02-DN\n- Báo cáo Lưu chuyển tiền tệ Mẫu số B03-DN\n- Thuyết minh báo cáo tài chính Mẫu số B09-DN",
+    "questions": [
+      {
+        "question": "Tên đầy đủ của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Mã chứng khoán của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Báo cáo tài chính này thuộc loại báo cáo nào (hợp nhất, riêng, tổng hợp)?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời điểm công bố thông tin của báo cáo tài chính này là khi nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Có sự thay đổi lớn (trên 10%) về lợi nhuận sau thuế TNDN so với cùng kỳ năm trước không và công ty có giải trình không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Dựa vào thông tin công bố, phân tích tầm quan trọng của việc giải trình các biến động lợi nhuận lớn đối với nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | TM | SỐ CUỐI QUÝ | SỐ ĐẦU NĂM |\n|:----------|:--------|:---|:-------------|:------------|\n| A. TÀI SẢN NGẮN HẠN | 100 | | 86.360.210.070 | 91.583.643.410 |\n| I. Tiền và các khoản tương đương tiền | 110 | V.1 | 69.053.091.313 | 62.657.030.841 |\n| 1. Tiền | 111 | | 67.053.091.313 | 60.657.030.841 |\n| 2. Các khoản tương đương tiền | 112 | | 2.000.000.000 | 2.000.000.000 |\n| II. Đầu tư tài chính ngắn hạn | 120 | | - | - |\n| 1. Chứng khoán kinh doanh | 121 | | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | - | - |\n| III. Các khoản phải thu ngắn hạn | 130 | | 2.816.188.935 | 17.119.705.617 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | V.2 | 1.256.102.651 | 15.490.859.950 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | V.3 | 1.073.220.734 | 1.442.632.295 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | | - | - |\n| 4. Phải thu theo tiến độ kế hoạch Hợp đồng xây dựng | 134 | | - | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | | - | - |\n| 6. Phải thu ngắn hạn khác | 136 | V.4 | 486.865.550 | 186.213.372 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | | - | - |\n| 8. Tài sản thiếu chờ xử lý | 139 | | - | - |\n| IV. Hàng tồn kho | 140 | | 12.976.355.815 | 10.469.922.656 |\n| 1. Hàng tồn kho | 141 | V.5 | 12.976.355.815 | 10.469.922.656 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | | - | - |\n| V. Tài sản ngắn hạn khác | 150 | | 1.514.574.007 | 1.336.984.296 |\n| 1. Chi phí trả trước ngắn hạn | 151 | V.9.a | 1.514.498.482 | 1.264.138.830 |\n| 2. Thuế GTGT được khấu trừ | 152 | | - | - |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | V.12 | 75.525 | 72.845.466 |\n| 4. Giao dịch mua bán lại trái phiếu Chính phủ | 154 | | - | - |\n| 5. Tài sản ngắn hạn khác | 155 | | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư tiền và các khoản tương đương tiền cuối quý là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối quý 3 năm 2024 với đầu năm, sự thay đổi là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng các khoản phải thu ngắn hạn trên tổng tài sản ngắn hạn cuối quý 3 năm 2024 là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ thanh khoản của công ty dựa trên cơ cấu tài sản ngắn hạn hiện tại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm mạnh các khoản phải thu ngắn hạn của khách hàng đến dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | TM | SỐ CUỐI QUÝ | SỐ ĐẦU NĂM |\n|:----------|:--------|:---|:-------------|:------------|\n| B. TÀI SẢN DÀI HẠN | 200 | | 455.138.938.413 | 460.651.830.230 |\n| I. Các khoản phải thu dài hạn | 210 | | - | - |\n| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | | - | - |\n| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | | - | - |\n| 6. Phải thu dài hạn khác | 216 | | - | - |\n| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | - | - |\n| II. Tài sản cố định | 220 | | 424.497.186.422 | 416.114.551.915 |\n| 1. Tài sản cố định hữu hình | 221 | V.6 | 424.434.060.851 | 416.072.885.248 |\n| - Nguyên giá | 222 | | 961.020.160.166 | 923.584.894.919 |\n| - Giá trị hao mòn lũy kế | 223 | | 536.586.099.315 | 507.512.009.671 |\n| 2. Tài sản cố định thuê tài chính | 224 | | - | - |\n| - Nguyên giá | 225 | | - | - |\n| - Giá trị hao mòn lũy kế | 226 | | - | - |\n| 3. Tài sản cố định vô hình | 227 | V.7 | 63.125.571 | 41.666.667 |\n| - Nguyên giá | 228 | | 1.398.000.000 | 1.338.000.000 |\n| - Giá trị hao mòn lũy kế | 229 | | 1.334.874.429 | 1.296.333.333 |\n| III. Bất động sản đầu tư | 230 | | - | - |\n| - Nguyên giá | 231 | | - | - |\n| - Giá trị hao mòn lũy kế | 232 | | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | | 9.211.607.035 | 25.475.279.246 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | V.8 | 9.211.607.035 | 25.475.279.246 |\n| V. Đầu tư tài chính dài hạn | 250 | | - | - |\n| 1. Đầu tư vào công ty con | 251 | | - | - |\n| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | | - | - |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | | - | - |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | - | - |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | - | - |\n| VI. Tài sản dài hạn khác | 260 | | 21.430.144.956 | 19.061.999.069 |\n| 1. Chi phí trả trước dài hạn | 261 | V.9.b | 21.430.144.956 | 19.061.999.069 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | | - | - |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | | - | - |\n| 4. Tài sản dài hạn khác | 268 | | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | | 541.499.148.483 | 552.235.473.640 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn của công ty cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản cố định hữu hình cuối quý là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị chi phí xây dựng cơ bản dở dang cuối quý với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ lệ tài sản cố định (hữu hình và vô hình) trên tổng tài sản dài hạn cuối quý.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản cố định hữu hình và vô hình của công ty trong kỳ báo cáo.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm tài sản dở dang dài hạn đến khả năng mở rộng sản xuất trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | TM | SỐ CUỐI QUÝ | SỐ ĐẦU NĂM |\n|:----------|:--------|:---|:-------------|:------------|\n| C. NỢ PHẢI TRẢ | 300 | | 91.506.346.456 | 109.620.342.008 |\n| I. Nợ ngắn hạn | 310 | | 43.574.114.174 | 47.916.790.489 |\n| 1. Phải trả người bán ngắn hạn | 311 | V.10 | 2.809.194.617 | 3.949.425.299 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | V.11 | 169.005.214 | 160.203.930 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V.12 | 3.586.353.706 | 3.489.725.843 |\n| 4. Phải trả người lao động | 314 | V.13 | 4.023.082.333 | 5.726.798.357 |\n| 5. Chi phí phải trả ngắn hạn | 315 | V.14 | 300.718.630 | 461.509.896 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |\n| 7. Phải trả theo tiến độ kế hoạch Hợp đồng xây dựng | 317 | | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |\n| 9. Phải trả ngắn hạn khác | 319 | V.15.a | 3.023.828.480 | 2.989.470.918 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | V.16.a | 26.816.248.000 | 25.707.428.000 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | V.17 | 2.845.683.194 | 5.432.228.246 |\n| 13. Quỹ bình ổn giá | 323 | | - | - |\n| 14. Giao dịch mua bán lại trái phiếu chính phủ | 324 | | - | - |\n| II. Nợ dài hạn | 330 | | 47.932.232.282 | 61.703.551.519 |\n| 1. Phải trả người bán dài hạn | 331 | | - | - |\n| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |\n| 3. Chi phí phải trả dài hạn | 333 | | - | - |\n| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |\n| 5. Phải trả nội bộ dài hạn | 335 | | - | - |\n| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |\n| 7. Phải trả dài hạn khác | 337 | V.15.b | - | - |\n| 8. Vay và nợ thuê tài chính dài hạn | 338 | V.16.b | 47.932.232.282 | 61.703.551.519 |\n| 9. Trái phiếu chuyển đổi | 339 | | - | - |\n| 10. Cổ phiếu ưu đãi | 340 | | - | - |\n| 11. Thuế thu nhập hoãn lại phải trả | 341 | | - | - |\n| 12. Dự phòng phải trả dài hạn | 342 | | - | - |\n| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | V.18 | 449.992.802.027 | 442.615.131.632 |\n| I. Vốn chủ sở hữu | 410 | | 449.992.802.027 | 442.615.131.632 |\n| 1. Vốn góp của chủ sở hữu | 411 | | 294.000.000.000 | 294.000.000.000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 294.000.000.000 | 294.000.000.000 |\n| - Cổ phiếu ưu đãi | 411b | | - | - |\n| 2. Thặng dư vốn cổ phần | 412 | | - | - |\n| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |\n| 4. Vốn khác của chủ sở hữu | 414 | | - | - |\n| 5. Cổ phiếu quỹ | 415 | | - | - |\n| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |\n| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |\n| 8. Quỹ đầu tư phát triển | 418 | | 108.359.528.469 | 95.062.767.223 |\n| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | - | - |\n| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | - | - |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | | 47.633.273.558 | 53.552.364.409 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 39.342.297.674 | 14.700.000.000 |\n| - LNST chưa phân phối kỳ này | 421b | | 8.290.975.884 | 38.852.364.409 |\n| 12. Nguồn vốn đầu tư XDCB | 422 | | - | - |\n| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |\n| 1. Nguồn kinh phí | 431 | | - | - |\n| 2. Nguồn kinh phí đã hình thành TSCĐ | 432 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 541.499.148.483 | 552.235.473.640 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vốn chủ sở hữu cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ ngắn hạn và nợ dài hạn của công ty vào cuối quý 3 năm 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối cuối kỳ là bao nhiêu, và thay đổi như thế nào so với đầu năm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng trả nợ của công ty dựa trên tỷ lệ nợ ngắn hạn và nợ dài hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán và phân tích hệ số nợ trên vốn chủ sở hữu (D/E ratio) vào cuối quý 3 năm 2024 để đánh giá rủi ro tài chính.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Báo cáo kết quả hoạt động kinh doanh giữa niên độ\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | TM | Quý 3 Năm nay | Quý 3 Năm trước | Lũy kế từ đầu năm đến cuối quý 3 Năm nay | Lũy kế từ đầu năm đến cuối quý 3 Năm trước |\n|:----------|:--------|:---|:---------------|:----------------|:-------------------------------------------|:----------------------------------------------|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | | 56.587.784.274 | 55.849.819.487 | 188.626.129.695 | 171.051.909.892 |\n| 2. Các khoản giảm trừ doanh thu | 02 | | 633.947 | 157.775 | 633.947 | 157.775 |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | VI.1 | 56.587.784.274 | 55.849.819.487 | 188.625.495.748 | 171.051.752.117 |\n| 4. Giá vốn hàng bán | 11 | VI.2 | 20.761.581.353 | 19.427.749.086 | 70.016.793.557 | 61.221.151.089 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 35.826.202.921 | 36.422.070.401 | 118.608.702.191 | 109.830.601.028 |\n| 6. Doanh thu hoạt động tài chính | 21 | VI.3 | 49.856.989 | 50.030.859 | 129.310.516 | 126.189.697 |\n| 7. Chi phí tài chính | 22 | VI.4 | 1.717.484.998 | 1.203.368.695 | 4.862.987.408 | 3.287.109.738 |\n| Trong đó: Chi phí lãi vay | 23 | | 1.717.484.998 | 1.203.368.695 | 4.862.987.408 | 3.287.109.738 |\n| 8. Chi phí bán hàng | 25 | VI.5 | 14.040.474.834 | 13.137.122.798 | 41.312.479.763 | 39.769.655.204 |\n| 9. Chi phí quản lý doanh nghiệp | 26 | VI.6 | 5.008.529.206 | 4.631.545.375 | 14.694.480.925 | 13.623.353.748 |\n| 10. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 15.109.570.872 | 17.500.064.392 | 57.868.064.611 | 53.276.672.035 |\n| 11. Thu nhập khác | 31 | | 49.508.624 | 36.019 | 518.013.057 | 2.822.527 |\n| 12. Chi phí khác | 32 | | 176.291.916 | 35.981.673 | 178.811.385 | 52.951.673 |\n| 13. Lợi nhuận khác | 40 | | 126.783.292 | 35.945.654 | 339.201.672 | 50.129.146 |\n| 14. Tổng lợi nhuận kế toán trước thuế | 50 | | 14.982.787.580 | 17.464.118.738 | 58.207.266.283 | 53.226.542.889 |\n| 15. Chi phí thuế TNDN hiện hành | 51 | VI.7 | 2.556.811.696 | 2.958.250.815 | 9.928.992.725 | 8.995.043.563 |\n| 16. Chi phí thuế TNDN hoãn lại | 52 | | - | - | - | - |\n| 17. Lợi nhuận sau thuế TNDN | 60 | | 12.425.975.884 | 14.505.867.923 | 48.278.273.558 | 44.231.499.326 |\n| 18. Lãi cơ bản trên cổ phiếu | 70 | VI.8 | 372 | 439 | 1.491 | 1.341 |\n| 19. Lãi suy giảm trên cổ phiếu | 71 | VI.9 | 372 | 439 | 1.491 | 1.341 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong quý 3 năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế TNDN lũy kế từ đầu năm đến cuối quý 3 năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp quý 3 năm nay với quý 3 năm trước, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí bán hàng và chi phí quản lý doanh nghiệp trong quý 3 năm nay chiếm tỷ lệ bao nhiêu trên doanh thu thuần?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động kinh doanh của công ty trong quý 3 năm nay dựa trên các chỉ số lợi nhuận.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân có thể dẫn đến sự chênh lệch lợi nhuận sau thuế TNDN trên 10% so với cùng kỳ năm trước, dựa trên các chỉ tiêu chi phí và doanh thu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Tình hình thực hiện nghĩa vụ với Ngân sách Nhà nước\nLoại nội dung: Bảng\nĐơn vị tính: Đồng\n| CHỈ TIÊU | MÃ SỐ | SỐ CÒN PHẢI NỘP ĐẦU KỲ | SỐ PHÁT SINH TRONG KỲ SỐ phải nộp | SỐ PHÁT SINH TRONG KỲ SỐ đã nộp | LŨY KẾ TỪ ĐẦU NĂM SỐ phải nộp | LŨY KẾ TỪ ĐẦU NĂM SỐ đã nộp | SỐ CÒN PHẢI NỘP CUỐI KỲ |\n|:----------|:--------|:-------------------------|:-----------------------------------|:-------------------------------|:-----------------------------------|:--------------------------------|:-------------------------|\n| I. Thuế | 10 | 4.693.324.895 | 3.818.174.401 | 5.480.716.687 | 14.206.554.333 | 14.060.896.618 | 3.030.782.609 |\n| 1. Thuế GTGT hàng bán nội địa | 11 | 353.615.854 | 1.015.702.165 | 959.843.131 | 3.040.614.697 | 2.909.509.963 | 409.474.888 |\n| 2. Thuế GTGT hàng nhập khẩu | 12 | - | - | - | - | - | - |\n| 3. Thuế tiêu thụ đặc biệt | 13 | - | - | - | - | - | - |\n| 4. Thuế xuất khẩu, nhập khẩu | 14 | - | - | - | - | - | - |\n| 5. Thuế thu nhập doanh nghiệp | 15 | 4.278.505.306 | 2.556.811.696 | 4.278.505.306 | 9.928.992.725 | 9.842.405.381 | 2.556.811.696 |\n| 6. Thuế thu nhập cá nhân | 16 | 1.746.750 | 51.330.650 | 51.330.650 | 302.123.852 | 365.223.202 | 1.746.750 |\n| 7. Thuế tài nguyên | 17 | 59.532.510 | 194.329.890 | 191.037.600 | 658.952.280 | 740.657.234 | 62.824.800 |\n| 8. Thuế nhà đất | 18 | 75.525 | 24.304.309 | 24.304.309 | 75.525 | - | 75.525 |\n| 9. Tiền thuê đất | 19 | - | 242.566.470 | 169.796.529 | - | - | - |\n| 10. Các loại thuế khác | 20 | - | 9.000.000 | 9.000.000 | - | - | - |\n| II. Các khoản phải nộp khác | 30 | 539.813.294 | 1.532.858.003 | 1.517.175.725 | 5.136.957.218 | 5.113.217.129 | 555.495.572 |\n| 1. Các khoản phụ thu | 31 | - | - | - | - | - | - |\n| 2. Các khoản phí, lệ phí | 32 | 539.813.294 | 1.532.858.003 | 1.517.175.725 | 4.909.093.800 | 4.885.353.711 | 555.495.572 |\n| 3. Các khoản phải nộp khác | 33 | - | 227.863.418 | 227.863.418 | - | - | - |\n| Tổng cộng | 40 | 5.233.138.189 | 5.351.032.404 | 6.997.892.412 | 19.343.511.551 | 19.174.113.747 | 3.586.278.181 |\nTổng số thuế còn phải nộp năm trước chuyển sang năm nay 2.885.124.894 đồng\nTrong đó, thuế thu nhập doanh nghiệp là 2.470.224.352 đồng\nNgười lập biểu: Nguyễn Duy Hiền\nKế toán trưởng\nNgười đại diện theo pháp luật",
+    "questions": [
+      {
+        "question": "Tổng số thuế còn phải nộp cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số thuế thu nhập doanh nghiệp còn phải nộp cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh số thuế GTGT hàng bán nội địa phải nộp và đã nộp lũy kế từ đầu năm đến cuối quý 3 năm 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng số các khoản phải nộp khác cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tuân thủ nghĩa vụ thuế của công ty dựa trên số liệu còn phải nộp và đã nộp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm mạnh tiền thuê đất và các loại thuế khác phải nộp đến tình hình tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Bảng Thuyết minh các khoản giảm trừ thuế\nLoại nội dung: Bảng\nĐơn vị tính: Đồng\n| CHỈ TIÊU | MÃ SỐ | KỲ NÀY | LŨY KẾ TỪ ĐẦU NĂM |\n|:----------|:--------|:-------|:-------------------|\n| 1. Thuế GTGT hàng bán nội địa (1a - 1b - 1c - 1d) | 01 | 1.015.702.165 | 3.040.614.697 |\n| a. Tổng phát sinh có TK 33311 | 1a | 2.810.748.405 | 9.394.797.808 |\n| b. Thuế GTGT đầu vào đã khấu trừ | 1b | 1.795.046.240 | 6.354.132.395 |\n| c. Thuế GTGT được giảm trừ | 1c | - | - |\n| d. Thuế GTGT hàng bị trả lại, giảm giá, kém chất lượng | 1d | 50.716 | - |\n| 2. Thuế GTGT hàng nhập khẩu (2a - 2b) | 02 | - | - |\n| a. Tổng phát sinh có TK 33312 | 2a | - | - |\n| b. Thuế GTGT hàng NK được giảm và trả lại hàng mua | 2b | - | - |\n| 3. Thuế tiêu thụ đặc biệt (3a - 3b - 3c) | 03 | - | - |\n| a. Tổng phát sinh có TK 3332 | 3a | - | - |\n| b. Thuế TTĐB được NSNN tính hoàn và giảm trừ | 3b | - | - |\n| c. Thuế TTĐB của hàng bị trả lại | 3c | - | - |\n| 4. Thuế xuất khẩu, nhập khẩu (4a - 4b) | 04 | - | - |\n| a. Tổng phát sinh có TK 3333 | 4a | - | - |\n| b. Thuế XK, NK được NSNN tính hoàn và giảm trừ | 4b | - | - |\n| 5. Thuế thu nhập doanh nghiệp (5a - 5b) | 05 | 2.556.811.696 | 9.928.992.725 |\n| a. Tổng phát sinh có TK 3334 | 5a | 2.582.168.354 | 9.954.664.052 |\n| b. Thuế TNDN được giảm trừ - chênh lệch tạm nộp | 5b | 25.356.658 | 25.671.327 |\nNgày 19 tháng 10 năm 2024\nNgười lập biểu: Nguyễn Duy Hiền",
+    "questions": [
+      {
+        "question": "Tổng thuế GTGT hàng bán nội địa phát sinh kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số thuế TNDN phát sinh lũy kế từ đầu năm đến cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh thuế GTGT đầu vào đã khấu trừ kỳ này với thuế GTGT hàng bán nội địa phát sinh kỳ này.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản giảm trừ thuế TNDN (chênh lệch tạm nộp) kỳ này là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích vai trò của thuế GTGT đầu vào được khấu trừ trong việc tính toán nghĩa vụ thuế GTGT của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản giảm trừ thuế TNDN đến số thuế thực tế phải nộp của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Báo cáo lưu chuyển tiền tệ giữa niên độ\nLoại nội dung: Bảng\nĐơn vị tính: Đồng\n| CHỈ TIÊU | MÃ SỐ | Lũy kế từ đầu năm đến cuối quý 3 Năm nay | Lũy kế từ đầu năm đến cuối quý 3 Năm trước |\n|:----------|:--------|:-------------------------------------------|:----------------------------------------------|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | |\n| 1. Tiền thu từ bán hàng, cung cấp dịch vụ và doanh thu khác | 01 | 217.166.165.721 | 183.657.512.462 |\n| 2. Tiền chi trả cho người cung cấp hàng hóa và dịch vụ | 02 | 81.986.910.542 | 63.270.592.464 |\n| 3. Tiền chi trả cho người lao động | 03 | 33.031.605.337 | 29.663.919.376 |\n| 4. Tiền lãi vay đã trả | 04 | 5.023.778.674 | 3.574.692.084 |\n| 5. Thuế thu nhập doanh nghiệp đã nộp | 05 | 9.842.405.381 | 7.521.737.673 |\n| 6. Tiền thu khác từ hoạt động kinh doanh | 06 | 1.240.579.094 | 1.093.128.764 |\n| 7. Tiền chi khác cho hoạt động kinh doanh | 07 | 18.249.261.475 | 16.194.342.855 |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 70.272.783.406 | 64.525.356.774 |\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | |\n| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các TSDH khác | 21 | 15.934.223.697 | 26.699.338.486 |\n| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các TSDH khác | 22 | - | - |\n| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | - | - |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | - | - |\n| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | - | - |\n| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | - | - |\n| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 147.210.087 | - |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | 15.934.223.697 | 26.552.128.399 |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | |\n| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | - | - |\n| 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại CP của DN đã phát hành | 32 | - | - |\n| 3. Tiền thu từ đi vay | 33 | 8.898.276.763 | 16.247.000.000 |\n| 4. Tiền trả nợ gốc vay | 34 | 21.560.776.000 | 17.316.000.000 |\n| 5. Tiền trả nợ gốc thuê tài chính | 35 | - | - |\n| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | 35.280.000.000 | 27.136.962.875 |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | -47.942.499.237 | -28.205.962.875 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | 6.396.060.472 | 9.767.265.500 |\n| Tiền và tương đương tiền đầu kỳ | 60 | 62.657.030.841 | 22.993.834.921 |\n| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | - | - |\n| Tiền và tương đương tiền cuối kỳ | 70 | 69.053.091.313 | 32.761.100.421 |\nNgười lập biểu: Nguyễn Duy Hiền\nKế toán trưởng\nNgười đại diện theo pháp luật",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế từ đầu năm đến cuối quý 3 năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và tương đương tiền cuối kỳ báo cáo là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động đầu tư năm nay và năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động tài chính năm nay là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình dòng tiền của công ty dựa trên lưu chuyển tiền thuần từ các hoạt động chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm tiền thu từ đi vay và tăng tiền trả nợ gốc vay đến hoạt động tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Đặc điểm hoạt động, Năm tài chính, Chuẩn mực kế toán, Chính sách kế toán chung)\nLoại nội dung: Text\nTHUYẾT MINH BÁO CÁO TÀI CHÍNH GIỮA NIÊN ĐỘ\nQuý 3 năm 2024\n\nI. ĐẶC ĐIỂM HOẠT ĐỘNG\n1. Hình thức sở hữu vốn\nCông ty Cổ phần Cấp thoát nước Bến Tre (sau đây gọi tắt là Công ty) là công ty cổ phần được cổ phần hóa từ Công ty TNHH Một thành viên, với cổ phần vốn Nhà nước nắm giữ trên 50% vốn điều lệ.\n2. Lĩnh vực kinh doanh\nLĩnh vực kinh doanh của Công ty là sản xuất và xây lắp.\n3. Ngành nghề kinh doanh\n- Khai thác, xử lý và cung cấp nước, chi tiết: Sản xuất và phân phối nước sạch\n- Bán buôn đồ uống, chi tiết: Kinh doanh nước uống đóng chai\n- Xây dựng nhà các loại, chi tiết: Xây dựng công trình dân dụng\n- Sản xuất đồ uống không cồn, nước khoáng, chi tiết: Sản xuất nước uống đóng chai\n- Xây dựng công trình kỹ thuật dân dụng khác, chi tiết: Xây dựng công trình công nghiệp. Thi công xây lắp cấp thoát nước trong và ngoài công trình, hạ tầng kỹ thuật khu dân cư và khu công nghiệp\n- Gia công cơ khí, xử lý và tráng phủ kim loại, chi tiết: Gia công cơ khí các sản phẩm dùng cho ngành nước và ngành xây dựng (không gia công cơ khí trong địa bàn nội ô Tp. Bến Tre)\n- Bán buôn chuyên doanh khác chưa được phân vào đâu, chi tiết: Sản xuất kinh doanh các vật tư chuyên ngành cấp thoát nước\n- Sửa chữa thiết bị điện tử và quang học, chi tiết: Sửa chữa, kiểm định đồng hồ đo nước lạnh\n- Lắp đặt hệ thống cấp, thoát nước, lò sưởi và điều hòa không khí, chi tiết: Thi công xây lắp chuyên ngành cấp thoát nước\n- Thoát nước và xử lý nước thải, chi tiết: Thoát nước bẩn, nạo vét và thông tắc cống rãnh. Dịch vụ thoát nước và xử lý nước thải\n- Hoạt động kiến trúc và tư vấn kỹ thuật có liên quan, chi tiết: Dịch vụ tư vấn, thiết kế, giám sát công trình chuyên ngành cấp thoát nước. Dịch vụ tư vấn đầu tư xây dựng, quản lý dự án, lập báo cáo kinh tế kỹ thuật, lập dự án đầu tư xây dựng, khảo sát, lập thiết kế dự toán, giám sát công trình chuyên ngành cấp thoát nước.\n4. Chu kỳ sản xuất, kinh doanh thông thường\nChu kỳ sản xuất kinh doanh thông thường của Công ty không quá 12 tháng.\n5. Đặc điểm hoạt động của Công ty trong kỳ có ảnh hưởng đến Báo cáo tài chính giữa niên độ\nKhông có đặc điểm kinh doanh nào trong kỳ ảnh hưởng đến Báo cáo tài chính Quý 3 năm 2024 của Công ty.\n6. Cấu trúc Công ty\nThông tin về chi nhánh\nCác Đơn vị trực thuộc không có tư cách pháp nhân hạch toán phụ thuộc như sau:\n| STT | Tên chi nhánh và địa điểm kinh doanh | Địa chỉ | Mã số thuế |\n|:----|:-------------------------------------|:--------|:-----------|\n| 1 | Chi nhánh Công ty CP cấp thoát nước Bến Tre - Xí nghiệp Xây lắp. | Số 81A, Ấp 1, Quốc lộ 60, xã Hữu Định, huyện Châu Thành, tỉnh Bến Tre. | 1300107725002 |\n| 2 | Chi nhánh Công ty CP cấp thoát nước Bến Tre - Xí nghiệp Tư vấn Xây dựng. | Số 103 Nguyễn Huệ, Phường An Hội, Tp. Bến Tre, tỉnh Bến Tre. | 1300107725003 |\n| 3 | Chi nhánh Công ty CP cấp thoát nước Bến Tre - cấp nước Giồng Trôm. | Số 005, Khu phố 3, thị trấn Giồng Trôm, huyện Giồng Trôm, tỉnh Bến Tre. | 1300107725004 |\n| 4 | Chi nhánh Công ty CP cấp thoát nước Bến Tre - cấp nước Chợ Lách. | Ấp Tân Phú, xã Sơn Định, huyện Chợ Lách, tỉnh Bến Tre. | 1300107725005 |\n| 5 | Chi nhánh Công ty CP cấp thoát nước Bến Tre - cấp nước Mỏ Cày. | Ấp Mỹ Đức, xã Mỹ Thành, Tp. Bến Tre, tỉnh Bến Tre. | 1300107725006 |\n| 6 | Chi nhánh Công ty CP cấp thoát nước Bến Tre - cấp nước Phú Tân. | Số 81A, QL60, Khu phố 1, phường Phú Tân, Tp. Bến Tre, tỉnh Bến Tre | 1300107725007 |\n7. Nhân viên\nTại ngày kết thúc kỳ kế toán Công ty có 283 nhân viên đang làm việc (số đầu năm là 286 nhân viên).\n\nII. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Năm tài chính\nNăm tài chính của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm. Báo cáo tài chính này là Báo cáo tài chính giữa niên độ Quý 3 năm 2024.\n2. Đơn vị tiền tệ sử dụng trong kế toán\nĐơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND) do việc thu, chi chủ yếu được thực hiện bằng đơn vị tiền tệ VND.\n\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chuẩn mực và Chế độ Kế toán áp dụng\nCông ty áp dụng hệ thống Chuẩn mực Kế toán và Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính và Thông tư số 53/2016/TT-BTC ngày 21 tháng 03 năm 2016 sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC cũng như các thông tư hướng dẫn thực hiện Chuẩn mực Kế toán của Bộ Tài chính trong việc lập Báo cáo tài chính.\n2. Tuyên bố về việc tuân thủ Chuẩn mực Kế toán và Chế độ Kế toán\nBan Tổng Giám đốc đảm bảo đã tuân thủ yêu cầu của các Chuẩn mực Kế toán, Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 và Thông tư số 53/2016/TT-BTC ngày 21 tháng 03 năm 2016 sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC cũng như các thông tư hướng dẫn thực hiện Chuẩn mực Kế toán của Bộ Tài chính trong việc lập Báo cáo tài chính.\n3. Hình thức kế toán áp dụng: Nhật ký chung trên máy tính.\n\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở lập Báo cáo tài chính giữa niên độ\nBáo cáo tài chính giữa niên độ được lập trên cơ sở kế toán dồn tích trừ các thông tin liên quan đến các luồng tiền.\n2. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt, tiền gửi ngân hàng không có kỳ hạn.\nCác khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày mua, dễ dàng chuyển đổi thành một lượng tiền xác định cũng như không có nhiều rủi ro trong việc chuyển đổi thành tiền.",
+    "questions": [
+      {
+        "question": "Hình thức sở hữu vốn của Công ty Cổ phần Cấp thoát nước Bến Tre là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty có bao nhiêu nhân viên tại ngày kết thúc kỳ kế toán quý 3 năm 2024?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Kể tên 3 lĩnh vực kinh doanh chính của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đơn vị tiền tệ sử dụng trong kế toán của công ty là gì và tại sao?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích định nghĩa về 'Các khoản tương đương tiền' theo chính sách kế toán của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc tuân thủ các chuẩn mực kế toán Việt Nam đối với độ tin cậy của báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán: Các khoản phải thu, Hàng tồn kho, Chi phí trả trước)\nLoại nội dung: Text\n3. Các khoản phải thu\nCác khoản nợ phải thu được trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi.\nViệc phân loại các khoản phải thu là phải thu khách hàng và phải thu khác được thực hiện theo nguyên tắc sau:\n- Phải thu của khách hàng: phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua - bán giữa Công ty và người mua là đơn vị độc lập với Công ty, bao gồm cả các khoản phải thu về tiền bán hàng xuất khẩu ủy thác cho đơn vị khác.\n- Phải thu khác: phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua bán.\nDự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào tuổi nợ quá hạn của các khoản nợ hoặc dự kiến mức tổn thất có thể xảy ra, cụ thể như sau:\n- Đối với nợ phải thu quá hạn thanh toán:\n + 30% giá trị đối với khoản nợ phải thu quá hạn từ trên 6 tháng đến dưới 1 năm.\n + 50% giá trị đối với khoản nợ phải thu quá hạn từ 1 năm đến dưới 2 năm.\n + 70% giá trị đối với khoản nợ phải thu quá hạn từ 2 năm đến dưới 3 năm.\n + 100% giá trị đối với khoản nợ phải thu quá hạn từ 3 năm trở lên.\n- Đối với nợ phải thu chưa quá hạn thanh toán nhưng khó có khả năng thu hồi: căn cứ vào dự kiến mức tổn thất để lập dự phòng.\nTăng, giảm số dư dự phòng nợ phải thu khó đòi cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí quản lý doanh nghiệp.\n\n4. Hàng tồn kho\nHàng tồn kho được ghi nhận theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được.\nGiá gốc hàng tồn kho được xác định như sau:\n- Nguyên liệu, vật liệu, hàng hóa: bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\n- Chi phí sản xuất, kinh doanh dở dang: bao gồm chi phí nguyên vật liệu chính, chi phí sản xuất chung.\nGiá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong kỳ sản xuất, kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng.\nGiá trị hàng tồn kho được tính theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.\nDự phòng giảm giá hàng tồn kho được lập cho từng mặt hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc năm tài chính được ghi nhận vào giá vốn hàng bán.\n\n5. Chi phí trả trước\nChi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán. Chi phí trả trước của Công ty bao gồm các chi phí sau:\nCông cụ, dụng cụ\nCác công cụ, dụng cụ đã đưa vào sử dụng được phân bổ vào chi phí theo phương pháp đường thẳng với thời gian phân bổ không quá 36 tháng.\nChi phí sửa chữa tài sản cố định\nChi phí sửa chữa tài sản phát sinh một lần có giá trị lớn được phân bổ vào chi phí theo phương pháp đường thẳng với thời gian phân bổ không quá 36 tháng.",
+    "questions": [
+      {
+        "question": "Công ty phân loại các khoản phải thu dựa trên nguyên tắc nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hàng tồn kho được ghi nhận theo nguyên tắc giá thấp hơn giữa những giá trị nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Trình bày các mức trích lập dự phòng phải thu khó đòi đối với khoản nợ quá hạn thanh toán.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phương pháp tính giá trị hàng tồn kho và hạch toán hàng tồn kho của công ty là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích ảnh hưởng của việc lập dự phòng giảm giá hàng tồn kho đến báo cáo tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của chính sách kế toán chi phí trả trước đối với việc phản ánh chính xác kết quả kinh doanh của nhiều kỳ kế toán.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán: TSCĐ hữu hình, TSCĐ vô hình, Chi phí XDCB dở dang)\nLoại nội dung: Text\n6. Tài sản cố định hữu hình\nTài sản cố định hữu hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí phát sinh không thỏa mãn điều kiện trên được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ.\nKhi tài sản cố định hữu hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ.\nTài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính phù hợp theo Thông tư số 45/2013/TT-BTC ngày 25 tháng 4 năm 2013 của Bộ Tài chính và Thông tư số 147/2016/TT-BTC ngày 13 tháng 10 năm 2016 của Bộ Tài chính sửa đổi, bổ sung một số điều của Thông tư số 45/2013/TT-BTC và Thông tư số 28/2017/TT-BTC ngày 12 tháng 04 năm 2017 của Bộ Tài chính sửa đổi bổ sung một số điều của Thông tư số 45/2013/TT-BTC và Thông tư số 147/2016/TT-BTC của Bộ tài chính, số năm khấu hao của các loại tài sản cố định hữu hình như sau:\n| Loại tài sản cố định | Số năm |\n|:--------------------|:-------|\n| Nhà cửa, vật kiến trúc | 10-30 |\n| Máy móc và thiết bị | 05-20 |\n| Phương tiện vận tải, truyền dẫn | 10-25 |\n| Thiết bị, dụng cụ quản lý | 05-10 |\n\n7. Tài sản cố định vô hình\nTài sản cố định vô hình được thể hiện theo nguyên giá trừ hao mòn lũy kế.\nNguyên giá tài sản cố định vô hình bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Chi phí liên quan đến tài sản cố định vô hình phát sinh sau khi ghi nhận ban đầu được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ trừ khi các chi phí này gắn liền với một tài sản cố định vô hình cụ thể và làm tăng lợi ích kinh tế từ các tài sản này.\nKhi tài sản cố định vô hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ.\nTài sản cố định vô hình của Công ty bao gồm:\nChương trình phần mềm\nChi phí liên quan đến các chương trình phần mềm máy tính không phải là một bộ phận gắn kết với phần cứng có liên quan được vốn hoá. Nguyên giá của phần mềm máy tính là toàn bộ các chi phí mà Công ty đã chi ra tính đến thời điểm đưa phần mềm vào sử dụng. Phần mềm máy tính được khấu hao theo phương pháp đường thẳng trong 03 năm.\n\n8. Chi phí xây dựng cơ bản dở dang\nChi phí xây dựng cơ bản dở dang phản ánh các chi phí liên quan trực tiếp (bao gồm cả chi phí lãi vay có liên quan phù hợp với chính sách kế toán của Công ty) đến các tài sản đang trong quá trình xây dựng, máy móc thiết bị đang lắp đặt để phục vụ cho mục đích sản xuất, cho thuê và quản lý cũng như chi phí liên quan đến việc sửa chữa tài sản cố định đang thực hiện. Các tài sản này được ghi nhận theo giá gốc và không được tính khấu hao.",
+    "questions": [
+      {
+        "question": "Tài sản cố định hữu hình được thể hiện theo giá trị nào trong báo cáo tài chính?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian khấu hao của máy móc và thiết bị là bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu điều kiện để chi phí phát sinh sau ghi nhận ban đầu được ghi tăng nguyên giá tài sản cố định hữu hình.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí xây dựng cơ bản dở dang được ghi nhận như thế nào và có được tính khấu hao không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ linh hoạt trong việc khấu hao tài sản cố định hữu hình của công ty dựa trên khoảng thời gian khấu hao được nêu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ảnh hưởng của chính sách vốn hóa chi phí liên quan đến tài sản cố định vô hình đến giá trị tài sản và lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán: Nợ phải trả, Vốn chủ sở hữu, Phân phối lợi nhuận, Ghi nhận doanh thu)\nLoại nội dung: Text\n9. Các khoản nợ phải trả và chi phí phải trả\nCác khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả.\nViệc phân loại các khoản phải trả là phải trả người bán, chi phí phải trả và phải trả khác được thực hiện theo nguyên tắc sau:\n- Phải trả người bán: phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập với Công ty, bao gồm cả các khoản phải trả khi nhập khẩu thông qua người nhận ủy thác.\n- Chi phí phải trả: phản ánh các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước.\n- Phải trả khác: phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.\n\n10. Vốn chủ sở hữu\nVốn góp của chủ sở hữu\nVốn góp của chủ sở hữu được ghi nhận theo số vốn thực tế đã góp của các chủ sở hữu.\n\n11. Phân phối lợi nhuận\nLợi nhuận sau thuế thu nhập doanh nghiệp tạm trích lập các quỹ theo Nghị quyết của Đại hội đồng cổ đông.\n\n12. Ghi nhận doanh thu và thu nhập\nDoanh thu được ghi nhận khi Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định được một cách chắc chắn. Doanh thu được xác định theo giá trị hợp lý của các khoản đã thu hoặc sẽ thu được sau khi trừ đi các khoản chiết khấu thương mại, giảm giá hàng bán và hàng bán bị trả lại.\nDoanh thu bán hàng hoá, thành phẩm vật tư, nước sạch thành phẩm\nDoanh thu bán hàng hóa, thành phẩm được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa, thành phẩm hoặc quyền kiểm soát hàng hóa.\n- Doanh thu được xác định tương đối chắc chắn.\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.\nDoanh thu xây dựng\nKhi kết quả thực hiện hợp đồng được ước tính một cách đáng tin cậy thì:\n- Đối với các hợp đồng xây dựng qui định nhà thầu được thanh toán theo tiến độ kế hoạch, doanh thu và chi phí liên quan đến hợp đồng được ghi nhận tương ứng với phần công việc đã hoàn thành do Công ty tự xác định vào ngày kết thúc năm tài chính.\n- Đối với các hợp đồng xây dựng qui định nhà thầu được thanh toán theo giá trị khối lượng thực hiện, doanh thu và chi phí liên quan đến hợp đồng được ghi nhận tương ứng với phần công việc đã hoàn thành được khách hàng xác nhận và được phản ánh trên hóa đơn đã lập.\nCác khoản tăng, giảm khối lượng xây lắp, các khoản thu bồi thường và các khoản thu khác chỉ được ghi nhận doanh thu khi đã được thống nhất với khách hàng.\nKhi kết quả thực hiện hợp đồng xây dựng không thể ước tính được một cách đáng tin cậy, thì:\n- Doanh thu chỉ được ghi nhận tương đương với chi phí của hợp đồng đã phát sinh mà việc hoàn trả là tương đối chắc chắn.\n- Chi phí của hợp đồng chỉ được ghi nhận vào chi phí khi đã phát sinh.\nChênh lệch giữa tổng doanh thu lũy kế của hợp đồng xây dựng đã ghi nhận và khoản tiền lũy kế ghi trên hóa đơn thanh toán theo tiến độ kế hoạch của hợp đồng được ghi nhận là khoản phải thu hoặc phải trả theo tiến độ kế hoạch của các hợp đồng xây dựng.\nTiền lãi\nTiền lãi được ghi nhận trên cơ sở dồn tích, được xác định trên số dư các tài khoản tiền gửi và lãi suất thực tế từng kỳ.",
+    "questions": [
+      {
+        "question": "Các khoản nợ phải trả và chi phí phải trả được ghi nhận dựa trên cơ sở nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu ít nhất ba điều kiện để doanh thu bán hàng hóa, thành phẩm được ghi nhận.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân biệt 'Phải trả người bán' và 'Chi phí phải trả' theo chính sách kế toán của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty ghi nhận doanh thu xây dựng khi kết quả thực hiện hợp đồng không thể ước tính đáng tin cậy.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của chính sách ghi nhận doanh thu dựa trên nguyên tắc dồn tích đến báo cáo kết quả kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tài chính phát sinh từ việc ghi nhận doanh thu xây dựng khi kết quả thực hiện hợp đồng không đáng tin cậy.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán: Giá vốn, Chi phí tài chính, Chi phí BH & QLDN, Chi phí đi vay, Thuế TNDN, Bên liên quan)\nLoại nội dung: Text\n13. Giá vốn hàng bán\nGiá vốn hàng bán là tổng giá vốn của hàng hóa, thành phẩm và chi phí trực tiếp của khối lượng hoạt động xây dựng đã cung cấp, các chi phí khác được tính vào giá vốn.\n\n14. Chi phí tài chính\nChi phí tài chính là những chi phí liên quan đến hoạt động tài chính gồm chi phí đi vay vốn.\n\n15. Chi phí bán hàng và chi phí quản lý doanh nghiệp\nChi phí bán hàng và chi phí quản lý doanh nghiệp là toàn bộ các chi phí phát sinh đến quá trình bán sản phẩm, hàng hóa, cung cấp dịch vụ và các chi phí quản lý chung của Công ty.\n\n16. Chi phí đi vay\nChi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay.\nChi phí đi vay được ghi nhận vào chi phí khi phát sinh. Trường hợp chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán thì chi phí đi vay này được vốn hóa. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng. Các khoản thu nhập phát sinh từ việc đầu tư tạm thời các khoản vay được ghi giảm nguyên giá tài sản có liên quan.\nĐối với các khoản vốn vay chung (trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang) thì chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể.\n\n17. Thuế thu nhập doanh nghiệp\nThuế thu nhập hiện hành\nThuế thu nhập hiện hành là khoản thuế được tính dựa trên thu nhập tính thuế. Thu nhập tính thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán, các chi phí không được trừ cũng như điều chỉnh các khoản thu nhập không phải chịu thuế và các khoản lỗ được chuyển.\nThuế suất thuế thu nhập doanh nghiệp là 20%.\nCông ty được ưu đãi thuế thu nhập doanh nghiệp của Dự án đầu tư Nhà máy nước An Hiệp và Dự án Hệ thống phân phối nước sạch huyện Mỏ Cày Bắc và huyện Mỏ Cày Nam (miễn thuế TNDN 4 năm kể từ năm 2017 và giảm 50% cho 9 năm tiếp theo, kể từ năm 2021).\n\n18. Bên liên quan\nCác bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung.\nTrong việc xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được chú trọng nhiều hơn hình thức pháp lý.",
+    "questions": [
+      {
+        "question": "Chi phí tài chính của công ty bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thuế suất thuế thu nhập doanh nghiệp phổ thông của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu điều kiện để chi phí đi vay được vốn hóa thay vì ghi nhận vào chi phí trong kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Kể tên các dự án mà công ty được hưởng ưu đãi thuế thu nhập doanh nghiệp.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt giữa thuế thu nhập hiện hành và lợi nhuận kế toán.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của chính sách vốn hóa chi phí đi vay đến lợi nhuận và giá trị tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Tiền, Phải thu khách hàng, Trả trước người bán)\nLoại nội dung: Bảng & Text\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN GIỮA NIÊN ĐỘ ĐVT: VNĐ\n1. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Tiền mặt | 3.232.433 | 7.812.723 |\n| Tiền gửi ngân hàng không kỳ hạn | 67.049.858.880 | 60.649.218.118 |\n| Các khoản tương đương tiền | 2.000.000.000 | 2.000.000.000 |\n| Cộng | 69.053.091.313 | 62.657.030.841 |\nCác khoản tương đương tiền: Là khoản tiền gửi có kỳ hạn dưới 3 tháng.\n| Chi tiết gồm: | Số cuối kỳ | Số đầu năm |\n|:-----------------------------------|:-----------|:-----------|\n| Tiền gửi có kỳ hạn NH TMCP Công thương Việt Nam | - | - |\n| Tiền gửi có kỳ hạn NH NN & PT Nông thôn | - | - |\n| Tiền gửi có kỳ hạn NH TMCP Nam Á | 2.000.000.000 | 2.000.000.000 |\n| Cộng | 2.000.000.000 | 2.000.000.000 |\n\n2. Phải thu ngắn hạn của khách hàng\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Phải thu các bên liên quan | - | - |\n| Phải thu các khách hàng khác | 1.256.102.651 | 15.490.859.950 |\n| - Phải thu tiền nước của các hộ dân | 872.478.632 | 15.107.235.931 |\n| - Trung tâm phát triển quỹ đất tỉnh Bến Tre | 267.155.947 | 267.155.947 |\n| - Ban QLDAĐTXD các CTNNPTNT Tỉnh BT | 116.468.072 | 116.468.072 |\n| Cộng | 1.256.102.651 | 15.490.859.950 |\n- Giá trị công trình Hệ thống thủy lợi Bắc Bến Tre giai đoạn I, HM Di dời hệ thống ống cấp nước tại cống An Thuận I, Cầu Cái Cối, cống Kênh cũ, cống Rạch Trôm.\n- Giá trị công trình hệ thống thủy lợi Bắc Bến Tre giai đoạn I, HM Di dời hệ thống cấp nước.\n\n3. Trả trước cho người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Trả trước các bên liên quan | - | - |\n| Trả trước các cá nhân, tổ chức khác | 1.073.220.734 | 1.442.632.295 |\n| - Công ty CP Đầu tư và XD cấp Thoát Nước | - | 630.232.832 |\n| - Công ty TNHH Vĩnh Hưng | - | 213.612.722 |\n| - Cty Y Tế Hòa Hảo | - | 269.663.750 |\n| - Sở Tài nguyên Và Môi trường Bến Tre - Chợ Lách... | 224.136.226 | 271.322.154 |\n| - Các nhà cung cấp khác | 365.808.036 | 541.077.309 |\n| Cộng | 1.073.220.734 | 1.442.632.295 |\n- Là khoản tạm ứng hợp đồng thi công CT Hồ chứa bùn NMN Lương Quới.\n- Là Tạm ứng Hợp đồng khám sức khỏe 2024.\n- Là khoản phải trả phí bảo vệ môi trường đối với nước thải công nghiệp.",
+    "questions": [
+      {
+        "question": "Tổng tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải thu tiền nước của các hộ dân cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản trả trước cho người bán ngắn hạn cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích ý nghĩa của các khoản tương đương tiền đối với thanh khoản của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của sự giảm mạnh các khoản phải thu ngắn hạn của khách hàng (đặc biệt là tiền nước của các hộ dân) trong kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tiềm ẩn từ các khoản trả trước cho người bán ngắn hạn không có chi tiết cụ thể trong bảng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Phải thu ngắn hạn khác, Hàng tồn kho, Chi phí trả trước)\nLoại nội dung: Bảng & Text\n4. Phải thu ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Dự phòng | Số đầu năm | Dự phòng |\n|:----------|:-----------|:---------|:-----------|:---------|\n| Tạm ứng | - | - | - | - |\n| Các khoản phải thu khác | 486.865.550 | - | 186.213.372 | - |\n| Cộng | 486.865.550 | - | 186.213.372 | - |\n\n5. Hàng tồn kho\n| Chỉ tiêu | Số cuối kỳ Giá gốc | Dự phòng | Số đầu năm Giá gốc | Dự phòng |\n|:----------|:-------------------|:---------|:-----------------|:---------|\n| Nguyên liệu, vật liệu | 12.732.747.991 | - | 10.453.709.258 | - |\n| Công cụ, dụng cụ | 234.433.398 | - | 16.213.398 | - |\n| Chi phí SXKD dở dang | 9.174.426 | - | - | - |\n| Cộng | 12.976.355.815 | - | 10.469.922.656 | - |\n- Nguyên vật liệu chủ yếu là các thiết bị về ngành nước: ống nước, thủy lượng kế,...\n\n9. Chi phí trả trước\n9a. Chi phí trả trước ngắn hạn\nChủ yếu là khoản chi phí mua bảo hiểm.\n\n9b. Chi phí trả trước dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Chi phí đồng hồ gắn và thay mới thủy lượng kế | 16.852.968.510 | 13.857.556.265 |\n| Chi phí trả trước dài hạn khác | 4.577.176.446 | 5.204.442.804 |\n| Cộng | 21.430.144.956 | 19.061.999.069 |\nTình hình tăng, giảm chi phí trả trước dài hạn\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Số dư đầu năm | 19.061.999.069 | 20.307.871.861 |\n| Số dư đầu kỳ | 20.691.583.174 | 18.753.882.482 |\n| Tăng trong kỳ | 4.551.489.461 | 3.364.246.234 |\n| Phân bổ trong kỳ | 3.812.927.679 | 3.333.704.569 |\n| Số dư cuối kỳ | 21.430.144.956 | 18.784.424.147 |",
+    "questions": [
+      {
+        "question": "Tổng giá trị hàng tồn kho cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư chi phí trả trước dài hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải thu ngắn hạn khác cuối kỳ với đầu năm, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Loại nguyên vật liệu chủ yếu trong hàng tồn kho của công ty là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc không có dự phòng cho các khoản phải thu ngắn hạn khác đến khả năng thu hồi nợ của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích xu hướng tăng của chi phí đồng hồ gắn và thay mới thủy lượng kế trong chi phí trả trước dài hạn và ảnh hưởng của nó đến hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Tài sản cố định hữu hình - Nguyên giá)\nLoại nội dung: Bảng\n6. Tài sản cố định hữu hình\nNguyên giá\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|:----------|:-----------------------|:-------------------|:-------------------------------|:-------------------------|:----------|\n| Số đầu năm | 218.734.093.762 | 81.429.410.022 | 616.878.975.977 | 6.542.415.158 | 923.584.894.919 |\n| Số đầu kỳ | 218.896.608.493 | 81.268.770.943 | 651.417.168.556 | 6.399.915.158 | 957.982.463.150 |\n| Tăng trong kỳ | 1.189.306.475 | 775.183.357 | 1.641.060.522 | - | 3.605.550.354 |\n| - Tăng do mua mới | - | - | - | - | - |\n| - Đầu tư XDCB hoàn thành | 1.152.191.274 | 775.183.357 | 1.641.060.522 | - | 3.568.435.153 |\n| - Tăng khác | 37.115.201 | - | - | - | 37.115.201 |\n| Giảm trong kỳ | 567.853.338 | - | - | - | 567.853.338 |\n| - Thanh lý, nhượng bán | - | - | - | - | - |\n| - Giảm khác | 567.853.338 | - | - | - | 567.853.338 |\n| Số cuối kỳ | 219.518.061.630 | 82.043.954.300 | 653.058.229.078 | 6.399.915.158 | 961.020.160.166 |\nTrong đó:\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|:----------|:-----------------------|:-------------------|:-------------------------------|:-------------------------|:----------|\n| Đã khấu hao hết nhưng vẫn còn sử dụng | 50.566.283.868 | 16.478.113.383 | 180.411.062.321 | 591.040.000 | 248.046.499.572 |",
+    "questions": [
+      {
+        "question": "Tổng nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá tài sản cố định hữu hình tăng trong kỳ chủ yếu do hoạt động nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá của loại tài sản nào có giá trị lớn nhất trong tài sản cố định hữu hình cuối kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh tổng nguyên giá tài sản cố định hữu hình đầu năm và cuối kỳ, và cho biết sự thay đổi.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư mới vào tài sản cố định của công ty trong kỳ dựa trên các số liệu 'Tăng trong kỳ'.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của việc có một lượng lớn tài sản đã khấu hao hết nhưng vẫn còn sử dụng đối với chi phí hoạt động và năng lực sản xuất của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Tài sản cố định hữu hình - Giá trị hao mòn lũy kế và Giá trị còn lại)\nLoại nội dung: Bảng\nGiá trị hao mòn lũy kế\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|:----------|:-----------------------|:-------------------|:-------------------------------|:-------------------------|:----------|\n| Số đầu năm | 110.931.524.470 | 44.628.156.132 | 348.655.983.917 | 3.296.345.152 | 507.512.009.671 |\n| Số đầu kỳ | 114.755.278.673 | 47.849.691.382 | 360.731.106.409 | 3.608.266.762 | 526.944.343.226 |\n| Tăng trong kỳ | 1.961.633.670 | 1.644.132.352 | 6.147.933.014 | 187.231.636 | 9.940.930.672 |\n| - Khấu hao | 1.961.633.670 | 1.644.132.352 | 6.147.933.014 | 187.231.636 | 9.940.930.672 |\n| Giảm trong kỳ | 299.174.583 | - | - | - | 299.174.583 |\n| - Thanh lý, nhượng bán | - | - | - | - | - |\n| - Giảm khác | 299.174.583 | - | - | - | 299.174.583 |\n| SỐ cuối kỳ | 116.417.737.760 | 49.493.823.734 | 366.879.039.423 | 3.795.498.398 | 536.586.099.315 |\nGiá trị còn lại\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Cộng |\n|:----------|:-----------------------|:-------------------|:-------------------------------|:-------------------------|:----------|\n| Số đầu năm | 107.802.569.292 | 36.801.253.890 | 268.222.992.060 | 3.246.070.006 | 416.072.885.248 |\n| Số đầu kỳ | 104.141.329.820 | 33.419.079.561 | 290.686.062.147 | 2.791.648.396 | 431.038.119.924 |\n| Số cuối kỳ | 103.100.323.870 | 32.550.130.566 | 286.179.189.655 | 2.604.416.760 | 424.434.060.851 |\n| Giá trị còn lại tài sản cầm cố, thế chấp | 55.403.748.536 | 3.904.065.109 | 129.812.080.034 | - | 189.119.893.679 |",
+    "questions": [
+      {
+        "question": "Tổng giá trị hao mòn lũy kế tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị còn lại của tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản khấu hao tăng trong kỳ của 'Phương tiện vận tải, truyền dẫn' là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh giá trị còn lại của tài sản cầm cố, thế chấp với tổng giá trị còn lại của tài sản cố định hữu hình cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ sử dụng tài sản cầm cố, thế chấp trong cơ cấu tài sản của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng giá trị hao mòn lũy kế đến giá trị sổ sách của tài sản cố định và khả năng vay vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Tài sản cố định vô hình)\nLoại nội dung: Bảng\n7. Tài sản cố định vô hình\nChương trình, phần mềm\nNguyên giá\n| Chỉ tiêu | Chương trình, phần mềm | Cộng |\n|:----------|:-----------------------|:-----|\n| Số đầu năm | 1.338.000.000 | 1.338.000.000 |\n| Số đầu kỳ | 1.338.000.000 | 1.338.000.000 |\n| Tăng trong kỳ | 60.000.000 | 60.000.000 |\n| Giảm trong kỳ | - | - |\n| Số cuối kỳ | 1.398.000.000 | 1.398.000.000 |\nTrong đó:\n| Chỉ tiêu | Chương trình, phần mềm | Cộng |\n|:----------|:-----------------------|:-----|\n| Đã khấu hao hết nhưng vẫn còn sử dụng | 1.188.000.000 | 1.188.000.000 |\nGiá trị hao mòn lũy kế\n| Chỉ tiêu | Chương trình, phần mềm | Cộng |\n|:----------|:-----------------------|:-----|\n| Số đầu năm | 1.296.333.333 | 1.296.333.333 |\n| Số đầu kỳ | 1.321.333.333 | 1.321.333.333 |\n| Khấu hao trong kỳ | 13.541.096 | 13.541.096 |\n| Giảm trong kỳ | - | - |\n| Số cuối kỳ | 1.334.874.429 | 1.334.874.429 |\nGiá trị còn lại\n| Chỉ tiêu | Chương trình, phần mềm | Cộng |\n|:----------|:-----------------------|:-----|\n| Số đầu năm | 41.666.667 | 41.666.667 |\n| Số đầu kỳ | 16.666.667 | 16.666.667 |\n| Số cuối kỳ | 63.125.571 | 63.125.571 |",
+    "questions": [
+      {
+        "question": "Tổng nguyên giá tài sản cố định vô hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định vô hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản cố định vô hình tăng trong kỳ là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Số khấu hao tài sản cố định vô hình trong kỳ là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản cố định vô hình (chương trình, phần mềm) của công ty và ý nghĩa của chúng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc có một lượng lớn tài sản cố định vô hình đã khấu hao hết nhưng vẫn còn sử dụng đến chi phí hoạt động và năng lực công nghệ của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Chi phí xây dựng cơ bản dở dang - Chi tiết)\nLoại nội dung: Bảng\n8. Chi phí xây dựng cơ bản dở dang\n| Chỉ tiêu | Số đầu năm | Số đầu kỳ | Chi phí phát sinh trong kỳ | Kết chuyển vào TSCĐ trong kỳ | Giảm khác | Số cuối kỳ |\n|:----------|:-----------|:-----------|:--------------------------|:-----------------------------|:---------|:-----------|\n| Mua sắm tài sản cố định | - | 10.000.000 | - | - | 13.500.000 | 13.500.000 |\n| - Máy bơm ly tâm trục ngang phục vụ mặn 2023-2024 | - | 5.000.000 | - | - | - | - |\n| - Máy bơm ly tâm trục ngang - TB dã chiến CNCN Phú Tân | - | 5.000.000 | - | - | - | - |\n| - Bộ Thiết bị khuếch đại âm thanh rò rỉ kỹ thuật số | - | - | 4.500.000 | 4.500.000 | - | - |\n| - Xe ô tô tải 1,5 tấn hiệu Huyndai | - | - | 9.000.000 | 9.000.000 | - | - |\n| Xây dựng cơ bản dở dang | 24.535.240.660 | 4.912.375.034 | 5.869.430.393 | 2.793.251.796 | 12.104.173 | 7.976.449.458 |\n| - Ống cấp nước Đại lộ Đông Tây gđ 2 - ống cấp nước các loại | 123.883.085 | 1.982.132.315 | - | 2.106.015.400 | - | - |\n| - Hồ chứa bùn Nhà máy nước Sơn Đông | 90.649.195 | 1.061.542.079 | 1.152.191.274 | - | - | - |\n| - Tuyến ống CN dọc đường Đoàn Hoàng Minh P.Khương BV NĐC | 173.612.118 | 689.995.180 | 1.598.717.530 | 2.288.712.710 | - | - |\n| - Tuyến ống cấp nước từ NMN Hữu Định về KCN Giao Long | 22.686.266.658 | 507.125.745 | 150.000.000 | - | 657.125.451 | - |",
+    "questions": [
+      {
+        "question": "Tổng giá trị xây dựng cơ bản dở dang cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Dự án nào trong chi phí xây dựng cơ bản dở dang có giá trị kết chuyển vào TSCĐ lớn nhất trong kỳ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí phát sinh trong kỳ cho 'Bộ Thiết bị khuếch đại âm thanh rò rỉ kỹ thuật số' là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh chi phí phát sinh trong kỳ của 'Tuyến ống CN dọc đường Đoàn Hoàng Minh' với 'Hồ chứa bùn Nhà máy nước Sơn Đông'.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hoàn thành và chuyển đổi chi phí xây dựng cơ bản dở dang thành tài sản cố định trong kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm mạnh các khoản chi phí xây dựng cơ bản dở dang (ví dụ: Tuyến ống cấp nước Đại lộ Đông Tây) đến kế hoạch đầu tư và phát triển của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Chi phí xây dựng cơ bản dở dang - Tổng hợp; Phải trả người bán ngắn hạn; Người mua trả tiền trước ngắn hạn)\nLoại nội dung: Bảng & Text\n| Chỉ tiêu | Số đầu năm | Số đầu kỳ | Chi phí phát sinh trong kỳ | Kết chuyển vào TSCĐ trong kỳ | Giảm khác | Số cuối kỳ |\n|:----------|:-----------|:-----------|:--------------------------|:-----------------------------|:---------|:-----------|\n| - MLCN Huyện Mỏ Cày Bắc năm 2023 - ống CN HDPED125 | 1.143.059.570 | 1.410.004.707 | 69.018.577 | - | - | 1.479.023.284 |\n| - Các công trình khác | 532.302.314 | 2.090.717.122 | 1.008.019.892 | 162.037.238 | 12.104.173 | 2.924.595.603 |\n| Sửa chữa lớn TSCĐ | 930.038.586 | 1.162.249.819 | 1.124.039.240 | 775.183.357 | 289.448.125 | 1.221.657.577 |\n| Cộng | 25.475.279.246 | 6.074.624.853 | 7.006.969.633 | 3.568.435.153 | 301.552.298 | 9.211.607.035 |\n\n10. Phải trả người bán ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Phải trả các bên liên quan | - | - |\n| Phải trả các nhà cung cấp khác | 2.809.194.617 | 3.949.425.299 |\n| - Sở Tài nguyên Và Môi Trường Bến Tre - Sơn Đông | 19.100.267 | 1.054.527.525 |\n| - Sở Tài Chính Bến Tre | 640.667.426 | 710.125.432 |\n| - Nhà máy hóa chất Biên Hòa | 319.680.000 | - |\n| - Cty CP sx và TM Tường Vân | - | 332.409.748 |\n| - Các nhà cung cấp khác | 1.497.337.176 | 2.184.772.342 |\n| Cộng | 2.809.194.617 | 3.949.425.299 |\n- Là khoản phải trả phí bảo vệ môi trường đối với nước thải công nghiệp.\n- Phí thẩm tra quyết toán các công trình.\n- Mua hóa chất PAC.\n- Mua vật tư.\n\n11. Người mua trả tiền trước ngắn hạn\nLà các khoản nhận ứng trước tiền cung cấp nước sạch tại các huyện.",
+    "questions": [
+      {
+        "question": "Tổng chi phí xây dựng cơ bản dở dang cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng số phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí phát sinh trong kỳ cho 'Sửa chữa lớn TSCĐ' là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu hai khoản phải trả người bán ngắn hạn có giá trị lớn nhất cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cơ cấu phải trả người bán ngắn hạn của công ty và ý nghĩa của nó.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc nhận ứng trước tiền cung cấp nước sạch (Người mua trả tiền trước ngắn hạn) đến dòng tiền và doanh thu của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Thuế và các khoản phải nộp Nhà nước)\nLoại nội dung: Bảng & Text\n12. Thuế và các khoản phải nộp Nhà nước\n| Chỉ tiêu | Số đầu năm Phải nộp | Số đầu năm Phải thu | Số đầu kỳ Phải nộp | Số đầu kỳ Phải thu | Số phát sinh trong kỳ Phải nộp | Số phát sinh trong kỳ Đã nộp | Số cuối kỳ Phải nộp | Số cuối kỳ Phải thu |\n|:----------|:-------------------|:-------------------|:-------------------|:-------------------|:-------------------------------|:-----------------------------|:-------------------|:-------------------|\n| Thuế GTGT đầu ra | 278.370.154 | - | 353.615.854 | - | 1.015.702.165 | 959.843.131 | 409.474.888 | - |\n| Thuế thu nhập doanh nghiệp | 2.470.224.352 | - | 4.278.505.306 | - | 2.556.811.696 | 4.278.505.306 | 2.556.811.696 | - |\n| Thuế thu nhập cá nhân | 64.846.100 | 1.746.750 | - | - | 51.330.650 | 51.330.650 | 1.746.750 | - |\n| Thuế tài nguyên | 144.529.754 | - | 59.532.510 | - | 194.329.890 | 191.037.600 | 62.824.800 | - |\n| Thuế môn bài | - | - | - | - | - | - | - | - |\n| Phí bảo vệ môi trường | 531.755.483 | - | 539.813.294 | - | 1.532.858.003 | 1.517.175.725 | 555.495.572 | - |\n| Thuế nhà đất và tiền thuê đất | - | 72.845.466 | - | 75.525 | - | - | 75.525 | - |\n| Các loại thuế khác | - | - | - | - | - | - | - | - |\n| Cộng | 3.489.725.843 | 72.845.466 | 5.233.213.714 | 75.525 | 5.351.032.404 | 6.997.892.412 | 3.586.353.706 | 75.525 |\n\n12a. Thuế giá trị gia tăng\nCông ty nộp thuế giá trị gia tăng theo phương pháp khấu trừ.",
+    "questions": [
+      {
+        "question": "Tổng số thuế phải nộp Nhà nước cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số thuế thu nhập doanh nghiệp phải nộp cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Phương pháp nộp thuế GTGT của công ty là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh phí bảo vệ môi trường phải nộp và đã nộp trong kỳ báo cáo.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá xu hướng biến động của các khoản thuế và phí phải nộp Nhà nước từ đầu năm đến cuối kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính có thể phát sinh nếu có sự chênh lệch lớn giữa số thuế phải nộp và đã nộp kéo dài.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Chi tiết thuế TNDN, Phải trả người lao động, Chi phí phải trả ngắn hạn, Phải trả ngắn hạn khác)\nLoại nội dung: Bảng & Text\n12b. Thuế thu nhập doanh nghiệp (TNDN)\nCông ty phải nộp thuế thu nhập doanh nghiệp cho các khoản thu nhập tính thuế với thuế suất 20%.\nThuế thu nhập doanh nghiệp phải nộp trong kỳ được dự tính như sau:\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Tổng lợi nhuận kế toán trước thuế | 14.982.787.580 | 17.464.118.738 |\n| Các khoản điều chỉnh tăng, giảm lợi nhuận kế toán để xác định lợi nhuận chịu thuế thu nhập doanh nghiệp | - | - |\n| - Các khoản điều chỉnh tăng | - | - |\n| - Chi phí không hợp lý, hợp lệ | - | - |\n| - Các khoản điều chỉnh giảm | - | - |\n| Thu nhập chịu thuế | 14.982.787.580 | 17.464.118.738 |\n| Thu nhập được ưu đãi thuế | 4.397.458.200 | 5.345.729.323 |\n| - Thu nhập được giảm 50% thuế | 4.397.458.200 | 5.345.729.323 |\n| Thuế suất thuế thu nhập doanh nghiệp | 20% | 20% |\n| Thuế TNDN phải nộp theo thuế suất phổ thông | 2.996.557.516 | 3.492.823.748 |\n| Thuế thu nhập doanh nghiệp được miễn, giảm | 439.745.820 | 534.572.933 |\n| Tổng Thuế thu nhập doanh nghiệp phải nộp | 2.556.811.696 | 2.958.250.815 |\n- Công ty được ưu đãi thuế thu nhập doanh nghiệp khi thực hiện dự án đầu tư thuộc lĩnh vực, địa bàn ưu đãi thuế Tỉnh Bến Tre. Bao gồm Dự án đầu tư Nhà máy nước An Hiệp và Dự án Hệ thống phân phối nước sạch huyện Mỏ Cày Bắc và huyện Mỏ Cày Nam (miễn thuế TNDN 4 năm kể từ năm 2017 và giảm 50% cho 9 năm tiếp theo, kể từ năm 2021).\n\n13. Phải trả người lao động\nLà quỹ tiền lương còn phải trả cho viên chức quản lý và cán bộ công nhân viên.\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Viên chức quản lý, kiểm soát viên | 654.217.362 | 1.435.962.690 |\n| Cán bộ công nhân viên | 3.368.864.971 | 4.290.835.667 |\n| Cộng | 4.023.082.333 | 5.726.798.357 |\n\n14. Chi phí phải trả ngắn hạn\nLà khoản trích trước chi phí lãi vay phải trả của các ngân hàng.\n\n15. Phải trả ngắn hạn khác\n15a. Phải trả ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Phải trả các bên liên quan | - | - |\n| Phải trả các đơn vị và cá nhân khác | 3.023.828.480 | 2.989.470.918 |\n| - Khách hàng chuyển nhầm | 21.052.460 | - |\n| - Nhận ký quỹ, ký cược ngắn hạn | 79.967.840 | 65.000.000 |\n| - Các khoản phải trả ngắn hạn khác | 2.922.808.180 | 2.924.470.918 |\n| Cộng | 3.023.828.480 | 2.989.470.918 |\n- Là khoản nợ ngân sách Nhà nước theo biên bản kiểm toán Nhà nước năm 2017.",
+    "questions": [
+      {
+        "question": "Tổng thuế TNDN phải nộp kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng số phải trả người lao động cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty được miễn và giảm bao nhiêu thuế TNDN kỳ này?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phải trả ngắn hạn khác cuối kỳ có những khoản mục chính nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của các ưu đãi thuế TNDN đến lợi nhuận ròng của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính từ khoản nợ ngân sách Nhà nước theo biên bản kiểm toán năm 2017 được đề cập trong 'Phải trả ngắn hạn khác'.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Vay và nợ thuê tài chính - Vay ngắn hạn)\nLoại nội dung: Bảng & Text\n16. Vay và nợ thuê tài chính ngắn hạn và dài hạn\n16a. Vay và nợ thuê tài chính ngắn hạn\n| Chỉ tiêu | Số cuối kỳ Giá trị | Số cuối kỳ Số có khả năng trả nợ | Số đầu năm Giá trị | Số đầu năm Số có khả năng trả nợ |\n|:----------|:-------------------|:--------------------------|:-------------------|:--------------------------|\n| Vay ngắn hạn phải trả các bên liên quan | - | - | - | - |\n| Vay ngắn hạn phải trả các tổ chức và cá nhân khác | 26.816.248.000 | 26.816.248.000 | 25.707.428.000 | 25.707.428.000 |\n| - Vay ngắn hạn đến hạn trả | - | - | - | - |\n| - Ngân hàng Phát triển Việt Nam - CN Bến Tre | 18.512.000.000 | 18.512.000.000 | 18.512.000.000 | 18.512.000.000 |\n| - Ngân hàng Thương mại CP Công thương Việt Nam CN Bến Tre | 4.768.248.000 | 4.768.248.000 | 4.543.428.000 | 4.543.428.000 |\n| - Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - CN Bến Tre | 3.536.000.000 | 3.536.000.000 | 2.652.000.000 | 2.652.000.000 |\n| Cộng | 26.816.248.000 | 26.816.248.000 | 25.707.428.000 | 25.707.428.000 |\nChi tiết số phát sinh về các khoản vay ngắn hạn trong kỳ như sau:\n| Chỉ tiêu | Số đầu năm | Số đầu kỳ | Số tiền vay phát sinh trong kỳ | Chuyển từ vay dài hạn sang ngắn hạn trả trong kỳ | Số tiền vay đã trả trong kỳ | Số cuối kỳ |\n|:----------|:-----------|:-----------|:-------------------------------|:-------------------------------------------------|:---------------------------|:-----------|\n| Nợ dài hạn đến hạn trả | 25.707.428.000 | 26.591.428.000 | 9.373.882.000 | 9.149.062.000 | 26.816.248.000 | - |\n| Cộng | 25.707.428.000 | 26.591.428.000 | 9.373.882.000 | 9.149.062.000 | 26.816.248.000 | - |",
+    "questions": [
+      {
+        "question": "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ngân hàng nào có khoản vay ngắn hạn lớn nhất đối với công ty cuối kỳ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền vay ngắn hạn phát sinh trong kỳ là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh tổng giá trị vay ngắn hạn cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá rủi ro thanh khoản của công ty dựa trên cơ cấu vay ngắn hạn và khả năng trả nợ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc chuyển nợ dài hạn đến hạn trả sang ngắn hạn đối với kế hoạch tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Vay và nợ thuê tài chính - Vay dài hạn (Phần 1))\nLoại nội dung: Bảng & Text\n16b. Vay và nợ thuê tài chính dài hạn\n| Chỉ tiêu | Số cuối kỳ Giá trị | Số cuối kỳ Số có khả năng trả nợ | Số đầu năm Giá trị | Số đầu năm Số có khả năng trả nợ |\n|:----------|:-------------------|:--------------------------|:-------------------|:--------------------------|\n| Vay dài hạn phải trả các bên liên quan | - | - | - | - |\n| Vay dài hạn phải trả các tổ chức và cá nhân khác | 47.932.232.282 | 47.932.232.282 | 61.703.551.519 | 61.703.551.519 |\n| - Ngân hàng Phát triển Việt Nam - CN Bến Tre | 8.769.000.000 | 8.769.000.000 | 25.120.000.000 | 25.120.000.000 |\n| - Ngân hàng Thương mại CP Công thương Việt Nam CN Bến Tre | 22.692.976.000 | 22.692.976.000 | 24.788.572.000 | 24.788.572.000 |\n| - Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - CN Bến Tre | 16.470.256.282 | 16.470.256.282 | 11.794.979.519 | 11.794.979.519 |\n| Cộng | 47.932.232.282 | 47.932.232.282 | 61.703.551.519 | 61.703.551.519 |\n\n1. Là khoản vay của các hợp đồng sau:\na) Khoản vay bằng vốn ODA theo Hiệp định vay phụ giữa Bộ Tài chính thay mặt cho nước Cộng hòa xã hội chủ nghĩa Việt Nam và Công ty CP cấp thoát nước Bến Tre ngày 28/08/1997 và Phụ lục sửa đổi Hiệp định vay phụ ngày 28/04/2008.\n- Hạn mức: 64.836.778.484 đồng\n- Thời hạn vay: 25 năm (ân hạn 5 năm từ ngày rút vốn đầu tiên của khoản vay vốn phụ)\n- Lãi suất: 5%/năm\n- Tài sản đảm bảo: Theo Hợp đồng thế chấp số 03/2010/HĐCTSNHPTPC ngày 06/09/2010 gồm tài sản hình thành trong tương lai và trụ sở làm việc.\n- Số dư nợ gốc tại thời điểm 30/09/2024 là 8.641.000.000 đồng, trong đó khoản nợ vay đến hạn trả trong năm 2024 là 4.322.000.000 đồng.\nb) Khoản vay bằng vốn ODA do Cơ quan Phát triển Pháp (AFD) tài trợ theo hợp đồng số 01/2013/HĐODANHPTVN ngày 23/04/2013, hợp đồng sửa đổi số 01A/2013/HĐODANHPTVN ngày 19/06/2013, phụ lục hợp đồng số 01/2013/PLHĐODANHPTVN ngày 18/04/2014, hợp đồng sửa đổi số 02A/2013/HĐODANHPTVN ngày 02/07/2014\n- Hạn mức: 177.360.000.000 đồng\n- Thời hạn vay: 15 năm (ân hạn 2,5 năm từ ngày giải ngân lần đầu)\n- Lãi suất: 5%/năm trong hạn, 7,5%/năm quá hạn\n- Mục đích vay: Đầu tư xây dựng công trình Nhà máy nước An Hiệp huyện Châu Thành giai đoạn 1, công suất 15.000 m3/ngày\n- Tài sản đảm bảo: Tài sản hình thành trong tương lai.\n- Số dư nợ gốc tại thời điểm 30/09/2024 là 18.640.000.000 đồng, trong đó khoản nợ vay đến hạn trả trong năm 2024 là 14.190.000.000 đồng.",
+    "questions": [
+      {
+        "question": "Tổng vay và nợ thuê tài chính dài hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ngân hàng Phát triển Việt Nam - CN Bến Tre có số dư nợ gốc là bao nhiêu tại thời điểm 30/09/2024 cho khoản vay vốn ODA (mục 1a)?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mục đích vay khoản vốn ODA do Cơ quan Phát triển Pháp (AFD) tài trợ là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh lãi suất trong hạn và lãi suất quá hạn của khoản vay AFD.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào nguồn vốn vay dài hạn và các điều khoản liên quan.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính của công ty khi một phần lớn nợ dài hạn (mục 1a và 1b) sẽ đến hạn trả trong năm 2024.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Vay và nợ thuê tài chính - Vay dài hạn (Phần 2))\nLoại nội dung: Text\n2. Là khoản vay của các hợp đồng sau:\na) Khoản vay bằng dự án đầu tư do Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Bến Tre theo Hợp đồng số 27873.0692022/HĐCVDADT/NHCT780005.BEWACO ngày 30/12/2022\n- Hạn mức: 16.500.000.000 đồng\n- Thời hạn vay: 84 tháng\n- Lãi suất: 13%/năm trong hạn, 150% lãi suất trong hạn quá hạn\n- Mục đích vay: Vay bù đắp\n- Tài sản đảm bảo: Tài sản hình thành trong tương lai.\n- Số dư nợ gốc tại thời điểm 30/09/2024 là 12.978.000.000 đồng, trong đó khoản nợ vay đến hạn trả trong năm 2024 là 2.472.000.000 đồng.\nb) Khoản vay bằng dự án đầu tư do Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Bến Tre theo Hợp đồng số 38670.0842023/HĐCVDAĐT/NHCT78005.BEWACO ngày 29/12/2023\n- Hạn mức: 25.000.000.000 đồng\n- Thời hạn vay: 84 tháng\n- Lãi suất: 9%/năm trong hạn, 150% lãi suất trong hạn quá hạn\n- Mục đích vay: Vay bù đắp\n- Tài sản đảm bảo: Tài sản hình thành trong tương lai.\n- Số dư nợ gốc tại thời điểm 30/09/2024 là 12.946.429.000 đồng, trong đó khoản nợ vay đến hạn trả trong năm 2024 là 2.071.428.000 đồng.\nc) Khoản vay bằng dự án đầu tư do Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Bến Tre theo Hợp đồng số 14911.0282024/HĐCVDADT/NHCT780005.BEWACO ngày 29/12/2023\n- Hạn mức: 3.743.000.000 đồng\n- Thời hạn vay: 84 tháng\n- Lãi suất: 9%/năm trong hạn, 150% lãi suất trong hạn quá hạn\n- Mục đích vay: Vay bù đắp\n- Tài sản đảm bảo: Tài sản hình thành trong tương lai.\n- Số dư nợ gốc tại thời điểm 30/09/2024 là 1.536.795.000 đồng, trong đó khoản nợ vay đến hạn trả trong năm 2024 là 224.820.000 đồng.\n\n3. Là khoản vay của hợp đồng sau:\na) Là khoản vay bằng dự án đầu tư do Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - Chi nhánh Bến Tre theo Hợp đồng số 01/2023/7928997/HĐTD ngày 20/06/2023\n- Hạn mức: 23.000.000.000 đồng\n- Thời hạn vay: 84 tháng\n- Lãi suất: 9,4%/năm trong hạn, 150% lãi suất trong hạn quá hạn\n- Mục đích vay: Vay thi công Gói 2 Ống CN D400 và D315 Dự án. Tuyến ống cấp nước từ NMN Hữu Định về KCN Giao Long\n- Tài sản đảm bảo: Tài sản hình thành trong tương lai.\n- Số dư nợ gốc tại thời điểm 30/09/2024 là 20.006.256.282 đồng, trong đó khoản nợ vay đến hạn trả trong năm 2024 là 3.536.000.000 đồng.",
+    "questions": [
+      {
+        "question": "Hạn mức khoản vay theo hợp đồng số 27873.0692022/HĐCVDADT/NHCT780005.BEWACO là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mục đích vay khoản vay từ Ngân hàng TMCP Đầu tư và Phát triển Việt Nam là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lãi suất trong hạn của khoản vay Ngân hàng TMCP Công Thương Việt Nam theo hợp đồng 27873... và hợp đồng 38670....",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng số dư nợ gốc của các khoản vay từ Ngân hàng TMCP Công Thương Việt Nam tại thời điểm 30/09/2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro lãi suất của các khoản vay dài hạn này.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược vay vốn của công ty thông qua các hợp đồng vay dài hạn này, đặc biệt là mục đích 'vay bù đắp' và 'vay thi công'.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "26",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Quỹ khen thưởng, phúc lợi; Vốn chủ sở hữu)\nLoại nội dung: Bảng & Text\n17. Quỹ khen thưởng, phúc lợi\n| Chỉ tiêu | Số đầu năm | Số đầu kỳ | Tăng do trích lập từ lợi nhuận | Tăng khác | Chi quỹ trong kỳ | Số cuối kỳ |\n|:----------|:-----------|:-----------|:-----------------------------|:---------|:-----------------|:-----------|\n| Quỹ khen thưởng, phúc lợi | 5.314.728.246 | 3.680.061.989 | 1.425.000.000 | 5.400.000 | 2.319.778.795 | 2.790.683.194 |\n| Quỹ khen thưởng ban điều hành | 117.500.000 | 110.000.000 | 55.000.000 | - | 110.000.000 | 55.000.000 |\n| Cộng | 5.432.228.246 | 3.790.061.989 | 1.480.000.000 | 5.400.000 | 2.429.778.795 | 2.845.683.194 |\n\n18. Vốn chủ sở hữu\n18a. Bảng đối chiếu biến động của vốn chủ sở hữu\nThông tin về biến động của vốn chủ sở hữu được trình bày ở Phụ lục số 01 đính kèm.\n\n18b. Chi tiết vốn góp của chủ sở hữu\n| Chỉ tiêu | Số cuối kỳ Vốn cổ phần thường | Số cuối kỳ Tỷ lệ | Số đầu năm Vốn cổ phần thường | Số đầu năm Tỷ lệ |\n|:----------|:---------------------------|:------------|:---------------------------|:------------|\n| Ủy ban nhân dân tỉnh Bến Tre | 188.160.000.000 | 64,00 | 188.160.000.000 | 64,00 |\n| Công ty CP Cấp thoát nước Thủy Anh | 51.095.100.000 | 17,38 | 51.095.100.000 | 17,38 |\n| Công ty TNHH Hoàn cầu | 44.100.000.000 | 15,00 | 44.100.000.000 | 15,00 |\n| Khác | 10.644.900.000 | 3,62 | 10.644.900.000 | 3,62 |\n| Cộng | 294.000.000.000 | 100,00 | 294.000.000.000 | 100,00 |\nVốn góp điều lệ đã góp và còn phải góp:\n| Chỉ tiêu | Theo chứng nhận ĐKDN đã góp vốn | Điều lệ còn phải góp |\n|:----------|:-----------------------------|:---------------------|\n| Cộng | 294.000.000.000 | 294.000.000.000 |\n\n18c. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Vốn đầu tư của chủ sở hữu | - | - |\n| - Vốn góp đầu kỳ | 294.000.000.000 | 294.000.000.000 |\n| - Vốn góp tăng trong kỳ | - | - |\n| - Vốn góp giảm trong kỳ | - | - |\n| - Vốn góp cuối kỳ | 294.000.000.000 | 294.000.000.000 |\n| Cổ tức, lợi nhuận đã trích lập | 20.580.000.000 | 17.640.000.000 |\n| Cổ tức, lợi nhuận đã chi | 20.580.000.000 | 17.640.000.000 |\n| Cổ tức, lợi nhuận còn phải chi | - | - |",
+    "questions": [
+      {
+        "question": "Tổng quỹ khen thưởng, phúc lợi cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Ai là cổ đông lớn nhất của công ty và tỷ lệ sở hữu là bao nhiêu phần trăm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số vốn góp của chủ sở hữu cuối kỳ là bao nhiêu VND và có thay đổi so với đầu kỳ không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh cổ tức, lợi nhuận đã trích lập kỳ này và kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào vốn Nhà nước dựa trên tỷ lệ sở hữu vốn cổ phần.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược phân phối lợi nhuận của công ty dựa trên số liệu trích lập và chi trả cổ tức.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "27",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung BCĐKT: Cổ phiếu, Các quỹ doanh nghiệp, Phân phối lợi nhuận, Các khoản mục ngoài BCĐKT)\nLoại nội dung: Bảng & Text\n18d. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Số lượng cổ phiếu đăng ký phát hành | - | - |\n| Số lượng cổ phiếu đã phát hành/bán ra công chúng | 29.400.000 | 29.400.000 |\n| - Cổ phiếu phổ thông | 29.400.000 | 29.400.000 |\n| - Cổ phiếu ưu đãi (loại được phân loại là Vốn chủ sở hữu) | - | - |\n| Số lượng cổ phiếu được mua lại | - | - |\n| - Cổ phiếu phổ thông | - | - |\n| - Cổ phiếu ưu đãi | - | - |\n| Số lượng cổ phiếu đang lưu hành | 29.400.000 | 29.400.000 |\n| - Cổ phiếu phổ thông | 29.400.000 | 29.400.000 |\n| - Cổ phiếu ưu đãi | - | - |\n| Mệnh giá cổ phiếu đang lưu hành | 10.000 CP | - |\n\n18e. Các quỹ của doanh nghiệp\nQuỹ đầu tư phát triển dùng để đầu tư mở rộng quy mô kinh doanh hoặc đầu tư chiều sâu của Công ty.\n\n18f. Phân phối lợi nhuận\nTrong kỳ, Công ty phân phối lợi nhuận từ Kết quả kinh doanh của Quý 3 năm 2024 theo Nghị quyết số 55/NQĐHĐCĐ ký ngày 27/06/2024 như sau:\n- Trích quỹ khen thưởng, phúc lợi Quý 3 năm 2024: 1.425.000.000\n- Trích quỹ thưởng ban điều hành Quý 3 năm 2024: 55.000.000\n- Trích quỹ đầu tư phát triển Quý 3 năm 2024: 2.655.000.000\n- Cộng: 4.135.000.000\n\n19. Các khoản mục ngoài Bảng cân đối kế toán giữa niên độ\n19a. Tài sản nhận giữ hộ\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Nguyên giá của tài sản cố định nhận giữ hộ | 14.159.178.193 | 14.159.178.193 |\n- Những công trình từ nguồn vốn ngân sách, Ủy ban Nhân dân Tỉnh Bến Tre bàn giao cho Công ty giữ hộ.\n\n19b. Nợ khó đòi đã xử lý\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|:----------|:-----------|:-----------|\n| Nợ khó đòi đã xử lý | 808.643.907 | 810.230.621 |",
+    "questions": [
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mệnh giá cổ phiếu đang lưu hành là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng số tiền phân phối lợi nhuận trong quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu mục đích của 'Quỹ đầu tư phát triển' theo chính sách của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tính ổn định của vốn cổ phần của công ty dựa trên số lượng cổ phiếu đang lưu hành và việc không có cổ phiếu quỹ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc nhận giữ hộ tài sản cố định từ ngân sách Nhà nước đến báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "28",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung Báo cáo kết quả hoạt động kinh doanh: Doanh thu, Giá vốn, Chi phí)\nLoại nội dung: Bảng & Text\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ KINH DOANH GIỮA NIÊN ĐỘ ĐVT: VNĐ\n1. Doanh thu thuần về bán hàng và cung cấp dịch vụ\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Doanh thu cung cấp nước sạch | 56.193.651.513 | 55.190.798.826 |\n| Doanh thu thi công tuyến cấp thoát nước | 236.431.322 | 493.937.311 |\n| Doanh thu từ hoạt động thu phí BVMT | 157.701.439 | 164.104.350 |\n| Doanh thu bán hàng hóa và cung cấp dịch vụ | - | 979.000 |\n| Cộng | 56.587.784.274 | 55.849.819.487 |\n\n2. Giá vốn hàng bán\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Giá vốn cung cấp nước sạch | 20.419.916.186 | 18.839.766.070 |\n| Giá vốn thi công tuyến cấp thoát nước | 234.263.289 | 492.211.248 |\n| Giá vốn từ hoạt động thu phí BVMT | 107.401.878 | 94.885.000 |\n| Giá vốn bán hàng hóa và cung cấp dịch vụ | - | 886.768 |\n| Cộng | 20.761.581.353 | 19.427.749.086 |\n\n3. Doanh thu hoạt động tài chính\nToàn bộ là lãi tiền gửi ngân hàng.\n\n4. Chi phí tài chính\nToàn bộ là chi phí lãi vay các ngân hàng.\n\n5. Chi phí bán hàng\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Chi phí cho nhân viên | 3.117.141.204 | 3.239.157.700 |\n| Chi phí vật liệu, công cụ | 4.178.344.281 | 3.647.486.681 |\n| Chi phí khấu hao tài sản cố định | 6.564.027.875 | 6.139.916.947 |\n| Chi phí dịch vụ mua ngoài và bằng tiền khác | 180.961.474 | 110.561.470 |\n| Cộng | 14.040.474.834 | 13.137.122.798 |\n\n6. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Chi phí cho nhân viên | 2.855.835.171 | 2.545.785.193 |\n| Chi phí khấu hao tài sản cố định | 369.203.218 | 357.860.458 |\n| Chi phí phân bổ | 932.499.735 | 686.053.691 |\n| Thuế, phí và lệ phí | - | - |\n| Chi phí dịch vụ mua ngoài và bằng tiền khác | 850.991.082 | 1.041.846.033 |\n| Cộng | 5.008.529.206 | 4.631.545.375 |\n\n7. Chi phí thuế TNDN hiện hành\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Chi phí thuế TNDN tính trên thu nhập chịu thuế năm hiện hành | 2.556.811.696 | 2.958.250.815 |\n| Tổng chi phí thuế TNDN hiện hành | 2.556.811.696 | 2.958.250.815 |",
+    "questions": [
+      {
+        "question": "Doanh thu cung cấp nước sạch kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí bán hàng kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá vốn cung cấp nước sạch kỳ này với kỳ trước, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí khấu hao tài sản cố định trong chi phí bán hàng và chi phí quản lý doanh nghiệp kỳ này là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cơ cấu doanh thu của công ty giữa cung cấp nước sạch và thi công tuyến cấp thoát nước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng chi phí vật liệu, công cụ trong chi phí bán hàng đến lợi nhuận gộp của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "29",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung Báo cáo kết quả hoạt động kinh doanh: Lãi trên cổ phiếu, Chi phí SXKD theo yếu tố)\nLoại nội dung: Bảng & Text\n8. Lãi cơ bản trên cổ phiếu\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp | 12.425.975.884 | 14.505.867.923 |\n| Các khoản điều chỉnh tăng hoặc giảm lợi nhuận kế toán để xác định lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 1.480.000.000 | 1.605.000.000 |\n| - Các khoản điều chỉnh tăng | - | - |\n| - Các khoản điều chỉnh giảm | 1.480.000.000 | 1.605.000.000 |\n| - Số trích lập quỹ khen thưởng phúc lợi, thưởng ban điều hành | 1.480.000.000 | 1.605.000.000 |\n| Lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 10.945.975.884 | 12.900.867.923 |\n| Cổ phiếu phổ thông đang lưu hành bình quân trong kỳ (cổ phiếu) | 29.400.000 | 29.400.000 |\n| Lãi cơ bản trên cổ phiếu (đồng/cổ phiếu) | 372 | 439 |\n- Số quỹ khen thưởng phúc lợi, thưởng ban điều hành trong kỳ là số tạm tính (tỷ lệ nêu trong Nghị quyết số 55/NQĐHĐCĐ ký ngày 27/06/2024). Số này có thể sẽ thay đổi và điều chỉnh khi có quyết định của Đại hội đồng cổ đông Công ty.\n\n9. Lãi suy giảm trên cổ phiếu\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp | 12.425.975.884 | 14.505.867.923 |\n| Các khoản điều chỉnh tăng hoặc giảm lợi nhuận kế toán để xác định lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 1.480.000.000 | 1.605.000.000 |\n| - Các khoản điều chỉnh tăng | - | - |\n| - Các khoản điều chỉnh giảm | 1.480.000.000 | 1.605.000.000 |\n| - Số trích lập quỹ khen thưởng phúc lợi, thưởng ban điều hành | 1.480.000.000 | 1.605.000.000 |\n| Lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 10.945.975.884 | 12.900.867.923 |\n| Cổ phiếu phổ thông đang lưu hành bình quân trong kỳ (cổ phiếu) | 29.400.000 | 29.400.000 |\n| Cổ phiếu phổ thông dự kiến được phát hành thêm (cổ phiếu) | - | - |\n| Lãi suy giảm trên cổ phiếu (đồng/cổ phiếu) | 372 | 439 |\n- Số quỹ khen thưởng phúc lợi, thưởng ban điều hành trong kỳ là số tạm tính (tỷ lệ nêu trong Nghị quyết số 55/NQĐHĐCĐ ký ngày 27/06/2024). Số này có thể sẽ thay đổi và điều chỉnh khi có quyết định của Đại hội đồng cổ đông Công ty.\n| Chỉ tiêu | Kỳ này |\n|:----------|:-------|\n| Cổ phiếu phổ thông đang lưu hành đầu kỳ | 29.400.000 |\n| - Ảnh hưởng của cổ phiếu phổ thông phát hành thêm | - |\n| - Ảnh hưởng của cổ phiếu phổ thông mua lại | - |\n| Cổ phiếu phổ thông đang lưu hành bình quân trong kỳ | 29.400.000 |\n\n10. Chi phí sản xuất kinh doanh theo yếu tố\n| Chi tiết gồm: | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Chi phí nguyên liệu, vật liệu | 12.155.840.036 | 10.723.120.299 |\n| Chi phí nhân công | 10.261.556.996 | 9.841.842.509 |\n| Chi phí khấu hao tài sản cố định | 9.954.471.768 | 9.384.251.041 |\n| Chi phí dịch vụ mua ngoài và bằng tiền khác | 7.438.716.593 | 7.247.203.410 |\n| Cộng | 39.810.585.393 | 37.196.417.259 |",
+    "questions": [
+      {
+        "question": "Lãi cơ bản trên cổ phiếu kỳ này là bao nhiêu đồng/cổ phiếu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí sản xuất kinh doanh theo yếu tố kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận kế toán sau thuế TNDN kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích các khoản điều chỉnh giảm lợi nhuận kế toán để xác định lợi nhuận phân bổ cho cổ đông phổ thông.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả chi phí sản xuất kinh doanh theo yếu tố qua việc so sánh kỳ này với kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giữ nguyên số lượng cổ phiếu phổ thông đang lưu hành đến chỉ số EPS (Lãi cơ bản trên cổ phiếu) khi lợi nhuận giảm.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "30",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin khác: Tài sản tiềm tàng, Nợ tiềm tàng, Bên liên quan - Thu nhập và Thù lao)\nLoại nội dung: Bảng & Text\nVII. NHỮNG THÔNG TIN KHÁC ĐVT: VNĐ\n1. Tài sản tiềm tàng\nCông ty không có tài sản tiềm tàng ảnh hưởng đến báo cáo tài chính giữa niên độ cần thiết phải có các điều chỉnh số liệu hoặc công bố trong Báo cáo tài chính giữa niên độ.\n\n2. Nợ tiềm tàng\nTại thời điểm lập Báo cáo tài chính giữa niên độ không có yếu tố nào cho thấy có thể phát sinh khoản nợ tiềm tàng mà Công ty có nghĩa vụ phải thanh toán.\n\n3. Thông tin về các bên liên quan\nCác bên liên quan với Công ty bao gồm các thành viên quản lý chủ chốt, các cá nhân có liên quan với các thành viên quản lý chủ chốt và các bên liên quan khác.\nGiao dịch và số dư với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt bao gồm Hội đồng quản trị, Ban kiểm soát và Ban Tổng Giám đốc\nThu nhập của các thành viên quản lý chủ chốt\n| Chức vụ | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Chủ tịch HĐQT | 128.449.200 | 130.724.700 |\n| Thành viên HĐQT, Tổng Giám Đốc | 121.506.000 | 123.658.500 |\n| Thành viên HĐQT, Phó Tổng Giám Đốc | 108.367.581 | 110.291.058 |\n| Phó Tổng Giám Đốc | 108.367.581 | 110.291.058 |\n| Trưởng BKS | 108.367.581 | 110.291.058 |\n| Kế toán trưởng | 98.944.312 | 100.700.526 |\n| Cộng | 674.002.255 | 685.956.900 |\n- Ông Trần Hùng được bổ nhiệm từ ngày 01/01/2023\n- Ông Trần Thanh Bình được bổ nhiệm từ ngày 01/01/2023\n- Ông Phan Thanh Bình được bổ nhiệm từ ngày 01/11/2023\n- Ông Phan Thành Nhân được bổ nhiệm từ ngày 01/06/2023\n- Bà Nguyễn Thị Kim Phượng miễn nhiệm từ ngày 24/06/2023\n- Bà Nguyễn Thy Phương được bổ nhiệm từ ngày 24/06/2023\n- Ông Nguyễn Trung Hiếu được bổ nhiệm từ ngày 01/01/2023.\nThù lao\n| Chức vụ | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Thành viên HĐQT | 15.000.000 | 15.000.000 |\n| Thành viên HĐQT | - | 15.000.000 |\n| Thành viên HĐQT | 15.000.000 | - |\n| Thành viên BKS | 13.500.000 | 13.500.000 |\n| Thành viên BKS | 13.500.000 | 13.500.000 |\n| Thư ký | 10.500.000 | 10.500.000 |\n| Thư ký | 10.500.000 | 10.500.000 |\n| Cộng | 78.000.000 | 78.000.000 |",
+    "questions": [
+      {
+        "question": "Công ty có tài sản tiềm tàng hay nợ tiềm tàng nào không theo báo cáo này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng thu nhập của Chủ tịch HĐQT kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng thu nhập của các thành viên quản lý chủ chốt kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản thù lao của Thành viên HĐQT kỳ này là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động trong thu nhập của các thành viên quản lý chủ chốt giữa kỳ này và kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc công bố thông tin về giao dịch và số dư với các bên liên quan trong báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "31",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin khác: Bên liên quan - Cổ tức; Báo cáo bộ phận theo lĩnh vực kinh doanh)\nLoại nội dung: Bảng & Text\nCổ tức\n| Chức vụ | Kỳ này | Kỳ trước |\n|:----------|:-------|:---------|\n| Chủ tịch HĐQT | 5.439.000 | 4.662.000 |\n| Thành viên HĐQT, Tổng Giám Đốc | 4.410.000 | 3.780.000 |\n| Thành viên HĐQT, Phó Tổng Giám Đốc | 955.500 | 819.000 |\n| Phó Tổng Giám Đốc | 11.980.500 | 10.269.000 |\n| Trưởng BKS | 9.261.000 | 7.938.000 |\n| Kế toán trưởng | 14.605.500 | 12.519.000 |\n| Cộng | 46.651.500 | 39.987.000 |\n\n4. Báo cáo bộ phận\nCông ty lựa chọn các bộ phận theo lĩnh vực kinh doanh là bộ phận báo cáo chính yếu vì rủi ro và tỷ suất sinh lời của Công ty bị tác động chủ yếu bởi những khác biệt về sản phẩm và dịch vụ do Công ty cung cấp. Các bộ phận theo khu vực địa lý là bộ phận báo cáo thứ yếu. Các hoạt động kinh doanh của Công ty được tổ chức và quản lý theo tính chất của sản phẩm và dịch vụ do Công ty cung cấp với mỗi một bộ phận là một đơn vị kinh doanh chiến lược cung cấp các sản phẩm khác nhau và phục vụ các thị trường khác nhau.\n\n4a. Báo cáo bộ phận theo lĩnh vực kinh doanh\n| Lĩnh vực | Cung cấp nước sạch | Thi công tuyến cấp thoát nước | Hoạt động thu phí BVMT | Bán hàng hóa và cung cấp dịch vụ | Cộng |\n|:----------|:-------------------|:-----------------------------|:-----------------------|:---------------------------------|:----------|\n| Kỳ này | | | | | |\n| Doanh thu thuần về bán hàng | 56.193.651.513 | 236.431.322 | 157.701.439 | - | 56.587.784.274 |\n| Giá vốn hàng bán | 20.419.916.186 | 234.263.289 | 107.401.878 | - | 20.761.581.353 |\n| Lãi gộp | 35.773.735.327 | 2.168.033 | 50.299.561 | - | 35.826.202.921 |\n| Tỷ lệ lãi gộp (%) | 63,66 | 0,92 | 31,90 | - | 63,31 |\n| Kỳ trước | | | | | |\n| Doanh thu thuần về bán hàng | 55.190.798.826 | 493.937.311 | 164.104.350 | 979.000 | 55.849.819.487 |\n| Giá vốn hàng bán | 18.839.766.070 | 492.211.248 | 94.885.000 | 886.768 | 19.427.749.086 |\n| Lãi gộp | 36.351.032.756 | 1.726.063 | 69.219.350 | 92.232 | 36.422.070.401 |\n| Tỷ lệ lãi gộp (%) | 65,86 | 0,35 | 42,18 | 9,42 | 65,21 |",
+    "questions": [
+      {
+        "question": "Tổng cổ tức đã trả cho các thành viên quản lý chủ chốt kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lĩnh vực kinh doanh chính của công ty mang lại doanh thu thuần cao nhất kỳ này là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tỷ lệ lãi gộp của lĩnh vực 'Cung cấp nước sạch' kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu mục tiêu của việc phân chia báo cáo bộ phận theo lĩnh vực kinh doanh.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động của từng lĩnh vực kinh doanh chính dựa trên tỷ lệ lãi gộp của kỳ này.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược kinh doanh của công ty dựa trên sự khác biệt về tỷ lệ lãi gộp giữa các bộ phận và đề xuất cải thiện.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32",
+    "content": "Công ty: Công ty Cổ phần Cấp thoát nước Bến Tre\nMã cổ phiếu: NBT\nLoại báo cáo: Báo cáo tài chính riêng quý 3 năm 2024 (giữa niên độ)\nThời gian: Tại ngày 30 tháng 09 năm 2024, công bố ngày 19 tháng 10 năm 2024\nÝ kiến kiểm toán: Không có (có giải trình về biến động lợi nhuận sau thuế TNDN trên 10%)\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin khác: Báo cáo bộ phận theo khu vực địa lý, Hoạt động liên tục, Sự kiện phát sinh sau kỳ kế toán; Phụ lục: Tình hình tăng giảm vốn chủ sở hữu)\nLoại nội dung: Bảng & Text\n4b. Khu vực địa lý\nTrong kỳ, toàn bộ hoạt động của Công ty là toàn bộ trên lãnh thổ Việt Nam.\n\n5. Thông tin về hoạt động liên tục\nTại thời điểm lập Báo cáo tài chính giữa niên độ không có yếu tố nào cho thấy có thể ảnh hưởng đến khả năng hoạt động liên tục của Công ty. Do vậy, Báo cáo tài chính giữa niên độ cho Quý 3 năm 2024 kết thúc ngày 30 tháng 09 năm 2024 được lập dựa trên giả thiết Công ty hoạt động kinh doanh liên tục.\n\n6. Các sự kiện phát sinh sau ngày kết thúc kỳ kế toán\nCông ty không có sự kiện nào phát sinh sau ngày kết thúc kỳ kế toán yêu cầu phải điều chỉnh số liệu hoặc công bố trong Báo cáo tài chính giữa niên độ.\n\nBến Tre, ngày 19 tháng 10 năm 2024\n\nPHỤ LỤC SỐ 01 TÌNH HÌNH TĂNG GIẢM VỐN CHỦ SỞ HỮU\nCho Quý 3 kết thúc ngày 30 tháng 09 năm 2023\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Quỹ đầu tư phát triển | Lợi nhuận sau thuế chưa phân phối | Cộng |\n|:----------|:-------------------------|:---------------------|:---------------------------------|:----------|\n| Số dư tại ngày 01 tháng 01 năm 2023 | 294.000.000.000 | 82.003.265.065 | 35.279.502.158 | 411.282.767.223 |\n| Số dư đầu kỳ | 294.000.000.000 | 90.002.767.223 | 53.795.631.403 | 437.798.398.626 |\n| Tăng trong kỳ | - | 2.530.000.000 | 14.505.867.923 | 17.035.867.923 |\n| - Bổ sung từ lợi nhuận | - | 2.530.000.000 | - | 2.530.000.000 |\n| - Lãi trong kỳ | - | - | 14.505.867.923 | 14.505.867.923 |\n| Giảm trong kỳ | - | - | 21.775.000.000 | 21.775.000.000 |\n| - Chia cổ tức từ lợi nhuận năm 2022 đợt 2 | - | - | 17.640.000.000 | 17.640.000.000 |\n| - Trích Quỹ đầu tư phát triển từ KQKD trong kỳ | - | 2.530.000.000 | - | 2.530.000.000 |\n| - Trích Quỹ khen thưởng phúc lợi từ KQKD trong kỳ | - | - | 1.550.000.000 | 1.550.000.000 |\n| - Trích Quỹ thưởng ban quản lý từ KQKD trong kỳ | - | - | 55.000.000 | 55.000.000 |\n| Số dư tại ngày 30 tháng 09 năm 2023 | 294.000.000.000 | 92.532.767.223 | 46.526.499.326 | 433.059.266.549 |\n\nCho Quý 3 kết thúc ngày 30 tháng 09 năm 2024\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Quỹ đầu tư phát triển | Lợi nhuận sau thuế chưa phân phối | Cộng |\n|:----------|:-------------------------|:---------------------|:---------------------------------|:----------|\n| Số dư tại ngày 01 tháng 01 năm 2024 | 294.000.000.000 | 95.062.767.223 | 53.552.364.409 | 442.615.131.632 |\n| Số dư đầu kỳ | 294.000.000.000 | 105.704.528.469 | 59.922.297.674 | 459.626.826.143 |\n| Tăng trong kỳ | - | 2.655.000.000 | 12.425.975.884 | 15.080.975.884 |\n| - Bổ sung từ lợi nhuận | - | 2.655.000.000 | - | 2.655.000.000 |\n| - Lãi trong kỳ | - | - | 12.425.975.884 | 12.425.975.884 |\n| Giảm trong kỳ | - | - | 24.715.000.000 | 24.715.000.000 |\n| - Chia cổ tức từ lợi nhuận năm 2023 đợt 2 | - | - | 20.580.000.000 | 20.580.000.000 |\n| - Trích Quỹ đầu tư phát triển từ KQKD trong kỳ | - | - | 2.655.000.000 | 2.655.000.000 |\n| - Trích Quỹ khen thưởng phúc lợi từ KQKD trong kỳ | - | - | 1.425.000.000 | 1.425.000.000 |\n| - Trích Quỹ thưởng ban quản lý từ KQKD trong kỳ | - | - | 55.000.000 | 55.000.000 |\n| Số dư tại ngày 30 tháng 09 năm 2024 | 294.000.000.000 | 108.359.528.469 | 47.633.273.558 | 449.992.802.027 |",
+    "questions": [
+      {
+        "question": "Công ty hoạt động trên khu vực địa lý nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vốn chủ sở hữu tại ngày 30 tháng 09 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư lợi nhuận sau thuế chưa phân phối cuối quý 3 năm 2024 là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh tổng vốn chủ sở hữu tại ngày 30 tháng 09 năm 2024 với ngày 01 tháng 01 năm 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng hoạt động liên tục của công ty dựa trên thông tin được cung cấp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc chia cổ tức lớn và trích lập các quỹ đến lợi nhuận sau thuế chưa phân phối của công ty trong quý 3 năm 2024.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty là gì?",
+      "Mã chứng khoán của công ty là gì?",
+      "Báo cáo tài chính này thuộc quý và năm nào?",
+      "Địa chỉ trụ sở chính của công ty PTM là ở đâu?",
+      "Ai là người thực hiện công bố thông tin và chức vụ của người đó là gì?",
+      "Nội dung thông tin công bố định kỳ này bao gồm những gì?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Công bố thông tin định kỳ\nLoại nội dung: Text\nCỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nHà Nội, ngày 19 tháng 07 năm 2025\n\nSố: 10/2025/CBTT/PTM\nCÔNG BỐ THÔNG TIN ĐỊNH KỲ\nKính gửi: Ủy ban Chứng khoán Nhà nước\n\n1. Tên tổ chức: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\n2. Mã chứng khoán: PTM\n3. Địa chỉ trụ sở chính: Số 256 Đường Kim Giang, Phường Định Công, Thành phố Hà Nội\n4. Điện thoại: 842438552550\n5. Người thực hiện công bố thông tin: Trần Văn Mỹ - Chức vụ Tổng Giám Đốc\n6. Nội dung thông tin công bố: Báo cáo tài chính Quý II/2025 và giải trình chênh lệch số liệu.\n7. Địa chỉ website đăng tải thông tin công bố: https://otoptm.com.vn.\n\nChúng tôi cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố.\n\nNGƯỜI THỰC HIỆN CÔNG BỐ THÔNG TIN\nTài liệu đính kèm:\n- Báo cáo tài chính Quý II/2025\n- Giải trình chênh lệch số liệu.",
+    "output": [
+      "Tên đầy đủ của công ty là CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM.",
+      "Mã chứng khoán của công ty là PTM.",
+      "Báo cáo tài chính này thuộc Quý II/2025.",
+      "Địa chỉ trụ sở chính của công ty PTM là Số 256 Đường Kim Giang, Phường Định Công, Thành phố Hà Nội.",
+      "Người thực hiện công bố thông tin là Trần Văn Mỹ, chức vụ Tổng Giám Đốc.",
+      "Nội dung thông tin công bố định kỳ này bao gồm Báo cáo tài chính Quý II/2025 và giải trình chênh lệch số liệu."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn cuối kỳ là bao nhiêu?",
+      "Số tiền và các khoản tương đương tiền đầu kỳ là bao nhiêu?",
+      "Hàng tồn kho cuối kỳ tăng hay giảm so với đầu kỳ và tăng/giảm bao nhiêu?",
+      "Tỷ trọng các khoản phải thu ngắn hạn trên tổng tài sản ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+      "Đánh giá sự thay đổi lớn trong khoản mục 'Tiền và các khoản tương đương tiền' từ đầu kỳ đến cuối kỳ.",
+      "Phân tích rủi ro thanh khoản nếu các khoản phải thu ngắn hạn tăng mạnh nhưng dự phòng khó đòi không đổi.",
+      "Dự báo tác động của việc tăng thuế GTGT được khấu trừ đến dòng tiền của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Số cuối kỳ | Số đầu kỳ |\n|---|---|---|---|---|\n| 100 | A. TÀI SẢN NGẮN HẠN | | 641.452.227.437 | 434.679.566.513 |\n| 110 | I. Tiền và các khoản tương đương tiền | V.1 | 46.117.418.112 | 157.425.399.323 |\n| 111 | 1. Tiền | | 46.117.418.112 | 47.425.399.323 |\n| 112 | 2. Các khoản tương đương tiền | | - | 110.000.000.000 |\n| 130 | II. Các khoản phải thu ngắn hạn | | 164.717.283.657 | 134.030.118.149 |\n| 131 | 1. Phải thu ngắn hạn của khách hàng | V.2 | 73.325.955.119 | 12.330.527.492 |\n| 132 | 2. Trả trước cho người bán ngắn hạn | V.3 | 63.480.029.015 | 74.838.664.364 |\n| 136 | 3. Phải thu ngắn hạn khác | V.4a | 28.244.952.003 | 47.194.578.773 |\n| 137 | 4. Dự phòng phải thu ngắn hạn khó đòi | V.5 | 333.652.480 | 333.652.480 |\n| 140 | IV. Hàng tồn kho | | 393.936.406.478 | 128.140.234.135 |\n| 141 | 1. Hàng tồn kho | V.6 | 395.342.066.385 | 129.545.894.042 |\n| 149 | 2. Dự phòng giảm giá hàng tồn kho | | 1.405.659.907 | 1.405.659.907 |\n| 150 | V. Tài sản ngắn hạn khác | | 36.681.119.190 | 15.083.814.906 |\n| 151 | 1. Chi phí trả trước ngắn hạn | V.7a | 7.060.726.855 | 7.377.506.108 |\n| 152 | 2. Thuế giá trị gia tăng được khấu trừ | | 29.620.392.335 | 7.706.308.798 |",
+    "output": [
+      "Tổng tài sản ngắn hạn cuối kỳ là 641.452.227.437 VND.",
+      "Số tiền và các khoản tương đương tiền đầu kỳ là 157.425.399.323 VND.",
+      "Hàng tồn kho cuối kỳ là 393.936.406.478 VND, đầu kỳ là 128.140.234.135 VND. So với đầu kỳ, hàng tồn kho cuối kỳ tăng 265.796.172.343 VND (393.936.406.478 - 128.140.234.135).",
+      "Tổng các khoản phải thu ngắn hạn cuối kỳ là 164.717.283.657 VND và tổng tài sản ngắn hạn cuối kỳ là 641.452.227.437 VND. Tỷ trọng là 25.68% (164.717.283.657 / 641.452.227.437 * 100%).",
+      "Khoản mục 'Tiền và các khoản tương đương tiền' đã giảm mạnh từ 157.425.399.323 VND vào đầu kỳ xuống còn 46.117.418.112 VND vào cuối kỳ, tức giảm 111.307.981.211 VND. Sự sụt giảm đáng kể này cho thấy công ty đã sử dụng một lượng lớn tiền mặt hoặc các khoản tương đương tiền trong kỳ, điều này có thể ảnh hưởng đến khả năng thanh toán ngắn hạn nếu không có các nguồn tiền khác bù đắp.",
+      "Các khoản phải thu ngắn hạn tăng từ 134.030.118.149 VND (đầu kỳ) lên 164.717.283.657 VND (cuối kỳ), trong khi dự phòng phải thu ngắn hạn khó đòi không đổi ở mức 333.652.480 VND. Nếu các khoản phải thu ngắn hạn tăng mạnh mà dự phòng khó đòi không tăng tương ứng, rủi ro thanh khoản của công ty sẽ gia tăng. Điều này có nghĩa là công ty có thể đối mặt với khả năng không thu hồi được một phần lớn các khoản nợ này, dẫn đến thiếu hụt tiền mặt để thanh toán các nghĩa vụ ngắn hạn và ảnh hưởng tiêu cực đến lợi nhuận.",
+      "Khoản 'Thuế giá trị gia tăng được khấu trừ' tăng từ 7.706.308.798 VND (đầu kỳ) lên 29.620.392.335 VND (cuối kỳ). Việc tăng này cho thấy công ty đã tăng cường mua sắm hàng hóa, dịch vụ đầu vào chịu thuế GTGT. Mặc dù khoản chi tiền mặt đã xảy ra để có được khoản thuế được khấu trừ này, trong tương lai, khi công ty bán hàng và phát sinh thuế GTGT đầu ra, khoản thuế GTGT được khấu trừ sẽ được bù trừ, giúp giảm số tiền thuế GTGT thực tế phải nộp cho Nhà nước, từ đó cải thiện dòng tiền ra trong các kỳ tiếp theo."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn cuối kỳ là bao nhiêu?",
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+      "Tổng tài sản của công ty cuối kỳ là bao nhiêu?",
+      "Giá trị còn lại của tài sản cố định vô hình cuối kỳ là bao nhiêu?",
+      "Tỷ trọng tài sản cố định hữu hình trên tổng tài sản dài hạn thay đổi như thế nào so với đầu kỳ?",
+      "Phân tích ý nghĩa của việc không còn tài sản dở dang dài hạn cuối kỳ.",
+      "Đánh giá mức độ hiệu quả sử dụng tài sản dài hạn dựa trên sự thay đổi về nguyên giá và giá trị hao mòn lũy kế."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn và Tổng tài sản)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Số cuối kỳ | Số đầu kỳ |\n|---|---|---|---|---|\n| 200 | B. TÀI SẢN DÀI HẠN | | 153.649.208.329 | 141.170.692.669 |\n| 210 | I. Các khoản phải thu dài hạn | | 2.513.000.000 | 2.302.000.000 |\n| 216 | 1. Phải thu dài hạn khác | V.4b | 2.513.000.000 | 2.302.000.000 |\n| 220 | II. Tài sản cố định | | 134.149.590.079 | 122.195.754.947 |\n| 221 | 1. Tài sản cố định hữu hình | V.8 | 134.142.890.079 | 122.181.014.947 |\n| 222 | - Nguyên giá | | 172.617.849.458 | 158.295.360.961 |\n| 223 | - Giá trị hao mòn lũy kế | | 38.474.959.379 | 36.114.346.014 |\n| 227 | 2. Tài sản cố định vô hình | V.9 | 6.700.000 | 14.740.000 |\n| 228 | - Nguyên giá | | 88.160.000 | 88.160.000 |\n| 229 | - Giá trị hao mòn lũy kế | | 81.460.000 | 73.420.000 |\n| 240 | III. Tài sản dở dang dài hạn | | - | 609.329.476 |\n| 242 | 1. Chi phí xây dựng cơ bản dở dang | | - | 609.329.476 |\n| 260 | IV. Tài sản dài hạn khác | | 16.986.618.250 | 16.063.608.246 |\n| 261 | 1. Chi phí trả trước dài hạn | V.7b | 16.986.618.250 | 16.063.608.246 |\n| 270 | TỔNG CỘNG TÀI SẢN | | 795.101.435.766 | 575.850.259.182 |",
+    "output": [
+      "Tổng tài sản dài hạn cuối kỳ là 153.649.208.329 VND.",
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là 172.617.849.458 VND.",
+      "Tổng tài sản của công ty cuối kỳ là 795.101.435.766 VND.",
+      "Giá trị còn lại của tài sản cố định vô hình cuối kỳ là 6.700.000 VND (Nguyên giá 88.160.000 - Giá trị hao mòn lũy kế 81.460.000).",
+      "Tài sản cố định hữu hình (giá trị còn lại) đầu kỳ là 122.181.014.947 VND, cuối kỳ là 134.142.890.079 VND. Tổng tài sản dài hạn đầu kỳ là 141.170.692.669 VND, cuối kỳ là 153.649.208.329 VND. Tỷ trọng tài sản cố định hữu hình trên tổng tài sản dài hạn tăng từ 86.55% (đầu kỳ) lên 87.31% (cuối kỳ), tức tăng 0.76 điểm phần trăm.",
+      "Khoản 'Tài sản dở dang dài hạn' từ 609.329.476 VND vào đầu kỳ đã giảm xuống 0 VND vào cuối kỳ. Điều này có nghĩa là công ty đã hoàn thành và đưa vào sử dụng (hoặc thanh lý) các dự án đầu tư xây dựng cơ bản hoặc sản xuất tài sản dở dang trong kỳ. Đây là một dấu hiệu tích cực, cho thấy các khoản đầu tư đã chuyển từ giai đoạn dở dang sang tài sản sẵn sàng tạo ra lợi ích kinh tế cho công ty, góp phần nâng cao hiệu quả hoạt động.",
+      "Đối với tài sản cố định hữu hình, nguyên giá tăng từ 158.295.360.961 VND lên 172.617.849.458 VND, cho thấy công ty tiếp tục đầu tư vào tài sản vật chất. Giá trị hao mòn lũy kế cũng tăng từ 36.114.346.014 VND lên 38.474.959.379 VND, phản ánh việc sử dụng tài sản. Đối với tài sản cố định vô hình, nguyên giá không đổi nhưng hao mòn lũy kế tăng, dẫn đến giá trị còn lại giảm. Nhìn chung, sự gia tăng nguyên giá tài sản hữu hình cho thấy sự mở rộng đầu tư, tuy nhiên, để đánh giá hiệu quả sử dụng thực sự, cần phân tích thêm các chỉ số hiệu quả hoạt động kinh doanh mà các tài sản này mang lại. Việc không có đầu tư mới vào tài sản vô hình trong kỳ cho thấy công ty đang khai thác các tài sản hiện có."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả cuối kỳ là bao nhiêu?",
+      "Vốn chủ sở hữu cuối kỳ là bao nhiêu?",
+      "Khoản vay và nợ thuê tài chính ngắn hạn cuối kỳ là bao nhiêu?",
+      "So sánh Lợi nhuận sau thuế chưa phân phối kỳ này với đầu kỳ, thay đổi như thế nào?",
+      "Tỷ lệ Nợ phải trả trên tổng nguồn vốn cuối kỳ là bao nhiêu?",
+      "Đánh giá cơ cấu vốn (nợ/vốn chủ sở hữu) cuối kỳ của công ty có an toàn không?",
+      "Phân tích tác động của sự gia tăng mạnh vay và nợ thuê tài chính ngắn hạn đến rủi ro tài chính của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Nguồn vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Số cuối kỳ | Số đầu kỳ |\n|---|---|---|---|---|\n| 300 | C. NỢ PHẢI TRẢ | | 327.220.032.491 | 109.390.908.343 |\n| 310 | I. Nợ ngắn hạn | | 327.220.032.491 | 109.390.908.343 |\n| 311 | 1. Phải trả người bán ngắn hạn | V.10 | 39.927.449.891 | 21.656.298.959 |\n| 312 | 2. Người mua trả tiền trước ngắn hạn | V.11 | 7.610.879.193 | 17.398.116.809 |\n| 313 | 3. Thuế và các khoản phải nộp Nhà nước | V.12 | 9.809.798.182 | 33.196.578.117 |\n| 314 | 4. Phải trả người lao động | | 8.551.718.048 | 8.222.966.072 |\n| 315 | 5. Chi phí phải trả ngắn hạn | | 800.069.831 | 558.901.224 |\n| 319 | 6. Phải trả ngắn hạn khác | V.14 | 1.160.667.186 | 2.357.749.402 |\n| 320 | 7. Vay và nợ thuê tài chính ngắn hạn | V.13 | 259.359.450.160 | 26.000.297.760 |\n| 400 | D. NGUỒN VỐN CHỦ SỞ HỮU | | 467.881.403.275 | 466.459.350.839 |\n| 410 | I. Vốn chủ sở hữu | V.15 | 467.881.403.275 | 466.459.350.839 |\n| 411 | 1. Vốn góp của chủ sở hữu | | 320.000.000.000 | 320.000.000.000 |\n| 411a | - Cổ phiếu phổ thông có quyền biểu quyết | | 320.000.000.000 | 320.000.000.000 |\n| 412 | 2. Thặng dư vốn cổ phần | | 20.000.000 | 20.000.000 |\n| 418 | 3. Quỹ đầu tư phát triển | | 122.922.480 | 122.922.480 |\n| 421 | 4. Lợi nhuận sau thuế chưa phân phối | | 147.738.480.795 | 146.316.428.359 |\n| 421a | - LNST chưa phân phối lũy kế đến cuối kỳ trước | | 114.316.428.339 | 18.168.587.403 |\n| 421b | - LNST chưa phân phối kỳ này | | 33.422.052.436 | 128.147.840.956 |\n| 440 | TỔNG CỘNG NGUỒN VỐN | | 795.101.435.766 | 575.850.259.182 |\nNgười lập biểu | Kế toán trưởng | Tổng Giám đốc\nPHẠM THỊ DUYÊN | LÊ THỊ HUYÊN | TRẦN VĂN MỸ\nBáo cáo này được đọc kèm với Thuyết minh Báo cáo tài chính",
+    "output": [
+      "Tổng nợ phải trả cuối kỳ là 327.220.032.491 VND.",
+      "Vốn chủ sở hữu cuối kỳ là 467.881.403.275 VND.",
+      "Khoản vay và nợ thuê tài chính ngắn hạn cuối kỳ là 259.359.450.160 VND.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là 33.422.052.436 VND, còn Lợi nhuận sau thuế chưa phân phối kỳ trước là 128.147.840.956 VND. Lợi nhuận sau thuế chưa phân phối kỳ này đã giảm 94.725.788.520 VND so với kỳ trước.",
+      "Nợ phải trả cuối kỳ là 327.220.032.491 VND và tổng nguồn vốn cuối kỳ là 795.101.435.766 VND. Tỷ lệ Nợ phải trả trên tổng nguồn vốn cuối kỳ là 41.15% (327.220.032.491 / 795.101.435.766 * 100%).",
+      "Tỷ lệ nợ phải trả trên vốn chủ sở hữu cuối kỳ là khoảng 0.7 (327.220.032.491 VND nợ / 467.881.403.275 VND vốn chủ sở hữu). Đây là một tỷ lệ tương đối an toàn, cho thấy công ty đang sử dụng vốn chủ sở hữu nhiều hơn vốn vay để tài trợ cho tài sản. Mặc dù nợ phải trả tăng đáng kể, vốn chủ sở hữu vẫn chiếm phần lớn trong cơ cấu nguồn vốn, chỉ ra khả năng tự chủ tài chính tương đối tốt. Tuy nhiên, cần theo dõi sự gia tăng của vay và nợ thuê tài chính ngắn hạn.",
+      "Khoản vay và nợ thuê tài chính ngắn hạn đã gia tăng mạnh từ 26.000.297.760 VND (đầu kỳ) lên 259.359.450.160 VND (cuối kỳ). Sự gia tăng này làm tăng đáng kể rủi ro thanh khoản của công ty, vì công ty phải đảm bảo có đủ tiền mặt để thanh toán các nghĩa vụ này trong thời gian ngắn. Điều này cũng có thể dẫn đến tăng chi phí lãi vay, làm giảm lợi nhuận. Sự phụ thuộc quá mức vào vay ngắn hạn có thể khiến công ty dễ bị tổn thương trước các biến động của thị trường tín dụng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là bao nhiêu?",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp của Quý 2 năm 2025 là bao nhiêu?",
+      "Lãi cơ bản trên cổ phiếu trong 6 tháng đầu năm 2025 là bao nhiêu Đồng/CP?",
+      "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ Quý 2 năm 2025 với Quý 2 năm 2024, thay đổi như thế nào?",
+      "Tỷ suất lợi nhuận gộp của công ty trong Quý 2 năm 2025 là bao nhiêu?",
+      "Phân tích xu hướng lợi nhuận thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 so với năm 2024.",
+      "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên các chỉ số lợi nhuận từ Quý 2 năm 2024 đến Quý 2 năm 2025."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Quý 2 năm 2025 | Quý 2 năm 2024 | 6 tháng năm 2025 | 6 tháng năm 2024 |\n|---|---|---|---|---|---|---|\n| 01 | 1. Doanh thu bán hàng và cung cấp dịch vụ | | 391.146.397.887 | 260.285.332.749 | 687.869.577.608 | 460.170.359.118 |\n| 02 | 2. Các khoản giảm trừ doanh thu | | - | - | - | - |\n| 10 | 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | VI.1 | 391.146.397.887 | 260.285.332.749 | 687.869.577.608 | 460.170.359.118 |\n| 11 | 4. Giá vốn hàng bán | VI.2 | 332.539.611.292 | 208.428.151.675 | 580.512.948.433 | 377.688.195.399 |\n| 20 | 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | | 58.606.786.595 | 51.857.181.074 | 107.356.629.175 | 82.482.163.719 |\n| 21 | 6. Doanh thu hoạt động tài chính | | 15.613.288 | 4.741.853 | 545.699.780 | 15.484.272 |\n| 22 | 7. Chi phí tài chính | VI.3 | 2.967.079.792 | 1.533.307.685 | 3.559.296.346 | 1.859.138.679 |\n| 23 | Trong đó: Chi phí lãi vay | | 2.967.079.792 | 1.533.307.685 | 3.559.296.346 | 1.859.138.679 |\n| 25 | 8. Chi phí bán hàng | VI.4 | 24.712.653.484 | 15.057.772.643 | 46.975.165.272 | 22.565.235.837 |\n| 26 | 9. Chi phí quản lý doanh nghiệp | VI.5 | 16.821.667.532 | 7.215.470.951 | 31.559.829.855 | 10.850.145.817 |\n| 30 | 10. Lợi nhuận thuần từ hoạt động kinh doanh | | 14.120.999.075 | 28.055.321.648 | 25.808.037.482 | 47.223.127.658 |\n| 31 | 11. Thu nhập khác | | 9.604.111.353 | 3.387.330.540 | 16.339.313.875 | 5.101.558.889 |\n| 32 | 12. Chi phí khác | | 15.523.956 | 4.883.217 | 100.990.899 | 596.042.690 |\n| 40 | 13. Lợi nhuận khác | | 9.588.587.397 | 3.377.447.323 | 16.238.324.976 | 4.505.516.199 |\n| 50 | 14. Tổng lợi nhuận kế toán trước thuế | | 23.709.586.472 | 31.432.818.971 | 42.046.362.458 | 51.728.643.857 |\n| 51 | 15. Chi phí thuế thu nhập doanh nghiệp hiện hành | V.12 | 4.800.102.480 | 6.357.068.335 | 8.624.310.022 | 10.416.233.512 |\n| 52 | 16. Chi phí thuế thu nhập doanh nghiệp hoãn lại | | - | - | - | - |\n| 60 | 17. Lợi nhuận sau thuế thu nhập doanh nghiệp | | 18.909.483.992 | 25.075.750.436 | 33.422.052.436 | 41.312.410.345 |\n| 70 | 18. Lãi cơ bản trên cổ phiếu (Đồng/CP) | VI.6 | 591 | 784 | 1.044 | 2.036 |\n| 71 | 19. Lãi suy giảm trên cổ phiếu (Đồng/CP) | VI.7 | 591 | 784 | 1.044 | 2.036 |\nBáo cáo này được đọc kèm với Thuyết minh Báo cáo tài chính",
+    "output": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong 6 tháng đầu năm 2025 là 687.869.577.608 VND.",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp của Quý 2 năm 2025 là 18.909.483.992 VND.",
+      "Lãi cơ bản trên cổ phiếu trong 6 tháng đầu năm 2025 là 1.044 Đồng/CP.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ Quý 2 năm 2025 là 58.606.786.595 VND, trong khi Quý 2 năm 2024 là 51.857.181.074 VND. Lợi nhuận gộp Quý 2 năm 2025 tăng 6.749.605.521 VND so với Quý 2 năm 2024.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý 2 năm 2025 là 58.606.786.595 VND và doanh thu thuần là 391.146.397.887 VND. Tỷ suất lợi nhuận gộp là 14.98% (58.606.786.595 / 391.146.397.887 * 100%).",
+      "Lợi nhuận thuần từ hoạt động kinh doanh trong 6 tháng đầu năm 2025 là 25.808.037.482 VND, giảm đáng kể so với 47.223.127.658 VND trong 6 tháng đầu năm 2024. Xu hướng này cho thấy mặc dù doanh thu thuần tăng, nhưng các chi phí liên quan đến hoạt động kinh doanh như chi phí tài chính, chi phí bán hàng và chi phí quản lý doanh nghiệp đã tăng nhanh hơn, dẫn đến sự suy giảm hiệu quả hoạt động kinh doanh.",
+      "Công ty đạt tăng trưởng doanh thu thuần và lợi nhuận gộp trong Quý 2 năm 2025 so với Quý 2 năm 2024. Tuy nhiên, các chi phí tài chính, chi phí bán hàng và chi phí quản lý doanh nghiệp đều tăng mạnh, dẫn đến Lợi nhuận thuần từ hoạt động kinh doanh giảm từ 28.055.321.648 VND (Q2/2024) xuống 14.120.999.075 VND (Q2/2025), và Lợi nhuận sau thuế TNDN cũng giảm. Điều này cho thấy hiệu quả hoạt động kinh doanh tổng thể đang suy giảm do chi phí tăng nhanh hơn doanh thu."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh kỳ này là bao nhiêu?",
+      "Tiền và tương đương tiền cuối kỳ này là bao nhiêu?",
+      "So sánh tiền thu từ đi vay kỳ này với kỳ trước, thay đổi như thế nào?",
+      "Tỷ trọng tiền chi mua sắm TSCĐ trên lưu chuyển tiền thuần từ hoạt động đầu tư kỳ này là bao nhiêu?",
+      "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+      "Phân tích tác động của việc tăng giảm hàng tồn kho đến dòng tiền từ hoạt động kinh doanh.",
+      "Đánh giá chiến lược tài chính của công ty thông qua các khoản thu/chi từ hoạt động tài chính và đầu tư."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ\nLoại nội dung: Bảng\n| Mã số | CHỈ TIÊU | Thuyết minh | Kỳ này | Kỳ trước |\n|---|---|---|---|---|\n| | I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | | |\n| 01 | 1. Lợi nhuận trước thuế | | 42.046.362.458 | 51.728.643.857 |\n| | 2. Điều chỉnh cho các khoản | | 12.039.649.496 | 7.294.436.294 |\n| 02 | - Khấu hao TSCĐ và Bất động sản đầu tư | | 10.936.533.986 | 4.931.285.735 |\n| 03 | - Các khoản dự phòng | | - | 51.822.135 |\n| 04 | - Lãi/lỗ chênh lệch tỷ giá hối đoái chưa thực hiện | | - | - |\n| 05 | - Lãi/lỗ từ hoạt động đầu tư | | 2.456.180.836 | 555.834.015 |\n| 06 | - Chi phí lãi vay | V.3 | 3.559.296.346 | 1.859.138.679 |\n| 08 | 3. Lợi nhuận kinh doanh trước thay đổi vốn lưu động | | 54.086.011.954 | 59.023.080.151 |\n| 09 | - Tăng/giảm các khoản phải thu | | 52.812.249.045 | 57.404.131.435 |\n| 10 | - Tăng/giảm hàng tồn kho | | 265.796.172.343 | 155.393.844.842 |\n| 11 | - Giảm/tăng các khoản phải trả không kể lãi vay phải trả, thuế thu nhập phải nộp | | 8.076.741.498 | 2.163.201.225 |\n| 12 | - Giảm/tăng chi phí trả trước | | 606.230.751 | 2.787.453.858 |\n| 14 | - Tiền lãi vay đã trả | | 3.559.296.346 | 1.859.138.679 |\n| 15 | - Thuế thu nhập doanh nghiệp đã nộp | V.12 | 32.270.189.772 | 2.386.458.270 |\n| 16 | - Tiền thu khác từ hoạt động kinh doanh | | - | - |\n| 17 | - Tiền chi khác cho hoạt động kinh doanh | | - | - |\n| 20 | Lưu chuyển tiền thuần từ hoạt động kinh doanh | | 292.881.384.815 | 158.644.745.708 |\n| | II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | | |\n| 21 | 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | | 53.875.831.311 | 36.775.501.192 |\n| 22 | 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác | | 33.505.272.725 | 10.464.545.454 |\n| 23 | 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | | - | - |\n| 24 | 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | | - | - |\n| 25 | 5. Tiền chi đầu tư góp vốn vào đơn vị khác | | - | - |\n| 26 | 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | | - | - |\n| 27 | 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | | 545.699.780 | 15.484.272 |\n| 30 | Lưu chuyển tiền thuần từ hoạt động đầu tư | | 9.821.858.806 | 26.295.471.466 |\n| | III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | | |\n| 31 | 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | | - | 38.000.000.000 |\n| 32 | 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | | - | - |\n| 33 | 3. Tiền thu từ đi vay | V.13 | 433.342.004.040 | 408.266.320.632 |\n| 34 | 4. Tiền trả nợ gốc vay | V.13 | 199.982.851.640 | 261.062.799.560 |\n| 35 | 5. Tiền trả nợ gốc thuê tài chính | | - | - |\n| 36 | 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | | 31.960.890.000 | - |\n| 40 | Lưu chuyển tiền thuần từ hoạt động tài chính | | 211.398.262.400 | 185.203.521.072 |\n| 50 | Lưu chuyển tiền thuần trong kỳ | | 111.307.981.211 | 263.303.898 |\n| 60 | Tiền và tương đương tiền đầu kỳ | V.1 | 157.425.399.323 | 7.809.472.833 |\n| 61 | Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | | - | - |\n| 70 | Tiền và tương đương tiền cuối kỳ | V.1 | 46.117.418.112 | 8.072.776.731 |\nBáo cáo này được đọc kèm với Thuyết minh Báo cáo tài chính",
+    "output": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh kỳ này là 292.881.384.815 VND.",
+      "Tiền và tương đương tiền cuối kỳ này là 46.117.418.112 VND.",
+      "Tiền thu từ đi vay kỳ này là 433.342.004.040 VND, kỳ trước là 408.266.320.632 VND. Tiền thu từ đi vay kỳ này tăng 25.075.683.408 VND so với kỳ trước.",
+      "Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác kỳ này là 53.875.831.311 VND. Lưu chuyển tiền thuần từ hoạt động đầu tư kỳ này là 9.821.858.806 VND. Tỷ trọng là 548.53% (53.875.831.311 / 9.821.858.806 * 100%).",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh kỳ này là 292.881.384.815 VND, một con số dương và rất lớn, tăng mạnh so với kỳ trước. Điều này cho thấy công ty có khả năng tạo ra tiền mặt mạnh mẽ từ các hoạt động cốt lõi của mình, đây là một dấu hiệu tích cực về khả năng tự tài trợ. Công ty có thể sử dụng dòng tiền này để chi trả cho các hoạt động đầu tư, trả nợ hoặc chia cổ tức mà không cần phụ thuộc quá nhiều vào nguồn vốn bên ngoài, tạo nền tảng tài chính vững chắc.",
+      "Khoản mục 'Tăng/giảm hàng tồn kho' kỳ này là 265.796.172.343 VND, cho thấy công ty đã sử dụng một lượng tiền mặt đáng kể để mua hoặc sản xuất thêm hàng tồn kho. Việc tăng hàng tồn kho này làm giảm dòng tiền thuần từ hoạt động kinh doanh, vì tiền mặt bị 'đóng băng' vào hàng hóa. Nếu hàng tồn kho tăng không đi kèm với nhu cầu thị trường tương ứng, nó có thể dẫn đến rủi ro thanh khoản và chi phí lưu kho cao, mặc dù cũng có thể là dấu hiệu dự trữ để đáp ứng nhu cầu tăng trong tương lai.",
+      "Công ty đang tích cực đầu tư vào tài sản cố định (tiền chi mua sắm TSCĐ tăng) và có khoản thu đáng kể từ thanh lý tài sản. Dòng tiền thuần từ hoạt động đầu tư dương cho thấy việc quản lý tài sản và đầu tư có hiệu quả. Về hoạt động tài chính, công ty gia tăng mạnh mẽ tiền thu từ đi vay (433.342.004.040 VND) nhưng tiền trả nợ gốc vay giảm và có khoản chi trả cổ tức lớn. Điều này cho thấy công ty đang sử dụng nguồn vốn vay để tài trợ cho đầu tư và chi trả cổ tức. Chiến lược này hỗ trợ tăng trưởng nhưng cần cân bằng giữa việc huy động vốn và quản lý rủi ro nợ vay."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty PTM có hình thức sở hữu vốn là gì?",
+      "Lĩnh vực kinh doanh chính của Công ty PTM là gì?",
+      "Số lượng nhân viên của Công ty PTM tại ngày kết thúc kỳ kế toán là bao nhiêu?",
+      "Liệt kê 3 ngành nghề kinh doanh chính của Công ty PTM.",
+      "Chu kỳ sản xuất, kinh doanh thông thường của công ty là bao lâu?",
+      "Phân tích ý nghĩa của việc Công ty có các chi nhánh hạch toán phụ thuộc.",
+      "Đánh giá tác động của sự thay đổi số lượng nhân viên đến hoạt động của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - I. Đặc điểm hoạt động\nLoại nội dung: Text\nBản thuyết minh Báo cáo tài chính\nCho kỳ tài chính kết thúc ngày 30 tháng 06 năm 2025\nTHUYẾT MINH BÁO CÁO TÀI CHÍNH GIỮA NIÊN ĐỘ\nCho kỳ kế toán kết thúc ngày 30 tháng 6 năm 2025\n\nI. ĐẶC ĐIỂM HOẠT ĐỘNG\n1. Hình thức sở hữu vốn\nCông ty Cổ phần Sản xuất, Thương mại và Dịch vụ Ô tô PTM (sau đây gọi tắt là Công ty) là công ty cổ phần.\n\n2. Lĩnh vực kinh doanh\nLĩnh vực kinh doanh của Công ty là kinh doanh và sửa chữa ô tô.\n\n3. Ngành nghề kinh doanh\n- Bán buôn ô tô và xe có động cơ khác\n- Đại lý ô tô và xe có động cơ khác\n- Bán phụ tùng ô tô và các bộ phận phụ trợ của ô tô và xe có động cơ khác\n- Bảo dưỡng và sửa chữa mô tô, xe máy\n- Bán phụ tùng và các bộ phận phụ trợ của mô tô, xe máy\n- Bán lẻ ô tô con loại 9 chỗ ngồi trở xuống (Trừ hoạt động liên quan đến đấu giá)\n- Bảo dưỡng, sửa chữa ô tô và xe có động cơ khác.\n- Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê. Chi tiết: Kinh doanh bất động sản (Trừ Đầu tư xây dựng hạ tầng nghĩa trang, nghĩa địa để chuyển nhượng quyền sử dụng đất gắn với hạ tầng, thuộc Phụ lục I, Mục A.7 Nghị định 31/2021/ND-CP)\n- Vận tải hành khách đường bộ khác. Chi tiết: Kinh doanh vận tải hành khách bằng xe ô tô theo tuyến cố định, kinh doanh vận tải hành khách bằng xe ô tô theo hợp đồng, kinh doanh vận chuyển khách du lịch bằng xe ô tô\n- Vận tải hàng hóa bằng đường bộ. Chi tiết: Kinh doanh vận tải hàng hóa bằng xe ô tô\n- Hoạt động của đại lý và môi giới bảo hiểm. Chi tiết: Hoạt động đại lý bảo hiểm\n- Cho thuê xe có động cơ\n\n4. Chu kỳ năm sản xuất, kinh doanh thông thường\nChu kỳ năm sản xuất kinh doanh thông thường của công ty không quá 12 tháng.\n\n5. Cấu trúc Công ty\nĐơn vị trực thuộc không có tư cách pháp nhân, hạch toán phụ thuộc:\n1. Chi nhánh Công ty CP Sản xuất, Thương mại và Dịch vụ Ô tô PTM tại số 335C đường Điện Biên Phủ, phường Gia Định, thành phố Hồ Chí Minh.\n(Địa chỉ cũ: Số 335C đường Điện Biên Phủ, phường 15, quận Bình Thạnh, thành phố Hồ Chí Minh)\n2. Chi nhánh MG Bắc Giang - Công ty CP Sản xuất, Thương mại và Dịch vụ Ô tô PTM tại Đường Nguyễn Trãi 2, TDP Giáp Sau, Phường Bắc Giang, Tỉnh Bắc Ninh.\n(Địa chỉ cũ: Tổ dân phố Giáp Sau, Phường Dĩnh Kế, Thành phố Bắc Giang, Tỉnh Bắc Giang)\n3. Chi nhánh MG Nam Định - Công ty CP Sản xuất, Thương mại và Dịch vụ Ô tô PTM tại Số 8 Trần Anh Tông, Quốc lộ 10, Phường Nam Định, Tỉnh Ninh Bình.\n(Địa chỉ cũ: Số 08 Trần Anh Tông, Quốc lộ 10, Phường Lộc Vượng, Thành phố Nam Định, Tỉnh Nam Định)\n4. Chi nhánh MG Đà Nẵng - Công ty CP Sản xuất, Thương mại và Dịch vụ Ô tô PTM tại Số 03 Phạm Hùng, phường Hoà Xuân, TP Đà Nẵng.\n(Địa chỉ cũ: Số 03 Phạm Hùng, Phường Hòa Xuân, Quận Cẩm Lệ, Thành phố Đà Nẵng, Việt Nam.)\n5. Chi nhánh MG Đồng Nai - Công ty CP Sản xuất, Thương mại và Dịch vụ Ô tô PTM tại Số 32, tổ 1, khu phố 3, phường Long Hưng, Tỉnh Đồng Nai.\n(Địa chỉ cũ: Số 32, tổ 1, khu phố 3, phường An Hoà, Thành phố Biên Hòa, Tỉnh Đồng Nai.)\n6. Chi nhánh MG An Giang - Công ty CP Sản xuất, Thương mại và Dịch vụ Ô tô PTM tại Số 2070-2070A, Đường Trần Hưng Đạo, Phường Mỹ Thới, Tỉnh An Giang.\n(Địa chỉ cũ: Số 2070-2070A Trần Hưng Đạo, Phường Mỹ Thới, Thành phố Long Xuyên, Tỉnh An Giang)\n\n6. Nhân viên\nTại ngày kết thúc kỳ kế toán Công ty có 575 nhân viên đang làm việc (số đầu năm là 585 nhân viên).",
+    "output": [
+      "Công ty PTM có hình thức sở hữu vốn là công ty cổ phần.",
+      "Lĩnh vực kinh doanh chính của Công ty PTM là kinh doanh và sửa chữa ô tô.",
+      "Số lượng nhân viên của Công ty PTM tại ngày kết thúc kỳ kế toán là 575 nhân viên.",
+      "Ba ngành nghề kinh doanh chính của Công ty PTM là: Bán buôn ô tô và xe có động cơ khác; Đại lý ô tô và xe có động cơ khác; Bán phụ tùng ô tô và các bộ phận phụ trợ của ô tô và xe có động cơ khác.",
+      "Chu kỳ sản xuất, kinh doanh thông thường của công ty không quá 12 tháng.",
+      "Việc Công ty có các chi nhánh hạch toán phụ thuộc (không có tư cách pháp nhân) cho phép công ty mở rộng phạm vi hoạt động đến nhiều địa điểm mà vẫn duy trì quản lý tập trung. Điều này giúp kiểm soát chặt chẽ hoạt động, đảm bảo tính thống nhất trong chính sách và quy trình, đồng thời công ty mẹ chịu hoàn toàn trách nhiệm pháp lý. Đây là chiến lược mở rộng nhưng vẫn giữ quyền kiểm soát và quản lý thống nhất từ công ty mẹ.",
+      "Số lượng nhân viên của Công ty giảm từ 585 nhân viên đầu năm xuống 575 nhân viên tại ngày kết thúc kỳ kế toán (giảm 10 nhân viên). Đây là một sự giảm nhỏ (khoảng 1.7%). Nếu đây là kết quả của việc tối ưu hóa nhân sự hoặc áp dụng công nghệ, nó có thể giúp giảm chi phí và tăng hiệu quả. Tuy nhiên, nếu nguyên nhân là do khó khăn trong kinh doanh hoặc mất đi nhân sự chủ chốt, nó có thể ảnh hưởng đến năng lực hoạt động và tăng trưởng dài hạn của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Năm tài chính của Công ty PTM bắt đầu và kết thúc vào ngày nào?",
+      "Đơn vị tiền tệ chính được sử dụng trong kế toán của công ty là gì?",
+      "Các chuẩn mực và chế độ kế toán nào được Công ty PTM áp dụng?",
+      "Báo cáo tài chính này được lập cho kỳ kế toán kết thúc vào ngày nào?",
+      "Giải thích lý do Công ty PTM sử dụng Đồng Việt Nam (VND) làm đơn vị tiền tệ kế toán.",
+      "Tầm quan trọng của việc áp dụng các chuẩn mực kế toán của Bộ Tài chính đối với độ tin cậy của báo cáo tài chính là gì?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - II. Năm tài chính, đơn vị tiền tệ & III. Chuẩn mực và chế độ kế toán áp dụng\nLoại nội dung: Text\nII. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\n1. Năm tài chính\nNăm tài chính của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.\nBáo cáo tài chính này là Báo cáo tài chính cho kỳ kế toán kết thúc ngày 30 tháng 6 năm 2025.\n\n2. Đơn vị tiền tệ sử dụng trong kế toán\nĐơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND) do việc thu, chi chủ yếu được thực hiện bằng đơn vị tiền tệ VND.\n\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\nChuẩn mực và Chế độ Kế toán áp dụng\nCông ty áp dụng các Chuẩn mực Kế toán, Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 và Thông tư số 53/2016/TT-BTC ngày 21 tháng 03 năm 2016 sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC cũng như các thông tư hướng dẫn thực hiện Chuẩn mực Kế toán của Bộ Tài chính trong việc lập Báo cáo tài chính.",
+    "output": [
+      "Năm tài chính của Công ty PTM bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.",
+      "Đơn vị tiền tệ chính được sử dụng trong kế toán của công ty là Đồng Việt Nam (VND).",
+      "Công ty PTM áp dụng các Chuẩn mực Kế toán, Chế độ Kế toán doanh nghiệp Việt Nam được ban hành theo Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 và Thông tư số 53/2016/TT-BTC ngày 21 tháng 03 năm 2016 sửa đổi, bổ sung một số điều của Thông tư số 200/2014/TT-BTC cũng như các thông tư hướng dẫn thực hiện Chuẩn mực Kế toán của Bộ Tài chính.",
+      "Báo cáo tài chính này được lập cho kỳ kế toán kết thúc ngày 30 tháng 6 năm 2025.",
+      "Công ty PTM sử dụng Đồng Việt Nam (VND) làm đơn vị tiền tệ kế toán do việc thu, chi chủ yếu của công ty được thực hiện bằng đơn vị tiền tệ VND.",
+      "Việc áp dụng các chuẩn mực kế toán của Bộ Tài chính đảm bảo báo cáo tài chính tuân thủ pháp luật, có tính so sánh được với các doanh nghiệp khác, và trình bày thông tin một cách nhất quán, minh bạch. Điều này củng cố độ tin cậy của báo cáo tài chính, giúp các nhà đầu tư và bên liên quan đưa ra quyết định chính xác, đồng thời là cơ sở cho công tác kiểm toán."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Cơ sở lập Báo cáo tài chính của công ty là gì?",
+      "Các khoản tương đương tiền được định nghĩa như thế nào trong báo cáo này?",
+      "Giá gốc hàng tồn kho được xác định dựa trên những yếu tố nào?",
+      "Khi nào dự phòng phải thu khó đòi được ghi nhận vào chi phí quản lý doanh nghiệp?",
+      "Giải thích các phương pháp tính giá trị hàng tồn kho được công ty áp dụng.",
+      "Phân tích tầm quan trọng của việc lập dự phòng phải thu khó đòi đối với sức khỏe tài chính của công ty.",
+      "Đánh giá mức độ thận trọng trong chính sách kế toán hàng tồn kho của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - IV. Các chính sách kế toán áp dụng (Phần 1)\nLoại nội dung: Text\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Cơ sở lập Báo cáo tài chính\nBáo cáo tài chính được lập trên cơ sở kế toán dồn tích, trừ các thông tin liên quan đến các luồng tiền.\n\n2. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt, tiền gửi ngân hàng không kỳ hạn và tiền đang chuyển, vàng tiền tệ.\nCác khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày mua, dễ dàng chuyển đổi thành một lượng tiền xác định cũng như không có nhiều rủi ro trong việc chuyển đổi thành tiền.\n\n3. Các khoản phải thu\nCác khoản nợ phải thu được trình bày theo giá trị ghi sổ trừ đi các khoản dự phòng phải thu khó đòi.\nViệc phân loại các khoản phải thu là phải thu khách hàng và phải thu khác được thực hiện theo nguyên tắc sau:\n- Phải thu của khách hàng: phản ánh các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua bán giữa Công ty và người mua là đơn vị độc lập với Công ty.\n- Phải thu khác: phản ánh các khoản phải thu không có tính thương mại, không liên quan đến giao dịch mua bán.\nDự phòng phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào tuổi nợ quá hạn của các khoản nợ hoặc dự kiến mức tổn thất có thể xảy ra. Đối với nợ phải thu chưa quá hạn thanh toán nhưng khó có khả năng thu hồi, căn cứ vào dự kiến mức tổn thất để lập dự phòng.\nTăng, giảm số dư dự phòng nợ phải thu khó đòi cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí quản lý doanh nghiệp.\n\n4. Hàng tồn kho\nHàng tồn kho được ghi nhận theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được.\nGiá gốc hàng tồn kho được xác định như sau:\n- Nguyên liệu, vật liệu, hàng hoá: bao gồm chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\n- Chi phí sản xuất, kinh doanh dở dang: toàn bộ là chi phí của việc sửa chữa xe chưa hoàn thành.\nGiá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong kỳ sản xuất, kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng.\nGiá trị hàng tồn kho được tính theo phương pháp giá đích danh đối với xe ô tô, bình quân gia quyền đối với các loại hàng hoá khác và được hạch toán theo phương pháp kê khai thường xuyên.\nDự phòng giảm giá hàng tồn kho được lập cho từng mặt hàng tồn kho có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc năm tài chính được ghi nhận vào giá vốn hàng bán.",
+    "output": [
+      "Cơ sở lập Báo cáo tài chính của công ty là kế toán dồn tích, trừ các thông tin liên quan đến các luồng tiền.",
+      "Các khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày mua, dễ dàng chuyển đổi thành một lượng tiền xác định cũng như không có nhiều rủi ro trong việc chuyển đổi thành tiền.",
+      "Giá gốc hàng tồn kho được xác định dựa trên: chi phí mua và các chi phí liên quan trực tiếp khác phát sinh để có được nguyên liệu, vật liệu, hàng hoá ở địa điểm và trạng thái hiện tại; hoặc toàn bộ là chi phí của việc sửa chữa xe chưa hoàn thành đối với chi phí sản xuất, kinh doanh dở dang.",
+      "Tăng, giảm số dư dự phòng nợ phải thu khó đòi cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào chi phí quản lý doanh nghiệp.",
+      "Công ty áp dụng phương pháp giá đích danh đối với xe ô tô và phương pháp bình quân gia quyền đối với các loại hàng hoá khác. Công ty hạch toán theo phương pháp kê khai thường xuyên.",
+      "Việc lập dự phòng phải thu khó đòi rất quan trọng vì nó giúp công ty phản ánh đúng giá trị có thể thu hồi của các khoản phải thu, tuân thủ nguyên tắc thận trọng trong kế toán bằng cách dự kiến các khoản lỗ tiềm năng. Điều này làm giảm lợi nhuận trong kỳ (vì được ghi nhận vào chi phí quản lý doanh nghiệp) nhưng cung cấp cái nhìn chân thực hơn về khả năng thu hồi nợ và rủi ro tín dụng mà công ty đang đối mặt, qua đó tăng độ tin cậy của báo cáo tài chính.",
+      "Chính sách kế toán hàng tồn kho của công ty được đánh giá là rất thận trọng. Công ty ghi nhận hàng tồn kho theo giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được, và lập dự phòng giảm giá hàng tồn kho cho từng mặt hàng có giá gốc lớn hơn giá trị thuần có thể thực hiện được. Ngoài ra, việc sử dụng phương pháp giá đích danh cho xe ô tô (mặt hàng giá trị cao) cũng thể hiện sự chính xác và thận trọng cao."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Chi phí trả trước của công ty được phân bổ trong khoảng thời gian nào?",
+      "Số năm khấu hao ước tính cho máy móc và thiết bị là bao nhiêu?",
+      "Nguyên giá tài sản cố định hữu hình bao gồm những chi phí gì?",
+      "Khi nào chi phí phát sinh sau ghi nhận ban đầu của tài sản cố định hữu hình được ghi tăng nguyên giá?",
+      "So sánh phương pháp khấu hao tài sản cố định hữu hình và vô hình của công ty.",
+      "Phân tích ý nghĩa của việc vốn hóa chi phí liên quan đến chương trình phần mềm máy tính.",
+      "Đánh giá tác động của chính sách khấu hao tài sản cố định đến lợi nhuận của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - IV. Các chính sách kế toán áp dụng (Phần 2)\nLoại nội dung: Text\n5. Chi phí trả trước\nChi phí trả trước bao gồm các chi phí trả trước ngắn hạn hoặc chi phí trả trước dài hạn trên Bảng cân đối kế toán và được phân bổ trong khoảng thời gian trả trước hoặc thời gian các lợi ích kinh tế tương ứng được tạo ra từ các chi phí này.\nChi phí trả trước bao gồm các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán. Chi phí trả trước của Công ty bao gồm các chi phí sau:\n- Công cụ, dụng cụ: Các công cụ, dụng cụ đã đưa vào sử dụng được phân bổ vào chi phí theo phương pháp đường thẳng với thời gian phân bổ không quá 36 tháng.\n\n6. Tài sản cố định hữu hình\nTài sản cố định hữu hình được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí phát sinh không thỏa mãn điều kiện trên được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ.\nKhi tài sản cố định hữu hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xoá sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong kỳ.\nTài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính. Số năm khấu hao của các loại tài sản cố định hữu hình như sau:\n- Loại tài sản cố định | Số năm khấu hao\n- Nhà cửa, vật kiến trúc | 05-20\n- Máy móc và thiết bị | 05-10\n- Phương tiện vận tải, truyền dẫn | 06-10\n- Thiết bị, dụng cụ quản lý | 03-10\n- Tài sản cố định khác | 10\n\n7. Tài sản cố định vô hình\nTài sản cố định vô hình được thể hiện theo nguyên giá trừ hao mòn lũy kế.\nNguyên giá tài sản cố định vô hình bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Chi phí liên quan đến tài sản cố định vô hình phát sinh sau khi ghi nhận ban đầu được ghi nhận là chi phí sản xuất, kinh doanh trong kỳ trừ khi các chi phí này gắn liền với một tài sản cố định vô hình cụ thể và làm tăng lợi ích kinh tế từ các tài sản này.\nKhi tài sản cố định vô hình được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xoá sổ và lãi, lỗ phát sinh do thanh lý được ghi nhận vào thu nhập hay chi phí trong năm.\n- Chương trình phần mềm: Chi phí liên quan đến các chương trình phần mềm máy tính không phải là một bộ phận gắn kết với phần cứng có liên quan được vốn hoá. Nguyên giá của phần mềm máy tính là toàn bộ các chi phí mà Công ty đã chi ra tính đến thời điểm đưa phần mềm vào sử dụng. Phần mềm máy tính được khấu hao theo phương pháp đường thẳng trong 04-06 năm.",
+    "output": [
+      "Chi phí trả trước của công ty được phân bổ trong khoảng thời gian trả trước hoặc thời gian các lợi ích kinh tế tương ứng được tạo ra từ các chi phí này. Cụ thể đối với công cụ, dụng cụ là không quá 36 tháng.",
+      "Số năm khấu hao ước tính cho máy móc và thiết bị là 05-10 năm.",
+      "Nguyên giá tài sản cố định hữu hình bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng.",
+      "Chi phí phát sinh sau ghi nhận ban đầu của tài sản cố định hữu hình chỉ được ghi tăng nguyên giá nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó.",
+      "Cả tài sản cố định hữu hình và vô hình của công ty đều được khấu hao theo phương pháp đường thẳng. Điểm khác biệt là thời gian khấu hao ước tính khác nhau tùy thuộc vào loại tài sản cụ thể; ví dụ, chương trình phần mềm (tài sản vô hình) được khấu hao trong 04-06 năm, trong khi một số tài sản hữu hình như nhà cửa, vật kiến trúc có thể lên đến 05-20 năm.",
+      "Việc vốn hóa chi phí liên quan đến chương trình phần mềm máy tính có nghĩa là công ty ghi nhận chi phí này như một tài sản (tài sản cố định vô hình) thay vì chi phí trong kỳ. Điều này phản ánh rằng phần mềm được kỳ vọng mang lại lợi ích kinh tế trong nhiều kỳ kế toán tương lai. Việc vốn hóa giúp phân bổ chi phí hợp lý qua thời gian hữu dụng của phần mềm (04-06 năm) thông qua khấu hao, tránh việc ghi nhận toàn bộ chi phí trong một kỳ và làm cho báo cáo kết quả kinh doanh ổn định, phản ánh đúng hiệu quả đầu tư dài hạn.",
+      "Chính sách khấu hao tài sản cố định của công ty theo phương pháp đường thẳng tạo ra chi phí khấu hao đều đặn hàng năm. Điều này giúp ổn định và dễ dự đoán chi phí khấu hao, từ đó làm cho lợi nhuận của công ty ít biến động hơn do yếu tố này. So với các phương pháp khấu hao nhanh, phương pháp đường thẳng có thể dẫn đến lợi nhuận cao hơn trong những năm đầu sử dụng tài sản, nhưng điều này cần được xem xét cùng với tính chính xác của thời gian hữu dụng ước tính để đảm bảo phản ánh đúng hiệu quả kinh tế."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Các khoản nợ phải trả và chi phí phải trả được ghi nhận dựa trên cơ sở nào?",
+      "Thặng dư vốn cổ phần được ghi nhận khi nào?",
+      "Liệt kê các điều kiện để doanh thu bán xe ô tô được ghi nhận.",
+      "Nêu sự khác biệt giữa Phải trả người bán và Phải trả khác.",
+      "Đánh giá mức độ minh bạch của chính sách ghi nhận doanh thu của công ty.",
+      "Phân tích tác động của các khoản mục phi tiền tệ trong lợi nhuận chưa phân phối đến khả năng chi trả lợi nhuận.",
+      "Đánh giá chính sách phân phối lợi nhuận của công ty dựa trên các quy định và lợi ích chủ sở hữu."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - IV. Các chính sách kế toán áp dụng (Phần 3)\nLoại nội dung: Text\n8. Các khoản nợ phải trả và chi phí phải trả\nCác khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả.\nViệc phân loại các khoản phải trả là phải trả người bán, chi phí phải trả và phải trả khác được thực hiện theo nguyên tắc sau:\n- Phải trả người bán: phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản và người bán là đơn vị độc lập với Công ty, bao gồm cả các khoản phải trả khi nhập khẩu thông qua người nhận ủy thác.\n- Chi phí phải trả: phản ánh các khoản phải trả cho hàng hóa, dịch vụ đã nhận được từ người bán hoặc đã cung cấp cho người mua nhưng chưa chi trả do chưa có hóa đơn hoặc chưa đủ hồ sơ, tài liệu kế toán và các khoản phải trả cho người lao động về tiền lương nghỉ phép, các khoản chi phí sản xuất, kinh doanh phải trích trước.\n- Phải trả khác: phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.\n\n9. Vốn chủ sở hữu\n- Vốn góp của chủ sở hữu: Vốn góp của chủ sở hữu được ghi nhận theo số vốn thực tế đã góp của chủ sở hữu.\n- Thặng dư vốn cổ phần: Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu, phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn. Chi phí trực tiếp liên quan đến việc phát hành bổ sung cổ phiếu và tái phát hành cổ phiếu quỹ được ghi giảm thặng dư vốn cổ phần.\n\n10. Phân phối lợi nhuận\nLợi nhuận sau thuế thu nhập doanh nghiệp được phân phối cho các chủ sở hữu sau khi đã trích lập các quỹ theo Điều lệ của Công ty cũng như các quy định của pháp luật và đã được chủ sở hữu công ty phê duyệt.\nViệc phân phối lợi nhuận cho các chủ sở hữu được cân nhắc đến các khoản mục phi tiền tệ nằm trong lợi nhuận sau thuế chưa phân phối có thể ảnh hưởng đến luồng tiền và khả năng chi trả lợi nhuận như lãi do đánh giá lại tài sản mang đi góp vốn, lãi do đánh giá lại các khoản mục tiền tệ, các công cụ tài chính và các khoản mục phi tiền tệ khác.\n\n11. Ghi nhận doanh thu và thu nhập\nDoanh thu được ghi nhận khi Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định được một cách chắc chắn. Doanh thu được xác định theo giá trị hợp lý của các khoản đã thu hoặc sẽ thu được sau khi trừ đi các khoản chiết khấu thương mại, giảm giá hàng bán và hàng bán bị trả lại.\n- Doanh thu bán xe ô tô: Doanh thu bán hàng hóa được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n    + Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.\n    + Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n    + Doanh thu được xác định tương đối chắc chắn.\n    + Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n    + Xác định được chi phí liên quan đến giao dịch bán hàng.",
+    "output": [
+      "Các khoản nợ phải trả và chi phí phải trả được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được. Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả.",
+      "Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch giữa giá phát hành và mệnh giá cổ phiếu khi phát hành lần đầu, phát hành bổ sung, chênh lệch giữa giá tái phát hành và giá trị sổ sách của cổ phiếu quỹ và cấu phần vốn của trái phiếu chuyển đổi khi đáo hạn.",
+      "Các điều kiện để doanh thu bán xe ô tô được ghi nhận bao gồm:\\n1. Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.\\n2. Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\\n3. Doanh thu được xác định tương đối chắc chắn.\\n4. Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\\n5. Xác định được chi phí liên quan đến giao dịch bán hàng.",
+      "Phải trả người bán phản ánh các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản. Trong khi đó, Phải trả khác phản ánh các khoản phải trả không có tính thương mại, không liên quan đến giao dịch mua, bán, cung cấp hàng hóa dịch vụ.",
+      "Mức độ minh bạch của chính sách ghi nhận doanh thu của công ty là cao. Việc công ty liệt kê chi tiết 5 điều kiện cụ thể để ghi nhận doanh thu bán xe ô tô cho thấy sự tuân thủ các chuẩn mực kế toán và giúp các bên liên quan hiểu rõ cơ sở mà công ty ghi nhận doanh thu. Điều này giúp giảm thiểu rủi ro về việc ghi nhận doanh thu quá sớm hoặc không chính xác, tăng độ tin cậy của báo cáo kết quả hoạt động kinh doanh.",
+      "Các khoản mục phi tiền tệ (như lãi do đánh giá lại tài sản) là lợi nhuận kế toán nhưng không tạo ra dòng tiền thực tế. Nếu lợi nhuận chưa phân phối chứa một tỷ lệ lớn các khoản mục này, mặc dù công ty có lợi nhuận kế toán cao, lượng tiền mặt sẵn có để chi trả cổ tức hoặc tái đầu tư sẽ bị hạn chế. Điều này có thể buộc công ty phải duy trì chính sách cổ tức thận trọng hoặc huy động thêm vốn từ bên ngoài để chi trả, gây áp lực lên khả năng thanh khoản và quản lý dòng tiền.",
+      "Chính sách phân phối lợi nhuận của công ty được đánh giá là thận trọng và tuân thủ các quy định. Công ty phân phối lợi nhuận sau khi trích lập các quỹ theo Điều lệ và quy định pháp luật, đồng thời cân nhắc các khoản mục phi tiền tệ ảnh hưởng đến luồng tiền và khả năng chi trả. Điều này không chỉ đảm bảo tính hợp pháp mà còn bảo vệ lợi ích chủ sở hữu bằng cách đảm bảo các quyết định phân phối lợi nhuận là bền vững và thực tế, cũng như ưu tiên tái đầu tư cho sự phát triển dài hạn của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Các điều kiện để doanh thu cung cấp dịch vụ sửa chữa được ghi nhận là gì?",
+      "Chi phí tài chính của công ty bao gồm những loại chi phí nào?",
+      "Nêu các quy định về việc vốn hóa chi phí đi vay của công ty.",
+      "Thuế suất thuế thu nhập doanh nghiệp mà công ty phải nộp là bao nhiêu phần trăm?",
+      "Giải thích cách công ty xác định giá vốn hàng bán.",
+      "Phân tích tầm quan trọng của việc xác định bên liên quan trong báo cáo tài chính.",
+      "Đánh giá tác động của chính sách ghi nhận doanh thu theo tiến độ đến độ chính xác của báo cáo tài chính."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - IV. Các chính sách kế toán áp dụng (Phần 4)\nLoại nội dung: Text\n- Doanh thu cung cấp dịch vụ sửa chữa: Doanh thu của giao dịch cung cấp dịch vụ sửa chữa được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp dịch vụ được thực hiện trong nhiều kỳ thì doanh thu được ghi nhận trong kỳ được căn cứ vào kết quả phần công việc đã hoàn thành vào ngày kết thúc năm tài chính. Kết quả của giao dịch cung cấp dịch vụ được xác định khi thỏa mãn tất cả các điều kiện sau:\n    + Doanh thu được xác định tương đối chắc chắn.\n    + Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n    + Xác định được phần công việc đã hoàn thành vào ngày kết thúc năm tài chính.\n    + Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\n- Doanh thu cung cấp dịch vụ cho thuê xe, địa điểm kinh doanh: Doanh thu của giao dịch cung cấp dịch vụ cho thuê xe, địa điểm kinh doanh được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp dịch vụ được thực hiện trong nhiều kỳ thì doanh thu được ghi nhận trong kỳ được căn cứ vào kết quả phần công việc đã hoàn thành vào ngày kết thúc năm tài chính. Kết quả của giao dịch cung cấp dịch vụ được xác định khi thỏa mãn tất cả các điều kiện sau:\n    + Doanh thu được xác định tương đối chắc chắn.\n    + Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n    + Xác định được phần công việc đã hoàn thành vào ngày kết thúc năm tài chính.\n    + Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\n- Tiền lãi: Tiền lãi được ghi nhận trên cơ sở dồn tích, được xác định trên số dư các tài khoản tiền gửi và lãi suất thực tế từng kỳ.\n\n12. Giá vốn hàng bán\nGiá vốn hàng bán là tổng giá vốn của chi phí trực tiếp của khối lượng dịch vụ đã cung cấp, chi phí khác được tính vào giá vốn hoặc ghi giảm giá vốn hàng bán.\n\n13. Chi phí tài chính\nChi phí tài chính là những chi phí liên quan đến hoạt động tài chính gồm chi phí đi vay vốn, lỗ chuyển nhượng chứng khoán ngắn hạn, chi phí giao dịch bán chứng khoán, dự phòng giảm giá chứng khoán kinh doanh, dự phòng tổn thất đầu tư vào đơn vị khác.\n- Chi phí đi vay: Chi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay. Chi phí đi vay được ghi nhận vào chi phí khi phát sinh. Trường hợp chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán thì chi phí đi vay này được vốn hóa. Đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng. Các khoản thu nhập phát sinh từ việc đầu tư tạm thời các khoản vay được ghi giảm nguyên giá tài sản có liên quan.\nĐối với các khoản vốn vay chung trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang thì chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong năm, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể.\n\n14. Chi phí bán hàng và chi phí quản lý doanh nghiệp\nChi phí bán hàng và chi phí quản lý doanh nghiệp là toàn bộ các chi phí phát sinh liên quan đến quá trình bán sản phẩm, hàng hóa, cung cấp dịch vụ và các chi phí quản lý chung của Công ty.\n\n15. Thuế và các khoản phải nộp nhà nước\n- Thuế giá trị gia tăng: theo phương pháp khấu trừ.\n- Công ty nộp thuế thu nhập doanh nghiệp bằng 20% (hai mươi phần trăm) lợi nhuận thu được từ hoạt động kinh doanh.\n- Các loại thuế khác: theo quy định hiện hành tại thời điểm nộp thuế hàng năm.\n\n16. Bên liên quan\nCác bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định các chính sách tài chính và hoạt động. Các bên cũng được xem là bên liên quan nếu cùng chịu sự kiểm soát chung hay chịu ảnh hưởng đáng kể chung.\nTrong việc xem xét mối quan hệ của các bên liên quan, bản chất của mối quan hệ được chú trọng nhiều hơn hình thức pháp lý.\n\n17. Báo cáo bộ phận\nMẫu báo cáo bộ phận cơ bản của Công ty là dựa theo bộ phận chia theo khu vực địa lý.",
+    "output": [
+      "Các điều kiện để doanh thu cung cấp dịch vụ sửa chữa được ghi nhận là:\\n1. Doanh thu được xác định tương đối chắc chắn.\\n2. Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\\n3. Xác định được phần công việc đã hoàn thành vào ngày kết thúc năm tài chính.\\n4. Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.",
+      "Chi phí tài chính của công ty bao gồm: chi phí đi vay vốn, lỗ chuyển nhượng chứng khoán ngắn hạn, chi phí giao dịch bán chứng khoán, dự phòng giảm giá chứng khoán kinh doanh, dự phòng tổn thất đầu tư vào đơn vị khác.",
+      "Chi phí đi vay được vốn hóa nếu liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần thời gian đủ dài (trên 12 tháng) để đưa vào sử dụng/bán. Đối với vay riêng phục vụ xây dựng TSCĐ, BĐS đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng. Các khoản thu nhập từ đầu tư tạm thời khoản vay được ghi giảm nguyên giá tài sản. Đối với vốn vay chung, chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa trên chi phí lũy kế bình quân gia quyền.",
+      "Thuế suất thuế thu nhập doanh nghiệp mà công ty phải nộp là 20% (hai mươi phần trăm).",
+      "Công ty xác định giá vốn hàng bán là tổng giá vốn của chi phí trực tiếp của khối lượng dịch vụ đã cung cấp, chi phí khác được tính vào giá vốn hoặc ghi giảm giá vốn hàng bán.",
+      "Việc xác định bên liên quan rất quan trọng để đảm bảo tính minh bạch và độ tin cậy của báo cáo tài chính. Nó giúp người đọc hiểu rõ các giao dịch có thể không theo điều kiện thị trường thông thường, đánh giá rủi ro xung đột lợi ích, và tránh việc thông tin tài chính bị sai lệch. Việc này cũng là yêu cầu bắt buộc của các chuẩn mực kế toán, góp phần tăng cường tính toàn vẹn của báo cáo.",
+      "Chính sách ghi nhận doanh thu theo tiến độ công việc đã hoàn thành (đối với dịch vụ sửa chữa, cho thuê) giúp tăng độ chính xác của báo cáo tài chính. Nó phân bổ doanh thu và chi phí vào đúng kỳ kế toán mà chúng phát sinh, tránh làm méo mó lợi nhuận giữa các kỳ và tuân thủ nguyên tắc phù hợp. Điều này mang lại cái nhìn trung thực hơn về hiệu suất hoạt động thực tế của công ty, mặc dù đòi hỏi các ước tính đáng tin cậy về tiến độ hoàn thành."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu?",
+      "Tổng các khoản phải thu ngắn hạn của khách hàng cuối kỳ là bao nhiêu?",
+      "Giá trị dự phòng phải thu ngắn hạn khó đòi cuối kỳ là bao nhiêu?",
+      "So sánh khoản 'Trả trước cho người bán' cuối kỳ với đầu năm, thay đổi như thế nào?",
+      "Khoản phải thu ngắn hạn khác chủ yếu đến từ đâu?",
+      "Đánh giá khả năng thu hồi các khoản phải thu ngắn hạn khó đòi dựa trên thời gian quá hạn.",
+      "Phân tích tác động của sự giảm sút các khoản tương đương tiền đến khả năng thanh toán của công ty.",
+      "Đánh giá rủi ro tín dụng của công ty dựa trên cơ cấu các khoản phải thu khách hàng và dự phòng khó đòi."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán (Phần 1)\nLoại nội dung: Cả hai\nBản thuyết minh Báo cáo tài chính\nCho kỳ tài chính kết thúc ngày 30 tháng 06 năm 2025\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN (ĐƠN VỊ TÍNH: VNĐ)\n\n1. Tiền và các khoản tương đương tiền\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Tiền mặt | 4.215.164.598 | 6.863.847.488 |\n| Tiền gửi ngân hàng không kỳ hạn | 41.902.253.514 | 40.561.551.835 |\n| Các khoản tương đương tiền | - | 110.000.000.000 |\n| Cộng | 46.117.418.112 | 157.425.399.323 |\n\n2. Phải thu ngắn hạn của khách hàng\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải thu các bên liên quan | 15.748.000.000 | - |\n| Công ty Cổ phần Cơ khí Ô tô Cần Thơ | 15.748.000.000 | - |\n| Phải thu các tổ chức và cá nhân khác | 57.577.955.119 | 12.330.527.492 |\n| Công ty TNHH Khách sạn Grand Imperial Saigon | 223.144.319 | 758.976.480 |\n| Khách hàng khác | 49.703.800.609 | 11.662.547.492 |\n| Cộng | 73.325.955.119 | 12.330.527.492 |\n\n3. Trả trước cho người bán\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Trả trước cho các bên liên quan | - | - |\n| Trả trước cho các tổ chức và cá nhân khác | 63.480.029.015 | 74.838.664.364 |\n| Công ty Cổ phần Xây lắp điện công trình Thăng Long | 15.001.000.001 | 26.456.345.601 |\n| Trần Khắc Phục | 30.410.766.400 | 30.410.766.400 |\n| Đối tượng khác | 18.068.262.614 | 17.971.552.363 |\n| Cộng | 63.480.029.015 | 74.838.664.364 |\n\n4. Phải thu khác\n4a. Phải thu ngắn hạn khác\nChủ yếu là khoản tiền thưởng theo chính sách bán hàng của Công ty TNHH Saic Motor Việt Nam.\n\n4b. Phải thu dài hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải thu dài hạn khác các bên liên quan | - | - |\n| Phải thu dài hạn khác | 2.513.000.000 | 2.302.000.000 |\n| - Công ty CP Đầu tư và Phát triển TDP | 1.040.000.000 | 1.040.000.000 |\n| - Các nhà cung cấp khác | 1.473.000.000 | 1.262.000.000 |\n| Cộng | 2.513.000.000 | 2.302.000.000 |\n\n5. Dự phòng phải thu ngắn hạn khó đòi\n| Chỉ tiêu | Thời gian quá hạn | Giá gốc | Giá trị có thể thu hồi (1) | Thời gian quá hạn | Giá gốc | Giá trị có thể thu hồi (1) |\n|---|---|---|---|---|---|---|\n| Các bên liên quan | - | - | - | - | - | - |\n| Các tổ chức và cá nhân khác | | 333.652.480 | 333.652.480 | | 333.652.480 | 333.652.480 |\n| - Công ty XNK Vật tư Kỹ thuật | Trên 3 năm | 68.800.000 | 68.800.000 | Trên 3 năm | 68.800.000 | 68.800.000 |\n| - Hợp doanh DMC - FER | Trên 3 năm | 53.650.000 | 53.650.000 | Trên 3 năm | 53.650.000 | 53.650.000 |\n| - Công ty CP SX và Chuyển giao Công nghệ Việt Nam TBI | Trên 3 năm | 41.987.000 | 41.987.000 | Trên 3 năm | 41.987.000 | 41.987.000 |\n| - Các đối tượng khác | Trên 3 năm | 169.215.480 | 169.215.480 | Trên 3 năm | 169.215.480 | 169.215.480 |\n| Cộng | | 333.652.480 | 333.652.480 | | 333.652.480 | 333.652.480 |\n(1) Giá trị có thể thu hồi bằng giá gốc trừ số nợ phải thu đã lập dự phòng.",
+    "output": [
+      "Tổng tiền và các khoản tương đương tiền cuối kỳ là 46.117.418.112 VND.",
+      "Tổng các khoản phải thu ngắn hạn của khách hàng cuối kỳ là 73.325.955.119 VND.",
+      "Giá trị dự phòng phải thu ngắn hạn khó đòi cuối kỳ là 333.652.480 VND.",
+      "Khoản 'Trả trước cho người bán' cuối kỳ là 63.480.029.015 VND và đầu năm là 74.838.664.364 VND. Khoản này giảm 11.358.635.349 VND so với đầu năm.",
+      "Khoản phải thu ngắn hạn khác chủ yếu là khoản tiền thưởng theo chính sách bán hàng của Công ty TNHH Saic Motor Việt Nam.",
+      "Toàn bộ các khoản phải thu ngắn hạn khó đòi (333.652.480 VND) đều có thời gian quá hạn 'Trên 3 năm'. Điều này cho thấy khả năng thu hồi các khoản nợ này là rất thấp. Thời gian quá hạn kéo dài hơn 3 năm mà vẫn chưa thu hồi được ngụ ý rằng các biện pháp thu hồi đã không hiệu quả và rủi ro không thu hồi được là rất cao, khẳng định sự cần thiết của việc trích lập dự phòng.",
+      "Sự giảm sút đáng kể của tiền và các khoản tương đương tiền từ 157.425.399.323 VND (đầu năm) xuống 46.117.418.112 VND (cuối kỳ), đặc biệt là các khoản tương đương tiền giảm về 0, có tác động tiêu cực đến khả năng thanh toán ngắn hạn của công ty. Điều này làm giảm lượng tiền mặt sẵn có để đáp ứng các nghĩa vụ thanh toán ngay lập tức, tạo áp lực lên dòng tiền và có thể làm giảm các chỉ số thanh khoản, gây rủi ro thiếu hụt tiền mặt nếu không được quản lý cẩn thận.",
+      "Các khoản phải thu ngắn hạn của khách hàng tăng mạnh từ 12.330.527.492 VND lên 73.325.955.119 VND, làm tăng rủi ro tín dụng tổng thể. Dự phòng phải thu khó đòi duy trì ở mức rất thấp (333.652.480 VND) và không thay đổi, trong khi các khoản phải thu tăng đột biến. Toàn bộ dự phòng dành cho nợ quá hạn 'Trên 3 năm', cho thấy các khoản phải thu mới tăng chưa được đánh giá rủi ro tương xứng. Sự thiếu tương xứng này tiềm ẩn nguy cơ công ty đánh giá thấp rủi ro khó đòi, có thể dẫn đến việc phải trích lập dự phòng lớn hơn trong tương lai, ảnh hưởng tiêu cực đến lợi nhuận."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá gốc hàng tồn kho cuối kỳ là bao nhiêu?",
+      "Chi phí trả trước ngắn hạn cuối kỳ là bao nhiêu?",
+      "Giá trị nguyên liệu, vật liệu cuối kỳ là bao nhiêu?",
+      "So sánh 'Hàng hóa' (giá gốc) cuối kỳ với đầu năm, thay đổi như thế nào?",
+      "Tỷ lệ dự phòng giảm giá hàng tồn kho trên tổng giá gốc hàng tồn kho cuối kỳ là bao nhiêu?",
+      "Đánh giá ý nghĩa của việc chi phí trả trước dài hạn tăng trong kỳ này.",
+      "Phân tích rủi ro tài chính nếu giá trị hàng hóa tồn kho tiếp tục tăng mạnh trong khi nhu cầu thị trường không đổi."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán (Phần 2)\nLoại nội dung: Bảng\n6. Hàng tồn kho\n| Chỉ tiêu | Số cuối kỳ Giá gốc | Số cuối kỳ Dự phòng | Số đầu năm Giá gốc | Số đầu năm Dự phòng |\n|---|---|---|---|---|\n| Hàng đang đi đường | 78.267.750 | - | - | - |\n| Nguyên liệu, vật liệu | 5.528.597.360 | 1.405.659.907 | 3.688.991.886 | 1.405.659.907 |\n| Công cụ, dụng cụ | 468.073.186 | - | 343.994.681 | - |\n| Chi phí sản xuất, kinh doanh dở dang | 803.278.077 | - | 520.067.148 | - |\n| Hàng hóa | 388.463.850.012 | - | 124.992.840.327 | - |\n| Cộng | 395.342.066.385 | 1.405.659.907 | 129.545.894.042 | 1.405.659.907 |\n\n7. Chi phí trả trước\n7a. Chi phí trả trước ngắn hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Công cụ, dụng cụ đang sử dụng | 2.262.377.109 | 2.004.920.456 |\n| Phí bảo hiểm cháy nổ | 275.059.692 | 135.434.040 |\n| Chi phí trả trước ngắn hạn khác | 4.523.290.054 | 5.237.151.612 |\n| Cộng | 7.060.726.855 | 7.377.506.108 |\n\nTình hình biến động\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Số đầu năm | 7.377.506.108 | 594.094.211 |\n| Tăng trong kỳ | 11.023.935.027 | 6.097.397.408 |\n| Tăng do điều chỉnh từ dài hạn sang ngắn hạn | - | 1.994.598.484 |\n| Phân bổ trong kỳ | 11.325.514.279 | 4.310.625.844 |\n| Giảm do điều chỉnh từ ngắn hạn sang dài hạn | 15.200.000 | 244.420.825 |\n| Số cuối kỳ | 7.060.726.855 | 4.131.043.434 |\n\n7b. Chi phí trả trước dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Chi phí sửa chữa văn phòng | 7.596.952.051 | 6.966.522.938 |\n| Công cụ, dụng cụ đang sử dụng | 5.529.485.571 | 4.399.131.224 |\n| Chi phí trả trước dài hạn khác | 3.860.180.628 | 4.697.954.084 |\n| Cộng | 16.986.618.250 | 16.063.608.246 |\n\nTình hình biến động\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Số đầu năm | 16.063.608.246 | 4.715.910.672 |\n| Tăng trong kỳ | 3.958.230.364 | 1.596.435.463 |\n| Tăng do điều chỉnh từ ngắn hạn sang dài hạn | - | 244.420.823 |\n| Phân bổ trong kỳ | 3.035.220.360 | 595.753.162 |\n| Giảm do điều chỉnh từ dài hạn sang ngắn hạn | 1.994.598.489 | - |\n| Số cuối kỳ | 16.986.618.250 | 3.966.415.307 |",
+    "output": [
+      "Tổng giá gốc hàng tồn kho cuối kỳ là 395.342.066.385 VND.",
+      "Chi phí trả trước ngắn hạn cuối kỳ là 7.060.726.855 VND.",
+      "Giá trị nguyên liệu, vật liệu cuối kỳ là 5.528.597.360 VND (giá gốc).",
+      "Giá gốc 'Hàng hóa' cuối kỳ là 388.463.850.012 VND và đầu năm là 124.992.840.327 VND. Giá trị 'Hàng hóa' (giá gốc) cuối kỳ tăng 263.471.009.685 VND so với đầu năm.",
+      "Dự phòng giảm giá hàng tồn kho cuối kỳ là 1.405.659.907 VND và tổng giá gốc hàng tồn kho cuối kỳ là 395.342.066.385 VND. Tỷ lệ là 0.355% (1.405.659.907 / 395.342.066.385 * 100%).",
+      "Chi phí trả trước dài hạn tăng từ 16.063.608.246 VND (đầu năm) lên 16.986.618.250 VND (cuối kỳ), với khoản tăng trong kỳ là 3.958.230.364 VND. Điều này có nghĩa là công ty đã chi trả một lượng tiền đáng kể cho các lợi ích sẽ được sử dụng trong nhiều kỳ tương lai, như chi phí sửa chữa văn phòng hoặc mua sắm công cụ, dụng cụ dài hạn. Mặc dù làm giảm dòng tiền trong kỳ, khoản đầu tư này có thể giúp giảm chi phí phân bổ và cải thiện lợi nhuận trong các kỳ tới, hỗ trợ hiệu quả hoạt động dài hạn.",
+      "Nếu giá trị hàng hóa tồn kho tiếp tục tăng mạnh (như đã tăng từ 124.992.840.327 VND lên 388.463.850.012 VND) mà nhu cầu thị trường không đổi, công ty sẽ đối mặt với rủi ro tài chính nghiêm trọng: tiền mặt bị 'đóng băng' trong hàng tồn kho, gây rủi ro thanh khoản; nguy cơ hàng hóa lỗi thời, hư hỏng hoặc giảm giá trị, dẫn đến phải trích lập dự phòng và giảm lợi nhuận; tăng chi phí lưu trữ và quản lý; và làm chậm vòng quay hàng tồn kho, cho thấy quản lý kém hiệu quả. Công ty cần xem xét lại chính sách mua hàng và dự báo nhu cầu thị trường."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Giá trị còn lại của tài sản cố định vô hình cuối kỳ là bao nhiêu?",
+      "Tổng phải trả người bán ngắn hạn, dài hạn cuối kỳ là bao nhiêu?",
+      "Tổng thuế thu nhập doanh nghiệp phải nộp cuối kỳ là bao nhiêu?",
+      "Số dư thuế GTGT phải nộp cuối kỳ là bao nhiêu?",
+      "Nêu ý nghĩa của việc khoản 'Người mua trả tiền trước ngắn hạn' chủ yếu đến từ tiền khách hàng trả trước để mua xe.",
+      "Phân tích tác động của sự gia tăng phải trả người bán đến dòng tiền hoạt động của công ty.",
+      "Đánh giá mức độ tuân thủ nghĩa vụ thuế của công ty dựa trên bảng 'Thuế và các khoản phải thu/phải nộp Nhà nước'."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán (Phần 3)\nLoại nội dung: Cả hai\n8. Tài sản cố định hữu hình\nChi tiết xem Phụ lục số 01 - Tình hình tăng giảm tài sản cố định hữu hình.\n\n9. Tài sản cố định vô hình\n| Chỉ tiêu | Phần mềm quản lý | Cộng |\n|---|---|---|\n| Nguyên giá | | |\n| Số đầu năm | 88.160.000 | 88.160.000 |\n| Tăng trong kỳ | - | - |\n| Giảm trong kỳ | - | - |\n| Số cuối kỳ | 88.160.000 | 88.160.000 |\n| Giá trị hao mòn lũy kế | | |\n| Số đầu năm | 73.420.000 | 73.420.000 |\n| Tăng trong kỳ | 8.040.000 | 4.020.000 |\n| Giảm trong kỳ | - | - |\n| Số cuối kỳ | 81.460.000 | 77.440.000 |\n| Giá trị còn lại | | |\n| Số đầu năm | 14.740.000 | 14.740.000 |\n| Số cuối kỳ | 6.700.000 | 10.720.000 |\n\n10. Phải trả người bán ngắn hạn, dài hạn\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả các bên liên quan | - | - |\n| Phải trả các nhà cung cấp khác | 39.927.449.891 | 21.656.298.959 |\n| Công ty TNHH Saic Motor Việt Nam | 34.757.415.165 | 15.211.720.004 |\n| Khách hàng khác | 5.170.034.726 | 6.444.578.955 |\n| Cộng | 39.927.449.891 | 21.656.298.959 |\n\n11. Người mua trả tiền trước ngắn hạn\nChủ yếu là tiền khách hàng trả tiền trước để mua xe và dịch vụ sửa chữa xe.\n\n12. Thuế và các khoản phải thu/phải nộp Nhà nước\n| Chỉ tiêu | Số đầu năm Phải nộp | Số đầu năm Phải thu | Số phát sinh trong kỳ Phải nộp | Số phát sinh trong kỳ Đã nộp | Số cuối kỳ Phải nộp | Số cuối kỳ Phải thu |\n|---|---|---|---|---|---|---|\n| Thuế GTGT phải nộp | 641.338.247 | - | 4.993.587.625 | 4.893.343.734 | 741.582.138 | - |\n| Thuế thu nhập doanh nghiệp | 32.160.620.312 | - | 8.624.310.022 | 32.270.189.772 | 8.514.740.562 | - |\n| Thuế thu nhập cá nhân | 394.619.558 | - | 1.441.269.376 | 1.285.890.567 | 549.998.367 | - |\n| Thuế nhà đất và tiền thuê đất | 159.830.424 | - | - | 159.830.424 | - | - |\n| Thuế môn bài | - | 41.698.745 | - | 38.221.630 | - | 3.477.115 |\n| Cộng | 33.356.408.541 | 41.698.745 | 15.059.167.023 | 38.647.476.127 | 9.809.798.182 | 3.477.115 |",
+    "output": [
+      "Giá trị còn lại của tài sản cố định vô hình cuối kỳ là 6.700.000 VND (phần mềm quản lý).",
+      "Tổng phải trả người bán ngắn hạn, dài hạn cuối kỳ là 39.927.449.891 VND.",
+      "Tổng thuế thu nhập doanh nghiệp phải nộp cuối kỳ là 8.514.740.562 VND.",
+      "Số dư thuế GTGT phải nộp cuối kỳ là 741.582.138 VND.",
+      "Khoản 'Người mua trả tiền trước ngắn hạn' chủ yếu từ tiền khách hàng trả trước để mua xe có ý nghĩa tích cực. Đây là nguồn vốn không lãi suất, giúp cải thiện dòng tiền và giảm nhu cầu vay vốn. Nó cũng đảm bảo doanh số bán hàng, giúp công ty dự đoán và lập kế hoạch sản xuất, đồng thời giảm rủi ro tín dụng. Đặc biệt trong ngành kinh doanh xe, việc nhận tiền trả trước giúp ổn định dòng tiền cho các giao dịch lớn.",
+      "Phải trả người bán ngắn hạn tăng từ 21.656.298.959 VND (đầu năm) lên 39.927.449.891 VND (cuối kỳ). Sự gia tăng này có tác động tích cực đến dòng tiền từ hoạt động kinh doanh của công ty. Nó cho phép công ty giữ lại tiền mặt lâu hơn do kéo dài thời gian thanh toán cho nhà cung cấp hoặc phát sinh nhiều giao dịch mua chịu hơn, từ đó cải thiện dòng tiền thuần từ hoạt động kinh doanh và giảm áp lực vay nợ. Đây được xem là một hình thức tín dụng thương mại miễn phí.",
+      "Dựa trên bảng 'Thuế và các khoản phải thu/phải nộp Nhà nước', công ty PTM thể hiện mức độ tuân thủ tốt các nghĩa vụ thuế. Công ty đã phát sinh và nộp các khoản thuế GTGT, TNDN, TNCN, và thuế nhà đất trong kỳ, với các số dư phải nộp cuối kỳ hợp lý hoặc đã được thanh toán hết. Điều này cho thấy công ty chủ động thực hiện nghĩa vụ thuế và quản lý hiệu quả các khoản mục liên quan đến thuế."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Thu nhập tính thuế của công ty kỳ này là bao nhiêu?",
+      "Tổng Thuế thu nhập doanh nghiệp còn phải nộp kỳ này là bao nhiêu?",
+      "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là bao nhiêu?",
+      "So sánh Thu nhập chịu thuế kỳ này với kỳ trước, thay đổi như thế nào?",
+      "Tổng tiền vay phát sinh trong kỳ là bao nhiêu?",
+      "Đánh giá mức độ phụ thuộc vào vay ngắn hạn của công ty dựa trên tình hình biến động các khoản vay.",
+      "Phân tích tác động của các khoản điều chỉnh tăng trong lợi nhuận kế toán để xác định lợi nhuận chịu thuế."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán (Phần 4)\nLoại nội dung: Cả hai\n12a. Thuế giá trị gia tăng\nCông ty nộp thuế giá trị gia tăng theo phương pháp khấu trừ.\n\n12b. Thuế thu nhập doanh nghiệp\nDoanh nghiệp phải nộp thuế thu nhập doanh nghiệp cho các khoản thu nhập tính thuế với thuế suất 20%.\nThuế thu nhập doanh nghiệp phải nộp trong năm được dự tính như sau:\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Tổng lợi nhuận kế toán trước thuế | 42.046.362.458 | 51.728.643.857 |\n| Các khoản điều chỉnh tăng, giảm lợi nhuận kế toán để xác định lợi nhuận chịu thuế thu nhập doanh nghiệp | | |\n| - Các khoản điều chỉnh tăng | 527.340.352 | - |\n| - Các khoản điều chỉnh giảm | - | - |\n| Thu nhập chịu thuế | 42.573.702.810 | 51.728.643.857 |\n| Thu nhập được miễn thuế | - | - |\n| Lỗ các năm trước được chuyển | - | - |\n| Thu nhập tính thuế | 42.573.702.810 | 51.728.643.857 |\n| Thuế suất thuế thu nhập doanh nghiệp | 20% | 20% |\n| Thuế TNDN phải nộp theo thuế suất phổ thông | 8.514.740.562 | 10.345.728.771 |\n| Điều chỉnh thuế TNDN của các năm trước | 109.569.460 | 70.504.741 |\n| Tổng Thuế thu nhập doanh nghiệp còn phải nộp | 8.624.310.022 | 10.416.233.512 |\n\n12c. Các loại thuế khác\nDoanh nghiệp kê khai và nộp theo quy định.\n\n13. Vay và nợ thuê tài chính ngắn hạn\n| Chỉ tiêu | Số cuối kỳ Giá trị | Số cuối kỳ Khả năng trả nợ | Số đầu năm Giá trị | Số đầu năm Khả năng trả nợ |\n|---|---|---|---|---|\n| Vay ngắn hạn phải trả các bên liên quan | - | - | - | - |\n| Vay ngắn hạn phải trả các tổ chức và cá nhân khác | 259.359.450.160 | 259.359.450.160 | 26.000.297.760 | 26.000.297.760 |\n| Ngân hàng TMCP Công Thương Việt Nam - CN Tây Sài Gòn | 118.244.594.160 | 118.244.594.160 | 16.954.000.000 | 16.954.000.000 |\n| Ngân hàng TMCP Ngoại thương Việt Nam - CN Hải Dương | 25.429.269.360 | 25.429.269.360 | 9.046.297.760 | 9.046.297.760 |\n| Ngân hàng TMCP Đầu tư và Phát triển VN - CN Tân Bình | 29.826.355.840 | 29.826.355.840 | - | - |\n| Ngân hàng TMCP Đầu tư và Phát triển VN - CN Long Biên | 35.898.607.360 | 35.898.607.360 | - | - |\n| Ngân hàng TNHH MTV HSBC | 49.960.623.440 | 49.960.623.440 | - | - |\n| Cộng | 259.359.450.160 | 259.359.450.160 | 26.000.297.760 | 26.000.297.760 |\n\nTình hình biến động các khoản vay và nợ ngắn hạn trong năm như sau:\n| Chỉ tiêu | Số đầu năm | Tiền vay phát sinh trong kỳ | Số tiền vay đã trả | Số cuối kỳ |\n|---|---|---|---|---|\n| Vay ngắn hạn Ngân hàng | 26.000.297.760 | 433.342.004.040 | 199.982.851.640 | 259.359.450.160 |\n| Cộng | 26.000.297.760 | 433.342.004.040 | 199.982.851.640 | 259.359.450.160 |",
+    "output": [
+      "Thu nhập tính thuế của công ty kỳ này là 42.573.702.810 VND.",
+      "Tổng Thuế thu nhập doanh nghiệp còn phải nộp kỳ này là 8.624.310.022 VND.",
+      "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là 259.359.450.160 VND.",
+      "Thu nhập chịu thuế kỳ này là 42.573.702.810 VND, kỳ trước là 51.728.643.857 VND. Thu nhập chịu thuế kỳ này giảm 9.154.941.047 VND so với kỳ trước.",
+      "Tổng tiền vay phát sinh trong kỳ là 433.342.004.040 VND.",
+      "Mức độ phụ thuộc vào vay ngắn hạn của công ty đã tăng rất đáng kể. Số dư vay ngắn hạn cuối kỳ (259.359.450.160 VND) tăng gần 10 lần so với đầu năm (26.000.297.760 VND). Tổng tiền vay phát sinh trong kỳ (433.342.004.040 VND) cũng rất lớn, vượt xa số tiền đã trả nợ gốc. Sự gia tăng mạnh mẽ này tạo áp lực lớn về trả nợ trong tương lai gần và làm tăng rủi ro thanh khoản, cho thấy công ty đang phụ thuộc nhiều vào nguồn vốn vay ngắn hạn.",
+      "Các khoản điều chỉnh tăng trong lợi nhuận kế toán (527.340.352 VND) có tác động làm tăng căn cứ tính thuế thu nhập doanh nghiệp của công ty. Điều này có nghĩa là có những chi phí được ghi nhận trong lợi nhuận kế toán nhưng không được khấu trừ khi tính thuế theo quy định pháp luật thuế, dẫn đến lợi nhuận tính thuế và số thuế TNDN phải nộp tăng. Sự khác biệt này làm phát sinh chênh lệch giữa lợi nhuận kế toán và lợi nhuận chịu thuế, và có thể làm giảm dòng tiền ròng của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải trả ngắn hạn khác cuối kỳ là bao nhiêu?",
+      "Công ty CP Dịch vụ Ô tô Hàng Xanh góp bao nhiêu vốn cổ phần thường vào công ty?",
+      "Vốn điều lệ đã góp của công ty là bao nhiêu?",
+      "So sánh khoản 'Phải trả ngắn hạn khác' cuối kỳ với đầu năm, thay đổi như thế nào?",
+      "Tỷ lệ vốn góp của Công ty CP Dịch vụ Ô tô Hàng Xanh là bao nhiêu phần trăm?",
+      "Phân tích tác động của việc không có vốn điều lệ còn phải góp đến cơ cấu vốn của công ty.",
+      "Đánh giá mức độ tập trung vốn chủ sở hữu dựa trên tỷ lệ góp vốn của các cổ đông chính."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán (Phần 5)\nLoại nội dung: Cả hai\n14. Phải trả ngắn hạn khác\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|---|---|---|\n| Phải trả ngắn hạn các bên liên quan | - | - |\n| Phải trả, phải nộp ngắn hạn khác | 1.160.667.186 | 2.357.749.402 |\n| - Công ty TNHH Sài Gòn Boulevard Complex | 420.000.000 | 420.000.000 |\n| - Khách hàng khác | 740.667.186 | 1.937.749.402 |\n| Cộng | 1.160.667.186 | 2.357.749.402 |\n\n15. Vốn chủ sở hữu\n15a. Tình hình tăng, giảm vốn chủ sở hữu\nXem chi tiết phụ lục số 02\n\n15b. Chi tiết vốn góp của chủ sở hữu\nTình hình góp vốn điều lệ như sau:\n| Chỉ tiêu | Số cuối kỳ Vốn cổ phần thường | Số cuối kỳ Tỷ lệ | Số đầu năm Vốn cổ phần thường | Số đầu năm Tỷ lệ |\n|---|---|---|---|---|\n| Công ty CP Dịch vụ Ô tô Hàng Xanh | 165.179.600.000 | 51.62 | 165.179.600.000 | 51.62 |\n| Các cổ đông khác | 154.820.400.000 | 48.38 | 154.820.400.000 | 48.38 |\n| Cộng | 320.000.000.000 | 100.00 | 320.000.000.000 | 100.00 |\n\nTình hình góp vốn điều lệ như sau:\n| Chỉ tiêu | Theo Giấy chứng nhận đăng ký doanh nghiệp | Vốn điều lệ đã góp | Vốn điều lệ còn phải góp |\n|---|---|---|---|\n| | 320.000.000.000 | 320.000.000.000 | - |\n| Cộng | 320.000.000.000 | 320.000.000.000 | - |",
+    "output": [
+      "Tổng phải trả ngắn hạn khác cuối kỳ là 1.160.667.186 VND.",
+      "Công ty CP Dịch vụ Ô tô Hàng Xanh góp 165.179.600.000 VND vốn cổ phần thường vào công ty.",
+      "Vốn điều lệ đã góp của công ty là 320.000.000.000 VND.",
+      "Khoản 'Phải trả ngắn hạn khác' cuối kỳ là 1.160.667.186 VND, đầu năm là 2.357.749.402 VND. Khoản này giảm 1.197.082.216 VND so với đầu năm.",
+      "Tỷ lệ vốn góp của Công ty CP Dịch vụ Ô tô Hàng Xanh là 51.62%.",
+      "Việc không có vốn điều lệ còn phải góp nghĩa là toàn bộ vốn điều lệ đã được các chủ sở hữu góp đủ và đúng hạn. Điều này tạo nên một cơ cấu vốn chủ sở hữu vững chắc và ổn định, loại bỏ rủi ro thiếu hụt vốn cam kết. Nó cũng thể hiện uy tín và năng lực tài chính của công ty và các chủ sở hữu, đảm bảo mọi nguồn lực từ vốn điều lệ đã sẵn sàng cho hoạt động kinh doanh mà không có áp lực pháp lý về góp vốn.",
+      "Mức độ tập trung vốn chủ sở hữu của công ty là cao, với Công ty CP Dịch vụ Ô tô Hàng Xanh nắm giữ 51.62% vốn cổ phần thường. Sự tập trung này cho phép ra quyết định nhanh chóng và quản trị thống nhất nhưng cũng tiềm ẩn rủi ro cho cổ đông thiểu số và sự phụ thuộc vào một cổ đông lớn, nếu có bất kỳ thay đổi nào trong chiến lược hoặc tình hình tài chính của cổ đông đó."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu bán hàng và cung cấp dịch vụ kỳ này là bao nhiêu?",
+      "Chi phí bán hàng kỳ này là bao nhiêu?",
+      "Lãi cơ bản trên cổ phiếu kỳ này là bao nhiêu Đồng/CP?",
+      "So sánh chi phí quản lý doanh nghiệp kỳ này với kỳ trước, thay đổi như thế nào?",
+      "Doanh thu kinh doanh xe chiếm bao nhiêu phần trăm tổng doanh thu bán hàng và cung cấp dịch vụ kỳ này?",
+      "Phân tích tác động của sự tăng chi phí nhân viên trong chi phí bán hàng và chi phí quản lý doanh nghiệp đến lợi nhuận của công ty.",
+      "Đánh giá hiệu quả hoạt động chính của công ty thông qua cơ cấu doanh thu và giá vốn hàng bán.",
+      "Dự báo xu hướng lãi cơ bản trên cổ phiếu nếu lợi nhuận sau thuế tiếp tục giảm như kỳ trước."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - VI. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh (Phần 1)\nLoại nội dung: Bảng\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH (ĐƠN VỊ TÍNH: VNĐ)\n\n1. Doanh thu bán hàng và cung cấp dịch vụ\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Doanh thu kinh doanh xe | 661.109.924.721 | 445.778.840.453 |\n| Doanh thu sửa chữa xe | 18.070.981.198 | 3.589.382.533 |\n| Doanh thu hoạt động khác | 8.688.671.689 | 10.802.136.132 |\n| Cộng | 687.869.577.608 | 460.170.359.118 |\n\n2. Giá vốn hàng bán\nChủ yếu là giá vốn hoạt động kinh doanh xe và dịch vụ sửa chữa xe.\n\n3. Chi phí tài chính\nToàn bộ là chi phí lãi vay.\n\n4. Chi phí bán hàng\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Chi phí nhân viên | 21.754.033.010 | 10.736.513.344 |\n| Chi phí khấu hao tài sản cố định | 3.372.632.010 | 730.468.976 |\n| Chi phí dịch vụ thuê ngoài và chi phí khác | 21.848.500.252 | 11.098.253.517 |\n| Cộng | 46.975.165.272 | 22.565.235.837 |\n\n5. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Chi phí nhân viên | 13.922.672.550 | 4.989.483.797 |\n| Chi phí khấu hao tài sản cố định | 4.513.921.159 | 1.171.820.824 |\n| Chi phí dịch vụ thuê ngoài và chi phí khác | 13.123.236.146 | 4.688.841.196 |\n| Cộng | 31.559.829.855 | 10.850.145.817 |\n\n6. Lãi cơ bản trên cổ phiếu\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp | 33.422.052.436 | 41.312.410.345 |\n| Các khoản điều chỉnh tăng hoặc giảm lợi nhuận kế toán để xác định lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | | |\n| - Các khoản điều chỉnh tăng | - | - |\n| - Các khoản điều chỉnh giảm | - | - |\n| Lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 33.422.052.436 | 41.312.410.345 |\n| Cổ phiếu phổ thông đang lưu hành bình quân trong kỳ | 32.000.000 | 20.295.890 |\n| Lãi cơ bản trên cổ phiếu (Đồng/CP) | 1.044 | 2.036 |\n\n7. Lãi suy giảm trên cổ phiếu\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|---|---|---|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp | 33.422.052.436 | 41.312.410.345 |\n| Các khoản điều chỉnh tăng hoặc giảm lợi nhuận kế toán để xác định lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | | |\n| - Các khoản điều chỉnh tăng | - | - |\n| - Các khoản điều chỉnh giảm | - | - |\n| Lợi nhuận hoặc lỗ phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 33.422.052.436 | 41.312.410.345 |\n| Cổ phiếu phổ thông đang lưu hành bình quân trong kỳ | 32.000.000 | 20.295.890 |\n| Cổ phiếu dự kiến phát hành thêm trong kỳ | - | - |\n| Lãi cơ bản trên cổ phiếu (Đồng/CP) | 1.044 | 2.036 |",
+    "output": [
+      "Tổng doanh thu bán hàng và cung cấp dịch vụ kỳ này là 687.869.577.608 VND.",
+      "Chi phí bán hàng kỳ này là 46.975.165.272 VND.",
+      "Lãi cơ bản trên cổ phiếu kỳ này là 1.044 Đồng/CP.",
+      "Chi phí quản lý doanh nghiệp kỳ này là 31.559.829.855 VND, kỳ trước là 10.850.145.817 VND. Chi phí quản lý doanh nghiệp kỳ này tăng 20.709.684.038 VND so với kỳ trước.",
+      "Doanh thu kinh doanh xe kỳ này là 661.109.924.721 VND và tổng doanh thu bán hàng và cung cấp dịch vụ là 687.869.577.608 VND. Doanh thu kinh doanh xe chiếm 96.11% tổng doanh thu bán hàng và cung cấp dịch vụ kỳ này (661.109.924.721 / 687.869.577.608 * 100%).",
+      "Chi phí nhân viên trong chi phí bán hàng và chi phí quản lý doanh nghiệp đều tăng đáng kể (tăng gấp đôi). Sự gia tăng này trực tiếp làm giảm lợi nhuận của công ty, nếu không có sự tăng trưởng doanh thu và hiệu quả tương xứng. Nó tạo áp lực lên hiệu suất và có thể là dấu hiệu của việc quản lý chi phí chưa hiệu quả, trừ khi đây là khoản đầu tư cần thiết để mở rộng thị trường hoặc nâng cao năng lực quản lý và mang lại lợi ích lâu dài.",
+      "Cơ cấu doanh thu cho thấy công ty phụ thuộc rất lớn vào hoạt động kinh doanh xe (chiếm 96.11%). Mặc dù tổng doanh thu và lợi nhuận gộp đều tăng so với kỳ trước, tốc độ tăng của lợi nhuận gộp chậm hơn doanh thu, ngụ ý tỷ suất lợi nhuận gộp có thể đang giảm hoặc giá vốn tăng nhanh hơn. Điều này chỉ ra rằng công ty cần cải thiện việc quản lý hiệu quả hoạt động chính, đặc biệt là trong kiểm soát giá vốn hàng bán, để tối đa hóa lợi nhuận từ tăng trưởng doanh thu.",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp đã giảm từ 41.312.410.345 VND (kỳ trước) xuống 33.422.052.436 VND (kỳ này), kéo theo lãi cơ bản trên cổ phiếu (EPS) giảm từ 2.036 Đồng/CP xuống 1.044 Đồng/CP. Nếu lợi nhuận sau thuế tiếp tục giảm, EPS chắc chắn sẽ tiếp tục giảm, giả định số lượng cổ phiếu không thay đổi. Đây là tín hiệu tiêu cực đối với nhà đầu tư và có thể ảnh hưởng đến giá cổ phiếu, đòi hỏi công ty phải đảo ngược xu hướng giảm lợi nhuận để cải thiện EPS."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty PTM có ghi nhận khoản nợ tiềm tàng nào tại thời điểm lập báo cáo tài chính không?",
+      "Tổng thu nhập của thành viên quản lý chủ chốt trong kỳ này là bao nhiêu?",
+      "Công ty mẹ của Công ty PTM là công ty nào?",
+      "So sánh tổng thù lao thành viên Hội đồng quản trị kỳ này với tổng thu nhập của thành viên quản lý chủ chốt kỳ này, nhận xét gì?",
+      "Các công ty nào được coi là bên liên quan cùng công ty mẹ với PTM?",
+      "Phân tích tầm quan trọng của giả định hoạt động kinh doanh liên tục đối với báo cáo tài chính.",
+      "Đánh giá mức độ minh bạch của công ty trong việc công bố giao dịch và số dư với các bên liên quan."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - VII. Những thông tin khác\nLoại nội dung: Cả hai\nVII. NHỮNG THÔNG TIN KHÁC\n1. Nợ tiềm tàng\nTại thời điểm lập Báo cáo tài chính không có yếu tố nào cho thấy có thể phát sinh khoản nợ tiềm tàng mà Công ty có nghĩa vụ phải thanh toán.\n\n2. Giao dịch và số dư với các bên liên quan\n2a. Giao dịch và số dư với các thành viên quản lý chủ chốt và các cá nhân có liên quan với các thành viên quản lý chủ chốt bao gồm Hội đồng quản trị, Ban kiểm soát, Ban điều hành và Kế toán trưởng\nThu nhập của thành viên quản lý chủ chốt trong kỳ\n| Chức vụ | Kỳ này | Kỳ trước |\n|---|---|---|\n| Trần Văn Mỹ - Tổng Giám đốc | 520.000.000 | 420.000.000 |\n| Lê Thị Huyên - Kế toán trưởng | 360.000.000 | - |\n| Bùi Thị Thanh Nhàn - Kế toán trưởng | - | 180.000.000 |\n| Cộng | 1.010.000.000 | 600.000.000 |\n\nThù lao thành viên Hội đồng quản trị\n| Chức vụ | Kỳ này |\n|---|---|\n| Vũ Thị Hạnh - Chủ tịch HĐQT | 200.000.000 |\n| Đỗ Tiến Dũng - Thành viên | 80.000.000 |\n| Trần Văn Mỹ - Thành viên | 80.000.000 |\n| Vũ Ngọc Diệp Linh - Thành viên | 40.000.000 |\n| Hoàng Đức Hùng - Thành viên | 80.000.000 |\n| Nguyễn Thị Thanh Hằng - Thành viên | 40.000.000 |\n| Cộng | 520.000.000 |\n\n2b. Giao dịch và số dư với các bên liên quan\nCác bên liên quan với Công ty gồm:\n| Bên liên quan | Mối quan hệ |\n|---|---|\n| Công ty CP Dịch vụ Ô tô Hàng Xanh | Công ty mẹ |\n| Công ty CP Cơ khí Ô tô Cần Thơ | Công ty cùng Công ty mẹ |\n| Công ty Cổ phần Xe khách và Dịch vụ Miền Tây | Công ty cùng Công ty mẹ |\n\nGiao dịch và số dư với bên liên quan\nNgoài các giao dịch phát sinh với các công ty con đã được trình bày ở thuyết minh bên trên, Công ty không phát sinh giao dịch với các bên liên quan khác.\nSố dư với bên liên quan\nCông nợ với các bên liên quan khác được trình bày trong các thuyết minh bên trên.\n\n3. Khả năng hoạt động kinh doanh liên tục\nTại thời điểm lập Báo cáo tài chính không có yếu tố nào cho thấy có thể ảnh hưởng đến khả năng hoạt động liên tục của Công ty. Do vậy, Báo cáo tài chính cho kỳ kế toán kết thúc ngày 30 tháng 6 năm 2025 được lập dựa trên giả thiết Công ty hoạt động kinh doanh liên tục.\n\nThành phố Hà Nội, ngày 19 tháng 07 năm 2025\nNgười lập biểu | Kế toán trưởng | Tổng Giám đốc\nPHẠM THỊ DUYÊN | LÊ THỊ HUYÊN | TRẦN VĂN MỸ\nBản thuyết minh này là một bộ phận hợp thành và phải được đọc cùng với Báo cáo tài chính",
+    "output": [
+      "Không có yếu tố nào cho thấy có thể phát sinh khoản nợ tiềm tàng mà Công ty PTM có nghĩa vụ phải thanh toán tại thời điểm lập báo cáo tài chính.",
+      "Tổng thu nhập của thành viên quản lý chủ chốt trong kỳ này là 1.010.000.000 VND.",
+      "Công ty mẹ của Công ty PTM là Công ty CP Dịch vụ Ô tô Hàng Xanh.",
+      "Tổng thu nhập của thành viên quản lý chủ chốt kỳ này là 1.010.000.000 VND, trong khi tổng thù lao thành viên Hội đồng quản trị kỳ này là 520.000.000 VND. Tổng thu nhập của thành viên quản lý chủ chốt cao hơn đáng kể, cho thấy phần lớn thu nhập của ban lãnh đạo đến từ các vị trí điều hành (Tổng Giám đốc, Kế toán trưởng) hơn là từ thù lao thành viên HĐQT, phản ánh sự tập trung vào vai trò điều hành hàng ngày.",
+      "Các công ty được coi là bên liên quan cùng công ty mẹ với PTM là Công ty CP Cơ khí Ô tô Cần Thơ và Công ty Cổ phần Xe khách và Dịch vụ Miền Tây.",
+      "Giả định hoạt động kinh doanh liên tục là nguyên tắc cơ bản, cho rằng doanh nghiệp sẽ tiếp tục hoạt động trong tương lai gần. Điều này là cơ sở để công ty ghi nhận tài sản theo giá gốc, phân bổ chi phí, và ghi nhận nợ phải trả, đảm bảo tính phù hợp và tin cậy của thông tin. Việc báo cáo tài chính của công ty PTM được lập dựa trên giả định này và không có yếu tố nào ảnh hưởng đến khả năng hoạt động liên tục, củng cố niềm tin rằng các con số phản ánh tình hình của một doanh nghiệp đang vận hành bình thường.",
+      "Công ty PTM cho thấy mức độ minh bạch tương đối cao trong việc công bố giao dịch và số dư với các bên liên quan. Công ty đã công bố chi tiết thu nhập của thành viên quản lý chủ chốt, thù lao HĐQT, và danh sách các bên liên quan (công ty mẹ, công ty cùng công ty mẹ). Việc tham chiếu chéo đến các thuyết minh khác cho các công nợ với bên liên quan cũng là một phương pháp hữu ích. Điều này thể hiện sự tuân thủ các chuẩn mực kế toán và giúp người đọc báo cáo có cái nhìn đầy đủ về các giao dịch có thể ảnh hưởng đến tài chính công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá tài sản cố định hữu hình của 'Nhà cửa, vật kiến trúc' cuối kỳ là bao nhiêu?",
+      "Tổng nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+      "Tổng giá trị hao mòn lũy kế tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+      "Giá trị còn lại của 'Máy móc và thiết bị' cuối kỳ là bao nhiêu?",
+      "So sánh tổng nguyên giá tài sản cố định hữu hình tăng trong kỳ với tổng giảm trong kỳ.",
+      "Phân tích tác động của sự tăng nguyên giá 'Nhà cửa, vật kiến trúc' đến cơ cấu tài sản của công ty.",
+      "Đánh giá mức độ đầu tư vào tài sản cố định hữu hình của công ty trong kỳ này và tác động tiềm năng của nó đến hoạt động kinh doanh."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Phụ lục số 01 - Tình hình tăng giảm tài sản cố định hữu hình\nLoại nội dung: Bảng\nPHỤ LỤC SỐ 01 - TÌNH HÌNH TĂNG GIẢM TÀI SẢN CỐ ĐỊNH HỮU HÌNH\n| Chỉ tiêu | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị, dụng cụ quản lý | Tài sản cố định khác | Cộng |\n|---|---|---|---|---|---|---|\n| I. Nguyên giá | | | | | | |\n| 1. Số đầu năm | 69.240.660.669 | 1.047.558.440 | 86.516.992.511 | 909.818.454 | 580.330.887 | 158.295.360.961 |\n| 2. Tăng trong kỳ | 40.556.148.058 | 892.621.846 | 12.130.674.381 | 969.853.500 | 340.693.889 | 54.889.991.674 |\n| 3. Giảm trong kỳ | 40.162.672.290 | - | - | 404.830.887 | - | 40.567.503.177 |\n| 4. Số cuối kỳ | 109.796.808.727 | 1.940.180.286 | 98.647.666.892 | 1.474.842.067 | 921.024.776 | 213.780.522.748 |\n| II. Giá trị hao mòn lũy kế | | | | | | |\n| 1. Số đầu năm | 21.050.978.278 | 660.436.165 | 14.024.060.213 | 342.604.879 | 36.266.479 | 36.114.346.014 |\n| 2. Tăng trong kỳ | 5.739.316.816 | 153.772.109 | 4.882.786.349 | 117.676.006 | 39.501.489 | 10.933.052.769 |\n| 3. Giảm trong kỳ | - | - | 4.558.783 | - | - | 4.558.783 |\n| 4. Số cuối kỳ | 26.790.295.094 | 814.208.274 | 18.902.287.779 | 460.280.885 | 75.767.968 | 47.042.849.999 |\n| III. Giá trị còn lại | | | | | | |\n| 1. Số đầu năm | 48.189.682.391 | 387.122.275 | 72.492.932.298 | 567.213.575 | 544.064.408 | 122.181.014.947 |\n| 2. Số cuối kỳ | 83.006.513.633 | 1.125.972.012 | 79.745.379.113 | 1.014.561.182 | 845.256.808 | 165.737.682.748 |\nBản thuyết minh này được đọc kèm với Thuyết minh Báo cáo tài chính",
+    "output": [
+      "Nguyên giá tài sản cố định hữu hình của 'Nhà cửa, vật kiến trúc' cuối kỳ là 109.796.808.727 VND.",
+      "Tổng nguyên giá tài sản cố định hữu hình cuối kỳ là 213.780.522.748 VND.",
+      "Tổng giá trị hao mòn lũy kế tài sản cố định hữu hình cuối kỳ là 47.042.849.999 VND.",
+      "Giá trị còn lại của 'Máy móc và thiết bị' cuối kỳ là 1.125.972.012 VND.",
+      "Tổng nguyên giá tài sản cố định hữu hình tăng trong kỳ là 54.889.991.674 VND, trong khi tổng giảm trong kỳ là 40.567.503.177 VND. Như vậy, tổng nguyên giá tài sản cố định hữu hình tăng trong kỳ lớn hơn tổng giảm trong kỳ.",
+      "Nguyên giá 'Nhà cửa, vật kiến trúc' tăng từ 69.240.660.669 VND (đầu năm) lên 109.796.808.727 VND (cuối kỳ). Sự tăng đáng kể này làm tăng tỷ trọng của 'Nhà cửa, vật kiến trúc' trong tổng tài sản cố định hữu hình và tổng tài sản của công ty, cho thấy công ty đang đầu tư mạnh vào cơ sở hạ tầng vật chất. Mặc dù có thể làm giảm tính thanh khoản tổng thể, nó cũng phản ánh sự mở rộng quy mô hoạt động và tiềm năng tăng trưởng dài hạn.",
+      "Công ty đã có mức độ đầu tư cao vào tài sản cố định hữu hình trong kỳ này (tăng 54.889.991.674 VND), tập trung vào 'Nhà cửa, vật kiến trúc' và 'Phương tiện vận tải, truyền dẫn'. Điều này cho thấy chiến lược mở rộng và nâng cấp cơ sở hạ tầng, tiềm năng nâng cao năng lực hoạt động, cải thiện hiệu quả và tăng doanh thu trong tương lai. Tuy nhiên, các khoản đầu tư lớn này cũng tạo áp lực lên dòng tiền ngắn hạn và làm tăng chi phí khấu hao trong các kỳ tới, cần được quản lý chặt chẽ để đảm bảo mang lại lợi ích tài chính mong muốn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn chủ sở hữu tại ngày 30 tháng 06 năm 2025 là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối tại ngày 30 tháng 06 năm 2025 là bao nhiêu?",
+      "Khoản 'Vốn đầu tư của chủ sở hữu' tại ngày 01 tháng 01 năm 2025 là bao nhiêu?",
+      "So sánh tổng vốn chủ sở hữu tại ngày 30 tháng 06 năm 2025 với ngày 01 tháng 01 năm 2025, thay đổi như thế nào?",
+      "Khoản tăng lợi nhuận trong kỳ này là bao nhiêu?",
+      "Phân tích tác động của việc chi trả cổ tức đến lợi nhuận sau thuế chưa phân phối và tổng vốn chủ sở hữu.",
+      "Đánh giá sự ổn định của cơ cấu vốn chủ sở hữu dựa trên các khoản tăng giảm trong kỳ."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN SẢN XUẤT, THƯƠNG MẠI VÀ DỊCH VỤ Ô TÔ PTM\nMã cổ phiếu: PTM\nLoại báo cáo: Báo cáo tài chính Quý II/2025 (riêng)\nThời gian: Phát hành ngày 19 tháng 07 năm 2025, Quý II/2025 (kết thúc ngày 30 tháng 06 năm 2025)\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh báo cáo tài chính - Phụ lục số 02 - Tình hình tăng giảm vốn chủ sở hữu\nLoại nội dung: Bảng\nPHỤ LỤC SỐ 02 - TÌNH HÌNH TĂNG GIẢM VỐN CHỦ SỞ HỮU\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Thặng dư vốn cổ phần | Quỹ đầu tư phát triển | Lợi nhuận sau thuế chưa phân phối | Cộng |\n|---|---|---|---|---|---|\n| 1. Số dư tại ngày 01 tháng 01 năm 2024 | 42.000.000.000 | 20.000.000 | 122.922.480 | 18.168.587.403 | 60.311.509.883 |\n| 2. Tăng trong kỳ trước | 38.000.000.000 | - | - | 41.312.410.345 | 79.312.410.345 |\n| - Lợi nhuận tăng | - | - | - | 41.312.410.345 | 41.312.410.345 |\n| - Góp vốn | 38.000.000.000 | - | - | - | 38.000.000.000 |\n| 3. Giảm trong kỳ trước | - | - | - | - | - |\n| 4. Số dư tại ngày 30 tháng 6 năm 2024 | 80.000.000.000 | 20.000.000 | 122.922.480 | 59.480.997.748 | 139.623.920.228 |\n| 5. Số dư tại ngày 01 tháng 01 năm 2025 | 320.000.000.000 | 20.000.000 | 122.922.480 | 146.316.428.359 | 466.459.350.839 |\n| 6. Tăng trong kỳ này | - | - | - | 33.422.052.436 | 33.422.052.436 |\n| - Lợi nhuận tăng | - | - | - | 33.422.052.436 | 33.422.052.436 |\n| 7. Giảm trong kỳ này | - | - | - | 32.000.000.000 | 32.000.000.000 |\n| - Cổ tức đã trả | - | - | - | 32.000.000.000 | 32.000.000.000 |\n| 8. Số dư tại ngày 30 tháng 06 năm 2025 | 320.000.000.000 | 20.000.000 | 122.922.480 | 147.738.480.795 | 467.881.403.275 |\nBản thuyết minh này là một bộ phận không thể tách rời với Báo cáo tài chính",
+    "output": [
+      "Tổng vốn chủ sở hữu tại ngày 30 tháng 06 năm 2025 là 467.881.403.275 VND.",
+      "Lợi nhuận sau thuế chưa phân phối tại ngày 30 tháng 06 năm 2025 là 147.738.480.795 VND.",
+      "Khoản 'Vốn đầu tư của chủ sở hữu' tại ngày 01 tháng 01 năm 2025 là 320.000.000.000 VND.",
+      "Tổng vốn chủ sở hữu tại ngày 30 tháng 06 năm 2025 là 467.881.403.275 VND, so với 466.459.350.839 VND tại ngày 01 tháng 01 năm 2025. Tổng vốn chủ sở hữu đã tăng 1.422.052.436 VND.",
+      "Khoản tăng lợi nhuận trong kỳ này là 33.422.052.436 VND.",
+      "Việc chi trả cổ tức 32.000.000.000 VND trong kỳ này trực tiếp làm giảm cả lợi nhuận sau thuế chưa phân phối và tổng vốn chủ sở hữu của công ty. Cổ tức được chi trả từ lợi nhuận giữ lại, do đó làm giảm số dư 'Lợi nhuận sau thuế chưa phân phối'. Vì đây là một thành phần của vốn chủ sở hữu, tổng vốn chủ sở hữu cũng giảm theo. Khoản chi này cũng làm giảm dòng tiền từ hoạt động tài chính.",
+      "Cơ cấu vốn chủ sở hữu của công ty thể hiện sự ổn định. Khoản 'Vốn đầu tư của chủ sở hữu', 'Thặng dư vốn cổ phần' và 'Quỹ đầu tư phát triển' không thay đổi trong kỳ. Mặc dù có khoản chi trả cổ tức lớn (32.000.000.000 VND), 'Lợi nhuận sau thuế chưa phân phối' vẫn tăng ròng 1.422.052.436 VND, dẫn đến tổng vốn chủ sở hữu tăng nhẹ. Điều này cho thấy công ty có khả năng tạo ra lợi nhuận và quản lý vốn hiệu quả, duy trì nền tảng tài chính vững chắc và ổn định."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  }
+]

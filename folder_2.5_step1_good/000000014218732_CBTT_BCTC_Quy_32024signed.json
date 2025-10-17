@@ -1,0 +1,716 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Công bố thông tin định kỳ<br>Loại nội dung: Text<br>Kính gửi Sở Giao dịch Chứng khoán Hà Nội<br>Thực hiện quy định tại khoản 3 Điều 14 Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán, Công ty cổ phần dịch vụ Hàng không sân bay Đà Nẵng thực hiện công bố thông tin báo cáo tài chính (BCTC) quý III năm 2024 với Sở Giao dịch Chứng khoán Hà Nội như sau:<br>1. Tên tổ chức: Công ty cổ phần dịch vụ Hàng không sân bay Đà Nẵng<br> Mã chứng khoán: MAS<br> Địa chỉ: Sân bay Quốc tế Đà Nẵng, phường Hòa Thuận Tây, quận Hải Châu, thành phố Đà Nẵng.<br> Điện thoại: 0236 3830340, DĐ 0963137909 Fax: 0236 3826133<br> Email: mascomasco.com.vn, minhhuyenmasco.com.vn<br> Website: masco.com.vn<br>2. Nội dung thông tin công bố:<br> BCTC quý III năm 2024.<br> BCTC riêng (TCNY không có công ty con và đơn vị kế toán cấp trên có đơn vị trực thuộc) [ ]<br> BCTC hợp nhất (TCNY có công ty con) [ ]<br> BCTC tổng hợp (TCNY có đơn vị kế toán trực thuộc tổ chức bộ máy kế toán riêng). [X]<br> Các trường hợp thuộc diện phải giải trình nguyên nhân:<br> Tổ chức kiểm toán đưa ra ý kiến không phải là ý kiến chấp nhận toàn phần đối với BCTC đối với BCTC được soát xét được kiểm toán<br> Có [ ] Không [X]<br> Văn bản giải trình trong trường hợp tích có: Có [ ] Không [X]<br> Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch trước và sau kiểm toán từ 5% trở lên, chuyển từ lỗ sang lãi hoặc ngược lại đối với BCTC được kiểm toán<br> Có [ ] Không [X]<br> Văn bản giải trình trong trường hợp tích có: Có [ ] Không [X]<br> Lợi nhuận sau thuế thu nhập doanh nghiệp tại báo cáo kết quả kinh doanh của kỳ báo cáo thay đổi từ 10% trở lên so với báo cáo cùng kỳ năm trước<br> Có [ ] Không [X]<br> Văn bản giải trình trong trường hợp tích có: Có [ ] Không [X]<br> Lợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này hoặc ngược lại<br> Có [ ] Không [X]<br> Văn bản giải trình trong trường hợp tích có: Có [ ] Không [X]<br>Thông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 24/10/2024 tại đường dẫn masco.com.vn<br>3. Báo cáo về các giao dịch có giá trị từ 35% tổng tài sản trở lên trong kỳ: Không<br>Trường hợp TCNY có giao dịch đề nghị báo cáo đầy đủ các nội dung sau:<br> Nội dung giao dịch<br> Tỷ trọng giá trị giao dịch/tổng giá trị tài sản của doanh nghiệp (căn cứ trên báo cáo tài chính năm gần nhất)<br> Ngày hoàn thành giao dịch<br>Chúng tôi xin cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin công bố.<br>Tài liệu đính kèm: Đại diện tổ chức<br> BCTC Quý III/2024<br> Văn bản giải trình",
+    "questions": [
+      {
+        "question": "Tên đầy đủ của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Mã chứng khoán của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Loại báo cáo tài chính được công bố là gì và cho kỳ nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty có phải giải trình ý kiến kiểm toán không chấp nhận toàn phần không? Tại sao?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch lớn (từ 5% trở lên) trước và sau kiểm toán không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc công bố thông tin định kỳ đối với nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Nếu có giao dịch từ 35% tổng tài sản trở lên, công ty cần báo cáo những thông tin gì?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| A. TÀI SẢN NGẮN HẠN | 100 | | 42,621,760,855 | 30,067,729,983 |<br>| I. Tiền và các khoản tương đương tiền | 110 | V.01 | 12,940,865,425 | 7,445,756,042 |<br>| 1. Tiền | 111 | | 12,940,865,425 | 7,445,756,042 |<br>| 2. Các khoản tương đương tiền | 112 | | - | - |<br>| II. Đầu tư tài chính ngắn hạn | 120 | | 7,000,000,000 | - |<br>| 1. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | 7,000,000,000 | - |<br>| III. Các khoản phải thu ngắn hạn | 130 | | 14,747,095,248 | 13,852,610,421 |<br>| 1. Phải thu khách hàng | 131 | V.02 | 16,034,913,805 | 13,249,847,590 |<br>| 2. Trả trước cho người bán | 132 | | 29,000,000 | 89,128,240 |<br>| 3. Phải thu ngắn hạn khác | 136 | V.03 | 1,238,411,206 | 3,068,864,354 |<br>| 4. Dự phòng phải thu ngắn hạn khó đòi | 137 | V.03a | (2,555,229,763) | (2,555,229,763) |<br>| IV. Hàng tồn kho | 140 | V.04 | 5,017,015,294 | 5,481,391,429 |<br>| 1. Hàng tồn kho | 141 | | 5,017,015,294 | 5,481,391,429 |<br>| 2. Dự phòng giảm giá hàng tồn kho | 149 | | - | - |<br>| V. Tài sản ngắn hạn khác | 150 | | 2,916,784,888 | 3,287,972,091 |<br>| 1. Chi phí trả trước ngắn hạn | 151 | V.05a | 2,869,369,801 | 3,136,764,136 |<br>| 2. Thuế GTGT được khấu trừ | 152 | V.06 | - | - |<br>| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | | 47,415,087 | 151,207,955 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền và các khoản tương đương tiền cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối kỳ và đầu năm. Có sự thay đổi đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng của Tiền và các khoản tương đương tiền trên tổng tài sản ngắn hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ thanh khoản ngắn hạn của công ty dựa trên số liệu Tiền và các khoản tương đương tiền.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ tài sản ngắn hạn trên tổng tài sản để đánh giá cơ cấu tài sản của công ty.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng đầu tư tài chính ngắn hạn từ đầu năm đến cuối kỳ đối với thanh khoản và rủi ro của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự biến động các khoản phải thu ngắn hạn đến dòng tiền hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| B. TÀI SẢN DÀI HẠN | 200 | | 36,772,749,497 | 41,302,800,627 |<br>| I. Các khoản phải thu dài hạn | 210 | | 112,820,000 | 112,820,000 |<br>| 1. Phải thu dài hạn khác | 216 | | 112,820,000 | 112,820,000 |<br>| 2. Dự phòng các khoản phải thu dài hạn khó đòi | 219 | | - | - |<br>| II. Tài sản cố định | 220 | | 33,826,359,539 | 37,768,805,611 |<br>| 1. Tài sản cố định hữu hình | 221 | V.07 | 33,268,160,204 | 37,182,606,269 |<br>| - Nguyên giá | 222 | | 159,642,436,845 | 161,605,573,024 |<br>| - Giá trị hao mòn lũy kế | 223 | | (126,374,276,641) | (124,422,966,755) |<br>| 2. Tài sản cố định thuê tài chính | 224 | | - | - |<br>| - Nguyên giá | 225 | | - | - |<br>| - Giá trị hao mòn lũy kế | 226 | | - | - |<br>| 3. Tài sản cố định vô hình | 227 | V.08 | 558,199,335 | 586,199,342 |<br>| - Nguyên giá | 228 | | 953,083,100 | 953,083,100 |<br>| - Giá trị hao mòn lũy kế | 229 | | (394,883,765) | (366,883,758) |<br>| III. Tài sản dài hạn khác | 260 | | 2,833,569,958 | 3,421,175,016 |<br>| 1. Chi phí trả trước dài hạn | 261 | V.05b | 2,833,569,958 | 3,421,175,016 |<br>| TỔNG CỘNG TÀI SẢN | 270 | | 79,394,510,352 | 71,370,530,610 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị tài sản cố định hữu hình cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nguyên giá và giá trị hao mòn lũy kế của tài sản cố định hữu hình giữa cuối kỳ và đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ tài sản cố định trên tổng tài sản dài hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của tài sản dài hạn từ đầu năm đến cuối quý III/2024.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm chi phí trả trước dài hạn đến hoạt động kinh doanh trong tương lai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả trong việc quản lý và sử dụng tài sản cố định của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| C. NỢ PHẢI TRẢ | | | 44,998,686,771 | 40,821,137,036 |<br>| I. Nợ ngắn hạn | 310 | | 40,404,700,636 | 35,273,150,901 |<br>| 1. Phải trả người bán | 311 | V.10 | 9,113,323,810 | 9,746,693,410 |<br>| 2. Người mua trả tiền trước ngắn hạn | 312 | V.11 | 7,736,670,927 | 5,502,114,042 |<br>| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V.12 | 615,228,374 | 572,282,845 |<br>| 4. Phải trả người lao động | 314 | | 8,962,772,772 | 5,809,887,598 |<br>| 5. Chi phí phải trả ngắn hạn | 315 | V.13 | 2,392,537,951 | 264,692,000 |<br>| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |<br>| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |<br>| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | V.14 | 6,658,574,140 | 2,751,490,988 |<br>| 9. Phải trả ngắn hạn khác | 319 | V.15 | 4,411,481,586 | 1,933,117,069 |<br>| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | V.17 | 477,000,000 | 8,494,194,873 |<br>| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |<br>| 12. Quỹ khen thưởng, phúc lợi | 322 | V.18 | 37,111,076 | 198,678,076 |<br>| 13. Quỹ bình ổn giá | 323 | | - | - |<br>| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |<br>| II. Nợ dài hạn | 330 | | 4,593,986,135 | 5,547,986,135 |<br>| 1. Phải trả dài hạn khác | 337 | V.16 | 3,640,000,000 | 3,640,000,000 |<br>| 2. Vay và nợ thuê tài chính dài hạn | 338 | V.17 | 953,986,135 | 1,907,986,135 |<br>| D. VỐN CHỦ SỞ HỮU | 400 | | 34,395,823,581 | 30,549,393,574 |<br>| I. Vốn chủ sở hữu | 410 | V.19 | 34,395,823,581 | 30,549,393,574 |<br>| 1. Vốn góp của chủ sở hữu | 411 | | 42,676,830,000 | 42,676,830,000 |<br>| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 42,676,830,000 | 42,676,830,000 |<br>| - Cổ phiếu ưu đãi | 411b | | - | - |<br>| 2. Quỹ đầu tư phát triển | 418 | | 803,208,113 | 803,208,113 |<br>| 3. Lợi nhuận sau thuế chưa phân phối | 421 | V.20 | (9,084,214,532) | (12,930,644,539) |<br>| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 12,930,644,539 | 15,774,950,704 |<br>| - LNST chưa phân phối kỳ này | 421b | | (3,846,430,007) | (2,844,306,165) |<br>| TỔNG CỘNG NGUỒN VỐN | 440 | | 79,394,510,352 | 71,370,530,610 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ ngắn hạn cuối kỳ và đầu năm. Có sự thay đổi đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá cơ cấu nguồn vốn của công ty, tỷ trọng nợ và vốn chủ sở hữu như thế nào?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối quý III/2024 và so sánh với đầu năm để đánh giá rủi ro tài chính.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm mạnh trong vay và nợ thuê tài chính ngắn hạn đến khả năng thanh toán của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích ý nghĩa của lợi nhuận sau thuế chưa phân phối âm và những rủi ro tiềm ẩn cho các cổ đông.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Báo cáo kết quả kinh doanh giữa niên độ<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Quý III/2024 | Quý III/2023 | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |<br>|---|---|---|---|---|---|---|<br>| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | VI.21 | 49,100,759,024 | 43,363,931,145 | 143,587,184,515 | 108,284,808,397 |<br>| 2. Các khoản giảm trừ doanh thu | 02 | VI.22 | 1,120,880,584 | 252,096,000 | 2,978,945,939 | 645,442,733 |<br>| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | VI.23 | 47,979,878,440 | 43,111,835,145 | 140,608,238,576 | 107,639,365,664 |<br>| 4. Giá vốn hàng bán | 11 | VI.24 | 39,435,507,321 | 34,808,012,368 | 113,722,179,333 | 88,520,966,403 |<br>| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 8,544,371,119 | 8,303,822,777 | 26,886,059,243 | 19,118,399,261 |<br>| 6. Doanh thu hoạt động tài chính | 21 | VI.25 | 12,225,167 | 17,637,736 | 227,326,500 | 22,361,015 |<br>| 7. Chi phí tài chính | 22 | VI.26 | 260,092,691 | 457,718,731 | 992,904,566 | 1,465,102,807 |<br>| Trong đó: Chi phí lãi vay | 23 | | 72,592,691 | 270,218,731 | 430,404,566 | 902,427,196 |<br>| 8. Chi phí bán hàng | 25 | | 2,071,322,192 | 1,991,103,814 | 6,155,778,649 | 5,171,397,031 |<br>| 9. Chi phí quản lý doanh nghiệp | 26 | | 4,774,308,034 | 3,869,267,382 | 12,868,914,062 | 9,298,573,682 |<br>| 10. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 1,450,873,369 | 2,003,370,586 | 7,095,788,466 | 3,205,686,756 |<br>| 11. Thu nhập khác | 31 | VI.27 | 314,396,240 | 437,118,390 | 1,047,028,651 | 821,715,511 |<br>| 12. Chi phí khác | 32 | VI.28 | 309,568,551 | 236,847,922 | 982,029,672 | 495,918,692 |<br>| 13. Lợi nhuận khác | 40 | | 4,827,689 | 200,270,468 | 64,998,979 | 325,796,819 |<br>| 14. Tổng lợi nhuận kế toán trước thuế | 50 | | 1,455,701,058 | 2,203,641,054 | 7,160,787,445 | 3,531,483,575 |<br>| 15. Chi phí thuế TNDN hiện hành | 51 | VI.29 | - | - | - | - |<br>| 16. Chi phí thuế TNDN hoãn lại | 52 | | - | - | - | - |<br>| 17. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 1,455,701,058 | 2,203,641,054 | 7,160,787,445 | 3,531,483,575 |<br>| 18. Lãi cơ bản trên cổ phiếu | 70 | VI.30 | 93 | 447 | 901 | 715 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế từ đầu năm đến cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận gộp quý III/2024 với quý III/2023.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ suất lợi nhuận gộp (Gross Profit Margin) của quý III/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi của chi phí bán hàng và chi phí quản lý doanh nghiệp trong lũy kế năm nay so với năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân biến động của lợi nhuận thuần từ hoạt động kinh doanh giữa quý III/2024 và quý III/2023.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tiềm năng tăng trưởng doanh thu trong các quý tới dựa trên xu hướng hiện tại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính toán và bình luận về lãi cơ bản trên cổ phiếu trong quý III/2024 và lũy kế năm.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Báo cáo lưu chuyển tiền tệ giữa niên độ<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |<br>|---|---|---|---|<br>| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | |<br>| 1. Lợi nhuận trước thuế | 01 | 7,160,787,445 | 3,531,483,575 |<br>| 2. Điều chỉnh cho các khoản | | 5,507,414,092 | 7,165,597,952 |<br>| Khấu hao tài sản cố định | 02 | 5,417,474,617 | 6,816,439,029 |<br>| Các khoản dự phòng | 03 | - | - |<br>| Lãi, lỗ chênh lệch tỷ giá hối đoái chưa thực hiện | 04 | 98,599,990 | 2,619,692 |<br>| Lãi lỗ từ hoạt động đầu tư | 05 | (241,865,101) | (550,648,581) |<br>| Chi phí lãi vay | 06 | 430,404,566 | 902,427,196 |<br>| 3. Lợi nhuận từ HĐKD trước thay đổi vốn lưu động | 8 | 12,668,201,537 | 10,697,081,527 |<br>| Tăng, giảm các khoản phải thu | 9 | (894,484,827) | (6,575,170,066) |<br>| Tăng, giảm hàng tồn kho | 10 | 464,376,135 | 490,718,433 |<br>| Tăng, giảm các khoản phải trả không kể lãi vay phải trả, thuế TNDN phải nộp | 11 | 10,271,944,702 | 6,020,667,367 |<br>| Tăng, giảm chi phí trả trước | 12 | (854,999,393) | (1,914,113,464) |<br>| Tiền lãi vay đã trả | 13 | (468,182,533) | (911,607,633) |<br>| Thuế TNDN đã nộp | 14 | - | - |<br>| Tiền thu khác từ hoạt động kinh doanh | 15 | - | - |<br>| Tiền chi khác từ hoạt động kinh doanh | 16 | (161,567,000) | (394,450,000) |<br>| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 22,735,287,407 | 6,431,689,298 |<br>| II. Lưu chuyển tiền từ hoạt động đầu tư | | | |<br>| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | 21 | (1,475,028,545) | (1,224,432,827) |<br>| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn | 22 | 181,818,181 | 245,454,548 |<br>| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | (7,000,000,000) | - |<br>| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | - | - |<br>| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | - | - |<br>| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | - | - |<br>| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 17,825,002 | 3,947,237 |<br>| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | (8,275,385,362) | (975,031,042) |<br>| III. Lưu chuyển tiền từ hoạt động tài chính | | | |<br>| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu | 31 | - | - |<br>| 2. Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | 32 | - | - |<br>| 3. Tiền vay ngắn hạn, dài hạn nhận được | 33 | 22,447,003,807 | 24,109,570,606 |<br>| 4. Tiền chi trả nợ gốc vay | 34 | (31,418,198,680) | (27,968,947,233) |<br>| 5. Tiền chi trả nợ thuê tài chính | 35 | - | - |<br>| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | - | - |<br>| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | (8,971,194,873) | (3,859,376,627) |<br>| Lưu chuyển tiền thuần trong kỳ | 50 | 5,488,707,172 | 1,597,281,629 |<br>| Tiền và tương đương tiền đầu kỳ | 60 | 7,445,756,042 | 4,764,980,007 |<br>| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | 6,402,211 | 729,615 |<br>| Tiền và tương đương tiền cuối kỳ | 70 | 12,940,865,425 | 6,362,991,251 |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số tiền và tương đương tiền cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm nay với năm trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động đầu tư năm nay âm bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tự tài trợ của công ty dựa trên lưu chuyển tiền từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân chính dẫn đến sự thay đổi lớn trong lưu chuyển tiền thuần từ hoạt động tài chính giữa hai kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo xu hướng lưu chuyển tiền trong các kỳ tới dựa trên các hoạt động kinh doanh, đầu tư và tài chính hiện tại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính toán và bình luận về tỷ lệ chi đầu tư tài sản cố định trên dòng tiền hoạt động kinh doanh.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Đặc điểm hoạt động và Chính sách kế toán - Phần 1)<br>Loại nội dung: Text<br>I. Đặc điểm hoạt động của doanh nghiệp<br>1. Thông tin khái quát<br> Công ty cổ phần dịch vụ hàng không sân bay Đà Nẵng là đơn vị cổ phần hóa từ doanh nghiệp nhà nước từ 05/04/2006.<br> Từ ngày 9/9/2009, Công ty đăng ký lưu ký và giao dịch cổ phiếu phổ thông trên thị trường UpCom với mã chứng khoán MAS.<br> Từ ngày 15/7/2014, Công ty đã đăng ký giao dịch cổ phiếu phổ thông tại Sở giao dịch chứng khoán Hà Nội theo Quyết định số 350/QĐ-SGDHN của Sở giao dịch Chứng khoán Hà Nội ngày 30/6/2014.<br> Vốn điều lệ: 42.676.830.000 đồng<br>2. Lĩnh vực kinh doanh: Dịch vụ, thương mại, vận chuyển<br>3. Ngành nghề kinh doanh: Chế biến suất ăn, kinh doanh ăn uống, hàng mỹ nghệ.<br> Kinh doanh vận tải hành khách bằng Taxi, ô tô.<br> Khai thác dịch vụ kỹ thuật thương mại hàng không.<br> Kinh doanh quảng cáo, đại lý bán vé MB.<br> Nuôi trồng thủy sản.<br>4. Cấu trúc doanh nghiệp<br> Các đơn vị trực thuộc:<br> Xí nghiệp sản xuất và cung ứng suất ăn<br> Xí nghiệp thương mại và dịch vụ ăn uống<br> Xí nghiệp vận chuyển Hàng không<br> Xí nghiệp dịch vụ Hàng không<br> Chi nhánh Công ty tại sân bay Cam Ranh<br> Chi nhánh Công ty tại sân bay Phú Bài<br> Trung tâm dạy nghề lái xe ô tô, mô tô Đà Nẵng<br> Trung tâm dạy nghề lái xe ô tô, mô tô<br>Báo cáo tài chính này là tổng hợp số liệu của tất cả các đơn vị trực thuộc toàn Công ty.<br>II. Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán<br>1. Kỳ kế toán năm bắt đầu từ ngày 01/01 kết thúc vào ngày 31/12.<br>2. Đơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND).<br>III. Chuẩn mực và chế độ kế toán áp dụng<br>1. Chế độ kế toán áp dụng: Công ty áp dụng Chế độ kế toán doanh nghiệp Việt Nam được ban hành theo thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính.<br>2. Tuyên bố về việc tuân thủ chuẩn mực kế toán và chế độ kế toán: Ban giám đốc Công ty đảm bảo đã tuân thủ đầy đủ yêu cầu của các chuẩn mực kế toán và chế độ kế toán doanh nghiệp Việt Nam hiện hành trong việc lập báo cáo tài chính.<br>IV. Các chính sách kế toán áp dụng<br>1. Cơ sở lập báo cáo tài chính: Báo cáo tài chính được trình bày theo nguyên tắc giá gốc.<br>2. Tiền và tương đương tiền: Tiền và các khoản tương đương tiền bao gồm tiền mặt, tiền gửi ngân hàng, tiền đang chuyển và các khoản đầu tư ngắn hạn có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày mua, dễ dàng chuyển đổi thành một lượng tiền xác định cũng như không có nhiều rủi ro trong việc chuyển đổi.<br>3. Các nghiệp vụ bằng ngoại tệ: Việc ghi nhận, đánh giá và xử lý các khoản chênh lệch tỷ giá được thực hiện theo hướng dẫn của Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính. Theo đó, đối với việc thanh toán các khoản mục tiền tệ có gốc ngoại tệ phát sinh trong kỳ thì thực hiện theo tỷ giá thực tế tại thời điểm phát sinh giao dịch ngoại tệ của Ngân hàng thương mại nơi Công ty có giao dịch; đối với việc đánh giá lại số dư ngoại tệ cuối kỳ kế toán thì thực hiện theo tỷ giá mua vào của Ngân hàng thương mại nơi Công ty mở tài khoản công bố tại thời điểm kết thúc kỳ kế toán.<br>Chênh lệch tỷ giá phát sinh trong kỳ và do đánh giá lại số dư cuối kỳ được phản ánh vào kết quả hoạt động kinh doanh trong kỳ.<br>4. Các khoản phải thu: Các khoản phải thu được trình bày trên báo cáo tài chính theo giá trị ghi sổ các khoản phải thu khách hàng và phải thu khác.<br>5. Hàng tồn kho: Hàng tồn kho được xác định trên cơ sở giá gốc. Giá gốc hàng tồn kho bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại. Giá gốc hàng tồn kho được tính theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.<br>Dự phòng giảm giá hàng tồn kho được ghi nhận khi giá gốc lớn hơn giá trị thuần có thể thực hiện được. Giá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trừ chi phí ước tính để hoàn thành sản phẩm và chi phí ước tính cần thiết cho việc tiêu thụ chúng.",
+    "questions": [
+      {
+        "question": "Công ty cổ phần dịch vụ Hàng không sân bay Đà Nẵng đã cổ phần hóa từ khi nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các ngành nghề kinh doanh chính của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Kỳ kế toán năm của công ty bắt đầu và kết thúc vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty áp dụng chế độ kế toán nào và đơn vị tiền tệ sử dụng là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Trình bày cách công ty xác định giá gốc hàng tồn kho và khi nào dự phòng giảm giá hàng tồn kho được ghi nhận.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc tuân thủ chuẩn mực kế toán trong việc lập báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích cách thức công ty xử lý các nghiệp vụ bằng ngoại tệ và ảnh hưởng của chênh lệch tỷ giá đến kết quả kinh doanh.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá các chính sách kế toán áp dụng cho tiền và tương đương tiền, các khoản phải thu và hàng tồn kho.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Chính sách kế toán - Phần 2)<br>Loại nội dung: Text<br>6. Các khoản đầu tư tài chính: Các khoản đầu tư vào Công ty con, công ty liên kết, liên doanh và các khoản đầu tư tài chính khác được ghi nhận theo giá gốc. Dự phòng được lập cho các khoản giảm giá đầu tư nếu phát sinh tại ngày kết thúc kỳ kế toán.<br>Việc trích lập dự phòng thực hiện theo hướng dẫn tại Thông tư số 228/2009/TT-BTC ngày 07/12/2009 và thông tư số 89/2013/TT-BTC ngày 28/06/2013 của Bộ Tài chính.<br>7. Tài sản cố định hữu hình: Tài sản cố định được thể hiện theo nguyên giá trừ hao mòn lũy kế. Nguyên giá tài sản cố định bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng. Các chi phí phát sinh sau ghi nhận ban đầu chỉ được ghi tăng nguyên giá tài sản cố định nếu các chi phí này chắc chắn làm tăng lợi ích kinh tế trong tương lai do sử dụng tài sản đó. Các chi phí không thỏa mãn điều kiện trên được ghi nhận là chi phí trong kỳ.<br>Khi tài sản cố định được bán hay thanh lý, nguyên giá và khấu hao lũy kế được xóa sổ và bất kỳ khoản lãi lỗ nào phát sinh do việc thanh lý đều được tính vào thu nhập hay chi phí trong kỳ.<br>Tài sản cố định được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính hợp với hướng dẫn tại Thông tư số 45/2013/TT-BTC ngày 25/04/2013 của Bộ tài chính.<br>Tài sản cố định trích khấu hao theo nguyên tắc tài sản cố định tăng giảm tháng này thì được trích hoặc thôi trích khấu hao từ tháng sau.<br>Công ty thực hiện khấu hao nhanh đối với một số tài sản cố định là phương tiện vận tải (xe Taxi...).<br>| Loại tài sản | Thời gian khấu hao (năm) |<br>|---|---|<br>| Nhà cửa, vật kiến trúc | 6-25 |<br>| Máy móc thiết bị | 3-10 |<br>| Phương tiện vận tải | 3-10 |<br>| Thiết bị dụng cụ quản lý | 4-10 |<br>8. Tài sản cố định vô hình<br> Quyền sử dụng đất: Công ty có quyền sử dụng đất của trụ sở Công ty là đất được chuyển nhượng quyền sử dụng đất hợp pháp và quyền sử dụng đất không thời hạn. Công ty không thực hiện khấu hao đối với quyền sử dụng đất không có thời hạn.<br> Các tài sản cố định vô hình khác:<br>Các tài sản cố định vô hình khác được phản ánh theo nguyên giá trừ đi khấu hao lũy kế.<br>Khấu hao của tài sản cố định vô hình khác được tính theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính của tài sản. Mức khấu hao phù hợp với Thông tư số 45/2013/TT-BTC ngày 25/4/2013 của Bộ Tài chính.<br>| Loại tài sản | Thời gian khấu hao (năm) |<br>|---|---|<br>| Phần mềm máy tính | 4-5 |<br>9. Nguyên tắc kế toán các hợp đồng hợp tác kinh doanh: Công ty có 2 Trung tâm dạy nghề lái xe ô tô, mô tô hoạt động theo hình thức Hợp đồng hợp tác kinh doanh (BCC) là thỏa thuận bằng hợp đồng giữa Công ty với các cá nhân góp vốn hợp tác kinh doanh để cùng thực hiện hoạt động đào tạo nhưng không hình thành pháp nhân độc lập. Hoạt động này được đồng kiểm soát bởi các bên tham gia góp vốn. Tại 2 Trung tâm dạy nghề có bộ máy kế toán riêng theo dõi và hạch toán đầy đủ các nghiệp vụ kinh tế phát sinh, hạch toán lãi lỗ tách bạch với hoạt động kinh doanh khác của Công ty. Các bên tham gia trong BCC thỏa thuận chia lợi nhuận sau thuế từ hoạt động đào tạo nói trên sau khi kết thúc niên độ kế toán năm.<br>10. Chi phí trả trước: Chi phí trả trước được phân loại thành chi phí trả trước ngắn hạn và dài hạn. Chi phí trả trước dài hạn được phân bổ trong khoảng thời gian mà lợi ích kinh tế được dự kiến tạo ra.<br>11. Các khoản phải trả và chi phí trích trước: Các khoản phải trả và chi phí trích trước được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được không phụ thuộc vào việc Công ty đã nhận được hóa đơn của nhà cung cấp hay chưa.<br>12. Chi phí đi vay: Chi phí đi vay được vốn hóa khi có liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang cần có một thời gian đủ dài (trên 12 tháng) để có thể đưa vào sử dụng theo mục đích định trước hoặc bán. Các chi phí đi vay khác được ghi nhận vào chi phí trong kỳ.<br>Đối với các khoản vốn vay chung trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất tài sản dở dang thì chi phí đi vay vốn hóa được xác định theo tỷ lệ vốn hóa đối với chi phí lũy kế bình quân gia quyền phát sinh cho đầu tư xây dựng cơ bản hoặc sản xuất tài sản đó. Tỷ lệ vốn hóa được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích hình thành một tài sản cụ thể.<br>13. Các khoản phải trả thương mại và phải trả khác: Các khoản phải trả thương mại và các khoản phải trả khác được ghi nhận theo hóa đơn, chứng từ.<br>14. Vốn chủ sở hữu:<br> Vốn cổ phần ưu đãi<br> Cổ phiếu mua lại: Khi cổ phần trong vốn chủ sở hữu được mua lại, khoản tiền trả bao gồm cả các chi phí liên quan đến giao dịch được ghi nhận như là một thay đổi trong vốn chủ sở hữu. Các cổ phần mua lại được phân loại là các cổ phiếu ngân quỹ và được phản ánh là một khoản giảm trừ trong vốn chủ sở hữu.<br> Cổ tức: Các cổ tức trả cho các cổ phiếu ưu đãi phải hoàn trả được ghi nhận là một khoản nợ phải trả trên cơ sở dồn tích. Các cổ tức khác được ghi nhận là nợ phải trả trong kỳ cổ tức được công bố.<br>15. Phân phối lợi nhuận thuần: Lợi nhuận thuần sau thuế được trích lập các quỹ và chia cho các cổ đông theo Nghị quyết của Đại hội đồng cổ đông.<br>16. Thuế thu nhập doanh nghiệp: Thuế suất Thuế thu nhập doanh nghiệp bằng 20% trên lợi nhuận thu được, bắt đầu thực hiện từ 1/1/2016.<br>Công ty có dịch vụ đào tạo nghề lái xe ô tô, mô tô được hưởng ưu đãi về thuế TNDN tại điểm 3 mục II phần H và điểm 2 mục III phần H Thông tư số 130/2008/TT-BTC ngày 26/12/2008 của Bộ tài chính quy định chi tiết thi hành Luật thuế thu nhập doanh nghiệp, theo đó lĩnh vực này được áp dụng thuế suất 10% trong suốt thời gian hoạt động.<br>Chi phí thuế thu nhập doanh nghiệp trong năm bao gồm thuế thu nhập hiện hành và thuế thu nhập hoãn lại. Thuế thu nhập hiện hành là khoản thuế được tính dựa trên thu nhập chịu thuế trong năm với thuế suất áp dụng tại ngày kết thúc năm tài chính. Thu nhập chịu thuế chênh lệch so với lợi nhuận kế toán do điều chỉnh các khoản chênh lệch tạm thời giữa thuế và kế toán cũng như điều chỉnh các khoản thu nhập và chi phí không phải chịu thuế hay không được khấu trừ.<br>Thuế thu nhập hoãn lại là khoản thuế thu nhập doanh nghiệp sẽ phải nộp hoặc sẽ được hoàn lại do chênh lệch tạm thời giữa giá trị ghi sổ của tài sản và nợ phải trả cho mục đích báo cáo tài chính và các giá trị dùng cho mục đích thuế. Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế. Tài sản thuế thu nhập hoãn lại chỉ được ghi nhận khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ này. Giá trị ghi sổ của tài sản thuế thu nhập doanh nghiệp hoãn lại được xem xét lại vào ngày kết thúc năm tài chính và sẽ được ghi giảm đến mức đảm bảo chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng.<br>Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho năm tài sản được thu hồi hay nợ phải trả được thanh toán dựa trên các mức thuế suất hiệu lực tại ngày kết thúc năm kết thúc. Thuế thu nhập hoãn lại được ghi nhận trong Báo cáo kết quả hoạt động kinh doanh trừ khi liên quan đến các khoản mục được ghi thẳng vào vốn chủ sở hữu khi đó thuế thu nhập doanh nghiệp sẽ được ghi thẳng vào vốn chủ sở hữu.",
+    "questions": [
+      {
+        "question": "Công ty áp dụng phương pháp khấu hao nào cho tài sản cố định hữu hình?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Những loại tài sản cố định hữu hình nào được liệt kê trong chính sách kế toán và thời gian khấu hao tương ứng của chúng?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Khi nào chi phí đi vay được vốn hóa và khi nào được ghi nhận vào chi phí trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các quy định về việc ghi nhận dự phòng các khoản đầu tư tài chính.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt giữa thuế thu nhập hiện hành và thuế thu nhập hoãn lại trong chính sách kế toán của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc khấu hao nhanh đối với phương tiện vận tải đến lợi nhuận và dòng tiền của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ minh bạch và tuân thủ các chuẩn mực kế toán của công ty dựa trên các chính sách kế toán đã trình bày.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Làm thế nào chính sách kế toán về vốn chủ sở hữu ảnh hưởng đến các nhà đầu tư và cơ cấu vốn của công ty?",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Chính sách kế toán - Phần 3 và Thông tin bổ sung - Phần 1)<br>Loại nội dung: Cả hai<br>17. Nguyên tắc ghi nhận doanh thu: Khi bán hàng hóa, thành phẩm doanh thu được ghi nhận khi phần lớn rủi ro và lợi ích gắn liền với việc sở hữu hàng hóa đó được chuyển giao cho người mua và không còn tồn tại yếu tố không chắc chắn đáng kể liên quan đến việc thanh toán tiền, chi phí kèm theo hoặc khả năng hàng bán bị trả lại.<br>Khi cung cấp dịch vụ, doanh thu được ghi nhận khi không còn những yếu tố không chắc chắn đáng kể liên quan đến việc thanh toán tiền hoặc chi phí kèm theo. Trường hợp dịch vụ được thực hiện trong nhiều kỳ kế toán thì việc xác định doanh thu trong từng kỳ được thực hiện căn cứ vào tỷ lệ hoàn thành dịch vụ tại ngày kết thúc năm tài chính.<br>Tiền lãi, cổ tức và lợi nhuận được chia được ghi nhận khi Công ty có khả năng thu được lợi ích kinh tế từ giao dịch và doanh thu được xác định tương đối chắc chắn. Tiền lãi được ghi nhận trên cơ sở thời gian và lãi suất từng kỳ. Cổ tức và lợi nhuận được chia được ghi nhận khi cổ đông được quyền nhận cổ tức hoặc các bên tham gia góp vốn được quyền nhận lợi nhuận từ việc góp vốn.<br>18. Thuế suất và các lệ phí nộp Ngân sách mà Công ty đang áp dụng:<br> Thuế giá trị gia tăng: Vận chuyển suất ăn, tổ lái tiếp viên, Taxi, cung ứng suất ăn, nước uống, phí phục vụ, cung cấp các sản phẩm khác phục vụ các chuyến bay. Áp dụng mức thuế 10%. Các hoạt động khác áp dụng mức thuế suất tương ứng theo quy định hiện hành.<br> Các loại thuế khác và lệ phí nộp theo quy định hiện hành.<br>19. Công cụ tài chính<br>Ghi nhận ban đầu:<br>Tài sản tài chính: Tại ngày ghi nhận ban đầu, tài sản tài chính được ghi nhận theo giá gốc cộng các chi phí giao dịch có liên quan trực tiếp đến việc mua sắm tài sản tài chính đó. Tài sản tài chính của Công ty bao gồm tiền mặt, tiền gửi ngắn hạn, các khoản phải thu khách hàng và các khoản phải thu khác.<br>Nợ phải trả tài chính: Tại ngày ghi nhận ban đầu, nợ phải trả tài chính được ghi nhận theo giá gốc cộng các chi phí giao dịch có liên quan trực tiếp đến việc phát hành nợ phải trả tài chính đó. Nợ phải trả tài chính của Công ty bao gồm các khoản vay, phải trả người bán, chi phí phải trả và phải trả khác.<br>Đánh giá lại sau lần ghi nhận ban đầu: Hiện tại chưa có quy định về đánh giá lại công cụ tài chính sau ghi nhận ban đầu.<br>20. Các bên liên quan: Các bên được coi là liên quan nếu một bên có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định về các chính sách tài chính và hoạt động.<br><br>V. Những thông tin bổ sung<br>01 Tiền và các khoản tương đương tiền<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Tiền mặt | 1,335,124,954 | 1,537,358,713 |<br>| VND | 1,221,576,053 | 1,435,319,373 |<br>| USD | 113,548,901 | 102,039,340 |<br>| Nguyên tệ | 4,501.80 | 4,242.80 |<br>| Tiền gửi ngân hàng | 11,605,740,471 | 5,908,397,329 |<br>| VND | 11,406,976,904 | 5,872,742,073 |<br>| USD | 198,763,567 | 35,655,256 |<br>| Nguyên tệ | 7,146.52 | 1,480.70 |<br>| Các khoản tương đương tiền (là khoản tiền gửi có kỳ hạn dưới 3 tháng) | - | - |<br>| Cộng | 12,940,865,425 | 7,445,756,042 |<br>02 Phải thu của khách hàng<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| a. Phải thu của khách hàng ngắn hạn chiếm 10% trở lên tổng phải thu khách hàng | 13,360,888,206 | 11,687,354,160 |<br>| STARLUX Airlines Co.Ltd | 2,625,440,830 | 2,660,931,263 |<br>| Văn phòng Bán Vé hãng Hàng Không Air China Limited | - | - |<br>| Công ty CP Hàng Không Đông Dương (đã trích dự phòng) | 1,481,124,999 | 1,481,124,999 |<br>| Hãng Hàng không Vietjet Air | 2,306,780,859 | 3,180,055,465 |<br>| Công Ty Cổ Phần Hàng Không Tre Việt | 1,691,099,018 | 1,353,494,933 |<br>| Các học viên học lái xe ô tô tại 2 Trung tâm dạy lái xe | 5,256,442,500 | 3,011,747,500 |<br>| b. Phải thu của khách hàng là các bên liên quan | 1,478,677,764 | 1,123,413,264 |<br>| Công ty Cổ Phần Hàng Không Pacific Airlines | 533,401,264 | 523,041,264 |<br>| CTy TNHH MTV Suất ăn hàng không VACS | 36,848,000 | 125,307,000 |<br>| Công ty TNHH MTV dịch vụ mặt đất sân bay Việt Nam Viags | 908,428,500 | 475,065,000 |<br>| c. Phải thu của khách hàng ngắn hạn khác | 1,195,347,835 | 439,080,166 |<br>| Cộng | 16,034,913,805 | 13,249,847,590 |",
+    "questions": [
+      {
+        "question": "Khi nào công ty ghi nhận doanh thu từ việc cung cấp dịch vụ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng số tiền gửi ngân hàng cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Liệt kê các loại thuế suất VAT mà công ty đang áp dụng.",
+        "difficulty": "Medium_NER"
+      },
+      {
+        "question": "So sánh tổng phải thu của khách hàng cuối kỳ và đầu kỳ. Nguyên nhân của sự thay đổi này là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá chính sách ghi nhận doanh thu của công ty về mức độ thận trọng và phù hợp với thực tế.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tín dụng đối với các khoản phải thu khách hàng, đặc biệt là các khoản chiếm tỷ trọng lớn và đã trích dự phòng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích cách công ty ghi nhận ban đầu các tài sản và nợ phải trả tài chính, và tác động của việc không có quy định đánh giá lại sau ghi nhận ban đầu.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ tiền mặt trên tổng tiền và tương đương tiền cuối kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung - Phần 2)<br>Loại nội dung: Bảng<br>03 Phải thu ngắn hạn khác<br>| Chỉ tiêu | Giá trị (Cuối kỳ) | Dự phòng (Cuối kỳ) | Giá trị (Đầu kỳ) | Dự phòng (Đầu kỳ) |<br>|---|---|---|---|---|<br>| Lãi dự thu | - | - | - | - |<br>| Tạm ứng | 451,287,424 | - | 1,160,364,890 | - |<br>| Phải thu khác | 703,123,782 | - | 1,824,499,464 | - |<br>| Ký quỹ, ký cược ngắn hạn | 84,000,000 | - | 84,000,000 | - |<br>| Cộng | 1,238,411,206 | - | 3,068,864,354 | - |<br>03a Dự phòng phải thu ngắn hạn khó đòi<br>| Chỉ tiêu | Giá trị (Cuối kỳ) | Dự phòng (Cuối kỳ) | Giá trị (Đầu kỳ) | Dự phòng (Đầu kỳ) |<br>|---|---|---|---|---|<br>| Công ty cổ phần Hàng không Đông Dương | 1,481,124,999 | 1,481,124,999 | 1,481,124,999 | 1,481,124,999 |<br>| Học viên bộ đội tại TTDN Đà Nẵng | 575,363,500 | 575,363,500 | 575,363,500 | 575,363,500 |<br>| Công ty Cổ Phần Hàng Không Jetstar Pacific | 498,741,264 | 498,741,264 | 498,741,264 | 498,741,264 |<br>| Cộng | 2,555,229,763 | 2,555,229,763 | 2,555,229,763 | 2,555,229,763 |<br>Khoản dự phòng phải thu ngắn hạn khó đòi đối với Công ty CP Hàng không Đông Dương được trích lập 100% theo công văn số 320/CVDVĐN ngày 06/11/2009 của Công ty gửi Cục hàng không Việt Nam. Theo đó Công ty CP Hàng không Đông Dương đã ngừng bay một thời gian dài và đã chính thức bị Cục Hàng không Việt Nam rút giấy phép bay.<br>Khoản dự phòng phải thu ngắn hạn khó đòi đối với Học viên bộ đội tại TTDN và Công ty cổ Phần Hàng Không Jetstar Pacific Airlines được trích lập theo hướng dẫn của TT 48/2019/BTC. Khoản công nợ của học viên bộ đội tại TTDN đã trên 3 năm, mức trích lập 100%. Khoản công nợ của Jetstar Pacific trên 3 năm mức trích lập 100%.<br>04 Hàng tồn kho<br>| Chỉ tiêu | Giá trị (Cuối kỳ) | Dự phòng (Cuối kỳ) | Giá trị (Đầu kỳ) | Dự phòng (Đầu kỳ) |<br>|---|---|---|---|---|<br>| Nguyên liệu, vật liệu | 2,519,838,147 | - | 2,643,131,884 | - |<br>| Công cụ, dụng cụ | 42,953,672 | - | 113,555,574 | - |<br>| Thành phẩm | 5,230,000 | - | - | - |<br>| Hàng hóa | 2,448,993,475 | - | 2,724,703,971 | - |<br>| Cộng giá gốc hàng tồn kho | 5,017,015,294 | - | 5,481,391,429 | - |<br>05 Chi phí trả trước<br>a. Ngắn hạn<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Chi phí bảo hiểm tài sản | 99,473,840 | 37,440,303 |<br>| Chi phí thuê mặt bằng, thuê đất, thuê TS | 1,351,653,884 | 2,058,458,098 |<br>| Chi phí công cụ, dụng cụ chờ phân bổ | 334,209,607 | 242,049,362 |<br>| Chi phí sửa chữa, đào tạo, tiền thưởng giới thiệu học viên, khác | 1,084,032,470 | 798,816,373 |",
+    "questions": [
+      {
+        "question": "Tổng giá trị phải thu ngắn hạn khác cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị dự phòng phải thu ngắn hạn khó đòi cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Những đối tượng nào công ty đã trích lập dự phòng phải thu ngắn hạn khó đòi 100%?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh giá trị hàng tồn kho cuối kỳ và đầu kỳ. Có sự thay đổi đáng kể nào không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí thuê mặt bằng, thuê đất, thuê tài sản ngắn hạn cuối kỳ thay đổi như thế nào so với đầu kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của các khoản phải thu ngắn hạn khó đòi được trích lập 100% đến sức khỏe tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý chi phí trả trước ngắn hạn của công ty dựa trên số liệu cung cấp.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích lý do Công ty CP Hàng không Đông Dương bị trích lập dự phòng 100%.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung - Phần 3)<br>Loại nội dung: Bảng<br>b. Dài hạn<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Chi phí công cụ, dụng cụ chờ phân bổ | 920,225,723 | 1,319,030,537 |<br>| Chi phí đào tạo chứng chỉ nghề lĩnh vực suất ăn | 544,094,487 | 428,544,436 |<br>| Chi phí thuê MBKD | - | - |<br>| Chi phí sửa chữa, khác | 1,369,249,748 | 1,673,600,043 |<br>| Cộng | 2,833,569,958 | 3,421,175,016 |<br>| Cộng (Tổng chi phí trả trước) | 5,702,939,759 | 6,557,939,152 |<br>06 Tài sản ngắn hạn khác<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Thuế GTGT còn được khấu trừ | - | - |<br>| Thuế và các khoản khác phải thu Nhà nước | 47,415,087 | 151,207,955 |<br>| Cộng | 47,415,087 | 151,207,955 |<br>07 Tăng giảm tài sản cố định hữu hình quý III/2024<br>| Khoản mục | Nhà cửa, vật kiến trúc | Máy móc thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị dụng cụ quản lý | Cộng |<br>|---|---|---|---|---|---|<br>| a. Nguyên giá | | | | | |<br>| Số đầu kỳ | 55,616,101,576 | 33,569,485,967 | 68,312,663,975 | 1,279,271,327 | 158,777,522,845 |<br>| Mua trong kỳ | - | 353,054,000 | 511,860,000 | - | 864,914,000 |<br>| Thanh lý, nhượng bán | - | - | - | - | - |<br>| Số cuối kỳ | 55,616,101,576 | 33,922,539,967 | 68,824,523,975 | 1,279,271,327 | 159,642,436,845 |<br>| b. Khấu hao | | | | | |<br>| Số đầu kỳ | 33,248,343,527 | 29,147,196,939 | 60,985,909,035 | 1,268,085,391 | 124,649,534,892 |<br>| Khấu hao trong kỳ | 648,987,138 | 355,707,869 | 718,290,449 | 1,756,293 | 1,724,741,749 |<br>| Thanh lý, nhượng bán | - | - | - | - | - |<br>| Số cuối kỳ | 33,897,330,665 | 29,502,904,808 | 61,704,199,484 | 1,269,841,684 | 126,374,276,641 |<br>| c. Giá trị còn lại | | | | | |<br>| Tại ngày đầu kỳ | 22,367,758,049 | 4,422,289,028 | 7,326,754,940 | 11,185,936 | 34,127,987,953 |<br>| Tại ngày cuối kỳ | 21,718,770,911 | 4,419,635,159 | 7,120,324,491 | 9,429,643 | 33,268,160,204 |<br>07b Tăng giảm tài sản cố định hữu hình 09 tháng 2024<br>| Khoản mục | Nhà cửa, vật kiến trúc | Máy móc thiết bị | Phương tiện vận tải, truyền dẫn | Thiết bị dụng cụ quản lý | Cộng |<br>|---|---|---|---|---|---|<br>| a. Nguyên giá | | | | | |<br>| Số đầu kỳ | 55,616,101,576 | 33,500,231,422 | 71,209,968,699 | 1,279,271,327 | 161,605,573,024 |<br>| Mua trong kỳ, XDCB | - | 422,308,545 | 1,052,720,000 | - | 1,475,028,545 |<br>| Thanh lý, nhượng bán | - | - | 3,438,164,724 | - | 3,438,164,724 |<br>| Số cuối kỳ | 55,616,101,576 | 33,922,539,967 | 68,824,523,975 | 1,279,271,327 | 159,642,436,845 |<br>| b. Khấu hao | | | | | |<br>| Số đầu kỳ | 31,905,019,931 | 28,397,146,750 | 62,856,227,293 | 1,264,572,781 | 124,422,966,755 |<br>| Khấu hao trong kỳ | 1,992,310,734 | 1,105,758,058 | 2,286,136,915 | 5,268,903 | 5,389,474,610 |<br>| Thanh lý, nhượng bán | - | - | 3,438,164,724 | - | 3,438,164,724 |<br>| Số cuối kỳ | 33,897,330,665 | 29,502,904,808 | 61,704,199,484 | 1,269,841,684 | 126,374,276,641 |<br>| c. Giá trị còn lại | | | | | |<br>| Tại ngày đầu kỳ | 23,711,081,645 | 5,103,084,672 | 8,353,741,406 | 14,698,546 | 37,182,606,269 |<br>| Tại ngày cuối kỳ | 21,718,770,911 | 4,419,635,159 | 7,120,324,491 | 9,429,643 | 33,268,160,204 |",
+    "questions": [
+      {
+        "question": "Tổng chi phí trả trước dài hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng nguyên giá tài sản cố định hữu hình cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí đào tạo chứng chỉ nghề lĩnh vực suất ăn dài hạn cuối kỳ và đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Trong quý III/2024, tổng giá trị tài sản cố định hữu hình đã mua mới là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự biến động của tài sản cố định hữu hình trong 9 tháng đầu năm 2024, đặc biệt là các khoản thanh lý, nhượng bán.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm các chi phí trả trước dài hạn đến bảng cân đối kế toán và lợi nhuận tương lai của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro về khả năng thu hồi các khoản phải thu Nhà nước nếu số dư tiếp tục giảm.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản cố định của công ty dựa trên số liệu tăng giảm nguyên giá trong quý và 9 tháng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung - Phần 4)<br>Loại nội dung: Bảng<br>08 Tăng giảm tài sản vô hình quý III/2024<br>| Khoản mục | Quyền sử dụng đất | Phần mềm vi tính | Cộng |<br>|---|---|---|---|<br>| a. Nguyên giá | | | |<br>| Số đầu kỳ | 473,227,100 | 479,856,000 | 953,083,100 |<br>| Tăng trong kỳ | - | - | - |<br>| Thanh lý, nhượng bán | - | - | - |<br>| Số cuối kỳ | 473,227,100 | 479,856,000 | 953,083,100 |<br>| b. Khấu hao | | | |<br>| Số đầu kỳ | - | 385,550,432 | 385,550,432 |<br>| Khấu hao trong kỳ | - | 9,333,333 | 9,333,333 |<br>| Thanh lý, nhượng bán | - | - | - |<br>| Số cuối kỳ | - | 394,883,765 | 394,883,765 |<br>| c. Giá trị còn lại | | | |<br>| Tại ngày đầu kỳ | 473,227,100 | 94,305,568 | 567,532,668 |<br>| Tại ngày cuối kỳ | 473,227,100 | 84,972,235 | 558,199,335 |<br>08b Tăng giảm tài sản vô hình 09 tháng 2024<br>| Khoản mục | Quyền sử dụng đất | Phần mềm vi tính | Cộng |<br>|---|---|---|---|<br>| a. Nguyên giá | | | |<br>| Số đầu kỳ | 473,227,100 | 479,856,000 | 953,083,100 |<br>| Tăng trong kỳ | - | - | - |<br>| Thanh lý, nhượng bán | - | - | - |<br>| Số cuối kỳ | 473,227,100 | 479,856,000 | 953,083,100 |<br>| b. Khấu hao | | | |<br>| Số đầu kỳ | - | 366,883,758 | 366,883,758 |<br>| Khấu hao trong kỳ | - | 28,000,007 | 28,000,007 |<br>| Thanh lý, nhượng bán | - | - | - |<br>| Số cuối kỳ | - | 394,883,765 | 394,883,765 |<br>| c. Giá trị còn lại | | | |<br>| Tại ngày đầu kỳ | 473,227,100 | 112,972,242 | 586,199,342 |<br>| Tại ngày cuối kỳ | 473,227,100 | 84,972,235 | 558,199,335 |<br>Giá trị còn lại cuối kỳ của TSCĐ hữu hình dùng để thế chấp, cầm cố đảm bảo khoản vay: 4,179,493,865<br>Nguyên giá TSCĐ cuối kỳ đã khấu hao hết nhưng vẫn còn sử dụng tại ngày 30/09/2024: 71,501,294,802<br>09 Phải trả người bán<br>| Chỉ tiêu | Giá trị (Cuối kỳ) | Số có khả năng trả nợ (Cuối kỳ) | Giá trị (Đầu kỳ) | Số có khả năng trả nợ (Đầu kỳ) |<br>|---|---|---|---|---|<br>| a. Các khoản phải trả người bán ngắn hạn chiếm 10% trở lên tổng phải trả | 2,611,305,412 | 2,611,305,412 | 2,721,518,172 | 2,721,518,172 |<br>| Cảng HKQT Đà Nẵng (CN TCT Cảng HK Việt Nam/CTCP) | 562,583,768 | 562,583,768 | 586,538,908 | 586,538,908 |<br>| Hộ kinh doanh Lê Ngọc Thịnh | 722,965,084 | 722,965,084 | 872,114,319 | 872,114,319 |<br>| Lê Tiến Minh | 694,863,140 | 694,863,140 | 690,114,420 | 690,114,420 |<br>| Công ty CP Thương Mại Và Dịch Vụ Cuộc sống Việt (Chi Nhánh Đà Nẵng) | 630,893,420 | 630,893,420 | 572,750,525 | 572,750,525 |<br>| b. Phải trả cho các bên liên quan | 71,309,896 | 71,309,896 | 98,295,965 | 98,295,965 |<br>| Công ty CP Suất ăn hàng không Nội Bài | 71,309,896 | 71,309,896 | 98,295,965 | 98,295,965 |<br>| c. Phải trả người bán ngắn hạn khác | 6,430,708,502 | 6,430,708,502 | 6,926,879,273 | 6,926,879,273 |<br>| Cộng | 9,113,323,810 | 9,113,323,810 | 9,746,693,410 | 9,746,693,410 |<br>11 Người mua trả tiền trước<br>| Chỉ tiêu | Giá trị (Cuối kỳ) | Số có khả năng trả nợ (Cuối kỳ) | Giá trị (Đầu kỳ) | Số có khả năng trả nợ (Đầu kỳ) |<br>|---|---|---|---|---|<br>| Tổng công ty Hàng không Việt Nam (Công ty cổ phần) | 5,183,723,677 | 5,183,723,677 | 5,448,708,042 | 5,448,708,042 |<br>| Thu tiền của các học viên tại TTDN Đà Nẵng nhưng chưa đào tạo | 1,864,500,000 | 1,864,500,000 | 40,960,000 | 40,960,000 |<br>| Thu tiền của các học viên tại TTDN Huế nhưng chưa đào tạo | 687,686,000 | 687,686,000 | 12,392,000 | 12,392,000 |<br>| Các khách hàng khác | 761,250 | 761,250 | 54,000 | 54,000 |<br>| Cộng | 7,736,670,927 | 7,736,670,927 | 5,502,114,042 | 5,502,114,042 |",
+    "questions": [
+      {
+        "question": "Giá trị còn lại của tài sản vô hình cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng phải trả người bán cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khấu hao tài sản vô hình trong quý III/2024 với 9 tháng đầu năm 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định hữu hình dùng để thế chấp cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản phải trả người bán và người mua trả tiền trước, đặc biệt là khoản thu tiền học viên chưa đào tạo.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc tài sản cố định đã khấu hao hết nhưng vẫn còn sử dụng đến hiệu quả hoạt động và định giá tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích tại sao quyền sử dụng đất không được khấu hao và ý nghĩa của điều này đối với giá trị sổ sách của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ phải trả người bán cho các bên liên quan trên tổng phải trả người bán cuối kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung - Phần 5)<br>Loại nội dung: Bảng<br>12a Thuế và các khoản phải nộp nhà nước quý III/2024<br>| Chỉ tiêu | Đầu kỳ (Phải thu) | Đầu kỳ (Phải nộp) | Đã nộp | Cuối kỳ (Phải thu) | Cuối kỳ (Phải nộp) |<br>|---|---|---|---|---|---|<br>| Tiền thuê đất, thuế đất | - | 138,949,752 | 126,779,609 | 12,170,143 | - |<br>| Thuế giá trị gia tăng | 595,592,347 | 2,770,163,681 | 2,806,208,034 | 559,547,994 | - |<br>| Thuế thu nhập doanh nghiệp | - | 35,244,944 | 35,244,944 | - | - |<br>| Thuế thu nhập cá nhân | - | 71,068,430 | 191,296,582 | 206,684,632 | 55,680,380 |<br>| Thuế môn bài | - | - | - | - | - |<br>| Cộng | 174,194,696 | 666,660,777 | 3,088,239,872 | 3,012,892,666 | 47,415,087 | 615,228,374 |<br>12 Thuế và các khoản phải nộp nhà nước 09 tháng 2024<br>| Chỉ tiêu | Đầu kỳ (Phải thu) | Đầu kỳ (Phải nộp) | Đã nộp | Cuối kỳ (Phải thu) | Cuối kỳ (Phải nộp) |<br>|---|---|---|---|---|---|<br>| Thuế đất | 115,963,011 | 264,448,314 | 160,655,446 | 12,170,143 | - |<br>| Thuế giá trị gia tăng | 533,611,418 | 6,249,534,386 | 6,223,597,810 | 559,547,994 | - |<br>| Thuế thu nhập doanh nghiệp | - | 35,244,944 | 35,244,944 | - | - |<br>| Thuế thu nhập cá nhân | 38,671,427 | 490,667,871 | 473,658,918 | 55,680,380 | - |<br>| Thuế môn bài | - | 12,000,000 | 12,000,000 | - | - |<br>| Cộng | 151,207,955 | 572,282,845 | 7,016,650,571 | 6,869,912,174 | 47,415,087 | 615,228,374 |<br>13 Chi phí phải trả<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Lãi vay dự chi | 7,939,033 | 45,717,000 |<br>| Chiết khấu thanh toán VNA | 750,000,000 | - |<br>| Trích CP may đồng phục CBCNV CNPB | - | - |<br>| Chi phí đào tạo với Trường CĐ Công Nghiệp Huế | 429,600,000 | - |<br>| Trích trước chiết khấu sản lượng Starlux 9 tháng 2024 | 1,013,678,845 | - |<br>| Trích trước chiết khấu sản lượng Bamboo quý 3/2024 | 76,394,864 | - |<br>| Trích trước phí kiểm toán | 42,500,000 | - |<br>| Chi phí khác | 114,925,209 | 176,475,000 |<br>| Cộng | 2,392,537,951 | 264,692,000 |<br>14. Doanh thu chưa thực hiện ngắn hạn<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Doanh thu nhận trước | - | - |<br>| Đào tạo lái xe ô tô, mô tô tại TTDN Đà Nẵng | 2,551,073,534 | 891,510,454 |<br>| Đào tạo lái xe ô tô, mô tô tại TTDN Huế | 4,107,500,606 | 1,859,980,534 |<br>| Cộng | 6,658,574,140 | 2,751,490,988 |<br>15 Phải trả ngắn hạn khác<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Kinh phí công đoàn | 542,481,238 | 185,200,426 |<br>| Nhận ký quỹ, ký cược ngắn hạn | 454,730,000 | 444,200,000 |<br>| Các khoản phải trả, phải nộp khác | 3,414,270,348 | 1,303,716,643 |<br>| Phải trả tiền trách nhiệm lái xe Taxi | 219,845,533 | 219,845,533 |<br>| Các khoản thu hộ | 84,583,800 | 73,845,802 |<br>| Lợi nhuận phải trả cho các bên đầu tư | 2,200,494,299 | 345,507,192 |<br>| CP hoa hồng giới thiệu học viên TT Huế | 505,060,000 | 279,204,000 |<br>| Phải trả khác | 404,286,716 | 385,314,116 |<br>| Cộng | 4,411,481,586 | 1,933,117,069 |",
+    "questions": [
+      {
+        "question": "Tổng thuế giá trị gia tăng phải nộp cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư cuối kỳ của chi phí phải trả là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu chưa thực hiện ngắn hạn từ đào tạo lái xe ô tô, mô tô tại TTDN Đà Nẵng cuối kỳ và đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản chi phí phải trả nào có sự tăng trưởng mạnh nhất từ đầu kỳ đến cuối kỳ?",
+        "difficulty": "Medium_NER"
+      },
+      {
+        "question": "Đánh giá khả năng thanh toán các khoản thuế và phải trả ngắn hạn của công ty dựa trên các số liệu được cung cấp.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng đáng kể trong Doanh thu chưa thực hiện ngắn hạn và Phải trả ngắn hạn khác đến bức tranh tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích tại sao thuế thu nhập doanh nghiệp đã nộp lại bằng số phải nộp trong 9 tháng đầu năm 2024.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự biến động các khoản lợi nhuận phải trả cho các bên đầu tư đến dòng tiền và lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung - Phần 6)<br>Loại nội dung: Bảng<br>16 Phải trả dài hạn khác<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Vốn góp hợp đồng hợp tác kinh doanh | | |<br>| - Tại Trung tâm đào tạo lái xe Đà Nẵng | 1,640,000,000 | 1,640,000,000 |<br>| - Tại Trung tâm đào tạo lái xe Huế | 2,000,000,000 | 2,000,000,000 |<br>| Cộng | 3,640,000,000 | 3,640,000,000 |<br>17 Vay và nợ thuê tài chính<br>a. Vay ngắn hạn<br>| Chỉ tiêu | Cuối kỳ (Giá trị) | Cuối kỳ (Số có khả năng trả nợ) | Trong năm (Tăng) | Trong năm (Giảm) | Đầu kỳ (Giá trị) | Đầu kỳ (Số có khả năng trả nợ) |<br>|---|---|---|---|---|---|---|<br>| Vay ngân hàng TMCP Công thương VN (CN Đà Nẵng) | - | - | 22,447,003,807 | 30,941,198,680 | 8,494,194,873 | 8,494,194,873 |<br>| Vay đối tượng khác | - | - | - | - | - | - |<br>| Cộng | - | - | 22,447,003,807 | 30,941,198,680 | 8,494,194,873 | 8,494,194,873 |<br>b. Vay trung hạn đến hạn trả<br>| Chỉ tiêu | Cuối kỳ (Giá trị) | Cuối kỳ (Số có khả năng trả nợ) | Trong năm (Tăng) | Trong năm (Giảm) | Đầu kỳ (Giá trị) | Đầu kỳ (Số có khả năng trả nợ) |<br>|---|---|---|---|---|---|---|<br>| Vay ngân hàng TMCP Công thương VN (CN Đà Nẵng) | 477,000,000 | 477,000,000 | 636,000,000 | 159,000,000 | - | - |<br>| Cộng | 477,000,000 | 477,000,000 | 636,000,000 | 159,000,000 | - | - |<br>| Cộng vay ngắn hạn | 477,000,000 | 477,000,000 | 23,083,003,807 | 31,100,198,680 | 8,494,194,873 | 8,494,194,873 |<br>c. Vay dài hạn<br>| Chỉ tiêu | Cuối kỳ (Giá trị) | Cuối kỳ (Số có khả năng trả nợ) | Trong năm (Tăng) | Trong năm (Giảm) | Đầu kỳ (Giá trị) | Đầu kỳ (Số có khả năng trả nợ) |<br>|---|---|---|---|---|---|---|<br>| Vay NH TMCP Ngoại thương VN (CN Đà Nẵng) | - | - | - | - | - | - |<br>| Vay ngân hàng TMCP Công thương VN (CN Đà Nẵng) | 953,986,135 | 953,986,135 | 954,000,000 | 1,907,986,135 | 1,907,986,135 | 1,907,986,135 |<br>| Cộng | 953,986,135 | 953,986,135 | 954,000,000 | 1,907,986,135 | 1,907,986,135 | 1,907,986,135 |<br>| Tổng cộng | 1,430,986,135 | 1,430,986,135 | 23,083,003,807 | 32,054,198,680 | 10,402,181,008 | 10,402,181,008 |<br>18 Quỹ khen thưởng, phúc lợi<br>| Chỉ tiêu | Số đầu kỳ | Tăng do trích lập từ LN | Tăng khác | Chi quỹ trong kỳ | Giảm khác | Số cuối kỳ |<br>|---|---|---|---|---|---|---|<br>| Quỹ khen thưởng | 198,678,076 | - | - | 161,567,000 | - | 37,111,076 |<br>| Quỹ phúc lợi | - | - | - | - | - | - |<br>| Quỹ thưởng ban quản lý, điều hành | - | - | - | - | - | - |<br>| Cộng | 198,678,076 | - | - | 161,567,000 | - | 37,111,076 |",
+    "questions": [
+      {
+        "question": "Tổng phải trả dài hạn khác cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư quỹ khen thưởng cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay và nợ thuê tài chính ngắn hạn đã giảm bao nhiêu trong năm nay?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Vốn góp hợp đồng hợp tác kinh doanh tại Trung tâm đào tạo lái xe Huế là bao nhiêu?",
+        "difficulty": "Medium_NER"
+      },
+      {
+        "question": "Đánh giá tình hình nợ vay của công ty, bao gồm cơ cấu nợ ngắn hạn và dài hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm mạnh vay ngắn hạn và tăng vay trung hạn đến cấu trúc tài chính và rủi ro thanh khoản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích mục đích của quỹ khen thưởng, phúc lợi và cách nó được quản lý theo báo cáo này.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Dự báo tác động của các khoản vay dài hạn hiện tại đến chi phí lãi vay và lợi nhuận trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung - Vốn chủ sở hữu và Lợi nhuận chưa phân phối)<br>Loại nội dung: Bảng<br>19 Vốn chủ sở hữu<br>a. Bảng đối chiếu biến động của vốn chủ sở hữu<br>| Chỉ tiêu | Vốn góp của chủ sở hữu | Thặng dư vốn cổ phần | Quỹ đầu tư phát triển | Quỹ dự phòng tài chính | Lợi nhuận sau thuế chưa phân phối | Cộng |<br>|---|---|---|---|---|---|---|<br>| Tại ngày 01/01/2023 | 42,676,830,000 | - | 803,208,113 | - | 15,774,950,704 | 59,254,988,817 |<br>| Tăng vốn do phát hành thêm CP | - | - | - | - | - | - |<br>| Lãi hoạt động SXKD năm 2023 | - | - | - | - | 3,652,308,947 | 3,652,308,947 |<br>| Trích quỹ khen thưởng cho TTTT | - | - | - | - | (48,378,076) | (48,378,076) |<br>| Phân chia LN cho các cổ đông tại TTDN Huế, TTĐN | - | - | - | - | (759,624,706) | (759,624,706) |<br>| Tại ngày 01/01/2024 | 42,676,830,000 | - | 803,208,113 | - | 12,930,644,539 | 56,410,682,652 |<br>| Tăng vốn do phát hành thêm CP | - | - | - | - | - | - |<br>| Lợi nhuận trong kỳ này | - | - | - | - | 7,160,787,445 | 7,160,787,445 |<br>| Tạm chia lợi nhuận cho các bên từ HĐ HTKD tại 2 TT dạy nghề | - | - | - | - | (3,314,357,437) | (3,314,357,437) |<br>| Chia cổ tức cho các cổ đông | - | - | - | - | - | - |<br>| Chi trả thù lao HĐQT, BKS | - | - | - | - | - | - |<br>| Trích quỹ KT, PL từ LN tại TTDN Huế | - | - | - | - | (7,605,000) | (7,605,000) |<br>| Số dư cuối kỳ này | 42,676,830,000 | - | 803,208,113 | - | 9,084,214,532 | 52,564,252,645 |<br>b. Chi tiết vốn đầu tư của chủ sở hữu<br>| Chỉ tiêu | Tỷ lệ sở hữu (Cuối kỳ) | Cuối kỳ | Tỷ lệ sở hữu (Đầu kỳ) | Đầu kỳ |<br>|---|---|---|---|---|<br>| b.1 Cổ đông trong nước | 85.98 | 36,694,660,000 | 85.98 | 36,694,660,000 |<br>| Tổng công ty Hàng không Việt Nam (CTCP) | 36.11 | 15,412,650,000 | 36.11 | 15,412,650,000 |<br>| Cổ đông trong Công ty | 5.68 | 2,424,440,000 | 5.68 | 2,424,440,000 |<br>| Cổ đông bên ngoài | 44.19 | 18,857,570,000 | 44.19 | 18,857,570,000 |<br>| b.2 Cổ đông nước ngoài | 14.02 | 5,982,170,000 | 14.02 | 5,982,170,000 |<br>| Cộng | 100.00 | 42,676,830,000 | 100.00 | 42,676,830,000 |<br>d. Cổ phiếu<br>| Chỉ tiêu | Cuối kỳ | Đầu kỳ |<br>|---|---|---|<br>| Số lượng cổ phiếu đã phát hành | 4,267,683 | 4,267,683 |<br>| Cổ phiếu thường | 4,267,683 | 4,267,683 |<br>| Số lượng cổ phiếu phát hành thêm | - | - |<br>| Cổ phiếu thường | - | - |<br>| Số lượng cổ phiếu đang lưu hành | 4,267,683 | 4,267,683 |<br>| Cổ phiếu thường | 4,267,683 | 4,267,683 |<br>| Cổ phiếu ưu đãi | - | - |<br>| Mệnh giá cổ phiếu đang lưu hành | 10,000 đồng | 10,000 đồng |<br>20 Lợi nhuận chưa phân phối<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Lợi nhuận năm trước chuyển sang | 9,480,448,349 | 12,930,644,539 | 14,632,316,175 | 15,774,950,704 |<br>| Lợi nhuận sau thuế Thu nhập doanh nghiệp | 1,455,701,058 | 7,160,787,445 | 2,203,641,054 | 3,531,483,575 |<br>| Các khoản tăng lợi nhuận sau thuế | - | - | - | - |<br>| Các khoản giảm lợi nhuận sau thuế | (1,059,467,240) | (3,314,357,438) | (294,781,624) | (479,989,615) |<br>| Tạm phân chia LN hợp đồng HTKD TTDN | (24,314,715) | (1,113,863,139) | (147,447,717) | (90,282,454) |<br>| Tạm phân chia LN hợp đồng HTKD TT Huế | (1,035,152,525) | (2,200,494,299) | (147,333,907) | (389,707,161) |<br>| Trích lập các quỹ KT,PL tại TTDN Huế từ LN | - | - | - | - |<br>| Lợi nhuận sau thuế chưa phân phối | 9,084,214,531 | 9,084,214,531 | 12,723,456,745 | 12,723,456,745 |",
+    "questions": [
+      {
+        "question": "Vốn góp của chủ sở hữu cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng công ty Hàng không Việt Nam (CTCP) sở hữu bao nhiêu phần trăm vốn của công ty?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh lợi nhuận sau thuế chưa phân phối cuối kỳ này so với đầu kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá các yếu tố làm giảm lợi nhuận sau thuế trong quý III/2024 và lũy kế năm 2024.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích sự biến động của vốn chủ sở hữu từ đầu năm 2023 đến cuối quý III/2024 và ý nghĩa của nó.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Làm thế nào việc phân chia lợi nhuận từ hợp đồng hợp tác kinh doanh ảnh hưởng đến lợi nhuận chưa phân phối của công ty?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tổng lợi nhuận sau thuế chưa phân phối thực tế của công ty sau khi điều chỉnh các khoản giảm lợi nhuận trong quý III/2024.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh - Phần 1)<br>Loại nội dung: Bảng<br>VI. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh<br>21 Tổng doanh thu bán hàng và cung cấp dịch vụ<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Tổng doanh thu bán hàng và cung cấp dịch vụ | 49,100,759,024 | 43,363,931,145 | 143,587,184,515 | 108,284,808,397 |<br>| Trong đó:<br>| Doanh thu bán hàng hóa | 4,388,545,167 | 3,813,947,881 | 12,138,771,014 | 9,814,689,978 |<br>| Doanh thu cung cấp dịch vụ | 44,712,213,857 | 39,549,983,264 | 131,448,413,501 | 98,470,118,419 |<br>22 Các khoản giảm trừ doanh thu<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Các khoản giảm trừ doanh thu | 1,120,880,584 | 252,096,000 | 2,978,945,939 | 645,442,733 |<br>| Trong đó:<br>| Chiết khấu thương mại | 479,210,584 | - | 1,228,209,303 | 54,524,733 |<br>| Giảm giá hàng bán | - | - | - | - |<br>| Hàng bán bị trả lại | 641,670,000 | 252,096,000 | 1,750,736,636 | 590,918,000 |<br>23 Doanh thu thuần bán hàng và cung cấp dịch vụ<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Doanh thu thuần bán hàng và cung cấp dịch vụ | 47,979,878,440 | 43,111,835,145 | 140,608,238,576 | 107,639,365,664 |<br>| Trong đó:<br>| Doanh thu thuần bán hàng hóa, TP | 4,388,545,167 | 3,813,947,881 | 12,138,771,014 | 9,814,689,978 |<br>| Doanh thu thuần cung cấp dịch vụ | 43,591,333,273 | 39,297,887,264 | 128,469,467,562 | 97,824,675,686 |<br>24 Giá vốn hàng bán<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Giá vốn của hàng hóa đã bán | 3,222,235,466 | 2,445,792,757 | 8,686,072,340 | 5,963,400,882 |<br>| Giá vốn của thành phẩm | 9,751,500 | - | 26,472,060 | - |<br>| Giá vốn của dịch vụ đã cung cấp | 36,203,520,355 | 32,362,219,611 | 105,009,634,933 | 82,557,565,521 |<br>| Cộng | 39,435,507,321 | 34,808,012,368 | 113,722,179,333 | 88,520,966,403 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu bán hàng và cung cấp dịch vụ trong quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá vốn của dịch vụ đã cung cấp lũy kế năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu thuần cung cấp dịch vụ trong quý III/2024 và quý III/2023.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ các khoản giảm trừ doanh thu trên tổng doanh thu bán hàng và cung cấp dịch vụ quý III/2024 là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi của giá vốn hàng bán lũy kế năm 2024 so với năm 2023 và những yếu tố có thể ảnh hưởng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng các khoản giảm trừ doanh thu (đặc biệt là hàng bán bị trả lại) đến lợi nhuận và doanh thu thuần của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo xu hướng doanh thu từ bán hàng hóa và cung cấp dịch vụ dựa trên dữ liệu lũy kế của hai năm.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ suất giá vốn hàng bán trên doanh thu thuần bán hàng và cung cấp dịch vụ lũy kế năm 2024.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh - Phần 2)<br>Loại nội dung: Bảng<br>25 Doanh thu hoạt động tài chính<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Lãi tiền gửi, tiền cho vay | 12,225,167 | 1,843,675 | 59,946,920 | 3,947,237 |<br>| Lãi chênh lệch tỷ giá đã thực hiện | - | - | 68,779,590 | 15,794,061 |<br>| Lãi chênh lệch tỷ giá chưa thực hiện | - | - | 98,599,990 | 2,619,717 |<br>| Cộng | 12,225,167 | 17,637,736 | 227,326,500 | 22,361,015 |<br>26 Chi phí tài chính<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Lãi tiền vay | 72,592,691 | 270,218,731 | 430,404,566 | 902,427,196 |<br>| Lỗ chênh lệch tỷ giá đã thực hiện | - | - | 175,607 | - |<br>| Lỗ chênh lệch tỷ giá chưa thực hiện | - | - | - | - |<br>| Chiết khấu thanh toán | 187,500,000 | 187,500,000 | 562,500,000 | 562,500,004 |<br>| Cộng | 260,092,691 | 457,718,731 | 992,904,566 | 1,465,102,807 |<br>27 Thu nhập khác<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Thu nhập từ thanh lý, nhượng bán TSCĐ | - | - | 181,818,181 | 324,545,455 |<br>| Nhập kho hàng tận dụng | 69,869,520 | 34,964,828 | 134,325,458 | 83,706,060 |<br>| Cho thuê cơ sở vật chất, phương tiện, thiết bị kiểm tra | 194,243,518 | 65,081,482 | 475,552,444 | 178,781,482 |<br>| Thu nhập từ hỗ trợ bán hàng | 50,239,200 | - | 246,928,200 | - |<br>| Thu nhập khác, thanh lý hàng tồn kho | 44,002 | 12,526,625 | 8,404,368 | 12,526,625 |<br>| Cộng | 314,396,240 | 437,118,390 | 1,047,028,651 | 821,715,511 |<br>28 Chi phí khác<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Chi thanh lý TSCĐ | - | - | 23,298,659 | - |<br>| Chi thưởng tận dụng | 27,909,000 | 5,845,000 | 52,923,000 | 15,844,000 |<br>| Xuất hủy hàng | 1,629,585 | 10,127,886 | 27,850,202 | 13,026,468 |<br>| Thù lao ban kiểm soát | 7,605,000 | 7,605,000 | 22,815,000 | 22,815,000 |<br>| Chi phí khác | 272,424,966 | 213,270,036 | 878,441,470 | 420,934,565 |<br>| Cộng | 309,568,551 | 236,847,922 | 982,029,672 | 495,918,692 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu hoạt động tài chính lũy kế năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí lãi vay trong quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh thu nhập từ thanh lý, nhượng bán TSCĐ lũy kế năm 2024 với lũy kế năm 2023.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí nào đã tăng đáng kể nhất trong quý III/2024 so với quý III/2023 trong mục Chi phí khác?",
+        "difficulty": "Medium_NER"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động tài chính của công ty dựa trên doanh thu và chi phí tài chính trong quý III/2024.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân biến động của thu nhập khác và chi phí khác, đặc biệt là các khoản thu nhập bất thường.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của lãi suất biến động đến chi phí lãi vay và lợi nhuận của công ty trong tương lai.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ suất chi phí lãi vay trên doanh thu hoạt động tài chính lũy kế năm 2024.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh - Phần 3)<br>Loại nội dung: Cả hai<br>29 Chi phí thuế TNDN hiện hành và lợi nhuận sau thuế trong kỳ<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Tổng lợi nhuận kế toán trước thuế | 1,455,701,058 | 2,203,641,054 | 7,160,787,445 | 3,531,483,575 |<br>| Điều chỉnh các khoản thu nhập chịu thuế | 281,632,551 | 224,735,036 | 759,459,678 | 468,607,765 |<br>| Điều chỉnh tăng - Chi phí điều chỉnh khi tính thuế | 281,632,551 | 224,735,036 | 902,702,825 | 460,975,049 |<br>| Điều chỉnh tăng - Lãi CLTG cuối kỳ tiền và các khoản phải thu kỳ trước | - | - | 34,666,433 | 8,248,624 |<br>| Điều chỉnh giảm - Lãi CLTG cuối kỳ tiền và các khoản phải thu trong kỳ | - | - | (177,909,580) | (615,908) |<br>| Tổng thu nhập chịu thuế | 1,737,333,609 | 2,428,376,090 | 7,920,247,123 | 4,000,091,340 |<br>| Thu nhập chịu thuế của TT đào tạo Đà Nẵng | 205,165,577 | 458,993,709 | 2,914,692,884 | 510,601,719 |<br>| Thu nhập chịu thuế của TT đào tạo Thừa Thiên | 2,619,982,029 | 407,484,147 | 5,549,931,339 | 1,030,747,880 |<br>| Tổng thu nhập chịu thuế của cả hai Trung tâm | 2,825,147,606 | 866,477,856 | 8,464,624,223 | 1,541,349,599 |<br>| Hoạt động đào tạo được hưởng ưu đãi thuế tại ĐN | 197,062,391 | 439,183,320 | 2,867,230,574 | 274,789,785 |<br>| Hoạt động đào tạo được hưởng ưu đãi thuế tại Huế | 2,341,272,294 | 277,150,110 | 4,936,932,882 | 650,688,909 |<br>| Hoạt động giữ xe, cho thuê không được hưởng ưu đãi thuế | - | - | - | - |<br>| Hoạt động khác | 286,812,921 | 150,144,426 | 660,460,767 | 615,870,905 |<br>| Thu nhập chịu thuế của Công ty | 1,087,813,997 | 1,561,898,234 | 544,377,100 | 2,458,741,741 |<br>| Hoạt động kinh doanh chính | 811,799,952 | 1,382,240,384 | 238,993,812 | 2,783,702,206 |<br>| Hoạt động khác | 276,014,046 | 179,657,850 | 783,370,912 | 324,960,465 |<br>| Chi phí thuế thu nhập hiện hành | - | - | - | - |<br>| Lợi nhuận sau thuế TNDN | 1,455,701,058 | 2,203,641,054 | 7,160,787,445 | 3,531,483,575 |<br>Hoạt động SXKD của Công ty 9 tháng 2024 có Lợi nhuận, tuy nhiên do bị ảnh hưởng nặng nề của dịch Covid19, trong các năm 2020,2021 Công ty bị thua lỗ, tổng lỗ cả hai năm 2020,2021 27.027.065.215 đồng. Trong năm 2022 và 2023, và 9 tháng 2024 Công ty đã có lãi tuy nhiên mức lãi không lớn và vẫn chưa bù hết lỗ của các năm trước, vì vậy Công ty vẫn tiếp tục bù lỗ các năm trước nên không chịu thuế TNDN của Quý III/2024 và 09 tháng 2024.<br>30 Lãi cơ bản trên cổ phiếu<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Lợi nhuận kế toán sau thuế TNDN | 1,455,701,058 | 2,203,641,054 | 7,160,787,445 | 3,531,483,575 |<br>| Các khoản tăng hoặc giảm lợi nhuận kế toán | (1,059,467,240) | (294,781,624) | (3,314,357,438) | (479,989,615) |<br>| Các khoản điều chỉnh tăng | - | - | - | - |<br>| Các khoản điều chỉnh giảm | (1,059,467,240) | (294,781,624) | (3,314,357,438) | (479,989,615) |<br>| Lợi nhuận phân chia theo hợp đồng hợp | (1,059,467,240) | (294,781,624) | (3,314,357,438) | (479,989,615) |<br>| Lợi nhuận phân bổ cho cổ đông sở hữu cổ phiếu phổ thông | 396,233,818 | 1,908,859,430 | 3,846,430,007 | 3,051,493,960 |<br>| Cổ phiếu phổ thông đang lưu hành bình quân trong kỳ | 4,267,683 | 4,267,683 | 4,267,683 | 4,267,683 |<br>| Lãi cơ bản trên cổ phiếu | 93 | 447 | 901 | 715 |<br>31 Chi phí sản xuất, kinh doanh theo yếu tố<br>| Chỉ tiêu | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Chi phí nguyên liệu, nhiên liệu, hàng hóa | 16,766,228,302 | 15,388,095,058 | 49,076,191,315 | 37,933,775,545 |<br>| Chi phí nhân công | 17,686,647,194 | 14,557,086,950 | 48,864,794,081 | 35,861,150,195 |<br>| Chi phí vật liệu SX | 141,909,268 | 57,896,865 | 412,616,560 | 89,208,329 |<br>| Chi phí dụng cụ SX | 1,307,518,253 | 1,035,867,557 | 3,726,425,306 | 2,650,860,877 |<br>| Chi phí khấu hao tài sản cố định | 1,741,890,763 | 2,214,757,636 | 5,440,921,660 | 6,819,848,479 |<br>| Chi phí dịch vụ mua ngoài | 5,356,219,764 | 4,931,892,517 | 15,200,160,729 | 13,669,119,783 |<br>| Chi phí khác bằng tiền | 3,829,228,634 | 2,875,497,440 | 11,745,194,353 | 6,886,403,377 |<br>| Cộng | 46,829,642,178 | 41,061,094,023 | 134,466,304,004 | 103,910,366,585 |",
+    "questions": [
+      {
+        "question": "Tổng lợi nhuận kế toán trước thuế lũy kế năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế TNDN quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí nguyên liệu, nhiên liệu, hàng hóa lũy kế năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích tại sao công ty không chịu thuế TNDN trong quý III/2024 và 9 tháng 2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh lãi cơ bản trên cổ phiếu trong quý III/2024 và quý III/2023. Nguyên nhân của sự thay đổi này là gì?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích cấu trúc chi phí sản xuất, kinh doanh theo yếu tố và sự biến động của chúng giữa các kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của các khoản điều chỉnh thu nhập chịu thuế đến chi phí thuế TNDN thực tế của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo khả năng công ty sẽ phải nộp thuế TNDN trong các kỳ tới dựa trên tình hình bù lỗ hiện tại.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG KHÔNG SÂN BAY ĐÀ NẴNG<br>Mã cổ phiếu: MAS<br>Loại báo cáo: Báo cáo tài chính tổng hợp quý III/2024<br>Thời gian: Phát hành 24/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Chấp nhận toàn phần<br><br>Section: Thuyết minh báo cáo tài chính (Thông tin bổ sung - Phần cuối)<br>Loại nội dung: Cả hai<br>32 Báo cáo bộ phận<br>Công ty có các đơn vị hạch toán phụ thuộc là các chi nhánh, các đơn vị liên kết (hai Trung tâm đào tạo nghề) hoạt động trên các địa bàn khác nhau là Tỉnh Thừa Thiên Huế, Tỉnh Khánh Hòa và thành phố Đà Nẵng, mỗi đơn vị chịu rủi ro và thu được lợi ích kinh tế khác với các đơn vị khác. Vì vậy, Công ty trình bày báo cáo các đơn vị theo khu vực địa lý mà Công ty hoạt động cụ thể như sau:<br>| Chỉ tiêu | Văn phòng Công ty (Đà Nẵng) | TT dạy nghề lái xe ô tô, mô tô MASCO Đà Nẵng | Chi nhánh Nha Trang (Khánh Hòa) | Chi nhánh Phú Bài (Thừa Thiên Huế) | TT dạy nghề lái xe ô tô, mô tô MASCO Huế |<br>|---|---|---|---|---|---|<br>| Doanh thu quý III/2024 | 24,264,115,550 | 4,587,640,893 | 9,068,000,441 | 2,704,692,632 | 8,476,309,508 |<br>| Các khoản giảm trừ DT quý III/2024 | 479,210,584 | - | 53,520,000 | - | 588,150,000 |<br>| Giá vốn quý III/2024 | 20,086,755,830 | 3,005,046,484 | 9,269,126,405 | 2,418,010,271 | 4,656,568,331 |<br>| Tài sản cố định quý III/2024 | 5,304,750,422 | 2,210,543,901 | 20,673,599,129 | 3,260,348,016 | 2,377,118,071 |<br>| Nguyên giá quý III/2024 | 36,622,494,682 | 17,940,372,477 | 76,920,417,416 | 9,085,496,707 | 20,026,738,663 |<br>| Hao mòn quý III/2024 | 31,317,744,260 | 15,729,828,576 | 56,246,818,287 | 5,825,148,691 | 17,649,620,592 |<br>33 Các bên có liên quan<br>a. Giao dịch trọng yếu với các bên có liên quan<br>| Nội dung nghiệp vụ | Quý III/2024 | Quý III/2023 | Lũy kế năm 2024 | Lũy kế năm 2023 |<br>|---|---|---|---|---|<br>| Bán hàng - Tổng công ty Hàng không Việt Nam (CTCP) | 18,264,771,538 | 17,292,377,636 | 57,935,237,899 | 42,936,757,071 |<br>| Cổ tức được hưởng | - | - | - | - |<br>| Cổ tức đã trả | - | - | - | - |<br>| Bán hàng - Công ty CP Hàng không Pacific Airlines | 32,092,593 | 41,427,273 | 13,500,000 | - |<br>| Bán hàng - Công Ty Cổ phần Suất ăn hàng không Nội Bài | 58,119,445 | 94,026,852 | 276,412,148 | 219,335,473 |<br>| Mua hàng - Công Ty Cổ phần Suất ăn hàng không Nội Bài | 68,549,340 | 112,733,450 | 127,101,281 | 343,096,458 |<br>| Bán hàng - Công ty TNHH MTV Dịch Vụ Mặt đất Sân bay Việt Nam | 1,173,520,000 | 834,150,000 | 3,557,377,500 | 2,276,009,500 |<br>| Bán hàng - Công ty TNHH MTV suất ăn hàng không Việt Nam | 34,118,519 | - | 94,305,556 | - |<br>| Bán hàng - Chi nhánh Công ty TNHH MTV Kỹ thuật Máy bay Tại Thành phố Đà Nẵng | 51,004,554 | 33,000,000 | 124,362,061 | 105,247,957 |<br>| Thù lao - Hội đồng quản trị, Ban kiểm soát | 43,095,000 | 43,095,000 | 129,285,000 | 129,285,000 |<br>| Thu nhập - Ban tổng giám đốc | 748,150,000 | 442,000,000 | 1,989,150,000 | 1,138,820,000 |<br>Doanh thu giao dịch với Tổng công ty Hàng không Việt Nam gồm doanh thu cung ứng suất ăn, vận chuyển suất ăn cho các chuyến bay nội địa và quốc tế đi và đến tại các sân bay Đà Nẵng, Phú Bài, Cam Ranh, vận chuyển tổ lái, tiếp viên tại mặt đất.<br>b. Số dư với các bên có liên quan<br>| Chỉ tiêu | 30/09/2024 | 30/09/2023 |<br>|---|---|---|<br>| Nợ phải thu | | |<br>| Công ty Cổ Phần Hàng Không Pacific Airlines | 533,401,264 | 511,701,264 |<br>| Công ty TNHH MTV dịch vụ mặt đất sân bay Việt | 908,428,500 | 629,942,400 |<br>| Công ty TNHH MTV suất ăn Hàng không Việt Nam VACS | 36,848,000 | - |<br>| Chi nhánh Công ty TNHH MTV Kỹ thuật Máy bay Tại Thành phố Đà Nẵng VAECO | 2,128,342 | - |<br>| Nợ phải trả | | |<br>| Công Ty Cổ phần Suất ăn hàng không Nội Bài | 71,309,896 | 170,249,515 |<br>| Tổng công ty Hàng không Việt Nam (Công ty cổ phần) | 5,183,723,677 | 5,754,523,431 |<br>Nợ phải thu Tổng công ty Hàng không Việt Nam cho các khoản cung ứng dịch vụ nói trên, việc thu hồi các khoản nợ.<br>34 Sự kiện phát sinh sau ngày kết thúc kỳ kế toán: Không có sự kiện quan trọng nào phát sinh sau ngày kết thúc kỳ kế toán yêu cầu phải điều chỉnh hoặc công bố trong các báo cáo này.",
+    "questions": [
+      {
+        "question": "Doanh thu của Văn phòng Công ty (Đà Nẵng) trong quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Bên liên quan nào có giao dịch bán hàng lớn nhất với công ty trong quý III/2024?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Tổng thù lao của Hội đồng quản trị và Ban kiểm soát lũy kế năm 2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu và giá vốn của Trung tâm dạy nghề lái xe ô tô, mô tô MASCO Huế trong quý III/2024.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào Tổng công ty Hàng không Việt Nam thông qua các giao dịch bán hàng và số dư nợ phải trả.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích hiệu quả hoạt động của các bộ phận khác nhau (ví dụ: Đà Nẵng so với Huế) dựa trên doanh thu và giá vốn trong quý III/2024.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích tác động của các giao dịch trọng yếu với các bên liên quan đến báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá các rủi ro tiềm ẩn từ các sự kiện sau ngày kết thúc kỳ kế toán nếu có, và mức độ ảnh hưởng của chúng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

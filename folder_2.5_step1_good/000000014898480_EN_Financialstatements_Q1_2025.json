@@ -1,0 +1,950 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Công bố thông tin định kỳ\nLoại nội dung: Văn bản\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nSố: 42/2025/CBTT-DTD Hà Nam, ngày 29 tháng 04 năm 2025\n\nCÔNG BỐ THÔNG TIN ĐỊNH KỲ BÁO CÁO TÀI CHÍNH\n\nKính gửi: Sở Giao dịch Chứng khoán Hà Nội\n\nThực hiện quy định tại Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán, Công ty cổ phần Đầu tư Phát triển Thành Đạt thực hiện công bố thông tin báo cáo tài chính (BCTC) quý I năm 2025 với Sở Giao dịch Chứng khoán Hà Nội như sau:\n\n1. Tên tổ chức: Công ty cổ phần Đầu tư Phát triển Thành Đạt (Thanh Dat Investment Development Joint Stock Company)\nMã chứng khoán: DTD\nĐịa chỉ: Đường Nguyễn Thị Định, Phường Thanh Châu, Thành phố Phủ Lý, Tỉnh Hà Nam, Việt Nam\nĐiện thoại liên hệ: 02263.883.136\nEmail: hoadonthanhdathn2010@gmail.com\nWebsite: http://thanhdathanam.vn\n\nNội dung thông tin công bố:\nBCTC quý I năm 2025 (Financial Statements for Q1/2025)\n\n[ ] BCTC riêng (Công ty niêm yết không có công ty con và đơn vị kế toán cấp trên có đơn vị trực thuộc)\n[X] BCTC hợp nhất (Công ty niêm yết có công ty con)\n[ ] BCTC tổng hợp (Công ty niêm yết có đơn vị kế toán trực thuộc tổ chức bộ máy kế toán riêng)\n\nCác trường hợp thuộc diện phải giải trình nguyên nhân:\n- Tổ chức kiểm toán đưa ra ý kiến không phải là ý kiến chấp nhận toàn phần đối với BCTC đã được soát xét/kiểm toán.\nCó (Yes) [ ] Không (No) [X]\nVăn bản giải trình trong trường hợp tích có: Có (Yes) [ ] Không (No) [X]\n\n- Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch trước và sau kiểm toán từ 5% trở lên, chuyển từ lỗ sang lãi hoặc ngược lại đối với BCTC được kiểm toán năm 2022.\nCó (Yes) [ ] Không (No) [X]\nVăn bản giải trình trong trường hợp tích có: Có (Yes) [ ] Không (No) [X]\n\n- Lợi nhuận sau thuế thu nhập doanh nghiệp tại báo cáo kết quả kinh doanh của kỳ báo cáo thay đổi từ 10% trở lên so với báo cáo cùng kỳ năm trước.\nCó (Yes) [X] Không (No) [ ]\nVăn bản giải trình trong trường hợp tích có: Có (Yes) [X] Không (No) [ ]\n\n- Lợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này hoặc ngược lại.\nCó (Yes) [ ] Không (No) [X]\nVăn bản giải trình trong trường hợp tích có: Có (Yes) [ ] Không (No) [X]\n\nThông tin này đã được công bố trên trang thông tin điện tử của công ty vào ngày 29/04/2025 tại đường dẫn http://thanhdathanam.vn.\n\nTài liệu đính kèm:\n- BCTC riêng Quý I năm 2025\n- BCTC hợp nhất Quý I năm 2025\n- Văn bản giải trình chênh lệch LNST tại Báo cáo tài chính Quý I năm 2025.",
+    "questions": [
+      {
+        "question": "Tên đầy đủ của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Mã cổ phiếu của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Loại báo cáo tài chính được công bố là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty Cổ phần Đầu tư Phát triển Thành Đạt có công ty con không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế thu nhập doanh nghiệp trong kỳ báo cáo có thay đổi bao nhiêu phần trăm so với cùng kỳ năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tại sao công ty phải nộp văn bản giải trình liên quan đến lợi nhuận sau thuế trong kỳ báo cáo?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc công bố thông tin định kỳ đối với nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc lợi nhuận sau thuế thay đổi trên 10% đến nhận định của thị trường chứng khoán.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | THUYẾT MINH | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|:---|:---|\n| TÀI SẢN | | | | |\n| A. TÀI SẢN NGẮN HẠN | 100 | | 962.987.154.233 | 876.169.210.658 |\n| I. Tiền và các khoản tương đương tiền | 110 | 5.1 | 220.702.389.841 | 242.507.970.844 |\n| 1. Tiền | 111 | | 59.947.428.950 | 222.103.009.953 |\n| 2. Các khoản tương đương tiền | 112 | | 160.754.960.891 | 20.404.960.891 |\n| II. Các khoản đầu tư tài chính ngắn hạn | 120 | | 442.589.959.225 | 365.100.142.716 |\n| 1. Đầu tư nắm giữ đến ngày đáo hạn | 123 | 5.9 | 442.589.959.225 | 365.100.142.716 |\n| III. Các khoản phải thu ngắn hạn | 130 | | 153.980.272.520 | 135.207.211.035 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | 5.2 | 118.745.423.006 | 118.996.174.141 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | 5.3 | 101.405.874.805 | 82.382.062.185 |\n| 3. Phải thu ngắn hạn khác | 136 | 5.4 | 150.661.099 | 150.661.099 |\n| 4. Dự phòng phải thu ngắn hạn khó đòi | 137 | 5.8 | 66.321.686.390 | 66.321.686.390 |\n| IV. Hàng tồn kho | 140 | 5.5 | 118.463.329.695 | 110.308.627.362 |\n| 1. Hàng tồn kho | 141 | | 118.463.329.695 | 110.308.627.362 |\n| V. Tài sản ngắn hạn khác | 150 | | 27.251.202.952 | 23.045.258.701 |\n| 1. Chi phí trả trước ngắn hạn | 151 | 5.6 | 1.727.028.006 | 1.049.935.314 |\n| 2. Thuế GTGT được khấu trừ | 152 | | 25.233.163.911 | 21.064.560.989 |\n| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | 5.16 | 291.011.035 | 930.762.398 |\nBáo cáo tài chính này phải được đọc chung với thuyết minh kèm theo",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mục 'Tiền' cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Các khoản tương đương tiền' giữa 31/03/2025 và 01/01/2025, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng 'Hàng tồn kho' trên tổng 'Tài sản ngắn hạn' cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi của các khoản phải thu ngắn hạn giữa hai kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán hệ số thanh toán hiện hành (Current Ratio) của công ty dựa trên số liệu tài sản ngắn hạn. (Lưu ý: Không có nợ ngắn hạn trong chunk này, giả định để đưa ra câu hỏi dạng Hard_QA)",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh khoản của công ty nếu có sự biến động lớn trong các khoản đầu tư tài chính ngắn hạn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | THUYẾT MINH | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|:---|:---|\n| B. TÀI SẢN DÀI HẠN | 200 | | 1.349.703.393.818 | 1.337.624.205.882 |\n| I. Các khoản phải thu dài hạn | 210 | | 586.016.538.007 | 586.016.538.007 |\n| 2. Phải thu dài hạn khác | 216 | 5.4 | 586.016.538.007 | 586.016.538.007 |\n| II. Tài sản cố định | 220 | | 347.681.209.540 | 353.472.347.551 |\n| 1. Tài sản cố định hữu hình | 221 | 5.10 | 347.681.209.540 | 353.472.347.551 |\n| - Nguyên giá | 222 | | 492.498.795.880 | 497.272.370.965 |\n| - Giá trị hao mòn lũy kế | 223 | | (144.817.586.340) | (143.800.023.414) |\n| III. Bất động sản đầu tư | 230 | 5.12 | 10.287.942.097 | 2.002.405.737 |\n| - Nguyên giá | 231 | | 1.242.565.322.076 | 1.196.822.065.208 |\n| - Giá trị hao mòn lũy kế | 232 | | (1.232.277.379.979) | (1.194.819.659.471) |\n| IV. Tài sản dở dang dài hạn | 240 | 5.7 | 378.288.226.479 | 368.447.695.018 |\n| 1. Chi phí xây dựng cơ bản dở dang | 242 | | 378.288.226.479 | 368.447.695.018 |\n| V. Các khoản đầu tư tài chính dài hạn | 250 | 5.9 | 17.727.083.512 | 17.727.083.512 |\n| 2. Đầu tư vào công ty liên kết, liên doanh | 252 | | 17.727.083.512 | 17.727.083.512 |\n| VI. Tài sản dài hạn khác | 260 | | 9.702.394.183 | 9.958.136.057 |\n| 1. Chi phí trả trước dài hạn | 261 | 5.6 | - | 12.059.028 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | | 1.415.402.649 | 1.106.619.393 |\n| 3. Lợi thế thương mại | 269 | 5.13 | 8.286.991.534 | 8.839.457.636 |\n| TỔNG CỘNG TÀI SẢN | 270 | | 2.312.690.548.051 | 2.213.793.416.540 |\nBáo cáo tài chính này phải được đọc chung với thuyết minh kèm theo",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá của Tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản mục 'Bất động sản đầu tư' đã thay đổi như thế nào từ 01/01/2025 đến 31/03/2025?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ 'Tài sản dở dang dài hạn' trên tổng 'Tài sản dài hạn' cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cấu trúc tài sản dài hạn của công ty trong quý I/2025.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ảnh hưởng của việc giảm 'Tài sản cố định hữu hình' nhưng tăng 'Bất động sản đầu tư' đến chiến lược kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của 'Lợi thế thương mại' giảm sút đến giá trị doanh nghiệp trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | THUYẾT MINH | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|:---|:---|\n| NGUỒN VỐN | | | | |\n| C. NỢ PHẢI TRẢ | 300 | | 891.215.733.190 | 892.997.957.993 |\n| I. Nợ ngắn hạn | 310 | | 245.598.750.679 | 253.561.840.591 |\n| 1. Phải trả người bán ngắn hạn | 311 | 5.14 | 16.627.436.471 | 10.805.660.880 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | 5.15 | 85.911.277.862 | 81.452.889.349 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | 5.16 | 24.895.685.328 | 9.314.964.947 |\n| 4. Phải trả người lao động | 314 | | 935.224.266 | 2.998.379.422 |\n| 5. Chi phí phải trả ngắn hạn | 315 | 5.17 | 127.222.222 | 127.222.222 |\n| 6. Doanh thu chưa thực hiện ngắn hạn | 318 | | 8.511.864.051 | 1.012.349.091 |\n| 7. Phải trả ngắn hạn khác | 319 | 5.18 | 54.519.136.437 | 92.587.530.269 |\n| 8. Vay và nợ thuê tài chính ngắn hạn | 320 | 5.11 | 45.468.919.300 | 46.028.752.261 |\n| 9. Quỹ khen thưởng, phúc lợi | 322 | | 8.601.984.742 | 9.234.092.150 |\n| II. Nợ dài hạn | 330 | | 645.616.982.511 | 639.436.117.402 |\n| 1. Chi phí phải trả dài hạn | 333 | 5.17 | 273.355.394.687 | 273.355.394.687 |\n| 2. Phải trả dài hạn khác | 337 | 5.18 | 46.816.825.810 | 46.788.325.810 |\n| 3. Vay và nợ thuê tài chính dài hạn | 338 | 5.11 | 40.480.695.150 | 43.604.695.150 |\n| 4. Thuế thu nhập hoãn lại phải trả | 341 | | 4.254.583.298 | 4.254.583.298 |\n| 5. Dự phòng phải trả dài hạn | 342 | 5.19 | 280.709.483.566 | 271.433.118.457 |\n| D. VỐN CHỦ SỞ HỮU | 400 | | 1.421.474.814.861 | 1.320.795.458.547 |\n| I. Vốn chủ sở hữu | 410 | 5.20 | 1.421.474.814.861 | 1.320.795.458.547 |\n| 1. Vốn đầu tư của chủ sở hữu | 411 | | 574.887.850.000 | 574.887.850.000 |\n| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 574.887.850.000 | 574.887.850.000 |\n| 2. Quỹ đầu tư phát triển | 418 | | 152.262.985.748 | 152.262.985.748 |\n| 3. Lợi nhuận sau thuế chưa phân phối | 421 | | 417.900.627.514 | 349.725.590.313 |\n| - Lợi nhuận sau thuế chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 349.725.590.313 | 229.308.829.091 |\n| - Lợi nhuận sau thuế chưa phân phối kỳ này | 421b | | 68.175.037.201 | 120.416.761.222 |\n| 4. Lợi ích của cổ đông không kiểm soát | 429 | | 276.423.351.599 | 243.919.032.486 |\n| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |\n| TỔNG CỘNG NGUỒN VỐN | 440 | | 2.312.690.548.051 | 2.213.793.416.540 |\nHà Nam, ngày 28 tháng 04 năm 2025\nNGƯỜI LẬP BIỂU KẾ TOÁN TRƯỞNG TỔNG GIÁM ĐỐC\nĐinh Thị Phương Thảo Dương Thị Thu Hiền Trần Việt Đức\nBáo cáo tài chính này phải được đọc chung với thuyết minh kèm theo",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Người mua trả tiền trước ngắn hạn' giữa 31/03/2025 và 01/01/2025, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ 'Nợ ngắn hạn' trên 'Tổng nợ phải trả' cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro tài chính dựa trên tỷ lệ nợ phải trả trên vốn chủ sở hữu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán hệ số đòn bẩy tài chính (Debt-to-Equity Ratio) cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự gia tăng 'Thuế và các khoản phải nộp Nhà nước' đến dòng tiền hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Báo cáo kết quả hoạt động kinh doanh hợp nhất\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | THUYẾT MINH | KỲ NÀY (VND) | KỲ TRƯỚC (VND) | LŨY KẾ ĐẾN CUỐI KỲ NÀY (VND) | LŨY KẾ KỲ TRƯỚC (VND) |\n|:---|:---|:---|:---|:---|:---|:---|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | 6.1 | 219.022.909.011 | 201.647.703.460 | 219.022.909.011 | 201.647.703.460 |\n| 2. Các khoản giảm trừ doanh thu | 02 | | - | - | - | - |\n| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | 219.022.909.011 | 201.647.703.460 | 219.022.909.011 | 201.647.703.460 |\n| 4. Giá vốn hàng bán | 11 | 6.2 | 92.276.283.198 | 104.787.731.024 | 92.276.283.198 | 104.787.731.024 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 126.746.625.813 | 96.859.972.436 | 126.746.625.813 | 96.859.972.436 |\n| 6. Doanh thu hoạt động tài chính | 21 | 6.3 | 5.154.055.404 | 7.534.916.516 | 5.154.055.404 | 7.534.916.516 |\n| 7. Chi phí tài chính | 22 | 6.4 | 1.470.003.263 | 1.227.896.311 | 1.470.003.263 | 1.227.896.311 |\n| - Trong đó: Chi phí lãi vay | 23 | | 1.470.003.263 | 1.227.896.311 | 1.470.003.263 | 1.227.896.311 |\n| 8. Phần lãi/lỗ trong công ty liên doanh, liên kết | 24 | | - | - | - | - |\n| 9. Chi phí bán hàng | 25 | 6.7 | 1.169.219.969 | - | 1.169.219.969 | - |\n| 10. Chi phí quản lý doanh nghiệp | 26 | 6.7 | 3.544.208.674 | 8.296.957.682 | 3.544.208.674 | 8.296.957.682 |\n| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | 20+21-22-25-26 | 125.717.249.311 | 94.870.034.959 | 125.717.249.311 | 94.870.034.959 |\n| 12. Thu nhập khác | 31 | 6.6 | 271.465.000 | - | 271.465.000 | - |\n| 13. Chi phí khác | 32 | 6.7 | 1.145.254 | 45.107.267 | 1.145.254 | 45.107.267 |\n| 14. Lợi nhuận khác | 40 | 31-32 | 270.319.746 | 45.107.267 | 270.319.746 | 45.107.267 |\n| 15. Lợi nhuận kế toán trước thuế | 50 | 30+40 | 125.987.569.057 | 94.824.927.692 | 125.987.569.057 | 94.824.927.692 |\n| 16. Chi phí thuế TNDN hiện hành | 51 | 6.8 | 25.616.995.999 | 19.095.953.313 | 25.616.995.999 | 19.095.953.313 |\n| 17. Chi phí thuế TNDN hoãn lại | 52 | | 308.783.256 | 173.672.249 | 308.783.256 | 173.672.249 |\n| 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | 50-51-52 | 100.061.789.782 | 75.555.302.130 | 100.061.789.782 | 75.555.302.130 |\n| 19. Lợi nhuận sau thuế của cổ đông công ty mẹ | 61 | | 68.175.037.201 | 51.351.379.185 | 68.175.037.201 | 51.351.379.185 |\n| 20. Lợi nhuận sau thuế của cổ đông không kiểm soát | 62 | | 32.504.319.113 | 24.551.267.443 | 32.504.319.113 | 24.551.267.443 |\n| 21. Lãi cơ bản trên cổ phiếu | 70 | | 1.186 | 1.041 | 1.186 | 1.041 |\n| 22. Lãi suy giảm trên cổ phiếu | 71 | | 1.186 | 1.041 | 1.186 | 1.041 |\nHà Nam, ngày 28 tháng 04 năm 2025\nNGƯỜI LẬP BIỂU KẾ TOÁN TRƯỞNG TỔNG GIÁM ĐỐC\nĐinh Thị Phương Thảo Dương Thị Thu Hiền Trần Việt Đức\nBáo cáo tài chính này phải được đọc chung với thuyết minh kèm theo",
+    "questions": [
+      {
+        "question": "Doanh thu thuần về bán hàng và cung cấp dịch vụ trong quý I/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế của cổ đông công ty mẹ trong kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận gộp từ bán hàng và cung cấp dịch vụ kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ Chi phí tài chính trên Doanh thu hoạt động tài chính trong kỳ này là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên tỷ suất lợi nhuận gộp và lợi nhuận thuần.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán biên lợi nhuận ròng (Net Profit Margin) trong quý I/2025.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự thay đổi đáng kể trong chi phí quản lý doanh nghiệp đến lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất (Phương pháp gián tiếp - Hoạt động kinh doanh và Đầu tư)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | THUYẾT MINH | KỲ NÀY (VND) | KỲ TRƯỚC (VND) |\n|:---|:---|:---|:---|:---|\n| I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | | | |\n| 1. Lợi nhuận trước thuế | 01 | | 125.987.569.057 | 94.824.927.692 |\n| 2. Điều chỉnh cho các khoản | | | | |\n| - Khấu hao TSCĐ và BĐS đầu tư | 02 | | 39.027.749.536 | 41.666.566.868 |\n| - Các khoản dự phòng | 03 | | 9.276.365.109 | 11.777.010.991 |\n| - Lãi/lỗ từ hoạt động đầu tư | 05 | | 5.379.055.404 | 7.534.916.516 |\n| - Chi phí lãi vay | 06 | | 1.470.003.263 | 1.227.896.311 |\n| 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 08 | | 170.382.631.561 | 141.961.485.346 |\n| - Tăng/giảm các khoản phải thu | 09 | | 22.301.913.044 | 32.487.243.636 |\n| - Tăng/giảm hàng tồn kho | 10 | | 8.154.702.333 | 16.908.899.945 |\n| - Tăng/giảm các khoản phải trả (trừ lãi vay và thuế TNDN) | 11 | | 7.814.482.530 | 22.083.507.726 |\n| - Tăng/giảm chi phí trả trước | 12 | | 665.033.664 | 2.234.126.157 |\n| - Tiền lãi vay đã trả | 14 | | 1.470.003.263 | 1.227.896.311 |\n| - Thuế TNDN đã nộp | 15 | | 10.023.886.836 | 46.262.783.472 |\n| - Tiền chi khác | 17 | | - | 550.410.013 |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | | 119.952.609.891 | 102.659.685.742 |\n| II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | | | |\n| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các TSDH khác | 21 | | 65.963.596.828 | 10.078.939.000 |\n| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các TSDH khác | 22 | | 225.000.000 | - |\n| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | | 266.200.000.000 | 171.200.000.000 |\n| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | | 188.710.183.491 | 190.813.260.274 |\n| 5. Tiền lãi, cổ tức và lợi nhuận được chia | 27 | | 5.154.055.404 | 7.534.916.516 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | | (138.074.357.933) | 17.069.237.790 |\nBáo cáo tài chính này phải được đọc chung với thuyết minh kèm theo",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác trong kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác' đã thay đổi như thế nào so với kỳ trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng tạo tiền từ hoạt động kinh doanh của công ty trong quý I/2025.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc 'Tiền chi cho vay, mua các công cụ nợ của đơn vị khác' tăng mạnh đến lưu chuyển tiền từ hoạt động đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo xu hướng lưu chuyển tiền từ hoạt động kinh doanh nếu các khoản phải thu tiếp tục tăng nhanh.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Báo cáo lưu chuyển tiền tệ hợp nhất (Phương pháp gián tiếp - Hoạt động tài chính và Tổng hợp)\nLoại nội dung: Bảng\n| CHỈ TIÊU | MÃ SỐ | THUYẾT MINH | KỲ NÀY (VND) | KỲ TRƯỚC (VND) |\n|:---|:---|:---|:---|:---|\n| III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | | | |\n| 1. Tiền thu từ đi vay | 33 | | - | 3.660.319.857 |\n| 2. Tiền chi trả nợ gốc vay | 34 | | 3.683.832.961 | 604.000.000 |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | | (3.683.832.961) | 3.056.319.857 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | 20+30+40 | (21.805.581.003) | 122.785.243.389 |\n| Tiền và các khoản tương đương tiền đầu kỳ | 60 | | 242.507.970.844 | 62.319.588.462 |\n| Ảnh hưởng của chênh lệch tỷ giá hối đoái quy đổi ngoại tệ | 61 | | - | - |\n| Tiền và các khoản tương đương tiền cuối kỳ | 70 | 50+60+61 | 220.702.389.841 | 185.104.831.851 |\nBáo cáo tài chính này phải được đọc chung với thuyết minh kèm theo",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động tài chính trong kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Tiền thu từ đi vay' kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lưu chuyển tiền thuần trong kỳ đã thay đổi như thế nào so với kỳ trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình lưu chuyển tiền từ hoạt động tài chính của công ty trong quý I/2025.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có tiền thu từ đi vay trong kỳ này đến khả năng tài trợ của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo khả năng thanh toán của công ty dựa trên lưu chuyển tiền thuần trong kỳ và tiền cuối kỳ.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất\nLoại nội dung: Văn bản\n\n1. ĐẶC ĐIỂM HOẠT ĐỘNG KINH DOANH\nCơ cấu sở hữu:\nCông ty Cổ phần Đầu tư Phát triển Thành Đạt (Thanh Dat Investment Development JSC) là một Công ty Cổ phần được thành lập và hoạt động tại Việt Nam theo Giấy chứng nhận đăng ký kinh doanh số 0700194008 do Sở Kế hoạch và Đầu tư Hà Nam cấp lần đầu ngày 07/05/2001 và được chuyển đổi từ công ty trách nhiệm hữu hạn sang công ty cổ phần theo Giấy chứng nhận đăng ký kinh doanh sửa đổi lần thứ 13 ngày 27 tháng 11 năm 2015 do Sở Kế hoạch và Đầu tư Hà Nam cấp. Hiện tại, công ty đang hoạt động theo Giấy chứng nhận đăng ký kinh doanh sửa đổi lần thứ 29 ngày 04 tháng 10 năm 2024.\nVốn điều lệ của Công ty theo Giấy chứng nhận đăng ký kinh doanh số 0700194008 sửa đổi lần thứ 29 ngày 04 tháng 10 năm 2024 là 574.887.850.000 VND (Bằng chữ: Năm trăm bảy mươi tư tỷ, tám trăm tám mươi bảy triệu, tám trăm năm mươi nghìn VND chẵn).\n\nNgành nghề và hoạt động kinh doanh chính:\nLĩnh vực kinh doanh chính của Công ty là xây dựng các công trình dân dụng và giao thông, cung cấp nước sạch, và kinh doanh bê tông thương phẩm.\nCác lĩnh vực kinh doanh cụ thể:\n- Xây dựng các loại nhà.\n- Vận tải hàng hóa đường thủy nội địa; Vận tải hàng hóa đường bộ; Bán buôn ô tô và xe có động cơ khác; Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê.\n- Cho thuê xe có động cơ; Cho thuê máy móc, thiết bị và tài sản hữu hình khác.\n- Chuẩn bị mặt bằng; Xây dựng các công trình kỹ thuật dân dụng khác. Chi tiết: Xây dựng các công trình dân dụng, công nghiệp, giao thông, thủy lợi, công trình điện có điện áp từ 35 KV trở xuống; xây dựng và bàn giao các trạm cấp nước sinh hoạt; xây dựng tầng nhà công nghiệp; phòng trừ và xử lý mối mọt cho gỗ trong công trình xây dựng.\n- Sản xuất bê tông và các sản phẩm từ xi măng và thạch cao; Sản xuất kết cấu kim loại. Chi tiết: Sản xuất và lắp đặt kết cấu khung thép nhà tiền chế.\n- Bán buôn vật liệu xây dựng và thiết bị lắp đặt khác; Bán buôn đồ dùng khác cho gia đình. Chi tiết: Mua bán đồ điện gia dụng, sản phẩm điện tử; Bán buôn kim loại và quặng kim loại.\n- Bán buôn máy móc, thiết bị và phụ tùng máy khác. Chi tiết: Mua bán máy móc, thiết bị và phụ tùng khai thác mỏ, xây dựng; Mua bán máy móc, thiết bị điện và vật liệu điện (máy phát điện, động cơ điện, dây điện và các thiết bị khác dùng trong mạch điện).\n- Khai thác, xử lý và cung cấp nước.\n- Sản xuất và lắp đặt thiết bị xử lý nước mặt và nước ngầm.\n- Vận chuyển hành khách du lịch, và kinh doanh xuất nhập khẩu hàng hóa.\n\nChu kỳ sản xuất kinh doanh thông thường:\nChu kỳ sản xuất kinh doanh thông thường của Công ty được thực hiện trong thời gian không quá 12 tháng.\n\nCơ cấu công ty:\nCông ty có trụ sở chính tại Đường Nguyễn Thị Định, Phường Thanh Châu, Thành phố Phủ Lý, Tỉnh Hà Nam.\n\nCông ty có công ty con:\n- Công ty Cổ phần Đầu tư Phát triển Hạ tầng KCN Đồng Văn III Hà Nam\n  + Giấy chứng nhận đăng ký kinh doanh số 0700769736 do Sở Kế hoạch và Đầu tư Hà Nam cấp lần đầu ngày 15/02/2016, sửa đổi lần thứ 5 ngày 25/02/2020.\n  + Vốn điều lệ của Công ty theo Giấy chứng nhận đăng ký kinh doanh số 0700769376 sửa đổi lần thứ 5 ngày 25/02/2020 là 303.000.000.000 VND (Bằng chữ: Ba trăm lẻ ba tỷ VND chẵn).\n  + Trụ sở chính tại Đường N1, Tòa nhà điều hành KCN hỗ trợ Đồng Văn III, Phường Đồng Văn, Thị xã Duy Tiên, Tỉnh Hà Nam.\n  + Tỷ lệ sở hữu và tỷ lệ quyền biểu quyết tính đến ngày 31 tháng 3 năm 2025: Tỷ lệ sở hữu 65%, Tỷ lệ quyền biểu quyết 65%.\n\nCông ty có công ty liên kết:\n- Công ty Cổ phần Tân Cảng – Đồng Văn Hà Nam\n  + Giấy chứng nhận đăng ký kinh doanh số 0700792992 do Sở Kế hoạch và Đầu tư Hà Nam cấp lần đầu ngày 22/07/2017.\n  + Vốn điều lệ của Công ty theo Giấy chứng nhận đăng ký kinh doanh số 0700792992 do Sở Kế hoạch và Đầu tư Hà Nam cấp lần đầu ngày 22/07/2017 là 100.000.000.000 VND (Bằng chữ: Một trăm tỷ VND chẵn).\n  + Trụ sở chính tại KCN Đồng Văn III, Phường Đồng Văn, Thị xã Duy Tiên, Tỉnh Hà Nam.\n  + Tỷ lệ sở hữu và tỷ lệ quyền biểu quyết tính đến ngày 31 tháng 3 năm 2025: Tỷ lệ sở hữu 39%, Tỷ lệ quyền biểu quyết 39%.\n\nCông ty có các chi nhánh:\n| Tên | Địa chỉ |\n|:---|:---|\n| Chi nhánh Duy Tiên – Công ty Cổ phần Đầu tư Phát triển Thành Đạt | Thôn Duy Phô, Xã Mộc Bắc, Huyện Duy Tiên, Tỉnh Hà Nam |\n\n2. CƠ SỞ LẬP BÁO CÁO TÀI CHÍNH HỢP NHẤT\nCác chuẩn mực kế toán và chế độ kế toán:\nBáo cáo tài chính kèm theo, trình bày bằng Đồng Việt Nam (VND), được lập theo nguyên tắc giá gốc và tuân thủ các Chuẩn mực kế toán Việt Nam, chế độ kế toán doanh nghiệp theo Thông tư số 202/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính hướng dẫn phương pháp lập và trình bày báo cáo tài chính hợp nhất và các quy định pháp lý liên quan đến báo cáo tài chính.\nBáo cáo tài chính hợp nhất của Công ty Cổ phần Đầu tư Phát triển Thành Đạt được lập dựa trên báo cáo tài chính riêng của Công ty Cổ phần Đầu tư Phát triển Thành Đạt (công ty mẹ) và báo cáo tài chính của Công ty Cổ phần Đầu tư Phát triển Hạ tầng Khu công nghiệp Tân Cảng – Đồng Văn III (công ty con). Công ty con là đơn vị bị công ty mẹ kiểm soát. Kiểm soát tồn tại trên cơ sở quyền trực tiếp hoặc gián tiếp, quyết định các chính sách tài chính và hoạt động của doanh nghiệp để thu được lợi nhuận từ các hoạt động kinh doanh. Báo cáo tài chính của các công ty con được hợp nhất kể từ ngày quyền kiểm soát được xác lập cho đến ngày quyền kiểm soát bị mất.\nBáo cáo tài chính hợp nhất của Công ty được lập trên cơ sở tổng hợp các khoản mục từ báo cáo tài chính riêng của Công ty Cổ phần Đầu tư Phát triển Thành Đạt và Công ty Cổ phần Đầu tư Phát triển Hạ tầng Khu công nghiệp Tân Cảng – Đồng Văn III, với việc loại bỏ các khoản doanh thu, chi phí, các khoản phải thu và phải trả nội bộ, cùng với các điều chỉnh khác theo quy định.\nTheo phương pháp vốn chủ sở hữu, các khoản đầu tư vào công ty liên kết ban đầu được ghi nhận theo giá gốc. Sau đó, giá trị ghi sổ của khoản đầu tư được điều chỉnh tăng hoặc giảm theo phần sở hữu của Công ty đối với lợi nhuận hoặc lỗ của bên được đầu tư sau ngày đầu tư. Phần lợi nhuận của Công ty trong kết quả hoạt động của bên được đầu tư được ghi nhận vào báo cáo kết quả hoạt động kinh doanh của Công ty. Cổ tức nhận được từ bên được đầu tư phải được hạch toán giảm giá trị ghi sổ của khoản đầu tư. Các điều chỉnh giá trị ghi sổ cũng phải được thực hiện khi lợi ích của Công ty thay đổi do các khoản mục thu nhập được ghi nhận trực tiếp vào vốn chủ sở hữu của bên được đầu tư, chẳng hạn như đánh giá lại tài sản cố định hoặc chênh lệch tỷ giá phát sinh từ việc chuyển đổi báo cáo tài chính.\nLợi ích của cổ đông không kiểm soát được trình bày riêng trên bảng cân đối kế toán hợp nhất thuộc phần vốn chủ sở hữu của Công ty. Phần lợi ích của cổ đông không kiểm soát trong báo cáo kết quả hoạt động kinh doanh hợp nhất cũng phải được trình bày là một khoản mục riêng biệt trong báo cáo kết quả hoạt động kinh doanh hợp nhất. Lợi ích của cổ đông không kiểm soát trong giá trị tài sản thuần của các công ty con hợp nhất bao gồm lợi ích của cổ đông không kiểm soát tại ngày mua, xác định theo giá trị hợp lý của tài sản thuần của công ty con tại ngày mua; lợi ích của cổ đông không kiểm soát trong các thay đổi tổng vốn chủ sở hữu từ ngày mua đến đầu kỳ báo cáo và lợi ích của cổ đông không kiểm soát trong các thay đổi tổng vốn chủ sở hữu phát sinh trong kỳ báo cáo. Các khoản lỗ phát sinh tại công ty con phải được phân bổ theo phần lợi ích của cổ đông không kiểm soát, ngay cả khi các khoản lỗ này vượt quá phần lợi ích của cổ đông không kiểm soát trong tài sản thuần của công ty con.\n\n3. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\nNăm tài chính của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12.\nĐơn vị tiền tệ sử dụng trong kế toán là Đồng Việt Nam (VND).",
+    "questions": [
+      {
+        "question": "Vốn điều lệ của Công ty Cổ phần Đầu tư Phát triển Thành Đạt là bao nhiêu VND theo Giấy chứng nhận đăng ký kinh doanh sửa đổi lần thứ 29?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty con của Thành Đạt là công ty nào?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Nêu các lĩnh vực kinh doanh chính của Công ty Cổ phần Đầu tư Phát triển Thành Đạt.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Vốn điều lệ của công ty con là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích nguyên tắc ghi nhận các khoản đầu tư vào công ty liên kết theo phương pháp vốn chủ sở hữu.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của lợi ích cổ đông không kiểm soát trong báo cáo tài chính hợp nhất.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của việc thay đổi cơ cấu sở hữu hoặc các quy định pháp lý đến nguyên tắc lập báo cáo tài chính hợp nhất của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Tóm tắt các chính sách kế toán quan trọng (Tiếp theo)\nLoại nội dung: Văn bản\n\n4. TÓM TẮT CÁC CHÍNH SÁCH KẾ TOÁN QUAN TRỌNG\n4.1. Ước tính kế toán\nViệc lập báo cáo tài chính hợp nhất cho kỳ kết thúc ngày 31/03/2025 phù hợp với Chuẩn mực kế toán Việt Nam, chế độ kế toán doanh nghiệp và các quy định pháp lý liên quan đến báo cáo tài chính yêu cầu Ban Giám đốc đưa ra các ước tính và giả định ảnh hưởng đến số liệu tài sản, nợ phải trả và công bố các tài sản và nợ tiềm tàng tại ngày lập báo cáo tài chính và số liệu doanh thu và chi phí trong năm tài chính. Mặc dù các ước tính kế toán này dựa trên kiến thức tốt nhất của Ban Giám đốc, kết quả thực tế có thể khác với các ước tính đó.\n\n4.2. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt và tiền gửi ngân hàng.\nCác khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời gian đáo hạn hoặc thu hồi không quá 3 tháng, có thể dễ dàng chuyển đổi thành một lượng tiền mặt xác định và không có rủi ro đáng kể về thay đổi giá trị khi chuyển đổi thành tiền mặt tính từ ngày mua đến ngày báo cáo.\n\n4.3. Các khoản phải thu\nCác khoản phải thu được trình bày trên báo cáo tài chính theo giá trị ghi sổ, bao gồm các khoản phải thu khách hàng và các khoản phải thu khác, cùng với dự phòng phải thu khó đòi. Tại ngày báo cáo, nếu:\n- Các khoản phải thu có thời gian thu hồi hoặc thanh toán dưới 1 năm hoặc trong vòng một chu kỳ sản xuất kinh doanh được phân loại là tài sản ngắn hạn.\n- Các khoản phải thu có thời gian thu hồi hoặc thanh toán trên 1 năm hoặc dài hơn một chu kỳ sản xuất kinh doanh được phân loại là tài sản dài hạn.\nDự phòng phải thu khó đòi phản ánh ước tính tổn thất giá trị do các khoản phải thu dự kiến không thể thu hồi được, phát sinh từ các khoản nợ phải thu quá hạn của khách hàng tính đến cuối kỳ kế toán.\nDự phòng phải thu khó đòi được lập cho các khoản phải thu quá hạn từ sáu tháng trở lên, hoặc cho các khoản phải thu từ các khách hàng không có khả năng thanh toán do giải thể, phá sản hoặc các khó khăn tương tự (trừ các khách hàng quá hạn nhưng đang trong quá trình thanh toán hoặc đã cam kết thanh toán trong thời gian gần).\n\n4.4. Hàng tồn kho\nHàng tồn kho được ghi nhận theo nguyên tắc giá thấp hơn giữa giá gốc và giá trị thuần có thể thực hiện được.\nGiá gốc bao gồm chi phí nguyên vật liệu trực tiếp và, nếu có, chi phí nhân công trực tiếp và các chi phí sản xuất chung đã phát sinh để đưa hàng tồn kho đến địa điểm và trạng thái hiện tại.\nGiá trị thuần có thể thực hiện được là giá bán ước tính trừ đi tất cả các chi phí ước tính để hoàn thành và chi phí phát sinh trong tiếp thị, bán hàng và phân phối.\nCông ty áp dụng phương pháp kê khai thường xuyên để hạch toán hàng tồn kho, với giá trị xác định như sau:\nGiá trị hàng tồn kho được xác định theo phương pháp giá bình quân gia quyền theo tháng.\nDự phòng giảm giá hàng tồn kho được lập cho các vật tư, hàng hóa tồn kho có giá gốc cao hơn giá trị thuần có thể thực hiện được, theo quy định của Chuẩn mực kế toán Việt Nam số 02 – Hàng tồn kho và Thông tư số 48/2019/TT-BTC ngày 08 tháng 08 năm 2019 của Bộ Tài chính hướng dẫn việc trích lập và sử dụng các khoản dự phòng giảm giá hàng tồn kho, tổn thất đầu tư tài chính, phải thu khó đòi và dự phòng bảo hành sản phẩm, hàng hóa, công trình xây dựng tại doanh nghiệp.\n\n4.5. Tài sản cố định hữu hình và khấu hao\nTài sản cố định được trình bày theo nguyên giá và khấu hao lũy kế.\nTài sản cố định hữu hình\nNguyên giá tài sản cố định hữu hình bao gồm giá mua và các chi phí liên quan trực tiếp để đưa tài sản vào trạng thái sẵn sàng sử dụng. Nguyên giá tài sản cố định hữu hình tự xây dựng bao gồm chi phí xây dựng, chi phí sản xuất thực tế phát sinh, cộng với chi phí lắp đặt và chạy thử. Chi phí nâng cấp tài sản cố định hữu hình được vốn hóa và cộng vào nguyên giá của tài sản, trong khi chi phí bảo trì và sửa chữa được hạch toán vào chi phí trong kỳ phát sinh. Khi tài sản cố định hữu hình được bán hoặc thanh lý, nguyên giá và khấu hao lũy kế của nó được ghi giảm, và mọi lãi hoặc lỗ phát sinh từ việc thanh lý được ghi nhận vào kết quả hoạt động trong kỳ.",
+    "questions": [
+      {
+        "question": "Mục đích của việc lập ước tính kế toán là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản tương đương tiền có đặc điểm gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào các khoản phải thu được phân loại là tài sản ngắn hạn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty áp dụng phương pháp nào để xác định giá trị hàng tồn kho?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách xác định nguyên giá của tài sản cố định hữu hình tự xây dựng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc lập dự phòng phải thu khó đòi và dự phòng giảm giá hàng tồn kho.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của các ước tính kế toán đến độ tin cậy của báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Tóm tắt các chính sách kế toán quan trọng (Tiếp theo)\nLoại nội dung: Văn bản\n\nKhấu hao tài sản cố định hữu hình được tính theo phương pháp đường thẳng, áp dụng cho tất cả các tài sản với tỷ lệ xác định để phân bổ nguyên giá trong suốt thời gian sử dụng ước tính, theo hướng dẫn tại Thông tư số 45/2013/TT-BTC ngày 25 tháng 4 năm 2013 của Bộ Tài chính hướng dẫn chế độ quản lý, sử dụng và trích khấu hao tài sản cố định. Thông tư số 147/2016/TT-BTC ngày 13 tháng 10 năm 2016 sửa đổi, bổ sung một số điều của Thông tư số 45/2013/TT-BTC, và Thông tư số 28/2017/TT-BTC ngày 12 tháng 4 năm 2017 tiếp tục sửa đổi, bổ sung một số điều của Thông tư số 45/2013/TT-BTC.\nThời gian trích khấu hao tài sản cố định hữu hình của công ty như sau:\n- Nhà cửa, vật kiến trúc: 15-50 năm\n- Máy móc, thiết bị: 03-08 năm\n- Phương tiện vận tải: 06-10 năm\n- Thiết bị văn phòng: 05 năm\n- Các tài sản khác: 02-05 năm\n\n4.6. Các khoản đầu tư tài chính\nĐầu tư tài chính dài hạn\nCông ty liên kết là công ty mà Công ty có ảnh hưởng đáng kể nhưng không phải là công ty con hay công ty liên doanh của Công ty. Ảnh hưởng đáng kể được phản ánh ở khả năng tham gia vào các quyết định về chính sách và hoạt động của bên được đầu tư nhưng không có quyền kiểm soát hoặc đồng kiểm soát các chính sách đó.\n\n4.7. Chi phí trả trước\nChi phí trả trước bao gồm công cụ, dụng cụ, giá trị tài sản không đủ tiêu chuẩn để phân loại là tài sản cố định có giá trị dưới 30 triệu VND, chi phí quyền thăm dò và các chi phí trả trước khác. Các chi phí trả trước này sẽ được phân bổ dần vào chi phí sản xuất, kinh doanh trong một khoảng thời gian hợp lý bắt đầu từ khi phát sinh.\n\n4.8. Các khoản phải trả\nCác khoản phải trả được trình bày trên báo cáo tài chính theo giá trị ghi sổ của các khoản nợ phải trả cho các chủ nợ và các khoản phải trả khác của Công ty, chi tiết theo từng đối tượng phải trả. Tại ngày báo cáo, nếu:\n- Các khoản phải trả có thời hạn thanh toán dưới 1 năm hoặc trong vòng một chu kỳ kinh doanh được phân loại là nợ ngắn hạn.\n- Các khoản phải trả có thời hạn thanh toán trên 1 năm hoặc dài hơn một chu kỳ kinh doanh được phân loại là nợ dài hạn.\n\n4.9. Chi phí phải trả\nChi phí phải trả bao gồm giá trị các khoản chi phí đã được ghi nhận vào chi phí hoạt động kinh doanh trong kỳ kế toán nhưng chưa thực tế chi trả vào cuối kỳ. Các khoản này có thể bao gồm phí kiểm toán, chi phí xây dựng và các chi phí tương tự khác. Khi các chi phí này thực tế phát sinh, mọi chênh lệch giữa số ước tính và số thực tế phải được điều chỉnh, bằng cách tăng hoặc giảm tài khoản chi phí dựa trên chênh lệch đó.\n\n4.10. Vốn chủ sở hữu\nNguyên tắc ghi nhận các khoản đóng góp vốn chủ sở hữu:\nVốn được ghi nhận theo số tiền thực tế các cổ đông đã đầu tư.\nLợi nhuận giữ lại là lợi nhuận từ hoạt động của công ty sau khi trừ đi các điều chỉnh cho việc áp dụng hồi tố các thay đổi chính sách kế toán và điều chỉnh các sai sót trọng yếu từ các năm trước.",
+    "questions": [
+      {
+        "question": "Phương pháp khấu hao tài sản cố định hữu hình mà công ty áp dụng là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian trích khấu hao cho nhà cửa, vật kiến trúc là bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Định nghĩa về 'Công ty liên kết' theo chính sách kế toán của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi nào một khoản phải trả được phân loại là nợ dài hạn?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách công ty xử lý chênh lệch giữa chi phí phải trả ước tính và thực tế.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các chính sách khấu hao đến báo cáo kết quả kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của 'Lợi nhuận giữ lại' đối với khả năng tái đầu tư và phát triển của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Tóm tắt các chính sách kế toán quan trọng (Tiếp theo)\nLoại nội dung: Văn bản\n\n4.11. Doanh thu\nDoanh thu được ghi nhận khi kết quả của giao dịch có thể xác định một cách đáng tin cậy, và Công ty có khả năng thu được lợi ích kinh tế từ giao dịch.\ni. Doanh thu từ bán hàng được ghi nhận khi phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu hàng hóa đã chuyển giao cho người mua, và hàng hóa đã được giao cho người mua và được khách hàng chấp nhận.\nii. Doanh thu từ hoạt động xây dựng được ghi nhận dựa trên phần công việc đã hoàn thành và được khách hàng xác nhận trong kỳ, khi Công ty đảm bảo sẽ thu được lợi ích từ hợp đồng xây dựng và chi phí để hoàn thành công việc đã thực hiện tại ngày lập báo cáo tài chính có thể đo lường một cách đáng tin cậy.\niii. Doanh thu từ cung cấp dịch vụ được ghi nhận khi phần lớn rủi ro và lợi ích đã chuyển giao cho khách hàng, dịch vụ đã được cung cấp và được khách hàng chấp nhận.\niv. Doanh thu hoạt động tài chính bao gồm doanh thu phát sinh từ lãi tiền gửi, lãi cho vay, lãi chênh lệch tỷ giá và các khoản doanh thu tài chính khác. Lãi tiền gửi và tiền cho vay được ghi nhận trên cơ sở dồn tích, tính toán dựa trên số dư tiền gửi và lãi suất áp dụng.\nv. Lãi từ các khoản đầu tư được ghi nhận khi Công ty có quyền nhận khoản thanh toán lãi.\n\n4.12. Nguyên tắc ghi nhận giá vốn hàng bán\nGiá vốn hàng bán phản ánh giá trị các sản phẩm, hàng hóa, dịch vụ đã bán trong kỳ, đảm bảo phù hợp với doanh thu được ghi nhận trong cùng kỳ.\n\n4.13. Nguyên tắc kế toán chi phí quản lý doanh nghiệp\nChi phí quản lý doanh nghiệp phản ánh các chi phí quản lý chung của Công ty, bao gồm các khoản chi như tiền lương của ban quản lý, bảo hiểm xã hội, bảo hiểm y tế, phí công đoàn, bảo hiểm thất nghiệp cho đội ngũ quản lý của công ty, vật liệu văn phòng, công cụ lao động, khấu hao tài sản cố định dùng cho quản lý doanh nghiệp, tiền thuê đất, thuế môn bài, dự phòng phải thu khó đòi, dịch vụ thuê ngoài và các chi phí tiền tệ khác.\n\n4.14. Thuế\nThuế giá trị gia tăng (VAT):\n- Thuế suất VAT áp dụng cho các hợp đồng xây dựng, bê tông thương phẩm, và cho thuê và quản lý hạ tầng là 10%.\n- Thuế suất VAT cho dịch vụ cung cấp nước sạch là 5%.\nThuế thu nhập doanh nghiệp (CIT):\nCông ty phải nộp thuế thu nhập doanh nghiệp với thuế suất 20%.\nThuế thu nhập hiện hành là thuế được tính toán dựa trên thu nhập chịu thuế trong kỳ với thuế suất áp dụng trong kỳ kế toán. Thu nhập chịu thuế khác với lợi nhuận kế toán do các điều chỉnh về chênh lệch tạm thời giữa kế toán thuế và kế toán tài chính, cũng như các điều chỉnh cho thu nhập hoặc chi phí không chịu thuế hoặc không được khấu trừ.\nCác loại thuế khác áp dụng theo quy định của pháp luật thuế hiện hành tại Việt Nam.\n\n4.15. Lãi cơ bản trên cổ phiếu\nLãi cơ bản trên cổ phiếu phổ thông được tính bằng cách chia lợi nhuận hoặc lỗ phân bổ cho các cổ đông phổ thông cho số lượng cổ phiếu phổ thông bình quân gia quyền đang lưu hành trong kỳ. Lãi suy giảm trên cổ phiếu được xác định bằng cách điều chỉnh lợi nhuận hoặc lỗ phân bổ cho các cổ đông phổ thông và số lượng cổ phiếu phổ thông bình quân gia quyền đang lưu hành để phản ánh ảnh hưởng của các cổ phiếu phổ thông tiềm năng có tính pha loãng, bao gồm trái phiếu chuyển đổi và quyền chọn mua cổ phiếu.\n\n4.16. Bù trừ các công cụ tài chính\nGhi nhận ban đầu:\nCông cụ tài chính tài sản: Tại ngày ghi nhận ban đầu, các tài sản tài chính được ghi nhận theo giá gốc cộng với chi phí giao dịch trực tiếp liên quan đến việc mua lại tài sản tài chính. Các tài sản tài chính của Công ty bao gồm tiền, các khoản tương đương tiền, các khoản phải thu khách hàng, các khoản phải thu khác, các khoản tiền gửi, các khoản đầu tư tài chính và các công cụ tài chính phát sinh.\nCông cụ tài chính nợ phải trả: Tại ngày ghi nhận ban đầu, các khoản nợ tài chính được ghi nhận theo giá gốc cộng với chi phí giao dịch trực tiếp liên quan đến việc phát hành các khoản nợ tài chính. Các khoản nợ tài chính của Công ty bao gồm các khoản phải trả người bán, các khoản phải trả khác, chi phí phải trả, nợ thuê tài chính, các khoản vay và các công cụ tài chính phát sinh.\n\nĐo lường sau ghi nhận ban đầu:\nHiện tại, không có quy định về việc đánh giá lại các công cụ tài chính sau ghi nhận ban đầu.\n\n5. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT\n5.1 Tiền và các khoản tương đương tiền\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| Tiền mặt | 5.809.515.175 | 4.018.615.361 |\n| Tiền gửi ngân hàng | 54.137.913.775 | 218.084.394.592 |\n| Tiền tương đương | 160.754.960.891 | 20.404.960.891 |\n| Tổng cộng | 220.702.389.841 | 242.507.970.844 |\n- Tiền gửi có kỳ hạn trên một tháng tại các ngân hàng thương mại.\n\n5.2 Phải thu khách hàng\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| a. Phải thu ngắn hạn của khách hàng | 118.745.423.006 | 118.996.174.141 |\n| Công ty Cổ phần Tân Cảng – Đồng Văn Hà Nam | 38.377.650.800 | 38.377.650.800 |\n| Công ty Cổ phần Xây dựng PLC | 31.455.994.785 | 31.455.994.785 |\n| Ban quản lý dự án đầu tư xây dựng thành phố Phủ Lý số II | 7.624.553.000 | 7.624.553.000 |\n| Công ty Cổ phần Tổng công ty Xây dựng Hà Nội | 5.469.766.781 | 5.469.766.781 |\n| Công ty Cổ phần Xây dựng Công nghiệp Hawee | 3.859.468.427 | 3.859.468.427 |\n| Công ty TNHH Phát triển Xây dựng Jianxing Việt Nam | 1.803.128.000 | - |\n| Các đối tượng khác | 31.957.989.213 | 30.405.612.348 |\n| Tổng cộng | 118.745.423.006 | 118.996.174.141 |\n| b. Phải thu dài hạn của khách hàng | - | - |\n\n5.3 Trả trước cho người bán ngắn hạn\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| Tổng Công ty Đầu tư Phát triển Nhà và Đô thị Hà Nội | 35.453.053.000 | 60.000.000.000 |\n| Tổng Công ty Phát triển Công nghệ Hưng Phát | 5.090.728.500 | - |\n| Công ty TNHH Phát triển Thương mại Hoài Thanh Trung | 3.455.058.200 | 2.940.112.200 |\n| Công ty TNHH Đầu tư Xây dựng và Thương mại Tân Sáng | 1.902.800.000 | - |\n| Công ty TNHH Aco Việt Nam | 1.431.463.860 | 1.861.368.012 |\n| Công ty Cổ phần Thương mại, Xây dựng và Dịch vụ Phát An | 1.271.000.000 | 1.271.000.000 |\n| Công ty TNHH Sản xuất và Thương mại Huyền Quý | 1.023.679.000 | 1.023.679.000 |\n| Công ty Cổ phần Giải pháp Công nghệ Xây dựng An Thịnh | 1.000.403.580 | 1.000.403.580 |\n| Công ty Cổ phần Tư vấn Thiết kế Xây dựng Walcom Việt Nam | 818.129.600 | 818.129.600 |\n| Công ty TNHH Thương mại và Xây dựng Đinh Hương | 2.387.082.829 | 2.342.296.662 |\n| Công ty Cổ phần Xây dựng và Thương mại Đông Nam | 4.798.000.000 | - |\n| Các đối tượng khác | 49.768.004.736 | 4.131.544.631 |\n| Tổng cộng | 101.405.874.805 | 82.382.062.185 |",
+    "questions": [
+      {
+        "question": "Công ty ghi nhận doanh thu từ bán hàng khi nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thuế suất VAT cho dịch vụ cung cấp nước sạch là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí quản lý doanh nghiệp bao gồm những khoản mục chính nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh tổng tiền gửi ngân hàng vào ngày 31/03/2025 với ngày 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích nguyên tắc ghi nhận doanh thu từ hoạt động xây dựng có ý nghĩa gì đối với việc trình bày kết quả kinh doanh?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong các khoản trả trước cho người bán ngắn hạn và tác động của nó đến dòng tiền hoạt động.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính toán lãi cơ bản trên cổ phiếu nếu công ty phát hành thêm cổ phiếu mới trong kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên bảng cân đối kế toán (Tiếp theo)\nLoại nội dung: Bảng\n\n5.4 Các khoản phải thu khác\n| Chỉ tiêu | Giá trị (31/03/2025) | Dự phòng (31/03/2025) | Giá trị (01/01/2025) | Dự phòng (01/01/2025) |\n|:---|:---|:---|:---|:---|\n| a. Ngắn hạn | 150.661.099 | - | 150.661.099 | - |\n| - Tạm ứng | 27.918.000 | - | 27.918.000 | - |\n| - Phải thu khác | 122.743.099 | - | 122.743.099 | - |\n| b. Dài hạn | 586.016.538.007 | - | 586.016.538.007 | - |\n| - Phải thu dài hạn khác | 586.016.538.007 | - | 586.016.538.007 | - |\n| Công ty CP Đầu tư Phát triển Nhà và Đô thị Hà Nội | 31.709.667.600 | - | 31.709.667.600 | - |\n| Trung tâm Phát triển Quỹ đất thành phố Phủ Lý | 14.083.094.355 | - | 14.083.094.355 | - |\n| Trung tâm Phát triển Quỹ đất thị xã Duy Tiên | 7.289.254.000 | - | 7.289.254.000 | - |\n| Thanh toán giải phóng mặt bằng | 507.776.487.052 | - | 507.776.487.052 | - |\n| Phải thu hỗ trợ chuyển đổi nghề và đào tạo | 25.158.035.000 | - | 25.158.035.000 | - |\n| Tổng cộng | 586.167.199.106 | - | 586.167.199.106 | - |\n\n5.5 Hàng tồn kho\n| Chỉ tiêu | Giá trị (31/03/2025) | Dự phòng (31/03/2025) | Giá trị (01/01/2025) | Dự phòng (01/01/2025) |\n|:---|:---|:---|:---|:---|\n| Nguyên vật liệu | 1.162.355.030 | - | 9.884.166.520 | - |\n| Công cụ, dụng cụ | 3.472.222 | - | - | - |\n| Chi phí sản xuất kinh doanh dở dang | 116.664.780.354 | - | 99.820.995.347 | - |\n| Hàng hóa | 632.722.089 | - | 603.465.495 | - |\n| Tổng cộng | 118.463.329.695 | - | 110.308.627.362 | - |\n\n5.6 Chi phí trả trước\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| a. Ngắn hạn | 1.727.028.006 | 1.049.935.314 |\n| - Chi phí sử dụng công cụ, dụng cụ | 1.727.028.006 | 1.030.472.266 |\n| - Chi phí trả trước dài hạn khác | - | 19.463.048 |\n| b. Dài hạn | - | 12.059.028 |\n| - Chi phí công cụ, dụng cụ chờ phân bổ | - | 12.059.028 |\n| Tổng cộng | 1.727.028.006 | 1.061.994.342 |\n\n5.7 Chi phí xây dựng cơ bản dở dang dài hạn\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| Chi phí xây dựng cơ bản dở dang | 378.288.226.479 | 368.447.695.018 |\n| Dự án Đầu tư xây dựng hạ tầng KCN Đồng Văn III | 330.648.018.831 | 318.897.638.586 |\n| Dự án Cảng Yên Lệnh | 45.186.186.733 | 47.096.035.517 |\n| Dự án Trung tâm thương mại Liêm Tuyền | 1.158.476.450 | 1.158.476.450 |\n| Dự án xây dựng nhà để xe | 1.032.901.199 | 1.032.901.199 |\n| Dự án Trung tâm bến xe | 262.643.266 | 262.643.266 |\n| Tổng cộng | 378.288.226.479 | 368.447.695.018 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng giá trị các khoản phải thu khác dài hạn vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị chi phí sản xuất kinh doanh dở dang cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị nguyên vật liệu tồn kho giữa hai kỳ, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Dự án nào trong 'Chi phí xây dựng cơ bản dở dang dài hạn' có giá trị lớn nhất vào ngày 31/03/2025?",
+        "difficulty": "Medium_NER"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro của các khoản phải thu khác khi không có dự phòng được trích lập.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng các khoản chi phí xây dựng cơ bản dở dang đến nhu cầu vốn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng chuyển đổi 'Chi phí sản xuất kinh doanh dở dang' thành doanh thu trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Nợ khó đòi (Phần 1)\nLoại nội dung: Bảng\n\n5.8. NỢ KHÓ ĐÒI\n| Chỉ tiêu | Giá gốc (31/03/2025) | Giá trị có thể thu hồi (31/03/2025) | Giá gốc (01/01/2025) | Giá trị có thể thu hồi (01/01/2025) |\n|:---|:---|:---|:---|:---|\n| Phải thu ngắn hạn | | | | |\n| Công ty Cổ phần Tân Cảng – Đồng Văn Hà Nam | 37.372.954.250 | 37.372.954.250 | 37.372.954.250 | 37.372.954.250 |\n| Công ty Cổ phần Tasco Trường Phát | 200.001.840 | 200.001.840 | 200.001.840 | 200.001.840 |\n| Công ty Cổ phần Xây dựng Thương mại Hà An | 174.182.500 | 174.182.500 | 174.182.500 | 174.182.500 |\n| Công ty Cổ phần Đầu tư Xây dựng & Phát triển Công nghệ Lâm Phương | 239.159.000 | 239.159.000 | 239.159.000 | 239.159.000 |\n| Trường THPT B Phủ Lý | 103.454.000 | 103.454.000 | 103.454.000 | 103.454.000 |\n| UBND Thị trấn Kiện Khê | 41.676.000 | 41.676.000 | 41.676.000 | 41.676.000 |\n| Viện Kiểm sát nhân dân Tỉnh Hà Nam | 125.184.000 | 125.184.000 | 125.184.000 | 125.184.000 |\n| Công ty Cổ phần Khoáng sản Đức Phát | 50.006.030 | 50.006.030 | 50.006.030 | 50.006.030 |\n| Công ty Cổ phần Phát triển Miền Tây | 24.700.000 | 24.700.000 | 24.700.000 | 24.700.000 |\n| Công ty TNHH Incosys | 57.300.000 | 57.300.000 | 57.300.000 | 57.300.000 |\n| Công ty TNHH MTV Cơ khí và Xây dựng Sông Hồng | 57.800.001 | 57.800.001 | 57.800.001 | 57.800.001 |\n| Công ty TNHH Thương mại và Xây dựng Thiên Thành Phát Việt Nam | 20.389.998 | 20.389.998 | 20.389.998 | 20.389.998 |\n| Công ty TNHH Thương mại và Xây dựng Nam Phúc | 61.245.000 | 61.245.000 | 61.245.000 | 61.245.000 |\n| Xí nghiệp Xây dựng Hạ tầng – Công ty Thi công Cơ giới Viglacera | 33.214.400 | 33.214.400 | 33.214.400 | 33.214.400 |\n| Công ty Cổ phần Dịch vụ và Thương mại Xây dựng Toàn Cầu | 50.600.000 | 50.600.000 | 50.600.000 | 50.600.000 |\n| Công ty Cổ phần Đầu tư và Xây dựng 492 | 657.610.000 | 657.610.000 | 657.610.000 | 657.610.000 |\n| Công ty Cổ phần Đầu tư và Xây dựng Khánh Đạt | 553.862.500 | 553.862.500 | 553.862.500 | 553.862.500 |\n| Công ty Cổ phần Tổng công ty Xây dựng Hà Nội | 5.469.766.781 | 5.469.766.781 | 5.469.766.781 | 5.469.766.781 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Khoản mục 'Phải thu ngắn hạn' của Công ty Cổ phần Tân Cảng – Đồng Văn Hà Nam vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Có bao nhiêu khoản phải thu ngắn hạn được liệt kê trong bảng này?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị gốc của khoản phải thu từ Công ty Cổ phần Tổng công ty Xây dựng Hà Nội có thay đổi giữa hai kỳ không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình nợ khó đòi của công ty dựa trên các khoản phải thu ngắn hạn đã liệt kê.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính của công ty khi một số đối tác lớn có các khoản nợ khó đòi không thay đổi qua các kỳ.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Nợ khó đòi (Phần 2)\nLoại nội dung: Bảng\n\n5.8. NỢ KHÓ ĐÒI (Tiếp theo)\n| Chỉ tiêu | Giá gốc (31/03/2025) | Dự phòng (31/03/2025) | Giá trị có thể thu hồi (31/03/2025) | Giá gốc (01/01/2025) | Dự phòng (01/01/2025) | Giá trị có thể thu hồi (01/01/2025) |\n|:---|:---|:---|:---|:---|:---|:---|\n| Công ty Cổ phần Xây dựng Công nghiệp Hawee | 3.859.468.427 | - | 3.859.468.427 | 3.859.468.427 | - | 3.859.468.427 |\n| Công ty TNHH Khu công nghiệp Kim Bảng | 649.852.500 | - | 649.852.500 | 649.852.500 | - | 649.852.500 |\n| Công ty Cổ phần Đầu tư và Xây dựng số 4 | 1.085.543.625 | - | 1.085.543.625 | 1.085.543.625 | - | 1.085.543.625 |\n| Công ty Cổ phần Vinaconex 25 | 896.072.364 | - | 896.072.364 | 896.072.364 | - | 896.072.364 |\n| Công ty Cổ phần Hồng Hà Việt Nam | 634.098.195 | - | 634.098.195 | 634.098.195 | - | 634.098.195 |\n| Công ty Cổ phần Xây dựng Quang Minh | 371.550.000 | - | 371.550.000 | 371.550.000 | - | 371.550.000 |\n| Công ty TNHH Tư vấn Kỹ thuật Xây dựng Hà Nam | 202.180.000 | - | 202.180.000 | 202.180.000 | - | 202.180.000 |\n| Công ty TNHH Giải pháp Xây dựng CSC | 127.500.000 | - | 127.500.000 | 127.500.000 | - | 127.500.000 |\n| Công ty TNHH Xây dựng và Thương mại Khánh Hưng | 48.060.000 | - | 48.060.000 | 48.060.000 | - | 48.060.000 |\n| Công ty Cổ phần Đầu tư và Xây dựng Phát triển Bắc Nam Việt | 235.878.599 | - | 235.878.599 | 235.878.599 | - | 235.878.599 |\n| Ban quản lý dự án số II thành phố Phủ Lý – Xây dựng kè Phủ Vân | 7.624.553.000 | - | 7.624.553.000 | 7.624.553.000 | - | 7.624.553.000 |\n| Ban quản lý Phát triển đô thị – Trung tâm Y tế Chất lượng cao Hà Nam | 1.287.184.300 | - | 1.287.184.300 | 1.287.184.300 | - | 1.287.184.300 |\n| Hội đồng giải phóng mặt bằng Thị xã Duy Tiên – Xây dựng hạ tầng kỹ thuật lô E | 1.331.789.000 | - | 1.331.789.000 | 1.331.789.000 | - | 1.331.789.000 |\n| Ban giải phóng mặt bằng Thanh Liêm – San lấp mặt bằng Cụm công nghiệp Kiện Khê 7 | 1.151.566.000 | - | 1.151.566.000 | 1.151.566.000 | - | 1.151.566.000 |\n| Công ty CP Xây dựng và Kỹ thuật Minh Hùng | 46.245.000 | 13.873.500 | 32.371.500 | 46.245.000 | 13.873.500 | 32.371.500 |\n| Công ty CP Đầu tư và Xây dựng Đông Hòa | 50.963.000 | - | 50.963.000 | 50.963.000 | - | 50.963.000 |\n| Hội đồng giải phóng mặt bằng Thị xã Duy Tiên – Đường điện thôn Trung Hòa A | 172.688.000 | - | 172.688.000 | 172.688.000 | - | 172.688.000 |\n| Công ty CP Quốc tế Tân Á Hà Nam – Đắp kè đá Showroom | 30.100.000 | - | 30.100.000 | 30.100.000 | - | 30.100.000 |\n| UBND Thị trấn Kiện Khê – Tòa nhà văn phòng | 106.271.000 | - | 106.271.000 | 106.271.000 | - | 106.271.000 |\n| Ban Quản lý Dự án Đầu tư và Xây dựng Hà Nam – Tuyến đường N1D2 | 238.344.017 | - | 238.344.017 | 238.344.017 | - | 238.344.017 |\n| Ban Quản lý Dự án Đầu tư và Xây dựng Hà Nam – Hạ tầng kỹ thuật KCN DVI, thu hồi đất | 662.546.563 | 662.546.563 | - | 662.546.563 | 662.546.563 | - |\n| Công ty CP Tư vấn Lắp đặt Đầu tư Xây dựng TKD | 230.000.000 | - | 230.000.000 | 230.000.000 | - | 230.000.000 |\n| Tổng cộng | 66.335.559.890 | 13.873.500 | 66.321.686.390 | 66.335.559.890 | 13.873.500 | 66.321.686.390 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Giá trị gốc của khoản phải thu từ Công ty Cổ phần Xây dựng Công nghiệp Hawee vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải thu từ Công ty CP Xây dựng và Kỹ thuật Minh Hùng có dự phòng bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị có thể thu hồi từ Ban Quản lý Dự án Đầu tư và Xây dựng Hà Nam (Hạ tầng kỹ thuật KCN DVI, thu hồi đất) giữa hai kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Có bao nhiêu khoản phải thu không có dự phòng được trích lập trong bảng này?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng thu hồi các khoản nợ khó đòi của công ty dựa trên số liệu dự phòng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn khi nhiều khoản phải thu có giá trị lớn không thay đổi giữa các kỳ và không có dự phòng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc Công ty CP Xây dựng và Kỹ thuật Minh Hùng có dự phòng nợ xấu đến kết quả kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Đầu tư tài chính và Tăng giảm tài sản cố định hữu hình (Phần 1)\nLoại nội dung: Bảng\n\n5.9. ĐẦU TƯ TÀI CHÍNH\n| Chỉ tiêu | Giá gốc (31/03/2025) | Giá trị hợp lý (31/03/2025) | Dự phòng (31/03/2025) | Giá gốc (01/01/2025) | Giá trị hợp lý (01/01/2025) | Dự phòng (01/01/2025) |\n|:---|:---|:---|:---|:---|:---|:---|\n| a. Chứng khoán kinh doanh | - | - | - | - | - | - |\n| b. Đầu tư nắm giữ đến ngày đáo hạn | 442.589.959.225 | 442.589.959.225 | - | 365.100.142.716 | 365.100.142.716 | - |\n| - Tiền gửi có kỳ hạn | 442.589.959.225 | 442.589.959.225 | - | 365.100.142.716 | 365.100.142.716 | - |\n\n| Chỉ tiêu | Giá trị ghi sổ theo phương pháp vốn chủ sở hữu (31/03/2025) | Tỷ lệ sở hữu (31/03/2025) | Giá trị ghi sổ theo phương pháp vốn chủ sở hữu (01/01/2025) | Tỷ lệ sở hữu (01/01/2025) |\n|:---|:---|:---|:---|:---|\n| c. Đầu tư vào các đơn vị khác | 17.727.083.512 | | 17.727.083.512 | |\n| - Đầu tư vào công ty liên kết | 17.727.083.512 | | 17.727.083.512 | |\n| Công ty Cổ phần Tân Cảng – Đồng Văn Hà Nam | 17.727.083.512 | 39% | 17.727.083.512 | 39% |\n| Tổng cộng | 460.317.042.737 | | 382.827.226.228 | |\n\n5.10. TĂNG, GIẢM TÀI SẢN CỐ ĐỊNH HỮU HÌNH\n| Chỉ tiêu | Tổng cộng (VND) | Nhà cửa và vật kiến trúc (VND) | Máy móc và thiết bị (VND) | Phương tiện vận tải (VND) | Thiết bị văn phòng (VND) | Khác (VND) |\n|:---|:---|:---|:---|:---|:---|:---|\n| I. Nguyên giá | | | | | | |\n| Số dư đầu kỳ | 497.272.370.965 | 305.843.884.406 | 142.907.141.204 | 39.649.195.778 | 882.776.363 | 7.989.373.214 |\n| Tăng trong kỳ | 142.970.370 | 142.970.370 | - | - | - | - |\n| - Khác | 142.970.370 | 142.970.370 | - | - | - | - |\n| Giảm trong kỳ | 4.916.545.455 | - | 4.916.545.455 | - | - | 4.916.545.455 |\n| - Thanh lý, nhượng bán | 4.916.545.455 | - | 4.916.545.455 | - | - | 4.916.545.455 |\n| Số dư cuối kỳ | 492.498.795.880 | 305.986.854.776 | 142.907.141.204 | 34.732.650.323 | 882.776.363 | 7.989.373.214 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng giá trị 'Đầu tư nắm giữ đến ngày đáo hạn' vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tỷ lệ sở hữu của công ty trong Công ty Cổ phần Tân Cảng – Đồng Văn Hà Nam là bao nhiêu phần trăm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nguyên giá của 'Máy móc và thiết bị' giữa hai kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Nhà cửa và vật kiến trúc' đã tăng/giảm bao nhiêu trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá chiến lược đầu tư tài chính của công ty dựa trên các khoản đầu tư nắm giữ đến ngày đáo hạn và đầu tư vào công ty liên kết.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc thanh lý tài sản cố định đến cơ cấu tài sản và hiệu quả hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự thay đổi trong nguyên giá tài sản cố định đến khả năng sản xuất trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Tăng giảm tài sản cố định hữu hình (Phần 2)\nLoại nội dung: Bảng\n\n5.10. TĂNG, GIẢM TÀI SẢN CỐ ĐỊNH HỮU HÌNH (Tiếp theo)\n| Chỉ tiêu | Tổng cộng (VND) | Nhà cửa và vật kiến trúc (VND) | Máy móc và thiết bị (VND) | Phương tiện vận tải (VND) | Thiết bị văn phòng (VND) | Khác (VND) |\n|:---|:---|:---|:---|:---|:---|:---|\n| II. Khấu hao lũy kế | | | | | | |\n| Số dư đầu kỳ | 143.800.023.414 | 41.919.597.702 | 70.038.987.881 | 26.453.375.595 | 882.258.686 | 4.505.803.550 |\n| Chi phí khấu hao trong kỳ | 5.934.108.381 | 2.638.798.389 | 2.280.261.699 | 908.785.905 | 517.677 | 105.744.711 |\n| - Khấu hao | 5.934.108.381 | 2.638.798.389 | 2.280.261.699 | 908.785.905 | 517.677 | 105.744.711 |\n| Giảm trong kỳ | 4.916.545.455 | - | 4.916.545.455 | - | - | 4.916.545.455 |\n| - Chuyển sang BĐS đầu tư | 4.916.545.455 | - | 4.916.545.455 | - | - | 4.916.545.455 |\n| Số dư cuối kỳ | 144.817.586.340 | 44.558.396.091 | 72.319.249.580 | 22.445.616.045 | 882.776.363 | 4.611.548.261 |\n| III. Giá trị còn lại | | | | | | |\n| 1. Số dư đầu kỳ | 353.472.347.551 | 263.924.286.704 | 72.868.153.323 | 13.195.820.183 | 517.677 | 3.483.569.664 |\n| 2. Số dư cuối kỳ | 347.681.209.540 | 261.428.458.685 | 70.587.891.624 | 12.287.034.278 | - | 3.377.824.953 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng khấu hao lũy kế cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí khấu hao trong kỳ cho 'Máy móc và thiết bị' là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị còn lại của 'Phương tiện vận tải' giữa số dư đầu kỳ và cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục nào có giá trị còn lại giảm mạnh nhất trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích lý do 'Giá trị còn lại' của 'Thiết bị văn phòng' bằng 0 vào cuối kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc 'Chuyển sang BĐS đầu tư' từ khấu hao lũy kế đến cơ cấu tài sản cố định.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của xu hướng giảm giá trị còn lại của tài sản cố định đến khả năng tái đầu tư của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Các khoản vay và nghĩa vụ thuê tài chính (Phần 1)\nLoại nội dung: Bảng\n\n5.11. CÁC KHOẢN VAY VÀ NGHĨA VỤ THUÊ TÀI CHÍNH\n| Chỉ tiêu | Số tiền (31/03/2025) | Khả năng thanh toán (31/03/2025) | Tăng trong kỳ (VND) | Giảm trong kỳ (VND) | Số tiền (01/01/2025) | Khả năng thanh toán (01/01/2025) |\n|:---|:---|:---|:---|:---|:---|:---|\n| a. Vay ngắn hạn | 45.468.919.300 | 45.468.919.300 | 3.124.000.000 | 3.683.832.961 | 46.028.752.261 | 46.028.752.261 |\n| Vay ngân hàng | 32.972.919.300 | 32.972.919.300 | - | 559.832.961 | 33.532.752.261 | 33.532.752.261 |\n| Ngân hàng TMCP Sài Gòn Thương Tín 1 | 26.352.282.036 | 26.352.282.036 | - | 559.832.961 | 26.912.114.997 | 26.912.114.997 |\n| Ngân hàng TMCP Sài Gòn – Hà Nội 3 | 6.620.637.264 | 6.620.637.264 | - | - | 6.620.637.264 | 6.620.637.264 |\n| Nợ dài hạn đến hạn trả | 12.496.000.000 | 12.496.000.000 | 3.124.000.000 | 3.124.000.000 | 12.496.000.000 | 12.496.000.000 |\n| Ngân hàng TMCP Ngoại thương Việt Nam – Chi nhánh Hà Nam 2 | 3.096.000.000 | 3.096.000.000 | 774.000.000 | 774.000.000 | 3.096.000.000 | 3.096.000.000 |\n| Ngân hàng TMCP Công thương Việt Nam – Chi nhánh Hà Nam 5 | 9.400.000.000 | 9.400.000.000 | 2.350.000.000 | 2.350.000.000 | 9.400.000.000 | 9.400.000.000 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng vay ngắn hạn vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản vay từ Ngân hàng TMCP Sài Gòn Thương Tín 1 cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Nợ dài hạn đến hạn trả' giữa hai kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng khoản giảm trong kỳ của vay ngắn hạn là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình nợ ngắn hạn của công ty có khả năng gây rủi ro thanh khoản không?",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm nợ vay ngắn hạn đến cơ cấu tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo khả năng tiếp cận các nguồn vốn vay ngắn hạn trong tương lai nếu xu hướng trả nợ tiếp tục.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Các khoản vay và nghĩa vụ thuê tài chính (Phần 2), Bất động sản đầu tư, Lợi thế thương mại\nLoại nội dung: Bảng\n\n5.11. CÁC KHOẢN VAY VÀ NGHĨA VỤ THUÊ TÀI CHÍNH (Tiếp theo)\n| Chỉ tiêu | Số tiền (31/03/2025) | Khả năng thanh toán (31/03/2025) | Tăng trong kỳ (VND) | Giảm trong kỳ (VND) | Số tiền (01/01/2025) | Khả năng thanh toán (01/01/2025) |\n|:---|:---|:---|:---|:---|:---|:---|\n| b. Vay dài hạn | 40.480.695.150 | 40.480.695.150 | - | 3.124.000.000 | 43.604.695.150 | 43.604.695.150 |\n| Ngân hàng TMCP Ngoại thương Việt Nam – Chi nhánh Hà Nam | 3.203.000.000 | 3.203.000.000 | - | 774.000.000 | 3.977.000.000 | 3.977.000.000 |\n| Vốn vay cho vay lại của UBND Tỉnh Hà Nam từ Chính phủ | 8.387.234.000 | 8.387.234.000 | - | - | 8.387.234.000 | 8.387.234.000 |\n| Ngân hàng TMCP Công thương Việt Nam – Chi nhánh Hà Nam | 28.890.461.150 | 28.890.461.150 | - | 2.350.000.000 | 31.240.461.150 | 31.240.461.150 |\n| Tổng cộng | 85.949.614.450 | 85.949.614.450 | 3.124.000.000 | 6.807.832.961 | 89.633.447.411 | 89.633.447.411 |\n\n5.12. BẤT ĐỘNG SẢN ĐẦU TƯ\n| Chỉ tiêu | Số dư đầu kỳ (VND) | Tăng trong kỳ (VND) | Giảm trong kỳ (VND) | Số dư cuối kỳ (VND) |\n|:---|:---|:---|:---|:---|\n| Giá trị | 1.196.822.065.208 | 62.809.485.621 | 17.066.228.753 | 1.242.565.322.076 |\n| - Hạ tầng | 1.196.822.065.208 | 62.809.485.621 | 17.066.228.753 | 1.242.565.322.076 |\n| Khấu hao lũy kế | 1.194.819.659.471 | 45.270.898.637 | 7.813.178.129 | 1.232.277.379.979 |\n| - Hạ tầng | 1.194.819.659.471 | 45.270.898.637 | 7.813.178.129 | 1.232.277.379.979 |\n| Giá trị còn lại | 2.002.405.737 | 17.538.586.984 | 9.253.050.624 | 10.287.942.097 |\n| - Hạ tầng | 2.002.405.737 | 17.538.586.984 | 9.253.050.624 | 10.287.942.097 |\n\n5.13. LỢI THẾ THƯƠNG MẠI\n| Chỉ tiêu | 31/03/2025 (VND) |\n|:---|:---|\n| Giá trị lợi thế thương mại đầu kỳ | 8.839.457.636 |\n| Lợi thế thương mại tăng trong kỳ | - |\n| Lợi thế thương mại giảm do chuyển nhượng vốn một phần | - |\n| Lợi thế thương mại đã phân bổ trong kỳ | 552.466.102 |\n| Giá trị lợi thế thương mại cuối kỳ | 8.286.991.534 |\n| Tổng cộng | 8.286.991.534 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng vay dài hạn vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của 'Bất động sản đầu tư' cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị lợi thế thương mại đầu kỳ và cuối kỳ, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Vay dài hạn từ 'Vốn vay cho vay lại của UBND Tỉnh Hà Nam từ Chính phủ' có thay đổi trong kỳ không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cấu trúc nợ dài hạn và tác động của nó đến khả năng trả nợ dài hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích lý do lợi thế thương mại giảm và tác động của nó đến tài sản vô hình của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của sự gia tăng bất động sản đầu tư đến dòng tiền từ hoạt động đầu tư trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Phải trả người bán, Tiền nhận trước của khách hàng, Thuế và các khoản phải nộp Nhà nước (Phần 1)\nLoại nội dung: Bảng\n\n5.14. PHẢI TRẢ NGƯỜI BÁN\n| Chỉ tiêu | Giá trị (31/03/2025) | Khả năng thanh toán (31/03/2025) | Giá trị (01/01/2025) | Khả năng thanh toán (01/01/2025) |\n|:---|:---|:---|:---|:---|\n| a. Phải trả người bán ngắn hạn | 16.627.436.471 | 16.627.436.471 | 10.805.660.880 | 10.805.660.880 |\n| - Phải trả cho các nhà cung cấp chiếm 10% trở lên | 8.740.454.153 | 8.740.454.153 | 5.288.781.005 | 5.288.781.005 |\n| Công ty TNHH Đầu tư Xây dựng và Thương mại Tân Sáng | 5.510.011.149 | 5.510.011.149 | - | - |\n| Công ty Cổ phần Thương mại Thanh Nam | 1.201.418.004 | 1.201.418.004 | 1.421.852.005 | 1.421.852.005 |\n| Công ty TNHH Vận tải Thanh Hằng | - | - | 1.837.904.000 | 1.837.904.000 |\n| Sở Tài chính Hà Nam | 2.029.025.000 | 2.029.025.000 | 2.029.025.000 | 2.029.025.000 |\n| - Các đối tượng khác | 7.886.982.318 | 7.886.982.318 | 5.516.879.875 | 5.516.879.875 |\n| Tổng cộng | 16.627.436.471 | 16.627.436.471 | 10.805.660.880 | 10.805.660.880 |\n\n5.15. TIỀN NHẬN TRƯỚC CỦA KHÁCH HÀNG\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| a. Tiền nhận trước ngắn hạn của khách hàng | | |\n| Chi nhánh II Bệnh viện Bạch Mai – Hạ tầng kỹ thuật | 28.618.399.800 | 50.798.017.600 |\n| Chi nhánh II Bệnh viện Hữu nghị Việt Đức – Hạ tầng kỹ thuật | 50.798.017.600 | 28.618.399.800 |\n| Các đối tượng khác | 6.494.860.462 | 2.036.471.949 |\n| Tổng cộng | 85.911.277.862 | 81.452.889.349 |\n| b. Tiền nhận trước từ các bên liên quan | - | - |\n\n5.16. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC\n| Chỉ tiêu | Số dư 01/01/2025 (VND) | Phát sinh trong kỳ (VND) | Đã nộp trong kỳ (VND) | Số dư 31/03/2025 (VND) |\n|:---|:---|:---|:---|:---|\n| a. Các khoản phải nộp | | | | |\n| Thuế giá trị gia tăng | 3.015.316.814 | 3.015.316.812 | 3.015.316.814 | 2 |\n| Thuế thu nhập doanh nghiệp | 9.032.130.094 | 25.616.995.999 | 10.023.886.836 | 24.625.239.257 |\n| Thuế thu nhập cá nhân | 10.593.060 | 9.185.763 | - | 19.778.823 |\n| Phí bảo vệ môi trường và các khoản thuế khác | 96.000.000 | - | - | 96.000.000 |\n| Thuế tài nguyên | 176.241.793 | 74.462.150 | 96.036.697 | 154.667.246 |\n| Tổng cộng | 9.314.964.947 | 28.715.960.726 | 13.135.240.345 | 24.895.685.328 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng 'Phải trả người bán ngắn hạn' vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư 'Thuế thu nhập doanh nghiệp' phải nộp vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Tiền nhận trước ngắn hạn của khách hàng' từ Chi nhánh II Bệnh viện Bạch Mai giữa hai kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Phải trả người bán ngắn hạn' nào tăng mạnh nhất trong kỳ này?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc tăng 'Phải trả người bán ngắn hạn' đến dòng tiền hoạt động của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tiềm ẩn khi số dư 'Thuế giá trị gia tăng' phải nộp giảm đáng kể trong khi 'Phát sinh trong kỳ' lại cao.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự thay đổi trong 'Tiền nhận trước của khách hàng' đến doanh thu trong các kỳ tiếp theo.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thuế và các khoản phải nộp Nhà nước (Phần 2), Chi phí phải trả, Các khoản phải trả khác\nLoại nội dung: Bảng\n\n5.16. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC (Tiếp theo)\n| Chỉ tiêu | Số dư 01/01/2025 (VND) | Phát sinh trong kỳ (VND) | Đã nộp trong kỳ (VND) | Số dư 31/03/2025 (VND) |\n|:---|:---|:---|:---|:---|\n| b. Các khoản phải thu | | | | |\n| Thuế thu nhập cá nhân | 128.432 | 1.610.127 | 1.481.695 | - |\n| Thuế giá trị gia tăng | 930.633.966 | 4.360.221.176 | 3.720.598.245 | 291.011.035 |\n| Tổng cộng | 930.762.398 | 4.361.831.303 | 3.722.079.940 | 291.011.035 |\n\n5.17. CHI PHÍ PHẢI TRẢ\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| a. Ngắn hạn | 127.222.222 | 127.222.222 |\n| b. Dài hạn | 273.355.394.687 | 273.355.394.687 |\n| - Chi phí xây dựng phải trả | 273.355.394.687 | 273.355.394.687 |\n| Tổng cộng | 273.482.616.909 | 273.482.616.909 |\n\n5.18. CÁC KHOẢN PHẢI TRẢ KHÁC\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| a. Ngắn hạn | 54.519.136.437 | 92.587.530.269 |\n| - Tiền nhận đặt cọc, nhận thế chấp | 54.442.533.269 | 92.587.530.269 |\n| - Quỹ công đoàn | 11.898.924 | - |\n| - Bảo hiểm xã hội | 50.766.981 | - |\n| - Bảo hiểm y tế | 8.958.879 | - |\n| - Bảo hiểm thất nghiệp | 3.981.724 | - |\n| - Các khoản phải trả khác | 996.660 | - |\n| Tổng cộng | 54.519.136.437 | 92.587.530.269 |\n| b. Dài hạn | | |\n| - Các khoản phải trả khác | 46.644.917.793 | 46.644.917.793 |\n| Khoản phải trả cho Ngân sách Nhà nước Tỉnh Hà Nam | 24.759.141.793 | 24.759.141.793 |\n| UBND Tỉnh Hà Nam | 21.885.776.000 | 21.885.776.000 |\n| - Tiền nhận đặt cọc, nhận thế chấp | 171.908.017 | 143.408.017 |\n| Tổng cộng | 46.816.825.810 | 46.788.325.810 |\n- Quyết định số 295/QĐ-UBND của UBND tỉnh Hà Nam ngày 31 tháng 01 năm 2019, phê duyệt điều chỉnh quyết toán vốn đầu tư hoàn thành dự án thành phần Xây dựng hệ thống cấp nước sạch cho xã Liêm Tuyền và xã Liêm Tiết, huyện Thanh Liêm, tỉnh Hà Nam, thuộc hợp phần cấp nước của Chương trình cấp nước sạch và vệ sinh môi trường nông thôn dựa trên kết quả ở tỉnh Hà Nam.\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng 'Thuế giá trị gia tăng' phải thu vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị 'Chi phí xây dựng phải trả' dài hạn vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Tiền nhận đặt cọc, nhận thế chấp' ngắn hạn giữa hai kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Các khoản phải trả khác' ngắn hạn đã giảm bao nhiêu trong kỳ này?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tình hình các khoản phải thu và phải trả với Nhà nước của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc 'Tiền nhận đặt cọc, nhận thế chấp' ngắn hạn giảm mạnh đến nguồn vốn lưu động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro thanh khoản nếu các khoản phải nộp Nhà nước tiếp tục tăng trong khi các khoản phải thu giảm.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Dự phòng phải trả, Vốn chủ sở hữu (Báo cáo thay đổi vốn chủ sở hữu)\nLoại nội dung: Bảng\n\n5.19. DỰ PHÒNG PHẢI TRẢ\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| b. Dài hạn | 280.709.483.566 | 271.433.118.457 |\n| - Dự phòng chi phí sửa chữa hạ tầng | 280.709.483.566 | 271.433.118.457 |\n| Tổng cộng | 280.709.483.566 | 271.433.118.457 |\nĐây là khoản dự phòng được trích lập cho chi phí sửa chữa hạ tầng khu công nghiệp trong tương lai, do Công ty đã ghi nhận doanh thu một lần.\n\n5.20. VỐN CHỦ SỞ HỮU\nBáo cáo thay đổi vốn chủ sở hữu\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu (VND) | Lợi ích cổ đông không kiểm soát (VND) | Quỹ đầu tư phát triển (VND) | Lợi nhuận sau thuế chưa phân phối (VND) | Tổng cộng (VND) |\n|:---|:---|:---|:---|:---|:---|\n| Số dư đầu kỳ năm trước | 493.444.160.000 | 274.502.255.340 | 114.638.546.830 | 350.357.191.545 | 1.232.942.153.715 |\n| Tăng vốn trong năm trước | 81.443.690.000 | - | - | - | 81.443.690.000 |\n| Lợi nhuận năm trước | - | 55.785.428.431 | - | 120.416.761.222 | 176.202.189.653 |\n| Trích lập các quỹ | - | 1.066.279.646 | 37.624.438.918 | 39.604.672.454 | 3.046.513.182 |\n| Phân phối lợi nhuận | - | 85.302.371.639 | - | 81.443.690.000 | 166.746.061.639 |\n| Số dư cuối kỳ năm trước | 574.887.850.000 | 243.919.032.486 | 152.262.985.748 | 349.725.590.313 | 1.320.795.458.547 |\n| Lợi nhuận kỳ này | - | 32.504.319.113 | - | 68.175.037.201 | 100.679.356.314 |\n| Số dư cuối kỳ này | 574.887.850.000 | 276.423.351.599 | 152.262.985.748 | 417.900.627.514 | 1.421.474.814.861 |\nThuyết minh Báo cáo tài chính hợp nhất là bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng 'Dự phòng phải trả dài hạn' vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vốn đầu tư của chủ sở hữu vào cuối kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối kỳ này là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh 'Lợi ích cổ đông không kiểm soát' giữa số dư cuối kỳ năm trước và cuối kỳ này.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích mục đích của khoản 'Dự phòng chi phí sửa chữa hạ tầng' dài hạn.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của 'Lợi nhuận kỳ này' đến tổng vốn chủ sở hữu.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá chiến lược phân phối lợi nhuận và trích lập các quỹ của công ty dựa trên bảng thay đổi vốn chủ sở hữu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Vốn chủ sở hữu (Chi tiết đóng góp vốn, Cổ phiếu, Các quỹ)\nLoại nội dung: Bảng\n\n5.20. VỐN CHỦ SỞ HỮU (Tiếp theo)\nChi tiết đóng góp vốn của chủ sở hữu\n| Chỉ tiêu | Tỷ lệ sở hữu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|:---|\n| Vốn góp của các bên khác | | | |\n| Ông Nguyễn Huy Cường | 29,22% | 167.958.610.000 | 167.958.610.000 |\n| Bà Nguyễn Thanh Tâm | 5,83% | 33.529.030.000 | 33.529.030.000 |\n| Ông Nguyễn Quang Tri | 5,27% | 30.314.460.000 | 30.314.460.000 |\n| Các bên khác | 59,68% | 343.085.750.000 | 343.085.750.000 |\n| Tổng cộng | 100% | 574.887.850.000 | 574.887.850.000 |\n\nb. Các giao dịch vốn với chủ sở hữu và phân phối cổ tức, chia lợi nhuận\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| Vốn đầu tư đầu kỳ | 574.887.850.000 | 493.444.160.000 |\n| Tăng vốn trong kỳ | - | - |\n| Giảm vốn trong kỳ | - | - |\n| Vốn đầu tư cuối kỳ | 574.887.850.000 | 493.444.160.000 |\n\nCổ phiếu\n| Chỉ tiêu | 31/03/2025 | 01/01/2025 |\n|:---|:---|:---|\n| Số lượng cổ phiếu đăng ký phát hành | - | 49.344.416 |\n| Số lượng cổ phiếu đã phát hành ra công chúng | 57.488.785 | 49.344.416 |\n| - Cổ phiếu phổ thông | 57.488.785 | 49.344.416 |\n| Số lượng cổ phiếu đang lưu hành | 57.488.785 | 49.344.416 |\n| - Cổ phiếu phổ thông | 57.488.785 | 49.344.416 |\n| Mệnh giá của một cổ phiếu đang lưu hành | 10.000 VND/cổ phiếu | 10.000 VND/cổ phiếu |\n\nLãi cơ bản trên cổ phiếu\n| Chỉ tiêu | Kỳ này | Kỳ trước |\n|:---|:---|:---|\n| Lợi nhuận sau thuế | 68.175.037.201 | 51.351.379.185 |\n| Điều chỉnh tăng hoặc giảm lợi nhuận kế toán để xác định lợi nhuận hoặc lỗ phân bổ cho các cổ đông sở hữu cổ phiếu | - | - |\n| Số lượng cổ phiếu bình quân gia quyền đang lưu hành trong kỳ | 57.488.785 | 49.344.416 |\n| Lãi cơ bản trên cổ phiếu | 1.186 | 1.041 |\n\nCác quỹ của công ty\n| Chỉ tiêu | 31/03/2025 (VND) | 01/01/2025 (VND) |\n|:---|:---|:---|\n| Quỹ đầu tư phát triển | 152.262.985.748 | 152.262.985.748 |\n| Quỹ khen thưởng, phúc lợi | 8.601.984.742 | 9.234.092.150 |\n| Tổng cộng | 160.864.970.490 | 161.497.077.898 |\nThuyết minh Báo cáo tài chính hợp nhất là bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng vốn đầu tư của chủ sở hữu do Ông Nguyễn Huy Cường đóng góp vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành vào ngày 31/03/2025 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mệnh giá của một cổ phiếu đang lưu hành là bao nhiêu VND?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh Lãi cơ bản trên cổ phiếu kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự thay đổi trong tổng số vốn đầu tư đầu kỳ so với cuối kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc số lượng cổ phiếu đang lưu hành tăng lên đến lãi cơ bản trên cổ phiếu.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá cơ cấu vốn chủ sở hữu của công ty và ảnh hưởng của nó đến quyền kiểm soát của các cổ đông lớn.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin bổ sung cho các khoản mục trên báo cáo kết quả hoạt động kinh doanh riêng\nLoại nội dung: Bảng\n\n6. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRÊN BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH RIÊNG\nTổng doanh thu từ bán hàng và cung cấp dịch vụ\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Doanh thu từ bán bê tông | 10.948.369.907 | 5.006.418.601 |\n| Doanh thu từ hoạt động xây dựng | - | 42.324.575.444 |\n| Doanh thu từ dịch vụ cảng biển | 11.729.047.277 | - |\n| Doanh thu từ cho thuê và quản lý hạ tầng | 170.270.827.342 | 126.441.449.446 |\n| Doanh thu khác | 26.074.664.485 | 27.875.259.969 |\n| Tổng cộng | 219.022.909.011 | 201.647.703.460 |\n\nGiá vốn hàng bán và cung cấp dịch vụ\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Giá vốn bán bê tông | 8.053.484.519 | 4.025.534.905 |\n| Giá vốn xây dựng | - | 33.242.868.964 |\n| Giá vốn dịch vụ cảng biển | 4.497.953.123 | - |\n| Giá vốn cho thuê và quản lý hạ tầng | 56.363.265.467 | 45.752.759.034 |\n| Giá vốn hàng bán khác | 23.361.580.089 | 21.766.568.121 |\n| Tổng cộng | 92.276.283.198 | 104.787.731.024 |\n\n6.3 Doanh thu hoạt động tài chính\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Thu nhập lãi tiền gửi và cho vay | 5.154.055.404 | 7.534.916.516 |\n| Tổng cộng | 5.154.055.404 | 7.534.916.516 |\n\n6.4 Chi phí tài chính\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Chi phí lãi vay | 1.470.003.263 | 1.227.896.311 |\n| Tổng cộng | 1.470.003.263 | 1.227.896.311 |\n\n6.5 Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Chi phí bán hàng | 1.169.219.969 | - |\n| - Phí môi giới bất động sản | 1.169.219.969 | - |\n| Chi phí quản lý doanh nghiệp | 2.374.988.705 | 8.296.957.682 |\n| Chi tiết các khoản chi phí chiếm 10% trở lên trên tổng chi phí quản lý | 2.302.310.133 | 6.574.040.114 |\n| Chi phí khấu hao | 328.200.537 | 317.309.181 |\n| Chi phí nhân công | 1.421.643.494 | 945.932.514 |\n| Phân bổ lợi thế thương mại | 552.466.102 | 552.466.102 |\n| Chi phí dự phòng phải thu khó đòi | - | 4.758.332.317 |\n| Chi phí quản lý khác | 72.678.572 | 1.722.917.568 |\n| Tổng cộng | 3.544.208.674 | 8.296.957.682 |\n\n6.6 Thu nhập khác\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Thu nhập từ thanh lý tài sản | 225.000.000 | - |\n| Thu nhập khác | 46.465.000 | - |\n| Tổng cộng | 271.465.000 | - |\n\n6.7 Chi phí khác\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Chi phí khác | 1.145.254 | 45.107.267 |\n| Tổng cộng | 1.145.254 | 45.107.267 |\n\n6.8 Chi phí thuế thu nhập doanh nghiệp hiện hành\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|\n| Chi phí thuế thu nhập doanh nghiệp hiện hành | 25.616.995.999 | 19.095.953.313 |\n| Tổng cộng | 25.616.995.999 | 19.095.953.313 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Tổng doanh thu từ cho thuê và quản lý hạ tầng trong kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí lãi vay trong kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Doanh thu từ bán bê tông' kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoản mục 'Chi phí dự phòng phải thu khó đòi' đã thay đổi như thế nào giữa hai kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cấu trúc doanh thu của công ty giữa hai kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không còn 'Doanh thu từ hoạt động xây dựng' và 'Giá vốn xây dựng' đến hoạt động kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự gia tăng 'Chi phí nhân công' đến lợi nhuận ròng của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin khác (Phần 1: Rủi ro thị trường)\nLoại nội dung: Văn bản\n\n7. THÔNG TIN KHÁC\n7.1 Các khoản nợ tiềm tàng, cam kết và các thông tin tài chính khác\n7.2 Các sự kiện sau ngày báo cáo\n7.3 Báo cáo theo bộ phận\n7.4 Các sự kiện quan trọng phát sinh trong kỳ tài chính\n7.5 Các công cụ tài chính\nCông ty phải đối mặt với các rủi ro sau khi sử dụng các công cụ tài chính:\n- Rủi ro thị trường\n- Rủi ro tín dụng\n- Rủi ro thanh khoản\nBan Giám đốc có trách nhiệm tổng thể trong việc thiết lập và giám sát quản lý rủi ro tài chính. Ban Giám đốc thiết lập các chính sách để xác định và phân tích các rủi ro mà Công ty phải đối mặt, để đặt ra các giới hạn và kiểm soát rủi ro phù hợp, và để giám sát rủi ro và tuân thủ các giới hạn rủi ro. Hệ thống và chính sách quản lý rủi ro được xem xét định kỳ để phản ánh những thay đổi trong điều kiện thị trường và hoạt động của Công ty.\nBan Giám đốc xem xét và đồng ý áp dụng các chính sách quản lý đối với các rủi ro trên như sau:\ni. Rủi ro thị trường\nRủi ro thị trường là rủi ro mà giá trị hợp lý của dòng tiền tương lai của một công cụ tài chính sẽ biến động do thay đổi trong giá thị trường. Có bốn loại rủi ro thị trường: rủi ro lãi suất, rủi ro tiền tệ, rủi ro giá hàng hóa và các rủi ro giá khác.\nRủi ro lãi suất\nRủi ro lãi suất là rủi ro mà giá trị hợp lý hoặc dòng tiền tương lai của một công cụ tài chính sẽ biến động do thay đổi trong lãi suất thị trường. Rủi ro thị trường của Công ty do thay đổi lãi suất chủ yếu liên quan đến tiền mặt, tiền gửi ngắn hạn và các khoản vay của Công ty.\nCông ty quản lý rủi ro lãi suất bằng cách phân tích tình hình thị trường cạnh tranh để có được lãi suất có lợi cho mục đích của Công ty và vẫn nằm trong giới hạn quản lý rủi ro của mình.\nRủi ro ngoại hối\nRủi ro ngoại hối là rủi ro mà giá trị hợp lý của dòng tiền tương lai của một công cụ tài chính sẽ biến động do thay đổi trong tỷ giá hối đoái. Công ty phải đối mặt với các rủi ro do thay đổi tỷ giá hối đoái liên quan trực tiếp đến hoạt động kinh doanh của Công ty.",
+    "questions": [
+      {
+        "question": "Các loại rủi ro tài chính mà công ty phải đối mặt khi sử dụng công cụ tài chính là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Trách nhiệm tổng thể trong việc thiết lập và giám sát quản lý rủi ro tài chính thuộc về ai?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Nêu định nghĩa về rủi ro thị trường.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty quản lý rủi ro lãi suất bằng cách nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc quản lý rủi ro thị trường đối với hoạt động kinh doanh của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích mối liên hệ giữa các chính sách quản lý rủi ro và sự ổn định tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của biến động tỷ giá hối đoái đến doanh thu và chi phí của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "25",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin khác (Phần 2: Rủi ro tín dụng và Thanh khoản)\nLoại nội dung: Văn bản và Bảng\n\nii. Rủi ro tín dụng\nRủi ro tín dụng là rủi ro mà một đối tác sẽ không thực hiện nghĩa vụ của mình theo một công cụ tài chính hoặc hợp đồng giao dịch, dẫn đến tổn thất tài chính. Công ty phải đối mặt với rủi ro tín dụng từ các hoạt động kinh doanh và từ các hoạt động tài chính của mình, bao gồm tiền gửi ngân hàng, các khoản cho vay và các công cụ tài chính khác.\nCác khoản phải thu\nCông ty thường xuyên theo dõi các khoản phải thu còn outstanding từ khách hàng. Đối với các khách hàng lớn, Công ty xem xét chất lượng tín dụng của từng khách hàng tại ngày báo cáo để đánh giá sự suy giảm. Công ty cố gắng duy trì kiểm soát chặt chẽ các khoản phải thu outstanding và có nhân viên kiểm soát tín dụng để giảm thiểu rủi ro tín dụng.\nCông ty sẽ thiết lập dự phòng tổn thất để phản ánh ước tính tổn thất giảm giá trị đối với các khoản phải thu thương mại, các khoản phải thu khác và các khoản đầu tư. Thành phần chính của dự phòng tổn thất này là khoản lỗ cụ thể liên quan đến tổn thất giảm giá trị cụ thể cho từng khách hàng.\nTiền gửi ngân hàng\nCông ty chủ yếu duy trì các khoản tiền gửi của mình tại các ngân hàng nổi tiếng tại Việt Nam. Rủi ro tín dụng từ các khoản tiền gửi tại ngân hàng được quản lý bởi bộ phận kho bạc của Công ty theo chính sách của Công ty. Khoản lỗ tối đa của Công ty do rủi ro tín dụng đối với các khoản mục trên bảng cân đối kế toán vào cuối năm tài chính là giá trị ghi sổ như được công bố tại Thuyết minh 5.1. Công ty cho rằng mức độ tập trung rủi ro tín dụng đối với tiền gửi ngân hàng là thấp.\n\niii. Rủi ro thanh khoản\nRủi ro thanh khoản là rủi ro mà Công ty sẽ gặp khó khăn trong việc thực hiện các nghĩa vụ tài chính của mình do thiếu vốn. Rủi ro thanh khoản của Công ty phát sinh chủ yếu từ việc các tài sản tài chính và nợ tài chính có kỳ hạn đáo hạn khác nhau.\nCông ty giảm thiểu rủi ro thanh khoản bằng cách duy trì một mức độ tiền mặt và các khoản tương đương tiền và các khoản vay ngân hàng mà Ban Giám đốc tin rằng là đủ để tài trợ cho hoạt động của Công ty và giảm thiểu rủi ro biến động dòng tiền.\nBảng dưới đây phân tích các tài sản tài chính phi phái sinh và nợ tài chính thành các nhóm đáo hạn có liên quan dựa trên thời gian còn lại từ ngày bảng cân đối kế toán đến ngày đáo hạn theo hợp đồng. Các số liệu trình bày trong bảng là các dòng tiền theo hợp đồng chưa chiết khấu. Việc trình bày thông tin về tài sản tài chính phi phái sinh là cần thiết để hiểu về quản lý rủi ro thanh khoản của Công ty vì thanh khoản được quản lý trên cơ sở tài sản và nợ ròng.\n\n| Chỉ tiêu | Dưới 1 năm (VND) | 1 năm trở lên (VND) | Tổng cộng (VND) |\n|:---|:---|:---|:---|\n| 31/03/2025 | | | |\n| Tiền và các khoản tương đương tiền | 220.702.389.841 | - | 220.702.389.841 |\n| Các khoản phải thu khách hàng | 118.745.423.006 | - | 118.745.423.006 |\n| Đầu tư | 442.589.959.225 | 17.727.083.512 | 460.317.042.737 |\n| Các khoản phải thu khác | 150.661.099 | 586.016.538.007 | 586.167.199.106 |\n| Các tài sản tài chính khác | - | - | - |\n| Trừ đi: | | | |\n| Dự phòng phải thu khó đòi | 66.321.686.390 | - | 66.321.686.390 |\n| Dự phòng giảm giá các khoản đầu tư | - | - | - |\n| Tổng cộng | 715.866.746.781 | 603.743.621.519 | 1.319.610.368.300 |\n| Các khoản vay và thuê tài chính | 45.468.919.300 | 85.949.614.450 | 131.418.533.750 |\n| Phải trả người bán | 16.627.436.471 | - | 16.627.436.471 |\n| Các khoản phải trả khác và chi phí phải trả | 54.646.358.659 | 320.172.220.497 | 374.818.579.156 |\n| Tổng cộng | 116.742.714.430 | 406.121.834.947 | 522.864.549.377 |\n| Khoảng cách thanh khoản ròng | 599.124.032.351 | 197.621.786.572 | 796.745.818.923 |\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Định nghĩa về rủi ro tín dụng là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị 'Các khoản vay và thuê tài chính' đáo hạn dưới 1 năm vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty quản lý rủi ro tín dụng đối với các khoản phải thu bằng cách nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khoảng cách thanh khoản ròng cho kỳ hạn 'Dưới 1 năm' là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tập trung rủi ro tín dụng đối với tiền gửi ngân hàng của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích chiến lược của công ty để giảm thiểu rủi ro thanh khoản.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của 'Khoảng cách thanh khoản ròng' dương lớn đến khả năng huy động vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "26",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin khác (Phần 3: Rủi ro thanh khoản và Giá trị hợp lý)\nLoại nội dung: Bảng\n\niii. Rủi ro thanh khoản (Tiếp theo)\n| Chỉ tiêu | Dưới 1 năm (VND) | 1 năm trở lên (VND) | Tổng cộng (VND) |\n|:---|:---|:---|:---|\n| 01/01/2025 | | | |\n| Tiền và các khoản tương đương tiền | 242.507.970.844 | - | 242.507.970.844 |\n| Các khoản phải thu khách hàng | 118.996.174.141 | - | 118.996.174.141 |\n| Đầu tư | 365.100.142.716 | 17.727.083.512 | 382.827.226.228 |\n| Các khoản phải thu khác | 150.661.099 | 586.016.538.007 | 586.167.199.106 |\n| Trừ đi: | | | |\n| Dự phòng phải thu khó đòi | 66.321.686.390 | - | 66.321.686.390 |\n| Tổng cộng | 660.433.262.410 | 603.743.621.519 | 1.264.176.883.929 |\n| Các khoản vay và thuê tài chính | 46.028.752.261 | 43.604.695.150 | 89.633.447.411 |\n| Phải trả người bán | 10.805.660.880 | - | 10.805.660.880 |\n| Các khoản phải trả khác và chi phí phải trả | 92.714.752.491 | 320.143.720.497 | 412.858.472.988 |\n| Tổng cộng | 149.549.165.632 | 363.748.415.647 | 513.297.581.279 |\n| Khoảng cách thanh khoản ròng | 510.884.096.778 | 239.995.205.872 | 750.879.302.650 |\nCông ty tin rằng mức độ tập trung rủi ro đối với việc trả nợ là thấp. Công ty có khả năng thanh toán các khoản nợ đến hạn từ dòng tiền từ hoạt động kinh doanh và tiền thu từ các tài sản tài chính đáo hạn.\n\niv. Giá trị hợp lý\n| Chỉ tiêu | Giá trị ghi sổ (31/03/2025) | Giá trị ghi sổ (01/01/2025) | Giá trị hợp lý (31/03/2025) | Giá trị hợp lý (01/01/2025) |\n|:---|:---|:---|:---|:---|\n| Tài sản tài chính | | | | |\n| Phải thu khách hàng và các khoản phải thu khác | 118.896.084.105 | 119.146.835.240 | 52.574.397.715 | 52.825.148.850 |\n| Các tài sản khác | 405.539.429.431 | 391.492.953.719 | 405.539.429.431 | 391.492.953.719 |\n| Tài sản tài chính sẵn sàng để bán | 17.727.083.512 | 17.727.083.512 | - | - |\n| Tiền và các khoản tương đương tiền | 220.702.389.841 | 242.507.970.844 | 220.702.389.841 | 242.507.970.844 |\n| Tổng cộng | 762.864.986.889 | 770.874.843.315 | - | - |\n| Nợ tài chính | | | | |\n| Các khoản vay và thuê tài chính | 85.949.614.450 | 89.633.447.411 | 85.949.614.450 | 89.633.447.411 |\n| Phải trả người bán | 16.627.436.471 | 10.805.660.880 | 16.627.436.471 | 10.805.660.880 |\n| Các khoản phải trả khác | 101.335.962.247 | 139.375.856.079 | 101.335.962.247 | 139.375.856.079 |\n| Tổng cộng | 203.913.013.168 | 239.814.964.370 | 203.913.013.168 | 239.814.964.370 |\n- Về việc xác định giá trị hợp lý của các tài sản và nợ tài chính này cho mục đích công bố theo quy định tại Điều 28 của Thông tư 201/2009/TT-BTC ngày 06 tháng 11 năm 2009 của Bộ Tài chính, vì không có giá trị thị trường niêm yết cho các tài sản và nợ tài chính này và Chuẩn mực kế toán Việt Nam, Chế độ kế toán Việt Nam không có hướng dẫn về cách tính giá trị hợp lý trong trường hợp không có giá trị thị trường niêm yết, Công ty đã không xác định giá trị hợp lý của các tài sản và nợ tài chính này cho mục đích công bố.\nBan Giám đốc đã đánh giá rằng giá trị hợp lý của các tài sản và nợ tài chính này không khác biệt đáng kể so với giá trị ghi sổ của chúng tại ngày báo cáo tài chính.",
+    "questions": [
+      {
+        "question": "Tổng 'Các khoản vay và thuê tài chính' có kỳ hạn '1 năm trở lên' vào ngày 01/01/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng giá trị ghi sổ của 'Tài sản tài chính' vào ngày 31/03/2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Khoảng cách thanh khoản ròng' giữa ngày 31/03/2025 và 01/01/2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tại sao công ty không xác định giá trị hợp lý của một số tài sản và nợ tài chính?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá nhận định của Ban Giám đốc về sự khác biệt giữa giá trị hợp lý và giá trị ghi sổ của tài sản và nợ tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh khoản tiềm ẩn nếu công ty gặp khó khăn trong việc chuyển đổi các khoản đầu tư dài hạn thành tiền mặt.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ minh bạch của công ty trong việc công bố thông tin về giá trị hợp lý của các công cụ tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "27",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Thuyết minh Báo cáo tài chính hợp nhất - Thông tin khác (Phần 4: Các bên liên quan, Thông tin so sánh, Giả định hoạt động liên tục)\nLoại nội dung: Văn bản và Bảng\n\n7.6 Thông tin về các bên liên quan\nCác bên liên quan\nTrong kỳ báo cáo và tại cuối kỳ báo cáo, các bên sau đây được xác định là bên liên quan của Công ty:\n| Bên liên quan | Địa chỉ | Mối quan hệ |\n|:---|:---|:---|\n| Ông Nguyễn Huy Cường | Hà Nam | Chủ tịch Hội đồng quản trị |\n| Bà Nguyễn Thanh Tâm | Hà Nam | Thành viên Hội đồng quản trị |\n| Ông Nguyễn Hữu Thuyết | Hà Nội | Thành viên Hội đồng quản trị |\n| Ông Trần Việt Đức | Hà Nam | Tổng Giám đốc |\n| Ông Nguyễn Quang Tri | Hà Nam | Phó Tổng Giám đốc |\n| Ông Phạm Văn Hà | Hà Nam | Trưởng Ban kiểm soát |\n| Ông Nguyễn Đức Du | Hà Nam | Thành viên Ban kiểm soát |\n| Công ty Cổ phần Tân Cảng – Đồng Văn Hà Nam | Hà Nam | Công ty liên kết |\n| Công ty Cổ phần Thương mại Xây dựng Trí Dũng | Hà Nam | Các thành viên chủ chốt giống nhau |\nNgoài ra, các bên liên quan còn bao gồm các cá nhân có quan hệ với Hội đồng quản trị, Ban điều hành và Ban kiểm soát, như vợ/chồng, con cái và các đối tượng khác theo quy định của pháp luật.\n\nCác giao dịch với các bên liên quan\nNgoài các giao dịch với bên liên quan đã đề cập ở trên, các giao dịch quan trọng của Công ty với các bên liên quan trong kỳ kế toán bao gồm:\n| Bên liên quan | Nội dung | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|:---|\n| Công ty TNHH Quang Anh | Bán hàng và dịch vụ | 10.300.069 | 14.353.620 |\n| | Thu tiền bán hàng và dịch vụ | 10.300.069 | 14.353.620 |\n\nTiền lương và phụ cấp đã trả trong kỳ cho các thành viên Hội đồng quản trị và Ban điều hành\n| Tên | Chức vụ | Kỳ này (VND) | Kỳ trước (VND) |\n|:---|:---|:---|:---|\n| Ông Nguyễn Huy Cường | Chủ tịch Hội đồng quản trị | 101.190.827 | 134.435.918 |\n| Ông Trần Việt Đức | Tổng Giám đốc | 26.241.849 | 40.353.462 |\n| Ông Nguyễn Quang Tri | Phó Tổng Giám đốc | 22.404.645 | 27.675.000 |\n| Ông Vũ Anh Tân | Phó Giám đốc công ty con | 21.701.400 | 48.504.900 |\n| Bà Nguyễn Ngọc Lan | Phó Giám đốc công ty con | 54.189.067 | 20.823.600 |\n| Bà Nguyễn Thanh Tâm | Thành viên Hội đồng quản trị | 20.789.261 | 27.675.000 |\n| Ông Nguyễn Đức Du | Thành viên Ban kiểm soát | 24.064.793 | 39.360.000 |\n| Ông Phạm Văn Hà | Trưởng Ban kiểm soát | 23.832.094 | 33.517.500 |\n| Bà Nguyễn Thùy Vân | Thành viên Ban kiểm soát | 18.601.391 | 27.675.000 |\n| Tổng cộng | | 313.015.327 | 400.020.380 |\n\n7.7 Thông tin so sánh\nCác số liệu so sánh là các số liệu được trình bày trong báo cáo tài chính hợp nhất cho năm tài chính kết thúc ngày 31 tháng 12 năm 2024 của Công ty Cổ phần Đầu tư Phát triển Thành Đạt, đã được kiểm toán bởi Công ty TNHH Kiểm toán và Định giá Quốc tế, và báo cáo tài chính hợp nhất quý I năm 2024, do Công ty tự lập và chưa được kiểm toán.\n\n7.8 Giả định hoạt động liên tục\nCác báo cáo tài chính riêng này được lập trên cơ sở giả định hoạt động liên tục.\n\n7.9 Các thông tin khác\nNgoài các thông tin đã trình bày, không có sự kiện quan trọng nào phát sinh trong năm yêu cầu công bố hoặc trình bày trong báo cáo tài chính riêng.\n\nHà Nam, ngày 28 tháng 04 năm 2025\nNGƯỜI LẬP BIỂU KẾ TOÁN TRƯỞNG TỔNG GIÁM ĐỐC\nĐinh Thị Phương Thảo Dương Thị Thu Hiền Trần Việt Đức\nBản thuyết minh Báo cáo tài chính hợp nhất là một bộ phận không tách rời của Báo cáo tài chính hợp nhất",
+    "questions": [
+      {
+        "question": "Ông Nguyễn Huy Cường giữ chức vụ gì trong công ty?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Tổng tiền lương và phụ cấp đã trả cho các thành viên Hội đồng quản trị và Ban điều hành trong kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu bán hàng và dịch vụ với Công ty TNHH Quang Anh giữa kỳ này và kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tại sao báo cáo tài chính hợp nhất quý I năm 2024 không được kiểm toán?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của các giao dịch với bên liên quan đối với báo cáo tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm lương và phụ cấp cho Ban lãnh đạo đến chi phí hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá giả định hoạt động liên tục và các rủi ro có thể ảnh hưởng đến giả định này.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "28",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Phát triển Thành Đạt\nMã cổ phiếu: DTD\nLoại báo cáo: Báo cáo tài chính hợp nhất Quý I/2025\nThời gian: Phát hành ngày 29/04/2025, Quý I/2025 (kết thúc ngày 31/03/2025)\nÝ kiến kiểm toán: Không có (Báo cáo chưa kiểm toán)\n\nSection: Giải trình biến động lợi nhuận sau thuế\nLoại nội dung: Văn bản\n\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nSố: 41/2025/CV-DTD Hà Nam, ngày 29 tháng 04 năm 2025\n\nV/v: Giải trình biến động lợi nhuận sau thuế tại Báo cáo tài chính Quý I năm 2025\n\nKính gửi:\n- Ủy ban Chứng khoán Nhà nước\n- Sở Giao dịch Chứng khoán Hà Nội\n\nCăn cứ:\n- Thông tư số 96/2020/TT-BTC ngày 16 tháng 11 năm 2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán;\n- Báo cáo tài chính riêng và báo cáo tài chính hợp nhất Quý I năm 2025 của Công ty.\n\nCông ty Cổ phần Đầu tư Phát triển Thành Đạt (sau đây gọi là Công ty) xin giải trình về sự chênh lệch lợi nhuận sau thuế tại báo cáo tài chính riêng và báo cáo tài chính hợp nhất Quý I năm 2025 so với cùng kỳ năm trước, cụ thể như sau:\n\nĐối với Báo cáo tài chính riêng Quý I năm 2025:\nLợi nhuận sau thuế trên báo cáo tài chính là 9.597.472.260 VND, so với 6.259.891.492 VND cùng kỳ năm trước, tăng 3.337.580.761 VND tương đương mức tăng 53,3%.\n\nĐối với Báo cáo tài chính hợp nhất Quý I năm 2025:\nLợi nhuận sau thuế trên báo cáo tài chính là 100.679.356.314 VND, so với 75.902.646.628 VND cùng kỳ năm trước, tăng 24.776.709.686 VND tương đương mức tăng 32,6%.\n\nNguyên nhân:\nĐối với Báo cáo tài chính riêng Quý I năm 2025:\nNguyên nhân chính dẫn đến sự gia tăng lợi nhuận sau thuế trên báo cáo tài chính riêng Quý I năm 2025 so với cùng kỳ năm trước là do chi phí quản lý doanh nghiệp giảm đáng kể. Cụ thể, chi phí quản lý doanh nghiệp Quý I năm 2025 là 1.563.155.495 VND, giảm 5.647.391.076 VND so với 7.210.546.571 VND cùng kỳ năm 2024.\n\nĐối với Báo cáo tài chính hợp nhất Quý I năm 2025:\nNguyên nhân dẫn đến sự gia tăng lợi nhuận sau thuế 24.776.709.686 VND trên báo cáo tài chính hợp nhất Quý I năm 2025 so với cùng kỳ năm trước chủ yếu là do giá vốn hàng bán giảm 12.511.447.826 VND, doanh thu cho thuê và quản lý hạ tầng tăng 43.829.377.896 VND, và doanh thu dịch vụ bốc xếp cảng tăng 11.729.047.277 VND.\n\nTrên đây là giải trình của Công ty Cổ phần Đầu tư Phát triển Thành Đạt về biến động lợi nhuận sau thuế tại báo cáo tài chính riêng và báo cáo tài chính hợp nhất Quý I năm 2025, trong đó mức chênh lệch vượt 10% so với cùng kỳ năm 2024.\n\nTrân trọng,\nNơi nhận:\n- Như trên\n- Lưu VP.",
+    "questions": [
+      {
+        "question": "Lợi nhuận sau thuế trên báo cáo tài chính riêng Quý I năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí quản lý doanh nghiệp trên báo cáo tài chính riêng Quý I năm 2025 là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế trên báo cáo tài chính hợp nhất Quý I năm 2025 tăng bao nhiêu phần trăm so với cùng kỳ năm trước?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích nguyên nhân chính dẫn đến sự gia tăng lợi nhuận sau thuế trên báo cáo tài chính riêng Quý I năm 2025.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích các yếu tố chính góp phần vào sự tăng trưởng lợi nhuận sau thuế trên báo cáo tài chính hợp nhất Quý I năm 2025.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tầm quan trọng của việc giảm chi phí quản lý doanh nghiệp đối với hiệu quả kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo liệu các yếu tố tăng trưởng doanh thu từ cho thuê hạ tầng và dịch vụ cảng có bền vững trong các quý tới hay không.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

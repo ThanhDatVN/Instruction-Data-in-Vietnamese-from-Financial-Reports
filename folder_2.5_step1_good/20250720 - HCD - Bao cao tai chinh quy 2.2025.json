@@ -1,0 +1,810 @@
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần A - Tài sản ngắn hạn)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|--------|--------------|-------------|------------|\n| A. TÀI SẢN NGẮN HẠN | 100 | 627.911.293.633 | 608.868.235.981 |\n| I. Tiền và các khoản tương đương tiền | 110 | 11.992.171.842 | 93.801.463.027 |\n| 1. Tiền | 111 | 11.992.171.842 | 49.532.463.027 |\n| 2. Các khoản tương đương tiền | 112 | - | 44.269.000.000 |\n| II. Các khoản đầu tư tài chính ngắn hạn | 120 | 49.109.100.118 | 58.295.100.118 |\n| 1. Chứng khoán kinh doanh | 121 | - | - |\n| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | - | - |\n| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | 49.109.100.118 | 58.295.100.118 |\n| III. Các khoản phải thu ngắn hạn | 130 | 240.422.904.035 | 174.208.637.599 |\n| 1. Phải thu ngắn hạn của khách hàng | 131 | 154.589.695.494 | 137.368.725.158 |\n| 2. Trả trước cho người bán ngắn hạn | 132 | 81.375.839.136 | 34.680.171.770 |\n| 3. Phải thu nội bộ ngắn hạn | 133 | 2.759.536.670 | - |\n| 5. Phải thu về cho vay ngắn hạn | 135 | - | - |\n| 6. Các khoản phải thu ngắn hạn khác | 136 | 1.697.832.735 | 2.159.740.671 |\n| 7. Dự phòng phải thu ngắn hạn khó đòi | 137 | - | - |\n| 8. Tài sản thiếu chờ xử lý | 139 | - | - |\n| IV. Hàng tồn kho | 140 | 320.050.172.252 | 278.201.388.153 |\n| 1. Hàng tồn kho | 141 | 320.050.172.252 | 278.201.388.153 |\n| 2. Dự phòng giảm giá hàng tồn kho | 149 | - | - |\n| V. Tài sản ngắn hạn khác | 150 | 6.336.945.386 | 4.361.647.084 |\n| 1. Chi phí trả trước ngắn hạn | 151 | - | - |\n| 2. Thuế GTGT được khấu trừ | 152 | 6.336.945.386 | 4.361.647.084 |\n| 5. Tài sản ngắn hạn khác | 155 | - | - |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã số của mục 'Tiền và các khoản tương đương tiền' là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "So sánh giá trị 'Hàng tồn kho' cuối kỳ với đầu năm, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng 'Các khoản phải thu ngắn hạn' trên tổng 'Tài sản ngắn hạn' cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng thanh khoản ngắn hạn của công ty dựa trên cơ cấu tài sản ngắn hạn hiện tại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán chỉ số thanh toán hiện thời (Current Ratio) nếu biết tổng nợ ngắn hạn cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của sự giảm mạnh trong 'Tiền và các khoản tương đương tiền' đến hoạt động kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần B - Tài sản dài hạn)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|--------|--------------|-------------|------------|\n| B. TÀI SẢN DÀI HẠN | 200 | 196.778.077.774 | 203.146.980.644 |\n| I. Các khoản phải thu dài hạn | 210 | - | - |\n| 1. Phải thu dài hạn của khách hàng | 211 | - | - |\n| 2. Trả trước cho người bán dài hạn | 212 | - | - |\n| 4. Phải thu nội bộ dài hạn | 214 | - | - |\n| 5. Phải thu về cho vay dài hạn | 215 | - | - |\n| 6. Phải thu dài hạn khác | 216 | - | - |\n| II. Tài sản cố định | 220 | 188.590.535.262 | 195.728.840.838 |\n| 1. Tài sản cố định hữu hình | 221 | 161.262.567.008 | 168.400.872.584 |\n| - Nguyên giá | 222 | 218.579.839.951 | 218.579.839.951 |\n| - Giá trị hao mòn lũy kế | 223 | 57.317.272.943 | 50.178.967.367 |\n| 2. Tài sản cố định thuê tài chính | 224 | - | - |\n| - Nguyên giá | 225 | - | - |\n| - Giá trị hao mòn lũy kế | 226 | - | - |\n| 3. Tài sản cố định vô hình | 227 | 27.327.968.254 | 27.327.968.254 |\n| - Nguyên giá | 228 | 27.327.968.254 | 27.327.968.254 |\n| - Giá trị hao mòn lũy kế | 229 | - | - |\n| III. Bất động sản đầu tư | 230 | - | - |\n| - Nguyên giá | 231 | - | - |\n| - Giá trị hao mòn lũy kế | 232 | - | - |\n| IV. Tài sản dở dang dài hạn | 240 | 1.137.716.955 | 1.137.716.955 |\n| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | - | - |\n| 2. Chi phí xây dựng cơ bản dở dang | 242 | 1.137.716.955 | 1.137.716.955 |\n| IV. Các khoản đầu tư tài chính dài hạn | 250 | - | - |\n| 1. Đầu tư vào công ty con | 251 | - | - |\n| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | - | - |\n| 3. Đầu tư góp vốn vào đơn vị khác | 253 | - | - |\n| 4. Dự phòng đầu tư tài chính dài hạn | 254 | - | - |\n| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | - | - |\n| V. Tài sản dài hạn khác | 260 | 7.049.825.557 | 6.280.422.851 |\n| 1. Chi phí trả trước dài hạn | 261 | 7.049.825.557 | 6.280.422.851 |\n| 2. Tài sản thuế thu nhập hoãn lại | 262 | - | - |\n| 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn | 263 | - | - |\n| 4. Tài sản dài hạn khác | 268 | - | - |\n| TỔNG CỘNG TÀI SẢN | 270 | 824.689.371.407 | 812.015.216.625 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nguyên giá của Tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị còn lại của Tài sản cố định hữu hình cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ Tài sản cố định vô hình trên tổng Tài sản dài hạn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư vào tài sản dài hạn của công ty so với đầu năm.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ khấu hao lũy kế trên nguyên giá của Tài sản cố định hữu hình cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích ý nghĩa của việc không có các khoản đầu tư tài chính dài hạn đối với chiến lược tăng trưởng của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Bảng cân đối kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |\n|--------|--------------|-------------|------------|\n| C. NỢ PHẢI TRẢ | 300 | 328.923.987.109 | 330.161.510.968 |\n| I. Nợ ngắn hạn | 310 | 328.923.987.109 | 330.161.510.968 |\n| 1. Phải trả người bán ngắn hạn | 311 | 156.584.793.596 | 152.444.270.501 |\n| 2. Người mua trả tiền trước ngắn hạn | 312 | 1.379.593.279 | 1.051.335.339 |\n| 3. Thuế và các khoản phải nộp Nhà nước | 313 | 22.245.319.922 | 22.167.400.262 |\n| 4. Phải trả người lao động | 314 | - | - |\n| 5. Chi phí phải trả ngắn hạn | 315 | - | 674.995.636 |\n| 6. Phải trả nội bộ ngắn hạn | 316 | 2.759.536.670 | - |\n| 7. Phải trả theo tiến độ kế hoạch HĐXD | 317 | - | - |\n| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | - | - |\n| 9. Phải trả ngắn hạn khác | 319 | 1.122.747.864 | 1.337.760.565 |\n| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | 142.114.225.767 | 149.767.978.654 |\n| 11. Dự phòng phải trả ngắn hạn | 321 | - | - |\n| 12. Quỹ khen thưởng, phúc lợi | 322 | 2.717.770.011 | 2.717.770.011 |\n| 13. Quỹ bình ổn giá | 323 | - | - |\n| 14. Giao dịch mua bán lại Trái phiếu Chính phủ | 324 | - | - |\n| II. Nợ dài hạn | 330 | - | - |\n| D. VỐN CHỦ SỞ HỮU | 400 | 495.765.384.298 | 481.853.705.657 |\n| I. Vốn chủ sở hữu | 410 | 495.765.384.298 | 481.853.705.657 |\n| 1. Vốn góp của chủ sở hữu | 411 | 369.588.160.000 | 369.588.160.000 |\n| 2. Thặng dư vốn cổ phần | 412 | 1.100.000 | 1.100.000 |\n| 8. Quỹ đầu tư phát triển | 418 | 3.982.689.911 | 3.982.689.911 |\n| 11. Lợi nhuận sau thuế chưa phân phối | 421 | 122.195.634.387 | 108.283.955.746 |\n| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | 108.283.955.747 | 78.084.456.696 |\n| - LNST chưa phân phối kỳ này | 421b | 13.911.678.640 | 30.199.499.050 |\n| TỔNG CỘNG NGUỒN VỐN | 440 | 824.689.371.407 | 812.015.216.625 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn chủ sở hữu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Vay và nợ thuê tài chính ngắn hạn' cuối kỳ với đầu năm, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ nợ ngắn hạn trên tổng nguồn vốn cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc vào nợ ngắn hạn của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối kỳ.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích ảnh hưởng của lợi nhuận sau thuế chưa phân phối kỳ này đến khả năng chi trả cổ tức.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo kết quả hoạt động kinh doanh\nLoại nội dung: Bảng\n| Mã số | Thuyết minh | Năm nay (Quý 2) | Năm trước (Quý 2) | Năm nay (Lũy kế) | Năm trước (Lũy kế) |\n|--------|--------------|-------------------|--------------------|-------------------|--------------------|\n| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | 186.221.563.913 | 225.797.343.754 | 363.196.035.505 | 418.578.722.272 |\n| 2. Các khoản giảm trừ | 02 | - | - | - | - |\n| 3. Doanh thu thuần bán hàng và cung cấp dịch vụ | 10 | 186.221.563.913 | 225.797.343.754 | 363.196.035.505 | 418.578.722.272 |\n| 4. Giá vốn hàng bán | 11 | 174.837.456.626 | 212.121.770.147 | 338.858.251.798 | 384.705.986.946 |\n| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | 11.384.107.287 | 13.675.573.607 | 24.337.783.707 | 33.872.735.326 |\n| 6. Doanh thu hoạt động tài chính | 21 | 158.807.593 | 733.849.594 | 63.546.413 | 1.389.677.280 |\n| 7. Chi phí tài chính | 22 | 1.627.589.660 | 2.327.591.886 | 3.782.743.597 | 11.075.779.887 |\n| Trong đó: Chi phí lãi vay | 23 | 1.627.589.660 | 2.327.591.886 | 3.782.743.597 | 5.939.055.617 |\n| 8. Chi phí bán hàng | 24 | 263.972.416 | 160.455.051 | 510.975.093 | 270.350.140 |\n| 9. Chi phí quản lý doanh nghiệp | 25 | 1.982.589.179 | 1.051.073.203 | 2.587.822.130 | 1.973.595.190 |\n| 10. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | 7.351.148.439 | 10.870.303.061 | 17.392.696.474 | 21.942.687.389 |\n| 11. Thu nhập khác | 31 | - | 784 | - | 784 |\n| 12. Chi phí khác | 32 | 3.098.174 | - | 3.098.174 | 501.383.122 |\n| 13. Lợi nhuận khác | 40 | (3.098.174) | 784 | (3.098.174) | (501.382.338) |\n| 14. Tổng lợi nhuận kế toán trước thuế | 50 | 7.348.050.265 | 10.870.303.845 | 17.389.598.300 | 21.441.305.051 |\n| 15. Chi phí thuế TNDN hiện hành | 51 | 1.469.610.053 | 2.453.152.929 | 3.477.919.660 | 4.388.537.635 |\n| 16. Chi phí thuế TNDN hoãn lại | 52 | - | - | - | - |\n| 17. Lợi nhuận sau thuế TNDN | 60 | 5.878.440.212 | 8.417.150.916 | 13.911.678.640 | 17.052.767.416 |\n| 18. Lãi cơ bản trên cổ phiếu | 70 | 159 | 228 | 376 | 461 |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần bán hàng và cung cấp dịch vụ lũy kế năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế TNDN quý 2 năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận gộp về bán hàng và cung cấp dịch vụ lũy kế năm nay với năm trước, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ chi phí lãi vay trên doanh thu hoạt động tài chính lũy kế năm nay là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên lợi nhuận thuần từ hoạt động kinh doanh lũy kế.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ suất lợi nhuận trên doanh thu (ROS) lũy kế năm nay.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và ảnh hưởng của sự thay đổi chi phí tài chính lũy kế so với năm trước.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Báo cáo lưu chuyển tiền tệ (Theo phương pháp gián tiếp)\nLoại nội dung: Bảng\n| Mã số | Chỉ tiêu | Kỳ này | Kỳ trước |\n|--------|-------------------------------------------------------|-------------|-------------|\n| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | |\n| 1. Lợi nhuận trước thuế | 01 | 17.389.598.300 | 27.756.496.174 |\n| 2. Điều chỉnh cho các khoản | | 10.984.595.586 | 10.998.543.734 |\n| Khấu hao tài sản cố định | 02 | 7.138.305.576 | 7.138.305.576 |\n| Các khoản dự phòng | 03 | - | - |\n| Lãi/lỗ chênh lệch tỷ giá hối đoái | 04 | - | - |\n| Lãi/lỗ từ hoạt động đầu tư | 05 | 63.546.413 | 1.489.317.935 |\n| Chi phí lãi vay | 06 | 3.782.743.597 | 5.349.556.093 |\n| 3. Lợi nhuận/lỗ từ hoạt động kinh doanh trước thay đổi vốn lưu động | | 28.374.193.886 | 38.755.039.908 |\n| Tăng/giảm các khoản phải thu | 09 | 65.430.028.068 | 8.188.885.772 |\n| Tăng/giảm hàng tồn kho | 10 | 41.848.784.099 | 9.348.486.834 |\n| Tăng/giảm các khoản phải trả (không kể lãi vay phải trả, thuế TNDN phải nộp) | 11 | 3.578.772.699 | 5.923.491.037 |\n| Tăng/giảm chi phí trả trước | 12 | 769.402.706 | 557.266.802 |\n| Tiền lãi vay đã trả | 13 | 3.782.743.597 | 5.349.556.093 |\n| Thuế thu nhập doanh nghiệp đã nộp | 14 | 3.400.000.000 | 5.001.858.830 |\n| Tiền chi khác từ hoạt động kinh doanh | 16 | - | - |\n| Lưu chuyển tiền thuần từ hoạt động kinh doanh | | 83.277.991.885 | 33.724.781.762 |\n| II. Lưu chuyển tiền từ hoạt động đầu tư | | | |\n| Tiền chi để mua sắm, XD TSCĐ và các TS DH khác | 21 | - | - |\n| Tiền chi cho vay và mua các công cụ nợ khác | 23 | 11.450.000.000 | - |\n| Tiền thu hồi cho vay, bán lại các công cụ đơn vị khác | | 9.186.000.000 | - |\n| Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | - | - |\n| Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 63.546.413 | 1.489.317.935 |\n| Lưu chuyển tiền thuần từ hoạt động đầu tư | | 9.122.453.587 | 9.960.682.065 |\n| III. Lưu chuyển tiền từ hoạt động tài chính | | | |\n| Tiền vay ngắn hạn, dài hạn nhận được | 33 | 196.676.435.790 | 176.792.147.158 |\n| Tiền chi trả nợ gốc vay | 34 | 204.330.188.677 | 175.144.474.835 |\n| Cổ tức, lợi nhuận đã trả cho chủ sở hữu | | - | - |\n| Lưu chuyển tiền thuần từ hoạt động tài chính | | 7.653.752.887 | 1.647.672.323 |\n| Lưu chuyển tiền thuần trong kỳ | 50 | (81.809.291.185) | 25.411.772.020 |\n| Tiền và tương đương tiền đầu kỳ | 60 | 93.801.463.027 | 58.238.027.553 |\n| Tiền và tương đương tiền cuối kỳ | 70 | 11.992.171.842 | 83.649.799.573 |",
+    "questions": [
+      {
+        "question": "Lợi nhuận trước thuế kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Tiền và tương đương tiền cuối kỳ' với 'Tiền và tương đương tiền đầu kỳ' của kỳ này.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích nguyên nhân chính dẫn đến sự thay đổi lớn trong 'Tăng/giảm các khoản phải thu' giữa kỳ này và kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính toán và phân tích hiệu quả hoạt động kinh doanh của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ tự chủ tài chính của công ty dựa trên tỷ lệ lưu chuyển tiền từ hoạt động kinh doanh so với tổng lưu chuyển tiền thuần trong kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh khoản của công ty khi 'Lưu chuyển tiền thuần trong kỳ' là số âm.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Tổng quan về doanh nghiệp)\nLoại nội dung: Text\nCác Thuyết minh này là bộ phận hợp thành và cần được đọc cùng báo cáo tài chính.\n\nI. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA DOANH NGHIỆP\nHình thức sở hữu vốn\nCông ty Cổ phần Đầu tư Sản xuất và Thương mại HCD, tên giao dịch bằng Tiếng Anh HCD Investment Producing and Trading Joint Stock Company, tiền thân là Công ty cổ phần Luyện kim HCD, tên giao dịch bằng tiếng Anh HCD Metallurgy Joint Stock Company. Là công ty cổ phần được thành lập và hoạt động theo Giấy chứng nhận đăng ký doanh nghiệp với mã số doanh nghiệp là 0800940115, đăng ký lần đầu ngày 06 tháng 12 năm 2011, thay đổi lần thứ 8, ngày 21/09/2023 do Sở Kế hoạch và Đầu tư tỉnh Hải Dương cấp.\nNgành nghề kinh doanh hoạt động kinh doanh chính trong năm của Công ty là:\n- Bán buôn kim loại và quặng kim loại\n- Bán buôn chuyên doanh khác chưa được phân vào đâu.\n- Sản xuất plastic và cao su tổng hợp dạng nguyên sinh\n- Sản xuất sản phẩm từ plastic\n- In ấn\n- Dịch vụ liên quan đến in\n- Hoạt động dịch vụ hỗ trợ kinh doanh khác còn lại chưa được phân vào đâu.\n- Bán buôn chuyên doanh khác chưa được phân loại vào đâu. Chi tiết: bán buôn chất dẻo dạng nguyên sinh.\nTrụ sở chính của Công ty: Số nhà 122B, phố Quang Trung, phường Quang Trung, thành phố Hải Dương, tỉnh Hải Dương.\nVăn phòng đại diện: F6F7 khu đô thị mới Ngô Thì Nhậm, phường Hà Cầu, quận Hà Đông, thành phố Hà Nội.\nVốn điều lệ của Công ty: Theo Giấy chứng nhận đăng ký doanh nghiệp thay đổi lần thứ 8 ngày 21/09/2023 là 369.588.160.000 VND. Bằng chữ: Ba trăm sáu mươi chín tỷ, năm trăm tám mươi tám triệu, một trăm sáu mươi nghìn đồng chẵn.\n\nII. NIÊN ĐỘ KẾ TOÁN, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN\nKỳ kế toán năm của Công ty theo năm dương lịch bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12 hàng năm.\nĐơn vị tiền tệ sử dụng trong ghi chép kế toán là Đồng Việt Nam (VND).\n\nIII. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG\n1. Chế độ kế toán áp dụng\nCông ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính.\n2. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán\nCông ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các Báo cáo tài chính được lập và trình bày theo đúng quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện chuẩn mực và Chế độ kế toán hiện hành đang áp dụng.",
+    "questions": [
+      {
+        "question": "Tên tiếng Anh của Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD là gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Mã số doanh nghiệp của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Nêu các ngành nghề kinh doanh chính của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Vốn điều lệ của công ty tại thời điểm thay đổi lần thứ 8 là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty áp dụng chế độ kế toán nào và thông tư ban hành của chế độ đó?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc tuân thủ các Chuẩn mực kế toán Việt Nam đối với báo cáo tài chính của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán áp dụng - Công cụ tài chính, Tiền, Khoản phải thu, Hàng tồn kho)\nLoại nội dung: Text\nIV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG\n1. Công cụ tài chính\nGhi nhận ban đầu\nTài sản tài chính\nTài sản tài chính của Công ty bao gồm tiền và các khoản tương đương tiền, các khoản phải thu khách hàng và phải thu khác, các khoản cho vay, các khoản đầu tư ngắn hạn và dài hạn. Tại thời điểm ghi nhận ban đầu, tài sản tài chính được xác định theo giá mua/chi phí phát hành cộng các chi phí phát sinh khác liên quan trực tiếp đến việc mua, phát hành tài sản tài chính đó.\nNợ phải trả tài chính\nNợ phải trả tài chính của Công ty bao gồm các khoản vay, các khoản phải trả người bán và phải trả khác, chi phí phải trả. Tại thời điểm ghi nhận lần đầu, các khoản nợ phải trả tài chính được xác định theo giá phát hành cộng các chi phí phát sinh liên quan trực tiếp đến việc phát hành nợ phải trả tài chính đó.\nGiá trị sau ghi nhận ban đầu\nHiện tại chưa có các quy định về đánh giá lại công cụ tài chính sau ghi nhận ban đầu.\n\n2. Tiền và các khoản tương đương tiền\nTiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng không kỳ hạn, vàng tiền tệ sử dụng với các chức năng cất trữ giá trị (không bao gồm các loại vàng được phân loại là hàng tồn kho sử dụng với mục đích là nguyên vật liệu để sản xuất sản phẩm hoặc hàng hóa để bán).\nCác khoản tương đương tiền là các khoản đầu tư ngắn hạn có thời gian đáo hạn không quá 03 tháng, có tính thanh khoản cao, có khả năng chuyển đổi dễ dàng thành các lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.\n\n3. Các khoản nợ phải thu\nCác khoản phải thu được theo dõi chi tiết theo kỳ hạn phải thu, đối tượng phải thu, loại nguyên tệ phải thu, và các yếu tố khác theo nhu cầu quản lý của Công ty.\nDự phòng nợ phải thu khó đòi được trích lập cho các khoản nợ phải thu quá hạn thanh toán ghi trong hợp đồng kinh tế, các khế ước vay nợ, cam kết hợp đồng hoặc cam kết nợ và nợ phải thu chưa đến hạn thanh toán nhưng khó có khả năng thu hồi. Trong đó, việc trích lập dự phòng nợ phải thu quá hạn thanh toán được căn cứ vào thời gian trả nợ gốc theo hợp đồng mua bán ban đầu, không tính đến việc gia hạn nợ giữa các bên và nợ phải thu chưa đến hạn thanh toán nhưng khách nợ đã lâm vào tình trạng phá sản hoặc đang làm thủ tục giải thể, mất tích, bỏ trốn.\n\n4. Hàng tồn kho\nHàng tồn kho được ghi nhận theo giá gốc. Trường hợp giá trị thuần có thể thực hiện được thấp hơn giá gốc thì hàng tồn kho được ghi nhận theo giá trị thuần có thể thực hiện được. Giá gốc hàng tồn kho bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại.\nGiá trị hàng tồn kho được xác định theo phương pháp bình quân gia quyền.\nHàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên.\nDự phòng giảm giá hàng tồn kho được lập vào thời điểm cuối kỳ căn cứ theo số chênh lệch giữa giá gốc của hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được.",
+    "questions": [
+      {
+        "question": "Các loại tài sản tài chính của công ty bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian đáo hạn tối đa của các khoản tương đương tiền là bao lâu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá gốc hàng tồn kho bao gồm những chi phí nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Trong trường hợp nào công ty trích lập dự phòng nợ phải thu khó đòi?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt giữa tiền mặt và các khoản tương đương tiền trong chính sách kế toán của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có quy định đánh giá lại công cụ tài chính sau ghi nhận ban đầu đối với báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tiềm ẩn từ chính sách trích lập dự phòng nợ phải thu khó đòi của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán áp dụng - Tài sản cố định, Chi phí trả trước)\nLoại nội dung: Text\n5. Tài sản cố định, Tài sản cố định thuê tài chính và Bất động sản đầu tư\nTài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo giá gốc. Trong quá trình sử dụng, tài sản cố định hữu hình, tài sản cố định vô hình được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại. Khấu hao được trích theo phương pháp đường thẳng.\nTài sản cố định thuê tài chính được ghi nhận nguyên giá theo giá trị hợp lý hoặc giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu (trường hợp giá trị hợp lý cao hơn giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu) cộng với các chi phí trực tiếp phát sinh ban đầu liên quan đến hoạt động thuê tài chính (không bao gồm thuế GTGT). Trong quá trình sử dụng, tài sản cố định thuê tài chính được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại. Khấu hao của tài sản cố định thuê tài chính được trích căn cứ theo thời gian thuê theo hợp đồng và tính vào chi phí sản xuất, kinh doanh, đảm bảo thu hồi đủ vốn.\nBất động sản đầu tư được ghi nhận theo giá gốc. Trong quá trình cho thuê hoạt động, bất động sản đầu tư được ghi nhận theo nguyên giá, hao mòn lũy kế và giá trị còn lại. Đối với bất động sản đầu tư nắm giữ chờ tăng giá không thực hiện trích khấu hao.\nCông ty thực hiện trích khấu hao theo phương pháp đường thẳng, thời gian khấu hao phù hợp với Thông tư số 45/2013/TT-BTC ngày 25/04/2013 của Bộ Tài chính.\n\n6. Chi phí trả trước\nCác chi phí đã phát sinh liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh trong các kỳ kế toán sau.\nViệc tính và phân bổ chi phí trả trước dài hạn vào chi phí sản xuất kinh doanh từng kỳ kế toán được căn cứ vào tính chất, mức độ từng loại chi phí để lựa chọn phương pháp và tiêu thức phân bổ hợp lý. Chi phí trả trước được phân bổ dần vào chi phí sản xuất kinh doanh theo phương pháp đường thẳng.",
+    "questions": [
+      {
+        "question": "Các loại tài sản cố định được ghi nhận theo nguyên tắc nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty trích khấu hao theo phương pháp nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nêu các trường hợp bất động sản đầu tư không thực hiện trích khấu hao.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí trả trước được hạch toán và phân bổ như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự khác biệt trong việc ghi nhận nguyên giá giữa tài sản cố định hữu hình và tài sản cố định thuê tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính nếu việc phân bổ chi phí trả trước không hợp lý.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của phương pháp khấu hao đường thẳng đối với lợi nhuận của công ty trong các năm đầu và cuối của vòng đời tài sản.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán áp dụng - Nợ phải trả, Chi phí đi vay, Chi phí phải trả)\nLoại nội dung: Text\n7. Các khoản nợ phải trả\nCác khoản nợ phải trả được theo dõi theo kỳ hạn phải trả, đối tượng phải trả, loại nguyên tệ phải trả và các yếu tố khác theo nhu cầu quản lý của Công ty.\n\n8. Vay và nợ phải trả thuê tài chính\nGiá trị khoản nợ phải trả thuê tài chính là tổng số tiền phải trả được tính bằng giá trị hiện tại của khoản thanh toán tiền thuê tối thiểu hoặc giá trị hợp lý của tài sản thuê.\nCác khoản vay và nợ phải trả thuê tài chính được theo dõi theo từng đối tượng cho vay, từng khế ước vay nợ và kỳ hạn phải trả của các khoản vay, nợ thuê tài chính. Trường hợp vay, nợ bằng ngoại tệ thì thực hiện theo dõi chi tiết theo nguyên tệ.\n\n9. Chi phí đi vay\nChi phí đi vay được ghi nhận vào chi phí sản xuất, kinh doanh trong kỳ khi phát sinh, trừ chi phí đi vay liên quan trực tiếp đến việc đầu tư xây dựng hoặc sản xuất tài sản dở dang được tính vào giá trị của tài sản đó (được vốn hoá khi có đủ các điều kiện quy định trong Chuẩn mực Kế toán Việt Nam số 16 Chi phí đi vay). Ngoài ra, đối với khoản vay riêng phục vụ việc xây dựng tài sản cố định, bất động sản đầu tư, lãi vay được vốn hóa kể cả khi thời gian xây dựng dưới 12 tháng.\nĐối với các khoản vốn vay chung, trong đó có sử dụng cho mục đích đầu tư xây dựng hoặc sản xuất một tài sản dở dang thì số chi phí đi vay có đủ điều kiện vốn hoá trong mỗi kỳ kế toán được xác định theo tỷ lệ vốn hoá đối với chi phí lũy kế bình quân gia quyền phát sinh cho việc đầu tư xây dựng hoặc sản xuất tài sản đó. Tỷ lệ vốn hoá được tính theo tỷ lệ lãi suất bình quân gia quyền của các khoản vay chưa trả trong kỳ, ngoại trừ các khoản vay riêng biệt phục vụ cho mục đích có một tài sản dở dang.\n\n10. Chi phí phải trả\nCác khoản phải trả cho hàng hóa dịch vụ đã nhận được từ người bán hoặc đã được cung cấp cho người mua trong kỳ báo cáo nhưng thực tế chưa chi trả được ghi nhận vào chi phí sản xuất, kinh doanh của kỳ báo cáo.\nViệc ghi nhận các khoản chi phí phải trả vào chi phí sản xuất, kinh doanh trong kỳ được thực hiện theo nguyên tắc phù hợp giữa doanh thu và chi phí phát sinh trong kỳ. Các khoản chi phí phải trả sẽ được quyết toán với số chi phí thực tế phát sinh, số chênh lệch giữa số trích trước và chi phí thực tế được hoàn nhập.",
+    "questions": [
+      {
+        "question": "Các khoản nợ phải trả được theo dõi dựa trên các yếu tố nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí đi vay được vốn hóa khi nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giải thích cách xác định giá trị khoản nợ phải trả thuê tài chính.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Khi nào thì chi phí đi vay được tính vào chi phí sản xuất, kinh doanh trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của nguyên tắc phù hợp trong việc ghi nhận chi phí phải trả.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của việc vốn hóa chi phí đi vay đối với lợi nhuận và tài sản của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giả sử công ty có nhiều khoản vay chung, làm thế nào để xác định chi phí đi vay được vốn hóa cho một tài sản dở dang cụ thể?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán áp dụng - Dự phòng, Doanh thu chưa thực hiện, Trái phiếu chuyển đổi)\nLoại nội dung: Text\n11. Các khoản dự phòng phải trả\nCác khoản dự phòng phải trả chỉ được ghi nhận khi thỏa mãn các điều kiện sau:\n- Doanh nghiệp có nghĩa vụ nợ hiện tại (nghĩa vụ pháp lý hoặc nghĩa vụ liên đới) do kết quả từ một sự kiện đã xảy ra.\n- Sự giảm sút về những lợi ích kinh tế có thể xảy ra dẫn đến việc yêu cầu phải thanh toán nghĩa vụ nợ.\n- Đưa ra được một ước tính đáng tin cậy về giá trị của nghĩa vụ nợ đó.\nGiá trị được ghi nhận của một khoản dự phòng phải trả là giá trị được ước tính hợp lý nhất về khoản tiền sẽ phải chi để thanh toán nghĩa vụ nợ hiện tại tại ngày kết thúc kỳ kế toán.\nChỉ những khoản chi phí liên quan đến khoản dự phòng phải trả đã lập ban đầu mới được bù đắp bằng khoản dự phòng phải trả đó.\nDự phòng phải trả được ghi nhận vào chi phí sản xuất kinh doanh của kỳ kế toán. Khoản chênh lệch giữa số dự phòng phải trả đã lập ở kỳ kế toán trước chưa sử dụng hết lớn hơn số dự phòng phải trả lập ở kỳ báo cáo được hoàn nhập (ghi giảm chi phí sản xuất, kinh doanh trong kỳ, trừ khoản chênh lệch lớn hơn của khoản dự phòng phải trả về bảo hành công trình xây lắp được hoàn nhập vào thu nhập khác trong kỳ).\n\n12. Doanh thu chưa thực hiện\nDoanh thu chưa thực hiện gồm doanh thu nhận trước (như số tiền của khách hàng đã trả trước cho một hoặc nhiều kỳ kế toán về cho thuê tài sản, khoản lãi nhận trước khi cho vay vốn hoặc mua các công cụ nợ) và các khoản doanh thu chưa thực hiện khác (như chênh lệch giữa giá bán hàng trả chậm, trả góp theo cam kết với giá bán trả tiền ngay, khoản doanh thu tương ứng với giá trị hàng hóa, dịch vụ hoặc số phải chiết khấu giảm giá cho khách hàng trong chương trình khách hàng truyền thống...).\nDoanh thu chưa thực hiện được kết chuyển vào Doanh thu bán hàng và cung cấp dịch vụ hoặc Doanh thu hoạt động tài chính theo số tiền được xác định phù hợp với từng kỳ kế toán.\n\n13. Trái phiếu chuyển đổi\nTrái phiếu chuyển đổi là loại trái phiếu có thể chuyển đổi thành cổ phiếu phổ thông của cùng một tổ chức phát hành theo các điều kiện đã được xác định trong phương án phát hành.\nTại thời điểm ghi nhận ban đầu, khi phát hành trái phiếu chuyển đổi, Công ty tính toán và xác định riêng biệt giá trị cấu phần nợ (nợ gốc) và cấu phần vốn của trái phiếu chuyển đổi. Phần nợ gốc của trái phiếu chuyển đổi được ghi nhận là nợ phải trả, cấu phần vốn (quyền chọn cổ phiếu) của trái phiếu chuyển đổi được ghi nhận là vốn chủ sở hữu.\nTại thời điểm ghi nhận ban đầu, giá trị phần nợ gốc của trái phiếu chuyển đổi được xác định bằng cách chiết khấu giá trị danh nghĩa của khoản thanh toán trong tương lai (gồm cả gốc và lãi trái phiếu) về giá trị hiện tại theo lãi suất của trái phiếu tương tự trên thị trường nhưng không có quyền chuyển đổi thành cổ phiếu hoặc lãi suất đi vay phổ biến trên thị trường tại thời điểm phát hành trái phiếu và trừ đi chi phí phát hành trái phiếu chuyển đổi.",
+    "questions": [
+      {
+        "question": "Nêu một trong ba điều kiện để ghi nhận khoản dự phòng phải trả.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Trái phiếu chuyển đổi là loại trái phiếu như thế nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu chưa thực hiện được kết chuyển vào các khoản mục nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Cách công ty xác định giá trị phần nợ gốc của trái phiếu chuyển đổi tại thời điểm ghi nhận ban đầu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc hoàn nhập dự phòng phải trả đến chi phí và lợi nhuận của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro tài chính tiềm ẩn từ các trái phiếu chuyển đổi đối với cơ cấu vốn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giả sử công ty nhận được tiền trả trước cho thuê tài sản, làm thế nào để ghi nhận và kết chuyển khoản doanh thu này?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán áp dụng - Vốn chủ sở hữu)\nLoại nội dung: Text\n14. Vốn chủ sở hữu\nVốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.\nThặng dư vốn cổ phần phản ánh chênh lệch giữa mệnh giá, chi phí trực tiếp liên quan đến việc phát hành cổ phiếu và giá phát hành cổ phiếu (kể cả các trường hợp tái phát hành cổ phiếu quỹ) và có thể là thặng dư dương (nếu giá phát hành cao hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu) hoặc thặng dư âm (nếu giá phát hành thấp hơn mệnh giá và chi phí trực tiếp liên quan đến việc phát hành cổ phiếu).\nQuyền chọn chuyển đổi trái phiếu thành cổ phiếu (cấu phần vốn của trái phiếu chuyển đổi) phát sinh khi Công ty phát hành loại trái phiếu có thể chuyển đổi thành một số lượng cổ phiếu xác định được quy định sẵn trong phương án phát hành. Giá trị cấu phần vốn của trái phiếu chuyển đổi được xác định là phần chênh lệch giữa tổng số tiền thu từ việc phát hành trái phiếu chuyển đổi trừ đi giá trị cấu phần nợ của trái phiếu chuyển đổi.\nVốn khác thuộc vốn chủ sở hữu phản ánh số vốn kinh doanh được hình thành do bổ sung từ kết quả hoạt động kinh doanh hoặc do được tặng, biếu, tài trợ, đánh giá lại tài sản (nếu được phép ghi tăng/giảm vốn đầu tư của chủ sở hữu).\nCổ phiếu quỹ là cổ phiếu do Công ty phát hành và được Công ty mua lại, cổ phiếu này không bị hủy bỏ và sẽ được tái phát hành trở lại trong khoảng thời gian theo quy định của pháp luật về chứng khoán. Cổ phiếu quỹ được ghi nhận theo giá trị thực tế mua lại và trình bày trên Bảng Cân đối kế toán là một khoản ghi giảm vốn đầu tư của chủ sở hữu. Giá vốn của cổ phiếu quỹ khi tái phát hành hoặc khi sử dụng để trả cổ tức, thưởng... được tính theo phương pháp bình quân gia quyền.\nChênh lệch đánh giá lại tài sản được phản ánh trong các trường hợp khi có quyết định của Nhà nước về đánh giá lại tài sản, khi thực hiện cổ phần hóa doanh nghiệp Nhà nước, và các trường hợp khác theo quy định của pháp luật.\nLợi nhuận sau thuế chưa phân phối phản ánh kết quả kinh doanh lãi, lỗ sau thuế thu nhập doanh nghiệp và tình hình phân chia lợi nhuận hoặc xử lý lỗ của Công ty. Việc phân phối lợi nhuận được thực hiện khi Công ty có lợi nhuận sau thuế chưa phân phối không vượt quá mức lợi nhuận sau thuế chưa phân phối trên Báo cáo tài chính hợp nhất sau khi đã loại trừ ảnh hưởng của các khoản lãi do ghi nhận từ giao dịch mua giá rẻ. Trường hợp trả cổ tức, lợi nhuận cho chủ sở hữu quá mức số lợi nhuận sau thuế chưa phân phối được ghi nhận như trường hợp giảm vốn góp. Lợi nhuận sau thuế chưa phân phối có thể được chia cho các nhà đầu tư dựa trên tỷ lệ góp vốn sau khi được Đại hội cổ đông/Hội đồng quản trị phê duyệt và sau khi đã trích lập các quỹ theo Điều lệ Công ty và các quy định của pháp luật Việt Nam.\nCổ tức phải trả cho các cổ đông được ghi nhận là khoản phải trả trong Bảng Cân đối kế toán của Công ty sau khi có thông báo chia cổ tức của Hội đồng Quản trị Công ty và thông báo ngày chốt quyền nhận cổ tức của Trung tâm Lưu ký chứng khoán Việt Nam.",
+    "questions": [
+      {
+        "question": "Vốn đầu tư của chủ sở hữu được ghi nhận như thế nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khi nào thì thặng dư vốn cổ phần là dương?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thặng dư vốn cổ phần phản ánh điều gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Các trường hợp nào dẫn đến chênh lệch đánh giá lại tài sản được phản ánh?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích cách xác định giá trị cấu phần vốn của trái phiếu chuyển đổi.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro khi công ty trả cổ tức vượt quá lợi nhuận sau thuế chưa phân phối.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá vai trò của cổ phiếu quỹ trong việc quản lý vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán áp dụng - Doanh thu, Giảm trừ doanh thu, Giá vốn hàng bán)\nLoại nội dung: Text\n15. Doanh thu\nDoanh thu bán hàng\nDoanh thu bán hàng được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa đã được chuyển giao cho người mua.\n- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.\n- Doanh thu được xác định tương đối chắc chắn.\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.\n- Xác định được chi phí liên quan đến giao dịch bán hàng.\nDoanh thu cung cấp dịch vụ\nDoanh thu cung cấp dịch vụ được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Doanh thu được xác định tương đối chắc chắn.\n- Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.\n- Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán.\n- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.\nPhần công việc cung cấp dịch vụ đã hoàn thành được xác định theo phương pháp đánh giá công việc hoàn thành.\nDoanh thu bán bất động sản\nDoanh thu bán bất động sản được ghi nhận khi đồng thời thỏa mãn các điều kiện sau:\n- Bất động sản đã hoàn thành toàn bộ và bàn giao cho người mua, Công ty đã chuyển giao rủi ro và lợi ích gắn liền với quyền sở hữu bất động sản cho người mua.\n- Công ty không còn nắm giữ quyền quản lý bất động sản như người sở hữu bất động sản hoặc quyền kiểm soát bất động sản.\n- Doanh thu được xác định tương đối chắc chắn.\n- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán bất động sản.\n- Xác định được chi phí liên quan đến giao dịch bán bất động sản.\nTrường hợp bán hàng hóa bất động sản theo hình thức khách hàng tự hoàn thiện hoặc Công ty hoàn thiện theo yêu cầu của khách hàng thì được ghi doanh thu khi hoàn thành bàn giao phần xây thô cho khách hàng.\nĐối với bất động sản phân lô bán nền đã chuyển giao nền đất cho khách hàng, Công ty được ghi nhận doanh thu với phần nền đất đã bán khi thỏa mãn đồng thời các điều kiện sau:\n- Chuyển giao rủi ro và lợi ích gắn liền với quyền sử dụng đất cho người mua.\n- Doanh thu được xác định tương đối chắc chắn.\n- Xác định được chi phí liên quan đến giao dịch bán nền đất.\n- Công ty đã thu hoặc chắc chắn thu được lợi ích kinh tế từ giao dịch bán nền đất.\nDoanh thu hợp đồng xây dựng\n- Trường hợp hợp đồng xây dựng quy định nhà thầu được thanh toán theo tiến độ kế hoạch, khi kết quả thực hiện hợp đồng xây dựng được ước tính một cách đáng tin cậy, thì doanh thu của hợp đồng xây dựng được ghi nhận tương ứng với phần công việc đã hoàn thành do Công ty tự xác định vào ngày lập Báo cáo tài chính mà không phụ thuộc vào hóa đơn thanh toán theo tiến độ kế hoạch đã lập hay chưa và số tiền ghi trên hóa đơn là bao nhiêu.\n- Trường hợp hợp đồng xây dựng quy định nhà thầu được thanh toán theo giá trị khối lượng thực hiện, khi kết quả thực hiện hợp đồng xây dựng được xác định một cách đáng tin cậy và được khách hàng xác nhận, thì doanh thu, chi phí liên quan đến hợp đồng được ghi nhận tương ứng với phần công việc đã hoàn thành được khách hàng xác nhận trong kỳ phản ánh trên hóa đơn đã lập.\nDoanh thu hoạt động tài chính\nDoanh thu phát sinh từ tiền lãi, tiền bản quyền, cổ tức, lợi nhuận được chia và các khoản doanh thu hoạt động tài chính khác được ghi nhận khi thỏa mãn đồng thời hai (2) điều kiện sau:\n- Có khả năng thu được lợi ích kinh tế từ giao dịch đó.\n- Doanh thu được xác định tương đối chắc chắn.\nCổ tức, lợi nhuận được chia được ghi nhận khi Công ty được quyền nhận cổ tức hoặc được quyền nhận lợi nhuận từ việc góp vốn.\nCổ phiếu thưởng hay cổ tức trả bằng cổ phiếu: Không ghi nhận khoản thu nhập khi quyền được nhận cổ phiếu thưởng hay cổ tức bằng cổ phiếu được xác lập, số lượng cổ phiếu thưởng hay cổ tức bằng cổ phiếu nhận được thuyết minh trên Báo cáo tài chính có liên quan.\nCổ phiếu thưởng hay cổ tức trả bằng cổ phiếu được ghi nhận tăng doanh thu hoạt động tài chính và tăng giá trị khoản đầu tư tương ứng với số tiền cổ tức được chia.\n\n16. Các khoản giảm trừ doanh thu\nCác khoản giảm trừ doanh thu bán hàng, cung cấp dịch vụ phát sinh trong kỳ gồm Chiết khấu thương mại, giảm giá hàng bán và hàng bán bị trả lại.\nCác khoản chiết khấu thương mại, giảm giá hàng bán, hàng bán bị trả lại phát sinh cùng kỳ tiêu thụ sản phẩm, hàng hóa dịch vụ được điều chỉnh giảm doanh thu của kỳ phát sinh. Trường hợp sản phẩm, hàng hoá, dịch vụ đã tiêu thụ từ các kỳ trước, đến kỳ sau mới phát sinh các khoản giảm trừ doanh thu thì được ghi giảm doanh thu theo nguyên tắc nếu phát sinh trước thời điểm phát hành Báo cáo tài chính thì ghi giảm doanh thu trên Báo cáo tài chính của kỳ lập báo cáo (kỳ trước), và nếu phát sinh sau thời điểm phát hành Báo cáo tài chính thì ghi giảm doanh thu của kỳ phát sinh (kỳ sau).\n\n17. Giá vốn hàng bán\nGiá vốn hàng bán phản ánh trị giá vốn của sản phẩm, hàng hóa, dịch vụ, bất động sản đầu tư (giá thành sản xuất của sản phẩm xây lắp đối với doanh nghiệp xây lắp) bán trong kỳ, chi phí liên quan đến hoạt động kinh doanh bất động sản đầu tư.\nGiá vốn hàng bán đối với trường hợp Công ty là chủ đầu tư kinh doanh bất động sản:\nGiá vốn hàng bán được ghi nhận phù hợp với Doanh thu đã phát sinh bao gồm cả việc trích trước chi phí vào giá vốn hàng bán. Việc trích trước chi phí để tạm tính giá vốn bất động sản (nếu có) đảm bảo các nguyên tắc sau:\n- Chỉ trích trước đối với các khoản chi phí đã có trong dự toán đầu tư, xây dựng nhưng chưa có đủ hồ sơ, tài liệu để nghiệm thu khối lượng.\n- Chỉ trích trước chi phí để tạm tính giá vốn hàng bán cho phần bất động sản đã hoàn thành bán trong kỳ và đủ điều kiện ghi nhận doanh thu.\n- Số chi phí trích trước và chi phí thực tế được ghi nhận vào giá vốn hàng bán phải đảm bảo tương ứng với định mức giá vốn tính theo tổng chi phí dự toán của phần hàng hóa bất động sản đã bán được xác định theo diện tích.",
+    "questions": [
+      {
+        "question": "Nêu một điều kiện để ghi nhận doanh thu bán hàng.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các khoản giảm trừ doanh thu gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Doanh thu cung cấp dịch vụ được ghi nhận khi thỏa mãn những điều kiện nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty xử lý các khoản giảm trừ doanh thu phát sinh ở kỳ sau đối với sản phẩm đã tiêu thụ ở kỳ trước như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự khác biệt trong việc ghi nhận doanh thu giữa hợp đồng xây dựng thanh toán theo tiến độ kế hoạch và theo giá trị khối lượng thực hiện.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro và lợi ích khi trích trước chi phí vào giá vốn hàng bán đối với doanh nghiệp kinh doanh bất động sản.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Trong trường hợp nào công ty không ghi nhận khoản thu nhập từ cổ phiếu thưởng?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Chính sách kế toán áp dụng - Chi phí tài chính, Thuế TNDN, Các bên liên quan)\nLoại nội dung: Text\n18. Chi phí tài chính\nCác khoản chi phí được ghi nhận vào chi phí tài chính gồm:\n- Chi phí hoặc các khoản lỗ liên quan đến các hoạt động đầu tư tài chính.\n- Chi phí đi vay vốn.\n- Chi phí lỗ chuyển nhượng chứng khoán ngắn hạn, chi phí giao dịch bán chứng khoán.\n- Dự phòng giảm giá chứng khoán kinh doanh, dự phòng tổn thất đầu tư vào đơn vị khác, khoản lỗ phát sinh khi bán ngoại tệ, lỗ tỷ giá hối đoái...\nCác khoản trên được ghi nhận theo tổng số phát sinh trong kỳ, không bù trừ với doanh thu hoạt động tài chính.\n\n19. Thuế thu nhập doanh nghiệp\na. Tài sản thuế thu nhập hoãn lại và Thuế thu nhập hoãn lại phải trả\nTài sản thuế thu nhập hoãn lại được xác định dựa trên tổng chênh lệch tạm thời được khấu trừ và giá trị được khấu trừ chuyển sang năm sau của các khoản lỗ tính thuế và ưu đãi thuế chưa sử dụng. Thuế thu nhập hoãn lại phải trả được xác định dựa trên các khoản chênh lệch tạm thời được khấu trừ.\nTài sản thuế TNDN hoãn lại và Thuế thu nhập hoãn lại phải trả được xác định theo thuế suất thuế TNDN hiện hành dựa trên các mức thuế suất và luật thuế có hiệu lực vào ngày kết thúc kỳ kế toán.\nb. Chi phí thuế TNDN hiện hành và Chi phí thuế TNDN hoãn lại\nChi phí thuế TNDN hiện hành được xác định trên cơ sở thu nhập chịu thuế trong năm và thuế suất thuế TNDN trong năm hiện hành.\nChi phí thuế TNDN hoãn lại được xác định trên cơ sở số chênh lệch tạm thời được khấu trừ, số chênh lệch tạm thời chịu thuế và thuế suất thuế TNDN.\nKhông bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại.\n\n20. Các bên liên quan\nCác bên được coi là liên quan nếu bên đó có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với bên kia trong việc ra quyết định về các chính sách tài chính và hoạt động. Các bên liên quan của Công ty bao gồm:\n- Các doanh nghiệp trực tiếp hay gián tiếp (qua một hoặc nhiều trung gian), có quyền kiểm soát Công ty hoặc chịu sự kiểm soát của Công ty, hoặc cùng chung sự kiểm soát với Công ty, bao gồm cả công ty mẹ, công ty con và công ty liên kết.\n- Các cá nhân trực tiếp hoặc gián tiếp nắm quyền biểu quyết của Công ty mà có ảnh hưởng đáng kể đối với Công ty, những nhân sự quản lý chủ chốt của Công ty, những thành viên mật thiết trong gia đình của các cá nhân này.\n- Các doanh nghiệp do các cá nhân nêu trên nắm trực tiếp hoặc gián tiếp phần quan trọng quyền biểu quyết hoặc có ảnh hưởng đáng kể tới doanh nghiệp.\nTrong việc xem xét từng mối quan hệ của các bên liên quan, cần chú ý tới bản chất của mối quan hệ chứ không chỉ hình thức pháp lý của các quan hệ đó.",
+    "questions": [
+      {
+        "question": "Nêu một khoản chi phí được ghi nhận vào chi phí tài chính.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các bên được coi là liên quan nếu có khả năng gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí thuế TNDN hiện hành được xác định dựa trên cơ sở nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nêu các đối tượng được xem là bên liên quan của công ty.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích tại sao không bù trừ chi phí thuế TNDN hiện hành với chi phí thuế TNDN hoãn lại.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tầm quan trọng của việc xác định và công bố các bên liên quan trong báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá tác động của biến động thuế suất thuế TNDN đến Tài sản thuế thu nhập hoãn lại và Thuế thu nhập hoãn lại phải trả.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Tiền, Phải thu khách hàng, Trả trước cho người bán)\nLoại nội dung: Bảng và Text\nV. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÊN BẢNG CÂN ĐỐI KẾ TOÁN\n1. TIỀN\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|---------------------------------|-------------------|------------------|\n| Tiền mặt | 1.762.056.155 | 3.722.155.150 |\n| Tiền gửi ngân hàng không kỳ hạn | 10.230.115.687 | 45.810.307.877 |\n| Các khoản tương đương tiền | - | 44.269.000.000 |\n| Cộng | 11.992.171.842 | 93.801.463.027 |\n\n3. PHẢI THU CỦA KHÁCH HÀNG (Ngắn hạn)\n| Chỉ tiêu | Số cuối kỳ (Giá trị) | Số cuối kỳ (Dự phòng) | Số đầu năm (Giá trị) | Số đầu năm (Dự phòng) |\n|--------------------------------|----------------------|-----------------------|----------------------|-----------------------|\n| Công ty TNHH Bao bì Yuyang Việt Nam | 25.821.000.000 | - | - | - |\n| Công ty TNHH Nhựa Châu Âu Xanh | 3.310.780.000 | - | 11.517.000.000 | - |\n| Công ty CP Wepac | 2.791.762.875 | - | 23.409.395.750 | - |\n| Các đối tượng công nợ khác | 122.666.152.619 | - | 102.442.329.408 | - |\n| Cộng | 154.589.695.494 | - | 137.368.725.158 | - |\n\n4. TRẢ TRƯỚC CHO NGƯỜI BÁN (Ngắn hạn)\n| Chỉ tiêu | Số cuối kỳ (Giá trị) | Số cuối kỳ (Dự phòng) | Số đầu năm (Giá trị) | Số đầu năm (Dự phòng) |\n|---------------------------------------------------------|----------------------|-----------------------|----------------------|-----------------------|\n| Công ty cổ phần Khai Sơn | 3.822.192.000 | - | 3.822.192.000 | - |\n| Các đối tượng khác | 77.553.647.136 | - | 30.857.979.770 | - |\n| Cộng | 81.375.839.136 | - | 34.680.171.770 | - |\nLưu ý: Ứng trước tiền đất cho Dự án nhà máy gỗ nhựa ngoài trời cao cấp HCD",
+    "questions": [
+      {
+        "question": "Tiền gửi ngân hàng không kỳ hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty TNHH Nhựa Châu Âu Xanh nợ công ty bao nhiêu VND cuối kỳ?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng phải thu của khách hàng ngắn hạn cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự thay đổi trong khoản 'Trả trước cho người bán ngắn hạn' cuối kỳ so với đầu năm và ý nghĩa của nó.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá mức độ tập trung rủi ro tín dụng của công ty đối với các khách hàng lớn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ tiền mặt trên tổng tiền và các khoản tương đương tiền cuối kỳ.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Phải thu khác, Hàng tồn kho)\nLoại nội dung: Bảng\n5. PHẢI THU KHÁC (Ngắn hạn)\n| Chỉ tiêu | Số cuối kỳ (Giá trị) | Số cuối kỳ (Dự phòng) | Số đầu năm (Giá trị) | Số đầu năm (Dự phòng) |\n|----------------------------|----------------------|-----------------------|----------------------|-----------------------|\n| Phải thu khác | 1.697.832.735 | - | 2.159.740.671 | - |\n| Cộng | 1.697.832.735 | - | 2.159.740.671 | - |\n\n6. HÀNG TỒN KHO\n| Chỉ tiêu | Số cuối kỳ (Giá gốc) | Số cuối kỳ (Dự phòng) | Số đầu năm (Giá gốc) | Số đầu năm (Dự phòng) |\n|-------------------------------------|----------------------|-----------------------|----------------------|-----------------------|\n| Nguyên liệu, vật liệu | 6.616.176.941 | - | 4.272.152.375 | - |\n| Công cụ dụng cụ | - | - | 209.095.000 | - |\n| Chi phí sản xuất kinh doanh dở dang | 375.112.847 | - | 361.442.030 | - |\n| Thành phẩm | 60.012.570.211 | - | 58.307.372.929 | - |\n| Hàng hóa | 253.046.312.253 | - | 215.051.325.819 | - |\n| Cộng | 320.050.172.252 | - | 278.201.388.153 | - |",
+    "questions": [
+      {
+        "question": "Giá trị phải thu khác ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hàng tồn kho thành phẩm cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị hàng hóa cuối kỳ với đầu năm, thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ Nguyên liệu, vật liệu trên tổng hàng tồn kho cuối kỳ là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá xu hướng biến động của hàng tồn kho và các khoản phải thu khác của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính nếu giá trị hàng hóa tiếp tục tăng mạnh mà không có sự tăng trưởng doanh số tương ứng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có dự phòng cho các khoản phải thu khác đối với khả năng thu hồi nợ của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Tăng, giảm Tài sản cố định hữu hình)\nLoại nội dung: Bảng\n7. TĂNG, GIẢM TÀI SẢN CỐ ĐỊNH HỮU HÌNH\n| Khoản mục | Phương tiện vận tải | Máy móc, thiết bị | Nhà cửa vật kiến trúc | Thiết bị, dụng cụ quản lý | Khác | Tổng cộng |\n|-------------------------------|--------------------|-------------------|----------------------|--------------------------|-------|-------------|\n| Nguyên giá TSCĐ | | | | | | |\n| Số dư đầu kỳ | 25.332.605.169 | 192.319.292.659 | 563.289.141 | 198.200.000 | 166.452.982 | 218.579.839.951 |\n| Số tăng trong kỳ | - | - | - | - | - | - |\n| Mua trong năm | - | - | - | - | - | - |\n| Chuyển từ ĐTCB hoàn thành | - | - | - | - | - | - |\n| Số giảm trong kỳ | - | - | - | - | - | - |\n| Thanh lý, nhượng bán | - | - | - | - | - | - |\n| Số dư cuối kỳ | 25.332.605.169 | 192.319.292.659 | 563.289.141 | 198.200.000 | 166.452.982 | 218.579.839.951 |\n| Giá trị HMLK | | | | | | |\n| Số dư đầu kỳ | 9.215.150.807 | 40.422.261.148 | 222.676.999 | 198.200.000 | 120.678.413 | 50.178.967.367 |\n| Số tăng trong kỳ | 642.055.990 | 6.443.945.454 | 43.981.482 | - | 8.322.650 | 7.138.305.576 |\n| Khấu hao trong kỳ | 642.055.990 | 6.443.945.454 | 43.981.482 | - | 8.322.650 | 7.138.305.576 |\n| Số giảm trong kỳ | - | - | - | - | - | - |\n| Thanh lý, nhượng bán | - | - | - | - | - | - |\n| Số dư cuối kỳ | 9.857.206.797 | 46.866.206.602 | 266.658.481 | 198.200.000 | 129.001.063 | 57.317.272.943 |\n| Giá trị còn lại | | | | | | |\n| Tại ngày đầu kỳ | 16.117.454.362 | 151.897.031.511 | 340.612.142 | - | 45.774.569 | 168.400.872.584 |\n| Tại ngày cuối kỳ | 15.475.398.372 | 145.453.086.057 | 296.630.660 | - | 37.451.919 | 161.262.567.008 |",
+    "questions": [
+      {
+        "question": "Nguyên giá của Tài sản cố định hữu hình cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị hao mòn lũy kế của Máy móc, thiết bị cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Giá trị còn lại của Phương tiện vận tải tại ngày đầu kỳ và cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tổng số khấu hao trong kỳ cho tất cả các loại tài sản cố định hữu hình.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đầu tư mới vào tài sản cố định hữu hình của công ty trong kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của khấu hao tài sản cố định đến lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo xu hướng thay đổi của giá trị còn lại của các loại tài sản cố định hữu hình nếu không có đầu tư mới trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Tăng, giảm Tài sản cố định vô hình, Chi phí trả trước)\nLoại nội dung: Bảng\n8. TĂNG, GIẢM TÀI SẢN CỐ ĐỊNH VÔ HÌNH\n| Khoản mục | Quyền sử dụng đất | Tài sản cố định vô hình khác | Cộng |\n|-------------------------------|--------------------|-----------------------------|-------|\n| Nguyên giá TSCĐ | | | |\n| Số dư đầu kỳ | 27.327.968.254 | - | 27.327.968.254 |\n| Số tăng trong kỳ | - | - | - |\n| Mua trong kỳ | - | - | - |\n| Số giảm trong kỳ | - | - | - |\n| Số dư cuối kỳ | 27.327.968.254 | - | 27.327.968.254 |\n| Giá trị hao mòn lũy kế | | | |\n| Số dư đầu kỳ | - | - | - |\n| Số tăng trong kỳ | - | - | - |\n| Số giảm trong kỳ | - | - | - |\n| Số dư cuối kỳ | - | - | - |\n| Giá trị còn lại | | | |\n| Tại ngày đầu kỳ | 27.327.968.254 | - | 27.327.968.254 |\n| Tại ngày cuối kỳ | 27.327.968.254 | - | 27.327.968.254 |\n\n9. CHI PHÍ TRẢ TRƯỚC\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|-------------------------------|-------------------|------------------|\n| a. Ngắn hạn | - | 102.894.764 |\n| Công cụ dụng cụ phân bổ ngắn hạn | - | - |\n| Chi phí trả trước ngắn hạn | - | - |\n| b. Dài hạn | 7.049.825.557 | 6.280.422.851 |\n| Công cụ dụng cụ phân bổ dài hạn | 2.518.314.124 | 1.647.880.748 |\n| Chi phí trả trước dài hạn | 4.531.511.433 | 4.632.542.103 |\n| Cộng | 7.049.825.557 | 6.280.422.851 |",
+    "questions": [
+      {
+        "question": "Nguyên giá của Tài sản cố định vô hình đầu kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng chi phí trả trước dài hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Giá trị còn lại của Quyền sử dụng đất tại ngày đầu kỳ và cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Chi phí trả trước ngắn hạn thay đổi như thế nào từ đầu năm đến cuối kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá chính sách khấu hao của công ty đối với tài sản cố định vô hình dựa trên dữ liệu hiện có.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng chi phí trả trước dài hạn đến dòng tiền hoạt động của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu không có sự tăng trưởng giá trị của tài sản cố định vô hình khi không có khấu hao.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "18",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Phải trả người bán, Thuế và các khoản phải nộp NN, Phải trả khác, Chi phí phải trả)\nLoại nội dung: Bảng\n10. PHẢI TRẢ NGƯỜI BÁN\n| Chỉ tiêu | Số cuối kỳ (Giá trị ghi sổ) | Số cuối kỳ (Khả năng trả nợ) | Số đầu năm (Giá trị ghi sổ) | Số đầu năm (Khả năng trả nợ) |\n|------------------------------|-----------------------------|------------------------------|-----------------------------|------------------------------|\n| Phải trả người bán ngắn hạn | 156.584.793.596 | 156.584.793.596 | 152.444.270.501 | 152.444.270.501 |\n| Các đối tượng công nợ khác | 156.584.793.596 | 156.584.793.596 | 152.444.270.501 | 152.444.270.501 |\n| Cộng | 156.584.793.596 | 156.584.793.596 | 152.444.270.501 | 152.444.270.501 |\n\n11. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC\n| Diễn giải | Số đầu năm | Số phải nộp trong kỳ | Số thực nộp trong kỳ | Thuế nộp bổ sung (Thuế GTGT được khấu trừ) | Số dư cuối kỳ |\n|---------------------------|------------|----------------------|----------------------|---------------------------------------------|-------------|\n| Thuế TNDN | 21.586.595.653 | 3.477.919.660 | 3.400.000.000 | - | 21.664.515.313 |\n| Thuế thu nhập cá nhân | 390.339.600 | - | - | - | 390.339.600 |\n| Phí, lệ phí và các khoản thuế phải nộp khác | 190.465.009 | 6.000.000 | 6.000.000 | - | 190.465.009 |\n| Cộng | 22.167.400.262 | 3.483.919.660 | 3.406.000.000 | - | 22.245.319.922 |\n\n12. PHẢI TRẢ KHÁC (Ngắn hạn)\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|--------------------------|-------------------|------------------|\n| Kinh phí công đoàn | 172.602.968 | 157.050.184 |\n| Bảo hiểm xã hội | 32.390.770 | 49.492.900 |\n| Bảo hiểm y tế | - | 127.551.564 |\n| Bảo hiểm thất nghiệp | - | 54.594.928 |\n| Phải trả, phải nộp khác | 917.754.126 | 949.070.989 |\n| Cộng | 1.122.747.864 | 1.337.760.565 |\n\n13. CHI PHÍ PHẢI TRẢ (Ngắn hạn)\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|----------------------|-------------------|------------------|\n| Chi phí lãi vay | - | 674.995.636 |\n| Cộng | - | 674.995.636 |",
+    "questions": [
+      {
+        "question": "Tổng phải trả người bán ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư cuối kỳ của Thuế TNDN là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh 'Kinh phí công đoàn' cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tổng số thuế TNDN đã nộp trong kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá xu hướng biến động của các khoản phải trả khác của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không còn chi phí lãi vay phải trả ngắn hạn đến báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro từ các khoản thuế phải nộp Nhà nước nếu không được quản lý hiệu quả.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "19",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Vay và nợ thuê tài chính ngắn hạn)\nLoại nội dung: Bảng\n14. VAY VÀ NỢ THUÊ TÀI CHÍNH NGẮN HẠN\n| Chỉ tiêu | Số cuối kỳ (Giá trị) | Số cuối kỳ (Khả năng trả nợ) | Tăng trong kỳ (Giá trị) | Giảm trong kỳ (Giá trị) | Số đầu năm (Giá trị) | Số đầu năm (Khả năng trả nợ) |\n|---------------------------------------------|----------------------|------------------------------|-------------------------|-------------------------|----------------------|------------------------------|\n| Vay ngắn hạn | 142.114.225.767 | 142.114.225.767 | 196.676.435.790 | 204.330.188.677 | 149.767.978.654 | 149.767.978.654 |\n| Vay Ngân hàng | 142.114.225.767 | 142.114.225.767 | 196.676.435.790 | 204.330.188.677 | 149.767.978.654 | 149.767.978.654 |\n| Ngân hàng TMCP ĐT & PT Việt Nam CN Hải Dương | - | - | - | - | - | - |\n| Ngân hàng TMCP Ngoại thương Việt Nam CN Hòa Bình | 72.912.612.860 | 72.912.612.860 | 80.088.744.066 | 127.125.497.300 | 119.949.366.094 | 119.949.366.094 |\n| Ngân hàng TMCP ĐT & PT Việt Nam CN Hồng Hà | 69.201.612.907 | 69.201.612.907 | 116.587.691.724 | 77.204.691.377 | 29.818.612.560 | 29.818.612.560 |\n| Vay dài hạn | - | - | - | - | - | - |\n| Tổng cộng | 142.114.225.767 | 142.114.225.767 | 196.676.435.790 | 204.330.188.677 | 149.767.978.654 | 149.767.978.654 |",
+    "questions": [
+      {
+        "question": "Tổng vay và nợ thuê tài chính ngắn hạn cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư đầu năm của khoản vay từ Ngân hàng TMCP Ngoại thương Việt Nam CN Hòa Bình là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng giá trị Vay ngắn hạn tăng trong kỳ và giảm trong kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính toán sự thay đổi trong khoản vay từ Ngân hàng TMCP ĐT & PT Việt Nam CN Hồng Hà từ đầu năm đến cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào nguồn vốn vay ngắn hạn từ các ngân hàng.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thanh khoản từ các khoản vay ngắn hạn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc giảm nợ gốc vay đến cấu trúc tài chính của công ty trong tương lai.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "20",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung - Vốn chủ sở hữu, Các khoản mục ngoài Bảng cân đối kế toán)\nLoại nội dung: Bảng\n15. VỐN CHỦ SỞ HỮU\na. Bảng đối chiếu biến động của vốn chủ sở hữu\n| Chỉ tiêu | Vốn đầu tư của chủ sở hữu | Thặng dư vốn cổ phần | Quỹ đầu tư phát triển | Lợi nhuận chưa phân phối | Tổng cộng |\n|------------------------------|--------------------------|-----------------------|-----------------------|--------------------------|-------------|\n| Số dư đầu năm trước | 369.588.160.000 | 1.100.000 | 3.982.689.911 | 95.679.787.255 | 451.654.206.607 |\n| Tăng trong năm | - | - | - | - | - |\n| Lãi trong năm trước | - | - | - | 30.199.499.050 | 30.199.499.050 |\n| Trích lập các quỹ | - | - | - | - | - |\n| Tăng khác | - | - | - | - | - |\n| Lỗ trong năm | - | - | - | - | - |\n| Phân phối lợi nhuận | - | - | - | - | - |\n| Chia cổ tức | - | - | - | - | - |\n| Giảm khác | - | - | - | - | - |\n| Số dư đầu kỳ này | 369.588.160.000 | 1.100.000 | 3.982.689.911 | 125.879.286.305 | 481.853.705.657 |\n| Tăng vốn trong kỳ | - | - | - | - | - |\n| Lãi trong kỳ | - | - | - | 13.911.678.640 | 13.911.678.640 |\n| Trích lập các quỹ | - | - | - | - | - |\n| Tăng khác | - | - | - | - | - |\n| Phân phối lợi nhuận | - | - | - | - | - |\n| Cổ tức | - | - | - | - | - |\n| Giảm khác | - | - | - | - | - |\n| Số cuối kỳ | 369.588.160.000 | 1.100.000 | 3.982.689.911 | 139.790.964.945 | 495.765.384.297 |\n\nb. Chi tiết vốn góp của chủ sở hữu\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|---------------------------------|-------------------|------------------|\n| Vốn góp của các đối tượng khác | 369.588.160.000 | 369.588.160.000 |\n| Cộng | 369.588.160.000 | 369.588.160.000 |\n\nc. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|------------------------------------|-------------------|------------------|\n| Vốn đầu tư của chủ sở hữu | | |\n| Vốn góp đầu năm | 369.588.160.000 | 369.588.160.000 |\n| Vốn góp cuối kỳ | 369.588.160.000 | 369.588.160.000 |\n\nd. Cổ phiếu\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|-----------------------------------|-------------------|------------------|\n| Số lượng cổ phiếu đăng ký phát hành | 36.958.816 | 36.958.816 |\n| Số lượng cổ phiếu đã bán ra công chúng | 36.958.816 | 36.958.816 |\n| Cổ phiếu phổ thông | 36.958.816 | 36.958.816 |\n| Số lượng cổ phiếu đang lưu hành | 36.958.816 | 36.958.816 |\n| Cổ phiếu phổ thông | 36.958.816 | 36.958.816 |\n| Mệnh giá cổ phiếu đang lưu hành | 10.000 VND | - |\n\ne. Lãi cơ bản trên cổ phiếu\n| Chỉ tiêu | Năm nay (VND) | Năm trước (VND) |\n|----------------------------------------------|---------------|-----------------|\n| Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp | 13.911.678.640 | 14.267.731.004 |\n| Cổ phiếu phổ thông đang lưu hành bình quân trong kỳ | 36.958.816 | 31.589.802 |\n| Lãi cơ bản trên cổ phiếu | 376,41 | 451,66 |\n\n16. CÁC KHOẢN MỤC NGOÀI BẢNG CÂN ĐỐI KẾ TOÁN\n| Chỉ tiêu | Số cuối kỳ | Số đầu năm |\n|--------------------|------------|------------|\n| Ngoại tệ các loại | 6,94 USD | 6,94 USD |\n| Cộng | 6,94 | 6,94 |",
+    "questions": [
+      {
+        "question": "Tổng vốn chủ sở hữu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lợi nhuận chưa phân phối đầu kỳ này với cuối kỳ.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Lãi cơ bản trên cổ phiếu năm nay là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tăng trưởng lợi nhuận sau thuế của công ty so với năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các giao dịch vốn với chủ sở hữu đến cơ cấu vốn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo ảnh hưởng của sự thay đổi trong số lượng cổ phiếu phổ thông đang lưu hành bình quân đến lãi cơ bản trên cổ phiếu.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "21",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung cho Báo cáo kết quả kinh doanh - Doanh thu, Giá vốn, Doanh thu tài chính, Chi phí tài chính)\nLoại nội dung: Bảng\nVI. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ KINH DOANH\n1. DOANH THU\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|------------------|----------------|----------------|\n| Tổng doanh thu | 176.974.471.592 | 192.781.378.518 |\n| Doanh thu bán hàng | 176.974.471.592 | 192.781.378.518 |\n| Doanh thu thuần | 176.974.471.592 | 192.781.378.518 |\n\n2. GIÁ VỐN HÀNG BÁN\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|-----------------|----------------|----------------|\n| Giá vốn bán hàng | 164.020.795.172 | 172.584.216.799 |\n| Cộng | 164.020.795.172 | 172.584.216.799 |\n\n3. DOANH THU HOẠT ĐỘNG TÀI CHÍNH\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|---------------------------------------------|----------------|----------------|\n| Lãi tiền gửi | 95.261.180 | 755.468.341 |\n| Lãi từ chuyển nhượng cổ phần Công ty CP Nhựa Trường An | - | - |\n| Cộng | 95.261.180 | 755.468.341 |\n\n4. CHI PHÍ TÀI CHÍNH\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|------------------------|----------------|----------------|\n| Chi phí lãi vay | 2.155.153.937 | 3.021.964.207 |\n| Lỗ chênh lệch tỷ giá | - | - |\n| Cộng | 2.155.153.937 | 3.021.964.207 |",
+    "questions": [
+      {
+        "question": "Tổng doanh thu thuần kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí lãi vay kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Lãi tiền gửi kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tính tỷ suất lợi nhuận gộp (Gross Profit Margin) kỳ này dựa trên doanh thu thuần và giá vốn hàng bán.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá hiệu quả hoạt động tài chính của công ty dựa trên doanh thu và chi phí tài chính.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của sự sụt giảm doanh thu hoạt động tài chính đến lợi nhuận ròng của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro tài chính nếu chi phí lãi vay tiếp tục chiếm tỷ trọng lớn trong tổng chi phí tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "22",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin bổ sung cho Báo cáo kết quả kinh doanh - Chi phí bán hàng & QLDN, Thu nhập & Chi phí khác, Thuế TNDN hiện hành, Lãi cơ bản trên cổ phiếu)\nLoại nội dung: Bảng\n5. CHI PHÍ BÁN HÀNG VÀ CHI PHÍ QUẢN LÝ\na. Chi phí bán hàng\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|-----------------------------|----------------|----------------|\n| Chi phí dịch vụ mua ngoài | 247.002.677 | 109.895.089 |\n| Cộng | 247.002.677 | 109.895.089 |\n\nb. Chi phí quản lý doanh nghiệp\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|-----------------------------|----------------|----------------|\n| Chi phí nhân công | 546.204.553 | 455.170.461 |\n| Chi phí dịch vụ mua ngoài | 59.028.398 | 479.407.974 |\n| Cộng | 605.232.951 | 934.578.435 |\n\n6. THU NHẬP KHÁC\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|------------------|----------------|----------------|\n| Các khoản khác | - | 784 |\n| Cộng | - | 784 |\n\n7. CHI PHÍ KHÁC\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|------------------|----------------|----------------|\n| Các khoản khác | - | - |\n| Cộng | - | - |\n\n8. CHI PHÍ THUẾ THU NHẬP DOANH NGHIỆP HIỆN HÀNH\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|----------------------------------------------------|----------------|----------------|\n| Chi phí thuế thu nhập doanh nghiệp tính trên thu nhập chịu thuế năm hiện hành | 2.008.309.607 | 2.618.461.325 |\n| Tổng chi phí thuế thu nhập doanh nghiệp hiện hành | 2.008.309.607 | 2.618.461.325 |\n\n9. LÃI CƠ BẢN TRÊN CỔ PHIẾU\n| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |\n|---------------------------------------------|----------------|----------------|\n| Lợi nhuận thuần sau thuế | 8.033.238.428 | 14.267.731.004 |\n| Lợi nhuận phân bổ cho cổ phiếu phổ thông | 8.033.238.428 | 14.267.731.004 |\n| Cổ phiếu phổ thông lưu hành bình quân trong kỳ | 36.958.816 | 36.958.816 |\n| Lãi cơ bản trên cổ phiếu | 217,36 | 386,04 |",
+    "questions": [
+      {
+        "question": "Chi phí bán hàng từ dịch vụ mua ngoài kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận thuần sau thuế kỳ này là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh Chi phí quản lý doanh nghiệp kỳ này với kỳ trước.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự thay đổi trong 'Lãi cơ bản trên cổ phiếu' giữa kỳ này và kỳ trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả quản lý chi phí bán hàng và chi phí quản lý doanh nghiệp của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính tỷ lệ chi phí nhân công trên tổng chi phí quản lý doanh nghiệp kỳ này.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc giảm chi phí thuế thu nhập doanh nghiệp hiện hành đến lợi nhuận ròng của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "23",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin khác - Công cụ tài chính và Quản lý rủi ro tài chính)\nLoại nội dung: Bảng và Text\nVIII. NHỮNG THÔNG TIN KHÁC\n1. CÔNG CỤ TÀI CHÍNH\nCác loại công cụ tài chính của Công ty bao gồm:\n\nFinancial assets (Tài sản tài chính)\n| Chỉ tiêu | Số cuối kỳ (Giá trị) | Số cuối kỳ (Dự phòng) | Số đầu năm (Giá trị) | Số đầu năm (Dự phòng) |\n|-------------------------------|----------------------|-----------------------|----------------------|-----------------------|\n| Tiền và các khoản tương đương tiền | 49.584.973.100 | - | 93.801.463.027 | - |\n| Phải thu khách hàng, phải thu khác | 158.067.572.126 | - | 139.528.465.829 | - |\n| Cộng | 207.652.545.226 | - | 233.329.928.856 | - |\n\nFinancial liabilities (Nợ phải trả tài chính)\n| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu năm (VND) |\n|---------------------------------------|-------------------|------------------|\n| Vay và nợ | 176.837.289.519 | 149.767.978.654 |\n| Phải trả người bán, phải trả khác | 165.544.920.459 | 153.782.031.066 |\n| Chi phí phải trả | 674.995.636 | 674.995.636 |\n| Cộng | 343.057.205.614 | 304.225.005.356 |\n\nQuản lý rủi ro tài chính\nRủi ro tài chính của Công ty bao gồm rủi ro thị trường, rủi ro tín dụng và rủi ro thanh khoản. Công ty đã xây dựng hệ thống kiểm soát nhằm đảm bảo sự cân bằng ở mức hợp lý giữa chi phí rủi ro phát sinh và chi phí quản lý rủi ro. Ban Giám đốc Công ty có trách nhiệm theo dõi quy trình quản lý rủi ro để đảm bảo sự cân bằng hợp lý giữa rủi ro và kiểm soát rủi ro.\n\nRủi ro thị trường\nHoạt động kinh doanh của Công ty sẽ chủ yếu chịu rủi ro khi có sự thay đổi về giá, tỷ giá hối đoái và lãi suất.\n\nRủi ro về giá\nCông ty chịu rủi ro về giá của các công cụ vốn phát sinh từ các khoản đầu tư cổ phiếu ngắn hạn và dài hạn do tính không chắc chắn về giá tương lai của cổ phiếu đầu tư. Các khoản đầu tư cổ phiếu dài hạn được nắm giữ với mục đích chiến lược lâu dài, tại thời điểm kết thúc kỳ kế toán Công ty chưa có kế hoạch bán các khoản đầu tư này.\n\nRủi ro về tỷ giá hối đoái\nCông ty chịu rủi ro về tỷ giá do giá trị hợp lý của các luồng tiền trong tương lai của một công cụ tài chính sẽ biến động theo những thay đổi của tỷ giá ngoại tệ khi các khoản vay, doanh thu và chi phí của Công ty được thực hiện bằng đơn vị tiền tệ khác với đồng Việt Nam.\n\nRủi ro về lãi suất\nCông ty chịu rủi ro về lãi suất do giá trị hợp lý của các luồng tiền trong tương lai của một công cụ tài chính sẽ biến động theo những thay đổi của lãi suất thị trường khi Công ty có phát sinh các khoản tiền gửi có hoặc không có kỳ hạn, các khoản vay và nợ chịu lãi suất thả nổi. Công ty quản lý rủi ro lãi suất bằng cách phân tích tình hình cạnh tranh trên thị trường để có được các lãi suất có lợi cho mục đích của Công ty.",
+    "questions": [
+      {
+        "question": "Tổng tài sản tài chính cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các loại rủi ro tài chính của công ty bao gồm những gì?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Nợ phải trả tài chính cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Công ty quản lý rủi ro lãi suất như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của tài sản tài chính và nợ phải trả tài chính từ đầu năm đến cuối kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro thị trường mà công ty phải đối mặt và các yếu tố ảnh hưởng.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc tăng lãi suất thị trường đối với chi phí vay vốn và khả năng sinh lời của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "24",
+    "content": "Công ty: Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD\nMã cổ phiếu: Không có\nLoại báo cáo: Báo cáo tài chính riêng quý II/2025\nThời gian: Ngày 30 tháng 06 năm 2025, Quý II/2025\nÝ kiến kiểm toán: Không có\n\nSection: Thuyết minh Báo cáo tài chính (Thông tin khác - Quản lý rủi ro tín dụng và thanh khoản, Sự kiện phát sinh sau kỳ kế toán, Báo cáo bộ phận)\nLoại nội dung: Bảng và Text\nRủi ro tín dụng\nRủi ro tín dụng là rủi ro mà một bên tham gia trong một công cụ tài chính hoặc hợp đồng không có khả năng thực hiện được nghĩa vụ của mình dẫn đến tổn thất về tài chính cho Công ty. Công ty có các rủi ro tín dụng từ hoạt động sản xuất kinh doanh chủ yếu đối với các khoản phải thu khách hàng và hoạt động tài chính bao gồm tiền gửi ngân hàng, cho vay và các công cụ tài chính khác.\n| Chỉ tiêu | Từ 1 năm trở xuống (VND) | Trên 1 năm đến 5 năm (VND) | Trên 5 năm (VND) | Tổng (VND) |\n|-------------------------------|--------------------------|----------------------------|-----------------|-------------|\n| Số cuối kỳ | | | | |\n| Tiền và các khoản tương đương tiền | 49.584.973.100 | - | - | 49.584.973.100 |\n| Phải thu khách hàng, phải thu khác | 158.067.572.126 | - | - | 158.067.572.126 |\n| Cộng | 207.652.545.226 | - | - | 207.652.545.226 |\n| Số đầu năm | | | | |\n| Tiền và các khoản tương đương tiền | 93.801.463.027 | - | - | 93.801.463.027 |\n| Phải thu khách hàng, phải thu khác | 139.528.465.829 | - | - | 139.528.465.829 |\n| Cộng | 233.329.928.856 | - | - | 233.329.928.856 |\n\nRủi ro thanh khoản\nRủi ro thanh khoản là rủi ro Công ty gặp khó khăn khi thực hiện các nghĩa vụ tài chính do thiếu vốn. Rủi ro thanh khoản của Công ty chủ yếu phát sinh từ việc các tài sản tài chính và nợ phải trả tài chính có các thời điểm đáo hạn khác nhau. Thời hạn thanh toán của các khoản nợ phải trả tài chính dựa trên các khoản thanh toán dự kiến theo hợp đồng trên cơ sở dòng tiền của các khoản gốc như sau:\n| Chỉ tiêu | Từ 1 năm trở xuống (VND) | Trên 1 năm đến 5 năm (VND) | Trên 5 năm (VND) | Tổng (VND) |\n|-------------------------------|--------------------------|----------------------------|-----------------|-------------|\n| Số cuối kỳ | | | | |\n| Vay và nợ | 176.837.289.519 | - | - | 176.837.289.519 |\n| Phải trả người bán, phải trả khác | 165.544.920.459 | - | - | 165.544.920.459 |\n| Chi phí phải trả | 674.995.636 | - | - | 674.995.636 |\n| Cộng | 343.057.205.614 | - | - | 343.057.205.614 |\n| Số đầu năm | | | | |\n| Vay và nợ | 149.767.978.654 | - | - | 149.767.978.654 |\n| Phải trả người bán, phải trả khác | 153.782.031.066 | - | - | 153.782.031.066 |\n| Chi phí phải trả | 674.995.636 | - | - | 674.995.636 |\n| Cộng | 304.225.005.356 | - | - | 304.225.005.356 |\nCông ty cho rằng mức độ tập trung rủi ro đối với việc trả nợ là có thể kiểm soát được. Công ty có khả năng thanh toán các khoản nợ đến hạn từ dòng tiền từ hoạt động kinh doanh và tiền thu từ các tài sản tài chính đáo hạn.\n\n2. NHỮNG SỰ KIỆN PHÁT SINH SAU NGÀY KẾT THÚC KỲ KẾ TOÁN\nKhông có sự kiện trọng yếu nào xảy ra sau ngày kết thúc kỳ kế toán đòi hỏi phải được điều chỉnh hay công bố trên Báo cáo tài chính này.\n\n3. BÁO CÁO BỘ PHẬN\nBáo cáo bộ phận theo khu vực địa lý: Công ty chỉ hoạt động trong khu vực địa lý Việt Nam.\nBáo cáo bộ phận theo lĩnh vực kinh doanh:\n| Chỉ tiêu | Kinh doanh hàng hóa (VND) | Tổng (VND) |\n|--------------------------------------|--------------------------|-------------|\n| Doanh thu thuần ra bên ngoài | 176.974.471.592 | 176.974.471.592 |\n| Tổng doanh thu thuần | 176.974.471.592 | 176.974.471.592 |\n| Chi phí bộ phận | 164.020.795.172 | 164.020.795.172 |\n| Kết quả kinh doanh bộ phận | 12.953.676.420 | 12.953.676.420 |\n| Các chi phí không phân bổ theo bộ phận | 852.235.628 | - |\n| Lợi nhuận từ hoạt động kinh doanh | 12.101.440.792 | - |\n| Doanh thu hoạt động tài chính | 95.261.180 | - |\n| Chi phí tài chính | 2.155.153.937 | - |\n| Thu nhập khác | - | - |\n| Chi phí khác | - | - |\n| Thuế TNDN hiện hành | 2.008.309.607 | - |\n| Lợi nhuận sau thuế | 8.033.238.428 | - |",
+    "questions": [
+      {
+        "question": "Định nghĩa rủi ro tín dụng theo báo cáo.",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng nợ vay và nợ phải trả theo thời hạn thanh toán từ 1 năm trở xuống cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Rủi ro thanh khoản của công ty phát sinh từ đâu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng doanh thu thuần ra bên ngoài từ hoạt động kinh doanh hàng hóa là bao nhiêu VND?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá khả năng kiểm soát rủi ro tín dụng của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích mức độ tập trung rủi ro thanh khoản của công ty dựa trên bảng thời hạn thanh toán.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có sự kiện trọng yếu sau ngày kết thúc kỳ kế toán đến niềm tin của nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]

@@ -1,0 +1,671 @@
+```json
+[
+  {
+    "chunk_id": "1",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Công bố thông tin và Thông tin Khái quát<br>Loại nội dung: Text<br>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>Độc lập - Tự do - Hạnh phúc<br>Số 333/CT/INC TP. Hồ Chí Minh, ngày 18 tháng 10 năm 2024<br>về việc công bố thông tin<br>Báo cáo tài chính quý III/2024<br>Kính gửi Sở Giao dịch Chứng khoán Hà Nội.<br>Thực hiện quy định tại khoản 3 Điều 14 Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán, Công ty cổ phần Tư vấn đầu tư IDICO thực hiện công bố thông tin Báo cáo tài chính quý III năm 2024 với Sở Giao dịch Chứng khoán Hà Nội như sau:<br>1. Tên tổ chức: Công ty cổ phần Tư vấn đầu tư IDICO<br> Mã chứng khoán: INC<br> Địa chỉ trụ sở: Số 100 Đường Nguyễn Gia Trí, P25, Q.Bình Thạnh, TP. Hồ Chí Minh.<br> Điện thoại: 0283 8995588 Fax: 0283 8995588<br> Email: headoffice@idico.com.vn Website: https://idicoincon.com.vn<br>2. Nội dung thông tin công bố:<br> Báo cáo tài chính quý III năm 2024<br> BCTC riêng (TCNY không có công ty con và đơn vị kế toán cấp trên có đơn vị trực thuộc)<br> BCTC hợp nhất (TCNY có công ty con)<br> BCTC tổng hợp (TCNY có đơn vị kế toán trực thuộc tổ chức bộ máy kế toán riêng).<br> Các trường hợp thuộc diện phải giải trình nguyên nhân:<br> Tổ chức kiểm toán đưa ra ý kiến không phải là ý kiến chấp nhận toàn phần đối với BCTC: Có [ ] Không [x]<br> Lợi nhuận sau thuế trong kỳ báo cáo có sự chênh lệch trước và sau kiểm toán từ 5% trở lên, chuyển từ lỗ sang lãi hoặc ngược lại: Có [ ] Không [x]<br> Lợi nhuận sau thuế thu nhập doanh nghiệp tại báo cáo kết quả kinh doanh của kỳ báo cáo thay đổi từ 10% trở lên so với báo cáo cùng kỳ năm trước: Có [x] Không [ ]<br> Văn bản giải trình trong trường hợp tích 'Có': Có [x] Không [ ]<br> Lợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này hoặc ngược lại: Có [x] Không [ ]<br> Văn bản giải trình trong trường hợp tích 'Có': Có [x] Không [ ]<br>Thông tin này đã được công bố trên trang thông tin điện tử của Công ty vào ngày 18/10/2024 tại đường dẫn https://idicoincon.com.vn<br>Chúng tôi cam kết các thông tin công bố trên đây là đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật về nội dung các thông tin đã công bố.",
+    "questions": [
+      {
+        "question": "Tên đầy đủ của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Mã chứng khoán của công ty là gì?",
+        "difficulty": "Easy_NER"
+      },
+      {
+        "question": "Báo cáo này được công bố vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Loại báo cáo tài chính được công bố là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Ý kiến kiểm toán đối với BCTC có phải là chấp nhận toàn phần không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Có sự thay đổi lớn về lợi nhuận sau thuế TNDN so với cùng kỳ năm trước không? Nếu có, công ty có cần giải trình không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc lợi nhuận sau thuế trong kỳ báo cáo bị lỗ so với cùng kỳ năm trước đến tâm lý nhà đầu tư.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ tuân thủ quy định công bố thông tin của công ty dựa trên các điều kiện được liệt kê.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "2",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin chung)<br>Loại nội dung: Text<br>I. THÔNG TIN KHÁI QUÁT<br>1. Hình thức sở hữu vốn<br> Công ty cổ phần Tư vấn đầu tư IDICO được cổ phần hóa từ Công ty Tư vấn Đầu tư IDICO, là doanh nghiệp thành viên của Tổng công ty Đầu tư phát triển đô thị và khu công nghiệp Việt Nam nay là Tổng công ty IDICO - CTCP.<br> Công ty chính thức hoạt động theo mô hình Công ty cổ phần theo Giấy chứng nhận đăng ký doanh nghiệp số 0304843611 do Sở Kế hoạch và Đầu tư thành phố Hồ Chí Minh cấp lần đầu ngày 31/01/2007 và Giấy chứng nhận đăng ký kinh doanh thay đổi lần thứ mười một ngày 18/03/2022.<br> Công ty hiện đang niêm yết chứng khoán tại Sở Giao dịch Chứng khoán Hà Nội kể từ ngày 18/04/2011.<br> Mã cổ phiếu: INC<br> Vốn điều lệ của Công ty theo Giấy chứng nhận đăng ký doanh nghiệp lần thứ 11 ngày 18/03/2022 là 20.000.000.000 VND (Bằng chữ: Hai mươi tỷ đồng).<br> Tên Công ty viết bằng tiếng nước ngoài là IDICO Investment Consultancy Joint Stock Company.<br> Tên Công ty viết tắt là IDICO - INCON.<br> Trụ sở chính của Công ty tại số 100, đường Nguyễn Gia Trí, phường 25, quận Bình Thạnh, thành phố Hồ Chí Minh.<br> Tổng số lao động của Công ty đến 30/09/2024 là 49 người.<br><br>| Stt | Cổ đông | Số cổ phần | Số tiền (Đồng) | Tỷ lệ sở hữu |<br>|-----|--------------------------------|------------|-----------------|-------------|<br>| 1   | Tổng công ty IDICO - CTCP       | 1.408.000  | 14.080.000.000  | 70,4        |<br>| 2   | Nguyễn Trọng Thạo              | 101.200    | 1.012.000.000   | 5,06        |<br>| 3   | Ki An Soon                     | 161.200    | 1.612.000.000   | 8,06        |<br>| 4   | Vốn góp của các đối tượng khác | 329.600    | 3.296.000.000   | 16,48       |<br>|     | Tổng cộng                     | 2.000.000  | 20.000.000.000  | 100         |<br><br>2. Lĩnh vực kinh doanh: Dịch vụ<br>3. Ngành nghề kinh doanh và hoạt động chính:<br> Tư vấn quản lý thực hiện các dự án đầu tư xây dựng các công trình dân dụng, công nghiệp, thủy lợi, thủy điện, nhiệt điện, giao thông, nông nghiệp.<br> Tư vấn đấu thầu về xây lắp, cung cấp vật tư và mua sắm máy móc thiết bị.<br> Lập và thẩm tra dự án đầu tư xây dựng, thẩm tra thiết kế, dự toán và tổng dự toán các công trình dân dụng, công nghiệp, giao thông, thủy lợi, thủy điện, nhiệt điện, nông nghiệp, công trình hạ tầng kỹ thuật đô thị và khu công nghiệp.<br> Thiết kế hệ thống điện công trình dân dụng và công nghiệp.<br> Thiết kế kết cấu công trình dân dụng và công nghiệp.<br> Thiết kế công trình kỹ thuật hạ tầng đô thị.<br> Thiết kế quy hoạch xây dựng công trình.<br> Giám sát thi công xây dựng công trình dân dụng và công nghiệp, lĩnh vực xây dựng và hoàn thiện, lắp đặt phần điện và thiết bị điện công trình.<br> Khảo sát địa hình, khảo sát địa chất.<br> Thiết kế kết cấu công trình giao thông.<br> Giám sát thi công công trình giao thông, thủy lợi, thủy điện, nhiệt điện.<br> Đánh giá tác động môi trường.<br> Thiết kế kiến trúc công trình.<br> Thiết kế nội - ngoại thất công trình.<br> Thẩm tra an toàn giao thông đường bộ.<br> Lập báo cáo đầu tư nghiên cứu tiền khả thi và khả thi giao thông, hạ tầng kỹ thuật đô thị và khu công nghiệp.<br> Giám sát công tác xây dựng và hoàn thiện công trình hạ tầng kỹ thuật hệ thống cấp nước, thoát nước, môi trường đô thị và khu công nghiệp.<br> Giám sát công tác khảo sát địa chất công trình dân dụng và giao thông.<br> Hoạt động đo đạc bản đồ.<br> Tư vấn thiết kế về phòng cháy, chữa cháy.<br> Tư vấn giám sát về phòng cháy, chữa cháy.<br> Xây dựng thực nghiệm các công trình thuộc các dự án thử nghiệm công nghệ mới hoặc thuộc các đề tài nghiên cứu khoa học cải tạo, duy tu, trùng tu các công trình văn hóa và bảo tồn lịch sử.<br> Xây dựng các công trình dân dụng, công nghiệp, thủy lợi, thủy điện, nhiệt điện, giao thông, nông nghiệp.<br> Đầu tư xây dựng, kinh doanh phát triển nhà, công trình kỹ thuật hạ tầng đô thị.<br> Thí nghiệm các loại vật liệu xây dựng và cơ học đất.<br> Lập báo cáo đánh giá tác động môi trường chiến lược.<br> Kiểm định chất lượng vật liệu xây dựng, máy móc thiết bị, kiểm định chất lượng các công trình xây dựng.<br> Chứng nhận sự phù hợp về chất lượng công trình xây dựng.<br> Khai thác, nghiên cứu, ứng dụng và chuyển giao công nghệ mới về công nghệ thông tin, công nghệ xây dựng, vật liệu xây dựng.<br> Khai thác, nghiên cứu, ứng dụng và chuyển giao công nghệ mới về đào tạo nghề, bồi dưỡng nghiệp vụ.<br> Thi công trang trí nội - ngoại thất công trình.<br>4. Chu kỳ sản xuất kinh doanh thông thường<br>Chu kỳ sản xuất kinh doanh thông thường của Công ty là 12 tháng.<br>5. Tuyên bố về khả năng so sánh thông tin trên Báo cáo tài chính<br>Công ty áp dụng nhất quán các chính sách kế toán theo Chế độ Kế toán doanh nghiệp Việt Nam ban hành kèm theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 do Bộ Tài chính ban hành và Thông tư 53/2016/TT-BTC ngày 21/03/2016 sửa đổi bổ sung một số điều của Thông tư 200/2014/TT-BTC, do đó, thông tin và số liệu trình bày trên Báo cáo tài chính là có thể so sánh được.<br>II. NĂM TÀI CHÍNH, ĐƠN VỊ TIỀN TỆ SỬ DỤNG TRONG KẾ TOÁN<br>1. Năm tài chính: Năm tài chính của Công ty bắt đầu từ ngày 01 tháng 01 và kết thúc vào ngày 31 tháng 12 hàng năm.<br>2. Đơn vị tiền tệ sử dụng trong kế toán: Đồng Việt Nam (VND).<br>III. CHUẨN MỰC VÀ CHẾ ĐỘ KẾ TOÁN ÁP DỤNG<br>1. Chế độ kế toán áp dụng<br>Công ty áp dụng chế độ kế toán doanh nghiệp Việt Nam được ban hành kèm theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 và Thông tư 53/2016/TT-BTC ngày 21/03/2016 sửa đổi bổ sung một số điều của Thông tư 200/2014/TT-BTC do Bộ Tài chính ban hành.<br>2. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán<br>Ban Giám đốc Công ty đảm bảo đã tuân thủ đầy đủ các Chuẩn mực Kế toán Việt Nam và Chế độ Kế toán doanh nghiệp Việt Nam hiện hành đã được ban hành và có hiệu lực liên quan đến việc lập và trình bày Báo cáo tài chính cho kỳ kế toán kết thúc ngày 30/09/2024.<br>3. Hình thức kế toán áp dụng: Công ty sử dụng hình thức kế toán Nhật ký chung.<br>IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG<br>1. Cơ sở lập Báo cáo tài chính<br> Báo cáo tài chính kèm theo được trình bày bằng Đồng Việt Nam (VND), theo nguyên tắc giá gốc và phù hợp với các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam hiện hành và các quy định pháp lý có liên quan đến việc lập và trình bày Báo cáo tài chính.<br> Báo cáo tài chính kèm theo không nhằm phản ánh tình hình tài chính, kết quả hoạt động kinh doanh và tình hình lưu chuyển tiền tệ theo các nguyên tắc và thông lệ kế toán được chấp nhận chung tại các nước khác ngoài Việt Nam.<br>2. Nguyên tắc ghi nhận tiền và các khoản tương đương tiền<br> Tiền: Bao gồm Tiền mặt, Tiền gửi ngân hàng không kỳ hạn.<br> Tiền mặt, Tiền gửi ngân hàng được ghi nhận trên cơ sở thực tế phát sinh thu chi.<br> Các khoản Tương đương tiền: Là các khoản đầu tư ngắn hạn, tiền gửi có kỳ hạn có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày đầu tư, tiền gửi có khả năng chuyển đổi dễ dàng thành một lượng tiền xác định và không có rủi ro trong chuyển đổi thành tiền tại thời điểm báo cáo.",
+    "questions": [
+      {
+        "question": "Công ty IDICO INCON niêm yết chứng khoán vào ngày nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn điều lệ hiện tại của công ty là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng công ty IDICO - CTCP sở hữu bao nhiêu phần trăm vốn điều lệ của IDICO INCON?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Các ngành nghề kinh doanh chính của công ty IDICO INCON là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Năm tài chính của công ty bắt đầu và kết thúc vào thời điểm nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đơn vị tiền tệ sử dụng trong kế toán của công ty là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ tập trung sở hữu vốn của công ty dựa trên bảng cổ đông.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các chính sách kế toán nhất quán đến khả năng so sánh thông tin tài chính qua các kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Liệu các nguyên tắc ghi nhận tiền và các khoản tương đương tiền có đảm bảo khả năng thanh khoản tức thời cho công ty không? Giải thích.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "3",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối Kế toán (Phần A - Tài sản ngắn hạn)<br>Loại nội dung: Bảng<br>BẢNG CÂN ĐỐI KẾ TOÁN<br>Tại ngày 30 tháng 09 năm 2024<br><br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối quý | Số đầu năm |<br>|:---------|:------|:------------|:------------|:-----------|<br>| A. TÀI SẢN NGẮN HẠN | 100   |             | 33.430.074.784 | 30.823.138.059 |<br>| I. Tiền và các khoản tương đương tiền | 110   | V.1         | 3.468.571.242 | 3.094.228.807 |<br>| 1. Tiền | 111   |             | 3.468.571.242 | 3.094.228.807 |<br>| 2. Các khoản tương đương tiền | 112   |             | -           | -           |<br>| II. Đầu tư tài chính ngắn hạn | 120   |             | -           | -           |<br>| III. Các khoản phải thu ngắn hạn | 130   |             | 15.215.265.920 | 13.574.193.068 |<br>| 1. Phải thu ngắn hạn của khách hàng | 131   | V.2         | 15.646.425.075 | 14.295.294.288 |<br>| 2. Trả trước cho người bán | 132   |             | 298.000.000 | 420.320.000 |<br>| 3. Phải thu ngắn hạn khác | 136   | V.3         | 503.510.132 | 405.336.572 |<br>| 4. Dự phòng phải thu ngắn hạn khó đòi | 137   | V.4         | 1.232.669.287 | 1.546.757.792 |<br>| IV. Hàng tồn kho | 140   |             | 14.746.237.622 | 14.126.527.927 |<br>| 1. Hàng tồn kho | 141   | V.5         | 14.746.237.622 | 14.126.527.927 |<br>| V. Tài sản ngắn hạn khác | 150   |             | -           | 28.188.257 |<br>| 1. Chi phí trả trước ngắn hạn | 151   | V.6         | -           | 28.188.257 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản ngắn hạn cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và các khoản tương đương tiền cuối quý là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Hàng tồn kho cuối quý là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng tài sản ngắn hạn cuối quý với đầu năm. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng của các khoản phải thu ngắn hạn trong tổng tài sản ngắn hạn cuối quý là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ rủi ro của các khoản phải thu ngắn hạn khó đòi dựa trên số liệu cuối quý và đầu năm.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích khả năng thanh toán ngắn hạn của công ty dựa trên cơ cấu tài sản ngắn hạn hiện tại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc không có đầu tư tài chính ngắn hạn đến hiệu quả sử dụng vốn của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "4",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối Kế toán (Phần B - Tài sản dài hạn)<br>Loại nội dung: Bảng<br>BẢNG CÂN ĐỐI KẾ TOÁN<br>Tại ngày 30 tháng 09 năm 2024<br><br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối quý | Số đầu năm |<br>|:---------|:------|:------------|:------------|:-----------|<br>| B. TÀI SẢN DÀI HẠN | 200   |             | 5.973.375.428 | 6.265.646.685 |<br>| I. Các khoản phải thu dài hạn | 210   |             | -           | -           |<br>| II. Tài sản cố định | 220   |             | 5.973.375.428 | 6.261.176.987 |<br>| 1. Tài sản cố định hữu hình | 221   | V.7         | 3.584.321.428 | 3.872.122.987 |<br>| - Nguyên giá | 222   |             | 8.468.167.418 | 8.435.694.691 |<br>| - Giá trị hao mòn lũy kế | 223   |             | 4.883.845.990 | 4.563.571.704 |<br>| 2. Tài sản cố định vô hình | 227   | V.8         | 2.389.054.000 | 2.389.054.000 |<br>| - Nguyên giá | 228   |             | 4.865.783.400 | 4.865.783.400 |<br>| - Giá trị hao mòn lũy kế | 229   |             | 2.476.729.400 | 2.476.729.400 |<br>| III. Bất động sản đầu tư | 230   |             | -           | -           |<br>| IV. Tài sản dở dang dài hạn | 240   |             | -           | -           |<br>| V. Đầu tư tài chính dài hạn | 250   |             | -           | -           |<br>| VI. Tài sản dài hạn khác | 260   |             | -           | 4.469.698 |<br>| 1. Chi phí trả trước dài hạn | 261   | V.6         | -           | 4.469.698 |<br>| TỔNG CỘNG TÀI SẢN | 270   |             | 39.403.450.212 | 37.088.784.744 |",
+    "questions": [
+      {
+        "question": "Tổng tài sản dài hạn cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của tài sản cố định hữu hình cuối quý là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh tổng tài sản dài hạn cuối quý với đầu năm. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ trọng tài sản cố định hữu hình trên tổng tài sản dài hạn cuối quý là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hao mòn lũy kế của tài sản cố định hữu hình so với nguyên giá.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc không có các khoản phải thu dài hạn và đầu tư tài chính dài hạn đến chiến lược kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro nếu giá trị hao mòn lũy kế của tài sản cố định tiếp tục tăng nhanh so với nguyên giá.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá hiệu quả sử dụng tài sản dài hạn dựa trên cơ cấu hiện tại và xu hướng thay đổi trong kỳ.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "5",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối Kế toán (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>BẢNG CÂN ĐỐI KẾ TOÁN<br>Tại ngày 30 tháng 09 năm 2024<br><br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối quý | Số đầu năm |<br>|:---------|:------|:------------|:------------|:-----------|<br>| C. NỢ PHẢI TRẢ | 300   |             | 14.869.991.446 | 12.710.358.682 |<br>| I. Nợ ngắn hạn | 310   |             | 14.869.991.446 | 12.710.358.682 |<br>| 1. Phải trả người bán ngắn hạn | 311   | V.9         | 3.635.048.399 | 4.112.948.032 |<br>| 2. Người mua trả tiền trước ngắn hạn | 312   | V.10        | 4.294.479.669 | 2.620.445.773 |<br>| 3. Thuế và các khoản phải nộp Nhà nước | 313   | V.11        | 319.297.385 | 830.295.576 |<br>| 4. Phải trả người lao động | 314   |             | 1.001.927.000 | 977.811.000 |<br>| 5. Chi phí phải trả ngắn hạn | 315   |             | 1.219.249.556 | 63.636.364 |<br>| 6. Phải trả ngắn hạn khác | 319   | V.12        | 3.629.362.087 | 3.834.594.587 |<br>| 7. Quỹ khen thưởng và phúc lợi | 322   |             | 170.627.350 | 270.627.350 |
+    | 10. Vay và nợ thuê tài chính ngắn hạn | 320   | V.13        | 600.000.000 | - |<br>| II. Nợ dài hạn | 330   |             | -           | -           |<br>| D. VỐN CHỦ SỞ HỮU | 400   | V.14        | 24.533.458.766 | 24.378.426.062 |<br>| I. Vốn chủ sở hữu | 410   |             | 24.533.458.766 | 24.378.426.062 |<br>| 1. Vốn đầu tư của chủ sở hữu | 411   |             | 20.000.000.000 | 20.000.000.000 |<br>| - Cổ phiếu phổ thông có quyền biểu quyết | 411b  |             | 20.000.000.000 | 20.000.000.000 |<br>| 2. Thặng dư vốn cổ phần | 412   |             | 248.050.000 | 248.050.000 |<br>| 3. Lợi nhuận sau thuế chưa phân phối | 421   |             | 4.285.408.766 | 4.130.376.062 |<br>| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a  |             | 4.030.376.062 | 2.114.028.466 |<br>| - LNST chưa phân phối kỳ này | 421b  |             | 255.032.704 | 2.016.347.596 |<br>| II. Nguồn kinh phí và quỹ khác | 430   |             | -           | -           |<br>| TỔNG CỘNG NGUỒN VỐN | 440   |             | 39.403.450.212 | 37.088.784.744 |",
+    "questions": [
+      {
+        "question": "Tổng nợ phải trả cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tổng vốn chủ sở hữu cuối quý là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối kỳ này là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh nợ ngắn hạn cuối quý với đầu năm. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ nợ phải trả trên tổng nguồn vốn cuối quý là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi của các khoản phải trả người bán ngắn hạn từ đầu năm đến cuối quý.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) cuối quý III/2024 và phân tích ý nghĩa.",
+        "difficulty": "Hard_QA"
+      },
+      {
+        "question": "Phân tích tác động của việc công ty không có nợ dài hạn đến cấu trúc vốn và rủi ro tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng chi trả các khoản nợ ngắn hạn của công ty dựa trên số liệu bảng cân đối kế toán.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "6",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo Kết quả Hoạt động Kinh doanh<br>Loại nội dung: Bảng<br>BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH<br>Quý III năm 2024<br><br>| Chỉ tiêu | Mã số | Thuyết minh | Quý III năm nay | Quý III năm trước | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |<br>|:---------|:------|:------------|:----------------|:------------------|:---------------------------------------------|:-----------------------------------------------|<br>| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | VI.1        | 5.810.332.923   | 5.423.724.624     | 13.494.397.577                               | 17.537.040.123                                 |<br>| 2. Các khoản giảm trừ doanh thu | 02 |             | -               | -                 | -                                            | -                                              |<br>| 3. Doanh thu thuần về hàng bán và cung cấp dịch vụ | 10 | 10-01-02    | 5.810.332.923   | 5.423.724.624     | 13.494.397.577                               | 17.537.040.123                                 |<br>| 4. Giá vốn hàng bán | 11 | VI.2        | 4.873.181.718   | 3.903.838.402     | 10.066.500.397                               | 12.537.222.901                                 |<br>| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | 20-10-11    | 937.151.205     | 1.519.886.222     | 3.427.897.180                                | 4.999.817.222                                  |<br>| 6. Doanh thu hoạt động tài chính | 21 | VI.3        | 700.611         | 17.148.533        | 1.901.081                                    | 54.943.137                                     |<br>| 7. Chi phí hoạt động tài chính | 22 | VI.4        | 11.828.542      | -                 | 19.050.428                                   | -                                              |<br>| Trong đó: Chi phí lãi vay | 23 |             | 11.828.542      | -                 | 19.050.428                                   | -                                              |<br>| 9. Chi phí quản lý doanh nghiệp | 26 | VI.5        | 885.819.525     | 1.160.315.426     | 3.091.956.953                                | 3.450.888.139                                  |<br>| 10. Lợi nhuận thuần từ hoạt động sản xuất kinh doanh | 30 | 30-20-21-22-25-26 | 40.203.749      | 376.719.329       | 318.790.880                                  | 1.603.872.220                                  |<br>| 11. Thu nhập khác | 31 | VI.6        | -               | -                 | -                                            | 68.145.831                                     |<br>| 12. Chi phí khác | 32 |             | -               | -                 | -                                            | -                                              |<br>| 13. Lợi nhuận khác | 40 | 31-32       | -               | -                 | -                                            | 68.145.831                                     |<br>| 14. Tổng lợi nhuận kế toán trước thuế | 50 | 50-30+40    | 40.203.749      | 376.719.329       | 318.790.880                                  | 1.672.018.051                                  |<br>| 15. Chi phí thuế TNDN hiện hành | 51 | VI.7        | 8.040.750       | 75.343.866        | 63.758.176                                   | 338.962.087                                    |<br>| 16. Chi phí thuế TNDN hoãn lại | 52 |             | -               | -                 | -                                            | -                                              |<br>| 17. Lợi nhuận sau thuế TNDN | 60 | 60=50-51-52 | 32.162.999      | 301.375.463       | 255.032.704                                  | 1.333.055.964                                  |<br>| 18. Lãi cơ bản trên cổ phiếu | 70 | VI.8        | 16              | 151               | 128                                          | 629                                            |",
+    "questions": [
+      {
+        "question": "Doanh thu thuần quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế TNDN lũy kế từ đầu năm đến cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh doanh thu thuần quý III năm nay với quý III năm trước. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ suất lợi nhuận gộp quý III năm nay là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Giải thích sự chênh lệch đáng kể giữa lợi nhuận gộp quý III năm nay và năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích ảnh hưởng của chi phí quản lý doanh nghiệp đến lợi nhuận thuần từ hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng sinh lời của công ty dựa trên xu hướng lợi nhuận sau thuế TNDN lũy kế qua các năm.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Lãi cơ bản trên cổ phiếu thay đổi như thế nào giữa quý III năm nay và năm trước? Điều này có ý nghĩa gì đối với nhà đầu tư?",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "7",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo Lưu chuyển Tiền tệ<br>Loại nội dung: Bảng<br>BÁO CÁO LƯU CHUYỂN TIỀN TỆ<br>Theo phương pháp gián tiếp<br>Quý III năm 2024<br><br>| Chỉ tiêu | Mã số | Thuyết minh | Lũy kế từ đầu năm đến cuối quý này (Năm nay) | Lũy kế từ đầu năm đến cuối quý này (Năm trước) |<br>|:---------|:------|:------------|:---------------------------------------------|:-----------------------------------------------|<br>| I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH |       |             |                                              |                                                |<br>| 1. Lợi nhuận trước thuế | 01 |             | 318.790.880                                  | 1.672.018.051                                  |<br>| 2. Điều chỉnh cho các khoản: |       |             |                                              |                                                |<br>| - Khấu hao TSCĐ và BĐSĐT | 02 |             | 320.274.286                                  | 428.123.818                                    |<br>| - Các khoản dự phòng | 03 |             | 314.088.505                                  | 104.700.000                                    |<br>| - Lãi, lỗ từ hoạt động đầu tư | 05 |             | 1.901.081                                    | 54.943.137                                     |<br>| - Chi phí lãi vay | 06 |             | 19.050.428                                   | -                                              |<br>| 3. Lợi nhuận từ HĐKD trước thay đổi vốn lưu động | 08 |             | 342.126.008                                  | 2.149.898.732                                  |<br>| - Tăng, giảm các khoản phải thu | 09 |             | 1.326.984.347                                | 968.469.643                                    |<br>| - Tăng, giảm hàng tồn kho | 10 |             | 619.709.695                                  | 922.511.888                                    |<br>| - Tăng, giảm các khoản phải trả | 11 |             | 2.137.787.195                                | 112.669.158                                    |<br>| - Tăng, giảm chi phí trả trước | 12 |             | 32.657.955                                   | 31.517.046                                     |<br>| - Tiền lãi vay đã trả | 14 |             | 19.050.428                                   | -                                              |<br>| - Thuế thu nhập doanh nghiệp đã nộp | 15 |             | 226.540.334                                  | 462.940.316                                    |<br>| - Tiền chi khác cho hoạt động kinh doanh | 17 |             | 200.000.000                                  | 474.889.977                                    |<br>| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 |             | 120.286.354                                  | 1.084.958.572                                  |<br>| II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ |       |             |                                              |                                                |<br>| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | 21 |             | -                                            | 5.720.000                                      |<br>| 2. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 22 |             | 1.901.081                                    | 54.943.137                                     |<br>| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 |             | 33.818.919                                   | 54.943.137                                     |<br>| III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH |       |             |                                              |                                                |<br>| 1. Tiền thu từ đi vay | 33 |             | 945.476.500                                  | -                                              |<br>| 4. Tiền trả nợ gốc vay | 34 |             | 345.476.500                                  | -                                              |<br>| 2. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 |             | 312.125.000                                  | 88.065.000                                     |<br>| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 |             | 287.875.000                                  | 88.065.000                                     |<br>| Lưu chuyển tiền thuần trong kỳ | 50 | 20+30+40    | 374.342.435                                  | 1.051.836.709                                  |<br>| Tiền và tương đương tiền đầu kỳ | 60 |             | 3.094.228.807                                | 2.613.255.794                                  |<br>| Tiền và tương đương tiền cuối kỳ | 70 | 50+60+61    | 3.468.571.242                                | 3.665.092.503                                  |",
+    "questions": [
+      {
+        "question": "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền và tương đương tiền cuối kỳ năm nay là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm nay với năm trước. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tiền thu từ đi vay lũy kế năm nay là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ đóng góp của lợi nhuận trước thuế vào lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc 'Tăng, giảm các khoản phải trả' đến lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng tạo tiền của công ty từ các hoạt động chính và hoạt động đầu tư, tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo xu hướng lưu chuyển tiền trong các kỳ tới dựa trên dữ liệu hiện tại.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "8",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Chính sách kế toán)<br>Loại nội dung: Text<br>IV. CÁC CHÍNH SÁCH KẾ TOÁN ÁP DỤNG<br>3. Nguyên tắc kế toán nợ phải thu<br> Các khoản Nợ phải thu được theo dõi chi tiết theo kỳ hạn phải thu, đối tượng phải thu, loại nguyên tệ phải thu và các yếu tố khác theo nhu cầu quản lý của Công ty.<br> Các khoản Nợ phải thu bao gồm phải thu khách hàng và phải thu khác được ghi nhận theo nguyên tắc:<br> Phải thu của khách hàng gồm các khoản phải thu mang tính chất thương mại phát sinh từ giao dịch có tính chất mua - bán giữa Công ty và người mua là đơn vị độc lập với người bán. Các khoản phải thu thương mại được ghi nhận phù hợp với chuẩn mực doanh thu về thời điểm ghi nhận căn cứ theo hóa đơn, chứng từ phát sinh.<br> Phải thu khác gồm các khoản phải thu không mang tính thương mại.<br> Các khoản phải thu được phân loại là Ngắn hạn và Dài hạn trên Bảng Cân đối kế toán căn cứ kỳ hạn còn lại của các khoản phải thu tại ngày lập Báo cáo tài chính.<br> Dự phòng nợ phải thu khó đòi được lập cho từng khoản nợ phải thu khó đòi căn cứ vào thời gian quá hạn trả nợ gốc theo cam kết nợ ban đầu (không tính đến việc gia hạn nợ giữa các bên) hoặc có dấu hiệu khó đòi do khách nợ đã lâm vào tình trạng phá sản hoặc đang làm thủ tục giải thể, mất tích, bỏ trốn.<br>4. Nguyên tắc kế toán hàng tồn kho<br> Hàng tồn kho được xác định trên cơ sở giá gốc, trong trường hợp giá gốc hàng tồn kho cao hơn giá trị thuần có thể thực hiện được thì phải tính theo giá trị thuần có thể thực hiện được. Giá gốc hàng tồn kho bao gồm chi phí nguyên vật liệu trực tiếp, chi phí lao động trực tiếp và chi phí sản xuất chung, nếu có, để có được hàng tồn kho ở địa điểm và trạng thái hiện tại. Giá trị thuần có thể thực hiện được, được xác định bằng giá bán ước tính trừ các chi phí để hoàn thành cùng chi phí tiếp thị, bán hàng và phân phối phát sinh.<br> Hàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên. Giá xuất hàng tồn kho được tính theo phương pháp nhập trước, xuất trước.<br> Dự phòng giảm giá hàng tồn kho là khoản dự phòng khi có sự suy giảm của giá trị thuần có thể thực hiện được thấp hơn so với giá trị ghi sổ của hàng tồn kho. Tăng, giảm số dư dự phòng giảm giá hàng tồn kho cần phải trích lập tại ngày kết thúc kỳ kế toán được ghi nhận vào giá vốn hàng bán.<br>5. Nguyên tắc kế toán và khấu hao Tài sản cố định hữu hình và vô hình<br>Công ty quản lý, sử dụng và trích khấu hao TSCĐ theo hướng dẫn tại Thông tư số 45/2013/TT-BTC ngày 25/04/2013 của Bộ Tài chính về chế độ quản lý, sử dụng và trích khấu hao tài sản cố định, Thông tư số 147/2016/TT-BTC ngày 13/10/2016 của Bộ Tài chính về sửa đổi, bổ sung Thông tư 45/2013/TT-BTC ngày 25/04/2013 và Thông tư số 28/TT-BTC ngày 12/04/2017 của Bộ Tài chính sửa đổi, bổ sung Thông tư 45/2015/TT-BTC ngày 25/04/2013 và Thông tư số 147/TT-BTC ngày 13/10/2016.<br>a. Nguyên tắc kế toán<br>Tài sản cố định hữu hình<br>Tài sản cố định hữu hình được phản ánh theo giá gốc, trình bày theo nguyên giá trừ giá trị hao mòn lũy kế. Nguyên giá tài sản cố định bao gồm toàn bộ các chi phí mà Công ty phải bỏ ra để có được tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng.<br>Khi tài sản cố định được bán hay thanh lý, nguyên giá và khấu hao lũy kế được xóa sổ và bất kỳ khoản lãi, lỗ nào phát sinh do việc thanh lý đều được tính vào thu nhập khác hay chi phí khác trong năm.<br>Tài sản cố định vô hình<br>Quyền sử dụng đất là toàn bộ các chi phí thực tế Công ty đã chi ra có liên quan trực tiếp tới diện tích đất sử dụng, bao gồm tiền chi ra để có quyền sử dụng đất, chi phí cho đền bù, giải phóng mặt bằng, san lấp mặt bằng, lệ phí trước bạ... Quyền sử dụng đất có thời hạn xác định được thể hiện theo nguyên giá trừ giá trị hao mòn lũy kế.<br>TSCĐ vô hình là phần mềm máy tính được phản ánh theo giá gốc, trình bày theo nguyên giá trừ giá trị hao mòn lũy kế.",
+    "questions": [
+      {
+        "question": "Các khoản phải thu được phân loại thành những loại nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty lập dự phòng nợ phải thu khó đòi dựa trên những căn cứ nào?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá gốc hàng tồn kho bao gồm những chi phí nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Nguyên tắc kế toán tài sản cố định hữu hình của công ty là gì?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích sự khác biệt trong nguyên tắc ghi nhận giữa phải thu khách hàng và phải thu khác.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá tác động của phương pháp nhập trước, xuất trước (FIFO) trong hạch toán hàng tồn kho đối với báo cáo tài chính của công ty trong giai đoạn giá cả biến động.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Liệu chính sách lập dự phòng nợ phải thu khó đòi có đủ chặt chẽ để phản ánh đúng rủi ro tín dụng của công ty không?",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích mối liên hệ giữa các chuẩn mực kế toán và thông tư của Bộ Tài chính mà công ty áp dụng.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "9",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Chính sách kế toán và Thông tin bổ sung)<br>Loại nội dung: Text và Bảng<br>b. Phương pháp khấu hao<br>Tài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng dựa trên thời gian hữu dụng ước tính. Thời gian khấu hao cụ thể như sau (số năm):<br>Nhà cửa, vật kiến trúc: 25<br>Máy móc và thiết bị: 5-10<br>Phương tiện vận tải: 8<br>Thiết bị, dụng cụ quản lý: 5<br>Thương hiệu Công ty được tính hao mòn trong thời gian 10 năm kể từ năm 2007. Việc ghi nhận này có khác biệt so với quy định tại Chuẩn mực kế toán Việt Nam số 04 - Tài sản cố định vô hình.<br>Tài sản cố định vô hình là Quyền sử dụng đất không có thời hạn nên không tính khấu hao.<br>6. Nguyên tắc kế toán chi phí trả trước<br> Chi phí trả trước phản ánh các chi phí thực tế đã phát sinh nhưng có liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều kỳ kế toán và việc kết chuyển các khoản chi phí này vào chi phí sản xuất kinh doanh của các kỳ kế toán sau.<br> Chi phí trả trước dài hạn liên quan đến công cụ và dụng cụ được phản ánh ban đầu theo nguyên giá và được phân bổ theo phương pháp đường thẳng với thời gian 3 năm.<br>7. Nguyên tắc kế toán Nợ phải trả<br> Các khoản nợ phải trả được theo dõi chi tiết theo kỳ hạn phải trả, đối tượng phải trả, loại nguyên tệ phải trả và các yếu tố khác theo nhu cầu quản lý của Công ty.<br> Các khoản nợ phải trả bao gồm phải trả người bán, và các khoản phải trả khác là các khoản nợ phải trả được xác định gần như chắc chắn về giá trị và thời gian và được ghi nhận không thấp hơn nghĩa vụ phải thanh toán, được phân loại như sau:<br> Phải trả người bán gồm các khoản phải trả mang tính chất thương mại phát sinh từ giao dịch mua hàng hóa, dịch vụ, tài sản giữa Công ty và người bán là đơn vị độc lập với Công ty.<br> Phải trả khác gồm các khoản phải trả không mang tính thương mại, không liên quan đến giao dịch mua bán, cung cấp hàng hóa dịch vụ.<br>8. Nguyên tắc kế toán Vay và nợ thuê tài chính<br> Bao gồm các khoản tiền vay, nợ thuê tài chính, không bao gồm các khoản vay dưới hình thức phát hành trái phiếu hoặc cổ phiếu ưu đãi có điều khoản bắt buộc bên phát hành phải mua lại tại một thời điểm nhất định trong tương lai.<br> Công ty theo dõi các khoản vay và nợ thuê tài chính chi tiết theo từng đối tượng nợ và phân loại ngắn hạn và dài hạn theo thời gian trả nợ.<br> Chi phí liên quan trực tiếp đến khoản vay được ghi nhận vào chi phí tài chính, ngoại trừ các chi phí phát sinh từ khoản vay riêng cho mục đích đầu tư, xây dựng hoặc sản xuất tài sản dở dang thì được vốn hóa theo Chuẩn mực Kế toán Chi phí đi vay.<br>9. Nguyên tắc ghi nhận và vốn hóa các khoản đi vay<br>Tất cả các chi phí lãi vay được ghi nhận vào Báo cáo Kết quả hoạt động kinh doanh khi phát sinh, trừ khi được vốn hóa theo quy định của chuẩn mực kế toán Chi phí đi vay.<br>10. Nguyên tắc ghi nhận vốn chủ sở hữu<br> Vốn đầu tư của chủ sở hữu được ghi nhận theo số vốn thực góp của chủ sở hữu.<br> Thặng dư vốn cổ phần được ghi nhận theo số chênh lệch lớn hơn hoặc nhỏ hơn giữa giá thực tế phát hành và mệnh giá cổ phiếu khi phát hành cổ phiếu lần đầu, phát hành bổ sung hoặc tái phát hành cổ phiếu quỹ.<br> Lợi nhuận chưa phân phối xác định trên cơ sở kết quả kinh doanh sau thuế thu nhập doanh nghiệp và việc phân phối lợi nhuận hoặc xử lý lỗ của Công ty.<br> Lợi nhuận sau thuế của Công ty được trích chia cổ tức cho các cổ đông sau khi được phê duyệt bởi Hội đồng cổ đông tại Đại hội thường niên của Công ty và sau khi đã trích lập các quỹ dự trữ theo Điều lệ của Công ty.<br> Cổ tức được công bố và chi trả dựa trên số lợi nhuận ước tính đạt được, cổ tức chính thức được công bố và chi trả trong niên độ kế tiếp từ nguồn lợi nhuận chưa phân phối căn cứ vào sự phê duyệt của Hội đồng cổ đông tại Đại hội thường niên của Công ty.<br>11. Nguyên tắc ghi nhận doanh thu, thu nhập khác<br> Doanh thu của giao dịch về cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp giao dịch về cung cấp dịch vụ liên quan đến nhiều kỳ thì doanh thu được ghi nhận trong năm theo kết quả phần công việc đã hoàn thành tại ngày của Bảng cân đối kế toán của kỳ đó. Kết quả của giao dịch cung cấp dịch vụ được xác định khi thỏa mãn tất cả bốn (4) điều kiện sau:<br> Doanh thu được xác định tương đối chắc chắn<br> Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó<br> Xác định được phần công việc đã hoàn thành tại ngày của Bảng cân đối kế toán và<br> Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.<br> Đối với tiền lãi, cổ tức và lợi nhuận được chia và thu nhập khác: Doanh thu được ghi nhận khi Công ty có khả năng thu được lợi ích kinh tế từ hoạt động trên và được xác định tương đối chắc chắn.<br>12. Nguyên tắc kế toán giá vốn hàng bán<br>Bao gồm giá vốn của dịch vụ được ghi nhận phù hợp với doanh thu trong năm.<br>13. Nguyên tắc và phương pháp ghi nhận chi phí thuế thu nhập doanh nghiệp hiện hành<br>Chi phí thuế thu nhập doanh nghiệp là tổng chi phí thuế thu nhập hiện hành và chi phí thuế thu nhập hoãn lại hoặc thu nhập thuế thu nhập hiện hành và thu nhập thuế thu nhập hoãn lại khi xác định lợi nhuận hoặc lỗ của một kỳ.<br> Chi phí thuế thu nhập doanh nghiệp hiện hành: Là số thuế thu nhập doanh nghiệp phải nộp tính trên thu nhập chịu thuế trong năm và thuế suất thuế thu nhập doanh nghiệp hiện hành. Thuế thu nhập hiện hành được tính dựa trên thu nhập chịu thuế và thuế suất áp dụng trong năm tính thuế.<br> Khoản thu nhập chịu thuế chênh lệch so với lợi nhuận kế toán là do điều chỉnh các khoản chênh lệch giữa lợi nhuận kế toán và thu nhập chịu thuế theo chính sách thuế hiện hành.<br>Công ty có nghĩa vụ nộp thuế TNDN với thuế suất 20% trên thu nhập chịu thuế.<br>Việc xác định thuế thu nhập của Công ty căn cứ vào các quy định hiện hành về thuế. Tuy nhiên, những quy định này thay đổi theo từng thời kỳ và việc xác định sau cùng về thuế thu nhập doanh nghiệp tùy thuộc vào kết quả kiểm tra của cơ quan thuế có thẩm quyền.<br>14. Ước tính kế toán<br>Việc lập Báo cáo tài chính tuân thủ theo các Chuẩn mực Kế toán Việt Nam, Chế độ Kế toán doanh nghiệp Việt Nam hiện hành và các quy định pháp lý có liên quan đến việc lập và trình bày Báo cáo tài chính yêu cầu Ban Giám đốc phải có những ước tính và giả định ảnh hưởng đến số liệu Báo cáo về công nợ, tài sản và việc trình bày các khoản công nợ và tài sản tiềm tàng tại ngày lập Báo cáo tài chính cũng như các số liệu Báo cáo về doanh thu và chi phí trong suốt năm tài chính. Kết quả hoạt động kinh doanh thực tế có thể khác với các ước tính, giả định đặt ra.<br>15. Công cụ tài chính<br>Ghi nhận ban đầu<br> Tại ngày ghi nhận ban đầu, tài sản tài chính được ghi nhận theo giá gốc cộng các chi phí giao dịch có liên quan trực tiếp đến việc mua sắm tài sản tài chính đó.<br> Công cụ tài chính của Công ty bao gồm tiền mặt, tiền gửi ngắn hạn, các khoản phải thu ngắn hạn và các khoản phải thu khác.<br>16. Công nợ tài chính<br>Ghi nhận ban đầu<br> Tại ngày ghi nhận ban đầu, công nợ tài chính được ghi nhận theo giá gốc cộng các chi phí giao dịch có liên quan trực tiếp đến việc phát hành công nợ tài chính đó.<br> Công nợ tài chính của Công ty bao gồm các khoản phải trả người bán, phải trả khác, và các khoản vay.<br>Đánh giá lại sau lần ghi nhận ban đầu<br>Hiện tại, chưa có quy định về đánh giá lại công cụ tài chính sau ghi nhận ban đầu.<br>17. Lãi cơ bản trên cổ phiếu<br>Lãi cơ bản trên cổ phiếu đối với các cổ phiếu phổ thông được tính bằng cách chia lợi nhuận hoặc lỗ thuộc về cổ đông sở hữu cổ phiếu phổ thông trừ đi số đã trích lập quỹ khen thưởng phúc lợi cho số lượng bình quân gia quyền cổ phiếu phổ thông lưu hành trong năm.<br>18. Các bên liên quan<br>Được coi là các bên liên quan là các doanh nghiệp (kể cả Công ty Mẹ, các Công ty con của Công ty Mẹ, các cá nhân trực tiếp hay gián tiếp qua một hoặc nhiều trung gian) có quyền kiểm soát công ty hoặc chịu sự kiểm soát chung với Công ty. Các bên liên kết, các cá nhân nào trực tiếp hoặc gián tiếp nắm quyền biểu quyết của Công ty mà có ảnh hưởng đáng kể đối với Công ty. Những chức trách quản lý chủ chốt như Ban Giám đốc của Công ty, những thành viên thân cận trong gia đình của những cá nhân hoặc các bên liên kết này hoặc những Công ty liên kết với các cá nhân này cũng được coi là bên liên quan.<br>19. Báo cáo bộ phận<br>Bộ phận là thành phần có thể phân biệt được của Công ty tham gia vào việc cung cấp sản phẩm hoặc dịch vụ có liên quan (bộ phận theo lĩnh vực kinh doanh) hoặc vào việc cung cấp sản phẩm hoặc dịch vụ trong phạm vi một môi trường kinh tế cụ thể (bộ phận theo khu vực địa lý) mà bộ phận này có rủi ro và lợi ích kinh tế khác với các bộ phận kinh doanh khác.<br>Trong kỳ, Công ty chỉ hoạt động trong các lĩnh vực Thiết kế, lập quy hoạch, giám sát, khảo sát thiết kế, khảo sát thi công, lập báo cáo, dự án... tại khu vực địa lý duy nhất là Việt Nam nên không lập Báo cáo bộ phận.<br><br>V. THÔNG TIN BỔ SUNG CHO CÁC KHOẢN MỤC TRÌNH BÀY TRONG BẢNG CÂN ĐỐI KẾ TOÁN<br>1. Tiền<br><br>| Chỉ tiêu                   | Cuối kỳ         | Đầu năm         |<br>|:---------------------------|:----------------|:---------------|<br>| Tiền mặt                   | 460.815         | 561.685        |<br>| Tiền gửi Ngân hàng không kỳ hạn | 3.468.110.427   | 3.093.667.122  |<br>| Tổng cộng                 | 3.468.571.242   | 3.094.228.807  |<br><br>2. Phải thu của khách hàng<br><br>| Chỉ tiêu                                 | Cuối kỳ         | Đầu năm         |<br>|:-----------------------------------------|:----------------|:---------------|<br>| Phải thu khách hàng ngắn hạn             | 15.646.425.075  | 14.295.294.288 |<br>| Công ty CP đầu tư và du lịch Bình Tiên  | 7.484.780.283   | 7.984.780.283  |<br>| Tổng công ty IDICO - CTCP                | 2.000.215.696   | 2.423.800.603  |<br>| Ban QL dự án đầu tư huyện Châu Đức      | 110.098.388     | 360.453.513    |<br>| Trường Đại học Cảnh sát nhân dân        | 1.590.287.167   | 60.607.000     |<br>| Công ty TNHH đầu tư QL1 Tiền Giang      | 470.838.515     | 1.070.838.515  |<br>| Phải thu khách hàng khác                  | 3.990.205.026   | 2.394.814.374  |",
+    "questions": [
+      {
+        "question": "Công ty áp dụng phương pháp khấu hao nào cho tài sản cố định hữu hình?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thời gian khấu hao của 'Nhà cửa, vật kiến trúc' là bao nhiêu năm?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Tiền gửi ngân hàng không kỳ hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh phải thu khách hàng ngắn hạn cuối kỳ với đầu năm. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Có sự khác biệt nào trong việc ghi nhận thương hiệu so với chuẩn mực kế toán Việt Nam không?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích nguyên tắc ghi nhận vốn chủ sở hữu của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cơ cấu khách hàng chính của công ty từ đầu năm đến cuối kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dựa trên các nguyên tắc kế toán nợ phải trả, phân tích rủi ro tiềm ẩn liên quan đến các khoản phải trả không mang tính thương mại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích tác động của các ước tính kế toán đến tính chính xác của báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "10",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin bổ sung - Phải thu khác và Dự phòng)<br>Loại nội dung: Bảng<br>3. Phải thu khác<br><br>| Chỉ tiêu                    | Giá trị (Cuối kỳ) | Dự phòng (Cuối kỳ) | Giá trị (Đầu năm) | Dự phòng (Đầu năm) |<br>|:----------------------------|:------------------|:-------------------|:------------------|:-------------------|<br>| Phải thu khác ngắn hạn      | 503.510.132       | 359.069.572        | 405.336.572       | 359.069.572        |<br>| Tạm ứng cá nhân             | 119.440.560       | -                  | 46.267.000        | -                  |<br>| Thu khác                    | 25.000.000        | -                  | -                 | -                  |<br>| Nguyễn Phi Hùng             | 97.921.415        | 97.921.415         | 97.921.415        | 97.921.415         |<br>| Nguyễn Trúc Nghĩa           | 261.148.157       | 261.148.157        | 261.148.157       | 261.148.157        |<br><br>4. Dự phòng nợ phải thu khó đòi<br><br>| Chỉ tiêu                                 | Giá gốc (Cuối kỳ) | Giá trị có thể thu hồi (Cuối kỳ) | Giá gốc (Đầu năm) | Giá trị có thể thu hồi (Đầu năm) |<br>|:-----------------------------------------|:------------------|:---------------------------------|:------------------|:---------------------------------|<br>| Phải thu khách hàng                      | 636.145.515       | 10.545.800                       | 1.236.145.515     | 296.457.295                      |<br>| Công ty TNHH đầu tư QL1 Tiền Giang      | 470.838.515       | -                                | 1.070.838.515     | 285.911.495                      |<br>| Trường Đại học CSND                     | 60.607.000        | 10.545.800                       | 60.607.000        | 10.545.800                       |<br>| Công ty CP đầu tư Việt Thuận Phát       | 104.700.000       | -                                | 104.700.000       | -                                |<br>| Trả trước người bán                      | 248.000.000       | -                                | 248.000.000       | -                                |<br>| Công ty CP công nghệ khoan địa chất và xây dựng | 28.000.000        | -                                | 28.000.000        | -                                |<br>| Đinh Thị Liên                            | 220.000.000       | -                                | 220.000.000       | -                                |<br>| Phải thu khác                             | 359.069.572       | -                                | 359.069.572       | -                                |<br>| Nguyễn Phi Hùng                          | 97.921.415        | -                                | 97.921.415        | -                                |<br>| Nguyễn Trúc Nghĩa                        | 261.148.157       | -                                | 261.148.157       | -                                |<br>| Cộng                                     | 1.243.215.087     | 10.545.800                       | 1.843.215.087     | 296.457.295                      |",
+    "questions": [
+      {
+        "question": "Tổng giá trị phải thu khác ngắn hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị gốc phải thu khách hàng cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh dự phòng nợ phải thu khó đòi cuối kỳ với đầu năm của 'Phải thu khách hàng'. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tổng giá trị có thể thu hồi từ các khoản phải thu khách hàng cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả của việc trích lập dự phòng nợ phải thu khó đòi của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tín dụng tiềm ẩn từ các khoản phải thu cá nhân có dự phòng cao.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Xác định các khoản nợ phải thu có nguy cơ khó đòi cao nhất dựa trên dữ liệu cung cấp và đề xuất biện pháp xử lý.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ dự phòng trên tổng giá trị gốc của các khoản phải thu khách hàng cuối kỳ và phân tích ý nghĩa.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "11",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin bổ sung - Hàng tồn kho, Chi phí trả trước, TSCĐ hữu hình)<br>Loại nội dung: Bảng<br>5. Hàng tồn kho<br><br>| Chỉ tiêu                     | Giá gốc (Cuối kỳ) | Dự phòng (Cuối kỳ) | Giá gốc (Đầu năm) | Dự phòng (Đầu năm) |<br>|:-----------------------------|:------------------|:-------------------|:------------------|:-------------------|<br>| Nguyên liệu, vật liệu        | 13.466.800        | -                  | 15.968.198        | -                  |<br>| Chi phí SXKD dở dang         | 14.732.770.822    | -                  | 14.110.559.729    | -                  |<br>| Cộng                         | 14.746.237.622    | -                  | 14.126.527.927    | -                  |<br><br>6. Chi phí trả trước<br><br>| Chỉ tiêu                         | Cuối kỳ | Đầu năm      |<br>|:---------------------------------|:--------|:-------------|<br>| a. Ngắn hạn                      | -       | 28.188.259   |<br>| Công cụ dụng cụ còn phân bổ      | -       | 28.188.259   |<br>| b. Dài hạn                       | -       | 4.469.696    |<br>| Chi phí sửa chữa nhà văn phòng   | -       | 4.469.696    |<br>| Cộng                             | -       | 32.657.955   |<br><br>7. Tăng giảm TSCĐ hữu hình<br><br>| Chỉ tiêu                        | Nhà cửa, vật kiến trúc | Máy móc và thiết bị | Phương tiện vận tải | Thiết bị, dụng cụ quản lý | Tổng cộng      |<br>|:--------------------------------|:-----------------------|:-------------------|:-------------------|:--------------------------|:---------------|<br>| NGUYÊN GIÁ                      |                        |                    |                    |                           |                |<br>| Số dư tại 01/01/2024            | 4.927.824.662          | 636.632.868        | 2.529.416.700      | 341.820.461               | 8.435.694.691  |<br>| Tăng trong kỳ                   | -                      | -                  | -                  | -                         | -              |<br>| Nâng cấp, Sửa chữa              | -                      | -                  | -                  | -                         | -              |<br>| Mua mới                         | -                      | -                  | -                  | 32.472.727                | 32.472.727     |<br>| Giảm trong kỳ                   | -                      | -                  | -                  | -                         | -              |<br>| Thanh lý, nhượng bán            | -                      | -                  | -                  | -                         | -              |<br>| Số dư tại 30/09/2024            | 4.927.824.662          | 636.632.868        | 2.529.416.700      | 374.293.188               | 8.468.167.418  |<br>| GIÁ TRỊ HAO MÒN LŨY KẾ          |                        |                    |                    |                           |                |<br>| Số dư tại 01/01/2024            | 1.527.618.972          | 552.632.868        | 2.145.537.403      | 337.782.461               | 4.563.571.704  |<br>| Tăng trong kỳ                   | 147.834.000            | 18.000.000         | 146.794.206        | 7.646.080                 | 320.274.286    |<br>| Khấu hao trong kỳ               | 147.834.000            | 18.000.000         | 146.794.206        | 7.646.080                 | 320.274.286    |<br>| Giảm trong kỳ                   | -                      | -                  | -                  | -                         | -              |<br>| Thanh lý, nhượng bán            | -                      | -                  | -                  | -                         | -              |<br>| Số dư tại 30/09/2024            | 1.675.452.972          | 570.632.868        | 2.292.331.609      | 345.428.541               | 4.883.845.990  |<br>| GIÁ TRỊ CÒN LẠI                 |                        |                    |                    |                           |                |<br>| Số dư tại 01/01/2024            | 3.400.205.690          | 84.000.000         | 383.879.297        | 4.038.000                 | 3.872.122.987  |<br>| Số dư tại 30/09/2024            | 3.252.371.690          | 66.000.000         | 237.085.091        | 28.864.647                | 3.584.321.428  |<br>Giá trị còn lại của TSCĐ hữu hình mà Công ty đã thế chấp để đảm bảo hạn mức tín dụng tại Ngân hàng:<br>- 01/01/2024: 3.400.205.690 đồng<br>- 30/09/2024: 3.252.371.690 đồng<br>Nguyên giá của TSCĐ hữu hình đã khấu hao hết nhưng vẫn còn sử dụng:<br>- 01/01/2024: 342.922.279 đồng<br>- 30/09/2024: 1.837.003.888 đồng<br>Nguyên giá của TSCĐ hữu hình đã khấu hao hết đang chờ thanh lý:<br>- 01/01/2024: 251.000.000 đồng<br>- 30/09/2024: 251.000.000 đồng",
+    "questions": [
+      {
+        "question": "Tổng giá gốc hàng tồn kho cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của TSCĐ hữu hình cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số dư nguyên giá TSCĐ hữu hình tăng lên bao nhiêu trong kỳ?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "So sánh chi phí trả trước ngắn hạn và dài hạn cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cấu trúc hàng tồn kho của công ty từ đầu năm đến cuối kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc tăng nguyên giá TSCĐ hữu hình đã khấu hao hết nhưng vẫn còn sử dụng đến báo cáo tài chính.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá rủi ro liên quan đến tài sản cố định hữu hình được thế chấp và nguyên giá đã khấu hao hết đang chờ thanh lý.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Tính tỷ lệ khấu hao trong kỳ trên tổng nguyên giá TSCĐ hữu hình cuối kỳ và phân tích ý nghĩa.",
+        "difficulty": "Hard_QA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "12",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin bổ sung - TSCĐ vô hình, Phải trả người bán, Người mua trả tiền trước)<br>Loại nội dung: Bảng<br>8. Tăng giảm TSCĐ vô hình<br><br>| Chỉ tiêu                    | Quyền sử dụng đất | TSCĐ vô hình khác | Phần mềm        | Tổng cộng      |<br>|:----------------------------|:------------------|:------------------|:----------------|:---------------|<br>| NGUYÊN GIÁ                  |                   |                   |                 |                |<br>| Số dư tại 01/01/2024        | 2.389.054.000     | 476.729.400       | 2.000.000.000   | 4.865.783.400  |<br>| Tăng trong kỳ               | -                 | -                 | -               | -              |<br>| Giảm trong kỳ               | -                 | -                 | -               | -              |<br>| Số dư tại 30/09/2024        | 2.389.054.000     | 476.729.400       | 2.000.000.000   | 4.865.783.400  |<br>| GIÁ TRỊ HAO MÒN LŨY KẾ      |                   |                   |                 |                |<br>| Số dư tại 01/01/2024        | -                 | 476.729.400       | 2.000.000.000   | 2.476.729.400  |<br>| Tăng trong kỳ               | -                 | -                 | -               | -              |<br>| Giảm trong kỳ               | -                 | -                 | -               | -              |<br>| Số dư tại 30/09/2024        | -                 | 476.729.400       | 2.000.000.000   | 2.476.729.400  |<br>| GIÁ TRỊ CÒN LẠI             |                   |                   |                 |                |<br>| Số dư tại 01/01/2024        | 2.389.054.000     | -                 | -               | 2.389.054.000  |<br>| Số dư tại 30/09/2024        | 2.389.054.000     | -                 | -               | 2.389.054.000  |<br>Giá trị còn lại của TSCĐ vô hình mà Công ty đã thế chấp để đảm bảo hạn mức tín dụng tại Ngân hàng:<br>- 01/01/2024: 2.389.054.000 đồng<br>- 30/09/2024: 2.389.054.000 đồng<br>Nguyên giá của TSCĐ vô hình đã khấu hao hết nhưng vẫn còn sử dụng:<br>- 01/01/2024: 2.057.000.000 đồng<br>- 30/09/2024: 2.057.000.000 đồng<br>Nguyên giá của TSCĐ vô hình đã khấu hao hết chờ thanh lý:<br>- 01/01/2024: 419.729.400 đồng<br>- 30/09/2024: 419.729.400 đồng<br><br>9. Phải trả người bán<br><br>| Chỉ tiêu                                   | Giá trị (Cuối kỳ) | Khả năng trả nợ (Cuối kỳ) | Giá trị (Đầu năm) | Khả năng trả nợ (Đầu năm) |<br>|:-------------------------------------------|:------------------|:--------------------------|:------------------|:--------------------------|<br>| Phải trả người bán ngắn hạn                | 3.635.048.399     | 3.635.048.399             | 4.112.948.032     | 4.112.948.032             |<br>| Công ty CP thiết kế và XD Rạng Đông       | 2.294.917.818     | 2.294.917.818             | 2.052.681.818     | 2.052.681.818             |<br>| Công ty TNHH MTV DV đo đạc địa chất Quỳnh Lâm | 477.862.400       | 477.862.400               | 1.211.319.040     | 1.211.319.040             |<br>| Công ty TNHH MTV tư vấn khảo sát TK XDTM Gia Nguyễn | 272.160.000       | 272.160.000               | 425.520.000       | 425.520.000               |<br>| Các đối tượng khác                          | 590.108.181       | 590.108.181               | 423.427.174       | 423.427.174               |<br><br>10. Người mua trả tiền trước<br><br>| Chỉ tiêu                                   | Giá trị (Cuối kỳ) | Khả năng trả nợ (Cuối kỳ) | Giá trị (Đầu năm) | Khả năng trả nợ (Đầu năm) |<br>|:-------------------------------------------|:------------------|:--------------------------|:------------------|:--------------------------|<br>| Người mua trả tiền trước ngắn hạn          | 4.294.479.669     | 4.294.479.669             | 2.620.445.773     | 2.620.445.773             |<br>| Công ty CP dầu khí ĐT Khai thác Cảng Phước An | 722.000.000       | 722.000.000               | 722.000.000       | 722.000.000               |<br>| Tổng Công ty IDICO - CTCP                  | 423.355.614       | 423.355.614               | 466.905.773       | 466.905.773               |<br>| Công ty CP đầu tư phát triển hạ tầng IDICO | 203.071.263       | 203.071.263               | -                 | -                         |<br>| Công ty TNHH MTV phát triển đô thị và KCN IDICO | 1.193.715.864     | 1.193.715.864             | 515.521.000       | 515.521.000               |<br>| Công ty CP đầu tư XD Trung Nam            | 475.992.000       | 475.992.000               | 475.992.000       | 475.992.000               |<br>| Công ty CP đầu tư KCN Hoàng Thành Du Long | 143.392.928       | 143.392.928               | 199.719.000       | 199.719.000               |<br>| Các đối tượng khác                          | 1.132.952.000     | 1.132.952.000             | 240.308.000       | 240.308.000               |",
+    "questions": [
+      {
+        "question": "Tổng nguyên giá TSCĐ vô hình cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị còn lại của Quyền sử dụng đất cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Giá trị phải trả người bán ngắn hạn cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh giá trị 'Người mua trả tiền trước ngắn hạn' cuối kỳ với đầu năm. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ phụ thuộc của công ty vào nguồn vốn từ 'Người mua trả tiền trước'.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của việc TSCĐ vô hình được thế chấp để đảm bảo hạn mức tín dụng đến khả năng huy động vốn của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo rủi ro về dòng tiền nếu các khoản phải trả người bán tiếp tục giảm mạnh trong các kỳ tới.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong cơ cấu 'Người mua trả tiền trước' từ đầu năm đến cuối kỳ và ý nghĩa của nó.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "13",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin bổ sung - Thuế, Phải trả ngắn hạn khác, Vay và nợ thuê tài chính)<br>Loại nội dung: Bảng<br>11. Thuế và các khoản phải nộp Nhà nước<br><br>| Chỉ tiêu                      | Số phải nộp (Đầu năm) | Số phải nộp (Trong kỳ) | Số đã nộp (Trong kỳ) | Số phải nộp (Cuối kỳ) |<br>|:------------------------------|:---------------------|:-----------------------|:---------------------|:---------------------|<br>| a. Phải nộp                   | 830.295.576          | 817.515.966            | 1.328.514.157        | 319.297.385          |<br>| Thuế giá trị gia tăng         | 535.769.168          | 443.908.492            | 733.890.825          | 245.786.835          |<br>| Thuế TNDN                     | 170.822.908          | 63.758.176             | 226.540.334          | 8.040.750            |<br>| Thuế thu nhập cá nhân         | 123.703.500          | 306.849.298            | 365.082.998          | 65.469.800           |<br>| Các loại thuế khác            | -                    | 3.000.000              | 3.000.000            | -                    |<br>| b. Phải thu                   | -                    | -                      | -                    | -                    |<br>| Cộng                          | 830.295.576          | 817.515.966            | 1.328.514.157        | 319.297.385          |<br><br>12. Các khoản phải trả ngắn hạn khác<br><br>| Chỉ tiêu                         | Cuối kỳ         | Đầu năm         |<br>|:---------------------------------|:----------------|:---------------|<br>| Các khoản phải trả ngắn hạn khác | 3.629.362.087   | 3.834.594.587  |<br>| Kinh phí công đoàn                | 64.134.000      | 89.510.000     |<br>| BHXH, BHYT, BHTN                 | 76.733.500      | 1.108.000      |<br>| Cổ tức, lợi nhuận phải trả       | 3.430.934.587   | 3.743.059.587  |<br>| Các khoản phải trả, phải nộp khác | 57.560.000      | 917.000        |<br><br>13. Vay và nợ thuê tài chính ngắn hạn<br><br>| Đối tượng                                       | Giá trị (Cuối kỳ) | Số có khả năng trả nợ (Cuối kỳ) | Giá trị (Đầu năm) | Số có khả năng trả nợ (Đầu năm) |<br>|:------------------------------------------------|:------------------|:--------------------------------|:------------------|:--------------------------------|<br>| Vay ngắn hạn                                    | 600.000.000       | 600.000.000                     | -                 | -                               |<br>| Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - Chi nhánh TP. Hồ Chí Minh | 600.000.000       | 600.000.000                     | -                 | -                               |<br> Khoản vay ngắn hạn của Công ty bằng Đồng Việt Nam cho mục đích bổ sung vốn lưu động cho hoạt động kinh doanh. Công ty sử dụng tài sản cố định hữu hình và tài sản cố định vô hình để thế chấp cho khoản vay. Trong kỳ, khoản vay này chịu lãi suất là 6,8%/năm đã được Ngân hàng điều chỉnh giảm còn 6,5%/năm và thời hạn vay là 5,5 tháng.",
+    "questions": [
+      {
+        "question": "Tổng số thuế phải nộp cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản 'Cổ tức, lợi nhuận phải trả' cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Công ty có khoản vay ngắn hạn nào từ Ngân hàng TMCP Đầu tư và Phát triển Việt Nam không? Nếu có, giá trị là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh thuế thu nhập cá nhân phải nộp cuối kỳ với đầu năm. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ thuế TNDN phải nộp cuối kỳ trên tổng số thuế phải nộp cuối kỳ là bao nhiêu?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá tác động của việc điều chỉnh giảm lãi suất khoản vay ngắn hạn đến chi phí tài chính của công ty.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính liên quan đến việc thế chấp tài sản cố định cho khoản vay ngắn hạn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá khả năng thanh toán các khoản phải trả ngắn hạn khác của công ty dựa trên cơ cấu hiện tại.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc giảm 'Cổ tức, lợi nhuận phải trả' đến dòng tiền và tâm lý cổ đông.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "14",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin bổ sung - Vốn chủ sở hữu, Ngoài Bảng Cân đối kế toán)<br>Loại nội dung: Bảng<br>14. Vốn chủ sở hữu<br>a. Biến động vốn Chủ sở hữu<br><br>| Chỉ tiêu                                   | Vốn đầu tư của chủ sở hữu | Thặng dư vốn cổ phần | Quỹ đầu tư phát triển | Vốn khác của chủ sở hữu | Lợi nhuận sau thuế chưa phân phối | Cộng             |<br>|:-------------------------------------------|:--------------------------|:---------------------|:---------------------|:------------------------|:----------------------------------|:-----------------|<br>| Số dư tại 01/01/2023                       | 20.000.000.000            | 248.050.000          | -                    | -                       | 5.244.028.466                     | 25.492.078.466   |<br>| Tăng trong kỳ                              | -                         | -                    | -                    | -                       | 2.016.347.596                     | 2.016.347.596    |<br>| Lợi nhuận sau thuế                         | -                         | -                    | -                    | -                       | 2.016.347.596                     | 2.016.347.596    |<br>| Giảm trong kỳ                              | -                         | -                    | -                    | -                       | 3.130.000.000                     | 3.130.000.000    |<br>| Trích quỹ khen thưởng, phúc lợi, thường BĐH | -                         | -                    | -                    | -                       | 130.000.000                       | 130.000.000      |<br>| Chia cổ tức                                | -                         | -                    | -                    | -                       | 3.000.000.000                     | 3.000.000.000    |<br>| Số dư tại 01/01/2024                       | 20.000.000.000            | 248.050.000          | -                    | -                       | 4.130.376.062                     | 24.378.426.062   |<br>| Tăng trong năm                             | -                         | -                    | -                    | -                       | 255.032.704                       | 255.032.704      |<br>| Lợi nhuận sau thuế                         | -                         | -                    | -                    | -                       | 255.032.704                       | 255.032.704      |<br>| Giảm trong năm                             | -                         | -                    | -                    | -                       | 100.000.000                       | 100.000.000      |<br>| Chia cổ tức                                | -                         | -                    | -                    | -                       | -                                 | -                |<br>| Trích quỹ khen thưởng, phúc lợi           | -                         | -                    | -                    | -                       | 100.000.000                       | 100.000.000      |<br>| Số dư tại 30/09/2024                       | 20.000.000.000            | 248.050.000          | -                    | -                       | 4.285.408.766                     | 24.533.458.766   |<br><br>b. Chi tiết vốn đầu tư của chủ sở hữu<br><br>| Đối tượng                          | Số cổ phần (Cuối kỳ) | Giá trị (Cuối kỳ) | Tỷ lệ (Cuối kỳ) | Số cổ phần (Đầu năm) | Giá trị (Đầu năm) | Tỷ lệ (Đầu năm) |<br>|:----------------------------------|:--------------------|:------------------|:----------------|:---------------------|:------------------|:----------------|<br>| Tổng công ty IDICO - CTCP         | 1.408.000           | 14.080.000.000    | 70,4            | 1.408.000            | 14.080.000.000    | 70,4            |<br>| Nguyễn Trọng Thạo                 | 101.200             | 1.012.000.000     | 5,06            | 101.200              | 1.012.000.000     | 5,06            |<br>| Ki An Soon                        | 161.200             | 1.612.000.000     | 8,06            | 158.800              | 1.588.000.000     | 7,94            |<br>| Các đối tượng khác                 | 329.600             | 3.296.000.000     | 16,48           | 332.000              | 3.320.000.000     | 16,6            |<br>| Cộng                              | 2.000.000           | 20.000.000.000    | 100             | 2.000.000            | 20.000.000.000    | 100             |<br><br>c. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, chia lợi nhuận<br><br>| Chỉ tiêu                                 | Cuối kỳ         | Đầu năm         |<br>|:-----------------------------------------|:----------------|:---------------|<br>| Vốn đầu tư của chủ sở hữu tại 01/01/2024 | 20.000.000.000  | 20.000.000.000 |<br>| Vốn góp tăng trong năm                   | -               | -              |<br>| Vốn góp giảm trong năm                   | -               | -              |<br>| Vốn đầu tư của chủ sở hữu tại 30/09/2024 | 20.000.000.000  | 20.000.000.000 |<br>| Cổ tức, lợi nhuận đã chia                | -               | -              |<br>| Trích quỹ khen thưởng, phúc lợi, thưởng BĐH | -               | -              |<br><br>d. Cổ phiếu<br><br>| Chỉ tiêu                       | Cuối kỳ    | Đầu năm    |<br>|:-------------------------------|:-----------|:-----------|<br>| Số lượng cổ phiếu đang lưu hành | 2.000.000  | 2.000.000  |<br>| Cổ phiếu phổ thông              | 2.000.000  | 2.000.000  |<br>| Mệnh giá cổ phiếu đang lưu hành | 10.000 đồng | 10.000 đồng |<br><br>15. Các khoản mục ngoài bảng cân đối kế toán<br><br>| Nợ khó đòi đã xử lý                                 | Cuối kỳ         | Đầu năm         |<br>|:----------------------------------------------------|:----------------|:---------------|<br>| Ban QL dự án ĐTXD CT dân dụng và công nghiệp tỉnh Hậu Giang | 158.617.000     | 158.617.000    |<br>| Tổng Công ty Tư vấn Thiết kế Dầu khí                | 219.365.100     | 219.365.100    |<br>| Công ty CP đầu tư XD và du lịch IDICO               | 213.052.000     | 213.052.000    |<br>| Viện thiết kế trường học                             | 5.234.000       | 5.234.000      |<br>| Cộng                                                | 596.268.100     | 596.268.100    |",
+    "questions": [
+      {
+        "question": "Tổng vốn chủ sở hữu cuối quý III/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Vốn đầu tư của chủ sở hữu cuối kỳ là bao nhiêu VND?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lợi nhuận sau thuế chưa phân phối cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Số lượng cổ phiếu phổ thông đang lưu hành cuối kỳ là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh lợi nhuận sau thuế chưa phân phối cuối kỳ với đầu năm.",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ lệ vốn đầu tư của chủ sở hữu trong tổng vốn chủ sở hữu là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Phân tích biến động của 'Lợi nhuận sau thuế chưa phân phối' trong kỳ và tác động của việc chia cổ tức/trích quỹ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ ổn định của vốn chủ sở hữu của công ty dựa trên các giao dịch trong kỳ.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Phân tích rủi ro liên quan đến các khoản nợ khó đòi đã xử lý ngoài bảng cân đối kế toán.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "15",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin bổ sung Báo cáo KQHĐKD)<br>Loại nội dung: Bảng<br>VI. THÔNG TIN BỔ SUNG CÁC KHOẢN MỤC TRÌNH BÀY TRONG BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH<br>1. Tổng doanh thu bán hàng và cung cấp dịch vụ<br><br>| Chỉ tiêu                       | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:-------------------------------|:---------------------|:---------------------|<br>| Doanh thu cung cấp dịch vụ tư vấn | 13.494.397.577       | 17.537.040.123       |<br>| Cộng                           | 13.494.397.577       | 17.537.040.123       |<br><br>2. Giá vốn hàng bán<br><br>| Chỉ tiêu                       | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:-------------------------------|:---------------------|:---------------------|<br>| Giá vốn cung cấp dịch vụ tư vấn | 10.066.500.397       | 12.537.222.901       |<br>| Cộng                           | 10.066.500.397       | 12.537.222.901       |<br><br>3. Doanh thu hoạt động tài chính<br><br>| Chỉ tiêu              | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:----------------------|:---------------------|:---------------------|<br>| Lãi tiền gửi ngân hàng | 1.901.081            | 54.943.137           |<br>| Cộng                  | 1.901.081            | 54.943.137           |<br><br>4. Chi phí tài chính<br><br>| Chỉ tiêu              | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:----------------------|:---------------------|:---------------------|<br>| Lãi tiền vay ngân hàng | 19.050.428           | -                    |<br>| Cộng                  | 19.050.428           | -                    |<br><br>5. Chi phí quản lý doanh nghiệp<br><br>| Chỉ tiêu                 | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:-------------------------|:---------------------|:---------------------|<br>| Chi phí nhân viên quản lý | 2.332.647.723        | 2.253.020.000        |<br>| Chi phí khấu hao TSCĐ   | 320.274.286          | 428.123.818          |<br>| Thuế, phí, lệ phí        | 3.000.000            | 3.000.000            |<br>| Chi phí dự phòng         | 314.088.505          | 104.700.000          |<br>| Chi phí bằng tiền khác   | 750.123.449          | 662.044.321          |<br>| Cộng                     | 3.091.956.953        | 3.450.888.139        |<br><br>6. Thu nhập khác<br><br>| Chỉ tiêu      | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:--------------|:---------------------|:---------------------|<br>| Thu nhập khác | -                    | 68.145.831           |<br>| Cộng          | -                    | 68.145.831           |<br><br>7. Chi phí thuế TNDN hiện hành<br><br>| Chỉ tiêu                                   | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:-------------------------------------------|:---------------------|:---------------------|<br>| Tổng lợi nhuận kế toán trước thuế         | 318.790.880          | 1.672.018.051        |<br>| Các khoản điều chỉnh tăng                  | -                    | 22.792.385           |<br>| Các khoản điều chỉnh giảm                  | -                    | -                    |<br>| Thu nhập chịu thuế                         | 318.790.880          | 1.694.810.436        |<br>| Thuế suất thuế TNDN áp dụng                | 20                   | 20                   |<br>| Chi phí thuế TNDN                          | 63.758.176           | 338.962.087          |<br>| Tổng lợi nhuận kế toán sau thuế           | 255.032.704          | 1.333.055.964        |<br><br>8. Lãi cơ bản trên cổ phiếu<br><br>| Chỉ tiêu                                 | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:-----------------------------------------|:---------------------|:---------------------|<br>| Lợi nhuận sau thuế thu nhập doanh nghiệp | 255.032.704          | 1.333.055.964        |<br>| Trích quỹ khen thưởng, phúc lợi          | -                    | 75.000.000           |<br>| Lợi nhuận tính lãi cơ bản trên mỗi cổ phiếu | 255.032.704          | 1.258.055.964        |<br>| Cổ phiếu phổ thông đang lưu hành trong kỳ | 2.000.000            | 2.000.000            |<br>| Lãi cơ bản trên cổ phiếu                 | 128                  | 629                  |",
+    "questions": [
+      {
+        "question": "Doanh thu cung cấp dịch vụ tư vấn lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Lãi cơ bản trên cổ phiếu lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí quản lý doanh nghiệp lũy kế năm nay với năm trước. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Tỷ suất thuế TNDN áp dụng là bao nhiêu phần trăm?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ hiệu quả trong việc kiểm soát giá vốn hàng bán dựa trên số liệu lũy kế năm nay và năm trước.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích nguyên nhân và tác động của sự giảm sút đáng kể trong doanh thu hoạt động tài chính lũy kế.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Giải thích mối quan hệ giữa tổng lợi nhuận kế toán trước thuế và thu nhập chịu thuế, chi phí thuế TNDN hiện hành.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của lãi cơ bản trên cổ phiếu giảm mạnh đến khả năng thu hút đầu tư của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "16",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Thông tin bổ sung KQHĐKD và Các bên liên quan)<br>Loại nội dung: Bảng và Text<br>9. Chi phí sản xuất kinh doanh theo yếu tố<br><br>| Chỉ tiêu                      | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:------------------------------|:---------------------|:---------------------|<br>| Chi phí nguyên liệu, vật liệu | 271.954.698          | 376.243.800          |<br>| Chi phí nhân công             | 10.356.622.723       | 9.989.336.500        |<br>| Chi phí khấu hao TSCĐ         | 320.274.286          | 428.123.818          |<br>| Chi phí dịch vụ mua ngoài     | 2.392.781.792        | 3.499.391.913        |<br>| Chi phí khác bằng tiền        | 439.034.944          | 665.045.021          |<br>| Cộng                          | 13.780.668.443       | 14.958.141.052       |<br><br>VII. THÔNG TIN KHÁC<br>1. Danh sách các bên liên quan<br><br>| Bên liên quan                                   | Mối quan hệ              |<br>|:------------------------------------------------|:-------------------------|<br>| Tổng Công ty IDICO - CTCP                       | Công ty mẹ                |<br>| Công ty cổ phần IDICO Tiền Giang                | Đơn vị cùng IDICO         |<br>| Công ty cổ phần IDICO Hà Nam                    | Đơn vị cùng IDICO         |<br>| Công ty cổ phần đầu tư phát triển đô thị và KCN Quế Võ IDICO | Đơn vị cùng IDICO         |<br>| Công ty TNHH MTV phát triển đô thị và KCN IDICO | Đơn vị cùng IDICO         |<br>| Công ty CP đầu tư phát triển hạ tầng IDICO      | Đơn vị cùng IDICO         |<br>| Công ty CP đầu tư xây dựng và phát triển vật liệu IDICO | Đơn vị cùng IDICO         |<br>| Công ty CP đầu tư xây dựng Long An IDICO        | Đơn vị cùng IDICO         |<br><br>2. Giao dịch và số dư với các bên liên quan<br>a. Thu nhập của Hội đồng quản trị, Ban kiểm soát và Ban Giám đốc Công ty<br><br>| Bên liên quan              | Chức danh                  | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:---------------------------|:--------------------------|:---------------------|:---------------------|<br>| I. Thù lao Hội đồng quản trị và thu nhập khác |                           | 104.666.667          | 113.222.444          |<br>| 1. Ông Hoàng Tuấn Anh      | Chủ tịch HĐQT             | 51.111.111           | 53.334.222           |<br>| 2. Ông Nguyễn Ngọc Khánh   | Thành viên HĐQT           | 24.000.000           | 24.000.000           |<br>| 3. Ông Huỳnh Anh Tuấn      | Thành viên HĐQT độc lập   | 12.000.000           | -                    |<br>| 4. Hà Huy Thanh            | Nguyên thành viên HĐQT độc lập | -                    | 18.333.000           |<br>| 4. Bà Bùi Thị Kim Thoa     | Nguyên thành viên HĐQT độc lập | 17.555.556           | 17.555.556           |<br>| II. Thù lao Ban kiểm soát và thu nhập khác    |                           | 61.555.556           | 65.999.222           |<br>| 1. Ông Vũ Tuấn Anh         | Trưởng ban kiểm soát      | 20.000.000           | 18.222.000           |<br>| 2. Bà Vũ Thị Thùy Phương   | Thành viên Ban kiểm soát  | 25.555.556           | 29.555.222           |<br>| 3. Ông Đỗ Tấn Khiêm        | Thành viên Ban kiểm soát  | 8.000.000            | -                    |<br>| 4. Bà Trần Thị Ngọc Loan   | Nguyên thành viên Ban kiểm soát | 8.000.000            | 18.222.000           |<br>| III. Thu nhập của Ban giám đốc và người quản lý khác |                           | 2.087.726.000        | 2.067.330.000        |<br>| 1. Ông Nguyễn Ngọc Khánh   | Giám đốc                  | 467.094.000          | 463.735.000          |<br>| 2. Ông Tạ Văn Lợi          | Phó giám đốc              | 387.890.000          | 396.885.000          |<br>| 3. Ông Đàm Văn Kiên        | Phó giám đốc              | 389.829.000          | 374.475.000          |<br>| 4. Ông Phạm Lâm Sơn        | Phó giám đốc              | 384.046.000          | 372.079.000          |<br>| 5. Ông Lại Văn Hoàn        | Kế toán trưởng, Người được ủy quyền CBTT | 229.276.000          | 230.947.000          |<br>| 6. Bà Nguyễn Thị Phương Dung | Người phụ trách quản trị Công ty | 229.591.000          | 229.209.000          |<br><br>b. Giao dịch bán dịch vụ<br><br>| Bên liên quan                                   | Tính chất giao dịch    | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:------------------------------------------------|:-----------------------|:---------------------|:---------------------|<br>| Tổng Công ty IDICO - CTCP                       | Cung cấp dịch vụ tư vấn | 2.573.899.510        | 4.358.530.151        |<br>| Công ty TNHH MTV phát triển đô thị và KCN IDICO | Cung cấp dịch vụ tư vấn | 290.080.000          | 1.777.796.993        |<br>| Công ty CP đầu tư XD và phát triển vật liệu IDICO | Cung cấp dịch vụ tư vấn | -                    | 45.454.545           |<br>| Công ty CP đầu tư phát triển hạ tầng IDICO      | Cung cấp dịch vụ tư vấn | 727.973.145          | 950.653.261          |<br>| Công ty CP IDICO Tiền Giang                     | Cung cấp dịch vụ tư vấn | 145.000.000          | -                    |<br>| Công ty CP đầu tư phát triển đô thị và KCN Quế Võ IDICO | Cung cấp dịch vụ tư vấn | -                    | 880.332.866          |<br>| Cộng                                            |                        | 3.736.952.655        | 8.012.767.816        |",
+    "questions": [
+      {
+        "question": "Tổng chi phí sản xuất kinh doanh theo yếu tố lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Chi phí nhân công lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Thu nhập của Giám đốc Nguyễn Ngọc Khánh lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh chi phí dịch vụ mua ngoài lũy kế năm nay với năm trước. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá sự thay đổi trong tổng thù lao của Hội đồng quản trị và Ban kiểm soát từ năm trước đến năm nay.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích tác động của các giao dịch bán dịch vụ với các bên liên quan đến doanh thu tổng thể của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá mức độ độc lập của công ty với Tổng Công ty IDICO - CTCP dựa trên mối quan hệ và các giao dịch.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc giảm chi phí dịch vụ mua ngoài và chi phí khác bằng tiền đến lợi nhuận của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  },
+  {
+    "chunk_id": "17",
+    "content": "Công ty: Công ty Cổ phần Tư vấn Đầu tư IDICO (IDICO INCON)<br>Mã cổ phiếu: INC<br>Loại báo cáo: Báo cáo tài chính riêng quý III/2024<br>Thời gian: Quý III/2024, tính đến 30/09/2024, công bố 18/10/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết Minh Báo Cáo Tài Chính (Giao dịch với các bên liên quan và Thông tin so sánh)<br>Loại nội dung: Bảng và Text<br>c. Phải thu khách hàng<br><br>| Bên liên quan                                   | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:------------------------------------------------|:---------------------|:---------------------|<br>| Tổng Công ty IDICO - CTCP                       | 2.000.215.696        | 1.175.538.623        |<br>| Công ty TNHH MTV phát triển đô thị và KCN IDICO | -                    | 1.265.268.913        |<br>| Công ty CP đầu tư phát triển đô thị và KCN Quế Võ IDICO | 22.189.788           | 155.328.516          |<br>| Công ty CP đầu tư phát triển hạ tầng IDICO      | 22.998.415           | 132.703.914          |<br>| Cộng                                            | 2.045.403.899        | 2.728.839.966        |<br><br>d. Người mua trả tiền trước<br><br>| Bên liên quan                                   | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:------------------------------------------------|:---------------------|:---------------------|<br>| Tổng Công ty IDICO - CTCP                       | 423.355.614          | 292.470.276          |<br>| Công ty TNHH MTV phát triển đô thị và KCN IDICO | 1.193.715.864        | 1.312.921.000        |<br>| Công ty CP đầu tư phát triển hạ tầng IDICO      | 203.071.263          | 154.828.000          |<br>| Công ty cổ phần IDICO Hà Nam                    | 295.500.000          | -                    |<br>| Cộng                                            | 2.115.642.741        | 1.760.219.276        |<br><br>e. Trả trước cho người bán<br><br>| Bên liên quan                                   | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:------------------------------------------------|:---------------------|:---------------------|<br>| Công ty cổ phần đầu tư xây dựng Long An IDICO   | 50.000.000           | -                    |<br>| Cộng                                            | 50.000.000           | -                    |<br><br>f. Phải trả khác<br><br>| Bên liên quan                                   | Lũy kế đến 30/09/2024 | Lũy kế đến 30/09/2023 |<br>|:------------------------------------------------|:---------------------|:---------------------|<br>| Tổng Công ty IDICO - CTCP (tiền cổ tức)         | 3.199.000.000        | 1.812.000.000        |<br>| Cộng                                            | 3.199.000.000        | 1.812.000.000        |<br><br>3. Thông tin so sánh<br>Số liệu so sánh là số liệu trên Báo cáo tài chính cho năm tài chính kết thúc ngày 31/12/2023 đã được kiểm toán và Báo cáo tài chính quý III năm 2023 kết thúc ngày 30/09/2023.<br>TP. HCM, ngày 14 tháng 10 năm 2024<br>Người lập biểu<br>Phạm Thị Loan",
+    "questions": [
+      {
+        "question": "Tổng giá trị phải thu khách hàng từ các bên liên quan lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản người mua trả tiền trước từ Công ty TNHH MTV phát triển đô thị và KCN IDICO lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "Khoản phải trả khác cho Tổng Công ty IDICO - CTCP (tiền cổ tức) lũy kế đến 30/09/2024 là bao nhiêu?",
+        "difficulty": "Easy_QA"
+      },
+      {
+        "question": "So sánh khoản phải thu khách hàng từ Tổng Công ty IDICO - CTCP lũy kế năm nay với năm trước. Thay đổi như thế nào?",
+        "difficulty": "Medium_QA"
+      },
+      {
+        "question": "Đánh giá mức độ biến động của các khoản 'Người mua trả tiền trước' từ các bên liên quan qua các kỳ.",
+        "difficulty": "Medium_SA"
+      },
+      {
+        "question": "Phân tích rủi ro tài chính phát sinh từ các giao dịch với bên liên quan, đặc biệt là các khoản phải thu và phải trả có giá trị lớn.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Đánh giá ảnh hưởng của các giao dịch với bên liên quan đến tính độc lập trong hoạt động kinh doanh của công ty.",
+        "difficulty": "Hard_SA"
+      },
+      {
+        "question": "Dự báo tác động của việc tăng 'Người mua trả tiền trước' đến dòng tiền và khả năng thanh khoản của công ty.",
+        "difficulty": "Hard_SA"
+      }
+    ]
+  }
+]
+```

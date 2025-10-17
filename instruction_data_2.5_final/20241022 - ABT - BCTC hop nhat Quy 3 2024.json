@@ -1,0 +1,833 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của Công ty là gì?",
+      "Mã cổ phiếu của Công ty là gì?",
+      "Lợi nhuận sau thuế của Công ty trong 9 tháng đầu năm 2024 tăng hay giảm so với cùng kỳ năm trước?",
+      "Nguyên nhân chính dẫn đến biến động lợi nhuận sau thuế 9 tháng năm 2024 so với cùng kỳ năm trước là gì?",
+      "Loại báo cáo này có phải là báo cáo đã kiểm toán không?",
+      "Phân tích tác động của việc doanh thu tăng và chi phí tài chính giảm đến kết quả kinh doanh của công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024, Giải trình biến động lợi nhuận sau thuế<br>Thời gian: Ngày phát hành 22/10/2024, Quý III/2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Công bố thông tin<br>Loại nội dung: Text<br>CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE AQUATEX BENTRE<br>Thành viên TẬP ĐOÀN PAN<br>Tân Thạch, Châu Thành, Bến Tre<br>Tel: 02753 860265 Fax: 02753 860346<br>Email: abt@aquatexbentre.com Website: www.aquatexbentre.com<br><br>Số: ACV.ABT<br>V/v: Giải trình về biến động trên 10% LNST trên BCTC hợp nhất Quý 3 năm 2024 so với Quý 3 năm 2023.<br>Bến Tre, ngày 22 tháng 10 năm 2024.<br><br>Kính gửi: Sở giao dịch chứng khoán Thành phố Hồ Chí Minh.<br><br>Căn cứ báo cáo tài chính hợp nhất Quý 3 năm 2024, Công ty CP Xuất nhập khẩu thủy sản Bến Tre mã chứng khoán ABT xin giải trình biến động trên 10% kết quả hoạt động sản xuất kinh doanh trên Báo cáo tài chính hợp nhất Quý 3 năm 2024 so với Quý 3 năm 2023 như sau:<br>Lợi nhuận sau thuế 9 tháng năm 2024 tăng hơn 10% so với cùng kỳ năm trước là do doanh thu tăng và chi phí tài chính giảm.<br>Trên đây là giải trình về việc tăng trên 10% lợi nhuận sau thuế trên Báo cáo kết quả kinh doanh của Báo cáo tài chính hợp nhất Quý 3 năm 2024 so với Quý 3 năm 2023 của Công ty CP Xuất nhập khẩu thủy sản Bến Tre gửi đến Quý Cơ quan.<br><br>Trân trọng,<br>Nơi nhận: Như trên, Lưu: PKT<br>CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>MST: 1300376365<br>Người lập biểu: MAI NGỌC LINH PHƯƠNG<br>Phụ trách kế toán: NGUYỄN THỊ HỒNG VÂN<br>Tổng Giám đốc: PHAN HỮU TÀI",
+    "output": [
+      "Tên đầy đủ của Công ty là CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE.",
+      "Mã cổ phiếu của Công ty là ABT.",
+      "Lợi nhuận sau thuế của Công ty trong 9 tháng đầu năm 2024 tăng hơn 10% so với cùng kỳ năm trước.",
+      "Nguyên nhân chính dẫn đến biến động lợi nhuận sau thuế 9 tháng năm 2024 tăng hơn 10% so với cùng kỳ năm trước là do doanh thu tăng và chi phí tài chính giảm.",
+      "Loại báo cáo này không phải là báo cáo đã kiểm toán vì phần \\Ý kiến kiểm toán\\ ghi \\Không có\\.",
+      "Doanh thu tăng cho thấy hoạt động kinh doanh cốt lõi của công ty đang phát triển tốt, dẫn đến tăng lợi nhuận gộp. Chi phí tài chính giảm giúp giảm gánh nặng chi phí, góp phần trực tiếp làm tăng lợi nhuận sau thuế. Kết hợp hai yếu tố này, lợi nhuận sau thuế của công ty tăng hơn 10% so với cùng kỳ năm trước, cho thấy hiệu quả hoạt động kinh doanh được cải thiện rõ rệt và quản lý tài chính hiệu quả hơn."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn tại ngày 30/09/2024 là bao nhiêu?",
+      "Hàng tồn kho ròng của Công ty tại cuối quý 3 năm 2024 là bao nhiêu?",
+      "So sánh giá trị các khoản đầu tư tài chính ngắn hạn giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Tỷ trọng của tiền và các khoản tương đương tiền trong tổng tài sản ngắn hạn tại cuối quý 3 năm 2024 là bao nhiêu?",
+      "Đánh giá mức độ biến động của các khoản phải thu ngắn hạn và ảnh hưởng của chúng đến thanh khoản của Công ty.",
+      "Phân tích tác động của việc tăng hàng tồn kho và giảm dự phòng giảm giá hàng tồn kho đến sức khỏe tài chính của Công ty.",
+      "Xác định các rủi ro tiềm ẩn từ các khoản phải thu ngắn hạn lớn và đề xuất biện pháp quản lý.",
+      "Nếu các khoản đầu tư nắm giữ đến ngày đáo hạn chuyển sang chứng khoán kinh doanh, điều này có ảnh hưởng gì đến báo cáo tài chính?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng cân đối kế toán hợp nhất (Phần A - Tài sản ngắn hạn)<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | MÃ SỐ | TM | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|---|---|<br>| A. TÀI SẢN NGẮN HẠN | 100 | | 402,231,964,997 | 337,587,701,029 |<br>| I. Tiền và các khoản tương đương tiền | 110 | V1 | 13,173,097,763 | 11,064,446,214 |<br>| 1. Tiền | 111 | | 13,173,097,763 | 11,064,446,214 |<br>| 2. Các khoản tương đương tiền | 112 | | - | - |<br>| II. Đầu tư tài chính ngắn hạn | 120 | V2.1 | 196,405,454,855 | 145,434,454,855 |<br>| 1. Chứng khoán kinh doanh | 121 | | 29,454,855 | 29,454,855 |<br>| 2. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | 196,376,000,000 | 145,405,000,000 |<br>| III. Các khoản phải thu ngắn hạn | 130 | | 83,062,459,424 | 88,063,011,151 |<br>| 1. Phải thu ngắn hạn của khách hàng | 131 | V3 | 49,670,167,264 | 41,007,804,301 |<br>| 2. Trả trước cho người bán ngắn hạn | 132 | V4 | 9,789,299,902 | 13,528,818,918 |<br>| 3. Phải thu về cho vay ngắn hạn | 135 | | 20,000,000,000 | 30,000,000,000 |<br>| 4. Phải thu ngắn hạn khác | 136 | V5 | 3,602,992,258 | 3,526,387,932 |<br>| IV. Hàng tồn kho | 140 | V6 | 103,386,353,146 | 91,616,087,602 |<br>| 1. Hàng tồn kho | 141 | | 147,356,742,569 | 136,816,525,933 |<br>| 2. Dự phòng giảm giá hàng tồn kho | 149 | | (43,970,389,423) | (45,200,438,331) |<br>| V. Tài sản ngắn hạn khác | 150 | | 6,204,599,809 | 1,409,701,207 |<br>| 1. Chi phí trả trước ngắn hạn | 151 | V10 | 844,206,847 | 300,224,831 |<br>| 2. Thuế GTGT được khấu trừ | 152 | | 5,359,239,673 | 1,108,323,087 |<br>| 3. Thuế và các khoản khác phải thu Nhà nước | 153 | | 1,153,289 | 1,153,289 |",
+    "output": [
+      "Tổng tài sản ngắn hạn tại ngày 30/09/2024 là 402,231,964,997 đồng.",
+      "Hàng tồn kho ròng của Công ty tại cuối quý 3 năm 2024 là 103,386,353,146 đồng (147,356,742,569 - 43,970,389,423).",
+      "Tại cuối quý 3 năm 2024 (30/09/2024), các khoản đầu tư tài chính ngắn hạn là 196,405,454,855 đồng. Tại đầu năm 2024 (01/01/2024), giá trị này là 145,434,454,855 đồng. Như vậy, giá trị các khoản đầu tư tài chính ngắn hạn đã tăng 50,971,000,000 đồng trong kỳ.",
+      "Tiền và các khoản tương đương tiền tại cuối quý 3 năm 2024 là 13,173,097,763 đồng. Tổng tài sản ngắn hạn là 402,231,964,997 đồng. Tỷ trọng là 13,173,097,763 / 402,231,964,997 ≈ 3.28%.",
+      "Các khoản phải thu ngắn hạn của Công ty giảm từ 88,063,011,151 đồng vào ngày 01/01/2024 xuống 83,062,459,424 đồng vào ngày 30/09/2024, giảm khoảng 5.68%. Sự giảm này cho thấy Công ty có thể đang quản lý các khoản phải thu hiệu quả hơn hoặc tốc độ thu hồi nợ được cải thiện. Điều này tác động tích cực đến thanh khoản của Công ty vì nó giúp chuyển đổi các khoản phải thu thành tiền mặt nhanh hơn, cải thiện khả năng đáp ứng các nghĩa vụ tài chính ngắn hạn.",
+      "Hàng tồn kho của Công ty tăng từ 91,616,087,602 đồng (đầu năm) lên 103,386,353,146 đồng (cuối quý 3/2024), cho thấy Công ty đang mở rộng sản xuất hoặc kỳ vọng doanh số bán hàng trong tương lai. Tuy nhiên, nếu hàng tồn kho tăng quá mức mà không có đầu ra tương xứng có thể dẫn đến rủi ro ứ đọng vốn và chi phí lưu kho. Dự phòng giảm giá hàng tồn kho giảm từ (45,200,438,331) đồng xuống (43,970,389,423) đồng, cho thấy Công ty đánh giá rủi ro giảm giá hàng tồn kho đã giảm hoặc chất lượng hàng tồn kho được cải thiện. Điều này có thể ảnh hưởng tích cực đến lợi nhuận gộp trong kỳ nếu hàng tồn kho được bán đi với giá tốt hơn hoặc Công ty ít phải trích lập thêm dự phòng. Tuy nhiên, cần theo dõi kỹ để đảm bảo dự phòng được trích lập đủ và không có rủi ro tiềm ẩn về giá trị hàng tồn kho.",
+      "Các khoản phải thu ngắn hạn của Công ty, dù có giảm nhẹ, vẫn chiếm một phần đáng kể trong tài sản ngắn hạn (khoảng 20.65% tại 30/09/2024). Rủi ro tiềm ẩn chính là rủi ro tín dụng (khách hàng không thanh toán hoặc chậm thanh toán), ảnh hưởng đến dòng tiền và khả năng thanh khoản của Công ty. Biện pháp quản lý có thể bao gồm: (1) Thực hiện chính sách tín dụng chặt chẽ hơn, đánh giá kỹ khả năng thanh toán của khách hàng trước khi cấp tín dụng; (2) Tăng cường các hoạt động thu hồi nợ, thiết lập quy trình theo dõi và nhắc nhở công nợ hiệu quả; (3) Cân nhắc bảo hiểm tín dụng cho các khoản phải thu lớn hoặc đàm phán các điều khoản thanh toán có lợi hơn; (4) Trích lập dự phòng phải thu khó đòi đầy đủ để phản ánh đúng giá trị thực của các khoản phải thu.",
+      "Thông tin không có trong dữ liệu. Chunk này chỉ cung cấp số liệu và định nghĩa chung về các khoản đầu tư, không bao gồm chính sách kế toán liên quan đến việc chuyển đổi giữa các loại hình đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn tại ngày 30/09/2024 là bao nhiêu?",
+      "Giá trị còn lại của tài sản cố định hữu hình tại ngày 30/09/2024 là bao nhiêu?",
+      "So sánh chi phí xây dựng cơ bản dở dang giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Tỷ lệ tài sản cố định (hữu hình và vô hình) trên tổng tài sản dài hạn tại cuối quý 3 năm 2024 là bao nhiêu phần trăm?",
+      "Đánh giá sự thay đổi trong cơ cấu tài sản dài hạn và ý nghĩa của nó đối với chiến lược đầu tư của Công ty.",
+      "Phân tích tác động của việc tài sản dở dang dài hạn tăng mạnh đến khả năng sinh lời trong tương lai.",
+      "Xác định các yếu tố rủi ro liên quan đến tài sản cố định vô hình của Công ty và đề xuất biện pháp giảm thiểu.",
+      "Làm thế nào để các khoản đầu tư góp vốn vào đơn vị khác ảnh hưởng đến chiến lược tăng trưởng của Công ty?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng cân đối kế toán hợp nhất (Phần B - Tài sản dài hạn)<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | MÃ SỐ | TM | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|---|---|<br>| B. TÀI SẢN DÀI HẠN | 200 | | 327,164,588,491 | 313,796,705,202 |<br>| I. Tài sản cố định | 220 | | 90,303,580,825 | 90,275,997,911 |<br>| 1. Tài sản cố định hữu hình | 221 | V8 | 80,498,124,141 | 80,152,817,017 |<br>| - Nguyên giá | 222 | | 185,845,596,758 | 177,479,737,682 |<br>| - Giá trị hao mòn lũy kế | 223 | | (105,347,472,617) | (97,326,920,665) |<br>| 2. Tài sản cố định vô hình | 227 | V9 | 9,805,456,684 | 10,123,180,894 |<br>| - Nguyên giá | 228 | | 16,550,750,288 | 16,550,750,288 |<br>| - Giá trị hao mòn lũy kế | 229 | | (6,745,293,604) | (6,427,569,394) |<br>| II. Tài sản dở dang dài hạn | 240 | V7 | 24,216,405,029 | 7,550,900,076 |<br>| 1. Chi phí xây dựng cơ bản dở dang | 242 | | 24,216,405,029 | 7,550,900,076 |<br>| V. Đầu tư tài chính dài hạn | 250 | V2.2 | 187,202,383,000 | 187,202,383,000 |<br>| 1. Đầu tư góp vốn vào đơn vị khác | 253 | | 187,202,383,000 | 187,202,383,000 |<br>| VI. Tài sản dài hạn khác | 260 | | 25,442,219,637 | 28,767,424,215 |<br>| 1. Chi phí trả trước dài hạn | 261 | V10 | 18,412,503,739 | 21,894,886,966 |<br>| 2. Tài sản thuế thu nhập hoãn lại | 262 | | 7,029,715,898 | 6,872,537,249 |<br>| TỔNG CỘNG TÀI SẢN | 270 | | 729,396,553,488 | 651,384,406,231 |",
+    "output": [
+      "Tổng tài sản dài hạn tại ngày 30/09/2024 là 327,164,588,491 đồng.",
+      "Giá trị còn lại của tài sản cố định hữu hình tại ngày 30/09/2024 là 80,498,124,141 đồng.",
+      "Chi phí xây dựng cơ bản dở dang tại cuối quý 3 năm 2024 (30/09/2024) là 24,216,405,029 đồng, trong khi tại đầu năm 2024 (01/01/2024) là 7,550,900,076 đồng. Điều này cho thấy chi phí xây dựng cơ bản dở dang đã tăng đáng kể (gần gấp 3.2 lần) trong 9 tháng đầu năm 2024.",
+      "Tổng tài sản cố định (hữu hình và vô hình) tại ngày 30/09/2024 là 90,303,580,825 đồng. Tổng tài sản dài hạn là 327,164,588,491 đồng. Tỷ lệ là (90,303,580,825 / 327,164,588,491) * 100% ≈ 27.60%.",
+      "Cơ cấu tài sản dài hạn của Công ty có sự thay đổi đáng chú ý với sự tăng vọt của tài sản dở dang dài hạn (từ 7,550,900,076 đồng lên 24,216,405,029 đồng), trong khi tài sản cố định (hữu hình và vô hình) và đầu tư tài chính dài hạn duy trì tương đối ổn định hoặc tăng nhẹ. Điều này cho thấy Công ty đang tập trung vào việc đầu tư vào các dự án xây dựng cơ bản hoặc mở rộng sản xuất trong tương lai. Đây là một dấu hiệu của chiến lược đầu tư mở rộng, nhằm tăng cường năng lực sản xuất hoặc cải thiện cơ sở hạ tầng, có thể dẫn đến tăng trưởng doanh thu và lợi nhuận trong dài hạn khi các dự án này hoàn thành.",
+      "Việc tài sản dở dang dài hạn tăng mạnh từ 7,550,900,076 đồng lên 24,216,405,029 đồng cho thấy Công ty đang đầu tư lớn vào các dự án chưa hoàn thành, như xây dựng cơ bản. Các khoản đầu tư này, khi hoàn thành và đưa vào hoạt động, dự kiến sẽ tăng cường năng lực sản xuất, mở rộng quy mô kinh doanh hoặc cải thiện hiệu quả hoạt động, từ đó có khả năng tạo ra doanh thu và lợi nhuận cao hơn trong tương lai. Tuy nhiên, trong ngắn hạn, các tài sản dở dang này chưa tạo ra doanh thu nhưng có thể phát sinh chi phí liên quan đến việc triển khai, có thể ảnh hưởng đến dòng tiền và lợi nhuận trong giai đoạn đầu tư.",
+      "Thông tin về tài sản cố định vô hình trong chunk chỉ bao gồm nguyên giá, giá trị hao mòn lũy kế và giá trị còn lại, không cung cấp đủ chi tiết về các loại tài sản cố định vô hình cụ thể (ngoại trừ tên chung) hoặc các yếu tố rủi ro. Do đó, không thể xác định các yếu tố rủi ro cụ thể liên quan đến tài sản cố định vô hình từ dữ liệu này.",
+      "Khoản đầu tư góp vốn vào đơn vị khác duy trì ổn định ở mức 187,202,383,000 đồng, chiếm một phần đáng kể trong tài sản dài hạn. Điều này cho thấy Công ty có thể đang theo đuổi chiến lược tăng trưởng thông qua liên kết hoặc kiểm soát các đơn vị khác, đặc biệt là trong cùng ngành hoặc chuỗi giá trị. Khoản đầu tư này giúp Công ty mở rộng tầm ảnh hưởng, đa dạng hóa nguồn thu hoặc tận dụng các lợi thế hiệp lực từ các công ty liên kết, góp phần vào chiến lược tăng trưởng tổng thể. Tuy nhiên, dữ liệu này chưa cung cấp thông tin chi tiết về hiệu quả hoặc các rủi ro liên quan đến khoản đầu tư này để đánh giá sâu hơn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả của Công ty tại ngày 30/09/2024 là bao nhiêu?",
+      "Tổng vốn chủ sở hữu của Công ty tại ngày 30/09/2024 là bao nhiêu?",
+      "So sánh vay và nợ thuê tài chính ngắn hạn giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Tỷ lệ nợ ngắn hạn trên tổng nợ phải trả tại cuối quý 3 năm 2024 là bao nhiêu phần trăm?",
+      "Đánh giá mức độ phụ thuộc của Công ty vào nợ ngắn hạn và rủi ro thanh khoản tiềm ẩn.",
+      "Tính hệ số nợ trên vốn chủ sở hữu (D/E ratio) tại ngày 30/09/2024 và nhận xét về cơ cấu vốn của Công ty.",
+      "Phân tích tác động của việc lợi nhuận sau thuế chưa phân phối tăng đến khả năng chi trả cổ tức và tăng vốn nội bộ của Công ty.",
+      "Đánh giá ý nghĩa của cổ phiếu quỹ đối với các cổ đông hiện tại và giá trị cổ phiếu của Công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng cân đối kế toán hợp nhất (Phần C - Nợ phải trả và Phần D - Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | MÃ SỐ | TM | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|---|---|<br>| C. NỢ PHẢI TRẢ | 300 | | 204,900,504,121 | 160,564,993,618 |<br>| I. Nợ ngắn hạn | 310 | | 201,942,948,121 | 157,455,382,618 |<br>| 1. Phải trả người bán ngắn hạn | 311 | V12 | 20,213,940,211 | 15,993,997,018 |<br>| 2. Người mua trả tiền trước ngắn hạn | 312 | V13 | 3,533,478,009 | 2,144,111,701 |<br>| 3. Thuế và các khoản phải nộp Nhà nước | 313 | V16 | 8,370,418,088 | 6,236,946,067 |<br>| 4. Phải trả người lao động | 314 | | 20,297,953,587 | 22,304,391,246 |<br>| 5. Chi phí phải trả ngắn hạn | 315 | V14 | 19,771,994,261 | 5,758,742,263 |<br>| 6. Phải trả ngắn hạn khác | 319 | V15 | 623,445,975 | 1,110,809,022 |<br>| 7. Vay và nợ thuê tài chính ngắn hạn | 320 | V11 | 124,393,744,536 | 99,881,388,430 |<br>| 8. Quỹ khen thưởng, phúc lợi | 322 | | 4,737,973,454 | 4,024,996,871 |<br>| II. Nợ dài hạn | 330 | | 2,957,556,000 | 3,109,611,000 |<br>| 1. Dự phòng phải trả dài hạn | 342 | | 2,957,556,000 | 3,109,611,000 |<br>| D. VỐN CHỦ SỞ HỮU | 400 | V16 | 524,496,049,367 | 490,819,412,613 |<br>| I. Vốn chủ sở hữu | 410 | V16.1 | 524,496,049,367 | 490,819,412,613 |<br>| 1. Vốn góp của chủ sở hữu | 411 | V16.2 | 143,872,070,000 | 143,872,070,000 |<br>| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 143,872,070,000 | 143,872,070,000 |<br>| 2. Thặng dư vốn cổ phần | 412 | | 290,401,636,501 | 290,401,636,501 |<br>| 3. Cổ phiếu quỹ | 415 | | 98,896,574,474 | 98,896,574,474 |<br>| 4. Quỹ đầu tư phát triển | 418 | V16.6 | 61,210,173,515 | 61,210,173,515 |<br>| 5. Lợi nhuận sau thuế chưa phân phối | 421 | | 127,908,743,825 | 94,232,107,071 |<br>| - LNST chưa phân phối lũy kế đến cuối kỳ | 421a | | 64,518,573,487 | 36,249,141,590 |<br>| - LNST chưa phân phối kỳ này | 421b | | 63,390,170,338 | 57,982,965,481 |<br>| TỔNG CỘNG NGUỒN VỐN | 440 | | 729,396,553,488 | 651,384,406,231 |",
+    "output": [
+      "Tổng nợ phải trả của Công ty tại ngày 30/09/2024 là 204,900,504,121 đồng.",
+      "Tổng vốn chủ sở hữu của Công ty tại ngày 30/09/2024 là 524,496,049,367 đồng.",
+      "Vay và nợ thuê tài chính ngắn hạn tại cuối quý 3 năm 2024 là 124,393,744,536 đồng, trong khi tại đầu năm 2024 là 99,881,388,430 đồng. Như vậy, khoản mục này đã tăng khoảng 24,512,356,106 đồng, tương đương tăng 24.54%.",
+      "Nợ ngắn hạn tại cuối quý 3 năm 2024 là 201,942,948,121 đồng. Tổng nợ phải trả là 204,900,504,121 đồng. Tỷ lệ là (201,942,948,121 / 204,900,504,121) * 100% ≈ 98.56%.",
+      "Với tỷ lệ nợ ngắn hạn trên tổng nợ phải trả rất cao (khoảng 98.56% tại 30/09/2024), Công ty cho thấy mức độ phụ thuộc lớn vào các nguồn tài trợ ngắn hạn. Điều này có thể tạo ra rủi ro thanh khoản tiềm ẩn, đặc biệt nếu Công ty gặp khó khăn trong việc tái cấp vốn các khoản nợ ngắn hạn khi chúng đáo hạn. Việc vay và nợ thuê tài chính ngắn hạn tăng đáng kể (hơn 24.5%) cũng là một dấu hiệu cần được theo dõi, mặc dù nó có thể được sử dụng để tài trợ cho nhu cầu vốn lưu động tăng lên hoặc đầu tư ngắn hạn.",
+      "Tại ngày 30/09/2024:\\nTổng nợ phải trả: 204,900,504,121 đồng\\nTổng vốn chủ sở hữu: 524,496,049,367 đồng\\nHệ số D/E = 204,900,504,121 / 524,496,049,367 ≈ 0.39.\\n\\nNhận xét: Hệ số D/E là 0.39 cho thấy Công ty chủ yếu được tài trợ bằng vốn chủ sở hữu (chiếm tỷ trọng lớn hơn đáng kể so với nợ). Đây là một cơ cấu vốn tương đối an toàn, ít phụ thuộc vào nợ, giúp giảm rủi ro tài chính và tăng khả năng chống chịu với các biến động thị trường. Mức độ đòn bẩy tài chính của Công ty ở mức thấp.",
+      "Lợi nhuận sau thuế chưa phân phối của Công ty đã tăng từ 94,232,107,071 đồng vào ngày 01/01/2024 lên 127,908,743,825 đồng vào ngày 30/09/2024. Sự tăng lên này có tác động tích cực đến khả năng chi trả cổ tức trong tương lai của Công ty, vì Công ty có nhiều nguồn lực hơn để phân phối cho cổ đông. Đồng thời, lợi nhuận chưa phân phối cũng là một nguồn vốn nội bộ quan trọng, có thể được giữ lại để tái đầu tư vào hoạt động kinh doanh, mở rộng quy mô hoặc tài trợ cho các dự án phát triển mà không cần phải huy động thêm vốn từ bên ngoài, từ đó hỗ trợ chiến lược tăng trưởng và nâng cao giá trị vốn chủ sở hữu.",
+      "Cổ phiếu quỹ của Công ty duy trì ổn định ở mức 98,896,574,474 đồng. Cổ phiếu quỹ là cổ phiếu mà Công ty mua lại từ thị trường và giữ lại. Việc Công ty nắm giữ cổ phiếu quỹ có thể được coi là một tín hiệu tích cực cho các cổ đông hiện tại vì nó giảm số lượng cổ phiếu đang lưu hành trên thị trường, từ đó có thể làm tăng thu nhập trên mỗi cổ phiếu (EPS) và giá trị của các cổ phiếu còn lại. Nó cũng thể hiện niềm tin của ban lãnh đạo vào giá trị nội tại của Công ty. Tuy nhiên, việc giữ cổ phiếu quỹ cũng làm giảm nguồn vốn có thể sử dụng cho các hoạt động kinh doanh khác."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Công ty trong Quý 3/2024 là bao nhiêu?",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế đến Quý 3/2024 là bao nhiêu?",
+      "So sánh lợi nhuận gộp về bán hàng và cung cấp dịch vụ giữa Quý 3/2024 và Quý 3/2023.",
+      "Phân tích xu hướng của chi phí tài chính và tác động của nó đến lợi nhuận của Công ty.",
+      "Tỷ suất lợi nhuận sau thuế trên doanh thu thuần (ROS) lũy kế đến Quý 3/2024 là bao nhiêu?",
+      "Đánh giá hiệu quả hoạt động kinh doanh của Công ty dựa trên lợi nhuận thuần từ hoạt động kinh doanh so với cùng kỳ năm trước.",
+      "Phân tích tác động của các khoản thu nhập và chi phí khác đến tổng lợi nhuận kế toán trước thuế.",
+      "Dự báo xu hướng lợi nhuận trong quý tới dựa trên các chỉ số hiện tại và giải thích các yếu tố ảnh hưởng."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Quý III/2024 và Lũy kế 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo Kết quả Hoạt động Kinh doanh Hợp nhất<br>Loại nội dung: Bảng<br>| CHỈ TIÊU | MÃ SỐ | TM | QUÝ 3/2024 | QUÝ 3/2023 | LŨY KẾ 2024 | LŨY KẾ 2023 |<br>|---|---|---|---|---|---|---|<br>| 1. Doanh thu bán hàng và cung cấp dịch vụ | 1 | V11 | 151,851,420,405 | 134,558,446,084 | 432,390,042,646 | 393,036,832,391 |<br>| 2. Các khoản giảm trừ doanh thu | 2 | V12 | 93,420,000 | 128,867,680 | 93,420,000 | 128,867,680 |<br>| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | V13 | 151,758,000,405 | 134,429,578,404 | 432,296,622,646 | 392,907,964,711 |<br>| 4. Giá vốn hàng bán | 11 | V14 | 122,055,962,743 | 114,406,618,399 | 353,427,074,900 | 329,230,448,511 |<br>| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | 29,702,037,662 | 20,022,960,005 | 78,869,547,746 | 63,677,516,200 |<br>| 6. Doanh thu hoạt động tài chính | 21 | V15 | 3,069,358,554 | 4,806,166,258 | 27,102,210,701 | 28,085,859,291 |<br>| 7. Chi phí tài chính | 22 | V16 | 1,758,095,507 | 1,580,731,547 | 3,846,206,000 | 7,419,709,630 |<br>| Trong đó: Chi phí lãi vay | 23 | | 894,673,838 | 333,803,347 | 2,573,653,785 | 4,289,330,546 |<br>| 8. Chi phí bán hàng | 25 | V19 | 6,116,512,595 | 3,595,592,835 | 17,304,916,603 | 12,875,570,371 |<br>| 9. Chi phí quản lý doanh nghiệp | 26 | V110 | 4,217,618,422 | 4,077,338,950 | 13,937,084,659 | 15,365,804,424 |<br>| 10. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 20,679,169,692 | 15,575,462,931 | 70,883,551,185 | 56,102,291,066 |<br>| 11. Thu nhập khác | 31 | V17 | 104,364,746 | 2,180,000 | 183,460,232 | 4,980,000 |<br>| 12. Chi phí khác | 32 | V18 | 2,280,000 | 520 | 3,180,002 | 10,500,520 |<br>| 13. Lợi nhuận khác | 40 | | 102,084,746 | 2,179,480 | 180,280,230 | 5,520,520 |<br>| 14. Tổng lợi nhuận kế toán trước thuế | 50 | | 20,781,254,438 | 15,577,642,411 | 71,063,831,415 | 56,096,770,546 |<br>| 15. Chi phí thuế TNDN hiện hành | 51 | V111 | 2,286,254,748 | 1,773,775,154 | 7,830,839,726 | 4,195,545,126 |<br>| 16. Chi phí thuế TNDN hoãn lại | 52 | | - | 154,938,202 | 157,178,649 | 373,914,509 |<br>| 17. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 18,494,999,690 | 13,958,805,459 | 63,390,170,338 | 51,527,310,911 |<br>| 18. Lợi nhuận sau thuế TNDN của công ty mẹ | 60 | | 18,494,999,690 | 13,958,805,459 | 63,390,170,338 | 51,527,310,911 |<br>| 19. Lãi cơ bản trên cổ phiếu | 70 | | 1,570 | 1,185 | 5,382 | 4,375 |",
+    "output": [
+      "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Công ty trong Quý 3/2024 là 151,758,000,405 đồng.",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế đến Quý 3/2024 là 63,390,170,338 đồng.",
+      "Lợi nhuận gộp về bán hàng và cung cấp dịch vụ trong Quý 3/2024 là 29,702,037,662 đồng, cao hơn đáng kể so với 20,022,960,005 đồng trong Quý 3/2023. Điều này cho thấy sự cải thiện mạnh mẽ trong hiệu quả hoạt động kinh doanh cốt lõi của Công ty.",
+      "Chi phí tài chính lũy kế đến Quý 3/2024 là 3,846,206,000 đồng, giảm đáng kể so với 7,419,709,630 đồng cùng kỳ năm trước. Trong đó, chi phí lãi vay cũng giảm từ 4,289,330,546 đồng xuống 2,573,653,785 đồng. Xu hướng giảm của chi phí tài chính có tác động tích cực đến lợi nhuận của Công ty, giúp tăng lợi nhuận thuần từ hoạt động kinh doanh và lợi nhuận sau thuế. Điều này có thể do Công ty giảm được gánh nặng vay nợ hoặc tận dụng được các điều kiện lãi suất thuận lợi hơn.",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp lũy kế đến Quý 3/2024 là 63,390,170,338 đồng.\\nDoanh thu thuần về bán hàng và cung cấp dịch vụ lũy kế đến Quý 3/2024 là 432,296,622,646 đồng.\\nTỷ suất lợi nhuận sau thuế trên doanh thu thuần (ROS) lũy kế đến Quý 3/2024 là (63,390,170,338 / 432,296,622,646) * 100% ≈ 14.66%.",
+      "Lợi nhuận thuần từ hoạt động kinh doanh lũy kế đến Quý 3/2024 đạt 70,883,551,185 đồng, cao hơn đáng kể so với 56,102,291,066 đồng của cùng kỳ năm trước. Điều này cho thấy hiệu quả hoạt động kinh doanh của Công ty đã được cải thiện một cách rõ rệt. Sự tăng trưởng này có thể được đóng góp bởi sự tăng doanh thu và/hoặc quản lý chi phí hiệu quả, đặc biệt là chi phí tài chính giảm và lợi nhuận gộp tăng, dẫn đến lợi nhuận từ các hoạt động cốt lõi tăng lên.",
+      "Trong Quý 3/2024, thu nhập khác của Công ty là 104,364,746 đồng và chi phí khác là 2,280,000 đồng, dẫn đến lợi nhuận khác là 102,084,746 đồng. Lũy kế đến Quý 3/2024, lợi nhuận khác là 180,280,230 đồng (thu nhập khác 183,460,232 đồng, chi phí khác 3,180,002 đồng). Mặc dù các khoản lợi nhuận khác có đóng góp vào tổng lợi nhuận kế toán trước thuế, nhưng giá trị của chúng tương đối nhỏ so với lợi nhuận thuần từ hoạt động kinh doanh (70,883,551,185 đồng). Do đó, tác động của các khoản thu nhập và chi phí khác đến tổng lợi nhuận kế toán trước thuế là không đáng kể, cho thấy hoạt động kinh doanh cốt lõi mới là yếu tố chính ảnh hưởng đến lợi nhuận của Công ty.",
+      "Dựa trên các chỉ số hiện tại, xu hướng lợi nhuận trong quý tới có thể tiếp tục tăng trưởng hoặc duy trì ở mức cao. Lợi nhuận gộp và lợi nhuận thuần từ hoạt động kinh doanh đều tăng mạnh so với cùng kỳ năm trước (lần lượt tăng khoảng 48% và 29% trong Q3/2024), đồng thời chi phí tài chính lũy kế giảm đáng kể. Các yếu tố ảnh hưởng tích cực bao gồm: (1) Doanh thu tăng cho thấy thị trường tiêu thụ sản phẩm tốt hoặc Công ty mở rộng thị phần; (2) Chi phí tài chính giảm cho thấy Công ty quản lý nợ hiệu quả hoặc hưởng lợi từ lãi suất thấp hơn. Tuy nhiên, chi phí bán hàng và chi phí thuế TNDN hiện hành lũy kế đều tăng, có thể là do mở rộng hoạt động hoặc thay đổi chính sách thuế, cần được theo dõi để đánh bảo đảm lợi nhuận duy trì bền vững."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong năm 2024 là bao nhiêu?",
+      "Tiền và tương đương tiền cuối kỳ của Công ty trong năm 2024 là bao nhiêu?",
+      "So sánh tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn giữa năm nay và năm trước.",
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư năm nay âm hay dương và điều này có ý nghĩa gì?",
+      "Tỷ lệ tiền thu từ đi vay trên tổng lưu chuyển tiền từ hoạt động tài chính năm nay là bao nhiêu?",
+      "Đánh giá khả năng tạo tiền của Công ty từ các hoạt động kinh doanh chính dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+      "Phân tích chiến lược đầu tư của Công ty dựa trên lưu chuyển tiền từ hoạt động đầu tư và so sánh với năm trước.",
+      "Dự báo tác động của việc tăng các khoản tiền chi cho vay đến dòng tiền trong tương lai của Công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024 (Lũy kế)<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo Lưu chuyển Tiền tệ Hợp nhất (Theo phương pháp gián tiếp)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Năm nay | Năm trước |<br>|---|---|---|---|<br>| I. Lưu chuyển tiền từ hoạt động kinh doanh | | | |<br>| 1. Lợi nhuận trước thuế | 1 | 71,063,831,415 | 56,096,770,546 |<br>| 2. Điều chỉnh cho các khoản: | | | |<br>| - Khấu hao TSCĐ và BĐSĐT | 2 | 9,217,832,617 | 8,547,617,569 |<br>| - Các khoản dự phòng | 3 | 1,382,103,908 | 2,671,669,385 |<br>| - Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ | 04 | 386,543,234 | - |<br>| - Lãi, lỗ từ hoạt động đầu tư | 05 | 23,295,779,179 | 20,775,066,320 |<br>| - Chi phí lãi vay | 6 | 2,604,517,154 | 4,289,330,546 |<br>| - Các khoản điều chỉnh khác | 7 | - | - |<br>| 3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động | 8 | 58,208,298,099 | 45,100,439,722 |<br>| - Tăng, giảm các khoản phải thu | 09 | 9,581,874,573 | 6,112,853,108 |<br>| - Tăng, giảm hàng tồn kho | 10 | 10,540,216,636 | 25,375,534,694 |<br>| - Tăng, giảm các khoản phải trả | 11 | 16,809,614,608 | 20,530,007,564 |<br>| - Tăng, giảm chi phí trả trước | 12 | 2,938,401,211 | 6,388,403,712 |<br>| - Tăng, giảm chứng khoán kinh doanh | 13 | - | - |<br>| Tiền lãi vay đã trả | 14 | 2,062,087,613 | 4,923,429,579 |<br>| Thuế thu nhập doanh nghiệp đã nộp | 15 | 6,189,178,004 | 3,240,244,891 |<br>| Tiền thu khác từ hoạt động kinh doanh | 16 | - | - |<br>| Tiền chi khác cho hoạt động kinh doanh | 17 | 5,446,043,001 | 3,912,613,098 |<br>| Lưu chuyển tiền thuần từ hoạt động kinh doanh | 20 | 44,136,914,091 | 50,370,936,104 |<br>| II. Lưu chuyển tiền từ hoạt động đầu tư | | | |<br>| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn | 21 | 25,825,499,602 | 7,190,590,068 |<br>| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn | 22 | 90,909,091 | - |<br>| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | 40,971,000,000 | 73,073,000,000 |<br>| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | 23,719,449,763 | 19,802,288,566 |<br>| Lưu chuyển tiền thuần từ hoạt động đầu tư | 30 | (42,986,140,748) | (60,461,301,502) |<br>| III. Lưu chuyển tiền từ hoạt động tài chính | | | |<br>| 3. Tiền thu từ đi vay | 33 | 180,257,799,897 | 170,289,643,421 |<br>| 4. Tiền trả nợ gốc vay | 34 | 155,745,443,791 | 206,237,083,122 |<br>| 5. Tiền trả nợ gốc thuê tài chính | 35 | - | - |<br>| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | 23,554,477,900 | 35,333,312,850 |<br>| Lưu chuyển tiền thuần từ hoạt động tài chính | 40 | 957,878,206 | (71,280,752,551) |<br>| Lưu chuyển tiền thuần trong kỳ | 50 | 2,108,651,549 | (81,371,117,949) |<br>| Tiền và tương đương tiền đầu kỳ | 60 | 11,064,446,214 | 127,303,560,011 |<br>| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | - | 568,003,696 |<br>| Tiền và tương đương tiền cuối kỳ | 70 | 13,173,097,763 | 46,500,445,758 |",
+    "output": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh trong năm 2024 là 44,136,914,091 đồng.",
+      "Tiền và tương đương tiền cuối kỳ của Công ty trong năm 2024 là 13,173,097,763 đồng.",
+      "Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn trong năm nay là 25,825,499,602 đồng, cao hơn đáng kể so với 7,190,590,068 đồng của năm trước. Điều này cho thấy Công ty đã tăng cường đầu tư vào tài sản dài hạn trong năm nay.",
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư năm nay là (42,986,140,748) đồng, tức là âm. Điều này có ý nghĩa Công ty đã chi tiêu nhiều tiền cho các hoạt động đầu tư hơn số tiền thu về từ các hoạt động này trong năm. Đây thường là dấu hiệu của việc Công ty đang trong giai đoạn mở rộng, đầu tư vào tài sản cố định, hoặc mua lại các công cụ nợ, nhằm mục đích tăng trưởng trong tương lai. Tuy nhiên, việc dòng tiền đầu tư âm cũng cần được cân nhắc với các dòng tiền khác để đánh giá tổng thể sức khỏe tài chính và khả năng tài trợ các khoản đầu tư này.",
+      "Tiền thu từ đi vay năm nay là 180,257,799,897 đồng. Lưu chuyển tiền thuần từ hoạt động tài chính năm nay là 957,878,206 đồng. Tỷ lệ là (180,257,799,897 / 957,878,206) * 100% ≈ 18819.34%. Lưu ý rằng tỷ lệ này rất lớn vì lưu chuyển tiền thuần từ hoạt động tài chính có giá trị rất nhỏ và là hiệu số của nhiều khoản thu/chi. Nếu hiểu tổng lưu chuyển tiền từ hoạt động tài chính là tổng các khoản thu từ hoạt động tài chính thì sẽ khác.",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Công ty trong năm nay là 44,136,914,091 đồng. Mặc dù con số này là dương, nhưng nó đã giảm so với năm trước (50,370,936,104 đồng). Điều này cho thấy khả năng tạo tiền từ các hoạt động kinh doanh chính của Công ty vẫn còn tốt và Công ty đang tạo ra đủ tiền để trang trải chi phí hoạt động. Tuy nhiên, xu hướng giảm nhẹ này cần được theo dõi để đảm bảo Công ty duy trì được năng lực tạo tiền ổn định và bền vững từ hoạt động cốt lõi, đặc biệt khi Công ty đang tăng cường đầu tư.",
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư năm nay là âm 42,986,140,748 đồng, trong khi năm trước là âm 60,461,301,502 đồng. Khoản chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn năm nay tăng đáng kể (từ 7,190,590,068 lên 25,825,499,602 đồng), cho thấy Công ty đang tập trung vào việc mở rộng cơ sở vật chất. Tuy nhiên, tiền chi cho vay, mua các công cụ nợ của đơn vị khác lại giảm mạnh (từ 73,073,000,000 xuống 40,971,000,000 đồng). Điều này cho thấy chiến lược đầu tư của Công ty đang dịch chuyển từ việc cho vay hoặc mua công cụ nợ sang đầu tư trực tiếp vào tài sản cố định và tài sản dài hạn để nâng cao năng lực sản xuất hoặc mở rộng hoạt động cốt lõi, phản ánh một chiến lược tăng trưởng nội tại mạnh mẽ hơn so với năm trước.",
+      "Mặc dù tiền chi cho vay, mua các công cụ nợ của đơn vị khác trong năm nay giảm so với năm trước (từ 73,073,000,000 đồng xuống 40,971,000,000 đồng), nếu trong tương lai các khoản tiền chi cho vay này tăng lên, nó sẽ làm giảm dòng tiền từ hoạt động đầu tư trong ngắn hạn (vì tiền đi ra). Tuy nhiên, về dài hạn, nếu các khoản cho vay này được thu hồi đúng hạn cùng với lãi suất, chúng sẽ tạo ra dòng tiền thu vào từ lãi và thu hồi gốc, góp phần tăng dòng tiền từ hoạt động đầu tư và doanh thu hoạt động tài chính của Công ty. Rủi ro là nếu các khoản cho vay này không được thu hồi, chúng sẽ ảnh hưởng tiêu cực đến dòng tiền và lợi nhuận."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Medium_QA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty Cổ phần Xuất Nhập khẩu Thủy sản Bến Tre được thành lập vào ngày nào?",
+      "Hoạt động chính của Công ty là gì?",
+      "Số lượng nhân viên của Công ty tại ngày 30/09/2024 là bao nhiêu?",
+      "Công ty áp dụng chế độ kế toán nào?",
+      "Đơn vị tiền tệ sử dụng trong kế toán của Công ty là gì?",
+      "Phân tích định nghĩa về Tiền và các khoản tương đương tiền của Công ty.",
+      "Giải thích cách Công ty hạch toán các nghiệp vụ phát sinh bằng ngoại tệ đối với các khoản phải thu và phải trả.",
+      "Đánh giá mức độ tuân thủ các chuẩn mực và chế độ kế toán của Công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất<br>Loại nội dung: Text<br>I. Đặc điểm hoạt động của doanh nghiệp<br>1. Công ty Cổ phần Xuất Nhập khẩu Thủy sản Bến Tre (Công ty) là một công ty cổ phần được thành lập theo Luật Doanh nghiệp của Việt Nam theo Giấy chứng nhận Đăng ký Kinh doanh (GCNĐKKD) số 1300376345 do Sở Kế hoạch và Đầu tư Tỉnh Bến Tre cấp ngày 25 tháng 12 năm 2003 và các GCNĐKKD điều chỉnh sau đó.<br>Cổ phiếu của Công ty được niêm yết tại Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh theo Giấy phép số 99/UBCK-GPNY do Ủy ban Chứng khoán Nhà nước cấp ngày 6 tháng 12 năm 2006 và Công văn số 4236/UBCK-PTTr ngày 2 tháng 8 năm 2021 của Ủy ban Chứng khoán Nhà nước.<br>2. Hoạt động chính trong năm hiện tại của Công ty là nuôi trồng, chế biến và xuất khẩu thủy sản.<br>3. Công ty có trụ sở đăng ký tại Xã Tân Thạch, Huyện Châu Thành, Tỉnh Bến Tre, Việt Nam.<br>4. Số lượng nhân viên của Công ty tại ngày 30 tháng 09 năm 2024 là 614 (ngày 31 tháng 12 năm 2023: 563).<br><br>II. Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán<br>1. Kỳ kế toán năm: Từ ngày 01/01 đến ngày 31/12 hàng năm.<br>2. Đơn vị tiền tệ sử dụng trong kế toán: đồng Việt Nam.<br><br>III. Chuẩn mực và chế độ kế toán áp dụng<br>1. Chế độ kế toán áp dụng: Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính.<br>2. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán: Công ty đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước đã ban hành. Các báo cáo tài chính được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện chuẩn mực và Chế độ kế toán hiện hành.<br>3. Hình thức sổ kế toán được áp dụng của Công ty là Nhật ký chung.<br><br>IV. Các chính sách kế toán áp dụng trong trường hợp doanh nghiệp hoạt động liên tục<br>1. Tiền và các khoản tương đương tiền<br>Tiền và các khoản tương đương tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng, các khoản đầu tư ngắn hạn có thời hạn gốc không quá ba tháng, có tính thanh khoản cao, có khả năng chuyển đổi dễ dàng thành các lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.<br>2. Các loại tỷ giá hối đoái áp dụng trong kế toán:<br>- USD/VND<br>- EUR/VND<br>3. Các nghiệp vụ bằng ngoại tệ<br>a. Các nghiệp vụ phát sinh bằng các đơn vị tiền tệ khác với đơn vị tiền tệ kế toán của Công ty (VND) được hạch toán theo tỷ giá giao dịch vào ngày phát sinh nghiệp vụ theo nguyên tắc sau:<br>- Nghiệp vụ làm phát sinh các khoản phải thu được hạch toán theo tỷ giá mua của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.<br>- Nghiệp vụ làm phát sinh các khoản phải trả được hạch toán theo tỷ giá bán của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.",
+    "output": [
+      "Công ty Cổ phần Xuất Nhập khẩu Thủy sản Bến Tre được thành lập vào ngày 25 tháng 12 năm 2003.",
+      "Hoạt động chính của Công ty là nuôi trồng, chế biến và xuất khẩu thủy sản.",
+      "Số lượng nhân viên của Công ty tại ngày 30 tháng 09 năm 2024 là 614 người.",
+      "Công ty áp dụng Chế độ Kế toán doanh nghiệp ban hành theo Thông tư số 200/2014/TT-BTC ngày 22/12/2014 của Bộ Tài chính.",
+      "Đơn vị tiền tệ sử dụng trong kế toán của Công ty là đồng Việt Nam (VND).",
+      "Theo định nghĩa của Công ty, tiền và các khoản tương đương tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng và các khoản đầu tư ngắn hạn. Các khoản đầu tư ngắn hạn này phải đáp ứng ba tiêu chí: có thời hạn gốc không quá ba tháng, có tính thanh khoản cao (dễ dàng chuyển đổi thành tiền) và không có nhiều rủi ro trong chuyển đổi thành tiền. Định nghĩa này phù hợp với các chuẩn mực kế toán, nhấn mạnh tính sẵn có và khả năng chuyển đổi thành tiền nhanh chóng để phục vụ nhu cầu thanh khoản của doanh nghiệp.",
+      "Công ty hạch toán các nghiệp vụ phát sinh bằng ngoại tệ theo tỷ giá giao dịch vào ngày phát sinh nghiệp vụ. Cụ thể, nghiệp vụ làm phát sinh các khoản phải thu được hạch toán theo tỷ giá mua của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch. Ngược lại, nghiệp vụ làm phát sinh các khoản phải trả được hạch toán theo tỷ giá bán của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.",
+      "Công ty tuyên bố đã áp dụng các Chuẩn mực kế toán Việt Nam và các văn bản hướng dẫn Chuẩn mực do Nhà nước ban hành. Các báo cáo tài chính được lập và trình bày theo đúng mọi quy định của từng chuẩn mực, thông tư hướng dẫn thực hiện chuẩn mực và Chế độ kế toán hiện hành. Điều này cho thấy Công ty cam kết tuân thủ cao các quy định kế toán hiện hành, đảm bảo tính minh bạch và đáng tin cậy của thông tin tài chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_NER",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Các khoản mục tiền tệ có gốc ngoại tệ được đánh giá lại theo tỷ giá nào tại ngày kết thúc kỳ kế toán năm?",
+      "Chứng khoán kinh doanh được ghi nhận theo nguyên tắc nào?",
+      "Phương pháp nào được Công ty áp dụng để hạch toán hàng tồn kho?",
+      "Phân tích cách các khoản chênh lệch tỷ giá thực tế phát sinh được hạch toán trong báo cáo tài chính.",
+      "Giải thích nguyên tắc ghi nhận các khoản đầu tư nắm giữ đến ngày đáo hạn và xử lý suy giảm giá trị của chúng.",
+      "Đánh giá tầm quan trọng của dự phòng nợ phải thu khó đòi trong việc phản ánh chính xác tình hình tài chính của Công ty.",
+      "Phân tích tác động của các chính sách kế toán hàng tồn kho (giá thấp hơn giữa giá thành và giá trị thuần có thể thực hiện được, dự phòng giảm giá) đến lợi nhuận và tài sản của Công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (Chính sách kế toán)<br>Loại nội dung: Text<br>IV. Các chính sách kế toán áp dụng trong trường hợp doanh nghiệp hoạt động liên tục<br>3. Các nghiệp vụ bằng ngoại tệ (tiếp theo)<br>b. Tại ngày kết thúc kỳ kế toán năm, các khoản mục tiền tệ có gốc ngoại tệ được đánh giá lại theo tỷ giá giao dịch thực tế tại ngày của bảng cân đối kế toán theo nguyên tắc sau:<br>- Các khoản mục tiền tệ được phân loại là tài sản được đánh giá lại theo tỷ giá mua của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.<br>- Các khoản mục tiền tệ được phân loại là nợ phải trả được đánh giá lại theo tỷ giá bán của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.<br>Tất cả các khoản chênh lệch tỷ giá thực tế phát sinh được hạch toán vào báo cáo kết quả hoạt động kinh doanh.<br><br>4. Nguyên tắc kế toán các khoản đầu tư tài chính<br>- Chứng khoán kinh doanh: Chứng khoán kinh doanh và đầu tư góp vốn vào đơn vị khác được ghi nhận theo giá gốc.<br>- Các khoản đầu tư nắm giữ đến ngày đáo hạn: Các khoản đầu tư nắm giữ đến ngày đáo hạn được ghi nhận theo giá gốc. Sau khi ghi nhận ban đầu, các khoản đầu tư này được ghi nhận theo giá trị có thể thu hồi. Các khoản suy giảm giá trị của khoản đầu tư nếu phát sinh được hạch toán vào chi phí tài chính trong báo cáo kết quả hoạt động kinh doanh và giảm trừ trực tiếp giá trị đầu tư.<br>- Dự phòng giảm giá trị các khoản đầu tư: Dự phòng cho việc giảm giá trị của các khoản đầu tư được lập khi có bằng chứng chắc chắn cho thấy có sự suy giảm giá trị của các khoản đầu tư này vào ngày kết thúc kỳ kế toán năm.<br>Tăng hoặc giảm số dư tài khoản dự phòng được hạch toán vào chi phí tài chính trong báo cáo kết quả hoạt động kinh doanh.<br><br>5. Nguyên tắc kế toán nợ phải thu<br>- Các khoản phải thu được trình bày trên báo cáo tài chính theo giá trị ghi sổ các khoản phải thu từ khách hàng và phải thu khác sau khi cấn trừ các khoản dự phòng được lập cho các khoản phải thu khó đòi.<br>- Dự phòng nợ phải thu khó đòi thể hiện phần giá trị của các khoản phải thu mà Công ty dự kiến không có khả năng thu hồi tại ngày kết thúc kỳ kế toán năm. Tăng hoặc giảm số dư tài khoản dự phòng được hạch toán vào chi phí quản lý doanh nghiệp trên báo cáo kết quả hoạt động kinh doanh.<br><br>6. Nguyên tắc ghi nhận hàng tồn kho<br>- Hàng tồn kho được ghi nhận theo giá thấp hơn giữa giá thành để đưa mỗi sản phẩm đến vị trí và điều kiện hiện tại và giá trị thuần có thể thực hiện được.<br>- Giá trị thuần có thể thực hiện được là giá bán ước tính của hàng tồn kho trong điều kiện kinh doanh bình thường trừ chi phí ước tính để hoàn thành và chi phí bán hàng ước tính.<br>- Công ty áp dụng phương pháp kê khai thường xuyên để hạch toán hàng tồn kho với giá trị được xác định như sau:<br>  + Nguyên vật liệu: chi phí mua theo phương pháp bình quân gia quyền.<br>  + Thành phẩm và chi phí sản xuất, kinh doanh dở dang: giá vốn nguyên vật liệu và lao động trực tiếp cộng chi phí sản xuất chung có liên quan được phân bổ dựa trên mức độ hoạt động bình thường theo phương pháp bình quân gia quyền.<br>- Dự phòng giảm giá hàng tồn kho:<br>  Dự phòng giảm giá hàng tồn kho được trích lập cho phần giá trị dự kiến bị tổn thất do các khoản suy giảm trong giá trị do giảm giá, hư hỏng, kém phẩm chất, lỗi thời v.v. có thể xảy ra đối với nguyên vật liệu, thành phẩm, hàng hóa tồn kho khác thuộc quyền sở hữu của Công ty dựa trên bằng chứng hợp lý về sự suy giảm giá trị tại ngày kết thúc kỳ kế toán năm.<br>  Số tăng hoặc giảm số dư tài khoản dự phòng giảm giá hàng tồn kho được hạch toán vào giá vốn hàng bán trên báo cáo kết quả hoạt động kinh doanh.",
+    "output": [
+      "Tại ngày kết thúc kỳ kế toán năm, các khoản mục tiền tệ có gốc ngoại tệ được đánh giá lại theo tỷ giá giao dịch thực tế tại ngày của bảng cân đối kế toán. Cụ thể, các khoản mục tiền tệ là tài sản được đánh giá lại theo tỷ giá mua của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch, còn các khoản mục tiền tệ là nợ phải trả được đánh giá lại theo tỷ giá bán của ngân hàng thương mại nơi Công ty thường xuyên có giao dịch.",
+      "Chứng khoán kinh doanh được ghi nhận theo giá gốc.",
+      "Công ty áp dụng phương pháp kê khai thường xuyên để hạch toán hàng tồn kho.",
+      "Công ty hạch toán tất cả các khoản chênh lệch tỷ giá thực tế phát sinh vào báo cáo kết quả hoạt động kinh doanh. Điều này có nghĩa là bất kỳ khoản lãi hoặc lỗ nào do sự thay đổi tỷ giá hối đoái đối với các khoản mục tiền tệ có gốc ngoại tệ sẽ ảnh hưởng trực tiếp đến lợi nhuận của Công ty trong kỳ đó, phản ánh đúng tác động của biến động tỷ giá đến kết quả kinh doanh.",
+      "Các khoản đầu tư nắm giữ đến ngày đáo hạn được ghi nhận theo giá gốc. Sau khi ghi nhận ban đầu, các khoản đầu tư này được ghi nhận theo giá trị có thể thu hồi. Các khoản suy giảm giá trị của khoản đầu tư nếu phát sinh sẽ được hạch toán vào chi phí tài chính trong báo cáo kết quả hoạt động kinh doanh và giảm trừ trực tiếp giá trị đầu tư. Ngoài ra, dự phòng giảm giá trị cho các khoản đầu tư được lập khi có bằng chứng chắc chắn về sự suy giảm giá trị vào cuối kỳ kế toán, và sự tăng hoặc giảm số dư tài khoản dự phòng này cũng được hạch toán vào chi phí tài chính.",
+      "Dự phòng nợ phải thu khó đòi có tầm quan trọng rất lớn trong việc phản ánh chính xác tình hình tài chính của Công ty. Khoản dự phòng này thể hiện phần giá trị của các khoản phải thu mà Công ty dự kiến không có khả năng thu hồi. Bằng cách trích lập dự phòng này, Công ty đảm bảo rằng các khoản phải thu trên báo cáo tài chính được ghi nhận theo giá trị có thể thu hồi thực tế, tránh việc thổi phồng tài sản và cung cấp một cái nhìn thực tế hơn về khả năng thanh khoản và sức khỏe tài chính. Sự tăng hoặc giảm của dự phòng này được hạch toán vào chi phí quản lý doanh nghiệp, ảnh hưởng trực tiếp đến lợi nhuận trong kỳ.",
+      "Chính sách ghi nhận hàng tồn kho theo giá thấp hơn giữa giá thành và giá trị thuần có thể thực hiện được giúp Công ty tránh được việc ghi nhận hàng tồn kho với giá trị cao hơn giá trị thị trường hoặc giá trị thu hồi, từ đó phản ánh trung thực hơn giá trị tài sản trên bảng cân đối kế toán. Việc trích lập dự phòng giảm giá hàng tồn kho cho các tổn thất dự kiến (do giảm giá, hư hỏng, lỗi thời) giúp Công ty chủ động ghi nhận các khoản lỗ tiềm năng vào giá vốn hàng bán, ảnh hưởng trực tiếp và làm giảm lợi nhuận gộp trong kỳ. Cả hai chính sách này đều góp phần bảo đảm rằng giá trị hàng tồn kho trên báo cáo tài chính là hợp lý và thận trọng, ảnh hưởng đến cả tài sản (giá trị hàng tồn kho) và lợi nhuận (thông qua giá vốn hàng bán và chi phí dự phòng)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá tài sản cố định hữu hình bao gồm những khoản mục nào?",
+      "Phương pháp khấu hao nào được áp dụng cho tài sản cố định hữu hình và vô hình?",
+      "Khoản lãi hoặc lỗ từ việc bán tài sản cố định hữu hình được hạch toán vào đâu?",
+      "Giải thích cách Công ty ghi nhận quyền sử dụng đất trong báo cáo tài chính.",
+      "Phân tích tác động của các chi phí bảo trì, sửa chữa so với chi phí nâng cấp tài sản cố định hữu hình lên báo cáo kết quả hoạt động kinh doanh.",
+      "Đánh giá các yếu tố ảnh hưởng đến thời gian hữu dụng ước tính của máy móc thiết bị và phương tiện vận tải, và tác động của chúng đến chi phí khấu hao.",
+      "Phân tích sự khác biệt trong cách hạch toán nguyên giá và chi phí nâng cấp đối với tài sản cố định hữu hình và vô hình."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (Chính sách kế toán)<br>Loại nội dung: Text<br>IV. Các chính sách kế toán áp dụng trong trường hợp doanh nghiệp hoạt động liên tục<br>7. Nguyên tắc ghi nhận và các khấu hao TSCĐ, TSCĐ thuê tài chính, bất động sản đầu tư<br>7.1. Tài sản cố định hữu hình<br>Tài sản cố định hữu hình được thể hiện theo nguyên giá trừ đi giá trị khấu hao lũy kế.<br>Nguyên giá tài sản cố định hữu hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào sẵn sàng hoạt động như dự kiến.<br>Các chi phí mua sắm, nâng cấp và đổi mới tài sản cố định hữu hình được ghi tăng nguyên giá của tài sản và chi phí bảo trì, sửa chữa được hạch toán vào báo cáo kết quả hoạt động kinh doanh khi phát sinh.<br>Khi tài sản cố định hữu hình được bán hay thanh lý, các khoản lãi hoặc lỗ phát sinh do thanh lý tài sản là phần chênh lệch giữa tiền thu thuần từ việc bán tài sản với giá trị còn lại của tài sản được hạch toán vào báo cáo kết quả hoạt động kinh doanh.<br>7.2. Tài sản cố định vô hình<br>Tài sản cố định vô hình được ghi nhận theo nguyên giá trừ đi giá trị hao mòn lũy kế.<br>Nguyên giá tài sản cố định vô hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào sẵn sàng sử dụng như dự kiến.<br>Các chi phí nâng cấp và đổi mới tài sản cố định vô hình được ghi tăng nguyên giá của tài sản và các chi phí khác được hạch toán vào báo cáo kết quả hoạt động kinh doanh khi phát sinh.<br>Khi tài sản cố định vô hình được bán hay thanh lý, các khoản lãi hoặc lỗ phát sinh do thanh lý tài sản là phần chênh lệch giữa tiền thu thuần từ việc bán tài sản với giá trị còn lại của tài sản được hạch toán vào báo cáo kết quả hoạt động kinh doanh.<br>Quyền sử dụng đất: Quyền sử dụng đất được ghi nhận như tài sản cố định vô hình trên bảng cân đối kế toán khi Công ty được cấp giấy chứng nhận quyền sử dụng đất. Nguyên giá quyền sử dụng đất bao gồm tất cả những chi phí có liên quan trực tiếp đến việc đưa đất vào trạng thái sẵn sàng để sử dụng và không được khấu trừ khi có thời gian sử dụng vô thời hạn.<br>Tiền thuê đất trả trước cho các hợp đồng thuê đất có hiệu lực trước năm 2003 và được cấp Giấy chứng nhận quyền sử dụng đất được ghi nhận là tài sản cố định vô hình theo quy định của Thông tư số 45/2013/TT-BTC do Bộ Tài chính ban hành vào ngày 25 tháng 4 năm 2013 hướng dẫn chế độ quản lý, sử dụng và trích khấu hao tài sản cố định (Thông tư 45).<br>7.3. Khấu hao và hao mòn<br>Khấu hao tài sản cố định hữu hình và hao mòn tài sản cố định vô hình được trích theo phương pháp khấu hao đường thẳng trong suốt thời gian hữu dụng ước tính của các tài sản như sau:<br>- Quyền sử dụng đất: 20-43 năm<br>- Nhà cửa và vật kiến trúc: 5-25 năm<br>- Máy móc thiết bị: 4-10 năm<br>- Phương tiện vận tải: 3-20 năm<br>- Thiết bị văn phòng: 3-10 năm<br>- Phần mềm kế toán: 8 năm<br>- Tài sản khác: 5-8 năm",
+    "output": [
+      "Nguyên giá tài sản cố định hữu hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào sẵn sàng hoạt động như dự kiến.",
+      "Phương pháp khấu hao đường thẳng được áp dụng cho tài sản cố định hữu hình và hao mòn tài sản cố định vô hình trong suốt thời gian hữu dụng ước tính của các tài sản.",
+      "Khi tài sản cố định hữu hình được bán hay thanh lý, các khoản lãi hoặc lỗ phát sinh là phần chênh lệch giữa tiền thu thuần từ việc bán tài sản với giá trị còn lại của tài sản được hạch toán vào báo cáo kết quả hoạt động kinh doanh.",
+      "Công ty ghi nhận quyền sử dụng đất như tài sản cố định vô hình trên bảng cân đối kế toán khi Công ty được cấp giấy chứng nhận quyền sử dụng đất. Nguyên giá quyền sử dụng đất bao gồm tất cả những chi phí có liên quan trực tiếp đến việc đưa đất vào trạng thái sẵn sàng để sử dụng và không được khấu trừ khi có thời gian sử dụng vô thời hạn. Tiền thuê đất trả trước cho các hợp đồng thuê đất có hiệu lực trước năm 2003 và được cấp Giấy chứng nhận quyền sử dụng đất cũng được ghi nhận là tài sản cố định vô hình theo Thông tư số 45/2013/TT-BTC.",
+      "Các chi phí mua sắm, nâng cấp và đổi mới tài sản cố định hữu hình được ghi tăng nguyên giá của tài sản, điều này làm tăng giá trị tài sản trên bảng cân đối kế toán và sau đó sẽ được phân bổ dần thành chi phí khấu hao trong suốt thời gian hữu dụng của tài sản, ảnh hưởng gián tiếp và từ từ đến báo cáo kết quả hoạt động kinh doanh. Ngược lại, chi phí bảo trì, sửa chữa được hạch toán trực tiếp vào báo cáo kết quả hoạt động kinh doanh khi phát sinh. Điều này có nghĩa là chi phí bảo trì, sửa chữa có tác động tức thời và trực tiếp làm giảm lợi nhuận trong kỳ phát sinh, trong khi chi phí nâng cấp có tác động dài hạn hơn thông qua khấu hao.",
+      "Thông tin không có trong dữ liệu. Chunk này chỉ cung cấp thời gian hữu dụng ước tính (Máy móc thiết bị: 4-10 năm; Phương tiện vận tải: 3-20 năm) nhưng không nêu rõ các yếu tố ảnh hưởng đến việc ước tính này.",
+      "Đối với cả tài sản cố định hữu hình và vô hình, nguyên giá đều bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào sẵn sàng hoạt động/sử dụng như dự kiến. Tương tự, các chi phí nâng cấp và đổi mới (đối với hữu hình) hoặc chi phí nâng cấp và đổi mới (đối với vô hình) đều được ghi tăng nguyên giá của tài sản. Sự khác biệt chính không nằm ở nguyên tắc hạch toán nguyên giá hay chi phí nâng cấp, mà nằm ở bản chất của tài sản: tài sản hữu hình có hình thái vật chất, trong khi tài sản vô hình không có hình thái vật chất. Tuy nhiên, nguyên tắc chung là những chi phí làm tăng giá trị hoặc kéo dài thời gian sử dụng của tài sản sẽ được vốn hóa vào nguyên giá."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Khi nào Công ty được bù trừ các tài sản thuế thu nhập hiện hành và thuế thu nhập hiện hành phải nộp?",
+      "Chi phí đi vay bao gồm những khoản mục nào?",
+      "Trợ cấp thôi việc được trích trước dựa trên nguyên tắc nào?",
+      "Phân biệt cách ghi nhận thuế thu nhập hiện hành và thuế thu nhập hoãn lại trong báo cáo tài chính.",
+      "Giải thích khi nào tài sản thuế thu nhập hoãn lại không được ghi nhận.",
+      "Phân tích tác động của nguyên tắc kế toán chi phí xây dựng cơ bản dở dang đến báo cáo tài chính của Công ty.",
+      "Đánh giá các rủi ro liên quan đến việc không ghi nhận tài sản thuế thu nhập hoãn lại trong các trường hợp cụ thể."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (Chính sách kế toán)<br>Loại nội dung: Text<br>IV. Các chính sách kế toán áp dụng trong trường hợp doanh nghiệp hoạt động liên tục<br>8. Nguyên tắc kế toán thuế<br>8.1. Thuế thu nhập hiện hành:<br>Tài sản thuế thu nhập hiện hành và thuế thu nhập hiện hành phải nộp cho năm hiện hành và các năm trước được xác định bằng số tiền dự kiến được thu hồi từ hoặc phải nộp cho cơ quan thuế, dựa trên các mức thuế suất và các luật thuế có hiệu lực đến ngày kết thúc kỳ kế toán năm.<br>Thuế thu nhập hiện hành được ghi nhận vào báo cáo kết quả hoạt động kinh doanh ngoại trừ trường hợp thuế thu nhập phát sinh liên quan đến một khoản mục được ghi thẳng vào vốn chủ sở hữu, trong trường hợp này, thuế thu nhập hiện hành cũng được ghi nhận trực tiếp vào vốn chủ sở hữu.<br>Công ty chỉ được bù trừ các tài sản thuế thu nhập hiện hành và thuế thu nhập hiện hành phải nộp khi Công ty có quyền hợp pháp được bù trừ giữa tài sản thuế thu nhập hiện hành với thuế thu nhập hiện hành phải nộp và Công ty dự định thanh toán thuế thu nhập hiện hành phải nộp và tài sản thuế thu nhập hiện hành trên cơ sở thuần.<br>8.2. Thuế thu nhập hoãn lại:<br>Thuế thu nhập hoãn lại được xác định cho các khoản chênh lệch tạm thời tại ngày kết thúc kỳ kế toán năm giữa cơ sở tính thuế thu nhập của các tài sản và nợ phải trả và giá trị ghi sổ của các khoản mục này trong báo cáo tài chính.<br>Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế, ngoại trừ:<br>- Thuế thu nhập hoãn lại phải trả phát sinh từ ghi nhận ban đầu của một tài sản hay nợ phải trả từ một giao dịch mà giao dịch này không có ảnh hưởng đến lợi nhuận kế toán và lợi nhuận tính thuế thu nhập hoặc lỗ tính thuế tại thời điểm phát sinh giao dịch.<br>- Các chênh lệch tạm thời chịu thuế gắn liền với các khoản đầu tư vào các công ty con, công ty liên kết và các khoản vốn góp liên doanh khi Công ty có khả năng kiểm soát thời gian hoàn nhập khoản chênh lệch tạm thời và chắc chắn khoản chênh lệch tạm thời sẽ không được hoàn nhập trong tương lai có thể dự đoán.<br>Tài sản thuế thu nhập hoãn lại cần được ghi nhận cho tất cả các chênh lệch tạm thời được khấu trừ, giá trị được khấu trừ chuyển sang các năm sau của các khoản lỗ tính thuế và các khoản ưu đãi thuế chưa sử dụng, khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ, các khoản lỗ tính thuế và các ưu đãi thuế chưa sử dụng này, ngoại trừ:<br>- Tài sản thuế hoãn lại phát sinh từ ghi nhận ban đầu của một tài sản hoặc nợ phải trả từ một giao dịch mà giao dịch này không có ảnh hưởng đến lợi nhuận kế toán và lợi nhuận tính thuế thu nhập hoặc lỗ tính thuế tại thời điểm phát sinh giao dịch.<br>- Đối với các chênh lệch tạm thời được khấu trừ phát sinh từ các khoản đầu tư vào các công ty con, công ty liên kết và các khoản vốn góp liên doanh, tài sản thuế thu nhập hoãn lại được ghi nhận khi chắc chắn là chênh lệch tạm thời sẽ được hoàn nhập trong tương lai có thể dự đoán được và có lợi nhuận tính thuế để sử dụng được khoản chênh lệch tạm thời đó.<br>Giá trị ghi sổ của tài sản thuế thu nhập hoãn lại phải được xem xét lại vào ngày kết thúc kỳ kế toán năm và phải giảm giá trị ghi sổ của tài sản thuế thu nhập hoãn lại đến mức bảo đảm chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng. Các tài sản thuế thu nhập hoãn lại chưa được ghi nhận trước đây được xem xét lại vào ngày kết thúc kỳ kế toán năm và được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế trong tương lai để có thể sử dụng các tài sản thuế thu nhập hoãn lại chưa ghi nhận này.<br>Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho năm tài chính khi tài sản được thu hồi hay nợ phải trả được thanh toán, dựa trên các mức thuế suất và luật thuế có hiệu lực vào ngày kết thúc kỳ kế toán năm.<br>Thuế thu nhập hoãn lại được ghi nhận vào báo cáo kết quả hoạt động kinh doanh ngoại trừ trường hợp thuế thu nhập phát sinh liên quan đến một khoản mục được ghi thẳng vào vốn chủ sở hữu, trong trường hợp này, thuế thu nhập hoãn lại cũng được ghi nhận trực tiếp vào vốn chủ sở hữu.<br>Công ty chỉ được bù trừ các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả khi Công ty có quyền hợp pháp được bù trừ giữa tài sản thuế thu nhập hiện hành với thuế thu nhập hiện hành phải nộp và các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả này liên quan tới thuế thu nhập doanh nghiệp được quản lý bởi cùng một cơ quan thuế.<br>- Công ty dự định thanh toán thuế thu nhập hiện hành phải nộp và tài sản thuế thu nhập hiện hành trên cơ sở thuần hoặc thu hồi tài sản đồng thời với việc thanh toán nợ phải trả trong từng kỳ tương lai khi các khoản trọng yếu của thuế thu nhập hoãn lại phải trả hoặc tài sản thuế thu nhập hoãn lại được thanh toán hoặc thu hồi.<br><br>9. Nguyên tắc kế toán chi phí trả trước<br>Chi phí trả trước bao gồm các chi phí trả trước ngắn hạn hoặc chi phí trả trước dài hạn trên bảng cân đối kế toán và được phân bổ trong khoảng thời gian trả trước hoặc thời gian các lợi ích kinh tế tương ứng được tạo ra từ các chi phí này.<br><br>10. Nguyên tắc kế toán các khoản phải trả và chi phí trích trước<br>Các khoản phải trả và chi phí trích trước được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được mà không phụ thuộc vào việc Công ty đã nhận được hóa đơn của nhà cung cấp hay chưa.<br><br>11. Nguyên tắc ghi nhận chi phí đi vay<br>Chi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay của Công ty và được hạch toán như chi phí phát sinh trong năm trong báo cáo kết quả hoạt động kinh doanh.<br><br>12. Nguyên tắc kế toán trợ cấp thôi việc phải trả<br>Trợ cấp thôi việc cho nhân viên được trích trước vào cuối mỗi năm báo cáo cho toàn bộ người lao động đã làm việc tại Công ty được hơn 12 tháng tính đến ngày lập bảng cân đối kế toán theo tỷ lệ bằng một nửa mức lương bình quân tháng cho mỗi năm làm việc tính đến ngày 31 tháng 12 năm 2008 theo Luật Lao động và các văn bản hướng dẫn có liên quan. Mức lương bình quân tháng dùng để tính trợ cấp thôi việc sẽ được điều chỉnh vào cuối mỗi niên độ báo cáo theo mức lương bình quân của sáu tháng gần nhất tính đến thời điểm lập báo cáo. Tăng hoặc giảm số dư tài khoản trích trước này ngoại trừ phần thanh toán thực tế cho người lao động sẽ được ghi nhận vào báo cáo kết quả kinh doanh.<br>Khoản trợ cấp thôi việc trích trước này được sử dụng để trả trợ cấp thôi việc cho người lao động khi chấm dứt hợp đồng lao động theo Điều 48 của Bộ luật Lao động.<br><br>13. Nguyên tắc kế toán chi phí xây dựng cơ bản dở dang<br>Chi phí xây dựng cơ bản dở dang phản ánh các khoản chi phí xây dựng và máy móc chưa được hoàn thành hoặc chưa lắp đặt xong. Không tính khấu hao cho chi phí xây dựng cơ bản dở dang trong quá trình xây dựng và lắp đặt.",
+    "output": [
+      "Công ty chỉ được bù trừ các tài sản thuế thu nhập hiện hành và thuế thu nhập hiện hành phải nộp khi Công ty có quyền hợp pháp được bù trừ giữa hai khoản mục này và Công ty dự định thanh toán chúng trên cơ sở thuần.",
+      "Chi phí đi vay bao gồm lãi tiền vay và các chi phí khác phát sinh liên quan trực tiếp đến các khoản vay của Công ty.",
+      "Trợ cấp thôi việc cho nhân viên được trích trước vào cuối mỗi năm báo cáo cho toàn bộ người lao động đã làm việc tại Công ty được hơn 12 tháng tính đến ngày lập bảng cân đối kế toán. Nguyên tắc trích lập là bằng một nửa mức lương bình quân tháng cho mỗi năm làm việc tính đến ngày 31 tháng 12 năm 2008 theo Luật Lao động và các văn bản hướng dẫn có liên quan. Mức lương bình quân tháng dùng để tính trợ cấp sẽ được điều chỉnh vào cuối mỗi niên độ báo cáo theo mức lương bình quân của sáu tháng gần nhất.",
+      "Thuế thu nhập hiện hành được xác định bằng số tiền dự kiến phải nộp hoặc được thu hồi cho/từ cơ quan thuế và thường được ghi nhận vào báo cáo kết quả hoạt động kinh doanh (ngoại trừ trường hợp phát sinh liên quan đến khoản mục ghi thẳng vào vốn chủ sở hữu). Thuế thu nhập hoãn lại được xác định cho các khoản chênh lệch tạm thời tại ngày kết thúc kỳ kế toán giữa cơ sở tính thuế và giá trị ghi sổ của tài sản/nợ phải trả. Thuế thu nhập hoãn lại phải trả được ghi nhận cho các chênh lệch tạm thời chịu thuế, còn tài sản thuế thu nhập hoãn lại được ghi nhận cho các chênh lệch tạm thời được khấu trừ, lỗ tính thuế và ưu đãi thuế chưa sử dụng, khi chắc chắn có lợi nhuận tính thuế trong tương lai. Thuế thu nhập hoãn lại cũng được ghi nhận vào báo cáo kết quả hoạt động kinh doanh, trừ trường hợp liên quan đến khoản mục ghi thẳng vào vốn chủ sở hữu.",
+      "Tài sản thuế thu nhập hoãn lại không được ghi nhận trong hai trường hợp chính:\\n1. Khi phát sinh từ ghi nhận ban đầu của một tài sản hoặc nợ phải trả từ một giao dịch mà giao dịch này không có ảnh hưởng đến lợi nhuận kế toán và lợi nhuận/lỗ tính thuế tại thời điểm phát sinh.\\n2. Đối với các chênh lệch tạm thời được khấu trừ phát sinh từ các khoản đầu tư vào các công ty con, công ty liên kết và các khoản vốn góp liên doanh, tài sản thuế thu nhập hoãn lại không được ghi nhận khi không chắc chắn rằng chênh lệch tạm thời sẽ được hoàn nhập trong tương lai có thể dự đoán được và/hoặc không có đủ lợi nhuận tính thuế để sử dụng khoản chênh lệch tạm thời đó.",
+      "Nguyên tắc kế toán chi phí xây dựng cơ bản dở dang của Công ty là phản ánh các khoản chi phí xây dựng và máy móc chưa được hoàn thành hoặc chưa lắp đặt xong, và không tính khấu hao cho các khoản này trong quá trình xây dựng và lắp đặt. Tác động của nguyên tắc này đến báo cáo tài chính là:\\n- **Trên Bảng cân đối kế toán:** Các chi phí này được ghi nhận là một tài sản (Tài sản dở dang dài hạn) thay vì là chi phí trong kỳ, giúp duy trì giá trị tài sản ròng của Công ty. Khi các dự án hoàn thành, giá trị này sẽ được chuyển sang tài sản cố định.\\n- **Trên Báo cáo kết quả hoạt động kinh doanh:** Việc không tính khấu hao trong quá trình xây dựng giúp giữ cho chi phí trong kỳ thấp hơn, từ đó duy trì lợi nhuận cao hơn so với việc tính khấu hao ngay lập tức. Tuy nhiên, điều này cũng có nghĩa là các dự án chưa hoàn thành không đóng góp vào doanh thu nhưng vẫn tiêu tốn nguồn lực tài chính.",
+      "Việc không ghi nhận tài sản thuế thu nhập hoãn lại trong các trường hợp cụ thể, như khi không chắc chắn về khả năng có lợi nhuận tính thuế trong tương lai hoặc từ các giao dịch ban đầu không ảnh hưởng đến lợi nhuận kế toán/tính thuế, có thể dẫn đến việc báo cáo lợi nhuận và vốn chủ sở hữu thấp hơn so với thực tế nếu các điều kiện này sau đó thay đổi theo hướng tích cực. Rủi ro chính là Công ty có thể bỏ lỡ cơ hội ghi nhận một tài sản có giá trị tiềm năng, làm cho báo cáo tài chính không phản ánh đầy đủ bức tranh về lợi ích kinh tế trong tương lai. Điều này có thể ảnh hưởng đến các quyết định của nhà đầu tư và các bên liên quan, những người có thể đánh giá thấp tiềm năng tạo lợi nhuận và giảm thiểu thuế của Công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Cổ phiếu quỹ được ghi nhận theo nguyên giá và ghi giảm vào đâu?",
+      "Khi nào doanh thu bán hàng được ghi nhận?",
+      "Quỹ đầu tư phát triển được trích lập nhằm mục đích gì?",
+      "Phân tích cách Công ty xác định doanh thu và các điều kiện để ghi nhận doanh thu.",
+      "Giải thích nguyên tắc Công ty phân chia lợi nhuận và các quỹ dự phòng được trích lập.",
+      "Đánh giá tác động của việc không ghi nhận lãi lỗ từ cổ phiếu quỹ đến báo cáo kết quả hoạt động kinh doanh.",
+      "Phân tích các yếu tố rủi ro và lợi ích khi Công ty không ghi nhận các khoản lãi lỗ từ mua, bán, phát hành lại hoặc hủy các công cụ vốn chủ sở hữu của mình."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (Chính sách kế toán)<br>Loại nội dung: Text<br>IV. Các chính sách kế toán áp dụng trong trường hợp doanh nghiệp hoạt động liên tục<br>14. Nguyên tắc ghi nhận vốn cổ phần<br>- Cổ phiếu phổ thông:<br>  Cổ phiếu phổ thông được ghi nhận theo giá phát hành trừ đi các chi phí phát sinh liên quan trực tiếp đến việc phát hành cổ phiếu, trừ đi ảnh hưởng thuế. Các chi phí đó được ghi giảm vào thặng dư vốn cổ phần.<br>- Cổ phiếu quỹ:<br>  Các công cụ vốn chủ sở hữu được Công ty mua lại (cổ phiếu quỹ) được ghi nhận theo nguyên giá và ghi giảm vào vốn chủ sở hữu. Công ty không ghi nhận các khoản lãi lỗ khi mua, bán, phát hành lại hoặc hủy các công cụ vốn chủ sở hữu của mình.<br><br>15. Nguyên tắc phân chia lợi nhuận<br>Lợi nhuận thuần sau thuế thu nhập doanh nghiệp (không bao gồm lãi từ giao dịch mua giá rẻ) có thể được chia cho cổ đông sau khi được Đại hội đồng cổ đông phê duyệt và sau khi đã trích lập các quỹ dự phòng theo Điều lệ của Công ty và các quy định của pháp luật Việt Nam.<br>Công ty trích lập các quỹ dự phòng sau từ lợi nhuận thuần sau thuế thu nhập doanh nghiệp của Công ty theo đề nghị của Hội đồng Quản trị và được các cổ đông phê duyệt tại Đại hội đồng cổ đông thường niên:<br>- Quỹ đầu tư phát triển: Quỹ này được trích lập nhằm phục vụ việc mở rộng hoạt động hoặc đầu tư chiều sâu của Công ty.<br>- Quỹ khen thưởng, phúc lợi: Quỹ này được trích lập để khen thưởng, khuyến khích vật chất, đem lại lợi ích chung và nâng cao phúc lợi cho công nhân viên, và được trình bày như một khoản phải trả trên bảng cân đối kế toán.<br><br>16. Nguyên tắc và phương pháp ghi nhận doanh thu<br>Doanh thu được ghi nhận khi Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định được một cách chắc chắn. Doanh thu được xác định theo giá trị hợp lý của khoản tiền nhận được, không bao gồm các khoản chiết khấu, giảm giá và hàng bán bị trả lại. Các điều kiện ghi nhận cụ thể sau đây cũng phải được đáp ứng khi ghi nhận doanh thu:<br>- Doanh thu bán hàng:<br>  Doanh thu bán hàng được ghi nhận khi các rủi ro trọng yếu và các quyền sở hữu hàng hóa đã được chuyển sang người mua, thường là trùng với thời điểm chuyển giao hàng hóa.<br>- Tiền cho thuê:<br>  Thu nhập từ tiền cho thuê tài sản theo hợp đồng thuê hoạt động được hạch toán vào báo cáo kết quả hoạt động kinh doanh theo phương pháp đường thẳng trong suốt thời gian cho thuê.<br>- Tiền lãi:<br>  Thu nhập từ tiền lãi được ghi nhận khi tiền lãi phát sinh trên cơ sở dồn tích có tính đến lợi tức mà tài sản đem lại trừ khi khả năng thu hồi tiền lãi không chắc chắn.<br>- Cổ tức:<br>  Thu nhập từ cổ tức được ghi nhận khi quyền được nhận khoản thanh toán cổ tức của Công ty được xác lập.<br><br>17. Các bên liên quan<br>Các bên được coi là bên liên quan của Công ty nếu một bên có khả năng, trực tiếp hoặc gián tiếp, kiểm soát bên kia hoặc gây ảnh hưởng đáng kể tới bên kia trong việc ra các quyết định tài chính và hoạt động, hoặc khi Công ty và bên kia cùng chịu sự kiểm soát chung hoặc ảnh hưởng đáng kể chung. Các bên liên quan nêu trên có thể là các công ty hoặc các cá nhân, bao gồm cả các thành viên mật thiết trong gia đình của họ.",
+    "output": [
+      "Cổ phiếu quỹ được ghi nhận theo nguyên giá và ghi giảm vào vốn chủ sở hữu.",
+      "Doanh thu bán hàng được ghi nhận khi các rủi ro trọng yếu và các quyền sở hữu hàng hóa đã được chuyển sang người mua, thường là trùng với thời điểm chuyển giao hàng hóa.",
+      "Quỹ đầu tư phát triển được trích lập nhằm phục vụ việc mở rộng hoạt động hoặc đầu tư chiều sâu của Công ty.",
+      "Công ty xác định doanh thu theo giá trị hợp lý của khoản tiền nhận được, không bao gồm các khoản chiết khấu, giảm giá và hàng bán bị trả lại. Các điều kiện chung để ghi nhận doanh thu là Công ty có khả năng nhận được các lợi ích kinh tế một cách chắc chắn và có thể xác định được một cách đáng tin cậy. Đối với doanh thu bán hàng, điều kiện cụ thể là các rủi ro trọng yếu và quyền sở hữu hàng hóa đã được chuyển sang người mua (thường là thời điểm giao hàng). Đối với tiền cho thuê, doanh thu được hạch toán theo phương pháp đường thẳng. Tiền lãi được ghi nhận trên cơ sở dồn tích, và cổ tức được ghi nhận khi quyền nhận thanh toán được xác lập. Điều này cho thấy Công ty tuân thủ nguyên tắc kế toán dồn tích và thận trọng trong việc ghi nhận doanh thu.",
+      "Lợi nhuận thuần sau thuế thu nhập doanh nghiệp (không bao gồm lãi từ giao dịch mua giá rẻ) có thể được chia cho cổ đông sau khi được Đại hội đồng cổ đông phê duyệt và sau khi đã trích lập các quỹ dự phòng theo Điều lệ Công ty và pháp luật Việt Nam. Công ty trích lập hai loại quỹ dự phòng chính từ lợi nhuận thuần sau thuế TNDN theo đề nghị của Hội đồng Quản trị và được cổ đông phê duyệt:\\n- **Quỹ đầu tư phát triển:** Nhằm phục vụ việc mở rộng hoạt động hoặc đầu tư chiều sâu của Công ty.\\n- **Quỹ khen thưởng, phúc lợi:** Trích lập để khen thưởng, khuyến khích vật chất và nâng cao phúc lợi cho công nhân viên, được trình bày như một khoản phải trả trên bảng cân đối kế toán.",
+      "Việc Công ty không ghi nhận các khoản lãi lỗ khi mua, bán, phát hành lại hoặc hủy các công cụ vốn chủ sở hữu của mình (cổ phiếu quỹ) có tác động đáng kể đến báo cáo kết quả hoạt động kinh doanh. Thay vì ảnh hưởng đến lợi nhuận, các giao dịch này chỉ được ghi nhận trực tiếp vào vốn chủ sở hữu theo nguyên giá. Điều này giúp giữ cho báo cáo kết quả hoạt động kinh doanh ổn định, không bị ảnh hưởng bởi các biến động từ giao dịch cổ phiếu quỹ, vốn thường không phải là hoạt động kinh doanh cốt lõi. Tuy nhiên, nó cũng có nghĩa là bất kỳ giá trị tăng lên hoặc giảm xuống nào của cổ phiếu quỹ sẽ không được phản ánh trong lợi nhuận của Công ty, mà chỉ thay đổi cấu trúc vốn chủ sở hữu.",
+      "Việc Công ty không ghi nhận lãi lỗ từ các giao dịch cổ phiếu quỹ có cả rủi ro và lợi ích:\\n\\n**Lợi ích:**\\n- **Ổn định lợi nhuận:** Báo cáo kết quả hoạt động kinh doanh không bị biến động bởi các giao dịch mua/bán cổ phiếu quỹ, giúp nhà đầu tư tập trung vào hiệu suất kinh doanh cốt lõi.\\n- **Tránh ghi nhận lỗ ảo:** Nếu giá cổ phiếu quỹ giảm, Công ty không phải ghi nhận lỗ vào lợi nhuận, giúp duy trì hình ảnh tài chính tích cực.\\n\\n**Rủi ro:**\\n- **Thiếu minh bạch về hiệu quả đầu tư cổ phiếu quỹ:** Việc không ghi nhận lãi lỗ có thể làm mất đi một thước đo về hiệu quả tài chính của các quyết định mua lại/phát hành cổ phiếu quỹ. Nếu Công ty mua cổ phiếu quỹ ở giá cao và bán lại ở giá thấp, khoản lỗ thực tế không được thể hiện rõ ràng trên Báo cáo kết quả hoạt động kinh doanh.\\n- **Khó khăn trong đánh giá giá trị thực:** Nhà đầu tư có thể gặp khó khăn trong việc đánh giá đầy đủ tác động của các giao dịch cổ phiếu quỹ đến giá trị thực của Công ty nếu không có thông tin chi tiết về lãi/lỗ tiềm năng từ các giao dịch này."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_QA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số dư tiền mặt tại ngày 30/09/2024 là bao nhiêu?",
+      "Tổng tiền và các khoản tương đương tiền tại ngày 01/01/2024 là bao nhiêu?",
+      "Giá trị đầu tư nắm giữ đến ngày đáo hạn tại ngày 30/09/2024 là bao nhiêu?",
+      "So sánh tiền gửi ngân hàng giữa cuối quý 3 năm 2024 và đầu năm 2024, cho thấy xu hướng nào?",
+      "Đánh giá rủi ro thanh khoản của Công ty dựa trên tỷ lệ tiền mặt trên tổng tiền và tương đương tiền.",
+      "Phân tích ý nghĩa của việc Công ty có một lượng lớn đầu tư nắm giữ đến ngày đáo hạn trong cơ cấu đầu tư tài chính ngắn hạn.",
+      "Dự báo tác động của lãi suất thị trường đến các khoản đầu tư nắm giữ đến ngày đáo hạn của Công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024 và 01 tháng 01 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Tiền và Đầu tư tài chính ngắn hạn)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>1. Tiền<br>Đơn vị tính: VND<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Tiền mặt | 449,721,046 | 254,628,177 |<br>| Tiền gửi ngân hàng | 12,723,376,717 | 10,809,818,037 |<br>| Các khoản tương đương tiền | - | - |<br>| Tổng cộng | 13,173,097,763 | 11,064,446,214 |<br><br>2. Các khoản đầu tư tài chính<br>2.1. Đầu tư tài chính ngắn hạn<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Cổ phiếu đã niêm yết | 1,224,855 | 1,224,855 |<br>| Cổ phiếu chưa niêm yết | 28,230,000 | 28,230,000 |<br>| Đầu tư nắm giữ đến ngày đáo hạn | 196,376,000,000 | 145,405,000,000 |<br>| Tổng cộng | 196,405,454,855 | 145,434,454,855 |<br>Đầu tư nắm giữ tới ngày đáo hạn bao gồm các khoản tiền gửi ngắn hạn tại các ngân hàng thương mại có kỳ hạn gốc trên ba tháng và kỳ hạn còn lại dưới một năm kể từ ngày kết thúc kỳ kế toán năm và hưởng lãi suất áp dụng.",
+    "output": [
+      "Số dư tiền mặt tại ngày 30/09/2024 là 449,721,046 đồng.",
+      "Tổng tiền và các khoản tương đương tiền tại ngày 01/01/2024 là 11,064,446,214 đồng.",
+      "Giá trị đầu tư nắm giữ đến ngày đáo hạn tại ngày 30/09/2024 là 196,376,000,000 đồng.",
+      "Tiền gửi ngân hàng tại cuối quý 3 năm 2024 là 12,723,376,717 đồng, tăng so với 10,809,818,037 đồng tại đầu năm 2024. Xu hướng này cho thấy Công ty đã tăng lượng tiền gửi tại ngân hàng, có thể để tối ưu hóa việc quản lý dòng tiền hoặc tích lũy nguồn vốn cho các kế hoạch tương lai.",
+      "Tại ngày 30/09/2024, số dư tiền mặt là 449,721,046 đồng và tổng tiền và các khoản tương đương tiền là 13,173,097,763 đồng. Tỷ lệ tiền mặt trên tổng tiền và tương đương tiền là khoảng 3.41%. Tỷ lệ này tương đối thấp, cho thấy phần lớn tiền và các khoản tương đương tiền của Công ty nằm ở tiền gửi ngân hàng. Điều này có thể giảm thiểu rủi ro bị mất cắp hoặc quản lý kém đối với tiền mặt, nhưng cũng có thể ẩn chứa rủi ro nhỏ về khả năng tiếp cận tiền mặt tức thì nếu Công ty cần một lượng lớn tiền mặt cho các giao dịch khẩn cấp không thể thực hiện qua ngân hàng. Tuy nhiên, với tiền gửi ngân hàng là chính, rủi ro thanh khoản nhìn chung là thấp do tiền gửi ngân hàng có tính thanh khoản cao.",
+      "Công ty có một lượng lớn đầu tư nắm giữ đến ngày đáo hạn, đạt 196,376,000,000 đồng tại 30/09/2024, chiếm phần lớn trong tổng đầu tư tài chính ngắn hạn. Các khoản này bao gồm tiền gửi ngắn hạn tại ngân hàng thương mại có kỳ hạn gốc trên ba tháng và kỳ hạn còn lại dưới một năm. Điều này cho thấy Công ty đang ưu tiên chiến lược đầu tư an toàn, tập trung vào việc bảo toàn vốn và thu về lợi suất ổn định từ lãi suất tiền gửi. Việc này giúp Công ty quản lý tốt dòng tiền nhàn rỗi trong ngắn hạn, tận dụng lợi nhuận từ lãi suất mà vẫn đảm bảo tính thanh khoản cao khi các khoản này đáo hạn, giảm thiểu rủi ro biến động thị trường so với đầu tư vào chứng khoán kinh doanh.",
+      "Các khoản đầu tư nắm giữ đến ngày đáo hạn của Công ty bao gồm tiền gửi ngắn hạn tại các ngân hàng thương mại và hưởng lãi suất áp dụng. Do đó, nếu lãi suất thị trường tăng, Công ty có thể sẽ có lợi khi các khoản đầu tư này đáo hạn và được tái đầu tư với mức lãi suất cao hơn, làm tăng doanh thu hoạt động tài chính trong tương lai. Ngược lại, nếu lãi suất thị trường giảm, Công ty có thể phải tái đầu tư các khoản tiền gửi đáo hạn với lãi suất thấp hơn, dẫn đến giảm doanh thu từ hoạt động tài chính. Tuy nhiên, do đây là các khoản đầu tư nắm giữ đến ngày đáo hạn, giá trị ghi sổ của chúng ít bị ảnh hưởng bởi biến động lãi suất thị trường trong suốt thời gian nắm giữ, chỉ khi đáo hạn và tái đầu tư mới chịu ảnh hưởng trực tiếp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Giá trị đầu tư góp vốn vào đơn vị khác tại ngày 30/09/2024 là bao nhiêu?",
+      "Khách hàng có khoản phải thu lớn nhất của Công ty tại ngày 30/09/2024 là ai?",
+      "So sánh tổng phải thu của khách hàng giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Giá trị thị trường của khoản đầu tư vào Công ty Cổ phần Thực phẩm Sao Ta tại ngày 30/09/2024 là bao nhiêu?",
+      "Đánh giá mức độ tập trung rủi ro tín dụng của Công ty dựa trên danh sách các khách hàng có khoản phải thu.",
+      "Phân tích sự chênh lệch giữa giá gốc và giá trị thị trường của khoản đầu tư vào Công ty Cổ phần Thực phẩm Sao Ta và ý nghĩa của nó.",
+      "Dự báo tác động của việc tăng các khoản phải thu từ khách hàng đến dòng tiền và lợi nhuận của Công ty.",
+      "Nếu một khách hàng lớn gặp khó khăn tài chính, điều này ảnh hưởng như thế nào đến Công ty?"
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024 và 01 tháng 01 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Đầu tư tài chính dài hạn và Phải thu khách hàng)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>2.2. Đầu tư tài chính dài hạn<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Đầu tư góp vốn vào đơn vị khác | 187,202,383,000 | 187,202,383,000 |<br>| Tổng cộng | 187,202,383,000 | 187,202,383,000 |<br><br>| Đầu tư góp vốn vào đơn vị khác | Lĩnh vực kinh doanh | Số lượng (Cuối năm) | Giá gốc (Cuối năm) | Số lượng (Đầu năm) | Giá gốc (Đầu năm) |<br>|---|---|---|---|---|---|<br>| Công ty Cổ phần Thực phẩm Sao Ta | Nuôi trồng thủy sản | 8,089,000 | 187,202,383,000 | 8,089,000 | 187,202,383,000 |<br>Tại ngày 30 tháng 09 năm 2024, giá trị thị trường của khoản đầu tư này là 380,587,450,000 đồng.<br><br>3. Phải thu của khách hàng<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| JERONIMO MARTINS COLOMBIA S.A.S. | 19,265,596,511 | 14,454,586,828 |<br>| KYOKUYO CO, LTD | 8,586,799,416 | 4,691,208,250 |<br>| PINGO DOCE - DISTRIB. ALIMENTAR, SA. | 6,211,840,000 | 8,161,216,500 |<br>| CONFREMAR S.A | 6,110,782,948 | 6,646,213,621 |<br>| Khác | 9,495,148,389 | 7,054,579,102 |<br>| Tổng cộng | 49,670,167,264 | 41,007,804,301 |",
+    "output": [
+      "Giá trị đầu tư góp vốn vào đơn vị khác tại ngày 30/09/2024 là 187,202,383,000 đồng.",
+      "Khách hàng có khoản phải thu lớn nhất của Công ty tại ngày 30/09/2024 là JERONIMO MARTINS COLOMBIA S.A.S. với 19,265,596,511 đồng.",
+      "Tổng phải thu của khách hàng tại cuối quý 3 năm 2024 là 49,670,167,264 đồng, tăng so với 41,007,804,301 đồng tại đầu năm 2024. Điều này cho thấy Công ty đã mở rộng các khoản tín dụng cho khách hàng hoặc doanh số bán hàng tăng lên trong kỳ.",
+      "Giá trị thị trường của khoản đầu tư vào Công ty Cổ phần Thực phẩm Sao Ta tại ngày 30/09/2024 là 380,587,450,000 đồng.",
+      "Dựa trên danh sách các khách hàng có khoản phải thu tại ngày 30/09/2024, JERONIMO MARTINS COLOMBIA S.A.S. chiếm tỷ trọng lớn nhất (19,265,596,511 đồng trên tổng 49,670,167,264 đồng, chiếm khoảng 38.79%). KYOKUYO CO, LTD và PINGO DOCE - DISTRIB. ALIMENTAR, SA. cũng là các khoản phải thu lớn. Sự tập trung phải thu vào một số ít khách hàng lớn cho thấy Công ty có mức độ tập trung rủi ro tín dụng đáng kể. Nếu một trong các khách hàng này gặp khó khăn tài chính hoặc chậm thanh toán, nó có thể ảnh hưởng nghiêm trọng đến dòng tiền và lợi nhuận của Công ty.",
+      "Tại ngày 30/09/2024, khoản đầu tư góp vốn vào Công ty Cổ phần Thực phẩm Sao Ta có giá gốc là 187,202,383,000 đồng, trong khi giá trị thị trường là 380,587,450,000 đồng. Sự chênh lệch dương đáng kể (khoảng 193,385,067,000 đồng) cho thấy khoản đầu tư này đã tạo ra một khoản lãi tiềm năng lớn chưa thực hiện được. Điều này có ý nghĩa tích cực đối với Công ty, thể hiện hiệu quả của quyết định đầu tư và tiềm năng tăng trưởng về giá trị tài sản. Nó cũng góp phần nâng cao giá trị tài sản ròng của Công ty và có thể là nguồn lực cho các hoạt động tài chính hoặc đầu tư khác trong tương lai nếu Công ty quyết định thoái vốn.",
+      "Việc tăng các khoản phải thu từ khách hàng (từ 41,007,804,301 đồng lên 49,670,167,264 đồng) có thể phản ánh doanh thu bán hàng tăng lên, từ đó tác động tích cực đến lợi nhuận của Công ty. Tuy nhiên, đối với dòng tiền, việc tăng phải thu cho thấy một lượng tiền mặt đáng kể đang bị giữ lại dưới dạng các khoản nợ từ khách hàng thay vì được thu về ngay lập tức. Điều này có thể gây áp lực lên dòng tiền hoạt động của Công ty, đòi hỏi Công ty phải tìm kiếm các nguồn tài trợ khác để bù đắp hoặc quản lý chặt chẽ hơn vòng quay khoản phải thu. Nếu các khoản phải thu này không được thu hồi kịp thời, nó có thể ảnh hưởng tiêu cực đến thanh khoản và khả năng thanh toán các nghĩa vụ ngắn hạn của Công ty.",
+      "Nếu một khách hàng lớn như JERONIMO MARTINS COLOMBIA S.A.S. (khách hàng có khoản phải thu lớn nhất) gặp khó khăn tài chính, điều này sẽ ảnh hưởng nghiêm trọng đến Công ty theo nhiều khía cạnh. Thứ nhất, dòng tiền của Công ty sẽ bị ảnh hưởng tiêu cực do việc thu hồi nợ chậm trễ hoặc không thể thu hồi. Thứ hai, Công ty có thể phải trích lập dự phòng nợ phải thu khó đòi hoặc ghi nhận khoản lỗ, làm giảm lợi nhuận và vốn chủ sở hữu. Thứ ba, mối quan hệ kinh doanh với khách hàng đó có thể bị gián đoạn, ảnh hưởng đến doanh số bán hàng trong tương lai. Cuối cùng, nó có thể tạo ra hiệu ứng domino lên các hoạt động khác của Công ty, đặc biệt nếu Công ty có mức độ tập trung rủi ro tín dụng cao."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị trả trước cho người bán ngắn hạn tại ngày 30/09/2024 là bao nhiêu?",
+      "Tổng các khoản phải thu ngắn hạn khác tại ngày 01/01/2024 là bao nhiêu?",
+      "Khoản trả trước cho người bán lớn nhất tại ngày 30/09/2024 thuộc về công ty nào?",
+      "So sánh các khoản lãi dự thu giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Đánh giá xu hướng và ý nghĩa của sự thay đổi trong tổng trả trước cho người bán ngắn hạn.",
+      "Phân tích rủi ro tài chính tiềm ẩn từ sự gia tăng của khoản phải thu khác trong ngắn hạn.",
+      "Dự báo tác động của việc giảm các khoản phải thu từ người lao động đến dòng tiền của Công ty."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024 và 01 tháng 01 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Trả trước người bán và Phải thu ngắn hạn khác)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>4. Trả trước cho người bán ngắn hạn<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Công ty TNHH SX TM DV Nhân Tâm | 4,219,050,000 | 4,730,550,000 |<br>| Công ty TNHH Chế biến Thực phẩm Thương mại Ngọc Hà | 2,678,056,800 | 2,678,056,800 |<br>| Công ty TNHH XLCTCN TVMT Văn Lang | 2,360,737,280 | 2,514,238,708 |<br>| Công ty TNHH MTV Cơ Điện Lạnh Thành Minh | 180,000,000 | - |<br>| Khác | 351,455,822 | 3,605,973,410 |<br>| Tổng cộng | 9,789,299,902 | 13,528,818,918 |<br><br>5. Các khoản phải thu ngắn hạn khác<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Lãi dự thu | 2,377,397,706 | 2,891,977,381 |<br>| Phải thu người lao động | 178,085,848 | 280,779,627 |<br>| Phải thu khác | 1,047,508,704 | 353,630,924 |<br>| Tổng cộng | 3,602,992,258 | 3,526,387,932 |",
+    "output": [
+      "Tổng giá trị trả trước cho người bán ngắn hạn tại ngày 30/09/2024 là 9,789,299,902 đồng.",
+      "Tổng các khoản phải thu ngắn hạn khác tại ngày 01/01/2024 là 3,526,387,932 đồng.",
+      "Khoản trả trước cho người bán lớn nhất tại ngày 30/09/2024 thuộc về Công ty TNHH SX TM DV Nhân Tâm với 4,219,050,000 đồng.",
+      "Các khoản lãi dự thu tại cuối quý 3 năm 2024 là 2,377,397,706 đồng, giảm so với 2,891,977,381 đồng tại đầu năm 2024. Điều này cho thấy Công ty có thể đã thu về một phần lãi dự thu hoặc số lượng các khoản đầu tư/cho vay phát sinh lãi đã giảm.",
+      "Tổng trả trước cho người bán ngắn hạn của Công ty đã giảm từ 13,528,818,918 đồng tại đầu năm xuống còn 9,789,299,902 đồng tại cuối quý 3 năm 2024. Xu hướng giảm này có thể cho thấy Công ty ít phải đặt cọc hoặc trả trước cho nhà cung cấp hơn, có thể do mối quan hệ tốt hơn với người bán hoặc Công ty đang sử dụng các điều khoản tín dụng thương mại hiệu quả hơn. Về ý nghĩa, việc giảm các khoản trả trước giúp cải thiện dòng tiền của Công ty vì ít vốn bị ràng buộc vào các khoản trả trước hơn, tăng khả năng thanh khoản.",
+      "Khoản phải thu khác của Công ty đã tăng từ 353,630,924 đồng tại đầu năm lên 1,047,508,704 đồng tại cuối quý 3 năm 2024, một sự gia tăng đáng kể. Sự gia tăng này tạo ra rủi ro tài chính tiềm ẩn. Nếu các khoản phải thu này không được thu hồi kịp thời hoặc trở thành khó đòi, chúng có thể ảnh hưởng tiêu cực đến dòng tiền và lợi nhuận của Công ty. Đặc biệt, nếu các khoản này không được thuyết minh rõ ràng về bản chất, nó có thể ẩn chứa các giao dịch không minh bạch hoặc rủi ro tín dụng không được đánh giá đầy đủ. Do đó, cần có sự quản lý chặt chẽ để đảm bảo khả năng thu hồi các khoản phải thu khác này.",
+      "Các khoản phải thu từ người lao động đã giảm từ 280,779,627 đồng tại đầu năm xuống còn 178,085,848 đồng tại cuối quý 3 năm 2024. Việc giảm các khoản phải thu này có tác động tích cực đến dòng tiền của Công ty. Khi các khoản tạm ứng hoặc cho vay người lao động được thu hồi, tiền mặt sẽ được bổ sung vào quỹ của Công ty, cải thiện thanh khoản. Điều này cũng cho thấy Công ty có thể đang quản lý chặt chẽ hơn các khoản tạm ứng hoặc đã có các chính sách để khuyến khích hoặc đảm bảo việc thu hồi nợ từ người lao động hiệu quả hơn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng chi phí xây dựng cơ bản dở dang tại ngày 30/09/2024 là bao nhiêu?",
+      "Hạng mục chi phí xây dựng cơ bản dở dang lớn nhất tại ngày 30/09/2024 là gì?",
+      "So sánh chi phí xây dựng hệ thống xử lý nước thải giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Giải thích lý do Công ty không cung cấp chi tiết thành phần của Hàng tồn kho trong thuyết minh này.",
+      "Đánh giá mức độ tăng trưởng của chi phí xây dựng cơ bản dở dang và tác động của nó đến kế hoạch đầu tư của Công ty.",
+      "Phân tích rủi ro liên quan đến các dự án xây dựng cơ bản dở dang đang được triển khai.",
+      "Dự báo thời điểm hoàn thành và tác động của các công trình dở dang này đến hoạt động sản xuất kinh doanh trong tương lai."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024 và 01 tháng 01 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Chi phí xây dựng cơ bản dở dang)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>6. Hàng tồn kho<br>(*Lưu ý: Chi tiết các thành phần của Hàng tồn kho (V.6) trong thuyết minh báo cáo tài chính không thể trích xuất đáng tin cậy do lỗi OCR và không thể đảm bảo cấu trúc bảng đầy đủ, chính xác. Các giá trị tổng hợp cho Hàng tồn kho và Dự phòng giảm giá hàng tồn kho có thể tìm thấy trong Bảng cân đối kế toán.)<br><br>7. Chi phí xây dựng cơ bản dở dang<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Hệ thống xử lý nước thải | 13,691,325,010 | 3,176,929,976 |<br>| Cụm máy nén GEA | 7,800,198,463 | - |<br>| Phòng điều khiển hệ thống máy nén | 1,268,882,460 | - |<br>| Các công trình khác | 1,455,999,096 | 4,373,970,100 |<br>| Tổng cộng | 24,216,405,029 | 7,550,900,076 |",
+    "output": [
+      "Tổng chi phí xây dựng cơ bản dở dang tại ngày 30/09/2024 là 24,216,405,029 đồng.",
+      "Hạng mục chi phí xây dựng cơ bản dở dang lớn nhất tại ngày 30/09/2024 là Hệ thống xử lý nước thải với 13,691,325,010 đồng.",
+      "Chi phí xây dựng hệ thống xử lý nước thải tại cuối quý 3 năm 2024 là 13,691,325,010 đồng, tăng đáng kể so với 3,176,929,976 đồng tại đầu năm 2024. Điều này cho thấy Công ty đang đẩy mạnh đầu tư vào hạng mục này.",
+      "Công ty không cung cấp chi tiết thành phần của Hàng tồn kho trong thuyết minh này do lỗi OCR (Nhận dạng ký tự quang học) và không thể đảm bảo cấu trúc bảng đầy đủ, chính xác của dữ liệu trích xuất.",
+      "Chi phí xây dựng cơ bản dở dang của Công ty đã tăng mạnh từ 7,550,900,076 đồng tại đầu năm lên 24,216,405,029 đồng tại cuối quý 3 năm 2024, tương đương mức tăng khoảng 220.71%. Mức tăng trưởng đột biến này cho thấy Công ty đang thực hiện một kế hoạch đầu tư mạnh mẽ và mở rộng đáng kể. Các hạng mục lớn như Hệ thống xử lý nước thải và Cụm máy nén GEA cho thấy Công ty đang đầu tư vào cơ sở hạ tầng sản xuất và các yếu tố liên quan đến bảo vệ môi trường, có thể nhằm nâng cao năng lực sản xuất, cải thiện hiệu quả hoạt động hoặc đáp ứng các quy định môi trường mới. Điều này phản ánh chiến lược đầu tư dài hạn nhằm tăng trưởng và bền vững.",
+      "Các dự án xây dựng cơ bản dở dang đang được triển khai với chi phí tăng mạnh tiềm ẩn một số rủi ro: (1) **Rủi ro chậm tiến độ:** Các dự án lớn như hệ thống xử lý nước thải hoặc cụm máy nén có thể gặp phải sự chậm trễ trong xây dựng, lắp đặt, dẫn đến chi phí phát sinh thêm và trì hoãn việc đưa vào sử dụng, ảnh hưởng đến kế hoạch sản xuất kinh doanh. (2) **Rủi ro tăng chi phí:** Chi phí xây dựng có thể vượt dự toán ban đầu do biến động giá vật liệu, nhân công hoặc các vấn đề kỹ thuật phát sinh. (3) **Rủi ro về hiệu quả đầu tư:** Sau khi hoàn thành, các công trình có thể không đạt được hiệu quả như mong đợi, không tạo ra doanh thu và lợi nhuận đủ để bù đắp chi phí đầu tư. (4) **Rủi ro tài chính:** Việc đầu tư lớn vào các tài sản dở dang làm đóng băng một lượng vốn đáng kể, có thể ảnh hưởng đến thanh khoản của Công ty nếu không được quản lý dòng tiền tốt.",
+      "Thông tin về thời điểm hoàn thành của các công trình dở dang không được cung cấp trực tiếp trong chunk. Tuy nhiên, việc tăng vốn đầu tư vào các hạng mục như hệ thống xử lý nước thải và cụm máy nén GEA cho thấy Công ty đang tập trung vào việc nâng cao năng lực sản xuất và tuân thủ các quy định môi trường. Khi các công trình này hoàn thành và đi vào hoạt động, dự kiến sẽ có tác động tích cực đến hoạt động sản xuất kinh doanh trong tương lai:\\n- **Tăng năng lực sản xuất:** Cụm máy nén mới có thể giúp tăng hiệu quả sản xuất, giảm chi phí vận hành.\\n- **Cải thiện tuân thủ môi trường:** Hệ thống xử lý nước thải giúp Công ty đáp ứng các tiêu chuẩn môi trường, giảm thiểu rủi ro pháp lý và nâng cao hình ảnh doanh nghiệp.\\n- **Tiềm năng tăng trưởng:** Các đầu tư này đặt nền tảng cho sự mở rộng quy mô hoạt động, đa dạng hóa sản phẩm hoặc thâm nhập thị trường mới, từ đó tạo ra doanh thu và lợi nhuận cao hơn trong dài hạn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá tài sản cố định hữu hình cuối năm là bao nhiêu?",
+      "Tổng giá trị hao mòn lũy kế của tài sản cố định hữu hình cuối năm là bao nhiêu?",
+      "Tài sản cố định hữu hình nào có giá trị còn lại lớn nhất tại ngày 30/09/2024?",
+      "So sánh khấu hao tài sản cố định hữu hình trong năm với giá trị mua sắm tài sản mới.",
+      "Đánh giá mức độ đầu tư vào tài sản cố định hữu hình mới trong năm và tác động của nó đến khả năng sản xuất của Công ty.",
+      "Phân tích lý do và tác động của việc Công ty thế chấp máy móc thiết bị cho các khoản vay ngân hàng.",
+      "Dự báo tác động của việc giảm giá trị còn lại của nhà cửa, vật kiến trúc đến khả năng huy động vốn của Công ty.",
+      "Tính tỷ lệ khấu hao lũy kế trên nguyên giá của máy móc thiết bị tại cuối năm."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Tăng, giảm tài sản cố định hữu hình)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>8. Tăng, giảm tài sản cố định hữu hình<br>| Khoản mục | Nhà cửa, vật kiến trúc | Máy móc, thiết bị | Phương tiện vận tải, truyền dẫn | Tài sản cố định hữu hình khác | Tổng cộng |<br>|---|---|---|---|---|---|<br>| NGUYÊN GIÁ | | | | | |<br>| Số dư đầu năm | 49,497,325,951 | 107,504,729,642 | 18,197,312,368 | 2,280,369,721 | 177,479,737,682 |<br>| Mua trong năm | 1,327,573,307 | 6,116,083,492 | 1,433,825,942 | 367,932,790 | 9,245,415,531 |<br>| Đầu tư XDCB hoàn thành | - | - | - | - | - |<br>| Tăng khác | - | - | - | - | - |<br>| Thanh lý, nhượng bán | - | 879,556,455 | - | - | 879,556,455 |<br>| Giảm khác | - | - | - | - | - |<br>| Số dư cuối năm | 50,824,899,258 | 113,620,813,134 | 18,751,581,855 | 2,648,302,511 | 185,845,596,758 |<br>| GÍA TRỊ HAO MÒN LŨY KẾ | | | | | |<br>| Số dư đầu năm | 23,629,321,966 | 62,013,973,385 | 10,060,222,589 | 1,623,402,725 | 97,326,920,665 |<br>| Khấu hao trong năm | 2,045,575,252 | 5,271,992,340 | 1,446,887,645 | 135,653,170 | 8,900,108,407 |<br>| Thanh lý, nhượng bán | - | 879,556,455 | - | - | 879,556,455 |<br>| Số dư cuối năm | 25,674,897,218 | 67,285,965,725 | 10,627,553,779 | 1,759,055,895 | 105,347,472,617 |<br>| GIÁ TRỊ CÒN LẠI | | | | | |<br>| Tại ngày 01/01/2024 | 25,868,003,985 | 45,490,756,257 | 8,137,089,779 | 656,966,996 | 80,152,817,017 |<br>| Tại ngày 30/09/2024 | 25,150,002,040 | 46,334,847,409 | 8,124,028,076 | 889,246,616 | 80,498,124,141 |<br>Công ty đã thế chấp một số máy móc thiết bị để đảm bảo cho các khoản vay ngân hàng.",
+    "output": [
+      "Nguyên giá tài sản cố định hữu hình cuối năm (30/09/2024) là 185,845,596,758 đồng.",
+      "Tổng giá trị hao mòn lũy kế của tài sản cố định hữu hình cuối năm (30/09/2024) là 105,347,472,617 đồng.",
+      "Tại ngày 30/09/2024, Máy móc, thiết bị có giá trị còn lại lớn nhất là 46,334,847,409 đồng.",
+      "Khấu hao tài sản cố định hữu hình trong năm là 8,900,108,407 đồng. Giá trị mua sắm tài sản cố định hữu hình mới trong năm là 9,245,415,531 đồng. Giá trị mua sắm tài sản mới cao hơn một chút so với khấu hao trong năm, cho thấy Công ty không chỉ bù đắp giá trị hao mòn mà còn đầu tư thêm để mở rộng hoặc hiện đại hóa tài sản.",
+      "Trong năm, Công ty đã mua sắm tài sản cố định hữu hình mới với giá trị 9,245,415,531 đồng. Mức đầu tư này khá đáng kể, đặc biệt là vào máy móc, thiết bị (6,116,083,492 đồng). Điều này cho thấy Công ty đang tích cực nâng cấp và mở rộng năng lực sản xuất, có thể nhằm cải thiện hiệu suất, giảm chi phí hoặc tăng khả năng đáp ứng nhu cầu thị trường. Tác động của việc này đến khả năng sản xuất là tích cực, giúp Công ty duy trì và nâng cao năng lực cạnh tranh trong dài hạn, mặc dù trong ngắn hạn có thể cần thời gian để các tài sản mới này đi vào hoạt động ổn định.",
+      "Lý do Công ty thế chấp một số máy móc thiết bị cho các khoản vay ngân hàng là để đảm bảo cho các khoản vay đó. Việc này thường được thực hiện để giúp Công ty tiếp cận nguồn vốn vay với điều kiện tốt hơn (lãi suất thấp hơn, hạn mức vay cao hơn) so với vay tín chấp, vì ngân hàng có tài sản bảo đảm để giảm thiểu rủi ro. Tác động của việc này là:\\n- **Tích cực:** Giúp Công ty huy động vốn hiệu quả hơn để tài trợ cho hoạt động kinh doanh hoặc đầu tư.\\n- **Tiêu cực/Rủi ro:** Khi tài sản được thế chấp, Công ty có thể bị hạn chế trong việc sử dụng hoặc thanh lý các tài sản đó. Trong trường hợp Công ty không thể trả nợ, ngân hàng có quyền xử lý tài sản thế chấp để thu hồi nợ, điều này có thể ảnh hưởng nghiêm trọng đến hoạt động và khả năng sản xuất của Công ty.",
+      "Giá trị còn lại của nhà cửa, vật kiến trúc giảm từ 25,868,003,985 đồng (đầu năm) xuống 25,150,002,040 đồng (cuối quý 3). Mặc dù mức giảm này tương đối nhỏ, nếu xu hướng giảm tiếp tục diễn ra đáng kể trong tương lai, nó có thể tác động tiêu cực đến khả năng huy động vốn của Công ty. Nhà cửa và vật kiến trúc thường là tài sản có giá trị và có thể được sử dụng làm tài sản đảm bảo cho các khoản vay. Việc giảm giá trị còn lại của chúng có thể làm giảm giá trị tài sản đảm bảo, khiến các tổ chức tín dụng trở nên thận trọng hơn khi cho vay hoặc yêu cầu các điều khoản vay chặt chẽ hơn (ví dụ: lãi suất cao hơn, yêu cầu tài sản đảm bảo bổ sung), từ đó làm tăng chi phí huy động vốn hoặc hạn chế khả năng tiếp cận nguồn vốn của Công ty.",
+      "Tại cuối năm (30/09/2024):\\nNguyên giá máy móc, thiết bị: 113,620,813,134 đồng\\nGiá trị hao mòn lũy kế của máy móc, thiết bị: 67,285,965,725 đồng\\nTỷ lệ khấu hao lũy kế trên nguyên giá của máy móc thiết bị tại cuối năm là (67,285,965,725 / 113,620,813,134) * 100% ≈ 59.22%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên giá tài sản cố định vô hình cuối năm là bao nhiêu?",
+      "Giá trị còn lại của quyền sử dụng đất tại ngày 30/09/2024 là bao nhiêu?",
+      "Khoản chi phí trả trước dài hạn nào có giá trị lớn nhất tại ngày 30/09/2024?",
+      "So sánh tổng chi phí trả trước ngắn hạn giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Đánh giá mức độ đầu tư vào tài sản cố định vô hình của Công ty dựa trên biến động nguyên giá và khấu hao trong năm.",
+      "Phân tích rủi ro tài chính khi Công ty thế chấp quyền sử dụng đất để đảm bảo cho các khoản vay ngân hàng.",
+      "Dự báo tác động của việc giảm chi phí trả trước dài hạn đến lợi nhuận và dòng tiền của Công ty trong tương lai.",
+      "Tính tỷ lệ khấu hao trong năm trên nguyên giá của tài sản cố định vô hình tại đầu năm."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Tăng, giảm tài sản cố định vô hình và Chi phí trả trước)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>9. Tăng, giảm tài sản cố định vô hình<br>| Khoản mục | Quyền sử dụng đất | Bản quyền, bằng sáng chế | Phần mềm quản trị DN_B4U | TSCĐ vô hình khác | Tổng cộng |<br>|---|---|---|---|---|---|<br>| NGUYÊN GIÁ | | | | | |<br>| Số dư đầu năm | 15,976,296,500 | 439,602,300 | - | 134,851,488 | 16,550,750,288 |<br>| Mua trong năm | - | - | - | - | - |<br>| Tăng khác | - | - | - | - | - |<br>| Thanh lý, nhượng bán | - | - | - | - | - |<br>| Giảm khác | - | - | - | - | - |<br>| Số dư cuối năm | 15,976,296,500 | 439,602,300 | - | 134,851,488 | 16,550,750,288 |<br>| GÍA TRỊ HAO MÒN LŨY KẾ | | | | | |<br>| Số dư đầu năm | 5,853,115,606 | 439,602,300 | - | 134,851,488 | 6,427,569,394 |<br>| Khấu hao trong năm | 317,724,210 | - | - | - | 317,724,210 |<br>| Tăng khác | - | - | - | - | - |<br>| Thanh lý nhượng bán | - | - | - | - | - |<br>| Giảm khác | - | - | - | - | - |<br>| Số dư cuối năm | 6,170,839,816 | 439,602,300 | - | 134,851,488 | 6,745,293,604 |<br>| GIÁ TRỊ CÒN LẠI | | | | | |<br>| Tại ngày 01/01/2024 | 10,123,180,894 | - | - | - | 10,123,180,894 |<br>| Tại ngày 30/09/2024 | 9,805,456,684 | - | - | - | 9,805,456,684 |<br>Công ty đã thế chấp quyền sử dụng đất để đảm bảo cho các khoản vay ngân hàng.<br><br>10. Chi phí trả trước<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| a. Ngắn hạn | 844,206,847 | 300,224,831 |<br>| Chi phí thuê vùng nuôi trại Đồng Phú | 696,142,042 | - |<br>| Khác | 148,064,805 | 300,224,831 |<br>| b. Dài hạn | 18,412,503,739 | 21,894,886,966 |<br>| Chi phí thuê vùng nuôi và các chi phí liên quan | 12,401,079,375 | 12,992,483,104 |<br>| Công cụ, dụng cụ | 3,890,692,251 | 3,775,495,068 |<br>| Chi phí đào, cải tạo ao | 530,797,321 | 1,986,677,050 |<br>| Khác | 1,589,934,792 | 3,140,231,744 |<br>| Tổng cộng | 19,256,710,586 | 22,195,111,797 |",
+    "output": [
+      "Nguyên giá tài sản cố định vô hình cuối năm (30/09/2024) là 16,550,750,288 đồng.",
+      "Giá trị còn lại của quyền sử dụng đất tại ngày 30/09/2024 là 9,805,456,684 đồng.",
+      "Khoản chi phí trả trước dài hạn có giá trị lớn nhất tại ngày 30/09/2024 là Chi phí thuê vùng nuôi và các chi phí liên quan với 12,401,079,375 đồng.",
+      "Tổng chi phí trả trước ngắn hạn tại cuối quý 3 năm 2024 là 844,206,847 đồng, tăng đáng kể so với 300,224,831 đồng tại đầu năm 2024. Điều này cho thấy Công ty đã có các khoản chi trả trước ngắn hạn mới hoặc tăng lên trong kỳ.",
+      "Nguyên giá tài sản cố định vô hình không thay đổi trong năm (duy trì ở mức 16,550,750,288 đồng), và không có khoản mua sắm tài sản vô hình mới nào được ghi nhận. Khấu hao trong năm chỉ là 317,724,210 đồng, chủ yếu là từ quyền sử dụng đất. Điều này cho thấy Công ty không có đầu tư mới đáng kể vào tài sản cố định vô hình trong kỳ này mà chủ yếu là khấu hao các tài sản hiện có. Mức độ đầu tư vào tài sản cố định vô hình là rất thấp hoặc không có trong năm 2024.",
+      "Việc Công ty thế chấp quyền sử dụng đất để đảm bảo cho các khoản vay ngân hàng tạo ra rủi ro tài chính đáng kể. Quyền sử dụng đất là một tài sản có giá trị lớn và thường là tài sản đảm bảo quan trọng. Rủi ro chính là nếu Công ty không thể thực hiện nghĩa vụ trả nợ, ngân hàng có quyền xử lý tài sản thế chấp (bao gồm quyền sử dụng đất) để thu hồi nợ. Điều này không chỉ ảnh hưởng đến quyền sở hữu và khả năng hoạt động liên tục của Công ty mà còn có thể tác động tiêu cực đến uy tín và khả năng huy động vốn trong tương lai. Hơn nữa, việc thế chấp có thể hạn chế khả năng Công ty sử dụng đất cho các mục đích khác hoặc chuyển nhượng trong thời gian vay.",
+      "Chi phí trả trước dài hạn của Công ty đã giảm từ 21,894,886,966 đồng tại đầu năm xuống còn 18,412,503,739 đồng tại cuối quý 3 năm 2024. Việc giảm này cho thấy một phần chi phí trả trước đã được phân bổ vào chi phí trong kỳ, hoặc các khoản chi phí trả trước ban đầu đã hết hạn/không còn hiệu lực. \\n\\n**Tác động đến lợi nhuận:** Khi chi phí trả trước dài hạn giảm do phân bổ vào chi phí trong kỳ, nó sẽ làm tăng chi phí được ghi nhận trong báo cáo kết quả hoạt động kinh doanh, từ đó làm giảm lợi nhuận trong ngắn hạn. Tuy nhiên, nếu tổng giá trị các khoản chi phí trả trước mới giảm so với các năm trước, về dài hạn, nó có thể dẫn đến việc tổng chi phí được ghi nhận qua các kỳ ít hơn, từ đó có lợi cho lợi nhuận.\\n\\n**Tác động đến dòng tiền:** Việc giảm chi phí trả trước dài hạn không trực tiếp ảnh hưởng đến dòng tiền trong tương lai, vì chi phí trả trước là tiền đã chi ra trong quá khứ. Tuy nhiên, nếu sự giảm này phản ánh việc Công ty ít phải chi trả trước các khoản lớn trong tương lai, điều đó sẽ giúp dòng tiền ra từ hoạt động đầu tư/kinh doanh ít hơn, có thể cải thiện dòng tiền tự do.",
+      "Nguyên giá tài sản cố định vô hình tại đầu năm là 16,550,750,288 đồng.\\nKhấu hao trong năm là 317,724,210 đồng.\\nTỷ lệ khấu hao trong năm trên nguyên giá của tài sản cố định vô hình tại đầu năm là (317,724,210 / 16,550,750,288) * 100% ≈ 1.92%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vay và nợ thuê tài chính ngắn hạn tại ngày 30/09/2024 là bao nhiêu?",
+      "Khoản vay ngắn hạn từ ngân hàng nào có giá trị lớn nhất tại cuối năm?",
+      "So sánh tổng số tiền tăng và giảm của các khoản vay ngắn hạn trong năm.",
+      "Mức lãi suất Công ty phải trả cho khoản vay từ Ngân hàng HSBC Việt Nam - Chi nhánh HCM là bao nhiêu?",
+      "Đánh giá mức độ rủi ro tài chính của Công ty dựa trên cơ cấu các khoản vay ngắn hạn và hình thức đảm bảo.",
+      "Phân tích tác động của biến động lãi suất thị trường đến chi phí lãi vay và khả năng trả nợ của Công ty.",
+      "Dự báo khả năng Công ty tái cấu trúc nợ hoặc tìm kiếm các nguồn vốn khác nếu lãi suất tăng đột biến.",
+      "Tính tỷ lệ nợ ngắn hạn không có khả năng trả nợ trên tổng nợ ngắn hạn."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Vay và nợ thuê tài chính)<br>Loại nội dung: Bảng và Text<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>11. Vay và nợ thuê tài chính<br>| Chỉ tiêu | Số 30/09/2024 | Trong năm (Tăng) | Trong năm (Giảm) | Số 01/01/2024 | Số không có khả năng trả nợ (01/01/2024) |<br>|---|---|---|---|---|---|<br>| Vay ngắn hạn | 124,393,744,536 | 180,257,799,897 | 155,745,443,791 | 99,881,388,430 | - |<br>| Cộng | 124,393,744,536 | 180,257,799,897 | 155,745,443,791 | 99,881,388,430 | - |<br>Công ty thực hiện các khoản vay ngắn hạn ngân hàng để tài trợ nhu cầu vốn lưu động với chi tiết như sau:<br>| Tên ngân hàng | Số cuối năm | Kỳ hạn trả gốc và lãi | Hình thức đảm bảo |<br>|---|---|---|---|<br>| Ngân hàng TNHH Kasikorn Việt Nam - Chi Nhánh TP.HCM | 13,963,882,523 | Từ 3.4 - 4.55% Kỳ hạn trả nợ gốc từ 01/10/2024 đến 31/03/2025 | Tín chấp |<br>| Ngân hàng TNHH Một thành viên HSBC Việt Nam - Chi nhánh HCM | 110,429,862,013 | 4.7% Kỳ hạn trả nợ gốc 10/02/2025 | Quyền sử dụng đất và tín chấp |<br>| Tổng cộng | 124,393,744,536 | | |",
+    "output": [
+      "Tổng vay và nợ thuê tài chính ngắn hạn tại ngày 30/09/2024 là 124,393,744,536 đồng.",
+      "Khoản vay ngắn hạn từ Ngân hàng TNHH Một thành viên HSBC Việt Nam - Chi nhánh HCM có giá trị lớn nhất tại cuối năm (30/09/2024) là 110,429,862,013 đồng.",
+      "Trong năm, tổng số tiền tăng của các khoản vay ngắn hạn là 180,257,799,897 đồng, và tổng số tiền giảm là 155,745,443,791 đồng. Điều này cho thấy Công ty đã huy động thêm một lượng lớn vay ngắn hạn và cũng đã thanh toán một phần đáng kể các khoản nợ.",
+      "Mức lãi suất Công ty phải trả cho khoản vay từ Ngân hàng TNHH Một thành viên HSBC Việt Nam - Chi nhánh HCM là 4.7%.",
+      "Công ty có tổng vay ngắn hạn đáng kể là 124,393,744,536 đồng, với Ngân hàng HSBC Việt Nam - Chi nhánh HCM là chủ nợ lớn nhất (110,429,862,013 đồng), được đảm bảo bằng quyền sử dụng đất và tín chấp. Ngân hàng TNHH Kasikorn Việt Nam - Chi Nhánh TP.HCM với khoản vay 13,963,882,523 đồng được đảm bảo bằng tín chấp. \\n\\nMức độ rủi ro tài chính tương đối, do các khoản vay lớn được đảm bảo bằng tài sản (quyền sử dụng đất), giảm rủi ro vỡ nợ cho ngân hàng nhưng tăng rủi ro cho Công ty nếu không thể trả nợ. Mặc dù có phần tín chấp, việc sử dụng tài sản đảm bảo cho thấy Công ty có thể đang tối ưu hóa chi phí vay. Tuy nhiên, việc phụ thuộc vào vay ngắn hạn với kỳ hạn trả nợ gốc vào đầu năm 2025 tạo áp lực lên dòng tiền trong tương lai gần. Rủi ro thanh khoản sẽ tăng lên nếu Công ty không thể tái cấp vốn hoặc tạo ra đủ tiền mặt từ hoạt động kinh doanh để thanh toán các khoản nợ này khi đến hạn.",
+      "Các khoản vay ngắn hạn của Công ty có mức lãi suất cụ thể (ví dụ: 3.4 - 4.55% và 4.7%). Biến động lãi suất thị trường có thể tác động trực tiếp đến chi phí lãi vay và khả năng trả nợ của Công ty. Nếu lãi suất thị trường tăng lên, chi phí lãi vay của Công ty có thể tăng theo (đặc biệt nếu có các khoản vay lãi suất thả nổi hoặc khi tái cấp vốn các khoản vay hiện tại), làm giảm lợi nhuận. Chi phí lãi vay tăng cũng làm tăng gánh nặng trả nợ, có thể ảnh hưởng đến dòng tiền và khả năng thanh toán các khoản vay gốc và lãi. Ngược lại, nếu lãi suất thị trường giảm, Công ty có thể có lợi khi chi phí lãi vay giảm, giúp tăng lợi nhuận và cải thiện khả năng trả nợ.",
+      "Nếu lãi suất tăng đột biến, Công ty có thể phải đối mặt với áp lực chi phí lãi vay tăng và gánh nặng trả nợ lớn hơn. Trong tình huống này, khả năng Công ty tái cấu trúc nợ là có thể xảy ra, ví dụ như đàm phán lại các điều khoản vay với ngân hàng, kéo dài thời gian đáo hạn hoặc chuyển đổi sang các khoản vay dài hạn hơn nếu có thể. Bên cạnh đó, Công ty có thể phải tìm kiếm các nguồn vốn khác như phát hành thêm cổ phiếu (huy động vốn chủ sở hữu), phát hành trái phiếu, hoặc tăng cường quản lý dòng tiền nội bộ để giảm nhu cầu vay mượn bên ngoài. Quyết định sẽ phụ thuộc vào chi phí và khả năng tiếp cận từng nguồn vốn tại thời điểm đó, cũng như đánh giá rủi ro và chiến lược tài chính của Công ty.",
+      "Thông tin không có trong dữ liệu. Cột \\Số không có khả năng trả nợ (01/01/2024)\\ ghi \\-\\, cho thấy không có khoản nợ ngắn hạn nào được phân loại là không có khả năng trả nợ trong dữ liệu này."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng phải trả người bán tại ngày 30/09/2024 là bao nhiêu?",
+      "Tổng người mua trả tiền trước tại ngày 01/01/2024 là bao nhiêu?",
+      "Khoản chi phí phải trả ngắn hạn nào tăng mạnh nhất trong năm?",
+      "So sánh phải trả người bán giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Đánh giá sự thay đổi trong các khoản chi phí phải trả ngắn hạn và tác động của chúng đến quản lý dòng tiền của Công ty.",
+      "Phân tích rủi ro thanh khoản tiềm ẩn khi các khoản phải trả người bán và chi phí phải trả ngắn hạn tăng mạnh.",
+      "Dự báo tác động của việc giảm các khoản người mua trả tiền trước đến doanh thu và dòng tiền của Công ty trong tương lai.",
+      "Tính tỷ lệ cổ tức phải trả trên tổng phải trả ngắn hạn khác tại ngày 30/09/2024."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Ngày 30 tháng 09 năm 2024 và 01 tháng 01 năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Phải trả người bán, Người mua trả tiền trước, Chi phí phải trả ngắn hạn, Phải trả ngắn hạn khác)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>12. Phải trả người bán<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Công ty TNHH Greenfeed VN | 5,508,405,980 | - |<br>| Công ty TNHH USFEED | 4,085,120,000 | 5,324,912,000 |<br>| Công ty CP Đông Hải Bến Tre | 1,512,574,331 | 630,110,681 |<br>| Khác | 9,107,839,900 | 10,038,974,337 |<br>| Tổng cộng | 20,213,940,211 | 15,993,997,018 |<br><br>13. Người mua trả tiền trước<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Công ty TNHH Nông nghiệp Công nghệ cao Hữu Thành | 2,000,000,000 | 909,447,200 |<br>| SILVER LINING FOR TRADE F.Z.C. FREE ZONE COMPANY | 544,881,000 | - |<br>| Khác | 988,597,009 | 1,234,664,501 |<br>| Tổng cộng | 3,533,478,009 | 2,144,111,701 |<br><br>14. Chi phí phải trả ngắn hạn<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Lãi vay | 1,020,792,252 | 478,362,711 |<br>| Tiền tàu | 386,927,219 | 89,454,808 |<br>| Điện | 364,928,768 | - |<br>| Thưởng ao nuôi, cống hiến | 11,287,014,845 | 4,386,564,500 |<br>| Khác | 7,077,259,945 | 439,431,476 |<br>| Tổng cộng | 19,771,994,261 | 5,758,742,263 |<br><br>15. Phải trả ngắn hạn khác<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Cổ tức phải trả | 7,622,884 | 7,586,785 |<br>| Thù lao HĐQT | 252,000,000 | - |<br>| Các khoản phải trả, phải nộp khác | 363,823,091 | 1,103,222,237 |<br>| Tổng cộng | 623,445,975 | 1,110,809,022 |",
+    "output": [
+      "Tổng phải trả người bán tại ngày 30/09/2024 là 20,213,940,211 đồng.",
+      "Tổng người mua trả tiền trước tại ngày 01/01/2024 là 2,144,111,701 đồng.",
+      "Khoản chi phí phải trả ngắn hạn tăng mạnh nhất trong năm là Thưởng ao nuôi, cống hiến, tăng từ 4,386,564,500 đồng tại 01/01/2024 lên 11,287,014,845 đồng tại 30/09/2024.",
+      "Tổng phải trả người bán tại cuối quý 3 năm 2024 là 20,213,940,211 đồng, tăng so với 15,993,997,018 đồng tại đầu năm 2024. Điều này cho thấy Công ty đã mua hàng hóa, dịch vụ chịu từ người bán nhiều hơn hoặc kéo dài thời gian thanh toán.",
+      "Các khoản chi phí phải trả ngắn hạn của Công ty đã tăng mạnh từ 5,758,742,263 đồng tại đầu năm lên 19,771,994,261 đồng tại cuối quý 3 năm 2024. Sự tăng này chủ yếu đến từ khoản \\Thưởng ao nuôi, cống hiến\\ và \\Khác\\.\\n\\nTác động đến quản lý dòng tiền:\\n- **Tích cực (ngắn hạn):** Việc tăng các khoản phải trả cho phép Công ty giữ lại tiền mặt trong thời gian dài hơn, tạm thời cải thiện dòng tiền. Điều này giống như một khoản vay không lãi suất từ nhà cung cấp hoặc các bên khác.\\n- **Tiêu cực (dài hạn/rủi ro):** Tuy nhiên, sự gia tăng quá lớn của các khoản phải trả có thể tạo áp lực lớn lên dòng tiền trong tương lai khi các khoản này đến hạn thanh toán. Nếu Công ty không tạo ra đủ tiền mặt từ hoạt động kinh doanh để đáp ứng các nghĩa vụ này, có thể gặp rủi ro thanh khoản. Việc tăng khoản \\Thưởng ao nuôi, cống hiến\\ có thể là chi phí dự kiến liên quan đến sản xuất nhưng chưa được thanh toán, cần được theo dõi để đảm bảo Công ty có đủ khả năng chi trả khi đến hạn.",
+      "Khi các khoản phải trả người bán tăng từ 15,993,997,018 đồng lên 20,213,940,211 đồng và chi phí phải trả ngắn hạn tăng đột biến từ 5,758,742,263 đồng lên 19,771,994,261 đồng, Công ty đối mặt với rủi ro thanh khoản tiềm ẩn. Mặc dù việc tăng các khoản phải trả ban đầu có thể giúp Công ty giữ lại tiền mặt, nhưng điều này cũng có nghĩa là Công ty đang tích lũy một lượng lớn nghĩa vụ thanh toán trong ngắn hạn. Nếu dòng tiền từ hoạt động kinh doanh không đủ để đáp ứng các khoản nợ này khi đến hạn, Công ty có thể gặp khó khăn trong việc thanh toán, dẫn đến căng thẳng về thanh khoản, ảnh hưởng đến uy tín với nhà cung cấp và thậm chí là khả năng hoạt động liên tục. Đặc biệt, sự gia tăng mạnh của các chi phí phải trả (như \\Thưởng ao nuôi, cống hiến\\) cần được quản lý cẩn thận để tránh gánh nặng tài chính bất ngờ.",
+      "Các khoản người mua trả tiền trước của Công ty đã tăng từ 2,144,111,701 đồng tại đầu năm lên 3,533,478,009 đồng tại cuối quý 3 năm 2024. Nếu các khoản người mua trả tiền trước này *giảm* trong tương lai, nó sẽ có tác động đáng kể:\\n- **Doanh thu:** Nếu sự giảm này là do số lượng đơn hàng nhận trước giảm, điều đó có thể ảnh hưởng tiêu cực đến doanh thu trong các kỳ tiếp theo vì ít doanh thu được ghi nhận từ các khoản trả trước này khi hàng hóa/dịch vụ được cung cấp.\\n- **Dòng tiền:** Tiền mặt nhận từ người mua trả trước là một nguồn dòng tiền vào quan trọng. Nếu các khoản này giảm, dòng tiền hoạt động của Công ty sẽ bị ảnh hưởng tiêu cực, có thể làm giảm khả năng tài trợ cho các hoạt động kinh doanh hoặc đầu tư mà không cần huy động thêm vốn từ bên ngoài. Điều này cũng có thể là dấu hiệu cho thấy sự thay đổi trong hành vi của khách hàng hoặc cạnh tranh trên thị trường.",
+      "Cổ tức phải trả tại ngày 30/09/2024 là 7,622,884 đồng.\\nTổng phải trả ngắn hạn khác tại ngày 30/09/2024 là 623,445,975 đồng.\\nTỷ lệ cổ tức phải trả trên tổng phải trả ngắn hạn khác tại ngày 30/09/2024 là (7,622,884 / 623,445,975) * 100% ≈ 1.22%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng thuế và các khoản phải nộp Nhà nước tại ngày 30/09/2024 là bao nhiêu?",
+      "Công ty đã nộp bao nhiêu tiền thuế thu nhập doanh nghiệp trong năm?",
+      "Khoản thuế nào có số phải nộp trong năm lớn nhất?",
+      "So sánh số dư thuế thu nhập doanh nghiệp phải nộp giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Đánh giá mức độ tuân thủ nghĩa vụ thuế của Công ty dựa trên tỷ lệ số đã thực nộp so với số phải nộp trong năm.",
+      "Phân tích tác động của các khoản thuế phải nộp Nhà nước đến dòng tiền và lợi nhuận của Công ty.",
+      "Dự báo rủi ro về thuế nếu có sự thay đổi trong chính sách thuế hoặc quy định của Nhà nước.",
+      "Tính tỷ lệ thuế thu nhập cá nhân chưa nộp trên tổng thuế thu nhập cá nhân phải nộp trong năm."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Thuế và các khoản phải nộp Nhà nước)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>16. Thuế và các khoản phải nộp Nhà nước<br>| Chỉ tiêu | Số 01/01/2024 | Số phải nộp trong năm | Số đã thực nộp trong năm | Số 30/09/2024 |<br>|---|---|---|---|---|<br>| Thuế giá trị gia tăng | - | 1,099,208,259 | 1,099,208,259 | - |<br>| Thuế thu nhập doanh nghiệp | 6,189,178,004 | 7,830,839,726 | 6,189,178,004 | 7,830,839,726 |<br>| Thuế thu nhập cá nhân | 44,783,663 | 2,879,986,379 | 2,400,751,551 | 524,018,491 |<br>| Thuế tài nguyên | 2,984,400 | 29,909,300 | 30,297,700 | 2,596,000 |<br>| Thuế nhà đất và tiền thuê đất | - | 942,751,101 | 942,751,101 | - |<br>| Các loại thuế khác | - | 290,842,742 | 277,878,871 | 12,963,871 |<br>| Cộng | 6,236,946,067 | 13,073,537,507 | 10,940,065,486 | 8,370,418,088 |",
+    "output": [
+      "Tổng thuế và các khoản phải nộp Nhà nước tại ngày 30/09/2024 là 8,370,418,088 đồng.",
+      "Công ty đã nộp 6,189,178,004 đồng tiền thuế thu nhập doanh nghiệp trong năm.",
+      "Thuế thu nhập doanh nghiệp có số phải nộp trong năm lớn nhất là 7,830,839,726 đồng.",
+      "Số dư thuế thu nhập doanh nghiệp phải nộp tại cuối quý 3 năm 2024 là 7,830,839,726 đồng, tăng so với 6,189,178,004 đồng tại đầu năm 2024. Điều này cho thấy số thuế TNDN mà Công ty còn phải nộp đã tăng lên trong kỳ.",
+      "Nhìn chung, Công ty đã thực hiện nghĩa vụ nộp thuế đáng kể trong năm. Cụ thể:\\n- Thuế GTGT: Số đã thực nộp (1,099,208,259) bằng số phải nộp trong năm, số dư cuối kỳ là 0, cho thấy sự tuân thủ hoàn toàn.\\n- Thuế thu nhập doanh nghiệp: Số đã thực nộp (6,189,178,004) nhỏ hơn số phải nộp trong năm (7,830,839,726), dẫn đến số dư cuối kỳ là 7,830,839,726 đồng (dường như Công ty đã nộp khoản của đầu năm và số phải nộp trong năm hiện là số dư).\\n- Thuế thu nhập cá nhân: Số đã thực nộp (2,400,751,551) nhỏ hơn số phải nộp (2,879,986,379), còn lại 524,018,491 đồng.\\n\\nĐiều này cho thấy Công ty đang trong quá trình thực hiện nghĩa vụ thuế và có các khoản thuế còn phải nộp. Với thuế GTGT, Công ty đã hoàn thành nghĩa vụ. Với TNDN và TNCN, vẫn còn các khoản phải nộp, đây là điều bình thường trong quá trình kinh doanh. Mức độ tuân thủ nghĩa vụ thuế nhìn chung là tốt, với các khoản còn phải nộp được phản ánh rõ ràng trong báo cáo tài chính.",
+      "Các khoản thuế phải nộp Nhà nước có tác động trực tiếp và đáng kể đến dòng tiền và lợi nhuận của Công ty:\\n\\n**Tác động đến dòng tiền:** Việc nộp các khoản thuế như thuế GTGT, thuế TNDN, thuế TNCN, thuế tài nguyên và thuế nhà đất đều là các khoản tiền chi ra từ Công ty. Ví dụ, trong năm, Công ty đã thực nộp hơn 10,940 tỷ đồng tiền thuế. Điều này làm giảm dòng tiền hoạt động, ảnh hưởng đến khả năng thanh khoản và khả năng Công ty sử dụng tiền mặt cho các hoạt động kinh doanh hoặc đầu tư khác.\\n\\n**Tác động đến lợi nhuận:** Thuế thu nhập doanh nghiệp là một chi phí trực tiếp làm giảm lợi nhuận sau thuế của Công ty. Các loại thuế khác như thuế tài nguyên, thuế nhà đất có thể được tính vào chi phí sản xuất kinh doanh, từ đó làm tăng chi phí và giảm lợi nhuận trước thuế. Do đó, các khoản thuế này là yếu tố quan trọng ảnh hưởng đến kết quả tài chính cuối cùng của Công ty.",
+      "Nếu có sự thay đổi trong chính sách thuế hoặc quy định của Nhà nước, Công ty có thể đối mặt với nhiều rủi ro về thuế:\\n- **Tăng chi phí thuế:** Các mức thuế suất có thể tăng (ví dụ: thuế TNDN, thuế TNCN) hoặc các khoản miễn giảm thuế hiện có có thể bị bãi bỏ, làm tăng gánh nặng thuế và giảm lợi nhuận sau thuế của Công ty.\\n- **Thay đổi dòng tiền:** Việc thay đổi quy định về thời điểm hoặc phương thức nộp thuế có thể ảnh hưởng đến dòng tiền của Công ty, đòi hỏi Công ty phải điều chỉnh kế hoạch tài chính để đảm bảo khả năng thanh toán thuế kịp thời.\\n- **Rủi ro tuân thủ:** Các quy định mới có thể yêu cầu Công ty phải thay đổi hệ thống kế toán, quy trình kê khai và nộp thuế, tạo ra chi phí tuân thủ và rủi ro bị phạt nếu không đáp ứng kịp thời. Đặc biệt, đối với các loại thuế như thuế tài nguyên, nếu quy định về xác định giá trị tài nguyên thay đổi, nó có thể ảnh hưởng đến chi phí của Công ty.",
+      "Thuế thu nhập cá nhân chưa nộp tại ngày 30/09/2024 là 524,018,491 đồng.\\nTổng thuế thu nhập cá nhân phải nộp trong năm là 2,879,986,379 đồng.\\nTỷ lệ thuế thu nhập cá nhân chưa nộp trên tổng thuế thu nhập cá nhân phải nộp trong năm là (524,018,491 / 2,879,986,379) * 100% ≈ 18.20%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn chủ sở hữu cuối năm nay (30/09/2024) là bao nhiêu?",
+      "Lợi nhuận chưa phân phối cuối năm nay là bao nhiêu?",
+      "Số dư vốn cổ phần của Công ty có thay đổi trong năm nay không?",
+      "So sánh tổng số tiền chia cổ tức, lợi nhuận trong năm nay và năm trước.",
+      "Đánh giá sự biến động của lợi nhuận chưa phân phối và ý nghĩa của nó đối với các cổ đông.",
+      "Phân tích tác động của việc trích lập các quỹ đến cơ cấu vốn chủ sở hữu và khả năng mở rộng hoạt động của Công ty.",
+      "Dự báo khả năng chia cổ tức trong tương lai dựa trên số dư lợi nhuận chưa phân phối và các chính sách phân phối lợi nhuận.",
+      "Tính tỷ lệ lợi nhuận trong năm nay trên tổng vốn chủ sở hữu đầu năm nay."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Vốn chủ sở hữu - Bảng đối chiếu biến động)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>17. Vốn chủ sở hữu<br>a. Bảng đối chiếu biến động của vốn chủ sở hữu<br>| Chỉ tiêu | Vốn cổ phần | Thặng dư vốn cổ phần | Cổ phiếu quỹ | Quỹ đầu tư phát triển | Lợi nhuận chưa phân phối | Tổng cộng |<br>|---|---|---|---|---|---|---|<br>| Số dư đầu năm trước | 143,872,070,000 | 290,401,636,501 | 98,896,574,474 | 61,210,173,515 | 74,304,158,798 | 470,891,464,340 |<br>| Lãi trong năm trước | - | - | - | - | 63,871,593,981 | 63,871,593,981 |<br>| Trích lập các quỹ | - | - | - | - | - | - |<br>| Chia cổ tức, lợi nhuận | - | - | - | - | (35,331,771,000) | (35,331,771,000) |<br>| Chia cho hợp tác đầu tư | - | - | - | - | (8,611,874,708) | (8,611,874,708) |<br>| Số dư đầu năm nay | 143,872,070,000 | 290,401,636,501 | 98,896,574,474 | 61,210,173,515 | 94,232,107,071 | 490,819,412,613 |<br>| Tăng vốn trong năm nay | - | - | - | - | - | - |<br>| Lãi trong năm nay | - | - | - | - | 63,390,170,338 | 63,390,170,338 |<br>| Trích lập các quỹ | - | - | - | 6,159,019,584 | - | 6,159,019,584 |<br>| Chia cổ tức, lợi nhuận | - | - | - | - | (23,554,514,000) | (23,554,514,000) |<br>| Chia cho hợp tác đầu tư | - | - | - | - | - | - |<br>| Số dư cuối năm nay | 143,872,070,000 | 290,401,636,501 | 98,896,574,474 | 61,210,173,515 | 127,908,743,825 | 524,496,049,367 |",
+    "output": [
+      "Tổng vốn chủ sở hữu cuối năm nay (30/09/2024) là 524,496,049,367 đồng.",
+      "Lợi nhuận chưa phân phối cuối năm nay (30/09/2024) là 127,908,743,825 đồng.",
+      "Không, số dư vốn cổ phần của Công ty không thay đổi trong năm nay, duy trì ở mức 143,872,070,000 đồng từ đầu năm đến cuối quý 3 năm 2024.",
+      "Tổng số tiền chia cổ tức, lợi nhuận trong năm nay là 23,554,514,000 đồng. Tổng số tiền chia cổ tức, lợi nhuận trong năm trước là 35,331,771,000 đồng. Như vậy, số tiền chia cổ tức, lợi nhuận trong năm nay đã giảm đáng kể so với năm trước.",
+      "Lợi nhuận chưa phân phối của Công ty đã tăng từ 94,232,107,071 đồng vào đầu năm nay lên 127,908,743,825 đồng vào cuối năm nay (30/09/2024). Sự gia tăng này là do Công ty tạo ra lợi nhuận trong năm (63,390,170,338 đồng) lớn hơn tổng các khoản chia cổ tức và trích lập quỹ. Điều này có ý nghĩa tích cực đối với các cổ đông, vì nó cho thấy Công ty có khả năng sinh lời tốt và tích lũy được một lượng lớn lợi nhuận giữ lại. Lợi nhuận chưa phân phối lớn có thể là cơ sở để Công ty chi trả cổ tức cao hơn trong tương lai, hoặc tái đầu tư vào các dự án phát triển, từ đó nâng cao giá trị vốn chủ sở hữu và giá trị cổ phiếu của Công ty về lâu dài.",
+      "Trong năm nay, Công ty đã trích lập Quỹ đầu tư phát triển với 6,159,019,584 đồng. Việc trích lập các quỹ từ lợi nhuận sau thuế có tác động:\\n- **Cơ cấu vốn chủ sở hữu:** Giúp chuyển một phần lợi nhuận chưa phân phối sang các quỹ cụ thể, làm cho cơ cấu vốn chủ sở hữu vững chắc hơn và có định hướng sử dụng rõ ràng hơn.\\n- **Khả năng mở rộng hoạt động:** Quỹ đầu tư phát triển được trích lập nhằm phục vụ việc mở rộng hoạt động hoặc đầu tư chiều sâu. Điều này trực tiếp hỗ trợ khả năng tự tài trợ cho các dự án tăng trưởng của Công ty mà không cần phụ thuộc quá nhiều vào nguồn vốn vay hoặc phát hành cổ phiếu mới, từ đó giúp Công ty có thể mở rộng hoạt động một cách bền vững và ổn định hơn trong dài hạn.",
+      "Dựa trên số dư lợi nhuận chưa phân phối cuối năm nay là 127,908,743,825 đồng, Công ty có một nền tảng tài chính mạnh mẽ để xem xét việc chi trả cổ tức trong tương lai. Mặc dù số tiền chia cổ tức trong năm nay (23,554,514,000 đồng) thấp hơn năm trước, nhưng lợi nhuận trong năm vẫn được tạo ra đáng kể (63,390,170,338 đồng). Theo chính sách của Công ty, lợi nhuận sau thuế có thể được chia sau khi Đại hội đồng cổ đông phê duyệt và trích lập các quỹ. Do đó, nếu Công ty tiếp tục duy trì mức lợi nhuận tốt và không có nhu cầu đầu tư lớn, khả năng chi trả cổ tức cao hoặc duy trì mức ổn định là khá cao. Tuy nhiên, việc trích lập quỹ đầu tư phát triển cũng cho thấy Công ty có thể ưu tiên tái đầu tư một phần lợi nhuận để phục vụ mục tiêu tăng trưởng dài hạn.",
+      "Lãi trong năm nay là 63,390,170,338 đồng.\\nTổng vốn chủ sở hữu đầu năm nay là 490,819,412,613 đồng.\\nTỷ lệ lợi nhuận trong năm nay trên tổng vốn chủ sở hữu đầu năm nay là (63,390,170,338 / 490,819,412,613) * 100% ≈ 12.91%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Cổ đông lớn nhất của Công ty là ai và tỷ lệ sở hữu của họ tại ngày 30/09/2024 là bao nhiêu?",
+      "Số lượng cổ phiếu phổ thông đang lưu hành tại ngày 30/09/2024 là bao nhiêu?",
+      "Tổng giá trị cổ tức đã công bố trong năm nay là bao nhiêu?",
+      "So sánh tổng số lượng cổ phiếu quỹ giữa cuối quý 3 năm 2024 và đầu năm 2024.",
+      "Đánh giá mức độ tập trung quyền kiểm soát của các cổ đông lớn đối với Công ty.",
+      "Phân tích tác động của việc Công ty nắm giữ cổ phiếu quỹ đến giá trị cổ phiếu đang lưu hành và lợi ích của các cổ đông.",
+      "Dự báo tác động của việc giảm cổ tức đã trả bằng tiền đến sự hài lòng của cổ đông và giá cổ phiếu.",
+      "Tính tỷ lệ cổ tức chưa trả trên tổng cổ tức đã công bố trong năm nay."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (V. Thông tin bổ sung - Vốn chủ sở hữu - Chi tiết vốn góp, Giao dịch vốn và phân phối cổ tức)<br>Loại nội dung: Bảng<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>17. Vốn chủ sở hữu<br>b. Chi tiết vốn góp của chủ sở hữu<br>| Chỉ tiêu | Tỷ lệ (%) | Số lượng | Tỷ lệ (%) | Số lượng |<br>|---|---|---|---|---|<br>| | Số 30/09/2024 | Số 30/09/2024 | Số 01/01/2024 | Số 01/01/2024 |<br>|---|---|---|---|---|<br>| Công ty CP Tập đoàn PAN | 76.47 | 9,006,029 | 76.47 | 9,006,029 |<br>| Ông Lương Thanh Tùng | 10.53 | 1,239,756 | 10.53 | 1,239,756 |<br>| Các cổ đông khác | 13.00 | 1,531,472 | 13.01 | 1,531,472 |<br>| Tổng cộng | 100 | 11,777,257 | 100 | 11,777,257 |<br>Tỷ lệ sở hữu tính trên số lượng cổ phiếu đang lưu hành.<br><br>c. Các giao dịch về vốn với chủ sở hữu và phân phối cổ tức<br>| Chỉ tiêu | Số 30/09/2024 | Số 01/01/2024 |<br>|---|---|---|<br>| Vốn cổ phần đã phát hành | | |<br>| Số đầu năm | 143,872,070,000 | 143,872,070,000 |<br>| Tăng trong năm | - | - |<br>| Số cuối năm | 143,872,070,000 | 143,872,070,000 |<br>| Cổ tức | | |<br>| Cổ tức đã công bố trong năm | 23,554,514,000 | 35,331,771,000 |<br>| Trong đó: Cổ tức đã trả bằng tiền | 23,546,891,116 | 35,333,312,850 |<br>| Cổ tức chưa trả | 7,622,884 | 7,586,785 |<br><br>| Chỉ tiêu | Số lượng (30/09/2024) | Giá trị (VNĐ, 30/09/2024) | Số lượng (01/01/2024) | Giá trị (VNĐ, 01/01/2024) |<br>|---|---|---|---|---|<br>| Cổ phiếu đã được duyệt | 14,387,207 | 143,872,070,000 | 14,387,207 | 143,872,070,000 |<br>| Cổ phiếu đã phát hành | | | | |<br>| - Cổ phiếu phổ thông | 14,387,207 | 143,872,070,000 | 14,387,207 | 143,872,070,000 |<br>| Cổ phiếu quỹ | | | | |<br>| - Cổ phiếu phổ thông | 2,609,950 | 98,896,574,474 | 2,609,950 | 98,896,574,474 |<br>| Cổ phiếu đang lưu hành | | | | |<br>| - Cổ phiếu phổ thông | 11,777,257 | 117,772,570,000 | 11,777,257 | 117,772,570,000 |",
+    "output": [
+      "Cổ đông lớn nhất của Công ty tại ngày 30/09/2024 là Công ty CP Tập đoàn PAN với tỷ lệ sở hữu 76.47%.",
+      "Số lượng cổ phiếu phổ thông đang lưu hành tại ngày 30/09/2024 là 11,777,257 cổ phiếu.",
+      "Tổng giá trị cổ tức đã công bố trong năm nay là 23,554,514,000 đồng.",
+      "Tổng số lượng cổ phiếu quỹ tại cuối quý 3 năm 2024 là 2,609,950 cổ phiếu, không thay đổi so với đầu năm 2024.",
+      "Với Công ty CP Tập đoàn PAN sở hữu 76.47% cổ phần và Ông Lương Thanh Tùng sở hữu 10.53% tại ngày 30/09/2024, tổng cộng hai cổ đông này kiểm soát 87% số cổ phiếu đang lưu hành. Điều này cho thấy mức độ tập trung quyền kiểm soát rất cao đối với Công ty. Công ty CP Tập đoàn PAN có quyền kiểm soát chi phối đối với các quyết định quan trọng của Công ty, bao gồm bổ nhiệm ban lãnh đạo, phê duyệt chiến lược kinh doanh và phân phối lợi nhuận, trong khi các cổ đông khác có ảnh hưởng hạn chế hơn.",
+      "Công ty nắm giữ 2,609,950 cổ phiếu quỹ, tương đương khoảng 22.16% số lượng cổ phiếu đã phát hành. Việc nắm giữ cổ phiếu quỹ có tác động:\\n- **Đến giá trị cổ phiếu đang lưu hành:** Cổ phiếu quỹ làm giảm số lượng cổ phiếu đang lưu hành trên thị trường, từ đó có thể làm tăng thu nhập trên mỗi cổ phiếu (EPS) và các chỉ số định giá khác, góp phần hỗ trợ giá cổ phiếu thị trường của các cổ phiếu còn lại.\\n- **Đến lợi ích của các cổ đông:** Lợi ích của các cổ đông hiện hữu có thể được tăng lên do tỷ lệ sở hữu trên tổng số cổ phiếu đang lưu hành tăng lên. Ngoài ra, việc mua lại cổ phiếu quỹ có thể là tín hiệu rằng Công ty đánh giá cổ phiếu của mình bị định giá thấp, tạo niềm tin cho nhà đầu tư. Tuy nhiên, việc này cũng có nghĩa là một lượng vốn đã được sử dụng để mua cổ phiếu quỹ thay vì đầu tư vào các hoạt động kinh doanh khác hoặc chi trả cổ tức trực tiếp.",
+      "Cổ tức đã trả bằng tiền trong năm nay là 23,546,891,116 đồng, thấp hơn đáng kể so với 35,333,312,850 đồng của năm trước. Việc giảm cổ tức đã trả bằng tiền có thể tác động tiêu cực đến sự hài lòng của một số cổ đông, đặc biệt là những cổ đông có mục tiêu đầu tư vào thu nhập thường xuyên. Đối với giá cổ phiếu, việc giảm cổ tức có thể gây áp lực giảm giá trong ngắn hạn, vì nhà đầu tư có thể xem đây là dấu hiệu của lợi nhuận giảm hoặc Công ty đang giữ lại nhiều lợi nhuận hơn để tái đầu tư. Tuy nhiên, nếu việc giữ lại lợi nhuận được sử dụng hiệu quả cho các dự án tăng trưởng có lợi nhuận cao, về dài hạn, điều này có thể mang lại lợi ích lớn hơn cho cổ đông thông qua tăng giá trị cổ phiếu.",
+      "Cổ tức chưa trả trong năm nay là 7,622,884 đồng.\\nTổng cổ tức đã công bố trong năm nay là 23,554,514,000 đồng.\\nTỷ lệ cổ tức chưa trả trên tổng cổ tức đã công bố trong năm nay là (7,622,884 / 23,554,514,000) * 100% ≈ 0.03%."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng doanh thu thuần năm nay của Công ty là bao nhiêu?",
+      "Giá vốn hàng bán năm trước là bao nhiêu?",
+      "Khoản mục nào đóng góp lớn nhất vào doanh thu hoạt động tài chính năm nay?",
+      "So sánh tổng doanh thu bán hàng và cung cấp dịch vụ giữa năm nay và năm trước.",
+      "Đánh giá xu hướng của giá vốn hàng bán so với doanh thu thuần và ý nghĩa của nó đối với biên lợi nhuận gộp.",
+      "Phân tích tác động của biến động lãi chênh lệch tỷ giá đã thực hiện đến chi phí tài chính của Công ty.",
+      "Dự báo rủi ro nếu doanh thu cung cấp dịch vụ tiếp tục giảm trong các năm tới.",
+      "Tính tỷ lệ lãi tiền vay trên tổng chi phí tài chính năm nay."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024 và Năm trước<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (VII. Thông tin bổ sung - BCKQHĐKD)<br>Loại nội dung: Bảng<br>VII. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh<br>1. Tổng doanh thu bán hàng và cung cấp dịch vụ (Mã số 01)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Doanh thu bán hàng hóa, thành phẩm | 430,497,116,322 | 390,410,545,896 |<br>| Doanh thu cung cấp dịch vụ, khác | 1,892,926,324 | 2,626,286,495 |<br>| Tổng cộng | 432,390,042,646 | 393,036,832,391 |<br><br>2. Các khoản giảm trừ doanh thu (Mã số 02)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Hàng bán bị trả lại | 93,420,000 | 128,867,680 |<br>| Tổng cộng | 93,420,000 | 128,867,680 |<br><br>3. Doanh thu thuần (Mã số 10)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Doanh thu bán hàng hóa, thành phẩm | 430,403,696,322 | 390,281,678,216 |<br>| Doanh thu cung cấp dịch vụ, khác | 1,892,926,324 | 2,626,286,495 |<br>| Tổng cộng | 432,296,622,646 | 392,907,964,711 |<br><br>4. Giá vốn hàng bán (Mã số 11)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Giá vốn của hàng hóa, thành phẩm | 352,137,429,191 | 328,016,337,462 |<br>| Giá vốn của dịch vụ, khác | 1,289,645,709 | 1,214,111,049 |<br>| Tổng cộng | 353,427,074,900 | 329,230,448,511 |<br><br>5. Doanh thu hoạt động tài chính (Mã số 21)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Lãi tiền gửi, tiền cho vay | 7,026,737,506 | 4,596,956,314 |<br>| Cổ tức, lợi nhuận được chia | 16,178,155,000 | 16,178,140,400 |<br>| Lãi chênh lệch tỷ giá chưa thực hiện | 33,319,565 | 386,543,234 |<br>| Lãi chênh lệch tỷ giá đã thực hiện | 3,863,998,630 | 6,924,234,540 |<br>| Tổng cộng | 27,102,210,701 | 28,085,874,488 |<br><br>6. Chi phí tài chính (Mã số 22)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Lãi tiền vay | 2,573,653,785 | 4,289,330,546 |<br>| Lỗ chênh lệch tỷ giá đã thực hiện | 1,272,552,215 | 3,130,379,084 |<br>| Tổng cộng | 3,846,206,000 | 7,419,709,630 |",
+    "output": [
+      "Tổng doanh thu thuần năm nay (lũy kế 2024) của Công ty là 432,296,622,646 đồng.",
+      "Giá vốn hàng bán năm trước (lũy kế 2023) là 329,230,448,511 đồng.",
+      "Khoản mục đóng góp lớn nhất vào doanh thu hoạt động tài chính năm nay là Cổ tức, lợi nhuận được chia với 16,178,155,000 đồng.",
+      "Tổng doanh thu bán hàng và cung cấp dịch vụ năm nay (lũy kế 2024) là 432,390,042,646 đồng, tăng so với 393,036,832,391 đồng của năm trước (lũy kế 2023). Điều này cho thấy sự tăng trưởng đáng kể trong hoạt động kinh doanh cốt lõi của Công ty.",
+      "Doanh thu thuần năm nay tăng từ 392,907,964,711 đồng lên 432,296,622,646 đồng (tăng khoảng 10.03%). Giá vốn hàng bán năm nay cũng tăng từ 329,230,448,511 đồng lên 353,427,074,900 đồng (tăng khoảng 7.35%). \\n\\nXu hướng này cho thấy giá vốn hàng bán tăng chậm hơn so với doanh thu thuần, điều này rất tích cực. Biên lợi nhuận gộp (Lợi nhuận gộp / Doanh thu thuần) năm trước là (63,677,516,200 / 392,907,964,711) ≈ 16.21%, trong khi năm nay là (78,869,547,746 / 432,296,622,646) ≈ 18.25%. Sự gia tăng của biên lợi nhuận gộp phản ánh Công ty đang quản lý tốt hơn chi phí sản xuất, có thể là do hiệu quả hoạt động được cải thiện, khả năng đàm phán với nhà cung cấp tốt hơn, hoặc tối ưu hóa quy trình sản xuất, dẫn đến lợi nhuận gộp cao hơn trên mỗi đơn vị doanh thu.",
+      "Lỗ chênh lệch tỷ giá đã thực hiện của Công ty trong năm nay là 1,272,552,215 đồng, giảm đáng kể so với 3,130,379,084 đồng của năm trước. Sự giảm này có tác động tích cực đến chi phí tài chính của Công ty, góp phần làm tổng chi phí tài chính giảm từ 7,419,709,630 đồng xuống 3,846,206,000 đồng. Điều này có thể cho thấy Công ty đã quản lý rủi ro tỷ giá hiệu quả hơn, hoặc điều kiện thị trường ngoại hối thuận lợi hơn, giảm thiểu các khoản lỗ phát sinh từ các giao dịch ngoại tệ đã thực hiện, từ đó cải thiện lợi nhuận.",
+      "Doanh thu cung cấp dịch vụ, khác của Công ty đã giảm từ 2,626,286,495 đồng năm trước xuống 1,892,926,324 đồng năm nay. Nếu xu hướng giảm này tiếp tục trong các năm tới, Công ty sẽ đối mặt với một số rủi ro:\\n- **Phụ thuộc quá mức vào doanh thu bán hàng hóa, thành phẩm:** Doanh thu cốt lõi sẽ ngày càng tập trung vào một nguồn duy nhất, làm tăng rủi ro kinh doanh nếu ngành hàng hóa/thành phẩm gặp biến động.\\n- **Giảm đa dạng hóa nguồn thu:** Việc giảm doanh thu dịch vụ có thể làm mất đi một phần lợi nhuận đóng góp từ nguồn này, đồng thời giảm khả năng đa dạng hóa rủi ro của Công ty.\\n- **Ảnh hưởng đến tăng trưởng tổng thể:** Nếu doanh thu dịch vụ giảm mà không được bù đắp bởi sự tăng trưởng mạnh mẽ của doanh thu bán hàng hóa, nó có thể ảnh hưởng tiêu cực đến tốc độ tăng trưởng tổng thể của Công ty. Công ty có thể cần đánh giá lại chiến lược đối với mảng dịch vụ hoặc tìm kiếm các nguồn doanh thu bổ sung.",
+      "Lãi tiền vay năm nay là 2,573,653,785 đồng.\\nTổng chi phí tài chính năm nay là 3,846,206,000 đồng.\\nTỷ lệ lãi tiền vay trên tổng chi phí tài chính năm nay là (2,573,653,785 / 3,846,206,000) * 100% ≈ 66.91%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng thu nhập khác của Công ty năm nay là bao nhiêu?",
+      "Tổng chi phí quản lý doanh nghiệp năm trước là bao nhiêu?",
+      "Chi phí nào trong chi phí sản xuất kinh doanh theo yếu tố có giá trị lớn nhất năm nay?",
+      "So sánh chi phí bán hàng giữa năm nay và năm trước, nhận xét xu hướng.",
+      "Đánh giá hiệu quả quản lý chi phí nhân viên trong chi phí quản lý doanh nghiệp.",
+      "Phân tích tác động của sự thay đổi trong chi phí tàu đến lợi nhuận gộp và lợi nhuận thuần từ hoạt động kinh doanh.",
+      "Dự báo rủi ro nếu chi phí nguyên liệu, vật liệu tiếp tục tăng mạnh trong các năm tới.",
+      "Tính tỷ lệ chi phí dịch vụ mua ngoài trên tổng chi phí sản xuất kinh doanh theo yếu tố năm nay."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024 và Năm trước<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (VII. Thông tin bổ sung - BCKQHĐKD tiếp theo)<br>Loại nội dung: Bảng<br>VII. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh<br>7. Thu nhập khác (Mã số 31)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Thanh lý, nhượng bán TSCĐ | 90,909,091 | - |<br>| Các khoản khác | 92,551,141 | 4,980,000 |<br>| Tổng cộng | 183,460,232 | 4,980,000 |<br><br>8. Chi phí khác (Mã số 32)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Các khoản khác | 3,180,002 | 10,500,520 |<br>| Tổng cộng | 3,180,002 | 10,500,520 |<br><br>9. Chi phí bán hàng (Mã số 25)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Chi phí nhân viên | 1,380,565,808 | 1,593,641,391 |<br>| Chi phí tàu | 11,613,403,806 | 7,341,622,621 |<br>| Các khoản chi phí khác | 4,310,946,989 | 3,940,306,359 |<br>| Tổng cộng | 17,304,916,603 | 12,875,570,371 |<br><br>10. Chi phí quản lý doanh nghiệp (Mã số 26)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Chi phí nhân viên | 6,993,134,682 | 7,378,749,977 |<br>| Chi phí khấu hao TSCĐ | 646,466,545 | 594,466,180 |<br>| Các khoản chi phí khác | 6,297,483,432 | 7,392,588,267 |<br>| Tổng cộng | 13,937,084,659 | 15,365,804,424 |<br><br>11. Chi phí thuế thu nhập doanh nghiệp hiện hành (Mã số 15)<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Chi phí thuế TNDN tính trên thu nhập chịu thuế năm hiện hành | 7,830,839,726 | 4,195,545,126 |<br>| Tổng cộng | 7,830,839,726 | 4,195,545,126 |<br><br>12. Chi phí sản xuất kinh doanh theo yếu tố<br>| Chỉ tiêu | Năm nay | Năm trước |<br>|---|---|---|<br>| Chi phí nguyên liệu, vật liệu | 257,814,034,016 | 211,394,093,508 |<br>| Chi phí nhân công | 81,213,778,296 | 77,214,518,993 |<br>| Chi phí khấu hao tài sản cố định | 9,038,154,681 | 8,219,429,231 |<br>| Chi phí dịch vụ mua ngoài | 27,599,766,418 | 20,104,996,501 |<br>| Chi phí khác bằng tiền | 10,574,042,571 | 13,183,878,689 |<br>| Tổng cộng | 386,239,775,982 | 330,116,916,922 |",
+    "output": [
+      "Tổng thu nhập khác của Công ty năm nay (lũy kế 2024) là 183,460,232 đồng.",
+      "Tổng chi phí quản lý doanh nghiệp năm trước (lũy kế 2023) là 15,365,804,424 đồng.",
+      "Chi phí nguyên liệu, vật liệu có giá trị lớn nhất năm nay (lũy kế 2024) là 257,814,034,016 đồng.",
+      "Tổng chi phí bán hàng năm nay (lũy kế 2024) là 17,304,916,603 đồng, tăng so với 12,875,570,371 đồng của năm trước (lũy kế 2023). Xu hướng này cho thấy Công ty đang tăng cường các hoạt động bán hàng, marketing hoặc mở rộng kênh phân phối. Sự gia tăng này có thể đi kèm với doanh thu tăng trưởng, tuy nhiên cũng cần kiểm soát để đảm bảo hiệu quả chi phí.",
+      "Chi phí nhân viên trong chi phí quản lý doanh nghiệp năm nay là 6,993,134,682 đồng, giảm so với 7,378,749,977 đồng của năm trước. Điều này cho thấy Công ty đã có những nỗ lực hoặc thành công trong việc quản lý chi phí nhân viên trong bộ phận quản lý, có thể thông qua tối ưu hóa nhân sự, cắt giảm các khoản chi không cần thiết hoặc cải thiện hiệu quả làm việc. Việc giảm chi phí này góp phần tích cực vào việc giảm tổng chi phí quản lý doanh nghiệp và cải thiện lợi nhuận của Công ty.",
+      "Chi phí tàu, thuộc chi phí bán hàng, đã tăng mạnh từ 7,341,622,621 đồng năm trước lên 11,613,403,806 đồng năm nay. \\n- **Tác động đến lợi nhuận gộp:** Chi phí tàu là một thành phần của chi phí bán hàng, không ảnh hưởng trực tiếp đến lợi nhuận gộp. Lợi nhuận gộp được tính bằng Doanh thu thuần trừ Giá vốn hàng bán.\\n- **Tác động đến lợi nhuận thuần từ hoạt động kinh doanh:** Sự tăng lên của chi phí tàu, cùng với sự tăng của các chi phí bán hàng khác, đã góp phần làm tăng tổng chi phí bán hàng. Điều này có tác động tiêu cực đến lợi nhuận thuần từ hoạt động kinh doanh (Lợi nhuận gộp - Chi phí bán hàng - Chi phí quản lý doanh nghiệp). Mặc dù Công ty có thể đang mở rộng hoạt động bán hàng (dẫn đến doanh thu tăng), việc tăng chi phí tàu nếu không được kiểm soát hiệu quả có thể làm giảm biên lợi nhuận thuần từ hoạt động kinh doanh.",
+      "Chi phí nguyên liệu, vật liệu năm nay là 257,814,034,016 đồng, tăng đáng kể so với 211,394,093,508 đồng năm trước. Nếu xu hướng tăng mạnh này tiếp tục trong các năm tới, Công ty sẽ đối mặt với các rủi ro sau:\\n- **Giảm biên lợi nhuận gộp:** Nguyên liệu, vật liệu là yếu tố cấu thành chính của giá vốn hàng bán. Khi chi phí này tăng, trừ khi Công ty có thể tăng giá bán tương ứng, biên lợi nhuận gộp sẽ bị thu hẹp, ảnh hưởng trực tiếp đến lợi nhuận.\\n- **Áp lực lên giá bán:** Công ty có thể buộc phải tăng giá bán sản phẩm để duy trì biên lợi nhuận, nhưng điều này có thể làm giảm sức cạnh tranh trên thị trường hoặc mất thị phần.\\n- **Rủi ro lạm phát:** Sự tăng giá nguyên liệu có thể là dấu hiệu của lạm phát, gây áp lực lên toàn bộ chuỗi cung ứng và hoạt động kinh doanh.\\n- **Ảnh hưởng đến dòng tiền:** Việc chi trả nhiều hơn cho nguyên vật liệu sẽ làm tăng dòng tiền ra, gây áp lực lên thanh khoản của Công ty nếu không được quản lý hiệu quả.",
+      "Chi phí dịch vụ mua ngoài năm nay là 27,599,766,418 đồng.\\nTổng chi phí sản xuất kinh doanh theo yếu tố năm nay là 386,239,775,982 đồng.\\nTỷ lệ chi phí dịch vụ mua ngoài trên tổng chi phí sản xuất kinh doanh theo yếu tố năm nay là (27,599,766,418 / 386,239,775,982) * 100% ≈ 7.15%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Công ty Cổ phần Tập đoàn PAN có mối quan hệ gì với Công ty?",
+      "Tổng giá trị mua hàng và dịch vụ từ các bên liên quan trong kỳ này là bao nhiêu?",
+      "Giao dịch thu hồi nợ gốc cho vay với bên liên quan nào có giá trị lớn nhất?",
+      "So sánh doanh thu bán hàng và cung cấp dịch vụ với Công ty TNHH MTV Bibica Miền Tây giữa kỳ này và kỳ trước.",
+      "Đánh giá mức độ phụ thuộc của Công ty vào các giao dịch với bên liên quan trong hoạt động mua hàng và dịch vụ.",
+      "Phân tích tác động của các khoản tiền gửi có kỳ hạn và thu hồi tiền gửi với Công ty Cổ phần Chứng khoán SSI đến dòng tiền của Công ty.",
+      "Dự báo rủi ro tiềm ẩn từ các giao dịch với bên liên quan, đặc biệt là các khoản tạm ứng cổ tức và thu hồi nợ gốc.",
+      "Tính tỷ lệ lãi cho vay từ Công ty Cổ phần Thực phẩm PAN trên tổng thu nhập lãi từ các bên liên quan."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024 và Năm trước<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (VII. Nghiệp vụ và số dư với các bên liên quan)<br>Loại nội dung: Bảng<br>VII. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh<br>13. Nghiệp vụ và số dư với các bên liên quan<br>Danh sách các bên liên quan có giao dịch và số dư chủ yếu trong kỳ:<br>| Bên liên quan | Mối quan hệ |<br>|---|---|<br>| Công ty Cổ phần Tập đoàn PAN | Công ty mẹ |<br>| Công ty Cổ phần Thực phẩm PAN | Công ty trong cùng Tập đoàn |<br>| Công ty Cổ phần Thực phẩm Sao Ta | Công ty trong cùng Tập đoàn |<br>| Công ty Cổ phần Thủy sản 584 Nha Trang | Công ty trong cùng Tập đoàn |<br>| Công ty Cổ phần Cà phê Golden Beans | Công ty trong cùng Tập đoàn |<br>| Công ty TNHH MTV Bibica Miền Tây | Công ty trong cùng Tập đoàn |<br>| Công ty Cổ phần Chứng khoán SSI | Cổ đông lớn của Công ty mẹ, Công ty có chung lãnh đạo chủ chốt với Công ty |<br><br>Trong kỳ, Công ty đã có các giao dịch chủ yếu với các bên liên quan như sau:<br>| Chỉ tiêu | Kỳ này (VND) | Kỳ trước (VND) |<br>|---|---|---|<br>| Bán hàng và cung cấp dịch vụ | | |<br>| Công ty TNHH MTV Bibica Miền Tây | 10,260,000 | 10,260,000 |<br>| Mua hàng và dịch vụ | | |<br>| Công ty Cổ phần Thực phẩm Sao Ta | 4,032,387,880 | 3,058,581,750 |<br>| Công ty Cổ phần Tập đoàn PAN | - | 122,789,334 |<br>| Công ty Cổ phần Thủy sản 584 Nha Trang | 12,600,000 | 9,090,910 |<br>| Công ty Cổ phần Cà phê Golden Beans | 5,712,000 | - |<br>| Tổng mua hàng và dịch vụ | 4,050,699,880 | 3,190,461,994 |<br>| Thu hồi nợ gốc cho vay | | |<br>| Công ty Cổ phần Thực phẩm PAN | 10,000,000,000 | 10,000,000,000 |<br>| Lãi cho vay | | |<br>| Công ty Cổ phần Thực phẩm PAN | 1,163,287,666 | 1,163,287,666 |<br>| Tiền gửi có kỳ hạn | | |<br>| Công ty Cổ phần Chứng khoán SSI | 101,968,000,000 | 101,968,000,000 |<br>| Thu hồi tiền gửi | | |<br>| Công ty Cổ phần Chứng khoán SSI | 51,327,000,000 | 50,641,000,000 |<br>| Tổng thu hồi tiền gửi | 51,327,000,000 | 50,641,000,000 |<br>| Lãi tiền gửi nhận được | | |<br>| Công ty Cổ phần Chứng khoán SSI | 409,167,359 | 409,167,359 |<br>| Tạm ứng cổ tức | | |<br>| Công ty Cổ phần Tập đoàn PAN | 18,012,058,000 | 18,012,058,000 |<br>| Thu tiền cổ tức | | |<br>| Công ty Cổ phần Thực phẩm Sao Ta | 16,178,000,000 | 16,178,000,000 |<br>| Tổng thu tiền cổ tức | 16,178,000,000 | 16,178,000,000 |",
+    "output": [
+      "Công ty Cổ phần Tập đoàn PAN là Công ty mẹ của Công ty Cổ phần Xuất Nhập khẩu Thủy sản Bến Tre.",
+      "Tổng giá trị mua hàng và dịch vụ từ các bên liên quan trong kỳ này là 4,050,699,880 đồng.",
+      "Giao dịch thu hồi nợ gốc cho vay với Công ty Cổ phần Thực phẩm PAN có giá trị lớn nhất là 10,000,000,000 đồng.",
+      "Doanh thu bán hàng và cung cấp dịch vụ với Công ty TNHH MTV Bibica Miền Tây trong kỳ này là 10,260,000 đồng, không thay đổi so với kỳ trước.",
+      "Trong kỳ này, Công ty đã mua hàng và dịch vụ từ các bên liên quan với tổng giá trị 4,050,699,880 đồng, chủ yếu từ Công ty Cổ phần Thực phẩm Sao Ta (4,032,387,880 đồng). Mặc dù giá trị này là đáng kể, nhưng cần so sánh với tổng chi phí mua hàng và dịch vụ của Công ty để đánh giá mức độ phụ thuộc. Nếu tỷ lệ này cao, Công ty có thể có rủi ro về xung đột lợi ích hoặc thiếu tính khách quan trong giao dịch, nhưng cũng có thể hưởng lợi từ các điều khoản ưu đãi hoặc sự ổn định trong chuỗi cung ứng do mối quan hệ trong cùng Tập đoàn.",
+      "Công ty có khoản tiền gửi có kỳ hạn 101,968,000,000 đồng với Công ty Cổ phần Chứng khoán SSI, và đã thu hồi 51,327,000,000 đồng tiền gửi trong kỳ này. \\n- **Tác động của tiền gửi có kỳ hạn:** Khi gửi tiền có kỳ hạn, dòng tiền của Công ty được giữ lại tại SSI, tạm thời giảm dòng tiền khả dụng trong hoạt động đầu tư hoặc tài chính. Tuy nhiên, nó tạo ra thu nhập lãi (409,167,359 đồng trong kỳ này).\\n- **Tác động của thu hồi tiền gửi:** Việc thu hồi tiền gửi có kỳ hạn (51,327,000,000 đồng) là một dòng tiền vào, giúp bổ sung tiền mặt cho Công ty, cải thiện thanh khoản và khả năng tài trợ cho các hoạt động khác. \\n\\nTổng thể, các giao dịch này cho thấy Công ty đang quản lý tiền mặt nhàn rỗi bằng cách gửi có kỳ hạn để sinh lời, đồng thời chủ động thu hồi khi cần thiết để tối ưu hóa dòng tiền và đáp ứng nhu cầu vốn.",
+      "Các giao dịch với bên liên quan luôn tiềm ẩn rủi ro về xung đột lợi ích và tính công bằng của giao dịch. Cụ thể:\\n- **Tạm ứng cổ tức cho Công ty mẹ (Tập đoàn PAN):** Khoản tạm ứng 18,012,058,000 đồng cho Công ty mẹ (Tập đoàn PAN) có thể tạo áp lực lên dòng tiền của Công ty nếu được thực hiện mà không có sự cân nhắc kỹ lưỡng về nhu cầu vốn của Công ty, đặc biệt nếu Công ty mẹ có khó khăn tài chính. Rủi ro là lợi ích của cổ đông thiểu số có thể bị ảnh hưởng nếu các khoản tạm ứng này làm giảm khả năng chi trả cổ tức cho họ hoặc ảnh hưởng đến khả năng tái đầu tư của Công ty.\\n- **Thu hồi nợ gốc cho vay với Công ty Cổ phần Thực phẩm PAN:** Khoản thu hồi 10,000,000,000 đồng là tích cực cho dòng tiền. Tuy nhiên, rủi ro phát sinh nếu Công ty Cổ phần Thực phẩm PAN gặp khó khăn và không thể trả nợ đúng hạn, ảnh hưởng đến thanh khoản của Công ty. \\n\\nNhìn chung, cần có sự giám sát chặt chẽ để đảm bảo rằng các giao dịch với bên liên quan được thực hiện trên cơ sở thị trường công bằng và không gây thiệt hại cho Công ty hoặc các cổ đông thiểu số.",
+      "Lãi cho vay từ Công ty Cổ phần Thực phẩm PAN là 1,163,287,666 đồng. Dữ liệu chỉ liệt kê khoản lãi này từ các bên liên quan. Do đó, tổng thu nhập lãi từ các bên liên quan trong dữ liệu này cũng là 1,163,287,666 đồng.\\nTỷ lệ lãi cho vay từ Công ty Cổ phần Thực phẩm PAN trên tổng thu nhập lãi từ các bên liên quan là (1,163,287,666 / 1,163,287,666) * 100% = 100%."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số dư đầu tư nắm giữ đến ngày đáo hạn với Công ty Cổ phần Chứng khoán SSI tại cuối kỳ là bao nhiêu?",
+      "Tổng thu nhập của Ban Giám đốc và thù lao Hội đồng Quản trị, Ban Kiểm soát trong kỳ này là bao nhiêu?",
+      "Bộ phận kinh doanh nào của Công ty có doanh thu thuần lớn nhất?",
+      "So sánh tổng lợi nhuận trước thuế theo bộ phận giữa kinh doanh thủy sản và hoạt động tài chính.",
+      "Đánh giá mức độ hiệu quả của từng bộ phận kinh doanh dựa trên lợi nhuận trước thuế của từng bộ phận.",
+      "Phân tích tác động của các khoản phải thu ngắn hạn khác từ các bên liên quan đến rủi ro thanh khoản của Công ty.",
+      "Dự báo rủi ro về xung đột lợi ích nếu các khoản thu nhập của Ban Giám đốc và HĐQT tiếp tục tăng nhanh so với lợi nhuận của Công ty.",
+      "Tính tỷ lệ các chi phí trực tiếp của bộ phận kinh doanh thủy sản trên tổng doanh thu thuần của bộ phận đó."
+    ],
+    "input": "Công ty: CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THỦY SẢN BẾN TRE<br>Mã cổ phiếu: ABT<br>Loại báo cáo: Báo cáo tài chính hợp nhất Quý 3/2024<br>Thời gian: Năm 2024 và Năm trước<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính hợp nhất (VII. Nghiệp vụ và số dư với các bên liên quan và VIII. Thông tin khác)<br>Loại nội dung: Bảng và Text<br>VII. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả hoạt động kinh doanh<br>13. Nghiệp vụ và số dư với các bên liên quan<br>Số dư chủ yếu với các bên liên quan tại ngày kết thúc kỳ hoạt động như sau:<br>| Chỉ tiêu | Số cuối kỳ (VND) | Số đầu kỳ (VND) |<br>|---|---|---|<br>| Đầu tư nắm giữ đến ngày đáo hạn | | |<br>| Công ty Cổ phần Chứng khoán SSI | 51,327,000,000 | 51,327,000,000 |<br>| Phải thu về cho vay ngắn hạn | | |<br>| Công ty Cổ phần Thực phẩm PAN | 20,000,000,000 | 20,000,000,000 |<br>| Phải thu ngắn hạn khác | | |<br>| Công ty Cổ phần Thực phẩm Pan | 618,630,132 | 387,397,262 |<br>| Công ty Cổ phần Chứng khoán SSI | 94,119,754 | 34,234,441 |<br>| Tổng phải thu ngắn hạn khác | 712,749,886 | 421,631,703 |<br><br>Thu nhập Ban Giám đốc và thù lao Hội đồng Quản trị, Ban Kiểm soát được hưởng trong kỳ:<br>| Tên | Chức vụ | Kỳ này (VND) | Kỳ trước (VND) |<br>|---|---|---|---|<br>| Ông Nguyễn Văn Khải | Chủ tịch HĐQT | 270,000,000 | 90,000,000 |<br>| Ông Phan Hữu Tài | Thành viên HĐQT, Tổng Giám đốc | 1,815,525,000 | 1,639,035,000 |<br>| Ông Hồ Quốc Lực | Thành viên HĐQT | 135,000,000 | 72,000,000 |<br>| Ông Bùi Kim Hiếu | Phó Tổng Giám đốc | 633,570,835 | 579,249,667 |<br>| Bà Đặng Thị Bích Liên | Trưởng Ban Kiểm soát | 158,476,375 | 158,545,220 |<br>| Ông Nguyễn Văn Nguyên | Thành viên Ban Kiểm soát | 36,000,000 | 27,000,000 |<br>| Ông Lương Ngọc Thái | Thành viên Ban Kiểm soát | 27,000,000 | 18,000,000 |<br>| Tổng cộng | 3,075,572,210 | 2,583,829,887 |<br><br>VIII. Những thông tin khác<br>1. Trình bày tài sản, doanh thu, kết quả kinh doanh theo bộ phận<br>Đơn vị tính: đồng<br>| Chỉ tiêu | Kinh doanh thủy sản | Khác | Hoạt động tài chính | Tổng cộng |<br>|---|---|---|---|---|<br>| Doanh thu thuần | 430,294,925,752 | 2,344,438,990 | 27,102,210,701 | 459,741,575,443 |<br>| Các chi phí trực tiếp | 351,985,694,622 | 1,603,842,144 | 3,846,206,000 | 357,435,742,766 |<br>| Các chi phí phân bổ | 31,242,001,262 | - | - | 31,242,001,262 |<br>| Lợi nhuận trước thuế | 47,067,229,868 | 740,596,846 | 23,256,004,701 | 71,063,831,415 |<br><br>2. Không có sự kiện trọng yếu nào phát sinh sau ngày kết thúc kỳ kế toán năm yêu cầu phải được điều chỉnh hay trình bày trong Báo cáo tài chính của Công ty.<br>Bến Tre, Ngày 22 tháng 10 năm 2024<br>Người lập biểu: MAI NGỌC LINH PHƯƠNG<br>Phụ trách kế toán: NGUYỄN THỊ HỒNG VÂN<br>Giám đốc: PHAN HỮU TÀI",
+    "output": [
+      "Số dư đầu tư nắm giữ đến ngày đáo hạn với Công ty Cổ phần Chứng khoán SSI tại cuối kỳ là 51,327,000,000 đồng.",
+      "Tổng thu nhập của Ban Giám đốc và thù lao Hội đồng Quản trị, Ban Kiểm soát trong kỳ này là 3,075,572,210 đồng.",
+      "Bộ phận kinh doanh thủy sản có doanh thu thuần lớn nhất với 430,294,925,752 đồng.",
+      "Tổng lợi nhuận trước thuế của bộ phận kinh doanh thủy sản là 47,067,229,868 đồng. Tổng lợi nhuận trước thuế của bộ phận hoạt động tài chính là 23,256,004,701 đồng. Như vậy, lợi nhuận trước thuế từ kinh doanh thủy sản cao hơn đáng kể so với hoạt động tài chính.",
+      "Dựa trên lợi nhuận trước thuế:\\n- **Kinh doanh thủy sản:** Đạt 47,067,229,868 đồng. Đây là bộ phận cốt lõi và mang lại lợi nhuận cao nhất cho Công ty, chứng tỏ hiệu quả hoạt động tốt.\\n- **Hoạt động tài chính:** Đạt 23,256,004,701 đồng. Mặc dù không cao bằng kinh doanh thủy sản, nhưng đây là một nguồn lợi nhuận đáng kể và có thể là một yếu tố ổn định trong tổng lợi nhuận.\\n- **Khác:** Đạt 740,596,846 đồng. Bộ phận này đóng góp lợi nhuận nhỏ nhất, cho thấy nó không phải là trọng tâm chính hoặc chưa phát huy hết hiệu quả.\\n\\nNhìn chung, bộ phận kinh doanh thủy sản là động lực chính tạo ra lợi nhuận cho Công ty, tiếp theo là hoạt động tài chính. Hiệu quả tổng thể được định hình chủ yếu bởi hai bộ phận này.",
+      "Các khoản phải thu ngắn hạn khác từ các bên liên quan, bao gồm Công ty Cổ phần Thực phẩm Pan và Công ty Cổ phần Chứng khoán SSI, đã tăng từ 421,631,703 đồng (đầu kỳ) lên 712,749,886 đồng (cuối kỳ). Sự gia tăng này, mặc dù không phải là số tiền khổng lồ, vẫn tạo ra rủi ro thanh khoản tiềm ẩn. Nếu các bên liên quan này không thanh toán các khoản phải thu đúng hạn, dòng tiền của Công ty sẽ bị ảnh hưởng. Trong bối cảnh các giao dịch với bên liên quan, rủi ro này cần được theo dõi chặt chẽ hơn vì các quyết định thanh toán có thể bị ảnh hưởng bởi mối quan hệ trong Tập đoàn thay vì chỉ là các yếu tố thị trường khách quan, có khả năng gây ảnh hưởng đến khả năng đáp ứng các nghĩa vụ tài chính khác của Công ty.",
+      "Tổng thu nhập của Ban Giám đốc và thù lao HĐQT, Ban Kiểm soát trong kỳ này là 3,075,572,210 đồng, tăng so với 2,583,829,887 đồng kỳ trước. Nếu xu hướng tăng nhanh này tiếp tục và vượt trội so với tốc độ tăng trưởng lợi nhuận của Công ty, có thể phát sinh rủi ro về xung đột lợi ích. Cổ đông có thể đặt câu hỏi về việc phân bổ lợi nhuận, cho rằng một phần lớn lợi nhuận đang được chuyển thành thù lao cho ban lãnh đạo thay vì được tái đầu tư hoặc chia cổ tức. Điều này có thể làm giảm niềm tin của nhà đầu tư, ảnh hưởng đến giá cổ phiếu và khả năng huy động vốn trong tương lai, đồng thời có thể dẫn đến sự bất mãn của cổ đông thiểu số. Cần có sự cân bằng giữa việc khen thưởng ban lãnh đạo và đảm bảo lợi ích cho tất cả các cổ đông và sự phát triển bền vững của Công ty.",
+      "Doanh thu thuần của bộ phận kinh doanh thủy sản là 430,294,925,752 đồng.\\nCác chi phí trực tiếp của bộ phận kinh doanh thủy sản là 351,985,694,622 đồng.\\nTỷ lệ các chi phí trực tiếp của bộ phận kinh doanh thủy sản trên tổng doanh thu thuần của bộ phận đó là (351,985,694,622 / 430,294,925,752) * 100% ≈ 81.79%."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA",
+      "Hard_QA"
+    ]
+  }
+]

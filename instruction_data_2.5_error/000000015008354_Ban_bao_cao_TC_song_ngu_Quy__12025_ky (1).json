@@ -1,0 +1,764 @@
+[
+  {
+    "instruction": [
+      "Tên đầy đủ của công ty là gì?",
+      "Mã cổ phiếu của công ty là gì?",
+      "Loại báo cáo tài chính được công bố là gì và cho kỳ nào?",
+      "Khi nào báo cáo tài chính này được công bố?",
+      "Công ty có phải giải trình nguyên nhân lợi nhuận sau thuế bị lỗ trong kỳ báo cáo không?",
+      "Thông tin công bố báo cáo tài chính này có sẵn trên website nào?"
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025 (Công bố thông tin định kỳ)<br>Thời gian: Phát hành ngày 27/05/2025, Kỳ báo cáo Quý I/2025 (kết thúc ngày 31/03/2025)<br>Ý kiến kiểm toán: Không có (Báo cáo quý không kiểm toán)<br><br>Section: Công bố thông tin và Tổng quan báo cáo<br>Loại nội dung: Text<br>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>Độc lập - Tự do - Hạnh phúc<br>Bắc Kạn, ngày 27 tháng 5 năm 2025<br>CÔNG BỐ THÔNG TIN ĐỊNH KỲ BÁO CÁO TÀI CHÍNH<br>Kính gửi Sở giao dịch Chứng khoán Hà Nội<br>Thực hiện quy định tại Thông tư số 96/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính hướng dẫn công bố thông tin trên thị trường chứng khoán, Công ty Cổ phần An Thịnh thực hiện công bố thông tin báo cáo tài chính (BCTC) quý I năm 2025 với Sở giao dịch chứng khoán như sau:<br>1. Tên tổ chức: CÔNG TY CỔ PHẦN AN THỊNH<br>Mã chứng khoán: ATB<br>Địa chỉ trụ sở chính: Tổ 8a, phường Đức Xuân, Thành phố Bắc Kạn, tỉnh Bắc Kạn<br>Điện thoại: 0209 6558899 - Fax: 0209 3879779<br>Website: www.anthinhjsc.com.vn - Email: ctcpatbkgmail.com<br>2. Nội dung công bố:<br>Báo cáo tài chính quý I năm 2025 (BCTC riêng, không có công ty con và đơn vị kế toán cấp trên có đơn vị trực thuộc)<br>Các trường hợp thuộc diện phải giải trình nguyên nhân:<br>- Lợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này hoặc ngược lại: Có (Văn bản giải trình trong trường hợp tích 'Có' đã được công bố kèm theo).<br>Thông tin này đã được công bố trên trang thông tin điện tử của Công ty Cổ phần An Thịnh vào ngày 27/05/2025 tại đường dẫn www.anthinhjsc.vntintuccodong.<br>Tài liệu kèm theo: BCTC quý I/2025, Công văn giải trình lợi nhuận bị cảnh báo.",
+    "output": [
+      "Tên đầy đủ của công ty là Công ty Cổ phần An Thịnh.",
+      "Mã cổ phiếu của công ty là ATB.",
+      "Loại báo cáo tài chính được công bố là Báo cáo tài chính riêng quý I/2025 (Công bố thông tin định kỳ) và cho Kỳ báo cáo Quý I/2025 (kết thúc ngày 31/03/2025).",
+      "Báo cáo tài chính này được phát hành và công bố vào ngày 27/05/2025.",
+      "Có, công ty phải giải trình nguyên nhân lợi nhuận sau thuế trong kỳ báo cáo bị lỗ, chuyển từ lãi ở báo cáo cùng kỳ năm trước sang lỗ ở kỳ này.",
+      "Thông tin công bố báo cáo tài chính này có sẵn trên trang thông tin điện tử của Công ty Cổ phần An Thịnh tại đường dẫn www.anthinhjsc.vntintuccodong."
+    ],
+    "difficulty": [
+      "Easy_NER",
+      "Easy_NER",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Easy_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản ngắn hạn cuối quý I/2025 là bao nhiêu?",
+      "Số dư tiền và các khoản tương đương tiền cuối kỳ là bao nhiêu?",
+      "So sánh các khoản phải thu ngắn hạn cuối kỳ và đầu năm. Thay đổi như thế nào?",
+      "Công ty có bất kỳ khoản đầu tư tài chính ngắn hạn nào không?",
+      "Đánh giá mức độ biến động của Tiền và các khoản tương đương tiền giữa cuối kỳ và đầu năm.",
+      "Các khoản phải thu nội bộ ngắn hạn chiếm tỷ trọng bao nhiêu trong tổng tài sản ngắn hạn cuối kỳ?"
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối kế toán (Phần A - Tài sản ngắn hạn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| A. TÀI SẢN NGẮN HẠN | 100 | | 98.476.184.340 | 97.999.523.432 |<br>| I. Tiền và các khoản tương đương tiền | 110 | | 2.096.857.632 | 2.222.625.929 |<br>| 1. Tiền | 111 | | 2.096.857.632 | 2.222.625.929 |<br>| 2. Các khoản tương đương tiền | 112 | | - | - |<br>| II. Đầu tư tài chính ngắn hạn | 120 | | - | - |<br>| 1. Chứng khoán kinh doanh | 121 | | - | - |<br>| 2. Dự phòng giảm giá chứng khoán kinh doanh | 122 | | - | - |<br>| 3. Đầu tư nắm giữ đến ngày đáo hạn | 123 | | - | - |<br>| III. Các khoản phải thu ngắn hạn | 130 | | 91.397.265.949 | 90.797.265.949 |<br>| 1. Phải thu ngắn hạn của khách hàng | 131 | | 29.516.319.245 | 29.516.319.245 |<br>| 2. Trả trước cho người bán ngắn hạn | 132 | | 19.855.739.689 | 19.855.739.689 |<br>| 3. Phải thu nội bộ ngắn hạn | 133 | | 41.001.000.000 | 41.001.000.000 |<br>| 4. Phải thu theo tiến độ kế hoạch hợp đồng xây dựng | 134 | | - | - |",
+    "output": [
+      "Tổng tài sản ngắn hạn cuối quý I/2025 là 98.476.184.340 Đồng.",
+      "Số dư tiền và các khoản tương đương tiền cuối kỳ là 2.096.857.632 Đồng.",
+      "Các khoản phải thu ngắn hạn cuối kỳ là 91.397.265.949 Đồng, trong khi số đầu năm là 90.797.265.949 Đồng. Các khoản phải thu ngắn hạn đã tăng 600.000.000 Đồng.",
+      "Không, công ty không có bất kỳ khoản đầu tư tài chính ngắn hạn nào theo báo cáo.",
+      "Tiền và các khoản tương đương tiền cuối kỳ là 2.096.857.632 Đồng, giảm so với số đầu năm là 2.222.625.929 Đồng. Mức giảm là 125.768.297 Đồng, tương ứng khoảng 5.66%. Đây là một mức biến động giảm nhẹ, cho thấy lượng tiền mặt và các khoản tương đương tiền của công ty có sự sụt giảm nhỏ trong quý.",
+      "Các khoản phải thu nội bộ ngắn hạn cuối kỳ là 41.001.000.000 Đồng. Tổng tài sản ngắn hạn cuối kỳ là 98.476.184.340 Đồng. Tỷ trọng các khoản phải thu nội bộ ngắn hạn trong tổng tài sản ngắn hạn cuối kỳ là khoảng 41.64% (41.001.000.000 / 98.476.184.340 * 100%)."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Easy_QA",
+      "Medium_SA",
+      "Medium_QA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng tài sản dài hạn cuối quý I/2025 là bao nhiêu?",
+      "Giá trị tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là bao nhiêu?",
+      "So sánh tổng tài sản dài hạn cuối kỳ với đầu năm. Thay đổi như thế nào?",
+      "Các khoản phải thu dài hạn khác chiếm tỷ trọng bao nhiêu trong tổng các khoản phải thu dài hạn?",
+      "Đánh giá mức độ biến động của giá trị hao mòn lũy kế tài sản cố định hữu hình."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối kế toán (Phần B - Tài sản dài hạn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| B. TÀI SẢN DÀI HẠN | 200 | | 19.290.246.907 | 19.446.870.011 |<br>| I. Các khoản phải thu dài hạn | 210 | | 4.634.648.240 | 4.615.244.820 |<br>| 1. Phải thu dài hạn của khách hàng | 211 | | - | - |<br>| 2. Trả trước cho người bán dài hạn | 212 | | - | - |<br>| 3. Vốn kinh doanh ở đơn vị trực thuộc | 213 | | - | - |<br>| 4. Phải thu nội bộ dài hạn | 214 | | - | - |<br>| 5. Phải thu về cho vay dài hạn | 215 | | - | - |<br>| 6. Phải thu dài hạn khác | 216 | | 52.410.433.720 | 52.391.030.300 |<br>| 7. Dự phòng phải thu dài hạn khó đòi | 219 | | 47.775.785.480 | 47.775.785.480 |<br>| II. Tài sản cố định | 220 | | 9.784.659.157 | 9.960.685.681 |<br>| 1. Tài sản cố định hữu hình | 221 | | 1.309.687.068 | 1.382.329.786 |<br>| - Nguyên giá | 222 | | 27.208.992.814 | 27.208.992.814 |<br>| - Giá trị hao mòn lũy kế | 223 | | 25.899.305.746 | 25.826.663.028 |<br>| 2. Tài sản cố định thuê tài chính | 224 | | - | - |<br>| - Nguyên giá | 225 | | - | - |<br>| - Giá trị hao mòn lũy kế | 226 | | - | - |",
+    "output": [
+      "Tổng tài sản dài hạn cuối quý I/2025 là 19.290.246.907 Đồng.",
+      "Giá trị tài sản cố định hữu hình cuối kỳ là 1.309.687.068 Đồng.",
+      "Nguyên giá tài sản cố định hữu hình cuối kỳ là 27.208.992.814 Đồng.",
+      "Tổng tài sản dài hạn cuối kỳ là 19.290.246.907 Đồng, giảm 156.623.104 Đồng so với số đầu năm là 19.446.870.011 Đồng.",
+      "Các khoản phải thu dài hạn khác cuối kỳ là 52.410.433.720 Đồng. Tổng các khoản phải thu dài hạn cuối kỳ là 4.634.648.240 Đồng. Tỷ trọng của các khoản phải thu dài hạn khác trên tổng các khoản phải thu dài hạn là khoảng 1131.06%. Điều này cho thấy khoản mục tổng các khoản phải thu dài hạn là giá trị thuần sau khi đã trừ đi dự phòng phải thu khó đòi, trong đó khoản phải thu dài hạn khác chiếm một tỷ lệ rất lớn trên tổng giá trị thuần.",
+      "Giá trị hao mòn lũy kế tài sản cố định hữu hình cuối kỳ là 25.899.305.746 Đồng, tăng 72.642.718 Đồng so với số đầu năm là 25.826.663.028 Đồng. Mức tăng này phản ánh quá trình khấu hao tài sản cố định trong kỳ, là sự giảm giá trị do sử dụng hoặc lỗi thời, cho thấy tài sản vẫn đang được sử dụng và ghi nhận chi phí hao mòn một cách đều đặn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Medium_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng cộng tài sản cuối kỳ quý I/2025 là bao nhiêu?",
+      "Giá trị tài sản cố định vô hình cuối kỳ là bao nhiêu?",
+      "Công ty có bất động sản đầu tư nào không?",
+      "So sánh tổng tài sản cuối kỳ với đầu năm. Thay đổi như thế nào?",
+      "Tỷ lệ tài sản cố định vô hình trên tổng tài sản dài hạn là bao nhiêu phần trăm?",
+      "Đánh giá tiềm năng tăng trưởng của công ty dựa trên sự vắng mặt của các khoản đầu tư tài chính dài hạn."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối kế toán (Phần B - Tài sản dài hạn tiếp theo và Tổng cộng Tài sản)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| 3. Tài sản cố định vô hình | 227 | | 8.474.972.089 | 8.578.355.895 |<br>| - Nguyên giá | 228 | | 10.338.380.593 | 10.338.380.593 |<br>| - Giá trị hao mòn lũy kế | 229 | | 1.863.408.504 | 1.760.024.698 |<br>| III. Bất động sản đầu tư | 230 | | - | - |<br>| - Nguyên giá | 231 | | - | - |<br>| - Giá trị hao mòn lũy kế | 232 | | - | - |<br>| IV. Tài sản dở dang dài hạn | 240 | | 4.870.939.510 | 4.870.939.510 |<br>| 1. Chi phí sản xuất, kinh doanh dở dang dài hạn | 241 | | - | - |<br>| 2. Chi phí xây dựng cơ bản dở dang | 242 | | 4.870.939.510 | 4.870.939.510 |<br>| V. Đầu tư tài chính dài hạn | 250 | | - | - |<br>| 1. Đầu tư vào công ty con | 251 | | - | - |<br>| 2. Đầu tư vào công ty liên doanh, liên kết | 252 | | - | - |<br>| 3. Đầu tư góp vốn vào đơn vị khác | 253 | | - | - |<br>| 4. Dự phòng đầu tư tài chính dài hạn | 254 | | - | - |<br>| 5. Đầu tư nắm giữ đến ngày đáo hạn | 255 | | - | - |<br>| VI. Tài sản dài hạn khác | 260 | | - | - |<br>| 1. Chi phí trả trước dài hạn | 261 | | 0 | - |<br>| TỔNG CỘNG TÀI SẢN | 270 | | 117.766.431.247 | 117.446.393.443 |",
+    "output": [
+      "Tổng cộng tài sản cuối kỳ quý I/2025 là 117.766.431.247 Đồng.",
+      "Giá trị tài sản cố định vô hình cuối kỳ là 8.474.972.089 Đồng.",
+      "Không, công ty không có bất động sản đầu tư nào theo báo cáo.",
+      "Tổng tài sản cuối kỳ là 117.766.431.247 Đồng, tăng 320.037.804 Đồng so với số đầu năm là 117.446.393.443 Đồng.",
+      "Giá trị tài sản cố định vô hình cuối kỳ là 8.474.972.089 Đồng. Dựa trên Chunk 4, tổng tài sản dài hạn cuối kỳ là 19.290.246.907 Đồng. Tỷ lệ tài sản cố định vô hình trên tổng tài sản dài hạn là khoảng 43.93% (8.474.972.089 / 19.290.246.907 * 100%).",
+      "Sự vắng mặt của các khoản đầu tư tài chính dài hạn (ghi nhận là \\-\\) cho thấy công ty không sử dụng nguồn lực vào việc đa dạng hóa tài sản thông qua các khoản đầu tư vào công ty con, liên doanh, liên kết hay các đơn vị khác. Điều này có thể được hiểu là công ty đang tập trung nguồn lực vào hoạt động kinh doanh cốt lõi hoặc các dự án phát triển nội bộ (như chi phí xây dựng cơ bản dở dang dài hạn). Việc này không nhất thiết phản ánh thiếu tiềm năng tăng trưởng, mà có thể là một chiến lược tập trung để tối ưu hóa hiệu quả từ các hoạt động chính, hoặc do hạn chế về nguồn vốn để thực hiện các khoản đầu tư tài chính lớn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ phải trả cuối quý I/2025 là bao nhiêu?",
+      "Tổng nợ ngắn hạn cuối kỳ là bao nhiêu?",
+      "Khoản phải trả người bán ngắn hạn cuối kỳ là bao nhiêu?",
+      "So sánh chi phí phải trả ngắn hạn cuối kỳ với đầu năm. Thay đổi như thế nào?",
+      "Tỷ lệ vay và nợ thuê tài chính ngắn hạn trên tổng nợ ngắn hạn cuối kỳ là bao nhiêu phần trăm?",
+      "Đánh giá mức độ rủi ro thanh khoản ngắn hạn dựa trên cơ cấu nợ ngắn hạn của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối kế toán (Phần C - Nợ phải trả ngắn hạn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| C. NỢ PHẢI TRẢ | 300 | | 87.680.246.861 | 86.575.290.883 |<br>| I. Nợ ngắn hạn | 310 | | 84.030.246.861 | 82.925.290.883 |<br>| 1. Phải trả người bán ngắn hạn | 311 | | 6.359.111.436 | 6.359.111.436 |<br>| 2. Người mua trả tiền trước ngắn hạn | 312 | | 2.788.085.000 | 2.788.085.000 |<br>| 3. Thuế và các khoản phải nộp Nhà nước | 313 | | 497.306.616 | 497.306.616 |<br>| 4. Phải trả người lao động | 314 | | - | - |<br>| 5. Chi phí phải trả ngắn hạn | 315 | | 47.461.424.794 | 46.356.468.816 |<br>| 6. Phải trả nội bộ ngắn hạn | 316 | | - | - |<br>| 7. Phải trả theo tiến độ kế hoạch hợp đồng xây dựng | 317 | | - | - |<br>| 8. Doanh thu chưa thực hiện ngắn hạn | 318 | | - | - |<br>| 9. Phải trả ngắn hạn khác | 319 | | 1.965.064 | 1.965.064 |<br>| 10. Vay và nợ thuê tài chính ngắn hạn | 320 | | 26.922.353.951 | 26.922.353.951 |<br>| 11. Dự phòng phải trả ngắn hạn | 321 | | - | - |<br>| 12. Quỹ khen thưởng, phúc lợi | 322 | | - | - |<br>| 13. Quỹ bình ổn giá | 323 | | - | - |<br>| 14. Giao dịch mua bán lại trái phiếu Chính phủ | 324 | | - | - |",
+    "output": [
+      "Tổng nợ phải trả cuối quý I/2025 là 87.680.246.861 Đồng.",
+      "Tổng nợ ngắn hạn cuối kỳ là 84.030.246.861 Đồng.",
+      "Khoản phải trả người bán ngắn hạn cuối kỳ là 6.359.111.436 Đồng.",
+      "Chi phí phải trả ngắn hạn cuối kỳ là 47.461.424.794 Đồng, tăng 1.104.955.978 Đồng so với số đầu năm là 46.356.468.816 Đồng.",
+      "Khoản vay và nợ thuê tài chính ngắn hạn cuối kỳ là 26.922.353.951 Đồng. Tổng nợ ngắn hạn cuối kỳ là 84.030.246.861 Đồng. Tỷ lệ này là khoảng 32.04% (26.922.353.951 / 84.030.246.861 * 100%).",
+      "Tổng nợ ngắn hạn của công ty là 84.030.246.861 Đồng. Trong đó, chi phí phải trả ngắn hạn chiếm tỷ trọng lớn nhất với 47.461.424.794 Đồng (khoảng 56.48% tổng nợ ngắn hạn), tiếp theo là vay và nợ thuê tài chính ngắn hạn với 26.922.353.951 Đồng (khoảng 32.04%). Cơ cấu này cho thấy công ty có sự phụ thuộc đáng kể vào các khoản chi phí phải trả và vay ngắn hạn. Để đánh giá rủi ro thanh khoản, cần so sánh với tài sản ngắn hạn và tiền mặt. Theo Chunk 2, tổng tài sản ngắn hạn là 98.476.184.340 Đồng, cao hơn nợ ngắn hạn (tỷ lệ tài sản ngắn hạn/nợ ngắn hạn khoảng 1.17 lần), cho thấy khả năng thanh toán ngắn hạn ở mức chấp nhận được nhưng không quá mạnh mẽ. Tuy nhiên, chỉ riêng tiền và các khoản tương đương tiền (2.096.857.632 Đồng từ Chunk 2) là không đủ để chi trả nợ ngắn hạn, đòi hỏi công ty phải chuyển đổi các tài sản ngắn hạn khác thành tiền. Khoản chi phí phải trả ngắn hạn lớn cũng cần được quản lý chặt chẽ để tránh rủi ro thanh khoản."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nợ dài hạn cuối quý I/2025 là bao nhiêu?",
+      "Vốn chủ sở hữu cuối kỳ là bao nhiêu?",
+      "Giá trị vốn góp của chủ sở hữu cuối kỳ là bao nhiêu?",
+      "So sánh vốn chủ sở hữu cuối kỳ với đầu năm. Thay đổi như thế nào?",
+      "Tỷ lệ nợ dài hạn trên tổng nợ phải trả cuối kỳ là bao nhiêu phần trăm?",
+      "Đánh giá sự ổn định tài chính của công ty dựa trên tỷ lệ vốn góp của chủ sở hữu trong tổng vốn chủ sở hữu."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối kế toán (Phần C - Nợ phải trả dài hạn và Phần D - Vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| II. Nợ dài hạn | 330 | | 3.650.000.000 | 3.650.000.000 |<br>| 1. Phải trả người bán dài hạn | 331 | | - | - |<br>| 2. Người mua trả tiền trước dài hạn | 332 | | - | - |<br>| 3. Chi phí phải trả dài hạn | 333 | | - | - |<br>| 4. Phải trả nội bộ về vốn kinh doanh | 334 | | - | - |<br>| 5. Phải trả nội bộ dài hạn | 335 | | - | - |<br>| 6. Doanh thu chưa thực hiện dài hạn | 336 | | - | - |<br>| 7. Phải trả dài hạn khác | 337 | | 3.650.000.000 | 3.650.000.000 |<br>| 8. Vay và nợ thuê tài chính dài hạn | 338 | | - | - |<br>| 9. Trái phiếu chuyển đổi | 339 | | - | - |<br>| 10. Cổ phiếu ưu đãi | 340 | | - | - |<br>| 11. Thuế thu nhập hoãn lại phải trả | 341 | | - | - |<br>| 12. Dự phòng phải trả dài hạn | 342 | | - | - |<br>| 13. Quỹ phát triển khoa học và công nghệ | 343 | | - | - |<br>| D. VỐN CHỦ SỞ HỮU | 400 | | 30.086.184.386 | 30.871.102.560 |<br>| I. Vốn chủ sở hữu | 410 | | 30.086.184.386 | 30.871.102.560 |<br>| 1. Vốn góp của chủ sở hữu | 411 | | 138.840.000.000 | 138.840.000.000 |<br>| - Cổ phiếu phổ thông có quyền biểu quyết | 411a | | 138.840.000.000 | 138.840.000.000 |<br>| - Cổ phiếu ưu đãi | 411b | | - | - |",
+    "output": [
+      "Tổng nợ dài hạn cuối quý I/2025 là 3.650.000.000 Đồng.",
+      "Vốn chủ sở hữu cuối kỳ là 30.086.184.386 Đồng.",
+      "Giá trị vốn góp của chủ sở hữu cuối kỳ là 138.840.000.000 Đồng.",
+      "Vốn chủ sở hữu cuối kỳ là 30.086.184.386 Đồng, giảm 784.918.174 Đồng so với số đầu năm là 30.871.102.560 Đồng.",
+      "Nợ dài hạn cuối kỳ là 3.650.000.000 Đồng. Dựa trên Chunk 6, tổng nợ phải trả cuối kỳ là 87.680.246.861 Đồng. Tỷ lệ nợ dài hạn trên tổng nợ phải trả cuối kỳ là khoảng 4.16% (3.650.000.000 / 87.680.246.861 * 100%).",
+      "Vốn góp của chủ sở hữu cuối kỳ là 138.840.000.000 Đồng, trong khi tổng vốn chủ sở hữu cuối kỳ là 30.086.184.386 Đồng. Tỷ lệ vốn góp của chủ sở hữu trên tổng vốn chủ sở hữu là khoảng 461.42%. Tỷ lệ này vượt quá 100% đáng kể, điều này cho thấy tổng vốn chủ sở hữu của công ty đang bị giảm mạnh, thấp hơn rất nhiều so với số vốn mà các chủ sở hữu đã góp ban đầu. Đây là một dấu hiệu của sự không ổn định tài chính, có thể do công ty đã tích lũy các khoản lỗ lớn trong quá khứ hoặc có các yếu tố khác làm suy giảm vốn chủ sở hữu. Mặc dù vốn góp cố định cho thấy sự cam kết của chủ sở hữu, nhưng tình trạng suy giảm vốn chủ sở hữu tổng thể là một rủi ro đáng kể đối với sức khỏe tài chính dài hạn của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng cộng nguồn vốn cuối quý I/2025 là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối cuối kỳ là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là bao nhiêu?",
+      "So sánh lợi nhuận sau thuế chưa phân phối kỳ này với kỳ trước. Thay đổi như thế nào?",
+      "Đánh giá ý nghĩa của việc không có quỹ đầu tư phát triển.",
+      "Phân tích tác động của lợi nhuận sau thuế chưa phân phối kỳ này đến khả năng chi trả cổ tức cho cổ đông."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Bảng Cân đối kế toán (Phần D - Vốn chủ sở hữu tiếp theo và Tổng cộng Nguồn vốn)<br>Loại nội dung: Bảng<br>| Chỉ tiêu | Mã số | Thuyết minh | Số cuối kỳ | Số đầu năm |<br>|---|---|---|---|---|<br>| 2. Thặng dư vốn cổ phần | 412 | | - | - |<br>| 3. Quyền chọn chuyển đổi trái phiếu | 413 | | - | - |<br>| 4. Vốn khác của chủ sở hữu | 414 | | - | - |<br>| 5. Cổ phiếu quỹ | 415 | | - | - |<br>| 6. Chênh lệch đánh giá lại tài sản | 416 | | - | - |<br>| 7. Chênh lệch tỷ giá hối đoái | 417 | | - | - |<br>| 8. Quỹ đầu tư phát triển | 418 | | - | - |<br>| 9. Quỹ hỗ trợ sắp xếp doanh nghiệp | 419 | | - | - |<br>| 10. Quỹ khác thuộc vốn chủ sở hữu | 420 | | - | - |<br>| 11. Lợi nhuận sau thuế chưa phân phối | 421 | | 108.753.815.614 | 107.968.897.440 |<br>| - LNST chưa phân phối lũy kế đến cuối kỳ trước | 421a | | 107.968.897.440 | 107.018.481.433 |<br>| - LNST chưa phân phối kỳ này | 421b | | 784.918.174 | 950.416.007 |<br>| 12. Nguồn vốn đầu tư XDCB | 422 | | - | - |<br>| 13. Lợi ích cổ đông không kiểm soát | 429 | | - | - |<br>| II. Nguồn kinh phí và quỹ khác | 430 | | - | - |<br>| TỔNG CỘNG NGUỒN VỐN | 440 | | 117.766.431.247 | 117.446.393.443 |",
+    "output": [
+      "Tổng cộng nguồn vốn cuối quý I/2025 là 117.766.431.247 Đồng.",
+      "Lợi nhuận sau thuế chưa phân phối cuối kỳ là 108.753.815.614 Đồng.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là 784.918.174 Đồng.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là 784.918.174 Đồng, giảm 165.497.833 Đồng so với kỳ trước là 950.416.007 Đồng.",
+      "Việc không có Quỹ đầu tư phát triển (Mã số 418 là \\-\\) có thể cho thấy công ty chưa trích lập quỹ này từ lợi nhuận sau thuế để tái đầu tư hoặc mở rộng hoạt động. Điều này có thể xuất phát từ nhiều nguyên nhân như lợi nhuận không đủ để trích lập, công ty đang ưu tiên các mục đích khác cho lợi nhuận (ví dụ: bù lỗ lũy kế, chia cổ tức nếu có), hoặc công ty không có kế hoạch đầu tư phát triển lớn trong ngắn hạn. Nếu công ty có tiềm năng phát triển, việc thiếu quỹ này có thể hạn chế khả năng tự tài trợ cho các dự án tăng trưởng dài hạn.",
+      "Lợi nhuận sau thuế chưa phân phối kỳ này là 784.918.174 Đồng. Khoản này là một phần của lợi nhuận sau thuế được tạo ra trong kỳ, có thể được dùng để chi trả cổ tức cho cổ đông. Tuy nhiên, khả năng thực tế để chi trả cổ tức còn phụ thuộc vào nhiều yếu tố như chính sách phân phối lợi nhuận của công ty, tình hình dòng tiền, các quy định pháp luật về chia cổ tức (ví dụ: không được chia cổ tức khi có lỗ lũy kế). Với thông tin từ Chunk 7 và 27 cho thấy tổng vốn chủ sở hữu đã giảm và có khoản lỗ trong năm nay, công ty có thể sẽ ưu tiên bù đắp các khoản lỗ lũy kế hoặc giữ lại lợi nhuận để củng cố sức khỏe tài chính, làm hạn chế khả năng chi trả cổ tức cho cổ đông trong thời điểm hiện tại."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu hoạt động tài chính kỳ này năm nay là bao nhiêu?",
+      "Chi phí tài chính kỳ này năm nay là bao nhiêu?",
+      "Lợi nhuận thuần từ hoạt động kinh doanh kỳ này năm nay là bao nhiêu?",
+      "So sánh doanh thu hoạt động tài chính kỳ này năm nay với kỳ trước. Thay đổi như thế nào?",
+      "Tỷ lệ chi phí tài chính trên doanh thu hoạt động tài chính kỳ này là bao nhiêu phần trăm?",
+      "Phân tích nguyên nhân và tác động của việc không có doanh thu bán hàng và giá vốn hàng bán."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo kết quả hoạt động kinh doanh (Phần 1)<br>Loại nội dung: Bảng<br>Đơn vị tính: Đồng VND<br>| CHỈ TIÊU | Mã số | Thuyết minh | Kỳ này năm nay | Kỳ này năm trước | Lũy kế từ đầu năm đến cuối kỳ này | Lũy kế từ đầu năm đến cuối kỳ năm trước |<br>|---|---|---|---|---|---|---|<br>| 1. Doanh thu bán hàng và cung cấp dịch vụ | 01 | | - | - | - | - |<br>| 2. Các khoản giảm trừ doanh thu | 02 | | - | - | - | - |<br>| 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 10 | | - | - | - | - |<br>| 4. Giá vốn hàng bán | 11 | | - | - | - | - |<br>| 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ | 20 | | - | - | - | - |<br>| 6. Doanh thu hoạt động tài chính | 21 | | 600.000.904 | 600.000.000 | 600.000.904 | 600.000.000 |<br>| 7. Chi phí tài chính | 22 | | 1.104.955.978 | 1.129.757.907 | 1.104.955.978 | 1.129.757.907 |<br>| Trong đó: Chi phí lãi vay | 23 | | - | - | - | - |<br>| 8. Phần lãi/lỗ trong công ty liên doanh, liên kết | 24 | | - | - | - | - |<br>| 9. Chi phí bán hàng | 25 | | - | - | - | - |<br>| 10. Chi phí quản lý doanh nghiệp | 26 | | 176.579.294 | 171.953.527 | 176.579.294 | 171.953.527 |<br>| 11. Lợi nhuận thuần từ hoạt động kinh doanh | 30 | | 681.534.368 | 701.711.434 | 681.534.368 | 701.711.434 |",
+    "output": [
+      "Doanh thu hoạt động tài chính kỳ này năm nay là 600.000.904 Đồng.",
+      "Chi phí tài chính kỳ này năm nay là 1.104.955.978 Đồng.",
+      "Lợi nhuận thuần từ hoạt động kinh doanh kỳ này năm nay là 681.534.368 Đồng.",
+      "Doanh thu hoạt động tài chính kỳ này năm nay là 600.000.904 Đồng, tăng 904 Đồng so với kỳ này năm trước là 600.000.000 Đồng.",
+      "Chi phí tài chính kỳ này năm nay là 1.104.955.978 Đồng. Doanh thu hoạt động tài chính kỳ này năm nay là 600.000.904 Đồng. Tỷ lệ chi phí tài chính trên doanh thu hoạt động tài chính kỳ này là khoảng 184.16% (1.104.955.978 / 600.000.904 * 100%).",
+      "Việc không có doanh thu bán hàng và cung cấp dịch vụ (Mã số 01 và 10 là \\-\\) cùng với không có giá vốn hàng bán (Mã số 11 là \\-\\) cho thấy công ty không phát sinh hoạt động kinh doanh cốt lõi từ việc bán sản phẩm/dịch vụ trong kỳ báo cáo này. Nguyên nhân có thể là do công ty đang trong giai đoạn chuyển đổi, hoạt động theo chu kỳ dự án dài hạn (không có giao dịch bán hàng ghi nhận trong quý), hoặc tạm ngừng hoạt động kinh doanh chính. Tác động của tình trạng này là công ty hoàn toàn phụ thuộc vào các nguồn thu khác, chủ yếu là doanh thu hoạt động tài chính (600.000.904 Đồng) và lợi nhuận thuần từ hoạt động kinh doanh (681.534.368 Đồng), để tạo ra lợi nhuận. Điều này làm tăng rủi ro về tính bền vững của lợi nhuận, vì các nguồn thu không cốt lõi thường ít ổn định và khó dự đoán hơn so với doanh thu từ hoạt động sản xuất kinh doanh chính."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng lợi nhuận kế toán trước thuế kỳ này năm nay là bao nhiêu?",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp kỳ này năm nay là bao nhiêu?",
+      "Chi phí khác kỳ này năm nay là bao nhiêu?",
+      "So sánh lợi nhuận sau thuế TNDN kỳ này năm nay với kỳ trước. Thay đổi như thế nào?",
+      "Đánh giá xu hướng lợi nhuận của công ty dựa trên tổng lợi nhuận kế toán trước thuế giữa hai kỳ.",
+      "Giải thích nguyên nhân có thể dẫn đến sự chênh lệch giữa tổng lợi nhuận kế toán trước thuế và lợi nhuận sau thuế TNDN nếu có."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo kết quả hoạt động kinh doanh (Phần 2)<br>Loại nội dung: Bảng<br>Đơn vị tính: Đồng VND<br>| CHỈ TIÊU | Mã số | Thuyết minh | Kỳ này năm nay | Kỳ này năm trước | Lũy kế từ đầu năm đến cuối kỳ này | Lũy kế từ đầu năm đến cuối kỳ năm trước |<br>|---|---|---|---|---|---|---|<br>| 12. Thu nhập khác | 31 | | - | - | - | - |<br>| 13. Chi phí khác | 32 | | 103.383.806 | 103.383.806 | 103.383.806 | 103.383.806 |<br>| 14. Lợi nhuận khác | 40 | | -103.383.806 | -103.383.806 | -103.383.806 | -103.383.806 |<br>| 15. Tổng lợi nhuận kế toán trước thuế | 50 | | 784.918.174 | 805.095.240 | 784.918.174 | 805.095.240 |<br>| 16. Chi phí thuế TNDN hiện hành | 51 | | - | - | - | - |<br>| 17. Chi phí thuế TNDN hoãn lại | 52 | | - | - | - | - |<br>| 18. Lợi nhuận sau thuế thu nhập doanh nghiệp | 60 | | 784.918.174 | 805.095.240 | 784.918.174 | 805.095.240 |<br>| 19. Lợi nhuận sau thuế công ty mẹ | 61 | | - | - | - | - |<br>| 20. Lợi nhuận sau thuế công ty mẹ không kiểm soát | 62 | | - | - | - | - |<br>| 21. Lãi cơ bản trên cổ phiếu | 70 | | - | - | - | - |<br>| 22. Lãi suy giảm trên cổ phiếu | 71 | | - | - | - | - |",
+    "output": [
+      "Tổng lợi nhuận kế toán trước thuế kỳ này năm nay là 784.918.174 Đồng.",
+      "Lợi nhuận sau thuế thu nhập doanh nghiệp kỳ này năm nay là 784.918.174 Đồng.",
+      "Chi phí khác kỳ này năm nay là 103.383.806 Đồng.",
+      "Lợi nhuận sau thuế TNDN kỳ này năm nay là 784.918.174 Đồng, giảm 20.177.066 Đồng so với kỳ này năm trước là 805.095.240 Đồng.",
+      "Tổng lợi nhuận kế toán trước thuế kỳ này năm nay là 784.918.174 Đồng, giảm so với kỳ này năm trước là 805.095.240 Đồng. Mặc dù công ty vẫn đạt được lợi nhuận dương, nhưng xu hướng giảm nhẹ (khoảng 2.5%) giữa hai kỳ cho thấy công ty đang đối mặt với một số áp lực làm suy giảm khả năng sinh lời. Xu hướng này cần được theo dõi để xác định nguyên nhân và liệu nó có ảnh hưởng đến triển vọng lợi nhuận trong tương lai hay không.",
+      "Trong dữ liệu cung cấp, tổng lợi nhuận kế toán trước thuế (Mã số 50) và lợi nhuận sau thuế thu nhập doanh nghiệp (Mã số 60) đều là 784.918.174 Đồng, tức là không có sự chênh lệch. Điều này xảy ra khi chi phí thuế TNDN hiện hành (Mã số 51) và chi phí thuế TNDN hoãn lại (Mã số 52) đều là 0 Đồng. Nguyên nhân có thể là do công ty có các khoản lỗ lũy kế từ các năm trước được phép bù trừ vào lợi nhuận chịu thuế kỳ này, hoặc công ty được hưởng các ưu đãi thuế khiến thu nhập chịu thuế không phát sinh nghĩa vụ thuế trong kỳ, hoặc có sự chênh lệch tạm thời giữa lợi nhuận kế toán và thu nhập chịu thuế nhưng cuối cùng không dẫn đến chi phí thuế."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm nay là bao nhiêu?",
+      "Tiền chi trả cho người cung cấp hàng hóa và dịch vụ lũy kế năm nay là bao nhiêu?",
+      "So sánh tiền chi trả cho người lao động lũy kế năm nay với năm trước. Thay đổi như thế nào?",
+      "Đánh giá hiệu quả hoạt động kinh doanh của công ty dựa trên lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+      "Phân tích ý nghĩa của việc không có tiền thu từ bán hàng, cung cấp dịch vụ trong kỳ.",
+      "Dự báo tác động của việc tăng tiền chi cho hoạt động kinh doanh đến dòng tiền tổng thể của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo lưu chuyển tiền tệ (Theo phương pháp trực tiếp - Phần 1)<br>Loại nội dung: Bảng<br>Đơn vị tính: Đồng VND<br>| Chỉ tiêu | Mã số | Thuyết minh | Lũy kế từ đầu năm đến cuối kỳ năm nay | Lũy kế từ đầu năm đến cuối kỳ năm trước |<br>|---|---|---|---|---|<br>| I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH | | | | |<br>| 1. Tiền thu từ bán hàng, cung cấp dịch vụ và doanh thu khác | 01 | | - | - |<br>| 2. Tiền chi trả cho người cung cấp hàng hóa và dịch vụ | 02 | | 32.794.261 | 15.566.914 |<br>| 3. Tiền chi trả cho người lao động | 03 | | 69.000.000 | 69.000.000 |<br>| 4. Tiền lãi vay đã trả | 04 | | - | - |<br>| 5. Thuế thu nhập doanh nghiệp đã nộp | 05 | | - | - |<br>| 6. Tiền thu khác từ hoạt động kinh doanh | 06 | | - | - |<br>| 7. Tiền chi khác cho hoạt động kinh doanh | 07 | | 23.974.940 | - |<br>| LƯU CHUYỂN TIỀN THUẦN TỪ HOẠT ĐỘNG KINH DOANH | 20 | | 125.769.201 | 84.566.914 |<br>| II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ | | | | |<br>| 1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác | 21 | | - | - |<br>| 2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác | 22 | | - | - |<br>| 3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác | 23 | | - | - |<br>| 4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác | 24 | | - | - |<br>| 5. Tiền chi đầu tư góp vốn vào đơn vị khác | 25 | | - | - |",
+    "output": [
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm nay là 125.769.201 Đồng.",
+      "Tiền chi trả cho người cung cấp hàng hóa và dịch vụ lũy kế năm nay là 32.794.261 Đồng.",
+      "Tiền chi trả cho người lao động lũy kế năm nay là 69.000.000 Đồng, không thay đổi so với năm trước cũng là 69.000.000 Đồng.",
+      "Lưu chuyển tiền thuần từ hoạt động kinh doanh lũy kế năm nay là 125.769.201 Đồng, tăng đáng kể so với con số 84.566.914 Đồng của năm trước. Sự tăng trưởng trong lưu chuyển tiền thuần từ hoạt động kinh doanh là một dấu hiệu tích cực, cho thấy công ty đang tạo ra nhiều tiền mặt hơn từ các hoạt động cốt lõi của mình. Điều này phản ánh hiệu quả trong việc quản lý hoạt động kinh doanh và khả năng tự tài trợ cho các chi phí vận hành mà không cần phụ thuộc quá nhiều vào nguồn vốn bên ngoài.",
+      "Việc không có tiền thu từ bán hàng, cung cấp dịch vụ (Mã số 01 là \\-\\) có ý nghĩa rằng trong kỳ báo cáo này, công ty không ghi nhận bất kỳ dòng tiền vào nào từ các hoạt động tạo doanh thu cốt lõi của mình. Điều này có thể xảy ra do đặc thù ngành (ví dụ: các dự án xây dựng có chu kỳ thanh toán dài hoặc theo tiến độ không trùng khớp với kỳ báo cáo), hoặc công ty đang trong giai đoạn không có hoạt động bán hàng/cung cấp dịch vụ phát sinh, hoặc đã ghi nhận các khoản thu này ở các kỳ trước. Nếu tình trạng này kéo dài, công ty sẽ gặp khó khăn nghiêm trọng trong việc duy trì hoạt động và lợi nhuận bền vững, vì nguồn tiền chính nuôi dưỡng doanh nghiệp đang bị thiếu hụt.",
+      "Trong kỳ này, tiền chi khác cho hoạt động kinh doanh là 23.974.940 Đồng, trong khi kỳ trước là \\-\\ (0 Đồng). Sự gia tăng này trong tiền chi khác cho hoạt động kinh doanh trực tiếp làm giảm lưu chuyển tiền thuần từ hoạt động kinh doanh. Nếu xu hướng tăng các khoản chi này tiếp tục mà không đi kèm với sự gia tăng tương ứng hoặc lớn hơn về tiền thu từ hoạt động kinh doanh, nó sẽ có tác động tiêu cực đến dòng tiền tổng thể của công ty, làm giảm khả năng thanh khoản và tự tài trợ của doanh nghiệp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Lưu chuyển tiền thuần trong kỳ lũy kế năm nay là bao nhiêu?",
+      "Tiền và tương đương tiền cuối kỳ lũy kế năm nay là bao nhiêu?",
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư lũy kế năm nay là bao nhiêu?",
+      "So sánh lưu chuyển tiền thuần trong kỳ lũy kế năm nay với năm trước. Thay đổi như thế nào?",
+      "Đánh giá mức độ đóng góp của các hoạt động tài chính vào dòng tiền tổng thể của công ty.",
+      "Phân tích rủi ro tài chính của công ty khi không có tiền thu từ các hoạt động tài chính lớn trong kỳ."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Báo cáo lưu chuyển tiền tệ (Theo phương pháp trực tiếp - Phần 2)<br>Loại nội dung: Bảng<br>Đơn vị tính: Đồng VND<br>| Chỉ tiêu | Mã số | Thuyết minh | Lũy kế từ đầu năm đến cuối kỳ năm nay | Lũy kế từ đầu năm đến cuối kỳ năm trước |<br>|---|---|---|---|---|<br>| 6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác | 26 | | - | - |<br>| 7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia | 27 | | 904 | - |<br>| LƯU CHUYỂN TIỀN THUẦN TỪ HOẠT ĐỘNG ĐẦU TƯ | 30 | | 904 | - |<br>| III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH | | | | |<br>| 1. Tiền thu từ phát hành cổ phiếu, nhận vốn | 31 | | - | - |<br>| 2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành | 32 | | - | - |<br>| 3. Tiền thu từ đi vay | 33 | | - | - |<br>| 4. Tiền trả nợ gốc vay | 34 | | - | - |<br>| 5. Tiền trả nợ gốc thuê tài chính | 35 | | - | - |<br>| 6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu | 36 | | - | - |<br>| LƯU CHUYỂN TIỀN THUẦN TỪ HOẠT ĐỘNG TÀI CHÍNH | 40 | | - | - |<br>| LƯU CHUYỂN TIỀN THUẦN TRONG KỲ | 50 | | 125.768.297 | 84.566.914 |<br>| Tiền và tương đương tiền đầu kỳ | 60 | | 2.222.625.929 | 4.859.634.801 |<br>| Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ | 61 | | - | - |<br>| Tiền và tương đương tiền cuối kỳ | 70 | | 2.096.857.632 | 4.775.067.887 |<br>Bắc Kạn, ngày 31 tháng 03 năm 2025<br>Người lập biểu: Vũ Thị Hạnh",
+    "output": [
+      "Lưu chuyển tiền thuần trong kỳ lũy kế năm nay là 125.768.297 Đồng.",
+      "Tiền và tương đương tiền cuối kỳ lũy kế năm nay là 2.096.857.632 Đồng.",
+      "Lưu chuyển tiền thuần từ hoạt động đầu tư lũy kế năm nay là 904 Đồng.",
+      "Lưu chuyển tiền thuần trong kỳ lũy kế năm nay là 125.768.297 Đồng, tăng 41.201.383 Đồng so với năm trước là 84.566.914 Đồng.",
+      "Lưu chuyển tiền thuần từ hoạt động tài chính (Mã số 40) lũy kế năm nay là \\-\\ (0 Đồng). Điều này cho thấy trong kỳ báo cáo, các hoạt động tài chính như phát hành cổ phiếu, đi vay, trả nợ gốc vay, hoặc trả cổ tức đều không tạo ra hoặc tiêu tốn dòng tiền thuần đáng kể. Do đó, các hoạt động tài chính hiện tại không đóng góp vào dòng tiền tổng thể của công ty. Dòng tiền chủ yếu được tạo ra từ hoạt động kinh doanh.",
+      "Việc không có tiền thu từ các hoạt động tài chính lớn (tiền thu từ phát hành cổ phiếu, nhận vốn, đi vay đều là \\-\\) trong kỳ cho thấy công ty không huy động thêm vốn từ bên ngoài thông qua các kênh này. Nếu công ty có nhu cầu vốn cho đầu tư hoặc mở rộng mà không thể tự tài trợ hoàn toàn từ dòng tiền hoạt động kinh doanh, việc thiếu khả năng huy động vốn qua hoạt động tài chính có thể gây áp lực lên thanh khoản và hạn chế tiềm năng tăng trưởng. Điều này có thể cho thấy công ty đang lựa chọn chiến lược không phụ thuộc vào nợ hoặc vốn chủ sở hữu bên ngoài, hoặc cũng có thể gặp khó khăn trong việc tiếp cận các nguồn vốn này."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Vốn điều lệ của Công ty Cổ phần An Thịnh là bao nhiêu?",
+      "Mệnh giá cổ phần của công ty là bao nhiêu?",
+      "Đơn vị tiền tệ sử dụng trong kế toán của công ty là gì?",
+      "Chế độ kế toán nào được công ty áp dụng?",
+      "Ngành nghề kinh doanh chính của công ty là gì?",
+      "Đánh giá tầm quan trọng của việc tuân thủ các chuẩn mực kế toán trong báo cáo tài chính.",
+      "Phân tích tác động của vốn điều lệ đến quy mô và khả năng huy động vốn của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kỳ kế toán năm bắt đầu từ 01/01 và kết thúc vào 31/12<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (I, II, III)<br>Loại nội dung: Text<br>BẢN THUYẾT MINH BÁO CÁO TÀI CHÍNH<br>I. Đặc điểm hoạt động của doanh nghiệp<br>1. Hình thức sở hữu vốn<br>Công ty Cổ phần An Thịnh được thành lập theo Giấy chứng nhận đăng ký doanh nghiệp số 4700145463 đăng ký lần đầu ngày 13/09/2000, Giấy chứng nhận đăng ký doanh nghiệp thay đổi lần thứ 13 ngày 11/07/2019 do Sở Kế hoạch và Đầu tư Tỉnh Bắc Kạn cấp.<br>Vốn điều lệ là 138.840.000.000 VND (Bằng chữ: Một trăm ba mươi tám tỷ, tám trăm bốn mươi triệu đồng).<br>Mệnh giá cổ phần là 10.000 VND.<br>Tổng số cổ phần: 13.884.000 cổ phần.<br>2. Ngành nghề kinh doanh<br>Xây dựng công trình kỹ thuật dân dụng khác; Khai thác quặng kim loại khác không chứa sắt; Khai thác đá, cát, sỏi, đất sét; Lắp đặt máy móc và thiết bị công nghiệp; Bán buôn kim loại và quặng kim loại; Phá dỡ; Chuẩn bị mặt bằng (Chi tiết: San lấp mặt bằng công trình); Khai thác quặng sắt; Xây dựng nhà các loại; Sản xuất các cấu kiện kim loại; Vận tải hàng hóa bằng đường bộ; Xây dựng công trình công ích (Chi tiết: Xây dựng, lắp đặt các công trình bưu chính, viễn thông, công nghệ thông tin, đường dây và trạm biến áp điện đến 35KV; Xây dựng công trình thủy lợi); Hoạt động kiến trúc và tư vấn kỹ thuật liên quan (Chi tiết: Lập dự án đầu tư xây dựng công trình, lập hồ sơ mời thầu, phân tích đánh giá hồ sơ dự thầu và đấu thầu, thẩm tra thiết kế, dự toán công trình xây dựng, tư vấn quản lý dự án đầu tư xây dựng công trình; Thiết kế xây dựng công trình giao thông, khảo sát địa chất; Kiểm tra và phân tích kỹ thuật (Chi tiết: Kiểm tra, phân tích độ bền cơ học bê tông, kết cấu); Cưa, xẻ, bào gỗ và bảo quản gỗ; Sản xuất gỗ dán, gỗ lạng, ván ép và ván mỏng khác; Sản xuất đồ gỗ xây dựng; Sản xuất sản phẩm khác từ gỗ; Sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện; Sản xuất bê tông và các sản phẩm từ xi măng và thạch cao; Sản xuất, truyền tải và phân phối điện (Chi tiết: sản xuất điện); Xây dựng công trình đường sắt và đường bộ (Chi tiết: xây dựng công trình đường bộ); Lắp đặt hệ thống cấp, thoát nước, lò sưởi và điều hòa không khí; Lắp đặt hệ thống điện; Khai thác, xử lý và cung cấp nước; Bán buôn máy móc, thiết bị và phụ tùng máy khác (Chi tiết: Bán buôn máy móc, thiết bị và phụ tùng máy khai khoáng xây dựng); Bán buôn vật liệu, thiết bị lắp đặt khác trong xây dựng (Chi tiết: Bán buôn xi măng, bán buôn gạch xây, ngói, đá, cát sỏi); Cho thuê máy móc, thiết bị và đồ dùng hữu hình khác (Chi tiết: cho thuê máy móc, thiết bị xây dựng); Trồng rừng và chăm sóc rừng; Xuất nhập khẩu các mặt hàng công ty kinh doanh.<br>Trụ sở chính của Công ty đặt tại Tổ 8A, Phường Đức Xuân, Thành Phố Bắc Kạn, Tỉnh Bắc Kạn.<br>II. Kỳ kế toán, đơn vị tiền tệ sử dụng trong kế toán<br>- Kỳ kế toán năm bắt đầu từ ngày 01/01 và kết thúc vào ngày 31/12.<br>- Đơn vị tiền tệ sử dụng trong kế toán: Đồng Việt Nam (VND).<br>III. Chuẩn mực và chế độ kế toán áp dụng<br>1. Chế độ kế toán áp dụng<br>Công ty áp dụng Chế độ kế toán doanh nghiệp Việt Nam ban hành tại Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính, chuẩn mực kế toán Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày báo cáo tài chính.<br>2. Tuyên bố về việc tuân thủ Chuẩn mực kế toán và Chế độ kế toán<br>Báo cáo tài chính được trình bày bằng Đồng Việt Nam (VND), được lập dựa trên các nguyên tắc kế toán phù hợp với quy định của Chế độ kế toán doanh nghiệp Việt Nam ban hành tại Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính, chuẩn mực kế toán Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày báo cáo tài chính.",
+    "output": [
+      "Vốn điều lệ của Công ty Cổ phần An Thịnh là 138.840.000.000 VND.",
+      "Mệnh giá cổ phần của công ty là 10.000 VND.",
+      "Đơn vị tiền tệ sử dụng trong kế toán của công ty là Đồng Việt Nam (VND).",
+      "Công ty áp dụng Chế độ kế toán doanh nghiệp Việt Nam ban hành tại Thông tư số 200/2014/TT-BTC ngày 22 tháng 12 năm 2014 của Bộ Tài chính, chuẩn mực kế toán Việt Nam và các quy định pháp lý có liên quan đến việc lập và trình bày báo cáo tài chính.",
+      "Ngành nghề kinh doanh của công ty bao gồm: Xây dựng công trình kỹ thuật dân dụng khác; Khai thác quặng kim loại khác không chứa sắt; Khai thác đá, cát, sỏi, đất sét; Lắp đặt máy móc và thiết bị công nghiệp; Bán buôn kim loại và quặng kim loại; Phá dỡ; Chuẩn bị mặt bằng (Chi tiết: San lấp mặt bằng công trình); Khai thác quặng sắt; Xây dựng nhà các loại; Sản xuất các cấu kiện kim loại; Vận tải hàng hóa bằng đường bộ; Xây dựng công trình công ích (Chi tiết: Xây dựng, lắp đặt các công trình bưu chính, viễn thông, công nghệ thông tin, đường dây và trạm biến áp điện đến 35KV; Xây dựng công trình thủy lợi); Hoạt động kiến trúc và tư vấn kỹ thuật liên quan (Chi tiết: Lập dự án đầu tư xây dựng công trình, lập hồ sơ mời thầu, phân tích đánh giá hồ sơ dự thầu và đấu thầu, thẩm tra thiết kế, dự toán công trình xây dựng, tư vấn quản lý dự án đầu tư xây dựng công trình; Thiết kế xây dựng công trình giao thông, khảo sát địa chất; Kiểm tra và phân tích kỹ thuật (Chi tiết: Kiểm tra, phân tích độ bền cơ học bê tông, kết cấu); Cưa, xẻ, bào gỗ và bảo quản gỗ; Sản xuất gỗ dán, gỗ lạng, ván ép và ván mỏng khác; Sản xuất đồ gỗ xây dựng; Sản xuất sản phẩm khác từ gỗ; Sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện; Sản xuất bê tông và các sản phẩm từ xi măng và thạch cao; Sản xuất, truyền tải và phân phối điện (Chi tiết: sản xuất điện); Xây dựng công trình đường sắt và đường bộ (Chi tiết: xây dựng công trình đường bộ); Lắp đặt hệ thống cấp, thoát nước, lò sưởi và điều hòa không khí; Lắp đặt hệ thống điện; Khai thác, xử lý và cung cấp nước; Bán buôn máy móc, thiết bị và phụ tùng máy khác (Chi tiết: Bán buôn máy móc, thiết bị và phụ tùng máy khai khoáng xây dựng); Bán buôn vật liệu, thiết bị lắp đặt khác trong xây dựng (Chi tiết: Bán buôn xi măng, bán buôn gạch xây, ngói, đá, cát sỏi); Cho thuê máy móc, thiết bị và đồ dùng hữu hình khác (Chi tiết: cho thuê máy móc, thiết bị xây dựng); Trồng rừng và chăm sóc rừng; Xuất nhập khẩu các mặt hàng công ty kinh doanh.",
+      "Việc tuân thủ các chuẩn mực và chế độ kế toán (như Thông tư số 200/2014/TT-BTC) là cực kỳ quan trọng đối với báo cáo tài chính. Nó đảm bảo tính minh bạch, chính xác và đáng tin cậy của thông tin tài chính, giúp các bên liên quan (nhà đầu tư, chủ nợ, cơ quan quản lý) có thể hiểu rõ tình hình tài chính của công ty. Sự tuân thủ này tạo điều kiện thuận lợi cho việc so sánh giữa các doanh nghiệp, hỗ trợ ra quyết định kinh tế và nâng cao uy tín của công ty trên thị trường. Đồng thời, nó cũng giúp công ty tránh được các rủi ro pháp lý và phạt hành chính do vi phạm quy định kế toán.",
+      "Vốn điều lệ của Công ty Cổ phần An Thịnh là 138.840.000.000 VND. Đây là một chỉ số quan trọng thể hiện quy mô vốn pháp định của công ty, cho thấy tiềm lực tài chính ban đầu. Một vốn điều lệ lớn cho phép công ty có cơ sở để mở rộng quy mô hoạt động, đầu tư vào các dự án lớn và tạo niềm tin với các đối tác. Về khả năng huy động vốn, vốn điều lệ cao thường được coi là một yếu tố tích cực, giúp công ty dễ dàng hơn trong việc tiếp cận các nguồn tài trợ bên ngoài như vay ngân hàng hoặc phát hành thêm cổ phiếu, vì nó thể hiện sự ổn định và cam kết của chủ sở hữu. Tuy nhiên, khả năng huy động vốn thực tế còn phụ thuộc vào hiệu quả kinh doanh và tình hình tài chính tổng thể của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Easy_QA",
+      "Medium_NER",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tiền và các khoản tương đương tiền được ghi nhận dựa trên nguyên tắc nào?",
+      "Các khoản đầu tư vào công ty con được phản ánh theo giá trị nào?",
+      "Hàng tồn kho được xác định theo phương pháp nào?",
+      "Khi nào các khoản phải thu được phân loại là Tài sản ngắn hạn?",
+      "Giải thích cách xác định giá trị thuần có thể thực hiện được của hàng tồn kho.",
+      "Phân tích tầm quan trọng của dự phòng tổn thất các khoản đầu tư tài chính đối với việc đánh giá rủi ro của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (IV.1-4 - Các chính sách kế toán áp dụng)<br>Loại nội dung: Text<br>IV. Các chính sách kế toán áp dụng<br>1. Nguyên tắc ghi nhận các khoản tiền và các khoản tương đương tiền<br>Tiền phản ánh toàn bộ số tiền hiện có của Công ty tại ngày kết thúc kỳ kế toán năm, bao gồm tiền mặt, tiền gửi ngân hàng.<br>2. Nguyên tắc kế toán các khoản đầu tư tài chính<br>Nguyên tắc ghi nhận các khoản đầu tư vào công ty con<br>Khoản đầu tư vào công ty con được phản ánh theo giá gốc, bao gồm giá mua cộng các chi phí mua nếu có như chi phí môi giới, giao dịch, lệ phí, thuế và phí ngân hàng... Các khoản thu nhập được chia từ công ty con (cổ tức, lợi nhuận) sau ngày đầu tư được phản ánh vào doanh thu hoạt động tài chính của Công ty. Các khoản khác nhận được ngoài cổ tức và lợi nhuận được chia sau ngày đầu tư từ công ty con được coi là phần thu hồi của khoản đầu tư và được ghi giảm giá gốc khoản đầu tư.<br>Nguyên tắc ghi nhận các khoản đầu tư vào công ty liên doanh, liên kết<br>Khoản đầu tư vào công ty liên doanh, liên kết được ghi nhận ban đầu theo giá gốc. Các khoản thu nhập được chia từ công ty liên doanh, liên kết (cổ tức, lợi nhuận) sau ngày đầu tư được phản ánh vào doanh thu hoạt động tài chính theo nguyên tắc dồn tích. Các khoản khác nhận được ngoài cổ tức và lợi nhuận được chia sau ngày đầu tư từ công ty liên doanh, liên kết được coi là phần thu hồi của khoản đầu tư và được ghi giảm giá gốc khoản đầu tư.<br>Dự phòng tổn thất các khoản đầu tư tài chính là số chênh lệch giữa giá gốc của khoản đầu tư lớn hơn giá trị thị trường của chúng hoặc phần sở hữu tính theo sổ kế toán của bên nhận đầu tư được trích lập theo quy định tại Thông tư số 228/2009/TT-BTC ngày 07/12/2009 và Thông tư số 89/2013/TT-BTC ngày 28/06/2013 của Bộ Tài chính.<br>3. Nguyên tắc kế toán nợ phải thu<br>Các khoản phải thu khách hàng, khoản trả trước cho người bán và các khoản phải thu khác tại thời điểm báo cáo, nếu có thời hạn thu hồi hoặc thanh toán dưới 1 năm được phân loại là Tài sản ngắn hạn. Dự phòng nợ khó đòi được trích lập cho từng khoản nợ phải thu khó đòi căn cứ vào tuổi nợ quá hạn của các khoản nợ hoặc dự kiến mức tổn thất có thể xảy ra phù hợp với quy định tại Thông tư số 228/2009/TT-BTC ngày 07/12/2009 của Bộ Tài chính.<br>4. Nguyên tắc ghi nhận hàng tồn kho<br>Hàng tồn kho được xác định theo giá gốc, trường hợp giá gốc lớn hơn giá trị thuần có thể thực hiện được thì hàng tồn kho được xác định theo giá trị thuần có thể thực hiện được. Giá gốc hàng tồn kho bao gồm chi phí mua, chi phí chế biến và các chi phí liên quan trực tiếp khác phát sinh để có được hàng tồn kho ở địa điểm và trạng thái hiện tại. Giá trị thuần có thể thực hiện được xác định bằng giá bán ước tính trừ các chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng. Hàng tồn kho được xác định theo phương pháp bình quân gia quyền. Hàng tồn kho được hạch toán theo phương pháp kê khai thường xuyên. Dự phòng giảm giá hàng tồn kho là số chênh lệch giữa giá gốc của hàng tồn kho lớn hơn giá trị thuần có thể thực hiện được của chúng tại ngày kết thúc kỳ kế toán năm, được trích lập phù hợp với quy định tại Thông tư số 228/2009/TT-BTC ngày 07/12/2009 của Bộ Tài chính.",
+    "output": [
+      "Tiền và các khoản tương đương tiền được ghi nhận dựa trên nguyên tắc phản ánh toàn bộ số tiền hiện có của Công ty tại ngày kết thúc kỳ kế toán năm, bao gồm tiền mặt, tiền gửi ngân hàng.",
+      "Các khoản đầu tư vào công ty con được phản ánh theo giá gốc, bao gồm giá mua cộng các chi phí mua nếu có như chi phí môi giới, giao dịch, lệ phí, thuế và phí ngân hàng.",
+      "Hàng tồn kho được xác định theo phương pháp bình quân gia quyền và được hạch toán theo phương pháp kê khai thường xuyên.",
+      "Các khoản phải thu khách hàng, khoản trả trước cho người bán và các khoản phải thu khác tại thời điểm báo cáo được phân loại là Tài sản ngắn hạn nếu có thời hạn thu hồi hoặc thanh toán dưới 1 năm.",
+      "Giá trị thuần có thể thực hiện được của hàng tồn kho được xác định bằng giá bán ước tính trừ các chi phí ước tính để hoàn thành và chi phí ước tính cần thiết cho việc tiêu thụ chúng.",
+      "Dự phòng tổn thất các khoản đầu tư tài chính là số chênh lệch giữa giá gốc của khoản đầu tư lớn hơn giá trị thị trường của chúng hoặc phần sở hữu tính theo sổ kế toán của bên nhận đầu tư. Việc trích lập dự phòng này có tầm quan trọng lớn trong việc đánh giá rủi ro của công ty. Nó giúp báo cáo tài chính phản ánh đúng giá trị thực tế của các khoản đầu tư và tài sản của công ty. Nếu không có dự phòng đầy đủ, giá trị tài sản có thể bị thổi phồng, che giấu các khoản lỗ tiềm ẩn và làm giảm khả năng nhận diện rủi ro tài chính thực sự của công ty. Điều này ảnh hưởng đến sự minh bạch và độ tin cậy của thông tin tài chính, làm cho nhà đầu tư khó đánh giá đúng mức độ an toàn của các khoản đầu tư và khả năng đối phó với rủi ro của công ty."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tài sản cố định hữu hình được trình bày theo giá trị nào?",
+      "Nguyên giá tài sản cố định hữu hình được xác định như thế nào?",
+      "Phương tiện vận tải, truyền dẫn có thời gian khấu hao là bao lâu?",
+      "Phương pháp khấu hao tài sản cố định hữu hình mà công ty đang áp dụng là gì?",
+      "Đánh giá mức độ tuân thủ của công ty với các quy định về khấu hao tài sản cố định.",
+      "Phân tích tác động của thời gian khấu hao đến lợi nhuận và dòng tiền của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (IV.5 - Chính sách kế toán TSCĐ)<br>Loại nội dung: Text<br>5. Nguyên tắc ghi nhận và các khấu hao TSCĐ, TSCĐ thuê tài chính, bất động sản đầu tư<br>Tài sản cố định hữu hình và khấu hao<br>Tài sản cố định hữu hình được trình bày theo nguyên giá trừ giá trị hao mòn lũy kế. Nguyên giá tài sản cố định hữu hình được xác định theo giá gốc.<br>Nguyên giá tài sản cố định hữu hình hình thành từ mua sắm và xây dựng chuyển giao là toàn bộ các chi phí mà Công ty phải bỏ ra để có tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng.<br>Tài sản cố định hữu hình được khấu hao theo phương pháp đường thẳng, dựa trên thời gian hữu dụng ước tính, phù hợp với các quy định tại Thông tư số 45/2013/TT-BTC ngày 25/04/2013 của Bộ Tài chính và Quyết định số 1173/QĐ-BTC ngày 21/05/2013 của Bộ trưởng Bộ Tài chính.<br>Thời gian khấu hao tài sản công ty đang áp dụng như sau:<br>- Phương tiện vận tải, truyền dẫn: 03 - 05 năm.<br>- Máy móc thiết bị: 05 - 10 năm.<br>- Nhà cửa, vật kiến trúc: 10 - 20 năm.<br>- Thiết bị, dụng cụ quản lý: 03 - 05 năm.<br>- Tài sản khác: 03 - 05 năm.",
+    "output": [
+      "Tài sản cố định hữu hình được trình bày theo nguyên giá trừ giá trị hao mòn lũy kế.",
+      "Nguyên giá tài sản cố định hữu hình được xác định theo giá gốc, là toàn bộ các chi phí mà Công ty phải bỏ ra để có tài sản cố định tính đến thời điểm đưa tài sản đó vào trạng thái sẵn sàng sử dụng.",
+      "Phương tiện vận tải, truyền dẫn có thời gian khấu hao từ 03 đến 05 năm.",
+      "Công ty đang áp dụng phương pháp khấu hao đường thẳng cho tài sản cố định hữu hình, dựa trên thời gian hữu dụng ước tính.",
+      "Công ty tuyên bố áp dụng phương pháp khấu hao đường thẳng, dựa trên thời gian hữu dụng ước tính, phù hợp với các quy định tại Thông tư số 45/2013/TT-BTC và Quyết định số 1173/QĐ-BTC của Bộ Tài chính. Việc công ty công bố rõ ràng chính sách và tuân thủ các quy định hiện hành cho thấy mức độ tuân thủ cao đối với các chuẩn mực và chế độ kế toán liên quan đến khấu hao tài sản cố định. Điều này góp phần tăng tính minh bạch và đáng tin cậy của báo cáo tài chính.",
+      "Thời gian khấu hao ảnh hưởng trực tiếp đến chi phí khấu hao ghi nhận hàng kỳ. Thời gian khấu hao ngắn hơn sẽ dẫn đến chi phí khấu hao hàng năm cao hơn, làm giảm lợi nhuận trước thuế và do đó làm giảm lợi nhuận ròng. Ngược lại, thời gian khấu hao dài hơn sẽ làm giảm chi phí khấu hao, tăng lợi nhuận báo cáo. Về dòng tiền, khấu hao là một chi phí không bằng tiền, nên nó không trực tiếp làm giảm dòng tiền ra khỏi công ty. Tuy nhiên, chi phí khấu hao cao hơn làm giảm thu nhập chịu thuế, dẫn đến giảm số thuế thu nhập doanh nghiệp phải nộp (nếu công ty có lợi nhuận), qua đó có thể làm tăng dòng tiền từ hoạt động kinh doanh (do giảm chi tiền thuế). Việc lựa chọn thời gian khấu hao có thể được sử dụng để tối ưu hóa lợi nhuận báo cáo và nghĩa vụ thuế."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Các khoản đầu tư theo hợp đồng hợp tác kinh doanh được ghi nhận ban đầu theo giá trị nào?",
+      "Nguyên tắc kế toán chi phí trả trước là gì?",
+      "Khi nào các khoản nợ phải trả được phân loại là Nợ ngắn hạn?",
+      "Giải thích cách xác định dự phòng tổn thất các khoản đầu tư theo hợp đồng hợp tác kinh doanh.",
+      "Phân tích tầm quan trọng của việc phân loại nợ phải trả thành ngắn hạn và dài hạn đối với việc đánh giá thanh khoản và rủi ro của công ty.",
+      "Đánh giá mức độ linh hoạt của công ty trong việc quản lý chi phí trả trước."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (IV.6-8 - Chính sách kế toán Hợp đồng, Chi phí trả trước, Nợ phải trả)<br>Loại nội dung: Text<br>6. Nguyên tắc kế toán các hợp đồng hợp tác kinh doanh<br>Các khoản đầu tư theo hợp đồng hợp tác kinh doanh được ghi nhận ban đầu theo giá gốc. Các khoản thu nhập được chia từ hợp đồng hợp tác kinh doanh (cổ tức, lợi nhuận) sau ngày đầu tư được phản ánh vào doanh thu hoạt động tài chính theo nguyên tắc dồn tích. Các khoản khác nhận được ngoài cổ tức và lợi nhuận được chia sau ngày đầu tư từ hợp đồng hợp tác kinh doanh được coi là phần thu hồi của khoản đầu tư và được ghi giảm giá gốc khoản đầu tư.<br>Dự phòng tổn thất các khoản đầu tư theo hợp đồng hợp tác kinh doanh là số chênh lệch giữa giá gốc của khoản đầu tư lớn hơn giá trị thị trường của chúng hoặc phần sở hữu tính theo sổ kế toán của bên nhận đầu tư được trích lập theo quy định tại Thông tư số 228/2009/TT-BTC ngày 07/12/2009 và Thông tư số 89/2013/TT-BTC ngày 28/06/2013 của Bộ Tài chính.<br>7. Nguyên tắc kế toán chi phí trả trước<br>Các chi phí đã phát sinh liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều năm tài chính được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh trong các năm tài chính sau.<br>Việc ghi nhận các khoản chi phí phải trả vào chi phí sản xuất, kinh doanh trong năm được thực hiện theo nguyên tắc phù hợp giữa doanh thu và chi phí phát sinh trong năm. Các khoản chi phí phải trả sẽ được quyết toán với số chi phí thực tế phát sinh, số chênh lệch giữa số trích trước và chi phí thực tế được hoàn nhập.<br>8. Nguyên tắc kế toán nợ phải trả<br>Các khoản phải trả người bán, khoản người mua trả tiền trước và các khoản phải trả khác tại thời điểm báo cáo, nếu có thời hạn phải trả hoặc thanh toán dưới 1 năm được phân loại là Nợ ngắn hạn. Nếu có thời hạn phải trả hoặc thanh toán trên 1 năm được phân loại là Nợ dài hạn.",
+    "output": [
+      "Các khoản đầu tư theo hợp đồng hợp tác kinh doanh được ghi nhận ban đầu theo giá gốc.",
+      "Nguyên tắc kế toán chi phí trả trước là các chi phí đã phát sinh liên quan đến kết quả hoạt động sản xuất kinh doanh của nhiều năm tài chính được hạch toán vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh trong các năm tài chính sau.",
+      "Các khoản phải trả người bán, khoản người mua trả tiền trước và các khoản phải trả khác tại thời điểm báo cáo được phân loại là Nợ ngắn hạn nếu có thời hạn phải trả hoặc thanh toán dưới 1 năm.",
+      "Dự phòng tổn thất các khoản đầu tư theo hợp đồng hợp tác kinh doanh là số chênh lệch giữa giá gốc của khoản đầu tư lớn hơn giá trị thị trường của chúng hoặc phần sở hữu tính theo sổ kế toán của bên nhận đầu tư, được trích lập theo quy định tại Thông tư số 228/2009/TT-BTC ngày 07/12/2009 và Thông tư số 89/2013/TT-BTC ngày 28/06/2013 của Bộ Tài chính.",
+      "Việc phân loại nợ phải trả thành ngắn hạn và dài hạn có tầm quan trọng rất lớn trong việc đánh giá thanh khoản và rủi ro tài chính của công ty. Nợ ngắn hạn đại diện cho các nghĩa vụ tài chính phải thanh toán trong vòng một năm, cho thấy áp lực thanh toán tức thời. Tỷ lệ nợ ngắn hạn cao so với tài sản ngắn hạn có thể cảnh báo rủi ro thanh khoản, tức là công ty có thể không đủ khả năng chi trả các khoản nợ đến hạn. Ngược lại, nợ dài hạn là các nghĩa vụ có thời hạn thanh toán trên một năm, phản ánh chiến lược tài trợ dài hạn và thường ít gây áp lực lên dòng tiền trong ngắn hạn. Sự cân bằng hợp lý giữa hai loại nợ này, cùng với khả năng tạo ra dòng tiền từ hoạt động kinh doanh, là yếu tố then chốt để các nhà đầu tư và chủ nợ đánh giá khả năng tồn tại và phát triển của công ty, cũng như mức độ rủi ro mà họ phải đối mặt.",
+      "Công ty hạch toán các chi phí phát sinh liên quan đến nhiều năm tài chính vào chi phí trả trước để phân bổ dần vào kết quả hoạt động kinh doanh các năm sau, theo nguyên tắc phù hợp giữa doanh thu và chi phí. Chính sách này cho thấy công ty có một mức độ linh hoạt nhất định trong việc quản lý chi phí nhằm làm mịn lợi nhuận (earning smoothing) qua các kỳ. Việc phân bổ chi phí giúp tránh ghi nhận một lượng lớn chi phí trong một kỳ, từ đó giảm biến động lợi nhuận. Tuy nhiên, sự linh hoạt này cũng đòi hỏi việc ước tính và phân bổ phải hợp lý và tuân thủ chuẩn mực để đảm bảo báo cáo tài chính không bị sai lệch."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Hard_SA",
+      "Medium_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Chi phí phải trả được ghi nhận dựa trên nguyên tắc nào?",
+      "Vốn kinh doanh được hình thành từ những nguồn nào?",
+      "Có bao nhiêu điều kiện để doanh thu bán hàng được ghi nhận?",
+      "Giải thích các điều kiện để doanh thu cung cấp dịch vụ được ghi nhận.",
+      "Phân tích ý nghĩa của nguyên tắc 'chuyển giao phần lớn rủi ro và lợi ích' trong việc ghi nhận doanh thu.",
+      "Đánh giá mức độ ảnh hưởng của các chính sách ghi nhận doanh thu và vốn chủ sở hữu đến báo cáo tài chính của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (IV.9-11 - Chính sách kế toán Chi phí phải trả, Vốn chủ sở hữu, Doanh thu)<br>Loại nội dung: Text<br>9. Nguyên tắc ghi nhận chi phí phải trả<br>Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả cho các hàng hóa, dịch vụ đã sử dụng trong kỳ nhưng chưa thanh toán và chưa có hóa đơn.<br>10. Nguyên tắc ghi nhận vốn chủ sở hữu<br>Nguyên tắc ghi nhận vốn góp của chủ sở hữu<br>Nguồn vốn kinh doanh được hình thành từ số tiền mà các cổ đông đã góp vốn mua cổ phần, cổ phiếu hoặc được bổ sung từ lợi nhuận sau thuế theo Nghị Quyết của Đại hội đồng cổ đông hoặc theo quy định trong điều lệ hoạt động của Công ty. Nguồn vốn kinh doanh được ghi nhận theo số vốn thực tế đã góp bằng tiền hoặc bằng tài sản tính theo mệnh giá của cổ phiếu đã phát hành khi mới thành lập, hoặc huy động thêm để mở rộng quy mô hoạt động của Công ty.<br>Nguyên tắc ghi nhận lợi nhuận chưa phân phối<br>Lợi nhuận chưa phân phối được ghi nhận là lợi nhuận hoặc lỗ sau thuế của doanh nghiệp đã thực hiện và quyết toán theo quy định pháp luật nhưng chưa chia hoặc chưa sử dụng để hình thành các quỹ thuộc vốn chủ sở hữu. <br>11. Nguyên tắc ghi nhận doanh thu<br>Nguyên tắc ghi nhận doanh thu bán hàng và cung cấp dịch vụ<br>Doanh thu bán hàng được ghi nhận khi thỏa mãn đồng thời năm (5) điều kiện sau:<br>- Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua.<br>- Công ty không còn nắm giữ quyền quản lý hàng hóa như người sở hữu hàng hóa hoặc quyền kiểm soát hàng hóa.<br>- Doanh thu được xác định tương đối chắc chắn.<br>- Công ty đã thu được hoặc sẽ thu được lợi ích kinh tế từ giao dịch bán hàng.<br>- Xác định được chi phí liên quan đến giao dịch bán hàng.<br>Doanh thu cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy. Trường hợp việc cung cấp dịch vụ liên quan đến nhiều kỳ thì doanh thu được ghi nhận trong kỳ theo kết quả phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán của kỳ đó. Kết quả của giao dịch cung cấp dịch vụ được xác định khi thỏa mãn các điều kiện sau:<br>- Doanh thu được xác định tương đối chắc chắn.<br>- Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó.<br>- Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán.<br>- Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.<br>Doanh thu hoạt động tài chính bao gồm tiền lãi, cổ tức, lợi nhuận được chia và các khoản doanh thu hoạt động tài chính khác được ghi nhận khi thỏa mãn các điều kiện sau:<br>- Có khả năng thu được lợi ích kinh tế từ giao dịch đó.<br>- Doanh thu được xác định tương đối chắc chắn.",
+    "output": [
+      "Chi phí phải trả được ghi nhận dựa trên các ước tính hợp lý về số tiền phải trả cho các hàng hóa, dịch vụ đã sử dụng trong kỳ nhưng chưa thanh toán và chưa có hóa đơn.",
+      "Vốn kinh doanh được hình thành từ số tiền mà các cổ đông đã góp vốn mua cổ phần, cổ phiếu hoặc được bổ sung từ lợi nhuận sau thuế theo Nghị Quyết của Đại hội đồng cổ đông hoặc theo quy định trong điều lệ hoạt động của Công ty.",
+      "Có năm (5) điều kiện để doanh thu bán hàng được ghi nhận.",
+      "Doanh thu cung cấp dịch vụ được ghi nhận khi kết quả của giao dịch đó được xác định một cách đáng tin cậy và thỏa mãn đồng thời các điều kiện sau: Doanh thu được xác định tương đối chắc chắn; Có khả năng thu được lợi ích kinh tế từ giao dịch cung cấp dịch vụ đó; Xác định được phần công việc đã hoàn thành vào ngày lập Bảng cân đối kế toán; Xác định được chi phí phát sinh cho giao dịch và chi phí để hoàn thành giao dịch cung cấp dịch vụ đó.",
+      "Nguyên tắc 'Công ty đã chuyển giao phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu sản phẩm hoặc hàng hóa cho người mua' là một yếu tố cốt lõi trong việc ghi nhận doanh thu bán hàng. Ý nghĩa của nó là đảm bảo doanh thu chỉ được ghi nhận khi công ty đã thực sự hoàn thành nghĩa vụ của mình và không còn chịu trách nhiệm chính đối với hàng hóa, đồng thời người mua đã có quyền sở hữu và gánh chịu rủi ro. Điều này giúp phản ánh đúng bản chất kinh tế của giao dịch, ngăn chặn việc ghi nhận doanh thu sớm một cách giả tạo, qua đó duy trì tính chính xác và tin cậy của báo cáo doanh thu và lợi nhuận.",
+      "Các chính sách ghi nhận doanh thu và vốn chủ sở hữu có ảnh hưởng sâu rộng đến báo cáo tài chính của công ty. Chính sách ghi nhận doanh thu xác định thời điểm và giá trị doanh thu được ghi nhận, ảnh hưởng trực tiếp đến Báo cáo kết quả hoạt động kinh doanh (lợi nhuận) và Báo cáo lưu chuyển tiền tệ. Việc áp dụng đúng và nhất quán các điều kiện ghi nhận doanh thu là cần thiết để thông tin tài chính đáng tin cậy. Đối với vốn chủ sở hữu, các nguyên tắc ghi nhận vốn góp và lợi nhuận chưa phân phối ảnh hưởng đến cấu trúc nguồn vốn, khả năng phân phối lợi nhuận, và các chỉ số sức khỏe tài chính. Vốn chủ sở hữu là nguồn tài trợ dài hạn quan trọng, và sự chính xác trong việc trình bày các thành phần của nó (như vốn góp, lợi nhuận giữ lại) là yếu tố quyết định để nhà đầu tư đánh giá khả năng sinh lời và sự ổn định tài chính của công ty. Việc thiếu minh bạch hoặc không tuân thủ trong các chính sách này có thể dẫn đến việc báo cáo tài chính không phản ánh đúng tình hình tài chính thực tế."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Nguyên tắc kế toán giá vốn hàng bán là gì?",
+      "Thuế thu nhập doanh nghiệp bao gồm những loại thuế nào?",
+      "Khi nào các bên được coi là bên liên quan với Công ty?",
+      "Giải thích sự khác biệt giữa thu nhập tính thuế và tổng lợi nhuận kế toán trước thuế.",
+      "Đánh giá tầm quan trọng của việc xác định chi phí thuế thu nhập doanh nghiệp hoãn lại.",
+      "Phân tích rủi ro tiềm ẩn của các giao dịch với bên liên quan không được tiết lộ đầy đủ trong báo cáo tài chính."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (IV.12-15 - Chính sách kế toán Giá vốn, Chi phí QLDN, Thuế TNDN, Bên liên quan)<br>Loại nội dung: Text<br>12. Nguyên tắc kế toán giá vốn hàng bán<br>Phản ánh giá trị giá vốn của hàng hóa bán ra trong kỳ.<br>13. Nguyên tắc kế toán chi phí quản lý doanh nghiệp<br>Phản ánh các chi phí liên quan đến quá trình hoạt động sản xuất kinh doanh trong kỳ của Công ty.<br>14. Nguyên tắc và phương pháp ghi nhận chi phí thuế thu nhập doanh nghiệp hiện hành, chi phí thuế thu nhập doanh nghiệp hoãn lại<br>Thuế thu nhập doanh nghiệp bao gồm thuế thu nhập hiện hành và thuế thu nhập hoãn lại.<br>Chi phí thuế thu nhập hiện hành phản ánh số thuế thu nhập doanh nghiệp phải nộp phát sinh trong năm.<br>Thu nhập tính thuế của kỳ báo cáo khác với tổng lợi nhuận kế toán trước thuế được trình bày trên Báo cáo kết quả hoạt động kinh doanh vì thu nhập tính thuế bao gồm cả lỗ lũy kế năm 2012 và không bao gồm các chi phí không hợp lý hợp lệ.<br>Thuế thu nhập hoãn lại được xác định trên cơ sở số chênh lệch tạm thời được khấu trừ, số chênh lệch tạm thời chịu thuế và thuế suất thuế thu nhập doanh nghiệp.<br>Việc xác định thuế thu nhập của Công ty căn cứ vào các quy định hiện hành về thuế. Tuy nhiên, những quy định này thay đổi theo từng thời kỳ và việc xác định nghĩa vụ về thuế thu nhập doanh nghiệp tùy thuộc vào kết quả kiểm tra của cơ quan thuế có thẩm quyền.<br>15. Các nguyên tắc và phương pháp kế toán khác<br>Bên liên quan<br>Các bên được coi là bên liên quan với Công ty nếu có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với Công ty trong việc ra quyết định các chính sách tài chính và hoạt động hoặc có chung các thành viên quản lý chủ chốt hoặc cùng chịu sự chi phối của một công ty khác.",
+    "output": [
+      "Nguyên tắc kế toán giá vốn hàng bán là phản ánh giá trị giá vốn của hàng hóa bán ra trong kỳ.",
+      "Thuế thu nhập doanh nghiệp bao gồm thuế thu nhập hiện hành và thuế thu nhập hoãn lại.",
+      "Các bên được coi là bên liên quan với Công ty nếu có khả năng kiểm soát hoặc có ảnh hưởng đáng kể đối với Công ty trong việc ra quyết định các chính sách tài chính và hoạt động hoặc có chung các thành viên quản lý chủ chốt hoặc cùng chịu sự chi phối của một công ty khác.",
+      "Thu nhập tính thuế của kỳ báo cáo khác với tổng lợi nhuận kế toán trước thuế được trình bày trên Báo cáo kết quả hoạt động kinh doanh. Sự khác biệt này là do thu nhập tính thuế bao gồm cả lỗ lũy kế năm 2012 được phép bù trừ và không bao gồm các chi phí không hợp lý hợp lệ theo quy định của pháp luật thuế, trong khi tổng lợi nhuận kế toán trước thuế được tính dựa trên các nguyên tắc kế toán.",
+      "Việc xác định chi phí thuế thu nhập doanh nghiệp hoãn lại là rất quan trọng để đảm bảo báo cáo tài chính phản ánh đúng nghĩa vụ thuế trong tương lai của công ty. Thuế hoãn lại phát sinh từ sự chênh lệch tạm thời giữa cơ sở tính thuế và cơ sở kế toán của tài sản và nợ phải trả. Ghi nhận thuế hoãn lại giúp khớp chi phí thuế với lợi nhuận kế toán, mang lại cái nhìn chính xác hơn về hiệu quả tài chính thực sự của công ty trong dài hạn. Nó cũng cần thiết cho việc phân tích và dự báo dòng tiền tương lai liên quan đến nghĩa vụ thuế của doanh nghiệp.",
+      "Các giao dịch với bên liên quan có thể tiềm ẩn rủi ro nếu không được tiết lộ đầy đủ trong báo cáo tài chính. Rủi ro chính là các giao dịch này có thể không được thực hiện theo nguyên tắc thị trường (tức là giá cả hoặc điều khoản không công bằng so với giao dịch với bên độc lập). Điều này có thể dẫn đến việc chuyển dịch lợi nhuận, làm sai lệch kết quả kinh doanh, hoặc tạo ra các nghĩa vụ tài chính ẩn không rõ ràng. Nếu các giao dịch này không được công bố minh bạch, nhà đầu tư và các bên liên quan khác sẽ không thể đánh giá chính xác các rủi ro và lợi ích thực sự của công ty, ảnh hưởng nghiêm trọng đến tính minh bạch, độ tin cậy của báo cáo tài chính và niềm tin của thị trường."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng số tiền cuối quý là bao nhiêu?",
+      "Tiền mặt cuối quý là bao nhiêu?",
+      "Tổng các khoản phải thu của khách hàng ngắn hạn cuối quý là bao nhiêu?",
+      "So sánh tiền mặt cuối quý với đầu năm. Thay đổi như thế nào?",
+      "Khách hàng lớn nhất về phải thu ngắn hạn là ai và với số tiền bao nhiêu?",
+      "Đánh giá mức độ rủi ro tín dụng của công ty dựa trên cơ cấu các khoản phải thu khách hàng."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.1-2 - Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán)<br>Loại nội dung: Bảng và Text<br>V. Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán<br>1. TIỀN<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Tiền mặt | 2.093.072.732 | 2.218.841.029 |<br>| Tiền gửi ngân hàng không kỳ hạn | 3.784.900 | 3.784.900 |<br>| Cộng | 2.096.857.632 | 2.222.625.929 |<br>2. PHẢI THU CỦA KHÁCH HÀNG<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Phải thu của khách hàng ngắn hạn | | |<br>| Ban quản lý dự án giao thông Bắc Kạn - Sở GTVT tỉnh Bắc Kạn | 1.174.445.958 | 1.174.445.958 |<br>| Ban quản lý dự án giao thông Lạng Sơn - Sở GTVT tỉnh Lạng Sơn | 57.726.000 | 57.726.000 |<br>| Công ty CP Đầu tư Xây dựng Sơn Phát | 3.396.173.018 | 3.396.173.018 |<br>| Công ty CP Xây dựng và Phát triển Đại Dương | 9.475.015.728 | 9.475.015.728 |<br>| Công ty TNHH phát triển khoáng sản Đông Dương | - | - |<br>| Công ty Cổ phần XNK Lâm Nghiệp Yên Bái | 12.127.500.000 | 12.127.500.000 |<br>| Công ty CP đầu tư thương mại Anh Hương | 2.823.467.510 | 2.823.467.510 |<br>| Các khoản phải thu khách hàng khác | 461.991.031 | 461.991.031 |<br>| Cộng | 29.516.319.245 | 29.516.319.245 |",
+    "output": [
+      "Tổng số tiền cuối quý là 2.096.857.632 VND.",
+      "Tiền mặt cuối quý là 2.093.072.732 VND.",
+      "Tổng các khoản phải thu của khách hàng ngắn hạn cuối quý là 29.516.319.245 VND.",
+      "Tiền mặt cuối quý là 2.093.072.732 VND, giảm 125.768.297 VND so với số đầu năm là 2.218.841.029 VND.",
+      "Khách hàng lớn nhất về phải thu ngắn hạn là Công ty Cổ phần XNK Lâm Nghiệp Yên Bái với số tiền 12.127.500.000 VND.",
+      "Tổng các khoản phải thu khách hàng ngắn hạn của công ty là 29.516.319.245 VND. Trong đó, Công ty Cổ phần XNK Lâm Nghiệp Yên Bái chiếm tỷ trọng lớn nhất với 12.127.500.000 VND (khoảng 41.09% tổng phải thu khách hàng ngắn hạn). Sự tập trung phải thu vào một vài khách hàng lớn có thể làm tăng rủi ro tín dụng của công ty. Nếu một trong những khách hàng lớn này gặp khó khăn tài chính hoặc chậm thanh toán, nó có thể ảnh hưởng đáng kể đến dòng tiền và khả năng thanh toán của công ty. Mức độ rủi ro tín dụng có thể được đánh giá là trung bình đến cao do sự phụ thuộc vào các khoản phải thu lớn này."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_NER",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng các khoản trả trước cho người bán ngắn hạn cuối quý là bao nhiêu?",
+      "Khoản phải thu về cho vay dài hạn là bao nhiêu?",
+      "Công ty nào được Công ty Cổ phần An Thịnh cho vay dài hạn?",
+      "So sánh lãi cho vay ngắn hạn cuối quý với đầu năm. Thay đổi như thế nào?",
+      "Giải thích mục đích của khoản phải thu dài hạn từ Công ty Cổ phần Đầu tư Thương mại Đồng Mô.",
+      "Đánh giá rủi ro của khoản cho vay dài hạn và khoản phải thu từ hợp đồng hợp tác kinh doanh dựa trên các thông tin được cung cấp."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.3-5 - Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán)<br>Loại nội dung: Bảng và Text<br>3. TRẢ TRƯỚC CHO NGƯỜI BÁN<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Trả trước cho người bán ngắn hạn | | |<br>| Các khoản trả trước cho người bán | 3.355.739.689 | 3.355.739.689 |<br>| Cộng | 3.355.739.689 | 3.355.739.689 |<br>4. PHẢI THU VỀ CHO VAY DÀI HẠN<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Phải thu về cho vay dài hạn | 25.000.000.000 | 25.000.000.000 |<br>| Cộng | 25.000.000.000 | 25.000.000.000 |<br>Phải thu về cho vay dài hạn là khoản tiền cho Công ty Cổ phần Đầu tư Thương mại Đồng Mô vay theo Hợp đồng số 01.08.13HĐVV ngày 01/08/2013 và phụ lục 25.10.14HĐVV ngày 25/12/2014 với nội dung như sau: Thời hạn vay 05 năm, lãi suất 9,6%/năm, PL 01.08.2018PLHĐVV ngày 01/08/2018 về việc gia hạn thời gian hợp đồng cho vay, PL 01.08.2019PLHĐVV ngày 01/08/2019 về việc gia hạn thời gian hợp đồng cho vay.<br>5. PHẢI THU KHÁC<br>a. Ngắn hạn<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Tạm ứng | - | - |<br>| Lãi cho vay | 24.000.000.000 | 23.400.000.000 |<br>| Các khoản ký quỹ, ký cược ngắn hạn | 258.169.639 | 238.766.219 |<br>| Phải thu khác | - | - |<br>| Cộng | 24.258.169.639 | 23.638.766.219 |<br>b. Dài hạn<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Công ty CP đầu tư thương mại Đồng Mô | 52.151.570.961 | 52.151.570.961 |<br>| Cộng | 52.151.570.961 | 52.151.570.961 |<br>Phải thu Công ty Cổ phần Đầu tư Thương mại Đồng Mô là khoản phải thu theo hợp đồng hợp tác kinh doanh số 01LKKD2011DMAT ngày 03/01/2011 về việc xây dựng và vận hành Dự án Khu nghỉ dưỡng SPA Cây Bồ Đề tại Đảo Kẻ Xiết, Hồ Đồng Mô, xã Sơn Đông, thị xã Sơn Tây, Hà Nội do Công ty Cổ phần Đầu tư Thương mại Đồng Mô làm chủ đầu tư cụ thể như sau: Tổng vốn góp dự kiến để thực hiện dự án khoảng 440 tỷ đồng, trong đó Công ty Cổ phần An Thịnh góp từ 130 tỷ đến tối đa là 140 tỷ. Thời gian hợp tác là 22 năm kể từ ngày hai bên ký hợp đồng hoặc đến khi có thỏa thuận khác. Hình thức góp vốn bằng tiền, bằng tài sản, hàng tồn kho, nhân công và các tài sản khác không trái quy định của pháp luật. Hình thức phân chia lợi ích hay thua lỗ dựa trên việc phân chia chỉ tiêu thu nhập trước thuế - lãi vay - khấu hao (EBITDA) từ việc kinh doanh dịch vụ hàng năm của dự án.",
+    "output": [
+      "Tổng các khoản trả trước cho người bán ngắn hạn cuối quý là 3.355.739.689 VND.",
+      "Khoản phải thu về cho vay dài hạn là 25.000.000.000 VND.",
+      "Công ty Cổ phần Đầu tư Thương mại Đồng Mô được Công ty Cổ phần An Thịnh cho vay dài hạn.",
+      "Lãi cho vay ngắn hạn cuối quý là 24.000.000.000 VND, tăng 600.000.000 VND so với số đầu năm là 23.400.000.000 VND.",
+      "Khoản phải thu dài hạn từ Công ty Cổ phần Đầu tư Thương mại Đồng Mô là khoản phải thu theo hợp đồng hợp tác kinh doanh số 01LKKD2011DMAT ngày 03/01/2011. Mục đích của hợp đồng này là về việc xây dựng và vận hành Dự án Khu nghỉ dưỡng SPA Cây Bồ Đề tại Đảo Kẻ Xiết, Hồ Đồng Mô, xã Sơn Đông, thị xã Sơn Tây, Hà Nội, trong đó Công ty Cổ phần An Thịnh góp vốn dự kiến từ 130 tỷ đến tối đa là 140 tỷ Đồng.",
+      "Khoản cho vay dài hạn 25 tỷ VND cho Công ty Cổ phần Đầu tư Thương mại Đồng Mô, dù có lãi suất và thời hạn vay rõ ràng, việc hợp đồng đã được gia hạn nhiều lần (PL 01.08.2018PLHĐVV, PL 01.08.2019PLHĐVV) có thể là một dấu hiệu tiềm ẩn về rủi ro thu hồi hoặc khả năng thanh toán của bên vay. Khoản phải thu dài hạn 52.151.570.961 VND từ hợp đồng hợp tác kinh doanh cũng với Công ty Cổ phần Đầu tư Thương mại Đồng Mô liên quan đến Dự án Khu nghỉ dưỡng SPA Cây Bồ Đề. Khoản này phụ thuộc vào sự thành công của một dự án bất động sản có quy mô lớn (tổng vốn góp dự kiến 440 tỷ), một lĩnh vực thường tiềm ẩn nhiều rủi ro thị trường và tiến độ. Cả hai khoản mục đều có giá trị lớn và liên quan đến cùng một đối tác, do đó, rủi ro tài chính của công ty sẽ tăng lên đáng kể nếu đối tác gặp khó khăn hoặc dự án không đạt được kết quả như kỳ vọng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_NER",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng giá trị hàng tồn kho cuối quý là bao nhiêu?",
+      "Giá trị nguyên liệu, vật liệu cuối quý là bao nhiêu?",
+      "Tổng tài sản dở dang dài hạn cuối quý là bao nhiêu?",
+      "So sánh chi phí sản xuất kinh doanh dở dang cuối quý với đầu năm. Thay đổi như thế nào?",
+      "Tỷ lệ chi phí thăm dò khai thác mỏ trên tổng tài sản dở dang dài hạn là bao nhiêu phần trăm?",
+      "Đánh giá mức độ hiệu quả của việc quản lý hàng tồn kho khi giá trị không thay đổi giữa các kỳ."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.6-7 - Thông tin bổ sung cho các khoản mục trình bày trong Bảng cân đối kế toán)<br>Loại nội dung: Bảng và Text<br>6. HÀNG TỒN KHO<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Nguyên liệu, vật liệu | 154.439.930 | 154.439.930 |<br>| Chi phí sản xuất kinh doanh dở dang | 4.666.835.304 | 4.666.835.304 |<br>| Cộng | 4.821.275.234 | 4.821.275.234 |<br>7. TÀI SẢN DỞ DANG DÀI HẠN<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| a. Xây dựng cơ bản dở dang: Chi phí thăm dò khai thác mỏ | 1.490.638.313 | 1.490.638.313 |<br>| b. Xây dựng cơ bản dở dang: Chi phí đầu tư xây dựng khu dân cư | 3.380.301.197 | 3.380.301.197 |<br>| Cộng | 4.870.939.510 | 4.870.939.510 |",
+    "output": [
+      "Tổng giá trị hàng tồn kho cuối quý là 4.821.275.234 VND.",
+      "Giá trị nguyên liệu, vật liệu cuối quý là 154.439.930 VND.",
+      "Tổng tài sản dở dang dài hạn cuối quý là 4.870.939.510 VND.",
+      "Chi phí sản xuất kinh doanh dở dang cuối quý là 4.666.835.304 VND, không thay đổi so với số đầu năm cũng là 4.666.835.304 VND.",
+      "Chi phí thăm dò khai thác mỏ là 1.490.638.313 VND. Tổng tài sản dở dang dài hạn cuối quý là 4.870.939.510 VND. Tỷ lệ này là khoảng 30.60% (1.490.638.313 / 4.870.939.510 * 100%).",
+      "Giá trị hàng tồn kho (bao gồm nguyên liệu, vật liệu và chi phí sản xuất kinh doanh dở dang) không thay đổi giữa cuối quý và đầu năm (4.821.275.234 VND). Tình trạng này có thể được đánh giá theo nhiều khía cạnh: Nếu công ty đang hoạt động hiệu quả, nó có thể cho thấy một hệ thống quản lý tồn kho tối ưu, nơi cung và cầu được cân bằng, hoặc vòng quay hàng tồn kho rất nhanh. Tuy nhiên, trong bối cảnh các chunk khác cho thấy không có doanh thu bán hàng và cung cấp dịch vụ trong kỳ (Chunk 9, 28), việc hàng tồn kho không đổi có thể là dấu hiệu của sự trì trệ trong hoạt động sản xuất hoặc bán hàng. Điều này làm dấy lên lo ngại về khả năng tạo doanh thu từ hàng tồn kho hiện có và hiệu quả tổng thể của hoạt động kinh doanh."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nguyên giá tài sản cố định hữu hình cuối năm là bao nhiêu?",
+      "Nguyên giá nhà cửa, vật kiến trúc cuối năm là bao nhiêu?",
+      "Số dư giá trị hao mòn lũy kế đầu năm của phương tiện vận tải, truyền dẫn là bao nhiêu?",
+      "So sánh tổng nguyên giá tài sản cố định hữu hình cuối năm với đầu năm. Thay đổi như thế nào?",
+      "Tỷ lệ hao mòn lũy kế trên nguyên giá của máy móc, thiết bị đầu năm là bao nhiêu?",
+      "Phân tích ý nghĩa của việc không có tăng hoặc giảm tài sản cố định hữu hình trong kỳ."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.8 - Tài sản cố định hữu hình)<br>Loại nội dung: Bảng<br>8. TÀI SẢN CỐ ĐỊNH HỮU HÌNH<br>Đơn vị tính: VND<br>| Khoản mục | Nhà cửa, vật kiến trúc | Phương tiện vận tải, truyền dẫn | Máy móc, thiết bị | Thiết bị, dụng cụ quản lý | Tài sản khác | Cộng |<br>|---|---|---|---|---|---|---|<br>| Nguyên giá | | | | | | |<br>| Số dư đầu năm | 6.145.675.729 | 14.436.999.704 | 6.489.181.817 | 87.135.564 | 50.000.000 | 27.208.992.814 |<br>| Tăng do mua sắm | - | - | - | - | - | - |<br>| Giảm do thanh lý nhượng bán | - | - | - | - | - | - |<br>| Số dư cuối năm | 6.145.675.729 | 14.436.999.704 | 6.489.181.817 | 87.135.564 | 50.000.000 | 27.208.992.814 |<br>| Giá trị hao mòn lũy kế | | | | | | |<br>| Số dư đầu năm | 4.792.095.938 | 14.436.999.704 | 6.489.181.822 | 87.135.564 | 21.250.000 | 25.826.663.028 |",
+    "output": [
+      "Tổng nguyên giá tài sản cố định hữu hình cuối năm là 27.208.992.814 VND.",
+      "Nguyên giá nhà cửa, vật kiến trúc cuối năm là 6.145.675.729 VND.",
+      "Số dư giá trị hao mòn lũy kế đầu năm của phương tiện vận tải, truyền dẫn là 14.436.999.704 VND.",
+      "Tổng nguyên giá tài sản cố định hữu hình cuối năm là 27.208.992.814 VND, không thay đổi so với số dư đầu năm cũng là 27.208.992.814 VND.",
+      "Số dư giá trị hao mòn lũy kế của máy móc, thiết bị đầu năm là 6.489.181.822 VND. Nguyên giá máy móc, thiết bị đầu năm là 6.489.181.817 VND. Tỷ lệ này là khoảng 100.00% (6.489.181.822 / 6.489.181.817 * 100%). Điều này cho thấy máy móc, thiết bị đã được khấu hao gần như hết giá trị.",
+      "Việc không có tăng do mua sắm và giảm do thanh lý nhượng bán tài sản cố định hữu hình trong kỳ cho thấy công ty không thực hiện các hoạt động đầu tư lớn vào tài sản cố định mới hoặc không thoái vốn đáng kể. Điều này có thể có một số ý nghĩa: công ty có thể đang trong giai đoạn ổn định về năng lực sản xuất và không cần mở rộng thêm, hoặc có thể đang tập trung vào các loại hình tài sản khác (như tài sản dở dang dài hạn được đề cập ở Chunk 21). Nó cũng có thể ngụ ý rằng các dự án đầu tư (nếu có) chưa hoàn thành và chưa được đưa vào sử dụng chính thức. Tuy nhiên, nếu công ty có chiến lược phát triển hoặc mở rộng, việc thiếu các hoạt động đầu tư mới vào tài sản cố định hữu hình có thể là một dấu hiệu của sự trì trệ hoặc thiếu vốn đầu tư."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng khấu hao trong năm của tài sản cố định hữu hình là bao nhiêu?",
+      "Giá trị còn lại của nhà cửa, vật kiến trúc tại ngày cuối năm là bao nhiêu?",
+      "Tổng giá trị còn lại của tài sản cố định hữu hình tại ngày cuối năm là bao nhiêu?",
+      "So sánh khấu hao trong năm của nhà cửa, vật kiến trúc với tổng khấu hao trong năm. Thay đổi như thế nào?",
+      "Đánh giá mức độ giảm giá trị còn lại của tài sản cố định hữu hình trong năm.",
+      "Phân tích tác động của khấu hao tài sản cố định đến lợi nhuận và nghĩa vụ thuế của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.8 - Tài sản cố định hữu hình tiếp theo)<br>Loại nội dung: Bảng<br>Đơn vị tính: VND<br>| Khoản mục | Nhà cửa, vật kiến trúc | Phương tiện vận tải, truyền dẫn | Máy móc, thiết bị | Thiết bị, dụng cụ quản lý | Tài sản khác | Cộng |<br>|---|---|---|---|---|---|---|<br>| Khấu hao trong năm | 71.392.718 | - | 2.301.011 | - | 1.250.000 | 72.642.718 |<br>| Giảm do thanh lý nhượng bán | - | - | - | - | - | - |<br>| Số dư cuối năm | 4.863.488.656 | 14.436.999.704 | 6.491.482.833 | 87.135.564 | 22.500.000 | 25.899.305.746 |<br>| Giá trị còn lại | | | | | | |<br>| Tại ngày đầu năm | 1.353.579.791 | - | - | - | 28.750.000 | 1.382.329.786 |<br>| Tại ngày cuối năm | 1.282.187.073 | - | - | - | 27.500.000 | 1.309.687.065 |",
+    "output": [
+      "Tổng khấu hao trong năm của tài sản cố định hữu hình là 72.642.718 VND.",
+      "Giá trị còn lại của nhà cửa, vật kiến trúc tại ngày cuối năm là 1.282.187.073 VND.",
+      "Tổng giá trị còn lại của tài sản cố định hữu hình tại ngày cuối năm là 1.309.687.065 VND.",
+      "Khấu hao trong năm của nhà cửa, vật kiến trúc là 71.392.718 VND, chiếm phần lớn trong tổng khấu hao tài sản cố định hữu hình là 72.642.718 VND (khoảng 98.28%). Điều này cho thấy nhà cửa, vật kiến trúc là loại tài sản đóng góp chủ yếu vào chi phí khấu hao trong năm của công ty.",
+      "Tổng giá trị còn lại của tài sản cố định hữu hình giảm từ 1.382.329.786 VND (tại ngày đầu năm) xuống 1.309.687.065 VND (tại ngày cuối năm). Mức giảm là 72.642.721 VND, tương ứng với tổng khấu hao trong năm là 72.642.718 VND (có sai số nhỏ). Sự giảm này là hệ quả tự nhiên của quá trình khấu hao tài sản khi sử dụng, phản ánh sự phân bổ chi phí đầu tư vào tài sản qua các kỳ. Mức giảm này không quá đột biến, cho thấy tài sản cố định hữu hình vẫn đang trong trạng thái hoạt động và còn giá trị sử dụng đáng kể.",
+      "Khấu hao tài sản cố định là một khoản chi phí được trừ khi tính toán lợi nhuận kế toán. Do đó, việc ghi nhận khấu hao làm giảm lợi nhuận trước thuế của công ty. Điều này kéo theo việc giảm thu nhập chịu thuế, và nếu công ty có lợi nhuận, sẽ làm giảm nghĩa vụ thuế thu nhập doanh nghiệp phải nộp. Từ góc độ dòng tiền, khấu hao là một chi phí không bằng tiền mặt, nên nó không trực tiếp làm giảm tiền mặt của công ty. Trên Báo cáo lưu chuyển tiền tệ (theo phương pháp gián tiếp), khấu hao được cộng ngược lại vào lợi nhuận để tính toán dòng tiền từ hoạt động kinh doanh. Tóm lại, khấu hao có tác động kép: làm giảm lợi nhuận báo cáo nhưng đồng thời tạo ra một \\lá chắn thuế\\ và có thể gián tiếp hỗ trợ dòng tiền bằng cách giảm thuế phải nộp."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng nguyên giá tài sản cố định vô hình cuối năm là bao nhiêu?",
+      "Khấu hao trong năm của tài sản cố định vô hình là bao nhiêu?",
+      "Giá trị còn lại của quyền khai thác mỏ tại ngày cuối năm là bao nhiêu?",
+      "So sánh giá trị còn lại của tài sản cố định vô hình tại ngày đầu năm với cuối năm. Thay đổi như thế nào?",
+      "Tỷ lệ khấu hao trong năm trên tổng nguyên giá của tài sản cố định vô hình là bao nhiêu phần trăm?",
+      "Đánh giá sự thay đổi trong giá trị tài sản cố định vô hình có ảnh hưởng như thế nào đến giá trị tài sản ròng của công ty?"
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.8 - Tài sản cố định vô hình)<br>Loại nội dung: Bảng<br>TÀI SẢN CỐ ĐỊNH VÔ HÌNH<br>Đơn vị tính: VND<br>| Khoản mục | Quyền khai thác mỏ | Tổng cộng |<br>|---|---|---|<br>| Nguyên giá | | |<br>| Số dư đầu năm | 10.338.380.593 | 10.338.380.593 |<br>| Tăng do mua sắm | - | - |<br>| Số dư cuối năm | 10.338.380.593 | 10.338.380.593 |<br>| Giá trị hao mòn lũy kế | | |<br>| Số dư đầu năm | 1.760.024.702 | 1.656.640.896 |<br>| Khấu hao trong năm | 103.383.806 | 103.383.806 |<br>| Số dư cuối năm | 1.863.408.508 | 1.760.024.702 |<br>| Giá trị còn lại | | |<br>| Tại ngày đầu năm | 8.578.355.891 | 8.681.739.697 |<br>| Tại ngày cuối năm | 8.474.972.085 | 8.578.355.891 |",
+    "output": [
+      "Tổng nguyên giá tài sản cố định vô hình cuối năm là 10.338.380.593 VND.",
+      "Khấu hao trong năm của tài sản cố định vô hình là 103.383.806 VND.",
+      "Giá trị còn lại của quyền khai thác mỏ tại ngày cuối năm là 8.474.972.085 VND.",
+      "Giá trị còn lại của tài sản cố định vô hình tại ngày đầu năm là 8.578.355.891 VND và tại ngày cuối năm là 8.474.972.085 VND. Giá trị này đã giảm 103.383.806 VND.",
+      "Khấu hao trong năm của tài sản cố định vô hình là 103.383.806 VND. Tổng nguyên giá tài sản cố định vô hình cuối năm là 10.338.380.593 VND. Tỷ lệ khấu hao trong năm trên tổng nguyên giá là khoảng 1.00% (103.383.806 / 10.338.380.593 * 100%).",
+      "Giá trị tài sản cố định vô hình giảm 103.383.806 VND trong năm, tương ứng với khấu hao trong năm. Vì tài sản cố định vô hình là một thành phần của tổng tài sản của công ty, sự giảm giá trị này trực tiếp làm giảm tổng giá trị tài sản. Do đó, nó cũng làm giảm giá trị tài sản ròng (tổng tài sản trừ tổng nợ phải trả) của công ty. Đây là một quá trình bình thường do việc phân bổ chi phí của tài sản vô hình trong quá trình sử dụng. Tuy nhiên, sự giảm giá trị này ảnh hưởng đến việc định giá tài sản của công ty và có thể tác động đến các chỉ số tài chính dựa trên giá trị tài sản ròng."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_QA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng số phải nộp Nhà nước cuối quý là bao nhiêu?",
+      "Khoản chi phí lãi vay trích trước cuối quý là bao nhiêu?",
+      "Thuế GTGT đã thực nộp trong kỳ là bao nhiêu?",
+      "So sánh tổng số phải nộp Nhà nước cuối quý với số đầu năm. Thay đổi như thế nào?",
+      "Đánh giá mức độ biến động của khoản trích trước chi phí lãi vay giữa cuối quý và đầu năm.",
+      "Phân tích tác động của các khoản phải nộp Nhà nước và chi phí phải trả đến dòng tiền và khả năng thanh toán của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.9-10 - Thuế và các khoản phải nộp Nhà nước, Chi phí phải trả)<br>Loại nội dung: Bảng<br>9. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC<br>| Chỉ tiêu | Số phải nộp đầu năm | Số phải nộp trong kỳ | Số đã thực nộp trong kỳ | Số phải nộp cuối quý |<br>|---|---|---|---|---|<br>| a. Phải nộp | | | | |<br>| Thuế giá trị gia tăng | - | 729.564.101 | 729.564.101 | - |<br>| Thuế TNDN | - | 1.162.813.717 | 1.162.813.717 | - |<br>| Thuế bảo vệ môi trường | - | 61.057.000 | 61.057.000 | - |<br>| Các loại thuế khác | - | 14.303.820 | 14.303.820 | - |<br>| Thuế nhà đất, tiền thuê đất | - | 11.303.820 | 11.303.820 | - |<br>| Thuế thu nhập cá nhân | - | - | - | - |<br>| Cộng | 421.945.796 | 75.360.820 | - | 497.306.616 |<br>10. CHI PHÍ PHẢI TRẢ<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Ngắn hạn | | |<br>| Trích trước chi phí lãi vay | 47.461.424.794 | 46.356.468.816 |<br>| Các khoản khác | - | - |<br>| Cộng | 47.461.424.794 | 46.356.468.816 |",
+    "output": [
+      "Tổng số phải nộp Nhà nước cuối quý là 497.306.616 VND.",
+      "Khoản chi phí lãi vay trích trước cuối quý là 47.461.424.794 VND.",
+      "Thuế GTGT đã thực nộp trong kỳ là 729.564.101 VND.",
+      "Tổng số phải nộp Nhà nước cuối quý là 497.306.616 VND, tăng 75.360.820 VND so với số phải nộp đầu năm là 421.945.796 VND.",
+      "Khoản trích trước chi phí lãi vay tăng từ 46.356.468.816 VND (đầu năm) lên 47.461.424.794 VND (cuối quý), tăng 1.104.955.978 VND. Mức biến động này cho thấy công ty đã trích thêm một lượng đáng kể chi phí lãi vay trong kỳ. Điều này có thể do công ty có thêm các khoản vay mới hoặc chi phí lãi vay tăng lên theo thời gian, làm tăng nợ phải trả ngắn hạn và cần được quản lý cẩn thận để tránh ảnh hưởng đến thanh khoản.",
+      "Các khoản phải nộp Nhà nước và chi phí phải trả là những nghĩa vụ tài chính ngắn hạn quan trọng.\n*   **Khoản phải nộp Nhà nước (497.306.616 VND cuối quý):** Mặc dù phần lớn các loại thuế đã được thực nộp trong kỳ, nhưng số dư còn lại vẫn là một nghĩa vụ. Việc thực hiện các khoản nộp thuế này trực tiếp làm giảm dòng tiền ra khỏi công ty.\n*   **Chi phí phải trả (trích trước chi phí lãi vay 47.461.424.794 VND):** Đây là một khoản mục rất lớn trong nợ ngắn hạn (chiếm gần 56.48% tổng nợ ngắn hạn theo Chunk 6). Đây là chi phí đã phát sinh nhưng chưa được thanh toán bằng tiền. Khi đến hạn, việc thanh toán khoản này sẽ tạo ra một dòng tiền ra đáng kể, ảnh hưởng nghiêm trọng đến khả năng thanh toán ngắn hạn của công ty.\n\nTổng thể, các khoản mục này tạo ra áp lực lớn lên dòng tiền và khả năng thanh khoản của công ty. Công ty cần quản lý chặt chẽ để đảm bảo có đủ tiền mặt khi các khoản này đến hạn thanh toán, đặc biệt là khoản trích trước chi phí lãi vay rất lớn."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng số phải trả người bán cuối quý là bao nhiêu?",
+      "Số dư vốn góp của chủ sở hữu đầu năm nay là bao nhiêu?",
+      "Số dư lợi nhuận sau thuế chưa phân phối đầu năm nay là bao nhiêu?",
+      "So sánh tổng số phải trả người bán cuối quý với đầu năm. Thay đổi như thế nào?",
+      "Đánh giá tác động của khoản lỗ trong năm trước đến vốn chủ sở hữu.",
+      "Phân tích sự ổn định của vốn góp chủ sở hữu qua các kỳ báo cáo."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.11 & V.13.a - Phải trả người bán, Bảng đối chiếu biến động của vốn chủ sở hữu)<br>Loại nội dung: Bảng<br>11. PHẢI TRẢ NGƯỜI BÁN<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Phải trả cho người bán | 6.359.111.436 | 6.359.111.436 |<br>| Cộng | 6.359.111.436 | 6.359.111.436 |<br>13. VỐN CHỦ SỞ HỮU<br>a. Bảng đối chiếu biến động của vốn chủ sở hữu<br>Đơn vị tính: VND<br>| Khoản mục | Vốn góp của chủ sở hữu | Lợi nhuận sau thuế chưa phân phối | Cộng |<br>|---|---|---|---|<br>| Số dư đầu năm trước | 138.840.000.000 | 104.025.249.336 | 34.814.750.664 |<br>| Tăng vốn trong năm trước | - | - | - |<br>| Lãi trong năm trước | - | - | - |<br>| Lỗ trong năm trước | - | 3.943.648.103 | 3.943.648.103 |<br>| Giảm khác | - | - | - |<br>| Số dư cuối năm trước | 138.840.000.000 | 107.968.897.439 | 30.871.102.561 |<br>| Số dư đầu năm nay | 138.840.000.000 | 107.968.897.439 | 30.871.102.561 |",
+    "output": [
+      "Tổng số phải trả người bán cuối quý là 6.359.111.436 VND.",
+      "Số dư vốn góp của chủ sở hữu đầu năm nay là 138.840.000.000 VND.",
+      "Số dư lợi nhuận sau thuế chưa phân phối đầu năm nay là 107.968.897.439 VND.",
+      "Tổng số phải trả người bán cuối quý là 6.359.111.436 VND, không thay đổi so với số đầu năm cũng là 6.359.111.436 VND.",
+      "Khoản lỗ trong năm trước là 3.943.648.103 VND đã làm giảm lợi nhuận sau thuế chưa phân phối (từ 104.025.249.336 VND đầu năm trước xuống 107.968.897.439 VND cuối năm trước, phản ánh sự gia tăng lỗ lũy kế) và tổng vốn chủ sở hữu (từ 34.814.750.664 VND đầu năm trước xuống 30.871.102.561 VND cuối năm trước). Tác động của khoản lỗ này là làm suy giảm vốn chủ sở hữu của công ty, một chỉ số quan trọng về sức khỏe tài chính và khả năng tự tài trợ. Điều này cho thấy công ty đã gặp khó khăn trong hoạt động kinh doanh trong năm trước, làm giảm giá trị tài sản ròng và tiềm lực tài chính.",
+      "Dựa trên bảng đối chiếu biến động của vốn chủ sở hữu, vốn góp của chủ sở hữu duy trì ở mức 138.840.000.000 VND từ đầu năm trước, cuối năm trước cho đến đầu năm nay. Không có sự tăng vốn hoặc giảm vốn trong các kỳ này. Điều này cho thấy vốn góp của chủ sở hữu của công ty rất ổn định, không có các đợt phát hành cổ phiếu mới hay việc mua lại cổ phiếu. Sự ổn định này có thể phản ánh sự cam kết của các cổ đông hiện tại, nhưng cũng có thể là dấu hiệu cho thấy công ty chưa có nhu cầu hoặc cơ hội để huy động thêm vốn từ chủ sở hữu để mở rộng hoạt động."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Tổng vốn chủ sở hữu cuối năm nay là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối cuối năm nay là bao nhiêu?",
+      "Tổng vốn góp của chủ sở hữu cuối quý là bao nhiêu?",
+      "Có sự thay đổi nào về vốn góp của chủ sở hữu trong năm nay không?",
+      "Đánh giá tác động của khoản lỗ trong năm nay đến tổng vốn chủ sở hữu.",
+      "Phân tích khả năng chi trả cổ tức của công ty dựa trên thông tin lợi nhuận chưa phân phối và vốn góp."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.13.a-c - Biến động vốn chủ sở hữu, Chi tiết vốn góp, Giao dịch vốn)<br>Loại nội dung: Bảng và Text<br>a. Bảng đối chiếu biến động của vốn chủ sở hữu (tiếp theo)<br>Đơn vị tính: VND<br>| Khoản mục | Vốn góp của chủ sở hữu | Lợi nhuận sau thuế chưa phân phối | Cộng |<br>|---|---|---|---|<br>| Tăng vốn trong năm nay | - | - | - |<br>| Lãi trong năm nay | - | - | - |<br>| Lỗ trong năm nay | - | 784.918.174 | 784.918.174 |<br>| Số dư cuối năm nay | 138.840.000.000 | 108.753.815.613 | 30.086.184.387 |<br>b. Chi tiết vốn góp của chủ sở hữu<br>| Chỉ tiêu | Số cuối quý (VND) | Số đầu năm (VND) |<br>|---|---|---|<br>| Vốn góp của các đối tượng khác | 138.840.000.000 | 138.840.000.000 |<br>| Cộng | 138.840.000.000 | 138.840.000.000 |<br>c. Các giao dịch về vốn với các chủ sở hữu và phân phối cổ tức, lợi nhuận được chia<br>| Chỉ tiêu | Năm nay (VND) | Năm trước (VND) |<br>|---|---|---|<br>| Vốn đầu tư của chủ sở hữu | | |<br>| - Vốn góp đầu năm | 138.840.000.000 | 138.840.000.000 |<br>| - Vốn góp tăng trong năm | - | - |<br>| - Vốn góp giảm trong năm | - | - |<br>| - Vốn góp cuối năm | 138.840.000.000 | 138.840.000.000 |<br>| Cổ tức, lợi nhuận đã chia | - | - |",
+    "output": [
+      "Tổng vốn chủ sở hữu cuối năm nay là 30.086.184.387 VND.",
+      "Lợi nhuận sau thuế chưa phân phối cuối năm nay là 108.753.815.613 VND.",
+      "Tổng vốn góp của chủ sở hữu cuối quý là 138.840.000.000 VND.",
+      "Không, không có sự thay đổi nào về vốn góp của chủ sở hữu trong năm nay (Vốn góp tăng trong năm nay và Vốn góp giảm trong năm nay đều là \\-\\).",
+      "Khoản lỗ trong năm nay là 784.918.174 VND. Khoản lỗ này đã làm giảm tổng vốn chủ sở hữu từ 30.871.102.561 VND (số dư đầu năm nay) xuống 30.086.184.387 VND (số dư cuối năm nay). Tác động là làm suy giảm thêm vốn chủ sở hữu, cho thấy công ty tiếp tục chịu lỗ trong kỳ báo cáo này. Điều này ảnh hưởng tiêu cực đến sức khỏe tài chính của công ty, làm giảm khả năng tích lũy vốn tự có để mở rộng hoạt động hoặc đối phó với các khó khăn, cũng như có thể làm giảm niềm tin của nhà đầu tư.",
+      "Mặc dù lợi nhuận sau thuế chưa phân phối cuối năm nay là dương (108.753.815.613 VND), nhưng thông tin trong bảng đối chiếu biến động của vốn chủ sở hữu cho thấy công ty đã ghi nhận \\Lỗ trong năm nay\\ là 784.918.174 VND. Hơn nữa, \\Cổ tức, lợi nhuận đã chia\\ cho cả năm nay và năm trước đều là \\-\\ (không có). Với việc công ty tiếp tục chịu lỗ trong năm nay và đã có lỗ trong năm trước (theo Chunk 26), khả năng chi trả cổ tức cho cổ đông là rất thấp hoặc không có. Thông thường, các công ty không chia cổ tức khi có lỗ lũy kế hoặc khi việc chia cổ tức sẽ làm giảm vốn chủ sở hữu xuống dưới vốn điều lệ. Công ty có thể ưu tiên sử dụng lợi nhuận giữ lại để bù đắp các khoản lỗ hoặc củng cố tình hình tài chính thay vì phân phối cổ tức."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Số lượng cổ phiếu phổ thông đang lưu hành là bao nhiêu?",
+      "Mệnh giá cổ phiếu đang lưu hành là bao nhiêu?",
+      "Lợi nhuận sau thuế chưa phân phối cuối năm nay là bao nhiêu?",
+      "So sánh lợi nhuận sau thuế chưa phân phối trong năm nay với năm trước. Thay đổi như thế nào?",
+      "Đánh giá mức độ ổn định của vốn chủ sở hữu qua số lượng cổ phiếu đang lưu hành.",
+      "Phân tích tác động của việc không có doanh thu bán hàng và giá vốn hàng bán đến khả năng tạo ra lợi nhuận bền vững của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (V.13.d-e - Cổ phiếu, Lợi nhuận sau thuế chưa phân phối & VI.1-2 - Doanh thu, Giá vốn)<br>Loại nội dung: Bảng<br>d. Cổ phiếu<br>| Chỉ tiêu | Số cuối năm | Số đầu năm |<br>|---|---|---|<br>| Số lượng cổ phiếu đăng ký phát hành | 13.884.000 | 13.884.000 |<br>| Số lượng cổ phiếu đã bán ra công chúng | 13.884.000 | 13.884.000 |<br>| - Cổ phiếu phổ thông | 13.884.000 | 13.884.000 |<br>| - Cổ phiếu ưu đãi | - | - |<br>| Số lượng cổ phiếu được mua lại | - | - |<br>| Số lượng cổ phiếu đang lưu hành | 13.884.000 | 13.884.000 |<br>| - Cổ phiếu phổ thông | 13.884.000 | 13.884.000 |<br>| - Cổ phiếu ưu đãi | - | - |<br>| Mệnh giá cổ phiếu đang lưu hành | 10.000 VND/cổ phiếu | - |<br>e. Lợi nhuận sau thuế chưa phân phối<br>| Chỉ tiêu | Năm nay (VND) | Năm trước (VND) |<br>|---|---|---|<br>| Lợi nhuận sau thuế chưa phân phối đầu năm | 107.968.897.439 | 104.025.249.336 |<br>| Lợi nhuận sau thuế chưa phân phối trong năm | 784.918.174 | 3.943.648.103 |<br>| Các khoản điều chỉnh tăng/giảm sau thuế chưa phân phối | - | - |<br>| Lợi nhuận sau thuế chưa phân phối cuối năm | 108.753.815.613 | 107.968.897.439 |<br>VI. Thông tin bổ sung cho các khoản mục trình bày trong Báo cáo kết quả kinh doanh<br>1. TỔNG DOANH THU BÁN HÀNG VÀ CUNG CẤP DỊCH VỤ<br>| Chỉ tiêu | Quý I/2025 (VND) | Quý I/2024 (VND) |<br>|---|---|---|<br>| a. Doanh thu | | |<br>| Doanh thu bán hàng và cung cấp dịch vụ | - | - |<br>| Doanh thu chi nhánh | - | - |<br>2. GIÁ VỐN HÀNG BÁN<br>| Chỉ tiêu | Quý I/2025 (VND) | Quý I/2024 (VND) |<br>|---|---|---|<br>| Giá vốn bán bán | - | - |",
+    "output": [
+      "Số lượng cổ phiếu phổ thông đang lưu hành là 13.884.000 cổ phiếu.",
+      "Mệnh giá cổ phiếu đang lưu hành là 10.000 VND/cổ phiếu.",
+      "Lợi nhuận sau thuế chưa phân phối cuối năm nay là 108.753.815.613 VND.",
+      "Lợi nhuận sau thuế chưa phân phối trong năm nay là 784.918.174 VND, thấp hơn 3.158.729.929 VND so với năm trước là 3.943.648.103 VND.",
+      "Số lượng cổ phiếu đăng ký phát hành, đã bán ra công chúng và đang lưu hành đều là 13.884.000 cổ phiếu và không thay đổi giữa cuối năm và đầu năm. Điều này cho thấy không có sự thay đổi về số lượng cổ phiếu hoặc các giao dịch cổ phiếu (như phát hành thêm hay mua lại cổ phiếu quỹ) trong kỳ. Mức độ ổn định này phản ánh vốn góp của chủ sở hữu là vững chắc và không có sự pha loãng hay bổ sung vốn từ bên ngoài thông qua việc phát hành cổ phiếu, góp phần tạo nên một cấu trúc vốn ổn định từ phía cổ đông góp vốn.",
+      "Việc không có doanh thu bán hàng và cung cấp dịch vụ (Quý I/2025 và Quý I/2024 đều là \\-\\) cùng với không có giá vốn hàng bán (Quý I/2025 và Quý I/2024 đều là \\-\\) cho thấy công ty không phát sinh hoạt động kinh doanh cốt lõi từ việc bán sản phẩm hoặc dịch vụ trong các kỳ này. Điều này có tác động nghiêm trọng đến khả năng tạo ra lợi nhuận bền vững của công ty. Lợi nhuận từ hoạt động kinh doanh cốt lõi là nền tảng cho sự phát triển lâu dài. Khi khoản mục này vắng mặt, công ty phải phụ thuộc hoàn toàn vào các nguồn thu khác (như doanh thu hoạt động tài chính) để tạo ra lợi nhuận. Sự phụ thuộc này làm tăng rủi ro, vì các nguồn thu không cốt lõi thường ít ổn định và khó dự đoán hơn. Do đó, khả năng tạo ra lợi nhuận bền vững của công ty bị suy yếu đáng kể."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA"
+    ]
+  },
+  {
+    "instruction": [
+      "Doanh thu hoạt động tài chính Quý I/2025 là bao nhiêu?",
+      "Chi phí tài chính Quý I/2025 là bao nhiêu?",
+      "Tổng lợi nhuận kế toán Quý I/2025 là bao nhiêu?",
+      "So sánh doanh thu hoạt động tài chính Quý I/2025 với Quý I/2024. Thay đổi như thế nào?",
+      "Đánh giá mức độ phụ thuộc của công ty vào hoạt động tài chính để tạo ra lợi nhuận.",
+      "Phân tích ý nghĩa của việc công ty không lập báo cáo bộ phận.",
+      "Giải thích tác động của thuế suất TNDN đến lợi nhuận ròng của công ty."
+    ],
+    "input": "Công ty: Công ty Cổ phần An Thịnh<br>Mã cổ phiếu: ATB<br>Loại báo cáo: Báo cáo tài chính riêng quý I/2025<br>Thời gian: Kết thúc ngày 31/03/2025<br>Ý kiến kiểm toán: Không có<br><br>Section: Thuyết minh Báo cáo tài chính (VI.3-6 - Doanh thu, Chi phí tài chính, Chi phí Bán hàng/QLDN, Thuế TNDN & VII - Thông tin khác)<br>Loại nội dung: Bảng và Text<br>3. DOANH THU HOẠT ĐỘNG TÀI CHÍNH<br>| Chỉ tiêu | Quý I/2025 (VND) | Quý I/2024 (VND) |<br>|---|---|---|<br>| Lãi tiền gửi, tiền cho vay | 600.000.904 | 600.000.000 |<br>| Cộng | 600.000.904 | 600.000.000 |<br>4. CHI PHÍ TÀI CHÍNH<br>| Chỉ tiêu | Quý I/2025 (VND) | Quý I/2024 (VND) |<br>|---|---|---|<br>| Lãi tiền vay | 1.104.955.978 | 1.129.757.907 |<br>| Cộng | 1.104.955.978 | 1.129.757.907 |<br>5. CHI PHÍ BÁN HÀNG VÀ CHI PHÍ QUẢN LÝ DOANH NGHIỆP<br>| Chỉ tiêu | Quý I/2025 (VND) | Quý I/2024 (VND) |<br>|---|---|---|<br>| a. Các khoản chi phí quản lý doanh nghiệp phát sinh trong kỳ | 176.579.294 | 171.953.527 |<br>6. CHI PHÍ THUẾ THU NHẬP HIỆN HÀNH<br>| Chỉ tiêu | Quý I/2025 (VND) | Quý I/2024 (VND) |<br>|---|---|---|<br>| Tổng lợi nhuận kế toán | 784.918.174 | 805.095.240 |<br>| Các khoản điều chỉnh tăng/giảm lợi nhuận kế toán | - | - |<br>| Tổng lợi nhuận chịu thuế | 784.918.174 | 805.095.240 |<br>| Thuế suất thuế thu nhập doanh nghiệp | 20% | 20% |<br>| Chi phí thuế TNDN hiện hành | - | - |<br>VII. Những thông tin khác<br>1. Những sự kiện phát sinh sau ngày kết thúc năm tài chính<br>Không có sự kiện phát sinh nào xảy ra sau ngày kết thúc năm tài chính đòi hỏi phải điều chỉnh báo cáo.<br>2. Báo cáo bộ phận<br>Công ty hoạt động chủ yếu trong lĩnh vực xây dựng (chiếm gần 90% toàn bộ hoạt động của công ty và chủ yếu diễn ra trên lãnh thổ Việt Nam), do đó Công ty không lập báo cáo theo lĩnh vực kinh doanh và khu vực địa lý.<br>3. Thông tin so sánh<br>Số liệu so sánh trên Báo cáo kết quả kinh doanh và Báo cáo lưu chuyển tiền tệ Quý I/2025 được lấy từ Báo cáo tài chính năm 2024 của Công ty.<br>Bắc Kạn, ngày 31 tháng 03 năm 2025<br>Người lập biểu: Vũ Thị Hạnh",
+    "output": [
+      "Doanh thu hoạt động tài chính Quý I/2025 là 600.000.904 VND.",
+      "Chi phí tài chính Quý I/2025 là 1.104.955.978 VND.",
+      "Tổng lợi nhuận kế toán Quý I/2025 là 784.918.174 VND.",
+      "Doanh thu hoạt động tài chính Quý I/2025 là 600.000.904 VND, tăng 904 VND so với Quý I/2024 là 600.000.000 VND.",
+      "Với doanh thu bán hàng và cung cấp dịch vụ là 0 VND, nhưng công ty vẫn có tổng lợi nhuận kế toán dương là 784.918.174 VND, điều này cho thấy công ty đang phụ thuộc rất lớn vào các hoạt động khác ngoài kinh doanh cốt lõi để tạo ra lợi nhuận. Doanh thu hoạt động tài chính (600.000.904 VND) là nguồn thu đáng kể, mặc dù chi phí tài chính (1.104.955.978 VND) cũng cao. Mức độ phụ thuộc này là cao, và cần đánh giá cẩn thận về tính bền vững của các nguồn thu tài chính này, vì chúng có thể biến động mạnh hơn so với doanh thu từ hoạt động sản xuất kinh doanh chính.",
+      "Công ty không lập báo cáo bộ phận do hoạt động chủ yếu trong lĩnh vực xây dựng (chiếm gần 90% toàn bộ hoạt động) và chủ yếu diễn ra trên lãnh thổ Việt Nam. Điều này có ý nghĩa rằng công ty không có các phân khúc kinh doanh đa dạng đáng kể hoặc hoạt động ở nhiều khu vực địa lý khác nhau cần phải tách biệt báo cáo. Mặc dù việc này giúp đơn giản hóa quy trình báo cáo, nhưng nó có thể hạn chế khả năng của các nhà đầu tư và phân tích trong việc hiểu sâu hơn về hiệu quả hoạt động, rủi ro và cơ hội cụ thể của từng mảng nếu công ty thực sự có sự đa dạng hóa ngầm. Tuy nhiên, nếu hoạt động kinh doanh của công ty thực sự đồng nhất, việc không lập báo cáo bộ phận là hợp lý và tuân thủ chuẩn mực.",
+      "Thuế suất thuế thu nhập doanh nghiệp là 20%. Thuế suất này có tác động trực tiếp đến lợi nhuận ròng (lợi nhuận sau thuế) của công ty. Nếu công ty có lợi nhuận chịu thuế dương, 20% của khoản lợi nhuận đó sẽ trở thành chi phí thuế thu nhập doanh nghiệp, làm giảm lợi nhuận ròng. Trong Quý I/2025, mặc dù tổng lợi nhuận chịu thuế là 784.918.174 VND, nhưng chi phí thuế TNDN hiện hành lại là \\-\\ (0 VND). Điều này có thể là do công ty có các khoản lỗ lũy kế từ các năm trước được bù trừ hoặc được hưởng các ưu đãi thuế. Tuy nhiên, về nguyên tắc chung, mức thuế suất 20% là yếu tố quan trọng quyết định phần lợi nhuận mà công ty phải nộp cho nhà nước, và do đó, ảnh hưởng trực tiếp đến phần lợi nhuận còn lại để tái đầu tư hoặc phân phối cho cổ đông."
+    ],
+    "difficulty": [
+      "Easy_QA",
+      "Easy_QA",
+      "Easy_QA",
+      "Medium_QA",
+      "Medium_SA",
+      "Hard_SA",
+      "Hard_SA"
+    ]
+  }
+]
